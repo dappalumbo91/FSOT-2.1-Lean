@@ -39,7 +39,17 @@
       "computed": 0.094437,
       "measured": 0.0,
       "error_pct": 0.09443694019339477,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.094437,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.094437,
       "measured": 0.0,
       "error_pct": 0.09443694019339477,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "browning kinetics",
+      "scientific_measurement": {
+        "delta": 0.094437,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,18 @@
       "computed": 108.49926097775192,
       "measured": 108.0,
       "error_pct": 0.462279,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a745 Activation Ea",
+      "scientific_measurement": {
+        "delta": 0.49926098,
+        "delta_pct": 0.462279,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -68,7 +99,18 @@
       "computed": 0.6727328685350314,
       "measured": 0.673,
       "error_pct": 0.039692639668439104,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -0.00026713,
+        "delta_pct": 0.039693,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -77,7 +119,18 @@
       "computed": 0.5229465399247466,
       "measured": 0.523,
       "error_pct": 0.01022181171193495,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -5.346e-05,
+        "delta_pct": 0.010222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -86,7 +139,18 @@
       "computed": 0.8099997612391344,
       "measured": 0.81,
       "error_pct": 2.947665007827326e-05,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a751 Solubility logS",
+      "scientific_measurement": {
+        "delta": -2.4e-07,
+        "delta_pct": 2.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -95,7 +159,18 @@
       "computed": 0.9398680312151104,
       "measured": 0.94,
       "error_pct": 0.014039232435055806,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a751 Solubility logS",
+      "scientific_measurement": {
+        "delta": -0.00013197,
+        "delta_pct": 0.014039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -104,7 +179,18 @@
       "computed": 309.16127743887125,
       "measured": 309.0,
       "error_pct": 0.052193,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a761 Glass Tg",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a761 Glass Tg",
+      "scientific_measurement": {
+        "delta": 0.16127744,
+        "delta_pct": 0.052193,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -113,7 +199,18 @@
       "computed": 2804.2763547320887,
       "measured": 2803.0,
       "error_pct": 0.04553530974273094,
-      "source": "smiles_food_chemistry"
+      "source": "smiles_food_chemistry",
+      "section_display_name": "SMILES Lab \u00a790 Heat of Combustion",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "SMILES Lab \u00a790 Heat of Combustion",
+      "scientific_measurement": {
+        "delta": 1.27635473,
+        "delta_pct": 0.045535,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -122,7 +219,17 @@
       "computed": 175.165265,
       "measured": 175.0,
       "error_pct": 0.09443694019340196,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "banana bread:bake temperature C",
+      "scientific_measurement": {
+        "delta": 0.165265,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -131,7 +238,17 @@
       "computed": 58.054773,
       "measured": 58.0,
       "error_pct": 0.09443694019339713,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "banana bread:bake time min",
+      "scientific_measurement": {
+        "delta": 0.054773,
+        "delta_pct": 0.094436,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -140,7 +257,17 @@
       "computed": 0.340321,
       "measured": 0.34,
       "error_pct": 0.09443694019339864,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "banana bread:banana mass fraction",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.094412,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -149,7 +276,17 @@
       "computed": 28.526915,
       "measured": 28.5,
       "error_pct": 0.09443694019339477,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "banana bread:final moisture pct",
+      "scientific_measurement": {
+        "delta": 0.026915,
+        "delta_pct": 0.094439,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -158,7 +295,17 @@
       "computed": 175.165265,
       "measured": 175.0,
       "error_pct": 0.09443694019340196,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "zucchini bread:bake temperature C",
+      "scientific_measurement": {
+        "delta": 0.165265,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -167,7 +314,17 @@
       "computed": 52.049107,
       "measured": 52.0,
       "error_pct": 0.09443694019339524,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "zucchini bread:bake time min",
+      "scientific_measurement": {
+        "delta": 0.049107,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -176,7 +333,17 @@
       "computed": 0.290274,
       "measured": 0.29,
       "error_pct": 0.09443694019339867,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "zucchini bread:zucchini mass fraction",
+      "scientific_measurement": {
+        "delta": 0.000274,
+        "delta_pct": 0.094483,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -185,7 +352,17 @@
       "computed": 26.024554,
       "measured": 26.0,
       "error_pct": 0.09443694019339524,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "zucchini bread:final moisture pct",
+      "scientific_measurement": {
+        "delta": 0.024554,
+        "delta_pct": 0.094438,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -194,7 +371,17 @@
       "computed": 175.165265,
       "measured": 175.0,
       "error_pct": 0.09443694019340196,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pumpkin bread:bake temperature C",
+      "scientific_measurement": {
+        "delta": 0.165265,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -203,7 +390,17 @@
       "computed": 60.056662,
       "measured": 60.0,
       "error_pct": 0.09443694019340161,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pumpkin bread:bake time min",
+      "scientific_measurement": {
+        "delta": 0.056662,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -212,7 +409,17 @@
       "computed": 0.310293,
       "measured": 0.31,
       "error_pct": 0.09443694019339866,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pumpkin bread:pumpkin mass fraction",
+      "scientific_measurement": {
+        "delta": 0.000293,
+        "delta_pct": 0.094516,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -221,7 +428,17 @@
       "computed": 27.225687,
       "measured": 27.2,
       "error_pct": 0.09443694019339866,
-      "source": "recipe_process"
+      "source": "recipe_process",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pumpkin bread:final moisture pct",
+      "scientific_measurement": {
+        "delta": 0.025687,
+        "delta_pct": 0.094438,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -230,7 +447,17 @@
       "computed": 196.185096,
       "measured": 196.0,
       "error_pct": 0.09443694019340138,
-      "source": "coffee_roast"
+      "source": "coffee_roast",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "coffee roast:first crack temperature C",
+      "scientific_measurement": {
+        "delta": 0.185096,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -239,7 +466,17 @@
       "computed": 14.813977,
       "measured": 14.8,
       "error_pct": 0.09443694019340465,
-      "source": "coffee_roast"
+      "source": "coffee_roast",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "coffee roast:weight loss pct",
+      "scientific_measurement": {
+        "delta": 0.013977,
+        "delta_pct": 0.094439,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -248,7 +485,17 @@
       "computed": 205.193596,
       "measured": 205.0,
       "error_pct": 0.09443694019339323,
-      "source": "coffee_roast"
+      "source": "coffee_roast",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "coffee roast:end temperature C",
+      "scientific_measurement": {
+        "delta": 0.193596,
+        "delta_pct": 0.094437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -257,7 +504,17 @@
       "computed": 180.301781,
       "measured": 180.16,
       "error_pct": 0.07869745016116193,
-      "source": "pubchem_maillard_precursors"
+      "source": "pubchem_maillard_precursors",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pubchem 2244",
+      "scientific_measurement": {
+        "delta": 0.141781,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -266,7 +523,17 @@
       "computed": 18.029177,
       "measured": 18.015,
       "error_pct": 0.07869745016116417,
-      "source": "pubchem_maillard_precursors"
+      "source": "pubchem_maillard_precursors",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "pubchem 962",
+      "scientific_measurement": {
+        "delta": 0.014177,
+        "delta_pct": 0.078696,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -275,7 +542,17 @@
       "computed": 42.033053,
       "measured": 42.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "yogurt lactobacillus",
+      "scientific_measurement": {
+        "delta": 0.033053,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -284,7 +561,17 @@
       "computed": 27.021248,
       "measured": 27.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "sourdough starter",
+      "scientific_measurement": {
+        "delta": 0.021248,
+        "delta_pct": 0.078696,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -293,7 +580,17 @@
       "computed": 18.014166,
       "measured": 18.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "kimchi lacto",
+      "scientific_measurement": {
+        "delta": 0.014166,
+        "delta_pct": 0.0787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -302,7 +599,17 @@
       "computed": 26.020461,
       "measured": 26.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "kombucha",
+      "scientific_measurement": {
+        "delta": 0.020461,
+        "delta_pct": 0.078696,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -311,7 +618,17 @@
       "computed": 20.015739,
       "measured": 20.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "beer ale fermentation",
+      "scientific_measurement": {
+        "delta": 0.015739,
+        "delta_pct": 0.078695,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "maillard_chemistry_lab",
@@ -320,7 +637,17 @@
       "computed": 22.017313,
       "measured": 22.0,
       "error_pct": 0.07869745016115814,
-      "source": "fermentation_browning_bridge"
+      "source": "fermentation_browning_bridge",
+      "domain_display_name": "maillard chemistry",
+      "display_name": "wine primary",
+      "scientific_measurement": {
+        "delta": 0.017313,
+        "delta_pct": 0.078695,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -334,5 +661,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Maillard Chemistry",
+  "tier_label": "Tier 34",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.671388+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 30,
+    "median_error_pct": 0.094436,
+    "max_error_pct": 0.462279,
+    "mean_abs_delta": 0.11141113166666668,
+    "precision_tier_counts": {
+      "green": 30
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

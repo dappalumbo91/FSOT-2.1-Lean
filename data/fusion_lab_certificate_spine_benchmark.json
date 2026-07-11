@@ -42,7 +42,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +61,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 42
+      "observable_count": 42,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fusion lab spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +83,17 @@
       "measured": 9.5e-05,
       "error_pct": 0.0,
       "record_count": 19,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "fusion physics public",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -73,7 +103,17 @@
       "measured": 17.6,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 9.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -83,7 +123,17 @@
       "measured": 15.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 9.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -93,7 +143,17 @@
       "measured": 5.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.0001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -103,7 +163,17 @@
       "measured": 4.03,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -113,7 +183,17 @@
       "measured": 50.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4.8e-05,
+        "delta_pct": 9.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -123,7 +203,17 @@
       "measured": 0.1,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics_public",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -133,7 +223,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 22,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "magnetic confinement",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -143,7 +243,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "tokamak H mode",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -153,7 +263,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "tokamak high beta",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -163,7 +283,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "theta pinch",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -173,7 +303,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "FRC laboratory",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -183,7 +323,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "stellarator W7X",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -193,7 +343,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "magnetic_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Wendelstein edge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -203,7 +363,17 @@
       "measured": 7.9e-05,
       "error_pct": 0.0,
       "record_count": 15,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "inertial confinement",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -213,7 +383,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "z pinch",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -223,7 +403,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ICF hohlraum",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -233,7 +423,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "NIF 2022",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -243,7 +443,17 @@
       "measured": 3.15,
       "error_pct": 7.9e-05,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "NIF 2022",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 6.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -253,7 +463,17 @@
       "measured": 1.536585,
       "error_pct": 9.5e-05,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "NIF 2022",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.00013,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -263,7 +483,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "inertial_confinement",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "NIF 2021",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -273,7 +503,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 19,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "cold fusion prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -283,7 +523,17 @@
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -293,7 +543,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -303,7 +563,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -313,7 +583,17 @@
       "measured": 1.85,
       "error_pct": 7.9e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -323,7 +603,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ni hydrogen lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -333,7 +623,17 @@
       "measured": 1.62,
       "error_pct": 7.9e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ni hydrogen lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 6.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -343,7 +643,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "plasma physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -353,7 +663,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ionosphere",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -363,7 +683,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "solar wind",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -373,7 +703,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "tokamak H mode",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -383,7 +723,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "tokamak high beta",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -393,7 +743,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "laboratory Q machine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -403,7 +763,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "plasma_physics",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "magnetosphere",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -413,7 +783,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 14,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "fuel thermochemistry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -423,7 +803,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -433,7 +823,17 @@
       "measured": 120.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -443,7 +843,17 @@
       "measured": -74.6,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -453,7 +863,17 @@
       "measured": 50.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -463,7 +883,17 @@
       "measured": -234.8,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -473,7 +903,17 @@
       "measured": 26.8,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -483,7 +923,17 @@
       "measured": 0.027544,
       "error_pct": 0.0,
       "record_count": 48,
-      "eval_kind": "fusion_panel_bridge"
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "energy ai orbital",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -493,7 +943,17 @@
       "measured": 0.003213,
       "error_pct": 0.027544107556414246,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.031124,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -503,7 +963,17 @@
       "measured": 0.008381,
       "error_pct": 0.027544107556409878,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.035795,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -513,7 +983,17 @@
       "measured": 0.008381,
       "error_pct": 0.027544107556409878,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials Arxiv Primitives V14",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.035795,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -523,7 +1003,17 @@
       "measured": 0.008381,
       "error_pct": 0.027544107556409878,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials Binary Decoder Rendlesham",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.035795,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -533,7 +1023,17 @@
       "measured": 0.000805,
       "error_pct": 0.02754410755641274,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials CVE Codon Hole Falsification",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -543,7 +1043,17 @@
       "measured": 0.008381,
       "error_pct": 0.027544107556409878,
       "source_panel": "energy_ai_orbital",
-      "eval_kind": "fusion_relay"
+      "eval_kind": "fusion_relay",
+      "domain_display_name": "fusion certificate",
+      "display_name": "Acoustic Resonance Materials Certified Agent Qwen",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.035795,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_lab_certificate_lab",
@@ -557,7 +1067,17 @@
         "fusion_public_anchors.json",
         "cold_fusion_prereg_anchors.json",
         "plasma_physics_benchmark.json"
-      ]
+      ],
+      "domain_display_name": "fusion certificate",
+      "display_name": "fusion lab certificate spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -571,5 +1091,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fusion Lab Certificate Spine",
+  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.663344+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 50,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.035795,
+    "mean_abs_delta": 2.14e-06,
+    "precision_tier_counts": {
+      "green": 50
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

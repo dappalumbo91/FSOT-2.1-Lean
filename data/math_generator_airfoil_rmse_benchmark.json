@@ -25,7 +25,18 @@
       "computed": 5.061015749458651,
       "measured": 5.061015749458651,
       "error_pct": 0.0,
-      "eval_kind": "live_formula_full_dataset"
+      "eval_kind": "live_formula_full_dataset",
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator airfoil rmse",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_airfoil_rmse",
@@ -39,7 +50,18 @@
       "eval_kind": "python_split_live_recompute",
       "train_row_count": 1202,
       "test_row_count": 301,
-      "fsot_read_rmse": null
+      "fsot_read_rmse": null,
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator airfoil rmse",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_airfoil_rmse",
@@ -48,7 +70,18 @@
       "computed": 1503,
       "measured": 1503,
       "error_pct": 0.0,
-      "eval_kind": "dataset_shape"
+      "eval_kind": "dataset_shape",
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator airfoil rmse",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_airfoil_rmse",
@@ -57,7 +90,18 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "eval_kind": "artifact_present"
+      "eval_kind": "artifact_present",
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator airfoil rmse",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_airfoil_rmse",
@@ -66,7 +110,32 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "eval_kind": "artifact_present"
+      "eval_kind": "artifact_present",
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator airfoil rmse",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Math Generator Airfoil RMSE",
+  "tier_label": "Tier 32",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.788211+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 5,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 5
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 14,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 14,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fuel public",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -69,7 +99,17 @@
       "computed": 120.0,
       "measured": 120.0,
       "error_pct": 0.0,
-      "eval_kind": "fuel_catalog_bridge"
+      "eval_kind": "fuel_catalog_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -79,7 +119,17 @@
       "computed": -74.6,
       "measured": -74.6,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -88,7 +138,17 @@
       "computed": 50.0,
       "measured": 50.0,
       "error_pct": 0.0,
-      "eval_kind": "fuel_catalog_bridge"
+      "eval_kind": "fuel_catalog_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -98,7 +158,17 @@
       "computed": -234.8,
       "measured": -234.8,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -107,7 +177,17 @@
       "computed": 26.8,
       "measured": 26.8,
       "error_pct": 0.0,
-      "eval_kind": "fuel_catalog_bridge"
+      "eval_kind": "fuel_catalog_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -117,7 +197,17 @@
       "computed": -200.7,
       "measured": -200.7,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "methanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -126,7 +216,17 @@
       "computed": 19.9,
       "measured": 19.9,
       "error_pct": 0.0,
-      "eval_kind": "fuel_catalog_bridge"
+      "eval_kind": "fuel_catalog_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "methanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -136,7 +236,17 @@
       "computed": -103.8,
       "measured": -103.8,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "propane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -146,7 +256,17 @@
       "computed": -241.8,
       "measured": -241.8,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "water",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -156,7 +276,17 @@
       "computed": -393.5,
       "measured": -393.5,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "carbon dioxide",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -166,7 +296,17 @@
       "computed": -45.9,
       "measured": -45.9,
       "error_pct": 0.0,
-      "eval_kind": "nist_enthalpy_anchor"
+      "eval_kind": "nist_enthalpy_anchor",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "ammonia",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -175,7 +315,17 @@
       "computed": 18.6,
       "measured": 18.6,
       "error_pct": 0.0,
-      "eval_kind": "fuel_catalog_bridge"
+      "eval_kind": "fuel_catalog_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "ammonia",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_thermochemistry_lab",
@@ -184,7 +334,17 @@
       "computed": 0.786975,
       "measured": 0.786975,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "fuel thermochemistry",
+      "display_name": "fsot Thermodynamics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -198,5 +358,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fuel Thermochemistry Public Anchors",
+  "tier_label": "Tier 59 \u2014 Material Property Verification Scaffold cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.615257+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 14,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 14
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -39,7 +39,17 @@
       "computed": 0.462181,
       "measured": 0.0,
       "error_pct": 0.462181,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.462181,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.462181,
       "measured": 0.0,
       "error_pct": 0.462181,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "dual anchor h0 panel",
+      "scientific_measurement": {
+        "delta": 0.462181,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +85,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -80,7 +110,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -95,7 +135,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "sh0es jwst",
+      "scientific_measurement": {
+        "delta": 0.786159,
+        "delta_pct": 1.07634,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -110,7 +160,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "freedman jwst",
+      "scientific_measurement": {
+        "delta": 0.003839,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -125,7 +185,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "fsot document local",
+      "scientific_measurement": {
+        "delta": -0.333233,
+        "delta_pct": 0.462182,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -140,7 +210,17 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "carnegie h0",
+      "scientific_measurement": {
+        "delta": 0.794498,
+        "delta_pct": 1.138249,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "margin_summary": {
@@ -159,5 +239,19 @@
   "h0_global_fsot": 68.44005682979427,
   "bubble_bleed_fraction": 0.015431,
   "h0_sector_count": 6,
-  "tension_status": "GREEN"
+  "tension_status": "GREEN",
+  "display_name": "Hubble Bubble Tension",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.561129+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 6,
+    "median_error_pct": 0.462182,
+    "max_error_pct": 1.138249,
+    "mean_abs_delta": 0.322295195,
+    "precision_tier_counts": {
+      "contested": 6
+    },
+    "green_gate_fraction": 0.0,
+    "matches_domain_spine": false
+  }
 }

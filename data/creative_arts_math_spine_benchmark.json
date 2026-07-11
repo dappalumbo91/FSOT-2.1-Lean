@@ -42,7 +42,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 56
+      "observable_count": 56,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +61,17 @@
       "computed": 2.9e-05,
       "measured": 0.0,
       "error_pct": 2.947665007827326e-05,
-      "observable_count": 48
+      "observable_count": 48,
+      "domain_display_name": "tier gap fill",
+      "display_name": "arts spine",
+      "scientific_measurement": {
+        "delta": 2.9e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +83,17 @@
       "measured": 0.047615,
       "error_pct": 0.0,
       "record_count": 26,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "culinary arts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -73,7 +103,18 @@
       "measured": 7.0,
       "error_pct": 0.0,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a71 Foundation",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a71 Foundation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -83,7 +124,18 @@
       "measured": 108.0,
       "error_pct": 0.462279,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a745 Activation Ea",
+      "scientific_measurement": {
+        "delta": 0.49926098,
+        "delta_pct": 0.462279,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -93,7 +145,18 @@
       "measured": 0.673,
       "error_pct": 0.039692639668439104,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -0.00026713,
+        "delta_pct": 0.039693,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -103,7 +166,18 @@
       "measured": 0.523,
       "error_pct": 0.01022181171193495,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -5.346e-05,
+        "delta_pct": 0.010222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -113,7 +187,18 @@
       "measured": 0.81,
       "error_pct": 2.947665007827326e-05,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a751 Solubility logS",
+      "scientific_measurement": {
+        "delta": -2.4e-07,
+        "delta_pct": 2.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -123,7 +208,18 @@
       "measured": 0.94,
       "error_pct": 0.014039232435055806,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a751 Solubility logS",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a751 Solubility logS",
+      "scientific_measurement": {
+        "delta": -0.00013197,
+        "delta_pct": 0.014039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -133,7 +229,18 @@
       "measured": 309.0,
       "error_pct": 0.052193,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a761 Glass Tg",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a761 Glass Tg",
+      "scientific_measurement": {
+        "delta": 0.16127744,
+        "delta_pct": 0.052193,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -143,7 +250,18 @@
       "measured": 1.48,
       "error_pct": 0.355486,
       "source_panel": "culinary_arts",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a774 Acoustic Impedance",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a774 Acoustic Impedance",
+      "scientific_measurement": {
+        "delta": -0.00526119,
+        "delta_pct": 0.355486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -153,7 +271,17 @@
       "measured": 0.00135,
       "error_pct": 0.0,
       "record_count": 10,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "linguistics formal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -163,7 +291,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Zipf exponent English",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -173,7 +311,17 @@
       "measured": 2.3,
       "error_pct": 0.0005659871035364658,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Mean dependency length EN",
+      "scientific_measurement": {
+        "delta": 0.10001358,
+        "delta_pct": 4.348417,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -183,7 +331,17 @@
       "measured": 31.0,
       "error_pct": -0.0013504254899468224,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Mean phoneme inventory size",
+      "scientific_measurement": {
+        "delta": -0.00041863,
+        "delta_pct": 0.00135,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -193,7 +351,17 @@
       "measured": 4.18,
       "error_pct": 0.0005995452654275573,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Letter entropy English",
+      "scientific_measurement": {
+        "delta": 2.506e-05,
+        "delta_pct": 0.0006,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -203,7 +371,17 @@
       "measured": 4.5,
       "error_pct": -0.006302479903277616,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Mean word length English",
+      "scientific_measurement": {
+        "delta": -0.00028361,
+        "delta_pct": 0.006302,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -213,7 +391,17 @@
       "measured": 8.0,
       "error_pct": 0.002670068252275115,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Saccade length reading",
+      "scientific_measurement": {
+        "delta": 0.00021361,
+        "delta_pct": 0.00267,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -223,7 +411,17 @@
       "measured": 225.0,
       "error_pct": -0.005295170175132726,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Mean fixation duration",
+      "scientific_measurement": {
+        "delta": -0.01191413,
+        "delta_pct": 0.005295,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -233,7 +431,17 @@
       "measured": 0.6,
       "error_pct": -0.00036899321083823844,
       "source_panel": "linguistics_formal",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Heaps exponent",
+      "scientific_measurement": {
+        "delta": -2.21e-06,
+        "delta_pct": 0.000369,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -243,7 +451,17 @@
       "measured": 0.044473,
       "error_pct": 0.0,
       "record_count": 35,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "sports biomechanics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -253,7 +471,17 @@
       "measured": 9.58,
       "error_pct": 0.044472500770376906,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "men 100m wr",
+      "scientific_measurement": {
+        "delta": 0.00426,
+        "delta_pct": 0.044468,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -263,7 +491,17 @@
       "measured": 10.49,
       "error_pct": 0.04447250077038305,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "women 100m wr",
+      "scientific_measurement": {
+        "delta": 0.004665,
+        "delta_pct": 0.044471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -273,7 +511,17 @@
       "measured": 19.19,
       "error_pct": 0.04447250077038465,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "men 200m wr",
+      "scientific_measurement": {
+        "delta": 0.008534,
+        "delta_pct": 0.044471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -283,7 +531,17 @@
       "measured": 21.34,
       "error_pct": 0.04447250077038322,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "women 200m wr",
+      "scientific_measurement": {
+        "delta": 0.00949,
+        "delta_pct": 0.04447,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -293,7 +551,17 @@
       "measured": 43.03,
       "error_pct": 0.0444725007703739,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "men 400m wr",
+      "scientific_measurement": {
+        "delta": 0.019137,
+        "delta_pct": 0.044474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -303,7 +571,17 @@
       "measured": 47.6,
       "error_pct": 0.04447250077037183,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "women 400m wr",
+      "scientific_measurement": {
+        "delta": 0.021169,
+        "delta_pct": 0.044473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -313,7 +591,17 @@
       "measured": 120.58,
       "error_pct": 0.04447250077037784,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "men marathon wr",
+      "scientific_measurement": {
+        "delta": 0.053625,
+        "delta_pct": 0.044473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -323,7 +611,17 @@
       "measured": 130.18,
       "error_pct": 0.04447250077037171,
       "source_panel": "sports_biomechanics",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "women marathon wr",
+      "scientific_measurement": {
+        "delta": 0.057894,
+        "delta_pct": 0.044472,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -333,7 +631,17 @@
       "measured": 0.008381,
       "error_pct": 0.0,
       "record_count": 29,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "acoustic resonance materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -343,7 +651,17 @@
       "measured": 0.000413,
       "error_pct": 0.05658825311283946,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Air 20C",
+      "scientific_measurement": {
+        "delta": -2.3e-07,
+        "delta_pct": 0.056588,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -353,7 +671,17 @@
       "measured": 1.48,
       "error_pct": 0.3555,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Water 20C",
+      "scientific_measurement": {
+        "delta": -0.00526119,
+        "delta_pct": 0.355486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -363,7 +691,17 @@
       "measured": 17.0,
       "error_pct": 0.3297,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Aluminum",
+      "scientific_measurement": {
+        "delta": -0.05605573,
+        "delta_pct": 0.32974,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -373,7 +711,17 @@
       "measured": 45.0,
       "error_pct": 0.0,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Steel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -383,7 +731,17 @@
       "measured": 41.6,
       "error_pct": 0.002615596508561178,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Copper",
+      "scientific_measurement": {
+        "delta": 0.00108809,
+        "delta_pct": 0.002616,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -393,7 +751,17 @@
       "measured": 27.3,
       "error_pct": 0.6395,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Titanium",
+      "scientific_measurement": {
+        "delta": 0.17459302,
+        "delta_pct": 0.639535,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -403,7 +771,17 @@
       "measured": 14.5,
       "error_pct": 0.0,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Glass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -413,7 +791,17 @@
       "measured": 49.5,
       "error_pct": 0.1955,
       "source_panel": "acoustic_resonance_materials",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Nickel",
+      "scientific_measurement": {
+        "delta": 0.09674775,
+        "delta_pct": 0.19545,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -423,7 +811,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 28,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "symbolic archetype panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -433,7 +831,17 @@
       "measured": 13.0,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -443,7 +851,17 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Metatron Pathways",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -453,7 +871,17 @@
       "measured": 0.6180339887498949,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -463,7 +891,17 @@
       "measured": 0.8652559794322651,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Persistence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -473,7 +911,17 @@
       "measured": 0.21234577623937842,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -483,7 +931,17 @@
       "measured": 1.575919846718791,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Eq Factor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -493,7 +951,17 @@
       "measured": 0.3921734915875944,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Ignition Coherence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -503,7 +971,17 @@
       "measured": 1.618033988749895,
       "error_pct": 0.0,
       "source_panel": "symbolic_archetype_panel",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "W Integration",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -513,7 +991,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 27,
-      "eval_kind": "creative_spine_bridge"
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "consciousness soul bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -523,7 +1011,17 @@
       "measured": 13.0,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -533,7 +1031,17 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Metatron Pathways",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -543,7 +1051,17 @@
       "measured": 0.6180339887498949,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -553,7 +1071,17 @@
       "measured": 0.8652559794322651,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Persistence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -563,7 +1091,17 @@
       "measured": 0.21234577623937842,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -573,7 +1111,17 @@
       "measured": 1.575919846718791,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Resonance Eq Factor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -583,7 +1131,17 @@
       "measured": 0.3921734915875944,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "Ignition Coherence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -593,7 +1151,17 @@
       "measured": 1.618033988749895,
       "error_pct": 0.0,
       "source_panel": "consciousness_soul_bridge",
-      "eval_kind": "creative_relay"
+      "eval_kind": "creative_relay",
+      "domain_display_name": "creative arts spine",
+      "display_name": "W Integration",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -602,7 +1170,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "tier61_bridge"
+      "eval_kind": "tier61_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "music harmonics public panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "creative_arts_spine_lab",
@@ -611,7 +1189,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "tier61_bridge"
+      "eval_kind": "tier61_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "xr interactive media math scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -625,5 +1213,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Creative Arts Math Spine",
+  "tier_label": "Tier 61 \u2014 Music Harmonics Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.621401+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 56,
+    "median_error_pct": 2.9e-05,
+    "max_error_pct": 4.348417,
+    "mean_abs_delta": 0.023065058035714292,
+    "precision_tier_counts": {
+      "green": 55,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9821428571428571,
+    "matches_domain_spine": false
+  }
 }

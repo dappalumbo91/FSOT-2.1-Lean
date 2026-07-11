@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 10
+      "observable_count": 10,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.193398,
       "measured": 0.0,
       "error_pct": 0.19339831498352392,
-      "observable_count": 4
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "transformation cluster",
+      "scientific_measurement": {
+        "delta": 0.193398,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 0.865256,
       "measured": 0.865256,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "W Binding",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -68,7 +98,17 @@
       "computed": 0.212346,
       "measured": 0.212346,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -77,7 +117,17 @@
       "computed": 0.381966,
       "measured": 0.381966,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "Inner coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -86,7 +136,17 @@
       "computed": 0.392173,
       "measured": 0.392173,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "Ignition Coherence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -95,7 +155,17 @@
       "computed": 0.618034,
       "measured": 0.618034,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -104,7 +174,17 @@
       "computed": 0.577216,
       "measured": 0.577216,
       "error_pct": 0.0,
-      "eval_kind": "scalar_consistency"
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "Cross coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -115,7 +195,17 @@
       "error_pct": 0.945436,
       "node_count": 3,
       "formula": "-W_Binding * Resonance_Rate * 3 * (1 - Inner_coupling / 10)",
-      "eval_kind": "archetype_precision"
+      "eval_kind": "archetype_precision",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "initiation transformation",
+      "scientific_measurement": {
+        "delta": 0.00506,
+        "delta_pct": 0.94543,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -126,7 +216,17 @@
       "error_pct": 0.193398,
       "node_count": 6,
       "formula": "-(Resonance_Persistence - Ignition_Coherence) * Metatron_Spheres / (Metatron_Spheres - 3 + Resonance_Rate * Inner_coupling / (Consciousness_Gate * 4))",
-      "eval_kind": "archetype_precision"
+      "eval_kind": "archetype_precision",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "emergence creation",
+      "scientific_measurement": {
+        "delta": -0.001183,
+        "delta_pct": 0.19336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -137,7 +237,17 @@
       "error_pct": 0.005018,
       "node_count": 1,
       "formula": "W_Binding + W_Integration / Metatron_Spheres * (5.7 + Inner_coupling / 3.3 + Cross_coupling / (2 * Consciousness_Gate))",
-      "eval_kind": "archetype_precision"
+      "eval_kind": "archetype_precision",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "restoration integration",
+      "scientific_measurement": {
+        "delta": -8.3e-05,
+        "delta_pct": 0.005039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "initiation_transformation_archetype_lab",
@@ -148,7 +258,17 @@
       "error_pct": 0.122054,
       "node_count": 1,
       "formula": null,
-      "eval_kind": "archetype_precision"
+      "eval_kind": "archetype_precision",
+      "domain_display_name": "initiation transformation archetype",
+      "display_name": "observer theophany",
+      "scientific_measurement": {
+        "delta": -0.000979,
+        "delta_pct": 0.121995,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -162,5 +282,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Initiation Transformation Archetype",
+  "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.639432+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.94543,
+    "mean_abs_delta": 0.0007305,
+    "precision_tier_counts": {
+      "green": 9,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9,
+    "matches_domain_spine": false
+  }
 }

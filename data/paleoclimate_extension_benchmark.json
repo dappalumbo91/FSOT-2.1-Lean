@@ -40,7 +40,17 @@
       "computed": 0.015016,
       "measured": 0.0,
       "error_pct": 0.015015854077432778,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.015016,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.015016,
       "measured": 0.0,
       "error_pct": 0.015015854077432778,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "paleoclimate panel",
+      "scientific_measurement": {
+        "delta": 0.015016,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 180.027029,
       "measured": 180.0,
       "error_pct": 0.015015854077439094,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "vostok co2 lgm",
+      "scientific_measurement": {
+        "delta": 0.027029,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -69,7 +99,17 @@
       "computed": 280.042044,
       "measured": 280.0,
       "error_pct": 0.015015854077436839,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "vostok co2 preindustrial",
+      "scientific_measurement": {
+        "delta": 0.042044,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -78,7 +118,17 @@
       "computed": 260.039041,
       "measured": 260.0,
       "error_pct": 0.015015854077441522,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "epica dome c co2 holocene",
+      "scientific_measurement": {
+        "delta": 0.039041,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -87,7 +137,17 @@
       "computed": 1.500225,
       "measured": 1.5,
       "error_pct": 0.015015854077438107,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "eemian temp anomaly",
+      "scientific_measurement": {
+        "delta": 0.000225,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -96,7 +156,17 @@
       "computed": -5.000751,
       "measured": -5.0,
       "error_pct": 0.015015854077446988,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "lgm temp anomaly",
+      "scientific_measurement": {
+        "delta": -0.000751,
+        "delta_pct": 0.01502,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -105,7 +175,17 @@
       "computed": 0.500075,
       "measured": 0.5,
       "error_pct": 0.015015854077438107,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "holocene optimum anomaly",
+      "scientific_measurement": {
+        "delta": 7.5e-05,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -114,7 +194,17 @@
       "computed": -3.00045,
       "measured": -3.0,
       "error_pct": 0.015015854077438107,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "younger dryas anomaly",
+      "scientific_measurement": {
+        "delta": -0.00045,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -123,7 +213,17 @@
       "computed": 1000.150159,
       "measured": 1000.0,
       "error_pct": 0.015015854077432778,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "petm co2 spike",
+      "scientific_measurement": {
+        "delta": 0.150159,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -132,7 +232,17 @@
       "computed": 5.000751,
       "measured": 5.0,
       "error_pct": 0.015015854077446988,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "petm temp spike",
+      "scientific_measurement": {
+        "delta": 0.000751,
+        "delta_pct": 0.01502,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -141,7 +251,17 @@
       "computed": 0.300045,
       "measured": 0.3,
       "error_pct": 0.015015854077445509,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "mwp temp anomaly",
+      "scientific_measurement": {
+        "delta": 4.5e-05,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -150,7 +270,17 @@
       "computed": -0.500075,
       "measured": -0.5,
       "error_pct": 0.015015854077438107,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "littl age anomaly",
+      "scientific_measurement": {
+        "delta": -7.5e-05,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -159,7 +289,17 @@
       "computed": -35.005256,
       "measured": -35.0,
       "error_pct": 0.015015854077436839,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "greenland ice core d18o",
+      "scientific_measurement": {
+        "delta": -0.005256,
+        "delta_pct": 0.015017,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -168,7 +308,17 @@
       "computed": -40.006006,
       "measured": -40.0,
       "error_pct": 0.015015854077446988,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "antarctic ice core d18o",
+      "scientific_measurement": {
+        "delta": -0.006006,
+        "delta_pct": 0.015015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -177,7 +327,17 @@
       "computed": -120.018019,
       "measured": -120.0,
       "error_pct": 0.015015854077435147,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "sea level lgm",
+      "scientific_measurement": {
+        "delta": -0.018019,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -186,7 +346,17 @@
       "computed": 6.000901,
       "measured": 6.0,
       "error_pct": 0.015015854077438107,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "sea level eemian",
+      "scientific_measurement": {
+        "delta": 0.000901,
+        "delta_pct": 0.015017,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -195,7 +365,17 @@
       "computed": 350.052555,
       "measured": 350.0,
       "error_pct": 0.015015854077432778,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "methane lgm ppb",
+      "scientific_measurement": {
+        "delta": 0.052555,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -204,7 +384,17 @@
       "computed": 700.105111,
       "measured": 700.0,
       "error_pct": 0.015015854077432778,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "methane preindustrial ppb",
+      "scientific_measurement": {
+        "delta": 0.105111,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -213,7 +403,17 @@
       "computed": 25.003754,
       "measured": 25.0,
       "error_pct": 0.015015854077432778,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "dust lgm factor",
+      "scientific_measurement": {
+        "delta": 0.003754,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -222,7 +422,17 @@
       "computed": -2.500375,
       "measured": -2.5,
       "error_pct": 0.015015854077446988,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "ocean sst lgm anomaly",
+      "scientific_measurement": {
+        "delta": -0.000375,
+        "delta_pct": 0.015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_lab",
@@ -231,7 +441,17 @@
       "computed": 450.067571,
       "measured": 450.0,
       "error_pct": 0.015015854077432778,
-      "source": "paleoclimate_reference_observables"
+      "source": "paleoclimate_reference_observables",
+      "domain_display_name": "paleoclimate",
+      "display_name": "orbital forcing insolation",
+      "scientific_measurement": {
+        "delta": 0.067571,
+        "delta_pct": 0.015016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -243,7 +463,15 @@
       "computed_freezing": 1.0,
       "measured_freezing": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-01",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -255,7 +483,15 @@
       "computed_freezing": 1.0,
       "measured_freezing": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-02",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -267,7 +503,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-03",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -279,7 +523,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-04",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -291,7 +543,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-05",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -303,7 +563,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-06",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -315,7 +583,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-07",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -327,7 +603,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-08",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -339,7 +623,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-09",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -351,7 +643,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-10",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -363,7 +663,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-11",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -375,7 +683,15 @@
       "computed_freezing": 1.0,
       "measured_freezing": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1975-12",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -387,7 +703,15 @@
       "computed_freezing": 1.0,
       "measured_freezing": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-01",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -399,7 +723,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-02",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -411,7 +743,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-03",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -423,7 +763,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-04",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -435,7 +783,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-05",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -447,7 +803,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-06",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -459,7 +823,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-07",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cryosphere_lab",
@@ -471,7 +843,15 @@
       "computed_freezing": 0.0,
       "measured_freezing": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "domain_display_name": "cryosphere",
+      "display_name": "USC00053005:1976-08",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -485,5 +865,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Paleoclimate",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.888181+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 40,
+    "median_error_pct": 0.015,
+    "max_error_pct": 0.01502,
+    "mean_abs_delta": 0.026009650000000002,
+    "precision_tier_counts": {
+      "green": 40
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

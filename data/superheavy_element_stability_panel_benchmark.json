@@ -40,7 +40,17 @@
       "computed": 1e-06,
       "measured": 0.0,
       "error_pct": 1e-06,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 1e-06,
       "measured": 0.0,
       "error_pct": 9.504134368398809e-07,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "island of stability",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 941.3036566521167,
       "measured": 938.272,
       "error_pct": 0.323111,
-      "eval_kind": "particle_relay"
+      "eval_kind": "particle_relay",
+      "domain_display_name": "superheavy stability",
+      "display_name": "proton",
+      "scientific_measurement": {
+        "delta": 3.03165665,
+        "delta_pct": 0.323111,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -69,7 +99,17 @@
       "computed": 941.3036566521167,
       "measured": 939.565,
       "error_pct": 0.185049,
-      "eval_kind": "particle_relay"
+      "eval_kind": "particle_relay",
+      "domain_display_name": "superheavy stability",
+      "display_name": "neutron",
+      "scientific_measurement": {
+        "delta": 1.73865665,
+        "delta_pct": 0.185049,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -79,7 +119,17 @@
       "computed": 8100.000076983489,
       "measured": 8100.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7.698e-05,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -89,7 +139,17 @@
       "computed": 7.154309,
       "measured": 7.154302,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -100,7 +160,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 31,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -110,7 +180,17 @@
       "computed": 86400.00082115721,
       "measured": 86400.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Db",
+      "scientific_measurement": {
+        "delta": 0.00082116,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -120,7 +200,17 @@
       "computed": 7.142885,
       "measured": 7.142878,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Db",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -131,7 +221,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 30,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Db",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -141,7 +241,17 @@
       "computed": 120.00000114049612,
       "measured": 120.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Sg",
+      "scientific_measurement": {
+        "delta": 1.14e-06,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -151,7 +261,17 @@
       "computed": 7.118322,
       "measured": 7.118315,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Sg",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -162,7 +282,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 27,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Sg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -172,7 +302,17 @@
       "computed": 61.0000005797522,
       "measured": 61.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Bh",
+      "scientific_measurement": {
+        "delta": 5.8e-07,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -182,7 +322,17 @@
       "computed": 7.110138,
       "measured": 7.110131,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Bh",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -193,7 +343,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 28,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Bh",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -203,7 +363,17 @@
       "computed": 9.00000008553721,
       "measured": 9.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Hs",
+      "scientific_measurement": {
+        "delta": 9e-08,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -213,7 +383,17 @@
       "computed": 7.07483,
       "measured": 7.074823,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Hs",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -224,7 +404,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 21,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Hs",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -234,7 +424,17 @@
       "computed": 4.0000000380165375,
       "measured": 4.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mt",
+      "scientific_measurement": {
+        "delta": 4e-08,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -244,7 +444,17 @@
       "computed": 7.062001,
       "measured": 7.061994,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mt",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -255,7 +465,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 20,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mt",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -265,7 +485,17 @@
       "computed": 11.000000104545478,
       "measured": 11.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ds",
+      "scientific_measurement": {
+        "delta": 1e-07,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -275,7 +505,17 @@
       "computed": 7.03781,
       "measured": 7.037803,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ds",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -286,7 +526,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 17,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ds",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -296,7 +546,17 @@
       "computed": 100.00000095041344,
       "measured": 100.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rg",
+      "scientific_measurement": {
+        "delta": 9.5e-07,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -306,7 +566,17 @@
       "computed": 7.023637,
       "measured": 7.023631,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rg",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -317,7 +587,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 16,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -327,7 +607,17 @@
       "computed": 29.000000275619897,
       "measured": 29.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Cn",
+      "scientific_measurement": {
+        "delta": 2.8e-07,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -337,7 +627,17 @@
       "computed": 6.99963,
       "measured": 6.999623,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Cn",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.0001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -348,7 +648,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 13,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Cn",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -358,7 +668,17 @@
       "computed": 2000.0000190082687,
       "measured": 2000.0,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Nh",
+      "scientific_measurement": {
+        "delta": 1.901e-05,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -368,7 +688,17 @@
       "computed": 6.98418,
       "measured": 6.984173,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Nh",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.0001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -379,7 +709,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 12,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Nh",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -389,7 +729,17 @@
       "computed": 1.5000000142562016,
       "measured": 1.5,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Fl",
+      "scientific_measurement": {
+        "delta": 1e-08,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -399,7 +749,17 @@
       "computed": 6.960365,
       "measured": 6.960359,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Fl",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -410,7 +770,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 9,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Fl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -420,7 +790,17 @@
       "computed": 0.6500000061776874,
       "measured": 0.65,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mc",
+      "scientific_measurement": {
+        "delta": 1e-08,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -430,7 +810,17 @@
       "computed": 6.9437,
       "measured": 6.943694,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mc",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -441,7 +831,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 10,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Mc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -451,7 +851,17 @@
       "computed": 0.05300000050371912,
       "measured": 0.053,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Lv",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -461,7 +871,17 @@
       "computed": 6.920086,
       "measured": 6.92008,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Lv",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -472,7 +892,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 9,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Lv",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -482,7 +912,17 @@
       "computed": 0.05100000048471085,
       "measured": 0.051,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -492,7 +932,17 @@
       "computed": 6.902265,
       "measured": 6.902259,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ts",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -503,7 +953,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 10,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Ts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -513,7 +973,17 @@
       "computed": 0.000700000006652894,
       "measured": 0.0007,
       "error_pct": 1e-06,
-      "eval_kind": "half_life_anchor"
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Og",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -523,7 +993,17 @@
       "computed": 6.880145,
       "measured": 6.880138,
       "error_pct": 9.5e-05,
-      "eval_kind": "liquid_drop_proxy"
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Og",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.000102,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -534,7 +1014,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 12,
-      "eval_kind": "stability_gate"
+      "eval_kind": "stability_gate",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Og",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -544,7 +1034,17 @@
       "computed": 3600.0000003421487,
       "measured": 3600.0,
       "error_pct": 0.0,
-      "eval_kind": "island_anchor"
+      "eval_kind": "island_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Fl-298 island proxy",
+      "scientific_measurement": {
+        "delta": 3.4e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -554,7 +1054,17 @@
       "computed": 1000000.0000950414,
       "measured": 1000000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_anchor"
+      "eval_kind": "island_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Unbinilium island candidate",
+      "scientific_measurement": {
+        "delta": 9.504e-05,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "superheavy_stability_lab",
@@ -564,7 +1074,17 @@
       "computed": 1000000000.0950413,
       "measured": 1000000000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_anchor"
+      "eval_kind": "island_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Unbihexium magic shell",
+      "scientific_measurement": {
+        "delta": 0.09504128,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -578,5 +1098,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Superheavy Element Stability Panel",
+  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.663344+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 50,
+    "median_error_pct": 1e-06,
+    "max_error_pct": 0.323111,
+    "mean_abs_delta": 0.09732940620000002,
+    "precision_tier_counts": {
+      "green": 50
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

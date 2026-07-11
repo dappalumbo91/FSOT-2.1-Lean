@@ -21,7 +21,18 @@
       "computed": 1.0,
       "error_pct": 0.0,
       "unit": "dimensionless",
-      "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)"
+      "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Zipf exponent English",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -31,7 +42,18 @@
       "computed": 2.40001358369048,
       "error_pct": 0.0005659871035364658,
       "unit": "words",
-      "formula": "FSOT: phi*(e/pi)+1"
+      "formula": "FSOT: phi*(e/pi)+1",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Mean dependency length EN",
+      "scientific_measurement": {
+        "delta": 0.10001358,
+        "delta_pct": 4.348417,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "words"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -41,7 +63,18 @@
       "computed": 30.9995813680981,
       "error_pct": -0.0013504254899468224,
       "unit": "phonemes",
-      "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)"
+      "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Mean phoneme inventory size",
+      "scientific_measurement": {
+        "delta": -0.00041863,
+        "delta_pct": 0.00135,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "phonemes"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -51,7 +84,18 @@
       "computed": 4.18002506099209,
       "error_pct": 0.0005995452654275573,
       "unit": "bits/letter",
-      "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)"
+      "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Letter entropy English",
+      "scientific_measurement": {
+        "delta": 2.506e-05,
+        "delta_pct": 0.0006,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "bits/letter"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -61,7 +105,18 @@
       "computed": 4.49971638840435,
       "error_pct": -0.006302479903277616,
       "unit": "characters",
-      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))"
+      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Mean word length English",
+      "scientific_measurement": {
+        "delta": -0.00028361,
+        "delta_pct": 0.006302,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "characters"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -71,7 +126,18 @@
       "computed": 8.00021360546018,
       "error_pct": 0.002670068252275115,
       "unit": "characters",
-      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)"
+      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Saccade length reading",
+      "scientific_measurement": {
+        "delta": 0.00021361,
+        "delta_pct": 0.00267,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "characters"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -81,7 +147,18 @@
       "computed": 224.988085867106,
       "error_pct": -0.005295170175132726,
       "unit": "ms",
-      "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)"
+      "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Mean fixation duration",
+      "scientific_measurement": {
+        "delta": -0.01191413,
+        "delta_pct": 0.005295,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "ms"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -91,7 +168,18 @@
       "computed": 0.599997786040735,
       "error_pct": -0.00036899321083823844,
       "unit": "dimensionless",
-      "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)"
+      "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Heaps exponent",
+      "scientific_measurement": {
+        "delta": -2.21e-06,
+        "delta_pct": 0.000369,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -101,7 +189,18 @@
       "computed": 39.1495279442755,
       "error_pct": -0.001205761748405669,
       "unit": "bits/s",
-      "formula": "FSOT: (phi^3)*(phi^7)/pi"
+      "formula": "FSOT: (phi^3)*(phi^7)/pi",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Cross linguistic info rate",
+      "scientific_measurement": {
+        "delta": -0.00047206,
+        "delta_pct": 0.001206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "bits/s"
+      }
     },
     {
       "lab": "linguistics_formal_lab",
@@ -111,7 +210,32 @@
       "computed": 16.9995632588799,
       "error_pct": -0.0025690654122958196,
       "unit": "words",
-      "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)"
+      "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)",
+      "domain_display_name": "linguistics formal",
+      "display_name": "Sentence length mean EN",
+      "scientific_measurement": {
+        "delta": -0.00043674,
+        "delta_pct": 0.002569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "words"
+      }
     }
-  ]
+  ],
+  "display_name": "Linguistics Formal",
+  "tier_label": "Tier 29",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.618430+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.002569,
+    "max_error_pct": 4.348417,
+    "mean_abs_delta": 0.011377963000000001,
+    "precision_tier_counts": {
+      "green": 10
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

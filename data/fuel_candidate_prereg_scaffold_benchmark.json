@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 33
+      "observable_count": 33,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fuel candidate screening prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "formula_branch": "term3.chaos_factor",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "LHV screening tolerance",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -70,7 +100,17 @@
       "measured": 3.0,
       "error_pct": 0.0,
       "formula_branch": "term3.chaos_factor",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "Fuel density tolerance",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -80,7 +120,17 @@
       "measured": 10.0,
       "error_pct": 0.0,
       "formula_branch": "term3.chaos_factor",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "Flash point safety margin (\u00b0C)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -90,7 +140,17 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "formula_branch": "term3.chaos_factor",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "\u0394Hf relay tolerance",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -99,7 +159,17 @@
       "computed": 0.786975,
       "measured": 0.786975,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "fsot Thermodynamics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -109,7 +179,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 31,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "published fuel property",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -119,7 +199,17 @@
       "measured": 120.0,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -129,7 +219,17 @@
       "measured": 0.0899,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -139,7 +239,17 @@
       "measured": 2.016,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -149,7 +259,17 @@
       "measured": 50.0,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -159,7 +279,17 @@
       "measured": 0.668,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -169,7 +299,17 @@
       "measured": 16.043,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -179,7 +319,17 @@
       "measured": 26.8,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -189,7 +339,17 @@
       "measured": 789.0,
       "error_pct": 0.0,
       "source_panel": "published_fuel_property",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -199,7 +359,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 14,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "fuel thermochemistry public anchors",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -209,7 +379,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -219,7 +399,17 @@
       "measured": 120.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -229,7 +419,17 @@
       "measured": -74.6,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -239,7 +439,17 @@
       "measured": 50.0,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methane",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -249,7 +459,17 @@
       "measured": -234.8,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -259,7 +479,17 @@
       "measured": 26.8,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "ethanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -269,7 +499,17 @@
       "measured": -200.7,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -279,7 +519,17 @@
       "measured": 19.9,
       "error_pct": 0.0,
       "source_panel": "fuel_thermochemistry_public_anchors",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "methanol",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -289,7 +539,17 @@
       "measured": 0.002271,
       "error_pct": 0.0,
       "record_count": 79,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "material property verification scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -299,7 +559,17 @@
       "measured": 0.02717,
       "error_pct": 0.0,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -309,7 +579,18 @@
       "measured": 16.0,
       "error_pct": 0.0,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -319,7 +600,18 @@
       "measured": 45.0,
       "error_pct": 0.003058674149640537,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0013764,
+        "delta_pct": 0.003059,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -329,7 +621,18 @@
       "measured": 70.0,
       "error_pct": 0.292559,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.2047916,
+        "delta_pct": 0.292559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -339,7 +642,18 @@
       "measured": 78.0,
       "error_pct": 0.019243,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.01500956,
+        "delta_pct": 0.019243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -349,7 +663,18 @@
       "measured": 83.0,
       "error_pct": 0.004444475186494538,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.00368891,
+        "delta_pct": 0.004444,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -359,7 +684,18 @@
       "measured": 130.0,
       "error_pct": 0.360682,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -369,7 +705,18 @@
       "measured": 130.0,
       "error_pct": 0.360682,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fuel_candidate_screening_prereg_scaffold_lab",
@@ -379,7 +726,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "proprietary_gate_anchor",
-      "gate": "preregistered_predictions_manifest.yaml"
+      "gate": "preregistered_predictions_manifest.yaml",
+      "domain_display_name": "fuel candidate screening prereg scaffold",
+      "display_name": "fuel candidate screening prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -393,5 +750,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fuel Candidate Prereg Scaffold",
+  "tier_label": "Tier 65 \u2014 Material In Silico Screening Scaffold cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.633284+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 33,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.360682,
+    "mean_abs_delta": 0.03523154090909091,
+    "precision_tier_counts": {
+      "green": 33
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

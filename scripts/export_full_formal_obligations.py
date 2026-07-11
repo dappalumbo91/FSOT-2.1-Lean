@@ -18,6 +18,7 @@ from cross_proof_lib import (  # noqa: E402
     make_unique_coq_ids,
     parse_formal_module,
 )
+from fsot_label_registry_lib import annotate_obligation  # noqa: E402
 
 OUT = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 PRIORS_OUT = ROOT / "verification" / "obligations" / "full_priors_spine.json"
@@ -82,6 +83,7 @@ def _export_sources() -> tuple[list[dict], dict]:
 
 def main() -> int:
     obligations, meta = _export_sources()
+    obligations = [annotate_obligation(ob) for ob in obligations]
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "version": "2.0",

@@ -20,70 +20,185 @@
       "property": "document_count",
       "computed": 61,
       "measured": 61,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "document count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "rule_count",
       "computed": 1520,
       "measured": 1520,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "rule count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "formula_candidate_count",
       "computed": 2281,
       "measured": 2281,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "formula candidate count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "current_corpus_rows",
       "computed": 1444,
       "measured": 1444,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "current corpus rows",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "current_corpus_formula_token_index",
       "computed": 1413,
       "measured": 1413,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "current corpus formula token index",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "validator_unique_formulas_scanned",
       "computed": 1375,
       "measured": 1375,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "validator unique formulas scanned",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "validator_family_count",
       "computed": 11,
       "measured": 11,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "validator family count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "gauntlet_scenario_count",
       "computed": 17,
       "measured": 17,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "gauntlet scenario count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "gauntlet_hit_count",
       "computed": 15,
       "measured": 15,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "gauntlet hit count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_corpus_cnc",
       "property": "gauntlet_pass_rate_pct",
       "computed": 88.23529411764706,
       "measured": 100.0,
-      "error_pct": 11.764705882352942
+      "error_pct": 11.764705882352942,
+      "domain_display_name": "formula corpus cnc",
+      "display_name": "gauntlet pass rate pct",
+      "scientific_measurement": {
+        "delta": -11.76470588,
+        "delta_pct": 11.764706,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
-  ]
+  ],
+  "display_name": "Formula Corpus CNC",
+  "tier_label": "Tier 34",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.793287+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 11.764706,
+    "mean_abs_delta": 1.176470588,
+    "precision_tier_counts": {
+      "green": 9,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9,
+    "matches_domain_spine": false
+  }
 }

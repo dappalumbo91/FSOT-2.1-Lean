@@ -19,56 +19,150 @@
       "property": "promotion_threshold_percent",
       "computed": 2.0,
       "measured": 2.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "promotion threshold percent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "max_tool_iterations",
       "computed": 10.0,
       "measured": 10,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "max tool iterations",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "max_rag_results",
       "computed": 8.0,
       "measured": 8,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "max rag results",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "configured_path_count",
       "computed": 9,
       "measured": 9,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "configured path count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "protocol_version_match",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "protocol version match",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "requires_lean_bridge",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "requires lean bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "no_probabilistic_math",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "no probabilistic math",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_qwen",
       "property": "certification_requires_compiler_verified",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "certified agent qwen",
+      "display_name": "certification requires compiler verified",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Certified Agent Qwen",
+  "tier_label": "Tier 35",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.795304+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 8,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 8
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

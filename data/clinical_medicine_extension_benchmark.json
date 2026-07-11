@@ -39,7 +39,17 @@
       "computed": 0.002458,
       "measured": 0.0,
       "error_pct": 0.002458296751538192,
-      "observable_count": 260
+      "observable_count": 260,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002458,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.002458,
       "measured": 0.0,
       "error_pct": 0.002458296751538192,
-      "observable_count": 260
+      "observable_count": 260,
+      "domain_display_name": "tier gap fill",
+      "display_name": "clinical medicine panel",
+      "scientific_measurement": {
+        "delta": 0.002458,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 5.002297,
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "caffeine",
+      "scientific_measurement": {
+        "delta": 0.002297,
+        "delta_pct": 0.04594,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -68,7 +98,17 @@
       "computed": 0.990455,
       "measured": 0.99,
       "error_pct": 0.045933184407972866,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "caffeine",
+      "scientific_measurement": {
+        "delta": 0.000455,
+        "delta_pct": 0.04596,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -77,7 +117,17 @@
       "computed": 2.501148,
       "measured": 2.5,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "acetaminophen",
+      "scientific_measurement": {
+        "delta": 0.001148,
+        "delta_pct": 0.04592,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -86,7 +136,17 @@
       "computed": 0.880404,
       "measured": 0.88,
       "error_pct": 0.04593318440797427,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "acetaminophen",
+      "scientific_measurement": {
+        "delta": 0.000404,
+        "delta_pct": 0.045909,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -95,7 +155,17 @@
       "computed": 2.100965,
       "measured": 2.1,
       "error_pct": 0.04593318440797895,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "ibuprofen",
+      "scientific_measurement": {
+        "delta": 0.000965,
+        "delta_pct": 0.045952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -104,7 +174,17 @@
       "computed": 0.800367,
       "measured": 0.8,
       "error_pct": 0.045933184407973005,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "ibuprofen",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.045875,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -113,7 +193,17 @@
       "computed": 2.000919,
       "measured": 2.0,
       "error_pct": 0.04593318440797578,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "morphine",
+      "scientific_measurement": {
+        "delta": 0.000919,
+        "delta_pct": 0.04595,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -122,7 +212,17 @@
       "computed": 0.250115,
       "measured": 0.25,
       "error_pct": 0.04593318440797578,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "morphine",
+      "scientific_measurement": {
+        "delta": 0.000115,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -131,7 +231,17 @@
       "computed": 40.018373,
       "measured": 40.0,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "warfarin",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.045932,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -140,7 +250,17 @@
       "computed": 0.930427,
       "measured": 0.93,
       "error_pct": 0.045933184407977924,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "warfarin",
+      "scientific_measurement": {
+        "delta": 0.000427,
+        "delta_pct": 0.045914,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -149,7 +269,17 @@
       "computed": 36.016536,
       "measured": 36.0,
       "error_pct": 0.04593318440798318,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "digoxin",
+      "scientific_measurement": {
+        "delta": 0.016536,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -158,7 +288,17 @@
       "computed": 0.700322,
       "measured": 0.7,
       "error_pct": 0.04593318440797896,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "digoxin",
+      "scientific_measurement": {
+        "delta": 0.000322,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -167,7 +307,17 @@
       "computed": 6.202848,
       "measured": 6.2,
       "error_pct": 0.04593318440797076,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "metformin",
+      "scientific_measurement": {
+        "delta": 0.002848,
+        "delta_pct": 0.045935,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -176,7 +326,17 @@
       "computed": 0.550253,
       "measured": 0.55,
       "error_pct": 0.04593318440798183,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "metformin",
+      "scientific_measurement": {
+        "delta": 0.000253,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -185,7 +345,17 @@
       "computed": 1.300597,
       "measured": 1.3,
       "error_pct": 0.04593318440797407,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "amoxicillin",
+      "scientific_measurement": {
+        "delta": 0.000597,
+        "delta_pct": 0.045923,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -194,7 +364,17 @@
       "computed": 0.74034,
       "measured": 0.74,
       "error_pct": 0.04593318440797938,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "amoxicillin",
+      "scientific_measurement": {
+        "delta": 0.00034,
+        "delta_pct": 0.045946,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -206,7 +386,17 @@
       "measured": 383.41,
       "error_pct": 0.0005216348034914043,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "PRAZOSIN",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000522,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -218,7 +408,17 @@
       "measured": 162.24,
       "error_pct": 0.0024654832347257762,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NICOTINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -230,7 +430,17 @@
       "measured": 361.37,
       "error_pct": 0.0008301740598082463,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "OFLOXACIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00083,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -242,7 +452,17 @@
       "measured": 232.24,
       "error_pct": 0.00043058904580449235,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NALIDIXIC ACID",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000431,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -254,7 +474,17 @@
       "measured": 357.79,
       "error_pct": 1.5887369367731912e-14,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "INDOMETHACIN",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -266,7 +496,17 @@
       "measured": 233.24,
       "error_pct": 0.0008574858514875448,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "SULBACTAM",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000857,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -278,7 +518,17 @@
       "measured": 300.3,
       "error_pct": 0.0036630036630116887,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "TAZOBACTAM",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.003663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -290,7 +540,17 @@
       "measured": 331.35,
       "error_pct": 0.0009053870529780433,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "CIPROFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -302,7 +562,17 @@
       "measured": 319.34,
       "error_pct": 0.0012525834533607617,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NORFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001253,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -314,7 +584,17 @@
       "measured": 135.21,
       "error_pct": 2.1020419666004e-14,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "AMPHETAMINE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -326,7 +606,17 @@
       "measured": 236.14,
       "error_pct": 0.001693910392136308,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "ISOSORBIDE DINITRATE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001694,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -338,7 +628,17 @@
       "measured": 264.37,
       "error_pct": 0.0007565154896367615,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "MIANSERIN",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -350,7 +650,17 @@
       "measured": 280.42,
       "error_pct": 0.001783039726143747,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "IMIPRAMINE",
+      "scientific_measurement": {
+        "delta": -0.005,
+        "delta_pct": 0.001783,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -362,7 +672,17 @@
       "measured": 365.84,
       "error_pct": 0.002186748305264967,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "INDAPAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.002187,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -374,7 +694,17 @@
       "measured": 303.29,
       "error_pct": 0.0009891522964772669,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "FLUMAZENIL",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.000989,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -386,7 +716,17 @@
       "measured": 441.55,
       "error_pct": 0.0018117993432185155,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "TROGLITAZONE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.001812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -398,7 +738,17 @@
       "measured": 430.38,
       "error_pct": 0.001858822435995678,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "BICALUTAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.001859,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -410,7 +760,17 @@
       "measured": 284.75,
       "error_pct": 0.002458296751538192,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "DIAZEPAM",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.002458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -422,7 +782,17 @@
       "measured": 267.37,
       "error_pct": 0.00037401353930253825,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "METOPROLOL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000374,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -434,7 +804,17 @@
       "measured": 268.36,
       "error_pct": 0.0014905351021087714,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "DIETHYLSTILBESTROL",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001491,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -446,7 +826,17 @@
       "measured": 167.3,
       "error_pct": 0.002390914524817154,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "MECAMYLAMINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002391,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -458,7 +848,17 @@
       "measured": 182.65,
       "error_pct": 0.0010949904188390636,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "CARBACHOL",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.001095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -470,7 +870,17 @@
       "measured": 252.27,
       "error_pct": 0.00118920204542193,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "PHENYTOIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001189,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -482,7 +892,17 @@
       "measured": 914.19,
       "error_pct": 0.0003281593541995026,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "SIROLIMUS",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000328,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -494,7 +914,17 @@
       "measured": 804.03,
       "error_pct": 0.0001243734686487262,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "TACROLIMUS ANHYDROUS",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000124,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -506,7 +936,17 @@
       "measured": 314.86,
       "error_pct": 0.0009528044210260898,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "CLOMIPRAMINE",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000953,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -518,7 +958,17 @@
       "measured": 216.19,
       "error_pct": 0.0009251121698550117,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "METHOXSALEN",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -530,7 +980,17 @@
       "measured": 305.16,
       "error_pct": 0.00524315113383784,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "DICHLORPHENAMIDE",
+      "scientific_measurement": {
+        "delta": -0.016,
+        "delta_pct": 0.005243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -542,7 +1002,17 @@
       "measured": 258.32,
       "error_pct": 0.0038711675441277897,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "ETHOXZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.003871,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -554,7 +1024,17 @@
       "measured": 543.53,
       "error_pct": 0.0009199124243363666,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "EPIRUBICIN",
+      "scientific_measurement": {
+        "delta": -0.005,
+        "delta_pct": 0.00092,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -566,7 +1046,17 @@
       "measured": 236.28,
       "error_pct": 0.0067716268833549744,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "METHAZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.016,
+        "delta_pct": 0.006772,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -578,7 +1068,17 @@
       "measured": 222.25,
       "error_pct": 0.0058492688413843905,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "ACETAZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.013,
+        "delta_pct": 0.005849,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -590,7 +1090,17 @@
       "measured": 186.24,
       "error_pct": 0.005906357388329092,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "MAFENIDE",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.005906,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -602,7 +1112,17 @@
       "measured": 172.21,
       "error_pct": 0.004645490970332604,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "SULFANILAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.004645,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -614,7 +1134,17 @@
       "measured": 231.09,
       "error_pct": 0.004327318360820168,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "GUANABENZ",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.004327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -626,7 +1156,17 @@
       "measured": 290.32,
       "error_pct": 0.0010333425185953097,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "TRIMETHOPRIM",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001033,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -638,7 +1178,17 @@
       "measured": 454.61,
       "error_pct": 0.0002199687644302486,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "VERAPAMIL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.00022,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -650,7 +1200,17 @@
       "measured": 398.4,
       "error_pct": 0.0017570281124510549,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "SULFASALAZINE",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.001757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -662,7 +1222,17 @@
       "measured": 146.14,
       "error_pct": 0.0034213767620059213,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "COUMARIN",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003421,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -674,7 +1244,17 @@
       "measured": 414.53,
       "error_pct": 0.00241237063663613,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "DILTIAZEM",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.002412,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -687,7 +1267,17 @@
       "error_pct": 0.0005216348034914043,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PRAZOSIN",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000522,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -700,7 +1290,17 @@
       "error_pct": 0.0024654832347257762,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "NICOTINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -713,7 +1313,17 @@
       "error_pct": 0.0008301740598082463,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "OFLOXACIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00083,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -726,7 +1336,17 @@
       "error_pct": 0.00043058904580449235,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "NALIDIXIC ACID",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000431,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -739,7 +1359,17 @@
       "error_pct": 1.5887369367731912e-14,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "INDOMETHACIN",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -752,7 +1382,17 @@
       "error_pct": 0.0008574858514875448,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULBACTAM",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000857,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -765,7 +1405,17 @@
       "error_pct": 0.0036630036630116887,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TAZOBACTAM",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.003663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -778,7 +1428,17 @@
       "error_pct": 0.0009053870529780433,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CIPROFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -791,7 +1451,17 @@
       "error_pct": 0.0012525834533607617,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "NORFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001253,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -804,7 +1474,17 @@
       "error_pct": 2.1020419666004e-14,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "AMPHETAMINE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -817,7 +1497,17 @@
       "error_pct": 0.001693910392136308,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ISOSORBIDE DINITRATE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001694,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -830,7 +1520,17 @@
       "error_pct": 0.0007565154896367615,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MIANSERIN",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -843,7 +1543,17 @@
       "error_pct": 0.001783039726143747,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "IMIPRAMINE",
+      "scientific_measurement": {
+        "delta": -0.005,
+        "delta_pct": 0.001783,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -856,7 +1566,17 @@
       "error_pct": 0.002186748305264967,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "INDAPAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.002187,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -869,7 +1589,17 @@
       "error_pct": 0.0009891522964772669,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "FLUMAZENIL",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.000989,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -882,7 +1612,17 @@
       "error_pct": 0.0018117993432185155,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TROGLITAZONE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.001812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -895,7 +1635,17 @@
       "error_pct": 0.001858822435995678,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BICALUTAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.001859,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -908,7 +1658,17 @@
       "error_pct": 0.002458296751538192,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DIAZEPAM",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.002458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -921,7 +1681,17 @@
       "error_pct": 0.00037401353930253825,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METOPROLOL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000374,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -934,7 +1704,17 @@
       "error_pct": 0.0014905351021087714,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DIETHYLSTILBESTROL",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001491,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -947,7 +1727,17 @@
       "error_pct": 0.002390914524817154,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MECAMYLAMINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002391,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -960,7 +1750,17 @@
       "error_pct": 0.0010949904188390636,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CARBACHOL",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.001095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -973,7 +1773,17 @@
       "error_pct": 0.00118920204542193,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PHENYTOIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001189,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -986,7 +1796,17 @@
       "error_pct": 0.0003281593541995026,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SIROLIMUS",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000328,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -999,7 +1819,17 @@
       "error_pct": 0.0001243734686487262,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TACROLIMUS ANHYDROUS",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000124,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1012,7 +1842,17 @@
       "error_pct": 0.0009528044210260898,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CLOMIPRAMINE",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000953,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1025,7 +1865,17 @@
       "error_pct": 0.0009251121698550117,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METHOXSALEN",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1038,7 +1888,17 @@
       "error_pct": 0.00524315113383784,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DICHLORPHENAMIDE",
+      "scientific_measurement": {
+        "delta": -0.016,
+        "delta_pct": 0.005243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1051,7 +1911,17 @@
       "error_pct": 0.0038711675441277897,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ETHOXZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.003871,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1064,7 +1934,17 @@
       "error_pct": 0.0009199124243363666,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "EPIRUBICIN",
+      "scientific_measurement": {
+        "delta": -0.005,
+        "delta_pct": 0.00092,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1077,7 +1957,17 @@
       "error_pct": 0.0067716268833549744,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METHAZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.016,
+        "delta_pct": 0.006772,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1090,7 +1980,17 @@
       "error_pct": 0.0058492688413843905,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ACETAZOLAMIDE",
+      "scientific_measurement": {
+        "delta": -0.013,
+        "delta_pct": 0.005849,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1103,7 +2003,17 @@
       "error_pct": 0.005906357388329092,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MAFENIDE",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.005906,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1116,7 +2026,17 @@
       "error_pct": 0.004645490970332604,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFANILAMIDE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.004645,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1129,7 +2049,17 @@
       "error_pct": 0.004327318360820168,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "GUANABENZ",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.004327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1142,7 +2072,17 @@
       "error_pct": 0.0010333425185953097,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TRIMETHOPRIM",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001033,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1155,7 +2095,17 @@
       "error_pct": 0.0002199687644302486,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "VERAPAMIL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.00022,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1168,7 +2118,17 @@
       "error_pct": 0.0017570281124510549,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFASALAZINE",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.001757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1181,7 +2141,17 @@
       "error_pct": 0.0034213767620059213,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "COUMARIN",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003421,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1194,7 +2164,17 @@
       "error_pct": 0.00241237063663613,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DILTIAZEM",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.002412,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1207,7 +2187,17 @@
       "error_pct": 0.0003754599384370341,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ATENOLOL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1220,7 +2210,17 @@
       "error_pct": 0.0005550621669653501,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ASPIRIN",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1233,7 +2233,17 @@
       "error_pct": 0.0029447130131637534,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TRIFLUOPERAZINE",
+      "scientific_measurement": {
+        "delta": -0.012,
+        "delta_pct": 0.002945,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1246,7 +2256,17 @@
       "error_pct": 0.0011715432153059484,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULPIRIDE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001172,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1259,7 +2279,17 @@
       "error_pct": 0.0013011091955769626,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BETAXOLOL",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.001301,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1272,7 +2302,17 @@
       "error_pct": 0.0014480162177885531,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SALICYLIC ACID",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.001448,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1285,7 +2325,17 @@
       "error_pct": 0.0006617257808395811,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "OLSALAZINE",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000662,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1298,7 +2348,17 @@
       "error_pct": 0.0003855793329605539,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PROPRANOLOL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000386,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1311,7 +2371,17 @@
       "error_pct": 0.0003754599384370341,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PRACTOLOL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1324,7 +2394,17 @@
       "error_pct": 0.006407791874914075,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MECHLORETHAMINE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.006408,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1337,7 +2417,17 @@
       "error_pct": 0.0029904306220068498,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PENICILLIN G",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.00299,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1350,7 +2440,17 @@
       "error_pct": 0.00024017677011076868,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TROVAFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.00024,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1363,7 +2463,17 @@
       "error_pct": 0.003962750148599527,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CIMETIDINE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.003963,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1376,7 +2486,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "GATIFLOXACIN",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1389,7 +2509,17 @@
       "error_pct": 0.0006089948539790828,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "LABETALOL",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000609,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1402,7 +2532,17 @@
       "error_pct": 0.0004982064567580584,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MOXIFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000498,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1415,7 +2555,17 @@
       "error_pct": 0.0008301740598082463,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "LEVOFLOXACIN ANHYDROUS",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00083,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1428,7 +2578,17 @@
       "error_pct": 0.0007704358098674198,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "GEMIFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.00077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1441,7 +2601,17 @@
       "error_pct": 0.00407174849452574,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SPIRAPRIL",
+      "scientific_measurement": {
+        "delta": -0.019,
+        "delta_pct": 0.004072,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1454,7 +2624,17 @@
       "error_pct": 0.002406738868827123,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "VALPROATE SODIUM",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002407,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1467,7 +2647,17 @@
       "error_pct": 0.0004733503739356022,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ISOPROTERENOL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1480,7 +2670,17 @@
       "error_pct": 0.007388748950458895,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "HYDROCHLOROTHIAZIDE",
+      "scientific_measurement": {
+        "delta": -0.022,
+        "delta_pct": 0.007389,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1493,7 +2693,17 @@
       "error_pct": 0.003325774754336283,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "FUROSEMIDE",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.003326,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1506,7 +2716,17 @@
       "error_pct": 0.002412351238351821,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PYRIMETHAMINE",
+      "scientific_measurement": {
+        "delta": -0.006,
+        "delta_pct": 0.002412,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1519,7 +2739,17 @@
       "error_pct": 0.0011193507765549459,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TOLRESTAT",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001119,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1532,7 +2762,17 @@
       "error_pct": 0.003916653611151067,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFATHIAZOLE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.003917,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1545,7 +2785,17 @@
       "error_pct": 0.002648405281678711,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFAMERAZINE",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.002648,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1558,7 +2808,17 @@
       "error_pct": 0.001598210004802261,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFADIAZINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001598,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1571,7 +2831,17 @@
       "error_pct": 0.0007863180656501388,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "THIAMYLAL",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000786,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1584,7 +2854,17 @@
       "error_pct": 0.0012379301807437175,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "THIOPENTAL",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.001238,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1597,7 +2877,17 @@
       "error_pct": 0.0004232445930523447,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CYCLOBARBITAL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000423,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1610,7 +2900,17 @@
       "error_pct": 0.0005157563567044452,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ERGOTAMINE",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.000516,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1623,7 +2923,17 @@
       "error_pct": 0.0006656903208469932,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TRETINOIN",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000666,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1636,7 +2946,17 @@
       "error_pct": 0.0003812283176304194,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METHOHEXITAL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000381,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1649,7 +2969,17 @@
       "error_pct": 0.00043058904580449235,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PHENOBARBITAL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000431,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1662,7 +2992,17 @@
       "error_pct": 0.0003232793456933361,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "FLUOXETINE",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1675,7 +3015,17 @@
       "error_pct": 0.001579279848385454,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFAMETHOXAZOLE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001579,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1688,7 +3038,17 @@
       "error_pct": 0.002714588196968051,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BARBITAL",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002715,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1701,7 +3061,17 @@
       "error_pct": 0.0006119389284978582,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CLOZAPINE",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000612,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1714,7 +3084,17 @@
       "error_pct": 0.0015187182018233183,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "NORTRIPTYLINE",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.001519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1727,7 +3107,17 @@
       "error_pct": 0.003592728317881334,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFAMETHAZINE",
+      "scientific_measurement": {
+        "delta": -0.01,
+        "delta_pct": 0.003593,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1740,7 +3130,17 @@
       "error_pct": 0.0012589701623893076,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SECOBARBITAL",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.001259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1753,7 +3153,17 @@
       "error_pct": 0.0017677214071021201,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PENTOBARBITAL",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001768,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1766,7 +3176,17 @@
       "error_pct": 0.0017501312598457387,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "QUINACRINE",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.00175,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1779,7 +3199,17 @@
       "error_pct": 0.0017677214071021201,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "AMOBARBITAL",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001768,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1792,7 +3222,17 @@
       "error_pct": 0.0004232445930523447,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "HEXOBARBITAL",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000423,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1805,7 +3245,17 @@
       "error_pct": 0.00047114252060134423,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BUTABARBITAL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1818,7 +3268,17 @@
       "error_pct": 0.0014270085144909503,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "APROBARBITAL",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001427,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1831,7 +3291,17 @@
       "error_pct": 0.0010089799212900455,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METHARBITAL",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.001009,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1844,7 +3314,17 @@
       "error_pct": 0.0006672004269924961,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CHLORDIAZEPOXIDE",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000667,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1857,7 +3337,17 @@
       "error_pct": 0.00023281802942269354,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MELAGATRAN",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000233,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1870,7 +3360,17 @@
       "error_pct": 0.0022171544406451925,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "CLONAZEPAM",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.002217,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1883,7 +3383,17 @@
       "error_pct": 0.002618682428642775,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFISOXAZOLE",
+      "scientific_measurement": {
+        "delta": -0.007,
+        "delta_pct": 0.002619,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1896,7 +3406,17 @@
       "error_pct": 0.0028539830901638183,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFAMETHOXYPYRIDAZINE",
+      "scientific_measurement": {
+        "delta": -0.008,
+        "delta_pct": 0.002854,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1909,7 +3429,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BUTALBITAL",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1922,7 +3452,17 @@
       "error_pct": 0.0051341890315165,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SULFACETAMIDE",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.005134,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1935,7 +3475,17 @@
       "error_pct": 0.0022873408392036373,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "AMSACRINE",
+      "scientific_measurement": {
+        "delta": -0.009,
+        "delta_pct": 0.002287,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1948,7 +3498,17 @@
       "error_pct": 0.0016494029161428557,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ETHACRYNIC ACID",
+      "scientific_measurement": {
+        "delta": -0.005,
+        "delta_pct": 0.001649,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1961,7 +3521,17 @@
       "error_pct": 0.005133160214987592,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "TICRYNAFEN",
+      "scientific_measurement": {
+        "delta": -0.017,
+        "delta_pct": 0.005133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1974,7 +3544,17 @@
       "error_pct": 0.0007989134776628298,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "GEMFIBROZIL",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000799,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -1987,7 +3567,17 @@
       "error_pct": 0.0012915446874523526,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MELATONIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001292,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2000,7 +3590,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ONDANSETRON",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2013,7 +3613,17 @@
       "error_pct": 0.0005187932868173458,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "BUSPIRONE",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2026,7 +3636,17 @@
       "error_pct": 0.0010115570391630014,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "KETANSERIN",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.001012,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2039,7 +3659,17 @@
       "error_pct": 0.0014203200454435674,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "METHYLDOPA",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.00142,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2052,7 +3682,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MOLINDONE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2065,7 +3705,17 @@
       "error_pct": 0.0007481390042305576,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "APOMORPHINE",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000748,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2078,7 +3728,17 @@
       "error_pct": 0.000532098863971466,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "HALOPERIDOL",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000532,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2091,7 +3751,17 @@
       "error_pct": 0.0008812384337581135,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PENTAMIDINE",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000881,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2104,7 +3774,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "AMINOHIPPURIC ACID",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2117,7 +3797,17 @@
       "error_pct": 0.0,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ETRETINATE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2130,7 +3820,17 @@
       "error_pct": 0.0015020653398281096,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "NEVIRAPINE",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.001502,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2143,7 +3843,17 @@
       "error_pct": 0.0003179953572783402,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DRONABINOL",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000318,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2156,7 +3866,17 @@
       "error_pct": 0.0004499538797422649,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "MITOXANTRONE",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.00045,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2169,7 +3889,17 @@
       "error_pct": 0.0006528267397678243,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "DOPAMINE",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000653,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2182,7 +3912,17 @@
       "error_pct": 0.00657462195925005,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "HYDROXYUREA",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.006575,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2195,7 +3935,17 @@
       "error_pct": 1.3716710229195245e-14,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "PODOFILOX",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2208,7 +3958,17 @@
       "error_pct": 0.001458363715917712,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "ISONIAZID",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.001458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2221,7 +3981,17 @@
       "error_pct": 0.001161755024585022,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "THALIDOMIDE",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001162,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2234,7 +4004,17 @@
       "error_pct": 0.0011752262310550884,
       "within_band": true,
       "S_medical": 0.306221,
-      "source": "pharmacology"
+      "source": "pharmacology",
+      "domain_display_name": "clinical medicine",
+      "display_name": "KETOROLAC",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001175,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2243,7 +4023,18 @@
       "computed": -7.007584181144136,
       "measured": -7.0,
       "error_pct": 0.108345,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.00758418,
+        "delta_pct": 0.108345,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2252,7 +4043,18 @@
       "computed": -8.79922884583726,
       "measured": -8.8,
       "error_pct": 0.0087631154856993,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00077115,
+        "delta_pct": 0.008763,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2261,7 +4063,18 @@
       "computed": -6.699379178638373,
       "measured": -6.7,
       "error_pct": 0.009265990472048086,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00062082,
+        "delta_pct": 0.009266,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2270,7 +4083,18 @@
       "computed": -9.160572302574996,
       "measured": -9.2,
       "error_pct": 0.428562,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.0394277,
+        "delta_pct": 0.428562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2279,7 +4103,18 @@
       "computed": -8.683186676986617,
       "measured": -8.7,
       "error_pct": 0.193257,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.01681332,
+        "delta_pct": 0.193257,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2288,7 +4123,18 @@
       "computed": -10.081950177328737,
       "measured": -10.1,
       "error_pct": 0.178711,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.01804982,
+        "delta_pct": 0.178711,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2297,7 +4143,18 @@
       "computed": -13.562305898749054,
       "measured": -13.6,
       "error_pct": 0.27716250919812885,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.0376941,
+        "delta_pct": 0.277163,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2306,7 +4163,18 @@
       "computed": -11.000000000000002,
       "measured": -11.0,
       "error_pct": 1.6148698540002278e-14,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2315,7 +4183,18 @@
       "computed": -3.502756499504318,
       "measured": -3.5,
       "error_pct": 0.07875712869480316,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.0027565,
+        "delta_pct": 0.078757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2324,7 +4203,18 @@
       "computed": -4.291643461547232,
       "measured": -4.3,
       "error_pct": 0.19433810355273806,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00835654,
+        "delta_pct": 0.194338,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2333,7 +4223,18 @@
       "computed": 2.339988908001895,
       "measured": 2.34,
       "error_pct": 0.00047401701302970684,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -1.109e-05,
+        "delta_pct": 0.000474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2342,7 +4243,18 @@
       "computed": 9.604206413193825,
       "measured": 9.6,
       "error_pct": 0.0438168041023516,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00420641,
+        "delta_pct": 0.043817,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2351,7 +4263,18 @@
       "computed": 2.339988908001895,
       "measured": 2.34,
       "error_pct": 0.00047401701302970684,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -1.109e-05,
+        "delta_pct": 0.000474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2360,7 +4283,18 @@
       "computed": 9.869604401089358,
       "measured": 9.87,
       "error_pct": 0.004008,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0003956,
+        "delta_pct": 0.004008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2369,7 +4303,18 @@
       "computed": 2.2980601642983487,
       "measured": 2.29,
       "error_pct": 0.351972,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00806016,
+        "delta_pct": 0.351972,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2378,7 +4323,18 @@
       "computed": 9.716122186194907,
       "measured": 9.72,
       "error_pct": 0.039895,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00387781,
+        "delta_pct": 0.039895,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2387,7 +4343,18 @@
       "computed": 2.3298975496881877,
       "measured": 2.33,
       "error_pct": 0.004397009090657935,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00010245,
+        "delta_pct": 0.004397,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2396,7 +4363,18 @@
       "computed": 9.716122186194907,
       "measured": 9.74,
       "error_pct": 0.245152,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.02387781,
+        "delta_pct": 0.245152,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2405,7 +4383,18 @@
       "computed": 3.6342474226362644,
       "measured": 3.65,
       "error_pct": 0.431577,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.01575258,
+        "delta_pct": 0.431577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2414,7 +4403,18 @@
       "computed": 4.23606797749979,
       "measured": 4.25,
       "error_pct": 0.327812,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.01393202,
+        "delta_pct": 0.327812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2423,7 +4423,18 @@
       "computed": 6.003025174189232,
       "measured": 6.0,
       "error_pct": 0.05041956982053305,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2432,7 +4443,18 @@
       "computed": 8.176996891207093,
       "measured": 8.18,
       "error_pct": 0.036713,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00300311,
+        "delta_pct": 0.036713,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2441,7 +4463,18 @@
       "computed": 10.06799040289138,
       "measured": 10.07,
       "error_pct": 0.019956277146172662,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0020096,
+        "delta_pct": 0.019956,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2450,7 +4483,18 @@
       "computed": 10.501724959917917,
       "measured": 10.53,
       "error_pct": 0.268519,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.02827504,
+        "delta_pct": 0.268519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2459,7 +4503,18 @@
       "computed": 12.487638389839253,
       "measured": 12.48,
       "error_pct": 0.061205,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00763839,
+        "delta_pct": 0.061205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2468,7 +4523,18 @@
       "computed": 1.9902242326903956,
       "measured": 1.99,
       "error_pct": 0.01126797439173972,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00022423,
+        "delta_pct": 0.011268,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2477,7 +4543,18 @@
       "computed": 10.571672795662035,
       "measured": 10.6,
       "error_pct": 0.267238,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0283272,
+        "delta_pct": 0.267238,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2486,7 +4563,18 @@
       "computed": 2.575736191370456,
       "measured": 2.58,
       "error_pct": 0.165264,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00426381,
+        "delta_pct": 0.165264,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2495,7 +4583,18 @@
       "computed": 2.3801050513839623,
       "measured": 2.38,
       "error_pct": 0.004413923695900844,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00010505,
+        "delta_pct": 0.004414,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2504,7 +4603,18 @@
       "computed": 9.4026621941651,
       "measured": 9.39,
       "error_pct": 0.134848,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.01266219,
+        "delta_pct": 0.134848,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2513,7 +4623,18 @@
       "computed": 4.799985466052134,
       "measured": 4.8,
       "error_pct": 0.0003027905805345436,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -1.453e-05,
+        "delta_pct": 0.000303,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2522,7 +4643,18 @@
       "computed": 5.098467250120926,
       "measured": 5.1,
       "error_pct": 0.030053919197521404,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -0.00153275,
+        "delta_pct": 0.030054,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2531,7 +4663,18 @@
       "computed": 8.176996891207093,
       "measured": 8.2,
       "error_pct": 0.280526,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -0.02300311,
+        "delta_pct": 0.280526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2540,7 +4683,18 @@
       "computed": 6.003025174189232,
       "measured": 6.0,
       "error_pct": 0.05041956982053305,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2549,7 +4703,18 @@
       "computed": 8.30502169310787,
       "measured": 8.3,
       "error_pct": 0.060502,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": 0.00502169,
+        "delta_pct": 0.060502,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2558,7 +4723,18 @@
       "computed": 4.499756240982774,
       "measured": 4.5,
       "error_pct": 0.005416867049470556,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -0.00024376,
+        "delta_pct": 0.005417,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2567,7 +4743,18 @@
       "computed": 6.700619751355234,
       "measured": 6.7,
       "error_pct": 0.00925,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": 0.00061975,
+        "delta_pct": 0.00925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2576,7 +4763,18 @@
       "computed": 8.47213595499958,
       "measured": 8.5,
       "error_pct": 0.327812,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -0.02786405,
+        "delta_pct": 0.327812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2585,7 +4783,18 @@
       "computed": 4.703010184424049,
       "measured": 4.7,
       "error_pct": 0.064046,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": 0.00301018,
+        "delta_pct": 0.064046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2594,7 +4803,18 @@
       "computed": 7.088753822260279,
       "measured": 7.1,
       "error_pct": 0.158397,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a723 \u2014 drug binding affinity (pKd)",
+      "scientific_measurement": {
+        "delta": -0.01124618,
+        "delta_pct": 0.158397,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2603,7 +4823,18 @@
       "computed": 6.003025174189232,
       "measured": 6.0,
       "error_pct": 0.05041956982053305,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2612,7 +4843,18 @@
       "computed": 7.601401875170029,
       "measured": 7.6,
       "error_pct": 0.018446,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": 0.00140188,
+        "delta_pct": 0.018446,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2621,7 +4863,18 @@
       "computed": 4.150702399695581,
       "measured": 4.15,
       "error_pct": 0.01692529386942307,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": 0.0007024,
+        "delta_pct": 0.016925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2630,7 +4883,18 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2639,7 +4903,18 @@
       "computed": -0.30030227667037146,
       "measured": -0.3,
       "error_pct": 0.100759,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": -0.00030228,
+        "delta_pct": 0.100759,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2648,7 +4923,18 @@
       "computed": 3.6342474226362644,
       "measured": 3.63,
       "error_pct": 0.117009,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": 0.00424742,
+        "delta_pct": 0.117009,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2657,7 +4943,18 @@
       "computed": 3.295074868484244,
       "measured": 3.3,
       "error_pct": 0.149246,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": -0.00492513,
+        "delta_pct": 0.149246,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2666,7 +4963,18 @@
       "computed": 2.4799461039763027,
       "measured": 2.48,
       "error_pct": 0.002173226761988694,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": -5.39e-05,
+        "delta_pct": 0.002173,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2675,7 +4983,18 @@
       "computed": 2.9881104386953425,
       "measured": 3.0,
       "error_pct": 0.396319,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": -0.01188956,
+        "delta_pct": 0.396319,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2684,7 +5003,18 @@
       "computed": 4.47964174690591,
       "measured": 4.48,
       "error_pct": 0.007996720850222959,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a724 \u2014 enzyme turnover (kcat)",
+      "scientific_measurement": {
+        "delta": -0.00035825,
+        "delta_pct": 0.007997,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2693,7 +5023,18 @@
       "computed": 0.1498912826508499,
       "measured": 0.15,
       "error_pct": 0.07247823276673726,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": -0.00010872,
+        "delta_pct": 0.072478,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2702,7 +5043,18 @@
       "computed": 0.30030227667037146,
       "measured": 0.3,
       "error_pct": 0.100759,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00030228,
+        "delta_pct": 0.100759,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2711,7 +5063,18 @@
       "computed": 0.9702311355036954,
       "measured": 0.97,
       "error_pct": 0.023828402442831718,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00023114,
+        "delta_pct": 0.023828,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2720,7 +5083,18 @@
       "computed": 1.000286568515822,
       "measured": 1.0,
       "error_pct": 0.028657,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00028657,
+        "delta_pct": 0.028657,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2729,7 +5103,18 @@
       "computed": 4.012412406515011,
       "measured": 4.0,
       "error_pct": 0.31031,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.01241241,
+        "delta_pct": 0.31031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2738,7 +5123,18 @@
       "computed": 4.999568084592974,
       "measured": 5.0,
       "error_pct": 0.008638308140511697,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": -0.00043192,
+        "delta_pct": 0.008638,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2747,7 +5143,18 @@
       "computed": 6.003025174189232,
       "measured": 6.0,
       "error_pct": 0.05041956982053305,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2756,7 +5163,18 @@
       "computed": 10.0,
       "measured": 10.0,
       "error_pct": 0.0,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2765,7 +5183,18 @@
       "computed": 12.006135537926694,
       "measured": 12.0,
       "error_pct": 0.051129,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00613554,
+        "delta_pct": 0.051129,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2774,7 +5203,18 @@
       "computed": 25.001165610844783,
       "measured": 25.0,
       "error_pct": 0.004662443379132242,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a735 \u2014 Michaelis constant (Km)",
+      "scientific_measurement": {
+        "delta": 0.00116561,
+        "delta_pct": 0.004662,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2783,7 +5223,18 @@
       "computed": 9.007090087680545,
       "measured": 9.0,
       "error_pct": 0.078779,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": 0.00709009,
+        "delta_pct": 0.078779,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2792,7 +5243,18 @@
       "computed": 7.901075596837235,
       "measured": 7.92,
       "error_pct": 0.238944,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.0189244,
+        "delta_pct": 0.238944,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2801,7 +5263,18 @@
       "computed": 8.768246556133533,
       "measured": 8.77,
       "error_pct": 0.0199936586826242,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.00175344,
+        "delta_pct": 0.019994,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2810,7 +5283,18 @@
       "computed": 8.436029729518202,
       "measured": 8.4,
       "error_pct": 0.428925,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": 0.03602973,
+        "delta_pct": 0.428925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2819,7 +5303,18 @@
       "computed": 7.642042758526128,
       "measured": 7.66,
       "error_pct": 0.234429,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.01795724,
+        "delta_pct": 0.234429,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2828,7 +5323,18 @@
       "computed": 7.689358375601022,
       "measured": 7.7,
       "error_pct": 0.138203,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.01064162,
+        "delta_pct": 0.138203,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2837,7 +5343,18 @@
       "computed": 6.276886301348152,
       "measured": 6.3,
       "error_pct": 0.366884,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.0231137,
+        "delta_pct": 0.366884,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2846,7 +5363,18 @@
       "computed": 6.152148753020613,
       "measured": 6.15,
       "error_pct": 0.03493907350590267,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": 0.00214875,
+        "delta_pct": 0.034939,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2855,7 +5383,18 @@
       "computed": 6.003025174189232,
       "measured": 6.0,
       "error_pct": 0.05041956982053305,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2864,7 +5403,18 @@
       "computed": 5.33631581720894,
       "measured": 5.35,
       "error_pct": 0.255779,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.01368418,
+        "delta_pct": 0.255779,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2873,7 +5423,18 @@
       "computed": 7.321044173173944,
       "measured": 7.3,
       "error_pct": 0.288276,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": 0.02104417,
+        "delta_pct": 0.288276,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2882,7 +5443,18 @@
       "computed": 8.911902198468796,
       "measured": 8.92,
       "error_pct": 0.090783,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a765 \u2014 enzyme inhibition (pKi)",
+      "scientific_measurement": {
+        "delta": -0.0080978,
+        "delta_pct": 0.090783,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2891,7 +5463,18 @@
       "computed": -1.000286568515822,
       "measured": -1.0,
       "error_pct": 0.028657,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.00028657,
+        "delta_pct": 0.028657,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2900,7 +5483,18 @@
       "computed": -0.8775179415719043,
       "measured": -0.88,
       "error_pct": 0.282052,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00248206,
+        "delta_pct": 0.282052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2909,7 +5503,18 @@
       "computed": -0.5772156649015329,
       "measured": -0.58,
       "error_pct": 0.480058,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00278434,
+        "delta_pct": 0.480058,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2918,7 +5523,18 @@
       "computed": -1.4492779683778432,
       "measured": -1.45,
       "error_pct": 0.04979528428667465,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00072203,
+        "delta_pct": 0.049795,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2927,7 +5543,18 @@
       "computed": -1.4399623905429433,
       "measured": -1.44,
       "error_pct": 0.002611767851157243,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 3.761e-05,
+        "delta_pct": 0.002612,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2936,7 +5563,18 @@
       "computed": -1.2796363252433056,
       "measured": -1.28,
       "error_pct": 0.02841209036675077,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00036367,
+        "delta_pct": 0.028412,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2945,7 +5583,18 @@
       "computed": -1.2941305780559662,
       "measured": -1.3,
       "error_pct": 0.451494,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00586942,
+        "delta_pct": 0.451494,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2954,7 +5603,18 @@
       "computed": -2.1673761839859265,
       "measured": -2.17,
       "error_pct": 0.12091318037204912,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00262382,
+        "delta_pct": 0.120913,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2963,7 +5623,18 @@
       "computed": -2.2403440561097856,
       "measured": -2.24,
       "error_pct": 0.015359647758276092,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.00034406,
+        "delta_pct": 0.01536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2972,7 +5643,18 @@
       "computed": -1.8366053309085486,
       "measured": -1.84,
       "error_pct": 0.1844928854049714,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00339467,
+        "delta_pct": 0.184493,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2981,7 +5663,18 @@
       "computed": -1.4399623905429433,
       "measured": -1.44,
       "error_pct": 0.002611767851157243,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 3.761e-05,
+        "delta_pct": 0.002612,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "clinical_medicine_lab",
@@ -2990,7 +5683,18 @@
       "computed": -1.2941305780559662,
       "measured": -1.3,
       "error_pct": 0.451494,
-      "source": "immunology"
+      "source": "immunology",
+      "section_display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "domain_display_name": "clinical medicine",
+      "display_name": "SMILES Lab \u00a771 \u2014 DNA stacking free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00586942,
+        "delta_pct": 0.451494,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -3004,5 +5708,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Clinical Medicine",
+  "tier_label": "Tier 35",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.751193+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 260,
+    "median_error_pct": 0.002458,
+    "max_error_pct": 0.480058,
+    "mean_abs_delta": 0.005419665500000002,
+    "precision_tier_counts": {
+      "green": 260
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

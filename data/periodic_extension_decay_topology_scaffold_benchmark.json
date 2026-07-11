@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19
+      "observable_count": 19,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 10
+      "observable_count": 10,
+      "domain_display_name": "tier gap fill",
+      "display_name": "periodic extension graph",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "decay topology",
+      "display_name": "fusion decay chain prereg scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -70,7 +100,17 @@
       "measured": 0.52,
       "error_pct": 0.0,
       "decay_mode": "alpha",
-      "eval_kind": "topology_edge"
+      "eval_kind": "topology_edge",
+      "domain_display_name": "decay topology",
+      "display_name": "Z126 N184 Z128 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -79,7 +119,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_gate"
+      "eval_kind": "topology_gate",
+      "domain_display_name": "decay topology",
+      "display_name": "Z126 N184 Z128 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -89,7 +139,17 @@
       "measured": 0.48,
       "error_pct": 0.0,
       "decay_mode": "fusion_capture",
-      "eval_kind": "topology_edge"
+      "eval_kind": "topology_edge",
+      "domain_display_name": "decay topology",
+      "display_name": "Z128 N184 Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -98,7 +158,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_gate"
+      "eval_kind": "topology_gate",
+      "domain_display_name": "decay topology",
+      "display_name": "Z128 N184 Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -108,7 +178,17 @@
       "measured": 0.35,
       "error_pct": 0.0,
       "decay_mode": "multi_neutron_capture",
-      "eval_kind": "topology_edge"
+      "eval_kind": "topology_edge",
+      "domain_display_name": "decay topology",
+      "display_name": "Z132 N184 Z164 N228",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -117,7 +197,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_gate"
+      "eval_kind": "topology_gate",
+      "domain_display_name": "decay topology",
+      "display_name": "Z132 N184 Z164 N228",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -127,7 +217,17 @@
       "measured": 0.58,
       "error_pct": 0.0,
       "decay_mode": "lab_chain_extension",
-      "eval_kind": "topology_edge"
+      "eval_kind": "topology_edge",
+      "domain_display_name": "decay topology",
+      "display_name": "pd d to Z120 cascade Z126 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -136,7 +236,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_gate"
+      "eval_kind": "topology_gate",
+      "domain_display_name": "decay topology",
+      "display_name": "pd d to Z120 cascade Z126 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -146,7 +256,17 @@
       "measured": 0.44,
       "error_pct": 0.0,
       "decay_mode": "fusion_decay_extension",
-      "eval_kind": "topology_edge"
+      "eval_kind": "topology_edge",
+      "domain_display_name": "decay topology",
+      "display_name": "muon dd to Z126 cascade Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -155,7 +275,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_gate"
+      "eval_kind": "topology_gate",
+      "domain_display_name": "decay topology",
+      "display_name": "muon dd to Z126 cascade Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -165,7 +295,17 @@
       "measured": 126.0,
       "error_pct": 0.0,
       "role": "island_peak",
-      "eval_kind": "topology_node"
+      "eval_kind": "topology_node",
+      "domain_display_name": "decay topology",
+      "display_name": "Z126 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -175,7 +315,17 @@
       "measured": 128.0,
       "error_pct": 0.0,
       "role": "shoulder",
-      "eval_kind": "topology_node"
+      "eval_kind": "topology_node",
+      "domain_display_name": "decay topology",
+      "display_name": "Z128 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -185,7 +335,17 @@
       "measured": 132.0,
       "error_pct": 0.0,
       "role": "superheavy_peak",
-      "eval_kind": "topology_node"
+      "eval_kind": "topology_node",
+      "domain_display_name": "decay topology",
+      "display_name": "Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -195,7 +355,17 @@
       "measured": 164.0,
       "error_pct": 0.0,
       "role": "distant_island",
-      "eval_kind": "topology_node"
+      "eval_kind": "topology_node",
+      "domain_display_name": "decay topology",
+      "display_name": "Z164 N228",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -204,7 +374,17 @@
       "computed": 0.35,
       "measured": 0.35,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "decay topology",
+      "display_name": "min topology viability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -213,7 +393,17 @@
       "computed": 4.0,
       "measured": 4.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "decay topology",
+      "display_name": "max topology hops",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -222,7 +412,17 @@
       "computed": 164.0,
       "measured": 164.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "decay topology",
+      "display_name": "periodic extension Z ceiling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "decay_topology_lab",
@@ -231,7 +431,17 @@
       "computed": 164.0,
       "measured": 164.0,
       "error_pct": 0.0,
-      "eval_kind": "topology_anchor"
+      "eval_kind": "topology_anchor",
+      "domain_display_name": "decay topology",
+      "display_name": "decay topology Z164",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -245,5 +455,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Periodic Extension Decay Topology Scaffold",
+  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.683576+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

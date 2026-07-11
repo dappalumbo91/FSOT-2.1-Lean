@@ -18,70 +18,184 @@
       "property": "total_unique_predictions",
       "computed": 66,
       "measured": 66,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "total unique predictions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "category_a_direct_engine",
       "computed": 15,
       "measured": 15,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "category a direct engine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "category_b_derived",
       "computed": 51,
       "measured": 51,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "category b derived",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "confirmed_by_observation",
       "computed": 11,
       "measured": 11,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "confirmed by observation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "computable_error_pairs",
       "computed": 18,
       "measured": 18,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "computable error pairs",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "stabilized_improved_or_matched",
       "computed": 13,
       "measured": 13,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "stabilized improved or matched",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "stabilized_improvement_rate_pct",
       "computed": 72.2,
       "measured": 72.2,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "stabilized improvement rate pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "free_parameters_zero",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "free parameters zero",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "dwarf_core_radius_resolved",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "dwarf core radius resolved",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prediction_rederivation",
       "property": "dwarf_core_radius_error_pct",
       "computed": 0.33,
       "measured": 0.33,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "prediction rederivation",
+      "display_name": "dwarf core radius error pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Prediction Rederivation",
+  "tier_label": "Tier 36",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.795304+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 10
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

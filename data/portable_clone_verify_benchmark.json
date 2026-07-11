@@ -38,7 +38,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 290
+      "observable_count": 290,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +57,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 289
+      "observable_count": 289,
+      "domain_display_name": "tier gap fill",
+      "display_name": "clone panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -58,7 +78,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/fsot_compute.py"
+      "source": "vendor/fsot_compute.py",
+      "domain_display_name": "portable clone verify",
+      "display_name": "fsot compute",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -67,7 +97,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json"
+      "source": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "smiles dataset",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -76,7 +116,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/evolution/biological_mt_operons.json"
+      "source": "vendor/evolution/biological_mt_operons.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "evolution operons",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -85,7 +135,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv"
+      "source": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv",
+      "domain_display_name": "portable clone verify",
+      "display_name": "linguistics targets",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -94,7 +154,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/linguistics/linguistics_derivations.json"
+      "source": "vendor/linguistics/linguistics_derivations.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "linguistics derivations",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -103,7 +173,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/math_generator/generated_formula_comparison_report.json"
+      "source": "vendor/math_generator/generated_formula_comparison_report.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "math generator comparison",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -112,7 +192,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/math_generator/rules"
+      "source": "vendor/math_generator/rules",
+      "domain_display_name": "portable clone verify",
+      "display_name": "math generator rules",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -121,7 +211,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/trinary_os/target"
+      "source": "vendor/trinary_os/target",
+      "domain_display_name": "portable clone verify",
+      "display_name": "trinary os oracles",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -130,7 +230,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/species/fsot_species_catalog.json"
+      "source": "vendor/species/fsot_species_catalog.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "species catalog",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -139,7 +249,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/igem/igem_parts_registry.json"
+      "source": "vendor/igem/igem_parts_registry.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "igem parts registry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -148,7 +268,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/math_generator/benchmark_reports"
+      "source": "vendor/math_generator/benchmark_reports",
+      "domain_display_name": "portable clone verify",
+      "display_name": "math generator benchmark reports",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -157,7 +287,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/trinary_os/isa/fsotb_opcode_registry.json"
+      "source": "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "trinary os isa registry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -166,7 +306,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/igem/fastas"
+      "source": "vendor/igem/fastas",
+      "domain_display_name": "portable clone verify",
+      "display_name": "igem fastas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -175,7 +325,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/math_generator/datasets/airfoil_self_noise.csv"
+      "source": "vendor/math_generator/datasets/airfoil_self_noise.csv",
+      "domain_display_name": "portable clone verify",
+      "display_name": "airfoil dataset",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -184,7 +344,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/trinary_os/fixtures"
+      "source": "vendor/trinary_os/fixtures",
+      "domain_display_name": "portable clone verify",
+      "display_name": "trinary os fixtures",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -193,7 +363,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/trinary_os/round_trip"
+      "source": "vendor/trinary_os/round_trip",
+      "domain_display_name": "portable clone verify",
+      "display_name": "trinary os round trip",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -202,7 +382,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/linguistics/linguistics_derivations.json"
+      "source": "vendor/linguistics/linguistics_derivations.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "linguistics derivations json",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -211,7 +401,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/tokenization"
+      "source": "vendor/tokenization",
+      "domain_display_name": "portable clone verify",
+      "display_name": "tokenization smoke",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -220,7 +420,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/trinary_hardware/motif_influence_profile_stable.json"
+      "source": "vendor/trinary_hardware/motif_influence_profile_stable.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "trinary hardware motif",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -229,7 +439,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/intrinsic_llm/benchmark_results_final.json"
+      "source": "vendor/intrinsic_llm/benchmark_results_final.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "intrinsic llm validators",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -238,7 +458,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/physarum"
+      "source": "vendor/physarum",
+      "domain_display_name": "portable clone verify",
+      "display_name": "biological cuda physarum",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -247,7 +477,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/arxiv_primitives/v14_run_summary.json"
+      "source": "vendor/arxiv_primitives/v14_run_summary.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "arxiv primitives v14",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -256,7 +496,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/formula_corpus_cnc"
+      "source": "vendor/formula_corpus_cnc",
+      "domain_display_name": "portable clone verify",
+      "display_name": "formula corpus cnc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -265,7 +515,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/binary_decoder/rendlesham_page14_trace.json"
+      "source": "vendor/binary_decoder/rendlesham_page14_trace.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "binary decoder rendlesham",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -274,7 +534,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/certified_agent"
+      "source": "vendor/certified_agent",
+      "domain_display_name": "portable clone verify",
+      "display_name": "certified agent qwen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -283,7 +553,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json"
+      "source": "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "omni theory genesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -292,7 +572,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "domain_display_name": "portable clone verify",
+      "display_name": "formula corpus strict empirical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -301,7 +591,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json"
+      "source": "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "fsot aggregate unified db",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -310,7 +610,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/thesis"
+      "source": "vendor/thesis",
+      "domain_display_name": "portable clone verify",
+      "display_name": "thesis waves",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -319,7 +629,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json"
+      "source": "vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "cosmology skeleton database",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -328,7 +648,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/fsot_aggregate/prediction_rederivation_summary.json"
+      "source": "vendor/fsot_aggregate/prediction_rederivation_summary.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "prediction rederivation summary",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -337,7 +667,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/vl_distill"
+      "source": "vendor/vl_distill",
+      "domain_display_name": "portable clone verify",
+      "display_name": "vl distill atlas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -346,7 +686,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/rust_lean_bridge"
+      "source": "vendor/rust_lean_bridge",
+      "domain_display_name": "portable clone verify",
+      "display_name": "rust lean bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -355,7 +705,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/bibliography_corpus"
+      "source": "vendor/bibliography_corpus",
+      "domain_display_name": "portable clone verify",
+      "display_name": "bibliography corpus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -364,7 +724,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/public_data"
+      "source": "vendor/public_data",
+      "domain_display_name": "portable clone verify",
+      "display_name": "tier38 public data",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -373,7 +743,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/propulsion_electrical"
+      "source": "vendor/propulsion_electrical",
+      "domain_display_name": "portable clone verify",
+      "display_name": "tier39 propulsion electrical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -382,7 +762,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/cybersecurity"
+      "source": "vendor/cybersecurity",
+      "domain_display_name": "portable clone verify",
+      "display_name": "cybersecurity public data",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -391,7 +781,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/space_weather_summary_benchmark.json"
+      "source": "data/space_weather_summary_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "space weather full arc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -400,7 +800,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/orbital_bridge_scientific_framing.yaml"
+      "source": "data/orbital_bridge_scientific_framing.yaml",
+      "domain_display_name": "portable clone verify",
+      "display_name": "cross scale bridges",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -409,7 +819,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/compactification_ladder_manifest.yaml"
+      "source": "data/compactification_ladder_manifest.yaml",
+      "domain_display_name": "portable clone verify",
+      "display_name": "compactification ladder",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -418,7 +838,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/evolution/best_evolved_organism.json"
+      "source": "vendor/evolution/best_evolved_organism.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "evolution best organism",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -427,7 +857,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor/stellar_structures/public_multiplicity_catalog.json"
+      "source": "vendor/stellar_structures/public_multiplicity_catalog.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "stellar structures catalog",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -436,7 +876,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/plasma_physics_benchmark.json"
+      "source": "data/plasma_physics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Plasma Physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -445,7 +895,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/immunology_benchmark.json"
+      "source": "data/immunology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Immunology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -454,7 +914,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/climate_observed_benchmark.json"
+      "source": "data/climate_observed_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Climate Science",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -463,7 +933,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cosmology_extended_benchmark.json"
+      "source": "data/cosmology_extended_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cosmology Extended",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -472,7 +952,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cosmology_bubble_bleed_benchmark.json"
+      "source": "data/cosmology_bubble_bleed_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cosmology Bubble Bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -481,7 +971,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cosmology_anomalies_benchmark.json"
+      "source": "data/cosmology_anomalies_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cosmology Anomalies",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -490,7 +990,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/particle_physics_benchmark.json"
+      "source": "data/particle_physics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Particle Physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -499,7 +1009,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/higgs_mass_benchmark.json"
+      "source": "data/higgs_mass_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Higgs Mass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -508,7 +1028,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/space_weather_benchmark.json"
+      "source": "data/space_weather_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Space Weather",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -517,7 +1047,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/hydrology_benchmark.json"
+      "source": "data/hydrology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Hydrology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -526,7 +1066,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pharmacology_benchmark.json"
+      "source": "data/pharmacology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Pharmacology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -535,7 +1085,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cryosphere_benchmark.json"
+      "source": "data/cryosphere_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -544,7 +1104,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/seismology_benchmark.json"
+      "source": "data/seismology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Seismology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -553,7 +1123,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/tectonics_benchmark.json"
+      "source": "data/tectonics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Tectonics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -562,7 +1142,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/geomagnetism_benchmark.json"
+      "source": "data/geomagnetism_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Geomagnetism",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -571,7 +1161,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/planetary_structure_benchmark.json"
+      "source": "data/planetary_structure_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Planetary Structure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -580,7 +1180,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/orbital_mechanics_benchmark.json"
+      "source": "data/orbital_mechanics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Orbital Mechanics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -589,7 +1199,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/small_body_orbits_benchmark.json"
+      "source": "data/small_body_orbits_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Small Body Orbits",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -598,7 +1218,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/magnetosphere_benchmark.json"
+      "source": "data/magnetosphere_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Magnetosphere",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -607,7 +1237,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/grace_cryosphere_benchmark.json"
+      "source": "data/grace_cryosphere_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Grace Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -616,7 +1256,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/seismology_deep_benchmark.json"
+      "source": "data/seismology_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Seismology Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -625,7 +1275,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/planetary_atmospheres_benchmark.json"
+      "source": "data/planetary_atmospheres_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Planetary Atmospheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -634,7 +1294,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/magnetosphere_extended_benchmark.json"
+      "source": "data/magnetosphere_extended_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Magnetosphere Extended",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -643,7 +1313,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/geochemistry_benchmark.json"
+      "source": "data/geochemistry_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Geochemistry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -652,7 +1332,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/oncology_benchmark.json"
+      "source": "data/oncology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Oncology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -661,7 +1351,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/neuroimmunology_benchmark.json"
+      "source": "data/neuroimmunology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neuroimmunology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -670,7 +1370,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/synthetic_biology_benchmark.json"
+      "source": "data/synthetic_biology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -679,7 +1389,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/quantum_materials_benchmark.json"
+      "source": "data/quantum_materials_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Quantum Materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -688,7 +1408,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/multi_hero_benchmark.json"
+      "source": "data/multi_hero_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neuron Multi Hero",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -697,7 +1427,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/linguistics_formal_benchmark.json"
+      "source": "data/linguistics_formal_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Linguistics Formal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -706,7 +1446,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/mathematics_computational_benchmark.json"
+      "source": "data/mathematics_computational_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Mathematics Computational",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -715,7 +1465,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/materials_engineering_benchmark.json"
+      "source": "data/materials_engineering_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Materials Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -724,7 +1484,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/computational_reasoning_benchmark.json"
+      "source": "data/computational_reasoning_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Computational Reasoning",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -733,7 +1503,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/math_generator_rules_eval_benchmark.json"
+      "source": "data/math_generator_rules_eval_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Math Generator Rules Eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -742,7 +1522,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/trinary_os_portable_benchmark.json"
+      "source": "data/trinary_os_portable_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Trinary OS Portable",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -751,7 +1541,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/materials_species_bridge_benchmark.json"
+      "source": "data/materials_species_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Materials Species Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -760,7 +1560,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/igem_synthetic_biology_benchmark.json"
+      "source": "data/igem_synthetic_biology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "IGEM Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -769,7 +1579,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/culinary_arts_benchmark.json"
+      "source": "data/culinary_arts_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Culinary Arts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -778,7 +1598,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pharmacokinetics_gap_fill_benchmark.json"
+      "source": "data/pharmacokinetics_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Pharmacokinetics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -787,7 +1617,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/food_microbiology_gap_fill_benchmark.json"
+      "source": "data/food_microbiology_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Food Microbiology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -796,7 +1636,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/agriculture_agroecology_gap_fill_benchmark.json"
+      "source": "data/agriculture_agroecology_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Agriculture Agroecology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -805,7 +1655,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/maillard_chemistry_gap_fill_benchmark.json"
+      "source": "data/maillard_chemistry_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Maillard Chemistry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -814,7 +1674,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/econometrics_gap_fill_benchmark.json"
+      "source": "data/econometrics_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Econometrics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -823,7 +1693,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/sports_biomechanics_gap_fill_benchmark.json"
+      "source": "data/sports_biomechanics_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Sports Biomechanics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -832,7 +1712,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/architecture_building_science_gap_fill_benchmark.json"
+      "source": "data/architecture_building_science_gap_fill_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Architecture Building Science",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -841,7 +1731,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/geology_stratigraphy_extension_benchmark.json"
+      "source": "data/geology_stratigraphy_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Geology Stratigraphy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -850,7 +1750,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/botany_extension_benchmark.json"
+      "source": "data/botany_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Botany",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -859,7 +1769,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/zoology_extension_benchmark.json"
+      "source": "data/zoology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Zoology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -868,7 +1788,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/clinical_medicine_extension_benchmark.json"
+      "source": "data/clinical_medicine_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Clinical Medicine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -877,7 +1807,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/chemical_engineering_extension_benchmark.json"
+      "source": "data/chemical_engineering_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Chemical Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -886,7 +1826,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/environmental_engineering_extension_benchmark.json"
+      "source": "data/environmental_engineering_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Environmental Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -895,7 +1845,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/anthropology_extension_benchmark.json"
+      "source": "data/anthropology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Anthropology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -904,7 +1864,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/math_generator_benchmark_formula_eval_benchmark.json"
+      "source": "data/math_generator_benchmark_formula_eval_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Math Generator Benchmark Formula Eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -913,7 +1883,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/trinary_os_isa_rebuild_benchmark.json"
+      "source": "data/trinary_os_isa_rebuild_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Trinary OS ISA Rebuild",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -922,7 +1902,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/igem_live_fasta_benchmark.json"
+      "source": "data/igem_live_fasta_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "IGEM Live FASTA Ingest",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -931,7 +1921,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/math_generator_airfoil_rmse_benchmark.json"
+      "source": "data/math_generator_airfoil_rmse_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Math Generator Airfoil RMSE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -940,7 +1940,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/trinary_os_round_trip_benchmark.json"
+      "source": "data/trinary_os_round_trip_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Trinary OS Round Trip",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -949,7 +1959,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/tokenization_smoke_benchmark.json"
+      "source": "data/tokenization_smoke_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Tokenization Smoke",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -958,7 +1978,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/trinary_hardware_motif_benchmark.json"
+      "source": "data/trinary_hardware_motif_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Trinary Hardware Motif",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -967,7 +1997,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/intrinsic_llm_validators_benchmark.json"
+      "source": "data/intrinsic_llm_validators_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Intrinsic LLM Validators",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -976,7 +2016,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/biological_cuda_physarum_benchmark.json"
+      "source": "data/biological_cuda_physarum_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Biological CUDA Physarum",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -985,7 +2035,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/arxiv_primitives_v14_benchmark.json"
+      "source": "data/arxiv_primitives_v14_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Arxiv Primitives V14",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -994,7 +2054,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/formula_corpus_cnc_benchmark.json"
+      "source": "data/formula_corpus_cnc_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Formula Corpus CNC",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1003,7 +2073,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/binary_decoder_rendlesham_benchmark.json"
+      "source": "data/binary_decoder_rendlesham_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Binary Decoder Rendlesham",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1012,7 +2092,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/certified_agent_qwen_benchmark.json"
+      "source": "data/certified_agent_qwen_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Certified Agent Qwen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1021,7 +2111,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/omni_theory_genesis_benchmark.json"
+      "source": "data/omni_theory_genesis_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Omni Theory Genesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1030,7 +2130,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fsot_aggregate_unified_db_benchmark.json"
+      "source": "data/fsot_aggregate_unified_db_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "FSOT Aggregate Unified DB",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1039,7 +2149,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/prediction_rederivation_benchmark.json"
+      "source": "data/prediction_rederivation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Prediction Rederivation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1048,7 +2168,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/vl_distill_atlas_benchmark.json"
+      "source": "data/vl_distill_atlas_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "VL Distill Atlas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1057,7 +2187,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/rust_lean_bridge_benchmark.json"
+      "source": "data/rust_lean_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Rust Lean Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1066,7 +2206,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/bibliography_lean_corpus_benchmark.json"
+      "source": "data/bibliography_lean_corpus_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Bibliography Lean Corpus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1075,7 +2225,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/nist_codata_constants_benchmark.json"
+      "source": "data/nist_codata_constants_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "NIST CODATA Constants",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1084,7 +2244,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/gbif_species_occurrence_benchmark.json"
+      "source": "data/gbif_species_occurrence_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "GBIF Species Occurrence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1093,7 +2263,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/noaa_coastal_tides_benchmark.json"
+      "source": "data/noaa_coastal_tides_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "NOAA Coastal Tides",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1102,7 +2282,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/world_bank_development_benchmark.json"
+      "source": "data/world_bank_development_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "World Bank Development",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1111,7 +2301,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/nasa_exoplanet_archive_benchmark.json"
+      "source": "data/nasa_exoplanet_archive_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "NASA Exoplanet Archive",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1120,7 +2320,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/rcsb_pdb_structures_benchmark.json"
+      "source": "data/rcsb_pdb_structures_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "RCSB PDB Structures",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1129,7 +2339,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/openalex_citation_graph_benchmark.json"
+      "source": "data/openalex_citation_graph_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "OpenAlex Citation Graph",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1138,7 +2358,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pubchem_compound_properties_benchmark.json"
+      "source": "data/pubchem_compound_properties_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "PubChem Compound Properties",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1147,7 +2377,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cern_open_data_lhc_benchmark.json"
+      "source": "data/cern_open_data_lhc_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "CERN Open Data LHC",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1156,7 +2396,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/uniprot_protein_annotations_benchmark.json"
+      "source": "data/uniprot_protein_annotations_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "UniProt Protein Annotations",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1165,7 +2415,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/space_propulsion_systems_benchmark.json"
+      "source": "data/space_propulsion_systems_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Space Propulsion Systems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1174,7 +2434,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/electrical_power_systems_benchmark.json"
+      "source": "data/electrical_power_systems_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Electrical Power Systems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1183,7 +2453,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/hvac_thermal_systems_benchmark.json"
+      "source": "data/hvac_thermal_systems_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "HVAC Thermal Systems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1192,7 +2472,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/trinary_os_tier_e_benchmark.json"
+      "source": "data/trinary_os_tier_e_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Trinary OS Tier E",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1201,7 +2491,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/breakthrough_discoveries_2024_2026_benchmark.json"
+      "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Breakthrough Discoveries 2024 2026",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1210,7 +2510,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/paleontology_extension_benchmark.json"
+      "source": "data/paleontology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Paleontology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1219,7 +2529,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/marine_biology_extension_benchmark.json"
+      "source": "data/marine_biology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Marine Biology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1228,7 +2548,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/mycology_extension_benchmark.json"
+      "source": "data/mycology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Mycology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1237,7 +2567,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/entomology_extension_benchmark.json"
+      "source": "data/entomology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Entomology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1246,7 +2586,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/virology_extension_benchmark.json"
+      "source": "data/virology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Virology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1255,7 +2605,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/epidemiology_extension_benchmark.json"
+      "source": "data/epidemiology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Epidemiology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1264,7 +2624,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cardiology_extension_benchmark.json"
+      "source": "data/cardiology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cardiology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1273,7 +2643,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/civil_engineering_extension_benchmark.json"
+      "source": "data/civil_engineering_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Civil Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1282,7 +2662,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/mechanical_engineering_extension_benchmark.json"
+      "source": "data/mechanical_engineering_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Mechanical Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1291,7 +2681,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/robotics_control_systems_extension_benchmark.json"
+      "source": "data/robotics_control_systems_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Robotics Control Systems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1300,7 +2700,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/neuroeconomics_extension_benchmark.json"
+      "source": "data/neuroeconomics_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neuroeconomics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1309,7 +2719,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/paleoclimate_extension_benchmark.json"
+      "source": "data/paleoclimate_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Paleoclimate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1318,7 +2738,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/speleology_extension_benchmark.json"
+      "source": "data/speleology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Speleology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1327,7 +2757,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/exogeology_extension_benchmark.json"
+      "source": "data/exogeology_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Exogeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1336,7 +2776,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pure_mathematics_extension_benchmark.json"
+      "source": "data/pure_mathematics_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Pure Mathematics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1345,7 +2795,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/history_extension_benchmark.json"
+      "source": "data/history_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "History",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1354,7 +2814,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/law_policy_extension_benchmark.json"
+      "source": "data/law_policy_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Law Policy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1363,7 +2833,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/finance_markets_extension_benchmark.json"
+      "source": "data/finance_markets_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Finance Markets",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1372,7 +2852,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/supply_chain_logistics_extension_benchmark.json"
+      "source": "data/supply_chain_logistics_extension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Supply Chain Logistics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1381,7 +2871,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/domain_coupling_simulation_benchmark.json"
+      "source": "data/domain_coupling_simulation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Domain Coupling Simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1390,7 +2890,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/formula_corpus_closure_benchmark.json"
+      "source": "data/formula_corpus_closure_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Formula Corpus Closure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1399,7 +2909,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cryptography_technology_cybersecurity_benchmark.json"
+      "source": "data/cryptography_technology_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cryptography Technology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1408,7 +2928,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/network_internet_protocols_cybersecurity_benchmark.json"
+      "source": "data/network_internet_protocols_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Network Internet Protocols",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1417,7 +2947,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/malware_threat_intelligence_cybersecurity_benchmark.json"
+      "source": "data/malware_threat_intelligence_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Malware Threat Intelligence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1426,7 +2966,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/secure_software_engineering_cybersecurity_benchmark.json"
+      "source": "data/secure_software_engineering_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Secure Software Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1435,7 +2985,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/code_genome_structure_cybersecurity_benchmark.json"
+      "source": "data/code_genome_structure_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Code Genome Structure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1444,7 +3004,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json"
+      "source": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Zero Day Risk Evaluator",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1453,7 +3023,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/external_oss_code_genome_benchmark.json"
+      "source": "data/external_oss_code_genome_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "External OSS Code Genome",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1462,7 +3042,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/programming_language_laws_benchmark.json"
+      "source": "data/programming_language_laws_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Programming Language Laws",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1471,7 +3061,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/formula_branching_fractal_benchmark.json"
+      "source": "data/formula_branching_fractal_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Formula Branching Fractal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1480,7 +3080,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/mechanistic_coupling_benchmark.json"
+      "source": "data/mechanistic_coupling_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Mechanistic Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1489,7 +3099,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cve_codon_hole_falsification_benchmark.json"
+      "source": "data/cve_codon_hole_falsification_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "CVE Codon Hole Falsification",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1498,7 +3118,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/theory_completeness_spine_benchmark.json"
+      "source": "data/theory_completeness_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Theory Completeness Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1507,7 +3137,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fractal_constant_recursion_benchmark.json"
+      "source": "data/fractal_constant_recursion_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fractal Constant Recursion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1516,7 +3156,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/preregistered_predictions_benchmark.json"
+      "source": "data/preregistered_predictions_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Preregistered Predictions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1525,7 +3175,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/portable_clone_verify_benchmark.json"
+      "source": "data/portable_clone_verify_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Portable Clone Verify",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1534,7 +3194,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/observer_channel_derivation_benchmark.json"
+      "source": "data/observer_channel_derivation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Observer Channel Derivation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1543,7 +3213,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/adversarial_fractal_break_benchmark.json"
+      "source": "data/adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1552,7 +3232,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/toe_gap_closure_spine_benchmark.json"
+      "source": "data/toe_gap_closure_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "ToE Gap Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1561,7 +3251,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/acoustic_resonance_materials_benchmark.json"
+      "source": "data/acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1570,7 +3270,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/chaos_mediated_phase_transitions_benchmark.json"
+      "source": "data/chaos_mediated_phase_transitions_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Chaos Mediated Phase Transitions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1579,7 +3289,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/phi_morphogenetic_scaling_benchmark.json"
+      "source": "data/phi_morphogenetic_scaling_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Phi Morphogenetic Scaling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1588,7 +3308,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/ionospheric_chemistry_coupling_benchmark.json"
+      "source": "data/ionospheric_chemistry_coupling_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Ionospheric Chemistry Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1597,7 +3327,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/energy_ai_orbital_bridge_benchmark.json"
+      "source": "data/energy_ai_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Energy AI Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1606,7 +3346,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/consciousness_galactic_orbital_bridge_benchmark.json"
+      "source": "data/consciousness_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Consciousness Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1615,7 +3365,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/energy_neural_orbital_bridge_benchmark.json"
+      "source": "data/energy_neural_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Energy Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1624,7 +3384,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/particle_neural_orbital_bridge_benchmark.json"
+      "source": "data/particle_neural_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Particle Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1633,7 +3403,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/proof_carrying_code_genome_benchmark.json"
+      "source": "data/proof_carrying_code_genome_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Proof Carrying Code Genome",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1642,7 +3422,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/domain_orbital_predictions_benchmark.json"
+      "source": "data/domain_orbital_predictions_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Domain Orbital Predictions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1651,7 +3441,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/medical_galactic_orbital_bridge_benchmark.json"
+      "source": "data/medical_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Medical Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1660,7 +3460,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/ai_galactic_orbital_bridge_benchmark.json"
+      "source": "data/ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1669,7 +3479,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/neural_galactic_orbital_bridge_benchmark.json"
+      "source": "data/neural_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neural Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1678,7 +3498,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/toe_unification_spine_benchmark.json"
+      "source": "data/toe_unification_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "ToE Unification Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1687,7 +3517,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/compactification_ladder_benchmark.json"
+      "source": "data/compactification_ladder_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Compactification Ladder",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1696,7 +3536,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/adjacent_rung_coupling_benchmark.json"
+      "source": "data/adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1705,7 +3555,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fold_depth_metrics_benchmark.json"
+      "source": "data/fold_depth_metrics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fold Depth Metrics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1714,7 +3574,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/reality_folding_spine_benchmark.json"
+      "source": "data/reality_folding_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Reality Folding Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1723,7 +3593,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/time_emergence_simulation_benchmark.json"
+      "source": "data/time_emergence_simulation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Time Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1732,7 +3612,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/time_domain_crosswalk_benchmark.json"
+      "source": "data/time_domain_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Time Domain Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1741,7 +3631,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fpc_temporal_coupling_benchmark.json"
+      "source": "data/fpc_temporal_coupling_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "FPC Temporal Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1750,7 +3650,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fluid_phase_current_spine_benchmark.json"
+      "source": "data/fluid_phase_current_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fluid Phase Current Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1759,7 +3669,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/stumped_observables_panel_benchmark.json"
+      "source": "data/stumped_observables_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Stumped Observables Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1768,7 +3688,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/hubble_bubble_tension_benchmark.json"
+      "source": "data/hubble_bubble_tension_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Hubble Bubble Tension",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1777,7 +3707,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/dark_sector_open_problems_benchmark.json"
+      "source": "data/dark_sector_open_problems_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Dark Sector Open Problems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1786,7 +3726,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/stumped_observables_spine_benchmark.json"
+      "source": "data/stumped_observables_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Stumped Observables Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1795,7 +3745,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/consciousness_econ_benchmark.json"
+      "source": "data/consciousness_econ_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Consciousness Econ",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1804,7 +3764,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/dark_energy_cpl_benchmark.json"
+      "source": "data/dark_energy_cpl_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Dark Energy CPL",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1813,7 +3783,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/sh0es_refined_benchmark.json"
+      "source": "data/sh0es_refined_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "SH0ES Refined",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1822,7 +3802,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/consciousness_soul_bridge_benchmark.json"
+      "source": "data/consciousness_soul_bridge_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Consciousness Soul Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1831,7 +3821,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/symbolic_archetype_panel_benchmark.json"
+      "source": "data/symbolic_archetype_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Symbolic Archetype Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1840,7 +3840,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/astrophysical_structure_crosswalk_benchmark.json"
+      "source": "data/astrophysical_structure_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Astrophysical Structure Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1849,7 +3859,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/stellar_multiplicity_catalog_benchmark.json"
+      "source": "data/stellar_multiplicity_catalog_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Stellar Multiplicity Catalog",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1858,7 +3878,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/compact_object_binary_events_benchmark.json"
+      "source": "data/compact_object_binary_events_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Compact Object Binary Events",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1867,7 +3897,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/galactic_structure_sample_benchmark.json"
+      "source": "data/galactic_structure_sample_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Galactic Structure Sample",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1876,7 +3916,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/solar_system_structure_deep_benchmark.json"
+      "source": "data/solar_system_structure_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Solar System Structure Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1885,7 +3935,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/exoplanet_system_architecture_benchmark.json"
+      "source": "data/exoplanet_system_architecture_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Exoplanet System Architecture",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1894,7 +3954,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pubchem_stability_panel_benchmark.json"
+      "source": "data/pubchem_stability_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "PubChem Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1903,7 +3973,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/materials_genome_crosswalk_benchmark.json"
+      "source": "data/materials_genome_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Materials Genome Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1912,7 +3992,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/uniprot_structure_annotations_deep_benchmark.json"
+      "source": "data/uniprot_structure_annotations_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "UniProt Structure Annotations Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1921,7 +4011,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/igem_parts_expanded_benchmark.json"
+      "source": "data/igem_parts_expanded_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "IGEM Parts Expanded",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1930,7 +4030,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/interdisciplinary_spine_crosswalk_benchmark.json"
+      "source": "data/interdisciplinary_spine_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Interdisciplinary Spine Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1939,7 +4049,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/chemical_structure_stability_panel_benchmark.json"
+      "source": "data/chemical_structure_stability_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Chemical Structure Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1948,7 +4068,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/published_fuel_property_panel_benchmark.json"
+      "source": "data/published_fuel_property_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Published Fuel Property Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1957,7 +4087,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/gwosc_live_event_deep_benchmark.json"
+      "source": "data/gwosc_live_event_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "GWOSC Live Event Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1966,7 +4106,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/stellar_multiplicity_live_deep_benchmark.json"
+      "source": "data/stellar_multiplicity_live_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Stellar Multiplicity Live Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1975,7 +4125,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/material_property_verification_scaffold_benchmark.json"
+      "source": "data/material_property_verification_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Material Property Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1984,7 +4144,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fuel_thermochemistry_public_anchors_benchmark.json"
+      "source": "data/fuel_thermochemistry_public_anchors_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fuel Thermochemistry Public Anchors",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1993,7 +4163,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/simbad_stellar_identity_deep_benchmark.json"
+      "source": "data/simbad_stellar_identity_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "SIMBAD Stellar Identity Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2002,7 +4182,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/gaia_astrometry_panel_deep_benchmark.json"
+      "source": "data/gaia_astrometry_panel_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Gaia Astrometry Panel Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2011,7 +4201,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/music_harmonics_public_panel_benchmark.json"
+      "source": "data/music_harmonics_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Music Harmonics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2020,7 +4220,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/xr_interactive_media_math_scaffold_benchmark.json"
+      "source": "data/xr_interactive_media_math_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "XR Interactive Media Math Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2029,7 +4239,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/creative_arts_math_spine_benchmark.json"
+      "source": "data/creative_arts_math_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Creative Arts Math Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2038,7 +4258,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/wds_live_multiplicity_deep_benchmark.json"
+      "source": "data/wds_live_multiplicity_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "WDS Live Multiplicity Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2047,7 +4277,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/gaia_dr3_tap_deep_benchmark.json"
+      "source": "data/gaia_dr3_tap_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Gaia DR3 TAP Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2056,7 +4296,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/preregistered_predictions_verification_scaffold_benchmark.json"
+      "source": "data/preregistered_predictions_verification_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Preregistered Predictions Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2065,7 +4315,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/information_theory_public_panel_benchmark.json"
+      "source": "data/information_theory_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Information Theory Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2074,7 +4334,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/network_science_public_panel_benchmark.json"
+      "source": "data/network_science_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Network Science Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2083,7 +4353,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/semiconductor_physics_public_panel_benchmark.json"
+      "source": "data/semiconductor_physics_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Semiconductor Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2092,7 +4372,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/statistical_mechanics_public_panel_benchmark.json"
+      "source": "data/statistical_mechanics_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Statistical Mechanics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2101,7 +4391,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/biophysics_public_panel_benchmark.json"
+      "source": "data/biophysics_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Biophysics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2110,7 +4410,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/neurolab_gaps_math_spine_benchmark.json"
+      "source": "data/neurolab_gaps_math_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neurolab Gaps Math Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2119,7 +4429,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/material_in_silico_screening_scaffold_benchmark.json"
+      "source": "data/material_in_silico_screening_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Material In Silico Screening Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2128,7 +4448,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fuel_candidate_prereg_scaffold_benchmark.json"
+      "source": "data/fuel_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fuel Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2137,7 +4467,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/interactive_media_prereg_scaffold_benchmark.json"
+      "source": "data/interactive_media_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Interactive Media Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2146,7 +4486,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/quantum_information_benchmark.json"
+      "source": "data/quantum_information_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Quantum Information",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2155,7 +4505,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/econophysics_benchmark.json"
+      "source": "data/econophysics_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Econophysics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2164,7 +4524,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/ecology_benchmark.json"
+      "source": "data/ecology_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Ecology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2173,7 +4543,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/genomic_sciences_benchmark.json"
+      "source": "data/genomic_sciences_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Genomic Sciences",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2182,7 +4562,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/neurolab_residual_math_spine_benchmark.json"
+      "source": "data/neurolab_residual_math_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Neurolab Residual Math Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2191,7 +4581,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/term3_acoustic_bleed_depth_benchmark.json"
+      "source": "data/term3_acoustic_bleed_depth_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Term3 Acoustic Bleed Depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2200,7 +4600,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/initiation_transformation_archetype_benchmark.json"
+      "source": "data/initiation_transformation_archetype_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Initiation Transformation Archetype",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2209,7 +4619,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/boundary_partition_tightening_benchmark.json"
+      "source": "data/boundary_partition_tightening_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Boundary Partition Tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2218,7 +4638,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/formula_precision_spine_benchmark.json"
+      "source": "data/formula_precision_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Formula Precision Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2227,7 +4657,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/materials_project_live_panel_benchmark.json"
+      "source": "data/materials_project_live_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Materials Project Live Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2236,7 +4676,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/pubchem_live_deep_benchmark.json"
+      "source": "data/pubchem_live_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "PubChem Live Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2245,7 +4695,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/openneuro_full_panel_benchmark.json"
+      "source": "data/openneuro_full_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "OpenNeuro Full Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2254,7 +4714,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/vizier_wds_tap_live_deep_benchmark.json"
+      "source": "data/vizier_wds_tap_live_deep_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "VizieR WDS TAP Live Deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2263,7 +4733,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/live_ingest_spine_benchmark.json"
+      "source": "data/live_ingest_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Live Ingest Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2272,7 +4752,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/unified_db_candidate_crosswalk_benchmark.json"
+      "source": "data/unified_db_candidate_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Unified DB Candidate Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2281,7 +4771,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fsot_aggregate_organized_panel_benchmark.json"
+      "source": "data/fsot_aggregate_organized_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "FSOT Aggregate Organized Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2290,7 +4790,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/unified_db_crosswalk_spine_benchmark.json"
+      "source": "data/unified_db_crosswalk_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Unified DB Crosswalk Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2299,7 +4809,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/proof_ledger_closure_spine_benchmark.json"
+      "source": "data/proof_ledger_closure_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Proof Ledger Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2308,7 +4828,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/preregistered_outcome_tracking_benchmark.json"
+      "source": "data/preregistered_outcome_tracking_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Preregistered Outcome Tracking",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2317,7 +4847,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/toe_claim_certificate_bundle_benchmark.json"
+      "source": "data/toe_claim_certificate_bundle_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "ToE Claim Certificate Bundle",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2326,7 +4866,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fusion_physics_public_panel_benchmark.json"
+      "source": "data/fusion_physics_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fusion Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2335,7 +4885,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/magnetic_confinement_fusion_panel_benchmark.json"
+      "source": "data/magnetic_confinement_fusion_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Magnetic Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2344,7 +4904,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/inertial_confinement_fusion_panel_benchmark.json"
+      "source": "data/inertial_confinement_fusion_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Inertial Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2353,7 +4923,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json"
+      "source": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cold Fusion Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2362,7 +4942,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fusion_lab_certificate_spine_benchmark.json"
+      "source": "data/fusion_lab_certificate_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fusion Lab Certificate Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2371,7 +4961,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/periodic_table_public_panel_benchmark.json"
+      "source": "data/periodic_table_public_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Periodic Table Public Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2380,7 +4980,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/superheavy_element_stability_panel_benchmark.json"
+      "source": "data/superheavy_element_stability_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Superheavy Element Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2389,7 +4999,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/undiscovered_element_candidate_prereg_scaffold_benchmark.json"
+      "source": "data/undiscovered_element_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Undiscovered Element Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2398,7 +5018,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/natural_formation_element_simulation_benchmark.json"
+      "source": "data/natural_formation_element_simulation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Natural Formation Element Simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2407,7 +5037,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/periodic_table_completion_spine_benchmark.json"
+      "source": "data/periodic_table_completion_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Periodic Table Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2416,7 +5056,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/heavy_ion_lab_synthesis_panel_benchmark.json"
+      "source": "data/heavy_ion_lab_synthesis_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Heavy Ion Lab Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2425,7 +5075,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/element_synthesis_condition_scaffold_benchmark.json"
+      "source": "data/element_synthesis_condition_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Element Synthesis Condition Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2434,7 +5094,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+      "source": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cold Fusion Lab Synthesis Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2443,7 +5113,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/metamaterial_fluid_design_prereg_scaffold_benchmark.json"
+      "source": "data/metamaterial_fluid_design_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Metamaterial Fluid Design Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2452,7 +5132,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/lab_synthesis_metamaterial_spine_benchmark.json"
+      "source": "data/lab_synthesis_metamaterial_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Lab Synthesis Metamaterial Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2461,7 +5151,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/island_of_stability_deep_panel_benchmark.json"
+      "source": "data/island_of_stability_deep_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Island Of Stability Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2470,7 +5170,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/z120_z126_beam_synthesis_panel_benchmark.json"
+      "source": "data/z120_z126_beam_synthesis_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Z120 Z126 Beam Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2479,7 +5189,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fusion_decay_chain_prereg_scaffold_benchmark.json"
+      "source": "data/fusion_decay_chain_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fusion Decay Chain Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2488,7 +5208,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/superheavy_island_emergence_simulation_benchmark.json"
+      "source": "data/superheavy_island_emergence_simulation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Superheavy Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2497,7 +5227,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/superheavy_island_completion_spine_benchmark.json"
+      "source": "data/superheavy_island_completion_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Superheavy Island Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2506,7 +5246,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/distant_island_z128_z132_deep_panel_benchmark.json"
+      "source": "data/distant_island_z128_z132_deep_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Distant Island Z128 Z132 Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2515,7 +5265,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/z164_distant_island_prereg_scaffold_benchmark.json"
+      "source": "data/z164_distant_island_prereg_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Z164 Distant Island Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2524,7 +5284,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/periodic_extension_decay_topology_scaffold_benchmark.json"
+      "source": "data/periodic_extension_decay_topology_scaffold_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Periodic Extension Decay Topology Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2533,7 +5303,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/distant_island_emergence_simulation_benchmark.json"
+      "source": "data/distant_island_emergence_simulation_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Distant Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2542,7 +5322,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/periodic_table_extension_closure_spine_benchmark.json"
+      "source": "data/periodic_table_extension_closure_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Periodic Table Extension Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2551,7 +5341,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/time_emergence_deep_panel_benchmark.json"
+      "source": "data/time_emergence_deep_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Time Emergence Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2560,7 +5360,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fpc_fluidlink_timing_deep_panel_benchmark.json"
+      "source": "data/fpc_fluidlink_timing_deep_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "FPC Fluidlink Timing Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2569,7 +5379,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/cosmology_anomaly_deep_panel_benchmark.json"
+      "source": "data/cosmology_anomaly_deep_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Cosmology Anomaly Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2578,7 +5398,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/hubble_dark_sector_crosswalk_benchmark.json"
+      "source": "data/hubble_dark_sector_crosswalk_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Hubble Dark Sector Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2587,7 +5417,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fluid_spacetime_observable_spine_benchmark.json"
+      "source": "data/fluid_spacetime_observable_spine_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fluid Spacetime Observable Spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2596,7 +5436,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json"
+      "source": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Hybrid FI Sim Multi Hero Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2605,7 +5455,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/knowledge_base_portable_bundle_panel_benchmark.json"
+      "source": "data/knowledge_base_portable_bundle_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Knowledge Base Portable Bundle Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2614,7 +5474,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/rd_interval_tightening_panel_benchmark.json"
+      "source": "data/rd_interval_tightening_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "RD Interval Tightening Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2623,7 +5493,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/domain_coupling_simulation_refresh_panel_benchmark.json"
+      "source": "data/domain_coupling_simulation_refresh_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Domain Coupling Simulation Refresh Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2632,7 +5512,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/fluid_spacetime_prereg_validation_panel_benchmark.json"
+      "source": "data/fluid_spacetime_prereg_validation_panel_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Fluid Spacetime Prereg Validation Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2641,7 +5531,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "data/warp_bh_wh_portal_benchmark.json"
+      "source": "data/warp_bh_wh_portal_benchmark.json",
+      "domain_display_name": "portable clone verify",
+      "display_name": "Warp BH WH Portal Panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2650,7 +5550,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "vendor\\public_data\\cache"
+      "source": "vendor\\public_data\\cache",
+      "domain_display_name": "portable clone verify",
+      "display_name": "vendor public data cache",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -2660,7 +5570,17 @@
       "measured": 4.0,
       "error_pct": 0.0,
       "source": "data/*_benchmark.json scan",
-      "note": "tracked for progressive elimination; clone uses FSOT_PORTABLE_MODE"
+      "note": "tracked for progressive elimination; clone uses FSOT_PORTABLE_MODE",
+      "domain_display_name": "portable clone verify",
+      "display_name": "no absolute external paths",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -2684,5 +5604,19 @@
   "clone_verify_pass": true,
   "crosswalk_modules": [
     "FSOT.Formal.PortableCloneVerifyPriors"
-  ]
+  ],
+  "display_name": "Portable Clone Verify",
+  "tier_label": "Tier 46",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.503277+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 290,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 290
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -15,6 +15,7 @@ from rust_replay_lib import RUST_DIR, write_generated_tests  # noqa: E402
 def main() -> int:
     meta = write_generated_tests()
     print(f"Wrote Rust replay tests under {RUST_DIR / 'tests'}")
+    print(f"  connective obligations: {meta.get('connective_count', 0)}")
     print(f"  formal obligations: {meta['formal_count']}")
     print(f"  transcendental obligations: {meta['transcendental_count']}")
     print(f"  total: {meta['total_count']}")

@@ -43,7 +43,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 38
+      "observable_count": 38,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 1e-06,
       "measured": 0.0,
       "error_pct": 1e-06,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "table completion spine",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +84,17 @@
       "measured": 9.5e-05,
       "error_pct": 0.0,
       "record_count": 52,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "periodic table public",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -74,7 +104,17 @@
       "measured": 1.008,
       "error_pct": 9.5e-05,
       "source_panel": "periodic_table_public",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "H",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -84,7 +124,17 @@
       "measured": 13.598,
       "error_pct": 9.5e-05,
       "source_panel": "periodic_table_public",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "H",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 9.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -94,7 +144,17 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "source_panel": "periodic_table_public",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "H",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -104,7 +164,17 @@
       "measured": 4.0026,
       "error_pct": 9.5e-05,
       "source_panel": "periodic_table_public",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "He",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.0001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -114,7 +184,17 @@
       "measured": 24.587,
       "error_pct": 9.5e-05,
       "source_panel": "periodic_table_public",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "He",
+      "scientific_measurement": {
+        "delta": 2.3e-05,
+        "delta_pct": 9.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -124,7 +204,17 @@
       "measured": 1e-06,
       "error_pct": 0.0,
       "record_count": 50,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "superheavy stability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -134,7 +224,17 @@
       "measured": 938.272,
       "error_pct": 0.323111,
       "source_panel": "superheavy_stability",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "proton",
+      "scientific_measurement": {
+        "delta": 3.03165665,
+        "delta_pct": 0.323111,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -144,7 +244,17 @@
       "measured": 939.565,
       "error_pct": 0.185049,
       "source_panel": "superheavy_stability",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "neutron",
+      "scientific_measurement": {
+        "delta": 1.73865665,
+        "delta_pct": 0.185049,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -154,7 +264,17 @@
       "measured": 8100.0,
       "error_pct": 1e-06,
       "source_panel": "superheavy_stability",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7.698e-05,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -164,7 +284,17 @@
       "measured": 7.154302,
       "error_pct": 9.5e-05,
       "source_panel": "superheavy_stability",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -174,7 +304,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "superheavy_stability",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -184,7 +324,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 25,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "undiscovered prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -194,7 +344,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -204,7 +364,17 @@
       "measured": 0.0565,
       "error_pct": 0.0,
       "source_panel": "undiscovered_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "phi morphogenetic scaling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -214,7 +384,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -224,7 +404,17 @@
       "measured": 2500000.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0002376,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -234,7 +424,17 @@
       "measured": 6.838735,
       "error_pct": 9.5e-05,
       "source_panel": "undiscovered_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -244,7 +444,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 44,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "natural formation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -254,7 +464,17 @@
       "measured": 9.5e-05,
       "error_pct": 0.0,
       "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "fusion physics public panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -264,7 +484,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium r process supernova",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -274,7 +504,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium s process agb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -284,7 +524,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium cosmic ray spallation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -294,7 +544,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "natural_formation",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "Z120 N184 unbinilium heavy ion fusion lab",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -304,7 +564,17 @@
       "measured": 9.5e-05,
       "error_pct": 0.0,
       "record_count": 19,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "fusion physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -314,7 +584,17 @@
       "measured": 17.6,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 9.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -324,7 +604,17 @@
       "measured": 15.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 9.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -334,7 +624,17 @@
       "measured": 5.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.0001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -344,7 +644,17 @@
       "measured": 4.03,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -354,7 +664,17 @@
       "measured": 50.0,
       "error_pct": 9.5e-05,
       "source_panel": "fusion_physics",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4.8e-05,
+        "delta_pct": 9.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -364,7 +684,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 19,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "cold fusion prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -374,7 +704,17 @@
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -384,7 +724,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -394,7 +744,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -404,7 +764,17 @@
       "measured": 1.85,
       "error_pct": 7.9e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -414,7 +784,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "periodic_relay"
+      "eval_kind": "periodic_relay",
+      "domain_display_name": "periodic table completion",
+      "display_name": "ni hydrogen lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -424,7 +804,17 @@
       "measured": 0.014415,
       "error_pct": 0.0,
       "record_count": 0,
-      "eval_kind": "periodic_panel_bridge"
+      "eval_kind": "periodic_panel_bridge",
+      "domain_display_name": "periodic table completion",
+      "display_name": "particle physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "periodic_table_completion_lab",
@@ -438,7 +828,17 @@
         "periodic_table_public_anchors.json",
         "superheavy_stability_anchors.json",
         "undiscovered_element_prereg_candidates.json"
-      ]
+      ],
+      "domain_display_name": "periodic table completion",
+      "display_name": "periodic table completion spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -452,5 +852,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Periodic Table Completion Spine",
+  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.669395+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 38,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.323111,
+    "mean_abs_delta": 0.12554660210526314,
+    "precision_tier_counts": {
+      "green": 38
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -43,7 +43,17 @@
       "computed": 0.027544,
       "measured": 0.0,
       "error_pct": 0.027544107556407217,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.027544,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.027544,
       "measured": 0.0,
       "error_pct": 0.027544107556407217,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "prediction rollup panel",
+      "scientific_measurement": {
+        "delta": 0.027544,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -67,7 +87,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "physics_frontier",
       "formula_branch": "term3.acoustic_bleed",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -80,7 +110,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "physics_frontier",
       "formula_branch": "term3.chaos_factor",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "Chaos Mediated Phase Transitions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -93,7 +133,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "physics_frontier",
       "formula_branch": "term1.term1_base",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "Phi Morphogenetic Scaling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -106,7 +156,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "physics_frontier",
       "formula_branch": "term3.acoustic_inflow",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "Ionospheric Chemistry Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -119,7 +179,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.perceived_adjust",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "Proof Carrying Code Genome",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -132,7 +202,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "consciousness galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -145,7 +225,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "energy ai Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -158,7 +248,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "energy neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -171,7 +271,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "particle neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -184,7 +294,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "medical galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -197,7 +317,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "ai galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "domain_orbital_predictions_lab",
@@ -210,7 +340,17 @@
       "source": "orbital_predictions_registry.yaml",
       "prediction_class": "tag_cluster_bridge",
       "formula_branch": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED"
+      "gap_fill_status": "FILLED",
+      "domain_display_name": "domain orbital predictions",
+      "display_name": "neural galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -234,5 +374,20 @@
   "crosswalk_modules": [
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
     "FSOT.Formal.ToEUnificationSpinePriors"
-  ]
+  ],
+  "display_name": "Domain Orbital Predictions",
+  "tier_label": "Tier 48",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.538055+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 12,
+    "median_error_pct": 0.027544107556407217,
+    "max_error_pct": 99.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 11,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9166666666666666,
+    "matches_domain_spine": false
+  }
 }

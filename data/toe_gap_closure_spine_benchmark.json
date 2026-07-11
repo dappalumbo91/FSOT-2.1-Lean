@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "closure panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 21.0,
       "measured": 21.0,
       "error_pct": 0.0,
-      "source": "Fractal_Constant_Recursion"
+      "source": "Fractal_Constant_Recursion",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "recursion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -68,7 +98,17 @@
       "computed": 27.0,
       "measured": 27.0,
       "error_pct": 0.020098237848408945,
-      "source": "Preregistered_Predictions"
+      "source": "Preregistered_Predictions",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "predictions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -77,7 +117,17 @@
       "computed": 290.0,
       "measured": 290.0,
       "error_pct": 0.0,
-      "source": "Portable_Clone_Verify"
+      "source": "Portable_Clone_Verify",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "portable",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -86,7 +136,17 @@
       "computed": 247.0,
       "measured": 247.0,
       "error_pct": 0.0525102820198906,
-      "source": "Observer_Channel_Derivation"
+      "source": "Observer_Channel_Derivation",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "observer",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -95,7 +155,17 @@
       "computed": 13.0,
       "measured": 13.0,
       "error_pct": 0.0,
-      "source": "Adversarial_Fractal_Break_Tests"
+      "source": "Adversarial_Fractal_Break_Tests",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "adversarial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -104,7 +174,17 @@
       "computed": 24.0,
       "measured": 24.0,
       "error_pct": 0.0,
-      "source": "preregistered_predictions"
+      "source": "preregistered_predictions",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "discriminant pass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_gap_closure_spine_lab",
@@ -113,7 +193,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "portable_clone_verify"
+      "source": "portable_clone_verify",
+      "domain_display_name": "toe gap closure spine",
+      "display_name": "portable clone",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -133,5 +223,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.ToEGapClosureSpinePriors",
     "FSOT.Formal.TheoryCompletenessSpinePriors"
-  ]
+  ],
+  "display_name": "ToE Gap Closure Spine",
+  "tier_label": "Tier 46",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.517951+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0525102820198906,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 7
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -19,56 +19,151 @@
       "property": "row_count",
       "computed": 1532,
       "measured": 1532,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "row count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "type_count_seed",
       "computed": 5,
       "measured": 5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "type count seed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "type_count_layer_1",
       "computed": 8,
       "measured": 8,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "type count layer 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "type_count_layer_2",
       "computed": 12,
       "measured": 12,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "type count layer 2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "type_count_threshold",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "type count threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "type_count_domain_metadata",
       "computed": 35,
       "measured": 35,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "type count domain metadata",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "smiles_derivation_section_count",
       "computed": 108,
       "measured": 107,
-      "error_pct": 0.9345794392523363
+      "error_pct": 0.9345794392523363,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "smiles derivation section count",
+      "scientific_measurement": {
+        "delta": 1.0,
+        "delta_pct": 0.934579,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "fsot_aggregate_unified_db",
       "property": "distinct_type_count",
       "computed": 113,
       "measured": 113,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "fsot aggregate unified db",
+      "display_name": "distinct type count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "FSOT Aggregate Unified DB",
+  "tier_label": "Tier 36",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.795304+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 8,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.934579,
+    "mean_abs_delta": 0.125,
+    "precision_tier_counts": {
+      "green": 7,
+      "red": 1
+    },
+    "green_gate_fraction": 0.875,
+    "matches_domain_spine": false
+  }
 }

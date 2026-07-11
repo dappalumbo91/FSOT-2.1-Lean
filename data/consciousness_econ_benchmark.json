@@ -41,7 +41,17 @@
       "computed": 0.008898,
       "measured": 0.0,
       "error_pct": 0.008898,
-      "observable_count": 37
+      "observable_count": 37,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.008898,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.008898,
       "measured": 0.0,
       "error_pct": 0.008898,
-      "observable_count": 37
+      "observable_count": 37,
+      "domain_display_name": "tier gap fill",
+      "display_name": "brain metabolic panel",
+      "scientific_measurement": {
+        "delta": 0.008898,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -62,7 +82,17 @@
       "measured": 13.0,
       "error_pct": 0.0,
       "formula": "13",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -72,7 +102,17 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "formula": "3\u00b3=27",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Metatron Pathways",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -82,7 +122,17 @@
       "measured": 0.618,
       "error_pct": 0.0055,
       "formula": "\u03c6/(1+\u03c6)",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.0055,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -92,7 +142,17 @@
       "measured": 0.8653,
       "error_pct": 0.005087,
       "formula": "e/\u03c0",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Resonance Persistence",
+      "scientific_measurement": {
+        "delta": -4.402e-05,
+        "delta_pct": 0.005087,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -102,7 +162,17 @@
       "measured": 0.2124,
       "error_pct": 0.025529,
       "formula": "\u03b3/e",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": -5.422e-05,
+        "delta_pct": 0.025529,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -112,7 +182,17 @@
       "measured": 1.5759,
       "error_pct": 0.001259,
       "formula": "\u03b3\u03c0/(e(\u03c0\u2212e))",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Resonance Eq Factor",
+      "scientific_measurement": {
+        "delta": 1.985e-05,
+        "delta_pct": 0.001259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -122,7 +202,17 @@
       "measured": 0.3922,
       "error_pct": 0.006759,
       "formula": "Gate/Eq",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Ignition Coherence",
+      "scientific_measurement": {
+        "delta": -2.651e-05,
+        "delta_pct": 0.006759,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -132,7 +222,17 @@
       "measured": 1.618,
       "error_pct": 0.002101,
       "formula": "\u03c6",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "W Integration",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.002101,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -142,7 +242,17 @@
       "measured": 0.618,
       "error_pct": 0.0055,
       "formula": "\u03c6/(1+\u03c6)",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "W Complexity",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.0055,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -152,7 +262,17 @@
       "measured": 0.8653,
       "error_pct": 0.005087,
       "formula": "e/\u03c0",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "W Binding",
+      "scientific_measurement": {
+        "delta": -4.402e-05,
+        "delta_pct": 0.005087,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -162,7 +282,17 @@
       "measured": 0.618,
       "error_pct": 0.0055,
       "formula": "1/\u03c6",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "W Phase Sync",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.0055,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -172,7 +302,17 @@
       "measured": 0.618,
       "error_pct": 0.0055,
       "formula": "\u03c6/(1+\u03c6)",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Hub coupling",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.0055,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -182,7 +322,17 @@
       "measured": 0.382,
       "error_pct": 0.008898,
       "formula": "1/\u03c6\u00b2",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Inner coupling",
+      "scientific_measurement": {
+        "delta": -3.399e-05,
+        "delta_pct": 0.008898,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -192,7 +342,17 @@
       "measured": 0.8653,
       "error_pct": 0.005087,
       "formula": "e/\u03c0",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Radial coupling",
+      "scientific_measurement": {
+        "delta": -4.402e-05,
+        "delta_pct": 0.005087,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -202,7 +362,17 @@
       "measured": 0.618,
       "error_pct": 0.0055,
       "formula": "1/\u03c6",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Outer coupling",
+      "scientific_measurement": {
+        "delta": 3.399e-05,
+        "delta_pct": 0.0055,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -212,7 +382,17 @@
       "measured": 0.5772,
       "error_pct": 0.002714,
       "formula": "\u03b3",
-      "eval_kind": "fsot_compute"
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "consciousness econ",
+      "display_name": "Cross coupling",
+      "scientific_measurement": {
+        "delta": 1.566e-05,
+        "delta_pct": 0.002714,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -222,7 +402,17 @@
       "measured": 40.0,
       "error_pct": 0.0,
       "formula": "40*Gate/W_Phase_Sync",
-      "eval_kind": "microtubule_physics"
+      "eval_kind": "microtubule_physics",
+      "domain_display_name": "consciousness econ",
+      "display_name": "gamma gate carrier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -236,7 +426,17 @@
       "symbolic": "ordinary_waking_baseline",
       "condition": "no_entrainment",
       "reference": "Clarke_Sokoloff_1999_resting_floor",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "resting valve closed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -247,7 +447,17 @@
       "error_pct": 0.0,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 0.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "resting valve closed power",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -261,7 +471,17 @@
       "symbolic": "gamma_observer_lock",
       "condition": "auditory_40Hz_stimulation",
       "reference": "Poil_2020_Iaccarino_40Hz_gamma_entrainment",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "gamma 40hz auditory entrainment",
+      "scientific_measurement": {
+        "delta": -0.000227,
+        "delta_pct": 0.238947,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -272,7 +492,17 @@
       "error_pct": 0.020728,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 40.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "gamma 40hz auditory entrainment power",
+      "scientific_measurement": {
+        "delta": -0.004539,
+        "delta_pct": 0.020726,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -286,7 +516,17 @@
       "symbolic": "compassion_meditation_gamma",
       "condition": "internal_gamma_coherence",
       "reference": "Lutz_2004_long_term_meditator_gamma",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "meditation gamma synchrony",
+      "scientific_measurement": {
+        "delta": 0.000773,
+        "delta_pct": 0.82234,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -297,7 +537,17 @@
       "error_pct": 0.070661,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 40.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "meditation gamma synchrony power",
+      "scientific_measurement": {
+        "delta": 0.015461,
+        "delta_pct": 0.070663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -311,7 +561,17 @@
       "symbolic": "theta_trance_entrainment",
       "condition": "binaural_beats_6Hz",
       "reference": "Lane_1998_binaural_theta_attention",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "binaural theta 6hz",
+      "scientific_measurement": {
+        "delta": 0.000134,
+        "delta_pct": 0.142553,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -322,7 +582,17 @@
       "error_pct": 0.012216,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 6.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "binaural theta 6hz power",
+      "scientific_measurement": {
+        "delta": 0.002673,
+        "delta_pct": 0.012217,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -336,7 +606,17 @@
       "symbolic": "earth_ionospheric_resonance",
       "condition": "ambient_ultra_low_frequency",
       "reference": "HRV_coherence_Schumann_band_studies",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "schumann 783hz",
+      "scientific_measurement": {
+        "delta": -0.000465,
+        "delta_pct": 1.107143,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -347,7 +627,17 @@
       "error_pct": 0.044671,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 7.83,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "schumann 783hz power",
+      "scientific_measurement": {
+        "delta": -0.009309,
+        "delta_pct": 0.044669,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -361,7 +651,17 @@
       "symbolic": "transcending_alpha_coherence",
       "condition": "transcendental_meditation",
       "reference": "Travis_2009_TM_alpha_coherence",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "meditation tm alpha",
+      "scientific_measurement": {
+        "delta": 6.8e-05,
+        "delta_pct": 0.309091,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -372,7 +672,17 @@
       "error_pct": 0.006669,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 10.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "meditation tm alpha power",
+      "scientific_measurement": {
+        "delta": 0.001363,
+        "delta_pct": 0.006668,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -386,7 +696,17 @@
       "symbolic": "metatron_second_harmonic",
       "condition": "alpha_theta_border_entrainment",
       "reference": "FSOT_harmonic_f1_microtubule_sideband",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "harmonic alpha theta border",
+      "scientific_measurement": {
+        "delta": -0.000227,
+        "delta_pct": 0.238947,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -397,7 +717,17 @@
       "error_pct": 0.020732,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 15.69,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "harmonic alpha theta border power",
+      "scientific_measurement": {
+        "delta": -0.00454,
+        "delta_pct": 0.020731,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -411,7 +741,17 @@
       "symbolic": "collective_meditation_EEG",
       "condition": "group_meditation_EEG",
       "reference": "OpenNeuro_ds001787_meditation_EEG_meta",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "openneuro eeg meditation cohort",
+      "scientific_measurement": {
+        "delta": 0.000195,
+        "delta_pct": 0.696429,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -422,7 +762,17 @@
       "error_pct": 0.018937,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 10.5,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "openneuro eeg meditation cohort power",
+      "scientific_measurement": {
+        "delta": 0.003893,
+        "delta_pct": 0.018935,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -436,7 +786,17 @@
       "symbolic": "mechanical_valve_opening",
       "condition": "transcranial_ultrasound_therapy",
       "reference": "FDA_trials_LIPUS_gamma_range_neuromodulation",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "focused ultrasound neuromodulation",
+      "scientific_measurement": {
+        "delta": 0.001773,
+        "delta_pct": 1.906452,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -447,7 +807,17 @@
       "error_pct": 0.162217,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 40.0,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "focused ultrasound neuromodulation power",
+      "scientific_measurement": {
+        "delta": 0.035461,
+        "delta_pct": 0.162219,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -461,7 +831,17 @@
       "symbolic": "electromagnetic_harmonic_healing",
       "condition": "pulsed_electromagnetic_field_therapy",
       "reference": "PEMF_FDA_cleared_tissue_repair_meta",
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "pemf oncology adjunct",
+      "scientific_measurement": {
+        "delta": 0.001767,
+        "delta_pct": 4.309756,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "consciousness_econ_lab",
@@ -472,7 +852,17 @@
       "error_pct": 0.16971,
       "brain_metabolic_w": 20.0,
       "stimulus_hz": 7.8,
-      "eval_kind": "resonance_validation"
+      "eval_kind": "resonance_validation",
+      "domain_display_name": "consciousness econ",
+      "display_name": "pemf oncology adjunct power",
+      "scientific_measurement": {
+        "delta": 0.035334,
+        "delta_pct": 0.169712,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1637,5 +2027,20 @@
     "note": "Full open-valve information capacity awaiting resonant stimulus"
   },
   "tier": 51,
-  "econ_status": "GREEN"
+  "econ_status": "GREEN",
+  "display_name": "Consciousness Econ",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.564044+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 37,
+    "median_error_pct": 0.008898,
+    "max_error_pct": 4.309756,
+    "mean_abs_delta": 0.0032077900000000003,
+    "precision_tier_counts": {
+      "green": 32,
+      "red": 5
+    },
+    "green_gate_fraction": 0.8648648648648649,
+    "matches_domain_spine": false
+  }
 }

@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 56
+      "observable_count": 56,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 27,
+      "domain_display_name": "tier gap fill",
+      "display_name": "prereg tracking",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -62,7 +82,18 @@
       "measured": 70.75,
       "error_pct": 0.0,
       "formula_branch": "term1.perceived_adjust",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "H0_bridge_scalar",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "H0_bridge_scalar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -73,7 +104,18 @@
       "error_pct": 0.0,
       "discriminant": "strictly_between_planck_and_sh0es",
       "sota_baseline": 67.36,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "H0_bridge_scalar",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "H0_bridge_scalar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -84,7 +126,18 @@
       "measured": 0.805,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "S8_effective_lensing",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "S8_effective_lensing",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -95,7 +148,18 @@
       "error_pct": 0.0,
       "discriminant": "between_planck_and_des",
       "sota_baseline": 0.834,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "S8_effective_lensing",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "S8_effective_lensing",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -106,7 +170,18 @@
       "measured": 0.85,
       "error_pct": 0.0,
       "formula_branch": "term1.quirkMod",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "adversarial_codon_hole_rate",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "adversarial_codon_hole_rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -117,7 +192,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.35,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "adversarial_codon_hole_rate",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "adversarial_codon_hole_rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -128,7 +214,18 @@
       "measured": 2.49e-09,
       "error_pct": 0.0,
       "formula_branch": "term3.chaos_factor",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "muon_g2_excess_direction",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_g2_excess_direction",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -139,7 +236,18 @@
       "error_pct": 0.0,
       "discriminant": "same_sign_as_fermilab",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "muon_g2_excess_direction",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_g2_excess_direction",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -150,7 +258,18 @@
       "measured": 2.85,
       "error_pct": 0.0,
       "formula_branch": "term3.poof_factor",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "lithium_problem_factor_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "lithium_problem_factor_bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -161,7 +280,18 @@
       "error_pct": 0.0,
       "discriminant": "within_10pct_of_observed_gap",
       "sota_baseline": 3.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "lithium_problem_factor_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "lithium_problem_factor_bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -172,7 +302,18 @@
       "measured": 0.41,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "acoustic_impedance_median_MRayl",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "acoustic_impedance_median_MRayl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -183,7 +324,18 @@
       "error_pct": 0.0,
       "discriminant": "within_10pct_of_observed_gap",
       "sota_baseline": 0.45,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "acoustic_impedance_median_MRayl",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "acoustic_impedance_median_MRayl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -194,7 +346,18 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_inflow",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "ionospheric_beta_quiet_classifier",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "ionospheric_beta_quiet_classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -205,7 +368,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.55,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "ionospheric_beta_quiet_classifier",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "ionospheric_beta_quiet_classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -216,7 +390,18 @@
       "measured": 199.0,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "phi_glass_Tg_morphogen_K",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "phi_glass_Tg_morphogen_K",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -227,7 +412,18 @@
       "error_pct": 0.0,
       "discriminant": "within_10pct_of_observed_gap",
       "sota_baseline": 210.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "phi_glass_Tg_morphogen_K",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "phi_glass_Tg_morphogen_K",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -238,7 +434,18 @@
       "measured": 1.85,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "pd_deuterium_lattice_excess_heat",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_deuterium_lattice_excess_heat",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -249,7 +456,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "pd_deuterium_lattice_excess_heat",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_deuterium_lattice_excess_heat",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -260,7 +478,18 @@
       "measured": 1.62,
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "lattice_boundary_cold_fusion_channel",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "lattice_boundary_cold_fusion_channel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -271,7 +500,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "lattice_boundary_cold_fusion_channel",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "lattice_boundary_cold_fusion_channel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -282,7 +522,18 @@
       "measured": 108000000.0,
       "error_pct": 0.0,
       "formula_branch": "term1.initiation_transformation",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "muon_catalyzed_dd_rate_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_catalyzed_dd_rate_bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -293,7 +544,18 @@
       "error_pct": 0.0,
       "discriminant": "within_10pct_of_observed_gap",
       "sota_baseline": 100000000.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "muon_catalyzed_dd_rate_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_catalyzed_dd_rate_bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -304,7 +566,18 @@
       "measured": 2500000.0,
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "unbinilium_Z120_N184_half_life",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "unbinilium_Z120_N184_half_life",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -315,7 +588,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "unbinilium_Z120_N184_half_life",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "unbinilium_Z120_N184_half_life",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -326,7 +610,18 @@
       "measured": 1200000000.0,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "unbihexium_Z126_island_stability",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "unbihexium_Z126_island_stability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -337,7 +632,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "unbihexium_Z126_island_stability",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "unbihexium_Z126_island_stability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -348,7 +654,18 @@
       "measured": 132.0,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "natural_formation_Z132_fusion_decay",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "natural_formation_Z132_fusion_decay",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -359,7 +676,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 118.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "natural_formation_Z132_fusion_decay",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "natural_formation_Z132_fusion_decay",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -370,7 +698,18 @@
       "measured": 1850.0,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -381,7 +720,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 500.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_lattice_cold_fusion_metamaterial_heat_transfer",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -392,7 +742,18 @@
       "measured": -1.35,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "acoustic_bleed_phononic_negative_index",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "acoustic_bleed_phononic_negative_index",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -403,7 +764,18 @@
       "error_pct": 5.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "acoustic_bleed_phononic_negative_index",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "acoustic_bleed_phononic_negative_index",
+      "scientific_measurement": {
+        "delta": -1.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -414,7 +786,18 @@
       "measured": 0.42,
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -425,7 +808,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z119_Ti_Bk_heavy_ion_lab_synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -436,7 +830,18 @@
       "measured": 120.0,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "pd_d_to_Z120_fusion_decay_cascade",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_d_to_Z120_fusion_decay_cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -447,7 +852,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 118.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "pd_d_to_Z120_fusion_decay_cascade",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "pd_d_to_Z120_fusion_decay_cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -458,7 +874,18 @@
       "measured": 126.0,
       "error_pct": 0.0,
       "formula_branch": "term1.initiation_transformation",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "muon_dd_to_Z126_fusion_decay_cascade",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_dd_to_Z126_fusion_decay_cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -469,7 +896,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 118.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "muon_dd_to_Z126_fusion_decay_cascade",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "muon_dd_to_Z126_fusion_decay_cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -480,7 +918,18 @@
       "measured": 0.48,
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "Z126_N184_unbihexium_beam_synthesis",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z126_N184_unbihexium_beam_synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -491,7 +940,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "Z126_N184_unbihexium_beam_synthesis",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z126_N184_unbihexium_beam_synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -502,7 +962,18 @@
       "measured": 31000000.0,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "Z132_N184_superheavy_shell_peak",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z132_N184_superheavy_shell_peak",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -513,7 +984,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "Z132_N184_superheavy_shell_peak",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z132_N184_superheavy_shell_peak",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -524,7 +1006,18 @@
       "measured": 1500.0,
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "Z164_N228_distant_island",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z164_N228_distant_island",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -535,7 +1028,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "Z164_N228_distant_island",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "Z164_N228_distant_island",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -546,7 +1050,18 @@
       "measured": 164.0,
       "error_pct": 0.0,
       "formula_branch": "term1.initiation_transformation",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "periodic_extension_decay_topology_Z164",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "periodic_extension_decay_topology_Z164",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -557,7 +1072,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 118.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "periodic_extension_decay_topology_Z164",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "periodic_extension_decay_topology_Z164",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -568,7 +1094,18 @@
       "measured": 72.1,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -579,7 +1116,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 67.4,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -590,7 +1138,18 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -601,7 +1160,18 @@
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -612,7 +1182,18 @@
       "measured": 0.009663204175,
       "error_pct": 0.0,
       "formula_branch": "term3.poof_factor",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "bh_wh_micro_portal_doorway",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "bh_wh_micro_portal_doorway",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -623,7 +1204,18 @@
       "error_pct": 5.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "bh_wh_micro_portal_doorway",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "bh_wh_micro_portal_doorway",
+      "scientific_measurement": {
+        "delta": -1.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -634,7 +1226,18 @@
       "measured": 0.04803163401,
       "error_pct": 0.0,
       "formula_branch": "term1.perceived_adjust",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "quantum_entanglement_gate_pair",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "quantum_entanglement_gate_pair",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -645,7 +1248,18 @@
       "error_pct": 5.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
       "sota_baseline": 0.0,
-      "eval_kind": "outcome_gate"
+      "eval_kind": "outcome_gate",
+      "prediction_display_name": "quantum_entanglement_gate_pair",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "quantum_entanglement_gate_pair",
+      "scientific_measurement": {
+        "delta": -1.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -654,7 +1268,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "preregistered predictions verification scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "prereg_outcome_tracking_lab",
@@ -663,7 +1287,17 @@
       "computed": 0.020098237848408945,
       "measured": 0.020098237848408945,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "prereg outcome tracking",
+      "display_name": "preregistered predictions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -677,5 +1311,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Preregistered Outcome Tracking",
+  "tier_label": "Tier 70 \u2014 Proof Ledger Closure Spine cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.653565+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 56,
+    "median_error_pct": 0.0,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.05357142857142857,
+    "precision_tier_counts": {
+      "green": 53,
+      "red": 3
+    },
+    "green_gate_fraction": 0.9464285714285714,
+    "matches_domain_spine": false
+  }
 }

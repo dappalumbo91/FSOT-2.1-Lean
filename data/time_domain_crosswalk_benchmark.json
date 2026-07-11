@@ -43,7 +43,17 @@
       "computed": 0.028056,
       "measured": 0.0,
       "error_pct": 0.028056,
-      "observable_count": 250
+      "observable_count": 250,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.028056,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.028056,
       "measured": 0.0,
       "error_pct": 0.028056,
-      "observable_count": 250
+      "observable_count": 250,
+      "domain_display_name": "tier gap fill",
+      "display_name": "extension panel",
+      "scientific_measurement": {
+        "delta": 0.028056,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -61,7 +81,17 @@
       "computed": 0.033071,
       "measured": 0.0,
       "error_pct": 0.033071,
-      "observable_count": 10
+      "observable_count": 10,
+      "domain_display_name": "tier gap fill",
+      "display_name": "priority panel",
+      "scientific_measurement": {
+        "delta": 0.033071,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -83,7 +113,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -105,7 +145,17 @@
         "acoustical"
       ],
       "priority": false,
-      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json"
+      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -127,7 +177,17 @@
         "cosmological"
       ],
       "priority": false,
-      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json"
+      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.0314,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -148,7 +208,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json"
+      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -168,7 +238,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\agriculture_agroecology_gap_fill_benchmark.json"
+      "benchmark_path": "data\\agriculture_agroecology_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Agriculture Agroecology",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -188,7 +268,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\anthropology_extension_benchmark.json"
+      "benchmark_path": "data\\anthropology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Anthropology",
+      "scientific_measurement": {
+        "delta": 0.000203,
+        "delta_pct": 0.0203,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -209,7 +299,17 @@
         "acoustical"
       ],
       "priority": false,
-      "benchmark_path": "data\\architecture_building_science_gap_fill_benchmark.json"
+      "benchmark_path": "data\\architecture_building_science_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Architecture Building Science",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -230,7 +330,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\arxiv_primitives_v14_benchmark.json"
+      "benchmark_path": "data\\arxiv_primitives_v14_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Arxiv Primitives V14",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -251,7 +361,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\astrophysical_structure_crosswalk_benchmark.json"
+      "benchmark_path": "data\\astrophysical_structure_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Astrophysical Structure Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -271,7 +391,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\bibliography_lean_corpus_benchmark.json"
+      "benchmark_path": "data\\bibliography_lean_corpus_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Bibliography Lean Corpus",
+      "scientific_measurement": {
+        "delta": 0.000131,
+        "delta_pct": 0.0131,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -292,7 +422,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\binary_decoder_rendlesham_benchmark.json"
+      "benchmark_path": "data\\binary_decoder_rendlesham_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Binary Decoder Rendlesham",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -313,7 +453,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\biological_cuda_physarum_benchmark.json"
+      "benchmark_path": "data\\biological_cuda_physarum_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Biological CUDA Physarum",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -334,7 +484,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\biophysics_public_panel_benchmark.json"
+      "benchmark_path": "data\\biophysics_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Biophysics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000176,
+        "delta_pct": 0.0176,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -354,7 +514,17 @@
         "ecological"
       ],
       "priority": false,
-      "benchmark_path": "data\\botany_extension_benchmark.json"
+      "benchmark_path": "data\\botany_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Botany",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -375,7 +545,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\boundary_partition_tightening_benchmark.json"
+      "benchmark_path": "data\\boundary_partition_tightening_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Boundary Partition Tightening",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -396,7 +576,17 @@
         "cosmological"
       ],
       "priority": false,
-      "benchmark_path": "data\\breakthrough_discoveries_2024_2026_benchmark.json"
+      "benchmark_path": "data\\breakthrough_discoveries_2024_2026_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Breakthrough Discoveries 2024 2026",
+      "scientific_measurement": {
+        "delta": 0.000744,
+        "delta_pct": 0.0744,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -416,7 +606,17 @@
         "high_energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\cern_open_data_lhc_benchmark.json"
+      "benchmark_path": "data\\cern_open_data_lhc_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "CERN Open Data LHC",
+      "scientific_measurement": {
+        "delta": 0.000419,
+        "delta_pct": 0.0419,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -437,7 +637,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\cve_codon_hole_falsification_benchmark.json"
+      "benchmark_path": "data\\cve_codon_hole_falsification_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "CVE Codon Hole Falsification",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -457,7 +667,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\cardiology_extension_benchmark.json"
+      "benchmark_path": "data\\cardiology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cardiology",
+      "scientific_measurement": {
+        "delta": 0.000211,
+        "delta_pct": 0.0211,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -478,7 +698,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\certified_agent_qwen_benchmark.json"
+      "benchmark_path": "data\\certified_agent_qwen_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Certified Agent Qwen",
+      "scientific_measurement": {
+        "delta": 0.000223,
+        "delta_pct": 0.0223,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -500,7 +730,17 @@
         "plasma"
       ],
       "priority": false,
-      "benchmark_path": "data\\chaos_mediated_phase_transitions_benchmark.json"
+      "benchmark_path": "data\\chaos_mediated_phase_transitions_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Chaos Mediated Phase Transitions",
+      "scientific_measurement": {
+        "delta": 0.000216,
+        "delta_pct": 0.0216,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -521,7 +761,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\chemical_engineering_extension_benchmark.json"
+      "benchmark_path": "data\\chemical_engineering_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Chemical Engineering",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -543,7 +793,17 @@
         "electron"
       ],
       "priority": false,
-      "benchmark_path": "data\\chemical_structure_stability_panel_benchmark.json"
+      "benchmark_path": "data\\chemical_structure_stability_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Chemical Structure Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000263,
+        "delta_pct": 0.0263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -563,7 +823,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\civil_engineering_extension_benchmark.json"
+      "benchmark_path": "data\\civil_engineering_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Civil Engineering",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -583,7 +853,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\climate_observed_benchmark.json"
+      "benchmark_path": "data\\climate_observed_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Climate Science",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -603,7 +883,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\clinical_medicine_extension_benchmark.json"
+      "benchmark_path": "data\\clinical_medicine_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Clinical Medicine",
+      "scientific_measurement": {
+        "delta": 0.000211,
+        "delta_pct": 0.0211,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -624,7 +914,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\code_genome_structure_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\code_genome_structure_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Code Genome Structure",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -646,7 +946,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\cold_fusion_candidate_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\cold_fusion_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cold Fusion Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000279,
+        "delta_pct": 0.0279,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -669,7 +979,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+      "benchmark_path": "data\\cold_fusion_lab_synthesis_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cold Fusion Lab Synthesis Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000335,
+        "delta_pct": 0.0335,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -690,7 +1010,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\compact_object_binary_events_benchmark.json"
+      "benchmark_path": "data\\compact_object_binary_events_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Compact Object Binary Events",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.0321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -713,7 +1043,17 @@
         "mathematical"
       ],
       "priority": true,
-      "benchmark_path": "data\\compactification_ladder_benchmark.json"
+      "benchmark_path": "data\\compactification_ladder_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Compactification Ladder",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -734,7 +1074,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\computational_reasoning_benchmark.json"
+      "benchmark_path": "data\\computational_reasoning_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Computational Reasoning",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -755,7 +1105,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\consciousness_econ_benchmark.json"
+      "benchmark_path": "data\\consciousness_econ_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Consciousness Econ",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -775,7 +1135,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\consciousness_galactic_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\consciousness_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Consciousness Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -797,7 +1167,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\consciousness_soul_bridge_benchmark.json"
+      "benchmark_path": "data\\consciousness_soul_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Consciousness Soul Bridge",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -818,7 +1198,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\cosmology_anomalies_benchmark.json"
+      "benchmark_path": "data\\cosmology_anomalies_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cosmology Anomalies",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -841,7 +1231,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\cosmology_anomaly_deep_panel_benchmark.json"
+      "benchmark_path": "data\\cosmology_anomaly_deep_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cosmology Anomaly Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000342,
+        "delta_pct": 0.0342,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -862,7 +1262,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\cosmology_bubble_bleed_benchmark.json"
+      "benchmark_path": "data\\cosmology_bubble_bleed_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cosmology Bubble Bleed",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -882,7 +1292,17 @@
         "astronomical"
       ],
       "priority": true,
-      "benchmark_path": "data\\cosmology_extended_benchmark.json"
+      "benchmark_path": "data\\cosmology_extended_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cosmology Extended",
+      "scientific_measurement": {
+        "delta": 0.000322,
+        "delta_pct": 0.0322,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -905,7 +1325,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\creative_arts_math_spine_benchmark.json"
+      "benchmark_path": "data\\creative_arts_math_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Creative Arts Math Spine",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -925,7 +1355,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\cryosphere_benchmark.json"
+      "benchmark_path": "data\\cryosphere_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.000221,
+        "delta_pct": 0.0221,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -946,7 +1386,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\cryptography_technology_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\cryptography_technology_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cryptography Technology",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -967,7 +1417,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\culinary_arts_benchmark.json"
+      "benchmark_path": "data\\culinary_arts_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Culinary Arts",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -987,7 +1447,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\dark_energy_cpl_benchmark.json"
+      "benchmark_path": "data\\dark_energy_cpl_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Dark Energy CPL",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.0352,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1007,7 +1477,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\dark_sector_open_problems_benchmark.json"
+      "benchmark_path": "data\\dark_sector_open_problems_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Dark Sector Open Problems",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.0352,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1029,7 +1509,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\distant_island_emergence_simulation_benchmark.json"
+      "benchmark_path": "data\\distant_island_emergence_simulation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Distant Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.000311,
+        "delta_pct": 0.0311,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1051,7 +1541,17 @@
         "atomic"
       ],
       "priority": false,
-      "benchmark_path": "data\\distant_island_z128_z132_deep_panel_benchmark.json"
+      "benchmark_path": "data\\distant_island_z128_z132_deep_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Distant Island Z128 Z132 Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.0321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1074,7 +1574,17 @@
         "fusion"
       ],
       "priority": true,
-      "benchmark_path": "data\\domain_coupling_simulation_benchmark.json"
+      "benchmark_path": "data\\domain_coupling_simulation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Domain Coupling Simulation",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1097,7 +1607,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\domain_coupling_simulation_refresh_panel_benchmark.json"
+      "benchmark_path": "data\\domain_coupling_simulation_refresh_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Domain Coupling Simulation Refresh Panel",
+      "scientific_measurement": {
+        "delta": 0.000342,
+        "delta_pct": 0.0342,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1121,7 +1641,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\domain_orbital_predictions_benchmark.json"
+      "benchmark_path": "data\\domain_orbital_predictions_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Domain Orbital Predictions",
+      "scientific_measurement": {
+        "delta": 0.000341,
+        "delta_pct": 0.0341,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1141,7 +1671,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\ecology_benchmark.json"
+      "benchmark_path": "data\\ecology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Ecology",
+      "scientific_measurement": {
+        "delta": 0.000118,
+        "delta_pct": 0.0118,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1161,7 +1701,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\econometrics_gap_fill_benchmark.json"
+      "benchmark_path": "data\\econometrics_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Econometrics",
+      "scientific_measurement": {
+        "delta": 0.000204,
+        "delta_pct": 0.0204,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1182,7 +1732,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\econophysics_benchmark.json"
+      "benchmark_path": "data\\econophysics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Econophysics",
+      "scientific_measurement": {
+        "delta": 0.00026,
+        "delta_pct": 0.026,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1202,7 +1762,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\electrical_power_systems_benchmark.json"
+      "benchmark_path": "data\\electrical_power_systems_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Electrical Power Systems",
+      "scientific_measurement": {
+        "delta": 0.000114,
+        "delta_pct": 0.0114,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1225,7 +1795,17 @@
         "thermodynamics"
       ],
       "priority": false,
-      "benchmark_path": "data\\element_synthesis_condition_scaffold_benchmark.json"
+      "benchmark_path": "data\\element_synthesis_condition_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Element Synthesis Condition Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000307,
+        "delta_pct": 0.0307,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1245,7 +1825,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\energy_ai_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\energy_ai_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Energy AI Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000281,
+        "delta_pct": 0.0281,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1265,7 +1855,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\energy_neural_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\energy_neural_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Energy Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000286,
+        "delta_pct": 0.0286,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1285,7 +1885,17 @@
         "ecological"
       ],
       "priority": false,
-      "benchmark_path": "data\\entomology_extension_benchmark.json"
+      "benchmark_path": "data\\entomology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Entomology",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1306,7 +1916,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\environmental_engineering_extension_benchmark.json"
+      "benchmark_path": "data\\environmental_engineering_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Environmental Engineering",
+      "scientific_measurement": {
+        "delta": 0.000243,
+        "delta_pct": 0.0243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1326,7 +1946,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\epidemiology_extension_benchmark.json"
+      "benchmark_path": "data\\epidemiology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Epidemiology",
+      "scientific_measurement": {
+        "delta": 0.000211,
+        "delta_pct": 0.0211,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1347,7 +1977,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\exogeology_extension_benchmark.json"
+      "benchmark_path": "data\\exogeology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Exogeology",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1367,7 +2007,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\exoplanet_system_architecture_benchmark.json"
+      "benchmark_path": "data\\exoplanet_system_architecture_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Exoplanet System Architecture",
+      "scientific_measurement": {
+        "delta": 0.000283,
+        "delta_pct": 0.0283,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1388,7 +2038,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\external_oss_code_genome_benchmark.json"
+      "benchmark_path": "data\\external_oss_code_genome_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "External OSS Code Genome",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.0308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1411,7 +2071,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\fpc_fluidlink_timing_deep_panel_benchmark.json"
+      "benchmark_path": "data\\fpc_fluidlink_timing_deep_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "FPC Fluidlink Timing Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1434,7 +2104,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\fpc_temporal_coupling_benchmark.json"
+      "benchmark_path": "data\\fpc_temporal_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "FPC Temporal Coupling",
+      "scientific_measurement": {
+        "delta": 0.000325,
+        "delta_pct": 0.0325,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1455,7 +2135,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\fsot_aggregate_organized_panel_benchmark.json"
+      "benchmark_path": "data\\fsot_aggregate_organized_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "FSOT Aggregate Organized Panel",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1476,7 +2166,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\fsot_aggregate_unified_db_benchmark.json"
+      "benchmark_path": "data\\fsot_aggregate_unified_db_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "FSOT Aggregate Unified DB",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1497,7 +2197,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\finance_markets_extension_benchmark.json"
+      "benchmark_path": "data\\finance_markets_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Finance Markets",
+      "scientific_measurement": {
+        "delta": 0.000228,
+        "delta_pct": 0.0228,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1521,7 +2231,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\fluid_phase_current_spine_benchmark.json"
+      "benchmark_path": "data\\fluid_phase_current_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fluid Phase Current Spine",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1545,7 +2265,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\fluid_spacetime_observable_spine_benchmark.json"
+      "benchmark_path": "data\\fluid_spacetime_observable_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fluid Spacetime Observable Spine",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1568,7 +2298,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\fluid_spacetime_prereg_validation_panel_benchmark.json"
+      "benchmark_path": "data\\fluid_spacetime_prereg_validation_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fluid Spacetime Prereg Validation Panel",
+      "scientific_measurement": {
+        "delta": 0.000348,
+        "delta_pct": 0.0348,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1589,7 +2329,17 @@
         "cosmological"
       ],
       "priority": false,
-      "benchmark_path": "data\\fold_depth_metrics_benchmark.json"
+      "benchmark_path": "data\\fold_depth_metrics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fold Depth Metrics",
+      "scientific_measurement": {
+        "delta": 0.000342,
+        "delta_pct": 0.0342,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1609,7 +2359,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\food_microbiology_gap_fill_benchmark.json"
+      "benchmark_path": "data\\food_microbiology_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Food Microbiology",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1630,7 +2390,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\formula_branching_fractal_benchmark.json"
+      "benchmark_path": "data\\formula_branching_fractal_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Formula Branching Fractal",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1651,7 +2421,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\formula_corpus_cnc_benchmark.json"
+      "benchmark_path": "data\\formula_corpus_cnc_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Formula Corpus CNC",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1672,7 +2452,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\formula_corpus_closure_benchmark.json"
+      "benchmark_path": "data\\formula_corpus_closure_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Formula Corpus Closure",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1694,7 +2484,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\formula_precision_spine_benchmark.json"
+      "benchmark_path": "data\\formula_precision_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Formula Precision Spine",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1714,7 +2514,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\fractal_constant_recursion_benchmark.json"
+      "benchmark_path": "data\\fractal_constant_recursion_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fractal Constant Recursion",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1735,7 +2545,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\fuel_candidate_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\fuel_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fuel Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1756,7 +2576,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\fuel_thermochemistry_public_anchors_benchmark.json"
+      "benchmark_path": "data\\fuel_thermochemistry_public_anchors_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fuel Thermochemistry Public Anchors",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1778,7 +2608,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\fusion_decay_chain_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\fusion_decay_chain_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fusion Decay Chain Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000325,
+        "delta_pct": 0.0325,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1801,7 +2641,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\fusion_lab_certificate_spine_benchmark.json"
+      "benchmark_path": "data\\fusion_lab_certificate_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fusion Lab Certificate Spine",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1823,7 +2673,17 @@
         "plasma"
       ],
       "priority": false,
-      "benchmark_path": "data\\fusion_physics_public_panel_benchmark.json"
+      "benchmark_path": "data\\fusion_physics_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Fusion Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1843,7 +2703,17 @@
         "ecological"
       ],
       "priority": false,
-      "benchmark_path": "data\\gbif_species_occurrence_benchmark.json"
+      "benchmark_path": "data\\gbif_species_occurrence_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "GBIF Species Occurrence",
+      "scientific_measurement": {
+        "delta": 0.00014,
+        "delta_pct": 0.014,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1864,7 +2734,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\gwosc_live_event_deep_benchmark.json"
+      "benchmark_path": "data\\gwosc_live_event_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "GWOSC Live Event Deep",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.0321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1884,7 +2764,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\gaia_astrometry_panel_deep_benchmark.json"
+      "benchmark_path": "data\\gaia_astrometry_panel_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Gaia Astrometry Panel Deep",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1904,7 +2794,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\gaia_dr3_tap_deep_benchmark.json"
+      "benchmark_path": "data\\gaia_dr3_tap_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Gaia DR3 TAP Deep",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.0321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1924,7 +2824,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\galactic_structure_sample_benchmark.json"
+      "benchmark_path": "data\\galactic_structure_sample_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Galactic Structure Sample",
+      "scientific_measurement": {
+        "delta": 0.000299,
+        "delta_pct": 0.0299,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1945,7 +2855,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\genomic_sciences_benchmark.json"
+      "benchmark_path": "data\\genomic_sciences_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Genomic Sciences",
+      "scientific_measurement": {
+        "delta": 0.000177,
+        "delta_pct": 0.0177,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1965,7 +2885,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\geochemistry_benchmark.json"
+      "benchmark_path": "data\\geochemistry_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Geochemistry",
+      "scientific_measurement": {
+        "delta": 0.000211,
+        "delta_pct": 0.0211,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1985,7 +2915,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\geology_stratigraphy_extension_benchmark.json"
+      "benchmark_path": "data\\geology_stratigraphy_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Geology Stratigraphy",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2005,7 +2945,17 @@
         "fusion"
       ],
       "priority": false,
-      "benchmark_path": "data\\geomagnetism_benchmark.json"
+      "benchmark_path": "data\\geomagnetism_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Geomagnetism",
+      "scientific_measurement": {
+        "delta": 0.000177,
+        "delta_pct": 0.0177,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2025,7 +2975,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\grace_cryosphere_benchmark.json"
+      "benchmark_path": "data\\grace_cryosphere_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Grace Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.000232,
+        "delta_pct": 0.0232,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2045,7 +3005,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\hvac_thermal_systems_benchmark.json"
+      "benchmark_path": "data\\hvac_thermal_systems_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "HVAC Thermal Systems",
+      "scientific_measurement": {
+        "delta": 0.000158,
+        "delta_pct": 0.0158,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2067,7 +3037,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\heavy_ion_lab_synthesis_panel_benchmark.json"
+      "benchmark_path": "data\\heavy_ion_lab_synthesis_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Heavy Ion Lab Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.000323,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2087,7 +3067,17 @@
         "higgs"
       ],
       "priority": false,
-      "benchmark_path": "data\\higgs_mass_benchmark.json"
+      "benchmark_path": "data\\higgs_mass_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Higgs Mass",
+      "scientific_measurement": {
+        "delta": 0.000337,
+        "delta_pct": 0.0337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2107,7 +3097,17 @@
         "linguistic"
       ],
       "priority": false,
-      "benchmark_path": "data\\history_extension_benchmark.json"
+      "benchmark_path": "data\\history_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "History",
+      "scientific_measurement": {
+        "delta": 0.000179,
+        "delta_pct": 0.0179,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2128,7 +3128,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\hubble_bubble_tension_benchmark.json"
+      "benchmark_path": "data\\hubble_bubble_tension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Hubble Bubble Tension",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2150,7 +3160,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\hubble_dark_sector_crosswalk_benchmark.json"
+      "benchmark_path": "data\\hubble_dark_sector_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Hubble Dark Sector Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000348,
+        "delta_pct": 0.0348,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2171,7 +3191,17 @@
         "biophysics"
       ],
       "priority": false,
-      "benchmark_path": "data\\hybrid_fi_sim_multi_hero_panel_benchmark.json"
+      "benchmark_path": "data\\hybrid_fi_sim_multi_hero_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Hybrid FI Sim Multi Hero Panel",
+      "scientific_measurement": {
+        "delta": 0.000325,
+        "delta_pct": 0.0325,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2191,7 +3221,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\hydrology_benchmark.json"
+      "benchmark_path": "data\\hydrology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Hydrology",
+      "scientific_measurement": {
+        "delta": 0.000241,
+        "delta_pct": 0.0241,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2211,7 +3251,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\igem_live_fasta_benchmark.json"
+      "benchmark_path": "data\\igem_live_fasta_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "IGEM Live FASTA Ingest",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2231,7 +3281,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\igem_parts_expanded_benchmark.json"
+      "benchmark_path": "data\\igem_parts_expanded_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "IGEM Parts Expanded",
+      "scientific_measurement": {
+        "delta": 0.000268,
+        "delta_pct": 0.0268,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2251,7 +3311,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\igem_synthetic_biology_benchmark.json"
+      "benchmark_path": "data\\igem_synthetic_biology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "IGEM Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2271,7 +3341,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\immunology_benchmark.json"
+      "benchmark_path": "data\\immunology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Immunology",
+      "scientific_measurement": {
+        "delta": 0.000123,
+        "delta_pct": 0.0123,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2293,7 +3373,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\inertial_confinement_fusion_panel_benchmark.json"
+      "benchmark_path": "data\\inertial_confinement_fusion_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Inertial Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.032,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2315,7 +3405,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\information_theory_public_panel_benchmark.json"
+      "benchmark_path": "data\\information_theory_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Information Theory Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000152,
+        "delta_pct": 0.0152,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2336,7 +3436,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\initiation_transformation_archetype_benchmark.json"
+      "benchmark_path": "data\\initiation_transformation_archetype_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Initiation Transformation Archetype",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2358,7 +3468,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\interactive_media_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\interactive_media_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Interactive Media Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000225,
+        "delta_pct": 0.0225,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2381,7 +3501,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\interdisciplinary_spine_crosswalk_benchmark.json"
+      "benchmark_path": "data\\interdisciplinary_spine_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Interdisciplinary Spine Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2402,7 +3532,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\intrinsic_llm_validators_benchmark.json"
+      "benchmark_path": "data\\intrinsic_llm_validators_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Intrinsic LLM Validators",
+      "scientific_measurement": {
+        "delta": 0.000223,
+        "delta_pct": 0.0223,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2424,7 +3564,17 @@
         "plasma"
       ],
       "priority": false,
-      "benchmark_path": "data\\ionospheric_chemistry_coupling_benchmark.json"
+      "benchmark_path": "data\\ionospheric_chemistry_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Ionospheric Chemistry Coupling",
+      "scientific_measurement": {
+        "delta": 0.000216,
+        "delta_pct": 0.0216,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2446,7 +3596,17 @@
         "atomic"
       ],
       "priority": false,
-      "benchmark_path": "data\\island_of_stability_deep_panel_benchmark.json"
+      "benchmark_path": "data\\island_of_stability_deep_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Island Of Stability Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2467,7 +3627,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\knowledge_base_portable_bundle_panel_benchmark.json"
+      "benchmark_path": "data\\knowledge_base_portable_bundle_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Knowledge Base Portable Bundle Panel",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2490,7 +3660,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\lab_synthesis_metamaterial_spine_benchmark.json"
+      "benchmark_path": "data\\lab_synthesis_metamaterial_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Lab Synthesis Metamaterial Spine",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2510,7 +3690,17 @@
         "economic"
       ],
       "priority": false,
-      "benchmark_path": "data\\law_policy_extension_benchmark.json"
+      "benchmark_path": "data\\law_policy_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Law Policy",
+      "scientific_measurement": {
+        "delta": 0.000203,
+        "delta_pct": 0.0203,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2530,7 +3720,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\linguistics_formal_benchmark.json"
+      "benchmark_path": "data\\linguistics_formal_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Linguistics Formal",
+      "scientific_measurement": {
+        "delta": 0.000141,
+        "delta_pct": 0.0141,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2552,7 +3752,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\live_ingest_spine_benchmark.json"
+      "benchmark_path": "data\\live_ingest_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Live Ingest Spine",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2574,7 +3784,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\magnetic_confinement_fusion_panel_benchmark.json"
+      "benchmark_path": "data\\magnetic_confinement_fusion_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Magnetic Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.0308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2594,7 +3814,17 @@
         "fusion"
       ],
       "priority": false,
-      "benchmark_path": "data\\magnetosphere_benchmark.json"
+      "benchmark_path": "data\\magnetosphere_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Magnetosphere",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2615,7 +3845,17 @@
         "plasma"
       ],
       "priority": true,
-      "benchmark_path": "data\\magnetosphere_extended_benchmark.json"
+      "benchmark_path": "data\\magnetosphere_extended_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Magnetosphere Extended",
+      "scientific_measurement": {
+        "delta": 0.000225,
+        "delta_pct": 0.0225,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2636,7 +3876,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\maillard_chemistry_gap_fill_benchmark.json"
+      "benchmark_path": "data\\maillard_chemistry_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Maillard Chemistry",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2657,7 +3907,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\malware_threat_intelligence_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\malware_threat_intelligence_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Malware Threat Intelligence",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2678,7 +3938,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\marine_biology_extension_benchmark.json"
+      "benchmark_path": "data\\marine_biology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Marine Biology",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2700,7 +3970,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\material_in_silico_screening_scaffold_benchmark.json"
+      "benchmark_path": "data\\material_in_silico_screening_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Material In Silico Screening Scaffold",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2722,7 +4002,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\material_property_verification_scaffold_benchmark.json"
+      "benchmark_path": "data\\material_property_verification_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Material Property Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2742,7 +4032,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\materials_engineering_benchmark.json"
+      "benchmark_path": "data\\materials_engineering_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Materials Engineering",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2763,7 +4063,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\materials_genome_crosswalk_benchmark.json"
+      "benchmark_path": "data\\materials_genome_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Materials Genome Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000263,
+        "delta_pct": 0.0263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2784,7 +4094,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\materials_project_live_panel_benchmark.json"
+      "benchmark_path": "data\\materials_project_live_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Materials Project Live Panel",
+      "scientific_measurement": {
+        "delta": 0.000134,
+        "delta_pct": 0.0134,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2804,7 +4124,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\materials_species_bridge_benchmark.json"
+      "benchmark_path": "data\\materials_species_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Materials Species Bridge",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2825,7 +4155,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\math_generator_airfoil_rmse_benchmark.json"
+      "benchmark_path": "data\\math_generator_airfoil_rmse_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Math Generator Airfoil RMSE",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2846,7 +4186,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\math_generator_benchmark_formula_eval_benchmark.json"
+      "benchmark_path": "data\\math_generator_benchmark_formula_eval_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Math Generator Benchmark Formula Eval",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2867,7 +4217,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\math_generator_rules_eval_benchmark.json"
+      "benchmark_path": "data\\math_generator_rules_eval_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Math Generator Rules Eval",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2887,7 +4247,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\mathematics_computational_benchmark.json"
+      "benchmark_path": "data\\mathematics_computational_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Mathematics Computational",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2908,7 +4278,17 @@
         "electron"
       ],
       "priority": false,
-      "benchmark_path": "data\\mechanical_engineering_extension_benchmark.json"
+      "benchmark_path": "data\\mechanical_engineering_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Mechanical Engineering",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2929,7 +4309,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\mechanistic_coupling_benchmark.json"
+      "benchmark_path": "data\\mechanistic_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Mechanistic Coupling",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2949,7 +4339,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\medical_galactic_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\medical_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Medical Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2971,7 +4371,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\metamaterial_fluid_design_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\metamaterial_fluid_design_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Metamaterial Fluid Design Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2993,7 +4403,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\music_harmonics_public_panel_benchmark.json"
+      "benchmark_path": "data\\music_harmonics_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Music Harmonics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000118,
+        "delta_pct": 0.0118,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3013,7 +4433,17 @@
         "ecological"
       ],
       "priority": false,
-      "benchmark_path": "data\\mycology_extension_benchmark.json"
+      "benchmark_path": "data\\mycology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Mycology",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3033,7 +4463,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\nasa_exoplanet_archive_benchmark.json"
+      "benchmark_path": "data\\nasa_exoplanet_archive_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "NASA Exoplanet Archive",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3053,7 +4493,17 @@
         "atomic"
       ],
       "priority": false,
-      "benchmark_path": "data\\nist_codata_constants_benchmark.json"
+      "benchmark_path": "data\\nist_codata_constants_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "NIST CODATA Constants",
+      "scientific_measurement": {
+        "delta": 0.000354,
+        "delta_pct": 0.0354,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3073,7 +4523,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\noaa_coastal_tides_benchmark.json"
+      "benchmark_path": "data\\noaa_coastal_tides_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "NOAA Coastal Tides",
+      "scientific_measurement": {
+        "delta": 0.000203,
+        "delta_pct": 0.0203,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3095,7 +4555,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\natural_formation_element_simulation_benchmark.json"
+      "benchmark_path": "data\\natural_formation_element_simulation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Natural Formation Element Simulation",
+      "scientific_measurement": {
+        "delta": 0.000306,
+        "delta_pct": 0.0306,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3116,7 +4586,17 @@
         "electron"
       ],
       "priority": false,
-      "benchmark_path": "data\\network_internet_protocols_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\network_internet_protocols_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Network Internet Protocols",
+      "scientific_measurement": {
+        "delta": 0.000263,
+        "delta_pct": 0.0263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3137,7 +4617,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\network_science_public_panel_benchmark.json"
+      "benchmark_path": "data\\network_science_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Network Science Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000254,
+        "delta_pct": 0.0254,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3157,7 +4647,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\neural_galactic_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\neural_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neural Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000303,
+        "delta_pct": 0.0303,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3178,7 +4678,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\neuroeconomics_extension_benchmark.json"
+      "benchmark_path": "data\\neuroeconomics_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neuroeconomics",
+      "scientific_measurement": {
+        "delta": 0.000202,
+        "delta_pct": 0.0202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3198,7 +4708,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\neuroimmunology_benchmark.json"
+      "benchmark_path": "data\\neuroimmunology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neuroimmunology",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3221,7 +4741,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\neurolab_gaps_math_spine_benchmark.json"
+      "benchmark_path": "data\\neurolab_gaps_math_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neurolab Gaps Math Spine",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3244,7 +4774,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\neurolab_residual_math_spine_benchmark.json"
+      "benchmark_path": "data\\neurolab_residual_math_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neurolab Residual Math Spine",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3263,7 +4803,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\multi_hero_benchmark.json"
+      "benchmark_path": "data\\multi_hero_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Neuron Multi Hero",
+      "scientific_measurement": {
+        "delta": 0.00021,
+        "delta_pct": 0.021,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3284,7 +4834,17 @@
         "perceived"
       ],
       "priority": false,
-      "benchmark_path": "data\\observer_channel_derivation_benchmark.json"
+      "benchmark_path": "data\\observer_channel_derivation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Observer Channel Derivation",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3305,7 +4865,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\omni_theory_genesis_benchmark.json"
+      "benchmark_path": "data\\omni_theory_genesis_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Omni Theory Genesis",
+      "scientific_measurement": {
+        "delta": 0.000143,
+        "delta_pct": 0.0143,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3325,7 +4895,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\oncology_benchmark.json"
+      "benchmark_path": "data\\oncology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Oncology",
+      "scientific_measurement": {
+        "delta": 0.000191,
+        "delta_pct": 0.0191,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3345,7 +4925,17 @@
         "linguistic"
       ],
       "priority": false,
-      "benchmark_path": "data\\openalex_citation_graph_benchmark.json"
+      "benchmark_path": "data\\openalex_citation_graph_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "OpenAlex Citation Graph",
+      "scientific_measurement": {
+        "delta": 0.000259,
+        "delta_pct": 0.0259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3366,7 +4956,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\openneuro_full_panel_benchmark.json"
+      "benchmark_path": "data\\openneuro_full_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "OpenNeuro Full Panel",
+      "scientific_measurement": {
+        "delta": 0.000164,
+        "delta_pct": 0.0164,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3385,7 +4985,17 @@
         "astronomical"
       ],
       "priority": true,
-      "benchmark_path": "data\\orbital_mechanics_benchmark.json"
+      "benchmark_path": "data\\orbital_mechanics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Orbital Mechanics",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3406,7 +5016,17 @@
         "ecological"
       ],
       "priority": false,
-      "benchmark_path": "data\\paleoclimate_extension_benchmark.json"
+      "benchmark_path": "data\\paleoclimate_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Paleoclimate",
+      "scientific_measurement": {
+        "delta": 0.000243,
+        "delta_pct": 0.0243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3427,7 +5047,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\paleontology_extension_benchmark.json"
+      "benchmark_path": "data\\paleontology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Paleontology",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3447,7 +5077,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\particle_neural_orbital_bridge_benchmark.json"
+      "benchmark_path": "data\\particle_neural_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Particle Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000276,
+        "delta_pct": 0.0276,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3468,7 +5108,17 @@
         "nuclear"
       ],
       "priority": false,
-      "benchmark_path": "data\\particle_physics_benchmark.json"
+      "benchmark_path": "data\\particle_physics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Particle Physics",
+      "scientific_measurement": {
+        "delta": 0.000379,
+        "delta_pct": 0.0379,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3490,7 +5140,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\periodic_extension_decay_topology_scaffold_benchmark.json"
+      "benchmark_path": "data\\periodic_extension_decay_topology_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Periodic Extension Decay Topology Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000332,
+        "delta_pct": 0.0332,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3513,7 +5173,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\periodic_table_completion_spine_benchmark.json"
+      "benchmark_path": "data\\periodic_table_completion_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Periodic Table Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.000359,
+        "delta_pct": 0.0359,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3537,7 +5207,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\periodic_table_extension_closure_spine_benchmark.json"
+      "benchmark_path": "data\\periodic_table_extension_closure_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Periodic Table Extension Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3559,7 +5239,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\periodic_table_public_panel_benchmark.json"
+      "benchmark_path": "data\\periodic_table_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Periodic Table Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3579,7 +5269,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\pharmacokinetics_gap_fill_benchmark.json"
+      "benchmark_path": "data\\pharmacokinetics_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Pharmacokinetics",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3599,7 +5299,17 @@
         "chemical"
       ],
       "priority": false,
-      "benchmark_path": "data\\pharmacology_benchmark.json"
+      "benchmark_path": "data\\pharmacology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Pharmacology",
+      "scientific_measurement": {
+        "delta": 0.00021,
+        "delta_pct": 0.021,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3620,7 +5330,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\phi_morphogenetic_scaling_benchmark.json"
+      "benchmark_path": "data\\phi_morphogenetic_scaling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Phi Morphogenetic Scaling",
+      "scientific_measurement": {
+        "delta": 0.000184,
+        "delta_pct": 0.0184,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3640,7 +5360,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\planetary_atmospheres_benchmark.json"
+      "benchmark_path": "data\\planetary_atmospheres_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Planetary Atmospheres",
+      "scientific_measurement": {
+        "delta": 0.000264,
+        "delta_pct": 0.0264,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3660,7 +5390,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\planetary_structure_benchmark.json"
+      "benchmark_path": "data\\planetary_structure_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Planetary Structure",
+      "scientific_measurement": {
+        "delta": 0.000253,
+        "delta_pct": 0.0253,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3681,7 +5421,17 @@
         "plasma"
       ],
       "priority": false,
-      "benchmark_path": "data\\plasma_physics_benchmark.json"
+      "benchmark_path": "data\\plasma_physics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Plasma Physics",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3701,7 +5451,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\portable_clone_verify_benchmark.json"
+      "benchmark_path": "data\\portable_clone_verify_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Portable Clone Verify",
+      "scientific_measurement": {
+        "delta": 0.000177,
+        "delta_pct": 0.0177,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3722,7 +5482,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\prediction_rederivation_benchmark.json"
+      "benchmark_path": "data\\prediction_rederivation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Prediction Rederivation",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3744,7 +5514,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\preregistered_outcome_tracking_benchmark.json"
+      "benchmark_path": "data\\preregistered_outcome_tracking_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Preregistered Outcome Tracking",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3765,7 +5545,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\preregistered_predictions_benchmark.json"
+      "benchmark_path": "data\\preregistered_predictions_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Preregistered Predictions",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3788,7 +5578,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\preregistered_predictions_verification_scaffold_benchmark.json"
+      "benchmark_path": "data\\preregistered_predictions_verification_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Preregistered Predictions Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3809,7 +5609,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\programming_language_laws_benchmark.json"
+      "benchmark_path": "data\\programming_language_laws_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Programming Language Laws",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3830,7 +5640,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\proof_carrying_code_genome_benchmark.json"
+      "benchmark_path": "data\\proof_carrying_code_genome_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Proof Carrying Code Genome",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.0308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3852,7 +5672,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\proof_ledger_closure_spine_benchmark.json"
+      "benchmark_path": "data\\proof_ledger_closure_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Proof Ledger Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3872,7 +5702,17 @@
         "chemical"
       ],
       "priority": false,
-      "benchmark_path": "data\\pubchem_compound_properties_benchmark.json"
+      "benchmark_path": "data\\pubchem_compound_properties_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "PubChem Compound Properties",
+      "scientific_measurement": {
+        "delta": 0.000125,
+        "delta_pct": 0.0125,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3893,7 +5733,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\pubchem_live_deep_benchmark.json"
+      "benchmark_path": "data\\pubchem_live_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "PubChem Live Deep",
+      "scientific_measurement": {
+        "delta": 0.000125,
+        "delta_pct": 0.0125,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3914,7 +5764,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\pubchem_stability_panel_benchmark.json"
+      "benchmark_path": "data\\pubchem_stability_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "PubChem Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000252,
+        "delta_pct": 0.0252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3935,7 +5795,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\published_fuel_property_panel_benchmark.json"
+      "benchmark_path": "data\\published_fuel_property_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Published Fuel Property Panel",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3956,7 +5826,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\pure_mathematics_extension_benchmark.json"
+      "benchmark_path": "data\\pure_mathematics_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Pure Mathematics",
+      "scientific_measurement": {
+        "delta": 0.000228,
+        "delta_pct": 0.0228,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3977,7 +5857,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\quantum_information_benchmark.json"
+      "benchmark_path": "data\\quantum_information_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Quantum Information",
+      "scientific_measurement": {
+        "delta": 0.000359,
+        "delta_pct": 0.0359,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3997,7 +5887,17 @@
         "quantum"
       ],
       "priority": false,
-      "benchmark_path": "data\\quantum_materials_benchmark.json"
+      "benchmark_path": "data\\quantum_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Quantum Materials",
+      "scientific_measurement": {
+        "delta": 0.000202,
+        "delta_pct": 0.0202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4017,7 +5917,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\rcsb_pdb_structures_benchmark.json"
+      "benchmark_path": "data\\rcsb_pdb_structures_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "RCSB PDB Structures",
+      "scientific_measurement": {
+        "delta": 0.000163,
+        "delta_pct": 0.0163,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4038,7 +5948,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\rd_interval_tightening_panel_benchmark.json"
+      "benchmark_path": "data\\rd_interval_tightening_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "RD Interval Tightening Panel",
+      "scientific_measurement": {
+        "delta": 0.000337,
+        "delta_pct": 0.0337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4061,7 +5981,17 @@
         "galactic"
       ],
       "priority": true,
-      "benchmark_path": "data\\reality_folding_spine_benchmark.json"
+      "benchmark_path": "data\\reality_folding_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Reality Folding Spine",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4082,7 +6012,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\robotics_control_systems_extension_benchmark.json"
+      "benchmark_path": "data\\robotics_control_systems_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Robotics Control Systems",
+      "scientific_measurement": {
+        "delta": 0.000252,
+        "delta_pct": 0.0252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4103,7 +6043,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\rust_lean_bridge_benchmark.json"
+      "benchmark_path": "data\\rust_lean_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Rust Lean Bridge",
+      "scientific_measurement": {
+        "delta": 0.000194,
+        "delta_pct": 0.0194,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4124,7 +6074,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\sh0es_refined_benchmark.json"
+      "benchmark_path": "data\\sh0es_refined_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "SH0ES Refined",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4144,7 +6104,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\simbad_stellar_identity_deep_benchmark.json"
+      "benchmark_path": "data\\simbad_stellar_identity_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "SIMBAD Stellar Identity Deep",
+      "scientific_measurement": {
+        "delta": 0.000321,
+        "delta_pct": 0.0321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4165,7 +6135,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\secure_software_engineering_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\secure_software_engineering_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Secure Software Engineering",
+      "scientific_measurement": {
+        "delta": 0.000252,
+        "delta_pct": 0.0252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4184,7 +6164,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\seismology_benchmark.json"
+      "benchmark_path": "data\\seismology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Seismology",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4203,7 +6193,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\seismology_deep_benchmark.json"
+      "benchmark_path": "data\\seismology_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Seismology Deep",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4224,7 +6224,17 @@
         "particle"
       ],
       "priority": false,
-      "benchmark_path": "data\\semiconductor_physics_public_panel_benchmark.json"
+      "benchmark_path": "data\\semiconductor_physics_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Semiconductor Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000197,
+        "delta_pct": 0.0197,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4243,7 +6253,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\small_body_orbits_benchmark.json"
+      "benchmark_path": "data\\small_body_orbits_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Small Body Orbits",
+      "scientific_measurement": {
+        "delta": 0.000282,
+        "delta_pct": 0.0282,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4263,7 +6283,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\solar_system_structure_deep_benchmark.json"
+      "benchmark_path": "data\\solar_system_structure_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Solar System Structure Deep",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.0309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4284,7 +6314,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\space_propulsion_systems_benchmark.json"
+      "benchmark_path": "data\\space_propulsion_systems_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Space Propulsion Systems",
+      "scientific_measurement": {
+        "delta": 0.000251,
+        "delta_pct": 0.0251,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4305,7 +6345,17 @@
         "plasma"
       ],
       "priority": false,
-      "benchmark_path": "data\\space_weather_benchmark.json"
+      "benchmark_path": "data\\space_weather_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Space Weather",
+      "scientific_measurement": {
+        "delta": 0.000263,
+        "delta_pct": 0.0263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4326,7 +6376,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\speleology_extension_benchmark.json"
+      "benchmark_path": "data\\speleology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Speleology",
+      "scientific_measurement": {
+        "delta": 0.000226,
+        "delta_pct": 0.0226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4347,7 +6407,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\sports_biomechanics_gap_fill_benchmark.json"
+      "benchmark_path": "data\\sports_biomechanics_gap_fill_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Sports Biomechanics",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4368,7 +6438,17 @@
         "thermodynamics"
       ],
       "priority": false,
-      "benchmark_path": "data\\statistical_mechanics_public_panel_benchmark.json"
+      "benchmark_path": "data\\statistical_mechanics_public_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Statistical Mechanics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000223,
+        "delta_pct": 0.0223,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4388,7 +6468,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\stellar_multiplicity_catalog_benchmark.json"
+      "benchmark_path": "data\\stellar_multiplicity_catalog_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Stellar Multiplicity Catalog",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4408,7 +6498,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\stellar_multiplicity_live_deep_benchmark.json"
+      "benchmark_path": "data\\stellar_multiplicity_live_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Stellar Multiplicity Live Deep",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4430,7 +6530,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\stumped_observables_panel_benchmark.json"
+      "benchmark_path": "data\\stumped_observables_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Stumped Observables Panel",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4453,7 +6563,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\stumped_observables_spine_benchmark.json"
+      "benchmark_path": "data\\stumped_observables_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Stumped Observables Spine",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4475,7 +6595,17 @@
         "fusion"
       ],
       "priority": false,
-      "benchmark_path": "data\\superheavy_element_stability_panel_benchmark.json"
+      "benchmark_path": "data\\superheavy_element_stability_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Superheavy Element Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000316,
+        "delta_pct": 0.0316,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4498,7 +6628,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\superheavy_island_completion_spine_benchmark.json"
+      "benchmark_path": "data\\superheavy_island_completion_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Superheavy Island Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4520,7 +6660,17 @@
         "astronomical"
       ],
       "priority": false,
-      "benchmark_path": "data\\superheavy_island_emergence_simulation_benchmark.json"
+      "benchmark_path": "data\\superheavy_island_emergence_simulation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Superheavy Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4541,7 +6691,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\supply_chain_logistics_extension_benchmark.json"
+      "benchmark_path": "data\\supply_chain_logistics_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Supply Chain Logistics",
+      "scientific_measurement": {
+        "delta": 0.000228,
+        "delta_pct": 0.0228,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4562,7 +6722,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\symbolic_archetype_panel_benchmark.json"
+      "benchmark_path": "data\\symbolic_archetype_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Symbolic Archetype Panel",
+      "scientific_measurement": {
+        "delta": 0.000227,
+        "delta_pct": 0.0227,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4582,7 +6752,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\synthetic_biology_benchmark.json"
+      "benchmark_path": "data\\synthetic_biology_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.000178,
+        "delta_pct": 0.0178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4601,7 +6781,17 @@
         "energy"
       ],
       "priority": false,
-      "benchmark_path": "data\\tectonics_benchmark.json"
+      "benchmark_path": "data\\tectonics_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Tectonics",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4623,7 +6813,17 @@
         "acoustical"
       ],
       "priority": false,
-      "benchmark_path": "data\\term3_acoustic_bleed_depth_benchmark.json"
+      "benchmark_path": "data\\term3_acoustic_bleed_depth_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Term3 Acoustic Bleed Depth",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.0308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4645,7 +6845,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\theory_completeness_spine_benchmark.json"
+      "benchmark_path": "data\\theory_completeness_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Theory Completeness Spine",
+      "scientific_measurement": {
+        "delta": 0.000351,
+        "delta_pct": 0.0351,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4669,7 +6879,17 @@
         "mathematical"
       ],
       "priority": false,
-      "benchmark_path": "data\\time_domain_crosswalk_benchmark.json"
+      "benchmark_path": "data\\time_domain_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Time Domain Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4692,7 +6912,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\time_emergence_deep_panel_benchmark.json"
+      "benchmark_path": "data\\time_emergence_deep_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Time Emergence Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4715,7 +6945,17 @@
         "blackhole"
       ],
       "priority": false,
-      "benchmark_path": "data\\time_emergence_simulation_benchmark.json"
+      "benchmark_path": "data\\time_emergence_simulation_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Time Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.0331,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4737,7 +6977,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\toe_claim_certificate_bundle_benchmark.json"
+      "benchmark_path": "data\\toe_claim_certificate_bundle_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "ToE Claim Certificate Bundle",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4759,7 +7009,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\toe_gap_closure_spine_benchmark.json"
+      "benchmark_path": "data\\toe_gap_closure_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "ToE Gap Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000351,
+        "delta_pct": 0.0351,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4783,7 +7043,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\toe_unification_spine_benchmark.json"
+      "benchmark_path": "data\\toe_unification_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "ToE Unification Spine",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.0361,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4804,7 +7074,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\tokenization_smoke_benchmark.json"
+      "benchmark_path": "data\\tokenization_smoke_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Tokenization Smoke",
+      "scientific_measurement": {
+        "delta": 0.000223,
+        "delta_pct": 0.0223,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4825,7 +7105,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\trinary_hardware_motif_benchmark.json"
+      "benchmark_path": "data\\trinary_hardware_motif_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Trinary Hardware Motif",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4846,7 +7136,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\trinary_os_isa_rebuild_benchmark.json"
+      "benchmark_path": "data\\trinary_os_isa_rebuild_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Trinary OS ISA Rebuild",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4867,7 +7167,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\trinary_os_portable_benchmark.json"
+      "benchmark_path": "data\\trinary_os_portable_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Trinary OS Portable",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4888,7 +7198,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\trinary_os_round_trip_benchmark.json"
+      "benchmark_path": "data\\trinary_os_round_trip_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Trinary OS Round Trip",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4909,7 +7229,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\trinary_os_tier_e_benchmark.json"
+      "benchmark_path": "data\\trinary_os_tier_e_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Trinary OS Tier E",
+      "scientific_measurement": {
+        "delta": 0.00025,
+        "delta_pct": 0.025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4931,7 +7261,17 @@
         "fusion"
       ],
       "priority": false,
-      "benchmark_path": "data\\undiscovered_element_candidate_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\undiscovered_element_candidate_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Undiscovered Element Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000294,
+        "delta_pct": 0.0294,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4951,7 +7291,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\uniprot_protein_annotations_benchmark.json"
+      "benchmark_path": "data\\uniprot_protein_annotations_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "UniProt Protein Annotations",
+      "scientific_measurement": {
+        "delta": 0.000177,
+        "delta_pct": 0.0177,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4972,7 +7322,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\uniprot_structure_annotations_deep_benchmark.json"
+      "benchmark_path": "data\\uniprot_structure_annotations_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "UniProt Structure Annotations Deep",
+      "scientific_measurement": {
+        "delta": 0.000279,
+        "delta_pct": 0.0279,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -4994,7 +7354,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\unified_db_candidate_crosswalk_benchmark.json"
+      "benchmark_path": "data\\unified_db_candidate_crosswalk_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Unified DB Candidate Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5016,7 +7386,17 @@
         "ai"
       ],
       "priority": false,
-      "benchmark_path": "data\\unified_db_crosswalk_spine_benchmark.json"
+      "benchmark_path": "data\\unified_db_crosswalk_spine_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Unified DB Crosswalk Spine",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5037,7 +7417,17 @@
         "neural"
       ],
       "priority": false,
-      "benchmark_path": "data\\vl_distill_atlas_benchmark.json"
+      "benchmark_path": "data\\vl_distill_atlas_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "VL Distill Atlas",
+      "scientific_measurement": {
+        "delta": 0.000223,
+        "delta_pct": 0.0223,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5057,7 +7447,17 @@
         "biological"
       ],
       "priority": false,
-      "benchmark_path": "data\\virology_extension_benchmark.json"
+      "benchmark_path": "data\\virology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Virology",
+      "scientific_measurement": {
+        "delta": 0.000191,
+        "delta_pct": 0.0191,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5078,7 +7478,17 @@
         "cmb"
       ],
       "priority": false,
-      "benchmark_path": "data\\vizier_wds_tap_live_deep_benchmark.json"
+      "benchmark_path": "data\\vizier_wds_tap_live_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "VizieR WDS TAP Live Deep",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.0362,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5098,7 +7508,17 @@
         "galactic"
       ],
       "priority": false,
-      "benchmark_path": "data\\wds_live_multiplicity_deep_benchmark.json"
+      "benchmark_path": "data\\wds_live_multiplicity_deep_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "WDS Live Multiplicity Deep",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5121,7 +7541,17 @@
         "electromagnetism"
       ],
       "priority": false,
-      "benchmark_path": "data\\warp_bh_wh_portal_benchmark.json"
+      "benchmark_path": "data\\warp_bh_wh_portal_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Warp BH WH Portal Panel",
+      "scientific_measurement": {
+        "delta": 0.000353,
+        "delta_pct": 0.0353,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5141,7 +7571,17 @@
         "economic"
       ],
       "priority": false,
-      "benchmark_path": "data\\world_bank_development_benchmark.json"
+      "benchmark_path": "data\\world_bank_development_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "World Bank Development",
+      "scientific_measurement": {
+        "delta": 0.00026,
+        "delta_pct": 0.026,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5164,7 +7604,17 @@
         "acoustical"
       ],
       "priority": false,
-      "benchmark_path": "data\\xr_interactive_media_math_scaffold_benchmark.json"
+      "benchmark_path": "data\\xr_interactive_media_math_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "XR Interactive Media Math Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5186,7 +7636,17 @@
         "material"
       ],
       "priority": false,
-      "benchmark_path": "data\\z120_z126_beam_synthesis_panel_benchmark.json"
+      "benchmark_path": "data\\z120_z126_beam_synthesis_panel_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Z120 Z126 Beam Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5207,7 +7667,17 @@
         "fusion"
       ],
       "priority": false,
-      "benchmark_path": "data\\z164_distant_island_prereg_scaffold_benchmark.json"
+      "benchmark_path": "data\\z164_distant_island_prereg_scaffold_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Z164 Distant Island Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.0003,
+        "delta_pct": 0.03,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5229,7 +7699,17 @@
         "consciousness"
       ],
       "priority": false,
-      "benchmark_path": "data\\zero_day_risk_evaluator_cybersecurity_benchmark.json"
+      "benchmark_path": "data\\zero_day_risk_evaluator_cybersecurity_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Zero Day Risk Evaluator",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5249,7 +7729,17 @@
         "medical"
       ],
       "priority": false,
-      "benchmark_path": "data\\zoology_extension_benchmark.json"
+      "benchmark_path": "data\\zoology_extension_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Zoology",
+      "scientific_measurement": {
+        "delta": 0.0002,
+        "delta_pct": 0.02,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5263,7 +7753,17 @@
       "omega_rad_s": 57759008871.57627,
       "fpc_time_coupling": 0.000540844,
       "priority": true,
-      "anchor_key": "cs133"
+      "anchor_key": "cs133",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Atomic Physics",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5277,7 +7777,17 @@
       "omega_rad_s": 7.292115857915991e-05,
       "fpc_time_coupling": 0.000347705,
       "priority": true,
-      "anchor_key": "earth"
+      "anchor_key": "earth",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Planetary Science",
+      "scientific_measurement": {
+        "delta": 0.000477,
+        "delta_pct": 0.026648,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5291,7 +7801,17 @@
       "omega_rad_s": 1.991021277657232e-07,
       "fpc_time_coupling": 0.000441446,
       "priority": true,
-      "anchor_key": "year"
+      "anchor_key": "year",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Astronomy",
+      "scientific_measurement": {
+        "delta": 0.000714,
+        "delta_pct": 0.039667,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -5305,7 +7825,17 @@
       "omega_rad_s": 1.991021277657232e-16,
       "fpc_time_coupling": 0.000441446,
       "priority": true,
-      "anchor_key": "cosmic"
+      "anchor_key": "cosmic",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Cosmology",
+      "scientific_measurement": {
+        "delta": 0.000111,
+        "delta_pct": 0.0222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -5327,5 +7857,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.TimeDomainCrosswalkPriors",
     "FSOT.Formal.TimeEmergenceSimulationPriors"
-  ]
+  ],
+  "display_name": "Time Domain Crosswalk",
+  "tier_label": "Tier 50",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.553354+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 250,
+    "median_error_pct": 0.0281,
+    "max_error_pct": 0.0744,
+    "mean_abs_delta": 0.00027431599999999987,
+    "precision_tier_counts": {
+      "green": 250
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

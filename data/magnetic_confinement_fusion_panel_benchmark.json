@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 22
+      "observable_count": 22,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 21,
+      "domain_display_name": "tier gap fill",
+      "display_name": "tokamak stellarator",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "tokamak H mode",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -71,7 +101,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "tokamak high beta",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -81,7 +121,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "theta pinch",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -91,7 +141,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "FRC laboratory",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -101,7 +161,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "stellarator W7X",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -111,7 +181,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "Wendelstein edge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -121,7 +201,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "plasma_relay",
-      "source": "plasma_physics_benchmark.json"
+      "source": "plasma_physics_benchmark.json",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "fusion ignition edge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -131,7 +221,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "q_factor": 0.67,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "JET 1997",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -140,7 +240,17 @@
       "computed": 3.0000000000023606e+20,
       "measured": 3e+20,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "JET 1997",
+      "scientific_measurement": {
+        "delta": 236060672.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -150,7 +260,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "q_factor": 0.28,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "TFTR 1994",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -159,7 +279,17 @@
       "computed": 1.600000000001259e+21,
       "measured": 1.6e+21,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "TFTR 1994",
+      "scientific_measurement": {
+        "delta": 1259077632.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -169,7 +299,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "q_factor": 0.0,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "EAST 2023",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -178,7 +318,17 @@
       "computed": 3.000000000002361e+23,
       "measured": 3e+23,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "EAST 2023",
+      "scientific_measurement": {
+        "delta": 236088983552.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -188,7 +338,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "q_factor": 10.0,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "ITER design",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -197,7 +357,17 @@
       "computed": 5.550000000004368e+22,
       "measured": 5.5500000000000005e+22,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "ITER design",
+      "scientific_measurement": {
+        "delta": 43671093248.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -207,7 +377,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "q_factor": 2.0,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "SPARC design",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -216,7 +396,17 @@
       "computed": 3.000000000002361e+21,
       "measured": 3e+21,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "SPARC design",
+      "scientific_measurement": {
+        "delta": 2360868864.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -226,7 +416,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "q_factor": 0.0,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "W7X steady",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -235,7 +435,17 @@
       "computed": 4.800000000003777e+19,
       "measured": 4.8e+19,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "W7X steady",
+      "scientific_measurement": {
+        "delta": 37773312.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -245,7 +455,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "q_factor": 1.0,
-      "eval_kind": "facility_gate"
+      "eval_kind": "facility_gate",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "JT60SA design",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -254,7 +474,17 @@
       "computed": 4.800000000003777e+21,
       "measured": 4.8e+21,
       "error_pct": 0.0,
-      "eval_kind": "lawson_relay"
+      "eval_kind": "lawson_relay",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "JT60SA design",
+      "scientific_measurement": {
+        "delta": 3776970752.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "magnetic_confinement_fusion_lab",
@@ -263,7 +493,17 @@
       "computed": 0.786975,
       "measured": 0.786975,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "magnetic confinement fusion",
+      "display_name": "fsot plasma thermodynamics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -277,5 +517,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Magnetic Confinement Fusion Panel",
+  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.659301+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 13065037637.818182,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

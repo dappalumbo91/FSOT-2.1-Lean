@@ -45,7 +45,17 @@
       "computed": 0.008381,
       "measured": 0.0,
       "error_pct": 0.008381497018412922,
-      "observable_count": 29
+      "observable_count": 29,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.008381,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -54,7 +64,17 @@
       "computed": 0.0835,
       "measured": 0.0,
       "error_pct": 0.0835,
-      "observable_count": 9
+      "observable_count": 9,
+      "domain_display_name": "tier gap fill",
+      "display_name": "species acoustic panel",
+      "scientific_measurement": {
+        "delta": 0.0835,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,7 +83,17 @@
       "computed": 0.008381,
       "measured": 0.0,
       "error_pct": 0.008381497018411083,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "built env panel",
+      "scientific_measurement": {
+        "delta": 0.008381,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -77,7 +107,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "(e*((((\u03b3)^2)^2)^2)^2)",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Air 20C",
+      "scientific_measurement": {
+        "delta": -2.3e-07,
+        "delta_pct": 0.056588,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -89,7 +129,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "PI-A_IN",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Water 20C",
+      "scientific_measurement": {
+        "delta": -0.00526119,
+        "delta_pct": 0.355486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -101,7 +151,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "E\u00b3-PI",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Aluminum",
+      "scientific_measurement": {
+        "delta": -0.05605573,
+        "delta_pct": 0.32974,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -113,7 +173,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "((3)^2*(2+3))",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Steel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -125,7 +195,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "((\u03c6+3)/((\u03b3)^2)^2)",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Copper",
+      "scientific_measurement": {
+        "delta": 0.00108809,
+        "delta_pct": 0.002616,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -137,7 +217,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "E\u00b3+E\u00b2",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Titanium",
+      "scientific_measurement": {
+        "delta": 0.17459302,
+        "delta_pct": 0.639535,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -149,7 +239,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "(((2)^2)^2-(3/2))",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Glass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -161,7 +261,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "PHI\u2078+PHI\u00b2",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Nickel",
+      "scientific_measurement": {
+        "delta": 0.09674775,
+        "delta_pct": 0.19545,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -173,7 +283,17 @@
       "source": "fsot_species_catalog.json",
       "section": "molecules",
       "formula": "E-P_NEW",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Glycerin",
+      "scientific_measurement": {
+        "delta": -0.00202045,
+        "delta_pct": 0.08349,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -183,7 +303,17 @@
       "measured": 14.0,
       "error_pct": 0.008381497018409132,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Residential SEER 14 baseline",
+      "scientific_measurement": {
+        "delta": 0.001173,
+        "delta_pct": 0.008379,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -193,7 +323,17 @@
       "measured": 3.5,
       "error_pct": 0.008381497018409132,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Residential SEER 14 baseline",
+      "scientific_measurement": {
+        "delta": 0.000293,
+        "delta_pct": 0.008371,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -203,7 +343,17 @@
       "measured": 22.0,
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "High-efficiency SEER 22",
+      "scientific_measurement": {
+        "delta": 0.001844,
+        "delta_pct": 0.008382,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -213,7 +363,17 @@
       "measured": 5.5,
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "High-efficiency SEER 22",
+      "scientific_measurement": {
+        "delta": 0.000461,
+        "delta_pct": 0.008382,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -223,7 +383,17 @@
       "measured": 10.0,
       "error_pct": 0.008381497018401518,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Heat pump HSPF 10",
+      "scientific_measurement": {
+        "delta": 0.000838,
+        "delta_pct": 0.00838,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -233,7 +403,17 @@
       "measured": 3.0,
       "error_pct": 0.00838149701841336,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Heat pump HSPF 10",
+      "scientific_measurement": {
+        "delta": 0.000251,
+        "delta_pct": 0.008367,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -243,7 +423,17 @@
       "measured": 13.0,
       "error_pct": 0.008381497018411083,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Heat pump HSPF 13",
+      "scientific_measurement": {
+        "delta": 0.00109,
+        "delta_pct": 0.008385,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -253,7 +443,17 @@
       "measured": 3.8,
       "error_pct": 0.008381497018404791,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Heat pump HSPF 13",
+      "scientific_measurement": {
+        "delta": 0.000318,
+        "delta_pct": 0.008368,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -263,7 +463,17 @@
       "measured": 11.0,
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (0C cold, 27C hot)",
+      "scientific_measurement": {
+        "delta": 0.000922,
+        "delta_pct": 0.008382,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -273,7 +483,17 @@
       "measured": 273.15,
       "error_pct": 0.008381497018412922,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (0C cold, 27C hot)",
+      "scientific_measurement": {
+        "delta": 0.022894,
+        "delta_pct": 0.008381,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -283,7 +503,17 @@
       "measured": 300.15,
       "error_pct": 0.008381497018408523,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (0C cold, 27C hot)",
+      "scientific_measurement": {
+        "delta": 0.025157,
+        "delta_pct": 0.008381,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -293,7 +523,17 @@
       "measured": 9.4,
       "error_pct": 0.00838149701841399,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (5C cold, 35C hot)",
+      "scientific_measurement": {
+        "delta": 0.000788,
+        "delta_pct": 0.008383,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -303,7 +543,17 @@
       "measured": 278.15,
       "error_pct": 0.008381497018414313,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (5C cold, 35C hot)",
+      "scientific_measurement": {
+        "delta": 0.023313,
+        "delta_pct": 0.008381,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -313,7 +563,17 @@
       "measured": 308.15,
       "error_pct": 0.008381497018403268,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Carnot COP (5C cold, 35C hot)",
+      "scientific_measurement": {
+        "delta": 0.025828,
+        "delta_pct": 0.008382,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -323,7 +583,17 @@
       "measured": 6.2,
       "error_pct": 0.008381497018406674,
       "source": "architecture_building_science_gap_fill_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "Chiller centrifugal",
+      "scientific_measurement": {
+        "delta": 0.00052,
+        "delta_pct": 0.008387,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -333,7 +603,17 @@
       "measured": 5.061015749458651,
       "error_pct": 0.010057796422089002,
       "source": "math_generator_airfoil_rmse_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "airfoil seed",
+      "scientific_measurement": {
+        "delta": 0.00050925,
+        "delta_pct": 0.010062,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -343,7 +623,17 @@
       "measured": 5.102551799768952,
       "error_pct": 0.010057796422092424,
       "source": "math_generator_airfoil_rmse_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "airfoil seed",
+      "scientific_measurement": {
+        "delta": 0.0005132,
+        "delta_pct": 0.010058,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -353,7 +643,17 @@
       "measured": 1503.0,
       "error_pct": 0.010057796422098845,
       "source": "math_generator_airfoil_rmse_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "airfoil seed",
+      "scientific_measurement": {
+        "delta": 0.151169,
+        "delta_pct": 0.010058,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -363,7 +663,17 @@
       "measured": 1.0,
       "error_pct": 0.010057796422091592,
       "source": "math_generator_airfoil_rmse_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "airfoil seed",
+      "scientific_measurement": {
+        "delta": 0.000101,
+        "delta_pct": 0.0101,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "acoustic_resonance_materials_lab",
@@ -373,7 +683,17 @@
       "measured": 1.0,
       "error_pct": 0.010057796422091592,
       "source": "math_generator_airfoil_rmse_benchmark.json",
-      "formula_branch": "term3.acoustic_bleed"
+      "formula_branch": "term3.acoustic_bleed",
+      "domain_display_name": "acoustic resonance materials",
+      "display_name": "airfoil seed",
+      "scientific_measurement": {
+        "delta": 0.000101,
+        "delta_pct": 0.0101,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -394,5 +714,20 @@
   "crosswalk_modules": [
     "FSOT.Formal.MaterialsEngineeringPriors",
     "FSOT.Formal.FormulaBranchingFractalPriors"
-  ]
+  ],
+  "display_name": "Acoustic Resonance Materials",
+  "tier_label": "Tier 47",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.519468+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 29,
+    "median_error_pct": 0.008382,
+    "max_error_pct": 0.639535,
+    "mean_abs_delta": 0.020477583103448275,
+    "precision_tier_counts": {
+      "green": 28,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9655172413793104,
+    "matches_domain_spine": false
+  }
 }

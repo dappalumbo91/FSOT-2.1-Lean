@@ -831,6 +831,15 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_fsot_label_registry.py")],
+        cwd=str(ROOT),
+    )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_verification_depth_audit.py")],
+        cwd=str(ROOT),
+    )
+
     print("CROSS-PROOF VERIFICATION (Tier 91 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")

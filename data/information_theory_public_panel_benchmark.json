@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 11
+      "observable_count": 11,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1
+      "observable_count": 1,
+      "domain_display_name": "tier gap fill",
+      "display_name": "information theory",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "measured": 0.6931471806,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "shannon ln2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -70,7 +100,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "fair coin entropy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -80,7 +120,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "kraft bound",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -90,7 +140,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "kl self divergence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -100,7 +160,17 @@
       "measured": 1.618,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "channel capacity proxy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -110,7 +180,17 @@
       "measured": 0.4812,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "gaussian channel half",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -120,7 +200,17 @@
       "measured": 0.6931,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "renyi alpha1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -130,7 +220,17 @@
       "measured": 0.6431,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "coding redundancy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -140,7 +240,17 @@
       "measured": 0.5615,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "aep threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -150,7 +260,17 @@
       "measured": 0.03015,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "literature_anchor"
+      "eval_kind": "literature_anchor",
+      "domain_display_name": "information theory panel",
+      "display_name": "mutual info bound",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "information_theory_panel_lab",
@@ -159,7 +279,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "shannon_bridge"
+      "eval_kind": "shannon_bridge",
+      "domain_display_name": "information theory panel",
+      "display_name": "linguistics formal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -173,5 +303,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Information Theory Public Panel",
+  "tier_label": "Tier 64 \u2014 Information Theory Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.627915+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 11,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 11
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

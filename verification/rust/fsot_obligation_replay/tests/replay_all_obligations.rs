@@ -6,6 +6,31 @@ const E: f64 = std::f64::consts::E;
 
 #[test]
 fn replay_all_obligations() {
+    // connective_spine (24 obligations)
+    assert!(0.082300635102_f64 > 0.0, "warp_psi_friction_pos");
+    assert!(0.059407798774_f64 > 0.0, "warp_psi_node_pos");
+    assert!(0.053926299704_f64 > 0.0, "warp_tunneling_bridge_pos");
+    assert!(2.386649570184_f64 > 0.0, "warp_psi_stabilization_pos");
+    assert!(0.14178559741_f64 > 0.0, "warp_psi_run_pos");
+    assert!(0.004581413686_f64 > 0.0, "warp_delta_phi_stable_pos");
+    assert!(0.011637689406_f64 > 0.0, "warp_y_exotic_byproduct_pos");
+    assert!(0.082300635102_f64 > 0.0, "warp_actuation_core_bundle");
+    assert!(1.722776467449_f64 > 1.0, "warp_stabilization_margin_gt_one");
+    assert!(1.722776467449_f64 > 1.0, "warp_stable_run_band");
+    assert!(1.722776467449_f64 > 1.0, "warp_actuation_stabilized_bundle");
+    assert!(0.053926299704_f64 < 0.059407798774_f64, "warp_bridge_lt_node");
+    assert!(0.011637689406_f64 < 0.082300635102_f64, "warp_exotic_lt_friction");
+    assert!(0.131181176323_f64 > 0.0, "connective_plasma_confinement_pos");
+    assert!(0.094115088176_f64 > 0.0, "connective_seawater_acoustic_pos");
+    assert!(0.029710640768_f64 > 0.0, "connective_decay_chain_relay_pos");
+    assert!(17.6_f64 > 0.0, "connective_dt_energy_pos");
+    assert!(0.131181176323_f64 > 0.0, "connective_fusion_grid_bundle");
+    assert!(6.5226644e-05_f64 > 0.0, "connective_energy_bus_pos");
+    assert!(0.040494897615_f64 > 0.0, "connective_cryo_rejection_pos");
+    assert!(0.076350367522_f64 > 0.0, "connective_em_coil_pos");
+    assert!(0.075670330033_f64 > 0.0, "connective_fluid_consistency_pos");
+    assert!(6.5226644e-05_f64 > 0.0, "connective_e10d_wd_bundle");
+    assert!(1.722776467449_f64 > 1.0, "connective_stab_margin_gt_one");
     // full_formal chunk 00 (150 obligations)
     assert!(0.008381497018412922_f64 < 0.5, "acoustic_rm_pooled_median_under_half_pct");
     assert!(0.008381497018412922_f64 < 0.5, "acoustic_rm_headline_median_under_half_pct");

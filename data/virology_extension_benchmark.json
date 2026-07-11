@@ -39,7 +39,17 @@
       "computed": 0.045933,
       "measured": 0.0,
       "error_pct": 0.04593318440797614,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.045933,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.045933,
       "measured": 0.0,
       "error_pct": 0.04593318440797614,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "virology panel",
+      "scientific_measurement": {
+        "delta": 0.045933,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 50.022967,
       "measured": 50.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "hiv viral load suppressed",
+      "scientific_measurement": {
+        "delta": 0.022967,
+        "delta_pct": 0.045934,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -68,7 +98,17 @@
       "computed": 6.002756,
       "measured": 6.0,
       "error_pct": 0.04593318440798318,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "influenza replication h",
+      "scientific_measurement": {
+        "delta": 0.002756,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -77,7 +117,17 @@
       "computed": 5.002297,
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "sars cov2 incubation days",
+      "scientific_measurement": {
+        "delta": 0.002297,
+        "delta_pct": 0.04594,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -86,7 +136,17 @@
       "computed": 6.002756,
       "measured": 6.0,
       "error_pct": 0.04593318440798318,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "hcv viral load log",
+      "scientific_measurement": {
+        "delta": 0.002756,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -95,7 +155,17 @@
       "computed": 5.002297,
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "hbv viral load log",
+      "scientific_measurement": {
+        "delta": 0.002297,
+        "delta_pct": 0.04594,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -104,7 +174,17 @@
       "computed": 12.005512,
       "measured": 12.0,
       "error_pct": 0.04593318440798318,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "rsv replication h",
+      "scientific_measurement": {
+        "delta": 0.005512,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -113,7 +193,17 @@
       "computed": 8.003675,
       "measured": 8.0,
       "error_pct": 0.04593318440797578,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "ebola viral load peak",
+      "scientific_measurement": {
+        "delta": 0.003675,
+        "delta_pct": 0.045937,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -122,7 +212,17 @@
       "computed": 5.002297,
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "zika viral load peak",
+      "scientific_measurement": {
+        "delta": 0.002297,
+        "delta_pct": 0.04594,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -131,7 +231,17 @@
       "computed": 602.876793,
       "measured": 602.6,
       "error_pct": 0.045933184407974594,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "remdesivir mw",
+      "scientific_measurement": {
+        "delta": 0.276793,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -140,7 +250,17 @@
       "computed": 312.543495,
       "measured": 312.4,
       "error_pct": 0.045933184407980984,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "oseltamivir mw",
+      "scientific_measurement": {
+        "delta": 0.143495,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -149,7 +269,17 @@
       "computed": 225.303442,
       "measured": 225.2,
       "error_pct": 0.04593318440797614,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "acyclovir mw",
+      "scientific_measurement": {
+        "delta": 0.103442,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -158,7 +288,17 @@
       "computed": 721.231132,
       "measured": 720.9,
       "error_pct": 0.04593318440797562,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "ritonavir mw",
+      "scientific_measurement": {
+        "delta": 0.331132,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -167,7 +307,17 @@
       "computed": 529.743216,
       "measured": 529.5,
       "error_pct": 0.0459331844079696,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "sofosbuvir mw",
+      "scientific_measurement": {
+        "delta": 0.243216,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -176,7 +326,17 @@
       "computed": 100.045933,
       "measured": 100.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "viral particle diameter nm",
+      "scientific_measurement": {
+        "delta": 0.045933,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -185,7 +345,17 @@
       "computed": 169.077627,
       "measured": 169.0,
       "error_pct": 0.04593318440796881,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "phage t4 genome kb",
+      "scientific_measurement": {
+        "delta": 0.077627,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -194,7 +364,17 @@
       "computed": 13.506201,
       "measured": 13.5,
       "error_pct": 0.045933184407976606,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "influenza genome kb",
+      "scientific_measurement": {
+        "delta": 0.006201,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -203,7 +383,17 @@
       "computed": 15.00689,
       "measured": 15.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "morbillivirus r0",
+      "scientific_measurement": {
+        "delta": 0.00689,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -212,7 +402,17 @@
       "computed": 40.018373,
       "measured": 40.0,
       "error_pct": 0.04593318440797134,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "herpes latency years",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.045932,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -221,7 +421,17 @@
       "computed": 14.006431,
       "measured": 14.0,
       "error_pct": 0.04593318440797895,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "norovirus shed days",
+      "scientific_measurement": {
+        "delta": 0.006431,
+        "delta_pct": 0.045936,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_lab",
@@ -230,7 +440,17 @@
       "computed": 300.1378,
       "measured": 300.0,
       "error_pct": 0.04593318440798081,
-      "source": "virology_reference_observables"
+      "source": "virology_reference_observables",
+      "domain_display_name": "virology",
+      "display_name": "poxvirus particle nm",
+      "scientific_measurement": {
+        "delta": 0.1378,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -238,7 +458,18 @@
       "name": "CI2",
       "computed": -7.007584181144136,
       "measured": -7.0,
-      "error_pct": 0.108345
+      "error_pct": 0.108345,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.00758418,
+        "delta_pct": 0.108345,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -246,7 +477,18 @@
       "name": "barnase",
       "computed": -8.79922884583726,
       "measured": -8.8,
-      "error_pct": 0.0087631154856993
+      "error_pct": 0.0087631154856993,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00077115,
+        "delta_pct": 0.008763,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -254,7 +496,18 @@
       "name": "ubiquitin",
       "computed": -6.699379178638373,
       "measured": -6.7,
-      "error_pct": 0.009265990472048086
+      "error_pct": 0.009265990472048086,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00062082,
+        "delta_pct": 0.009266,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -262,7 +515,18 @@
       "name": "lysozyme",
       "computed": -9.160572302574996,
       "measured": -9.2,
-      "error_pct": 0.428562
+      "error_pct": 0.428562,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.0394277,
+        "delta_pct": 0.428562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -270,7 +534,18 @@
       "name": "RNase A",
       "computed": -8.683186676986617,
       "measured": -8.7,
-      "error_pct": 0.193257
+      "error_pct": 0.193257,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.01681332,
+        "delta_pct": 0.193257,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -278,7 +553,18 @@
       "name": "cytochrome c",
       "computed": -10.081950177328737,
       "measured": -10.1,
-      "error_pct": 0.178711
+      "error_pct": 0.178711,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.01804982,
+        "delta_pct": 0.178711,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -286,7 +572,18 @@
       "name": "myoglobin",
       "computed": -13.562305898749054,
       "measured": -13.6,
-      "error_pct": 0.27716250919812885
+      "error_pct": 0.27716250919812885,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.0376941,
+        "delta_pct": 0.277163,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -294,7 +591,18 @@
       "name": "BPTI",
       "computed": -11.000000000000002,
       "measured": -11.0,
-      "error_pct": 1.6148698540002278e-14
+      "error_pct": 1.6148698540002278e-14,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -302,7 +610,18 @@
       "name": "SH3 domain",
       "computed": -3.502756499504318,
       "measured": -3.5,
-      "error_pct": 0.07875712869480316
+      "error_pct": 0.07875712869480316,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": -0.0027565,
+        "delta_pct": 0.078757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -310,7 +629,18 @@
       "name": "chymotrypsin inh.",
       "computed": -4.291643461547232,
       "measured": -4.3,
-      "error_pct": 0.19433810355273806
+      "error_pct": 0.19433810355273806,
+      "section_display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a721 \u2014 protein folding free energy (\u0394G)",
+      "scientific_measurement": {
+        "delta": 0.00835654,
+        "delta_pct": 0.194338,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -318,7 +648,18 @@
       "name": "Gly_pK\u2081",
       "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 0.00047401701302970684
+      "error_pct": 0.00047401701302970684,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -1.109e-05,
+        "delta_pct": 0.000474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -326,7 +667,18 @@
       "name": "Gly_pK\u2082",
       "computed": 9.604206413193825,
       "measured": 9.6,
-      "error_pct": 0.0438168041023516
+      "error_pct": 0.0438168041023516,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00420641,
+        "delta_pct": 0.043817,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -334,7 +686,18 @@
       "name": "Ala_pK\u2081",
       "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 0.00047401701302970684
+      "error_pct": 0.00047401701302970684,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -1.109e-05,
+        "delta_pct": 0.000474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -342,7 +705,18 @@
       "name": "Ala_pK\u2082",
       "computed": 9.869604401089358,
       "measured": 9.87,
-      "error_pct": 0.004008
+      "error_pct": 0.004008,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0003956,
+        "delta_pct": 0.004008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -350,7 +724,18 @@
       "name": "Val_pK\u2081",
       "computed": 2.2980601642983487,
       "measured": 2.29,
-      "error_pct": 0.351972
+      "error_pct": 0.351972,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00806016,
+        "delta_pct": 0.351972,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -358,7 +743,18 @@
       "name": "Val_pK\u2082",
       "computed": 9.716122186194907,
       "measured": 9.72,
-      "error_pct": 0.039895
+      "error_pct": 0.039895,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00387781,
+        "delta_pct": 0.039895,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -366,7 +762,18 @@
       "name": "Leu_pK\u2081",
       "computed": 2.3298975496881877,
       "measured": 2.33,
-      "error_pct": 0.004397009090657935
+      "error_pct": 0.004397009090657935,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00010245,
+        "delta_pct": 0.004397,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -374,7 +781,18 @@
       "name": "Leu_pK\u2082",
       "computed": 9.716122186194907,
       "measured": 9.74,
-      "error_pct": 0.245152
+      "error_pct": 0.245152,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.02387781,
+        "delta_pct": 0.245152,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -382,7 +800,18 @@
       "name": "Asp_pKR",
       "computed": 3.6342474226362644,
       "measured": 3.65,
-      "error_pct": 0.431577
+      "error_pct": 0.431577,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.01575258,
+        "delta_pct": 0.431577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -390,7 +819,18 @@
       "name": "Glu_pKR",
       "computed": 4.23606797749979,
       "measured": 4.25,
-      "error_pct": 0.327812
+      "error_pct": 0.327812,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.01393202,
+        "delta_pct": 0.327812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -398,7 +838,18 @@
       "name": "His_pKR",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -406,7 +857,18 @@
       "name": "Cys_pKR",
       "computed": 8.176996891207093,
       "measured": 8.18,
-      "error_pct": 0.036713
+      "error_pct": 0.036713,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00300311,
+        "delta_pct": 0.036713,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -414,7 +876,18 @@
       "name": "Tyr_pKR",
       "computed": 10.06799040289138,
       "measured": 10.07,
-      "error_pct": 0.019956277146172662
+      "error_pct": 0.019956277146172662,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0020096,
+        "delta_pct": 0.019956,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -422,7 +895,18 @@
       "name": "Lys_pKR",
       "computed": 10.501724959917917,
       "measured": 10.53,
-      "error_pct": 0.268519
+      "error_pct": 0.268519,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.02827504,
+        "delta_pct": 0.268519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -430,7 +914,18 @@
       "name": "Arg_pKR",
       "computed": 12.487638389839253,
       "measured": 12.48,
-      "error_pct": 0.061205
+      "error_pct": 0.061205,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00763839,
+        "delta_pct": 0.061205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -438,7 +933,18 @@
       "name": "Pro_pK\u2081",
       "computed": 1.9902242326903956,
       "measured": 1.99,
-      "error_pct": 0.01126797439173972
+      "error_pct": 0.01126797439173972,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00022423,
+        "delta_pct": 0.011268,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -446,7 +952,18 @@
       "name": "Pro_pK\u2082",
       "computed": 10.571672795662035,
       "measured": 10.6,
-      "error_pct": 0.267238
+      "error_pct": 0.267238,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.0283272,
+        "delta_pct": 0.267238,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -454,7 +971,18 @@
       "name": "Phe_pK\u2081",
       "computed": 2.575736191370456,
       "measured": 2.58,
-      "error_pct": 0.165264
+      "error_pct": 0.165264,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": -0.00426381,
+        "delta_pct": 0.165264,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -462,7 +990,18 @@
       "name": "Trp_pK\u2081",
       "computed": 2.3801050513839623,
       "measured": 2.38,
-      "error_pct": 0.004413923695900844
+      "error_pct": 0.004413923695900844,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.00010505,
+        "delta_pct": 0.004414,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "immunology_lab",
@@ -470,7 +1009,18 @@
       "name": "Trp_pK\u2082",
       "computed": 9.4026621941651,
       "measured": 9.39,
-      "error_pct": 0.134848
+      "error_pct": 0.134848,
+      "section_display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "domain_display_name": "immunology",
+      "display_name": "SMILES Lab \u00a722 \u2014 amino acid acid dissociation (pKa)",
+      "scientific_measurement": {
+        "delta": 0.01266219,
+        "delta_pct": 0.134848,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -484,5 +1034,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Virology",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.879613+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 50,
+    "median_error_pct": 0.045933,
+    "max_error_pct": 0.431577,
+    "mean_abs_delta": 0.03467449880000002,
+    "precision_tier_counts": {
+      "green": 50
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

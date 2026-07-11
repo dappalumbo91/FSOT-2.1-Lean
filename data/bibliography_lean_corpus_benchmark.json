@@ -17,63 +17,167 @@
       "property": "constant_count",
       "computed": 9,
       "measured": 9,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "constant count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "theorem_count",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "theorem count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "lemma_count",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "lemma count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "def_count",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "def count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "structure_count",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "structure count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "section_count",
       "computed": 3,
       "measured": 3,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "section count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "zero_free_parameters",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "zero free parameters",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "precision_mandate_pct",
       "computed": 0.5,
       "measured": 0.5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "precision mandate pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "bibliography_lean_corpus",
       "property": "workflow_sequence_length",
       "computed": 4,
       "measured": 4,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "bibliography lean corpus",
+      "display_name": "workflow sequence length",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Bibliography Lean Corpus",
+  "tier_label": "Tier 37",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.797988+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 9,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 9
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

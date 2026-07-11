@@ -40,7 +40,17 @@
       "computed": 0.00206,
       "measured": 0.0,
       "error_pct": 0.00206,
-      "observable_count": 32
+      "observable_count": 32,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.00206,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.002424,
       "measured": 0.0,
       "error_pct": 0.0024238898584426276,
-      "observable_count": 25
+      "observable_count": 25,
+      "domain_display_name": "tier gap fill",
+      "display_name": "chemical stability",
+      "scientific_measurement": {
+        "delta": 0.002424,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 180.159,
       "measured": 180.16,
       "error_pct": 0.000555,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -71,7 +101,17 @@
       "computed": 46.069,
       "measured": 46.07,
       "error_pct": 0.002171,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "702",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.002171,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -81,7 +121,17 @@
       "computed": 206.285,
       "measured": 206.28,
       "error_pct": 0.002424,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -91,7 +141,17 @@
       "computed": 194.194,
       "measured": 194.19,
       "error_pct": 0.00206,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "2519",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.00206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -101,7 +161,17 @@
       "computed": 416.646,
       "measured": 416.6,
       "error_pct": 0.011042,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5280453",
+      "scientific_measurement": {
+        "delta": 0.046,
+        "delta_pct": 0.011042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -111,7 +181,17 @@
       "computed": 176.124,
       "measured": 176.12,
       "error_pct": 0.002271,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "54670067",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.002271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -121,7 +201,17 @@
       "computed": 18.015,
       "measured": 18.015,
       "error_pct": 0.0,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "962",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -131,7 +221,17 @@
       "computed": 507.182,
       "measured": 507.18,
       "error_pct": 0.000394,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5957",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000394,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -141,7 +241,17 @@
       "computed": 266.341,
       "measured": 266.34,
       "error_pct": 0.000375,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "2249",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -151,7 +261,17 @@
       "computed": 234.343,
       "measured": 234.34,
       "error_pct": 0.00128,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "3676",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00128,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -161,7 +281,17 @@
       "computed": 151.165,
       "measured": 151.16,
       "error_pct": 0.003308,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -171,7 +301,17 @@
       "computed": 302.238,
       "measured": 302.23,
       "error_pct": 0.002647,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5280343",
+      "scientific_measurement": {
+        "delta": 0.008,
+        "delta_pct": 0.002647,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -181,7 +321,17 @@
       "computed": 1202.635,
       "measured": 1202.6,
       "error_pct": 0.00291,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5284373",
+      "scientific_measurement": {
+        "delta": 0.035,
+        "delta_pct": 0.00291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -191,7 +341,17 @@
       "computed": 270.24,
       "measured": 270.24,
       "error_pct": 0.0,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5280961",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -201,7 +361,17 @@
       "computed": 129.167,
       "measured": 129.16,
       "error_pct": 0.00542,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "4091",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -211,7 +381,17 @@
       "computed": 543.525,
       "measured": 543.5,
       "error_pct": 0.0046,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "31703",
+      "scientific_measurement": {
+        "delta": 0.025,
+        "delta_pct": 0.0046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -221,7 +401,17 @@
       "computed": 75.129,
       "measured": 75.14,
       "error_pct": 0.014639,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "2723949",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.014639,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -231,7 +421,17 @@
       "computed": 337.435,
       "measured": 337.5,
       "error_pct": 0.019259,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5702160",
+      "scientific_measurement": {
+        "delta": -0.065,
+        "delta_pct": 0.019259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -241,7 +441,17 @@
       "computed": 458.375,
       "measured": 458.4,
       "error_pct": 0.005454,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "65064",
+      "scientific_measurement": {
+        "delta": -0.025,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -251,7 +461,17 @@
       "computed": 285.343,
       "measured": 285.34,
       "error_pct": 0.001051,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5288826",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001051,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -261,7 +481,17 @@
       "computed": 194.186,
       "measured": 194.18,
       "error_pct": 0.00309,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "445858",
+      "scientific_measurement": {
+        "delta": 0.006,
+        "delta_pct": 0.00309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -271,7 +501,17 @@
       "computed": 300.442,
       "measured": 300.4,
       "error_pct": 0.013981,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5282379",
+      "scientific_measurement": {
+        "delta": 0.042,
+        "delta_pct": 0.013981,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -281,7 +521,17 @@
       "computed": 914.187,
       "measured": 914.2,
       "error_pct": 0.001422,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5284616",
+      "scientific_measurement": {
+        "delta": -0.013,
+        "delta_pct": 0.001422,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -291,7 +541,17 @@
       "computed": 341.407,
       "measured": 341.4,
       "error_pct": 0.00205,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "5360515",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -301,7 +561,17 @@
       "computed": 780.949,
       "measured": 780.9,
       "error_pct": 0.006275,
-      "eval_kind": "pubchem_anchor"
+      "eval_kind": "pubchem_anchor",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "2724385",
+      "scientific_measurement": {
+        "delta": 0.049,
+        "delta_pct": 0.006275,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -310,7 +580,17 @@
       "measured": 299792458.0,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "speed of light in vacuum",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -319,7 +599,17 @@
       "measured": 6.62607015e-34,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "Planck constant",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -328,7 +618,17 @@
       "measured": 1.6605390666e-27,
       "error_pct": 1.3971366335632365e-07,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "atomic mass constant",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -337,7 +637,17 @@
       "measured": 9.1093837015e-31,
       "error_pct": 1.361233584261938e-07,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "electron mass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -346,7 +656,17 @@
       "measured": 0.0072973525643,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "fine-structure constant",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -355,7 +675,17 @@
       "measured": 1.67262192595e-27,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "nist_relay"
+      "eval_kind": "nist_relay",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "proton mass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "chemical_structure_stability_lab",
@@ -364,7 +694,17 @@
       "computed": 1470.0,
       "measured": 1470.0,
       "error_pct": 0.0,
-      "eval_kind": "smiles_topology"
+      "eval_kind": "smiles_topology",
+      "domain_display_name": "chemical structure stability",
+      "display_name": "FSOT SMILES Lab",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -378,5 +718,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Chemical Structure Stability Panel",
+  "tier_label": "Tier 57 \u2014 Interdisciplinary Spine Crosswalk cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.608740+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 32,
+    "median_error_pct": 0.00206,
+    "max_error_pct": 0.019259,
+    "mean_abs_delta": 0.0115,
+    "precision_tier_counts": {
+      "green": 32
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

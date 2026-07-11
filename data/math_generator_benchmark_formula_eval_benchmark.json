@@ -23,7 +23,18 @@
       "measured": 67.27021167735879,
       "error_pct": 2.1125033444758682e-14,
       "lab": "math_generator_benchmark_formula",
-      "name": "H0 Benchmark Report Promotion"
+      "name": "H0 Benchmark Report Promotion",
+      "rule_display_name": "H0 Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "H0 Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -33,7 +44,18 @@
       "eval_kind": "summary_crosscheck",
       "computed": 0.192564276915754,
       "measured": 0.192564276915754,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "H0 Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "H0 Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -43,7 +65,18 @@
       "eval_kind": "artifact_present",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "H0 Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "H0 Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "rule_id": "FO-210",
@@ -55,7 +88,18 @@
       "report_rmse": 6.247387360026391,
       "report_vs_prediction_error_pct": 5.758599976844136,
       "lab": "math_generator_benchmark_formula",
-      "name": "Airfoil Benchmark Report Promotion"
+      "name": "Airfoil Benchmark Report Promotion",
+      "rule_display_name": "Airfoil Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Airfoil Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -65,7 +109,18 @@
       "eval_kind": "summary_crosscheck",
       "computed": 5.907214506805364,
       "measured": 5.907214506805364,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Airfoil Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Airfoil Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -75,14 +130,34 @@
       "eval_kind": "artifact_present",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Airfoil Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Airfoil Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "rule_id": "FO-212",
       "eval_kind": "skipped",
       "error_pct": 100.0,
       "lab": "math_generator_benchmark_formula",
-      "name": "Airfoil Gas-Medium Similarity Readout"
+      "name": "Airfoil Gas-Medium Similarity Readout",
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator formula",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -92,14 +167,34 @@
       "eval_kind": "summary_crosscheck",
       "computed": 5.102551799768952,
       "measured": 5.102551799768952,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Airfoil Gas-Medium Similarity Readout",
+      "domain_display_name": "math generator formula",
+      "display_name": "Airfoil Gas-Medium Similarity Readout",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "rule_id": "FO-213",
       "eval_kind": "skipped",
       "error_pct": 100.0,
       "lab": "math_generator_benchmark_formula",
-      "name": "Higgs Mass SMILES Intrinsic"
+      "name": "Higgs Mass SMILES Intrinsic",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "math generator formula",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -109,7 +204,18 @@
       "eval_kind": "summary_crosscheck",
       "computed": 0.039861,
       "measured": 0.039861,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "math generator formula",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "rule_id": "FO-220",
@@ -121,7 +227,18 @@
       "report_rmse": 1.246498473526364,
       "report_vs_prediction_error_pct": 0.0,
       "lab": "math_generator_benchmark_formula",
-      "name": "Chemistry Benchmark Report Promotion"
+      "name": "Chemistry Benchmark Report Promotion",
+      "rule_display_name": "Chemistry Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Chemistry Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -131,7 +248,18 @@
       "eval_kind": "summary_crosscheck",
       "computed": 1.246498473526364,
       "measured": 1.246498473526364,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Chemistry Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Chemistry Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "math_generator_benchmark_formula",
@@ -141,7 +269,33 @@
       "eval_kind": "artifact_present",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "rule_display_name": "Chemistry Benchmark Report Promotion",
+      "domain_display_name": "math generator formula",
+      "display_name": "Chemistry Benchmark Report Promotion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Math Generator Benchmark Formula Eval",
+  "tier_label": "Tier 31",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.783533+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 13,
+    "median_error_pct": 0.0,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 11,
+      "red": 2
+    },
+    "green_gate_fraction": 0.8461538461538461,
+    "matches_domain_spine": false
+  }
 }

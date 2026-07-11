@@ -1,0 +1,471 @@
+{
+  "generated_at": "2026-07-11T15:46:55.142045+00:00",
+  "version": "1.0",
+  "verdict": {
+    "cross_proof_overall_ok": true,
+    "extension_domains_all_green": false,
+    "undeniable_toe_claim": false,
+    "honest_assessment": "Strong numeric literal triangulation across Lean/Coq/Isabelle/Python/Rust for 1,241 exported obligations. NOT full-depth independent proof of entire FSOT theory in all four provers. Hardware verifies runtime boot scalar only."
+  },
+  "prover_coverage": {
+    "lean_4": {
+      "role": "primary authority",
+      "connective_obligations": 24,
+      "full_formal_obligations": 1241,
+      "transcendental_lemmas": 68,
+      "lean_theorem_count_estimate": 2139,
+      "export_fraction_pct": 58.02,
+      "proof_style": "norm_num / decide / linarith certificates"
+    },
+    "coq": {
+      "status": "passed",
+      "chunks_passed": 17,
+      "coverage": "numeric literal replay of exported obligations",
+      "axiom_debt": "certified_axioms_for_pi_e_intervals"
+    },
+    "isabelle": {
+      "status": "passed",
+      "provable_obligations": 1241,
+      "coverage": "numeric literal replay of exported obligations"
+    },
+    "rust_f64_replay": {
+      "status": "passed",
+      "obligation_count": 1309,
+      "note": "Includes connective (24) + formal (1241) + transcendental (68) after Tier 84 update"
+    },
+    "fstar": {
+      "status": "passed",
+      "scope": "boot scalar kernel only",
+      "assume_debt": [
+        "boot_scalar_positive",
+        "boot_scalar_matches_canonical"
+      ]
+    },
+    "esp32_qemu": {
+      "status": "passed",
+      "scope": "single boot scalar UART parity"
+    }
+  },
+  "proof_debt": {
+    "fstar_transcendental_assumes": [
+      "boot_scalar_positive",
+      "boot_scalar_matches_canonical"
+    ],
+    "fstar_primitives_assumed": [
+      "cos",
+      "sin",
+      "sqrt"
+    ],
+    "transcendental_coq_isabelle": "certified_axioms_for_pi_e_intervals",
+    "coq_connective_coverage_pct_of_lean_theorems": 1.43,
+    "note": "Cross-proof triangulates exported numeric obligations; F* boot scalar and pi/e intervals rely on documented assumes/axioms."
+  },
+  "gaps": [
+    {
+      "id": "export_gap",
+      "severity": "medium",
+      "description": "~42.0% of Lean theorems not exported as cross-proof obligations",
+      "remedy": "Export structural/bundle theorems or document exclusion reasons"
+    },
+    {
+      "id": "fstar_assumes",
+      "severity": "high",
+      "description": "F* boot scalar lemmas use assume val, not independent proof",
+      "remedy": "Prove boot_scalar_positive without assumes; discharge cos/sin/sqrt"
+    },
+    {
+      "id": "transcendental_axioms",
+      "severity": "medium",
+      "description": "Coq/Isabelle use certified \u03c0/e interval axioms for 3\u20134 obligations",
+      "remedy": "Independent interval arithmetic proofs in each prover"
+    },
+    {
+      "id": "rust_report_stale",
+      "severity": "low",
+      "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
+      "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1333"
+    },
+    {
+      "id": "hardware_scalar_only",
+      "severity": "info",
+      "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
+      "remedy": "Refinement chain: F* spec \u2192 Rust no_std \u2192 ESP32 binary hash"
+    },
+    {
+      "id": "norm_num_depth",
+      "severity": "medium",
+      "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
+      "remedy": "Structural theorem export with independent Coq/Isabelle proof scripts"
+    }
+  ],
+  "extension_precision": {
+    "domain_count": 246,
+    "green_count": 222,
+    "failing_domains": [
+      {
+        "domain": "Orbital_Mechanics",
+        "display_name": "Orbital Mechanics",
+        "tier": 21,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.217257,
+        "median_error_pct": 0.106141,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 8,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Mathematics_Computational",
+        "display_name": "Mathematics Computational",
+        "tier": 29,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.1862232544535427,
+        "median_error_pct": 1.4090183367935627e-14,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 17,
+          "red": 4
+        }
+      },
+      {
+        "domain": "Pure_Mathematics",
+        "display_name": "Pure Mathematics",
+        "tier": 41,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.1862232544535427,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 1575,
+          "red": 4
+        }
+      },
+      {
+        "domain": "Cosmology_Bubble_Bleed",
+        "display_name": "Cosmology Bubble Bleed",
+        "tier": 24,
+        "classifier_accuracy_pct": 100.0,
+        "max_scalar_error_pct": 1.138249,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 103,
+          "contested": 10
+        }
+      },
+      {
+        "domain": "Hubble_Bubble_Tension",
+        "display_name": "Hubble Bubble Tension",
+        "tier": 51,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.138249,
+        "median_error_pct": 0.242991,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "contested": 6
+        }
+      },
+      {
+        "domain": "SH0ES_Refined",
+        "display_name": "SH0ES Refined",
+        "tier": 51,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.138249,
+        "median_error_pct": 0.462181,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "contested": 2,
+          "green": 4,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Hubble_Dark_Sector_Crosswalk",
+        "display_name": "Hubble Dark Sector Crosswalk",
+        "tier": 76,
+        "classifier_accuracy_pct": 100.0,
+        "max_scalar_error_pct": 1.076341,
+        "median_error_pct": 0.000502,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 13,
+          "contested": 7
+        }
+      },
+      {
+        "domain": "Fluid_Spacetime_Observable_Spine",
+        "display_name": "Fluid Spacetime Observable Spine",
+        "tier": 76,
+        "classifier_accuracy_pct": 100.0,
+        "max_scalar_error_pct": 1.076341,
+        "median_error_pct": 0.000502,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 30,
+          "contested": 7
+        }
+      },
+      {
+        "domain": "Small_Body_Orbits",
+        "display_name": "Small Body Orbits",
+        "tier": 22,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 1.046744,
+        "median_error_pct": 0.0754595,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 8,
+          "red": 4
+        }
+      },
+      {
+        "domain": "Materials_Species_Bridge",
+        "display_name": "Materials Species Bridge",
+        "tier": 30,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.988166139775872,
+        "median_error_pct": 0.002730116109889546,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "red": 11,
+          "green": 34
+        }
+      },
+      {
+        "domain": "Phi_Morphogenetic_Scaling",
+        "display_name": "Phi Morphogenetic Scaling",
+        "tier": 47,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.9769,
+        "median_error_pct": 0.0565,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "red": 56,
+          "green": 271
+        }
+      },
+      {
+        "domain": "Planetary_Atmospheres",
+        "display_name": "Planetary Atmospheres",
+        "tier": 23,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.881383,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 20,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Materials_Genome_Crosswalk",
+        "display_name": "Materials Genome Crosswalk",
+        "tier": 55,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8649265896462162,
+        "median_error_pct": 0.017310023021640548,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 31,
+          "red": 7
+        }
+      },
+      {
+        "domain": "Oncology",
+        "display_name": "Oncology",
+        "tier": 26,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8595988538681949,
+        "median_error_pct": 0.050774284910266525,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 65,
+          "red": 2
+        }
+      },
+      {
+        "domain": "Synthetic_Biology",
+        "display_name": "Synthetic Biology",
+        "tier": 27,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8595988538681949,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 17,
+          "red": 3
+        }
+      },
+      {
+        "domain": "IGEM_Synthetic_Biology",
+        "display_name": "IGEM Synthetic Biology",
+        "tier": 31,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8595988538681949,
+        "median_error_pct": 0.02223625038520416,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 52,
+          "red": 2
+        }
+      },
+      {
+        "domain": "IGEM_Parts_Expanded",
+        "display_name": "IGEM Parts Expanded",
+        "tier": 56,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8595988538681949,
+        "median_error_pct": 7.999993600270692e-05,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 107,
+          "red": 4
+        }
+      },
+      {
+        "domain": "Planetary_Structure",
+        "display_name": "Planetary Structure",
+        "tier": 21,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.764363,
+        "median_error_pct": 0.012213,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 19,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Geochemistry",
+        "display_name": "Geochemistry",
+        "tier": 26,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.764363,
+        "median_error_pct": 0.012522197463797497,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 152,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Exogeology",
+        "display_name": "Exogeology",
+        "tier": 41,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.764363,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 315,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Acoustic_Resonance_Materials",
+        "display_name": "Acoustic Resonance Materials",
+        "tier": 47,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.6395,
+        "median_error_pct": 0.008381497018412922,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 28,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Creative_Arts_Math_Spine",
+        "display_name": "Creative Arts Math Spine",
+        "tier": 61,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.6395,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 55,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Term3_Acoustic_Bleed_Depth",
+        "display_name": "Term3 Acoustic Bleed Depth",
+        "tier": 67,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.6395,
+        "median_error_pct": 0.008381497018408523,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 22,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Formula_Precision_Spine",
+        "display_name": "Formula Precision Spine",
+        "tier": 67,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.6395,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 25,
+          "red": 2
+        }
+      }
+    ],
+    "aspiration_scalar_debt_count": 24
+  },
+  "scientific_measurement_policy": {
+    "green_median_gate_pct": 0.5,
+    "green_scalar_gate_pct": 2.0,
+    "aspiration_scalar_pct": 0.5,
+    "fields": [
+      "delta",
+      "delta_pct",
+      "sigma_equivalent",
+      "precision_tier",
+      "reference_uncertainty_pct"
+    ],
+    "library": "scripts/scientific_measurement_lib.py"
+  },
+  "label_registry": {
+    "path": "data/fsot_label_registry.json",
+    "builder": "scripts/build_fsot_label_registry.py",
+    "purpose": "Resolve FO-200, PRED-001, tier numbers, obligation ids to human text"
+  },
+  "roadmap_to_undeniable": [
+    "Close Lean export gap (~26% unexported theorems)",
+    "Eliminate F* assume val on boot scalar lemmas",
+    "Replace Coq/Isabelle \u03c0/e certified axioms with interval proofs",
+    "Extend Rust replay to connective + full 1,333 obligations",
+    "Propagate display_label to all benchmark exports and obligation JSON",
+    "Attach scientific_measurement envelope (\u03c3, \u0394) to every scalar record",
+    "Independent deep proofs beyond norm_num/lra replay"
+  ]
+}

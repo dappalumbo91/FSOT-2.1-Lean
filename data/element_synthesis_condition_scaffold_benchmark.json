@@ -41,7 +41,17 @@
       "computed": 0.000787,
       "measured": 0.0,
       "error_pct": 0.000787,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.000787,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.000787,
       "measured": 0.0,
       "error_pct": 0.0007869745016117704,
-      "observable_count": 39
+      "observable_count": 39,
+      "domain_display_name": "tier gap fill",
+      "display_name": "lab condition scaffold",
+      "scientific_measurement": {
+        "delta": 0.000787,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 1e-06,
       "measured": 1e-06,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "superheavy element stability panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -71,7 +101,17 @@
       "computed": 246.930031,
       "measured": 246.928088,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.001943,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -80,7 +120,17 @@
       "computed": 35.000333,
       "measured": 35.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.000951,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -89,7 +139,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -99,7 +159,17 @@
       "computed": 250.961541,
       "measured": 250.959567,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Ts 2010",
+      "scientific_measurement": {
+        "delta": 0.001974,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -108,7 +178,17 @@
       "computed": 31.000295,
       "measured": 31.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Ts 2010",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.000952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -117,7 +197,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Ts 2010",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -127,7 +217,17 @@
       "computed": 237.859132,
       "measured": 237.85726,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Lv 2000",
+      "scientific_measurement": {
+        "delta": 0.001872,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -136,7 +236,17 @@
       "computed": 44.000418,
       "measured": 44.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Lv 2000",
+      "scientific_measurement": {
+        "delta": 0.000418,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -145,7 +255,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Lv 2000",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -155,7 +275,17 @@
       "computed": 249.953664,
       "measured": 249.951697,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Mc 2010",
+      "scientific_measurement": {
+        "delta": 0.001967,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -164,7 +294,17 @@
       "computed": 32.000304,
       "measured": 32.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Mc 2010",
+      "scientific_measurement": {
+        "delta": 0.000304,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -173,7 +313,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Mc 2010",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -183,7 +333,17 @@
       "computed": 251.969419,
       "measured": 251.967436,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Nh 2004",
+      "scientific_measurement": {
+        "delta": 0.001983,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -192,7 +352,17 @@
       "computed": 95.000903,
       "measured": 95.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Nh 2004",
+      "scientific_measurement": {
+        "delta": 0.000903,
+        "delta_pct": 0.000951,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -201,7 +371,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Nh 2004",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -211,7 +391,17 @@
       "computed": 245.922153,
       "measured": 245.920218,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Fl 1999",
+      "scientific_measurement": {
+        "delta": 0.001935,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -220,7 +410,17 @@
       "computed": 36.000342,
       "measured": 36.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Fl 1999",
+      "scientific_measurement": {
+        "delta": 0.000342,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -229,7 +429,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Fl 1999",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -239,7 +449,17 @@
       "computed": 356.788698,
       "measured": 356.78589,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Cn 1996",
+      "scientific_measurement": {
+        "delta": 0.002808,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -248,7 +468,17 @@
       "computed": 846.00804,
       "measured": 846.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Cn 1996",
+      "scientific_measurement": {
+        "delta": 0.00804,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -257,7 +487,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Cn 1996",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -267,7 +507,17 @@
       "computed": 267.087584,
       "measured": 267.085482,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Hs 1984",
+      "scientific_measurement": {
+        "delta": 0.002102,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -276,7 +526,17 @@
       "computed": 935.008886,
       "measured": 935.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Hs 1984",
+      "scientific_measurement": {
+        "delta": 0.008886,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -285,7 +545,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Hs 1984",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -295,7 +565,17 @@
       "computed": 121.953199,
       "measured": 121.952239,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Rf 1969",
+      "scientific_measurement": {
+        "delta": 0.00096,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -304,7 +584,17 @@
       "computed": 79.000751,
       "measured": 79.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Rf 1969",
+      "scientific_measurement": {
+        "delta": 0.000751,
+        "delta_pct": 0.000951,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -313,7 +603,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Rf 1969",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -323,7 +623,17 @@
       "computed": 282.205749,
       "measured": 282.203529,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z119 Ti Bk",
+      "scientific_measurement": {
+        "delta": 0.00222,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -332,7 +642,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z119 Ti Bk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -341,7 +661,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z119 Ti Bk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -351,7 +681,17 @@
       "computed": 292.284526,
       "measured": 292.282226,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": 0.0023,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -360,7 +700,17 @@
       "computed": -10.000095,
       "measured": -10.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": -9.5e-05,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -369,7 +719,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -379,7 +739,17 @@
       "computed": 312.44208,
       "measured": 312.439621,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": 0.002459,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -388,7 +758,17 @@
       "computed": -30.000285,
       "measured": -30.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": -0.000285,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -397,7 +777,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -407,7 +797,17 @@
       "computed": 322.520857,
       "measured": 322.518318,
       "error_pct": 0.000787,
-      "eval_kind": "condition_proxy"
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": 0.002539,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -416,7 +816,17 @@
       "computed": -40.00038,
       "measured": -40.0,
       "error_pct": 0.00095,
-      "eval_kind": "facility_margin"
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": -0.00038,
+        "delta_pct": 0.00095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -425,7 +835,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "condition_gate"
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -434,7 +854,17 @@
       "computed": 200.0,
       "measured": 200.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "min beam energy mev u",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -443,7 +873,17 @@
       "computed": 0.01,
       "measured": 0.01,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "min cross section pb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -452,7 +892,17 @@
       "computed": 126.0,
       "measured": 126.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "max product Z lab",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -461,7 +911,17 @@
       "computed": 10.0,
       "measured": 10.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "facility margin mev u",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "element_synthesis_condition_lab",
@@ -470,7 +930,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "scaffold_gate"
+      "eval_kind": "scaffold_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "element synthesis condition scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -484,5 +954,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Element Synthesis Condition Scaffold",
+  "tier_label": "Tier 73 \u2014 Heavy Ion Lab Synthesis Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.673467+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 45,
+    "median_error_pct": 0.000787,
+    "max_error_pct": 0.000952,
+    "mean_abs_delta": 0.0010687555555555556,
+    "precision_tier_counts": {
+      "green": 45
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

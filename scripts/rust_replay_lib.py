@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OBL_FORMAL = ROOT / "verification" / "obligations" / "full_formal_spine.json"
+OBL_CONNECTIVE = ROOT / "verification" / "obligations" / "connective_spine.json"
 OBL_TRANSCENDENTAL = ROOT / "verification" / "obligations" / "transcendental_bounds.json"
 RUST_DIR = ROOT / "verification" / "rust" / "fsot_obligation_replay"
 GENERATED_TESTS = RUST_DIR / "tests"
@@ -141,6 +142,15 @@ def rust_assertion_transcendental(ob: dict) -> str:
     raise ValueError(f"cannot translate transcendental obligation {oid}: {lean}")
 
 
+def load_connective() -> list[dict]:
+    if not OBL_CONNECTIVE.exists():
+        return []
+    doc = json.loads(OBL_CONNECTIVE.read_text(encoding="utf-8"))
+    from cross_proof_lib import obligation_provable  # noqa: WPS433
+
+    return [ob for ob in doc.get("obligations") or [] if obligation_provable(ob)]
+
+
 def load_provable_formal() -> list[dict]:
     doc = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
     from cross_proof_lib import obligation_provable  # noqa: WPS433
@@ -178,6 +188,7 @@ def gen_test_module(name: str, obligations: list[dict], *, spine: str) -> str:
 
 
 def write_generated_tests() -> dict:
+    connective = load_connective()
     formal = load_provable_formal()
     transcendental = load_transcendental()
     GENERATED_TESTS.mkdir(parents=True, exist_ok=True)
@@ -195,6 +206,12 @@ def write_generated_tests() -> dict:
         "fn replay_all_obligations() {",
     ]
     chunks_meta: list[dict] = []
+    if connective:
+        lines.append(f"    // connective_spine ({len(connective)} obligations)")
+        for ob in connective:
+            lines.append(f"    {rust_assertion_full_formal(ob)}")
+        chunks_meta.append({"scope": "connective_spine", "count": len(connective)})
+
     for idx, start in enumerate(range(0, len(formal), CHUNK_SIZE)):
         chunk = formal[start : start + CHUNK_SIZE]
         lines.append(f"    // full_formal chunk {idx:02d} ({len(chunk)} obligations)")
@@ -215,9 +232,10 @@ def write_generated_tests() -> dict:
     path.write_text("\n".join(lines), encoding="utf-8")
 
     meta = {
+        "connective_count": len(connective),
         "formal_count": len(formal),
         "transcendental_count": len(transcendental),
-        "total_count": len(formal) + len(transcendental),
+        "total_count": len(connective) + len(formal) + len(transcendental),
         "chunks": chunks_meta,
         "test_file": path.name,
     }

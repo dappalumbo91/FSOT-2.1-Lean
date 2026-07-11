@@ -40,7 +40,17 @@
       "computed": 0.01731,
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.01731,
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
-      "observable_count": 50
+      "observable_count": 50,
+      "domain_display_name": "tier gap fill",
+      "display_name": "mechanical engineering panel",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 45.035414,
       "measured": 45.0,
       "error_pct": 0.07869745016115025,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "steam turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.035414,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -69,7 +99,17 @@
       "computed": 40.031479,
       "measured": 40.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "gas turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.031479,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -78,7 +118,17 @@
       "computed": 55.043284,
       "measured": 55.0,
       "error_pct": 0.07869745016116461,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "carnot limit steam",
+      "scientific_measurement": {
+        "delta": 0.043284,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -87,7 +137,17 @@
       "computed": 20015.73949,
       "measured": 20000.0,
       "error_pct": 0.07869745016116213,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "bearing l10 life h",
+      "scientific_measurement": {
+        "delta": 15.73949,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -96,7 +156,17 @@
       "computed": 3.002361,
       "measured": 3.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "gear ratio standard",
+      "scientific_measurement": {
+        "delta": 0.002361,
+        "delta_pct": 0.0787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -105,7 +175,17 @@
       "computed": 80.062958,
       "measured": 80.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "shaft torsional stress",
+      "scientific_measurement": {
+        "delta": 0.062958,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -114,7 +194,17 @@
       "computed": 50.039349,
       "measured": 50.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "pump head m",
+      "scientific_measurement": {
+        "delta": 0.039349,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -123,7 +213,17 @@
       "computed": 10.00787,
       "measured": 10.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "compressor pressure ratio",
+      "scientific_measurement": {
+        "delta": 0.00787,
+        "delta_pct": 0.0787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -132,7 +232,17 @@
       "computed": 400.31479,
       "measured": 400.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "engine torque nm",
+      "scientific_measurement": {
+        "delta": 0.31479,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -141,7 +251,17 @@
       "computed": 7005.508822,
       "measured": 7000.0,
       "error_pct": 0.07869745016115692,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "engine rpm redline",
+      "scientific_measurement": {
+        "delta": 5.508822,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -150,7 +270,17 @@
       "computed": 500.393487,
       "measured": 500.0,
       "error_pct": 0.0786974501611553,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "heat exchanger ua",
+      "scientific_measurement": {
+        "delta": 0.393487,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -159,7 +289,17 @@
       "computed": 10007.869745,
       "measured": 10000.0,
       "error_pct": 0.07869745016116213,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "reynolds turbulent",
+      "scientific_measurement": {
+        "delta": 7.869745,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -168,7 +308,17 @@
       "computed": 1.000787,
       "measured": 1.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "mach critical",
+      "scientific_measurement": {
+        "delta": 0.000787,
+        "delta_pct": 0.0787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -177,7 +327,17 @@
       "computed": 200.157395,
       "measured": 200.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "youngs modulus steel",
+      "scientific_measurement": {
+        "delta": 0.157395,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -186,7 +346,17 @@
       "computed": 0.300236,
       "measured": 0.3,
       "error_pct": 0.07869745016116556,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "poisson steel",
+      "scientific_measurement": {
+        "delta": 0.000236,
+        "delta_pct": 0.078667,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -195,7 +365,17 @@
       "computed": 12.009444,
       "measured": 12.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "thermal expansion steel",
+      "scientific_measurement": {
+        "delta": 0.009444,
+        "delta_pct": 0.0787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -204,7 +384,17 @@
       "computed": 0.001001,
       "measured": 0.001,
       "error_pct": 0.07869745016115831,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "friction coefficient bearing",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.1,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -213,7 +403,17 @@
       "computed": 50.039349,
       "measured": 50.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "vibration natural freq hz",
+      "scientific_measurement": {
+        "delta": 0.039349,
+        "delta_pct": 0.078698,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -222,7 +422,17 @@
       "computed": 100.078697,
       "measured": 100.0,
       "error_pct": 0.07869745016115814,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "bolt preload kn",
+      "scientific_measurement": {
+        "delta": 0.078697,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -231,7 +441,17 @@
       "computed": 500.393487,
       "measured": 500.0,
       "error_pct": 0.0786974501611553,
-      "source": "mechanical_engineering_reference_observables"
+      "source": "mechanical_engineering_reference_observables",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "hydraulic cylinder force kn",
+      "scientific_measurement": {
+        "delta": 0.393487,
+        "delta_pct": 0.078697,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -240,7 +460,17 @@
       "computed": 0.02717,
       "measured": 0.0,
       "error_pct": 0.027170334947435038,
-      "observable_count": 87
+      "observable_count": 87,
+      "domain_display_name": "materials engineering",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.02717,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -250,7 +480,17 @@
       "measured": 0.0,
       "error_pct": 0.06721669152527372,
       "observable_count": 12,
-      "section": "\u00a734 Young's Modulus"
+      "section": "\u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.067217,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -260,7 +500,17 @@
       "measured": 0.0,
       "error_pct": 0.03976772759072059,
       "observable_count": 15,
-      "section": "\u00a737 Thermal \u03ba"
+      "section": "\u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.039768,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -270,7 +520,17 @@
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
       "observable_count": 12,
-      "section": "\u00a762 Bulk Modulus"
+      "section": "\u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -280,7 +540,17 @@
       "measured": 0.0,
       "error_pct": 0.023259895459434028,
       "observable_count": 12,
-      "section": "\u00a784 Poisson Ratio \u03bd"
+      "section": "\u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.02326,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -289,7 +559,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Canonical form normalization expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Canonical form normalization expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -298,7 +579,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Substitution soundness expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Substitution soundness expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -307,7 +599,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Composition rule expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Composition rule expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -316,7 +619,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Inverse admissibility expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Inverse admissibility expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -325,7 +639,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Constraint propagation expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Constraint propagation expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -334,7 +659,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Boundary condition integration expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Boundary condition integration expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -343,7 +679,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Conservation tracking expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Conservation tracking expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -352,7 +699,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Approximation error budget expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Approximation error budget expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -361,7 +719,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Parameter sensitivity expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Parameter sensitivity expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -370,7 +739,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Symmetry detection expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Symmetry detection expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -379,7 +759,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Dimensionless reduction expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Dimensionless reduction expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -388,7 +779,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Solver branch admissibility expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Solver branch admissibility expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -397,7 +799,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Degenerate case handling expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Degenerate case handling expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -406,7 +819,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Proof obligation expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Proof obligation expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -415,7 +839,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Counterexample mining expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Counterexample mining expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -424,7 +859,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Computational complexity annotation expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Computational complexity annotation expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -433,7 +879,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Stability criterion expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Stability criterion expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -442,7 +899,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Identifiability check expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Identifiability check expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -451,7 +919,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Cross-representation consistency expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Cross-representation consistency expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -460,7 +939,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Regime switching expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Regime switching expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -469,7 +959,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Canonical form normalization expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Canonical form normalization expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -478,7 +979,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Substitution soundness expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Substitution soundness expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -487,7 +999,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Composition rule expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Composition rule expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -496,7 +1019,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Inverse admissibility expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Inverse admissibility expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_lab",
@@ -505,7 +1039,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_mech"
+      "source": "math_generator_mech",
+      "rule_display_name": "Constraint propagation expansion",
+      "domain_display_name": "mechanical engineering",
+      "display_name": "Constraint propagation expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -519,5 +1064,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Mechanical Engineering",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.883962+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 50,
+    "median_error_pct": 0.078667,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.6180634,
+    "precision_tier_counts": {
+      "green": 50
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

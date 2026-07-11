@@ -38,7 +38,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 13
+      "observable_count": 13,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +57,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 13
+      "observable_count": 13,
+      "domain_display_name": "tier gap fill",
+      "display_name": "break panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "error_pct": 0.0,
       "source": "vendor/github_oss/adversarial/broken_memcpy_chain.c",
       "expected_holes": true,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv c memcpy chain",
+      "scientific_measurement": {
+        "delta": 5.0,
+        "delta_pct": 500.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -70,7 +100,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "adversarial_memory_unsafe"
+      "category": "adversarial_memory_unsafe",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv c memcpy chain attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -81,7 +121,17 @@
       "error_pct": 0.0,
       "source": "vendor/github_oss/adversarial/double_free_pattern.c",
       "expected_holes": true,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv c double free",
+      "scientific_measurement": {
+        "delta": 1.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -91,7 +141,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "adversarial_memory_unsafe"
+      "category": "adversarial_memory_unsafe",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv c double free attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -102,7 +162,17 @@
       "error_pct": 0.0,
       "source": "vendor/github_oss/adversarial/xss_eval_sink.js",
       "expected_holes": true,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv js xss eval",
+      "scientific_measurement": {
+        "delta": 1.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -112,7 +182,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "adversarial_injection"
+      "category": "adversarial_injection",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv js xss eval attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -123,7 +203,17 @@
       "error_pct": 0.0,
       "source": "vendor/github_oss/adversarial/prototype_pollution.js",
       "expected_holes": true,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv js prototype pollution",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -133,7 +223,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "adversarial_injection"
+      "category": "adversarial_injection",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv js prototype pollution attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -144,7 +244,17 @@
       "error_pct": 0.0,
       "source": "vendor/github_oss/adversarial/race_unsafe.go",
       "expected_holes": true,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv go race unsafe",
+      "scientific_measurement": {
+        "delta": 3.0,
+        "delta_pct": 300.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -154,7 +264,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "adversarial_concurrency"
+      "category": "adversarial_concurrency",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv go race unsafe attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -165,7 +285,17 @@
       "error_pct": 0.0,
       "source": "vendor/cybersecurity/samples/secure_buffer.c",
       "expected_holes": false,
-      "match": true
+      "match": true,
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv secure control c",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -175,7 +305,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal",
-      "category": "control_secure"
+      "category": "control_secure",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "adv secure control c attach",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_lab",
@@ -184,7 +324,17 @@
       "computed": 1.000306,
       "measured": 1.0,
       "error_pct": 0.03062212293865052,
-      "source": "adversarial_corpus"
+      "source": "adversarial_corpus",
+      "domain_display_name": "adversarial fractal break",
+      "display_name": "aggregate adversarial",
+      "scientific_measurement": {
+        "delta": 0.000306,
+        "delta_pct": 0.0306,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -206,5 +356,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.CVECodonHoleFalsificationPriors",
     "FSOT.Formal.AdversarialFractalBreakPriors"
-  ]
+  ],
+  "display_name": "Adversarial Fractal Break Tests",
+  "tier_label": "Tier 46",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.517951+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 13,
+    "median_error_pct": 0.0,
+    "max_error_pct": 500.0,
+    "mean_abs_delta": 0.7692543076923077,
+    "precision_tier_counts": {
+      "green": 13
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

@@ -24,7 +24,18 @@
       "error_pct": 0.03990518384182655,
       "eval_kind": "live_formula",
       "formula": "(theta_s + e^3) / c_factor^7",
-      "channel": "PDG2024_world_average"
+      "channel": "PDG2024_world_average",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.04998124,
+        "delta_pct": 0.039905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -34,7 +45,18 @@
       "measured": 125250.0,
       "error_pct": 0.03990518384182655,
       "eval_kind": "live_formula",
-      "channel": "unit_conversion"
+      "channel": "unit_conversion",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -49.98124276,
+        "delta_pct": 0.039905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -46,7 +68,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "ATLAS_Run2_combined",
-      "reference": "ATLAS_Higgs_mass_2023"
+      "reference": "ATLAS_Higgs_mass_2023",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.14998124,
+        "delta_pct": 0.11965,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -58,7 +91,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "CMS_Run2_combined",
-      "reference": "CMS_Higgs_mass_2023"
+      "reference": "CMS_Higgs_mass_2023",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.17998124,
+        "delta_pct": 0.143549,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -70,7 +114,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "ATLAS_gamma_gamma",
-      "reference": "ATLAS_diphoton_channel"
+      "reference": "ATLAS_diphoton_channel",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.03998124,
+        "delta_pct": 0.031924,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -82,7 +137,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "CMS_ZZ_star",
-      "reference": "CMS_4l_channel"
+      "reference": "CMS_4l_channel",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": 0.08001876,
+        "delta_pct": 0.063954,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -94,7 +160,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "LHCb_inclusive",
-      "reference": "LHCb_Higgs_mass"
+      "reference": "LHCb_Higgs_mass",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": 0.03001876,
+        "delta_pct": 0.023982,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -107,7 +184,17 @@
       "formula": "S_quant\u00b7\u03c8_con + S_quant",
       "channel": "PDG_mass_ratio",
       "reference": "PDG_electroweak_ratios",
-      "wave": "wave3"
+      "wave": "wave3",
+      "domain_display_name": "higgs mass",
+      "display_name": "m H m W",
+      "scientific_measurement": {
+        "delta": 1.48e-06,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -120,7 +207,17 @@
       "formula": "A_bleed\u00b7ln(2)",
       "channel": "PDG_mass_ratio",
       "reference": "PDG_electroweak_ratios",
-      "wave": "wave5"
+      "wave": "wave5",
+      "domain_display_name": "higgs mass",
+      "display_name": "m H m t",
+      "scientific_measurement": {
+        "delta": 0.00010682,
+        "delta_pct": 0.014722,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "records": [
@@ -133,7 +230,18 @@
       "error_pct": 0.03990518384182655,
       "eval_kind": "live_formula",
       "formula": "(theta_s + e^3) / c_factor^7",
-      "channel": "PDG2024_world_average"
+      "channel": "PDG2024_world_average",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.04998124,
+        "delta_pct": 0.039905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -143,7 +251,18 @@
       "measured": 125250.0,
       "error_pct": 0.03990518384182655,
       "eval_kind": "live_formula",
-      "channel": "unit_conversion"
+      "channel": "unit_conversion",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -49.98124276,
+        "delta_pct": 0.039905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -155,7 +274,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "ATLAS_Run2_combined",
-      "reference": "ATLAS_Higgs_mass_2023"
+      "reference": "ATLAS_Higgs_mass_2023",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.14998124,
+        "delta_pct": 0.11965,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -167,7 +297,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "CMS_Run2_combined",
-      "reference": "CMS_Higgs_mass_2023"
+      "reference": "CMS_Higgs_mass_2023",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.17998124,
+        "delta_pct": 0.143549,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -179,7 +320,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "ATLAS_gamma_gamma",
-      "reference": "ATLAS_diphoton_channel"
+      "reference": "ATLAS_diphoton_channel",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": -0.03998124,
+        "delta_pct": 0.031924,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -191,7 +343,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "CMS_ZZ_star",
-      "reference": "CMS_4l_channel"
+      "reference": "CMS_4l_channel",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": 0.08001876,
+        "delta_pct": 0.063954,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -203,7 +366,18 @@
       "eval_kind": "measurement_channel",
       "formula": "(theta_s + e^3) / c_factor^7",
       "channel": "LHCb_inclusive",
-      "reference": "LHCb_Higgs_mass"
+      "reference": "LHCb_Higgs_mass",
+      "rule_display_name": "Higgs Mass SMILES Intrinsic",
+      "domain_display_name": "higgs mass",
+      "display_name": "Higgs Mass SMILES Intrinsic",
+      "scientific_measurement": {
+        "delta": 0.03001876,
+        "delta_pct": 0.023982,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -216,7 +390,17 @@
       "formula": "S_quant\u00b7\u03c8_con + S_quant",
       "channel": "PDG_mass_ratio",
       "reference": "PDG_electroweak_ratios",
-      "wave": "wave3"
+      "wave": "wave3",
+      "domain_display_name": "higgs mass",
+      "display_name": "m H m W",
+      "scientific_measurement": {
+        "delta": 1.48e-06,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "higgs_mass",
@@ -229,7 +413,31 @@
       "formula": "A_bleed\u00b7ln(2)",
       "channel": "PDG_mass_ratio",
       "reference": "PDG_electroweak_ratios",
-      "wave": "wave5"
+      "wave": "wave5",
+      "domain_display_name": "higgs mass",
+      "display_name": "m H m t",
+      "scientific_measurement": {
+        "delta": 0.00010682,
+        "delta_pct": 0.014722,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Higgs Mass",
+  "tier_label": "Tier 17",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:24.775528+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 9,
+    "median_error_pct": 0.039905,
+    "max_error_pct": 0.143549,
+    "mean_abs_delta": 5.612368171111111,
+    "precision_tier_counts": {
+      "green": 9
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

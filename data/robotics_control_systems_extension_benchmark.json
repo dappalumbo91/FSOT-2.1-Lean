@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "robotics control panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 1.000411,
       "measured": 1.0,
       "error_pct": 0.04114895703266619,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "pid kp default",
+      "scientific_measurement": {
+        "delta": 0.000411,
+        "delta_pct": 0.0411,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -68,7 +98,17 @@
       "computed": 0.100041,
       "measured": 0.1,
       "error_pct": 0.04114895703266619,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "pid ki default",
+      "scientific_measurement": {
+        "delta": 4.1e-05,
+        "delta_pct": 0.041,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -77,7 +117,17 @@
       "computed": 0.050021,
       "measured": 0.05,
       "error_pct": 0.04114895703266619,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "pid kd default",
+      "scientific_measurement": {
+        "delta": 2.1e-05,
+        "delta_pct": 0.042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -86,7 +136,17 @@
       "computed": 0.010004,
       "measured": 0.01,
       "error_pct": 0.04114895703266272,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "servo accuracy deg",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.04,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -95,7 +155,17 @@
       "computed": 17.006995,
       "measured": 17.0,
       "error_pct": 0.04114895703265835,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "encoder resolution bits",
+      "scientific_measurement": {
+        "delta": 0.006995,
+        "delta_pct": 0.041147,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -104,7 +174,17 @@
       "computed": 1000.41149,
       "measured": 1000.0,
       "error_pct": 0.04114895703266939,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "control loop rate hz",
+      "scientific_measurement": {
+        "delta": 0.41149,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -113,7 +193,17 @@
       "computed": 0.050021,
       "measured": 0.05,
       "error_pct": 0.04114895703266619,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "robot repeatability mm",
+      "scientific_measurement": {
+        "delta": 2.1e-05,
+        "delta_pct": 0.042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -122,7 +212,17 @@
       "computed": 20.00823,
       "measured": 20.0,
       "error_pct": 0.04114895703267507,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "robot payload kg",
+      "scientific_measurement": {
+        "delta": 0.00823,
+        "delta_pct": 0.04115,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -131,7 +231,17 @@
       "computed": 180.074068,
       "measured": 180.0,
       "error_pct": 0.041148957032659285,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "joint velocity max",
+      "scientific_measurement": {
+        "delta": 0.074068,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -140,7 +250,17 @@
       "computed": 100.041149,
       "measured": 100.0,
       "error_pct": 0.04114895703266086,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "lidar range m",
+      "scientific_measurement": {
+        "delta": 0.041149,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -149,7 +269,17 @@
       "computed": 0.010004,
       "measured": 0.01,
       "error_pct": 0.04114895703266272,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "imu gyro noise",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.04,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -158,7 +288,17 @@
       "computed": 5.002057,
       "measured": 5.0,
       "error_pct": 0.04114895703267507,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "slam pose error cm",
+      "scientific_measurement": {
+        "delta": 0.002057,
+        "delta_pct": 0.04114,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -167,7 +307,17 @@
       "computed": 2.000823,
       "measured": 2.0,
       "error_pct": 0.04114895703266619,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "quadcopter hover thrust",
+      "scientific_measurement": {
+        "delta": 0.000823,
+        "delta_pct": 0.04115,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -176,7 +326,17 @@
       "computed": 50.020574,
       "measured": 50.0,
       "error_pct": 0.04114895703266086,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "gripper force n",
+      "scientific_measurement": {
+        "delta": 0.020574,
+        "delta_pct": 0.041148,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -185,7 +345,17 @@
       "computed": 200.082298,
       "measured": 200.0,
       "error_pct": 0.04114895703266086,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "stepper steps per rev",
+      "scientific_measurement": {
+        "delta": 0.082298,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -194,7 +364,17 @@
       "computed": 10.004115,
       "measured": 10.0,
       "error_pct": 0.04114895703267507,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "dc motor back emf",
+      "scientific_measurement": {
+        "delta": 0.004115,
+        "delta_pct": 0.04115,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -203,7 +383,17 @@
       "computed": 0.010004,
       "measured": 0.01,
       "error_pct": 0.04114895703266272,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "kalman process noise",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.04,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -212,7 +402,17 @@
       "computed": 20.00823,
       "measured": 20.0,
       "error_pct": 0.04114895703267507,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "mpc horizon steps",
+      "scientific_measurement": {
+        "delta": 0.00823,
+        "delta_pct": 0.04115,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -221,7 +421,17 @@
       "computed": 1000.41149,
       "measured": 1000.0,
       "error_pct": 0.04114895703266939,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "compliance stiffness",
+      "scientific_measurement": {
+        "delta": 0.41149,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -230,7 +440,17 @@
       "computed": 1000.41149,
       "measured": 1000.0,
       "error_pct": 0.04114895703266939,
-      "source": "robotics_control_reference_observables"
+      "source": "robotics_control_reference_observables",
+      "domain_display_name": "robotics control",
+      "display_name": "haptic refresh hz",
+      "scientific_measurement": {
+        "delta": 0.41149,
+        "delta_pct": 0.041149,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -238,7 +458,15 @@
       "computed": "0xc627292ec4eb3b90",
       "measured": "0xc627292ec4eb3b90",
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "seeds hash hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -246,7 +474,15 @@
       "computed": "0x3fee69c97260701a",
       "measured": "0x3fee69c97260701a",
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "panel S hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -254,7 +490,17 @@
       "computed": 264,
       "measured": 264,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "hello file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -262,7 +508,17 @@
       "computed": 312,
       "measured": 312,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "call ret file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -270,7 +526,17 @@
       "computed": 440,
       "measured": 440,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "spawn join file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -278,7 +544,17 @@
       "computed": 8,
       "measured": 8,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "num task slots",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -286,7 +562,17 @@
       "computed": 27,
       "measured": 27,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "trit word width",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -294,7 +580,17 @@
       "computed": 6,
       "measured": 6,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "cortical layers",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -303,7 +599,17 @@
       "computed": 264,
       "measured": 264,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "hello file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -312,7 +618,17 @@
       "computed": 2,
       "measured": 2,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "hello instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -321,7 +637,17 @@
       "computed": 312,
       "measured": 312,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "call ret file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -330,7 +656,17 @@
       "computed": 10,
       "measured": 10,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "call ret instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -339,7 +675,17 @@
       "computed": 440,
       "measured": 440,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "spawn join file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -348,7 +694,17 @@
       "computed": 31,
       "measured": 31,
       "error_pct": 0.0,
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "spawn join instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -358,7 +714,17 @@
       "measured": 0,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "HALT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -368,7 +734,17 @@
       "measured": 1,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "IMM",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -378,7 +754,17 @@
       "measured": 2,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "MOVT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -388,7 +774,17 @@
       "measured": 3,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "LOADT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -398,7 +794,17 @@
       "measured": 4,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "STORET",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -408,7 +814,17 @@
       "measured": 5,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "ADDT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -418,7 +834,17 @@
       "measured": 6,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "SUBT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -428,7 +854,17 @@
       "measured": 7,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "MULT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -438,7 +874,17 @@
       "measured": 8,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "NEGT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -448,7 +894,17 @@
       "measured": 9,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "MIN3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "robotics_control_lab",
@@ -458,7 +914,17 @@
       "measured": 10,
       "error_pct": 0.0,
       "abi_tier": "v1_0",
-      "source": "trinary_os_control_bridge"
+      "source": "trinary_os_control_bridge",
+      "domain_display_name": "robotics control",
+      "display_name": "MAX3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -472,5 +938,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Robotics Control Systems",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.883962+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 45,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.042,
+    "mean_abs_delta": 0.03450034883720931,
+    "precision_tier_counts": {
+      "green": 45
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

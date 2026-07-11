@@ -40,7 +40,17 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.000502,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.000502,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.005025,
       "measured": 0.0,
       "error_pct": 0.005024559462094211,
-      "observable_count": 9
+      "observable_count": 9,
+      "domain_display_name": "tier gap fill",
+      "display_name": "bao sound horizon",
+      "scientific_measurement": {
+        "delta": 0.005025,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 147.52,
       "error_pct": 0.005025,
       "lean_theorem": "r_d_approx_value",
-      "eval_kind": "rd_anchor"
+      "eval_kind": "rd_anchor",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "fsot r d canonical",
+      "scientific_measurement": {
+        "delta": 0.007412,
+        "delta_pct": 0.005024,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -70,7 +100,17 @@
       "computed": 147.52,
       "measured": 147.09,
       "error_pct": 0.292338,
-      "eval_kind": "observable_comparison"
+      "eval_kind": "observable_comparison",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "planck2018 bao",
+      "scientific_measurement": {
+        "delta": 0.43,
+        "delta_pct": 0.292338,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -81,7 +121,17 @@
       "error_pct": 0.0,
       "interval_lo": 147.48,
       "interval_hi": 147.55,
-      "eval_kind": "interval_gate"
+      "eval_kind": "interval_gate",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "r d interval gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -90,7 +140,17 @@
       "computed": 0.035,
       "measured": 0.035,
       "error_pct": 0.0,
-      "eval_kind": "tightening_gate"
+      "eval_kind": "tightening_gate",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "rd tightened half width",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -99,7 +159,17 @@
       "computed": 0.000502,
       "measured": 0.000502,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "cosmology anomaly deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -109,7 +179,17 @@
       "measured": 0.042611,
       "error_pct": 0.0,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "stumped observables panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -119,7 +199,17 @@
       "measured": 67.4,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "h0 planck 2018",
+      "scientific_measurement": {
+        "delta": 0.000339,
+        "delta_pct": 0.000503,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -129,7 +219,17 @@
       "measured": 73.04,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "h0 sh0es 2024",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -139,7 +239,17 @@
       "measured": 72.1,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "h0 fsot bubble",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -148,7 +258,17 @@
       "computed": 147.097391,
       "measured": 147.09,
       "error_pct": 0.005025,
-      "eval_kind": "bao_relay"
+      "eval_kind": "bao_relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "rd bao planck",
+      "scientific_measurement": {
+        "delta": 0.007391,
+        "delta_pct": 0.005025,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -157,7 +277,17 @@
       "computed": 147.527412,
       "measured": 147.52,
       "error_pct": 0.005025,
-      "eval_kind": "bao_relay"
+      "eval_kind": "bao_relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "rd fsot canonical",
+      "scientific_measurement": {
+        "delta": 0.007412,
+        "delta_pct": 0.005024,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rd_interval_tightening_lab",
@@ -166,7 +296,17 @@
       "computed": 147.507411,
       "measured": 147.5,
       "error_pct": 0.005025,
-      "eval_kind": "bao_relay"
+      "eval_kind": "bao_relay",
+      "domain_display_name": "rd interval tightening",
+      "display_name": "rd desi 2024",
+      "scientific_measurement": {
+        "delta": 0.007411,
+        "delta_pct": 0.005024,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -180,5 +320,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "RD Interval Tightening Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.693739+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 12,
+    "median_error_pct": 0.000503,
+    "max_error_pct": 0.292338,
+    "mean_abs_delta": 0.03839116666666666,
+    "precision_tier_counts": {
+      "green": 9,
+      "contested": 3
+    },
+    "green_gate_fraction": 0.75,
+    "matches_domain_spine": true
+  }
 }

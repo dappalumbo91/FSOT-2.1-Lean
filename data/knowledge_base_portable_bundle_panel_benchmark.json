@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 13
+      "observable_count": 13,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.008381,
       "measured": 0.0,
       "error_pct": 0.008381497018412922,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "per formula bundle",
+      "scientific_measurement": {
+        "delta": 0.008381,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 19213.0,
       "measured": 19213.0,
       "error_pct": 0.0,
-      "eval_kind": "kb_inventory_anchor"
+      "eval_kind": "kb_inventory_anchor",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "catalog formulas total",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -69,7 +99,17 @@
       "computed": 50.0,
       "measured": 50.0,
       "error_pct": 0.0,
-      "eval_kind": "kb_inventory_anchor"
+      "eval_kind": "kb_inventory_anchor",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "within target 2pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -78,7 +118,17 @@
       "computed": 82.0,
       "measured": 82.0,
       "error_pct": 0.0,
-      "eval_kind": "kb_inventory_anchor"
+      "eval_kind": "kb_inventory_anchor",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "within tolerable 5pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -87,7 +137,17 @@
       "computed": 7941.0,
       "measured": 7941.0,
       "error_pct": 0.0,
-      "eval_kind": "kb_inventory_anchor"
+      "eval_kind": "kb_inventory_anchor",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "strict empirical matched",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -96,7 +156,17 @@
       "computed": 6921.0,
       "measured": 6921.0,
       "error_pct": 0.0,
-      "eval_kind": "kb_inventory_anchor"
+      "eval_kind": "kb_inventory_anchor",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "strict within 2pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -105,7 +175,17 @@
       "computed": 4.841504,
       "measured": 4.841504,
       "error_pct": 4.841504,
-      "eval_kind": "kb_bridge_gate"
+      "eval_kind": "kb_bridge_gate",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "strict empirical bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -114,7 +194,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "formula corpus closure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -123,7 +213,17 @@
       "computed": 7941.0,
       "measured": 7941.0,
       "error_pct": 0.0,
-      "eval_kind": "corpus_relay"
+      "eval_kind": "corpus_relay",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "strict empirical jsonl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -132,7 +232,17 @@
       "computed": 308.0,
       "measured": 308.0,
       "error_pct": 0.0,
-      "eval_kind": "corpus_relay"
+      "eval_kind": "corpus_relay",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "formal priors count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -141,7 +251,17 @@
       "computed": 268.0,
       "measured": 268.0,
       "error_pct": 0.0,
-      "eval_kind": "corpus_relay"
+      "eval_kind": "corpus_relay",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "benchmark json domains",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -150,7 +270,17 @@
       "computed": 29.0,
       "measured": 29.0,
       "error_pct": 0.008381497018412922,
-      "eval_kind": "corpus_relay"
+      "eval_kind": "corpus_relay",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -159,7 +289,17 @@
       "computed": 36.0,
       "measured": 36.0,
       "error_pct": 0.020098237848404983,
-      "eval_kind": "corpus_relay"
+      "eval_kind": "corpus_relay",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "kb_portable_bundle_lab",
@@ -168,7 +308,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_gate"
+      "eval_kind": "certificate_gate",
+      "domain_display_name": "kb portable bundle",
+      "display_name": "knowledge base portable bundle",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -182,5 +332,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Knowledge Base Portable Bundle Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.693739+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 13,
+    "median_error_pct": 0.0,
+    "max_error_pct": 4.841504,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 12,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9230769230769231,
+    "matches_domain_spine": false
+  }
 }

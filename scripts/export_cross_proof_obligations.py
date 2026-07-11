@@ -5,12 +5,16 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 LEAN_DIR = ROOT / "FSOT" / "Formal"
 OUT = ROOT / "verification" / "obligations" / "connective_spine.json"
+
+from fsot_label_registry_lib import annotate_obligation  # noqa: E402
 
 LEAN_SOURCES = (
     "WarpActuationDevelopmentPriors.lean",
@@ -97,6 +101,8 @@ def main() -> int:
         defs, ob = parse_lean(path)
         all_defs[fname] = defs
         all_obligations.extend(ob)
+
+    all_obligations = [annotate_obligation(ob) for ob in all_obligations]
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

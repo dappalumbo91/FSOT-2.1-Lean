@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 205
+      "observable_count": 205,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 205
+      "observable_count": 205,
+      "domain_display_name": "tier gap fill",
+      "display_name": "code genome panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.637256
+      "hole_severity": 0.637256,
+      "domain_display_name": "code genome",
+      "display_name": "Lean namespace import open",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -72,7 +102,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.517465
+      "hole_severity": 0.517465,
+      "domain_display_name": "code genome",
+      "display_name": "Lean import open def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -81,7 +121,17 @@
       "computed": 0.522673,
       "measured": 1.0,
       "error_pct": 47.7327,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "domain_display_name": "code genome",
+      "display_name": "Lean file stability",
+      "scientific_measurement": {
+        "delta": -0.477327,
+        "delta_pct": 47.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -92,7 +142,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.491423
+      "hole_severity": 0.491423,
+      "domain_display_name": "code genome",
+      "display_name": "Lean namespace theorem import",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -103,7 +163,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.460173
+      "hole_severity": 0.460173,
+      "domain_display_name": "code genome",
+      "display_name": "Lean theorem import lemma",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -114,7 +184,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.606006
+      "hole_severity": 0.606006,
+      "domain_display_name": "code genome",
+      "display_name": "Lean import lemma open",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -125,7 +205,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.507048
+      "hole_severity": 0.507048,
+      "domain_display_name": "code genome",
+      "display_name": "Lean lemma open def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -136,7 +226,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.486215
+      "hole_severity": 0.486215,
+      "domain_display_name": "code genome",
+      "display_name": "Lean open def by",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -145,7 +245,17 @@
       "computed": 0.482494,
       "measured": 1.0,
       "error_pct": 51.7506,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "domain_display_name": "code genome",
+      "display_name": "Lean file stability",
+      "scientific_measurement": {
+        "delta": -0.517506,
+        "delta_pct": 51.7506,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -156,7 +266,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.491423
+      "hole_severity": 0.491423,
+      "domain_display_name": "code genome",
+      "display_name": "Lean namespace theorem import",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -167,7 +287,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.611215
+      "hole_severity": 0.611215,
+      "domain_display_name": "code genome",
+      "display_name": "Lean theorem import open",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -178,7 +308,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.517465
+      "hole_severity": 0.517465,
+      "domain_display_name": "code genome",
+      "display_name": "Lean import open def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -189,7 +329,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
       "hole_type": "connective_failure",
-      "hole_severity": 0.486215
+      "hole_severity": 0.486215,
+      "domain_display_name": "code genome",
+      "display_name": "Lean open def by",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -198,7 +348,17 @@
       "computed": 0.488819,
       "measured": 1.0,
       "error_pct": 51.1181,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
+      "domain_display_name": "code genome",
+      "display_name": "Lean file stability",
+      "scientific_measurement": {
+        "delta": -0.511181,
+        "delta_pct": 51.1181,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -209,7 +369,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.541667
+      "hole_severity": 0.541667,
+      "domain_display_name": "code genome",
+      "display_name": "Rust unsafe extern match",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -220,7 +390,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.731516
+      "hole_severity": 0.731516,
+      "domain_display_name": "code genome",
+      "display_name": "Rust extern match const",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -231,7 +411,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.731006
+      "hole_severity": 0.731006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust match const impl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -242,7 +432,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.606006
+      "hole_severity": 0.606006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust const impl pub",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -253,7 +453,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.481006
+      "hole_severity": 0.481006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust impl pub mut",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -264,7 +474,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.262256
+      "hole_severity": 0.262256,
+      "domain_display_name": "code genome",
+      "display_name": "Rust pub mut fn",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -273,7 +493,17 @@
       "computed": 0.482921,
       "measured": 1.0,
       "error_pct": 51.7079,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "domain_display_name": "code genome",
+      "display_name": "Rust file stability",
+      "scientific_measurement": {
+        "delta": -0.517079,
+        "delta_pct": 51.7079,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -284,7 +514,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.47059
+      "hole_severity": 0.47059,
+      "domain_display_name": "code genome",
+      "display_name": "Python return import class",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -295,7 +535,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.291423
+      "hole_severity": 0.291423,
+      "domain_display_name": "code genome",
+      "display_name": "Python import class eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -306,7 +556,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.343506
+      "hole_severity": 0.343506,
+      "domain_display_name": "code genome",
+      "display_name": "Python class eval def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -315,7 +575,17 @@
       "computed": 0.433923,
       "measured": 1.0,
       "error_pct": 56.6077,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "domain_display_name": "code genome",
+      "display_name": "Python file stability",
+      "scientific_measurement": {
+        "delta": -0.566077,
+        "delta_pct": 56.6077,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -326,7 +596,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.47059
+      "hole_severity": 0.47059,
+      "domain_display_name": "code genome",
+      "display_name": "Python return import class",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -337,7 +617,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.293506
+      "hole_severity": 0.293506,
+      "domain_display_name": "code genome",
+      "display_name": "Python import class def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -346,7 +636,17 @@
       "computed": 0.448454,
       "measured": 1.0,
       "error_pct": 55.1546,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+      "domain_display_name": "code genome",
+      "display_name": "Python file stability",
+      "scientific_measurement": {
+        "delta": -0.551546,
+        "delta_pct": 55.1546,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -357,7 +657,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.522673
+      "hole_severity": 0.522673,
+      "domain_display_name": "code genome",
+      "display_name": "Python return import lambda",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -368,7 +678,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.444548
+      "hole_severity": 0.444548,
+      "domain_display_name": "code genome",
+      "display_name": "Python import lambda yield",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -379,7 +699,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.684641
+      "hole_severity": 0.684641,
+      "domain_display_name": "code genome",
+      "display_name": "Python lambda yield async",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -390,7 +720,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.632558
+      "hole_severity": 0.632558,
+      "domain_display_name": "code genome",
+      "display_name": "Python yield async class",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -401,7 +741,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.531516
+      "hole_severity": 0.531516,
+      "domain_display_name": "code genome",
+      "display_name": "Python async class eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -412,7 +762,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.346631
+      "hole_severity": 0.346631,
+      "domain_display_name": "code genome",
+      "display_name": "Python class eval exec",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -423,7 +783,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.38309
+      "hole_severity": 0.38309,
+      "domain_display_name": "code genome",
+      "display_name": "Python eval exec def",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -432,7 +802,17 @@
       "computed": 0.512773,
       "measured": 1.0,
       "error_pct": 48.7227,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "domain_display_name": "code genome",
+      "display_name": "Python file stability",
+      "scientific_measurement": {
+        "delta": -0.487227,
+        "delta_pct": 48.7227,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -441,7 +821,17 @@
       "computed": 0.624236,
       "measured": 1.0,
       "error_pct": 37.5764,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c",
+      "domain_display_name": "code genome",
+      "display_name": "C file stability",
+      "scientific_measurement": {
+        "delta": -0.375764,
+        "delta_pct": 37.5764,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -452,7 +842,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.546631
+      "hole_severity": 0.546631,
+      "domain_display_name": "code genome",
+      "display_name": "C sprintf include return",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -463,7 +863,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.416423
+      "hole_severity": 0.416423,
+      "domain_display_name": "code genome",
+      "display_name": "C include return strcpy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -474,7 +884,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.331006
+      "hole_severity": 0.331006,
+      "domain_display_name": "code genome",
+      "display_name": "C return strcpy malloc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -485,7 +905,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.456006
+      "hole_severity": 0.456006,
+      "domain_display_name": "code genome",
+      "display_name": "C strcpy malloc void",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -494,7 +924,17 @@
       "computed": 0.501319,
       "measured": 1.0,
       "error_pct": 49.8681,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "domain_display_name": "code genome",
+      "display_name": "C file stability",
+      "scientific_measurement": {
+        "delta": -0.498681,
+        "delta_pct": 49.8681,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -505,7 +945,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
       "hole_type": "connective_failure",
-      "hole_severity": 0.559131
+      "hole_severity": 0.559131,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript function module async",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -516,7 +966,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
       "hole_type": "connective_failure",
-      "hole_severity": 0.62684
+      "hole_severity": 0.62684,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript module async const",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -527,7 +987,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
       "hole_type": "connective_failure",
-      "hole_severity": 0.767465
+      "hole_severity": 0.767465,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript async const fetch",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -536,7 +1006,17 @@
       "computed": 0.716423,
       "measured": 1.0,
       "error_pct": 28.3577,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript file stability",
+      "scientific_measurement": {
+        "delta": -0.283577,
+        "delta_pct": 28.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -547,7 +1027,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
       "hole_type": "connective_failure",
-      "hole_severity": 0.541667
+      "hole_severity": 0.541667,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript innerHTML function document",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -558,7 +1048,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
       "hole_type": "connective_failure",
-      "hole_severity": 0.682558
+      "hole_severity": 0.682558,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript function document eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -567,7 +1067,17 @@
       "computed": 0.511918,
       "measured": 1.0,
       "error_pct": 48.8082,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript file stability",
+      "scientific_measurement": {
+        "delta": -0.488082,
+        "delta_pct": 48.8082,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -578,7 +1088,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.747651
+      "hole_severity": 0.747651,
+      "domain_display_name": "code genome",
+      "display_name": "Go package return import",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -589,7 +1109,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.544016
+      "hole_severity": 0.544016,
+      "domain_display_name": "code genome",
+      "display_name": "Go return import func",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -598,7 +1128,17 @@
       "computed": 0.640625,
       "measured": 1.0,
       "error_pct": 35.9375,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "domain_display_name": "code genome",
+      "display_name": "Go file stability",
+      "scientific_measurement": {
+        "delta": -0.359375,
+        "delta_pct": 35.9375,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -609,7 +1149,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
       "hole_type": "connective_failure",
-      "hole_severity": 0.460173
+      "hole_severity": 0.460173,
+      "domain_display_name": "code genome",
+      "display_name": "Zig return const pub",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -620,7 +1170,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
       "hole_type": "connective_failure",
-      "hole_severity": 0.246631
+      "hole_severity": 0.246631,
+      "domain_display_name": "code genome",
+      "display_name": "Zig const pub try",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -631,7 +1191,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
       "hole_type": "connective_failure",
-      "hole_severity": 0.225798
+      "hole_severity": 0.225798,
+      "domain_display_name": "code genome",
+      "display_name": "Zig pub try fn",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -640,7 +1210,17 @@
       "computed": 0.375798,
       "measured": 1.0,
       "error_pct": 62.4202,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "domain_display_name": "code genome",
+      "display_name": "Zig file stability",
+      "scientific_measurement": {
+        "delta": -0.624202,
+        "delta_pct": 62.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -651,7 +1231,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.632048
+      "hole_severity": 0.632048,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly local.get i32.store i32.add",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -662,7 +1252,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.579965
+      "hole_severity": 0.579965,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly i32.store i32.add module",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -673,7 +1273,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.423715
+      "hole_severity": 0.423715,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly i32.add module memory",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -684,7 +1294,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.31434
+      "hole_severity": 0.31434,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly module memory result",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -695,7 +1315,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.496631
+      "hole_severity": 0.496631,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly memory result export",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -706,7 +1336,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.694548
+      "hole_severity": 0.694548,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly result export param",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -717,7 +1357,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.621631
+      "hole_severity": 0.621631,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly export param func",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -726,7 +1376,17 @@
       "computed": 0.522673,
       "measured": 1.0,
       "error_pct": 47.7327,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly file stability",
+      "scientific_measurement": {
+        "delta": -0.477327,
+        "delta_pct": 47.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -737,7 +1397,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.273715
+      "hole_severity": 0.273715,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA CONSENSUS LOAD RULE APPLY OVR",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -748,7 +1418,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.492974
+      "hole_severity": 0.492974,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA LOAD RULE APPLY OVR MEASURE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -759,7 +1439,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.471875
+      "hole_severity": 0.471875,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA APPLY OVR MEASURE BRANCHT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -770,7 +1460,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.53125
+      "hole_severity": 0.53125,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA MEASURE BRANCHT LOADT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -781,7 +1481,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.322407
+      "hole_severity": 0.322407,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA BRANCHT LOADT HALT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -792,7 +1502,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.585173
+      "hole_severity": 0.585173,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA LOADT HALT CALL",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -803,7 +1523,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.434131
+      "hole_severity": 0.434131,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA HALT CALL RET",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -814,7 +1544,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.543506
+      "hole_severity": 0.543506,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA CALL RET IMM",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -823,7 +1563,17 @@
       "computed": 0.430246,
       "measured": 1.0,
       "error_pct": 56.9754,
-      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json"
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA file stability",
+      "scientific_measurement": {
+        "delta": -0.569754,
+        "delta_pct": 56.9754,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -832,7 +1582,17 @@
       "computed": 9.001329,
       "measured": 9.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "Lean codon units",
+      "scientific_measurement": {
+        "delta": 0.001329,
+        "delta_pct": 0.014767,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -841,7 +1601,17 @@
       "computed": 10.001477,
       "measured": 10.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "Rust codon units",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -850,7 +1620,17 @@
       "computed": 10.001477,
       "measured": 10.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "Python codon units",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -859,7 +1639,17 @@
       "computed": 10.001477,
       "measured": 10.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "C codon units",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -868,7 +1658,17 @@
       "computed": 10.001477,
       "measured": 10.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript codon units",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -877,7 +1677,17 @@
       "computed": 8.001181,
       "measured": 8.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "Go codon units",
+      "scientific_measurement": {
+        "delta": 0.001181,
+        "delta_pct": 0.014763,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -886,7 +1696,17 @@
       "computed": 8.001181,
       "measured": 8.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "Zig codon units",
+      "scientific_measurement": {
+        "delta": 0.001181,
+        "delta_pct": 0.014763,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -895,7 +1715,17 @@
       "computed": 6.000886,
       "measured": 6.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly codon units",
+      "scientific_measurement": {
+        "delta": 0.000886,
+        "delta_pct": 0.014767,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -904,7 +1734,17 @@
       "computed": 27.003987,
       "measured": 27.0,
       "error_pct": 0.014767,
-      "source": "code_genome_language_registry"
+      "source": "code_genome_language_registry",
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA codon units",
+      "scientific_measurement": {
+        "delta": 0.003987,
+        "delta_pct": 0.014767,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -915,7 +1755,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.484375
+      "hole_severity": 0.484375,
+      "domain_display_name": "code genome",
+      "display_name": "Rust extern unsafe const",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -926,7 +1776,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.43699
+      "hole_severity": 0.43699,
+      "domain_display_name": "code genome",
+      "display_name": "Rust unsafe const match",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -937,7 +1797,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.731006
+      "hole_severity": 0.731006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust const match impl",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -948,7 +1818,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.606006
+      "hole_severity": 0.606006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust match impl mut",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -959,7 +1839,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.481006
+      "hole_severity": 0.481006,
+      "domain_display_name": "code genome",
+      "display_name": "Rust impl mut pub",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -970,7 +1860,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
       "hole_type": "connective_failure",
-      "hole_severity": 0.262256
+      "hole_severity": 0.262256,
+      "domain_display_name": "code genome",
+      "display_name": "Rust mut pub fn",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -981,7 +1881,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.522673
+      "hole_severity": 0.522673,
+      "domain_display_name": "code genome",
+      "display_name": "Python lambda return import",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -992,7 +1902,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.695058
+      "hole_severity": 0.695058,
+      "domain_display_name": "code genome",
+      "display_name": "Python return import async",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1003,7 +1923,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.616933
+      "hole_severity": 0.616933,
+      "domain_display_name": "code genome",
+      "display_name": "Python import async yield",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1014,7 +1944,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.632558
+      "hole_severity": 0.632558,
+      "domain_display_name": "code genome",
+      "display_name": "Python async yield class",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1025,7 +1965,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
       "hole_type": "connective_failure",
-      "hole_severity": 0.442465
+      "hole_severity": 0.442465,
+      "domain_display_name": "code genome",
+      "display_name": "Python yield class eval",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1036,7 +1986,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.388298
+      "hole_severity": 0.388298,
+      "domain_display_name": "code genome",
+      "display_name": "C include sprintf strcpy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1047,7 +2007,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.28934
+      "hole_severity": 0.28934,
+      "domain_display_name": "code genome",
+      "display_name": "C sprintf strcpy return",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1058,7 +2028,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.331006
+      "hole_severity": 0.331006,
+      "domain_display_name": "code genome",
+      "display_name": "C strcpy return malloc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1069,7 +2049,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
       "hole_type": "connective_failure",
-      "hole_severity": 0.61434
+      "hole_severity": 0.61434,
+      "domain_display_name": "code genome",
+      "display_name": "C return malloc void",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1080,7 +2070,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.350798
+      "hole_severity": 0.350798,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly module memory export",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1091,7 +2091,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.496631
+      "hole_severity": 0.496631,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly memory export result",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1102,7 +2112,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.694548
+      "hole_severity": 0.694548,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly export result param",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1113,7 +2133,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
       "hole_type": "connective_failure",
-      "hole_severity": 0.585173
+      "hole_severity": 0.585173,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly result param func",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1124,7 +2154,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.273715
+      "hole_severity": 0.273715,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA LOAD RULE CONSENSUS APPLY OVR",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1135,7 +2175,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.252615
+      "hole_severity": 0.252615,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA CONSENSUS APPLY OVR BRANCHT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1146,7 +2196,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.471875
+      "hole_severity": 0.471875,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA APPLY OVR BRANCHT MEASURE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1157,7 +2217,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.53125
+      "hole_severity": 0.53125,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA BRANCHT MEASURE LOADT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1168,7 +2238,17 @@
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
       "hole_type": "connective_failure",
-      "hole_severity": 0.616933
+      "hole_severity": 0.616933,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA MEASURE LOADT HALT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1177,7 +2257,17 @@
       "computed": 64.015679,
       "measured": 64.0,
       "error_pct": 0.02449769835093374,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "codon alphabet size",
+      "scientific_measurement": {
+        "delta": 0.015679,
+        "delta_pct": 0.024498,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1186,7 +2276,17 @@
       "computed": 0.850208,
       "measured": 0.85,
       "error_pct": 0.024497698350935047,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "stability match threshold",
+      "scientific_measurement": {
+        "delta": 0.000208,
+        "delta_pct": 0.024471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1195,7 +2295,17 @@
       "computed": 3.000735,
       "measured": 3.0,
       "error_pct": 0.02449769835092634,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "codon window size",
+      "scientific_measurement": {
+        "delta": 0.000735,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1204,7 +2314,17 @@
       "computed": 6.00147,
       "measured": 6.0,
       "error_pct": 0.02449769835092634,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "language bridge count",
+      "scientific_measurement": {
+        "delta": 0.00147,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1213,7 +2333,17 @@
       "computed": 9.002205,
       "measured": 9.0,
       "error_pct": 0.024497698350936205,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "lean codon units",
+      "scientific_measurement": {
+        "delta": 0.002205,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1222,7 +2352,17 @@
       "computed": 10.00245,
       "measured": 10.0,
       "error_pct": 0.02449769835093818,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "rust codon units",
+      "scientific_measurement": {
+        "delta": 0.00245,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1231,7 +2371,17 @@
       "computed": 10.00245,
       "measured": 10.0,
       "error_pct": 0.02449769835093818,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "python codon units",
+      "scientific_measurement": {
+        "delta": 0.00245,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1240,7 +2390,17 @@
       "computed": 10.00245,
       "measured": 10.0,
       "error_pct": 0.02449769835093818,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "c codon units",
+      "scientific_measurement": {
+        "delta": 0.00245,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1249,7 +2409,17 @@
       "computed": 10.00245,
       "measured": 10.0,
       "error_pct": 0.02449769835093818,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "javascript codon units",
+      "scientific_measurement": {
+        "delta": 0.00245,
+        "delta_pct": 0.0245,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1258,77 +2428,187 @@
       "computed": 27.006614,
       "measured": 27.0,
       "error_pct": 0.024497698350929624,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "code genome",
+      "display_name": "fsotb opcode codon units",
+      "scientific_measurement": {
+        "delta": 0.006614,
+        "delta_pct": 0.024496,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "total_steps",
       "computed": 52,
       "measured": 52,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "total steps",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "time_in_core",
       "computed": 14,
       "measured": 14,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "time in core",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "time_in_burst",
       "computed": 3,
       "measured": 3,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "time in burst",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "time_in_fragmented",
       "computed": 35,
       "measured": 35,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "time in fragmented",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "branching_events",
       "computed": 17,
       "measured": 17,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "branching events",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "detected_loops",
       "computed": 65,
       "measured": 65,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "detected loops",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "avg_scalar_positive",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "avg scalar positive",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "avg_scalar",
       "computed": 12.618524970840754,
       "measured": 12.618524970840754,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "avg scalar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "branching_event_rows",
       "computed": 17,
       "measured": 17,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "branching event rows",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "binary_decoder_rendlesham",
       "property": "core_to_fragmented_transitions",
       "computed": 13,
       "measured": 13,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "binary decoder rendlesham",
+      "display_name": "core to fragmented transitions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1336,7 +2616,17 @@
       "computed": 8.0,
       "measured": 8,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "boot d eff",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1344,7 +2634,17 @@
       "computed": 16,
       "measured": 16,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "constant count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1352,7 +2652,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "K matches atlas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1360,7 +2670,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "boot scalar positive",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1368,7 +2688,17 @@
       "computed": 0.09928895626861721,
       "measured": 0.09928895626861721,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "boot scalar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1376,7 +2706,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "no std",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1384,7 +2724,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "requires lean bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1392,7 +2742,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "boot observed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1400,7 +2760,17 @@
       "computed": 0.7,
       "measured": 0.7,
       "error_pct": 0.0,
-      "source": "rust_lean_genome"
+      "source": "rust_lean_genome",
+      "domain_display_name": "code genome",
+      "display_name": "boot delta psi",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1410,7 +2780,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "observable_count": 68,
-      "source": "trinary_genome"
+      "source": "trinary_genome",
+      "domain_display_name": "code genome",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1420,7 +2800,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "observable_count": 8,
-      "source": "trinary_genome"
+      "source": "trinary_genome",
+      "domain_display_name": "code genome",
+      "display_name": "portable oracle",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1430,7 +2820,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "observable_count": 38,
-      "source": "trinary_genome"
+      "source": "trinary_genome",
+      "domain_display_name": "code genome",
+      "display_name": "isa rebuild",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1440,7 +2840,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "observable_count": 22,
-      "source": "trinary_genome"
+      "source": "trinary_genome",
+      "domain_display_name": "code genome",
+      "display_name": "round trip",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1450,7 +2860,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
-      "codon_index": 38
+      "codon_index": 38,
+      "domain_display_name": "code genome",
+      "display_name": "Lean namespace",
+      "scientific_measurement": {
+        "delta": -0.461702,
+        "delta_pct": 46.1702,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1460,7 +2880,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
-      "codon_index": 42
+      "codon_index": 42,
+      "domain_display_name": "code genome",
+      "display_name": "Lean import",
+      "scientific_measurement": {
+        "delta": -0.524202,
+        "delta_pct": 52.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1470,7 +2900,17 @@
       "measured": 1.0,
       "error_pct": 10.2327,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
-      "codon_index": 15
+      "codon_index": 15,
+      "domain_display_name": "code genome",
+      "display_name": "Lean open",
+      "scientific_measurement": {
+        "delta": -0.102327,
+        "delta_pct": 10.2327,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1480,7 +2920,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
-      "codon_index": 61
+      "codon_index": 61,
+      "domain_display_name": "code genome",
+      "display_name": "Lean def",
+      "scientific_measurement": {
+        "delta": -0.821077,
+        "delta_pct": 82.1077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1490,7 +2940,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
-      "codon_index": 43
+      "codon_index": 43,
+      "domain_display_name": "code genome",
+      "display_name": "Lean theorem",
+      "scientific_measurement": {
+        "delta": -0.539827,
+        "delta_pct": 53.9827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1500,7 +2960,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
-      "codon_index": 44
+      "codon_index": 44,
+      "domain_display_name": "code genome",
+      "display_name": "Lean lemma",
+      "scientific_measurement": {
+        "delta": -0.555452,
+        "delta_pct": 55.5452,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1510,7 +2980,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
-      "codon_index": 48
+      "codon_index": 48,
+      "domain_display_name": "code genome",
+      "display_name": "Lean by",
+      "scientific_measurement": {
+        "delta": -0.617952,
+        "delta_pct": 61.7952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1520,7 +3000,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 56
+      "codon_index": 56,
+      "domain_display_name": "code genome",
+      "display_name": "Rust unsafe",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1530,7 +3020,17 @@
       "measured": 1.0,
       "error_pct": 11.6423,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 1
+      "codon_index": 1,
+      "domain_display_name": "code genome",
+      "display_name": "Rust extern",
+      "scientific_measurement": {
+        "delta": -0.116423,
+        "delta_pct": 11.6423,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1540,7 +3040,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 25
+      "codon_index": 25,
+      "domain_display_name": "code genome",
+      "display_name": "Rust match",
+      "scientific_measurement": {
+        "delta": -0.258577,
+        "delta_pct": 25.8577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1550,7 +3060,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 36
+      "codon_index": 36,
+      "domain_display_name": "code genome",
+      "display_name": "Rust const",
+      "scientific_measurement": {
+        "delta": -0.430452,
+        "delta_pct": 43.0452,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1560,7 +3080,17 @@
       "measured": 1.0,
       "error_pct": 11.7952,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 16
+      "codon_index": 16,
+      "domain_display_name": "code genome",
+      "display_name": "Rust impl",
+      "scientific_measurement": {
+        "delta": -0.117952,
+        "delta_pct": 11.7952,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1570,7 +3100,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 49
+      "codon_index": 49,
+      "domain_display_name": "code genome",
+      "display_name": "Rust pub",
+      "scientific_measurement": {
+        "delta": -0.633577,
+        "delta_pct": 63.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1580,7 +3120,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 60
+      "codon_index": 60,
+      "domain_display_name": "code genome",
+      "display_name": "Rust mut",
+      "scientific_measurement": {
+        "delta": -0.805452,
+        "delta_pct": 80.5452,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1590,7 +3140,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
-      "codon_index": 58
+      "codon_index": 58,
+      "domain_display_name": "code genome",
+      "display_name": "Rust fn",
+      "scientific_measurement": {
+        "delta": -0.774202,
+        "delta_pct": 77.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1600,7 +3160,17 @@
       "measured": 1.0,
       "error_pct": 8.6702,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
-      "codon_index": 14
+      "codon_index": 14,
+      "domain_display_name": "code genome",
+      "display_name": "Python return",
+      "scientific_measurement": {
+        "delta": -0.086702,
+        "delta_pct": 8.6702,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1610,7 +3180,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
-      "codon_index": 58
+      "codon_index": 58,
+      "domain_display_name": "code genome",
+      "display_name": "Python import",
+      "scientific_measurement": {
+        "delta": -0.774202,
+        "delta_pct": 77.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1620,7 +3200,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
-      "codon_index": 55
+      "codon_index": 55,
+      "domain_display_name": "code genome",
+      "display_name": "Python class",
+      "scientific_measurement": {
+        "delta": -0.727327,
+        "delta_pct": 72.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1630,7 +3220,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
-      "codon_index": 26
+      "codon_index": 26,
+      "domain_display_name": "code genome",
+      "display_name": "Python eval",
+      "scientific_measurement": {
+        "delta": -0.624202,
+        "delta_pct": 62.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1640,7 +3240,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
-      "codon_index": 48
+      "codon_index": 48,
+      "domain_display_name": "code genome",
+      "display_name": "Python def",
+      "scientific_measurement": {
+        "delta": -0.617952,
+        "delta_pct": 61.7952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1650,7 +3260,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
-      "codon_index": 45
+      "codon_index": 45,
+      "domain_display_name": "code genome",
+      "display_name": "Python lambda",
+      "scientific_measurement": {
+        "delta": -0.571077,
+        "delta_pct": 57.1077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1660,7 +3280,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
-      "codon_index": 29
+      "codon_index": 29,
+      "domain_display_name": "code genome",
+      "display_name": "Python yield",
+      "scientific_measurement": {
+        "delta": -0.321077,
+        "delta_pct": 32.1077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1670,7 +3300,17 @@
       "measured": 1.0,
       "error_pct": 5.3923,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
-      "codon_index": 5
+      "codon_index": 5,
+      "domain_display_name": "code genome",
+      "display_name": "Python async",
+      "scientific_measurement": {
+        "delta": -0.053923,
+        "delta_pct": 5.3923,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1680,7 +3320,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
-      "codon_index": 25
+      "codon_index": 25,
+      "domain_display_name": "code genome",
+      "display_name": "Python exec",
+      "scientific_measurement": {
+        "delta": -0.608577,
+        "delta_pct": 60.8577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1690,7 +3340,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c",
-      "codon_index": 23
+      "codon_index": 23,
+      "domain_display_name": "code genome",
+      "display_name": "C include",
+      "scientific_measurement": {
+        "delta": -0.227327,
+        "delta_pct": 22.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1700,7 +3360,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c",
-      "codon_index": 42
+      "codon_index": 42,
+      "domain_display_name": "code genome",
+      "display_name": "C return",
+      "scientific_measurement": {
+        "delta": -0.524202,
+        "delta_pct": 52.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1710,7 +3380,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "codon_index": 25
+      "codon_index": 25,
+      "domain_display_name": "code genome",
+      "display_name": "C sprintf",
+      "scientific_measurement": {
+        "delta": -0.608577,
+        "delta_pct": 60.8577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1720,7 +3400,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "codon_index": 50
+      "codon_index": 50,
+      "domain_display_name": "code genome",
+      "display_name": "C strcpy",
+      "scientific_measurement": {
+        "delta": -0.999202,
+        "delta_pct": 99.9202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1730,7 +3420,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "codon_index": 17
+      "codon_index": 17,
+      "domain_display_name": "code genome",
+      "display_name": "C malloc",
+      "scientific_measurement": {
+        "delta": -0.483577,
+        "delta_pct": 48.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1740,7 +3440,17 @@
       "measured": 1.0,
       "error_pct": 14.9202,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
-      "codon_index": 18
+      "codon_index": 18,
+      "domain_display_name": "code genome",
+      "display_name": "C void",
+      "scientific_measurement": {
+        "delta": -0.149202,
+        "delta_pct": 14.9202,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1750,7 +3460,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 24
+      "codon_index": 24,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript function",
+      "scientific_measurement": {
+        "delta": -0.242952,
+        "delta_pct": 24.2952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1760,7 +3480,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 39
+      "codon_index": 39,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript module",
+      "scientific_measurement": {
+        "delta": -0.477327,
+        "delta_pct": 47.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1770,7 +3500,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 47
+      "codon_index": 47,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript async",
+      "scientific_measurement": {
+        "delta": -0.602327,
+        "delta_pct": 60.2327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1780,7 +3520,17 @@
       "measured": 1.0,
       "error_pct": 3.9827,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 11
+      "codon_index": 11,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript const",
+      "scientific_measurement": {
+        "delta": -0.039827,
+        "delta_pct": 3.9827,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1790,7 +3540,17 @@
       "measured": 1.0,
       "error_pct": 5.5452,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
-      "codon_index": 12
+      "codon_index": 12,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript fetch",
+      "scientific_measurement": {
+        "delta": -0.055452,
+        "delta_pct": 5.5452,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1800,7 +3560,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
-      "codon_index": 60
+      "codon_index": 60,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript innerHTML",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1810,7 +3580,17 @@
       "measured": 1.0,
       "error_pct": 13.2048,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
-      "codon_index": 0
+      "codon_index": 0,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript document",
+      "scientific_measurement": {
+        "delta": -0.132048,
+        "delta_pct": 13.2048,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1820,7 +3600,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
-      "codon_index": 23
+      "codon_index": 23,
+      "domain_display_name": "code genome",
+      "display_name": "JavaScript eval",
+      "scientific_measurement": {
+        "delta": -0.577327,
+        "delta_pct": 57.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1830,7 +3620,17 @@
       "measured": 1.0,
       "error_pct": 6.9548,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 4
+      "codon_index": 4,
+      "domain_display_name": "code genome",
+      "display_name": "Go package",
+      "scientific_measurement": {
+        "delta": -0.069548,
+        "delta_pct": 6.9548,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1840,7 +3640,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 49
+      "codon_index": 49,
+      "domain_display_name": "code genome",
+      "display_name": "Go return",
+      "scientific_measurement": {
+        "delta": -0.633577,
+        "delta_pct": 63.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1850,7 +3660,17 @@
       "measured": 1.0,
       "error_pct": 5.3923,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 5
+      "codon_index": 5,
+      "domain_display_name": "code genome",
+      "display_name": "Go import",
+      "scientific_measurement": {
+        "delta": -0.053923,
+        "delta_pct": 5.3923,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1860,7 +3680,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
-      "codon_index": 52
+      "codon_index": 52,
+      "domain_display_name": "code genome",
+      "display_name": "Go func",
+      "scientific_measurement": {
+        "delta": -0.680452,
+        "delta_pct": 68.0452,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1870,7 +3700,17 @@
       "measured": 1.0,
       "error_pct": 13.3577,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 17
+      "codon_index": 17,
+      "domain_display_name": "code genome",
+      "display_name": "Zig return",
+      "scientific_measurement": {
+        "delta": -0.133577,
+        "delta_pct": 13.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1880,7 +3720,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 51
+      "codon_index": 51,
+      "domain_display_name": "code genome",
+      "display_name": "Zig const",
+      "scientific_measurement": {
+        "delta": -0.664827,
+        "delta_pct": 66.4827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1890,7 +3740,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 61
+      "codon_index": 61,
+      "domain_display_name": "code genome",
+      "display_name": "Zig pub",
+      "scientific_measurement": {
+        "delta": -0.821077,
+        "delta_pct": 82.1077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1900,7 +3760,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 58
+      "codon_index": 58,
+      "domain_display_name": "code genome",
+      "display_name": "Zig try",
+      "scientific_measurement": {
+        "delta": -0.774202,
+        "delta_pct": 77.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1910,7 +3780,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
-      "codon_index": 55
+      "codon_index": 55,
+      "domain_display_name": "code genome",
+      "display_name": "Zig fn",
+      "scientific_measurement": {
+        "delta": -0.727327,
+        "delta_pct": 72.7327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1920,7 +3800,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 53
+      "codon_index": 53,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly local.get",
+      "scientific_measurement": {
+        "delta": -0.696077,
+        "delta_pct": 69.6077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1930,7 +3820,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 29
+      "codon_index": 29,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly i32.store",
+      "scientific_measurement": {
+        "delta": -0.321077,
+        "delta_pct": 32.1077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1940,7 +3840,17 @@
       "measured": 1.0,
       "error_pct": 8.6702,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 14
+      "codon_index": 14,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly i32.add",
+      "scientific_measurement": {
+        "delta": -0.086702,
+        "delta_pct": 8.6702,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1950,7 +3860,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 63
+      "codon_index": 63,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly module",
+      "scientific_measurement": {
+        "delta": -0.852327,
+        "delta_pct": 85.2327,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1960,7 +3880,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 59
+      "codon_index": 59,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly memory",
+      "scientific_measurement": {
+        "delta": -0.789827,
+        "delta_pct": 78.9827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1970,7 +3900,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 35
+      "codon_index": 35,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly result",
+      "scientific_measurement": {
+        "delta": -0.414827,
+        "delta_pct": 41.4827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1980,7 +3920,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 28
+      "codon_index": 28,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly export",
+      "scientific_measurement": {
+        "delta": -0.305452,
+        "delta_pct": 30.5452,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -1990,7 +3940,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 21
+      "codon_index": 21,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly param",
+      "scientific_measurement": {
+        "delta": -0.196077,
+        "delta_pct": 19.6077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2000,7 +3960,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
-      "codon_index": 49
+      "codon_index": 49,
+      "domain_display_name": "code genome",
+      "display_name": "WebAssembly func",
+      "scientific_measurement": {
+        "delta": -0.633577,
+        "delta_pct": 63.3577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2010,7 +3980,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 58
+      "codon_index": 58,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA CONSENSUS",
+      "scientific_measurement": {
+        "delta": -0.774202,
+        "delta_pct": 77.4202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2020,7 +4000,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 46
+      "codon_index": 46,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA LOAD RULE",
+      "scientific_measurement": {
+        "delta": -0.936702,
+        "delta_pct": 93.6702,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2030,7 +4020,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 16
+      "codon_index": 16,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA APPLY OVR",
+      "scientific_measurement": {
+        "delta": -0.467952,
+        "delta_pct": 46.7952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2040,7 +4040,17 @@
       "measured": 1.0,
       "error_pct": 11.6423,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 1
+      "codon_index": 1,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA MEASURE",
+      "scientific_measurement": {
+        "delta": -0.116423,
+        "delta_pct": 11.6423,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2050,7 +4060,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 51
+      "codon_index": 51,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA BRANCHT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2060,7 +4080,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 27
+      "codon_index": 27,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA LOADT",
+      "scientific_measurement": {
+        "delta": -0.289827,
+        "delta_pct": 28.9827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2070,7 +4100,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 56
+      "codon_index": 56,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA HALT",
+      "scientific_measurement": {
+        "delta": -0.742952,
+        "delta_pct": 74.2952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2080,7 +4120,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 22
+      "codon_index": 22,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA CALL",
+      "scientific_measurement": {
+        "delta": -0.211702,
+        "delta_pct": 21.1702,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2090,7 +4140,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 56
+      "codon_index": 56,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA RET",
+      "scientific_measurement": {
+        "delta": -0.742952,
+        "delta_pct": 74.2952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "code_genome_lab",
@@ -2100,7 +4160,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
-      "codon_index": 35
+      "codon_index": 35,
+      "domain_display_name": "code genome",
+      "display_name": "FSOTB ISA IMM",
+      "scientific_measurement": {
+        "delta": -0.414827,
+        "delta_pct": 41.4827,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "crosswalk_modules": [
@@ -2120,5 +4190,20 @@
     "WebAssembly",
     "FSOTB_ISA"
   ],
-  "depth_pass": "tier_h_depth"
+  "depth_pass": "tier_h_depth",
+  "display_name": "Code Genome Structure",
+  "tier_label": "Tier 43",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.452033+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 205,
+    "median_error_pct": 0.0,
+    "max_error_pct": 99.9202,
+    "mean_abs_delta": 0.1813240975609756,
+    "precision_tier_counts": {
+      "green": 176,
+      "red": 29
+    },
+    "green_gate_fraction": 0.8585365853658536,
+    "matches_domain_spine": false
+  }
 }

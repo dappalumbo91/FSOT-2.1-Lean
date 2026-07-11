@@ -39,7 +39,17 @@
       "computed": 0.005169,
       "measured": 0.0,
       "error_pct": 0.0051685586271776884,
-      "observable_count": 25
+      "observable_count": 25,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.005169,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.005169,
       "measured": 0.0,
       "error_pct": 0.0051685586271776884,
-      "observable_count": 25
+      "observable_count": 25,
+      "domain_display_name": "tier gap fill",
+      "display_name": "runtime proof panel",
+      "scientific_measurement": {
+        "delta": 0.005169,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -62,7 +82,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "openjdk/jdk",
       "b_repo": "openjdk/jdk",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "openjdk string openjdk hashmap",
+      "scientific_measurement": {
+        "delta": 5.6e-05,
+        "delta_pct": 0.005917,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -74,7 +104,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "apple/swift",
       "b_repo": "apple/swift",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "swift string swift array",
+      "scientific_measurement": {
+        "delta": 5.5e-05,
+        "delta_pct": 0.005861,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -86,7 +126,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "python/cpython",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "python dictobject cpython ceval",
+      "scientific_measurement": {
+        "delta": 5.1e-05,
+        "delta_pct": 0.005891,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -98,7 +148,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "pytorch/pytorch",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "cpython ceval pytorch tensor",
+      "scientific_measurement": {
+        "delta": 5e-05,
+        "delta_pct": 0.005882,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -110,7 +170,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "golang/go",
       "b_repo": "kubernetes/client-go",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "golang http serve kubernetes client go",
+      "scientific_measurement": {
+        "delta": 4.7e-05,
+        "delta_pct": 0.005962,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -122,7 +192,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "torvalds/linux",
       "b_repo": "python/cpython",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "linux kernel list cpython ceval",
+      "scientific_measurement": {
+        "delta": 4.5e-05,
+        "delta_pct": 0.005845,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -134,7 +214,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "torvalds/linux",
       "b_repo": "pytorch/pytorch",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "linux kernel list pytorch tensor",
+      "scientific_measurement": {
+        "delta": 4.5e-05,
+        "delta_pct": 0.005845,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -146,7 +236,17 @@
       "source": "external_oss_code_genome_benchmark.json",
       "a_repo": "python/cpython",
       "b_repo": "redis/redis",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "python dictobject redis sds",
+      "scientific_measurement": {
+        "delta": 4.5e-05,
+        "delta_pct": 0.005938,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -156,7 +256,17 @@
       "measured": 8.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "boot d eff",
+      "scientific_measurement": {
+        "delta": 0.000413,
+        "delta_pct": 0.005162,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -166,7 +276,17 @@
       "measured": 16.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "constant count",
+      "scientific_measurement": {
+        "delta": 0.000827,
+        "delta_pct": 0.005169,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -176,7 +296,17 @@
       "measured": 1.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "K matches atlas",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.0052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -186,7 +316,17 @@
       "measured": 1.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "boot scalar positive",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.0052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -196,7 +336,17 @@
       "measured": 0.09928895626861721,
       "error_pct": 0.005168558627181154,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "boot scalar",
+      "scientific_measurement": {
+        "delta": 5.04e-06,
+        "delta_pct": 0.00508,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -206,7 +356,17 @@
       "measured": 1.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "no std",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.0052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -216,7 +376,17 @@
       "measured": 1.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "requires lean bridge",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.0052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -226,7 +396,17 @@
       "measured": 1.0,
       "error_pct": 0.0051685586271776884,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "boot observed",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.0052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -236,7 +416,17 @@
       "measured": 0.7,
       "error_pct": 0.005168558627184033,
       "source": "rust_lean_bridge_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "boot delta psi",
+      "scientific_measurement": {
+        "delta": 3.6e-05,
+        "delta_pct": 0.005143,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -246,7 +436,17 @@
       "measured": 0.14806450291069925,
       "error_pct": 0.0044301931090089935,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 6.5e-06,
+        "delta_pct": 0.004388,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -256,7 +456,17 @@
       "measured": 0.14809147918973453,
       "error_pct": 0.004430193108999071,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 6.52e-06,
+        "delta_pct": 0.004403,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -266,7 +476,17 @@
       "measured": 0.148118429281082,
       "error_pct": 0.00443019310901453,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 6.57e-06,
+        "delta_pct": 0.004436,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -276,7 +496,17 @@
       "measured": 0.1481453532107139,
       "error_pct": 0.004430193109009354,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 6.65e-06,
+        "delta_pct": 0.004487,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -286,7 +516,17 @@
       "measured": 0.1300572780008903,
       "error_pct": 0.004430193109008649,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 5.72e-06,
+        "delta_pct": 0.0044,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -296,7 +536,17 @@
       "measured": 0.1301013415790377,
       "error_pct": 0.004430193109000052,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 5.66e-06,
+        "delta_pct": 0.004349,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -306,7 +556,17 @@
       "measured": 0.1301453623817071,
       "error_pct": 0.004430193109010174,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 5.64e-06,
+        "delta_pct": 0.004332,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "proof_carrying_code_genome_lab",
@@ -316,7 +576,17 @@
       "measured": 0.13018934045132224,
       "error_pct": 0.004430193109002444,
       "source": "computational_reasoning_benchmark.json",
-      "formula_branch": "term1.perceived_adjust"
+      "formula_branch": "term1.perceived_adjust",
+      "domain_display_name": "proof carrying code genome",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 5.66e-06,
+        "delta_pct": 0.004347,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -336,5 +606,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.ExternalOSSCodeGenomePriors",
     "FSOT.Formal.RustLeanBridgePriors"
-  ]
+  ],
+  "display_name": "Proof Carrying Code Genome",
+  "tier_label": "Tier 47",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.537050+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 25,
+    "median_error_pct": 0.0052,
+    "max_error_pct": 0.005962,
+    "mean_abs_delta": 7.93584e-05,
+    "precision_tier_counts": {
+      "green": 25
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

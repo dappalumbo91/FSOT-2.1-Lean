@@ -41,7 +41,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1
+      "observable_count": 1,
+      "domain_display_name": "tier gap fill",
+      "display_name": "toe bundle",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 65.0,
       "measured": 65.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_anchor"
+      "eval_kind": "certificate_anchor",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "verification progress",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -70,7 +100,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_anchor"
+      "eval_kind": "certificate_anchor",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "verification progress",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -79,7 +119,17 @@
       "computed": 48.0,
       "measured": 48.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_anchor"
+      "eval_kind": "certificate_anchor",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "verification progress",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -88,7 +138,17 @@
       "computed": 100.0,
       "measured": 100.0,
       "error_pct": 0.0,
-      "eval_kind": "certificate_anchor"
+      "eval_kind": "certificate_anchor",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "verification progress",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -97,7 +157,17 @@
       "computed": 282.0,
       "measured": 282.0,
       "error_pct": 0.0,
-      "eval_kind": "coverage_anchor"
+      "eval_kind": "coverage_anchor",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "expansion map",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -106,7 +176,17 @@
       "computed": 0.01900826880250389,
       "measured": 0.01900826880250389,
       "error_pct": 0.0,
-      "eval_kind": "toe_bridge"
+      "eval_kind": "toe_bridge",
+      "domain_display_name": "toe claim certificate",
+      "display_name": "toe unification spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_claim_certificate_lab",
@@ -120,7 +200,17 @@
         "proof_ledger.yaml",
         "certificate.json",
         "FSOT_VERIFIED_SCOPE.yaml"
-      ]
+      ],
+      "domain_display_name": "toe claim certificate",
+      "display_name": "toe claim certificate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -134,5 +224,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "ToE Claim Certificate Bundle",
+  "tier_label": "Tier 70 \u2014 Proof Ledger Closure Spine cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.659301+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 7
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

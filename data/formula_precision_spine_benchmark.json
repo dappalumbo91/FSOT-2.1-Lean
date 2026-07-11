@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 27
+      "observable_count": 27,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "formula precision spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
       "record_count": 23,
-      "eval_kind": "tier67_bridge"
+      "eval_kind": "tier67_bridge",
+      "domain_display_name": "formula precision spine",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -70,7 +100,17 @@
       "measured": 0.000413,
       "error_pct": 0.05658825311283946,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Air 20C",
+      "scientific_measurement": {
+        "delta": -2.3e-07,
+        "delta_pct": 0.056588,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -80,7 +120,17 @@
       "measured": 1.48,
       "error_pct": 0.3555,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Water 20C",
+      "scientific_measurement": {
+        "delta": -0.00526119,
+        "delta_pct": 0.355486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -90,7 +140,17 @@
       "measured": 17.0,
       "error_pct": 0.3297,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Aluminum",
+      "scientific_measurement": {
+        "delta": -0.05605573,
+        "delta_pct": 0.32974,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -100,7 +160,17 @@
       "measured": 45.0,
       "error_pct": 0.0,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Steel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -110,7 +180,17 @@
       "measured": 41.6,
       "error_pct": 0.002615596508561178,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Copper",
+      "scientific_measurement": {
+        "delta": 0.00108809,
+        "delta_pct": 0.002616,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -120,7 +200,17 @@
       "measured": 27.3,
       "error_pct": 0.6395,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Titanium",
+      "scientific_measurement": {
+        "delta": 0.17459302,
+        "delta_pct": 0.639535,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -130,7 +220,17 @@
       "measured": 14.5,
       "error_pct": 0.0,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Glass",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -140,7 +240,17 @@
       "measured": 49.5,
       "error_pct": 0.1955,
       "source_panel": "term3_acoustic_bleed_depth",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Nickel",
+      "scientific_measurement": {
+        "delta": 0.09674775,
+        "delta_pct": 0.19545,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -150,7 +260,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 10,
-      "eval_kind": "tier67_bridge"
+      "eval_kind": "tier67_bridge",
+      "domain_display_name": "formula precision spine",
+      "display_name": "initiation transformation archetype",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -160,7 +280,17 @@
       "measured": 0.865256,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "W Binding",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -170,7 +300,17 @@
       "measured": 0.212346,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -180,7 +320,17 @@
       "measured": 0.381966,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Inner coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -190,7 +340,17 @@
       "measured": 0.392173,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Ignition Coherence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -200,7 +360,17 @@
       "measured": 0.618034,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -210,7 +380,17 @@
       "measured": 0.577216,
       "error_pct": 0.0,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Cross coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -220,7 +400,17 @@
       "measured": -0.535206,
       "error_pct": 0.945436,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "initiation transformation",
+      "scientific_measurement": {
+        "delta": 0.00506,
+        "delta_pct": 0.94543,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -230,7 +420,17 @@
       "measured": -0.611813,
       "error_pct": 0.193398,
       "source_panel": "initiation_transformation_archetype",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "emergence creation",
+      "scientific_measurement": {
+        "delta": -0.001183,
+        "delta_pct": 0.19336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -240,7 +440,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 8,
-      "eval_kind": "tier67_bridge"
+      "eval_kind": "tier67_bridge",
+      "domain_display_name": "formula precision spine",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -250,7 +460,17 @@
       "measured": 0.618034,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "W Complexity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -260,7 +480,17 @@
       "measured": 0.865256,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Radial coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -270,7 +500,17 @@
       "measured": 0.577216,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Cross coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -280,7 +520,17 @@
       "measured": 13.0,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -290,7 +540,17 @@
       "measured": 0.212346,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Resonance Rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -300,7 +560,17 @@
       "measured": 0.618034,
       "error_pct": 0.0,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -310,7 +580,17 @@
       "measured": -0.649438,
       "error_pct": 0.254432,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "boundary partition",
+      "scientific_measurement": {
+        "delta": -0.001653,
+        "delta_pct": 0.254528,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "formula_precision_spine_lab",
@@ -320,7 +600,17 @@
       "measured": -3.30584,
       "error_pct": 0.002646,
       "source_panel": "boundary_partition_tightening",
-      "eval_kind": "precision_relay"
+      "eval_kind": "precision_relay",
+      "domain_display_name": "formula precision spine",
+      "display_name": "judgmental reset",
+      "scientific_measurement": {
+        "delta": 8.7e-05,
+        "delta_pct": 0.002632,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -334,5 +624,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Formula Precision Spine",
+  "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.643465+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 27,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.94543,
+    "mean_abs_delta": 0.01265663,
+    "precision_tier_counts": {
+      "green": 25,
+      "red": 2
+    },
+    "green_gate_fraction": 0.9259259259259259,
+    "matches_domain_spine": false
+  }
 }

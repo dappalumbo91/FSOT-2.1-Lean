@@ -40,7 +40,17 @@
       "computed": 0.0323,
       "measured": 0.0,
       "error_pct": 0.03230022603427978,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0323,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0323,
       "measured": 0.0,
       "error_pct": 0.03230022603427978,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "supply chain panel",
+      "scientific_measurement": {
+        "delta": 0.0323,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 8.002584,
       "measured": 8.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "inventory turnover retail",
+      "scientific_measurement": {
+        "delta": 0.002584,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -69,7 +99,17 @@
       "computed": 12.003876,
       "measured": 12.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "inventory turnover auto",
+      "scientific_measurement": {
+        "delta": 0.003876,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -78,7 +118,17 @@
       "computed": 95.030685,
       "measured": 95.0,
       "error_pct": 0.03230022603428563,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "order fill rate",
+      "scientific_measurement": {
+        "delta": 0.030685,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -87,7 +137,17 @@
       "computed": 5.001615,
       "measured": 5.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "lead time domestic days",
+      "scientific_measurement": {
+        "delta": 0.001615,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -96,7 +156,17 @@
       "computed": 30.00969,
       "measured": 30.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "lead time ocean days",
+      "scientific_measurement": {
+        "delta": 0.00969,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -105,7 +175,17 @@
       "computed": 3.000969,
       "measured": 3.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "lead time air days",
+      "scientific_measurement": {
+        "delta": 0.000969,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -114,7 +194,17 @@
       "computed": 14.004522,
       "measured": 14.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "safety stock days",
+      "scientific_measurement": {
+        "delta": 0.004522,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -123,7 +213,17 @@
       "computed": 85.027455,
       "measured": 85.0,
       "error_pct": 0.03230022603428123,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "warehouse utilization pct",
+      "scientific_measurement": {
+        "delta": 0.027455,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -132,7 +232,17 @@
       "computed": 1.500485,
       "measured": 1.5,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "freight cost per km",
+      "scientific_measurement": {
+        "delta": 0.000485,
+        "delta_pct": 0.032333,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -141,7 +251,17 @@
       "computed": 40.01292,
       "measured": 40.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "container teus year",
+      "scientific_measurement": {
+        "delta": 0.01292,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -150,7 +270,17 @@
       "computed": 2.000646,
       "measured": 2.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "bullwhip amplification",
+      "scientific_measurement": {
+        "delta": 0.000646,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -159,7 +289,17 @@
       "computed": 25.008075,
       "measured": 25.0,
       "error_pct": 0.03230022603429461,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "carrying cost pct",
+      "scientific_measurement": {
+        "delta": 0.008075,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -168,7 +308,17 @@
       "computed": 2.000646,
       "measured": 2.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "stockout rate pct",
+      "scientific_measurement": {
+        "delta": 0.000646,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -177,7 +327,17 @@
       "computed": 90.02907,
       "measured": 90.0,
       "error_pct": 0.03230022603429145,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "perfect order rate",
+      "scientific_measurement": {
+        "delta": 0.02907,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -186,7 +346,17 @@
       "computed": 60.01938,
       "measured": 60.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "cash to cash cycle days",
+      "scientific_measurement": {
+        "delta": 0.01938,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -195,7 +365,17 @@
       "computed": 92.029716,
       "measured": 92.0,
       "error_pct": 0.03230022603427978,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "supplier otd pct",
+      "scientific_measurement": {
+        "delta": 0.029716,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -204,7 +384,17 @@
       "computed": 4.001292,
       "measured": 4.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "dock to stock hours",
+      "scientific_measurement": {
+        "delta": 0.001292,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -213,7 +403,17 @@
       "computed": 99.532139,
       "measured": 99.5,
       "error_pct": 0.03230022603428661,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "pick accuracy pct",
+      "scientific_measurement": {
+        "delta": 0.032139,
+        "delta_pct": 0.032301,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -222,7 +422,17 @@
       "computed": 8.002584,
       "measured": 8.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "last mile cost usd",
+      "scientific_measurement": {
+        "delta": 0.002584,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "supply_chain_lab",
@@ -231,7 +441,17 @@
       "computed": 10.00323,
       "measured": 10.0,
       "error_pct": 0.032300226034287505,
-      "source": "supply_chain_reference_observables"
+      "source": "supply_chain_reference_observables",
+      "domain_display_name": "supply chain",
+      "display_name": "reverse logistics pct",
+      "scientific_measurement": {
+        "delta": 0.00323,
+        "delta_pct": 0.0323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -240,7 +460,17 @@
       "computed": 42.620781,
       "measured": 42.613103,
       "error_pct": 0.018019024892929635,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Spinus pinus",
+      "scientific_measurement": {
+        "delta": 0.007678,
+        "delta_pct": 0.018018,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -249,7 +479,17 @@
       "computed": 40.487675,
       "measured": 40.480381,
       "error_pct": 0.018019024892940702,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Zonotrichia albicollis",
+      "scientific_measurement": {
+        "delta": 0.007294,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -258,7 +498,17 @@
       "computed": 43.662825,
       "measured": 43.654959,
       "error_pct": 0.018019024892935363,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Larix laricina",
+      "scientific_measurement": {
+        "delta": 0.007866,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -267,7 +517,17 @@
       "computed": 40.963634,
       "measured": 40.956254,
       "error_pct": 0.018019024892929232,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Buteo jamaicensis",
+      "scientific_measurement": {
+        "delta": 0.00738,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -276,7 +536,17 @@
       "computed": 42.687621,
       "measured": 42.67993,
       "error_pct": 0.01801902489293697,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Picea rubens",
+      "scientific_measurement": {
+        "delta": 0.007691,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -285,7 +555,17 @@
       "computed": 42.165657,
       "measured": 42.15806,
       "error_pct": 0.018019024892933444,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Polystichum acrostichoides",
+      "scientific_measurement": {
+        "delta": 0.007597,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -294,7 +574,17 @@
       "computed": 42.112739,
       "measured": 42.105152,
       "error_pct": 0.018019024892932806,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Gaultheria procumbens",
+      "scientific_measurement": {
+        "delta": 0.007587,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -303,7 +593,17 @@
       "computed": 42.821975,
       "measured": 42.814261,
       "error_pct": 0.01801902489292916,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Castor canadensis",
+      "scientific_measurement": {
+        "delta": 0.007714,
+        "delta_pct": 0.018017,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -312,7 +612,17 @@
       "computed": 41.002167,
       "measured": 40.99478,
       "error_pct": 0.0180190248929422,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Alsophila pometaria",
+      "scientific_measurement": {
+        "delta": 0.007387,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -321,7 +631,17 @@
       "computed": 42.688044,
       "measured": 42.680353,
       "error_pct": 0.018019024892932733,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Gaultheria hispidula",
+      "scientific_measurement": {
+        "delta": 0.007691,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -330,7 +650,17 @@
       "computed": 40.664184,
       "measured": 40.656858,
       "error_pct": 0.018019024892935782,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Lamium purpureum",
+      "scientific_measurement": {
+        "delta": 0.007326,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -339,7 +669,17 @@
       "computed": 41.84623,
       "measured": 41.838691,
       "error_pct": 0.018019024892931328,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": 0.007539,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -348,7 +688,17 @@
       "computed": 41.836065,
       "measured": 41.828528,
       "error_pct": 0.018019024892931966,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Smilax glauca",
+      "scientific_measurement": {
+        "delta": 0.007537,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -357,7 +707,17 @@
       "computed": 40.734019,
       "measured": 40.72668,
       "error_pct": 0.018019024892933586,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Spatula clypeata",
+      "scientific_measurement": {
+        "delta": 0.007339,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -366,7 +726,17 @@
       "computed": 40.803848,
       "measured": 40.796497,
       "error_pct": 0.01801902489294211,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Biscogniauxia marginata",
+      "scientific_measurement": {
+        "delta": 0.007351,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -375,7 +745,17 @@
       "computed": 42.921539,
       "measured": 42.913807,
       "error_pct": 0.018019024892936216,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Rhus typhina",
+      "scientific_measurement": {
+        "delta": 0.007732,
+        "delta_pct": 0.018018,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -384,7 +764,17 @@
       "computed": 40.406919,
       "measured": 40.399639,
       "error_pct": 0.018019024892939342,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Passer domesticus",
+      "scientific_measurement": {
+        "delta": 0.00728,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -393,7 +783,17 @@
       "computed": 43.665095,
       "measured": 43.657228,
       "error_pct": 0.018019024892938225,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Abies balsamea",
+      "scientific_measurement": {
+        "delta": 0.007867,
+        "delta_pct": 0.01802,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -402,7 +802,17 @@
       "computed": 42.426588,
       "measured": 42.418945,
       "error_pct": 0.018019024892935782,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Sialia sialis",
+      "scientific_measurement": {
+        "delta": 0.007643,
+        "delta_pct": 0.018018,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "agriculture_agroecology_lab",
@@ -411,7 +821,17 @@
       "computed": 41.753128,
       "measured": 41.745606,
       "error_pct": 0.018019024892935664,
-      "source": "gbif_crop_proxy"
+      "source": "gbif_crop_proxy",
+      "domain_display_name": "agriculture agroecology",
+      "display_name": "Aythya affinis",
+      "scientific_measurement": {
+        "delta": 0.007522,
+        "delta_pct": 0.018019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -425,5 +845,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Supply Chain Logistics",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.940842+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 40,
+    "median_error_pct": 0.0323,
+    "max_error_pct": 0.032333,
+    "mean_abs_delta": 0.009315,
+    "precision_tier_counts": {
+      "green": 40
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

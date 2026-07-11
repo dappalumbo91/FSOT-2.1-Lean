@@ -58,7 +58,9 @@ def latest_complete_frame(text: str) -> dict | None:
     if frames:
         return frames[-1]
     markers = _parse_esp32_markers(text)
-    if markers.get("wifi_ap_count") is not None and "FSOT_ESP32_OBSERVER_TIER=91" in text:
+    if markers.get("wifi_ap_count") is not None and (
+        "FSOT_ESP32_OBSERVER_TIER=93" in text or "FSOT_ESP32_OBSERVER_TIER=91" in text
+    ):
         return {
             "frame": 0,
             "aps": [],
@@ -95,8 +97,10 @@ def draw_sonar_dashboard(
     frame_id = frame.get("frame", 0)
 
     fig = plt.figure(figsize=(12, 8), facecolor="#0f172a")
+    fluid_level = markers.get("fluid_level", 1)
     fig.suptitle(
-        f"ESP32 RF Sonar — frame {frame_id}  |  {len(aps)} access points detected",
+        f"ESP32 Fluid Sonar L{fluid_level} — frame {frame_id}  |  "
+        f"{len(aps)} Wi-Fi + {len(frame.get('ble') or [])} BLE echoes",
         color="#e2e8f0",
         fontsize=14,
         fontweight="bold",
@@ -190,6 +194,7 @@ def draw_sonar_dashboard(
     # Scalar gauges.
     boot_scalar = boot_markers.get("boot_scalar")
     rf_scalar = markers.get("rf_scalar")
+    fluid_scalar = markers.get("fluid_scalar")
     scalars = []
     labels = []
     bar_colors = []
@@ -199,8 +204,12 @@ def draw_sonar_dashboard(
         bar_colors.append("#a78bfa")
     if isinstance(rf_scalar, float):
         scalars.append(rf_scalar)
-        labels.append("RF scalar")
+        labels.append("RF scalar (L1)")
         bar_colors.append("#38bdf8")
+    if isinstance(fluid_scalar, float):
+        scalars.append(fluid_scalar)
+        labels.append("Fluid scalar (L2)")
+        bar_colors.append("#34d399")
     if scalars:
         y_pos = range(len(scalars))
         ax_scalar.barh(list(y_pos), scalars, color=bar_colors, height=0.5)
@@ -214,21 +223,31 @@ def draw_sonar_dashboard(
     # Info panel.
     trinary = markers.get("trinary_state", "?")
     trinary_color = TRINARY_COLORS.get(str(trinary), "#94a3b8")
+    ble = frame.get("ble") or []
     lines = [
         "What the ESP32 sees:",
         "",
         f"  Trinary collapse:  {trinary}",
+        f"  Fluid level:       {fluid_level}",
+        f"  CSI packets:       {markers.get('csi_packets', 'n/a')}",
+        f"  CSI amp variance:  {markers.get('csi_amp_var', 'n/a')} (multipath density)",
         f"  AP count:          {markers.get('wifi_ap_count', len(aps))}",
+        f"  BLE devices:       {markers.get('ble_device_count', len(ble))}",
         f"  RSSI mean:         {markers.get('rssi_mean', 'n/a')}",
-        f"  RSSI variance:     {markers.get('rssi_var', 'n/a')}",
         "",
-        "Detected networks:",
+        "Wi-Fi networks:",
     ]
     if aps:
         for ap in sorted(aps, key=lambda a: a["rssi"], reverse=True):
             lines.append(
                 f"  ch {ap['channel']:2d}  {ap['rssi']:4d} dBm  {ap['ssid']}"
             )
+    else:
+        lines.append("  (none)")
+    lines.extend(["", "BLE echoes:"])
+    if ble:
+        for dev in sorted(ble, key=lambda d: d["rssi"], reverse=True):
+            lines.append(f"  BleDevice{dev['idx']:2d}  {dev['rssi']:4d} dBm")
     else:
         lines.append("  (none)")
     if frame.get("legacy_summary_only"):

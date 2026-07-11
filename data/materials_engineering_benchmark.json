@@ -115,7 +115,17 @@
       "computed": 0.02717,
       "measured": 0.0,
       "error_pct": 0.027170334947435038,
-      "observable_count": 87
+      "observable_count": 87,
+      "domain_display_name": "materials engineering",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.02717,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -125,7 +135,17 @@
       "measured": 0.0,
       "error_pct": 0.06721669152527372,
       "observable_count": 12,
-      "section": "\u00a734 Young's Modulus"
+      "section": "\u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.067217,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -135,7 +155,17 @@
       "measured": 0.0,
       "error_pct": 0.03976772759072059,
       "observable_count": 15,
-      "section": "\u00a737 Thermal \u03ba"
+      "section": "\u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.039768,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -145,7 +175,17 @@
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
       "observable_count": 12,
-      "section": "\u00a762 Bulk Modulus"
+      "section": "\u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -155,7 +195,17 @@
       "measured": 0.0,
       "error_pct": 0.023259895459434028,
       "observable_count": 12,
-      "section": "\u00a784 Poisson Ratio \u03bd"
+      "section": "\u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.02326,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -165,7 +215,18 @@
       "name": "Pb",
       "computed": 16.0,
       "measured": 16.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -173,7 +234,18 @@
       "name": "Mg",
       "computed": 45.00137640336734,
       "measured": 45.0,
-      "error_pct": 0.003058674149640537
+      "error_pct": 0.003058674149640537,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0013764,
+        "delta_pct": 0.003059,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -181,7 +253,18 @@
       "name": "Al",
       "computed": 70.20479159671953,
       "measured": 70.0,
-      "error_pct": 0.292559
+      "error_pct": 0.292559,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.2047916,
+        "delta_pct": 0.292559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -189,7 +272,18 @@
       "name": "Au",
       "computed": 77.98499044404761,
       "measured": 78.0,
-      "error_pct": 0.019243
+      "error_pct": 0.019243,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.01500956,
+        "delta_pct": 0.019243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -197,7 +291,18 @@
       "name": "Ag",
       "computed": 82.99631108559521,
       "measured": 83.0,
-      "error_pct": 0.004444475186494538
+      "error_pct": 0.004444475186494538,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.00368891,
+        "delta_pct": 0.004444,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -205,7 +310,18 @@
       "name": "Cu",
       "computed": 130.46888719257745,
       "measured": 130.0,
-      "error_pct": 0.360682
+      "error_pct": 0.360682,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -213,7 +329,18 @@
       "name": "Si",
       "computed": 130.46888719257745,
       "measured": 130.0,
-      "error_pct": 0.360682
+      "error_pct": 0.360682,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -221,7 +348,18 @@
       "name": "Ni",
       "computed": 199.79429768652713,
       "measured": 200.0,
-      "error_pct": 0.10285115673643475
+      "error_pct": 0.10285115673643475,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.20570231,
+        "delta_pct": 0.102851,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -229,7 +367,18 @@
       "name": "Fe",
       "computed": 210.9885767145796,
       "measured": 211.0,
-      "error_pct": 0.0054138793461573215
+      "error_pct": 0.0054138793461573215,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.01142329,
+        "delta_pct": 0.005414,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -237,7 +386,18 @@
       "name": "Mo",
       "computed": 328.77885708488185,
       "measured": 329.0,
-      "error_pct": 0.06721669152527372
+      "error_pct": 0.06721669152527372,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.22114292,
+        "delta_pct": 0.067217,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -245,7 +405,18 @@
       "name": "W",
       "computed": 412.6315312464996,
       "measured": 411.0,
-      "error_pct": 0.396966
+      "error_pct": 0.396966,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 1.63153125,
+        "delta_pct": 0.396966,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -253,7 +424,18 @@
       "name": "diamond",
       "computed": 1049.8726049268328,
       "measured": 1050.0,
-      "error_pct": 0.01213286411116531
+      "error_pct": 0.01213286411116531,
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.12739507,
+        "delta_pct": 0.012133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -261,7 +443,18 @@
       "name": "He_gas",
       "computed": 0.15196307398447872,
       "measured": 0.152,
-      "error_pct": 0.024293431263994338
+      "error_pct": 0.024293431263994338,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -3.693e-05,
+        "delta_pct": 0.024293,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -269,7 +462,18 @@
       "name": "H\u2082O",
       "computed": 0.6061346396781313,
       "measured": 0.606,
-      "error_pct": 0.02221776866853479
+      "error_pct": 0.02221776866853479,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.00013464,
+        "delta_pct": 0.022218,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -277,7 +481,18 @@
       "name": "glass",
       "computed": 1.000286568515822,
       "measured": 1.0,
-      "error_pct": 0.028657
+      "error_pct": 0.028657,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.00028657,
+        "delta_pct": 0.028657,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -285,7 +500,18 @@
       "name": "ice",
       "computed": 2.2201992847758265,
       "measured": 2.22,
-      "error_pct": 0.008976791703888012
+      "error_pct": 0.008976791703888012,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.00019928,
+        "delta_pct": 0.008977,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -293,7 +519,18 @@
       "name": "Ti",
       "computed": 21.89129086765763,
       "measured": 21.9,
-      "error_pct": 0.03976772759072059
+      "error_pct": 0.03976772759072059,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.00870913,
+        "delta_pct": 0.039768,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -301,7 +538,18 @@
       "name": "Pb",
       "computed": 35.24234465779961,
       "measured": 35.3,
-      "error_pct": 0.16333
+      "error_pct": 0.16333,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.05765534,
+        "delta_pct": 0.16333,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -309,7 +557,18 @@
       "name": "Fe",
       "computed": 80.40256341715572,
       "measured": 80.4,
-      "error_pct": 0.003188329795662879
+      "error_pct": 0.003188329795662879,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.00256342,
+        "delta_pct": 0.003188,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -317,7 +576,18 @@
       "name": "Ni",
       "computed": 90.55498906775276,
       "measured": 90.9,
-      "error_pct": 0.37955
+      "error_pct": 0.37955,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.34501093,
+        "delta_pct": 0.37955,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -325,7 +595,18 @@
       "name": "Si",
       "computed": 148.4131591025766,
       "measured": 149.0,
-      "error_pct": 0.393853
+      "error_pct": 0.393853,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.5868409,
+        "delta_pct": 0.393853,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -333,7 +614,18 @@
       "name": "W",
       "computed": 172.73476400326405,
       "measured": 173.0,
-      "error_pct": 0.153316
+      "error_pct": 0.153316,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.265236,
+        "delta_pct": 0.153316,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -341,7 +633,18 @@
       "name": "Al",
       "computed": 236.37375390577682,
       "measured": 237.0,
-      "error_pct": 0.26423885832201555
+      "error_pct": 0.26423885832201555,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.62624609,
+        "delta_pct": 0.264239,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -349,7 +652,18 @@
       "name": "Au",
       "computed": 317.1098547290309,
       "measured": 317.0,
-      "error_pct": 0.034654
+      "error_pct": 0.034654,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.10985473,
+        "delta_pct": 0.034654,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -357,7 +671,18 @@
       "name": "Cu",
       "computed": 401.08044771138935,
       "measured": 401.0,
-      "error_pct": 0.020061773413803996
+      "error_pct": 0.020061773413803996,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.08044771,
+        "delta_pct": 0.020062,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -365,7 +690,18 @@
       "name": "Ag",
       "computed": 430.3684323821725,
       "measured": 429.0,
-      "error_pct": 0.318982
+      "error_pct": 0.318982,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 1.36843238,
+        "delta_pct": 0.318982,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -373,7 +709,18 @@
       "name": "diamond",
       "computed": 2206.999546896146,
       "measured": 2200.0,
-      "error_pct": 0.318161
+      "error_pct": 0.318161,
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 6.9995469,
+        "delta_pct": 0.318161,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -381,7 +728,18 @@
       "name": "diamond",
       "computed": 442.948268481089,
       "measured": 443.0,
-      "error_pct": 0.01167754377224071
+      "error_pct": 0.01167754377224071,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.05173152,
+        "delta_pct": 0.011678,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -389,7 +747,18 @@
       "name": "W",
       "computed": 309.16127743887125,
       "measured": 310.0,
-      "error_pct": 0.270556
+      "error_pct": 0.270556,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.83872256,
+        "delta_pct": 0.270556,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -397,7 +766,18 @@
       "name": "Fe",
       "computed": 169.97058314499202,
       "measured": 170.0,
-      "error_pct": 0.017304
+      "error_pct": 0.017304,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.02941686,
+        "delta_pct": 0.017304,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -405,7 +785,18 @@
       "name": "Cu",
       "computed": 140.00807746832479,
       "measured": 140.0,
-      "error_pct": 0.005769620231989491
+      "error_pct": 0.005769620231989491,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.00807747,
+        "delta_pct": 0.00577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -413,7 +804,18 @@
       "name": "Al",
       "computed": 76.01315561749642,
       "measured": 76.0,
-      "error_pct": 0.01731
+      "error_pct": 0.01731,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01315562,
+        "delta_pct": 0.01731,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -421,7 +823,18 @@
       "name": "Au",
       "computed": 171.03481333412972,
       "measured": 171.0,
-      "error_pct": 0.020358674929662434
+      "error_pct": 0.020358674929662434,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.03481333,
+        "delta_pct": 0.020359,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -429,7 +842,18 @@
       "name": "Ag",
       "computed": 103.99523346783114,
       "measured": 104.0,
-      "error_pct": 0.004583204008517656
+      "error_pct": 0.004583204008517656,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.00476653,
+        "delta_pct": 0.004583,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -437,7 +861,18 @@
       "name": "Pt",
       "computed": 228.03946685248934,
       "measured": 228.0,
-      "error_pct": 0.017310023021640548
+      "error_pct": 0.017310023021640548,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.03946685,
+        "delta_pct": 0.01731,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -445,7 +880,18 @@
       "name": "Ti",
       "computed": 109.91205875478008,
       "measured": 110.0,
-      "error_pct": 0.07994658656356664
+      "error_pct": 0.07994658656356664,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.08794125,
+        "delta_pct": 0.079947,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -453,7 +899,18 @@
       "name": "Ni",
       "computed": 179.41943578287643,
       "measured": 180.0,
-      "error_pct": 0.322536
+      "error_pct": 0.322536,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.58056422,
+        "delta_pct": 0.322536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -461,7 +918,18 @@
       "name": "Pb",
       "computed": 45.97937748391752,
       "measured": 46.0,
-      "error_pct": 0.04483155670104976
+      "error_pct": 0.04483155670104976,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.02062252,
+        "delta_pct": 0.044832,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -469,7 +937,18 @@
       "name": "Si",
       "computed": 98.0122852361088,
       "measured": 98.0,
-      "error_pct": 0.012535955213056185
+      "error_pct": 0.012535955213056185,
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01228524,
+        "delta_pct": 0.012536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -477,7 +956,18 @@
       "name": "Fe",
       "computed": 81.98265591930021,
       "measured": 82.0,
-      "error_pct": 0.021151317926568283
+      "error_pct": 0.021151317926568283,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.01734408,
+        "delta_pct": 0.021151,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -485,7 +975,18 @@
       "name": "Cu",
       "computed": 48.01009892021143,
       "measured": 48.0,
-      "error_pct": 0.021039417107152993
+      "error_pct": 0.021039417107152993,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.01009892,
+        "delta_pct": 0.021039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -493,7 +994,18 @@
       "name": "Al",
       "computed": 25.89284920015884,
       "measured": 26.0,
-      "error_pct": 0.412118
+      "error_pct": 0.412118,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.1071508,
+        "delta_pct": 0.412118,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -501,7 +1013,18 @@
       "name": "Au",
       "computed": 27.000814497888015,
       "measured": 27.0,
-      "error_pct": 0.0030166588445013076
+      "error_pct": 0.0030166588445013076,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.0008145,
+        "delta_pct": 0.003017,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -509,7 +1032,18 @@
       "name": "Ag",
       "computed": 29.997767872026923,
       "measured": 30.0,
-      "error_pct": 0.007440426576922713
+      "error_pct": 0.007440426576922713,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.00223213,
+        "delta_pct": 0.00744,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -517,7 +1051,18 @@
       "name": "Pt",
       "computed": 60.99953674237216,
       "measured": 61.0,
-      "error_pct": 0.0007594387341680245
+      "error_pct": 0.0007594387341680245,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.00046326,
+        "delta_pct": 0.000759,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -525,7 +1070,18 @@
       "name": "Ti",
       "computed": 43.983469574867584,
       "measured": 44.0,
-      "error_pct": 0.03756914802821789
+      "error_pct": 0.03756914802821789,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.01653043,
+        "delta_pct": 0.037569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -533,7 +1089,18 @@
       "name": "Ni",
       "computed": 76.01315561749642,
       "measured": 76.0,
-      "error_pct": 0.01731
+      "error_pct": 0.01731,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.01315562,
+        "delta_pct": 0.01731,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -541,7 +1108,18 @@
       "name": "W",
       "computed": 161.0015055547588,
       "measured": 161.0,
-      "error_pct": 0.0009351271793836322
+      "error_pct": 0.0009351271793836322,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.00150555,
+        "delta_pct": 0.000935,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -549,7 +1127,18 @@
       "name": "Pb",
       "computed": 5.599595591515648,
       "measured": 5.6,
-      "error_pct": 0.007221580077709788
+      "error_pct": 0.007221580077709788,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.00040441,
+        "delta_pct": 0.007222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -557,7 +1146,18 @@
       "name": "diamond",
       "computed": 479.4419491102315,
       "measured": 478.0,
-      "error_pct": 0.301663
+      "error_pct": 0.301663,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 1.44194911,
+        "delta_pct": 0.301663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -565,7 +1165,18 @@
       "name": "Si",
       "computed": 64.99184724221335,
       "measured": 65.0,
-      "error_pct": 0.012542704287148772
+      "error_pct": 0.012542704287148772,
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.00815276,
+        "delta_pct": 0.012543,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -573,7 +1184,18 @@
       "name": "Al",
       "computed": 23.095247412030183,
       "measured": 23.1,
-      "error_pct": 0.020573973895318086
+      "error_pct": 0.020573973895318086,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.00475259,
+        "delta_pct": 0.020574,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -581,7 +1203,18 @@
       "name": "Cu",
       "computed": 17.003471556649526,
       "measured": 17.0,
-      "error_pct": 0.020420921467798874
+      "error_pct": 0.020420921467798874,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 0.00347156,
+        "delta_pct": 0.020421,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -589,7 +1222,18 @@
       "name": "Fe",
       "computed": 11.798131478696373,
       "measured": 11.8,
-      "error_pct": 0.015834926301930518
+      "error_pct": 0.015834926301930518,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.00186852,
+        "delta_pct": 0.015835,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -597,7 +1241,18 @@
       "name": "Au",
       "computed": 13.996196153107359,
       "measured": 14.0,
-      "error_pct": 0.027170334947435038
+      "error_pct": 0.027170334947435038,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.00380385,
+        "delta_pct": 0.02717,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -605,7 +1260,18 @@
       "name": "Ag",
       "computed": 17.94427190999916,
       "measured": 18.0,
-      "error_pct": 0.309601
+      "error_pct": 0.309601,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.05572809,
+        "delta_pct": 0.309601,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -613,7 +1279,18 @@
       "name": "Pt",
       "computed": 9.007090087680545,
       "measured": 9.0,
-      "error_pct": 0.078779
+      "error_pct": 0.078779,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 0.00709009,
+        "delta_pct": 0.078779,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -621,7 +1298,18 @@
       "name": "Ni",
       "computed": 13.011197054679151,
       "measured": 13.0,
-      "error_pct": 0.086131
+      "error_pct": 0.086131,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 0.01119705,
+        "delta_pct": 0.086131,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -629,7 +1317,18 @@
       "name": "Ti",
       "computed": 8.597588141040656,
       "measured": 8.6,
-      "error_pct": 0.028044871620269182
+      "error_pct": 0.028044871620269182,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.00241186,
+        "delta_pct": 0.028045,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -637,7 +1336,18 @@
       "name": "W",
       "computed": 4.500072578943474,
       "measured": 4.5,
-      "error_pct": 0.0016128654105311095
+      "error_pct": 0.0016128654105311095,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 7.258e-05,
+        "delta_pct": 0.001613,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -645,7 +1355,18 @@
       "name": "Pb",
       "computed": 29.034441853748632,
       "measured": 29.0,
-      "error_pct": 0.118765
+      "error_pct": 0.118765,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 0.03444185,
+        "delta_pct": 0.118765,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -653,7 +1374,18 @@
       "name": "Diamond",
       "computed": 1.0,
       "measured": 1.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -661,7 +1393,18 @@
       "name": "Si",
       "computed": 2.559856115981551,
       "measured": 2.56,
-      "error_pct": 0.00562
+      "error_pct": 0.00562,
+      "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a773 Thermal Expansion",
+      "scientific_measurement": {
+        "delta": -0.00014388,
+        "delta_pct": 0.00562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -669,7 +1412,18 @@
       "name": "Al",
       "computed": 0.3435826833227941,
       "measured": 0.345,
-      "error_pct": 0.410816
+      "error_pct": 0.410816,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -0.00141732,
+        "delta_pct": 0.410816,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -677,7 +1431,18 @@
       "name": "Cu",
       "computed": 0.3435826833227941,
       "measured": 0.343,
-      "error_pct": 0.169879
+      "error_pct": 0.169879,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.00058268,
+        "delta_pct": 0.169879,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -685,7 +1450,18 @@
       "name": "Fe",
       "computed": 0.2915609040308188,
       "measured": 0.293,
-      "error_pct": 0.491159
+      "error_pct": 0.491159,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -0.0014391,
+        "delta_pct": 0.491159,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -693,7 +1469,18 @@
       "name": "Au",
       "computed": 0.43998755504601206,
       "measured": 0.44,
-      "error_pct": 0.002828398633623759
+      "error_pct": 0.002828398633623759,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -1.244e-05,
+        "delta_pct": 0.002828,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -701,7 +1488,18 @@
       "name": "Ag",
       "computed": 0.3699139383868001,
       "measured": 0.37,
-      "error_pct": 0.023259895459434028
+      "error_pct": 0.023259895459434028,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -8.606e-05,
+        "delta_pct": 0.02326,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -709,7 +1507,18 @@
       "name": "W",
       "computed": 0.27996700253223056,
       "measured": 0.28,
-      "error_pct": 0.011784809917667456
+      "error_pct": 0.011784809917667456,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -3.3e-05,
+        "delta_pct": 0.011785,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -717,7 +1526,18 @@
       "name": "Ti",
       "computed": 0.32099858535218373,
       "measured": 0.32,
-      "error_pct": 0.312058
+      "error_pct": 0.312058,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.00099859,
+        "delta_pct": 0.312058,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -725,7 +1545,18 @@
       "name": "Ni",
       "computed": 0.3099940095788596,
       "measured": 0.31,
-      "error_pct": 0.0019323939162618046
+      "error_pct": 0.0019323939162618046,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -5.99e-06,
+        "delta_pct": 0.001932,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -733,7 +1564,18 @@
       "name": "Pt",
       "computed": 0.39067199034362604,
       "measured": 0.39,
-      "error_pct": 0.172305
+      "error_pct": 0.172305,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.00067199,
+        "delta_pct": 0.172305,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -741,7 +1583,18 @@
       "name": "Pb",
       "computed": 0.43998755504601206,
       "measured": 0.44,
-      "error_pct": 0.002828398633623759
+      "error_pct": 0.002828398633623759,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -1.244e-05,
+        "delta_pct": 0.002828,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -749,7 +1602,18 @@
       "name": "Si",
       "computed": 0.27996700253223056,
       "measured": 0.28,
-      "error_pct": 0.011784809917667456
+      "error_pct": 0.011784809917667456,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": -3.3e-05,
+        "delta_pct": 0.011785,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -757,7 +1621,18 @@
       "name": "Diamond",
       "computed": 0.07000314002315071,
       "measured": 0.07,
-      "error_pct": 0.004485747358146107
+      "error_pct": 0.004485747358146107,
+      "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 3.14e-06,
+        "delta_pct": 0.004486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -765,7 +1640,18 @@
       "name": "Al",
       "computed": 97.40909103400244,
       "measured": 97.5,
-      "error_pct": 0.09324
+      "error_pct": 0.09324,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": -0.09090897,
+        "delta_pct": 0.09324,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -773,7 +1659,18 @@
       "name": "Cu",
       "computed": 117.40688242227678,
       "measured": 117.0,
-      "error_pct": 0.347763
+      "error_pct": 0.347763,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.40688242,
+        "delta_pct": 0.347763,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -781,7 +1678,18 @@
       "name": "Fe",
       "computed": 23.213404357363387,
       "measured": 23.1,
-      "error_pct": 0.490928
+      "error_pct": 0.490928,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.11340436,
+        "delta_pct": 0.490928,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -789,7 +1697,18 @@
       "name": "Au",
       "computed": 127.19653419061135,
       "measured": 127.0,
-      "error_pct": 0.15475133119003556
+      "error_pct": 0.15475133119003556,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.19653419,
+        "delta_pct": 0.154751,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -797,7 +1716,18 @@
       "name": "Ag",
       "computed": 173.89235895430107,
       "measured": 174.0,
-      "error_pct": 0.061862669941911794
+      "error_pct": 0.061862669941911794,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": -0.10764105,
+        "delta_pct": 0.061863,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -805,7 +1735,18 @@
       "name": "W",
       "computed": 68.29363938529107,
       "measured": 68.3,
-      "error_pct": 0.009312759456697763
+      "error_pct": 0.009312759456697763,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": -0.00636061,
+        "delta_pct": 0.009313,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -813,7 +1754,18 @@
       "name": "Ti",
       "computed": 9.200713503820193,
       "measured": 9.2,
-      "error_pct": 0.007755476306453811
+      "error_pct": 0.007755476306453811,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.0007135,
+        "delta_pct": 0.007755,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -821,7 +1773,18 @@
       "name": "Ni",
       "computed": 22.943325467023268,
       "measured": 23.0,
-      "error_pct": 0.246411
+      "error_pct": 0.246411,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": -0.05667453,
+        "delta_pct": 0.246411,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -829,7 +1792,18 @@
       "name": "Pt",
       "computed": 25.494180670458224,
       "measured": 25.4,
-      "error_pct": 0.37079
+      "error_pct": 0.37079,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.09418067,
+        "delta_pct": 0.37079,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -837,7 +1811,18 @@
       "name": "Pb",
       "computed": 24.083804338835442,
       "measured": 24.1,
-      "error_pct": 0.06720191354588913
+      "error_pct": 0.06720191354588913,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": -0.01619566,
+        "delta_pct": 0.067202,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -845,7 +1830,18 @@
       "name": "Si",
       "computed": 88.34166247649358,
       "measured": 88.0,
-      "error_pct": 0.388253
+      "error_pct": 0.388253,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.34166248,
+        "delta_pct": 0.388253,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -853,10 +1849,35 @@
       "name": "Diamond",
       "computed": 530.1652456668605,
       "measured": 530.0,
-      "error_pct": 0.031178427709533628
+      "error_pct": 0.031178427709533628,
+      "section_display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "domain_display_name": "materials engineering",
+      "display_name": "SMILES Lab \u00a785 Thermal Diffusivity",
+      "scientific_measurement": {
+        "delta": 0.16524567,
+        "delta_pct": 0.031178,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "crosswalk_modules": [
     "FSOT.Formal.MaterialsEngineeringPriors"
-  ]
+  ],
+  "display_name": "Materials Engineering",
+  "tier_label": "Tier 29",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.621556+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 87,
+    "median_error_pct": 0.02717,
+    "max_error_pct": 0.491159,
+    "mean_abs_delta": 0.21700096505747127,
+    "precision_tier_counts": {
+      "green": 87
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

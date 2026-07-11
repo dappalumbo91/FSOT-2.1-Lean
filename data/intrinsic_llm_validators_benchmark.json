@@ -21,7 +21,17 @@
       "topics": 3,
       "computed": 100.0,
       "measured": 100.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Validation (3 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -30,7 +40,17 @@
       "topics": 3,
       "computed": 15,
       "measured": 15,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Validation (3 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -39,7 +59,17 @@
       "topics": 12,
       "computed": 71.66666666666667,
       "measured": 71.67,
-      "error_pct": 0.004650946467601928
+      "error_pct": 0.004650946467601928,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Quarter Eval (12 topics)",
+      "scientific_measurement": {
+        "delta": -0.00333333,
+        "delta_pct": 0.004651,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -48,7 +78,17 @@
       "topics": 12,
       "computed": 43,
       "measured": 43,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Quarter Eval (12 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -57,7 +97,17 @@
       "topics": 24,
       "computed": 72.5,
       "measured": 72.5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Half Eval (24 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -66,7 +116,17 @@
       "topics": 24,
       "computed": 87,
       "measured": 87,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Half Eval (24 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -75,7 +135,17 @@
       "topics": 48,
       "computed": 65.0,
       "measured": 65.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Full Eval (48 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
@@ -84,21 +154,65 @@
       "topics": 48,
       "computed": 156,
       "measured": 156,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "Full Eval (48 topics)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
       "property": "validation_suite_perfect",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "validation suite perfect",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "intrinsic_llm_validators",
       "property": "eval_tier_count",
       "computed": 4,
       "measured": 4,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "intrinsic llm validators",
+      "display_name": "eval tier count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Intrinsic LLM Validators",
+  "tier_label": "Tier 33",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.791279+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.004651,
+    "mean_abs_delta": 0.000333333,
+    "precision_tier_counts": {
+      "green": 10
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

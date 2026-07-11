@@ -40,7 +40,17 @@
       "computed": 0.462181,
       "measured": 0.0,
       "error_pct": 0.462181,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.462181,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.462181,
       "measured": 0.0,
       "error_pct": 0.462181,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "per host h0 panel",
+      "scientific_measurement": {
+        "delta": 0.462181,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 73.04,
       "error_pct": 1.076341,
       "host_count": 46,
-      "method": "bubble_bleed_weighted_by_cepheid_count"
+      "method": "bubble_bleed_weighted_by_cepheid_count",
+      "domain_display_name": "sh0es refined",
+      "display_name": "SH0ES cepheid hosts weighted",
+      "scientific_measurement": {
+        "delta": 0.786159,
+        "delta_pct": 1.07634,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -71,7 +101,17 @@
       "measured": 73.04,
       "error_pct": 1.076341,
       "host_count": 46,
-      "method": "bubble_bleed_median_sightline"
+      "method": "bubble_bleed_median_sightline",
+      "domain_display_name": "sh0es refined",
+      "display_name": "SH0ES cepheid hosts median",
+      "scientific_measurement": {
+        "delta": 0.786159,
+        "delta_pct": 1.07634,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -84,7 +124,17 @@
       "bubble_density_sky": 0.0,
       "method": "FSOT_Wave1_CMB",
       "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28
+      "blackhole_observable_count": 28,
+      "domain_display_name": "sh0es refined",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -97,7 +147,17 @@
       "bubble_density_sky": -1.0,
       "method": "Planck2018",
       "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28
+      "blackhole_observable_count": 28,
+      "domain_display_name": "sh0es refined",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -110,7 +170,17 @@
       "bubble_density_sky": -0.2759,
       "method": "JWST_TRGB",
       "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28
+      "blackhole_observable_count": 28,
+      "domain_display_name": "sh0es refined",
+      "display_name": "freedman jwst",
+      "scientific_measurement": {
+        "delta": 0.003839,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -123,7 +193,17 @@
       "bubble_density_sky": -0.6379,
       "method": "FSOT_local_bubble",
       "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28
+      "blackhole_observable_count": 28,
+      "domain_display_name": "sh0es refined",
+      "display_name": "fsot document local",
+      "scientific_measurement": {
+        "delta": -0.333233,
+        "delta_pct": 0.462182,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -136,7 +216,17 @@
       "bubble_density_sky": -0.6897,
       "method": "Carnegie_distance_ladder",
       "bubble_bleed_fraction": 0.015431,
-      "blackhole_observable_count": 28
+      "blackhole_observable_count": 28,
+      "domain_display_name": "sh0es refined",
+      "display_name": "carnegie h0",
+      "scientific_measurement": {
+        "delta": 0.794498,
+        "delta_pct": 1.138249,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "margin_summary": {
@@ -525,5 +615,21 @@
   ],
   "h0_global_fsot": 68.44005682979427,
   "sh0es_measured_h0": 73.04,
-  "sh0es_status": "GREEN"
+  "sh0es_status": "GREEN",
+  "display_name": "SH0ES Refined",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.566054+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.462182,
+    "max_error_pct": 1.138249,
+    "mean_abs_delta": 0.3885614528571429,
+    "precision_tier_counts": {
+      "contested": 2,
+      "green": 4,
+      "red": 1
+    },
+    "green_gate_fraction": 0.5714285714285714,
+    "matches_domain_spine": false
+  }
 }

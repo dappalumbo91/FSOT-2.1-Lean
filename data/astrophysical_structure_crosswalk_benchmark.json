@@ -28,7 +28,17 @@
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "source_benchmark": "data/orbital_mechanics_benchmark.json",
-      "note": "Published benchmark pooled median relay (no novel prediction)"
+      "note": "Published benchmark pooled median relay (no novel prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "orbital mechanics panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -39,7 +49,17 @@
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "source_benchmark": "data/planetary_structure_benchmark.json",
-      "note": "Published benchmark pooled median relay (no novel prediction)"
+      "note": "Published benchmark pooled median relay (no novel prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "planetary structure panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -50,7 +70,17 @@
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "source_benchmark": "data/small_body_orbits_benchmark.json",
-      "note": "Published benchmark pooled median relay (no novel prediction)"
+      "note": "Published benchmark pooled median relay (no novel prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "small body orbits panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -61,7 +91,17 @@
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "source_benchmark": "data/nasa_exoplanet_archive_benchmark.json",
-      "note": "Published benchmark pooled median relay (no novel prediction)"
+      "note": "Published benchmark pooled median relay (no novel prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "nasa exoplanet panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -70,7 +110,17 @@
       "computed": 0.89846,
       "measured": 0.89846,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "fsot compute Astronomy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -79,7 +129,17 @@
       "computed": 0.882411,
       "measured": 0.882411,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "fsot compute Astrophysics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -91,7 +151,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS/literature",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Sirius AB",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -104,7 +174,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Sirius AB",
+      "scientific_measurement": {
+        "delta": -0.365514,
+        "delta_pct": 36.5514,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -116,7 +196,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS/literature",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Alpha Cen AB",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -129,7 +219,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Alpha Cen AB",
+      "scientific_measurement": {
+        "delta": 0.046584,
+        "delta_pct": 4.6584,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -141,7 +241,17 @@
       "structure_class": "trinary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "literature hierarchical",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Alpha Cen ABC",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -154,7 +264,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "literature hierarchical",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Alpha Cen ABC",
+      "scientific_measurement": {
+        "delta": 0.046584,
+        "delta_pct": 4.6584,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -165,7 +285,17 @@
       "error_pct": 0.0,
       "structure_class": "trinary_star",
       "eval_kind": "catalog_anchor",
-      "source": "literature hierarchical"
+      "source": "literature hierarchical",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Alpha Cen ABC",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -177,7 +307,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS/literature",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Procyon AaAb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -190,7 +330,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS/literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Procyon AaAb",
+      "scientific_measurement": {
+        "delta": 2.525232,
+        "delta_pct": 252.5232,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -202,7 +352,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "61 Cyg A",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -215,7 +375,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "61 Cyg A",
+      "scientific_measurement": {
+        "delta": -0.42631,
+        "delta_pct": 42.631,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -227,7 +397,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "70 Oph Ab",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -240,7 +420,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "70 Oph Ab",
+      "scientific_measurement": {
+        "delta": -0.097191,
+        "delta_pct": 9.7191,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -252,7 +442,17 @@
       "structure_class": "trinary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "literature",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Gliese 667C",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -264,7 +464,17 @@
       "structure_class": "trinary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS/literature sextuple",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Castor AaBa",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -277,7 +487,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS/literature sextuple",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Castor AaBa",
+      "scientific_measurement": {
+        "delta": 0.148545,
+        "delta_pct": 14.8545,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -289,7 +509,17 @@
       "structure_class": "binary_star",
       "eval_kind": "public_catalog_anchor",
       "source": "WDS",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Mizar A",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -302,7 +532,17 @@
       "eval_kind": "catalog_consistency",
       "record_kind": "structural",
       "source": "WDS",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "Mizar A",
+      "scientific_measurement": {
+        "delta": 1.278029,
+        "delta_pct": 127.8029,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -314,7 +554,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_catalog_anchor",
       "source": "LIGO public GW150914",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW150914",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -326,7 +576,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_gw_anchor",
       "source": "LIGO public GW150914",
-      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW150914",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -338,7 +598,17 @@
       "structure_class": "binary_neutron_star",
       "eval_kind": "public_catalog_anchor",
       "source": "LIGO/Virgo public GW170817",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW170817",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -350,7 +620,17 @@
       "structure_class": "binary_neutron_star",
       "eval_kind": "public_gw_anchor",
       "source": "LIGO/Virgo public GW170817",
-      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW170817",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -362,7 +642,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_catalog_anchor",
       "source": "LIGO/Virgo public GW190521",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW190521",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -374,7 +664,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_gw_anchor",
       "source": "LIGO/Virgo public GW190521",
-      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW190521",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -386,7 +686,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_catalog_anchor",
       "source": "LIGO public summary 2024",
-      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW240109",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -398,7 +708,17 @@
       "structure_class": "binary_black_hole",
       "eval_kind": "public_gw_anchor",
       "source": "LIGO public summary 2024",
-      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula",
+      "domain_display_name": "astrophysical structure crosswalk",
+      "display_name": "GW240109",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "crosswalk_meta": {
@@ -423,5 +743,20 @@
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true
     }
+  },
+  "display_name": "Astrophysical Structure Crosswalk",
+  "tier_label": "Tier 52 \u2014 Astrophysical Structure Crosswalk cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.569569+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 32,
+    "median_error_pct": 0.0,
+    "max_error_pct": 252.5232,
+    "mean_abs_delta": 0.15418715625,
+    "precision_tier_counts": {
+      "green": 24,
+      "red": 8
+    },
+    "green_gate_fraction": 0.75,
+    "matches_domain_spine": false
   }
 }

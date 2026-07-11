@@ -26,7 +26,18 @@
       "measured": 5.64,
       "error_pct": 0.027466,
       "unit": "km/s/Mpc_delta",
-      "reference": "Riess2024_vs_Planck2018"
+      "reference": "Riess2024_vs_Planck2018",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "H0 tension SH0ES vs Planck",
+      "scientific_measurement": {
+        "delta": -0.00154908,
+        "delta_pct": 0.027466,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s/Mpc_delta"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -37,7 +48,18 @@
       "measured": 2.4,
       "error_pct": 0.227322,
       "unit": "km/s/Mpc_delta",
-      "reference": "Freedman2019"
+      "reference": "Freedman2019",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "H0 tension Carnegie vs Planck",
+      "scientific_measurement": {
+        "delta": -0.00545572,
+        "delta_pct": 0.227322,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s/Mpc_delta"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -48,7 +70,18 @@
       "measured": 0.058,
       "error_pct": 0.195214,
       "unit": "S8_delta",
-      "reference": "DES_Y3_2022"
+      "reference": "DES_Y3_2022",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "S8 tension Planck vs DES Y3",
+      "scientific_measurement": {
+        "delta": -0.00011322,
+        "delta_pct": 0.195207,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "S8_delta"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -59,7 +92,18 @@
       "measured": 0.834,
       "error_pct": 0.0,
       "unit": "S8",
-      "reference": "Planck2018"
+      "reference": "Planck2018",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "S8 Planck2018",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "S8"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -70,7 +114,18 @@
       "measured": 0.776,
       "error_pct": 0.014591,
       "unit": "S8",
-      "reference": "DES_Y3_2022"
+      "reference": "DES_Y3_2022",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "S8 DES Y3",
+      "scientific_measurement": {
+        "delta": 0.00011322,
+        "delta_pct": 0.01459,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "S8"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -81,7 +136,18 @@
       "measured": 3.0,
       "error_pct": 0.316322,
       "unit": "underproduction_factor",
-      "reference": "BBN_obs_vs_theory"
+      "reference": "BBN_obs_vs_theory",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "Lithium problem factor",
+      "scientific_measurement": {
+        "delta": 0.00948965,
+        "delta_pct": 0.316322,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "underproduction_factor"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -92,7 +158,18 @@
       "measured": 1.6e-10,
       "error_pct": 0.486991,
       "unit": "abundance",
-      "reference": "Cooke_2018"
+      "reference": "Cooke_2018",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "Li7 over H observed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.486991,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "abundance"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -103,7 +180,18 @@
       "measured": 0.0004,
       "error_pct": 0.325823,
       "unit": "probability",
-      "reference": "Planck2016_low_ell"
+      "reference": "Planck2016_low_ell",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "CMB axis of evil alignment",
+      "scientific_measurement": {
+        "delta": 1.3e-06,
+        "delta_pct": 0.325,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "probability"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -114,7 +202,18 @@
       "measured": 5.0,
       "error_pct": 0.140126,
       "unit": "sigma",
-      "reference": "Planck2015_cold_spot"
+      "reference": "Planck2015_cold_spot",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "CMB cold spot significance",
+      "scientific_measurement": {
+        "delta": 0.00700629,
+        "delta_pct": 0.140126,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "sigma"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -125,7 +224,18 @@
       "measured": 0.1,
       "error_pct": 0.096204,
       "unit": "fractional_deficit",
-      "reference": "WMAP_Planck_low_ell"
+      "reference": "WMAP_Planck_low_ell",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "CMB low ell power deficit",
+      "scientific_measurement": {
+        "delta": -9.62e-05,
+        "delta_pct": 0.0962,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "fractional_deficit"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -136,7 +246,18 @@
       "measured": 14.0,
       "error_pct": 0.086916,
       "unit": "redshift",
-      "reference": "JWST_2023_2024"
+      "reference": "JWST_2023_2024",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "JWST early massive galaxy z",
+      "scientific_measurement": {
+        "delta": 0.0121683,
+        "delta_pct": 0.086916,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "redshift"
+      }
     },
     {
       "lab": "cosmology_anomalies_lab",
@@ -147,7 +268,32 @@
       "measured": 200.0,
       "error_pct": 0.042611,
       "unit": "pc_cm3_excess",
-      "reference": "CHIME_high_DM"
+      "reference": "CHIME_high_DM",
+      "domain_display_name": "cosmology anomalies",
+      "display_name": "FRB DM excess vs IGM",
+      "scientific_measurement": {
+        "delta": 0.08522203,
+        "delta_pct": 0.042611,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "pc_cm3_excess"
+      }
     }
-  ]
+  ],
+  "display_name": "Cosmology Anomalies",
+  "tier_label": "Tier 25",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:24.773783+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 12,
+    "median_error_pct": 0.140126,
+    "max_error_pct": 0.486991,
+    "mean_abs_delta": 0.010101250833333334,
+    "precision_tier_counts": {
+      "green": 12
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

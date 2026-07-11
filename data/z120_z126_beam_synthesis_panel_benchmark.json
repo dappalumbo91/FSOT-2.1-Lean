@@ -40,7 +40,17 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.5e-05,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 9.5e-05,
       "measured": 0.0,
       "error_pct": 9.504134402225917e-05,
-      "observable_count": 18
+      "observable_count": 18,
+      "domain_display_name": "tier gap fill",
+      "display_name": "z120 z126 synthesis",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 9.5e-05,
       "measured": 9.5e-05,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "heavy ion lab synthesis panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -70,7 +100,17 @@
       "computed": 290.002282,
       "measured": 290.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": 0.002282,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -80,7 +120,17 @@
       "computed": 0.012,
       "measured": 0.012,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -89,7 +139,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Cr Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -99,7 +159,17 @@
       "computed": 300.002361,
       "measured": 300.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Fe Pu",
+      "scientific_measurement": {
+        "delta": 0.002361,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -109,7 +179,17 @@
       "computed": 0.008,
       "measured": 0.008,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Fe Pu",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -118,7 +198,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z120 Fe Pu",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -128,7 +218,17 @@
       "computed": 305.0024,
       "measured": 305.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z122 Ni Cm",
+      "scientific_measurement": {
+        "delta": 0.0024,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -138,7 +238,17 @@
       "computed": 0.006,
       "measured": 0.006,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z122 Ni Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -147,7 +257,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z122 Ni Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -157,7 +277,17 @@
       "computed": 310.00244,
       "measured": 310.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": 0.00244,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -167,7 +297,17 @@
       "computed": 0.004,
       "measured": 0.004,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -176,7 +316,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z124 Fe Cm",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -186,7 +336,17 @@
       "computed": 320.002518,
       "measured": 320.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": 0.002518,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -196,7 +356,17 @@
       "computed": 0.003,
       "measured": 0.003,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -205,7 +375,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Ni U",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -215,7 +395,17 @@
       "computed": 340.002676,
       "measured": 340.0,
       "error_pct": 0.000787,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Zn Pb",
+      "scientific_measurement": {
+        "delta": 0.002676,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -225,7 +415,17 @@
       "computed": 0.015,
       "measured": 0.015,
       "error_pct": 9.5e-05,
-      "eval_kind": "beam_reaction"
+      "eval_kind": "beam_reaction",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Zn Pb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -234,7 +434,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_gate"
+      "eval_kind": "beam_gate",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "Z126 Zn Pb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "z120_z126_beam_lab",
@@ -243,7 +453,17 @@
       "computed": 126.0,
       "measured": 126.0,
       "error_pct": 0.0,
-      "eval_kind": "beam_anchor"
+      "eval_kind": "beam_anchor",
+      "domain_display_name": "z120 z126 beam",
+      "display_name": "proposed Z126",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -257,5 +477,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Z120 Z126 Beam Synthesis Panel",
+  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.679529+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 9.5e-05,
+    "max_error_pct": 0.000787,
+    "mean_abs_delta": 0.0007338499999999999,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

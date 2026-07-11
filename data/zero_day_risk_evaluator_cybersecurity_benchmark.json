@@ -41,7 +41,17 @@
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 26
+      "observable_count": 26,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 26
+      "observable_count": 26,
+      "domain_display_name": "tier gap fill",
+      "display_name": "evaluator panel",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 64.006616,
       "measured": 64.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "codon alphabet size",
+      "scientific_measurement": {
+        "delta": 0.006616,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -70,7 +100,17 @@
       "computed": 0.850088,
       "measured": 0.85,
       "error_pct": 0.010337117254360602,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "stability match threshold",
+      "scientific_measurement": {
+        "delta": 8.8e-05,
+        "delta_pct": 0.010353,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -79,7 +119,17 @@
       "computed": 3.00031,
       "measured": 3.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "codon window size",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.010333,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -88,7 +138,17 @@
       "computed": 6.00062,
       "measured": 6.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "language bridge count",
+      "scientific_measurement": {
+        "delta": 0.00062,
+        "delta_pct": 0.010333,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -97,7 +157,17 @@
       "computed": 9.00093,
       "measured": 9.0,
       "error_pct": 0.010337117254345508,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "lean codon units",
+      "scientific_measurement": {
+        "delta": 0.00093,
+        "delta_pct": 0.010333,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -106,7 +176,17 @@
       "computed": 10.001034,
       "measured": 10.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "rust codon units",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.01034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -115,7 +195,17 @@
       "computed": 10.001034,
       "measured": 10.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "python codon units",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.01034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -124,7 +214,17 @@
       "computed": 10.001034,
       "measured": 10.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "c codon units",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.01034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -133,7 +233,17 @@
       "computed": 10.001034,
       "measured": 10.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "javascript codon units",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.01034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -142,7 +252,17 @@
       "computed": 27.002791,
       "measured": 27.0,
       "error_pct": 0.010337117254358666,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "fsotb opcode codon units",
+      "scientific_measurement": {
+        "delta": 0.002791,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -151,7 +271,17 @@
       "computed": 100.010337,
       "measured": 100.0,
       "error_pct": 0.010337117254351824,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "hole detection precision target",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -160,7 +290,17 @@
       "computed": 100.010337,
       "measured": 100.0,
       "error_pct": 0.010337117254351824,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "hole detection recall target",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -169,7 +309,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "virology malware coupling weight",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -178,7 +328,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "crypto hygiene weight",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -187,7 +347,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "network exploit coupling weight",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -196,7 +366,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "cve pattern overlap weight",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -205,7 +385,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "trinary oracle weight",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -214,7 +404,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "genomic expression analog",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -223,7 +423,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "risk tier green max holes",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -232,7 +442,17 @@
       "computed": 2.000207,
       "measured": 2.0,
       "error_pct": 0.010337117254355377,
-      "source": "zero_day_evaluator_reference_observables"
+      "source": "zero_day_evaluator_reference_observables",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "risk tier amber max holes",
+      "scientific_measurement": {
+        "delta": 0.000207,
+        "delta_pct": 0.01035,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -242,7 +462,17 @@
       "measured": 0.0,
       "error_pct": 0.047520672006218234,
       "source": "cryptography_technology_cybersecurity_benchmark.json",
-      "child_record_count": 44
+      "child_record_count": 44,
+      "domain_display_name": "zero day evaluator",
+      "display_name": "Cryptography Technology",
+      "scientific_measurement": {
+        "delta": 0.047521,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -252,7 +482,17 @@
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
       "source": "network_internet_protocols_cybersecurity_benchmark.json",
-      "child_record_count": 22
+      "child_record_count": 22,
+      "domain_display_name": "zero day evaluator",
+      "display_name": "Network Internet Protocols",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -262,7 +502,17 @@
       "measured": 0.0,
       "error_pct": 0.03062212293865052,
       "source": "malware_threat_intelligence_cybersecurity_benchmark.json",
-      "child_record_count": 301
+      "child_record_count": 301,
+      "domain_display_name": "zero day evaluator",
+      "display_name": "Malware Threat Intelligence",
+      "scientific_measurement": {
+        "delta": 0.030622,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -272,7 +522,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source": "secure_software_engineering_cybersecurity_benchmark.json",
-      "child_record_count": 59
+      "child_record_count": 59,
+      "domain_display_name": "zero day evaluator",
+      "display_name": "Secure Software Engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -282,7 +542,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source": "code_genome_structure_cybersecurity_benchmark.json",
-      "child_record_count": 205
+      "child_record_count": 205,
+      "domain_display_name": "zero day evaluator",
+      "display_name": "Code Genome Structure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_day_evaluator_lab",
@@ -292,7 +562,17 @@
       "measured": 0.0,
       "error_pct": 82.0,
       "source": "code_genome_gap_detection",
-      "risk_tier": "RED"
+      "risk_tier": "RED",
+      "domain_display_name": "zero day evaluator",
+      "display_name": "code genome holes",
+      "scientific_measurement": {
+        "delta": 82.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "crosswalk_modules": [
@@ -312,5 +592,20 @@
     "Zig",
     "WebAssembly",
     "FSOTB_ISA"
-  ]
+  ],
+  "display_name": "Zero Day Risk Evaluator",
+  "tier_label": "Tier 43",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.454040+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 26,
+    "median_error_pct": 0.010337,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 3.1586719230769233,
+    "precision_tier_counts": {
+      "green": 25,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9615384615384616,
+    "matches_domain_spine": false
+  }
 }

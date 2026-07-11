@@ -41,7 +41,17 @@
       "computed": 0.031199,
       "measured": 0.0,
       "error_pct": 0.031199,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.031199,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.031199,
       "measured": 0.0,
       "error_pct": 0.031199,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fpc timing panel",
+      "scientific_measurement": {
+        "delta": 0.031199,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -69,7 +89,17 @@
       "S_blend": 0.83027,
       "omega_blend_rad_s": 9.563520290074371e-05,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.0220747159758794
+      "target_median_error_pct": 0.0220747159758794,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation Compactification Ladder",
+      "scientific_measurement": {
+        "delta": 0.00031,
+        "delta_pct": 0.031,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_temporal_coupling_lab",
@@ -86,7 +116,17 @@
       "S_blend": 0.861817,
       "omega_blend_rad_s": 9.891507204713373e-05,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.019008268802510223
+      "target_median_error_pct": 0.019008268802510223,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation Reality Folding Spine",
+      "scientific_measurement": {
+        "delta": 0.000324,
+        "delta_pct": 0.0324,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_temporal_coupling_lab",
@@ -103,7 +143,17 @@
       "S_blend": 0.805594,
       "omega_blend_rad_s": 0.00010312609144660711,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.021954848848277954
+      "target_median_error_pct": 0.021954848848277954,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation Cosmology Extended",
+      "scientific_measurement": {
+        "delta": 0.000306,
+        "delta_pct": 0.0306,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_temporal_coupling_lab",
@@ -120,7 +170,17 @@
       "S_blend": 0.703992,
       "omega_blend_rad_s": 9.107849787354916e-05,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.0
+      "target_median_error_pct": 0.0,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation Magnetosphere Extended",
+      "scientific_measurement": {
+        "delta": 0.000259,
+        "delta_pct": 0.0259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_temporal_coupling_lab",
@@ -137,7 +197,17 @@
       "S_blend": 0.838866,
       "omega_blend_rad_s": 9.451662403580303e-05,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.0
+      "target_median_error_pct": 0.0,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation Domain Coupling Simulation",
+      "scientific_measurement": {
+        "delta": 0.000312,
+        "delta_pct": 0.0312,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_temporal_coupling_lab",
@@ -154,7 +224,17 @@
       "S_blend": 0.863911,
       "omega_blend_rad_s": 9.783400054862613e-05,
       "time_median_error_pct": 0.0,
-      "target_median_error_pct": 0.019008268802502604
+      "target_median_error_pct": 0.019008268802502604,
+      "domain_display_name": "fpc temporal coupling",
+      "display_name": "Time Emergence Simulation ToE Unification Spine",
+      "scientific_measurement": {
+        "delta": 0.000324,
+        "delta_pct": 0.0324,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -175,5 +255,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.FPCTemporalCouplingPriors",
     "FSOT.Formal.TimeEmergenceSimulationPriors"
-  ]
+  ],
+  "display_name": "FPC Temporal Coupling",
+  "tier_label": "Tier 50",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.559383+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 6,
+    "median_error_pct": 0.0312,
+    "max_error_pct": 0.0324,
+    "mean_abs_delta": 0.00030583333333333336,
+    "precision_tier_counts": {
+      "green": 6
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

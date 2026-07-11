@@ -39,7 +39,17 @@
       "computed": 0.051436,
       "measured": 0.0,
       "error_pct": 0.051436,
-      "observable_count": 14
+      "observable_count": 14,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.051436,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.051436,
       "measured": 0.0,
       "error_pct": 0.05143619629083711,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "multi hero fi proxy",
+      "scientific_measurement": {
+        "delta": 0.051436,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "median_fi_proxy_rel_err_pct": 0.22565,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "multi hero benchmark",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -71,7 +101,17 @@
       "measured": 0.0386,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "Sst interneuron 478412623",
+      "scientific_measurement": {
+        "delta": 2e-05,
+        "delta_pct": 0.051813,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -82,7 +122,17 @@
       "measured": 0.056,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "Sst interneuron 575637715",
+      "scientific_measurement": {
+        "delta": 2.9e-05,
+        "delta_pct": 0.051786,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -93,7 +143,17 @@
       "measured": 0.2237,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "Sst interneuron 517345160",
+      "scientific_measurement": {
+        "delta": 0.000115,
+        "delta_pct": 0.051408,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -104,7 +164,17 @@
       "measured": 0.3804,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "Sst interneuron 475068599",
+      "scientific_measurement": {
+        "delta": 0.000196,
+        "delta_pct": 0.051525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -115,7 +185,17 @@
       "measured": 0.1174,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "PV interneuron 515296303",
+      "scientific_measurement": {
+        "delta": 6e-05,
+        "delta_pct": 0.051107,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -126,7 +206,17 @@
       "measured": 0.7437,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "PV interneuron 486754703",
+      "scientific_measurement": {
+        "delta": 0.000383,
+        "delta_pct": 0.051499,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -137,7 +227,17 @@
       "measured": 0.9969,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "PV interneuron 573948335",
+      "scientific_measurement": {
+        "delta": 0.000513,
+        "delta_pct": 0.05146,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -148,7 +248,17 @@
       "measured": 1.3922,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "PV interneuron 333604946",
+      "scientific_measurement": {
+        "delta": 0.000716,
+        "delta_pct": 0.051429,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -159,7 +269,17 @@
       "measured": 0.2276,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "VIP interneuron 592833901",
+      "scientific_measurement": {
+        "delta": 0.000117,
+        "delta_pct": 0.051406,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -170,7 +290,17 @@
       "measured": 0.8884,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "VIP interneuron 593436526",
+      "scientific_measurement": {
+        "delta": 0.000457,
+        "delta_pct": 0.051441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -181,7 +311,17 @@
       "measured": 0.944,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "VIP interneuron 585952606",
+      "scientific_measurement": {
+        "delta": 0.000486,
+        "delta_pct": 0.051483,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -192,7 +332,17 @@
       "measured": 1.7465,
       "error_pct": 0.051436,
       "hero_cert_match": true,
-      "eval_kind": "fi_hero_relay"
+      "eval_kind": "fi_hero_relay",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "VIP interneuron 585951863",
+      "scientific_measurement": {
+        "delta": 0.000898,
+        "delta_pct": 0.051417,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_multi_hero_lab",
@@ -201,7 +351,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "maintenance_gate"
+      "eval_kind": "maintenance_gate",
+      "domain_display_name": "hybrid fi multi hero",
+      "display_name": "fi median under 30pct",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -215,5 +375,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Hybrid FI Sim Multi Hero Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.693739+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 14,
+    "median_error_pct": 0.051441,
+    "max_error_pct": 0.051813,
+    "mean_abs_delta": 0.000285,
+    "precision_tier_counts": {
+      "green": 14
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

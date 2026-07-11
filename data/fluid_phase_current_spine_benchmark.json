@@ -44,7 +44,17 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +63,17 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fluid phase panel",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +85,17 @@
       "measured": 28.0,
       "error_pct": 0.0,
       "source": "Time_Emergence_Simulation",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -75,7 +105,17 @@
       "measured": 250.0,
       "error_pct": 0.028056,
       "source": "Time_Domain_Crosswalk",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "time domain crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -85,7 +125,17 @@
       "measured": 6.0,
       "error_pct": 0.031199,
       "source": "FPC_Temporal_Coupling",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -94,7 +144,17 @@
       "computed": 6.00057,
       "measured": 6.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.00057,
+        "delta_pct": 0.0095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -103,7 +163,17 @@
       "computed": 246.02338,
       "measured": 246.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "multi domain fpc",
+      "scientific_measurement": {
+        "delta": 0.02338,
+        "delta_pct": 0.009504,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -112,7 +182,17 @@
       "computed": 1.000095,
       "measured": 1.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "tier 49 fold link",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 0.0095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_phase_current_spine_lab",
@@ -121,7 +201,17 @@
       "computed": 1.000095,
       "measured": 1.0,
       "error_pct": 0.009504,
-      "source": "fluid_phase_current_spine"
+      "source": "fluid_phase_current_spine",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "fpc simulation",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 0.0095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -150,5 +240,19 @@
     "FSOT.Formal.TimeDomainCrosswalkPriors",
     "FSOT.Formal.FPCTemporalCouplingPriors",
     "FSOT.Formal.RealityFoldingSpinePriors"
-  ]
+  ],
+  "display_name": "Fluid Phase Current Spine",
+  "tier_label": "Tier 50",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.559383+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.0095,
+    "max_error_pct": 0.031199,
+    "mean_abs_delta": 0.0034485714285714293,
+    "precision_tier_counts": {
+      "green": 7
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

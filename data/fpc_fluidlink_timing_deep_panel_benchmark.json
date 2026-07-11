@@ -41,7 +41,17 @@
       "computed": 5e-05,
       "measured": 0.0,
       "error_pct": 5e-05,
-      "observable_count": 13
+      "observable_count": 13,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 5e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 5e-05,
       "measured": 0.0,
       "error_pct": 5.024559461830336e-05,
-      "observable_count": 11
+      "observable_count": 11,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fpc deep",
+      "scientific_measurement": {
+        "delta": 5e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 0.031199,
       "measured": 0.031199,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -70,7 +100,17 @@
       "computed": 1.344535,
       "measured": 1.344,
       "error_pct": 0.039797,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -79,7 +119,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "fluidlink_gate"
+      "eval_kind": "fluidlink_gate",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -88,7 +138,17 @@
       "computed": 1.790477,
       "measured": 1.79,
       "error_pct": 0.026675,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "iers planetary tau",
+      "scientific_measurement": {
+        "delta": 0.000477,
+        "delta_pct": 0.026648,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -97,7 +157,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "fluidlink_gate"
+      "eval_kind": "fluidlink_gate",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "iers planetary tau",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -106,7 +176,17 @@
       "computed": 1.800714,
       "measured": 1.8,
       "error_pct": 0.039662,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "kepler orbital tau",
+      "scientific_measurement": {
+        "delta": 0.000714,
+        "delta_pct": 0.039667,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -115,7 +195,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "fluidlink_gate"
+      "eval_kind": "fluidlink_gate",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "kepler orbital tau",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -124,7 +214,17 @@
       "computed": 0.500111,
       "measured": 0.5,
       "error_pct": 0.022181,
-      "eval_kind": "fpc_anchor"
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "lambda cdm damping",
+      "scientific_measurement": {
+        "delta": 0.000111,
+        "delta_pct": 0.0222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -133,7 +233,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "fluidlink_gate"
+      "eval_kind": "fluidlink_gate",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "lambda cdm damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -142,7 +252,17 @@
       "computed": 0.5,
       "measured": 0.5,
       "error_pct": 5e-05,
-      "eval_kind": "cosmo_fpc_relay"
+      "eval_kind": "cosmo_fpc_relay",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "cosmological tau damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -151,7 +271,17 @@
       "computed": 1.790001,
       "measured": 1.79,
       "error_pct": 5e-05,
-      "eval_kind": "cosmo_fpc_relay"
+      "eval_kind": "cosmo_fpc_relay",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "hubble flow tau",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -160,7 +290,17 @@
       "computed": 1.800001,
       "measured": 1.8,
       "error_pct": 5e-05,
-      "eval_kind": "cosmo_fpc_relay"
+      "eval_kind": "cosmo_fpc_relay",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "cmb phase tau",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_fluidlink_timing_deep_lab",
@@ -169,7 +309,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "timing_gate"
+      "eval_kind": "timing_gate",
+      "domain_display_name": "fpc fluidlink timing deep",
+      "display_name": "fpc fluidlink timing deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -183,5 +333,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "FPC Fluidlink Timing Deep Panel",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.690205+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 13,
+    "median_error_pct": 5e-05,
+    "max_error_pct": 0.039807,
+    "mean_abs_delta": 0.00014146153846153844,
+    "precision_tier_counts": {
+      "green": 13
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

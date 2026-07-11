@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 59
+      "observable_count": 59,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 59
+      "observable_count": 59,
+      "domain_display_name": "tier gap fill",
+      "display_name": "secure sw panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 10.001329,
       "measured": 10.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CVSS v3 max score",
+      "scientific_measurement": {
+        "delta": 0.001329,
+        "delta_pct": 0.01329,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -69,7 +99,17 @@
       "computed": 9.001196,
       "measured": 9.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CVSS v3 critical threshold",
+      "scientific_measurement": {
+        "delta": 0.001196,
+        "delta_pct": 0.013289,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -78,7 +118,17 @@
       "computed": 1.000133,
       "measured": 1.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CWE 787 buffer overflow rank",
+      "scientific_measurement": {
+        "delta": 0.000133,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -87,7 +137,17 @@
       "computed": 2.000266,
       "measured": 2.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CWE 79 xss rank",
+      "scientific_measurement": {
+        "delta": 0.000266,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -96,7 +156,17 @@
       "computed": 3.000399,
       "measured": 3.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CWE 89 sql injection rank",
+      "scientific_measurement": {
+        "delta": 0.000399,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -105,7 +175,17 @@
       "computed": 4.000532,
       "measured": 4.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CWE 20 input validation rank",
+      "scientific_measurement": {
+        "delta": 0.000532,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -114,7 +194,17 @@
       "computed": 5.000665,
       "measured": 5.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "CWE 125 oob read rank",
+      "scientific_measurement": {
+        "delta": 0.000665,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -123,7 +213,17 @@
       "computed": 35.004652,
       "measured": 35.0,
       "error_pct": 0.013290579327035956,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "SAST false positive rate pct",
+      "scientific_measurement": {
+        "delta": 0.004652,
+        "delta_pct": 0.013291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -132,7 +232,17 @@
       "computed": 2.500332,
       "measured": 2.5,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "dependency cve per 1k loc",
+      "scientific_measurement": {
+        "delta": 0.000332,
+        "delta_pct": 0.01328,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -141,7 +251,17 @@
       "computed": 27.003588,
       "measured": 27.0,
       "error_pct": 0.013290579327034452,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "trinary os opcode count",
+      "scientific_measurement": {
+        "delta": 0.003588,
+        "delta_pct": 0.013289,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -150,7 +270,17 @@
       "computed": 1.000133,
       "measured": 1.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "trinary os oracle pass rate",
+      "scientific_measurement": {
+        "delta": 0.000133,
+        "delta_pct": 0.0133,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -159,7 +289,17 @@
       "computed": 0.500066,
       "measured": 0.5,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "rust unsafe block density",
+      "scientific_measurement": {
+        "delta": 6.6e-05,
+        "delta_pct": 0.0132,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -168,7 +308,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "lean sorry count target",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -177,7 +327,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "python eval usage target",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -186,7 +346,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "js innerHTML usage target",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -195,7 +365,17 @@
       "computed": 100.013291,
       "measured": 100.0,
       "error_pct": 0.013290579327048134,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "code review coverage pct",
+      "scientific_measurement": {
+        "delta": 0.013291,
+        "delta_pct": 0.013291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -204,7 +384,17 @@
       "computed": 150.019936,
       "measured": 150.0,
       "error_pct": 0.01329057932703866,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "sbom component count median",
+      "scientific_measurement": {
+        "delta": 0.019936,
+        "delta_pct": 0.013291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -213,7 +403,17 @@
       "computed": 7.00093,
       "measured": 7.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "patch latency critical days",
+      "scientific_measurement": {
+        "delta": 0.00093,
+        "delta_pct": 0.013286,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -222,7 +422,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "fuzz crash unique count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "secure_software_lab",
@@ -231,126 +441,302 @@
       "computed": 28.003721,
       "measured": 28.0,
       "error_pct": 0.01329057932704103,
-      "source": "secure_software_engineering_reference_observables"
+      "source": "secure_software_engineering_reference_observables",
+      "domain_display_name": "secure software",
+      "display_name": "ASLR entropy bits",
+      "scientific_measurement": {
+        "delta": 0.003721,
+        "delta_pct": 0.013289,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "boot_d_eff",
       "computed": 8.0,
       "measured": 8,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "boot d eff",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "constant_count",
       "computed": 16,
       "measured": 16,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "constant count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "K_matches_atlas",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "K matches atlas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "boot_scalar_positive",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "boot scalar positive",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "boot_scalar",
       "computed": 0.09928895626861721,
       "measured": 0.09928895626861721,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "boot scalar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "no_std",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "no std",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "requires_lean_bridge",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "requires lean bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "boot_observed",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "boot observed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "rust_lean_bridge",
       "property": "boot_delta_psi",
       "computed": 0.7,
       "measured": 0.7,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "rust lean bridge",
+      "display_name": "boot delta psi",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "seeds_hash_hex",
       "computed": "0xc627292ec4eb3b90",
       "measured": "0xc627292ec4eb3b90",
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "seeds hash hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "panel_S_hex",
       "computed": "0x3fee69c97260701a",
       "measured": "0x3fee69c97260701a",
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "panel S hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "hello_file_size",
       "computed": 264,
       "measured": 264,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "hello file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "call_ret_file_size",
       "computed": 312,
       "measured": 312,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "call ret file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "spawn_join_file_size",
       "computed": 440,
       "measured": 440,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "spawn join file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "num_task_slots",
       "computed": 8,
       "measured": 8,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "num task slots",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "trit_word_width",
       "computed": 27,
       "measured": 27,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "trit word width",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_portable",
       "property": "cortical_layers",
       "computed": 6,
       "measured": 6,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "cortical layers",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -358,7 +744,17 @@
       "abi_tier": "v1_0",
       "computed": 264,
       "measured": 264,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "hello file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -366,7 +762,17 @@
       "abi_tier": "v1_0",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "hello instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -374,7 +780,17 @@
       "abi_tier": "v1_1",
       "computed": 312,
       "measured": 312,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "call ret file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -382,7 +798,17 @@
       "abi_tier": "v1_1",
       "computed": 10,
       "measured": 10,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "call ret instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -390,7 +816,17 @@
       "abi_tier": "v1_2",
       "computed": 440,
       "measured": 440,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "spawn join file size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -398,7 +834,17 @@
       "abi_tier": "v1_2",
       "computed": 31,
       "measured": 31,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "spawn join instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -407,7 +853,17 @@
       "computed": 0,
       "measured": 0,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "HALT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -416,7 +872,17 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "IMM",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -425,7 +891,17 @@
       "computed": 2,
       "measured": 2,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "MOVT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -434,7 +910,17 @@
       "computed": 3,
       "measured": 3,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "LOADT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -443,7 +929,17 @@
       "computed": 4,
       "measured": 4,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "STORET",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -452,7 +948,17 @@
       "computed": 5,
       "measured": 5,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "ADDT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -461,7 +967,17 @@
       "computed": 6,
       "measured": 6,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "SUBT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -470,7 +986,17 @@
       "computed": 7,
       "measured": 7,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "MULT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -479,7 +1005,17 @@
       "computed": 8,
       "measured": 8,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "NEGT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -488,7 +1024,17 @@
       "computed": 9,
       "measured": 9,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "MIN3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -497,7 +1043,17 @@
       "computed": 10,
       "measured": 10,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "MAX3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -506,7 +1062,17 @@
       "computed": 11,
       "measured": 11,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "COLLAPSE",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -515,7 +1081,17 @@
       "computed": 12,
       "measured": 12,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "EVAL PANEL",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -524,7 +1100,17 @@
       "computed": 13,
       "measured": 13,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "CONSENSUS",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -533,7 +1119,17 @@
       "computed": 14,
       "measured": 14,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "PHASE ROT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -542,7 +1138,17 @@
       "computed": 15,
       "measured": 15,
       "error_pct": 0.0,
-      "abi_tier": "v1_0"
+      "abi_tier": "v1_0",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "BRANCHT",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -561,5 +1167,19 @@
     "FSOT.Formal.RustLeanBridge",
     "FSOT.Formal.TrinaryOSTierEPriors",
     "FSOT.Formal.LeanProofsBridge"
-  ]
+  ],
+  "display_name": "Secure Software Engineering",
+  "tier_label": "Tier 43",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.449434+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 59,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0133,
+    "mean_abs_delta": 0.000897701754385965,
+    "precision_tier_counts": {
+      "green": 59
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

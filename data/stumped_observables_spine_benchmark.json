@@ -43,7 +43,17 @@
       "computed": 0.042611,
       "measured": 0.0,
       "error_pct": 0.042611,
-      "observable_count": 5
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.042611,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.042611,
       "measured": 0.0,
       "error_pct": 0.042611,
-      "observable_count": 5
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "open problem rollup",
+      "scientific_measurement": {
+        "delta": 0.042611,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +84,17 @@
       "measured": 13.0,
       "error_pct": 0.042611,
       "source": "Stumped_Observables_Panel",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "stumped observables spine",
+      "display_name": "stumped observables panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -74,7 +104,17 @@
       "measured": 6.0,
       "error_pct": 0.462181,
       "source": "Hubble_Bubble_Tension",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "stumped observables spine",
+      "display_name": "hubble bubble tension",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -84,7 +124,17 @@
       "measured": 7.0,
       "error_pct": 0.006335,
       "source": "Dark_Sector_Open_Problems",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "stumped observables spine",
+      "display_name": "dark sector open problems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -94,7 +144,17 @@
       "measured": 12.0,
       "error_pct": 0.140126,
       "source": "Cosmology_Anomalies",
-      "status": "GREEN"
+      "status": "GREEN",
+      "domain_display_name": "stumped observables spine",
+      "display_name": "cosmology anomalies tier25",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -104,7 +164,17 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "source": "stumped_observables_reference",
-      "status": "OPEN"
+      "status": "OPEN",
+      "domain_display_name": "stumped observables spine",
+      "display_name": "w a E con w0 tracked",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -133,5 +203,19 @@
     "FSOT.Formal.DarkSectorOpenProblemsPriors",
     "FSOT.Formal.BubbleBleedPriors",
     "FSOT.Formal.CosmologyAnomaliesPriors"
-  ]
+  ],
+  "display_name": "Stumped Observables Spine",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.561129+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 5,
+    "median_error_pct": 0.042611,
+    "max_error_pct": 0.462181,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 5
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

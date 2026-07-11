@@ -17,7 +17,17 @@
       "computed": 1.00077,
       "measured": 1.0,
       "error_pct": 0.07699,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Mercury",
+      "scientific_measurement": {
+        "delta": 0.00077,
+        "delta_pct": 0.077,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -28,7 +38,17 @@
       "computed": 1.001382,
       "measured": 1.0,
       "error_pct": 0.138164,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Venus",
+      "scientific_measurement": {
+        "delta": 0.001382,
+        "delta_pct": 0.1382,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -39,7 +59,17 @@
       "computed": 1.000035,
       "measured": 1.0,
       "error_pct": 0.00348,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Earth",
+      "scientific_measurement": {
+        "delta": 3.5e-05,
+        "delta_pct": 0.0035,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -50,7 +80,17 @@
       "computed": 0.999398,
       "measured": 1.0,
       "error_pct": 0.060179,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Mars",
+      "scientific_measurement": {
+        "delta": -0.000602,
+        "delta_pct": 0.0602,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -61,7 +101,17 @@
       "computed": 0.998939,
       "measured": 1.0,
       "error_pct": 0.106141,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Jupiter",
+      "scientific_measurement": {
+        "delta": -0.001061,
+        "delta_pct": 0.1061,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -72,7 +122,17 @@
       "computed": 0.999648,
       "measured": 1.0,
       "error_pct": 0.035193,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Saturn",
+      "scientific_measurement": {
+        "delta": -0.000352,
+        "delta_pct": 0.0352,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -83,7 +143,17 @@
       "computed": 0.998564,
       "measured": 1.0,
       "error_pct": 0.143568,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Uranus",
+      "scientific_measurement": {
+        "delta": -0.001436,
+        "delta_pct": 0.1436,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -94,7 +164,17 @@
       "computed": 0.998809,
       "measured": 1.0,
       "error_pct": 0.119069,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Neptune",
+      "scientific_measurement": {
+        "delta": -0.001191,
+        "delta_pct": 0.1191,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "orbital_mechanics_lab",
@@ -105,7 +185,32 @@
       "computed": 1.012173,
       "measured": 1.0,
       "error_pct": 1.217257,
-      "within_tol": true
+      "within_tol": true,
+      "domain_display_name": "orbital mechanics",
+      "display_name": "Pluto",
+      "scientific_measurement": {
+        "delta": 0.012173,
+        "delta_pct": 1.2173,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
-  ]
+  ],
+  "display_name": "Orbital Mechanics",
+  "tier_label": "Tier 21",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.557947+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 9,
+    "median_error_pct": 0.1061,
+    "max_error_pct": 1.2173,
+    "mean_abs_delta": 0.002111333333333333,
+    "precision_tier_counts": {
+      "green": 8,
+      "red": 1
+    },
+    "green_gate_fraction": 0.8888888888888888,
+    "matches_domain_spine": false
+  }
 }

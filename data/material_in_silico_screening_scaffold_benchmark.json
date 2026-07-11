@@ -40,7 +40,17 @@
       "computed": 0.00206,
       "measured": 0.0,
       "error_pct": 0.00206,
-      "observable_count": 42
+      "observable_count": 42,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.00206,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.002424,
       "measured": 0.0,
       "error_pct": 0.002424,
-      "observable_count": 32
+      "observable_count": 32,
+      "domain_display_name": "tier gap fill",
+      "display_name": "material emergence in silico",
+      "scientific_measurement": {
+        "delta": 0.002424,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 1e-05,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "DFT energy convergence threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -71,7 +101,17 @@
       "measured": 0.05,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "Ionic force threshold (eV/\u00c5)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -81,7 +121,17 @@
       "measured": 0.1,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "Bandgap relay tolerance",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -91,7 +141,17 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
-      "eval_kind": "methodology_anchor"
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "Formation energy screening window",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -100,7 +160,17 @@
       "computed": 0.33526,
       "measured": 0.33526,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "fsot Materials Science",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -110,7 +180,17 @@
       "measured": 0.002424,
       "error_pct": 0.0,
       "record_count": 59,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "pubchem stability panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -120,7 +200,17 @@
       "measured": 180.16,
       "error_pct": 0.000555,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -130,7 +220,17 @@
       "measured": 46.07,
       "error_pct": 0.002171,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "702",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.002171,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -140,7 +240,17 @@
       "measured": 206.28,
       "error_pct": 0.002424,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -150,7 +260,17 @@
       "measured": 22.9897693,
       "error_pct": 0.001003,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "5360545",
+      "scientific_measurement": {
+        "delta": 0.0002307,
+        "delta_pct": 0.001003,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -160,7 +280,17 @@
       "measured": 194.19,
       "error_pct": 0.00206,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "2519",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.00206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -170,7 +300,17 @@
       "measured": 416.6,
       "error_pct": 0.011042,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "5280453",
+      "scientific_measurement": {
+        "delta": 0.046,
+        "delta_pct": 0.011042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -180,7 +320,17 @@
       "measured": 176.12,
       "error_pct": 0.002271,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "54670067",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.002271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -190,7 +340,17 @@
       "measured": 18.015,
       "error_pct": 0.0,
       "source_panel": "pubchem_stability_panel",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "962",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -200,7 +360,17 @@
       "measured": 0.01731,
       "error_pct": 0.0,
       "record_count": 38,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "materials genome crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -210,7 +380,17 @@
       "measured": 0.02717,
       "error_pct": 0.0,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -220,7 +400,17 @@
       "measured": 0.0,
       "error_pct": 0.027170334947435038,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.02717,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -230,7 +420,17 @@
       "measured": 0.0,
       "error_pct": 0.06721669152527372,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "\u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.067217,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -240,7 +440,17 @@
       "measured": 0.0,
       "error_pct": 0.03976772759072059,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "\u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.039768,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -250,7 +460,17 @@
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "\u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -260,7 +480,17 @@
       "measured": 0.0,
       "error_pct": 0.023259895459434028,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "\u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.02326,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -270,7 +500,17 @@
       "measured": 0.024318,
       "error_pct": 0.0,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "quantum materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -280,7 +520,17 @@
       "measured": 0.0,
       "error_pct": 0.024318115591995593,
       "source_panel": "materials_genome_crosswalk",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.024318,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -290,7 +540,17 @@
       "measured": 0.002271,
       "error_pct": 0.0,
       "record_count": 79,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "material property verification scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -300,7 +560,17 @@
       "measured": 0.02717,
       "error_pct": 0.0,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -310,7 +580,18 @@
       "measured": 16.0,
       "error_pct": 0.0,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -320,7 +601,18 @@
       "measured": 45.0,
       "error_pct": 0.003058674149640537,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0013764,
+        "delta_pct": 0.003059,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -330,7 +622,18 @@
       "measured": 70.0,
       "error_pct": 0.292559,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.2047916,
+        "delta_pct": 0.292559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -340,7 +643,18 @@
       "measured": 78.0,
       "error_pct": 0.019243,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.01500956,
+        "delta_pct": 0.019243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -350,7 +664,18 @@
       "measured": 83.0,
       "error_pct": 0.004444475186494538,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": -0.00368891,
+        "delta_pct": 0.004444,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -360,7 +685,18 @@
       "measured": 130.0,
       "error_pct": 0.360682,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -370,7 +706,18 @@
       "measured": 130.0,
       "error_pct": 0.360682,
       "source_panel": "material_property_verification_scaffold",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.46888719,
+        "delta_pct": 0.360682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -380,7 +727,17 @@
       "measured": 0.00206,
       "error_pct": 0.0,
       "record_count": 32,
-      "eval_kind": "scaffold_bridge"
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "chemical structure stability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -390,7 +747,17 @@
       "measured": 180.16,
       "error_pct": 0.000555,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -400,7 +767,17 @@
       "measured": 46.07,
       "error_pct": 0.002171,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "702",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.002171,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -410,7 +787,17 @@
       "measured": 206.28,
       "error_pct": 0.002424,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -420,7 +807,17 @@
       "measured": 194.19,
       "error_pct": 0.00206,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "2519",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.00206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -430,7 +827,17 @@
       "measured": 416.6,
       "error_pct": 0.011042,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "5280453",
+      "scientific_measurement": {
+        "delta": 0.046,
+        "delta_pct": 0.011042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -440,7 +847,17 @@
       "measured": 176.12,
       "error_pct": 0.002271,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "54670067",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.002271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -450,7 +867,17 @@
       "measured": 18.015,
       "error_pct": 0.0,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "962",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -460,7 +887,17 @@
       "measured": 507.18,
       "error_pct": 0.000394,
       "source_panel": "chemical_structure_stability",
-      "eval_kind": "panel_relay"
+      "eval_kind": "panel_relay",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "5957",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000394,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "material_emergence_in_silico_scaffold_lab",
@@ -470,7 +907,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "proprietary_gate_anchor",
-      "gate": "preregistered_predictions_manifest.yaml"
+      "gate": "preregistered_predictions_manifest.yaml",
+      "domain_display_name": "material emergence in silico scaffold",
+      "display_name": "material emergence in silico",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -484,5 +931,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Material In Silico Screening Scaffold",
+  "tier_label": "Tier 65 \u2014 Material In Silico Screening Scaffold cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.631770+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 42,
+    "median_error_pct": 0.00206,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.03537891785714285,
+    "precision_tier_counts": {
+      "green": 42
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

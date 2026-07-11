@@ -40,7 +40,17 @@
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 22
+      "observable_count": 22,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.010337,
       "measured": 0.0,
       "error_pct": 0.010337117254355377,
-      "observable_count": 22
+      "observable_count": 22,
+      "domain_display_name": "tier gap fill",
+      "display_name": "network panel",
+      "scientific_measurement": {
+        "delta": 0.010337,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 20.002067,
       "measured": 20.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "IPv4 header bytes",
+      "scientific_measurement": {
+        "delta": 0.002067,
+        "delta_pct": 0.010335,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -69,7 +99,17 @@
       "computed": 40.004135,
       "measured": 40.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "IPv6 header bytes",
+      "scientific_measurement": {
+        "delta": 0.004135,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -78,7 +118,17 @@
       "computed": 20.002067,
       "measured": 20.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "TCP header min bytes",
+      "scientific_measurement": {
+        "delta": 0.002067,
+        "delta_pct": 0.010335,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -87,7 +137,17 @@
       "computed": 8.000827,
       "measured": 8.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "UDP header bytes",
+      "scientific_measurement": {
+        "delta": 0.000827,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -96,7 +156,17 @@
       "computed": 53.005479,
       "measured": 53.0,
       "error_pct": 0.010337117254360404,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "DNS UDP port",
+      "scientific_measurement": {
+        "delta": 0.005479,
+        "delta_pct": 0.010338,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -105,7 +175,17 @@
       "computed": 443.045793,
       "measured": 443.0,
       "error_pct": 0.01033711725435638,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "HTTPS TCP port",
+      "scientific_measurement": {
+        "delta": 0.045793,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -114,7 +194,17 @@
       "computed": 16385.693633,
       "measured": 16384.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "HTTP2 max frame size",
+      "scientific_measurement": {
+        "delta": 1.693633,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -123,7 +213,17 @@
       "computed": 16385.693633,
       "measured": 16384.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "TLS record max plaintext",
+      "scientific_measurement": {
+        "delta": 1.693633,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -132,7 +232,17 @@
       "computed": 255.02636,
       "measured": 255.0,
       "error_pct": 0.010337117254355726,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "BGP AS path max hops",
+      "scientific_measurement": {
+        "delta": 0.02636,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -141,7 +251,17 @@
       "computed": 8.000827,
       "measured": 8.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "ICMP echo type",
+      "scientific_measurement": {
+        "delta": 0.000827,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -150,7 +270,17 @@
       "computed": 14.001447,
       "measured": 14.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "MITRE attack tactics",
+      "scientific_measurement": {
+        "delta": 0.001447,
+        "delta_pct": 0.010336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -159,7 +289,17 @@
       "computed": 600.062023,
       "measured": 600.0,
       "error_pct": 0.010337117254361297,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "MITRE attack techniques enterprise",
+      "scientific_measurement": {
+        "delta": 0.062023,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -168,7 +308,17 @@
       "computed": 25.002584,
       "measured": 25.0,
       "error_pct": 0.010337117254351824,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "CWE top weakness slots",
+      "scientific_measurement": {
+        "delta": 0.002584,
+        "delta_pct": 0.010336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -177,7 +327,17 @@
       "computed": 10.001034,
       "measured": 10.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "OWASP top10 categories",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.01034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -186,7 +346,17 @@
       "computed": 8.000827,
       "measured": 8.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "DNSSEC key algorithm rsa",
+      "scientific_measurement": {
+        "delta": 0.000827,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -195,7 +365,17 @@
       "computed": 443.045793,
       "measured": 443.0,
       "error_pct": 0.01033711725435638,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "QUIC udp port",
+      "scientific_measurement": {
+        "delta": 0.045793,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -204,7 +384,17 @@
       "computed": 25.002584,
       "measured": 25.0,
       "error_pct": 0.010337117254351824,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "SMTP tcp port",
+      "scientific_measurement": {
+        "delta": 0.002584,
+        "delta_pct": 0.010336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -213,7 +403,17 @@
       "computed": 123.012715,
       "measured": 123.0,
       "error_pct": 0.010337117254358987,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "NTP udp port",
+      "scientific_measurement": {
+        "delta": 0.012715,
+        "delta_pct": 0.010337,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -222,7 +422,17 @@
       "computed": 22.002274,
       "measured": 22.0,
       "error_pct": 0.010337117254363452,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "SSH tcp port",
+      "scientific_measurement": {
+        "delta": 0.002274,
+        "delta_pct": 0.010336,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_protocols_lab",
@@ -231,7 +441,17 @@
       "computed": 1.000103,
       "measured": 1.0,
       "error_pct": 0.010337117254355377,
-      "source": "network_internet_protocols_reference_observables"
+      "source": "network_internet_protocols_reference_observables",
+      "domain_display_name": "network protocols",
+      "display_name": "ARP hardware type ethernet",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.0103,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -240,7 +460,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -249,7 +479,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "robotics control panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -263,5 +503,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Network Internet Protocols",
+  "tier_label": "Tier 43",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.445396+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.010337,
+    "max_error_pct": 0.01034,
+    "mean_abs_delta": 0.16391840909090913,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

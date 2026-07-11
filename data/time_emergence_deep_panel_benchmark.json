@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 17
+      "observable_count": 17,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 5.0245583893760355e-08,
-      "observable_count": 15
+      "observable_count": 15,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fpc six scale",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "time emergence deep",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -69,7 +99,17 @@
       "computed": 9192631770.0,
       "measured": 9192631770.0,
       "error_pct": 0.0,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -78,7 +118,17 @@
       "computed": 7.292115857915991e-05,
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "earth sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -87,7 +137,17 @@
       "computed": 2.6616995272150692e-06,
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "moon sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -96,7 +156,17 @@
       "computed": 68.44005682979427,
       "measured": 68.44005682979427,
       "error_pct": 0.0,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "hubble h0 km s mpc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -105,7 +175,17 @@
       "computed": 0.5773502691896257,
       "measured": 0.5773502691896257,
       "error_pct": 0.0,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "schwarzschild photon sphere dilation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -114,7 +194,17 @@
       "computed": 1.344299,
       "measured": 1.344,
       "error_pct": 0.022272,
-      "eval_kind": "time_relay"
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "atomic cs133",
+      "scientific_measurement": {
+        "delta": 0.000299,
+        "delta_pct": 0.022247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -124,7 +214,18 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "unit": "Hz",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 4.61889076,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "Hz"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -134,7 +235,18 @@
       "measured": 86164.0905,
       "error_pct": 0.0,
       "unit": "s",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "earth sidereal period s",
+      "scientific_measurement": {
+        "delta": 4.3e-05,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "s"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -144,7 +256,18 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "unit": "rad/s",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "earth sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 8e-08,
+        "delta_pct": 0.108119,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "rad/s"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -154,7 +277,18 @@
       "measured": 2360591.5104,
       "error_pct": 0.0,
       "unit": "s",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "moon sidereal period s",
+      "scientific_measurement": {
+        "delta": 0.001186,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "s"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -164,7 +298,18 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "unit": "rad/s",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "moon sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 3.4e-07,
+        "delta_pct": 12.709942,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "rad/s"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -174,7 +319,18 @@
       "measured": 68.44005682979427,
       "error_pct": 5e-05,
       "unit": "km/s/Mpc",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "hubble h0 km s mpc",
+      "scientific_measurement": {
+        "delta": 3.417e-05,
+        "delta_pct": 5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s/Mpc"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -184,7 +340,18 @@
       "measured": 0.5773502691896257,
       "error_pct": 0.0,
       "unit": "dimensionless",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "schwarzschild photon sphere dilation",
+      "scientific_measurement": {
+        "delta": -2.7e-07,
+        "delta_pct": 4.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -194,7 +361,18 @@
       "measured": 0.816496580927726,
       "error_pct": 0.0,
       "unit": "dimensionless",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "schwarzschild isco dilation",
+      "scientific_measurement": {
+        "delta": 4.2e-07,
+        "delta_pct": 5.1e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -204,7 +382,18 @@
       "measured": 3.8e-05,
       "error_pct": 0.0,
       "unit": "s/day",
-      "eval_kind": "time_anchor"
+      "eval_kind": "time_anchor",
+      "domain_display_name": "time emergence deep",
+      "display_name": "gps clock advance per day s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "s/day"
+      }
     },
     {
       "lab": "time_emergence_deep_lab",
@@ -213,7 +402,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "emergence_gate"
+      "eval_kind": "emergence_gate",
+      "domain_display_name": "time emergence deep",
+      "display_name": "fpc time emergence flag",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -227,5 +426,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Time Emergence Deep Panel",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.689678+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 17,
+    "median_error_pct": 0.0,
+    "max_error_pct": 12.709942,
+    "mean_abs_delta": 0.27179141411764707,
+    "precision_tier_counts": {
+      "green": 17
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

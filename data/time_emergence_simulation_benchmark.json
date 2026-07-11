@@ -45,7 +45,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28
+      "observable_count": 28,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -54,7 +64,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fpc panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,7 +83,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "tier gap fill",
+      "display_name": "diurnal panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -74,7 +104,17 @@
       "computed": 9192631770.0,
       "measured": 9192631770.0,
       "error_pct": 0.0,
-      "source": "NIST SI second definition (Cs-133 hyperfine transition)"
+      "source": "NIST SI second definition (Cs-133 hyperfine transition)",
+      "domain_display_name": "real data anchors",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "real_data_anchors_lab",
@@ -83,7 +123,17 @@
       "computed": 7.292115857915991e-05,
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
-      "source": "derived from IERS sidereal period"
+      "source": "derived from IERS sidereal period",
+      "domain_display_name": "real data anchors",
+      "display_name": "earth sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "real_data_anchors_lab",
@@ -92,7 +142,17 @@
       "computed": 2.6616995272150692e-06,
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
-      "source": "derived lunar sidereal"
+      "source": "derived lunar sidereal",
+      "domain_display_name": "real data anchors",
+      "display_name": "moon sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "real_data_anchors_lab",
@@ -101,7 +161,17 @@
       "computed": 68.44005682979427,
       "measured": 68.44005682979427,
       "error_pct": 0.0,
-      "source": "data/cosmology_extended_benchmark.json lambda_cdm H0"
+      "source": "data/cosmology_extended_benchmark.json lambda_cdm H0",
+      "domain_display_name": "real data anchors",
+      "display_name": "hubble h0 km s mpc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "real_data_anchors_lab",
@@ -110,7 +180,17 @@
       "computed": 0.5773502691896257,
       "measured": 0.5773502691896257,
       "error_pct": 0.0,
-      "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass"
+      "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass",
+      "domain_display_name": "real data anchors",
+      "display_name": "schwarzschild photon sphere dilation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -140,7 +220,17 @@
       },
       "delta_psi_anchor": 0.5,
       "fpc_time_coupling": 0.000540844,
-      "omega_rad_s": 57759008871.57627
+      "omega_rad_s": 57759008871.57627,
+      "domain_display_name": "Atomic Physics",
+      "display_name": "atomic cs133",
+      "scientific_measurement": {
+        "delta": 0.000299,
+        "delta_pct": 0.022247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -170,7 +260,17 @@
       },
       "delta_psi_anchor": 1.0,
       "fpc_time_coupling": 0.000347705,
-      "omega_rad_s": 7.292115857915991e-05
+      "omega_rad_s": 7.292115857915991e-05,
+      "domain_display_name": "Planetary Science",
+      "display_name": "null island base",
+      "scientific_measurement": {
+        "delta": 0.000574,
+        "delta_pct": 0.032067,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -200,7 +300,17 @@
       },
       "delta_psi_anchor": 1.3704329021880368,
       "fpc_time_coupling": 0.000441446,
-      "omega_rad_s": 1.991021277657232e-07
+      "omega_rad_s": 1.991021277657232e-07,
+      "domain_display_name": "Astronomy",
+      "display_name": "astronomy kepler",
+      "scientific_measurement": {
+        "delta": 0.00074,
+        "delta_pct": 0.041111,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -230,7 +340,17 @@
       },
       "delta_psi_anchor": 1.0,
       "fpc_time_coupling": 0.000441446,
-      "omega_rad_s": 1.991021277657232e-16
+      "omega_rad_s": 1.991021277657232e-16,
+      "domain_display_name": "Cosmology",
+      "display_name": "cosmology hubble",
+      "scientific_measurement": {
+        "delta": 0.000111,
+        "delta_pct": 0.0222,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -264,7 +384,17 @@
       "fold_valve_relief": 1.002082,
       "quantum_tunnel_burst": 1.012485,
       "whirlpool_eddy_horizon": 1.000122,
-      "horizon_froth_fraction": 0.038824
+      "horizon_froth_fraction": 0.038824,
+      "domain_display_name": "Particle Astrophysics",
+      "display_name": "blackhole valve sgra",
+      "scientific_measurement": {
+        "delta": -4.5e-05,
+        "delta_pct": 0.007794,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -294,7 +424,17 @@
       },
       "delta_psi_anchor": 0.4,
       "fpc_time_coupling": 0.000347705,
-      "omega_rad_s": 7.292115857915991e-05
+      "omega_rad_s": 7.292115857915991e-05,
+      "domain_display_name": "Molecular Chemistry",
+      "display_name": "backdown post poof",
+      "scientific_measurement": {
+        "delta": 0.000105,
+        "delta_pct": 0.0105,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -305,7 +445,17 @@
       "error_pct": 0.0,
       "source": "S_sign_multi_scale_hierarchy",
       "s_atomic": 0.333679,
-      "s_cosmology": -0.502456
+      "s_cosmology": -0.502456,
+      "domain_display_name": "time emergence",
+      "display_name": "atomic positive cosmo negative",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -320,7 +470,17 @@
       "fold_valve_relief": 1.002082,
       "quantum_tunnel_burst": 1.012485,
       "whirlpool_eddy_horizon": 1.000122,
-      "horizon_froth_fraction": 0.038824
+      "horizon_froth_fraction": 0.038824,
+      "domain_display_name": "time emergence",
+      "display_name": "sgra photon sphere",
+      "scientific_measurement": {
+        "delta": -4.5e-05,
+        "delta_pct": 0.007794,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "time_emergence_lab",
@@ -335,7 +495,17 @@
       "fold_valve_relief": 1.002082,
       "quantum_tunnel_burst": 1.012485,
       "whirlpool_eddy_horizon": 1.000122,
-      "horizon_froth_fraction": 0.038824
+      "horizon_froth_fraction": 0.038824,
+      "domain_display_name": "time emergence",
+      "display_name": "sgra isco",
+      "scientific_measurement": {
+        "delta": -6.5e-05,
+        "delta_pct": 0.007961,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_diurnal_lab",
@@ -348,7 +518,17 @@
       "measured": 0.514098,
       "error_pct": 0.0,
       "source": "IERS Earth sidereal phase at prime meridian",
-      "fpc_rate_proxy": 1.51692
+      "fpc_rate_proxy": 1.51692,
+      "domain_display_name": "null island diurnal",
+      "display_name": "00 00 midnight",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_diurnal_lab",
@@ -361,7 +541,17 @@
       "measured": -0.660217,
       "error_pct": 0.0,
       "source": "IERS Earth sidereal phase at prime meridian",
-      "fpc_rate_proxy": 1.423883
+      "fpc_rate_proxy": 1.423883,
+      "domain_display_name": "null island diurnal",
+      "display_name": "06 00 dawn",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_diurnal_lab",
@@ -374,7 +564,17 @@
       "measured": 3.749223,
       "error_pct": 0.0,
       "source": "IERS Earth sidereal phase at prime meridian",
-      "fpc_rate_proxy": 2.485788
+      "fpc_rate_proxy": 2.485788,
+      "domain_display_name": "null island diurnal",
+      "display_name": "12 00 noon utc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_diurnal_lab",
@@ -387,7 +587,17 @@
       "measured": -56.853999,
       "error_pct": 0.0,
       "source": "IERS Earth sidereal phase at prime meridian",
-      "fpc_rate_proxy": 12.950378
+      "fpc_rate_proxy": 12.950378,
+      "domain_display_name": "null island diurnal",
+      "display_name": "18 00 dusk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_diurnal_lab",
@@ -396,7 +606,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "NULL Island 0N 0E UTC diurnal cycle"
+      "source": "NULL Island 0N 0E UTC diurnal cycle",
+      "domain_display_name": "null island diurnal",
+      "display_name": "solar noon alignment",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_navigation_lab",
@@ -408,7 +628,17 @@
       "source": "fluid_navigation_analogy",
       "time_solidification": -0.026315,
       "flow_balance": 0.221176,
-      "S": 0.644694
+      "S": 0.644694,
+      "domain_display_name": "fpc navigation",
+      "display_name": "with current",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_navigation_lab",
@@ -420,7 +650,17 @@
       "source": "fluid_navigation_analogy",
       "time_solidification": -2.290702,
       "flow_balance": -0.394578,
-      "S": -3.574332
+      "S": -3.574332,
+      "domain_display_name": "fpc navigation",
+      "display_name": "against current",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_navigation_lab",
@@ -432,7 +672,17 @@
       "source": "fluid_navigation_analogy",
       "time_solidification": 4.432896,
       "flow_balance": -0.272342,
-      "S": -2.787898
+      "S": -2.787898,
+      "domain_display_name": "fpc navigation",
+      "display_name": "eddy turbulent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_navigation_lab",
@@ -444,7 +694,17 @@
       "source": "fluid_navigation_analogy",
       "time_solidification": 0.305677,
       "flow_balance": 0.036469,
-      "S": 0.300203
+      "S": 0.300203,
+      "domain_display_name": "fpc navigation",
+      "display_name": "passive drift",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fpc_navigation_lab",
@@ -453,7 +713,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "navigation sweep"
+      "source": "navigation sweep",
+      "domain_display_name": "fpc navigation",
+      "display_name": "observer lock effect",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_tz_lab",
@@ -467,7 +737,17 @@
       "error_pct": 0.0,
       "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
       "tau_rate_unified": 1.419841,
-      "greenwich_tau": 1.419841
+      "greenwich_tau": 1.419841,
+      "domain_display_name": "null island tz",
+      "display_name": "UTC+0",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_tz_lab",
@@ -481,7 +761,17 @@
       "error_pct": 0.0,
       "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
       "tau_rate_unified": 1.419841,
-      "greenwich_tau": 1.419841
+      "greenwich_tau": 1.419841,
+      "domain_display_name": "null island tz",
+      "display_name": "UTC-5 NYC",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_tz_lab",
@@ -495,7 +785,17 @@
       "error_pct": 0.0,
       "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
       "tau_rate_unified": 1.419841,
-      "greenwich_tau": 1.419841
+      "greenwich_tau": 1.419841,
+      "domain_display_name": "null island tz",
+      "display_name": "UTC+9 Tokyo",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "null_island_tz_lab",
@@ -509,7 +809,17 @@
       "error_pct": 0.0,
       "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
       "tau_rate_unified": 1.419841,
-      "greenwich_tau": 1.419841
+      "greenwich_tau": 1.419841,
+      "domain_display_name": "null island tz",
+      "display_name": "UTC-12",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -683,5 +993,19 @@
   },
   "tier": 50,
   "official_domain": true,
-  "time_status": "GREEN"
+  "time_status": "GREEN",
+  "display_name": "Time Emergence Simulation",
+  "tier_label": "Tier 50",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.549302+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 28,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.041111,
+    "mean_abs_delta": 7.085714285714284e-05,
+    "precision_tier_counts": {
+      "green": 28
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

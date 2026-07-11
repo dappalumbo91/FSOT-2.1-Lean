@@ -43,7 +43,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19
+      "observable_count": 19,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14
+      "observable_count": 14,
+      "domain_display_name": "tier gap fill",
+      "display_name": "h0 fpc tau validation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +85,18 @@
       "measured": 72.1,
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -75,7 +106,18 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -86,7 +128,18 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
-      "eval_kind": "prereg_anchor"
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -96,7 +149,18 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "discriminant": "fsot_exceeds_sota_by_0.4",
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -106,7 +170,18 @@
       "measured": 72.1,
       "error_pct": 0.0,
       "unit": "km/s/Mpc",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0 fsot dual anchor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s/Mpc"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -116,7 +191,18 @@
       "measured": 67.4,
       "error_pct": 6.973294,
       "unit": "km/s/Mpc",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0 planck cmb",
+      "scientific_measurement": {
+        "delta": 4.7,
+        "delta_pct": 6.973294,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "unit": "km/s/Mpc"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -126,7 +212,18 @@
       "measured": 73.04,
       "error_pct": 1.286966,
       "unit": "km/s/Mpc",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0 sh0es local",
+      "scientific_measurement": {
+        "delta": -0.94,
+        "delta_pct": 1.286966,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "unit": "km/s/Mpc"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -136,7 +233,18 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "unit": "dimensionless",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc cosmological tau",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -146,7 +254,18 @@
       "measured": 0.48,
       "error_pct": 4.166667,
       "unit": "dimensionless",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc atomic tau",
+      "scientific_measurement": {
+        "delta": 0.02,
+        "delta_pct": 4.166667,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -156,7 +275,18 @@
       "measured": 0.52,
       "error_pct": 3.846154,
       "unit": "dimensionless",
-      "eval_kind": "panel_anchor"
+      "eval_kind": "panel_anchor",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc orbital tau",
+      "scientific_measurement": {
+        "delta": -0.02,
+        "delta_pct": 3.846154,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -165,7 +295,17 @@
       "computed": 0.000502,
       "measured": 0.000502,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "hubble dark sector",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -175,7 +315,17 @@
       "measured": 0.462181,
       "error_pct": 0.0,
       "source_panel": "hubble_dark_sector",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "hubble bubble",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -185,7 +335,17 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source_panel": "hubble_dark_sector",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -195,7 +355,17 @@
       "measured": 67.4,
       "error_pct": 0.023801,
       "source_panel": "hubble_dark_sector",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -204,7 +374,17 @@
       "computed": 5e-05,
       "measured": 5e-05,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc fluidlink timing",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -214,7 +394,17 @@
       "measured": 0.031199,
       "error_pct": 0.0,
       "source_panel": "fpc_fluidlink_timing",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -224,7 +414,17 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "source_panel": "fpc_fluidlink_timing",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -234,7 +434,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "fpc_fluidlink_timing",
-      "eval_kind": "relay"
+      "eval_kind": "relay",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_prereg_lab",
@@ -247,7 +457,17 @@
         "PRED-024",
         "PRED-025"
       ],
-      "eval_kind": "certificate_gate"
+      "eval_kind": "certificate_gate",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fluid spacetime prereg validation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -261,5 +481,21 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fluid Spacetime Prereg Validation Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.693739+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 6.973294,
+    "mean_abs_delta": 0.29981985105263154,
+    "precision_tier_counts": {
+      "green": 12,
+      "contested": 5,
+      "red": 2
+    },
+    "green_gate_fraction": 0.631578947368421,
+    "matches_domain_spine": false
+  }
 }

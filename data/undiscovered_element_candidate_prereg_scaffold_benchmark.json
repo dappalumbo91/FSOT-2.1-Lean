@@ -39,7 +39,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 25
+      "observable_count": 25,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 9.50413070515626e-09,
-      "observable_count": 18
+      "observable_count": 18,
+      "domain_display_name": "tier gap fill",
+      "display_name": "undiscovered element screening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -68,7 +98,17 @@
       "computed": 0.0565,
       "measured": 0.0565,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "phi morphogenetic scaling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -80,7 +120,17 @@
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
       "fsot_predicted_half_life_s": 2500000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -90,7 +140,17 @@
       "computed": 2500000.000237603,
       "measured": 2500000.0,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0002376,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -100,7 +160,17 @@
       "computed": 6.838741,
       "measured": 6.838735,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.8e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -112,7 +182,17 @@
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
       "fsot_predicted_half_life_s": 1200000000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z126 N184 unbihexium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -122,7 +202,17 @@
       "computed": 1200000000.1140497,
       "measured": 1200000000.0,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z126 N184 unbihexium",
+      "scientific_measurement": {
+        "delta": 0.11404967,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -132,7 +222,17 @@
       "computed": 6.700041,
       "measured": 6.700035,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z126 N184 unbihexium",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -144,7 +244,17 @@
       "error_pct": 0.0,
       "formula_branch": "term3.acoustic_bleed",
       "fsot_predicted_half_life_s": 0.8,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z119 N177 ununennium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -154,7 +264,17 @@
       "computed": 0.8000000000760331,
       "measured": 0.8,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z119 N177 ununennium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -164,7 +284,17 @@
       "computed": 6.858281,
       "measured": 6.858274,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z119 N177 ununennium",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.000102,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -176,7 +306,17 @@
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
       "fsot_predicted_half_life_s": 45000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -186,7 +326,17 @@
       "computed": 45000.00000427686,
       "measured": 45000.0,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 4.28e-06,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -196,7 +346,17 @@
       "computed": 6.750574,
       "measured": 6.750568,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 8.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -208,7 +368,17 @@
       "error_pct": 0.0,
       "formula_branch": "term1.term1_base",
       "fsot_predicted_half_life_s": 31000000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -218,7 +388,17 @@
       "computed": 31000000.00294628,
       "measured": 31000000.0,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z132 N184",
+      "scientific_measurement": {
+        "delta": 0.00294628,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -228,7 +408,17 @@
       "computed": 6.524359,
       "measured": 6.524353,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z132 N184",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 9.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -240,7 +430,17 @@
       "error_pct": 0.0,
       "formula_branch": "term3.boundary_partition",
       "fsot_predicted_half_life_s": 1500.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z164 N228",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -250,7 +450,17 @@
       "computed": 1500.000000142562,
       "measured": 1500.0,
       "error_pct": 0.0,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z164 N228",
+      "scientific_measurement": {
+        "delta": 1.4e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -260,7 +470,17 @@
       "computed": 5.798027,
       "measured": 5.798022,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_proxy"
+      "eval_kind": "binding_proxy",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "Z164 N228",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 8.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -269,7 +489,17 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "magic proton proximity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -278,7 +508,17 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "magic neutron proximity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -287,7 +527,17 @@
       "computed": 1e-06,
       "measured": 1e-06,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "min predicted half life s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -296,7 +546,17 @@
       "computed": 7.0,
       "measured": 7.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "binding energy per nucleon floor mev",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "undiscovered_element_prereg_lab",
@@ -306,7 +566,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "prereg_bundle_gate",
-      "note": "Z>118 candidates preregistered \u2014 not claimed synthesized or naturally observed"
+      "note": "Z>118 candidates preregistered \u2014 not claimed synthesized or naturally observed",
+      "domain_display_name": "undiscovered element prereg",
+      "display_name": "undiscovered element screening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -320,5 +590,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Undiscovered Element Candidate Prereg Scaffold",
+  "tier_label": "Tier 72 \u2014 Periodic Table Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.667871+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 25,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.000102,
+    "mean_abs_delta": 0.0046909588000000006,
+    "precision_tier_counts": {
+      "green": 25
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

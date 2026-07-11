@@ -39,7 +39,17 @@
       "computed": 0.05251,
       "measured": 0.0,
       "error_pct": 0.0525102820198906,
-      "observable_count": 247
+      "observable_count": 247,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.05251,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.05251,
       "measured": 0.0,
       "error_pct": 0.0525102820198906,
-      "observable_count": 247
+      "observable_count": 247,
+      "domain_display_name": "tier gap fill",
+      "display_name": "observer panel",
+      "scientific_measurement": {
+        "delta": 0.05251,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +85,17 @@
         "energy",
         "fusion",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Plasma Physics",
+      "scientific_measurement": {
+        "delta": 0.000332,
+        "delta_pct": 0.052559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -79,7 +109,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Immunology",
+      "scientific_measurement": {
+        "delta": 0.000291,
+        "delta_pct": 0.052432,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -93,7 +133,17 @@
       "maps_to_lean": [
         "energy",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Climate Science",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -107,7 +157,17 @@
       "maps_to_lean": [
         "cosmological",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cosmology Extended",
+      "scientific_measurement": {
+        "delta": 0.000396,
+        "delta_pct": 0.052566,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -122,7 +182,17 @@
         "cosmological",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cosmology Bubble Bleed",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -137,7 +207,17 @@
         "cosmological",
         "cmb",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cosmology Anomalies",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -152,7 +232,17 @@
         "particle",
         "higgs",
         "nuclear"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Particle Physics",
+      "scientific_measurement": {
+        "delta": 0.000355,
+        "delta_pct": 0.052463,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -166,7 +256,17 @@
       "maps_to_lean": [
         "particle",
         "higgs"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Higgs Mass",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.052554,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -181,7 +281,17 @@
         "fusion",
         "energy",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Space Weather",
+      "scientific_measurement": {
+        "delta": 0.000329,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -195,7 +305,17 @@
       "maps_to_lean": [
         "energy",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Hydrology",
+      "scientific_measurement": {
+        "delta": 0.000331,
+        "delta_pct": 0.05254,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -209,7 +329,17 @@
       "maps_to_lean": [
         "medical",
         "chemical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Pharmacology",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.052459,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -223,7 +353,17 @@
       "maps_to_lean": [
         "energy",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052579,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -236,7 +376,17 @@
       "derived_branch": "term1.quirkMod",
       "maps_to_lean": [
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Seismology",
+      "scientific_measurement": {
+        "delta": 0.000383,
+        "delta_pct": 0.052466,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -249,7 +399,17 @@
       "derived_branch": "term1.quirkMod",
       "maps_to_lean": [
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Tectonics",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -263,7 +423,17 @@
       "maps_to_lean": [
         "electron",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Geomagnetism",
+      "scientific_measurement": {
+        "delta": 0.000309,
+        "delta_pct": 0.052521,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -277,7 +447,17 @@
       "maps_to_lean": [
         "galactic",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Planetary Structure",
+      "scientific_measurement": {
+        "delta": 0.000338,
+        "delta_pct": 0.052539,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -290,7 +470,17 @@
       "derived_branch": "term1.quirkMod",
       "maps_to_lean": [
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Orbital Mechanics",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -303,7 +493,17 @@
       "derived_branch": "term1.quirkMod",
       "maps_to_lean": [
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Small Body Orbits",
+      "scientific_measurement": {
+        "delta": 0.000353,
+        "delta_pct": 0.052556,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -317,7 +517,17 @@
       "maps_to_lean": [
         "electron",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Magnetosphere",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -331,7 +541,17 @@
       "maps_to_lean": [
         "galactic",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Grace Cryosphere",
+      "scientific_measurement": {
+        "delta": 0.000334,
+        "delta_pct": 0.052461,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -344,7 +564,17 @@
       "derived_branch": "term1.quirkMod",
       "maps_to_lean": [
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Seismology Deep",
+      "scientific_measurement": {
+        "delta": 0.000366,
+        "delta_pct": 0.052536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -358,7 +588,17 @@
       "maps_to_lean": [
         "galactic",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Planetary Atmospheres",
+      "scientific_measurement": {
+        "delta": 0.00034,
+        "delta_pct": 0.052577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -373,7 +613,17 @@
         "electron",
         "fusion",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Magnetosphere Extended",
+      "scientific_measurement": {
+        "delta": 0.000323,
+        "delta_pct": 0.05252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -387,7 +637,17 @@
       "maps_to_lean": [
         "chemical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Geochemistry",
+      "scientific_measurement": {
+        "delta": 0.000326,
+        "delta_pct": 0.052581,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -401,7 +661,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Oncology",
+      "scientific_measurement": {
+        "delta": 0.000317,
+        "delta_pct": 0.052541,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -415,7 +685,17 @@
       "maps_to_lean": [
         "medical",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neuroimmunology",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -429,7 +709,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -443,7 +733,17 @@
       "maps_to_lean": [
         "material",
         "quantum"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Quantum Materials",
+      "scientific_measurement": {
+        "delta": 0.000329,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -456,7 +756,17 @@
       "derived_branch": "term1.growth_term",
       "maps_to_lean": [
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neuron Multi Hero",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.052459,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -470,7 +780,17 @@
       "maps_to_lean": [
         "consciousness",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Linguistics Formal",
+      "scientific_measurement": {
+        "delta": 0.0004,
+        "delta_pct": 0.052516,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -484,7 +804,17 @@
       "maps_to_lean": [
         "particle",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Mathematics Computational",
+      "scientific_measurement": {
+        "delta": 0.000339,
+        "delta_pct": 0.052558,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -498,7 +828,17 @@
       "maps_to_lean": [
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Materials Engineering",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -513,7 +853,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Computational Reasoning",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -528,7 +878,17 @@
         "particle",
         "mathematical",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Math Generator Rules Eval",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -543,7 +903,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Trinary OS Portable",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -557,7 +927,17 @@
       "maps_to_lean": [
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Materials Species Bridge",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -571,7 +951,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "IGEM Synthetic Biology",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -586,7 +976,17 @@
         "medical",
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Culinary Arts",
+      "scientific_measurement": {
+        "delta": 0.000324,
+        "delta_pct": 0.052541,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -600,7 +1000,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Pharmacokinetics",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -614,7 +1024,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Food Microbiology",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -628,7 +1048,17 @@
       "maps_to_lean": [
         "biological",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Agriculture Agroecology",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -643,7 +1073,17 @@
         "energy",
         "medical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Maillard Chemistry",
+      "scientific_measurement": {
+        "delta": 0.000324,
+        "delta_pct": 0.052541,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -657,7 +1097,17 @@
       "maps_to_lean": [
         "consciousness",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Econometrics",
+      "scientific_measurement": {
+        "delta": 0.00045,
+        "delta_pct": 0.052529,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -672,7 +1122,17 @@
         "biological",
         "medical",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Sports Biomechanics",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -687,7 +1147,17 @@
         "energy",
         "material",
         "acoustical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Architecture Building Science",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -701,7 +1171,17 @@
       "maps_to_lean": [
         "energy",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Geology Stratigraphy",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -715,7 +1195,17 @@
       "maps_to_lean": [
         "biological",
         "ecological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Botany",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -729,7 +1219,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Zoology",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -743,7 +1243,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Clinical Medicine",
+      "scientific_measurement": {
+        "delta": 0.000326,
+        "delta_pct": 0.052581,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -758,7 +1268,17 @@
         "chemical",
         "electron",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Chemical Engineering",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -773,7 +1293,17 @@
         "energy",
         "biological",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Environmental Engineering",
+      "scientific_measurement": {
+        "delta": 0.000341,
+        "delta_pct": 0.052462,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -787,7 +1317,17 @@
       "maps_to_lean": [
         "consciousness",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Anthropology",
+      "scientific_measurement": {
+        "delta": 0.000439,
+        "delta_pct": 0.05247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -802,7 +1342,17 @@
         "particle",
         "mathematical",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Math Generator Benchmark Formula Eval",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -817,7 +1367,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Trinary OS ISA Rebuild",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -831,7 +1391,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "IGEM Live FASTA Ingest",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -846,7 +1416,17 @@
         "particle",
         "mathematical",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Math Generator Airfoil RMSE",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -861,7 +1441,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Trinary OS Round Trip",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -876,7 +1466,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Tokenization Smoke",
+      "scientific_measurement": {
+        "delta": 0.000417,
+        "delta_pct": 0.052453,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -891,7 +1491,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Trinary Hardware Motif",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -906,7 +1516,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Intrinsic LLM Validators",
+      "scientific_measurement": {
+        "delta": 0.000417,
+        "delta_pct": 0.052453,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -921,7 +1541,17 @@
         "biological",
         "medical",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Biological CUDA Physarum",
+      "scientific_measurement": {
+        "delta": 0.000378,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -936,7 +1566,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Arxiv Primitives V14",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -951,7 +1591,17 @@
         "particle",
         "mathematical",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Formula Corpus CNC",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -966,7 +1616,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Binary Decoder Rendlesham",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -981,7 +1641,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Certified Agent Qwen",
+      "scientific_measurement": {
+        "delta": 0.000417,
+        "delta_pct": 0.052453,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -996,7 +1666,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Omni Theory Genesis",
+      "scientific_measurement": {
+        "delta": 0.000464,
+        "delta_pct": 0.052528,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1011,7 +1691,17 @@
         "particle",
         "mathematical",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "FSOT Aggregate Unified DB",
+      "scientific_measurement": {
+        "delta": 0.000339,
+        "delta_pct": 0.052558,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1026,7 +1716,17 @@
         "cosmological",
         "particle",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Prediction Rederivation",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1041,7 +1741,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "VL Distill Atlas",
+      "scientific_measurement": {
+        "delta": 0.000417,
+        "delta_pct": 0.052453,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1056,7 +1766,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Rust Lean Bridge",
+      "scientific_measurement": {
+        "delta": 0.000392,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1070,7 +1790,17 @@
       "maps_to_lean": [
         "particle",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Bibliography Lean Corpus",
+      "scientific_measurement": {
+        "delta": 0.000296,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1084,7 +1814,17 @@
       "maps_to_lean": [
         "particle",
         "atomic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "NIST CODATA Constants",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1098,7 +1838,17 @@
       "maps_to_lean": [
         "biological",
         "ecological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "GBIF Species Occurrence",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1112,7 +1862,17 @@
       "maps_to_lean": [
         "energy",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "NOAA Coastal Tides",
+      "scientific_measurement": {
+        "delta": 0.000334,
+        "delta_pct": 0.052461,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1126,7 +1886,17 @@
       "maps_to_lean": [
         "consciousness",
         "economic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "World Bank Development",
+      "scientific_measurement": {
+        "delta": 0.000499,
+        "delta_pct": 0.052526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1140,7 +1910,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "NASA Exoplanet Archive",
+      "scientific_measurement": {
+        "delta": 0.000382,
+        "delta_pct": 0.052569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1154,7 +1934,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "RCSB PDB Structures",
+      "scientific_measurement": {
+        "delta": 0.000261,
+        "delta_pct": 0.05255,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1168,7 +1958,17 @@
       "maps_to_lean": [
         "consciousness",
         "linguistic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "OpenAlex Citation Graph",
+      "scientific_measurement": {
+        "delta": 0.000488,
+        "delta_pct": 0.052473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1182,7 +1982,17 @@
       "maps_to_lean": [
         "electron",
         "chemical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "PubChem Compound Properties",
+      "scientific_measurement": {
+        "delta": 0.00027,
+        "delta_pct": 0.052597,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1196,7 +2006,17 @@
       "maps_to_lean": [
         "particle",
         "high_energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "CERN Open Data LHC",
+      "scientific_measurement": {
+        "delta": 0.000389,
+        "delta_pct": 0.052568,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1210,7 +2030,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "UniProt Protein Annotations",
+      "scientific_measurement": {
+        "delta": 0.000251,
+        "delta_pct": 0.052474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1225,7 +2055,17 @@
         "fusion",
         "particle",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Space Propulsion Systems",
+      "scientific_measurement": {
+        "delta": 0.000327,
+        "delta_pct": 0.05246,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1239,7 +2079,17 @@
       "maps_to_lean": [
         "electron",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Electrical Power Systems",
+      "scientific_measurement": {
+        "delta": 0.000266,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1253,7 +2103,17 @@
       "maps_to_lean": [
         "energy",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "HVAC Thermal Systems",
+      "scientific_measurement": {
+        "delta": 0.000305,
+        "delta_pct": 0.052586,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1268,7 +2128,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Trinary OS Tier E",
+      "scientific_measurement": {
+        "delta": 0.000422,
+        "delta_pct": 0.052531,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1283,7 +2153,17 @@
         "particle",
         "astronomical",
         "cosmological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Breakthrough Discoveries 2024 2026",
+      "scientific_measurement": {
+        "delta": 0.000404,
+        "delta_pct": 0.052468,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1298,7 +2178,17 @@
         "energy",
         "galactic",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Paleontology",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1313,7 +2203,17 @@
         "biological",
         "ecological",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Marine Biology",
+      "scientific_measurement": {
+        "delta": 0.000328,
+        "delta_pct": 0.05248,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1327,7 +2227,17 @@
       "maps_to_lean": [
         "biological",
         "ecological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Mycology",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1341,7 +2251,17 @@
       "maps_to_lean": [
         "biological",
         "ecological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Entomology",
+      "scientific_measurement": {
+        "delta": 0.000319,
+        "delta_pct": 0.052582,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1355,7 +2275,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Virology",
+      "scientific_measurement": {
+        "delta": 0.000317,
+        "delta_pct": 0.052541,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1369,7 +2299,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Epidemiology",
+      "scientific_measurement": {
+        "delta": 0.000326,
+        "delta_pct": 0.052581,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1383,7 +2323,17 @@
       "maps_to_lean": [
         "medical",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cardiology",
+      "scientific_measurement": {
+        "delta": 0.000326,
+        "delta_pct": 0.052581,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1397,7 +2347,17 @@
       "maps_to_lean": [
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Civil Engineering",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1412,7 +2372,17 @@
         "material",
         "energy",
         "electron"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Mechanical Engineering",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1427,7 +2397,17 @@
         "consciousness",
         "ai",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Robotics Control Systems",
+      "scientific_measurement": {
+        "delta": 0.000432,
+        "delta_pct": 0.05247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1442,7 +2422,17 @@
         "consciousness",
         "neural",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neuroeconomics",
+      "scientific_measurement": {
+        "delta": 0.000434,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1457,7 +2447,17 @@
         "energy",
         "galactic",
         "ecological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Paleoclimate",
+      "scientific_measurement": {
+        "delta": 0.000341,
+        "delta_pct": 0.052462,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1472,7 +2472,17 @@
         "energy",
         "galactic",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Speleology",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1487,7 +2497,17 @@
         "astronomical",
         "galactic",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Exogeology",
+      "scientific_measurement": {
+        "delta": 0.000376,
+        "delta_pct": 0.052465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1502,7 +2522,17 @@
         "mathematical",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Pure Mathematics",
+      "scientific_measurement": {
+        "delta": 0.000449,
+        "delta_pct": 0.052515,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1516,7 +2546,17 @@
       "maps_to_lean": [
         "consciousness",
         "linguistic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "History",
+      "scientific_measurement": {
+        "delta": 0.000424,
+        "delta_pct": 0.052454,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1530,7 +2570,17 @@
       "maps_to_lean": [
         "consciousness",
         "economic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Law Policy",
+      "scientific_measurement": {
+        "delta": 0.000439,
+        "delta_pct": 0.05247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1545,7 +2595,17 @@
         "consciousness",
         "economic",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Finance Markets",
+      "scientific_measurement": {
+        "delta": 0.000454,
+        "delta_pct": 0.052486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1560,7 +2620,17 @@
         "consciousness",
         "economic",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Supply Chain Logistics",
+      "scientific_measurement": {
+        "delta": 0.000449,
+        "delta_pct": 0.052515,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1577,7 +2647,17 @@
         "energy",
         "electron",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Domain Coupling Simulation",
+      "scientific_measurement": {
+        "delta": 0.000461,
+        "delta_pct": 0.052486,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1592,7 +2672,17 @@
         "particle",
         "mathematical",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Formula Corpus Closure",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1607,7 +2697,17 @@
         "particle",
         "mathematical",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cryptography Technology",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1622,7 +2722,17 @@
         "ai",
         "consciousness",
         "electron"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Network Internet Protocols",
+      "scientific_measurement": {
+        "delta": 0.000439,
+        "delta_pct": 0.05247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1637,7 +2747,17 @@
         "medical",
         "biological",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Malware Threat Intelligence",
+      "scientific_measurement": {
+        "delta": 0.000337,
+        "delta_pct": 0.052519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1652,7 +2772,17 @@
         "ai",
         "consciousness",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Secure Software Engineering",
+      "scientific_measurement": {
+        "delta": 0.000432,
+        "delta_pct": 0.05247,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1667,7 +2797,17 @@
         "biological",
         "medical",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Code Genome Structure",
+      "scientific_measurement": {
+        "delta": 0.000354,
+        "delta_pct": 0.052574,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1683,7 +2823,17 @@
         "medical",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Zero Day Risk Evaluator",
+      "scientific_measurement": {
+        "delta": 0.000466,
+        "delta_pct": 0.052458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1698,7 +2848,17 @@
         "ai",
         "biological",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "External OSS Code Genome",
+      "scientific_measurement": {
+        "delta": 0.000452,
+        "delta_pct": 0.052558,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1713,7 +2873,17 @@
         "consciousness",
         "ai",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Programming Language Laws",
+      "scientific_measurement": {
+        "delta": 0.000445,
+        "delta_pct": 0.052559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1728,7 +2898,17 @@
         "mathematical",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Formula Branching Fractal",
+      "scientific_measurement": {
+        "delta": 0.000466,
+        "delta_pct": 0.052458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1743,7 +2923,17 @@
         "particle",
         "energy",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Mechanistic Coupling",
+      "scientific_measurement": {
+        "delta": 0.000457,
+        "delta_pct": 0.052529,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1758,7 +2948,17 @@
         "medical",
         "ai",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "CVE Codon Hole Falsification",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1774,7 +2974,17 @@
         "particle",
         "consciousness",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Theory Completeness Spine",
+      "scientific_measurement": {
+        "delta": 0.000474,
+        "delta_pct": 0.052472,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1788,7 +2998,17 @@
       "maps_to_lean": [
         "mathematical",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fractal Constant Recursion",
+      "scientific_measurement": {
+        "delta": 0.000359,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1803,7 +3023,17 @@
         "cosmological",
         "particle",
         "biological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Preregistered Predictions",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1817,7 +3047,17 @@
       "maps_to_lean": [
         "ai",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Portable Clone Verify",
+      "scientific_measurement": {
+        "delta": 0.000323,
+        "delta_pct": 0.05252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1832,7 +3072,17 @@
         "consciousness",
         "neural",
         "perceived"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Observer Channel Derivation",
+      "scientific_measurement": {
+        "delta": 0.00046,
+        "delta_pct": 0.052471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1847,7 +3097,17 @@
         "ai",
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1863,7 +3123,17 @@
         "particle",
         "consciousness",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "ToE Gap Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000474,
+        "delta_pct": 0.052472,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1879,7 +3149,17 @@
         "material",
         "energy",
         "acoustical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000334,
+        "delta_pct": 0.052461,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1895,7 +3175,17 @@
         "energy",
         "fusion",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Chaos Mediated Phase Transitions",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1910,7 +3200,17 @@
         "biological",
         "mathematical",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Phi Morphogenetic Scaling",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1926,7 +3226,17 @@
         "chemical",
         "energy",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Ionospheric Chemistry Coupling",
+      "scientific_measurement": {
+        "delta": 0.00034,
+        "delta_pct": 0.052577,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1940,7 +3250,17 @@
       "maps_to_lean": [
         "energy",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Energy AI Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000342,
+        "delta_pct": 0.052481,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1954,7 +3274,17 @@
       "maps_to_lean": [
         "consciousness",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Consciousness Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000459,
+        "delta_pct": 0.052557,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1968,7 +3298,17 @@
       "maps_to_lean": [
         "energy",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Energy Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000343,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1982,7 +3322,17 @@
       "maps_to_lean": [
         "particle",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Particle Neural Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000347,
+        "delta_pct": 0.052576,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -1997,7 +3347,17 @@
         "ai",
         "consciousness",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Proof Carrying Code Genome",
+      "scientific_measurement": {
+        "delta": 0.000452,
+        "delta_pct": 0.052558,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2015,7 +3375,17 @@
         "energy",
         "medical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Domain Orbital Predictions",
+      "scientific_measurement": {
+        "delta": 0.000473,
+        "delta_pct": 0.052556,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2029,7 +3399,17 @@
       "maps_to_lean": [
         "medical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Medical Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2043,7 +3423,17 @@
       "maps_to_lean": [
         "ai",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2057,7 +3447,17 @@
       "maps_to_lean": [
         "neural",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neural Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000351,
+        "delta_pct": 0.052519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2075,7 +3475,17 @@
         "energy",
         "galactic",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "ToE Unification Spine",
+      "scientific_measurement": {
+        "delta": 0.000481,
+        "delta_pct": 0.052473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2092,7 +3502,17 @@
         "galactic",
         "cosmological",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Compactification Ladder",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.052573,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2108,7 +3528,17 @@
         "medical",
         "galactic",
         "cosmological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000353,
+        "delta_pct": 0.052556,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2123,7 +3553,17 @@
         "mathematical",
         "particle",
         "cosmological"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fold Depth Metrics",
+      "scientific_measurement": {
+        "delta": 0.000373,
+        "delta_pct": 0.052535,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2140,7 +3580,17 @@
         "cosmological",
         "medical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Reality Folding Spine",
+      "scientific_measurement": {
+        "delta": 0.000382,
+        "delta_pct": 0.052569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2157,7 +3607,17 @@
         "galactic",
         "cosmological",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Time Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.000466,
+        "delta_pct": 0.052556,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2175,7 +3635,17 @@
         "cosmological",
         "blackhole",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Time Domain Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000472,
+        "delta_pct": 0.052542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2192,7 +3662,17 @@
         "galactic",
         "cosmological",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "FPC Temporal Coupling",
+      "scientific_measurement": {
+        "delta": 0.000465,
+        "delta_pct": 0.052542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2210,7 +3690,17 @@
         "cosmological",
         "blackhole",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fluid Phase Current Spine",
+      "scientific_measurement": {
+        "delta": 0.000481,
+        "delta_pct": 0.052473,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2226,7 +3716,17 @@
         "particle",
         "consciousness",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Stumped Observables Panel",
+      "scientific_measurement": {
+        "delta": 0.000492,
+        "delta_pct": 0.052527,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2241,7 +3741,17 @@
         "cosmological",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Hubble Bubble Tension",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2255,7 +3765,17 @@
       "maps_to_lean": [
         "cosmological",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Dark Sector Open Problems",
+      "scientific_measurement": {
+        "delta": 0.000396,
+        "delta_pct": 0.052566,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2272,7 +3792,17 @@
         "consciousness",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Stumped Observables Spine",
+      "scientific_measurement": {
+        "delta": 0.000508,
+        "delta_pct": 0.052552,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2287,7 +3817,17 @@
         "consciousness",
         "neural",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Consciousness Econ",
+      "scientific_measurement": {
+        "delta": 0.000459,
+        "delta_pct": 0.052557,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2301,7 +3841,17 @@
       "maps_to_lean": [
         "cosmological",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Dark Energy CPL",
+      "scientific_measurement": {
+        "delta": 0.000396,
+        "delta_pct": 0.052566,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2316,7 +3866,17 @@
         "cosmological",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "SH0ES Refined",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2332,7 +3892,17 @@
         "neural",
         "ai",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Consciousness Soul Bridge",
+      "scientific_measurement": {
+        "delta": 0.000459,
+        "delta_pct": 0.052557,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2347,7 +3917,17 @@
         "consciousness",
         "linguistic",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Symbolic Archetype Panel",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2362,7 +3942,17 @@
         "astronomical",
         "galactic",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Astrophysical Structure Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000355,
+        "delta_pct": 0.052463,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2376,7 +3966,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Stellar Multiplicity Catalog",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2391,7 +3991,17 @@
         "astronomical",
         "particle",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Compact Object Binary Events",
+      "scientific_measurement": {
+        "delta": 0.000369,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2405,7 +4015,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Galactic Structure Sample",
+      "scientific_measurement": {
+        "delta": 0.000366,
+        "delta_pct": 0.052536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2419,7 +4039,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Solar System Structure Deep",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2433,7 +4063,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Exoplanet System Architecture",
+      "scientific_measurement": {
+        "delta": 0.000368,
+        "delta_pct": 0.052447,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2448,7 +4088,17 @@
         "electron",
         "chemical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "PubChem Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000327,
+        "delta_pct": 0.05246,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2463,7 +4113,17 @@
         "material",
         "energy",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Materials Genome Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000334,
+        "delta_pct": 0.052461,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2478,7 +4138,17 @@
         "biological",
         "medical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "UniProt Structure Annotations Deep",
+      "scientific_measurement": {
+        "delta": 0.000326,
+        "delta_pct": 0.05244,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2492,7 +4162,17 @@
       "maps_to_lean": [
         "biological",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "IGEM Parts Expanded",
+      "scientific_measurement": {
+        "delta": 0.00033,
+        "delta_pct": 0.05252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2509,7 +4189,17 @@
         "biological",
         "material",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Interdisciplinary Spine Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2525,7 +4215,17 @@
         "material",
         "particle",
         "electron"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Chemical Structure Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000329,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2540,7 +4240,17 @@
         "energy",
         "chemical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Published Fuel Property Panel",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2555,7 +4265,17 @@
         "astronomical",
         "particle",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "GWOSC Live Event Deep",
+      "scientific_measurement": {
+        "delta": 0.000369,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2569,7 +4289,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Stellar Multiplicity Live Deep",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2585,7 +4315,17 @@
         "chemical",
         "energy",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Material Property Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000337,
+        "delta_pct": 0.052519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2600,7 +4340,17 @@
         "energy",
         "chemical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fuel Thermochemistry Public Anchors",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2614,7 +4364,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "SIMBAD Stellar Identity Deep",
+      "scientific_measurement": {
+        "delta": 0.000369,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2628,7 +4388,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Gaia Astrometry Panel Deep",
+      "scientific_measurement": {
+        "delta": 0.000368,
+        "delta_pct": 0.052571,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2644,7 +4414,17 @@
         "mathematical",
         "consciousness",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Music Harmonics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000368,
+        "delta_pct": 0.052571,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2661,7 +4441,17 @@
         "neural",
         "mathematical",
         "acoustical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "XR Interactive Media Math Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000424,
+        "delta_pct": 0.052562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2678,7 +4468,17 @@
         "mathematical",
         "acoustical",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Creative Arts Math Spine",
+      "scientific_measurement": {
+        "delta": 0.000447,
+        "delta_pct": 0.052485,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2692,7 +4492,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "WDS Live Multiplicity Deep",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2706,7 +4516,17 @@
       "maps_to_lean": [
         "astronomical",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Gaia DR3 TAP Deep",
+      "scientific_measurement": {
+        "delta": 0.000369,
+        "delta_pct": 0.052464,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2723,7 +4543,17 @@
         "biological",
         "material",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Preregistered Predictions Verification Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2739,7 +4569,17 @@
         "ai",
         "consciousness",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Information Theory Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000383,
+        "delta_pct": 0.052466,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2754,7 +4594,17 @@
         "mathematical",
         "ai",
         "galactic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Network Science Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000343,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2769,7 +4619,17 @@
         "electron",
         "material",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Semiconductor Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000303,
+        "delta_pct": 0.052543,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2784,7 +4644,17 @@
         "energy",
         "particle",
         "thermodynamics"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Statistical Mechanics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000312,
+        "delta_pct": 0.052437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2799,7 +4669,17 @@
         "biological",
         "medical",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Biophysics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000304,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2816,7 +4696,17 @@
         "energy",
         "electron",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neurolab Gaps Math Spine",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2832,7 +4722,17 @@
         "chemical",
         "particle",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Material In Silico Screening Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000337,
+        "delta_pct": 0.052519,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2847,7 +4747,17 @@
         "energy",
         "chemical",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fuel Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2863,7 +4773,17 @@
         "consciousness",
         "neural",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Interactive Media Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000428,
+        "delta_pct": 0.052515,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2878,7 +4798,17 @@
         "quantum",
         "ai",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Quantum Information",
+      "scientific_measurement": {
+        "delta": 0.000329,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2893,7 +4823,17 @@
         "consciousness",
         "mathematical",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Econophysics",
+      "scientific_measurement": {
+        "delta": 0.000499,
+        "delta_pct": 0.052526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2907,7 +4847,17 @@
       "maps_to_lean": [
         "biological",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Ecology",
+      "scientific_measurement": {
+        "delta": 0.00028,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2922,7 +4872,17 @@
         "biological",
         "medical",
         "neural"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Genomic Sciences",
+      "scientific_measurement": {
+        "delta": 0.000251,
+        "delta_pct": 0.052474,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2939,7 +4899,17 @@
         "quantum",
         "ai",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Neurolab Residual Math Spine",
+      "scientific_measurement": {
+        "delta": 0.000455,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2955,7 +4925,17 @@
         "particle",
         "energy",
         "acoustical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Term3 Acoustic Bleed Depth",
+      "scientific_measurement": {
+        "delta": 0.000341,
+        "delta_pct": 0.052462,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2970,7 +4950,17 @@
         "consciousness",
         "linguistic",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Initiation Transformation Archetype",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -2985,7 +4975,17 @@
         "consciousness",
         "linguistic",
         "mathematical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Boundary Partition Tightening",
+      "scientific_measurement": {
+        "delta": 0.000444,
+        "delta_pct": 0.052544,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3001,7 +5001,17 @@
         "consciousness",
         "material",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Formula Precision Spine",
+      "scientific_measurement": {
+        "delta": 0.000455,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3016,7 +5026,17 @@
         "material",
         "particle",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Materials Project Live Panel",
+      "scientific_measurement": {
+        "delta": 0.000312,
+        "delta_pct": 0.052584,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3031,7 +5051,17 @@
         "electron",
         "chemical",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "PubChem Live Deep",
+      "scientific_measurement": {
+        "delta": 0.00027,
+        "delta_pct": 0.052597,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3046,7 +5076,17 @@
         "neural",
         "consciousness",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "OpenNeuro Full Panel",
+      "scientific_measurement": {
+        "delta": 0.000371,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3061,7 +5101,17 @@
         "astronomical",
         "galactic",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "VizieR WDS TAP Live Deep",
+      "scientific_measurement": {
+        "delta": 0.000382,
+        "delta_pct": 0.052569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3077,7 +5127,17 @@
         "chemical",
         "neural",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Live Ingest Spine",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3093,7 +5153,17 @@
         "particle",
         "medical",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Unified DB Candidate Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3108,7 +5178,17 @@
         "mathematical",
         "particle",
         "medical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "FSOT Aggregate Organized Panel",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3124,7 +5204,17 @@
         "particle",
         "medical",
         "ai"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Unified DB Crosswalk Spine",
+      "scientific_measurement": {
+        "delta": 0.00035,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3140,7 +5230,17 @@
         "cosmological",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Proof Ledger Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000508,
+        "delta_pct": 0.052552,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3156,7 +5256,17 @@
         "particle",
         "biological",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Preregistered Outcome Tracking",
+      "scientific_measurement": {
+        "delta": 0.000352,
+        "delta_pct": 0.052537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3172,7 +5282,17 @@
         "mathematical",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "ToE Claim Certificate Bundle",
+      "scientific_measurement": {
+        "delta": 0.000508,
+        "delta_pct": 0.052552,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3188,7 +5308,17 @@
         "energy",
         "particle",
         "plasma"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fusion Physics Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000361,
+        "delta_pct": 0.052446,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3204,7 +5334,17 @@
         "energy",
         "plasma",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Magnetic Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.000347,
+        "delta_pct": 0.052576,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3220,7 +5360,17 @@
         "energy",
         "plasma",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Inertial Confinement Fusion Panel",
+      "scientific_measurement": {
+        "delta": 0.000354,
+        "delta_pct": 0.052574,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3236,7 +5386,17 @@
         "energy",
         "particle",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cold Fusion Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000332,
+        "delta_pct": 0.052559,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3253,7 +5413,17 @@
         "plasma",
         "particle",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fusion Lab Certificate Spine",
+      "scientific_measurement": {
+        "delta": 0.000376,
+        "delta_pct": 0.052465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3269,7 +5439,17 @@
         "atomic",
         "nuclear",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Periodic Table Public Panel",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.052479,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3285,7 +5465,17 @@
         "nuclear",
         "atomic",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Superheavy Element Stability Panel",
+      "scientific_measurement": {
+        "delta": 0.000317,
+        "delta_pct": 0.052541,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3301,7 +5491,17 @@
         "nuclear",
         "atomic",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Undiscovered Element Candidate Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000313,
+        "delta_pct": 0.052458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3317,7 +5517,17 @@
         "nuclear",
         "fusion",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Natural Formation Element Simulation",
+      "scientific_measurement": {
+        "delta": 0.00032,
+        "delta_pct": 0.052459,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3334,7 +5544,17 @@
         "atomic",
         "fusion",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Periodic Table Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.000334,
+        "delta_pct": 0.052461,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3350,7 +5570,17 @@
         "particle",
         "nuclear",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Heavy Ion Lab Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.052441,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3367,7 +5597,17 @@
         "nuclear",
         "material",
         "thermodynamics"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Element Synthesis Condition Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000336,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3384,7 +5624,17 @@
         "nuclear",
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cold Fusion Lab Synthesis Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.000346,
+        "delta_pct": 0.052557,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3400,7 +5650,17 @@
         "fusion",
         "energy",
         "particle"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Metamaterial Fluid Design Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000345,
+        "delta_pct": 0.052538,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3417,7 +5677,17 @@
         "nuclear",
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Lab Synthesis Metamaterial Spine",
+      "scientific_measurement": {
+        "delta": 0.000366,
+        "delta_pct": 0.052536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3433,7 +5703,17 @@
         "nuclear",
         "fusion",
         "atomic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Island Of Stability Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000366,
+        "delta_pct": 0.052536,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3449,7 +5729,17 @@
         "particle",
         "nuclear",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Z120 Z126 Beam Synthesis Panel",
+      "scientific_measurement": {
+        "delta": 0.000368,
+        "delta_pct": 0.052447,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3465,7 +5755,17 @@
         "particle",
         "nuclear",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fusion Decay Chain Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000354,
+        "delta_pct": 0.052444,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3481,7 +5781,17 @@
         "nuclear",
         "fusion",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Superheavy Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.000373,
+        "delta_pct": 0.052535,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3498,7 +5808,17 @@
         "fusion",
         "atomic",
         "material"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Superheavy Island Completion Spine",
+      "scientific_measurement": {
+        "delta": 0.000387,
+        "delta_pct": 0.052534,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3514,7 +5834,17 @@
         "nuclear",
         "fusion",
         "atomic"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Distant Island Z128 Z132 Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000385,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3529,7 +5859,17 @@
         "particle",
         "nuclear",
         "fusion"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Z164 Distant Island Prereg Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000387,
+        "delta_pct": 0.052534,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3545,7 +5885,17 @@
         "particle",
         "nuclear",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Periodic Extension Decay Topology Scaffold",
+      "scientific_measurement": {
+        "delta": 0.000382,
+        "delta_pct": 0.052569,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3561,7 +5911,17 @@
         "nuclear",
         "fusion",
         "astronomical"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Distant Island Emergence Simulation",
+      "scientific_measurement": {
+        "delta": 0.000394,
+        "delta_pct": 0.052533,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3579,7 +5939,17 @@
         "atomic",
         "material",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Periodic Table Extension Closure Spine",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.052565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3596,7 +5966,17 @@
         "galactic",
         "cosmological",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Time Emergence Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000472,
+        "delta_pct": 0.052542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3613,7 +5993,17 @@
         "galactic",
         "cosmological",
         "blackhole"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "FPC Fluidlink Timing Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000476,
+        "delta_pct": 0.0525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3630,7 +6020,17 @@
         "consciousness",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Cosmology Anomaly Deep Panel",
+      "scientific_measurement": {
+        "delta": 0.000499,
+        "delta_pct": 0.052526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3646,7 +6046,17 @@
         "particle",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Hubble Dark Sector Crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0004,
+        "delta_pct": 0.052516,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3664,7 +6074,17 @@
         "cosmological",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fluid Spacetime Observable Spine",
+      "scientific_measurement": {
+        "delta": 0.000508,
+        "delta_pct": 0.052552,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3679,7 +6099,17 @@
         "neural",
         "consciousness",
         "biophysics"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Hybrid FI Sim Multi Hero Panel",
+      "scientific_measurement": {
+        "delta": 0.000465,
+        "delta_pct": 0.052542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3694,7 +6124,17 @@
         "mathematical",
         "particle",
         "consciousness"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Knowledge Base Portable Bundle Panel",
+      "scientific_measurement": {
+        "delta": 0.000471,
+        "delta_pct": 0.052528,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3709,7 +6149,17 @@
         "cosmological",
         "particle",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "RD Interval Tightening Panel",
+      "scientific_measurement": {
+        "delta": 0.000382,
+        "delta_pct": 0.052449,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3726,7 +6176,17 @@
         "galactic",
         "cosmological",
         "energy"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Domain Coupling Simulation Refresh Panel",
+      "scientific_measurement": {
+        "delta": 0.000499,
+        "delta_pct": 0.052526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3743,7 +6203,17 @@
         "particle",
         "blackhole",
         "cmb"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Fluid Spacetime Prereg Validation Panel",
+      "scientific_measurement": {
+        "delta": 0.000505,
+        "delta_pct": 0.052513,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3760,7 +6230,17 @@
         "cosmological",
         "fluid_dynamics",
         "electromagnetism"
-      ]
+      ],
+      "domain_display_name": "observer channel derivation",
+      "display_name": "Warp BH WH Portal Panel",
+      "scientific_measurement": {
+        "delta": 0.000401,
+        "delta_pct": 0.052533,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "observer_channel_derivation_lab",
@@ -3769,7 +6249,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "FSOT.Formal.Scalar.consciousness_factor"
+      "source": "FSOT.Formal.Scalar.consciousness_factor",
+      "domain_display_name": "observer channel derivation",
+      "display_name": "consciousness factor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -3790,5 +6280,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.TheoryCompletenessSpinePriors",
     "FSOT.Formal.ObserverChannelDerivationPriors"
-  ]
+  ],
+  "display_name": "Observer Channel Derivation",
+  "tier_label": "Tier 46",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.511403+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 247,
+    "median_error_pct": 0.05252,
+    "max_error_pct": 0.052597,
+    "mean_abs_delta": 0.0003737773279352224,
+    "precision_tier_counts": {
+      "green": 247
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

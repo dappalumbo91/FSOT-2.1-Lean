@@ -38,7 +38,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 21,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +57,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 21,
+      "domain_display_name": "tier gap fill",
+      "display_name": "recursion panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "source": "strict_empirical.jsonl",
       "root_branch": "term1.growth_term",
       "recursion_depth": 2.5,
-      "lean_hook": "FSOT.Formal.Scalar.growth_term"
+      "lean_hook": "FSOT.Formal.Scalar.growth_term",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "gamma",
+      "scientific_measurement": {
+        "delta": 0.204434,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -71,7 +101,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "gamma growth term",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -81,7 +121,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "gamma gamma euler",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -91,7 +141,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "gamma alpha",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -103,7 +163,17 @@
       "source": "strict_empirical.jsonl",
       "root_branch": "term1.term1_base",
       "recursion_depth": 2.5,
-      "lean_hook": "FSOT.Formal.Scalar.phi"
+      "lean_hook": "FSOT.Formal.Scalar.phi",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "phi",
+      "scientific_measurement": {
+        "delta": 0.934922,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -113,7 +183,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "phi phi",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -123,7 +203,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "phi perceived adjust",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -133,7 +223,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "phi coherence efficiency",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -145,7 +245,17 @@
       "source": "strict_empirical.jsonl",
       "root_branch": "term3.acoustic_bleed",
       "recursion_depth": 3.0,
-      "lean_hook": "FSOT.Formal.Scalar.pi"
+      "lean_hook": "FSOT.Formal.Scalar.pi",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "pi",
+      "scientific_measurement": {
+        "delta": 0.824864,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -155,7 +265,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "pi pi",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -165,7 +285,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "pi acoustic bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -175,7 +305,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "pi acoustic inflow",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -185,7 +325,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "pi theta s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -197,7 +347,17 @@
       "source": "strict_empirical.jsonl",
       "root_branch": "term1.term1_base",
       "recursion_depth": 2.5,
-      "lean_hook": "FSOT.Formal.Scalar.e"
+      "lean_hook": "FSOT.Formal.Scalar.e",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "e",
+      "scientific_measurement": {
+        "delta": 0.389194,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -207,7 +367,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "e exponentials \u2192 term1_base decay/growth"
+      "morphism": "e exponentials \u2192 term1_base decay/growth",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "e e",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -217,7 +387,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "e exponentials \u2192 term1_base decay/growth"
+      "morphism": "e exponentials \u2192 term1_base decay/growth",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "e psi con",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -227,7 +407,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "e exponentials \u2192 term1_base decay/growth"
+      "morphism": "e exponentials \u2192 term1_base decay/growth",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "e poof factor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -239,7 +429,17 @@
       "source": "strict_empirical.jsonl",
       "root_branch": "term3.chaos_factor",
       "recursion_depth": 2.5,
-      "lean_hook": "FSOT.Formal.Scalar.catalan_G"
+      "lean_hook": "FSOT.Formal.Scalar.catalan_G",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "g cat",
+      "scientific_measurement": {
+        "delta": 0.21812,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -249,7 +449,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "g cat catalan G",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -259,7 +469,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "g cat chaos factor",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fractal_constant_recursion_lab",
@@ -269,7 +489,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "fractal_constant_recursion.yaml",
-      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation",
+      "domain_display_name": "fractal constant recursion",
+      "display_name": "g cat beta",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -297,5 +527,19 @@
   "crosswalk_modules": [
     "FSOT.Formal.FormulaBranchingFractalPriors",
     "FSOT.Formal.FractalConstantRecursionPriors"
-  ]
+  ],
+  "display_name": "Fractal Constant Recursion",
+  "tier_label": "Tier 46",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.501763+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 21,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.028512,
+    "mean_abs_delta": 0.122454,
+    "precision_tier_counts": {
+      "green": 21
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

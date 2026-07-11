@@ -43,7 +43,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 22
+      "observable_count": 22,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 15
+      "observable_count": 15,
+      "domain_display_name": "tier gap fill",
+      "display_name": "lab synthesis bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +83,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "cold fusion prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -73,7 +103,17 @@
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -83,7 +123,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -93,7 +143,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -103,7 +163,17 @@
       "measured": 1.85,
       "error_pct": 7.9e-05,
       "source_panel": "cold_fusion_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -112,7 +182,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "undiscovered element prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -122,7 +202,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -132,7 +222,17 @@
       "measured": 0.0565,
       "error_pct": 0.0,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "phi morphogenetic scaling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -142,7 +242,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -152,7 +262,17 @@
       "measured": 2500000.0,
       "error_pct": 0.0,
       "source_panel": "undiscovered_element_prereg",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "Z120 N184 unbinilium",
+      "scientific_measurement": {
+        "delta": 0.0002376,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -161,7 +281,17 @@
       "computed": 9.5e-05,
       "measured": 9.5e-05,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "heavy ion lab synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -171,7 +301,17 @@
       "measured": 17.6,
       "error_pct": 9.5e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 9.7e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -181,7 +321,17 @@
       "measured": 15.0,
       "error_pct": 9.5e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 9.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -191,7 +341,17 @@
       "measured": 4.03,
       "error_pct": 9.5e-05,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "dd fusion",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 9.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -201,7 +361,17 @@
       "measured": 245.0,
       "error_pct": 0.000787,
       "source_panel": "heavy_ion_lab_synthesis",
-      "eval_kind": "crosswalk_relay"
+      "eval_kind": "crosswalk_relay",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.001928,
+        "delta_pct": 0.000787,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -211,7 +381,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "mechanism": "Ti_beam_heavy_ion_synthesis",
-      "eval_kind": "crosswalk_gate"
+      "eval_kind": "crosswalk_gate",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "titanium deuterium absorption",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -220,7 +400,17 @@
       "computed": 1.46922,
       "measured": 1.46922,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_score"
+      "eval_kind": "crosswalk_score",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "titanium deuterium absorption",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -230,7 +420,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "mechanism": "Pd_lattice_acoustic_bleed_thermal",
-      "eval_kind": "crosswalk_gate"
+      "eval_kind": "crosswalk_gate",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -239,7 +439,17 @@
       "computed": 2.19225,
       "measured": 2.19225,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_score"
+      "eval_kind": "crosswalk_score",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -249,7 +459,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "mechanism": "published_fusion_decay_chain",
-      "eval_kind": "crosswalk_gate"
+      "eval_kind": "crosswalk_gate",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "muon catalyzed dd",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -258,7 +478,17 @@
       "computed": 113400000.0,
       "measured": 113400000.0,
       "error_pct": 0.0,
-      "eval_kind": "crosswalk_score"
+      "eval_kind": "crosswalk_score",
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "muon catalyzed dd",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_lab_synthesis_lab",
@@ -272,7 +502,17 @@
         "cold_fusion_prereg_anchors.json",
         "heavy_ion_reaction_anchors.json",
         "metamaterial_fluid_prereg_candidates.json"
-      ]
+      ],
+      "domain_display_name": "cold fusion synthesis",
+      "display_name": "cold fusion lab synthesis crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -286,5 +526,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Cold Fusion Lab Synthesis Crosswalk",
+  "tier_label": "Tier 73 \u2014 Heavy Ion Lab Synthesis Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.673467+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.000787,
+    "mean_abs_delta": 0.00010007272727272728,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

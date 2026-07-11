@@ -43,7 +43,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 37
+      "observable_count": 37,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.000502,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "observable universe spine",
+      "scientific_measurement": {
+        "delta": 0.000502,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +84,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 17,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -74,7 +104,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "time_emergence_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -84,7 +124,17 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "source_panel": "time_emergence_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -94,7 +144,17 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "source_panel": "time_emergence_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "earth sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -104,7 +164,17 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "source_panel": "time_emergence_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "moon sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -114,7 +184,17 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source_panel": "time_emergence_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "hubble h0 km s mpc",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -124,7 +204,17 @@
       "measured": 5e-05,
       "error_pct": 0.0,
       "record_count": 13,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc fluidlink deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -134,7 +224,17 @@
       "measured": 0.031199,
       "error_pct": 0.0,
       "source_panel": "fpc_fluidlink_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -144,7 +244,17 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "source_panel": "fpc_fluidlink_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -154,7 +264,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "fpc_fluidlink_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -164,7 +284,17 @@
       "measured": 1.79,
       "error_pct": 0.026675,
       "source_panel": "fpc_fluidlink_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "iers planetary tau",
+      "scientific_measurement": {
+        "delta": 0.000477,
+        "delta_pct": 0.026648,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -174,7 +304,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "fpc_fluidlink_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "iers planetary tau",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -184,7 +324,17 @@
       "measured": 0.000502,
       "error_pct": 0.0,
       "record_count": 14,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cosmology anomaly deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -194,7 +344,17 @@
       "measured": 0.042611,
       "error_pct": 0.0,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "stumped observables panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -204,7 +364,17 @@
       "measured": 67.4,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "h0 planck 2018",
+      "scientific_measurement": {
+        "delta": 0.000339,
+        "delta_pct": 0.000503,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -214,7 +384,17 @@
       "measured": 73.04,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "h0 sh0es 2024",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -224,7 +404,17 @@
       "measured": 72.1,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "h0 fsot bubble",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -234,7 +424,17 @@
       "measured": -1.0,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "w0 dark energy",
+      "scientific_measurement": {
+        "delta": -5e-06,
+        "delta_pct": 0.0005,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -244,7 +444,17 @@
       "measured": 0.000502,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "hubble dark crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -254,7 +464,17 @@
       "measured": 0.462181,
       "error_pct": 0.0,
       "source_panel": "hubble_dark_crosswalk",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "hubble bubble",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -264,7 +484,17 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source_panel": "hubble_dark_crosswalk",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -274,7 +504,17 @@
       "measured": 67.4,
       "error_pct": 0.023801,
       "source_panel": "hubble_dark_crosswalk",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -284,7 +524,17 @@
       "measured": 73.04,
       "error_pct": 1.076341,
       "source_panel": "hubble_dark_crosswalk",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "sh0es jwst",
+      "scientific_measurement": {
+        "delta": 0.786159,
+        "delta_pct": 1.07634,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -294,7 +544,17 @@
       "measured": 70.39,
       "error_pct": 0.005454,
       "source_panel": "hubble_dark_crosswalk",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "freedman jwst",
+      "scientific_measurement": {
+        "delta": 0.003839,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -304,7 +564,17 @@
       "measured": 0.009504,
       "error_pct": 0.0,
       "record_count": 7,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fluid phase spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -314,7 +584,17 @@
       "measured": 28.0,
       "error_pct": 0.0,
       "source_panel": "fluid_phase_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -324,7 +604,17 @@
       "measured": 250.0,
       "error_pct": 0.028056,
       "source_panel": "fluid_phase_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time domain crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -334,7 +624,17 @@
       "measured": 6.0,
       "error_pct": 0.031199,
       "source_panel": "fluid_phase_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -344,7 +644,17 @@
       "measured": 6.0,
       "error_pct": 0.009504,
       "source_panel": "fluid_phase_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.00057,
+        "delta_pct": 0.0095,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -354,7 +664,17 @@
       "measured": 246.0,
       "error_pct": 0.009504,
       "source_panel": "fluid_phase_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "multi domain fpc",
+      "scientific_measurement": {
+        "delta": 0.02338,
+        "delta_pct": 0.009504,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -364,7 +684,17 @@
       "measured": 0.042611,
       "error_pct": 0.0,
       "record_count": 5,
-      "eval_kind": "fluid_spacetime_bridge"
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "stumped spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -374,7 +704,17 @@
       "measured": 13.0,
       "error_pct": 0.042611,
       "source_panel": "stumped_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "stumped observables panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -384,7 +724,17 @@
       "measured": 6.0,
       "error_pct": 0.462181,
       "source_panel": "stumped_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "hubble bubble tension",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -394,7 +744,17 @@
       "measured": 7.0,
       "error_pct": 0.006335,
       "source_panel": "stumped_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "dark sector open problems",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -404,7 +764,17 @@
       "measured": 12.0,
       "error_pct": 0.140126,
       "source_panel": "stumped_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cosmology anomalies tier25",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -414,7 +784,17 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "source_panel": "stumped_spine",
-      "eval_kind": "fluid_spacetime_relay"
+      "eval_kind": "fluid_spacetime_relay",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "w a E con w0 tracked",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fluid_spacetime_observable_lab",
@@ -429,7 +809,17 @@
         "fpc_fluidlink",
         "cosmology_anomalies",
         "hubble_dark_sector"
-      ]
+      ],
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fluid spacetime observable spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -443,5 +833,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fluid Spacetime Observable Spine",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.691730+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 37,
+    "median_error_pct": 0.0,
+    "max_error_pct": 1.07634,
+    "mean_abs_delta": 0.02248851810810811,
+    "precision_tier_counts": {
+      "green": 30,
+      "contested": 7
+    },
+    "green_gate_fraction": 0.8108108108108109,
+    "matches_domain_spine": false
+  }
 }

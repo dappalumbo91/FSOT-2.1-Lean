@@ -40,7 +40,17 @@
       "computed": 0.022075,
       "measured": 0.0,
       "error_pct": 0.0220747159758794,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.022075,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.022075,
       "measured": 0.0,
       "error_pct": 0.0220747159758794,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "compactification panel",
+      "scientific_measurement": {
+        "delta": 0.022075,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +85,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 1.1e-05,
+        "delta_pct": 0.027565,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -79,7 +109,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.027749,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -93,7 +133,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 0.002393,
+        "delta_pct": 0.026589,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -107,7 +157,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 0.026056,
+        "delta_pct": 0.026588,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -121,7 +181,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 0.000448,
+        "delta_pct": 0.026613,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -135,7 +205,17 @@
       "source": "data/higgs_mass_benchmark.json",
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 3
+      "D_eff_ladder": 3,
+      "domain_display_name": "compactification ladder",
+      "display_name": "string quantum",
+      "scientific_measurement": {
+        "delta": 0.000406,
+        "delta_pct": 0.026568,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -149,7 +229,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -163,7 +253,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.02717,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -177,7 +277,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 0.027942,
+        "delta_pct": 0.028512,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -191,7 +301,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 0.003992,
+        "delta_pct": 0.028514,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -205,7 +325,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 0.000791,
+        "delta_pct": 0.028495,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -219,7 +349,17 @@
       "source": "data/particle_physics_gap_fill_benchmark.json",
       "anchor_domain": "Particle_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 5
+      "D_eff_ladder": 5,
+      "domain_display_name": "compactification ladder",
+      "display_name": "nuclear",
+      "scientific_measurement": {
+        "delta": 0.000393,
+        "delta_pct": 0.028484,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -233,7 +373,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.105263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -247,7 +397,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -261,7 +421,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 0.01766,
+        "delta_pct": 0.022075,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -275,7 +445,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 0.001324,
+        "delta_pct": 0.022067,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -289,7 +469,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 0.000632,
+        "delta_pct": 0.022089,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -303,7 +493,17 @@
       "source": "data/atomic_physics_gap_fill_benchmark.json",
       "anchor_domain": "Atomic_Physics",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 7
+      "D_eff_ladder": 7,
+      "domain_display_name": "compactification ladder",
+      "display_name": "atomic",
+      "scientific_measurement": {
+        "delta": 0.000285,
+        "delta_pct": 0.022094,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -317,7 +517,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -331,7 +541,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -345,7 +565,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.004526,
+        "delta_pct": 0.010058,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -359,7 +589,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.002917,
+        "delta_pct": 0.010059,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -373,7 +613,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.000296,
+        "delta_pct": 0.010063,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -387,7 +637,17 @@
       "source": "data/materials_species_bridge_benchmark.json",
       "anchor_domain": "Materials_Species_Bridge",
       "formula_branch": "term2.trend_bias",
-      "D_eff_ladder": 9
+      "D_eff_ladder": 9,
+      "domain_display_name": "compactification ladder",
+      "display_name": "molecular",
+      "scientific_measurement": {
+        "delta": 0.000123,
+        "delta_pct": 0.010027,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -401,7 +661,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -415,7 +685,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -429,7 +709,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.002802,
+        "delta_pct": 0.013343,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -443,7 +733,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.002135,
+        "delta_pct": 0.013344,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -457,7 +757,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.013351,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -471,7 +781,17 @@
       "source": "data/synthetic_biology_benchmark.json",
       "anchor_domain": "Synthetic_Biology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 11
+      "D_eff_ladder": 11,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cellular",
+      "scientific_measurement": {
+        "delta": 0.000157,
+        "delta_pct": 0.013323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -485,7 +805,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.009803,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -499,7 +829,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.007933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -513,7 +853,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 0.007717,
+        "delta_pct": 0.009187,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -527,7 +877,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 0.008452,
+        "delta_pct": 0.009187,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -541,7 +901,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 0.000284,
+        "delta_pct": 0.009183,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -555,7 +925,17 @@
       "source": "data/immunology_benchmark.json",
       "anchor_domain": "Immunology",
       "formula_branch": "term1.growth_term",
-      "D_eff_ladder": 13
+      "D_eff_ladder": 13,
+      "domain_display_name": "compactification ladder",
+      "display_name": "organismic",
+      "scientific_measurement": {
+        "delta": 0.000105,
+        "delta_pct": 0.009213,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -569,7 +949,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.022339,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -583,7 +973,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -597,7 +997,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 0.004603,
+        "delta_pct": 0.023015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -611,7 +1021,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 0.072729,
+        "delta_pct": 0.023016,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -625,7 +1045,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 0.000736,
+        "delta_pct": 0.023001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -639,7 +1069,17 @@
       "source": "data/planetary_structure_benchmark.json",
       "anchor_domain": "Planetary_Structure",
       "formula_branch": "term2.scale",
-      "D_eff_ladder": 16
+      "D_eff_ladder": 16,
+      "domain_display_name": "compactification ladder",
+      "display_name": "planetary",
+      "scientific_measurement": {
+        "delta": 0.000252,
+        "delta_pct": 0.023048,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -653,7 +1093,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -667,7 +1117,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -681,7 +1141,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 0.005559,
+        "delta_pct": 0.026471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -695,7 +1165,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 71.955218,
+        "delta_pct": 0.026472,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -709,7 +1189,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 0.000883,
+        "delta_pct": 0.026465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -723,7 +1213,17 @@
       "source": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "anchor_domain": "Breakthrough_Discoveries_2024_2026",
       "formula_branch": "term3.chaos_factor",
-      "D_eff_ladder": 20
+      "D_eff_ladder": 20,
+      "domain_display_name": "compactification ladder",
+      "display_name": "stellar",
+      "scientific_measurement": {
+        "delta": 0.000277,
+        "delta_pct": 0.026491,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -737,7 +1237,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -751,7 +1261,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -765,7 +1285,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 4.661927,
+        "delta_pct": 0.026954,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -779,7 +1309,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 0.045013,
+        "delta_pct": 0.026954,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -793,7 +1333,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 0.000917,
+        "delta_pct": 0.026948,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -807,7 +1357,17 @@
       "source": "data/climate_observed_benchmark.json",
       "anchor_domain": "Climate_Science",
       "formula_branch": "term1.coherence_efficiency",
-      "D_eff_ladder": 22
+      "D_eff_ladder": 22,
+      "domain_display_name": "compactification ladder",
+      "display_name": "galactic",
+      "scientific_measurement": {
+        "delta": 0.000277,
+        "delta_pct": 0.027001,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -821,7 +1381,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.013664,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -835,7 +1405,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -849,7 +1429,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 0.008743,
+        "delta_pct": 0.015074,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -863,7 +1453,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 0.017033,
+        "delta_pct": 0.015073,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -877,7 +1477,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 0.000377,
+        "delta_pct": 0.01508,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "compactification_ladder_lab",
@@ -891,7 +1501,17 @@
       "source": "data/cosmology_extended_benchmark.json",
       "anchor_domain": "Cosmology_Extended",
       "formula_branch": "scaled_S",
-      "D_eff_ladder": 25
+      "D_eff_ladder": 25,
+      "domain_display_name": "compactification ladder",
+      "display_name": "cosmological",
+      "scientific_measurement": {
+        "delta": 0.000151,
+        "delta_pct": 0.0151,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -912,5 +1532,19 @@
   "external_cache_pointer": "G:\\FSOT-PublicData\\compactification_ladder",
   "crosswalk_modules": [
     "FSOT.Formal.CompactificationLadderPriors"
-  ]
+  ],
+  "display_name": "Compactification Ladder",
+  "tier_label": "Tier 49",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.543106+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 60,
+    "median_error_pct": 0.022067,
+    "max_error_pct": 0.105263,
+    "mean_abs_delta": 1.2814495166666666,
+    "precision_tier_counts": {
+      "green": 60
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

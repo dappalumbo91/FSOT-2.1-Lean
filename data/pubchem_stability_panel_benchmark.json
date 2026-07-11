@@ -39,7 +39,17 @@
       "computed": 0.002424,
       "measured": 0.0,
       "error_pct": 0.0024238898584426276,
-      "observable_count": 59
+      "observable_count": 59,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002424,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.002424,
       "measured": 0.0,
       "error_pct": 0.0024238898584426276,
-      "observable_count": 29
+      "observable_count": 29,
+      "domain_display_name": "tier gap fill",
+      "display_name": "pubchem stability",
+      "scientific_measurement": {
+        "delta": 0.002424,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 180.16,
       "error_pct": 0.000555,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -72,7 +102,17 @@
       "measured": 46.07,
       "error_pct": 0.002171,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "702",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.002171,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -83,7 +123,17 @@
       "measured": 206.28,
       "error_pct": 0.002424,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -94,7 +144,17 @@
       "measured": 22.9897693,
       "error_pct": 0.001003,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5360545",
+      "scientific_measurement": {
+        "delta": 0.0002307,
+        "delta_pct": 0.001003,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -105,7 +165,17 @@
       "measured": 194.19,
       "error_pct": 0.00206,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2519",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.00206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -116,7 +186,17 @@
       "measured": 416.6,
       "error_pct": 0.011042,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280453",
+      "scientific_measurement": {
+        "delta": 0.046,
+        "delta_pct": 0.011042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -127,7 +207,17 @@
       "measured": 176.12,
       "error_pct": 0.002271,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "54670067",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.002271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -138,7 +228,17 @@
       "measured": 18.015,
       "error_pct": 0.0,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "962",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -149,7 +249,17 @@
       "measured": 507.18,
       "error_pct": 0.000394,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5957",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000394,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -160,7 +270,17 @@
       "measured": 266.34,
       "error_pct": 0.000375,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2249",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -171,7 +291,17 @@
       "measured": 309.33,
       "error_pct": 0.000323,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3386",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -182,7 +312,17 @@
       "measured": 234.34,
       "error_pct": 0.00128,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3676",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00128,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -193,7 +333,17 @@
       "measured": 151.16,
       "error_pct": 0.003308,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -204,7 +354,17 @@
       "measured": 302.23,
       "error_pct": 0.002647,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280343",
+      "scientific_measurement": {
+        "delta": 0.008,
+        "delta_pct": 0.002647,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -215,7 +375,17 @@
       "measured": 481.5,
       "error_pct": 0.0081,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "446157",
+      "scientific_measurement": {
+        "delta": 0.039,
+        "delta_pct": 0.0081,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -226,7 +396,17 @@
       "measured": 1202.6,
       "error_pct": 0.00291,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5284373",
+      "scientific_measurement": {
+        "delta": 0.035,
+        "delta_pct": 0.00291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -237,7 +417,17 @@
       "measured": 296.1,
       "error_pct": 0.015873,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -248,7 +438,17 @@
       "measured": 270.24,
       "error_pct": 0.0,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280961",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -259,7 +459,17 @@
       "measured": 129.16,
       "error_pct": 0.00542,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "4091",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -270,7 +480,17 @@
       "measured": 543.5,
       "error_pct": 0.0046,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "31703",
+      "scientific_measurement": {
+        "delta": 0.025,
+        "delta_pct": 0.0046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -281,7 +501,17 @@
       "measured": 75.14,
       "error_pct": 0.014639,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2723949",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.014639,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -292,7 +522,17 @@
       "measured": 337.5,
       "error_pct": 0.019259,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5702160",
+      "scientific_measurement": {
+        "delta": -0.065,
+        "delta_pct": 0.019259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -303,7 +543,17 @@
       "measured": 458.4,
       "error_pct": 0.005454,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "65064",
+      "scientific_measurement": {
+        "delta": -0.025,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -314,7 +564,17 @@
       "measured": 285.34,
       "error_pct": 0.001051,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5288826",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001051,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -325,7 +585,17 @@
       "measured": 194.18,
       "error_pct": 0.00309,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "445858",
+      "scientific_measurement": {
+        "delta": 0.006,
+        "delta_pct": 0.00309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -336,7 +606,17 @@
       "measured": 300.4,
       "error_pct": 0.013981,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5282379",
+      "scientific_measurement": {
+        "delta": 0.042,
+        "delta_pct": 0.013981,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -347,7 +627,17 @@
       "measured": 914.2,
       "error_pct": 0.001422,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5284616",
+      "scientific_measurement": {
+        "delta": -0.013,
+        "delta_pct": 0.001422,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -358,7 +648,17 @@
       "measured": 341.4,
       "error_pct": 0.00205,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5360515",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -369,7 +669,17 @@
       "measured": 780.9,
       "error_pct": 0.006275,
       "eval_kind": "formula_mass_closure",
-      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim"
+      "note": "Published PubChem MW vs elemental sum \u2014 no novel stability claim",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2724385",
+      "scientific_measurement": {
+        "delta": 0.049,
+        "delta_pct": 0.006275,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -380,7 +690,17 @@
       "measured": 180.16,
       "error_pct": 0.0005550621669653501,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -391,7 +711,17 @@
       "measured": 46.07,
       "error_pct": 0.002170609941388473,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "702",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.002171,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -402,7 +732,17 @@
       "measured": 206.28,
       "error_pct": 0.0024238898584426276,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -413,7 +753,17 @@
       "measured": 22.9897693,
       "error_pct": 0.0010034898436300228,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5360545",
+      "scientific_measurement": {
+        "delta": 0.0002307,
+        "delta_pct": 0.001003,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -424,7 +774,17 @@
       "measured": 194.19,
       "error_pct": 0.002059838302688438,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2519",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.00206,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -435,7 +795,17 @@
       "measured": 416.6,
       "error_pct": 0.01104176668266737,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280453",
+      "scientific_measurement": {
+        "delta": 0.046,
+        "delta_pct": 0.011042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -446,7 +816,17 @@
       "measured": 176.12,
       "error_pct": 0.0022711787417616838,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "54670067",
+      "scientific_measurement": {
+        "delta": 0.004,
+        "delta_pct": 0.002271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -457,7 +837,17 @@
       "measured": 18.015,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "962",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -468,7 +858,17 @@
       "measured": 507.18,
       "error_pct": 0.00039433731614210927,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5957",
+      "scientific_measurement": {
+        "delta": 0.002,
+        "delta_pct": 0.000394,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -479,7 +879,17 @@
       "measured": 266.34,
       "error_pct": 0.0003754599384370341,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2249",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -490,7 +900,17 @@
       "measured": 309.33,
       "error_pct": 0.0003232793456933361,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3386",
+      "scientific_measurement": {
+        "delta": 0.001,
+        "delta_pct": 0.000323,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -501,7 +921,17 @@
       "measured": 234.34,
       "error_pct": 0.0012801911752094832,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3676",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00128,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -512,7 +942,17 @@
       "measured": 151.16,
       "error_pct": 0.003307753373905433,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -523,7 +963,17 @@
       "measured": 302.23,
       "error_pct": 0.0026469907024389886,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280343",
+      "scientific_measurement": {
+        "delta": 0.008,
+        "delta_pct": 0.002647,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -534,7 +984,17 @@
       "measured": 481.5,
       "error_pct": 0.0080996884735058,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "446157",
+      "scientific_measurement": {
+        "delta": 0.039,
+        "delta_pct": 0.0081,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -545,7 +1005,17 @@
       "measured": 1202.6,
       "error_pct": 0.0029103608847565157,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5284373",
+      "scientific_measurement": {
+        "delta": 0.035,
+        "delta_pct": 0.00291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -556,7 +1026,17 @@
       "measured": 296.1,
       "error_pct": 0.015873015873005276,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -567,7 +1047,17 @@
       "measured": 270.24,
       "error_pct": 0.0,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5280961",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -578,7 +1068,17 @@
       "measured": 129.16,
       "error_pct": 0.005419634561787707,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "4091",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -589,7 +1089,17 @@
       "measured": 543.5,
       "error_pct": 0.004599816007355522,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "31703",
+      "scientific_measurement": {
+        "delta": 0.025,
+        "delta_pct": 0.0046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -600,7 +1110,17 @@
       "measured": 75.14,
       "error_pct": 0.014639339898868634,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2723949",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.014639,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -611,7 +1131,17 @@
       "measured": 337.5,
       "error_pct": 0.019259259259258584,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5702160",
+      "scientific_measurement": {
+        "delta": -0.065,
+        "delta_pct": 0.019259,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -622,7 +1152,17 @@
       "measured": 458.4,
       "error_pct": 0.005453752181495912,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "65064",
+      "scientific_measurement": {
+        "delta": -0.025,
+        "delta_pct": 0.005454,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -633,7 +1173,17 @@
       "measured": 285.34,
       "error_pct": 0.0010513773042835728,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5288826",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.001051,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -644,7 +1194,17 @@
       "measured": 194.18,
       "error_pct": 0.003089916572252666,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "445858",
+      "scientific_measurement": {
+        "delta": 0.006,
+        "delta_pct": 0.00309,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -655,7 +1215,17 @@
       "measured": 300.4,
       "error_pct": 0.013981358189072294,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5282379",
+      "scientific_measurement": {
+        "delta": 0.042,
+        "delta_pct": 0.013981,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -666,7 +1236,17 @@
       "measured": 914.2,
       "error_pct": 0.0014220083132954866,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5284616",
+      "scientific_measurement": {
+        "delta": -0.013,
+        "delta_pct": 0.001422,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -677,7 +1257,17 @@
       "measured": 341.4,
       "error_pct": 0.0020503807850043945,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "5360515",
+      "scientific_measurement": {
+        "delta": 0.007,
+        "delta_pct": 0.00205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -688,7 +1278,17 @@
       "measured": 780.9,
       "error_pct": 0.006274811115376895,
       "within_band": true,
-      "eval_kind": "pubchem_relay"
+      "eval_kind": "pubchem_relay",
+      "domain_display_name": "pubchem stability",
+      "display_name": "2724385",
+      "scientific_measurement": {
+        "delta": 0.049,
+        "delta_pct": 0.006275,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pubchem_stability_lab",
@@ -697,7 +1297,17 @@
       "computed": 0.407884,
       "measured": 0.407884,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "pubchem stability",
+      "display_name": "fsot Chemistry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -711,5 +1321,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "PubChem Stability Panel",
+  "tier_label": "Tier 55 \u2014 PubChem Stability Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.598143+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 59,
+    "median_error_pct": 0.002424,
+    "max_error_pct": 0.019259,
+    "mean_abs_delta": 0.015431549152542377,
+    "precision_tier_counts": {
+      "green": 59
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

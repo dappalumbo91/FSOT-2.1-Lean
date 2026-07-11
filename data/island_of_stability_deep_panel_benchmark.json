@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 23
+      "observable_count": 23,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 9.504139423370362e-09,
-      "observable_count": 22
+      "observable_count": 22,
+      "domain_display_name": "tier gap fill",
+      "display_name": "z120 z126 stability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 8100.000076983489,
       "measured": 8100.0,
       "error_pct": 1e-06,
-      "eval_kind": "superheavy_relay"
+      "eval_kind": "superheavy_relay",
+      "domain_display_name": "island stability deep",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7.698e-05,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -70,7 +100,17 @@
       "computed": 0.8000000000760331,
       "measured": 0.8,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z119 N177",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -80,7 +120,17 @@
       "computed": 7.450007,
       "measured": 7.45,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z119 N177",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -91,7 +141,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 7,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z119 N177",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -101,7 +161,17 @@
       "computed": 2500000.000237603,
       "measured": 2500000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z120 N184",
+      "scientific_measurement": {
+        "delta": 0.0002376,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -111,7 +181,17 @@
       "computed": 7.620007,
       "measured": 7.62,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z120 N184",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -122,7 +202,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 0,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z120 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -132,7 +222,17 @@
       "computed": 85000.00000807851,
       "measured": 85000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z122 N184",
+      "scientific_measurement": {
+        "delta": 8.08e-06,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -142,7 +242,17 @@
       "computed": 7.580007,
       "measured": 7.58,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z122 N184",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -153,7 +263,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 2,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z122 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -163,7 +283,17 @@
       "computed": 45000.00000427686,
       "measured": 45000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 4.28e-06,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -173,7 +303,17 @@
       "computed": 7.550007,
       "measured": 7.55,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -184,7 +324,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 4,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z124 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -194,7 +344,17 @@
       "computed": 1200000000.1140497,
       "measured": 1200000000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N184",
+      "scientific_measurement": {
+        "delta": 0.11404967,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -204,7 +364,17 @@
       "computed": 7.680007,
       "measured": 7.68,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N184",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.1e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -215,7 +385,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "magic_proximity": 0,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N184",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -225,7 +405,17 @@
       "computed": 32000000.003041323,
       "measured": 32000000.0,
       "error_pct": 0.0,
-      "eval_kind": "island_half_life"
+      "eval_kind": "island_half_life",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N190",
+      "scientific_measurement": {
+        "delta": 0.00304132,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -235,7 +425,17 @@
       "computed": 7.610007,
       "measured": 7.61,
       "error_pct": 9.5e-05,
-      "eval_kind": "binding_anchor"
+      "eval_kind": "binding_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N190",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -246,7 +446,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "magic_proximity": 6,
-      "eval_kind": "island_gate"
+      "eval_kind": "island_gate",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z126 N190",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -256,7 +466,17 @@
       "computed": 1.5000000142562016,
       "measured": 1.5,
       "error_pct": 1e-06,
-      "eval_kind": "decay_trend"
+      "eval_kind": "decay_trend",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z114 discovered",
+      "scientific_measurement": {
+        "delta": 1e-08,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -266,7 +486,17 @@
       "computed": 0.05300000050371912,
       "measured": 0.053,
       "error_pct": 1e-06,
-      "eval_kind": "decay_trend"
+      "eval_kind": "decay_trend",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z116 discovered",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -276,7 +506,17 @@
       "computed": 0.000700000006652894,
       "measured": 0.0007,
       "error_pct": 1e-06,
-      "eval_kind": "decay_trend"
+      "eval_kind": "decay_trend",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z118 discovered",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 1e-06,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "island_stability_deep_lab",
@@ -285,7 +525,17 @@
       "computed": 126.0,
       "measured": 126.0,
       "error_pct": 0.0,
-      "eval_kind": "range_anchor"
+      "eval_kind": "range_anchor",
+      "domain_display_name": "island stability deep",
+      "display_name": "Z120 Z126 deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -299,5 +549,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Island Of Stability Deep Panel",
+  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.677994+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 23,
+    "median_error_pct": 0.0,
+    "max_error_pct": 9.4e-05,
+    "mean_abs_delta": 0.005106953913043478,
+    "precision_tier_counts": {
+      "green": 23
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

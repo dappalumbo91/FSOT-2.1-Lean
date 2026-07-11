@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 18
+      "observable_count": 18,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fusion decay chain",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "cold fusion candidate prereg scaffold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -69,7 +99,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "cold fusion lab synthesis crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -81,7 +121,17 @@
       "formula_branch": "term3.acoustic_bleed",
       "fsot_predicted_max_Z": 120.0,
       "sota_max_Z_reached": 118.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "pd d to Z120 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -96,7 +146,17 @@
         "Z120_Cr_Cm",
         "Z120_N184"
       ],
-      "eval_kind": "chain_prediction"
+      "eval_kind": "chain_prediction",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "pd d to Z120 cascade",
+      "scientific_measurement": {
+        "delta": 0.000114,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -105,7 +165,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "chain_gate"
+      "eval_kind": "chain_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "pd d to Z120 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -117,7 +187,17 @@
       "formula_branch": "term1.initiation_transformation",
       "fsot_predicted_max_Z": 126.0,
       "sota_max_Z_reached": 118.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "muon dd to Z126 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -132,7 +212,17 @@
         "Z124_Fe_Cm",
         "Z126_N184"
       ],
-      "eval_kind": "chain_prediction"
+      "eval_kind": "chain_prediction",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "muon dd to Z126 cascade",
+      "scientific_measurement": {
+        "delta": 0.00012,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -141,7 +231,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "chain_gate"
+      "eval_kind": "chain_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "muon dd to Z126 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -153,7 +253,17 @@
       "formula_branch": "term3.acoustic_bleed",
       "fsot_predicted_max_Z": 119.0,
       "sota_max_Z_reached": 118.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "ti d to Z119 bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -167,7 +277,17 @@
         "Z119_Ti_Bk",
         "Z119_N177"
       ],
-      "eval_kind": "chain_prediction"
+      "eval_kind": "chain_prediction",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "ti d to Z119 bridge",
+      "scientific_measurement": {
+        "delta": 0.000113,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -176,7 +296,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "chain_gate"
+      "eval_kind": "chain_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "ti d to Z119 bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -188,7 +318,17 @@
       "formula_branch": "term3.boundary_partition",
       "fsot_predicted_max_Z": 124.0,
       "sota_max_Z_reached": 118.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "icf nif to Z124 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -203,7 +343,17 @@
         "Z124_Fe_Cm",
         "Z124_N184"
       ],
-      "eval_kind": "chain_prediction"
+      "eval_kind": "chain_prediction",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "icf nif to Z124 cascade",
+      "scientific_measurement": {
+        "delta": 0.000118,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -212,7 +362,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "chain_gate"
+      "eval_kind": "chain_gate",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "icf nif to Z124 cascade",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -221,7 +381,17 @@
       "computed": 0.35,
       "measured": 0.35,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "min chain viability",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -230,7 +400,17 @@
       "computed": 4.0,
       "measured": 4.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "max magic proximity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -239,7 +419,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "min predicted half life s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "fusion_decay_chain_prereg_lab",
@@ -249,7 +439,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "prereg_bundle_gate",
-      "note": "Fusion decay chains preregistered \u2014 not claimed observed"
+      "note": "Fusion decay chains preregistered \u2014 not claimed observed",
+      "domain_display_name": "fusion decay chain prereg",
+      "display_name": "fusion decay chain prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -263,5 +463,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fusion Decay Chain Prereg Scaffold",
+  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.679529+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.0,
+    "max_error_pct": 9.5e-05,
+    "mean_abs_delta": 2.5833333333333332e-05,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

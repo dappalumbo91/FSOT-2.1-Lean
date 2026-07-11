@@ -62,7 +62,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 21
+      "observable_count": 21,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "all bodies",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -71,7 +81,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -80,7 +100,17 @@
       "computed": 0.176451,
       "measured": 0.0,
       "error_pct": 0.1764512018643632,
-      "observable_count": 13
+      "observable_count": 13,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "mean temperature",
+      "scientific_measurement": {
+        "delta": 0.176451,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -94,7 +124,17 @@
       "computed": 439.223615,
       "measured": 440.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Mercury:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.776385,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -106,7 +146,17 @@
       "computed": 91.189128,
       "measured": 92.0,
       "error_pct": 0.881383,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Venus:surface pressure",
+      "scientific_measurement": {
+        "delta": -0.810872,
+        "delta_pct": 0.881383,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -118,7 +168,17 @@
       "computed": 733.703084,
       "measured": 737.0,
       "error_pct": 0.447343,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Venus:mean temperature",
+      "scientific_measurement": {
+        "delta": -3.296916,
+        "delta_pct": 0.447343,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -130,7 +190,17 @@
       "computed": 0.00636,
       "measured": 0.00636,
       "error_pct": 0.006729,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Mars:surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -142,7 +212,17 @@
       "computed": 209.629452,
       "measured": 210.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Mars:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.370548,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -154,7 +234,17 @@
       "computed": 164.708856,
       "measured": 165.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Jupiter:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.291144,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -166,7 +256,17 @@
       "computed": 133.763555,
       "measured": 134.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Saturn:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.236445,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -178,7 +278,17 @@
       "computed": 75.865897,
       "measured": 76.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Uranus:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.134103,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -190,7 +300,17 @@
       "computed": 71.872955,
       "measured": 72.0,
       "error_pct": 0.176451,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Neptune:mean temperature",
+      "scientific_measurement": {
+        "delta": -0.127045,
+        "delta_pct": 0.176451,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -202,7 +322,17 @@
       "computed": 1.013,
       "measured": 1.013,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Earth:surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -214,7 +344,17 @@
       "computed": 288.0,
       "measured": 288.0,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Earth:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -226,7 +366,17 @@
       "computed": 1.476,
       "measured": 1.476,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Titan:surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -238,7 +388,17 @@
       "computed": 93.7,
       "measured": 93.7,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Titan:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -250,7 +410,17 @@
       "computed": 0.0,
       "measured": 1e-12,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Europa:surface pressure",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -262,7 +432,17 @@
       "computed": 102.0,
       "measured": 102.0,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Europa:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -274,7 +454,17 @@
       "computed": 0.0,
       "measured": 1e-08,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Io:surface pressure",
+      "scientific_measurement": {
+        "delta": -1e-08,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -286,7 +476,17 @@
       "computed": 130.0,
       "measured": 130.0,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Io:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -298,7 +498,17 @@
       "computed": 1.4e-05,
       "measured": 1.4e-05,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Triton:surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -310,7 +520,17 @@
       "computed": 38.0,
       "measured": 38.0,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Triton:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -322,7 +542,17 @@
       "computed": 1e-06,
       "measured": 1e-06,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Enceladus:surface pressure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "planetary_atmospheres_lab",
@@ -334,11 +564,36 @@
       "computed": 75.0,
       "measured": 75.0,
       "error_pct": 0.0,
-      "S_plan": 0.767179
+      "S_plan": 0.767179,
+      "domain_display_name": "planetary atmospheres",
+      "display_name": "Enceladus:mean temperature",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "crosswalk_modules": [
     "FSOT.Formal.PlanetaryStructurePriors",
     "FSOT.Formal.PlanetaryAtmospheresPriors"
-  ]
+  ],
+  "display_name": "Planetary Atmospheres",
+  "tier_label": "Tier 23",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.588002+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 21,
+    "median_error_pct": 0.006729,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.2877837147619048,
+    "precision_tier_counts": {
+      "green": 20,
+      "red": 1
+    },
+    "green_gate_fraction": 0.9523809523809523,
+    "matches_domain_spine": false
+  }
 }

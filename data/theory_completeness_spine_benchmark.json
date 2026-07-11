@@ -41,7 +41,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 6
+      "observable_count": 6,
+      "domain_display_name": "tier gap fill",
+      "display_name": "completeness panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 255.0,
       "measured": 255.0,
       "error_pct": 0.038016537604979236,
-      "source": "Formula_Branching_Fractal"
+      "source": "Formula_Branching_Fractal",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "fractal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "theory_completeness_spine_lab",
@@ -70,7 +100,17 @@
       "computed": 116.0,
       "measured": 116.0,
       "error_pct": 0.0,
-      "source": "Mechanistic_Coupling"
+      "source": "Mechanistic_Coupling",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "mechanistic",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "theory_completeness_spine_lab",
@@ -79,7 +119,17 @@
       "computed": 29.0,
       "measured": 29.0,
       "error_pct": 0.009186636881580057,
-      "source": "CVE_Codon_Hole_Falsification"
+      "source": "CVE_Codon_Hole_Falsification",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "falsification",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "theory_completeness_spine_lab",
@@ -88,7 +138,17 @@
       "computed": 246.0,
       "measured": 246.0,
       "error_pct": 0.0,
-      "source": "formula_branching_fractal"
+      "source": "formula_branching_fractal",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "all domains to raw S",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "theory_completeness_spine_lab",
@@ -97,7 +157,17 @@
       "computed": 37.0,
       "measured": 37.0,
       "error_pct": 0.0,
-      "source": "mechanistic_coupling"
+      "source": "mechanistic_coupling",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "causal channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "theory_completeness_spine_lab",
@@ -106,7 +176,17 @@
       "computed": 0.5,
       "measured": 0.5,
       "error_pct": 0.0,
-      "source": "cve_codon_hole_falsification"
+      "source": "cve_codon_hole_falsification",
+      "domain_display_name": "theory completeness spine",
+      "display_name": "cwe codon overlap rate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -134,5 +214,19 @@
     "FSOT.Formal.TheoryCompletenessSpinePriors",
     "FSOT.Formal.FormulaCorpusClosurePriors",
     "FSOT.Formal.DomainCouplingSimulationPriors"
-  ]
+  ],
+  "display_name": "Theory Completeness Spine",
+  "tier_label": "Tier 45",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.501763+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 6,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.038016537604979236,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 6
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

@@ -38,7 +38,17 @@
       "computed": 0.030622,
       "measured": 0.0,
       "error_pct": 0.030622122938654326,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.030622,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +57,17 @@
       "computed": 0.030622,
       "measured": 0.0,
       "error_pct": 0.030622122938654326,
-      "observable_count": 45
+      "observable_count": 45,
+      "domain_display_name": "tier gap fill",
+      "display_name": "cardiology panel",
+      "scientific_measurement": {
+        "delta": 0.030622,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -58,7 +78,17 @@
       "computed": 72.022048,
       "measured": 72.0,
       "error_pct": 0.030622122938655454,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "resting hr adult",
+      "scientific_measurement": {
+        "delta": 0.022048,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -67,7 +97,17 @@
       "computed": 180.05512,
       "measured": 180.0,
       "error_pct": 0.03062212293864756,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "max hr 40yo",
+      "scientific_measurement": {
+        "delta": 0.05512,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -76,7 +116,17 @@
       "computed": 60.018373,
       "measured": 60.0,
       "error_pct": 0.03062212293864756,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "normal ejection fraction",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -85,7 +135,17 @@
       "computed": 40.012249,
       "measured": 40.0,
       "error_pct": 0.0306221229386594,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "heart failure ef threshold",
+      "scientific_measurement": {
+        "delta": 0.012249,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -94,7 +154,17 @@
       "computed": 120.036747,
       "measured": 120.0,
       "error_pct": 0.03062212293864756,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "systolic bp normal",
+      "scientific_measurement": {
+        "delta": 0.036747,
+        "delta_pct": 0.030623,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -103,7 +173,17 @@
       "computed": 80.024498,
       "measured": 80.0,
       "error_pct": 0.0306221229386594,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "diastolic bp normal",
+      "scientific_measurement": {
+        "delta": 0.024498,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -112,7 +192,17 @@
       "computed": 5.001531,
       "measured": 5.0,
       "error_pct": 0.0306221229386594,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "cardiac output rest",
+      "scientific_measurement": {
+        "delta": 0.001531,
+        "delta_pct": 0.03062,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -121,7 +211,17 @@
       "computed": 70.021435,
       "measured": 70.0,
       "error_pct": 0.030622122938654326,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "stroke volume rest",
+      "scientific_measurement": {
+        "delta": 0.021435,
+        "delta_pct": 0.030621,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -130,7 +230,17 @@
       "computed": 95.029091,
       "measured": 95.0,
       "error_pct": 0.03062212293865753,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "lv mass index normal",
+      "scientific_measurement": {
+        "delta": 0.029091,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -139,7 +249,17 @@
       "computed": 400.122488,
       "measured": 400.0,
       "error_pct": 0.030622122938652296,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "qt interval normal",
+      "scientific_measurement": {
+        "delta": 0.122488,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -148,7 +268,17 @@
       "computed": 160.048995,
       "measured": 160.0,
       "error_pct": 0.0306221229386594,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "pr interval normal",
+      "scientific_measurement": {
+        "delta": 0.048995,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -157,7 +287,17 @@
       "computed": 0.040012,
       "measured": 0.04,
       "error_pct": 0.030622122938646357,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "troponin uln",
+      "scientific_measurement": {
+        "delta": 1.2e-05,
+        "delta_pct": 0.03,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -166,7 +306,17 @@
       "computed": 70.021435,
       "measured": 70.0,
       "error_pct": 0.030622122938654326,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "ldl target high risk",
+      "scientific_measurement": {
+        "delta": 0.021435,
+        "delta_pct": 0.030621,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -175,7 +325,17 @@
       "computed": 50.015311,
       "measured": 50.0,
       "error_pct": 0.030622122938652296,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "hdl male reference",
+      "scientific_measurement": {
+        "delta": 0.015311,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -184,7 +344,17 @@
       "computed": 150.045933,
       "measured": 150.0,
       "error_pct": 0.03062212293864756,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "triglycerides normal",
+      "scientific_measurement": {
+        "delta": 0.045933,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -193,7 +363,17 @@
       "computed": 3.000919,
       "measured": 3.0,
       "error_pct": 0.03062212293865052,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "coronary flow reserve",
+      "scientific_measurement": {
+        "delta": 0.000919,
+        "delta_pct": 0.030633,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -202,7 +382,17 @@
       "computed": 1.000306,
       "measured": 1.0,
       "error_pct": 0.03062212293865052,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "aortic valve area severe",
+      "scientific_measurement": {
+        "delta": 0.000306,
+        "delta_pct": 0.0306,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -211,7 +401,17 @@
       "computed": 60.018373,
       "measured": 60.0,
       "error_pct": 0.03062212293864756,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "pacemaker lower rate",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -220,7 +420,17 @@
       "computed": 25.007656,
       "measured": 25.0,
       "error_pct": 0.030622122938652296,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "vo2max cardiac rehab",
+      "scientific_measurement": {
+        "delta": 0.007656,
+        "delta_pct": 0.030624,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_lab",
@@ -229,7 +439,17 @@
       "computed": 100.030622,
       "measured": 100.0,
       "error_pct": 0.030622122938652296,
-      "source": "cardiology_reference_observables"
+      "source": "cardiology_reference_observables",
+      "domain_display_name": "cardiology",
+      "display_name": "bnp hf threshold",
+      "scientific_measurement": {
+        "delta": 0.030622,
+        "delta_pct": 0.030622,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -238,7 +458,17 @@
       "computed": 5.002297,
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "caffeine",
+      "scientific_measurement": {
+        "delta": 0.002297,
+        "delta_pct": 0.04594,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -247,7 +477,17 @@
       "computed": 0.990455,
       "measured": 0.99,
       "error_pct": 0.045933184407972866,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "caffeine",
+      "scientific_measurement": {
+        "delta": 0.000455,
+        "delta_pct": 0.04596,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -256,7 +496,17 @@
       "computed": 2.501148,
       "measured": 2.5,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "acetaminophen",
+      "scientific_measurement": {
+        "delta": 0.001148,
+        "delta_pct": 0.04592,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -265,7 +515,17 @@
       "computed": 0.880404,
       "measured": 0.88,
       "error_pct": 0.04593318440797427,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "acetaminophen",
+      "scientific_measurement": {
+        "delta": 0.000404,
+        "delta_pct": 0.045909,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -274,7 +534,17 @@
       "computed": 2.100965,
       "measured": 2.1,
       "error_pct": 0.04593318440797895,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "ibuprofen",
+      "scientific_measurement": {
+        "delta": 0.000965,
+        "delta_pct": 0.045952,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -283,7 +553,17 @@
       "computed": 0.800367,
       "measured": 0.8,
       "error_pct": 0.045933184407973005,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "ibuprofen",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.045875,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -292,7 +572,17 @@
       "computed": 2.000919,
       "measured": 2.0,
       "error_pct": 0.04593318440797578,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "morphine",
+      "scientific_measurement": {
+        "delta": 0.000919,
+        "delta_pct": 0.04595,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -301,7 +591,17 @@
       "computed": 0.250115,
       "measured": 0.25,
       "error_pct": 0.04593318440797578,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "morphine",
+      "scientific_measurement": {
+        "delta": 0.000115,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -310,7 +610,17 @@
       "computed": 40.018373,
       "measured": 40.0,
       "error_pct": 0.04593318440797134,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "warfarin",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.045932,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -319,7 +629,17 @@
       "computed": 0.930427,
       "measured": 0.93,
       "error_pct": 0.045933184407977924,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "warfarin",
+      "scientific_measurement": {
+        "delta": 0.000427,
+        "delta_pct": 0.045914,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -328,7 +648,17 @@
       "computed": 36.016536,
       "measured": 36.0,
       "error_pct": 0.04593318440798318,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "digoxin",
+      "scientific_measurement": {
+        "delta": 0.016536,
+        "delta_pct": 0.045933,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -337,7 +667,17 @@
       "computed": 0.700322,
       "measured": 0.7,
       "error_pct": 0.04593318440797896,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "digoxin",
+      "scientific_measurement": {
+        "delta": 0.000322,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -346,7 +686,17 @@
       "computed": 6.202848,
       "measured": 6.2,
       "error_pct": 0.04593318440797076,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "metformin",
+      "scientific_measurement": {
+        "delta": 0.002848,
+        "delta_pct": 0.045935,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -355,7 +705,17 @@
       "computed": 0.550253,
       "measured": 0.55,
       "error_pct": 0.04593318440798183,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "metformin",
+      "scientific_measurement": {
+        "delta": 0.000253,
+        "delta_pct": 0.046,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -364,7 +724,17 @@
       "computed": 1.300597,
       "measured": 1.3,
       "error_pct": 0.04593318440797407,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "amoxicillin",
+      "scientific_measurement": {
+        "delta": 0.000597,
+        "delta_pct": 0.045923,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacokinetics_lab",
@@ -373,7 +743,17 @@
       "computed": 0.74034,
       "measured": 0.74,
       "error_pct": 0.04593318440797938,
-      "source": "pk_reference"
+      "source": "pk_reference",
+      "domain_display_name": "pharmacokinetics",
+      "display_name": "amoxicillin",
+      "scientific_measurement": {
+        "delta": 0.00034,
+        "delta_pct": 0.045946,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -385,7 +765,17 @@
       "measured": 383.41,
       "error_pct": 0.0005216348034914043,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "PRAZOSIN",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000522,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -397,7 +787,17 @@
       "measured": 162.24,
       "error_pct": 0.0024654832347257762,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NICOTINE",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.002465,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -409,7 +809,17 @@
       "measured": 361.37,
       "error_pct": 0.0008301740598082463,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "OFLOXACIN",
+      "scientific_measurement": {
+        "delta": 0.003,
+        "delta_pct": 0.00083,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -421,7 +831,17 @@
       "measured": 232.24,
       "error_pct": 0.00043058904580449235,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NALIDIXIC ACID",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000431,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -433,7 +853,17 @@
       "measured": 357.79,
       "error_pct": 1.5887369367731912e-14,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "INDOMETHACIN",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -445,7 +875,17 @@
       "measured": 233.24,
       "error_pct": 0.0008574858514875448,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "SULBACTAM",
+      "scientific_measurement": {
+        "delta": -0.002,
+        "delta_pct": 0.000857,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -457,7 +897,17 @@
       "measured": 300.3,
       "error_pct": 0.0036630036630116887,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "TAZOBACTAM",
+      "scientific_measurement": {
+        "delta": -0.011,
+        "delta_pct": 0.003663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -469,7 +919,17 @@
       "measured": 331.35,
       "error_pct": 0.0009053870529780433,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "CIPROFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.003,
+        "delta_pct": 0.000905,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pharmacology_lab",
@@ -481,7 +941,17 @@
       "measured": 319.34,
       "error_pct": 0.0012525834533607617,
       "within_band": true,
-      "S_medical": 0.306221
+      "S_medical": 0.306221,
+      "domain_display_name": "pharmacology",
+      "display_name": "NORFLOXACIN",
+      "scientific_measurement": {
+        "delta": -0.004,
+        "delta_pct": 0.001253,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -495,5 +965,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Cardiology",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.879613+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 45,
+    "median_error_pct": 0.030622,
+    "max_error_pct": 0.046,
+    "mean_abs_delta": 0.013544622222222219,
+    "precision_tier_counts": {
+      "green": 45
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

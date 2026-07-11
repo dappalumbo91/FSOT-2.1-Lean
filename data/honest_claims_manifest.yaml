@@ -58,6 +58,26 @@ claims:
       (not silently ignored). C_thin domains exist — see tier_distribution in
       scientific_domain_expansion_map.json (full aggregate, not NeuroLab-only).
 
+  undeniable_toe_all_provers:
+    headline: "Lean + Coq + Isabelle + F* verify entire FSOT theory in depth"
+    verdict: NOT_YET_LITERAL
+    evidence: data/verification_depth_audit.json
+    honest_statement: >
+      Cross-proof triangulates 1,241 exported numeric obligations across Lean/Coq/
+      Isabelle/Python/Rust (norm_num/lra replay). ~26% of Lean theorems are not exported.
+      F* covers boot scalar with assume val; Coq/Isabelle use π/e certified axioms for
+      3–4 transcendental rows. ESP32/QEMU verifies one runtime boot scalar. See
+      verification_depth_audit.json roadmap_to_undeniable for closure plan.
+
+  opaque_code_labels:
+    headline: "All benchmark and obligation IDs are self-explanatory"
+    verdict: REGISTRY_IN_PROGRESS
+    evidence: data/fsot_label_registry.json
+    honest_statement: >
+      FO-200, PRED-001, tier numbers, and obligation ids now resolve via
+      fsot_label_registry.json. Benchmark enrichment adds display_name and
+      scientific_measurement (Δ, σ-equivalent, precision_tier) per record.
+
   theory_of_everything:
     headline: "Cross-domain scalar spine with Lean sign certificates"
     verdict: STRUCTURAL_PLUS_NUMERIC_BANDS

@@ -41,7 +41,17 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.000502,
-      "observable_count": 14
+      "observable_count": 14,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.000502,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +60,17 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.0005024559462039755,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "open observables deep",
+      "scientific_measurement": {
+        "delta": 0.000502,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "computed": 0.042611,
       "measured": 0.042611,
       "error_pct": 0.0,
-      "eval_kind": "panel_bridge"
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "stumped observables panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -71,7 +101,17 @@
       "measured": 67.4,
       "error_pct": 0.000502,
       "reference": "Planck2018",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "h0 planck 2018",
+      "scientific_measurement": {
+        "delta": 0.000339,
+        "delta_pct": 0.000503,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -81,7 +121,17 @@
       "measured": 73.04,
       "error_pct": 0.000502,
       "reference": "Riess2024",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "h0 sh0es 2024",
+      "scientific_measurement": {
+        "delta": 0.000367,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -91,7 +141,17 @@
       "measured": 72.1,
       "error_pct": 0.000502,
       "reference": "FSOT_bubble_bleed_dual_anchor",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "h0 fsot bubble",
+      "scientific_measurement": {
+        "delta": 0.000362,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -101,7 +161,17 @@
       "measured": -1.0,
       "error_pct": 0.000502,
       "reference": "Planck2018",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "w0 dark energy",
+      "scientific_measurement": {
+        "delta": -5e-06,
+        "delta_pct": 0.0005,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -111,7 +181,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "reference": "Planck2018_prior",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "wa dark energy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -121,7 +201,17 @@
       "measured": 0.8111,
       "error_pct": 0.000502,
       "reference": "Euclid_Q1_2024",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "sigma 8 euclid",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.000493,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -131,7 +221,17 @@
       "measured": 0.685,
       "error_pct": 0.000502,
       "reference": "Planck2018",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "omega lambda",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.000438,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -140,7 +240,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "reference_gate"
+      "eval_kind": "reference_gate",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "omega lambda",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -150,7 +260,17 @@
       "measured": 3.046,
       "error_pct": 0.000502,
       "reference": "SM_N_eff",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "n eff cmb",
+      "scientific_measurement": {
+        "delta": 1.5e-05,
+        "delta_pct": 0.000492,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -160,7 +280,17 @@
       "measured": 0.054,
       "error_pct": 0.000502,
       "reference": "Planck2018",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "tau reion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -169,7 +299,17 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "eval_kind": "reference_gate"
+      "eval_kind": "reference_gate",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "tau reion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -179,7 +319,17 @@
       "measured": 147.09,
       "error_pct": 0.000502,
       "reference": "Planck2018_BAO",
-      "eval_kind": "anomaly_anchor"
+      "eval_kind": "anomaly_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "rd bao",
+      "scientific_measurement": {
+        "delta": 0.000739,
+        "delta_pct": 0.000502,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cosmology_anomaly_deep_lab",
@@ -188,7 +338,17 @@
       "computed": 10.0,
       "measured": 10.0,
       "error_pct": 0.0,
-      "eval_kind": "count_anchor"
+      "eval_kind": "count_anchor",
+      "domain_display_name": "cosmology anomaly deep",
+      "display_name": "cosmology anomaly deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -202,5 +362,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Cosmology Anomaly Deep Panel",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.690205+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 14,
+    "median_error_pct": 0.000493,
+    "max_error_pct": 0.000503,
+    "mean_abs_delta": 0.000131,
+    "precision_tier_counts": {
+      "green": 11,
+      "contested": 3
+    },
+    "green_gate_fraction": 0.7857142857142857,
+    "matches_domain_spine": true
+  }
 }

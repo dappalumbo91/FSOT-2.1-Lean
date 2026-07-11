@@ -151,7 +151,17 @@
       "computed": 0.024318,
       "measured": 0.0,
       "error_pct": 0.024318115591995593,
-      "observable_count": 168
+      "observable_count": 168,
+      "domain_display_name": "quantum materials",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.024318,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -161,7 +171,17 @@
       "measured": 0.0,
       "error_pct": 0.012196976490588003,
       "observable_count": 12,
-      "section": "\u00a731 Band Gaps"
+      "section": "\u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "\u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 0.012197,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -171,7 +191,17 @@
       "measured": 0.0,
       "error_pct": 0.07662024786017463,
       "observable_count": 10,
-      "section": "\u00a718 Crystal Field \u0394o"
+      "section": "\u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "\u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 0.07662,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -181,7 +211,17 @@
       "measured": 0.0,
       "error_pct": 0.013419257571482188,
       "observable_count": 12,
-      "section": "\u00a755 \u03bceff Magnetic"
+      "section": "\u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "\u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": 0.013419,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -191,7 +231,17 @@
       "measured": 0.0,
       "error_pct": 0.01692529386942307,
       "observable_count": 12,
-      "section": "\u00a775 Superconducting Tc"
+      "section": "\u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "\u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.016925,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -201,7 +251,18 @@
       "name": "NaCl",
       "computed": 783.3017987851912,
       "measured": 786.0,
-      "error_pct": 0.343283
+      "error_pct": 0.343283,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": -2.69820121,
+        "delta_pct": 0.343283,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -209,7 +270,18 @@
       "name": "KCl",
       "computed": 715.8461282477037,
       "measured": 715.0,
-      "error_pct": 0.11833961506346094
+      "error_pct": 0.11833961506346094,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 0.84612825,
+        "delta_pct": 0.11834,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -217,7 +289,18 @@
       "name": "NaF",
       "computed": 923.0290119966654,
       "measured": 923.0,
-      "error_pct": 0.0031432282411069804
+      "error_pct": 0.0031432282411069804,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 0.029012,
+        "delta_pct": 0.003143,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -225,7 +308,18 @@
       "name": "LiF",
       "computed": 1037.0012984590178,
       "measured": 1037.0,
-      "error_pct": 0.0001252130200375463
+      "error_pct": 0.0001252130200375463,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 0.00129846,
+        "delta_pct": 0.000125,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -233,7 +327,18 @@
       "name": "MgO",
       "computed": 3848.3007135394014,
       "measured": 3850.0,
-      "error_pct": 0.04413731066489907
+      "error_pct": 0.04413731066489907,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": -1.69928646,
+        "delta_pct": 0.044137,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -241,7 +346,18 @@
       "name": "CaO",
       "computed": 3459.1279034704635,
       "measured": 3461.0,
-      "error_pct": 0.05409120281816008
+      "error_pct": 0.05409120281816008,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": -1.87209653,
+        "delta_pct": 0.054091,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -249,7 +365,18 @@
       "name": "CsCl",
       "computed": 657.5009994934722,
       "measured": 657.0,
-      "error_pct": 0.07625563066548705
+      "error_pct": 0.07625563066548705,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 0.50099949,
+        "delta_pct": 0.076256,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -257,7 +384,18 @@
       "name": "NaBr",
       "computed": 750.1705909456103,
       "measured": 747.0,
-      "error_pct": 0.424443
+      "error_pct": 0.424443,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 3.17059095,
+        "delta_pct": 0.424443,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -265,7 +403,18 @@
       "name": "KBr",
       "computed": 681.7391833887611,
       "measured": 682.0,
-      "error_pct": 0.03824290487373192
+      "error_pct": 0.03824290487373192,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": -0.26081661,
+        "delta_pct": 0.038243,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -273,7 +422,18 @@
       "name": "LiCl",
       "computed": 853.0961142236226,
       "measured": 853.0,
-      "error_pct": 0.011267787060097902
+      "error_pct": 0.011267787060097902,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": 0.09611422,
+        "delta_pct": 0.011268,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -281,7 +441,18 @@
       "name": "MgF\u2082",
       "computed": 2953.920187285829,
       "measured": 2957.0,
-      "error_pct": 0.10415328759455908
+      "error_pct": 0.10415328759455908,
+      "section_display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a74b Lattice Energies",
+      "scientific_measurement": {
+        "delta": -3.07981271,
+        "delta_pct": 0.104153,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -289,7 +460,18 @@
       "name": "H\u2082O",
       "computed": -13.011197054679151,
       "measured": -12.96,
-      "error_pct": 0.395039
+      "error_pct": 0.395039,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.05119705,
+        "delta_pct": 0.395039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -297,7 +479,18 @@
       "name": "NaCl",
       "computed": -30.30958099228724,
       "measured": -30.3,
-      "error_pct": 0.031620436591552864
+      "error_pct": 0.031620436591552864,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00958099,
+        "delta_pct": 0.03162,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -305,7 +498,18 @@
       "name": "C(diamond)",
       "computed": -5.898305706806974,
       "measured": -5.9,
-      "error_pct": 0.028716833780100707
+      "error_pct": 0.028716833780100707,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": 0.00169429,
+        "delta_pct": 0.028717,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -313,7 +517,18 @@
       "name": "C\u2086H\u2086",
       "computed": -54.75678339604299,
       "measured": -54.8,
-      "error_pct": 0.07886241597993855
+      "error_pct": 0.07886241597993855,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": 0.0432166,
+        "delta_pct": 0.078862,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -321,7 +536,18 @@
       "name": "Cu",
       "computed": -5.482025100406171,
       "measured": -5.46,
-      "error_pct": 0.40339
+      "error_pct": 0.40339,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.0220251,
+        "delta_pct": 0.40339,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -329,7 +555,18 @@
       "name": "Ag",
       "computed": -19.46750293443777,
       "measured": -19.5,
-      "error_pct": 0.16665161826783975
+      "error_pct": 0.16665161826783975,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": 0.03249707,
+        "delta_pct": 0.166652,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -337,7 +574,18 @@
       "name": "Au",
       "computed": -27.864684026710027,
       "measured": -28.0,
-      "error_pct": 0.483271
+      "error_pct": 0.483271,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": 0.13531597,
+        "delta_pct": 0.483271,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -345,7 +593,18 @@
       "name": "Si",
       "computed": -3.1203064173375847,
       "measured": -3.12,
-      "error_pct": 0.00982106851232789
+      "error_pct": 0.00982106851232789,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00030642,
+        "delta_pct": 0.009821,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -353,7 +612,18 @@
       "name": "Bi",
       "computed": -280.3035024042756,
       "measured": -280.1,
-      "error_pct": 0.072653
+      "error_pct": 0.072653,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.2035024,
+        "delta_pct": 0.072653,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -361,7 +631,18 @@
       "name": "N\u2082",
       "computed": -11.955743912849497,
       "measured": -12.0,
-      "error_pct": 0.368801
+      "error_pct": 0.368801,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": 0.04425609,
+        "delta_pct": 0.368801,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -369,7 +650,18 @@
       "name": "CO\u2082",
       "computed": -21.001502517364887,
       "measured": -21.0,
-      "error_pct": 0.007155
+      "error_pct": 0.007155,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00150252,
+        "delta_pct": 0.007155,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -377,7 +669,18 @@
       "name": "C\u2082H\u2085OH",
       "computed": -33.62431066904971,
       "measured": -33.6,
-      "error_pct": 0.072353
+      "error_pct": 0.072353,
+      "section_display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a713 \u03c7m Magnetic",
+      "scientific_measurement": {
+        "delta": -0.02431067,
+        "delta_pct": 0.072353,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -385,7 +688,18 @@
       "name": "[Ti(H\u2082O)\u2086]\u00b3\u207a",
       "computed": 20302.618488435135,
       "measured": 20300.0,
-      "error_pct": 0.012898957808547181
+      "error_pct": 0.012898957808547181,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 2.61848844,
+        "delta_pct": 0.012899,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -393,7 +707,18 @@
       "name": "[V(H\u2082O)\u2086]\u00b3\u207a",
       "computed": 17852.234760085074,
       "measured": 17850.0,
-      "error_pct": 0.01251966434214848
+      "error_pct": 0.01251966434214848,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 2.23476009,
+        "delta_pct": 0.01252,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -401,7 +726,18 @@
       "name": "[Cr(H\u2082O)\u2086]\u00b3\u207a",
       "computed": 17414.351235418417,
       "measured": 17400.0,
-      "error_pct": 0.08247836447365957
+      "error_pct": 0.08247836447365957,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 14.35123542,
+        "delta_pct": 0.082478,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -409,7 +745,18 @@
       "name": "[Cr(NH\u2083)\u2086]\u00b3\u207a",
       "computed": 21586.043611753503,
       "measured": 21600.0,
-      "error_pct": 0.06461290854859827
+      "error_pct": 0.06461290854859827,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": -13.95638825,
+        "delta_pct": 0.064613,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -417,7 +764,18 @@
       "name": "[Cr(CN)\u2086]\u00b3\u207b",
       "computed": 26650.091125009265,
       "measured": 26600.0,
-      "error_pct": 0.1883125000348306
+      "error_pct": 0.1883125000348306,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 50.09112501,
+        "delta_pct": 0.188313,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -425,7 +783,18 @@
       "name": "[Co(NH\u2083)\u2086]\u00b3\u207a",
       "computed": 22987.85498838201,
       "measured": 23000.0,
-      "error_pct": 0.05280439833909243
+      "error_pct": 0.05280439833909243,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": -12.14501162,
+        "delta_pct": 0.052804,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -433,7 +802,18 @@
       "name": "[Co(CN)\u2086]\u00b3\u207b",
       "computed": 33495.565176000266,
       "measured": 33500.0,
-      "error_pct": 0.013238280596221976
+      "error_pct": 0.013238280596221976,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": -4.434824,
+        "delta_pct": 0.013238,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -441,7 +821,18 @@
       "name": "[Fe(H\u2082O)\u2086]\u00b2\u207a",
       "computed": 10415.98506936773,
       "measured": 10400.0,
-      "error_pct": 0.1537025900743349
+      "error_pct": 0.1537025900743349,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 15.98506937,
+        "delta_pct": 0.153703,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -449,7 +840,18 @@
       "name": "[Ni(H\u2082O)\u2086]\u00b2\u207a",
       "computed": 8560.607961933852,
       "measured": 8600.0,
-      "error_pct": 0.458047
+      "error_pct": 0.458047,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": -39.39203807,
+        "delta_pct": 0.458047,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -457,7 +859,18 @@
       "name": "[Mn(H\u2082O)\u2086]\u00b2\u207a",
       "computed": 8506.512721068115,
       "measured": 8500.0,
-      "error_pct": 0.07662024786017463
+      "error_pct": 0.07662024786017463,
+      "section_display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 6.51272107,
+        "delta_pct": 0.07662,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -465,7 +878,18 @@
       "name": "TMS",
       "computed": 6.533387724091077e-07,
       "measured": 0.0,
-      "error_pct": 0.006533
+      "error_pct": 0.006533,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 6.5e-07,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -473,7 +897,18 @@
       "name": "R-CH\u2083",
       "computed": 0.8999396451594481,
       "measured": 0.9,
-      "error_pct": 0.006706093394654506
+      "error_pct": 0.006706093394654506,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -6.035e-05,
+        "delta_pct": 0.006706,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -481,7 +916,18 @@
       "name": "R\u2082-CH\u2082",
       "computed": 1.2941305780559662,
       "measured": 1.3,
-      "error_pct": 0.451494
+      "error_pct": 0.451494,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00586942,
+        "delta_pct": 0.451494,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -489,7 +935,18 @@
       "name": "R\u2083-CH",
       "computed": 1.500007497535903,
       "measured": 1.5,
-      "error_pct": 0.0004998357268674407
+      "error_pct": 0.0004998357268674407,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 7.5e-06,
+        "delta_pct": 0.0005,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -497,7 +954,18 @@
       "name": "-CH\u2082X",
       "computed": 3.4998987698342607,
       "measured": 3.5,
-      "error_pct": 0.002892290449693239
+      "error_pct": 0.002892290449693239,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00010123,
+        "delta_pct": 0.002892,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -505,7 +973,18 @@
       "name": "RCHO",
       "computed": 9.716122186194907,
       "measured": 9.7,
-      "error_pct": 0.166208
+      "error_pct": 0.166208,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.01612219,
+        "delta_pct": 0.166208,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -513,7 +992,18 @@
       "name": "ArH",
       "computed": 7.2743236304103815,
       "measured": 7.27,
-      "error_pct": 0.059472
+      "error_pct": 0.059472,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00432363,
+        "delta_pct": 0.059472,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -521,7 +1011,18 @@
       "name": "=CH\u2082",
       "computed": 5.23606797749979,
       "measured": 5.25,
-      "error_pct": 0.265372
+      "error_pct": 0.265372,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.01393202,
+        "delta_pct": 0.265372,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -529,7 +1030,18 @@
       "name": "\u2261CH",
       "computed": 2.505936052219667,
       "measured": 2.5,
-      "error_pct": 0.237442
+      "error_pct": 0.237442,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00593605,
+        "delta_pct": 0.237442,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -537,7 +1049,18 @@
       "name": "RCOOH",
       "computed": 11.000000000000002,
       "measured": 11.0,
-      "error_pct": 1.6148698540002278e-14
+      "error_pct": 1.6148698540002278e-14,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -545,7 +1068,18 @@
       "name": "R-NH\u2082",
       "computed": 1.500007497535903,
       "measured": 1.5,
-      "error_pct": 0.0004998357268674407
+      "error_pct": 0.0004998357268674407,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 7.5e-06,
+        "delta_pct": 0.0005,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -553,7 +1087,18 @@
       "name": "-OCH\u2083",
       "computed": 3.295074868484244,
       "measured": 3.3,
-      "error_pct": 0.149246
+      "error_pct": 0.149246,
+      "section_display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a719 NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00492513,
+        "delta_pct": 0.149246,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -561,7 +1106,18 @@
       "name": "PTFE",
       "computed": 2.0998868055179294,
       "measured": 2.1,
-      "error_pct": 0.0053902134319380865
+      "error_pct": 0.0053902134319380865,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00011319,
+        "delta_pct": 0.00539,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -569,7 +1125,18 @@
       "name": "C\u2086H\u2086",
       "computed": 2.280248498500147,
       "measured": 2.28,
-      "error_pct": 0.010899057024009184
+      "error_pct": 0.010899057024009184,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.0002485,
+        "delta_pct": 0.010899,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -577,7 +1144,18 @@
       "name": "CCl\u2084",
       "computed": 2.23606797749979,
       "measured": 2.24,
-      "error_pct": 0.175537
+      "error_pct": 0.175537,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00393202,
+        "delta_pct": 0.175537,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -585,7 +1163,18 @@
       "name": "toluene",
       "computed": 2.3801050513839623,
       "measured": 2.38,
-      "error_pct": 0.004413923695900844
+      "error_pct": 0.004413923695900844,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.00010505,
+        "delta_pct": 0.004414,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -593,7 +1182,18 @@
       "name": "diethyl ether",
       "computed": 4.339521334732968,
       "measured": 4.34,
-      "error_pct": 0.011029153618246218
+      "error_pct": 0.011029153618246218,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00047867,
+        "delta_pct": 0.011029,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -601,7 +1201,18 @@
       "name": "CHCl\u2083",
       "computed": 4.809921445249325,
       "measured": 4.81,
-      "error_pct": 0.0016331548996876316
+      "error_pct": 0.0016331548996876316,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -7.855e-05,
+        "delta_pct": 0.001633,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -609,7 +1220,18 @@
       "name": "CH\u2083COOH",
       "computed": 6.152148753020613,
       "measured": 6.15,
-      "error_pct": 0.03493907350590267
+      "error_pct": 0.03493907350590267,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.00214875,
+        "delta_pct": 0.034939,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -617,7 +1239,18 @@
       "name": "n-butanol",
       "computed": 17.842950726356825,
       "measured": 17.84,
-      "error_pct": 0.01653994594633175
+      "error_pct": 0.01653994594633175,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.00295073,
+        "delta_pct": 0.01654,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -625,7 +1258,18 @@
       "name": "acetone",
       "computed": 20.70357091193756,
       "measured": 20.7,
-      "error_pct": 0.017250782307061646
+      "error_pct": 0.017250782307061646,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.00357091,
+        "delta_pct": 0.017251,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -633,7 +1277,18 @@
       "name": "C\u2082H\u2085OH",
       "computed": 24.54806131238867,
       "measured": 24.55,
-      "error_pct": 0.007896894547178462
+      "error_pct": 0.007896894547178462,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00193869,
+        "delta_pct": 0.007897,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -641,7 +1296,18 @@
       "name": "CH\u2083OH",
       "computed": 32.738731394900455,
       "measured": 32.7,
-      "error_pct": 0.118445
+      "error_pct": 0.118445,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.03873139,
+        "delta_pct": 0.118445,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -649,7 +1315,18 @@
       "name": "glycerol",
       "computed": 42.51055612807173,
       "measured": 42.5,
-      "error_pct": 0.024837948404063035
+      "error_pct": 0.024837948404063035,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.01055613,
+        "delta_pct": 0.024838,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -657,7 +1334,18 @@
       "name": "DMSO",
       "computed": 46.70335771980633,
       "measured": 46.7,
-      "error_pct": 0.007189978172000333
+      "error_pct": 0.007189978172000333,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": 0.00335772,
+        "delta_pct": 0.00719,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -665,7 +1353,18 @@
       "name": "formic acid",
       "computed": 58.494777076136735,
       "measured": 58.5,
-      "error_pct": 0.008928074979939896
+      "error_pct": 0.008928074979939896,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00522292,
+        "delta_pct": 0.008928,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -673,7 +1372,18 @@
       "name": "H\u2082O",
       "computed": 80.0991084513808,
       "measured": 80.1,
-      "error_pct": 0.0011130444684067755
+      "error_pct": 0.0011130444684067755,
+      "section_display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a729 Dielectric \u03b5r",
+      "scientific_measurement": {
+        "delta": -0.00089155,
+        "delta_pct": 0.001113,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -681,7 +1391,18 @@
       "name": "InAs",
       "computed": 0.35991915257787704,
       "measured": 0.36,
-      "error_pct": 0.022457617256372974
+      "error_pct": 0.022457617256372974,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -8.085e-05,
+        "delta_pct": 0.022458,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -689,7 +1410,18 @@
       "name": "Ge",
       "computed": 0.660006930718195,
       "measured": 0.66,
-      "error_pct": 0.00105
+      "error_pct": 0.00105,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 6.93e-06,
+        "delta_pct": 0.00105,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -697,7 +1429,18 @@
       "name": "Si",
       "computed": 1.1197105734345842,
       "measured": 1.12,
-      "error_pct": 0.025841657626416277
+      "error_pct": 0.025841657626416277,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -0.00028943,
+        "delta_pct": 0.025842,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -705,7 +1448,18 @@
       "name": "InP",
       "computed": 1.350030054526238,
       "measured": 1.35,
-      "error_pct": 0.0022262612028106435
+      "error_pct": 0.0022262612028106435,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 3.005e-05,
+        "delta_pct": 0.002226,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -713,7 +1467,18 @@
       "name": "GaAs",
       "computed": 1.420061351105001,
       "measured": 1.42,
-      "error_pct": 0.004320500352194486
+      "error_pct": 0.004320500352194486,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 6.135e-05,
+        "delta_pct": 0.004321,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -721,7 +1486,18 @@
       "name": "CdTe",
       "computed": 1.4998682458876662,
       "measured": 1.5,
-      "error_pct": 0.008783607488919525
+      "error_pct": 0.008783607488919525,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -0.00013175,
+        "delta_pct": 0.008784,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -729,7 +1505,18 @@
       "name": "GaP",
       "computed": 2.2601077624057906,
       "measured": 2.26,
-      "error_pct": 0.0047682480438407575
+      "error_pct": 0.0047682480438407575,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 0.00010776,
+        "delta_pct": 0.004768,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -737,7 +1524,18 @@
       "name": "CdS",
       "computed": 2.420433612942127,
       "measured": 2.42,
-      "error_pct": 0.017917890170535522
+      "error_pct": 0.017917890170535522,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 0.00043361,
+        "delta_pct": 0.017918,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -745,7 +1543,18 @@
       "name": "SiC_4H",
       "computed": 3.2591037401998593,
       "measured": 3.26,
-      "error_pct": 0.027492631906150915
+      "error_pct": 0.027492631906150915,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -0.00089626,
+        "delta_pct": 0.027493,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -753,7 +1562,18 @@
       "name": "ZnO",
       "computed": 3.3539384298291717,
       "measured": 3.37,
-      "error_pct": 0.476604
+      "error_pct": 0.476604,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -0.01606157,
+        "delta_pct": 0.476604,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -761,7 +1581,18 @@
       "name": "GaN",
       "computed": 3.39958530279932,
       "measured": 3.4,
-      "error_pct": 0.012196976490588003
+      "error_pct": 0.012196976490588003,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": -0.0004147,
+        "delta_pct": 0.012197,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -769,7 +1600,18 @@
       "name": "diamond",
       "computed": 5.470239074519245,
       "measured": 5.47,
-      "error_pct": 0.004370649346353588
+      "error_pct": 0.004370649346353588,
+      "section_display_name": "SMILES Lab \u00a731 Band Gaps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 0.00023907,
+        "delta_pct": 0.004371,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -777,7 +1619,18 @@
       "name": "K",
       "computed": 90.55498906775276,
       "measured": 91.0,
-      "error_pct": 0.489023
+      "error_pct": 0.489023,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.44501093,
+        "delta_pct": 0.489023,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -785,7 +1638,18 @@
       "name": "Pb",
       "computed": 104.79814713293308,
       "measured": 105.0,
-      "error_pct": 0.192241
+      "error_pct": 0.192241,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.20185287,
+        "delta_pct": 0.192241,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -793,7 +1657,18 @@
       "name": "Na",
       "computed": 157.6112201062486,
       "measured": 158.0,
-      "error_pct": 0.246063
+      "error_pct": 0.246063,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.38877989,
+        "delta_pct": 0.246063,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -801,7 +1676,18 @@
       "name": "Au",
       "computed": 165.00213289675148,
       "measured": 165.0,
-      "error_pct": 0.0012926646978643696
+      "error_pct": 0.0012926646978643696,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.0021329,
+        "delta_pct": 0.001293,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -809,7 +1695,18 @@
       "name": "Ag",
       "computed": 224.86845049311358,
       "measured": 225.0,
-      "error_pct": 0.058466447505073425
+      "error_pct": 0.058466447505073425,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.13154951,
+        "delta_pct": 0.058466,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -817,7 +1714,18 @@
       "name": "Zn",
       "computed": 327.2425737320214,
       "measured": 327.0,
-      "error_pct": 0.074182
+      "error_pct": 0.074182,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.24257373,
+        "delta_pct": 0.074182,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -825,7 +1733,18 @@
       "name": "Cu",
       "computed": 343.8648777074413,
       "measured": 343.0,
-      "error_pct": 0.252151
+      "error_pct": 0.252151,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.86487771,
+        "delta_pct": 0.252151,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -833,7 +1752,18 @@
       "name": "Ge",
       "computed": 374.2212874957692,
       "measured": 374.0,
-      "error_pct": 0.059168
+      "error_pct": 0.059168,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.2212875,
+        "delta_pct": 0.059168,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -841,7 +1771,18 @@
       "name": "W",
       "computed": 400.097272462368,
       "measured": 400.0,
-      "error_pct": 0.024318115591995593
+      "error_pct": 0.024318115591995593,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.09727246,
+        "delta_pct": 0.024318,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -849,7 +1790,18 @@
       "name": "Al",
       "computed": 427.9876596808432,
       "measured": 428.0,
-      "error_pct": 0.0028832521394406285
+      "error_pct": 0.0028832521394406285,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.01234032,
+        "delta_pct": 0.002883,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -857,7 +1809,18 @@
       "name": "Ni",
       "computed": 450.4075072564829,
       "measured": 450.0,
-      "error_pct": 0.090557
+      "error_pct": 0.090557,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.40750726,
+        "delta_pct": 0.090557,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -865,7 +1828,18 @@
       "name": "Fe",
       "computed": 469.891637647392,
       "measured": 470.0,
-      "error_pct": 0.023055819703835308
+      "error_pct": 0.023055819703835308,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -0.10836235,
+        "delta_pct": 0.023056,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -873,7 +1847,18 @@
       "name": "Si",
       "computed": 643.9115689498703,
       "measured": 645.0,
-      "error_pct": 0.16874900002010182
+      "error_pct": 0.16874900002010182,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": -1.08843105,
+        "delta_pct": 0.168749,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -881,7 +1866,18 @@
       "name": "Be",
       "computed": 1440.4980361358998,
       "measured": 1440.0,
-      "error_pct": 0.034586
+      "error_pct": 0.034586,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 0.49803614,
+        "delta_pct": 0.034586,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -889,7 +1885,18 @@
       "name": "diamond",
       "computed": 2231.7475857872814,
       "measured": 2230.0,
-      "error_pct": 0.0783670756628441
+      "error_pct": 0.0783670756628441,
+      "section_display_name": "SMILES Lab \u00a733 Debye Temps",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a733 Debye Temps",
+      "scientific_measurement": {
+        "delta": 1.74758579,
+        "delta_pct": 0.078367,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -897,7 +1904,18 @@
       "name": "Ag",
       "computed": 1.5900383231090056,
       "measured": 1.59,
-      "error_pct": 0.002410258428020981
+      "error_pct": 0.002410258428020981,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 3.832e-05,
+        "delta_pct": 0.00241,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -905,7 +1923,18 @@
       "name": "Cu",
       "computed": 1.6799905609889012,
       "measured": 1.68,
-      "error_pct": 0.0005618458987341083
+      "error_pct": 0.0005618458987341083,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -9.44e-06,
+        "delta_pct": 0.000562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -913,7 +1942,18 @@
       "name": "Au",
       "computed": 2.44009581866226,
       "measured": 2.44,
-      "error_pct": 0.003926994354924627
+      "error_pct": 0.003926994354924627,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 9.582e-05,
+        "delta_pct": 0.003927,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -921,7 +1961,18 @@
       "name": "Al",
       "computed": 2.6499829175807545,
       "measured": 2.65,
-      "error_pct": 0.000644619594164613
+      "error_pct": 0.000644619594164613,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -1.708e-05,
+        "delta_pct": 0.000645,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -929,7 +1980,18 @@
       "name": "Na",
       "computed": 4.759626642339688,
       "measured": 4.77,
-      "error_pct": 0.217471
+      "error_pct": 0.217471,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.01037336,
+        "delta_pct": 0.217471,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -937,7 +1999,18 @@
       "name": "W",
       "computed": 5.280989155525673,
       "measured": 5.28,
-      "error_pct": 0.0187340061680476
+      "error_pct": 0.0187340061680476,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 0.00098916,
+        "delta_pct": 0.018734,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -945,7 +2018,18 @@
       "name": "Zn",
       "computed": 5.938136372072465,
       "measured": 5.96,
-      "error_pct": 0.366839
+      "error_pct": 0.366839,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.02186363,
+        "delta_pct": 0.366839,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -953,7 +2037,18 @@
       "name": "Ni",
       "computed": 7.007584181144136,
       "measured": 6.99,
-      "error_pct": 0.251562
+      "error_pct": 0.251562,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 0.01758418,
+        "delta_pct": 0.251562,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -961,7 +2056,18 @@
       "name": "Fe",
       "computed": 9.716122186194907,
       "measured": 9.71,
-      "error_pct": 0.06305
+      "error_pct": 0.06305,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 0.00612219,
+        "delta_pct": 0.06305,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -969,7 +2075,18 @@
       "name": "Pt",
       "computed": 10.600976357504635,
       "measured": 10.6,
-      "error_pct": 0.009210919855050159
+      "error_pct": 0.009210919855050159,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 0.00097636,
+        "delta_pct": 0.009211,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -977,7 +2094,18 @@
       "name": "Pb",
       "computed": 20.58799286939771,
       "measured": 20.6,
-      "error_pct": 0.058287041758699955
+      "error_pct": 0.058287041758699955,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.01200713,
+        "delta_pct": 0.058287,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -985,7 +2113,18 @@
       "name": "Ti",
       "computed": 41.999595911016314,
       "measured": 42.0,
-      "error_pct": 0.0009621166278233909
+      "error_pct": 0.0009621166278233909,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.00040409,
+        "delta_pct": 0.000962,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -993,7 +2132,18 @@
       "name": "SS304",
       "computed": 71.97728410922835,
       "measured": 72.0,
-      "error_pct": 0.03154984829395839
+      "error_pct": 0.03154984829395839,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.02271589,
+        "delta_pct": 0.03155,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1001,7 +2151,18 @@
       "name": "Hg",
       "computed": 96.11496045594647,
       "measured": 96.1,
-      "error_pct": 0.015568
+      "error_pct": 0.015568,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": 0.01496046,
+        "delta_pct": 0.015568,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1009,7 +2170,18 @@
       "name": "nichrome",
       "computed": 109.91205875478008,
       "measured": 110.0,
-      "error_pct": 0.07994658656356664
+      "error_pct": 0.07994658656356664,
+      "section_display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a738 Resistivity \u03c1",
+      "scientific_measurement": {
+        "delta": -0.08794125,
+        "delta_pct": 0.079947,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1017,7 +2189,18 @@
       "name": "TMS_ref",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1025,7 +2208,18 @@
       "name": "R-CH\u2083",
       "computed": 8.007090087680545,
       "measured": 8.0,
-      "error_pct": 0.088626
+      "error_pct": 0.088626,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00709009,
+        "delta_pct": 0.088626,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1033,7 +2227,18 @@
       "name": "R-CH\u2082-R",
       "computed": 22.99516711048985,
       "measured": 23.0,
-      "error_pct": 0.02101256308761418
+      "error_pct": 0.02101256308761418,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00483289,
+        "delta_pct": 0.021013,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1041,7 +2246,18 @@
       "name": "R\u2083CH",
       "computed": 29.997767872026923,
       "measured": 30.0,
-      "error_pct": 0.007440426576922713
+      "error_pct": 0.007440426576922713,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00223213,
+        "delta_pct": 0.00744,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1049,7 +2265,18 @@
       "name": "C\u2261C",
       "computed": 70.00091378865987,
       "measured": 70.0,
-      "error_pct": 0.0013054123712460555
+      "error_pct": 0.0013054123712460555,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00091379,
+        "delta_pct": 0.001305,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1057,7 +2284,18 @@
       "name": "C=C",
       "computed": 125.00031134330166,
       "measured": 125.0,
-      "error_pct": 0.00024907464132866157
+      "error_pct": 0.00024907464132866157,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00031134,
+        "delta_pct": 0.000249,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1065,7 +2303,18 @@
       "name": "benzene_C",
       "computed": 128.32762217938892,
       "measured": 128.5,
-      "error_pct": 0.134146
+      "error_pct": 0.134146,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.17237782,
+        "delta_pct": 0.134146,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1073,7 +2322,18 @@
       "name": "C=O_aldehyde",
       "computed": 199.99878668080584,
       "measured": 200.0,
-      "error_pct": 0.0006066595970821709
+      "error_pct": 0.0006066595970821709,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00121332,
+        "delta_pct": 0.000607,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1081,7 +2341,18 @@
       "name": "C=O_ketone",
       "computed": 205.03123030636263,
       "measured": 205.0,
-      "error_pct": 0.0152342957866489
+      "error_pct": 0.0152342957866489,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.03123031,
+        "delta_pct": 0.015234,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1089,7 +2360,18 @@
       "name": "C=O_acid",
       "computed": 174.87509405333662,
       "measured": 175.0,
-      "error_pct": 0.07137482666478588
+      "error_pct": 0.07137482666478588,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.12490595,
+        "delta_pct": 0.071375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1097,7 +2379,18 @@
       "name": "C=O_ester",
       "computed": 169.97058314499208,
       "measured": 170.0,
-      "error_pct": 0.017304032357602035
+      "error_pct": 0.017304032357602035,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.02941686,
+        "delta_pct": 0.017304,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1105,7 +2398,18 @@
       "name": "C-OH_alcohol",
       "computed": 59.99933515454597,
       "measured": 60.0,
-      "error_pct": 0.0011080757567209312
+      "error_pct": 0.0011080757567209312,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.00066485,
+        "delta_pct": 0.001108,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1113,7 +2417,18 @@
       "name": "C-NH\u2082",
       "computed": 42.00010692516653,
       "measured": 42.0,
-      "error_pct": 0.00025458372982644137
+      "error_pct": 0.00025458372982644137,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": 0.00010693,
+        "delta_pct": 0.000255,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1121,7 +2436,18 @@
       "name": "C-Cl",
       "computed": 39.98766169328403,
       "measured": 40.0,
-      "error_pct": 0.03084576678991979
+      "error_pct": 0.03084576678991979,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.01233831,
+        "delta_pct": 0.030846,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1129,7 +2455,18 @@
       "name": "C=O_amide",
       "computed": 169.97058314499208,
       "measured": 170.0,
-      "error_pct": 0.017304032357602035
+      "error_pct": 0.017304032357602035,
+      "section_display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a752 \u00b9\u00b3C NMR \u03b4",
+      "scientific_measurement": {
+        "delta": -0.02941686,
+        "delta_pct": 0.017304,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1137,7 +2474,18 @@
       "name": "Ti\u00b3\u207a",
       "computed": 1.730250660930628,
       "measured": 1.73,
-      "error_pct": 0.014488
+      "error_pct": 0.014488,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": 0.00025066,
+        "delta_pct": 0.014489,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1145,7 +2493,18 @@
       "name": "V\u00b3\u207a",
       "computed": 2.830379764989273,
       "measured": 2.83,
-      "error_pct": 0.013419257571482188
+      "error_pct": 0.013419257571482188,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": 0.00037976,
+        "delta_pct": 0.013419,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1153,7 +2512,18 @@
       "name": "Cr\u00b3\u207a",
       "computed": 3.8697633690469493,
       "measured": 3.87,
-      "error_pct": 0.006116
+      "error_pct": 0.006116,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00023663,
+        "delta_pct": 0.006114,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1161,7 +2531,18 @@
       "name": "Mn\u00b2\u207a",
       "computed": 5.918317376030843,
       "measured": 5.92,
-      "error_pct": 0.028422702181705593
+      "error_pct": 0.028422702181705593,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00168262,
+        "delta_pct": 0.028423,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1169,7 +2550,18 @@
       "name": "Fe\u00b3\u207a",
       "computed": 5.918317376030843,
       "measured": 5.92,
-      "error_pct": 0.028422702181705593
+      "error_pct": 0.028422702181705593,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00168262,
+        "delta_pct": 0.028423,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1177,7 +2569,18 @@
       "name": "Fe\u00b2\u207a",
       "computed": 5.0832036923152595,
       "measured": 5.1,
-      "error_pct": 0.329339
+      "error_pct": 0.329339,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.01679631,
+        "delta_pct": 0.329339,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1185,7 +2588,18 @@
       "name": "Co\u00b2\u207a",
       "computed": 4.899486157092892,
       "measured": 4.9,
-      "error_pct": 0.010487
+      "error_pct": 0.010487,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00051384,
+        "delta_pct": 0.010487,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1193,7 +2607,18 @@
       "name": "Ni\u00b2\u207a",
       "computed": 3.199963280784199,
       "measured": 3.2,
-      "error_pct": 0.0011474754937901288
+      "error_pct": 0.0011474754937901288,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -3.672e-05,
+        "delta_pct": 0.001147,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1201,7 +2626,18 @@
       "name": "Cu\u00b2\u207a",
       "computed": 1.908930529295068,
       "measured": 1.9,
-      "error_pct": 0.470028
+      "error_pct": 0.470028,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": 0.00893053,
+        "delta_pct": 0.470028,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1209,7 +2645,18 @@
       "name": "V\u00b2\u207a",
       "computed": 3.8697633690469493,
       "measured": 3.87,
-      "error_pct": 0.006116
+      "error_pct": 0.006116,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00023663,
+        "delta_pct": 0.006114,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1217,7 +2664,18 @@
       "name": "Cr\u00b2\u207a",
       "computed": 4.899486157092892,
       "measured": 4.9,
-      "error_pct": 0.010487
+      "error_pct": 0.010487,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00051384,
+        "delta_pct": 0.010487,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1225,7 +2683,18 @@
       "name": "Mn\u00b3\u207a",
       "computed": 4.899486157092892,
       "measured": 4.9,
-      "error_pct": 0.010487
+      "error_pct": 0.010487,
+      "section_display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": -0.00051384,
+        "delta_pct": 0.010487,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1233,7 +2702,18 @@
       "name": "Cu_fcc",
       "computed": 3.608534860514053,
       "measured": 3.615,
-      "error_pct": 0.178842
+      "error_pct": 0.178842,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": -0.00646514,
+        "delta_pct": 0.178842,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1241,7 +2721,18 @@
       "name": "Ag_fcc",
       "computed": 4.099294856210355,
       "measured": 4.086,
-      "error_pct": 0.325376
+      "error_pct": 0.325376,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.01329486,
+        "delta_pct": 0.325376,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1249,7 +2740,18 @@
       "name": "Au_fcc",
       "computed": 4.079845521402883,
       "measured": 4.078,
-      "error_pct": 0.045255551811745114
+      "error_pct": 0.045255551811745114,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00184552,
+        "delta_pct": 0.045256,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1257,7 +2759,18 @@
       "name": "Al_fcc",
       "computed": 4.0575582477670125,
       "measured": 4.05,
-      "error_pct": 0.186623
+      "error_pct": 0.186623,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00755825,
+        "delta_pct": 0.186623,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1265,7 +2778,18 @@
       "name": "Ni_fcc",
       "computed": 3.533999582927114,
       "measured": 3.524,
-      "error_pct": 0.283757
+      "error_pct": 0.283757,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00999958,
+        "delta_pct": 0.283757,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1273,7 +2797,18 @@
       "name": "Pt_fcc",
       "computed": 3.929533445866237,
       "measured": 3.924,
-      "error_pct": 0.141015
+      "error_pct": 0.141015,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00553345,
+        "delta_pct": 0.141015,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1281,7 +2816,18 @@
       "name": "Pb_fcc",
       "computed": 4.949981500791227,
       "measured": 4.95,
-      "error_pct": 0.00037372138935025265
+      "error_pct": 0.00037372138935025265,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": -1.85e-05,
+        "delta_pct": 0.000374,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1289,7 +2835,18 @@
       "name": "Fe_bcc",
       "computed": 2.871764043353496,
       "measured": 2.867,
-      "error_pct": 0.166168
+      "error_pct": 0.166168,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00476404,
+        "delta_pct": 0.166168,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1297,7 +2854,18 @@
       "name": "W_bcc",
       "computed": 3.1645255180753904,
       "measured": 3.165,
-      "error_pct": 0.014991530003464067
+      "error_pct": 0.014991530003464067,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": -0.00047448,
+        "delta_pct": 0.014992,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1305,7 +2873,18 @@
       "name": "Na_bcc",
       "computed": 4.29179606750063,
       "measured": 4.291,
-      "error_pct": 0.018552027514083594
+      "error_pct": 0.018552027514083594,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00079607,
+        "delta_pct": 0.018552,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1313,7 +2892,18 @@
       "name": "K_bcc",
       "computed": 5.32790015839329,
       "measured": 5.328,
-      "error_pct": 0.001873904029845561
+      "error_pct": 0.001873904029845561,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": -9.984e-05,
+        "delta_pct": 0.001874,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1321,7 +2911,18 @@
       "name": "Si_dia",
       "computed": 5.43100235500986,
       "measured": 5.431,
-      "error_pct": 4.336236162789793e-05
+      "error_pct": 4.336236162789793e-05,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 2.36e-06,
+        "delta_pct": 4.3e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1329,7 +2930,18 @@
       "name": "Ge_dia",
       "computed": 5.658115205117687,
       "measured": 5.658,
-      "error_pct": 0.0020361455936104417
+      "error_pct": 0.0020361455936104417,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00011521,
+        "delta_pct": 0.002036,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1337,7 +2949,18 @@
       "name": "C_dia",
       "computed": 3.56181431775049,
       "measured": 3.567,
-      "error_pct": 0.145379
+      "error_pct": 0.145379,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": -0.00518568,
+        "delta_pct": 0.145379,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1345,7 +2968,18 @@
       "name": "NaCl_rs",
       "computed": 5.640179374511324,
       "measured": 5.64,
-      "error_pct": 0.0031803991369561374
+      "error_pct": 0.0031803991369561374,
+      "section_display_name": "SMILES Lab \u00a763 Lattice Param",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a763 Lattice Param",
+      "scientific_measurement": {
+        "delta": 0.00017937,
+        "delta_pct": 0.00318,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1353,7 +2987,18 @@
       "name": "Nb",
       "computed": 9.2374838422608,
       "measured": 9.26,
-      "error_pct": 0.243155
+      "error_pct": 0.243155,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -0.02251616,
+        "delta_pct": 0.243155,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1361,7 +3006,18 @@
       "name": "Pb",
       "computed": 7.192568447123156,
       "measured": 7.19,
-      "error_pct": 0.03572249128171787
+      "error_pct": 0.03572249128171787,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.00256845,
+        "delta_pct": 0.035722,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1369,7 +3025,18 @@
       "name": "V",
       "computed": 5.024008769776233,
       "measured": 5.03,
-      "error_pct": 0.11911
+      "error_pct": 0.11911,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -0.00599123,
+        "delta_pct": 0.11911,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1377,7 +3044,18 @@
       "name": "Ta",
       "computed": 4.47964174690591,
       "measured": 4.48,
-      "error_pct": 0.007996720850222959
+      "error_pct": 0.007996720850222959,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -0.00035825,
+        "delta_pct": 0.007997,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1385,7 +3063,18 @@
       "name": "Sn",
       "computed": 3.7188083184913263,
       "measured": 3.72,
-      "error_pct": 0.032034
+      "error_pct": 0.032034,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -0.00119168,
+        "delta_pct": 0.032034,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1393,7 +3082,18 @@
       "name": "Hg",
       "computed": 4.150702399695581,
       "measured": 4.15,
-      "error_pct": 0.01692529386942307
+      "error_pct": 0.01692529386942307,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.0007024,
+        "delta_pct": 0.016925,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1401,7 +3101,18 @@
       "name": "In",
       "computed": 3.4101853084204765,
       "measured": 3.41,
-      "error_pct": 0.005434264530098858
+      "error_pct": 0.005434264530098858,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.00018531,
+        "delta_pct": 0.005434,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1409,7 +3120,18 @@
       "name": "La",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.00302517,
+        "delta_pct": 0.05042,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1417,7 +3139,18 @@
       "name": "Tl",
       "computed": 2.3899658206021646,
       "measured": 2.39,
-      "error_pct": 0.0014301003278479221
+      "error_pct": 0.0014301003278479221,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -3.418e-05,
+        "delta_pct": 0.00143,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1425,7 +3158,18 @@
       "name": "Al",
       "computed": 1.1798979796276863,
       "measured": 1.18,
-      "error_pct": 0.008645794263869522
+      "error_pct": 0.008645794263869522,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -0.00010202,
+        "delta_pct": 0.008646,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1433,7 +3177,18 @@
       "name": "Ga",
       "computed": 1.080059202480188,
       "measured": 1.08,
-      "error_pct": 0.00548171112851675
+      "error_pct": 0.00548171112851675,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 5.92e-05,
+        "delta_pct": 0.005482,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1441,7 +3196,18 @@
       "name": "Zn",
       "computed": 0.8499757313516031,
       "measured": 0.85,
-      "error_pct": 0.002855135105515964
+      "error_pct": 0.002855135105515964,
+      "section_display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": -2.427e-05,
+        "delta_pct": 0.002855,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1449,7 +3215,18 @@
       "name": "Fe_Tc",
       "computed": 1042.0350083953144,
       "measured": 1043.0,
-      "error_pct": 0.092521
+      "error_pct": 0.092521,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.9649916,
+        "delta_pct": 0.092521,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1457,7 +3234,18 @@
       "name": "Co_Tc",
       "computed": 1388.3232799767911,
       "measured": 1388.0,
-      "error_pct": 0.023291064610311774
+      "error_pct": 0.023291064610311774,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": 0.32327998,
+        "delta_pct": 0.023291,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1465,7 +3253,18 @@
       "name": "Ni_Tc",
       "computed": 630.9955804616868,
       "measured": 631.0,
-      "error_pct": 0.0007
+      "error_pct": 0.0007,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.00441954,
+        "delta_pct": 0.0007,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1473,7 +3272,18 @@
       "name": "Gd_Tc",
       "computed": 293.02894546145393,
       "measured": 293.0,
-      "error_pct": 0.009878997083252393
+      "error_pct": 0.009878997083252393,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": 0.02894546,
+        "delta_pct": 0.009879,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1481,7 +3291,18 @@
       "name": "Dy_Tc",
       "computed": 88.0053362584175,
       "measured": 88.0,
-      "error_pct": 0.006063930019886951
+      "error_pct": 0.006063930019886951,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": 0.00533626,
+        "delta_pct": 0.006064,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1489,7 +3310,18 @@
       "name": "EuO_Tc",
       "computed": 68.92104084251176,
       "measured": 69.0,
-      "error_pct": 0.11443356157716264
+      "error_pct": 0.11443356157716264,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.07895916,
+        "delta_pct": 0.114434,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1497,7 +3329,18 @@
       "name": "Cr_TN",
       "computed": 311.11432604385726,
       "measured": 311.0,
-      "error_pct": 0.036760785806193276
+      "error_pct": 0.036760785806193276,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": 0.11432604,
+        "delta_pct": 0.036761,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1505,7 +3348,18 @@
       "name": "MnO_TN",
       "computed": 115.60281328231356,
       "measured": 116.0,
-      "error_pct": 0.342402
+      "error_pct": 0.342402,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.39718672,
+        "delta_pct": 0.342402,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1513,7 +3367,18 @@
       "name": "NiO_TN",
       "computed": 523.0682621017423,
       "measured": 523.0,
-      "error_pct": 0.013054
+      "error_pct": 0.013054,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": 0.0682621,
+        "delta_pct": 0.013052,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1521,7 +3386,18 @@
       "name": "CoO_TN",
       "computed": 290.8378407287381,
       "measured": 291.0,
-      "error_pct": 0.05572483548518381
+      "error_pct": 0.05572483548518381,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.16215927,
+        "delta_pct": 0.055725,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1529,7 +3405,18 @@
       "name": "FeO_TN",
       "computed": 197.985538508093,
       "measured": 198.0,
-      "error_pct": 0.007303783791421023
+      "error_pct": 0.007303783791421023,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.01446149,
+        "delta_pct": 0.007304,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_materials_lab",
@@ -1537,10 +3424,35 @@
       "name": "Fe2O3_TN",
       "computed": 954.5350916090546,
       "measured": 955.0,
-      "error_pct": 0.048681506905280086
+      "error_pct": 0.048681506905280086,
+      "section_display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "domain_display_name": "quantum materials",
+      "display_name": "SMILES Lab \u00a776 Magnetic Ordering T",
+      "scientific_measurement": {
+        "delta": -0.46490839,
+        "delta_pct": 0.048682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "crosswalk_modules": [
     "FSOT.Formal.QuantumMaterialsPriors"
-  ]
+  ],
+  "display_name": "Quantum Materials",
+  "tier_label": "Tier 27",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.614926+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 168,
+    "median_error_pct": 0.024838,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 1.1101942742261908,
+    "precision_tier_counts": {
+      "green": 168
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

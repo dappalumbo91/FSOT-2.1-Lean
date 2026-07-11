@@ -18,7 +18,17 @@
       "name": "Li-ion EV cell (2024)",
       "computed": 296.0,
       "measured": 296.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "Li-ion EV cell (2024)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -26,7 +36,17 @@
       "name": "Li-ion lab record (2025)",
       "computed": 350.0,
       "measured": 350.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "Li-ion lab record (2025)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -34,7 +54,17 @@
       "name": "Solid-state prototype",
       "computed": 400.0,
       "measured": 400.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "Solid-state prototype",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -42,7 +72,17 @@
       "name": "US grid frequency",
       "computed": 60.0,
       "measured": 60.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "US grid frequency",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -50,7 +90,17 @@
       "name": "EU grid frequency",
       "computed": 50.0,
       "measured": 50.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "EU grid frequency",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -58,7 +108,17 @@
       "name": "ISS solar array",
       "computed": 14.5,
       "measured": 14.5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "ISS solar array",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -66,7 +126,17 @@
       "name": "Gateway solar electric",
       "computed": 32.0,
       "measured": 32.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "Gateway solar electric",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -74,7 +144,17 @@
       "name": "Copper resistivity (20C)",
       "computed": 1.68e-08,
       "measured": 1.68e-08,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "Copper resistivity (20C)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "electrical_power",
@@ -82,7 +162,31 @@
       "name": "S_electron_gate",
       "computed": 0.5188655207983146,
       "measured": 0.5188655207983146,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "electrical power",
+      "display_name": "S electron gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Electrical Power Systems",
+  "tier_label": "Tier 39",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.830281+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 9,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 9
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

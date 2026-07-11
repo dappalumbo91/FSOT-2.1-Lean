@@ -39,7 +39,17 @@
       "computed": 0.020098,
       "measured": 0.0,
       "error_pct": 0.020098237848404983,
-      "observable_count": 36
+      "observable_count": 36,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.020098,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.020098,
       "measured": 0.0,
       "error_pct": 0.020098237848404983,
-      "observable_count": 36
+      "observable_count": 36,
+      "domain_display_name": "tier gap fill",
+      "display_name": "neighbor fold panel",
+      "scientific_measurement": {
+        "delta": 0.020098,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -66,7 +86,17 @@
       "target_domain": "Particle_Physics",
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR01",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 0.037375,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -82,7 +112,17 @@
       "target_domain": "Particle_Physics",
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR01",
+      "scientific_measurement": {
+        "delta": 0.000415,
+        "delta_pct": 0.037986,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -98,7 +138,17 @@
       "target_domain": "Particle_Physics",
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR01",
+      "scientific_measurement": {
+        "delta": 1.5e-05,
+        "delta_pct": 0.037589,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -114,7 +164,17 @@
       "target_domain": "Particle_Physics",
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR01",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -130,7 +190,17 @@
       "target_domain": "Atomic_Physics",
       "lower_rung": "nuclear",
       "upper_rung": "atomic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR02",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.0668,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -146,7 +216,17 @@
       "target_domain": "Atomic_Physics",
       "lower_rung": "nuclear",
       "upper_rung": "atomic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR02",
+      "scientific_measurement": {
+        "delta": 2.5e-05,
+        "delta_pct": 0.029308,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -162,7 +242,17 @@
       "target_domain": "Atomic_Physics",
       "lower_rung": "nuclear",
       "upper_rung": "atomic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR02",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -178,7 +268,17 @@
       "target_domain": "Atomic_Physics",
       "lower_rung": "nuclear",
       "upper_rung": "atomic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR02",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.105263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -194,7 +294,17 @@
       "target_domain": "Materials_Species_Bridge",
       "lower_rung": "atomic",
       "upper_rung": "molecular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR03",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -210,7 +320,17 @@
       "target_domain": "Materials_Species_Bridge",
       "lower_rung": "atomic",
       "upper_rung": "molecular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR03",
+      "scientific_measurement": {
+        "delta": 1.1e-05,
+        "delta_pct": 0.013682,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -226,7 +346,17 @@
       "target_domain": "Materials_Species_Bridge",
       "lower_rung": "atomic",
       "upper_rung": "molecular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR03",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.105263,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -242,7 +372,17 @@
       "target_domain": "Materials_Species_Bridge",
       "lower_rung": "atomic",
       "upper_rung": "molecular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR03",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -258,7 +398,17 @@
       "target_domain": "Synthetic_Biology",
       "lower_rung": "molecular",
       "upper_rung": "cellular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR04",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.03663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -274,7 +424,17 @@
       "target_domain": "Synthetic_Biology",
       "lower_rung": "molecular",
       "upper_rung": "cellular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR04",
+      "scientific_measurement": {
+        "delta": 1.4e-05,
+        "delta_pct": 0.018205,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -290,7 +450,17 @@
       "target_domain": "Synthetic_Biology",
       "lower_rung": "molecular",
       "upper_rung": "cellular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR04",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.03663,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -306,7 +476,17 @@
       "target_domain": "Synthetic_Biology",
       "lower_rung": "molecular",
       "upper_rung": "cellular",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR04",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -322,7 +502,17 @@
       "target_domain": "Immunology",
       "lower_rung": "cellular",
       "upper_rung": "organismic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR05",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.011437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -338,7 +528,17 @@
       "target_domain": "Immunology",
       "lower_rung": "cellular",
       "upper_rung": "organismic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR05",
+      "scientific_measurement": {
+        "delta": 9e-06,
+        "delta_pct": 0.012129,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -354,7 +554,17 @@
       "target_domain": "Immunology",
       "lower_rung": "cellular",
       "upper_rung": "organismic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR05",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -370,7 +580,17 @@
       "target_domain": "Immunology",
       "lower_rung": "cellular",
       "upper_rung": "organismic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR05",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.011437,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -386,7 +606,17 @@
       "target_domain": "Planetary_Structure",
       "lower_rung": "organismic",
       "upper_rung": "planetary",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR06",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 0.030024,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -402,7 +632,17 @@
       "target_domain": "Planetary_Structure",
       "lower_rung": "organismic",
       "upper_rung": "planetary",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR06",
+      "scientific_measurement": {
+        "delta": 3.3e-05,
+        "delta_pct": 0.030812,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -418,7 +658,17 @@
       "target_domain": "Planetary_Structure",
       "lower_rung": "organismic",
       "upper_rung": "planetary",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR06",
+      "scientific_measurement": {
+        "delta": 1.9e-05,
+        "delta_pct": 0.031043,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -434,7 +684,17 @@
       "target_domain": "Planetary_Structure",
       "lower_rung": "organismic",
       "upper_rung": "planetary",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR06",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.027924,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -450,7 +710,17 @@
       "target_domain": "Breakthrough_Discoveries_2024_2026",
       "lower_rung": "planetary",
       "upper_rung": "stellar",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR07",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.033508,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -466,7 +736,17 @@
       "target_domain": "Breakthrough_Discoveries_2024_2026",
       "lower_rung": "planetary",
       "upper_rung": "stellar",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR07",
+      "scientific_measurement": {
+        "delta": 4.8e-05,
+        "delta_pct": 0.035113,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -482,7 +762,17 @@
       "target_domain": "Breakthrough_Discoveries_2024_2026",
       "lower_rung": "planetary",
       "upper_rung": "stellar",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR07",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.033508,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -498,7 +788,17 @@
       "target_domain": "Breakthrough_Discoveries_2024_2026",
       "lower_rung": "planetary",
       "upper_rung": "stellar",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR07",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -514,7 +814,17 @@
       "target_domain": "Climate_Science",
       "lower_rung": "stellar",
       "upper_rung": "galactic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR08",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -530,7 +840,17 @@
       "target_domain": "Climate_Science",
       "lower_rung": "stellar",
       "upper_rung": "galactic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR08",
+      "scientific_measurement": {
+        "delta": 2.4e-05,
+        "delta_pct": 0.036199,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -546,7 +866,17 @@
       "target_domain": "Climate_Science",
       "lower_rung": "stellar",
       "upper_rung": "galactic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR08",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -562,7 +892,17 @@
       "target_domain": "Climate_Science",
       "lower_rung": "stellar",
       "upper_rung": "galactic",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR08",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -578,7 +918,17 @@
       "target_domain": "Cosmology_Extended",
       "lower_rung": "galactic",
       "upper_rung": "cosmological",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR09",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.018219,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -594,7 +944,17 @@
       "target_domain": "Cosmology_Extended",
       "lower_rung": "galactic",
       "upper_rung": "cosmological",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR09",
+      "scientific_measurement": {
+        "delta": 0.000181,
+        "delta_pct": 0.020049,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -610,7 +970,17 @@
       "target_domain": "Cosmology_Extended",
       "lower_rung": "galactic",
       "upper_rung": "cosmological",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR09",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adjacent_rung_coupling_lab",
@@ -626,7 +996,17 @@
       "target_domain": "Cosmology_Extended",
       "lower_rung": "galactic",
       "upper_rung": "cosmological",
-      "formula_branch": "term1.coherence_efficiency"
+      "formula_branch": "term1.coherence_efficiency",
+      "domain_display_name": "adjacent rung coupling",
+      "display_name": "AR09",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.018219,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -648,5 +1028,19 @@
   "external_cache_pointer": "G:\\FSOT-PublicData\\compactification_ladder",
   "crosswalk_modules": [
     "FSOT.Formal.AdjacentRungCouplingPriors"
-  ]
+  ],
+  "display_name": "Adjacent Rung Coupling",
+  "tier_label": "Tier 49",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.545118+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 36,
+    "median_error_pct": 0.029308,
+    "max_error_pct": 0.105263,
+    "mean_abs_delta": 2.4027777777777783e-05,
+    "precision_tier_counts": {
+      "green": 36
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

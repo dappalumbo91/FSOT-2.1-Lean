@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 28
+      "observable_count": 28,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "neurolab residual spine",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 14,
-      "eval_kind": "tier66_bridge"
+      "eval_kind": "tier66_bridge",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "quantum information",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -71,7 +101,17 @@
       "measured": 0.0057,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "surface code threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -81,7 +121,17 @@
       "measured": 0.109,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "toric code threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -91,7 +141,17 @@
       "measured": 0.0104,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "fault tolerant threshold",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -101,7 +161,17 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "grover speedup exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -111,7 +181,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "shor period finding exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -121,7 +201,17 @@
       "measured": 0.6931,
       "error_pct": 0.0,
       "source_panel": "quantum_information",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "bell state entropy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -131,7 +221,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 12,
-      "eval_kind": "tier66_bridge"
+      "eval_kind": "tier66_bridge",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "econophysics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -141,7 +241,17 @@
       "measured": 1.618,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "pareto exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -151,7 +261,17 @@
       "measured": 3.354,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "zipf firm sizes",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -161,7 +281,17 @@
       "measured": 0.5,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "hurst exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -171,7 +301,17 @@
       "measured": 0.577,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "volatility persistence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -181,7 +321,17 @@
       "measured": 6.87,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "returns kurtosis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -191,7 +341,17 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "source_panel": "econophysics",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "okuns law",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -201,7 +361,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 12,
-      "eval_kind": "tier66_bridge"
+      "eval_kind": "tier66_bridge",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "ecology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -211,7 +381,17 @@
       "measured": 0.75,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "kleiber exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -221,7 +401,17 @@
       "measured": 0.25,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "wbe quarter power",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -231,7 +421,17 @@
       "measured": -0.25,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "heart rate allometry",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -241,7 +441,17 @@
       "measured": 0.25,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "species area exponent",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -251,7 +461,17 @@
       "measured": 2.195,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "shannon diversity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -261,7 +481,17 @@
       "measured": 1.195,
       "error_pct": 0.0,
       "source_panel": "ecology",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "simpson diversity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -271,7 +501,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 18,
-      "eval_kind": "tier66_bridge"
+      "eval_kind": "tier66_bridge",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "genomic sciences",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -281,7 +521,17 @@
       "measured": 64.0,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "codon table size",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -291,7 +541,17 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "trinary pattern count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -301,7 +561,17 @@
       "measured": 2.3703703703703702,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "codon trinary degeneracy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -311,7 +581,17 @@
       "measured": 0.046875,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "stop codons ratio",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -321,7 +601,17 @@
       "measured": 20.0,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "amino acids canonical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neurolab_residual_spine_lab",
@@ -331,7 +621,17 @@
       "measured": 22.0,
       "error_pct": 0.0,
       "source_panel": "genomic_sciences",
-      "eval_kind": "residual_relay"
+      "eval_kind": "residual_relay",
+      "domain_display_name": "neurolab residual spine",
+      "display_name": "autosome count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -345,5 +645,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Neurolab Residual Math Spine",
+  "tier_label": "Tier 66 \u2014 Quantum Information cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.638400+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 28,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 28
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

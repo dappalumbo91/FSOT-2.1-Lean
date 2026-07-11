@@ -39,7 +39,17 @@
       "computed": 0.033526,
       "measured": 0.0,
       "error_pct": 0.0335259880736416,
-      "observable_count": 37
+      "observable_count": 37,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.033526,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +58,17 @@
       "computed": 0.033526,
       "measured": 0.0,
       "error_pct": 0.0335259880736416,
-      "observable_count": 37
+      "observable_count": 37,
+      "domain_display_name": "tier gap fill",
+      "display_name": "civil engineering panel",
+      "scientific_measurement": {
+        "delta": 0.033526,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -59,7 +79,17 @@
       "computed": 1280.429133,
       "measured": 1280.0,
       "error_pct": 0.0335259880736416,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "golden gate span",
+      "scientific_measurement": {
+        "delta": 0.429133,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -68,7 +98,17 @@
       "computed": 1991.667502,
       "measured": 1991.0,
       "error_pct": 0.03352598807364387,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "akashi kaikyo span",
+      "scientific_measurement": {
+        "delta": 0.667502,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -77,7 +117,17 @@
       "computed": 30.010058,
       "measured": 30.0,
       "error_pct": 0.0335259880736416,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "concrete fc 28d",
+      "scientific_measurement": {
+        "delta": 0.010058,
+        "delta_pct": 0.033527,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -86,7 +136,17 @@
       "computed": 345.115665,
       "measured": 345.0,
       "error_pct": 0.033525988073648295,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "steel yield fy",
+      "scientific_measurement": {
+        "delta": 0.115665,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -95,7 +155,17 @@
       "computed": 414.138798,
       "measured": 414.0,
       "error_pct": 0.033525988073648295,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "rebar grade 60 ksi",
+      "scientific_measurement": {
+        "delta": 0.138798,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -104,7 +174,17 @@
       "computed": 150.050289,
       "measured": 150.0,
       "error_pct": 0.03352598807363923,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "soil bearing capacity",
+      "scientific_measurement": {
+        "delta": 0.050289,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -113,7 +193,17 @@
       "computed": 5001.676299,
       "measured": 5000.0,
       "error_pct": 0.03352598807365212,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "pile capacity end bearing",
+      "scientific_measurement": {
+        "delta": 1.676299,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -122,7 +212,17 @@
       "computed": 2.400805,
       "measured": 2.4,
       "error_pct": 0.03352598807363864,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "live load office",
+      "scientific_measurement": {
+        "delta": 0.000805,
+        "delta_pct": 0.033542,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -131,7 +231,17 @@
       "computed": 40.01341,
       "measured": 40.0,
       "error_pct": 0.0335259880736416,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "wind speed basic",
+      "scientific_measurement": {
+        "delta": 0.01341,
+        "delta_pct": 0.033525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -140,7 +250,17 @@
       "computed": 0.400134,
       "measured": 0.4,
       "error_pct": 0.033525988073643265,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "seismic pga design",
+      "scientific_measurement": {
+        "delta": 0.000134,
+        "delta_pct": 0.0335,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -149,7 +269,17 @@
       "computed": 30.010058,
       "measured": 30.0,
       "error_pct": 0.0335259880736416,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "concrete modulus ec",
+      "scientific_measurement": {
+        "delta": 0.010058,
+        "delta_pct": 0.033527,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -158,7 +288,17 @@
       "computed": 200.067052,
       "measured": 200.0,
       "error_pct": 0.033525988073648705,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "steel modulus es",
+      "scientific_measurement": {
+        "delta": 0.067052,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -167,7 +307,17 @@
       "computed": 221.074092,
       "measured": 221.0,
       "error_pct": 0.033525988073647546,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "hoover dam height",
+      "scientific_measurement": {
+        "delta": 0.074092,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -176,7 +326,17 @@
       "computed": 828.277595,
       "measured": 828.0,
       "error_pct": 0.033525988073648295,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "burj khalifa height",
+      "scientific_measurement": {
+        "delta": 0.277595,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -185,7 +345,17 @@
       "computed": 12.004023,
       "measured": 12.0,
       "error_pct": 0.03352598807365344,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "tunnel diameter highway",
+      "scientific_measurement": {
+        "delta": 0.004023,
+        "delta_pct": 0.033525,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -194,7 +364,17 @@
       "computed": 6.002012,
       "measured": 6.0,
       "error_pct": 0.03352598807365344,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "retaining wall height",
+      "scientific_measurement": {
+        "delta": 0.002012,
+        "delta_pct": 0.033533,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -203,7 +383,17 @@
       "computed": 300.100578,
       "measured": 300.0,
       "error_pct": 0.03352598807363923,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "pavement thickness highway",
+      "scientific_measurement": {
+        "delta": 0.100578,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -212,7 +402,17 @@
       "computed": 1000.33526,
       "measured": 1000.0,
       "error_pct": 0.03352598807364302,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "water tower capacity",
+      "scientific_measurement": {
+        "delta": 0.33526,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -221,7 +421,17 @@
       "computed": 200.067052,
       "measured": 200.0,
       "error_pct": 0.033525988073648705,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "suspension cable tension",
+      "scientific_measurement": {
+        "delta": 0.067052,
+        "delta_pct": 0.033526,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -230,7 +440,17 @@
       "computed": 25.008381,
       "measured": 25.0,
       "error_pct": 0.033525988073648705,
-      "source": "civil_engineering_reference_observables"
+      "source": "civil_engineering_reference_observables",
+      "domain_display_name": "civil engineering",
+      "display_name": "foundation settlement limit",
+      "scientific_measurement": {
+        "delta": 0.008381,
+        "delta_pct": 0.033524,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -239,7 +459,17 @@
       "computed": 0.02717,
       "measured": 0.0,
       "error_pct": 0.027170334947435038,
-      "observable_count": 87
+      "observable_count": 87,
+      "domain_display_name": "materials engineering",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.02717,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -249,7 +479,17 @@
       "measured": 0.0,
       "error_pct": 0.06721669152527372,
       "observable_count": 12,
-      "section": "\u00a734 Young's Modulus"
+      "section": "\u00a734 Young's Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.067217,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -259,7 +499,17 @@
       "measured": 0.0,
       "error_pct": 0.03976772759072059,
       "observable_count": 15,
-      "section": "\u00a737 Thermal \u03ba"
+      "section": "\u00a737 Thermal \u03ba",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.039768,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -269,7 +519,17 @@
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
       "observable_count": 12,
-      "section": "\u00a762 Bulk Modulus"
+      "section": "\u00a762 Bulk Modulus",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_engineering_lab",
@@ -279,7 +539,17 @@
       "measured": 0.0,
       "error_pct": 0.023259895459434028,
       "observable_count": 12,
-      "section": "\u00a784 Poisson Ratio \u03bd"
+      "section": "\u00a784 Poisson Ratio \u03bd",
+      "domain_display_name": "materials engineering",
+      "display_name": "\u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.02326,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -288,7 +558,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Hooke's law (isotropic)",
+      "domain_display_name": "civil engineering",
+      "display_name": "Hooke's law (isotropic)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -297,7 +578,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Generalized Hooke's law (anisotropic)",
+      "domain_display_name": "civil engineering",
+      "display_name": "Generalized Hooke's law (anisotropic)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -306,7 +598,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Von Mises yield criterion",
+      "domain_display_name": "civil engineering",
+      "display_name": "Von Mises yield criterion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -315,7 +618,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Griffith fracture criterion",
+      "domain_display_name": "civil engineering",
+      "display_name": "Griffith fracture criterion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -324,7 +638,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Bragg's law",
+      "domain_display_name": "civil engineering",
+      "display_name": "Bragg's law",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -333,7 +658,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Hall-Petch grain strengthening",
+      "domain_display_name": "civil engineering",
+      "display_name": "Hall-Petch grain strengthening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -342,7 +678,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Arrhenius diffusion",
+      "domain_display_name": "civil engineering",
+      "display_name": "Arrhenius diffusion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -351,7 +698,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Gibbs phase rule",
+      "domain_display_name": "civil engineering",
+      "display_name": "Gibbs phase rule",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -360,7 +718,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Free electron Fermi energy",
+      "domain_display_name": "civil engineering",
+      "display_name": "Free electron Fermi energy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -369,7 +738,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Semiconductor intrinsic carrier density",
+      "domain_display_name": "civil engineering",
+      "display_name": "Semiconductor intrinsic carrier density",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -378,7 +758,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Lindemann melting criterion",
+      "domain_display_name": "civil engineering",
+      "display_name": "Lindemann melting criterion",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "civil_engineering_lab",
@@ -387,7 +778,18 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "math_generator_civil"
+      "source": "math_generator_civil",
+      "rule_display_name": "Curie-Weiss susceptibility",
+      "domain_display_name": "civil engineering",
+      "display_name": "Curie-Weiss susceptibility",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -401,5 +803,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Civil Engineering",
+  "tier_label": "Tier 41",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.879613+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 37,
+    "median_error_pct": 0.033526,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.11413299999999998,
+    "precision_tier_counts": {
+      "green": 37
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

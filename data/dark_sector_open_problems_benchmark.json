@@ -38,7 +38,17 @@
       "computed": 0.006335,
       "measured": 0.0,
       "error_pct": 0.006335,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.006335,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +57,17 @@
       "computed": 0.006335,
       "measured": 0.0,
       "error_pct": 0.006335,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "lambda cdm open panel",
+      "scientific_measurement": {
+        "delta": 0.006335,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "error_pct": 0.001816,
       "wave": "wave4",
       "formula": "\u2212P_new\u00b7\u03c0/G",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "w0",
+      "scientific_measurement": {
+        "delta": -0.02998129,
+        "delta_pct": 2.998129,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -71,7 +101,17 @@
       "error_pct": 0.009407,
       "wave": "wave2",
       "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "N eff",
+      "scientific_measurement": {
+        "delta": -0.00028655,
+        "delta_pct": 0.009407,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -82,7 +122,17 @@
       "error_pct": 0.0016,
       "wave": "wave2",
       "formula": "S_quant/e + \u03b3\u00b2",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "Omega Lambda",
+      "scientific_measurement": {
+        "delta": -0.00031095,
+        "delta_pct": 0.045395,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -93,7 +143,17 @@
       "error_pct": 0.00296,
       "wave": "wave2",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "sigma 8",
+      "scientific_measurement": {
+        "delta": 2.4e-05,
+        "delta_pct": 0.00296,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -104,7 +164,17 @@
       "error_pct": 0.006335,
       "wave": "wave2",
       "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "tau reion",
+      "scientific_measurement": {
+        "delta": -0.00170345,
+        "delta_pct": 3.036447,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -115,7 +185,17 @@
       "error_pct": 0.090986,
       "wave": "wave5",
       "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "D H ratio",
+      "scientific_measurement": {
+        "delta": 1.8e-07,
+        "delta_pct": 0.699746,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_sector_open_lab",
@@ -126,7 +206,17 @@
       "error_pct": 0.048592,
       "wave": "wave5",
       "formula": "\u03b8_S\u00b7sin(1)",
-      "status": "dark_sector_open"
+      "status": "dark_sector_open",
+      "domain_display_name": "dark sector open",
+      "display_name": "Y p He4",
+      "scientific_measurement": {
+        "delta": -0.000119,
+        "delta_pct": 0.048592,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -142,5 +232,19 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "tier": 51,
-  "dark_sector_status": "GREEN"
+  "dark_sector_status": "GREEN",
+  "display_name": "Dark Sector Open Problems",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.561129+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.048592,
+    "max_error_pct": 3.036447,
+    "mean_abs_delta": 0.004632202857142858,
+    "precision_tier_counts": {
+      "green": 7
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  }
 }

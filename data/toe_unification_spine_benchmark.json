@@ -42,7 +42,17 @@
       "computed": 0.019008,
       "measured": 0.0,
       "error_pct": 0.019008268802502604,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.019008,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +61,17 @@
       "computed": 0.019008,
       "measured": 0.0,
       "error_pct": 0.019008268802502604,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "tier gap fill",
+      "display_name": "unification panel",
+      "scientific_measurement": {
+        "delta": 0.019008,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -62,7 +82,17 @@
       "computed": 7.0,
       "measured": 7.0,
       "error_pct": 0.0,
-      "source": "ToE_Gap_Closure_Spine"
+      "source": "ToE_Gap_Closure_Spine",
+      "domain_display_name": "toe unification spine",
+      "display_name": "gap closure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -71,7 +101,17 @@
       "computed": 6.0,
       "measured": 6.0,
       "error_pct": 0.0,
-      "source": "Theory_Completeness_Spine"
+      "source": "Theory_Completeness_Spine",
+      "domain_display_name": "toe unification spine",
+      "display_name": "completeness",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -80,7 +120,17 @@
       "computed": 12.0,
       "measured": 12.0,
       "error_pct": 0.027544107556407217,
-      "source": "Domain_Orbital_Predictions"
+      "source": "Domain_Orbital_Predictions",
+      "domain_display_name": "toe unification spine",
+      "display_name": "orbital rollup",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -89,7 +139,17 @@
       "computed": 282.053603,
       "measured": 282.0,
       "error_pct": 0.019008268802510223,
-      "source": "toe_unification_metrics"
+      "source": "toe_unification_metrics",
+      "domain_display_name": "toe unification spine",
+      "display_name": "domain graph",
+      "scientific_measurement": {
+        "delta": 0.053603,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -98,7 +158,17 @@
       "computed": 18694.552836,
       "measured": 18691.0,
       "error_pct": 0.019008268802492807,
-      "source": "toe_unification_metrics"
+      "source": "toe_unification_metrics",
+      "domain_display_name": "toe unification spine",
+      "display_name": "domain graph",
+      "scientific_measurement": {
+        "delta": 3.552836,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -107,7 +177,17 @@
       "computed": 246.04676,
       "measured": 246.0,
       "error_pct": 0.019008268802502604,
-      "source": "toe_unification_metrics"
+      "source": "toe_unification_metrics",
+      "domain_display_name": "toe unification spine",
+      "display_name": "raw S spine",
+      "scientific_measurement": {
+        "delta": 0.04676,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -116,7 +196,17 @@
       "computed": 7942.509447,
       "measured": 7941.0,
       "error_pct": 0.019008268802504343,
-      "source": "toe_unification_metrics"
+      "source": "toe_unification_metrics",
+      "domain_display_name": "toe unification spine",
+      "display_name": "raw S spine",
+      "scientific_measurement": {
+        "delta": 1.509447,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "toe_unification_spine_lab",
@@ -125,7 +215,17 @@
       "computed": 12.002281,
       "measured": 12.0,
       "error_pct": 0.019008268802493213,
-      "source": "toe_unification_metrics"
+      "source": "toe_unification_metrics",
+      "domain_display_name": "toe unification spine",
+      "display_name": "prediction registry",
+      "scientific_measurement": {
+        "delta": 0.002281,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -151,5 +251,19 @@
     "FSOT.Formal.TheoryCompletenessSpinePriors",
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
     "FSOT.Formal.FormulaBranchingFractalPriors"
-  ]
+  ],
+  "display_name": "ToE Unification Spine",
+  "tier_label": "Tier 48",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.543106+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 8,
+    "median_error_pct": 0.019008,
+    "max_error_pct": 0.027544107556407217,
+    "mean_abs_delta": 0.645615875,
+    "precision_tier_counts": {
+      "green": 8
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

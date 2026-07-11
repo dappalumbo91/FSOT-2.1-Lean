@@ -22,7 +22,17 @@
       "name": "llm phrase and contraction",
       "computed": 5,
       "measured": 5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "llm phrase and contraction",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
@@ -30,7 +40,17 @@
       "name": "llm phrase and contraction",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "llm phrase and contraction",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
@@ -38,7 +58,17 @@
       "name": "basic morphology",
       "computed": 5,
       "measured": 5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "basic morphology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
@@ -46,7 +76,17 @@
       "name": "basic morphology",
       "computed": 4,
       "measured": 4,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "basic morphology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
@@ -54,7 +94,17 @@
       "name": "proper phrase spans",
       "computed": 5,
       "measured": 5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "proper phrase spans",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
@@ -62,28 +112,82 @@
       "name": "proper phrase spans",
       "computed": 3,
       "measured": 3,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "proper phrase spans",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
       "property": "reserved_token_slots",
       "computed": 7,
       "measured": 7,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "reserved token slots",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
       "property": "vocab_token_count",
       "computed": 25,
       "measured": 25,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "vocab token count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tokenization_smoke",
       "property": "smoke_case_count",
       "computed": 3,
       "measured": 3,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "tokenization smoke",
+      "display_name": "smoke case count",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Tokenization Smoke",
+  "tier_label": "Tier 33",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.789742+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 9,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 9
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

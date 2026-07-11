@@ -43,7 +43,17 @@
       "computed": 0.019008,
       "measured": 0.0,
       "error_pct": 0.019008268802510223,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.019008,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +62,17 @@
       "computed": 0.019008,
       "measured": 0.0,
       "error_pct": 0.019008268802510223,
-      "observable_count": 8
+      "observable_count": 8,
+      "domain_display_name": "tier gap fill",
+      "display_name": "reality fold panel",
+      "scientific_measurement": {
+        "delta": 0.019008,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +83,17 @@
       "computed": 60.0,
       "measured": 60.0,
       "error_pct": 0.0220747159758794,
-      "source": "Compactification_Ladder"
+      "source": "Compactification_Ladder",
+      "domain_display_name": "reality folding spine",
+      "display_name": "compactification ladder",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -72,7 +102,17 @@
       "computed": 36.0,
       "measured": 36.0,
       "error_pct": 0.020098237848404983,
-      "source": "Adjacent_Rung_Coupling"
+      "source": "Adjacent_Rung_Coupling",
+      "domain_display_name": "reality folding spine",
+      "display_name": "adjacent rung coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -81,7 +121,17 @@
       "computed": 51.0,
       "measured": 51.0,
       "error_pct": 0.025753835305195434,
-      "source": "Fold_Depth_Metrics"
+      "source": "Fold_Depth_Metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "fold depth metrics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -90,7 +140,17 @@
       "computed": 282.053603,
       "measured": 282.0,
       "error_pct": 0.019008268802510223,
-      "source": "reality_folding_spine_metrics"
+      "source": "reality_folding_spine_metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "domain graph",
+      "scientific_measurement": {
+        "delta": 0.053603,
+        "delta_pct": 0.019008,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -99,7 +159,17 @@
       "computed": 10.001901,
       "measured": 10.0,
       "error_pct": 0.019008268802505057,
-      "source": "reality_folding_spine_metrics"
+      "source": "reality_folding_spine_metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "compactification",
+      "scientific_measurement": {
+        "delta": 0.001901,
+        "delta_pct": 0.01901,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -108,7 +178,17 @@
       "computed": 9.001711,
       "measured": 9.0,
       "error_pct": 0.019008268802503083,
-      "source": "reality_folding_spine_metrics"
+      "source": "reality_folding_spine_metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "neighbor coupling",
+      "scientific_measurement": {
+        "delta": 0.001711,
+        "delta_pct": 0.019011,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -117,7 +197,17 @@
       "computed": 2.719917,
       "measured": 2.7194,
       "error_pct": 0.019008268802494864,
-      "source": "reality_folding_spine_metrics"
+      "source": "reality_folding_spine_metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "string cosmo span",
+      "scientific_measurement": {
+        "delta": 0.000517,
+        "delta_pct": 0.019012,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "reality_folding_spine_lab",
@@ -126,7 +216,17 @@
       "computed": 1.00019,
       "measured": 1.0,
       "error_pct": 0.019008268802500616,
-      "source": "reality_folding_spine_metrics"
+      "source": "reality_folding_spine_metrics",
+      "domain_display_name": "reality folding spine",
+      "display_name": "unification spine",
+      "scientific_measurement": {
+        "delta": 0.00019,
+        "delta_pct": 0.019,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -154,5 +254,19 @@
     "FSOT.Formal.AdjacentRungCouplingPriors",
     "FSOT.Formal.FoldDepthMetricsPriors",
     "FSOT.Formal.ToEUnificationSpinePriors"
-  ]
+  ],
+  "display_name": "Reality Folding Spine",
+  "tier_label": "Tier 49",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.549302+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 8,
+    "median_error_pct": 0.019012,
+    "max_error_pct": 0.025753835305195434,
+    "mean_abs_delta": 0.007240249999999999,
+    "precision_tier_counts": {
+      "green": 8
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

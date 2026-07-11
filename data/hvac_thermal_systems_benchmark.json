@@ -18,7 +18,17 @@
       "name": "Residential SEER 14 baseline",
       "computed": 3.5,
       "measured": 3.5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "Residential SEER 14 baseline",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -26,7 +36,17 @@
       "name": "Residential SEER 14 baseline",
       "computed": 4.1032,
       "measured": 4.1032,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "Residential SEER 14 baseline",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -34,7 +54,17 @@
       "name": "High-efficiency SEER 22",
       "computed": 5.5,
       "measured": 5.5,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "High-efficiency SEER 22",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -42,7 +72,17 @@
       "name": "High-efficiency SEER 22",
       "computed": 6.4478,
       "measured": 6.4478,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "High-efficiency SEER 22",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -52,7 +92,17 @@
       "measured": 11.1167,
       "error_pct": 0.0,
       "eval_kind": "reference_anchor",
-      "literature_cop_carnot": 11.0
+      "literature_cop_carnot": 11.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "Carnot COP (0C cold, 27C hot)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -62,7 +112,17 @@
       "measured": 10.2717,
       "error_pct": 0.0,
       "eval_kind": "reference_anchor",
-      "literature_cop_carnot": 9.4
+      "literature_cop_carnot": 9.4,
+      "domain_display_name": "hvac thermal",
+      "display_name": "Carnot COP (5C cold, 35C hot)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hvac_thermal",
@@ -70,7 +130,31 @@
       "name": "S_thermo",
       "computed": 0.7869745016115727,
       "measured": 0.7869745016115727,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "domain_display_name": "hvac thermal",
+      "display_name": "S thermo",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "HVAC Thermal Systems",
+  "tier_label": "Tier 39",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.830281+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 7,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 7
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

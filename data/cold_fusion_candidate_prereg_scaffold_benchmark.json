@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19
+      "observable_count": 19,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 7.9e-05,
       "measured": 0.0,
       "error_pct": 7.869745015413914e-05,
-      "observable_count": 12
+      "observable_count": 12,
+      "domain_display_name": "tier gap fill",
+      "display_name": "cold fusion screening",
+      "scientific_measurement": {
+        "delta": 7.9e-05,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.008381497018408523,
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -69,7 +99,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -82,7 +122,17 @@
       "mechanism": "lattice_acoustic_bleed_confinement",
       "fsot_predicted": 1.85,
       "sota_baseline": 0.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -91,7 +141,17 @@
       "computed": 1.850001,
       "measured": 1.85,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "pd deuterium lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 5.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -104,7 +164,17 @@
       "mechanism": "boundary_partition_catalyst",
       "fsot_predicted": 1.62,
       "sota_baseline": 0.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "ni hydrogen lattice",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -113,7 +183,17 @@
       "computed": 1.620001,
       "measured": 1.62,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "ni hydrogen lattice",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 6.2e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -126,7 +206,17 @@
       "mechanism": "acoustic_bleed_enhancement",
       "fsot_predicted": 1.41,
       "sota_baseline": 0.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "titanium deuterium absorption",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -135,7 +225,17 @@
       "computed": 1.410001,
       "measured": 1.41,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "titanium deuterium absorption",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 7.1e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -148,7 +248,17 @@
       "mechanism": "initiation_transformation_catalyst",
       "fsot_predicted": 108000000.0,
       "sota_baseline": 100000000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "muon catalyzed dd",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -157,7 +267,17 @@
       "computed": 108000084.993246,
       "measured": 108000000.0,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "muon catalyzed dd",
+      "scientific_measurement": {
+        "delta": 84.993246,
+        "delta_pct": 7.9e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -170,7 +290,17 @@
       "mechanism": "acoustic_bleed_enhancement",
       "fsot_predicted": 0.42,
       "sota_baseline": 0.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "sonofusion bubble collapse",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -179,7 +309,17 @@
       "computed": 0.42,
       "measured": 0.42,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "sonofusion bubble collapse",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -192,7 +332,17 @@
       "mechanism": "boundary_lattice_confinement",
       "fsot_predicted": 2.1,
       "sota_baseline": 0.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "electrolytic dd palladium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -201,7 +351,17 @@
       "computed": 2.100002,
       "measured": 2.1,
       "error_pct": 7.9e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "electrolytic dd palladium",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 9.5e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -210,7 +370,17 @@
       "computed": 0.9,
       "measured": 0.9,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "lattice loading ratio min",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -219,7 +389,17 @@
       "computed": 0.35,
       "measured": 0.35,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "acoustic bleed coupling min",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -228,7 +408,17 @@
       "computed": 0.15,
       "measured": 0.15,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "boundary partition margin",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -237,7 +427,17 @@
       "computed": 0.1,
       "measured": 0.1,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "excess heat detection w",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cold_fusion_prereg_lab",
@@ -247,7 +447,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "prereg_bundle_gate",
-      "note": "Novel cold-fusion claims preregistered \u2014 not verified as discovered"
+      "note": "Novel cold-fusion claims preregistered \u2014 not verified as discovered",
+      "domain_display_name": "cold fusion prereg",
+      "display_name": "cold fusion candidate screening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -261,5 +471,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Cold Fusion Candidate Prereg Scaffold",
+  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.661336+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 9.5e-05,
+    "mean_abs_delta": 4.473329,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

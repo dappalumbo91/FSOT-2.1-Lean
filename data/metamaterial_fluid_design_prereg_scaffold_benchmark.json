@@ -40,7 +40,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 25
+      "observable_count": 25,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 18
+      "observable_count": 18,
+      "domain_display_name": "tier gap fill",
+      "display_name": "metamaterial fluid design",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -60,7 +80,17 @@
       "computed": 0.008381497018408523,
       "measured": 0.008381497018408523,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "term3 acoustic bleed depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -69,7 +99,17 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "formula_bridge"
+      "eval_kind": "formula_bridge",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "boundary partition tightening",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -82,7 +122,17 @@
       "fluid_like_effect": "directional_acoustic_superfluid_analog",
       "fsot_predicted": -1.35,
       "sota_baseline": -2.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "acoustic bleed phononic crystal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -91,7 +141,17 @@
       "computed": -1.35,
       "measured": -1.35,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "acoustic bleed phononic crystal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -101,7 +161,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "fluid_coefficient": 0.325,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "acoustic bleed phononic crystal",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -114,7 +184,17 @@
       "fluid_like_effect": "negative_poisson_fluid_conformal",
       "fsot_predicted": -0.62,
       "sota_baseline": -1.02,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "boundary partition mechanical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -123,7 +203,17 @@
       "computed": -0.62,
       "measured": -0.62,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "boundary partition mechanical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -133,7 +223,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "fluid_coefficient": 0.392157,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "boundary partition mechanical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -146,7 +246,17 @@
       "fluid_like_effect": "electron_fluid_superballistic",
       "fsot_predicted": 210000.0,
       "sota_baseline": 200000.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "superheavy doped graphene composite",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -155,7 +265,17 @@
       "computed": 210000.070405,
       "measured": 210000.0,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "superheavy doped graphene composite",
+      "scientific_measurement": {
+        "delta": 0.070405,
+        "delta_pct": 3.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -165,7 +285,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "fluid_coefficient": 0.05,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "superheavy doped graphene composite",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -178,7 +308,17 @@
       "fluid_like_effect": "emergent_tau_switching_superfluid_gate",
       "fsot_predicted": 2.8,
       "sota_baseline": 2.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "fpc coupled active metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -187,7 +327,17 @@
       "computed": 2.800001,
       "measured": 2.8,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "fpc coupled active metamaterial",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 3.6e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -197,7 +347,17 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "fluid_coefficient": 0.4,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "fpc coupled active metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -210,7 +370,17 @@
       "fluid_like_effect": "lattice_acoustic_bleed_thermal_superfluid",
       "fsot_predicted": 1850.0,
       "sota_baseline": 500.0,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "pd lattice cold fusion metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -219,7 +389,17 @@
       "computed": 1850.00062,
       "measured": 1850.0,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "pd lattice cold fusion metamaterial",
+      "scientific_measurement": {
+        "delta": 0.00062,
+        "delta_pct": 3.4e-05,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -229,7 +409,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "fluid_coefficient": 2.7,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "pd lattice cold fusion metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -242,7 +432,17 @@
       "fluid_like_effect": "refractive_index_fluid_modulation",
       "fsot_predicted": 0.5,
       "sota_baseline": 0.05,
-      "eval_kind": "prereg_gate"
+      "eval_kind": "prereg_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "coherence efficiency optical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -251,7 +451,17 @@
       "computed": 0.5,
       "measured": 0.5,
       "error_pct": 3.4e-05,
-      "eval_kind": "candidate_prediction"
+      "eval_kind": "candidate_prediction",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "coherence efficiency optical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -261,7 +471,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "fluid_coefficient": 4.5,
-      "eval_kind": "fluid_gate"
+      "eval_kind": "fluid_gate",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "coherence efficiency optical metamaterial",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -270,7 +490,17 @@
       "computed": 0.35,
       "measured": 0.35,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "acoustic bleed coupling min",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -279,7 +509,17 @@
       "computed": 0.15,
       "measured": 0.15,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "boundary partition margin",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -288,7 +528,17 @@
       "computed": 0.5,
       "measured": 0.5,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "fluid like response min",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -297,7 +547,17 @@
       "computed": 0.1,
       "measured": 0.1,
       "error_pct": 0.0,
-      "eval_kind": "screening_anchor"
+      "eval_kind": "screening_anchor",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "metamaterial bandgap tolerance ev",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "metamaterial_fluid_prereg_lab",
@@ -307,7 +567,17 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "prereg_bundle_gate",
-      "note": "Novel metamaterial fluid-like claims preregistered \u2014 not verified as synthesized"
+      "note": "Novel metamaterial fluid-like claims preregistered \u2014 not verified as synthesized",
+      "domain_display_name": "metamaterial fluid prereg",
+      "display_name": "metamaterial fluid design prereg",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -321,5 +591,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Metamaterial Fluid Design Prereg Scaffold",
+  "tier_label": "Tier 73 \u2014 Heavy Ion Lab Synthesis Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.673467+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 25,
+    "median_error_pct": 0.0,
+    "max_error_pct": 3.6e-05,
+    "mean_abs_delta": 0.0028410399999999995,
+    "precision_tier_counts": {
+      "green": 25
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  }
 }

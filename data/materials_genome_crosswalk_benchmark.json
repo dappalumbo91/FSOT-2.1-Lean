@@ -40,7 +40,17 @@
       "computed": 0.01731,
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
-      "observable_count": 38
+      "observable_count": 38,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +59,17 @@
       "computed": 0.021039,
       "measured": 0.0,
       "error_pct": 0.021039417107152993,
-      "observable_count": 35
+      "observable_count": 35,
+      "domain_display_name": "tier gap fill",
+      "display_name": "materials genome",
+      "scientific_measurement": {
+        "delta": 0.021039,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +81,17 @@
       "measured": 0.02717,
       "error_pct": 0.0,
       "record_count": 87,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -71,7 +101,17 @@
       "measured": 0.0,
       "error_pct": 0.027170334947435038,
       "source_panel": "materials_engineering",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.02717,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -81,7 +121,17 @@
       "measured": 0.0,
       "error_pct": 0.06721669152527372,
       "source_panel": "materials_engineering",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.067217,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -91,7 +141,17 @@
       "measured": 0.0,
       "error_pct": 0.03976772759072059,
       "source_panel": "materials_engineering",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.039768,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -101,7 +161,17 @@
       "measured": 0.0,
       "error_pct": 0.017310023021640548,
       "source_panel": "materials_engineering",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.01731,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -111,7 +181,17 @@
       "measured": 0.0,
       "error_pct": 0.023259895459434028,
       "source_panel": "materials_engineering",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a784 Poisson Ratio \u03bd",
+      "scientific_measurement": {
+        "delta": 0.02326,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -121,7 +201,17 @@
       "measured": 0.024318,
       "error_pct": 0.0,
       "record_count": 168,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "quantum materials",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -131,7 +221,17 @@
       "measured": 0.0,
       "error_pct": 0.024318115591995593,
       "source_panel": "quantum_materials",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "all sections",
+      "scientific_measurement": {
+        "delta": 0.024318,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -141,7 +241,17 @@
       "measured": 0.0,
       "error_pct": 0.012196976490588003,
       "source_panel": "quantum_materials",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a731 Band Gaps",
+      "scientific_measurement": {
+        "delta": 0.012197,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -151,7 +261,17 @@
       "measured": 0.0,
       "error_pct": 0.07662024786017463,
       "source_panel": "quantum_materials",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a718 Crystal Field \u0394o",
+      "scientific_measurement": {
+        "delta": 0.07662,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -161,7 +281,17 @@
       "measured": 0.0,
       "error_pct": 0.013419257571482188,
       "source_panel": "quantum_materials",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a755 \u03bceff Magnetic",
+      "scientific_measurement": {
+        "delta": 0.013419,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -171,7 +301,17 @@
       "measured": 0.0,
       "error_pct": 0.01692529386942307,
       "source_panel": "quantum_materials",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "\u00a775 Superconducting Tc",
+      "scientific_measurement": {
+        "delta": 0.016925,
+        "delta_pct": 100.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -181,7 +321,17 @@
       "measured": 0.00273,
       "error_pct": 0.0,
       "record_count": 45,
-      "eval_kind": "crosswalk_bridge"
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "materials species bridge",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -191,7 +341,18 @@
       "measured": 21.70357091193756,
       "error_pct": 0.8649265896462162,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.18771996,
+        "delta_pct": 0.864927,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -201,7 +362,18 @@
       "measured": 35.24234465779961,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -211,7 +383,18 @@
       "measured": 80.4047585604223,
       "error_pct": 0.002730116109889546,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.00219514,
+        "delta_pct": 0.00273,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -221,7 +404,18 @@
       "measured": 90.55498906775276,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -231,7 +425,18 @@
       "measured": 172.73476400326405,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -241,7 +446,18 @@
       "measured": 237.0,
       "error_pct": 0.26423885832201555,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -0.62624609,
+        "delta_pct": 0.264239,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -251,7 +467,18 @@
       "measured": 317.1098547290309,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -261,7 +488,18 @@
       "measured": 403.4287934927351,
       "error_pct": 0.5820967217076054,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": -2.34834578,
+        "delta_pct": 0.582097,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -271,7 +509,18 @@
       "measured": 430.3684323821725,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -281,7 +530,18 @@
       "measured": 309.16127743887125,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -291,7 +551,18 @@
       "measured": 169.97058314499202,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -301,7 +572,18 @@
       "measured": 141.02410300364596,
       "error_pct": 0.720462327843992,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -1.01602554,
+        "delta_pct": 0.720462,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -311,7 +593,18 @@
       "measured": 76.01315561749642,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -321,7 +614,18 @@
       "measured": 169.97058314499202,
       "error_pct": 0.6261261033798243,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 1.06423019,
+        "delta_pct": 0.626126,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -331,7 +635,18 @@
       "measured": 104.79814713293308,
       "error_pct": 0.7661525390171925,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.80291367,
+        "delta_pct": 0.766153,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -341,7 +656,18 @@
       "measured": 230.00652916778503,
       "error_pct": 0.8552202071884494,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -1.96706232,
+        "delta_pct": 0.85522,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -351,7 +677,18 @@
       "measured": 109.99055899603007,
       "error_pct": 0.07136998117523077,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.07850024,
+        "delta_pct": 0.07137,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -361,7 +698,18 @@
       "measured": 179.41943578287643,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -371,7 +719,18 @@
       "measured": 46.0,
       "error_pct": 0.04483155670104976,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a762 Bulk Modulus",
+      "scientific_measurement": {
+        "delta": -0.02062252,
+        "delta_pct": 0.044832,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -381,7 +740,18 @@
       "measured": 82.0,
       "error_pct": 0.021151317926568283,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.01734408,
+        "delta_pct": 0.021151,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -391,7 +761,18 @@
       "measured": 48.0,
       "error_pct": 0.021039417107152993,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.01009892,
+        "delta_pct": 0.021039,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -401,7 +782,18 @@
       "measured": 25.89284920015884,
       "error_pct": 0.0,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -411,7 +803,18 @@
       "measured": 27.0,
       "error_pct": 0.0030166588445013076,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": 0.0008145,
+        "delta_pct": 0.003017,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -421,7 +824,18 @@
       "measured": 61.0,
       "error_pct": 0.0007594387341680245,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.00046326,
+        "delta_pct": 0.000759,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_genome_crosswalk_lab",
@@ -431,7 +845,18 @@
       "measured": 44.3606797749979,
       "error_pct": 0.8503255631869582,
       "source_panel": "materials_species_bridge",
-      "eval_kind": "materials_relay"
+      "eval_kind": "materials_relay",
+      "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "domain_display_name": "materials genome crosswalk",
+      "display_name": "SMILES Lab \u00a770 Shear Modulus",
+      "scientific_measurement": {
+        "delta": -0.3772102,
+        "delta_pct": 0.850326,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "margin_summary": {
@@ -445,5 +870,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Materials Genome Crosswalk",
+  "tier_label": "Tier 55 \u2014 PubChem Stability Panel cluster",
+  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.599662+00:00",
+  "scientific_precision_summary": {
+    "scalar_count": 38,
+    "median_error_pct": 0.07137,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.2325788528947369,
+    "precision_tier_counts": {
+      "green": 31,
+      "red": 7
+    },
+    "green_gate_fraction": 0.8157894736842105,
+    "matches_domain_spine": false
+  }
 }
