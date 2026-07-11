@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma math_generator_benchmark_formula_eval_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma math_generator_benchmark_formula_eval_observable_count_pos : (0 < 9)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma math_generator_max_error_pct_positive : 0 < (1.1862232544535427%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma stratum_l23_pyramidal_fi_pearson_gt_bound : (0.2%R) < (0.22516239104042488
 Proof. lra. Qed.
 
 Lemma held_out_cell_count_large : (2100 < 2165)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_sst_cell_count_pos : (150 < 154)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stratum_pv_cell_count_pos : (200 < 222)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

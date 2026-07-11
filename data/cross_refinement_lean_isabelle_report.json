@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-11T22:10:59.375176+00:00",
+  "generated_at": "2026-07-11T23:49:19.152215+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
-  "obligation_count_total": 2146,
-  "obligation_count_provable": 1823,
-  "obligation_count_atomic_provable": 1820,
-  "obligation_count_bundle_conj": 3,
-  "obligation_count_margin_violations": 323,
+  "obligation_count_total": 2158,
+  "obligation_count_provable": 2102,
+  "obligation_count_atomic_provable": 1828,
+  "obligation_count_bundle_conj": 274,
+  "obligation_count_margin_violations": 56,
   "isabelle_chunks_found": 20,
-  "isabelle_lemmas_indexed": 1820,
+  "isabelle_lemmas_indexed": 1828,
   "triangulation": {
-    "atomic_triangulated_ok": 1820,
+    "atomic_triangulated_ok": 1828,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 3,
+    "bundle_conj_triangulated_ok": 274,
     "bundle_conj_triangulated_fail": 0,
     "pct_atomic_triangulated": 100.0
   },
@@ -23,7 +23,7 @@
       "max_margin": "0.5"
     },
     "nat_pos": {
-      "count": 574,
+      "count": 578,
       "min_margin": "1",
       "median_margin": "14",
       "max_margin": "352276"
@@ -35,9 +35,9 @@
       "max_margin": "1446257063881.475"
     },
     "lt_lit": {
-      "count": 157,
+      "count": 161,
       "min_margin": "0E-15",
-      "median_margin": "0.00910345945482695",
+      "median_margin": "0.00999999999999997379133088666758",
       "max_margin": "3269016.3724721107"
     },
     "nat_le_sym": {
@@ -134,123 +134,13 @@
   "lt_half_pooled_median_margin_to_bound": "0.499999",
   "margin_violations_excluded": [
     {
-      "id": "acoustic_rm_bundle",
-      "module": "AcousticResonanceMaterialsPriors",
-      "violation": null
-    },
-    {
-      "id": "adj_rung_bundle",
-      "module": "AdjacentRungCouplingPriors",
-      "violation": null
-    },
-    {
-      "id": "adv_brk_bundle",
-      "module": "AdversarialFractalBreakPriors",
-      "violation": null
-    },
-    {
-      "id": "aether_psi_con_solver_in_bounds",
-      "module": "AetherPrimePriors",
-      "violation": null
-    },
-    {
-      "id": "aether_eta_eff_solver_in_bounds",
-      "module": "AetherPrimePriors",
-      "violation": null
-    },
-    {
       "id": "aether_prime_priors_bundle",
       "module": "AetherPrimePriors",
       "violation": null
     },
     {
-      "id": "agriculture_agroecology_gap_fill_bundle",
-      "module": "AgricultureAgroecologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "ai_gal_br_bundle",
-      "module": "AIGalacticOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "anthropology_ext_bundle",
-      "module": "AnthropologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "architecture_building_science_gap_fill_bundle",
-      "module": "ArchitectureBuildingScienceGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "arxiv_primitives_v14_bundle",
-      "module": "ArxivPrimitivesV14Priors",
-      "violation": null
-    },
-    {
-      "id": "astrophysical_structure_crosswalk_bundle",
-      "module": "AstrophysicalStructureCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "atmospheric_physics_gap_fill_bundle",
-      "module": "AtmosphericPhysicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "atomic_physics_gap_fill_bundle",
-      "module": "AtomicPhysicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "bibliography_lean_corpus_bundle",
-      "module": "BibliographyLeanCorpusPriors",
-      "violation": null
-    },
-    {
-      "id": "binary_decoder_rendlesham_bundle",
-      "module": "BinaryDecoderRendleshamPriors",
-      "violation": null
-    },
-    {
-      "id": "biological_cuda_physarum_bundle",
-      "module": "BiologicalCudaPhysarumPriors",
-      "violation": null
-    },
-    {
-      "id": "biology_strict_bundle",
-      "module": "BiologyStrictEmpiricalPriors",
-      "violation": null
-    },
-    {
-      "id": "biophysics_public_panel_bundle",
-      "module": "BiophysicsPublicPanelPriors",
-      "violation": null
-    },
-    {
       "id": "blackhole_thesis_bundle",
       "module": "BlackHoleThesisPriors",
-      "violation": null
-    },
-    {
-      "id": "botany_ext_bundle",
-      "module": "BotanyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "boundary_partition_tightening_bundle",
-      "module": "BoundaryPartitionTighteningPriors",
-      "violation": null
-    },
-    {
-      "id": "brain_component_priors_trinary_bundle",
-      "module": "BrainPriors",
-      "violation": null
-    },
-    {
-      "id": "breakthrough_discoveries_2024_2026_bundle",
-      "module": "BreakthroughDiscoveries20242026Priors",
       "violation": null
     },
     {
@@ -264,108 +154,13 @@
       "violation": null
     },
     {
-      "id": "cardiology_ext_bundle",
-      "module": "CardiologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "cern_open_data_lhc_bundle",
-      "module": "CernOpenDataLhcPriors",
-      "violation": null
-    },
-    {
-      "id": "certified_agent_qwen_bundle",
-      "module": "CertifiedAgentQwenPriors",
-      "violation": null
-    },
-    {
-      "id": "chaos_pt_bundle",
-      "module": "ChaosMediatedPhaseTransitionsPriors",
-      "violation": null
-    },
-    {
-      "id": "chemical_engineering_ext_bundle",
-      "module": "ChemicalEngineeringExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "chemical_structure_stability_panel_bundle",
-      "module": "ChemicalStructureStabilityPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "civil_engineering_ext_bundle",
-      "module": "CivilEngineeringExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "climate_science_bundle",
-      "module": "ClimateSciencePriors",
-      "violation": null
-    },
-    {
-      "id": "clinical_medicine_ext_bundle",
-      "module": "ClinicalMedicineExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "code_genome_bundle",
-      "module": "CodeGenomeStructurePriors",
-      "violation": null
-    },
-    {
       "id": "codon_trinary_map_bundle",
       "module": "CodonPriors",
       "violation": null
     },
     {
-      "id": "cold_fusion_candidate_prereg_scaffold_bundle",
-      "module": "ColdFusionCandidatePreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "cold_fusion_lab_synthesis_crosswalk_bundle",
-      "module": "ColdFusionLabSynthesisCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "comp_lad_bundle",
-      "module": "CompactificationLadderPriors",
-      "violation": null
-    },
-    {
-      "id": "compact_object_binary_events_bundle",
-      "module": "CompactObjectBinaryEventsPriors",
-      "violation": null
-    },
-    {
-      "id": "computational_reasoning_bundle",
-      "module": "ComputationalReasoningPriors",
-      "violation": null
-    },
-    {
-      "id": "consciousness_econ_bundle",
-      "module": "ConsciousnessEconPriors",
-      "violation": null
-    },
-    {
-      "id": "c_gal_br_bundle",
-      "module": "ConsciousnessGalacticOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "consciousness_soul_bridge_bundle",
-      "module": "ConsciousnessSoulBridgePriors",
-      "violation": null
-    },
-    {
       "id": "cosmology_anomalies_bundle",
       "module": "CosmologyAnomaliesPriors",
-      "violation": null
-    },
-    {
-      "id": "cosmology_anomaly_deep_panel_bundle",
-      "module": "CosmologyAnomalyDeepPanelPriors",
       "violation": null
     },
     {
@@ -414,68 +209,8 @@
       "violation": null
     },
     {
-      "id": "creative_arts_math_spine_bundle",
-      "module": "CreativeArtsMathSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "cryosphere_bundle",
-      "module": "CryospherePriors",
-      "violation": null
-    },
-    {
-      "id": "crypto_tech_bundle",
-      "module": "CryptographyTechnologyPriors",
-      "violation": null
-    },
-    {
-      "id": "culinary_arts_bundle",
-      "module": "CulinaryArtsPriors",
-      "violation": null
-    },
-    {
-      "id": "cve_hole_bundle",
-      "module": "CVECodonHoleFalsificationPriors",
-      "violation": null
-    },
-    {
-      "id": "dark_energy_cpl_bundle",
-      "module": "DarkEnergyCPLPriors",
-      "violation": null
-    },
-    {
-      "id": "dark_sector_bundle",
-      "module": "DarkSectorOpenProblemsPriors",
-      "violation": null
-    },
-    {
-      "id": "distant_island_emergence_simulation_bundle",
-      "module": "DistantIslandEmergenceSimulationPriors",
-      "violation": null
-    },
-    {
-      "id": "distant_island_z128_z132_deep_panel_bundle",
-      "module": "DistantIslandZ128Z132DeepPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "domain_coupling_bundle",
-      "module": "DomainCouplingSimulationPriors",
-      "violation": null
-    },
-    {
-      "id": "domain_coupling_simulation_refresh_panel_bundle",
-      "module": "DomainCouplingSimulationRefreshPanelPriors",
-      "violation": null
-    },
-    {
       "id": "domain_coverage_priors_bundle",
       "module": "DomainCoveragePriors",
-      "violation": null
-    },
-    {
-      "id": "orb_pred_bundle",
-      "module": "DomainOrbitalPredictionsPriors",
       "violation": null
     },
     {
@@ -484,73 +219,8 @@
       "violation": null
     },
     {
-      "id": "connective_e10d_wd_bundle",
-      "module": "E10dWdConnectivePriors",
-      "violation": null
-    },
-    {
-      "id": "ecology_gap_fill_bundle",
-      "module": "EcologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "ecology_bundle",
-      "module": "EcologyPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "econometrics_gap_fill_bundle",
-      "module": "EconometricsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "economics_gap_fill_bundle",
-      "module": "EconomicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "econophysics_bundle",
-      "module": "EconophysicsPriors",
-      "violation": null
-    },
-    {
-      "id": "electrical_power_systems_bundle",
-      "module": "ElectricalPowerSystemsPriors",
-      "violation": null
-    },
-    {
-      "id": "element_synthesis_condition_scaffold_bundle",
-      "module": "ElementSynthesisConditionScaffoldPriors",
-      "violation": null
-    },
-    {
       "id": "emergent_domain_priors_bundle",
       "module": "EmergentDomainPriors",
-      "violation": null
-    },
-    {
-      "id": "e_ai_br_bundle",
-      "module": "EnergyAIOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "e_neu_br_bundle",
-      "module": "EnergyNeuralOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "entomology_ext_bundle",
-      "module": "EntomologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "environmental_engineering_ext_bundle",
-      "module": "EnvironmentalEngineeringExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "epidemiology_ext_bundle",
-      "module": "EpidemiologyExtensionPriors",
       "violation": null
     },
     {
@@ -559,73 +229,8 @@
       "violation": null
     },
     {
-      "id": "exogeology_ext_bundle",
-      "module": "ExogeologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "exoplanet_system_architecture_bundle",
-      "module": "ExoplanetSystemArchitecturePriors",
-      "violation": null
-    },
-    {
       "id": "experiment_synthesis_priors_bundle",
       "module": "ExperimentSynthesisPriors",
-      "violation": null
-    },
-    {
-      "id": "external_oss_bundle",
-      "module": "ExternalOSSCodeGenomePriors",
-      "violation": null
-    },
-    {
-      "id": "finance_markets_ext_bundle",
-      "module": "FinanceMarketsExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "fluid_dynamics_gap_fill_bundle",
-      "module": "FluidDynamicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "fpc_spine_bundle",
-      "module": "FluidPhaseCurrentSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "fluid_spacetime_observable_spine_bundle",
-      "module": "FluidSpacetimeObservableSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "fluid_spacetime_prereg_validation_panel_bundle",
-      "module": "FluidSpacetimePreregValidationPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "fold_dep_bundle",
-      "module": "FoldDepthMetricsPriors",
-      "violation": null
-    },
-    {
-      "id": "food_microbiology_gap_fill_bundle",
-      "module": "FoodMicrobiologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "fractal_bundle",
-      "module": "FormulaBranchingFractalPriors",
-      "violation": null
-    },
-    {
-      "id": "formula_corpus_closure_bundle",
-      "module": "FormulaCorpusClosurePriors",
-      "violation": null
-    },
-    {
-      "id": "formula_corpus_cnc_bundle",
-      "module": "FormulaCorpusCncPriors",
       "violation": null
     },
     {
@@ -634,123 +239,8 @@
       "violation": null
     },
     {
-      "id": "formula_precision_spine_bundle",
-      "module": "FormulaPrecisionSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "fpc_fluidlink_timing_deep_panel_bundle",
-      "module": "FpcFluidlinkTimingDeepPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "fpc_link_bundle",
-      "module": "FPCTemporalCouplingPriors",
-      "violation": null
-    },
-    {
-      "id": "const_rec_bundle",
-      "module": "FractalConstantRecursionPriors",
-      "violation": null
-    },
-    {
-      "id": "fsot_aggregate_organized_panel_bundle",
-      "module": "FsotAggregateOrganizedPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "fsot_aggregate_unified_db_bundle",
-      "module": "FsotAggregateUnifiedDbPriors",
-      "violation": null
-    },
-    {
-      "id": "fuel_candidate_prereg_scaffold_bundle",
-      "module": "FuelCandidatePreregScaffoldPriors",
-      "violation": null
-    },
-    {
       "id": "fuel_lab_compound_bundle",
       "module": "FuelPriors",
-      "violation": null
-    },
-    {
-      "id": "fuel_thermochemistry_public_anchors_bundle",
-      "module": "FuelThermochemistryPublicAnchorsPriors",
-      "violation": null
-    },
-    {
-      "id": "fusion_decay_chain_prereg_scaffold_bundle",
-      "module": "FusionDecayChainPreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "connective_fusion_grid_bundle",
-      "module": "FusionGridConnectivePriors",
-      "violation": null
-    },
-    {
-      "id": "fusion_lab_certificate_spine_bundle",
-      "module": "FusionLabCertificateSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "fusion_physics_public_panel_bundle",
-      "module": "FusionPhysicsPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "gaia_astrometry_panel_deep_bundle",
-      "module": "GaiaAstrometryPanelDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "gaia_dr3_tap_deep_bundle",
-      "module": "GaiaDR3TAPDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "galactic_structure_sample_bundle",
-      "module": "GalacticStructureSamplePriors",
-      "violation": null
-    },
-    {
-      "id": "gbif_species_occurrence_bundle",
-      "module": "GbifSpeciesOccurrencePriors",
-      "violation": null
-    },
-    {
-      "id": "genomic_sciences_bundle",
-      "module": "GenomicSciencesPriors",
-      "violation": null
-    },
-    {
-      "id": "geochemistry_bundle",
-      "module": "GeochemistryPriors",
-      "violation": null
-    },
-    {
-      "id": "geology_stratigraphy_ext_bundle",
-      "module": "GeologyStratigraphyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "geomagnetism_bundle",
-      "module": "GeomagnetismPriors",
-      "violation": null
-    },
-    {
-      "id": "grace_cryosphere_bundle",
-      "module": "GraceCryospherePriors",
-      "violation": null
-    },
-    {
-      "id": "gwosc_live_event_deep_bundle",
-      "module": "GWOSCLiveEventDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "heavy_ion_lab_synthesis_panel_bundle",
-      "module": "HeavyIonLabSynthesisPanelPriors",
       "violation": null
     },
     {
@@ -764,103 +254,8 @@
       "violation": null
     },
     {
-      "id": "history_ext_bundle",
-      "module": "HistoryExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "hubble_tension_bundle",
-      "module": "HubbleBubbleTensionPriors",
-      "violation": null
-    },
-    {
-      "id": "hubble_dark_sector_crosswalk_bundle",
-      "module": "HubbleDarkSectorCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "hvac_thermal_systems_bundle",
-      "module": "HvacThermalSystemsPriors",
-      "violation": null
-    },
-    {
-      "id": "hybrid_fi_sim_multi_hero_panel_bundle",
-      "module": "HybridFiSimMultiHeroPanelPriors",
-      "violation": null
-    },
-    {
       "id": "hydrology_bundle",
       "module": "HydrologyPriors",
-      "violation": null
-    },
-    {
-      "id": "igem_live_fasta_bundle",
-      "module": "IGEMLiveFastaPriors",
-      "violation": null
-    },
-    {
-      "id": "igem_parts_expanded_bundle",
-      "module": "IGEMPartsExpandedPriors",
-      "violation": null
-    },
-    {
-      "id": "igem_synthetic_biology_bundle",
-      "module": "IGEMSyntheticBiologyPriors",
-      "violation": null
-    },
-    {
-      "id": "immunology_bundle",
-      "module": "ImmunologyPriors",
-      "violation": null
-    },
-    {
-      "id": "inertial_confinement_fusion_panel_bundle",
-      "module": "InertialConfinementFusionPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "information_theory_public_panel_bundle",
-      "module": "InformationTheoryPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "initiation_transformation_archetype_bundle",
-      "module": "InitiationTransformationArchetypePriors",
-      "violation": null
-    },
-    {
-      "id": "intelligence_compression_priors_bundle",
-      "module": "IntelligenceCompressionPriors",
-      "violation": null
-    },
-    {
-      "id": "interactive_media_prereg_scaffold_bundle",
-      "module": "InteractiveMediaPreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "interdisciplinary_spine_crosswalk_bundle",
-      "module": "InterdisciplinarySpineCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "intrinsic_llm_validators_bundle",
-      "module": "IntrinsicLLMValidatorsPriors",
-      "violation": null
-    },
-    {
-      "id": "iono_chem_bundle",
-      "module": "IonosphericChemistryCouplingPriors",
-      "violation": null
-    },
-    {
-      "id": "island_of_stability_deep_panel_bundle",
-      "module": "IslandOfStabilityDeepPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "knowledge_base_portable_bundle_panel_bundle",
-      "module": "KnowledgeBasePortableBundlePanelPriors",
       "violation": null
     },
     {
@@ -874,38 +269,8 @@
       "violation": null
     },
     {
-      "id": "lab_synthesis_metamaterial_spine_bundle",
-      "module": "LabSynthesisMetamaterialSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "law_policy_ext_bundle",
-      "module": "LawPolicyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "linguistics_formal_bundle",
-      "module": "LinguisticsFormalPriors",
-      "violation": null
-    },
-    {
       "id": "linguistics_priors_bundle",
       "module": "LinguisticsPriors",
-      "violation": null
-    },
-    {
-      "id": "live_ingest_spine_bundle",
-      "module": "LiveIngestSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "magic_imbalance_penalty_in_unit_interval",
-      "module": "MagicCirclePriors",
-      "violation": null
-    },
-    {
-      "id": "magic_backlash_threshold_in_unit_interval",
-      "module": "MagicCirclePriors",
       "violation": null
     },
     {
@@ -914,173 +279,13 @@
       "violation": null
     },
     {
-      "id": "magnetic_confinement_fusion_panel_bundle",
-      "module": "MagneticConfinementFusionPanelPriors",
-      "violation": null
-    },
-    {
       "id": "magnetic_string_bundle",
       "module": "MagneticStringPriors",
       "violation": null
     },
     {
-      "id": "magnetosphere_extended_bundle",
-      "module": "MagnetosphereExtendedPriors",
-      "violation": null
-    },
-    {
-      "id": "magnetosphere_bundle",
-      "module": "MagnetospherePriors",
-      "violation": null
-    },
-    {
-      "id": "maillard_chemistry_gap_fill_bundle",
-      "module": "MaillardChemistryGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "malware_threat_bundle",
-      "module": "MalwareThreatIntelligencePriors",
-      "violation": null
-    },
-    {
-      "id": "marine_biology_ext_bundle",
-      "module": "MarineBiologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "material_in_silico_screening_scaffold_bundle",
-      "module": "MaterialInSilicoScreeningScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "material_property_verification_scaffold_bundle",
-      "module": "MaterialPropertyVerificationScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "materials_engineering_bundle",
-      "module": "MaterialsEngineeringPriors",
-      "violation": null
-    },
-    {
-      "id": "materials_genome_crosswalk_bundle",
-      "module": "MaterialsGenomeCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "materials_project_live_panel_bundle",
-      "module": "MaterialsProjectLivePanelPriors",
-      "violation": null
-    },
-    {
-      "id": "materials_species_bridge_bundle",
-      "module": "MaterialsSpeciesBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "mathematics_computational_bundle",
-      "module": "MathematicsComputationalPriors",
-      "violation": null
-    },
-    {
-      "id": "math_generator_airfoil_rmse_bundle",
-      "module": "MathGeneratorAirfoilRmsePriors",
-      "violation": null
-    },
-    {
-      "id": "math_generator_benchmark_formula_eval_bundle",
-      "module": "MathGeneratorBenchmarkFormulaEvalPriors",
-      "violation": null
-    },
-    {
       "id": "math_generator_priors_bundle",
       "module": "MathGeneratorPriors",
-      "violation": null
-    },
-    {
-      "id": "math_generator_rules_eval_bundle",
-      "module": "MathGeneratorRulesEvalPriors",
-      "violation": null
-    },
-    {
-      "id": "mechanical_engineering_ext_bundle",
-      "module": "MechanicalEngineeringExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "mech_cpl_bundle",
-      "module": "MechanisticCouplingPriors",
-      "violation": null
-    },
-    {
-      "id": "med_gal_br_bundle",
-      "module": "MedicalGalacticOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "metamaterial_fluid_design_prereg_scaffold_bundle",
-      "module": "MetamaterialFluidDesignPreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "meteorology_gap_fill_bundle",
-      "module": "MeteorologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "music_harmonics_public_panel_bundle",
-      "module": "MusicHarmonicsPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "mycology_ext_bundle",
-      "module": "MycologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "nasa_exoplanet_archive_bundle",
-      "module": "NasaExoplanetArchivePriors",
-      "violation": null
-    },
-    {
-      "id": "natural_formation_element_simulation_bundle",
-      "module": "NaturalFormationElementSimulationPriors",
-      "violation": null
-    },
-    {
-      "id": "network_inet_bundle",
-      "module": "NetworkInternetProtocolsPriors",
-      "violation": null
-    },
-    {
-      "id": "network_science_public_panel_bundle",
-      "module": "NetworkSciencePublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "neu_gal_br_bundle",
-      "module": "NeuralGalacticOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "neuroeconomics_ext_bundle",
-      "module": "NeuroeconomicsExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "neuroimmunology_bundle",
-      "module": "NeuroimmunologyPriors",
-      "violation": null
-    },
-    {
-      "id": "neurolab_gaps_math_spine_bundle",
-      "module": "NeurolabGapsMathSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "neurolab_residual_math_spine_bundle",
-      "module": "NeurolabResidualMathSpinePriors",
       "violation": null
     },
     {
@@ -1104,168 +309,8 @@
       "violation": null
     },
     {
-      "id": "neuron_multi_hero_bundle",
-      "module": "NeuronMultiHeroPriors",
-      "violation": null
-    },
-    {
-      "id": "nist_codata_constants_bundle",
-      "module": "NistCodataConstantsPriors",
-      "violation": null
-    },
-    {
-      "id": "noaa_coastal_tides_bundle",
-      "module": "NoaaCoastalTidesPriors",
-      "violation": null
-    },
-    {
-      "id": "obs_ch_bundle",
-      "module": "ObserverChannelDerivationPriors",
-      "violation": null
-    },
-    {
-      "id": "oceanography_gap_fill_bundle",
-      "module": "OceanographyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "omni_theory_genesis_bundle",
-      "module": "OmniTheoryGenesisPriors",
-      "violation": null
-    },
-    {
-      "id": "oncology_bundle",
-      "module": "OncologyPriors",
-      "violation": null
-    },
-    {
-      "id": "openalex_citation_graph_bundle",
-      "module": "OpenalexCitationGraphPriors",
-      "violation": null
-    },
-    {
-      "id": "openneuro_full_panel_bundle",
-      "module": "OpenNeuroFullPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "orbital_mechanics_bundle",
-      "module": "OrbitalMechanicsPriors",
-      "violation": null
-    },
-    {
-      "id": "paleoclimate_ext_bundle",
-      "module": "PaleoclimateExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "paleontology_ext_bundle",
-      "module": "PaleontologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "p_neu_br_bundle",
-      "module": "ParticleNeuralOrbitalBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "particle_physics_gap_fill_bundle",
-      "module": "ParticlePhysicsGapFillPriors",
-      "violation": null
-    },
-    {
       "id": "particle_physics_bundle",
       "module": "ParticlePhysicsPriors",
-      "violation": null
-    },
-    {
-      "id": "periodic_extension_decay_topology_scaffold_bundle",
-      "module": "PeriodicExtensionDecayTopologyScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "periodic_table_completion_spine_bundle",
-      "module": "PeriodicTableCompletionSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "periodic_table_extension_closure_spine_bundle",
-      "module": "PeriodicTableExtensionClosureSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "periodic_table_public_panel_bundle",
-      "module": "PeriodicTablePublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "pharmacokinetics_gap_fill_bundle",
-      "module": "PharmacokineticsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "pharmacology_bundle",
-      "module": "PharmacologyPriors",
-      "violation": null
-    },
-    {
-      "id": "phi_morph_bundle",
-      "module": "PhiMorphogeneticScalingPriors",
-      "violation": null
-    },
-    {
-      "id": "planetary_atmospheres_bundle",
-      "module": "PlanetaryAtmospheresPriors",
-      "violation": null
-    },
-    {
-      "id": "planetary_structure_bundle",
-      "module": "PlanetaryStructurePriors",
-      "violation": null
-    },
-    {
-      "id": "plasma_physics_bundle",
-      "module": "PlasmaPhysicsPriors",
-      "violation": null
-    },
-    {
-      "id": "clone_vf_bundle",
-      "module": "PortableCloneVerifyPriors",
-      "violation": null
-    },
-    {
-      "id": "prediction_rederivation_bundle",
-      "module": "PredictionRederivationPriors",
-      "violation": null
-    },
-    {
-      "id": "preregistered_outcome_tracking_bundle",
-      "module": "PreregisteredOutcomeTrackingPriors",
-      "violation": null
-    },
-    {
-      "id": "prereg_bundle",
-      "module": "PreregisteredPredictionsPriors",
-      "violation": null
-    },
-    {
-      "id": "preregistered_predictions_verification_scaffold_bundle",
-      "module": "PreregisteredPredictionsVerificationScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "pl_laws_bundle",
-      "module": "ProgrammingLanguageLawsPriors",
-      "violation": null
-    },
-    {
-      "id": "proof_cg_bundle",
-      "module": "ProofCarryingCodeGenomePriors",
-      "violation": null
-    },
-    {
-      "id": "proof_ledger_closure_spine_bundle",
-      "module": "ProofLedgerClosureSpinePriors",
       "violation": null
     },
     {
@@ -1274,138 +319,8 @@
       "violation": null
     },
     {
-      "id": "psychology_gap_fill_bundle",
-      "module": "PsychologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "pubchem_compound_properties_bundle",
-      "module": "PubchemCompoundPropertiesPriors",
-      "violation": null
-    },
-    {
-      "id": "pubchem_live_deep_bundle",
-      "module": "PubChemLiveDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "pubchem_stability_panel_bundle",
-      "module": "PubChemStabilityPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "published_fuel_property_panel_bundle",
-      "module": "PublishedFuelPropertyPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "pure_mathematics_ext_bundle",
-      "module": "PureMathematicsExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "quantum_computing_gap_fill_bundle",
-      "module": "QuantumComputingGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "quantum_information_bundle",
-      "module": "QuantumInformationPriors",
-      "violation": null
-    },
-    {
-      "id": "quantum_materials_bundle",
-      "module": "QuantumMaterialsPriors",
-      "violation": null
-    },
-    {
-      "id": "quantum_mechanics_gap_fill_bundle",
-      "module": "QuantumMechanicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "quantum_optics_gap_fill_bundle",
-      "module": "QuantumOpticsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "rcsb_pdb_structures_bundle",
-      "module": "RcsbPdbStructuresPriors",
-      "violation": null
-    },
-    {
-      "id": "rd_interval_tightening_panel_bundle",
-      "module": "RdIntervalTighteningPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "fold_spine_bundle",
-      "module": "RealityFoldingSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "robotics_control_ext_bundle",
-      "module": "RoboticsControlSystemsExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "rust_lean_bridge_bundle",
-      "module": "RustLeanBridgePriors",
-      "violation": null
-    },
-    {
-      "id": "secure_sw_bundle",
-      "module": "SecureSoftwareEngineeringPriors",
-      "violation": null
-    },
-    {
-      "id": "seismology_deep_bundle",
-      "module": "SeismologyDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "seismology_bundle",
-      "module": "SeismologyPriors",
-      "violation": null
-    },
-    {
-      "id": "semiconductor_physics_public_panel_bundle",
-      "module": "SemiconductorPhysicsPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "sh0es_refined_bundle",
-      "module": "SH0ESRefinedPriors",
-      "violation": null
-    },
-    {
-      "id": "simbad_stellar_identity_deep_bundle",
-      "module": "SIMBADStellarIdentityDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "small_body_orbits_bundle",
-      "module": "SmallBodyOrbitsPriors",
-      "violation": null
-    },
-    {
-      "id": "sociology_gap_fill_bundle",
-      "module": "SociologyGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "solar_system_structure_deep_bundle",
-      "module": "SolarSystemStructureDeepPriors",
-      "violation": null
-    },
-    {
       "id": "soul_sibling_priors_bundle",
       "module": "SoulSiblingPriors",
-      "violation": null
-    },
-    {
-      "id": "space_propulsion_systems_bundle",
-      "module": "SpacePropulsionSystemsPriors",
       "violation": null
     },
     {
@@ -1419,93 +334,8 @@
       "violation": null
     },
     {
-      "id": "speleology_ext_bundle",
-      "module": "SpeleologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "sports_biomechanics_gap_fill_bundle",
-      "module": "SportsBiomechanicsGapFillPriors",
-      "violation": null
-    },
-    {
-      "id": "statistical_mechanics_public_panel_bundle",
-      "module": "StatisticalMechanicsPublicPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "stellar_multiplicity_catalog_bundle",
-      "module": "StellarMultiplicityCatalogPriors",
-      "violation": null
-    },
-    {
-      "id": "stellar_multiplicity_live_deep_bundle",
-      "module": "StellarMultiplicityLiveDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "structure_calibration_links_codon_map",
-      "module": "StructureCalibrationPriors",
-      "violation": null
-    },
-    {
       "id": "structure_calibration_bundle",
       "module": "StructureCalibrationPriors",
-      "violation": null
-    },
-    {
-      "id": "stumped_panel_bundle",
-      "module": "StumpedObservablesPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "stumped_spine_bundle",
-      "module": "StumpedObservablesSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "superheavy_element_stability_panel_bundle",
-      "module": "SuperheavyElementStabilityPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "superheavy_island_completion_spine_bundle",
-      "module": "SuperheavyIslandCompletionSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "superheavy_island_emergence_simulation_bundle",
-      "module": "SuperheavyIslandEmergenceSimulationPriors",
-      "violation": null
-    },
-    {
-      "id": "supply_chain_ext_bundle",
-      "module": "SupplyChainLogisticsExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "symbolic_archetype_panel_bundle",
-      "module": "SymbolicArchetypePanelPriors",
-      "violation": null
-    },
-    {
-      "id": "synthetic_biology_bundle",
-      "module": "SyntheticBiologyPriors",
-      "violation": null
-    },
-    {
-      "id": "tectonics_bundle",
-      "module": "TectonicsPriors",
-      "violation": null
-    },
-    {
-      "id": "term3_acoustic_bleed_depth_bundle",
-      "module": "Term3AcousticBleedDepthPriors",
-      "violation": null
-    },
-    {
-      "id": "toe_spine_bundle",
-      "module": "TheoryCompletenessSpinePriors",
       "violation": null
     },
     {
@@ -1514,58 +344,8 @@
       "violation": null
     },
     {
-      "id": "time_xw_bundle",
-      "module": "TimeDomainCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "time_emergence_deep_panel_bundle",
-      "module": "TimeEmergenceDeepPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "time_em_bundle",
-      "module": "TimeEmergenceSimulationPriors",
-      "violation": null
-    },
-    {
-      "id": "toe_claim_certificate_bundle_bundle",
-      "module": "ToEClaimCertificateBundlePriors",
-      "violation": null
-    },
-    {
-      "id": "gap_spine_bundle",
-      "module": "ToEGapClosureSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "toe_unity_bundle",
-      "module": "ToEUnificationSpinePriors",
-      "violation": null
-    },
-    {
-      "id": "tokenization_smoke_bundle",
-      "module": "TokenizationSmokePriors",
-      "violation": null
-    },
-    {
       "id": "trinary_fluid_priors_bundle",
       "module": "TrinaryFluidPriors",
-      "violation": null
-    },
-    {
-      "id": "trinary_hardware_motif_bundle",
-      "module": "TrinaryHardwareMotifPriors",
-      "violation": null
-    },
-    {
-      "id": "trinary_os_isa_rebuild_bundle",
-      "module": "TrinaryOSISARebuildPriors",
-      "violation": null
-    },
-    {
-      "id": "trinary_os_portable_bundle",
-      "module": "TrinaryOSPortablePriors",
       "violation": null
     },
     {
@@ -1574,43 +354,8 @@
       "violation": null
     },
     {
-      "id": "trinary_os_round_trip_bundle",
-      "module": "TrinaryOSRoundTripPriors",
-      "violation": null
-    },
-    {
-      "id": "trinary_os_tier_e_bundle",
-      "module": "TrinaryOSTierEPriors",
-      "violation": null
-    },
-    {
-      "id": "undiscovered_element_candidate_prereg_scaffold_bundle",
-      "module": "UndiscoveredElementCandidatePreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "unified_db_candidate_crosswalk_bundle",
-      "module": "UnifiedDBCandidateCrosswalkPriors",
-      "violation": null
-    },
-    {
-      "id": "unified_db_crosswalk_spine_bundle",
-      "module": "UnifiedDBCrosswalkSpinePriors",
-      "violation": null
-    },
-    {
       "id": "unified_db_meta_bundle",
       "module": "UnifiedDBPriors",
-      "violation": null
-    },
-    {
-      "id": "uniprot_protein_annotations_bundle",
-      "module": "UniprotProteinAnnotationsPriors",
-      "violation": null
-    },
-    {
-      "id": "uniprot_structure_annotations_deep_bundle",
-      "module": "UniProtStructureAnnotationsDeepPriors",
       "violation": null
     },
     {
@@ -1619,78 +364,13 @@
       "violation": null
     },
     {
-      "id": "virology_ext_bundle",
-      "module": "VirologyExtensionPriors",
-      "violation": null
-    },
-    {
-      "id": "vizier_wds_tap_live_deep_bundle",
-      "module": "VizieRWdsTapLiveDeepPriors",
-      "violation": null
-    },
-    {
-      "id": "vl_distill_atlas_bundle",
-      "module": "VlDistillAtlasPriors",
-      "violation": null
-    },
-    {
-      "id": "warp_stable_run_band",
-      "module": "WarpActuationDevelopmentPriors",
-      "violation": null
-    },
-    {
-      "id": "warp_actuation_core_bundle",
-      "module": "WarpActuationDevelopmentPriors",
-      "violation": null
-    },
-    {
-      "id": "warp_actuation_stabilized_bundle",
-      "module": "WarpActuationDevelopmentPriors",
-      "violation": null
-    },
-    {
       "id": "warp_bh_wh_portal_bundle",
       "module": "WarpBhWhPortalPriors",
       "violation": null
     },
     {
-      "id": "wds_live_multiplicity_deep_bundle",
-      "module": "WDSLiveMultiplicityDeepPriors",
-      "violation": null
-    },
-    {
       "id": "weather_priors_bundle",
       "module": "WeatherPriors",
-      "violation": null
-    },
-    {
-      "id": "world_bank_development_bundle",
-      "module": "WorldBankDevelopmentPriors",
-      "violation": null
-    },
-    {
-      "id": "xr_interactive_media_math_scaffold_bundle",
-      "module": "XRInteractiveMediaMathScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "z120_z126_beam_synthesis_panel_bundle",
-      "module": "Z120Z126BeamSynthesisPanelPriors",
-      "violation": null
-    },
-    {
-      "id": "z164_distant_island_prereg_scaffold_bundle",
-      "module": "Z164DistantIslandPreregScaffoldPriors",
-      "violation": null
-    },
-    {
-      "id": "zero_day_eval_bundle",
-      "module": "ZeroDayRiskEvaluatorPriors",
-      "violation": null
-    },
-    {
-      "id": "zoology_ext_bundle",
-      "module": "ZoologyExtensionPriors",
       "violation": null
     },
     {
@@ -1706,21 +386,6 @@
     {
       "id": "proton_raw_S_positive",
       "module": "Domains",
-      "violation": null
-    },
-    {
-      "id": "genomic_exact_identity_bundle",
-      "module": "Genomic",
-      "violation": null
-    },
-    {
-      "id": "neurolab_genomic_exact_bundle",
-      "module": "Genomic",
-      "violation": null
-    },
-    {
-      "id": "protein_formula_closed_form_bundle",
-      "module": "ProteinFormulas",
       "violation": null
     },
     {

@@ -3,6 +3,30 @@ theory FullFormalSpine_18
 imports Complex_Main
 begin
 
+lemma lab_quantum_raw_S_positive: "0 < (2.2738149448128526 :: real)"
+  by eval
+
+lemma lab_particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
+  by eval
+
+lemma lab_nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
+  by eval
+
+lemma lab_energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
+  by eval
+
+lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
+  by eval
+
+lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
+  by eval
+
+lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
 lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
   by eval
 

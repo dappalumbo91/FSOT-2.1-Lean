@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma exogeology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma exoplanet_system_architecture_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma exoplanet_system_architecture_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -298,11 +304,5 @@ Lemma connective_decay_chain_relay_pos : 0 < (0.029710640768%R).
 Proof. lra. Qed.
 
 Lemma connective_dt_energy_pos : 0 < (17.6%R).
-Proof. lra. Qed.
-
-Lemma fusion_lab_certificate_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_lab_certificate_spine_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 

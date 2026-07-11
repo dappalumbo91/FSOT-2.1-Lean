@@ -3,6 +3,24 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
+lemma phi_morph_phi_species_pos: "0 < (307 :: nat)"
+  by eval
+
+lemma planetary_atmospheres_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma planetary_atmospheres_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma planetary_atmospheres_observable_count_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma planetary_atmospheres_body_count_pos: "0 < (13 :: nat)"
+  by eval
+
+lemma planetary_atmospheres_beats_sota_headlines_pos: "0 < (3 :: nat)"
+  by eval
+
 lemma planetary_structure_median_error_under_half_pct: "(0.032274 :: real) < (0.5 :: real)"
   by eval
 
@@ -283,24 +301,6 @@ lemma quantum_materials_headline_median_under_half_pct: "(0.08247836447365957 ::
   by eval
 
 lemma quantum_materials_observable_count_pos: "0 < (168 :: nat)"
-  by eval
-
-lemma quantum_materials_section_count_pos: "0 < (13 :: nat)"
-  by eval
-
-lemma quantum_materials_beats_sota_headlines_pos: "0 < (6 :: nat)"
-  by eval
-
-lemma quantum_mechanics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
-  by eval
-
-lemma quantum_mechanics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
-  by eval
-
-lemma quantum_mechanics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 end

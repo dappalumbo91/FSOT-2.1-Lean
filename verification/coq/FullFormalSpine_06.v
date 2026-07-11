@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fusion_lab_certificate_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fusion_lab_certificate_spine_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma fusion_lab_certificate_spine_observable_count_pos : (0 < 50)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -299,10 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fic_best_intelligence_score_positive : 0 < (0.9997093332777109%R).
 Proof. lra. Qed.
-
-Lemma fic_sweep_row_count_pos : (0 < 572)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fic_fertile_rows_present : (0 < 156)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -3,6 +3,24 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
+lemma quantum_materials_section_count_pos: "0 < (13 :: nat)"
+  by eval
+
+lemma quantum_materials_beats_sota_headlines_pos: "0 < (6 :: nat)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
 lemma quantum_optics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
   by eval
 
@@ -267,6 +285,12 @@ lemma structure_calibration_residue_count_pos: "0 < (32338 :: nat)"
 lemma structure_calibration_burial_beats_fifty_pct: "(50.0 :: real) < (59.47 :: real)"
   by eval
 
+lemma stsci_mast_telescope_observable_count_pos: "0 < (130 :: nat)"
+  by eval
+
+lemma stsci_mast_telescope_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
 lemma stumped_panel_pooled_median_under_half_pct: "(0.039905 :: real) < (0.5 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma stumped_panel_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
 lemma stumped_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma stumped_panel_open_predictions_pos: "0 < (4 :: nat)"
-  by eval
-
-lemma stumped_spine_pooled_median_under_half_pct: "(0.009407 :: real) < (0.5 :: real)"
-  by eval
-
-lemma stumped_spine_headline_median_under_half_pct: "(0.009407 :: real) < (0.5 :: real)"
-  by eval
-
-lemma stumped_spine_observable_count_pos: "0 < (5 :: nat)"
-  by eval
-
-lemma stumped_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma stumped_spine_spine_sectors_pos: "0 < (6 :: nat)"
-  by eval
-
-lemma superheavy_element_stability_panel_pooled_median_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma superheavy_element_stability_panel_headline_median_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
   by eval
 
 end

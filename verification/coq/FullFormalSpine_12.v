@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma stumped_panel_open_predictions_pos : (0 < 4)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stumped_spine_pooled_median_under_half_pct : (0.009407%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma stumped_spine_headline_median_under_half_pct : (0.009407%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma stumped_spine_observable_count_pos : (0 < 5)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stumped_spine_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stumped_spine_spine_sectors_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma superheavy_element_stability_panel_pooled_median_under_half_pct : (0.000001%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma superheavy_element_stability_panel_headline_median_under_half_pct : (0.000001%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma superheavy_element_stability_panel_observable_count_pos : (0 < 50)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -281,28 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma unified_db_candidate_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma unified_db_candidate_crosswalk_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma unified_db_candidate_crosswalk_observable_count_pos : (0 < 46)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma unified_db_candidate_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma unified_db_crosswalk_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma unified_db_crosswalk_spine_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma unified_db_crosswalk_spine_observable_count_pos : (0 < 18)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma unified_db_crosswalk_spine_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma unified_db_evaluation_ok_pos : (0 < 146)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

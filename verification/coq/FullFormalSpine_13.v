@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma unified_db_candidate_crosswalk_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma unified_db_candidate_crosswalk_observable_count_pos : (0 < 46)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma unified_db_candidate_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma unified_db_crosswalk_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma unified_db_crosswalk_spine_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma unified_db_crosswalk_spine_observable_count_pos : (0 < 18)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma unified_db_crosswalk_spine_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma unified_db_evaluation_ok_pos : (0 < 146)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma unified_db_records_total_pos : (0 < 30984)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -281,28 +305,4 @@ Proof. lra. Qed.
 
 Lemma term2_default_eq_one : (1.0%R) = (1.0%R).
 Proof. reflexivity. Qed.
-
-Lemma term3_abs_lt_fifth_default : (0.000000000000000026942103679946702%R) < (0.2%R).
-Proof. lra. Qed.
-
-Lemma dark_energy_term3_abs_lt_fifth : (0.000000000000000006569205761691303%R) < (0.2%R).
-Proof. lra. Qed.
-
-Lemma dark_energy_term1_base_abs_gt_one_two : (1.2%R) < (2.1349793149885588%R).
-Proof. lra. Qed.
-
-Lemma ai_term1_base_abs_gt_one_six : (1.6%R) < (1.7936205462413415%R).
-Proof. lra. Qed.
-
-Lemma cmb_term1_base_abs_gt_one_three_five : (1.35%R) < (2.0349169819491695%R).
-Proof. lra. Qed.
-
-Lemma domain_term1_lt_neg_08_ai : (-1.3514171596284352%R) < (-0.8%R).
-Proof. lra. Qed.
-
-Lemma domain_term1_lt_neg_08_cmb : (-2.0099710610507393%R) < (-0.8%R).
-Proof. lra. Qed.
-
-Lemma domain_term1_gt_neg_08_chemical : (-0.8%R) < (-0.20381690994906282%R).
-Proof. lra. Qed.
 

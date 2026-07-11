@@ -3,6 +3,30 @@ theory FullFormalSpine_16
 imports Complex_Main
 begin
 
+lemma sin_div_phi_le_one: "(0.17725907894917586 :: real) <= (1.0 :: real)"
+  by eval
+
+lemma poof_factor_lt_one: "(0.1534822148944508 :: real) < (1.0 :: real)"
+  by eval
+
+lemma log_31415_gt_1144: "(1.144 :: real) < (3.1415 :: real)"
+  by eval
+
+lemma log_phi_lt_0482: "(0.48121182505960347 :: real) < (0.482 :: real)"
+  by eval
+
+lemma log_016_gt_m185: "(-1.85 :: real) < (0.16 :: real)"
+  by eval
+
+lemma poof_factor_lt_point_one_six: "(0.1534822148944508 :: real) < (0.16 :: real)"
+  by eval
+
+lemma alpha_nonneg: "(0 :: real) <= (0.0008082937 :: real)"
+  by eval
+
+lemma coherence_efficiency_lt_ten: "(0.9577022026205612 :: real) < (10.0 :: real)"
+  by eval
+
 lemma cosmological_cos_arg_lo: "(3.4 :: real) < (3.4953374011050684 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma cos_bound_hi: "(0 :: real) <= (0 :: real)"
   by eval
 
 lemma sin_bound_poly_mono_lo: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_bound_poly_mono: "(0 :: real) <= (0 :: real)"
-  by eval
-
-lemma sin_eq_cos_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
-  by eval
-
-lemma cos_eq_sin_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
-  by eval
-
-lemma perceived_adjust_lo_domain: "(0.567 :: real) < (0.5714337093277406 :: real)"
-  by eval
-
-lemma perceived_adjust_hi_domain: "(0.9877410621073419 :: real) < (0.99 :: real)"
-  by eval
-
-lemma cos_dp_pv_neg_of_ge_07: "(-0.3775886600448273 :: real) < (0 :: real)"
-  by eval
-
-lemma cos_dp_pv_pos_of_le_06: "0 < (0.1125700895682655 :: real)"
-  by eval
-
-lemma growth_term_hits_zero_lt_one_point_one_five: "(1.0002883913967908 :: real) < (1.15 :: real)"
   by eval
 
 end

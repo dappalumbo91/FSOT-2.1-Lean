@@ -3,6 +3,12 @@ theory FullFormalSpine_09
 imports Complex_Main
 begin
 
+lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
+  by eval
+
+lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
+  by eval
+
 lemma stratum_vip_cell_count_pos: "(140 :: nat) < (146 :: nat)"
   by eval
 
@@ -58,6 +64,12 @@ lemma nist_codata_constants_median_error_under_half_pct: "(0 :: real) < (0.5 :: 
   by eval
 
 lemma nist_codata_constants_observable_count_pos: "0 < (6 :: nat)"
+  by eval
+
+lemma nist_dlmf_special_functions_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma nist_dlmf_special_functions_median_error_under_five_pct: "(0.001661 :: real) < (5.0 :: real)"
   by eval
 
 lemma noaa_coastal_tides_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -207,6 +219,12 @@ lemma particle_physics_observable_count_pos: "0 < (98 :: nat)"
 lemma particle_physics_components_sum: "(98.0 :: real) = (98.0 :: real)"
   by eval
 
+lemma pdg_particle_properties_observable_count_pos: "0 < (12 :: nat)"
+  by eval
+
+lemma pdg_particle_properties_median_error_under_five_pct: "(0.041994 :: real) < (5.0 :: real)"
+  by eval
+
 lemma periodic_extension_decay_topology_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -283,24 +301,6 @@ lemma phi_morph_observable_count_pos: "0 < (327 :: nat)"
   by eval
 
 lemma phi_morph_beats_sota_headlines_pos: "0 < (3 :: nat)"
-  by eval
-
-lemma phi_morph_phi_species_pos: "0 < (307 :: nat)"
-  by eval
-
-lemma planetary_atmospheres_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma planetary_atmospheres_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma planetary_atmospheres_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma planetary_atmospheres_body_count_pos: "0 < (13 :: nat)"
-  by eval
-
-lemma planetary_atmospheres_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
 end

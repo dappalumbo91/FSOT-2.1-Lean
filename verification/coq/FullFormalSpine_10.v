@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma phi_morph_phi_species_pos : (0 < 307)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma planetary_atmospheres_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma planetary_atmospheres_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma planetary_atmospheres_observable_count_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma planetary_atmospheres_body_count_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma planetary_atmospheres_beats_sota_headlines_pos : (0 < 3)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma planetary_structure_median_error_under_half_pct : (0.032274%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -286,23 +304,5 @@ Lemma quantum_materials_headline_median_under_half_pct : (0.08247836447365957%R)
 Proof. lra. Qed.
 
 Lemma quantum_materials_observable_count_pos : (0 < 168)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma quantum_materials_section_count_pos : (0 < 13)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma quantum_materials_beats_sota_headlines_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma quantum_mechanics_gap_fill_pooled_median_under_half_pct : (0.0000952387420324368%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma quantum_mechanics_gap_fill_headline_median_under_half_pct : (0.0000952387420324368%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma quantum_mechanics_gap_fill_observable_count_pos : (0 < 50)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

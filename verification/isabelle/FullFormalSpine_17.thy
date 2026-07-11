@@ -3,6 +3,30 @@ theory FullFormalSpine_17
 imports Complex_Main
 begin
 
+lemma sin_bound_poly_mono: "(0 :: real) <= (0 :: real)"
+  by eval
+
+lemma sin_eq_cos_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
+  by eval
+
+lemma cos_eq_sin_pi_div_two_sub: "(0.0000000000000002775558 :: real) < (0.00000001 :: real)"
+  by eval
+
+lemma perceived_adjust_lo_domain: "(0.567 :: real) < (0.5714337093277406 :: real)"
+  by eval
+
+lemma perceived_adjust_hi_domain: "(0.9877410621073419 :: real) < (0.99 :: real)"
+  by eval
+
+lemma cos_dp_pv_neg_of_ge_07: "(-0.3775886600448273 :: real) < (0 :: real)"
+  by eval
+
+lemma cos_dp_pv_pos_of_le_06: "0 < (0.1125700895682655 :: real)"
+  by eval
+
+lemma growth_term_hits_zero_lt_one_point_one_five: "(1.0002883913967908 :: real) < (1.15 :: real)"
+  by eval
+
 lemma growth_term_coherence_product_lt_11523: "(0.9579783956964846 :: real) < (1.1523 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma lab_chemical_raw_S_positive: "0 < (0.7961830900509372 :: real)"
   by eval
 
 lemma lab_electron_raw_S_positive: "0 < (0.9706402573161165 :: real)"
-  by eval
-
-lemma lab_quantum_raw_S_positive: "0 < (2.2738149448128526 :: real)"
-  by eval
-
-lemma lab_particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
-  by eval
-
-lemma lab_nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
-  by eval
-
-lemma lab_energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
-  by eval
-
-lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
-  by eval
-
-lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
-  by eval
-
-lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
   by eval
 
 end

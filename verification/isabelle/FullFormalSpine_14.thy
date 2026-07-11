@@ -3,6 +3,30 @@ theory FullFormalSpine_14
 imports Complex_Main
 begin
 
+lemma term3_abs_lt_fifth_default: "(0.0000000000000000269421 :: real) < (0.2 :: real)"
+  by eval
+
+lemma dark_energy_term3_abs_lt_fifth: "(0.000000000000000006569206 :: real) < (0.2 :: real)"
+  by eval
+
+lemma dark_energy_term1_base_abs_gt_one_two: "(1.2 :: real) < (2.1349793149885588 :: real)"
+  by eval
+
+lemma ai_term1_base_abs_gt_one_six: "(1.6 :: real) < (1.7936205462413415 :: real)"
+  by eval
+
+lemma cmb_term1_base_abs_gt_one_three_five: "(1.35 :: real) < (2.0349169819491695 :: real)"
+  by eval
+
+lemma domain_term1_lt_neg_08_ai: "(-1.3514171596284352 :: real) < (-0.8 :: real)"
+  by eval
+
+lemma domain_term1_lt_neg_08_cmb: "(-2.0099710610507393 :: real) < (-0.8 :: real)"
+  by eval
+
+lemma domain_term1_gt_neg_08_chemical: "(-0.8 :: real) < (-0.20381690994906282 :: real)"
+  by eval
+
 lemma domain_term1_gt_neg_08_electron: "(-0.8 :: real) < (-0.029359742683883503 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma exp_1505_lt_5: "(4.504153630288483 :: real) < (5.0 :: real)"
   by eval
 
 lemma exp_0351_lt_1470: "(1.420487325912195 :: real) < (1.47 :: real)"
-  by eval
-
-lemma exp_1351_lt_4: "(3.8612848855835016 :: real) < (4.0 :: real)"
-  by eval
-
-lemma exp_005_lt_115: "(1.0512710963760241 :: real) < (1.15 :: real)"
-  by eval
-
-lemma cos_1355_lt_0215: "(0.21412535305356747 :: real) < (0.215 :: real)"
-  by eval
-
-lemma sqrt_10_lt_3163: "(3.1622776601683795 :: real) < (3.163 :: real)"
-  by eval
-
-lemma sqrt_12_lt_3465: "(3.4641016151377544 :: real) < (3.465 :: real)"
-  by eval
-
-lemma phi_gt_1618: "(1.618 :: real) < (1.618033988749895 :: real)"
-  by eval
-
-lemma psi_con_gt_632: "(0.632 :: real) < (0.6321205588287557 :: real)"
-  by eval
-
-lemma eta_eff_gt_466: "(0.466 :: real) < (0.46694220658433505 :: real)"
   by eval
 
 end

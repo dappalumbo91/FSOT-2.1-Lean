@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma term3_abs_lt_fifth_default : (0.000000000000000026942103679946702%R) < (0.2%R).
+Proof. lra. Qed.
+
+Lemma dark_energy_term3_abs_lt_fifth : (0.000000000000000006569205761691303%R) < (0.2%R).
+Proof. lra. Qed.
+
+Lemma dark_energy_term1_base_abs_gt_one_two : (1.2%R) < (2.1349793149885588%R).
+Proof. lra. Qed.
+
+Lemma ai_term1_base_abs_gt_one_six : (1.6%R) < (1.7936205462413415%R).
+Proof. lra. Qed.
+
+Lemma cmb_term1_base_abs_gt_one_three_five : (1.35%R) < (2.0349169819491695%R).
+Proof. lra. Qed.
+
+Lemma domain_term1_lt_neg_08_ai : (-1.3514171596284352%R) < (-0.8%R).
+Proof. lra. Qed.
+
+Lemma domain_term1_lt_neg_08_cmb : (-2.0099710610507393%R) < (-0.8%R).
+Proof. lra. Qed.
+
+Lemma domain_term1_gt_neg_08_chemical : (-0.8%R) < (-0.20381690994906282%R).
+Proof. lra. Qed.
+
 Lemma domain_term1_gt_neg_08_electron : (-0.8%R) < (-0.029359742683883503%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma exp_1505_lt_5 : (4.504153630288483%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma exp_0351_lt_1470 : (1.420487325912195%R) < (1.47%R).
-Proof. lra. Qed.
-
-Lemma exp_1351_lt_4 : (3.8612848855835016%R) < (4.0%R).
-Proof. lra. Qed.
-
-Lemma exp_005_lt_115 : (1.0512710963760241%R) < (1.15%R).
-Proof. lra. Qed.
-
-Lemma cos_1355_lt_0215 : (0.21412535305356747%R) < (0.215%R).
-Proof. lra. Qed.
-
-Lemma sqrt_10_lt_3163 : (3.1622776601683795%R) < (3.163%R).
-Proof. lra. Qed.
-
-Lemma sqrt_12_lt_3465 : (3.4641016151377544%R) < (3.465%R).
-Proof. lra. Qed.
-
-Lemma phi_gt_1618 : (1.618%R) < (1.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma psi_con_gt_632 : (0.632%R) < (0.6321205588287557%R).
-Proof. lra. Qed.
-
-Lemma eta_eff_gt_466 : (0.466%R) < (0.46694220658433505%R).
 Proof. lra. Qed.
 

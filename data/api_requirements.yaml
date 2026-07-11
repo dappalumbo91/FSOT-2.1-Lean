@@ -294,6 +294,21 @@ api_sources:
         auth: none
         status: active
         ingest: scripts/ingest_cross_scale_bridge_cache.py
+      - id: stsci_mast
+        url: https://mast.stsci.edu/api/v0/invoke
+        archive_portal: https://archive.stsci.edu/
+        auth: none
+        status: active
+        ingest: scripts/ingest_stsci_mast.py
+        build: scripts/build_tier79_telescope_benchmarks.py
+        note: "MAST CAOM cone — 12 preregistered fields; bundled mast_telescope_sample.json for offline clones"
+
+  tier79_telescope:
+    description: "Tier 79 — STScI MAST telescope archive metadata panel"
+    manifest: data/tier79_telescope_manifest.yaml
+    ingest: scripts/ingest_stsci_mast.py
+    build: scripts/build_tier79_telescope_benchmarks.py
+    lean: scripts/gen_tier79_telescope_lean.py
 
   misc:
     sources:

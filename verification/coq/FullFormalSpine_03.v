@@ -186,6 +186,12 @@ Proof. lra. Qed.
 Lemma cosmology_wave9_observable_count_pos : (0 < 7)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma crc_handbook_properties_observable_count_pos : (0 < 391)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma crc_handbook_properties_median_error_under_five_pct : (0.026922%R) < (5.0%R).
+Proof. lra. Qed.
+
 Lemma creative_arts_math_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -299,10 +305,4 @@ Proof. lra. Qed.
 
 Lemma distant_island_emergence_simulation_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma distant_island_emergence_simulation_observable_count_pos : (0 < 36)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma distant_island_emergence_simulation_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma lab_quantum_raw_S_positive : 0 < (2.2738149448128526%R).
+Proof. lra. Qed.
+
+Lemma lab_particle_raw_S_positive : 0 < (1.751037437187807%R).
+Proof. lra. Qed.
+
+Lemma lab_nuclear_raw_S_positive : 0 < (2.192436781833356%R).
+Proof. lra. Qed.
+
+Lemma lab_energy_raw_S_positive : 0 < (1.872760423200424%R).
+Proof. lra. Qed.
+
+Lemma lab_molecular_raw_S_positive : 0 < (0.7201315148027019%R).
+Proof. lra. Qed.
+
+Lemma lab_material_raw_S_positive : 0 < (0.7978167460880297%R).
+Proof. lra. Qed.
+
+Lemma lab_biological_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
+Lemma lab_cellular_raw_S_positive : 0 < (1.0583105195018667%R).
+Proof. lra. Qed.
+
 Lemma lab_consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
 Proof. lra. Qed.
 

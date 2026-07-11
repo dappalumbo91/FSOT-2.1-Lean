@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma distant_island_emergence_simulation_observable_count_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma distant_island_emergence_simulation_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma distant_island_z128_z132_deep_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -299,10 +305,4 @@ Proof. lra. Qed.
 
 Lemma exogeology_ext_observable_count_pos : (0 < 316)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exogeology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma exoplanet_system_architecture_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
 

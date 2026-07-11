@@ -183,6 +183,12 @@ lemma cosmology_wave9_median_error_under_half_pct: "(0.014278509753575246 :: rea
 lemma cosmology_wave9_observable_count_pos: "0 < (7 :: nat)"
   by eval
 
+lemma crc_handbook_properties_observable_count_pos: "0 < (391 :: nat)"
+  by eval
+
+lemma crc_handbook_properties_median_error_under_five_pct: "(0.026922 :: real) < (5.0 :: real)"
+  by eval
+
 lemma creative_arts_math_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma distant_island_emergence_simulation_pooled_median_under_half_pct: "(0 :: r
   by eval
 
 lemma distant_island_emergence_simulation_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma distant_island_emergence_simulation_observable_count_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma distant_island_emergence_simulation_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 end

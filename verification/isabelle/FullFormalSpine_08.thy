@@ -3,6 +3,12 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
+lemma math_generator_benchmark_formula_eval_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma math_generator_benchmark_formula_eval_observable_count_pos: "0 < (9 :: nat)"
+  by eval
+
 lemma math_generator_max_error_pct_positive: "0 < (1.1862232544535427 :: real)"
   by eval
 
@@ -295,12 +301,6 @@ lemma stratum_l23_pyramidal_fi_pearson_gt_bound: "(0.2 :: real) < (0.22516239104
   by eval
 
 lemma held_out_cell_count_large: "(2100 :: nat) < (2165 :: nat)"
-  by eval
-
-lemma stratum_sst_cell_count_pos: "(150 :: nat) < (154 :: nat)"
-  by eval
-
-lemma stratum_pv_cell_count_pos: "(200 :: nat) < (222 :: nat)"
   by eval
 
 end

@@ -1,0 +1,9 @@
+version: "1.0"
+updated: "2026-07-11"
+domains:
+  - STScI_MAST_Telescope_Panel
+ingest: scripts/ingest_stsci_mast.py
+build: scripts/build_tier79_telescope_benchmarks.py
+lean: scripts/gen_tier79_telescope_lean.py
+api: https://mast.stsci.edu/api/v0/invoke
+note: "MAST CAOM cone metadata — HST/JWST/TESS archive cross-verification"

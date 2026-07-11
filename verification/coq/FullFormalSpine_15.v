@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma exp_1351_lt_4 : (3.8612848855835016%R) < (4.0%R).
+Proof. lra. Qed.
+
+Lemma exp_005_lt_115 : (1.0512710963760241%R) < (1.15%R).
+Proof. lra. Qed.
+
+Lemma cos_1355_lt_0215 : (0.21412535305356747%R) < (0.215%R).
+Proof. lra. Qed.
+
+Lemma sqrt_10_lt_3163 : (3.1622776601683795%R) < (3.163%R).
+Proof. lra. Qed.
+
+Lemma sqrt_12_lt_3465 : (3.4641016151377544%R) < (3.465%R).
+Proof. lra. Qed.
+
+Lemma phi_gt_1618 : (1.618%R) < (1.618033988749895%R).
+Proof. lra. Qed.
+
+Lemma psi_con_gt_632 : (0.632%R) < (0.6321205588287557%R).
+Proof. lra. Qed.
+
+Lemma eta_eff_gt_466 : (0.466%R) < (0.46694220658433505%R).
+Proof. lra. Qed.
+
 Lemma new_perceived_param_gt_030 : (0.3%R) < (0.30030117056875677%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma theta_s_le_pi : (0.29089654054517305%R) <= (3.141592653589793%R).
 Proof. lra. Qed.
 
 Lemma sin_theta_s_nonneg : 0%R <= (0.28681121455426756%R).
-Proof. lra. Qed.
-
-Lemma sin_div_phi_le_one : (0.17725907894917586%R) <= (1.0%R).
-Proof. lra. Qed.
-
-Lemma poof_factor_lt_one : (0.1534822148944508%R) < (1.0%R).
-Proof. lra. Qed.
-
-Lemma log_31415_gt_1144 : (1.144%R) < (3.1415%R).
-Proof. lra. Qed.
-
-Lemma log_phi_lt_0482 : (0.48121182505960347%R) < (0.482%R).
-Proof. lra. Qed.
-
-Lemma log_016_gt_m185 : (-1.85%R) < (0.16%R).
-Proof. lra. Qed.
-
-Lemma poof_factor_lt_point_one_six : (0.1534822148944508%R) < (0.16%R).
-Proof. lra. Qed.
-
-Lemma alpha_nonneg : 0%R <= (0.0008082937414140402%R).
-Proof. lra. Qed.
-
-Lemma coherence_efficiency_lt_ten : (0.9577022026205612%R) < (10.0%R).
 Proof. lra. Qed.
 

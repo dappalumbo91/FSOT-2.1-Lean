@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:39:33.545539+00:00",
+  "generated_at": "2026-07-11T23:50:05.480231+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -18,9 +18,9 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2146,
+      "full_formal_obligations": 2158,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 2146,
+      "lean_theorem_count_estimate": 2158,
       "export_fraction_pct": 100.0,
       "proof_style": "norm_num / decide / linarith certificates"
     },
@@ -32,12 +32,12 @@
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 1823,
+      "provable_obligations": 2102,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1912,
+      "obligation_count": 1920,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -123,8 +123,8 @@
     }
   ],
   "extension_precision": {
-    "domain_count": 246,
-    "green_count": 246,
+    "domain_count": 250,
+    "green_count": 250,
     "failing_domains": [],
     "aspiration_scalar_debt_count": 0
   },

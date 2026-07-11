@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:11:24.221001+00:00",
+  "generated_at": "2026-07-11T23:49:56.592958+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -1767,6 +1767,34 @@
       "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
       "lean_module": "FSOT.Formal.WarpBhWhPortalPriors",
       "D_eff": 29
+    },
+    "PDG_Particle_Properties": {
+      "display_name": "PDG Particle Properties",
+      "tier": 78,
+      "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
+      "lean_module": "FSOT.Formal.PdgParticlePropertiesPriors",
+      "D_eff": 9
+    },
+    "CRC_Handbook_Properties": {
+      "display_name": "CRC Handbook Properties",
+      "tier": 78,
+      "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
+      "lean_module": "FSOT.Formal.CrcHandbookPropertiesPriors",
+      "D_eff": 11
+    },
+    "NIST_DLMF_Special_Functions": {
+      "display_name": "NIST DLMF Special Functions",
+      "tier": 78,
+      "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
+      "lean_module": "FSOT.Formal.NistDlmfSpecialFunctionsPriors",
+      "D_eff": 14
+    },
+    "STScI_MAST_Telescope_Panel": {
+      "display_name": "STScI MAST Telescope Panel",
+      "tier": 79,
+      "tier_label": "Multi-framework cross-proof export (Lean \u2192 Coq/Isabelle/Python)",
+      "lean_module": "FSOT.Formal.StsciMastTelescopePriors",
+      "D_eff": 21
     }
   },
   "math_generator_rules": {

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-11T22:42:34.599917+00:00",
+  "generated_at": "2026-07-11T23:50:06.049920+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 326,
+    "bundle_conj_total": 330,
     "structural_bundle_excluded": 56,
-    "provable_bundle_conj": 270,
-    "total_conjuncts": 1452,
-    "conjuncts_with_atomic_coverage": 1452,
+    "provable_bundle_conj": 274,
+    "total_conjuncts": 1468,
+    "conjuncts_with_atomic_coverage": 1468,
     "conjunct_atomic_coverage_pct": 100.0,
-    "explicit_linked_conjuncts": 1231,
-    "explicit_linked_in_spine": 1231,
+    "explicit_linked_conjuncts": 1243,
+    "explicit_linked_in_spine": 1243,
     "explicit_link_hit_pct": 100.0,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -111,6 +111,7 @@
     "c_gal_br_bundle",
     "consciousness_soul_bridge_bundle",
     "cosmology_anomaly_deep_panel_bundle",
+    "crc_handbook_properties_bundle",
     "creative_arts_math_spine_bundle",
     "cryosphere_bundle",
     "crypto_tech_bundle",
@@ -231,6 +232,7 @@
     "neurolab_residual_math_spine_bundle",
     "neuron_multi_hero_bundle",
     "nist_codata_constants_bundle",
+    "nist_dlmf_special_functions_bundle",
     "noaa_coastal_tides_bundle",
     "obs_ch_bundle",
     "oceanography_gap_fill_bundle",
@@ -243,6 +245,7 @@
     "paleontology_ext_bundle",
     "p_neu_br_bundle",
     "particle_physics_gap_fill_bundle",
+    "pdg_particle_properties_bundle",
     "periodic_extension_decay_topology_scaffold_bundle",
     "periodic_table_completion_spine_bundle",
     "periodic_table_extension_closure_spine_bundle",
@@ -293,6 +296,7 @@
     "stellar_multiplicity_catalog_bundle",
     "stellar_multiplicity_live_deep_bundle",
     "structure_calibration_links_codon_map",
+    "stsci_mast_telescope_bundle",
     "stumped_panel_bundle",
     "stumped_spine_bundle",
     "superheavy_element_stability_panel_bundle",
@@ -4265,6 +4269,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "omega_b_h2_fsot_cached_pos"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "crc_handbook_properties_bundle",
+      "lean_module": "CrcHandbookPropertiesPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "crc_handbook_properties_observable_count",
+          "statement": "391 = 391",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "crc_handbook_properties_observable_count_pos"
+          ],
+          "linked_obligation_id": "crc_handbook_properties_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "crc_handbook_properties_D_eff",
+          "statement": "11 = 11",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "crc_handbook_properties_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "crc_handbook_properties_median_error_pct",
+          "statement": "0.026922 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "crc_handbook_properties_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "crc_handbook_properties_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_chemical",
+          "statement": "raw_S(chemical) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -13052,6 +13114,64 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "nist_dlmf_special_functions_bundle",
+      "lean_module": "NistDlmfSpecialFunctionsPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_dlmf_special_functions_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_dlmf_special_functions_observable_count_pos"
+          ],
+          "linked_obligation_id": "nist_dlmf_special_functions_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "nist_dlmf_special_functions_D_eff",
+          "statement": "14 = 14",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "nist_dlmf_special_functions_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "nist_dlmf_special_functions_median_error_pct",
+          "statement": "0.001661 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "nist_dlmf_special_functions_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "nist_dlmf_special_functions_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_particle",
+          "statement": "raw_S(particle) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "particle_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "noaa_coastal_tides_bundle",
       "lean_module": "NoaaCoastalTidesPriors",
       "provable": true,
@@ -13902,6 +14022,64 @@
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"particle\")",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "particle_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "pdg_particle_properties_bundle",
+      "lean_module": "PdgParticlePropertiesPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "pdg_particle_properties_observable_count",
+          "statement": "12 = 12",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pdg_particle_properties_observable_count_pos"
+          ],
+          "linked_obligation_id": "pdg_particle_properties_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "pdg_particle_properties_D_eff",
+          "statement": "9 = 9",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "pdg_particle_properties_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "pdg_particle_properties_median_error_pct",
+          "statement": "0.041994 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "pdg_particle_properties_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "pdg_particle_properties_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_particle",
+          "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -17361,6 +17539,64 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
+          ],
+          "linked_obligation_id": null
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "stsci_mast_telescope_bundle",
+      "lean_module": "StsciMastTelescopePriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 4,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "stsci_mast_telescope_observable_count",
+          "statement": "130 = 130",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "stsci_mast_telescope_observable_count_pos"
+          ],
+          "linked_obligation_id": "stsci_mast_telescope_observable_count_pos"
+        },
+        {
+          "kind": "eq_nat",
+          "symbol": "stsci_mast_telescope_D_eff",
+          "statement": "21 = 21",
+          "atomic_coverage": true,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
+          "matching_atomic_ids": [
+            "stsci_mast_telescope_bundle"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "lt_lit",
+          "symbol": "stsci_mast_telescope_median_error_pct",
+          "statement": "0.0 < 5.0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "stsci_mast_telescope_median_error_under_five_pct"
+          ],
+          "linked_obligation_id": "stsci_mast_telescope_median_error_under_five_pct"
+        },
+        {
+          "kind": "pos",
+          "symbol": "raw_S_astronomical",
+          "statement": "raw_S(astronomical) > 0",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "astronomical_raw_S_positive"
           ],
           "linked_obligation_id": null
         }

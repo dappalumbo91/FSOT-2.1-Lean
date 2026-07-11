@@ -1,0 +1,1404 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-11T23:41:19.357809+00:00",
+  "domain": "STScI_MAST_Telescope_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\mast_live_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\mast_telescope_sample.json",
+    "https://archive.stsci.edu/"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic"
+  ],
+  "D_eff": 21,
+  "record_count": 130,
+  "observable_count": 130,
+  "scalar_record_count": 128,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "telescope_archive": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "MAST CAOM archive metadata"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_mast_consistency_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 130
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "mast_consistency",
+      "name": "telescope_ingest",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 46
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "Crab",
+      "computed": 1818.0,
+      "measured": 1818.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "Crab",
+      "computed": 0.524202,
+      "measured": 0.524202,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "Crab",
+      "computed": 0.09681,
+      "measured": 0.09681,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "Crab",
+      "computed": 0.0033,
+      "measured": 0.0033,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "Crab",
+      "computed": 11.0,
+      "measured": 11.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "Crab",
+      "computed": 1678.751,
+      "measured": 1678.751,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "Crab",
+      "computed": 522620000000.0,
+      "measured": 522620000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "Crab",
+      "computed": 0.524202,
+      "measured": 0.524202,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "Crab",
+      "computed": 0.09681,
+      "measured": 0.09681,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "Crab",
+      "computed": 1678.751,
+      "measured": 1678.751,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "Crab",
+      "computed": 1818.0,
+      "measured": 1818.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "Cygnus_X1",
+      "computed": 486.0,
+      "measured": 486.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "Cygnus_X1",
+      "computed": 0.407407,
+      "measured": 0.407407,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "Cygnus_X1",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "Cygnus_X1",
+      "computed": 0.026749,
+      "measured": 0.026749,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "Cygnus_X1",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "Cygnus_X1",
+      "computed": 179.199997,
+      "measured": 179.199997,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "Cygnus_X1",
+      "computed": 212750000000.0,
+      "measured": 212750000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "Cygnus_X1",
+      "computed": 0.407407,
+      "measured": 0.407407,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "Cygnus_X1",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "Cygnus_X1",
+      "computed": 179.199997,
+      "measured": 179.199997,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "Cygnus_X1",
+      "computed": 486.0,
+      "measured": 486.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "HDF_North",
+      "computed": 2934.0,
+      "measured": 2934.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "HDF_North",
+      "computed": 0.308453,
+      "measured": 0.308453,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "HDF_North",
+      "computed": 0.268916,
+      "measured": 0.268916,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "HDF_North",
+      "computed": 0.002045,
+      "measured": 0.002045,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "HDF_North",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "HDF_North",
+      "computed": 1205.868286,
+      "measured": 1205.868286,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "HDF_North",
+      "computed": 708000000000.0,
+      "measured": 708000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "HDF_North",
+      "computed": 0.308453,
+      "measured": 0.308453,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "HDF_North",
+      "computed": 0.268916,
+      "measured": 0.268916,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "HDF_North",
+      "computed": 1205.868286,
+      "measured": 1205.868286,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "HDF_North",
+      "computed": 2934.0,
+      "measured": 2934.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "LMC",
+      "computed": 21958.0,
+      "measured": 21958.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "LMC",
+      "computed": 0.004281,
+      "measured": 0.004281,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "LMC",
+      "computed": 0.072001,
+      "measured": 0.072001,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "LMC",
+      "computed": 0.002596,
+      "measured": 0.002596,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "LMC",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "LMC",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "LMC",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "LMC",
+      "computed": 0.004281,
+      "measured": 0.004281,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "LMC",
+      "computed": 0.072001,
+      "measured": 0.072001,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "LMC",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "LMC",
+      "computed": 21958.0,
+      "measured": 21958.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "M31",
+      "computed": 3302.0,
+      "measured": 3302.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "M31",
+      "computed": 0.494852,
+      "measured": 0.494852,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "M31",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "M31",
+      "computed": 0.001817,
+      "measured": 0.001817,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "M31",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "M31",
+      "computed": 799.231873,
+      "measured": 799.231873,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "M31",
+      "computed": 457400000000.00006,
+      "measured": 457400000000.00006,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "M31",
+      "computed": 0.494852,
+      "measured": 0.494852,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "M31",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "M31",
+      "computed": 799.231873,
+      "measured": 799.231873,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "M31",
+      "computed": 3302.0,
+      "measured": 3302.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "NGC_1275",
+      "computed": 1443.0,
+      "measured": 1443.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "NGC_1275",
+      "computed": 0.327096,
+      "measured": 0.327096,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "NGC_1275",
+      "computed": 0.29106,
+      "measured": 0.29106,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "NGC_1275",
+      "computed": 0.002772,
+      "measured": 0.002772,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "NGC_1275",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "NGC_1275",
+      "computed": 795.875,
+      "measured": 795.875,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "NGC_1275",
+      "computed": 531000000000.0,
+      "measured": 531000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "NGC_1275",
+      "computed": 0.327096,
+      "measured": 0.327096,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "NGC_1275",
+      "computed": 0.29106,
+      "measured": 0.29106,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "NGC_1275",
+      "computed": 795.875,
+      "measured": 795.875,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "NGC_1275",
+      "computed": 1443.0,
+      "measured": 1443.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "Omega_Cen",
+      "computed": 13508.0,
+      "measured": 13508.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "Omega_Cen",
+      "computed": 0.323956,
+      "measured": 0.323956,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "Omega_Cen",
+      "computed": 0.015102,
+      "measured": 0.015102,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "Omega_Cen",
+      "computed": 0.000444,
+      "measured": 0.000444,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "Omega_Cen",
+      "computed": 11.0,
+      "measured": 11.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "Omega_Cen",
+      "computed": 348.0,
+      "measured": 348.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "Omega_Cen",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "Omega_Cen",
+      "computed": 0.323956,
+      "measured": 0.323956,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "Omega_Cen",
+      "computed": 0.015102,
+      "measured": 0.015102,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "Omega_Cen",
+      "computed": 348.0,
+      "measured": 348.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "Omega_Cen",
+      "computed": 13508.0,
+      "measured": 13508.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "Orion",
+      "computed": 10372.0,
+      "measured": 10372.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "Orion",
+      "computed": 0.301099,
+      "measured": 0.301099,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "Orion",
+      "computed": 0.338411,
+      "measured": 0.338411,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "Orion",
+      "computed": 0.001446,
+      "measured": 0.001446,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "Orion",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "Orion",
+      "computed": 340.0,
+      "measured": 340.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "Orion",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "Orion",
+      "computed": 0.301099,
+      "measured": 0.301099,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "Orion",
+      "computed": 0.338411,
+      "measured": 0.338411,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "Orion",
+      "computed": 340.0,
+      "measured": 340.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "Orion",
+      "computed": 10372.0,
+      "measured": 10372.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "Pleiades",
+      "computed": 87.0,
+      "measured": 87.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "Pleiades",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "Pleiades",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "Pleiades",
+      "computed": 0.16092,
+      "measured": 0.16092,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "Pleiades",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "Pleiades",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "Pleiades",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "Pleiades",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "Pleiades",
+      "computed": 87.0,
+      "measured": 87.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "SMACS0723",
+      "computed": 894.0,
+      "measured": 894.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "SMACS0723",
+      "computed": 0.13311,
+      "measured": 0.13311,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "SMACS0723",
+      "computed": 0.3434,
+      "measured": 0.3434,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "SMACS0723",
+      "computed": 0.050336,
+      "measured": 0.050336,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "SMACS0723",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "SMACS0723",
+      "computed": 1055.873352,
+      "measured": 1055.873352,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "SMACS0723",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "SMACS0723",
+      "computed": 0.13311,
+      "measured": 0.13311,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "SMACS0723",
+      "computed": 0.3434,
+      "measured": 0.3434,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "SMACS0723",
+      "computed": 1055.873352,
+      "measured": 1055.873352,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "SMACS0723",
+      "computed": 894.0,
+      "measured": 894.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "TRAPPIST_1",
+      "computed": 2480.0,
+      "measured": 2480.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "TRAPPIST_1",
+      "computed": 0.634677,
+      "measured": 0.634677,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "TRAPPIST_1",
+      "computed": 0.158871,
+      "measured": 0.158871,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "TRAPPIST_1",
+      "computed": 0.00121,
+      "measured": 0.00121,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "TRAPPIST_1",
+      "computed": 11.0,
+      "measured": 11.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_exptime_hst_s",
+      "name": "TRAPPIST_1",
+      "computed": 112.007996,
+      "measured": 112.007996,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "TRAPPIST_1",
+      "computed": 810000000000.0,
+      "measured": 810000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "TRAPPIST_1",
+      "computed": 0.634677,
+      "measured": 0.634677,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "TRAPPIST_1",
+      "computed": 0.158871,
+      "measured": 0.158871,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_median_exptime_hst_s",
+      "name": "TRAPPIST_1",
+      "computed": 112.007996,
+      "measured": 112.007996,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "TRAPPIST_1",
+      "computed": 2480.0,
+      "measured": 2480.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "obs_count_total",
+      "name": "WASP_12",
+      "computed": 33.0,
+      "measured": 33.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "hst_fraction",
+      "name": "WASP_12",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "jwst_fraction",
+      "name": "WASP_12",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "tess_fraction",
+      "name": "WASP_12",
+      "computed": 0.212121,
+      "measured": 0.212121,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "instrument_diversity",
+      "name": "WASP_12",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "median_em_min_nm",
+      "name": "WASP_12",
+      "computed": 600000000000.0,
+      "measured": 600000000000.0,
+      "error_pct": 0.0,
+      "ingest_source": "MAST_CAOM_live",
+      "eval_kind": "mast_anchor",
+      "reference": "MAST CAOM cone"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_hst_fraction",
+      "name": "WASP_12",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_jwst_fraction",
+      "name": "WASP_12",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "live_vs_bundled_obs_count_total",
+      "name": "WASP_12",
+      "computed": 33.0,
+      "measured": 33.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "simbad_crosswalk_count",
+      "name": "SIMBAD_TAP_panel",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "simbad_bridge"
+    },
+    {
+      "lab": "stsci_mast_telescope_lab",
+      "property": "astronomy_scalar",
+      "name": "fsot_Astronomy",
+      "computed": 0.89846,
+      "measured": 0.89846,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma fic_sweep_row_count_pos : (0 < 572)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fic_fertile_rows_present : (0 < 156)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fic_fertile_replay_match_le_total : (572 <= 572)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
@@ -298,11 +304,5 @@ Lemma math_generator_airfoil_rmse_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
 Lemma math_generator_airfoil_rmse_observable_count_pos : (0 < 5)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma math_generator_benchmark_formula_eval_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma math_generator_benchmark_formula_eval_observable_count_pos : (0 < 9)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

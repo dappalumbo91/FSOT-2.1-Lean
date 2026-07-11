@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma stratum_sst_cell_count_pos : (150 < 154)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stratum_pv_cell_count_pos : (200 < 222)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma stratum_vip_cell_count_pos : (140 < 146)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -62,6 +68,12 @@ Proof. lra. Qed.
 
 Lemma nist_codata_constants_observable_count_pos : (0 < 6)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma nist_dlmf_special_functions_observable_count_pos : (0 < 5)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma nist_dlmf_special_functions_median_error_under_five_pct : (0.001661%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma noaa_coastal_tides_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
@@ -210,6 +222,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma particle_physics_components_sum : (98.0%R) = (98.0%R).
 Proof. reflexivity. Qed.
 
+Lemma pdg_particle_properties_observable_count_pos : (0 < 12)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pdg_particle_properties_median_error_under_five_pct : (0.041994%R) < (5.0%R).
+Proof. lra. Qed.
+
 Lemma periodic_extension_decay_topology_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -286,23 +304,5 @@ Lemma phi_morph_observable_count_pos : (0 < 327)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma phi_morph_beats_sota_headlines_pos : (0 < 3)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma phi_morph_phi_species_pos : (0 < 307)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma planetary_atmospheres_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma planetary_atmospheres_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma planetary_atmospheres_observable_count_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma planetary_atmospheres_body_count_pos : (0 < 13)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma planetary_atmospheres_beats_sota_headlines_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

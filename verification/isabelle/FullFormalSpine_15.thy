@@ -3,6 +3,30 @@ theory FullFormalSpine_15
 imports Complex_Main
 begin
 
+lemma exp_1351_lt_4: "(3.8612848855835016 :: real) < (4.0 :: real)"
+  by eval
+
+lemma exp_005_lt_115: "(1.0512710963760241 :: real) < (1.15 :: real)"
+  by eval
+
+lemma cos_1355_lt_0215: "(0.21412535305356747 :: real) < (0.215 :: real)"
+  by eval
+
+lemma sqrt_10_lt_3163: "(3.1622776601683795 :: real) < (3.163 :: real)"
+  by eval
+
+lemma sqrt_12_lt_3465: "(3.4641016151377544 :: real) < (3.465 :: real)"
+  by eval
+
+lemma phi_gt_1618: "(1.618 :: real) < (1.618033988749895 :: real)"
+  by eval
+
+lemma psi_con_gt_632: "(0.632 :: real) < (0.6321205588287557 :: real)"
+  by eval
+
+lemma eta_eff_gt_466: "(0.466 :: real) < (0.46694220658433505 :: real)"
+  by eval
+
 lemma new_perceived_param_gt_030: "(0.3 :: real) < (0.30030117056875677 :: real)"
   by eval
 
@@ -277,30 +301,6 @@ lemma theta_s_le_pi: "(0.29089654054517305 :: real) <= (3.141592653589793 :: rea
   by eval
 
 lemma sin_theta_s_nonneg: "(0 :: real) <= (0.28681121455426756 :: real)"
-  by eval
-
-lemma sin_div_phi_le_one: "(0.17725907894917586 :: real) <= (1.0 :: real)"
-  by eval
-
-lemma poof_factor_lt_one: "(0.1534822148944508 :: real) < (1.0 :: real)"
-  by eval
-
-lemma log_31415_gt_1144: "(1.144 :: real) < (3.1415 :: real)"
-  by eval
-
-lemma log_phi_lt_0482: "(0.48121182505960347 :: real) < (0.482 :: real)"
-  by eval
-
-lemma log_016_gt_m185: "(-1.85 :: real) < (0.16 :: real)"
-  by eval
-
-lemma poof_factor_lt_point_one_six: "(0.1534822148944508 :: real) < (0.16 :: real)"
-  by eval
-
-lemma alpha_nonneg: "(0 :: real) <= (0.0008082937 :: real)"
-  by eval
-
-lemma coherence_efficiency_lt_ten: "(0.9577022026205612 :: real) < (10.0 :: real)"
   by eval
 
 end

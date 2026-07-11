@@ -6,6 +6,30 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma sin_div_phi_le_one : (0.17725907894917586%R) <= (1.0%R).
+Proof. lra. Qed.
+
+Lemma poof_factor_lt_one : (0.1534822148944508%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma log_31415_gt_1144 : (1.144%R) < (3.1415%R).
+Proof. lra. Qed.
+
+Lemma log_phi_lt_0482 : (0.48121182505960347%R) < (0.482%R).
+Proof. lra. Qed.
+
+Lemma log_016_gt_m185 : (-1.85%R) < (0.16%R).
+Proof. lra. Qed.
+
+Lemma poof_factor_lt_point_one_six : (0.1534822148944508%R) < (0.16%R).
+Proof. lra. Qed.
+
+Lemma alpha_nonneg : 0%R <= (0.0008082937414140402%R).
+Proof. lra. Qed.
+
+Lemma coherence_efficiency_lt_ten : (0.9577022026205612%R) < (10.0%R).
+Proof. lra. Qed.
+
 Lemma cosmological_cos_arg_lo : (3.4%R) < (3.4953374011050684%R).
 Proof. lra. Qed.
 
@@ -280,29 +304,5 @@ Lemma cos_bound_hi : 0 <= 0%R.
 Proof. lra. Qed.
 
 Lemma sin_bound_poly_mono_lo : 0 <= 0%R.
-Proof. lra. Qed.
-
-Lemma sin_bound_poly_mono : 0 <= 0%R.
-Proof. lra. Qed.
-
-Lemma sin_eq_cos_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
-Proof. lra. Qed.
-
-Lemma cos_eq_sin_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
-Proof. lra. Qed.
-
-Lemma perceived_adjust_lo_domain : (0.567%R) < (0.5714337093277406%R).
-Proof. lra. Qed.
-
-Lemma perceived_adjust_hi_domain : (0.9877410621073419%R) < (0.99%R).
-Proof. lra. Qed.
-
-Lemma cos_dp_pv_neg_of_ge_07 : (-0.3775886600448273%R) < 0%R.
-Proof. lra. Qed.
-
-Lemma cos_dp_pv_pos_of_le_06 : 0 < (0.1125700895682655%R).
-Proof. lra. Qed.
-
-Lemma growth_term_hits_zero_lt_one_point_one_five : (1.0002883913967908%R) < (1.15%R).
 Proof. lra. Qed.
 

@@ -3231,6 +3231,20 @@ extension_domains:
     lean_module: FSOT.Formal.NistDlmfSpecialFunctionsPriors
     note: "NIST DLMF special-function zeros — fsot_compute waves 8–10"
 
+  STScI_MAST_Telescope_Panel:
+    tier: 79
+    D_eff: 21
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_stsci_mast.py
+    build_script: scripts/build_tier79_telescope_benchmarks.py
+    manifest: data/tier79_telescope_manifest.yaml
+    benchmark_data: data/stsci_mast_telescope_panel_benchmark.json
+    lean_module: FSOT.Formal.StsciMastTelescopePriors
+    note: "STScI MAST CAOM — HST/JWST/TESS archive metadata cross-verification"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

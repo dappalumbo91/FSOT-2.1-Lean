@@ -17,11 +17,21 @@ BUNDLED = VENDOR / "simbad_stellar_identity_sample.json"
 CACHE_NAME = "simbad_live_cache.json"
 
 SIMBAD_TAP = "https://simbad.cds.unistra.fr/simbad/sim-tap/sync"
-ADQL = (
-    "SELECT TOP 25 main_id, otype, sp_type, plx_value, "
-    "SQRT(pmra*pmra + pmdec*pmdec) AS pm_total "
-    "FROM basic WHERE otype IN ('SB*','**') AND plx_value > 5"
-)
+def _simbad_limit() -> int:
+    import os
+
+    if os.environ.get("FSOT_TIER60_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}:
+        return 40
+    return 25
+
+
+def _simbad_adql() -> str:
+    limit = _simbad_limit()
+    return (
+        f"SELECT TOP {limit} main_id, otype, sp_type, plx_value, "
+        "SQRT(pmra*pmra + pmdec*pmdec) AS pm_total "
+        "FROM basic WHERE otype IN ('SB*','**') AND plx_value > 5"
+    )
 
 
 def external_cache_root() -> Path:
@@ -36,7 +46,7 @@ def external_cache_root() -> Path:
 
 def fetch_simbad() -> list[dict]:
     params = urllib.parse.urlencode(
-        {"request": "doQuery", "lang": "adql", "format": "json", "query": ADQL}
+        {"request": "doQuery", "lang": "adql", "format": "json", "query": _simbad_adql()}
     )
     url = f"{SIMBAD_TAP}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier60"})

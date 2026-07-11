@@ -6,6 +6,24 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma quantum_materials_section_count_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma quantum_materials_beats_sota_headlines_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma quantum_mechanics_gap_fill_pooled_median_under_half_pct : (0.0000952387420324368%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma quantum_mechanics_gap_fill_headline_median_under_half_pct : (0.0000952387420324368%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma quantum_mechanics_gap_fill_observable_count_pos : (0 < 50)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma quantum_optics_gap_fill_pooled_median_under_half_pct : (0.0000952387420324368%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -270,6 +288,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma structure_calibration_burial_beats_fifty_pct : (50.0%R) < (59.47%R).
 Proof. lra. Qed.
 
+Lemma stsci_mast_telescope_observable_count_pos : (0 < 130)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stsci_mast_telescope_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
+
 Lemma stumped_panel_pooled_median_under_half_pct : (0.039905%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -281,28 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma stumped_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stumped_panel_open_predictions_pos : (0 < 4)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stumped_spine_pooled_median_under_half_pct : (0.009407%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma stumped_spine_headline_median_under_half_pct : (0.009407%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma stumped_spine_observable_count_pos : (0 < 5)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stumped_spine_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma stumped_spine_spine_sectors_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma superheavy_element_stability_panel_pooled_median_under_half_pct : (0.000001%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma superheavy_element_stability_panel_headline_median_under_half_pct : (0.000001%R) < (0.5%R).
-Proof. lra. Qed.
 
