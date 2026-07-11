@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-07-11T01:13:16.908424+00:00",
+  "port": "COM3",
+  "frame": {
+    "frame": 0,
+    "aps": [
+      {
+        "idx": 0,
+        "channel": 1,
+        "rssi": -90,
+        "ssid": "Network1"
+      },
+      {
+        "idx": 1,
+        "channel": 11,
+        "rssi": -50,
+        "ssid": "Network2"
+      },
+      {
+        "idx": 2,
+        "channel": 11,
+        "rssi": -64,
+        "ssid": "Network3"
+      },
+      {
+        "idx": 3,
+        "channel": 11,
+        "rssi": -56,
+        "ssid": "Network4"
+      }
+    ],
+    "markers": {
+      "rf_scalar": 0.13992535512656168,
+      "wifi_ap_count": 4,
+      "rssi_mean": -65.0,
+      "rssi_var": 233.0,
+      "trinary_state": "0"
+    }
+  },
+  "boot_markers": {
+    "boot_scalar": 0.09928895626861721,
+    "canonical": 0.09928895626861721,
+    "dynamic_check": 0.09928895626861721,
+    "rf_scalar": 0.13992535512656168,
+    "rssi_var": 233.0,
+    "temp_c": 25.0,
+    "wifi_ap_count": 4,
+    "observer_tier": 91,
+    "trinary_state": "0",
+    "ble_stack": "ok",
+    "enow_sent": "ok",
+    "hardware_boot": "ok"
+  },
+  "ssid_masking": "Network1..N replaces real SSIDs in committed artifacts"
+}

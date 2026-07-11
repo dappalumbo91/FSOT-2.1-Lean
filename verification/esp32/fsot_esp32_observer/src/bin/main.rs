@@ -19,9 +19,11 @@ use esp_println::println;
 use esp_radio::{
     ble::controller::BleConnector,
     esp_now::BROADCAST_ADDRESS,
-    wifi::{scan::ScanConfig, ControllerConfig},
+    wifi::{ap::AccessPointInfo, scan::ScanConfig, ControllerConfig},
 };
-use fsot_esp32_observer::observer::{pack_enow_payload, trinary_collapse, ApRssi, ObserverSnapshot};
+use fsot_esp32_observer::observer::{
+    pack_enow_payload, trinary_collapse, ApRssi, ObserverSnapshot, TrinaryState,
+};
 use fsot_scalar_kernel::{
     boot_scalar, compute_fsot_scalar, BOOT_DELTA_PSI, BOOT_D_EFF, BOOT_OBSERVED, BOOT_RECENT_HITS,
     BOOT_SCALAR,
@@ -35,6 +37,38 @@ impl ApRssi for ApWrap {
     fn rssi(&self) -> i8 {
         self.0
     }
+}
+
+const SONAR_SCAN_INTERVAL_S: u64 = 5;
+
+fn sanitize_ssid(ssid: &str) -> alloc::string::String {
+    ssid.chars()
+        .map(|c| if c == '|' || c == '\n' || c == '\r' { '_' } else { c })
+        .collect()
+}
+
+fn emit_sonar_frame(
+    frame: u32,
+    aps: &[AccessPointInfo],
+    snapshot: &ObserverSnapshot,
+    rf_scalar: f64,
+    trinary: TrinaryState,
+) {
+    println!("FSOT_ESP32_SONAR_FRAME_START frame={frame}");
+    for (i, ap) in aps.iter().enumerate() {
+        let ssid = sanitize_ssid(ap.ssid.as_str());
+        println!(
+            "FSOT_ESP32_AP|{i}|{}|{}|{ssid}",
+            ap.channel,
+            ap.signal_strength
+        );
+    }
+    println!("FSOT_ESP32_RF_SCALAR={rf_scalar:.17}");
+    println!("FSOT_ESP32_WIFI_AP_COUNT={}", snapshot.ap_count);
+    println!("FSOT_ESP32_RSSI_MEAN={:.3}", snapshot.rssi_mean);
+    println!("FSOT_ESP32_RSSI_VAR={:.6}", snapshot.rssi_var);
+    println!("FSOT_ESP32_TRINARY_STATE={}", trinary.label());
+    println!("FSOT_ESP32_SONAR_FRAME_END frame={frame}");
 }
 
 #[esp_rtos::main]
@@ -138,19 +172,50 @@ async fn main(_spawner: embassy_executor::Spawner) -> ! {
         if enow_ok { "ok" } else { "fail" }
     );
     println!("FSOT_ESP32_OBSERVER_TIER=91");
+    println!("FSOT_ESP32_SONAR_VIZ=1");
 
-    let blink_ms = match trinary {
-        fsot_esp32_observer::observer::TrinaryState::Emergence => 0,
-        fsot_esp32_observer::observer::TrinaryState::Stability => 800,
-        fsot_esp32_observer::observer::TrinaryState::Damping => 150,
+    emit_sonar_frame(0, &aps, &snapshot, rf_scalar, trinary);
+
+    let mut frame: u32 = 1;
+    let mut blink_ms = match trinary {
+        TrinaryState::Emergence => 0_u64,
+        TrinaryState::Stability => 800,
+        TrinaryState::Damping => 150,
     };
+    let mut last_scan = embassy_time::Instant::now();
 
     loop {
         if blink_ms > 0 {
             led.toggle();
             Timer::after(Duration::from_millis(blink_ms)).await;
         } else {
-            Timer::after(Duration::from_secs(5)).await;
+            Timer::after(Duration::from_millis(200)).await;
+        }
+
+        if last_scan.elapsed() >= Duration::from_secs(SONAR_SCAN_INTERVAL_S) {
+            if let Ok(fresh_aps) = wifi_ctrl.scan_async(&scan_config).await {
+                let rssi_list: alloc::vec::Vec<ApWrap> = fresh_aps
+                    .iter()
+                    .map(|ap| ApWrap(ap.signal_strength))
+                    .collect();
+                let fresh_snapshot =
+                    ObserverSnapshot::from_wifi_aps(&rssi_list, temp_c, ble_stack_ok);
+                let fresh_rf = fresh_snapshot.rf_scalar();
+                let fresh_trinary = trinary_collapse(fresh_rf);
+                emit_sonar_frame(frame, &fresh_aps, &fresh_snapshot, fresh_rf, fresh_trinary);
+                frame = frame.wrapping_add(1);
+                blink_ms = match fresh_trinary {
+                    TrinaryState::Emergence => 0,
+                    TrinaryState::Stability => 800,
+                    TrinaryState::Damping => 150,
+                };
+                match fresh_trinary {
+                    TrinaryState::Emergence => led.set_high(),
+                    TrinaryState::Stability => led.set_low(),
+                    TrinaryState::Damping => {}
+                }
+            }
+            last_scan = embassy_time::Instant::now();
         }
     }
 }

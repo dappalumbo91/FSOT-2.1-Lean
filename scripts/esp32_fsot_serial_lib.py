@@ -231,7 +231,7 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
             "observer_tier": markers.get("observer_tier"),
             "golden_match": golden_ok,
             "emergence_detected": emergence_ok,
-            "serial_capture": text[-5000:],
+            "serial_capture": redact_serial_ssids(text[-5000:]),
         }
     except Exception as e:
         return {"status": "failed", "reason": str(e), "port": port}
@@ -275,6 +275,114 @@ def _golden_subset_match(markers: dict, golden: dict) -> bool:
         elif got != expected:
             return False
     return True
+
+
+AP_LINE_RE = re.compile(
+    r"FSOT_ESP32_AP\|(\d+)\|(\d+)\|(-?\d+)\|(.+)$", re.MULTILINE
+)
+NETWORK_ID_PREFIX = "Network"
+
+
+def mask_ap_ssid(idx: int, prefix: str = NETWORK_ID_PREFIX) -> str:
+    return f"{prefix}{idx + 1}"
+
+
+def mask_ap_list(aps: list[dict], prefix: str = NETWORK_ID_PREFIX) -> list[dict]:
+    return [
+        {**ap, "ssid": mask_ap_ssid(int(ap.get("idx", i)), prefix)}
+        for i, ap in enumerate(aps)
+    ]
+
+
+def mask_sonar_frame(frame: dict, prefix: str = NETWORK_ID_PREFIX) -> dict:
+    masked = dict(frame)
+    if frame.get("aps"):
+        masked["aps"] = mask_ap_list(frame["aps"], prefix)
+    return masked
+
+
+def redact_serial_ssids(text: str, prefix: str = NETWORK_ID_PREFIX) -> str:
+    def repl(match: re.Match[str]) -> str:
+        idx = int(match.group(1))
+        return (
+            f"FSOT_ESP32_AP|{match.group(1)}|{match.group(2)}|{match.group(3)}|"
+            f"{mask_ap_ssid(idx, prefix)}"
+        )
+
+    return AP_LINE_RE.sub(repl, text)
+SONAR_FRAME_START_RE = re.compile(r"FSOT_ESP32_SONAR_FRAME_START frame=(\d+)")
+SONAR_FRAME_END_RE = re.compile(r"FSOT_ESP32_SONAR_FRAME_END frame=(\d+)")
+
+
+def parse_sonar_ap_lines(text: str) -> list[dict]:
+    return [
+        {
+            "idx": int(m.group(1)),
+            "channel": int(m.group(2)),
+            "rssi": int(m.group(3)),
+            "ssid": m.group(4).strip(),
+        }
+        for m in AP_LINE_RE.finditer(text)
+    ]
+
+
+def parse_sonar_frames(text: str) -> list[dict]:
+    """Extract complete sonar frames (per-AP lines + summary markers)."""
+    frames: list[dict] = []
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        start = SONAR_FRAME_START_RE.match(lines[i].strip())
+        if not start:
+            i += 1
+            continue
+        frame_id = int(start.group(1))
+        aps: list[dict] = []
+        markers: dict = {}
+        i += 1
+        while i < len(lines):
+            line = lines[i].strip()
+            end = SONAR_FRAME_END_RE.match(line)
+            if end and int(end.group(1)) == frame_id:
+                frames.append(
+                    {
+                        "frame": frame_id,
+                        "aps": aps,
+                        "markers": markers,
+                    }
+                )
+                i += 1
+                break
+            ap = AP_LINE_RE.match(line)
+            if ap:
+                aps.append(
+                    {
+                        "idx": int(ap.group(1)),
+                        "channel": int(ap.group(2)),
+                        "rssi": int(ap.group(3)),
+                        "ssid": ap.group(4).strip(),
+                    }
+                )
+            else:
+                for key, pat in {
+                    "rf_scalar": r"FSOT_ESP32_RF_SCALAR=([0-9.eE+-]+)",
+                    "rssi_mean": r"FSOT_ESP32_RSSI_MEAN=([0-9.eE+-]+)",
+                    "rssi_var": r"FSOT_ESP32_RSSI_VAR=([0-9.eE+-]+)",
+                }.items():
+                    m = re.match(pat, line)
+                    if m:
+                        markers[key] = float(m.group(1))
+                for key, pat in {
+                    "wifi_ap_count": r"FSOT_ESP32_WIFI_AP_COUNT=(\d+)",
+                }.items():
+                    m = re.match(pat, line)
+                    if m:
+                        markers[key] = int(m.group(1))
+                m = re.match(r"FSOT_ESP32_TRINARY_STATE=([+-]?1|0)", line)
+                if m:
+                    markers["trinary_state"] = m.group(1)
+            i += 1
+    return frames
 
 
 def _parse_esp32_markers(text: str) -> dict:
