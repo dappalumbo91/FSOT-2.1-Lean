@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-11T00:34:45.122953+00:00",
+  "tier": "88_esp32_hardware_serial_boot",
+  "port": "COM3",
+  "harness": {
+    "status": "failed",
+    "flash": {
+      "status": "failed",
+      "tool": "C:\\Users\\damia\\.cargo\\bin\\espflash.EXE",
+      "port": "COM3",
+      "elf": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\esp32\\fsot_esp32_observer\\target\\xtensa-esp32-none-elf\\release\\fsot-esp32-observer",
+      "returncode": 1,
+      "boot_mode_manual_required": false,
+      "remediation": null,
+      "stderr_tail": "[2026-07-11T00:34:41Z WARN ] Monitor options were provided, but `--monitor/-M` flag isn't set. These options will be ignored.\n[2026-07-11T00:34:41Z INFO ] Serial port: 'COM3'\n[2026-07-11T00:34:41Z INFO ] Connecting...\nError:   \u00d7 Error while connecting to device\n  \u2570\u2500\u25b6 Failed to connect to the device\n\n"
+    },
+    "serial_capture": {
+      "status": "skipped",
+      "reason": "flash failed"
+    }
+  },
+  "overall_ok": false,
+  "note": "Flashes fsot-esp32-observer to CP210x ESP32 and captures FSOT_ESP32_* UART markers for eight-way bare-metal verification."
+}

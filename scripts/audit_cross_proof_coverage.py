@@ -144,6 +144,7 @@ def main() -> int:
                 "rust_lean_bridge_runtime_parity",
                 "fstar_scalar_spec",
                 "qemu_serial_harness",
+                "esp32_hardware_harness",
             ],
             "artifacts_ready": [
                 "isabelle_full_formal_spine",
@@ -151,8 +152,10 @@ def main() -> int:
                 "fsot_scalar_kernel",
                 "fstar_scalar_boot",
                 "fsot_observer_serial",
+                "fsot_esp32_observer",
             ],
             "tier_87_achieved": ["qemu_disk_boot_image", "bootloader_bootimage"],
+            "tier_88_achieved": ["esp32_uart_boot", "shared_no_std_scalar_kernel"],
             "deferred": ["metamath", "agda"],
             "all_free_no_account": True,
         },

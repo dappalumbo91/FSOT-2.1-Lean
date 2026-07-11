@@ -2,4 +2,12 @@
 name = "fsot_scalar_kernel"
 version = "0.1.0"
 edition = "2021"
-description = "FSOT Tier 85 — host-runnable rust_lean_bridge scalar kernel parity"
+description = "FSOT Tier 85/88 — host and no_std rust_lean_bridge scalar kernel parity"
+
+[features]
+default = ["std"]
+std = []
+no_std = ["libm"]
+
+[dependencies]
+libm = { version = "0.2", optional = true }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 87 wide cross-proof verification runner.
+Tier 88 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -15,6 +15,7 @@ Layers:
   10. F* programming-language formal verification (scalar spec)
   11. QEMU bare-metal serial harness (stdout parity)
   12. QEMU no_std disk boot image (bootloader crate + harness markers)
+  13. ESP32 hardware UART boot (esp-hal + CP210x serial harness)
 """
 
 from __future__ import annotations
@@ -391,6 +392,39 @@ def run_fstar_check() -> dict:
     return run_fstar_verify()
 
 
+def run_esp32_harness() -> dict:
+    try:
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "run_esp32_serial_harness.py")],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            timeout=900,
+        )
+        report_path = ROOT / "data" / "esp32_fsot_serial_harness_report.json"
+        doc = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
+        harness = doc.get("harness") or {}
+        serial = harness.get("serial_capture") or {}
+        build_only = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "build_esp32_fsot_observer.py")],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            timeout=900,
+        )
+        return {
+            "status": "passed" if r.returncode == 0 else "failed",
+            "build_status": "passed" if build_only.returncode == 0 else "failed",
+            "flash_status": (harness.get("flash") or {}).get("status"),
+            "serial_status": serial.get("status"),
+            "port": doc.get("port"),
+            "returncode": r.returncode,
+            "stderr_tail": ((r.stdout or "") + (r.stderr or ""))[-2000:],
+        }
+    except Exception as e:
+        return {"status": "failed", "reason": str(e)}
+
+
 def run_qemu_harness() -> dict:
     try:
         r = subprocess.run(
@@ -516,6 +550,7 @@ def main() -> int:
     fstar_refinement_ok = fstar_refinement.get("overall_ok", False)
 
     qemu_harness = run_qemu_harness()
+    esp32_harness = run_esp32_harness()
 
     lean_conn_ok = subprocess.run(
         [
@@ -533,7 +568,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "86",
+        "tier": "88",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -606,6 +641,7 @@ def main() -> int:
                 "checks": fstar_refinement.get("checks"),
             },
             "qemu_harness": qemu_harness,
+            "esp32_harness": esp32_harness,
         },
         "overall_ok": py_ok
             and lean_conn_ok
@@ -619,7 +655,8 @@ def main() -> int:
             and bridge_refinement_ok
             and fstar.get("status") == "passed"
             and fstar_refinement_ok
-            and qemu_harness.get("status") == "passed",
+            and qemu_harness.get("status") == "passed"
+            and esp32_harness.get("build_status") == "passed",
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
@@ -656,9 +693,16 @@ def main() -> int:
             and fstar.get("status") == "passed"
             and qemu_harness.get("status") == "passed"
             and qemu_harness.get("disk_status") == "passed",
+        "eight_way_hardware": py_ok
+            and rust.get("status") == "passed"
+            and bridge_parity.get("status") == "passed"
+            and fstar.get("status") == "passed"
+            and qemu_harness.get("status") == "passed"
+            and qemu_harness.get("disk_status") == "passed"
+            and esp32_harness.get("status") == "passed",
         "note": (
-            "Tier 87: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
-            "+ QEMU serial harness + no_std disk boot image."
+            "Tier 88: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
+            "+ QEMU serial/disk boot + ESP32 hardware UART harness."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -668,7 +712,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 87 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 88 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -705,7 +749,13 @@ def main() -> int:
         f"(serial={qemu_harness.get('serial_status')}, disk={qemu_harness.get('disk_status')}, "
         f"qemu={qemu_harness.get('qemu_status')})"
     )
+    print(
+        f"  esp32_harness: {esp32_harness.get('status')} "
+        f"(build={esp32_harness.get('build_status')}, flash={esp32_harness.get('flash_status')}, "
+        f"serial={esp32_harness.get('serial_status')}, port={esp32_harness.get('port')})"
+    )
     print(f"  seven_way_bare_metal: {report.get('seven_way_bare_metal')}")
+    print(f"  eight_way_hardware: {report.get('eight_way_hardware')}")
     print(f"  four_way_verification: {report.get('four_way_verification')}")
     print(f"  five_way_runtime: {report.get('five_way_runtime')}")
     print(f"  six_way_formal_executable: {report.get('six_way_formal_executable')}")

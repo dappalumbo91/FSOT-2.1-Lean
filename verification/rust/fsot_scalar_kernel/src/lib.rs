@@ -1,7 +1,10 @@
-//! FSOT Tier 85 — host-runnable port of `vendor/rust_lean_bridge/main.rs` scalar engine.
-//! Simplified S_D_chaotic POC (T2 = 0); must stay byte-stable with bare-metal kernel.
+//! FSOT Tier 85/88 — host-runnable and no_std port of `vendor/rust_lean_bridge` scalar engine.
+//! Simplified S_D_chaotic POC (T2 = 0); must stay byte-stable with bare-metal kernels.
 
-// Host std math (mirrors vendor no_std kernel which uses libm::{cos, exp, ln, sin, sqrt}).
+#![cfg_attr(not(feature = "std"), no_std)]
+
+#[cfg(not(feature = "std"))]
+use libm::{cos, exp, log, sin, sqrt};
 
 pub const K: f64 = 0.4202216641606967;
 pub const ALPHA: f64 = 0.0008082937414140405;
@@ -30,6 +33,66 @@ const GAMMA_EULER: f64 = 0.5772156649;
 const PHI: f64 = 1.6180339887;
 const PI: f64 = core::f64::consts::PI;
 
+#[inline]
+fn mexp(x: f64) -> f64 {
+    #[cfg(feature = "std")]
+    {
+        x.exp()
+    }
+    #[cfg(not(feature = "std"))]
+    {
+        exp(x)
+    }
+}
+
+#[inline]
+fn mcos(x: f64) -> f64 {
+    #[cfg(feature = "std")]
+    {
+        x.cos()
+    }
+    #[cfg(not(feature = "std"))]
+    {
+        cos(x)
+    }
+}
+
+#[inline]
+fn msin(x: f64) -> f64 {
+    #[cfg(feature = "std")]
+    {
+        x.sin()
+    }
+    #[cfg(not(feature = "std"))]
+    {
+        sin(x)
+    }
+}
+
+#[inline]
+fn msqrt(x: f64) -> f64 {
+    #[cfg(feature = "std")]
+    {
+        x.sqrt()
+    }
+    #[cfg(not(feature = "std"))]
+    {
+        sqrt(x)
+    }
+}
+
+#[inline]
+fn mln(x: f64) -> f64 {
+    #[cfg(feature = "std")]
+    {
+        x.ln()
+    }
+    #[cfg(not(feature = "std"))]
+    {
+        log(x)
+    }
+}
+
 /// Simplified FSOT scalar (no_std kernel port). T2 fixed at 0 for POC.
 pub fn compute_fsot_scalar(d_eff: f64, delta_psi: f64, observed: bool, recent_hits: f64) -> f64 {
     let n = 1.0_f64;
@@ -38,24 +101,24 @@ pub fn compute_fsot_scalar(d_eff: f64, delta_psi: f64, observed: bool, recent_hi
     let dp = delta_psi;
     let hits = recent_hits;
 
-    let growth = (ALPHA * (1.0 - hits / n) * GAMMA_EULER / PHI).exp();
-    let base = (n * p / d.sqrt())
-        * ((PSI_CON + dp) / ETA_EFF).cos()
-        * (-ALPHA * hits / n + 1.0 + B_IN * dp).exp()
+    let growth = mexp(ALPHA * (1.0 - hits / n) * GAMMA_EULER / PHI);
+    let base = (n * p / msqrt(d))
+        * mcos((PSI_CON + dp) / ETA_EFF)
+        * mexp(-ALPHA * hits / n + 1.0 + B_IN * dp)
         * (1.0 + growth * C_EFF);
-    let mut t1 = base * (1.0 + P_NEW * (d / 25.0).ln());
+    let mut t1 = base * (1.0 + P_NEW * mln(d / 25.0));
     if observed {
-        t1 = t1 * (C_FACTOR * P_VAR).exp() * (dp + P_VAR).cos();
+        t1 = t1 * mexp(C_FACTOR * P_VAR) * mcos(dp + P_VAR);
     }
 
     let t2 = 0.0_f64;
 
-    let valve = BETA * dp.cos() * (n * p / d.sqrt())
+    let valve = BETA * mcos(dp) * (n * p / msqrt(d))
         * (1.0 + CHAOS * (d - 25.0) / 25.0)
-        * (1.0 + POOF * (THETA_S + PI).cos() + SUCTION * THETA_S.sin());
+        * (1.0 + POOF * mcos(THETA_S + PI) + SUCTION * msin(THETA_S));
     let acoustic = 1.0
-        + (A_BLEED * 1.0_f64.sin().powi(2)) / PHI
-        + (A_IN * 1.0_f64.cos().powi(2)) / PHI;
+        + (A_BLEED * msin(1.0_f64) * msin(1.0_f64)) / PHI
+        + (A_IN * mcos(1.0_f64) * mcos(1.0_f64)) / PHI;
     let phase = 1.0 + B_IN * P_VAR;
     let t3 = valve * acoustic * phase;
 
