@@ -176,7 +176,6 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
     chunks: list[str] = []
     try:
         with serial.Serial(port, DEFAULT_BAUD, timeout=0.5) as ser:
-            ser.reset_input_buffer()
             deadline = time.time() + seconds
             while time.time() < deadline:
                 raw = ser.read(4096)
@@ -247,7 +246,7 @@ def run_esp32_hardware_harness(port: str | None = None, flash: bool = True) -> d
             "serial_capture": {"status": "skipped", "reason": "flash failed"},
         }
 
-    time.sleep(1.5)
+    time.sleep(3.0)
     serial = capture_serial_output(port)
     return {
         "status": "passed"
