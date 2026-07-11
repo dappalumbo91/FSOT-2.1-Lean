@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:41:47.640828+00:00",
+  "generated_at": "2026-07-11T19:45:03.258700+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -213,6 +213,45 @@
     "proof_depth_note": "Structural spine proves bundle conjunct splits and connective ordering chains independently of Lean proof terms; TranscendentalBoundsNative supplies Taylor/interval depth for pi/e base intervals.",
     "remedy_if_fail": "Run scripts/generate_structural_proof_artifacts.py and ensure coqc on PATH"
   },
+  "living_fsot_hardware": {
+    "overall_ok": true,
+    "checks_passed": {
+      "project_layout": true,
+      "build_artifacts": true,
+      "scalar_k_parity": true,
+      "live_or_export_evidence": true,
+      "task_battery_green": true,
+      "qemu_runtime_available": true
+    },
+    "live_operational": {
+      "body_online": true,
+      "body_transport": "file",
+      "body_tick": 37894,
+      "habitat_tick": 500,
+      "generation": 6,
+      "genome_fp_match": true,
+      "hero_raw_s": 0.9575783565392747,
+      "hero_d_eff": 11.967685300007808,
+      "hero_delta_psi": 0.2417936604319875,
+      "benchmark_pass_rate": 1.0,
+      "benchmark_n_pass": 37,
+      "benchmark_n_total": 37,
+      "capabilities_fsot_scalar": true
+    },
+    "scope": {
+      "includes": [
+        "fsot-trinary-body UEFI/QEMU bare-metal kernel",
+        "fsot-living-rust mind gym + Scalar.lean port",
+        "Mind ABI TCP/file bridge (BODY_STATUS / BODY_MOTOR)",
+        "Closed-loop habitat state exports"
+      ],
+      "excludes": [
+        "ESP32 RF observer serial harness (Tier 91 eight_way \u2014 deferred)",
+        "Full 1331-obligation spine on metal"
+      ]
+    },
+    "living_root": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462"
+  },
   "proof_debt": {
     "fstar_transcendental_assumes": [],
     "fstar_primitives_assumed": [],
@@ -222,10 +261,10 @@
   },
   "open_gaps_from_depth_audit": [
     {
-      "id": "hardware_scalar_only",
+      "id": "esp32_scalar_only",
       "severity": "info",
-      "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
-      "remedy": "Refinement chain: F* spec \u2192 Rust no_std \u2192 ESP32 binary hash"
+      "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
+      "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification"
     }
   ],
   "findings": [],
@@ -243,6 +282,7 @@
     "rust_refinement": "data\\cross_refinement_rust_report.json",
     "fstar_refinement": "data\\cross_refinement_fstar_report.json",
     "coverage": "data\\cross_proof_coverage_audit.json",
-    "structural": "data\\structural_proof_depth_audit.json"
+    "structural": "data\\structural_proof_depth_audit.json",
+    "living_hardware": "data\\living_fsot_hardware_verification_report.json"
   }
 }

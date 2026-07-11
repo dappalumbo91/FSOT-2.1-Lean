@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-07-11T19:44:58.787737+00:00",
+  "version": "1.0",
+  "tier": "93_living_fsot_hardware",
+  "overall_ok": true,
+  "project_found": true,
+  "living_root": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462",
+  "components": {
+    "mind_rust": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-living-rust",
+    "trinary_body": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body",
+    "habitat_state": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\state\\habitat-rust"
+  },
+  "checks_passed": {
+    "project_layout": true,
+    "build_artifacts": true,
+    "scalar_k_parity": true,
+    "live_or_export_evidence": true,
+    "task_battery_green": true,
+    "qemu_runtime_available": true
+  },
+  "artifacts": {
+    "kernel_elf": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body\\target\\x86_64-unknown-none\\debug\\fsot_body_kernel",
+      "exists": true
+    },
+    "uefi_image": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body\\target\\body_image\\fsot_body_uefi.img",
+      "exists": true,
+      "size_bytes": 4259840
+    },
+    "mind_bridge_exe": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body\\target\\release\\mind_bridge.exe",
+      "exists": true
+    },
+    "host_probe_script": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body\\scripts\\run_host.ps1",
+      "exists": true
+    },
+    "qemu_serial_script": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-trinary-body\\scripts\\run_qemu_serial.ps1",
+      "exists": true
+    },
+    "fsot_living_exe": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-living-rust\\target\\release\\fsot-living.exe",
+      "exists": true
+    },
+    "scalar_rs": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\fsot-living-rust\\src\\scalar.rs",
+      "exists": true
+    },
+    "LIVE_STATUS.json": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\state\\habitat-rust\\LIVE_STATUS.json",
+      "exists": true
+    },
+    "BODY_STATUS.json": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\state\\habitat-rust\\BODY_STATUS.json",
+      "exists": true
+    },
+    "BENCHMARK_REPORT.json": {
+      "path": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462\\state\\habitat-rust\\BENCHMARK_REPORT.json",
+      "exists": true
+    }
+  },
+  "qemu": {
+    "available": true,
+    "path": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe"
+  },
+  "scalar_k_parity": {
+    "ok": true,
+    "canonical_k": 0.4202216641606967,
+    "living_rust_k": 0.42022166416069673,
+    "abs_delta": 5.551115123125783e-17,
+    "rel_delta": 1.3209968920124463e-16
+  },
+  "canonical_k": 0.4202216641606967,
+  "live_operational": {
+    "body_online": true,
+    "body_transport": "file",
+    "body_tick": 37894,
+    "habitat_tick": 500,
+    "generation": 6,
+    "genome_fp_match": true,
+    "hero_raw_s": 0.9575783565392747,
+    "hero_d_eff": 11.967685300007808,
+    "hero_delta_psi": 0.2417936604319875,
+    "benchmark_pass_rate": 1.0,
+    "benchmark_n_pass": 37,
+    "benchmark_n_total": 37,
+    "capabilities_fsot_scalar": true
+  },
+  "scope": {
+    "includes": [
+      "fsot-trinary-body UEFI/QEMU bare-metal kernel",
+      "fsot-living-rust mind gym + Scalar.lean port",
+      "Mind ABI TCP/file bridge (BODY_STATUS / BODY_MOTOR)",
+      "Closed-loop habitat state exports"
+    ],
+    "excludes": [
+      "ESP32 RF observer serial harness (Tier 91 eight_way \u2014 deferred)",
+      "Full 1331-obligation spine on metal"
+    ]
+  },
+  "milestones_claimed": "M0\u2013M12 per fsot-trinary-body/docs/ARCHITECTURE.md",
+  "integration_note": "Living FSOT is the QEMU-level hardware verification path. Lean cross-proof still triangulates numeric obligations; this audit verifies body build artifacts, scalar k parity, and live mind\u2194body loop.",
+  "remedy_if_fail": "Build fsot-trinary-body kernel+UEFI; run fsot-living-rust with body_bridge; refresh habitat exports"
+}

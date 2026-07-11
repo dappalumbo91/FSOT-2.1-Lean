@@ -901,6 +901,14 @@ def main() -> int:
         cwd=str(ROOT),
     )
     subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "audit_living_fsot_hardware.py")],
+        cwd=str(ROOT),
+    )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_living_fsot_hardware_benchmark.py")],
+        cwd=str(ROOT),
+    )
+    subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "audit_structural_proof_depth.py")],
         cwd=str(ROOT),
     )

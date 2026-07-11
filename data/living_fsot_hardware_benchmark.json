@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-11T19:44:59.032550+00:00",
+  "source": "data\\living_fsot_hardware_verification_report.json",
+  "domain": "Living_FSOT_Hardware",
+  "display_name": "Living FSOT Hardware (QEMU body)",
+  "tier_label": "Tier 93",
+  "record_count": 4,
+  "material_records": [
+    {
+      "lab": "living_fsot_hardware_lab",
+      "property": "fsot_scalar_k",
+      "name": "scalar_k_parity",
+      "computed": 0.42022166416069673,
+      "measured": 0.4202216641606967,
+      "error_pct": 1.3209968920124464e-14,
+      "unit": "dimensionless",
+      "eval_kind": "hardware_verification_gate",
+      "domain_display_name": "living fsot hardware",
+      "display_name": "scalar k parity"
+    },
+    {
+      "lab": "living_fsot_hardware_lab",
+      "property": "body_online",
+      "name": "mind_body_bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "hardware_verification_gate",
+      "domain_display_name": "living fsot hardware",
+      "display_name": "mind body bridge"
+    },
+    {
+      "lab": "living_fsot_hardware_lab",
+      "property": "uefi_kernel_artifacts",
+      "name": "build_artifacts",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "hardware_verification_gate",
+      "domain_display_name": "living fsot hardware",
+      "display_name": "build artifacts"
+    },
+    {
+      "lab": "living_fsot_hardware_lab",
+      "property": "living_task_battery",
+      "name": "task_battery_pass_rate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "unit": "dimensionless",
+      "eval_kind": "hardware_verification_gate",
+      "domain_display_name": "living fsot hardware",
+      "display_name": "task battery pass rate"
+    }
+  ],
+  "audit_overall_ok": true,
+  "living_root": "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462"
+}

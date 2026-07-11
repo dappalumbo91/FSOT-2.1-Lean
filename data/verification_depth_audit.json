@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:41:47.383478+00:00",
+  "generated_at": "2026-07-11T19:45:03.004680+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -47,7 +47,12 @@
     },
     "esp32_qemu": {
       "status": "passed",
-      "scope": "single boot scalar UART parity"
+      "scope": "single boot scalar UART parity (deferred expansion)"
+    },
+    "living_fsot_qemu_body": {
+      "status": "passed",
+      "scope": "fsot-trinary-body UEFI kernel + mind ABI + habitat closed loop",
+      "report": "data\\living_fsot_hardware_verification_report.json"
     }
   },
   "proof_debt": {
@@ -87,10 +92,17 @@
       "closed": true
     },
     {
-      "id": "hardware_scalar_only",
+      "id": "living_fsot_hardware",
+      "severity": "medium",
+      "description": "Living FSOT trinary body + mind gym QEMU/hardware loop",
+      "remedy": "See data/living_fsot_hardware_verification_report.json; build fsot-trinary-body + run habitat",
+      "closed": true
+    },
+    {
+      "id": "esp32_scalar_only",
       "severity": "info",
-      "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
-      "remedy": "Refinement chain: F* spec \u2192 Rust no_std \u2192 ESP32 binary hash"
+      "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
+      "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification"
     },
     {
       "id": "norm_num_depth",
@@ -241,10 +253,10 @@
   ],
   "open_gaps": [
     {
-      "id": "hardware_scalar_only",
+      "id": "esp32_scalar_only",
       "severity": "info",
-      "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
-      "remedy": "Refinement chain: F* spec \u2192 Rust no_std \u2192 ESP32 binary hash"
+      "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
+      "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification"
     }
   ]
 }

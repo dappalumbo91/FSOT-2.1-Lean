@@ -17,6 +17,7 @@ MARGIN_AUDIT = ROOT / "data" / "benchmark_margin_audit.json"
 EXPORT_REGISTRY = ROOT / "data" / "export_exclusion_registry.json"
 TRANSCENDENTAL_AUDIT = ROOT / "data" / "transcendental_certificate_audit.json"
 STRUCTURAL_AUDIT = ROOT / "data" / "structural_proof_depth_audit.json"
+LIVING_HW_AUDIT = ROOT / "data" / "living_fsot_hardware_verification_report.json"
 HONEST_CLAIMS = ROOT / "data" / "honest_claims_manifest.yaml"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -86,6 +87,10 @@ def build() -> dict:
 
     proof_debt = cross.get("proof_debt") or {}
     frameworks = cross.get("frameworks") or {}
+    living_hw = (
+        json.loads(LIVING_HW_AUDIT.read_text(encoding="utf-8")) if LIVING_HW_AUDIT.exists() else {}
+    )
+    living_hw_ok = bool(living_hw.get("overall_ok"))
 
     prover_coverage = {
         "lean_4": {
@@ -120,7 +125,12 @@ def build() -> dict:
         },
         "esp32_qemu": {
             "status": (frameworks.get("esp32_harness") or {}).get("status"),
-            "scope": "single boot scalar UART parity",
+            "scope": "single boot scalar UART parity (deferred expansion)",
+        },
+        "living_fsot_qemu_body": {
+            "status": "passed" if living_hw_ok else "pending",
+            "scope": "fsot-trinary-body UEFI kernel + mind ABI + habitat closed loop",
+            "report": str(LIVING_HW_AUDIT.relative_to(ROOT)) if LIVING_HW_AUDIT.exists() else None,
         },
     }
 
@@ -177,10 +187,17 @@ def build() -> dict:
             ),
         },
         {
-            "id": "hardware_scalar_only",
+            "id": "living_fsot_hardware",
+            "severity": "medium",
+            "description": "Living FSOT trinary body + mind gym QEMU/hardware loop",
+            "remedy": "See data/living_fsot_hardware_verification_report.json; build fsot-trinary-body + run habitat",
+            "closed": living_hw_ok,
+        },
+        {
+            "id": "esp32_scalar_only",
             "severity": "info",
-            "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
-            "remedy": "Refinement chain: F* spec → Rust no_std → ESP32 binary hash",
+            "description": "ESP32 RF observer verifies one boot scalar — distinct from Living FSOT QEMU body",
+            "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification",
         },
         {
             "id": "norm_num_depth",

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+updated: "2026-07-11"
+title: FSOT Living Scalar Organism + Trinary Body
+description: >
+  QEMU-level companion OS (fsot-trinary-body) with Rust mind gym (fsot-living-rust).
+  Mind ABI bridges cortex ↔ body via TCP:7368 or BODY_STATUS.json / BODY_MOTOR.txt.
+  Distinct from ESP32 RF observer harness in Tier 91.
+
+default_root: "C:\\Users\\damia\\Desktop\\living fsot\\files-e5887462"
+
+components:
+  mind_rust:
+    rel: "fsot-living-rust"
+    role: "cortex — habitat, exams, scalar engine port of FSOT/Scalar.lean"
+    binaries:
+      - "target/release/fsot-living.exe"
+      - "target/release/fsot-probe.exe"
+  trinary_body:
+    rel: "fsot-trinary-body"
+    role: "body — no_std kernel, UEFI zygote, Mind ABI, organ membrane"
+    artifacts:
+      kernel_elf: "target/x86_64-unknown-none/debug/fsot_body_kernel"
+      uefi_image: "target/body_image/fsot_body_uefi.img"
+      mind_bridge: "target/release/mind_bridge.exe"
+  habitat_state:
+    rel: "state/habitat-rust"
+    role: "live export — LIVE_STATUS.json, BODY_STATUS.json, benchmark reports"
+    key_files:
+      - "LIVE_STATUS.json"
+      - "BODY_STATUS.json"
+      - "BODY_MOTOR.txt"
+      - "BENCHMARK_REPORT.json"
+
+mind_abi:
+  tcp_default: "127.0.0.1:7368"
+  file_fallback:
+    status: "BODY_STATUS.json"
+    motor: "BODY_MOTOR.txt"
+
+qemu:
+  script: "fsot-trinary-body/scripts/run_qemu_serial.ps1"
+  machine: "q35"
+  memory_mb: 256
+
+scalar_bridge:
+  lean_authority: "FSOT/Scalar.lean"
+  rust_port: "fsot-living-rust/src/scalar.rs"
+  canonical_k: "data/canonical_constants.json"
+
+milestones:
+  M0: "Host trinary + genetic tests"
+  M1: "Kernel serial body online + UEFI image"
+  M2: "Interoception + homeostasis breath"
+  M3: "Mind ABI MOTOR/MIND"
+  M4: "Organ membrane stub"
+  M5: "mind_bridge file transport"
+  M6: "habitat body_bridge.rs closed loop"
+  M7: "Real heap + thermal MSR sensors"
+  M8: "QEMU interactive serial"
+  M9: "TCP Mind ABI"
+  M10: "Min-spec Mac Mini budgets"
+  M11: "Memory tiers LTM/STM"
+  M12: "Companion home VFS + bio scheduler"
+
+verification_tier: "93_living_fsot_hardware"
+esp32_scope: "deferred — ESP32 RF observer is separate from this QEMU body stack"

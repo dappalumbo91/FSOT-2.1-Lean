@@ -26,6 +26,7 @@ REPORTS = {
     "fstar_refinement": ROOT / "data" / "cross_refinement_fstar_report.json",
     "coverage": ROOT / "data" / "cross_proof_coverage_audit.json",
     "structural": ROOT / "data" / "structural_proof_depth_audit.json",
+    "living_hardware": ROOT / "data" / "living_fsot_hardware_verification_report.json",
 }
 
 
@@ -106,6 +107,7 @@ def build() -> dict:
     rust_ref = _load(REPORTS["rust_refinement"])
     fstar_ref = _load(REPORTS["fstar_refinement"])
     coverage = _load(REPORTS["coverage"])
+    living_hw = _load(REPORTS["living_hardware"])
 
     rust_expected = _expected_rust_count(cross, coq_ref)
     rust_actual = int((cross.get("frameworks") or {}).get("rust_replay", {}).get("obligation_count", 0))
@@ -246,6 +248,13 @@ def build() -> dict:
             "triangulation_summary": coverage.get("triangulation_summary"),
         } if coverage else {},
         "structural_proof_depth": structural,
+        "living_fsot_hardware": {
+            "overall_ok": living_hw.get("overall_ok"),
+            "checks_passed": living_hw.get("checks_passed"),
+            "live_operational": living_hw.get("live_operational"),
+            "scope": living_hw.get("scope"),
+            "living_root": living_hw.get("living_root"),
+        },
         "proof_debt": depth.get("proof_debt"),
         "open_gaps_from_depth_audit": open_gaps,
         "findings": findings,
