@@ -1,21 +1,22 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T20:58:32.190132+00:00",
+  "generated_at": "2026-07-11T14:51:48.090285+00:00",
   "domain": "Cross_Proof_Verification_Spine",
   "tier": 79,
   "obligation_count": 24,
-  "python_decimal_passed": 24,
+  "python_decimal_passed": 0,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "frameworks": {
-    "lean": {
+    "lean_connective": {
       "status": "passed"
     },
     "python_decimal": {
       "status": "passed",
-      "records": [
+      "connective_records": [
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_friction_pos",
           "kind": "pos",
           "passed": true,
@@ -23,6 +24,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_node_pos",
           "kind": "pos",
           "passed": true,
@@ -30,6 +32,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_tunneling_bridge_pos",
           "kind": "pos",
           "passed": true,
@@ -37,6 +40,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_stabilization_pos",
           "kind": "pos",
           "passed": true,
@@ -44,6 +48,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_run_pos",
           "kind": "pos",
           "passed": true,
@@ -51,6 +56,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_delta_phi_stable_pos",
           "kind": "pos",
           "passed": true,
@@ -58,6 +64,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_y_exotic_byproduct_pos",
           "kind": "pos",
           "passed": true,
@@ -65,6 +72,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_actuation_core_bundle",
           "kind": "pos",
           "passed": true,
@@ -72,6 +80,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_stabilization_margin_gt_one",
           "kind": "gt_one",
           "passed": true,
@@ -79,6 +88,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_stable_run_band",
           "kind": "gt_one",
           "passed": true,
@@ -86,6 +96,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_actuation_stabilized_bundle",
           "kind": "gt_one",
           "passed": true,
@@ -93,6 +104,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_bridge_lt_node",
           "kind": "lt",
           "passed": true,
@@ -100,6 +112,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_exotic_lt_friction",
           "kind": "lt",
           "passed": true,
@@ -107,6 +120,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_plasma_confinement_pos",
           "kind": "pos",
           "passed": true,
@@ -114,6 +128,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_seawater_acoustic_pos",
           "kind": "pos",
           "passed": true,
@@ -121,6 +136,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_decay_chain_relay_pos",
           "kind": "pos",
           "passed": true,
@@ -128,6 +144,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_dt_energy_pos",
           "kind": "pos",
           "passed": true,
@@ -135,6 +152,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_fusion_grid_bundle",
           "kind": "pos",
           "passed": true,
@@ -142,6 +160,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_energy_bus_pos",
           "kind": "pos",
           "passed": true,
@@ -149,6 +168,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_cryo_rejection_pos",
           "kind": "pos",
           "passed": true,
@@ -156,6 +176,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_em_coil_pos",
           "kind": "pos",
           "passed": true,
@@ -163,6 +184,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_fluid_consistency_pos",
           "kind": "pos",
           "passed": true,
@@ -170,6 +192,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_e10d_wd_bundle",
           "kind": "pos",
           "passed": true,
@@ -177,200 +200,463 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_stab_margin_gt_one",
           "kind": "gt_one",
           "passed": true,
           "statement": "1 < 1.722776467449"
         }
-      ]
+      ],
+      "full_formal_passed": 1241,
+      "full_formal_total": 1241
     },
     "coq": {
       "status": "passed",
       "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
-      "returncode": 0,
-      "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
-      "coqchk": {
-        "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
-        "returncode": 0,
-        "status": "passed"
-      },
-      "stderr": ""
+      "chunk_count": 17,
+      "chunks_passed": 17,
+      "chunks": [
+        {
+          "file": "ConnectiveSpine.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_00.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_00.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_01.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_01.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_02.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_02.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_00.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_00.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_01.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_01.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_01.v\", line 18, characters 0-51:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 90, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 225, characters 0-68:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_02.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_02.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_02.v\", line 144, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_03.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_03.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_03.v\", line 75, characters 0-75:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 219, characters 0-47:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 255, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 267, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_04.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_04.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_05.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_05.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_05.v\", line 153, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 234, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_06.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_06.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_07.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_07.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_07.v\", line 18, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_07.v\", line 18, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_08.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_08.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_09.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_09.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_09.v\", line 159, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_09.v\", line 228, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_10.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_10.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_10.v\", line 264, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_11.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_11.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_12.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_12.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        }
+      ]
+    },
+    "cross_refinement": {
+      "status": "passed",
+      "provable_triangulated_ok": 1241,
+      "provable_total": 1241,
+      "margin_violations_confirmed": 0
     },
     "isabelle": {
-      "status": "skipped",
-      "reason": "isabelle not found \u2014 free install: https://isabelle.in.tum.de/ (no login)"
+      "status": "passed",
+      "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle",
+      "session": "FSOT_CrossProof",
+      "theory_count": 17,
+      "connective_theories": 1,
+      "formal_theory_count": 13,
+      "obligation_scope": "connective_and_full_formal",
+      "provable_obligations": 1241,
+      "chunk_count": 17,
+      "chunks_passed": 17,
+      "chunks": [
+        {
+          "theory": "ConnectiveSpine",
+          "file": "ConnectiveSpine.thy",
+          "scope": "connective",
+          "obligation_count": 18,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_00",
+          "file": "TranscendentalBounds_00.thy",
+          "scope": "transcendental_bounds",
+          "obligation_count": 25,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_01",
+          "file": "TranscendentalBounds_01.thy",
+          "scope": "transcendental_bounds",
+          "obligation_count": 25,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_02",
+          "file": "TranscendentalBounds_02.thy",
+          "scope": "transcendental_bounds",
+          "obligation_count": 18,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_00",
+          "file": "FullFormalSpine_00.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_01",
+          "file": "FullFormalSpine_01.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_02",
+          "file": "FullFormalSpine_02.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_03",
+          "file": "FullFormalSpine_03.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_04",
+          "file": "FullFormalSpine_04.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_05",
+          "file": "FullFormalSpine_05.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_06",
+          "file": "FullFormalSpine_06.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_07",
+          "file": "FullFormalSpine_07.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_08",
+          "file": "FullFormalSpine_08.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_09",
+          "file": "FullFormalSpine_09.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_10",
+          "file": "FullFormalSpine_10.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_11",
+          "file": "FullFormalSpine_11.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_12",
+          "file": "FullFormalSpine_12.thy",
+          "scope": "full_formal",
+          "obligation_count": 41,
+          "status": "passed"
+        }
+      ],
+      "build": {
+        "session": "FSOT_CrossProof",
+        "status": "passed",
+        "returncode": 0,
+        "stdout_tail": "0:00:04 elapsed time\n",
+        "stderr": "0:00:04 elapsed time\n"
+      }
+    },
+    "isabelle_refinement": {
+      "status": "passed",
+      "provable_triangulated_ok": 1241,
+      "provable_total": 1241,
+      "isabelle_lemmas_indexed": 1241
+    },
+    "transcendental_bounds_gap": {
+      "exported_float_obligations_from_bounds": 24,
+      "excluded_pi_e_interval_count": 2,
+      "transcendental_lemma_count": 68,
+      "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\transcendental_bounds_gap_report.json"
+    },
+    "rust_replay": {
+      "status": "failed",
+      "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
+      "crate": "fsot_obligation_replay",
+      "obligation_count": 1309,
+      "formal_count": 1241,
+      "transcendental_count": 68,
+      "test_file": "replay_all_obligations.rs",
+      "returncode": 101,
+      "stderr_tail": "error: linking with `link.exe` failed: exit code: 1104\n  |\n  = note: \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\bin\\\\HostX64\\\\x64\\\\link.exe\" \"/NOLOGO\" \"C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\verification\\\\rust\\\\fsot_obligation_replay\\\\target\\\\debug\\\\deps\\\\rustc04baLv\\\\symbols.o\" \"<25 object files omitted>\" \"<sysroot>\\\\lib\\\\rustlib\\\\x86_64-pc-windows-msvc\\\\lib/{libtest-*,libgetopts-*,librustc_std_workspace_std-*,libstd-*,libpanic_unwind-*,libcfg_if-*,libwindows_link-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libunwind-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib\" \"kernel32.lib\" \"kernel32.lib\" \"kernel32.lib\" \"kernel32.lib\" \"ntdll.lib\" \"userenv.lib\" \"ws2_32.lib\" \"dbghelp.lib\" \"/defaultlib:msvcrt\" \"/NXCOMPAT\" \"/OUT:C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\verification\\\\rust\\\\fsot_obligation_replay\\\\target\\\\debug\\\\deps\\\\replay_all_obligations-fb0f7f26c91840c9.exe\" \"/OPT:REF,NOICF\" \"/DEBUG\" \"/PDBALTPATH:%_PDB%\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\intrinsic.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\liballoc.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libcore.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libstd.natvis\"\n  = note: some arguments are omitted. use `--verbose` to show all linker arguments\n  = note: LINK : fatal error LNK1104: cannot open file 'C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\rust\\fsot_obligation_replay\\target\\debug\\deps\\replay_all_obligations-fb0f7f26c91840c9.exe'\n          \n\nerror: could not compile `fsot_obligation_replay` (test \"replay_all_obligations\") due to 1 previous error\n"
+    },
+    "rust_refinement": {
+      "status": "passed",
+      "total_exported_to_rust": 1309,
+      "formal_python_f64_ok": 1241,
+      "transcendental_python_f64_ok": 68
+    },
+    "rust_lean_bridge_parity": {
+      "status": "passed",
+      "crate": "fsot_scalar_kernel",
+      "python_boot_scalar": 0.09928895626861721,
+      "benchmark_median_error_pct": 0.0,
+      "returncode": 0,
+      "stderr_tail": "Wrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_benchmark.json\n  records: 9  median_err: 0.0\nRUST_LEAN_BRIDGE RUNTIME PARITY (Tier 85)\n  python boot_scalar: 0.09928895626861721 (ok=True)\n  cargo: passed\n  benchmark median_err: 0.0%\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_runtime_parity_report.json\n"
+    },
+    "rust_lean_bridge_refinement": {
+      "status": "passed",
+      "checks": {
+        "python_boot_matches_canonical": true,
+        "summary_boot_matches_canonical": true,
+        "python_summary_agree": true,
+        "k_matches_atlas": true,
+        "boot_scalar_positive": true,
+        "cargo_runtime_passed": true
+      }
+    },
+    "fstar": {
+      "status": "passed",
+      "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
+      "entry": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarBoot.fst",
+      "modules": [
+        "FSOTScalarKernel",
+        "FSOTScalarBoot"
+      ],
+      "returncode": 0,
+      "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+    },
+    "fstar_refinement": {
+      "status": "passed",
+      "checks": {
+        "fstar_verify_passed": true,
+        "fstar_k_matches_rust": true,
+        "fstar_boot_scalar_canonical_matches": true,
+        "python_boot_matches_fstar_canonical": true,
+        "python_boot_matches_rust_oracle": true,
+        "fstar_boot_params_match": true
+      }
+    },
+    "qemu_harness": {
+      "status": "passed",
+      "serial_status": "passed",
+      "disk_status": "passed",
+      "qemu_status": "passed",
+      "returncode": 0,
+      "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_qemu_harness_report.json\n"
+    },
+    "esp32_harness": {
+      "status": "passed",
+      "build_status": "passed",
+      "flash_status": "skipped",
+      "serial_status": "passed",
+      "port": "COM3",
+      "returncode": 0,
+      "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\esp32_fsot_serial_harness_report.json\n"
     }
   },
-  "overall_ok": true,
-  "github_ready": true,
-  "records": [
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_psi_friction_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.082300635102"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_psi_node_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.059407798774"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_tunneling_bridge_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.053926299704"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_psi_stabilization_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 2.386649570184"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_psi_run_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.14178559741"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_delta_phi_stable_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.004581413686"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_y_exotic_byproduct_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.011637689406"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_actuation_core_bundle",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.082300635102"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_stabilization_margin_gt_one",
-      "kind": "gt_one",
-      "passed": true,
-      "statement": "1 < 1.722776467449"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_stable_run_band",
-      "kind": "gt_one",
-      "passed": true,
-      "statement": "1 < 1.722776467449"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_actuation_stabilized_bundle",
-      "kind": "gt_one",
-      "passed": true,
-      "statement": "1 < 1.722776467449"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_bridge_lt_node",
-      "kind": "lt",
-      "passed": true,
-      "statement": "0.053926299704 < 0.059407798774"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "warp_exotic_lt_friction",
-      "kind": "lt",
-      "passed": true,
-      "statement": "0.011637689406 < 0.082300635102"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_plasma_confinement_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.131181176323"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_seawater_acoustic_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.094115088176"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_decay_chain_relay_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.029710640768"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_dt_energy_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 17.6"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_fusion_grid_bundle",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.131181176323"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_energy_bus_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 6.5226644e-05"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_cryo_rejection_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.040494897615"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_em_coil_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.076350367522"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_fluid_consistency_pos",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 0.075670330033"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_e10d_wd_bundle",
-      "kind": "pos",
-      "passed": true,
-      "statement": "0 < 6.5226644e-05"
-    },
-    {
-      "framework": "python_decimal",
-      "obligation_id": "connective_stab_margin_gt_one",
-      "kind": "gt_one",
-      "passed": true,
-      "statement": "1 < 1.722776467449"
-    }
-  ]
+  "overall_ok": false,
+  "github_ready": false,
+  "records": []
 }

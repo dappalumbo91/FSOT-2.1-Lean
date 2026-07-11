@@ -1,75 +1,62 @@
-# FSOT Tier 79 — Cross-Proof Verification
+# FSOT Cross-Proof Verification (Tiers 79–91)
 
-Independent re-proof of Lean connective obligations in **Coq** and **Isabelle**, plus a **Python decimal** structural layer.
+Independent re-proof of exported Lean numeric obligations across **Python decimal**, **Coq**, **Isabelle**, **Rust f64**, **F\***, and **QEMU bare-metal** runtime.
 
-## No gatekeeping
-
-| Tool | Cost | Account required | Typical disk |
-|------|------|------------------|--------------|
-| Lean 4 | Free | No | (already installed) |
-| Coq / Rocq Platform | Free | No | ~4 GB |
-| Isabelle | Free | No | ~5 GB |
-| This tree | Free | No | ~50 MB |
-
-## Run locally
+## Run (authoritative)
 
 ```powershell
-cd FSOT-2.1-Lean-main
+cd <repo-root>
 python scripts/run_cross_proof_verification.py
-python scripts/build_cross_proof_benchmark.py
 ```
+
+This regenerates:
+
+- `data/cross_proof_verification_report.json` — single source of truth
+- `data/cross_proof_verification_manifest.yaml` → `status_local` (fail-closed, no hand-edits)
+- `data/cross_proof_verification_benchmark.json`
+
+**Pass bar (repo):** `overall_ok: true` = seven-way bare-metal (Lean+Coq+Isabelle+Rust+F\*+QEMU serial+disk).
+
+**ESP32 hardware** is optional unless you pass `--require-esp32` (needs CP210x COM port).
+
+## What is cross-verified
+
+| Layer | Count | Frameworks |
+|-------|-------|------------|
+| Connective spine | 24 obligations | Lean → Python → Coq → Isabelle |
+| Full formal spine | 1,241 provable obligations | same + Rust f64 replay |
+| Transcendental bounds | 68 lemmas | Coq/Isabelle with **certified π/e axioms** (2 intervals deferred) |
+| Boot scalar | 1 canonical value | Rust no_std ↔ Python ↔ F\* constants ↔ QEMU UART |
+
+**Coverage honesty:** Coq connective spine = **~1.43%** of Lean theorem count. Cross-proof triangulates **exported numeric obligations**, not every `FSOT.Formal.*` module.
+
+## Documented proof debt (`proof_debt` in report)
+
+- F\*: `boot_scalar_positive` / `boot_scalar_matches_canonical` are explicit **assume** lemmas (transcendental shell).
+- F\*: `cos`, `sin`, `sqrt` primitives assumed on reals.
+- Coq/Isabelle: `certified_*` axioms for π/e intervals (see `audit_transcendental_bounds_gap.py`).
+
+Numeric truth for boot scalar is triangulated via **Tier 85 Rust/Python f64** — not hidden `admit()`.
 
 ## Install optional frameworks
 
 ```powershell
 winget install Coq.CoqPlatform
-powershell -File scripts/setup_rocq_path.ps1   # if coqc not found after install
-```
-
-Default install path: `C:\Rocq-Platform~9.0~2025.08\bin`
-
-Isabelle (no sign-in, ~600 MB):
-
-```powershell
+powershell -File scripts/setup_rocq_path.ps1
 powershell -ExecutionPolicy Bypass -File scripts/install_isabelle_windows.ps1
 ```
-
-If auto-download fails, use your browser: https://isabelle.in.tum.de/ → save `Isabelle2025-2.exe` to Downloads → re-run the script.
-
-Delete any corrupt tiny file in Downloads (281 bytes) before retrying.
-
-## Coverage vs full FSOT corpus
-
-```powershell
-python scripts/audit_cross_proof_coverage.py
-```
-
-Tier 79 Coq proves the **connective spine** (24 obligations, 3 modules) — not all 245 domains yet.
-
-Tier 80 exports **1081** obligations from **301** priors modules via `export_full_priors_obligations.py`.
-
-## Current status (local)
-
-Run `python scripts/run_cross_proof_verification.py` — expect:
-
-- `python_decimal`: passed
-- `lean`: passed
-- `coq`: passed (+ `coqchk` when available)
-- `github_ready`: true when Coq passes
 
 ## Layout
 
 ```
 verification/
-  obligations/connective_spine.json   ← exported from Lean
-  coq/ConnectiveSpine.v               ← generated proofs (lra)
-  isabelle/ConnectiveSpine.thy        ← generated proofs (eval)
+  obligations/          exported JSON from Lean
+  coq/                  generated .v chunks
+  isabelle/             generated .thy chunks
+  rust/fsot_obligation_replay/
+  fstar/                FSOTScalarKernel.fst, FSOTScalarBoot.fst
+  qemu/                 golden_boot_serial.txt, golden_boot_disk.txt
+  esp32/                golden_boot_serial.txt (optional hardware tier)
 ```
 
-Lean authority modules:
-
-- `FSOT.Formal.WarpActuationDevelopmentPriors`
-- `FSOT.Formal.FusionGridConnectivePriors`
-- `FSOT.Formal.E10dWdConnectivePriors`
-
-Promote to GitHub when `data/cross_proof_verification_report.json` shows `github_ready: true`.
+Promote to GitHub when `cross_proof_verification_report.json` shows `github_ready: true`.

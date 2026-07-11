@@ -20,6 +20,7 @@ Layers:
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import shutil
@@ -43,6 +44,7 @@ from cross_proof_lib import (  # noqa: E402
 OBL_CONNECTIVE = ROOT / "verification" / "obligations" / "connective_spine.json"
 OBL_FORMAL = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 REPORT = ROOT / "data" / "cross_proof_verification_report.json"
+MANIFEST = ROOT / "data" / "cross_proof_verification_manifest.yaml"
 COQ_DIR = ROOT / "verification" / "coq"
 
 
@@ -340,11 +342,11 @@ def run_rust_replay() -> dict:
         return {"status": "failed", "reason": "missing generated Rust replay tests"}
     try:
         r = subprocess.run(
-            [cargo, "test", "--quiet"],
+            [cargo, "test", "--release", "--quiet", "--test", "replay_all_obligations"],
             cwd=str(RUST_REPLAY_DIR),
             capture_output=True,
             text=True,
-            timeout=600,
+            timeout=900,
         )
         meta_path = RUST_REPLAY_DIR / "obligation_meta.json"
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
@@ -392,10 +394,23 @@ def run_fstar_check() -> dict:
     return run_fstar_verify()
 
 
-def run_esp32_harness() -> dict:
+def run_esp32_harness(*, require_hardware: bool) -> dict:
     try:
+        from esp32_fsot_serial_lib import detect_cp210x_port  # noqa: E402
+
+        port = detect_cp210x_port()
+        if not port and not require_hardware:
+            return {
+                "status": "skipped",
+                "reason": "no CP210x COM port (hardware optional)",
+                "build_status": "skipped",
+                "serial_status": "skipped",
+            }
+        harness_args = [sys.executable, str(ROOT / "scripts" / "run_esp32_serial_harness.py")]
+        if not require_hardware:
+            harness_args.extend(["--no-flash", "--port", port or "COM3"])
         r = subprocess.run(
-            [sys.executable, str(ROOT / "scripts" / "run_esp32_serial_harness.py")],
+            harness_args,
             cwd=str(ROOT),
             capture_output=True,
             text=True,
@@ -412,17 +427,81 @@ def run_esp32_harness() -> dict:
             text=True,
             timeout=900,
         )
+        build_status = "passed" if build_only.returncode == 0 else "failed"
+        serial_status = serial.get("status")
+        harness_ok = (
+            build_status == "passed"
+            and serial_status == "passed"
+            and harness.get("status") == "passed"
+        )
         return {
-            "status": "passed" if r.returncode == 0 else "failed",
-            "build_status": "passed" if build_only.returncode == 0 else "failed",
+            "status": "passed" if harness_ok else "failed",
+            "build_status": build_status,
             "flash_status": (harness.get("flash") or {}).get("status"),
-            "serial_status": serial.get("status"),
+            "serial_status": serial_status,
             "port": doc.get("port"),
             "returncode": r.returncode,
             "stderr_tail": ((r.stdout or "") + (r.stderr or ""))[-2000:],
         }
     except Exception as e:
         return {"status": "failed", "reason": str(e)}
+
+
+def sync_manifest_from_report(report: dict) -> None:
+    """Rewrite status_local from report JSON — fail-closed, no hand-edited passes."""
+    if not MANIFEST.exists():
+        return
+    text = MANIFEST.read_text(encoding="utf-8")
+    fw = report.get("frameworks", {})
+    status = {
+        "lean": "passed" if fw.get("lean_connective", {}).get("status") == "passed" else "failed",
+        "python_decimal": "passed" if fw.get("python_decimal", {}).get("status") == "passed" else "failed",
+        "coq": fw.get("coq", {}).get("status", "failed"),
+        "isabelle": fw.get("isabelle", {}).get("status", "failed"),
+        "transcendental_bounds_coq": "passed" if report.get("transcendental_bounds", {}).get("status") == "exported" else "failed",
+        "transcendental_bounds_isabelle": "passed" if report.get("transcendental_bounds", {}).get("status") == "exported" else "failed",
+        "rust_f64_replay": fw.get("rust_replay", {}).get("status", "failed"),
+        "rust_lean_bridge_runtime_parity": fw.get("rust_lean_bridge_parity", {}).get("status", "failed"),
+        "fstar_scalar_spec": fw.get("fstar", {}).get("status", "failed"),
+        "qemu_serial_harness": fw.get("qemu_harness", {}).get("status", "failed"),
+        "esp32_hardware_harness": fw.get("esp32_harness", {}).get("status", "failed"),
+        "esp32_rf_observer": fw.get("esp32_harness", {}).get("serial_status", "failed"),
+        "full_triangulation": report.get("full_triangulation", False),
+        "four_way_verification": report.get("four_way_verification", False),
+        "five_way_runtime": report.get("five_way_runtime", False),
+        "six_way_formal_executable": report.get("six_way_formal_executable", False),
+        "seven_way_bare_metal": report.get("seven_way_bare_metal", False),
+        "eight_way_hardware": report.get("eight_way_hardware", False),
+        "github_ready": report.get("github_ready", False),
+        "overall_ok": report.get("overall_ok", False),
+        "report_generated_at": report.get("generated_at"),
+    }
+    lines = []
+    in_block = False
+    for line in text.splitlines():
+        if line.startswith("status_local:"):
+            in_block = True
+            lines.append("status_local:")
+            for key, val in status.items():
+                if isinstance(val, bool):
+                    lines.append(f"  {key}: {str(val).lower()}")
+                else:
+                    lines.append(f"  {key}: {val}")
+            continue
+        if in_block:
+            if line and not line.startswith(" "):
+                in_block = False
+                lines.append(line)
+            continue
+        lines.append(line)
+    if "status_local:" not in text:
+        lines.append("status_local:")
+        for key, val in status.items():
+            if isinstance(val, bool):
+                lines.append(f"  {key}: {str(val).lower()}")
+            else:
+                lines.append(f"  {key}: {val}")
+    MANIFEST.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def run_qemu_harness() -> dict:
@@ -456,6 +535,14 @@ def provable_formal_obligations() -> list[dict]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Tier 91 wide cross-proof verification")
+    parser.add_argument(
+        "--require-esp32",
+        action="store_true",
+        help="Fail if ESP32 hardware harness does not pass (default: skip when no CP210x port)",
+    )
+    args = parser.parse_args()
+
     pipeline = [
         "export_cross_proof_obligations.py",
         "export_full_formal_obligations.py",
@@ -550,7 +637,7 @@ def main() -> int:
     fstar_refinement_ok = fstar_refinement.get("overall_ok", False)
 
     qemu_harness = run_qemu_harness()
-    esp32_harness = run_esp32_harness()
+    esp32_harness = run_esp32_harness(require_hardware=args.require_esp32)
 
     lean_conn_ok = subprocess.run(
         [
@@ -566,9 +653,24 @@ def main() -> int:
         text=True,
     ).returncode == 0
 
+    esp32_serial_ok = esp32_harness.get("serial_status") == "passed"
+    esp32_build_ok = esp32_harness.get("build_status") == "passed"
+    esp32_layer_ok = esp32_harness.get("status") == "passed"
+    esp32_skipped = esp32_harness.get("status") == "skipped"
+
+    seven_way = (
+        py_ok
+        and rust.get("status") == "passed"
+        and bridge_parity.get("status") == "passed"
+        and fstar.get("status") == "passed"
+        and qemu_harness.get("status") == "passed"
+        and qemu_harness.get("disk_status") == "passed"
+    )
+    eight_way = seven_way and esp32_layer_ok
+
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "91",
+        "tier": "91_seven_way_bare_metal",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -643,27 +745,46 @@ def main() -> int:
             "qemu_harness": qemu_harness,
             "esp32_harness": esp32_harness,
         },
+        "proof_debt": {
+            "fstar_transcendental_assumes": [
+                "boot_scalar_positive",
+                "boot_scalar_matches_canonical",
+            ],
+            "fstar_primitives_assumed": ["cos", "sin", "sqrt"],
+            "transcendental_coq_isabelle": "certified_axioms_for_pi_e_intervals",
+            "coq_connective_coverage_pct_of_lean_theorems": 1.43,
+            "note": (
+                "Cross-proof triangulates exported numeric obligations; "
+                "F* boot scalar and pi/e intervals rely on documented assumes/axioms."
+            ),
+        },
         "overall_ok": py_ok
             and lean_conn_ok
             and coq.get("status") == "passed"
             and refinement_ok
-            and isa.get("status") in ("passed", "skipped")
+            and isa.get("status") == "passed"
             and isa_refinement_ok
-            and rust.get("status") in ("passed", "skipped")
+            and rust.get("status") == "passed"
             and rust_refinement_ok
             and bridge_parity.get("status") == "passed"
             and bridge_refinement_ok
             and fstar.get("status") == "passed"
             and fstar_refinement_ok
             and qemu_harness.get("status") == "passed"
-            and esp32_harness.get("build_status") == "passed",
+            and qemu_harness.get("disk_status") == "passed",
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
             and coq.get("status") == "passed"
-            and refinement_ok,
+            and refinement_ok
+            and isa.get("status") == "passed"
+            and rust.get("status") == "passed"
+            and bridge_parity.get("status") == "passed"
+            and fstar.get("status") == "passed"
+            and qemu_harness.get("status") == "passed",
         "github_ready_note": (
-            "All provable obligations triangulated; margin violations cleared."
+            "Formal numeric spine + QEMU bare-metal verified; "
+            "ESP32 hardware is optional unless --require-esp32."
             if len(margin_violations) == 0
             else "Blocked until margin violations refined and wide verification stable."
         ),
@@ -687,25 +808,23 @@ def main() -> int:
             and bridge_parity.get("status") == "passed"
             and fstar.get("status") == "passed"
             and qemu_harness.get("status") == "passed",
-        "seven_way_bare_metal": py_ok
-            and rust.get("status") == "passed"
-            and bridge_parity.get("status") == "passed"
-            and fstar.get("status") == "passed"
-            and qemu_harness.get("status") == "passed"
-            and qemu_harness.get("disk_status") == "passed",
-        "eight_way_hardware": py_ok
-            and rust.get("status") == "passed"
-            and bridge_parity.get("status") == "passed"
-            and fstar.get("status") == "passed"
-            and qemu_harness.get("status") == "passed"
-            and qemu_harness.get("disk_status") == "passed"
-            and esp32_harness.get("status") == "passed",
+        "seven_way_bare_metal": seven_way,
+        "eight_way_hardware": eight_way,
+        "esp32_skipped": esp32_skipped,
+        "esp32_serial_ok": esp32_serial_ok,
+        "esp32_build_ok": esp32_build_ok,
         "note": (
             "Tier 91: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
             "+ QEMU serial/disk boot + ESP32 RF observer (WiFi/BLE/ESP-NOW) harness."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    sync_manifest_from_report(report)
+
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_cross_proof_benchmark.py")],
+        cwd=str(ROOT),
+    )
 
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "audit_cross_proof_coverage.py")],

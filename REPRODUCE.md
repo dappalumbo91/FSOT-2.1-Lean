@@ -33,6 +33,20 @@ On success this:
 
 **Expected:** 65 proved claims, 0 `sorry`, `lean_build_ok: true`, 210/210 extension domains pass `verify_extension_domains.py`.
 
+## Cross-proof verification (Tiers 79–91)
+
+Independent numeric triangulation (Lean → Python → Coq → Isabelle → Rust f64 → F\* → QEMU):
+
+```powershell
+python scripts/run_cross_proof_verification.py
+```
+
+**Expected when toolchains installed:** `overall_ok: true`, `seven_way_bare_metal: true`, `github_ready: true`.
+
+**Honesty gates:** Report includes `proof_debt` (F\* assumes, π/e certified axioms). `status_local` in `data/cross_proof_verification_manifest.yaml` is **auto-generated** — do not hand-edit.
+
+ESP32 hardware harness is **optional** (skipped without COM port). Use `--require-esp32` only when flashing hardware.
+
 ## Step-by-step
 
 ### 1. Sync canonical constants (optional)

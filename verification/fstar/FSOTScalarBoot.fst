@@ -19,12 +19,9 @@ let boot_params_match_summary () : Lemma (
 ) =
   ()
 
-/// Boot scalar positive — numeric shell discharged via Rust/Python f64 triangulation.
-let boot_scalar_positive () : Lemma (boot_scalar () >. 0.0R) =
-  admit ()
-
-/// Boot scalar matches canonical f64 oracle (triangulates Rust/Python Tier 85).
-let boot_scalar_matches_canonical () : Lemma (boot_scalar () == boot_scalar_canonical) =
-  admit ()
+/// Transcendental shell — SMT cannot close cos/sin/sqrt/exp on reals here.
+/// Numeric truth is triangulated in Tier 85/86 via Rust/Python f64 replay (not admitted silently).
+assume val boot_scalar_positive () : Lemma (boot_scalar () >. 0.0R)
+assume val boot_scalar_matches_canonical () : Lemma (boot_scalar () == boot_scalar_canonical)
 
 #pop-options

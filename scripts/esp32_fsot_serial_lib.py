@@ -182,9 +182,11 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
                 if raw:
                     chunks.append(raw.decode("utf-8", errors="replace"))
                 joined = "".join(chunks)
-                if "FSOT_ESP32_OBSERVER_TIER=91" in joined or "FSOT_ESP32_HARDWARE_BOOT=ok" in joined:
-                    if "FSOT_ESP32_OBSERVER_TIER=91" in joined:
-                        break
+                if "FSOT_ESP32_HARDWARE_BOOT=ok" in joined and (
+                    "FSOT_ESP32_OBSERVER_TIER=93" in joined
+                    or "FSOT_ESP32_OBSERVER_TIER=91" in joined
+                ):
+                    break
                 time.sleep(0.05)
         text = "".join(chunks)
         markers = _parse_esp32_markers(text)
@@ -194,11 +196,19 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
         dynamic_ok = abs(markers.get("dynamic_check", -1) - BOOT_SCALAR) < SCALAR_TOLERANCE
         hardware_ok = markers.get("hardware_boot") == "ok"
         golden_ok = _golden_subset_match(markers, golden) if golden else True
-        emergence_ok = "POSITIVE (Emergence)" in text
+        # ESP32 uses FSOT_ESP32_* markers; QEMU emergence prose is not emitted on UART.
+        emergence_ok = boot_ok and (markers.get("boot_scalar") or 0) > 0.0
         rf_scalar = markers.get("rf_scalar")
         rf_ok = isinstance(rf_scalar, float) and abs(rf_scalar) < 1e6 and rf_scalar == rf_scalar
         trinary_ok = markers.get("trinary_state") in ("+1", "0", "-1")
-        tier_ok = markers.get("observer_tier") == 91
+        tier_ok = markers.get("observer_tier") in (91, 93)
+        fluid_ok = markers.get("fluid_scalar") is None or (
+            isinstance(markers.get("fluid_scalar"), float)
+            and abs(markers["fluid_scalar"]) < 1e6
+        )
+        csi_ok = markers.get("csi_packets") is None or isinstance(
+            markers.get("csi_packets"), int
+        )
         wifi_ok = isinstance(markers.get("wifi_ap_count"), int)
         ble_ok = markers.get("ble_stack") in ("ok", "fail")
         enow_ok = markers.get("enow_sent") in ("ok", "fail")
@@ -216,6 +226,8 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
             and wifi_ok
             and ble_ok
             and enow_ok
+            and fluid_ok
+            and csi_ok
             else "failed",
             "port": port,
             "baud": DEFAULT_BAUD,
@@ -266,6 +278,8 @@ def _golden_subset_match(markers: dict, golden: dict) -> bool:
         if key not in markers:
             return False
         got = markers[key]
+        if key == "observer_tier" and got in (91, 93) and expected in (91, 93):
+            continue
         if isinstance(expected, float) and isinstance(got, float):
             if abs(got - expected) >= SCALAR_TOLERANCE:
                 return False
@@ -312,6 +326,9 @@ def redact_serial_ssids(text: str, prefix: str = NETWORK_ID_PREFIX) -> str:
     return AP_LINE_RE.sub(repl, text)
 SONAR_FRAME_START_RE = re.compile(r"FSOT_ESP32_SONAR_FRAME_START frame=(\d+)")
 SONAR_FRAME_END_RE = re.compile(r"FSOT_ESP32_SONAR_FRAME_END frame=(\d+)")
+FLUID_FRAME_START_RE = re.compile(r"FSOT_ESP32_FLUID_FRAME_START frame=(\d+)")
+FLUID_FRAME_END_RE = re.compile(r"FSOT_ESP32_FLUID_FRAME_END frame=(\d+)")
+BLE_LINE_RE = re.compile(r"FSOT_ESP32_BLE\|(\d+)\|(-?\d+)$", re.MULTILINE)
 
 
 def parse_sonar_ap_lines(text: str) -> list[dict]:
@@ -326,46 +343,48 @@ def parse_sonar_ap_lines(text: str) -> list[dict]:
     ]
 
 
-def parse_sonar_frames(text: str) -> list[dict]:
-    """Extract complete sonar frames (per-AP lines + summary markers)."""
-    frames: list[dict] = []
-    lines = text.splitlines()
-    i = 0
+def _parse_frame_lines(
+    lines: list[str],
+    start_idx: int,
+    frame_id: int,
+    end_re: re.Pattern[str],
+) -> tuple[dict | None, int]:
+    aps: list[dict] = []
+    ble: list[dict] = []
+    markers: dict = {}
+    i = start_idx
     while i < len(lines):
-        start = SONAR_FRAME_START_RE.match(lines[i].strip())
-        if not start:
-            i += 1
-            continue
-        frame_id = int(start.group(1))
-        aps: list[dict] = []
-        markers: dict = {}
-        i += 1
-        while i < len(lines):
-            line = lines[i].strip()
-            end = SONAR_FRAME_END_RE.match(line)
-            if end and int(end.group(1)) == frame_id:
-                frames.append(
-                    {
-                        "frame": frame_id,
-                        "aps": aps,
-                        "markers": markers,
-                    }
-                )
-                i += 1
-                break
-            ap = AP_LINE_RE.match(line)
-            if ap:
-                aps.append(
-                    {
-                        "idx": int(ap.group(1)),
-                        "channel": int(ap.group(2)),
-                        "rssi": int(ap.group(3)),
-                        "ssid": ap.group(4).strip(),
-                    }
-                )
+        line = lines[i].strip()
+        end = end_re.match(line)
+        if end and int(end.group(1)) == frame_id:
+            return (
+                {
+                    "frame": frame_id,
+                    "aps": aps,
+                    "ble": ble,
+                    "markers": markers,
+                },
+                i + 1,
+            )
+        ap = AP_LINE_RE.match(line)
+        if ap:
+            aps.append(
+                {
+                    "idx": int(ap.group(1)),
+                    "channel": int(ap.group(2)),
+                    "rssi": int(ap.group(3)),
+                    "ssid": ap.group(4).strip(),
+                }
+            )
+        else:
+            ble_m = BLE_LINE_RE.match(line)
+            if ble_m:
+                ble.append({"idx": int(ble_m.group(1)), "rssi": int(ble_m.group(2))})
             else:
                 for key, pat in {
                     "rf_scalar": r"FSOT_ESP32_RF_SCALAR=([0-9.eE+-]+)",
+                    "fluid_scalar": r"FSOT_ESP32_FLUID_SCALAR=([0-9.eE+-]+)",
+                    "csi_amp_var": r"FSOT_ESP32_CSI_AMP_VAR=([0-9.eE+-]+)",
                     "rssi_mean": r"FSOT_ESP32_RSSI_MEAN=([0-9.eE+-]+)",
                     "rssi_var": r"FSOT_ESP32_RSSI_VAR=([0-9.eE+-]+)",
                 }.items():
@@ -374,6 +393,10 @@ def parse_sonar_frames(text: str) -> list[dict]:
                         markers[key] = float(m.group(1))
                 for key, pat in {
                     "wifi_ap_count": r"FSOT_ESP32_WIFI_AP_COUNT=(\d+)",
+                    "csi_packets": r"FSOT_ESP32_CSI_PACKETS=(\d+)",
+                    "csi_channel": r"FSOT_ESP32_CSI_CHANNEL=(\d+)",
+                    "ble_device_count": r"FSOT_ESP32_BLE_DEVICE_COUNT=(\d+)",
+                    "fluid_level": r"FSOT_ESP32_FLUID_LEVEL=(\d+)",
                 }.items():
                     m = re.match(pat, line)
                     if m:
@@ -381,7 +404,33 @@ def parse_sonar_frames(text: str) -> list[dict]:
                 m = re.match(r"FSOT_ESP32_TRINARY_STATE=([+-]?1|0)", line)
                 if m:
                     markers["trinary_state"] = m.group(1)
-            i += 1
+        i += 1
+    return None, i
+
+
+def parse_sonar_frames(text: str) -> list[dict]:
+    """Extract complete sonar/fluid frames (per-AP + CSI + BLE + summary markers)."""
+    frames: list[dict] = []
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        fluid_start = FLUID_FRAME_START_RE.match(line)
+        sonar_start = SONAR_FRAME_START_RE.match(line)
+        if fluid_start:
+            frame_id = int(fluid_start.group(1))
+            parsed, i = _parse_frame_lines(lines, i + 1, frame_id, FLUID_FRAME_END_RE)
+            if parsed:
+                parsed["fluid"] = True
+                frames.append(parsed)
+            continue
+        if sonar_start:
+            frame_id = int(sonar_start.group(1))
+            parsed, i = _parse_frame_lines(lines, i + 1, frame_id, SONAR_FRAME_END_RE)
+            if parsed:
+                frames.append(parsed)
+            continue
+        i += 1
     return frames
 
 
@@ -392,6 +441,8 @@ def _parse_esp32_markers(text: str) -> dict:
         "canonical": r"FSOT_ESP32_CANONICAL=([0-9.eE+-]+)",
         "dynamic_check": r"FSOT_ESP32_DYNAMIC_CHECK=([0-9.eE+-]+)",
         "rf_scalar": r"FSOT_ESP32_RF_SCALAR=([0-9.eE+-]+)",
+        "fluid_scalar": r"FSOT_ESP32_FLUID_SCALAR=([0-9.eE+-]+)",
+        "csi_amp_var": r"FSOT_ESP32_CSI_AMP_VAR=([0-9.eE+-]+)",
         "rssi_var": r"FSOT_ESP32_RSSI_VAR=([0-9.eE+-]+)",
         "temp_c": r"FSOT_ESP32_TEMP_C=([0-9.eE+-]+)",
     }
@@ -401,7 +452,10 @@ def _parse_esp32_markers(text: str) -> dict:
             out[key] = float(m.group(1))
     int_patterns = {
         "wifi_ap_count": r"FSOT_ESP32_WIFI_AP_COUNT=(\d+)",
+        "csi_packets": r"FSOT_ESP32_CSI_PACKETS=(\d+)",
+        "ble_device_count": r"FSOT_ESP32_BLE_DEVICE_COUNT=(\d+)",
         "observer_tier": r"FSOT_ESP32_OBSERVER_TIER=(\d+)",
+        "fluid_level": r"FSOT_ESP32_FLUID_LEVEL=(\d+)",
     }
     for key, pat in int_patterns.items():
         m = re.search(pat, text)

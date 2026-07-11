@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T22:57:35.607528+00:00",
+  "generated_at": "2026-07-11T14:51:48.370193+00:00",
   "fsot_scale": {
     "extension_domains": 245,
     "priors_lean_modules": 308,
@@ -144,15 +144,41 @@
       "python_decimal",
       "rocq_coq",
       "coqchk",
-      "isabelle"
+      "isabelle",
+      "rust_f64_replay",
+      "rust_lean_bridge_runtime_parity",
+      "fstar_scalar_spec",
+      "qemu_serial_harness",
+      "esp32_hardware_harness"
     ],
     "artifacts_ready": [
-      "isabelle_full_formal_spine"
+      "isabelle_full_formal_spine",
+      "rust_obligation_replay",
+      "fsot_scalar_kernel",
+      "fstar_scalar_boot",
+      "fsot_observer_serial",
+      "fsot_esp32_observer"
     ],
-    "planned_tier_83": [
-      "transcendental_bounds_coq_isabelle",
-      "agda",
-      "metamath"
+    "tier_87_achieved": [
+      "qemu_disk_boot_image",
+      "bootloader_bootimage"
+    ],
+    "tier_88_achieved": [
+      "esp32_uart_boot",
+      "shared_no_std_scalar_kernel"
+    ],
+    "tier_89_achieved": [
+      "wifi_rf_sonar_scalar"
+    ],
+    "tier_90_achieved": [
+      "ble_stack_trinary_led"
+    ],
+    "tier_91_achieved": [
+      "esp_now_scalar_gossip"
+    ],
+    "deferred": [
+      "metamath",
+      "agda"
     ],
     "all_free_no_account": true
   }

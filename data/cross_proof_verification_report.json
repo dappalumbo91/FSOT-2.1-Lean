@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T22:57:35.440099+00:00",
-  "tier": "83",
+  "generated_at": "2026-07-11T14:51:48.018582+00:00",
+  "tier": "91_seven_way_bare_metal",
   "connective_spine": {
     "obligation_count": 24,
     "python_decimal": {
@@ -627,11 +627,108 @@
       "excluded_pi_e_interval_count": 2,
       "transcendental_lemma_count": 68,
       "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\transcendental_bounds_gap_report.json"
+    },
+    "rust_replay": {
+      "status": "passed",
+      "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
+      "crate": "fsot_obligation_replay",
+      "obligation_count": 1309,
+      "formal_count": 1241,
+      "transcendental_count": 68,
+      "test_file": "replay_all_obligations.rs",
+      "returncode": 0,
+      "stderr_tail": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+    },
+    "rust_refinement": {
+      "status": "passed",
+      "total_exported_to_rust": 1309,
+      "formal_python_f64_ok": 1241,
+      "transcendental_python_f64_ok": 68
+    },
+    "rust_lean_bridge_parity": {
+      "status": "passed",
+      "crate": "fsot_scalar_kernel",
+      "python_boot_scalar": 0.09928895626861721,
+      "benchmark_median_error_pct": 0.0,
+      "returncode": 0,
+      "stderr_tail": "Wrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_benchmark.json\n  records: 9  median_err: 0.0\nRUST_LEAN_BRIDGE RUNTIME PARITY (Tier 85)\n  python boot_scalar: 0.09928895626861721 (ok=True)\n  cargo: passed\n  benchmark median_err: 0.0%\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_runtime_parity_report.json\n"
+    },
+    "rust_lean_bridge_refinement": {
+      "status": "passed",
+      "checks": {
+        "python_boot_matches_canonical": true,
+        "summary_boot_matches_canonical": true,
+        "python_summary_agree": true,
+        "k_matches_atlas": true,
+        "boot_scalar_positive": true,
+        "cargo_runtime_passed": true
+      }
+    },
+    "fstar": {
+      "status": "passed",
+      "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
+      "entry": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarBoot.fst",
+      "modules": [
+        "FSOTScalarKernel",
+        "FSOTScalarBoot"
+      ],
+      "returncode": 0,
+      "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+    },
+    "fstar_refinement": {
+      "status": "passed",
+      "checks": {
+        "fstar_verify_passed": true,
+        "fstar_k_matches_rust": true,
+        "fstar_boot_scalar_canonical_matches": true,
+        "python_boot_matches_fstar_canonical": true,
+        "python_boot_matches_rust_oracle": true,
+        "fstar_boot_params_match": true
+      }
+    },
+    "qemu_harness": {
+      "status": "passed",
+      "serial_status": "passed",
+      "disk_status": "passed",
+      "qemu_status": "passed",
+      "returncode": 0,
+      "stderr_tail": "RUST_LEAN_BRIDGE QEMU HARNESS (Tier 87)\n  serial: passed boot=0.09928895626861721\n  disk: passed boot=0.0992889562686172 disk_boot=ok\n  qemu: passed (QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a))\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\rust_lean_bridge_qemu_harness_report.json\n"
+    },
+    "esp32_harness": {
+      "status": "passed",
+      "build_status": "passed",
+      "flash_status": "skipped",
+      "serial_status": "passed",
+      "port": "COM3",
+      "returncode": 0,
+      "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\esp32_fsot_serial_harness_report.json\n"
     }
+  },
+  "proof_debt": {
+    "fstar_transcendental_assumes": [
+      "boot_scalar_positive",
+      "boot_scalar_matches_canonical"
+    ],
+    "fstar_primitives_assumed": [
+      "cos",
+      "sin",
+      "sqrt"
+    ],
+    "transcendental_coq_isabelle": "certified_axioms_for_pi_e_intervals",
+    "coq_connective_coverage_pct_of_lean_theorems": 1.43,
+    "note": "Cross-proof triangulates exported numeric obligations; F* boot scalar and pi/e intervals rely on documented assumes/axioms."
   },
   "overall_ok": true,
   "github_ready": true,
-  "github_ready_note": "All provable obligations triangulated; margin violations cleared.",
+  "github_ready_note": "Formal numeric spine + QEMU bare-metal verified; ESP32 hardware is optional unless --require-esp32.",
   "full_triangulation": true,
-  "note": "Tier 83: Lean+Coq+Isabelle full-scope cross-proof plus transcendental Bounds.lean certificates (68 lemmas) with Python decimal triangulation."
+  "four_way_verification": true,
+  "five_way_runtime": true,
+  "six_way_formal_executable": true,
+  "seven_way_bare_metal": true,
+  "eight_way_hardware": true,
+  "esp32_skipped": false,
+  "esp32_serial_ok": true,
+  "esp32_build_ok": true,
+  "note": "Tier 91: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec + QEMU serial/disk boot + ESP32 RF observer (WiFi/BLE/ESP-NOW) harness."
 }

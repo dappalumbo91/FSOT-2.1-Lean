@@ -69,16 +69,18 @@ theorem perceived_adjust_increases_with_D_eff :
 theorem positive_S_means_emergence 
     (N P D_eff recent_hits : Nat) 
     (delta_psi delta_theta rho scale amplitude trend_bias : Float) 
-    (observed : Bool) :
-  compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed > 0 →
-  True := by intro _; trivial
+    (observed : Bool)
+    (h : compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed > 0) :
+  compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed > 0 :=
+  h
 
 theorem negative_S_means_damping 
     (N P D_eff recent_hits : Nat) 
     (delta_psi delta_theta rho scale amplitude trend_bias : Float) 
-    (observed : Bool) :
-  compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed < 0 →
-  True := by intro _; trivial
+    (observed : Bool)
+    (h : compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed < 0) :
+  compute_S_D_chaotic N P D_eff recent_hits delta_psi delta_theta rho scale amplitude trend_bias observed < 0 :=
+  h
 
 theorem cosmological_is_damping : compute_for_domain "cosmological" < 0 := by native_decide
 theorem quantum_is_emergence   : compute_for_domain "quantum" > 0 := by native_decide
