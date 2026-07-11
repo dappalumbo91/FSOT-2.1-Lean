@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-11T23:13:18.267526+00:00",
+  "scripts_scanned": 602,
+  "scripts_with_hardcoded_paths": 9,
+  "findings": [
+    {
+      "script": "backfill_numeric_from_outcomes.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": true,
+      "samples": [
+        {
+          "line": 23,
+          "text": "Path.home() / \"Desktop\" / \"fsot code language\" / \"audits\" / \"reports\" / \"FSOT_UNIFIED_DATABASE\" / \"FSOT_UNIFIED.db\""
+        }
+      ]
+    },
+    {
+      "script": "fstar_verification_lib.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": false,
+      "samples": [
+        {
+          "line": 15,
+          "text": "DEFAULT_FSTAR_ROOT = Path(os.environ.get(\"FSTAR_HOME\", r\"C:\\Users\\damia\\tools\\fstar-v2026.07.05\"))"
+        }
+      ]
+    },
+    {
+      "script": "resolve_strict_empirical_gap.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": true,
+      "samples": [
+        {
+          "line": 24,
+          "text": "Path.home() / \"Desktop\" / \"fsot code language\" / \"audits\" / \"reports\" / \"FSOT_UNIFIED_DATABASE\" / \"FSOT_UNIFIED.db\""
+        }
+      ]
+    },
+    {
+      "script": "run_biology_numeric_eval.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": true,
+      "samples": [
+        {
+          "line": 29,
+          "text": "Path.home() / \"Desktop\" / \"fsot code language\" / \"audits\" / \"reports\" / \"FSOT_UNIFIED_DATABASE\" / \"FSOT_UNIFIED.db\""
+        }
+      ]
+    },
+    {
+      "script": "run_knowledge_base_formula_verify.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": true,
+      "samples": [
+        {
+          "line": 94,
+          "text": "r\"C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl\""
+        }
+      ]
+    },
+    {
+      "script": "run_numeric_eval_queue.py",
+      "hardcoded_hits": 2,
+      "uses_fsot_paths": false,
+      "samples": [
+        {
+          "line": 20,
+          "text": "PIPELINE = Path(r\"C:\\Users\\damia\\Desktop\\fsot code language\\audits\\fsot_observable_verification_pipeline.py\")"
+        },
+        {
+          "line": 23,
+          "text": "DEFAULT_DB = Path(r\"C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\FSOT_UNIFIED.db\")"
+        }
+      ]
+    },
+    {
+      "script": "sync_lab_compute_mirrors.py",
+      "hardcoded_hits": 3,
+      "uses_fsot_paths": false,
+      "samples": [
+        {
+          "line": 12,
+          "text": "AUTHORITY = Path(r\"C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py\")"
+        },
+        {
+          "line": 14,
+          "text": "Path(r\"C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\fsot_compute.py\"),"
+        },
+        {
+          "line": 15,
+          "text": "Path(r\"C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py\"),"
+        }
+      ]
+    },
+    {
+      "script": "sync_neurolab_compute.py",
+      "hardcoded_hits": 2,
+      "uses_fsot_paths": false,
+      "samples": [
+        {
+          "line": 12,
+          "text": "AUTHORITY = Path(r\"C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py\")"
+        },
+        {
+          "line": 13,
+          "text": "NEUROLAB_TARGET = Path(r\"C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py\")"
+        }
+      ]
+    },
+    {
+      "script": "test_isabelle_native.py",
+      "hardcoded_hits": 1,
+      "uses_fsot_paths": false,
+      "samples": [
+        {
+          "line": 12,
+          "text": "ISA_HOME = Path(r\"C:\\Users\\damia\\Desktop\\Isabelle2025-2\")"
+        }
+      ]
+    }
+  ]
+}

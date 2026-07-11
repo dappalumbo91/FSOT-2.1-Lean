@@ -17,8 +17,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DB = Path(
-    r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\FSOT_UNIFIED.db"
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import unified_db_path  # noqa: E402
+
+DEFAULT_DB = unified_db_path(require=False) or (
+    Path.home() / "Desktop" / "fsot code language" / "audits" / "reports" / "FSOT_UNIFIED_DATABASE" / "FSOT_UNIFIED.db"
 )
 DEFAULT_CSV = Path(r"D:\training data\cnc_data\Exp1.csv")
 EVALUATOR_VERSION = "fsot_numeric_eval_v4"

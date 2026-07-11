@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-07-11T23:13:17.241582+00:00",
+  "domain": "PDG_Particle_Properties",
+  "authority_path": "vendor/fsot_compute.py",
+  "source": "PDG 2024 Review of Particle Physics",
+  "maps_to_lean": [
+    "particle",
+    "atomic"
+  ],
+  "D_eff": 9,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.041994,
+  "pooled_median_error_pct": 0.041994,
+  "max_error_pct": 0.323111,
+  "records": [
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "electron",
+      "computed": 0.5126480529097499,
+      "measured": 0.511,
+      "error_pct": 0.322515,
+      "unit": "MeV",
+      "fsot_formula": "P_BASE+P_NEW",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "muon",
+      "computed": 105.67991447405322,
+      "measured": 105.658,
+      "error_pct": 0.020741,
+      "unit": "MeV",
+      "fsot_formula": "P_BASE\u207b\u00b3+P_VAR\u207b\u2075",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "tau",
+      "computed": 1774.3897235273942,
+      "measured": 1776.86,
+      "error_pct": 0.139025,
+      "unit": "MeV",
+      "fsot_formula": "E\u2077\u00b7PHI",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111,
+      "unit": "MeV",
+      "fsot_formula": "PI\u2076-E\u00b3",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049,
+      "unit": "MeV",
+      "fsot_formula": "PI\u2076-E\u00b3",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "pion_pm",
+      "computed": 139.56693362840684,
+      "measured": 139.57,
+      "error_pct": 0.002197,
+      "unit": "MeV",
+      "fsot_formula": "THETA\u207b\u2074-THETA\u00b2",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "pion_0",
+      "computed": 134.97696759145,
+      "measured": 134.977,
+      "error_pct": 2.4e-05,
+      "unit": "MeV",
+      "fsot_formula": "(B_IN\u207b\u00b2+THETA\u207b\u2074)/S_quant\u207b\u00b9",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "kaon_pm",
+      "computed": 493.6904773043601,
+      "measured": 493.677,
+      "error_pct": 0.00273,
+      "unit": "MeV",
+      "fsot_formula": "G\u207b\u2077+P_BASE\u207b\u2074",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "W_boson",
+      "computed": 80368.975983002,
+      "measured": 80369.0,
+      "error_pct": 3e-05,
+      "unit": "MeV",
+      "fsot_formula": "(THETA\u207b\u2076*C_FAC\u207b\u2074)/GAMMA\u207b\u00b2",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "Z_boson",
+      "computed": 91422.48586497341,
+      "measured": 91188.0,
+      "error_pct": 0.257146,
+      "unit": "MeV",
+      "fsot_formula": "ETA\u207b\u2078/ETA\u2077",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "Higgs",
+      "computed": 125200.01875723811,
+      "measured": 125200.0,
+      "error_pct": 1.5e-05,
+      "unit": "MeV",
+      "fsot_formula": "(THETA+E\u00b3)*C_FAC\u207b\u2077",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    },
+    {
+      "lab": "pdg_particle",
+      "property": "\u00a766 Particle Masses",
+      "name": "D_meson",
+      "computed": 1868.874860640142,
+      "measured": 1869.66,
+      "error_pct": 0.041994,
+      "unit": "MeV",
+      "fsot_formula": "P_BASE\u207b\u2075/P_VAR\u207b\u2075",
+      "reference": "PDG 2024 / Zyla et al.",
+      "source_corpus": "FSOT_SMILES_Lab_Dataset"
+    }
+  ]
+}

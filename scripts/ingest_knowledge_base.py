@@ -18,6 +18,11 @@ MANIFEST_PATH = ROOT / "data" / "knowledge_base_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import (  # noqa: E402
+    knowledge_base_transfer_path,
+    rel_repo_path,
+    strict_empirical_jsonl_path,
+)
 from knowledge_base_corpus import load_unified_transfer, summarize_knowledge_base  # noqa: E402
 from knowledge_base_formula_verify import summarize_knowledge_base_formulas  # noqa: E402
 
@@ -26,21 +31,21 @@ def ingest_knowledge_base(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    knowledge_root = Path(manifest["knowledge_root"])
-    transfer_path = knowledge_root / manifest["artifacts"]["unified_transfer"]["path"]
+    transfer_path = knowledge_base_transfer_path(require=False)
+    if transfer_path is None:
+        rel = manifest["artifacts"]["unified_transfer"]["path"]
+        transfer_path = ROOT / manifest["knowledge_root"] / rel
     data = load_unified_transfer(transfer_path) if transfer_path.exists() else {}
-    strict_path = Path(
-        r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\by_domain\strict_empirical.jsonl"
-    )
+    strict_path = strict_empirical_jsonl_path(require=False)
     formula_stats = (
         summarize_knowledge_base_formulas(data, strict_path)
-        if transfer_path.exists() and strict_path.exists()
+        if transfer_path.exists() and strict_path is not None and strict_path.exists()
         else {}
     )
     return {
         "present": transfer_path.exists(),
-        "knowledge_root": str(knowledge_root),
-        "transfer_path": str(transfer_path),
+        "knowledge_root": rel_repo_path(transfer_path.parent.parent) if transfer_path.exists() else manifest["knowledge_root"],
+        "transfer_path": rel_repo_path(transfer_path) if transfer_path.exists() else str(transfer_path),
         **summarize_knowledge_base(data),
         **formula_stats,
     }

@@ -1,0 +1,19 @@
+# Reference anchor expansion — PDG, CRC, NIST DLMF first-class domains.
+version: "1.0"
+updated: "2026-07-11"
+
+domains:
+  - PDG_Particle_Properties
+  - CRC_Handbook_Properties
+  - NIST_DLMF_Special_Functions
+
+build:
+  script: scripts/build_reference_anchors_benchmarks.py
+  lean_script: scripts/gen_reference_anchors_lean.py
+
+verification:
+  min_records:
+    PDG_Particle_Properties: 10
+    CRC_Handbook_Properties: 50
+    NIST_DLMF_Special_Functions: 5
+  max_median_error_pct: 0.5

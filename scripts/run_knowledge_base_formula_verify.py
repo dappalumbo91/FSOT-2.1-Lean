@@ -11,9 +11,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-KB_WORKSPACE = Path(r"C:\Users\damia\Desktop\Knowledge base")
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import knowledge_base_root, knowledge_base_validation_path  # noqa: E402
+
+KB_WORKSPACE = knowledge_base_root(require=False) or (Path.home() / "Desktop" / "Knowledge base")
 KB_VALIDATOR = KB_WORKSPACE / "scripts" / "run_fsot_full_corpus_validation.py"
-KB_VALIDATION_JSON = KB_WORKSPACE / "export" / "full_corpus_math_validation.json"
+KB_VALIDATION_JSON = knowledge_base_validation_path(require=False) or (
+    KB_WORKSPACE / "export" / "full_corpus_math_validation.json"
+)
 OUT_JSONL = ROOT / "data" / "knowledge_base_formula_verification.jsonl"
 OUT_SUMMARY = ROOT / "data" / "knowledge_base_formula_verification_summary.json"
 

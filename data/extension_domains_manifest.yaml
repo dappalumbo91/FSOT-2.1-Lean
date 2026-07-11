@@ -3192,6 +3192,45 @@ extension_domains:
     lean_module: FSOT.Formal.WarpBhWhPortalPriors
     note: "BH/WH micro-portal + quantum entanglement gate — crosswalk to BlackHoleThesisPriors + warp stabilization"
 
+  PDG_Particle_Properties:
+    tier: 78
+    D_eff: 9
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, atomic]
+    build_script: scripts/build_reference_anchors_benchmarks.py
+    manifest: data/reference_anchors_manifest.yaml
+    benchmark_data: data/pdg_particle_properties_benchmark.json
+    lean_module: FSOT.Formal.PdgParticlePropertiesPriors
+    note: "PDG 2024 particle masses — SMILES lab cross-verified readouts"
+
+  CRC_Handbook_Properties:
+    tier: 78
+    D_eff: 11
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [chemical, material]
+    build_script: scripts/build_reference_anchors_benchmarks.py
+    manifest: data/reference_anchors_manifest.yaml
+    benchmark_data: data/crc_handbook_properties_benchmark.json
+    lean_module: FSOT.Formal.CrcHandbookPropertiesPriors
+    note: "CRC Handbook / NIST chemistry anchors — SMILES lab empirical panel"
+
+  NIST_DLMF_Special_Functions:
+    tier: 78
+    D_eff: 14
+    delta_psi: 0.5
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [mathematical, particle]
+    build_script: scripts/build_reference_anchors_benchmarks.py
+    manifest: data/reference_anchors_manifest.yaml
+    benchmark_data: data/nist_dlmf_special_functions_benchmark.json
+    lean_module: FSOT.Formal.NistDlmfSpecialFunctionsPriors
+    note: "NIST DLMF special-function zeros — fsot_compute waves 8–10"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

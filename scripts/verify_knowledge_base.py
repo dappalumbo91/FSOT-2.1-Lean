@@ -17,6 +17,7 @@ MANIFEST_PATH = ROOT / "data" / "knowledge_base_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import knowledge_base_transfer_path  # noqa: E402
 from knowledge_base_corpus import load_unified_transfer, summarize_knowledge_base  # noqa: E402
 
 
@@ -28,15 +29,20 @@ def verify_knowledge_base(
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     ver = manifest.get("verification", {})
-    knowledge_root = Path(manifest["knowledge_root"])
-    transfer_path = knowledge_root / manifest["artifacts"]["unified_transfer"]["path"]
+    transfer_path = knowledge_base_transfer_path(require=False)
+    if transfer_path is None:
+        transfer_path = ROOT / manifest["knowledge_root"] / manifest["artifacts"]["unified_transfer"]["path"]
+    portable_summary = ROOT / manifest["knowledge_root"] / manifest["artifacts"]["portable_summary"]["path"]
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
 
-    if not transfer_path.exists():
+    if not transfer_path.exists() and not portable_summary.exists():
         return [f"missing knowledge transfer: {transfer_path}"], {}
 
-    live = summarize_knowledge_base(load_unified_transfer(transfer_path))
+    if transfer_path.exists():
+        live = summarize_knowledge_base(load_unified_transfer(transfer_path))
+    else:
+        live = json.loads(portable_summary.read_text(encoding="utf-8"))
     stored = registry.get("knowledge_base", {})
 
     if not stored:

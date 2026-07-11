@@ -12,15 +12,17 @@ ROOT = Path(__file__).resolve().parents[1]
 import sys
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from fsot_paths import rel_repo_path, strict_empirical_jsonl_path  # noqa: E402
-KB_SUMMARY_PATH = ROOT / "data" / "knowledge_base_formula_verification_summary.json"
-KB_VALIDATION_PATH = Path(
-    r"C:\Users\damia\Desktop\Knowledge base\export\full_corpus_math_validation.json"
+from fsot_paths import (  # noqa: E402
+    knowledge_base_validation_path,
+    rel_repo_path,
+    strict_empirical_jsonl_path,
 )
+KB_SUMMARY_PATH = ROOT / "data" / "knowledge_base_formula_verification_summary.json"
 
 
-def summarize_kb_per_formula(validation_path: Path = KB_VALIDATION_PATH) -> dict[str, Any]:
-    if not validation_path.exists():
+def summarize_kb_per_formula(validation_path: Path | None = None) -> dict[str, Any]:
+    validation_path = validation_path or knowledge_base_validation_path(require=False)
+    if validation_path is None or not validation_path.exists():
         return {}
     data = json.loads(validation_path.read_text(encoding="utf-8"))
     summary = data.get("summary") or {}

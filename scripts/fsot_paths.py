@@ -509,6 +509,62 @@ def omni_theory_root(*, require: bool = True) -> Path:
     return path
 
 
+def knowledge_base_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_KNOWLEDGE_BASE_ROOT",
+        VENDOR_ROOT / "knowledge_base",
+        _DESKTOP / "Knowledge base",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Knowledge base root not found. Set FSOT_KNOWLEDGE_BASE_ROOT.")
+    return path
+
+
+def knowledge_base_transfer_path(*, require: bool = False) -> Path | None:
+    candidates: list[Path] = [
+        _DESKTOP / "Knowledge base" / "transfer" / "FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json",
+        VENDOR_ROOT / "knowledge_base" / "transfer" / "FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json",
+    ]
+    root = knowledge_base_root(require=False)
+    if root is not None:
+        candidates.insert(0, root / "transfer" / "FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json")
+    path = _resolve("FSOT_KNOWLEDGE_BASE_TRANSFER", *candidates)
+    if path is None and require:
+        raise FileNotFoundError("Knowledge base transfer JSON not found.")
+    return path
+
+
+def knowledge_base_validation_path(*, require: bool = False) -> Path | None:
+    candidates: list[Path] = [
+        _DESKTOP / "Knowledge base" / "export" / "full_corpus_math_validation.json",
+        VENDOR_ROOT / "knowledge_base" / "export" / "full_corpus_math_validation.json",
+    ]
+    root = knowledge_base_root(require=False)
+    if root is not None:
+        candidates.insert(0, root / "export" / "full_corpus_math_validation.json")
+        candidates.insert(1, root / "full_corpus_math_validation.json")
+    path = _resolve("FSOT_KNOWLEDGE_BASE_VALIDATION", *candidates)
+    if path is None and require:
+        raise FileNotFoundError("Knowledge base validation JSON not found.")
+    return path
+
+
+def unified_db_path(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_UNIFIED_DB",
+        VENDOR_ROOT / "fsot_aggregate" / "FSOT_UNIFIED.db",
+        _DESKTOP
+        / "fsot code language"
+        / "audits"
+        / "reports"
+        / "FSOT_UNIFIED_DATABASE"
+        / "FSOT_UNIFIED.db",
+    )
+    if path is None and require:
+        raise FileNotFoundError("FSOT_UNIFIED.db not found. Set FSOT_UNIFIED_DB.")
+    return path
+
+
 def formula_corpus_root(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_FORMULA_CORPUS_ROOT",

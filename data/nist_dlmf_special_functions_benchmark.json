@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-07-11T23:13:39.858488+00:00",
+  "domain": "NIST_DLMF_Special_Functions",
+  "authority_path": "vendor/fsot_compute.py",
+  "source": "NIST Digital Library of Mathematical Functions",
+  "maps_to_lean": [
+    "mathematical",
+    "particle"
+  ],
+  "D_eff": 14,
+  "record_count": 5,
+  "observable_count": 5,
+  "median_error_pct": 0.001661,
+  "pooled_median_error_pct": 0.001661,
+  "max_error_pct": 0.102863,
+  "records": [
+    {
+      "lab": "nist_dlmf",
+      "property": "special_function_zero",
+      "name": "Bessel_J0_first_zero",
+      "computed": 2.4047617760747984,
+      "measured": 2.4048255577,
+      "error_pct": 0.002652,
+      "unit": "dimensionless",
+      "fsot_formula": "A_in/ln(2)",
+      "reference": "NIST DLMF \u00a710.21",
+      "dlmf_section": "10.21",
+      "source_corpus": "fsot_compute waves 8\u201310"
+    },
+    {
+      "lab": "nist_dlmf",
+      "property": "special_function_zero",
+      "name": "Bessel_J1_first_zero",
+      "computed": 3.831706521236067,
+      "measured": 3.8317059702075125,
+      "error_pct": 1.4e-05,
+      "unit": "dimensionless",
+      "fsot_formula": "\u03c8_con/G + \u03c0",
+      "reference": "NIST DLMF \u00a710.21",
+      "dlmf_section": "10.21",
+      "source_corpus": "fsot_compute waves 8\u201310"
+    },
+    {
+      "lab": "nist_dlmf",
+      "property": "special_function_zero",
+      "name": "Airy_Ai_first_zero",
+      "computed": 2.3380710664285527,
+      "measured": 2.338107410459767,
+      "error_pct": 0.001554,
+      "unit": "dimensionless",
+      "fsot_formula": "(1/G)/\u03b7_eff",
+      "reference": "NIST DLMF \u00a79.9 (|Ai'(x)| first zero magnitude)",
+      "dlmf_section": "9.9",
+      "source_corpus": "fsot_compute waves 8\u201310"
+    },
+    {
+      "lab": "nist_dlmf",
+      "property": "special_function_zero",
+      "name": "gamma_1_Stieltjes",
+      "computed": -0.07274094507053921,
+      "measured": -0.0728158454838,
+      "error_pct": 0.102863,
+      "unit": "dimensionless",
+      "fsot_formula": "G\u00b2 + cos(e)",
+      "reference": "NIST DLMF \u00a75.17",
+      "dlmf_section": "5.17",
+      "source_corpus": "fsot_compute waves 8\u201310"
+    },
+    {
+      "lab": "nist_dlmf",
+      "property": "special_function_zero",
+      "name": "First_Riemann_zero",
+      "computed": 14.1344904113302,
+      "measured": 14.134725141734693,
+      "error_pct": 0.001661,
+      "unit": "dimensionless",
+      "fsot_formula": "e/\u03b3\u00b3",
+      "reference": "Odlyzko / LMFDB zeta zeros",
+      "dlmf_section": "25.10",
+      "source_corpus": "fsot_compute waves 8\u201310"
+    }
+  ]
+}

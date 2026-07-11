@@ -55,6 +55,16 @@ bundled:
     role: iGEM Registry standard parts for synthetic biology strict-empirical bridge
     env_override: FSOT_IGEM_PARTS_REGISTRY
 
+  reference_anchors:
+    path: vendor/reference_anchors
+    role: PDG / CRC / NIST DLMF first-class benchmark source manifests
+    build_script: scripts/build_reference_anchors_benchmarks.py
+
+  knowledge_base_portable:
+    path: vendor/knowledge_base/kb_portable_summary.json
+    role: Portable KB counts + strict-empirical bridge (full transfer on Desktop)
+    bundle_script: scripts/bundle_knowledge_base_portable.py
+
   math_generator_benchmark_reports:
     path: vendor/math_generator/benchmark_reports
     role: FSOT overlay benchmark reports (H0, airfoil, chemistry) for live formula eval
