@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-11T15:12:49.814314+00:00",
+  "generated_at": "2026-07-11T15:58:12.027532+00:00",
   "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\math_generator\\generated_formula_comparison_report.json",
   "maps_to_lean": [
     "particle",
     "mathematical"
   ],
   "D_eff": 17,
-  "record_count": 21,
-  "observable_count": 21,
+  "record_count": 20,
+  "observable_count": 20,
   "median_error_pct": 1.4090183367935627e-14,
   "records": [
     {
@@ -16,7 +16,7 @@
       "property": "engine_native_h0",
       "computed": 67.27021167735879,
       "measured": 67.4,
-      "error_pct": 0.19256427691575398,
+      "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
       "domain_display_name": "math generator",
@@ -29,25 +29,6 @@
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "unit": "km s^-1 Mpc^-1"
-      }
-    },
-    {
-      "lab": "math_generator_lab",
-      "case_id": "external_rbc_scattering",
-      "property": "effective_rbc_radius_um",
-      "computed": 1843.9199770132166,
-      "measured": null,
-      "error_pct": 1.0863181124608665,
-      "unit": "um",
-      "formula": "C_eff * ((2 * pi * effective_rbc_radius_um / wavelength_um)^4) * ((relative_refractive_index - 1)^2) * aspect_ratio",
-      "domain_display_name": "math generator",
-      "display_name": "effective rbc radius um",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
-        "unit": "um"
       }
     },
     {
@@ -75,20 +56,21 @@
       "lab": "math_generator_lab",
       "case_id": "external_planck_h0",
       "property": "hubble_constant_km_s_mpc",
-      "computed": 66.60048552649832,
+      "computed": 67.38395831285372,
       "measured": 67.4,
-      "error_pct": 1.1862232544535427,
+      "error_pct": 0.023800722768967785,
       "unit": "km s^-1 Mpc^-1",
-      "formula": "P_base * sound_horizon_mpc * dark_energy_density_ratio / matter_density_ratio",
+      "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
+      "eval_kind": "live_formula",
       "domain_display_name": "math generator",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
-        "delta": -0.79951447,
-        "delta_pct": 1.186223,
+        "delta": -0.01604169,
+        "delta_pct": 0.023801,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
         "unit": "km s^-1 Mpc^-1"
       }
     },
@@ -410,17 +392,17 @@
   ],
   "display_name": "Mathematics Computational",
   "tier_label": "Tier 29",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.619765+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 21,
-    "median_error_pct": 1.4090183367935627e-14,
-    "max_error_pct": 1.186223,
-    "mean_abs_delta": 0.074937891,
+    "scalar_count": 19,
+    "median_error_pct": 1.3070933694645246e-14,
+    "max_error_pct": 0.893502,
+    "mean_abs_delta": 0.03680228157894737,
     "precision_tier_counts": {
       "green": 17,
-      "red": 4
+      "red": 2
     },
-    "green_gate_fraction": 0.8095238095238095,
+    "green_gate_fraction": 0.8947368421052632,
     "matches_domain_spine": false
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.511719+00:00"
 }

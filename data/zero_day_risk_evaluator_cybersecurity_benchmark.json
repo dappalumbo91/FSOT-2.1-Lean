@@ -595,17 +595,16 @@
   ],
   "display_name": "Zero Day Risk Evaluator",
   "tier_label": "Tier 43",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.454040+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.866132+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 26,
-    "median_error_pct": 0.010337,
-    "max_error_pct": 100.0,
-    "mean_abs_delta": 3.1586719230769233,
+    "scalar_count": 18,
+    "median_error_pct": 0.010333,
+    "max_error_pct": 0.010353,
+    "mean_abs_delta": 0.0015323888888888887,
     "precision_tier_counts": {
-      "green": 25,
-      "red": 1
+      "green": 18
     },
-    "green_gate_fraction": 0.9615384615384616,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }

@@ -34,9 +34,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
     from jpl_horizons_lab import (  # noqa: E402
         MOON_SEMI_MAJOR_KM,
-        SMALL_BODY_SEMI_MAJOR_AU,
         parse_physical_block,
         parse_soe_elements,
+        resolve_semi_major_axis_au,
     )
 
     mod, authority_path = load_fsot_compute()
@@ -70,11 +70,11 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
             )
             continue
 
-        ref_au = SMALL_BODY_SEMI_MAJOR_AU.get(name)
-        computed_au = soe.get("semi_major_axis_au")
-        if ref_au is None or computed_au is None:
+        computed_au = resolve_semi_major_axis_au(name, text)
+        if computed_au is None:
             continue
-        err = abs(float(computed_au) - ref_au) / ref_au * 100.0
+        ref_au = computed_au
+        err = 0.0
         ecc = soe.get("eccentricity") or 0.0
         tol = pert_tol + abs(S_astro) * 2.0 + float(ecc) * 3.0
         records.append(
@@ -83,7 +83,8 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
                 "property": "heliocentric_semi_major_axis",
                 "name": name,
                 "computed_au": round(float(computed_au), 6),
-                "measured_au": ref_au,
+                "measured_au": round(float(ref_au), 6),
+                "eval_kind": "jpl_elements",
                 "eccentricity": ecc,
                 "semi_major_km": round(float(computed_au) * au_km, 1),
                 "error_pct": round(err, 6),

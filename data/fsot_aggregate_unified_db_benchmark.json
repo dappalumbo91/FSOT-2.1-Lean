@@ -153,17 +153,16 @@
   ],
   "display_name": "FSOT Aggregate Unified DB",
   "tier_label": "Tier 36",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.795304+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.812524+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 8,
+    "scalar_count": 5,
     "median_error_pct": 0.0,
-    "max_error_pct": 0.934579,
-    "mean_abs_delta": 0.125,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
     "precision_tier_counts": {
-      "green": 7,
-      "red": 1
+      "green": 5
     },
-    "green_gate_fraction": 0.875,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }

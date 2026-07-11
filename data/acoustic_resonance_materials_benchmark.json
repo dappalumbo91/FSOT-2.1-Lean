@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:14:38.843248+00:00",
+  "generated_at": "2026-07-11T15:59:22.528398+00:00",
   "domain": "Acoustic_Resonance_Materials",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -61,14 +61,14 @@
       "lab": "tier_gap_fill_lab",
       "property": "acoustic_impedance",
       "name": "species_acoustic_panel",
-      "computed": 0.0835,
+      "computed": 0.077329,
       "measured": 0.0,
-      "error_pct": 0.0835,
+      "error_pct": 0.077329,
       "observable_count": 9,
       "domain_display_name": "tier gap fill",
       "display_name": "species acoustic panel",
       "scientific_measurement": {
-        "delta": 0.0835,
+        "delta": 0.077329,
         "delta_pct": 100.0,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -211,22 +211,22 @@
       "lab": "acoustic_resonance_materials_lab",
       "property": "acoustic_impedance_MRayl",
       "name": "Titanium",
-      "computed": 27.474593022118317,
+      "computed": 27.321110807223864,
       "measured": 27.3,
-      "error_pct": 0.6395,
+      "error_pct": 0.077329,
       "source": "fsot_species_catalog.json",
       "section": "molecules",
-      "formula": "E\u00b3+E\u00b2",
+      "formula": "E\u00b3+E\u00b2\u2212Poof",
       "formula_branch": "term3.acoustic_bleed",
       "domain_display_name": "acoustic resonance materials",
       "display_name": "Titanium",
       "scientific_measurement": {
-        "delta": 0.17459302,
-        "delta_pct": 0.639535,
+        "delta": 0.02111081,
+        "delta_pct": 0.077329,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -698,14 +698,14 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.008381497018412922,
-    "max_scalar_error_pct": 0.6395,
+    "max_scalar_error_pct": 0.3555,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
   "acoustic_species_count": 9,
@@ -717,17 +717,16 @@
   ],
   "display_name": "Acoustic Resonance Materials",
   "tier_label": "Tier 47",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.519468+00:00",
   "scientific_precision_summary": {
     "scalar_count": 29,
     "median_error_pct": 0.008382,
-    "max_error_pct": 0.639535,
-    "mean_abs_delta": 0.020477583103448275,
+    "max_error_pct": 0.355486,
+    "mean_abs_delta": 0.015185093103448281,
     "precision_tier_counts": {
-      "green": 28,
-      "red": 1
+      "green": 29
     },
-    "green_gate_fraction": 0.9655172413793104,
-    "matches_domain_spine": false
-  }
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.923237+00:00"
 }

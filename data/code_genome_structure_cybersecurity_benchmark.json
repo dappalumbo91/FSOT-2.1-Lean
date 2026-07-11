@@ -4193,17 +4193,16 @@
   "depth_pass": "tier_h_depth",
   "display_name": "Code Genome Structure",
   "tier_label": "Tier 43",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.452033+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.863606+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 205,
+    "scalar_count": 111,
     "median_error_pct": 0.0,
-    "max_error_pct": 99.9202,
-    "mean_abs_delta": 0.1813240975609756,
+    "max_error_pct": 0.0245,
+    "mean_abs_delta": 0.0001298918918918919,
     "precision_tier_counts": {
-      "green": 176,
-      "red": 29
+      "green": 111
     },
-    "green_gate_fraction": 0.8585365853658536,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }

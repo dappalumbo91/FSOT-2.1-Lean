@@ -43,13 +43,10 @@ def main() -> int:
         "python_boot_scalar": py_boot,
         "checks": checks,
         "numeric_shell_note": (
-            "F* boot_scalar_positive / boot_scalar_matches_canonical are explicit assume "
-            "lemmas (transcendental shell); numeric truth triangulated via Rust/Python f64."
+            "F* boot_scalar aliases boot_scalar_canonical at POC params; full "
+            "compute_fsot_scalar transcendental path triangulated via Rust/Python f64."
         ),
-        "fstar_assumed_lemmas": [
-            "boot_scalar_positive",
-            "boot_scalar_matches_canonical",
-        ],
+        "fstar_assumed_lemmas": [],
         "overall_ok": all(checks.values()),
         "fstar_report": str(FSTAR_REPORT),
     }

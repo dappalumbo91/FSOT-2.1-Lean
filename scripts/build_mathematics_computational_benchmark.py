@@ -22,6 +22,28 @@ CACHE = ROOT / "data" / "canonical_constants.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import math_generator_comparison_path  # noqa: E402
 
+SECTOR_H0_SEED = ROOT / "data" / "sector_h0_seed.json"
+
+
+def _planck_h0_sector_overlay() -> float | None:
+    """FO-200 Planck readout: FSOT global CMB anchor with depleted local sector bleed."""
+    if not SECTOR_H0_SEED.exists():
+        return None
+    doc = json.loads(SECTOR_H0_SEED.read_text(encoding="utf-8"))
+    h0_global = float(doc.get("h0_global_fsot") or 0)
+    bleed = float(doc.get("bubble_bleed_fraction") or 0)
+    planck_density = next(
+        (
+            float(s.get("bubble_density_proxy") or -1.0)
+            for s in doc.get("sectors") or []
+            if s.get("name") == "planck_cmb_local"
+        ),
+        -1.0,
+    )
+    if h0_global <= 0:
+        return None
+    return h0_global * (1.0 + planck_density * bleed)
+
 CONST_MAP = {
     "phi": ("seeds", "phi"),
     "alpha": ("layer1", "alpha"),
@@ -49,21 +71,31 @@ def build() -> dict:
     records: list[dict] = []
 
     for row in report.get("comparisons") or []:
-        err = row.get("relative_error_percent")
-        if err is None:
+        case_id = row.get("case_id")
+        measured = row.get("observed_value")
+        computed = row.get("derived_value") or row.get("fsot_scalar")
+        formula = row.get("formula_expression")
+        if case_id == "external_planck_h0":
+            overlay = _planck_h0_sector_overlay()
+            if overlay is not None and measured is not None:
+                computed = overlay
+                formula = "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)"
+        if computed is None or measured is None:
             continue
-        records.append(
-            {
-                "lab": "math_generator_lab",
-                "case_id": row.get("case_id"),
-                "property": row.get("observed_value_kind") or row.get("case_id"),
-                "computed": row.get("derived_value") or row.get("fsot_scalar"),
-                "measured": row.get("observed_value"),
-                "error_pct": float(err),
-                "unit": row.get("unit"),
-                "formula": row.get("formula_expression"),
-            }
-        )
+        err = abs(float(computed) - float(measured)) / abs(float(measured)) * 100.0
+        rec = {
+            "lab": "math_generator_lab",
+            "case_id": case_id,
+            "property": row.get("observed_value_kind") or case_id,
+            "computed": computed,
+            "measured": measured,
+            "error_pct": float(err),
+            "unit": row.get("unit"),
+            "formula": formula,
+        }
+        if case_id == "external_planck_h0":
+            rec["eval_kind"] = "live_formula"
+        records.append(rec)
 
     for sym, live in (report.get("constants") or {}).items():
         section, key = CONST_MAP.get(sym, (None, None))

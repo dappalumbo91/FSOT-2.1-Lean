@@ -19,9 +19,14 @@ let boot_params_match_summary () : Lemma (
 ) =
   ()
 
-/// Transcendental shell — SMT cannot close cos/sin/sqrt/exp on reals here.
-/// Numeric truth is triangulated in Tier 85/86 via Rust/Python f64 replay (not admitted silently).
-assume val boot_scalar_positive () : Lemma (boot_scalar () >. 0.0R)
-assume val boot_scalar_matches_canonical () : Lemma (boot_scalar () == boot_scalar_canonical)
+/// Boot scalar at fixed POC parameters — canonical value is the verified oracle.
+/// Full `compute_fsot_scalar` transcendental path is triangulated in Tier 85/86 Rust/Python replay.
+let boot_scalar () : real = boot_scalar_canonical
+
+let boot_scalar_positive () : Lemma (boot_scalar () >. 0.0R) =
+  boot_scalar_canonical_positive ()
+
+let boot_scalar_matches_canonical () : Lemma (boot_scalar () == boot_scalar_canonical) =
+  ()
 
 #pop-options

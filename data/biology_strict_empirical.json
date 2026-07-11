@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T18:27:14.935673+00:00",
+  "generated_at": "2026-07-11T15:58:17.462703+00:00",
   "source_corpus": "C:\\Users\\damia\\Desktop\\Soul Simulator\\data\\processed_test\\training_corpus.jsonl",
   "ncbi_reference": "NC_012920.1",
   "soul_lines_scanned": 234447,
@@ -88,9 +88,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_operon_length",
       "name": "MT-ND3",
-      "computed": 346,
+      "computed": 349,
       "measured": 349,
-      "error_pct": 0.8595988538681949,
+      "error_pct": 0.0,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "strict": true
     },
@@ -158,9 +158,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_coding_bp_sum",
       "name": "human_mt_coding_bp",
-      "computed": 11395,
+      "computed": 11398,
       "measured": 11395,
-      "error_pct": 0.0,
+      "error_pct": 0.026327336551118914,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "strict": true
     },
@@ -168,9 +168,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_genome_bp",
       "name": "NC_012920.1",
-      "computed": 11395,
+      "computed": 11398,
       "measured": 16569,
-      "error_pct": 31.22699016235138,
+      "error_pct": 31.20888406059509,
       "source": "NCBI_NC_012920.1_reference",
       "strict": false,
       "note": "coding_bp vs full genome; diagnostic only"

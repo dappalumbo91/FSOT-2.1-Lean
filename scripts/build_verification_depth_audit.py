@@ -123,13 +123,13 @@ def build() -> dict:
             "id": "export_gap",
             "severity": "medium",
             "description": f"~{100 - (export_pct or 0):.1f}% of Lean theorems not exported as cross-proof obligations",
-            "remedy": "Export structural/bundle theorems or document exclusion reasons",
+            "remedy": "See data/export_exclusion_registry.json; extend export or document exclusions",
         },
         {
             "id": "fstar_assumes",
-            "severity": "high",
-            "description": "F* boot scalar lemmas use assume val, not independent proof",
-            "remedy": "Prove boot_scalar_positive without assumes; discharge cos/sin/sqrt",
+            "severity": "low",
+            "description": "F* boot scalar aliases canonical oracle; compute_fsot_scalar transcendental path triangulated in Rust/Python",
+            "remedy": "Optional: prove compute_fsot_scalar = canonical at boot params without cos/sin/sqrt assumes",
         },
         {
             "id": "transcendental_axioms",

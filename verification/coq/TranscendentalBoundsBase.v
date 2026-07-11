@@ -1,5 +1,5 @@
-(* FSOT Tier 83 — certified transcendental base intervals. *)
-(* Decimal-verified + Lean Mathlib; cross-refinement audited. *)
+(* FSOT Tier 83 — certificate-backed transcendental base intervals. *)
+(* Decimal-verified: scripts/verify_transcendental_certificates.py + data/transcendental_certificate_audit.json *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Rpower.
 From Stdlib Require Import Rtrigo1.

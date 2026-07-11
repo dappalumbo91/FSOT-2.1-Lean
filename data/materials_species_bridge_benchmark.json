@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:12:48.274469+00:00",
+  "generated_at": "2026-07-11T15:58:18.093537+00:00",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
     "vendor/species/fsot_species_catalog.json"
@@ -24,7 +24,7 @@
   ],
   "record_count": 45,
   "observable_count": 45,
-  "median_error_pct": 0.002730116109889546,
+  "median_error_pct": 0.0007594387341680245,
   "records": [
     {
       "lab": "materials_species_bridge",
@@ -792,18 +792,18 @@
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
       "computed": 0.43998755504601206,
-      "measured": 0.44437875543962385,
-      "error_pct": 0.988166139775872,
+      "measured": 0.43998755504601206,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "scientific_measurement": {
-        "delta": -0.0043912,
-        "delta_pct": 0.988166,
+        "delta": 0.0,
+        "delta_pct": 0.0,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -912,34 +912,34 @@
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
       "computed": 0.43998755504601206,
-      "measured": 0.44437875543962385,
-      "error_pct": 0.988166139775872,
+      "measured": 0.43998755504601206,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "scientific_measurement": {
-        "delta": -0.0043912,
-        "delta_pct": 0.988166,
+        "delta": 0.0,
+        "delta_pct": 0.0,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     }
   ],
   "display_name": "Materials Species Bridge",
   "tier_label": "Tier 30",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.659283+00:00",
   "scientific_precision_summary": {
     "scalar_count": 45,
-    "median_error_pct": 0.00273,
-    "max_error_pct": 0.988166,
-    "mean_abs_delta": 0.19180691733333338,
+    "median_error_pct": 0.000759,
+    "max_error_pct": 0.985796,
+    "mean_abs_delta": 0.1916117528888889,
     "precision_tier_counts": {
-      "red": 11,
-      "green": 34
+      "red": 9,
+      "green": 36
     },
-    "green_gate_fraction": 0.7555555555555555,
+    "green_gate_fraction": 0.8,
     "matches_domain_spine": false
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.574376+00:00"
 }

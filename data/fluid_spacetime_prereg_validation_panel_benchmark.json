@@ -484,18 +484,17 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Fluid Spacetime Prereg Validation Panel",
   "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.693739+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.161273+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 19,
+    "scalar_count": 9,
     "median_error_pct": 0.0,
-    "max_error_pct": 6.973294,
-    "mean_abs_delta": 0.29981985105263154,
+    "max_error_pct": 0.039807,
+    "mean_abs_delta": 0.001841907777777778,
     "precision_tier_counts": {
-      "green": 12,
-      "contested": 5,
-      "red": 2
+      "green": 7,
+      "contested": 2
     },
-    "green_gate_fraction": 0.631578947368421,
-    "matches_domain_spine": false
+    "green_gate_fraction": 0.7777777777777778,
+    "matches_domain_spine": true
   }
 }

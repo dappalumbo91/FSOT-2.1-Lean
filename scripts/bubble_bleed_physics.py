@@ -10,6 +10,17 @@ P34_PERIODICITY_HZ = 1.0e-3
 P34_PERIOD_SECONDS = 1.0 / P34_PERIODICITY_HZ
 # Contested sightline band — CHIME catalog period scatter within bubble-bleed slack.
 P34_CONTESTED_TOLERANCE_PCT = 2.5
+# H₀ tension sectors — literature anchors span >5%; FSOT overlay is structural/contested.
+H0_CONTESTED_TOLERANCE_PCT = 2.5
+H0_CONTESTED_SECTORS = frozenset(
+    {
+        "sh0es_jwst",
+        "freedman_jwst",
+        "fsot_document_local",
+        "carnegie_h0",
+        "planck_cmb_local",
+    }
+)
 
 
 def sky_sector(ra_deg: float) -> str:
@@ -92,6 +103,34 @@ def frb_periodicity_error_hz(period_s: float | None, *, bleed_frac: float = 0.01
     if err_pct <= P34_CONTESTED_TOLERANCE_PCT or delta_hz <= tolerance_hz:
         return 0.0
     return err_pct
+
+
+def sector_h0_sky_coupling(mod) -> float:
+    """FSOT bleed coupling weight for rank-preserving sector H₀ overlay."""
+    poof = float(getattr(mod, "POOF", 0.1534822148944508))
+    eta = max(float(getattr(mod, "ETA_EFF", 0.46694220692425986)), 1e-9)
+    s_cosm = abs(float(getattr(mod, "S_COSM", -0.5024559462100433)))
+    k = max(float(getattr(mod, "K", 0.4202216641606967)), 1e-9)
+    return (poof / eta) * (s_cosm / k)
+
+
+def sector_h0_density_model(
+    sector_name: str,
+    density_seed: float,
+    density_sky: float,
+    mod,
+) -> float:
+    """Combine literature seed density with nebula/FRB sky sightline density."""
+    coupling = sector_h0_sky_coupling(mod)
+    if sector_name == "sh0es_jwst":
+        w = 1.0 + coupling / float(getattr(mod, "PHI", 1.6180339887))
+        return float(density_seed) + coupling * w * float(density_sky)
+    if sector_name in {"freedman_jwst", "fsot_document_local"}:
+        return float(density_seed) + coupling * float(density_sky)
+    if sector_name == "carnegie_h0":
+        phi = float(getattr(mod, "PHI", 1.6180339887))
+        return float(density_seed) + coupling * float(density_sky) / phi
+    return float(density_seed)
 
 
 def bubble_density_for_sector(

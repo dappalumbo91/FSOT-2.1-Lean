@@ -32,7 +32,12 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
 
     sys.path.insert(0, str(ROOT / "scripts"))
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
-    from jpl_horizons_lab import NASA_SEMI_MAJOR_AU, parse_physical_block  # noqa: E402
+    from jpl_horizons_lab import (  # noqa: E402
+        NASA_SEMI_MAJOR_AU,
+        parse_physical_block,
+        parse_soe_elements,
+        resolve_semi_major_axis_au,
+    )
 
     mod, authority_path = load_fsot_compute()
     S_astro = float(mod.domain_scalar("Astronomy"))
@@ -43,7 +48,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         name = body.get("name") or ""
         phys = parse_physical_block(text)
         period_days = phys.get("period_days")
-        a_au = NASA_SEMI_MAJOR_AU.get(name)
+        soe = parse_soe_elements(text)
+        ecc = float(soe.get("eccentricity") or 0.0)
+        a_au = NASA_SEMI_MAJOR_AU.get(name) or resolve_semi_major_axis_au(name, text)
         if period_days is None or a_au is None:
             continue
         t_years = float(period_days) / year_days
@@ -51,19 +58,22 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         target = 1.0
         tol_pct = 1.0 + abs(S_astro) * 0.5
         err = abs(kepler_ratio - target) / target * 100.0
-        records.append(
-            {
-                "lab": "orbital_mechanics_lab",
-                "property": "kepler_third_law_ratio",
-                "name": body.get("name"),
-                "semi_major_au": round(a_au, 6),
-                "period_years": round(t_years, 6),
-                "computed": round(kepler_ratio, 6),
-                "measured": target,
-                "error_pct": round(err, 6),
-                "within_tol": err <= tol_pct,
-            }
-        )
+        rec = {
+            "lab": "orbital_mechanics_lab",
+            "property": "kepler_third_law_ratio",
+            "name": body.get("name"),
+            "semi_major_au": round(float(a_au), 6),
+            "period_years": round(t_years, 6),
+            "computed": round(kepler_ratio, 6),
+            "measured": target,
+            "error_pct": round(err, 6),
+            "within_tol": err <= tol_pct,
+            "eccentricity": ecc,
+        }
+        if name == "Pluto" or ecc > 0.2:
+            rec["eval_kind"] = "jpl_kepler"
+            rec["note"] = "high_eccentricity_dwarf_kepler_closure"
+        records.append(rec)
 
     errs = [r["error_pct"] for r in records]
     return {

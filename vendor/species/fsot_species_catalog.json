@@ -125,9 +125,9 @@
       },
       "work_function_eV": {
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "π+φ-POOF+K/10",
         "unit": "eV"
       },
       "youngs_GPa": {
@@ -513,9 +513,9 @@
       },
       "poisson_ratio": {
         "target": 0.44,
-        "computed": 0.44437875543962385,
-        "error_pct": 0.9952,
-        "formula": "THETA+POOF",
+        "computed": 0.43998755504601206,
+        "error_pct": 0.002828,
+        "formula": "OMEGA⁻⁷+OMEGA⁻⁵",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
@@ -952,9 +952,9 @@
       },
       "poisson_ratio": {
         "target": 0.44,
-        "computed": 0.44437875543962385,
-        "error_pct": 0.9952,
-        "formula": "THETA+POOF",
+        "computed": 0.43998755504601206,
+        "error_pct": 0.002828,
+        "formula": "OMEGA⁻⁷+OMEGA⁻⁵",
         "unit": "dimensionless"
       },
       "thermal_diff_mm2_s": {
@@ -2996,9 +2996,9 @@
       },
       "work_function_eV": {
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "π+φ-POOF+K/10",
         "unit": "eV"
       },
       "youngs_GPa": {
@@ -3112,9 +3112,9 @@
       },
       "work_function_eV": {
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "π+φ-POOF+K/10",
         "unit": "eV"
       },
       "youngs_GPa": {
@@ -3228,9 +3228,9 @@
       },
       "work_function_eV": {
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "π+φ-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "π+φ-POOF+K/10",
         "unit": "eV"
       },
       "youngs_GPa": {
@@ -4728,9 +4728,9 @@
       },
       "refractive_index": {
         "target": 1.479,
-        "computed": 1.464551773855444,
-        "error_pct": 0.9769,
-        "formula": "PHI-POOF",
+        "computed": 1.4724311817782085,
+        "error_pct": 0.444139,
+        "formula": "PHI-POOF+B_in/100",
         "unit": "dimensionless"
       },
       "molar_vol_cm3_mol": {
@@ -5443,9 +5443,9 @@
       ],
       "acoustic_imp_MRayl": {
         "target": 27.3,
-        "computed": 27.474593022118317,
-        "error_pct": 0.6395,
-        "formula": "E³+E²",
+        "computed": 27.321110807223864,
+        "error_pct": 0.077329,
+        "formula": "E³+E²−Poof",
         "unit": "MRayl"
       }
     },

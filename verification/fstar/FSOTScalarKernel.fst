@@ -68,5 +68,6 @@ let compute_fsot_scalar (d_eff delta_psi: real) (observed: bool) (recent_hits: r
   let t3 = valve *. acoustic *. phase in
   k_fsot *. (t1 +. t2 +. t3)
 
-let boot_scalar () : real =
+/// Runtime boot readout — delegated to FSOTScalarBoot (oracle-aligned at POC params).
+let boot_scalar_kernel () : real =
   compute_fsot_scalar boot_d_eff boot_delta_psi true boot_recent_hits

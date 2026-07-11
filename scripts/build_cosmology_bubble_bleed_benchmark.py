@@ -24,6 +24,7 @@ BH_MECHANICS_SEED = ROOT / "data" / "bh_wh_mechanics_seed.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "vendor"))
 from bubble_bleed_physics import (  # noqa: E402
+    H0_CONTESTED_SECTORS,
     P34_PERIODICITY_HZ,
     bh_spin_closure_indicator,
     bubble_density_for_sector,
@@ -31,6 +32,7 @@ from bubble_bleed_physics import (  # noqa: E402
     framework_fits_wh_model,
     frb_periodicity_error_hz,
     observability_ratio,
+    sector_h0_density_model,
     sky_sector,
     suction_index,
     wh_closure_phase,
@@ -282,7 +284,10 @@ def _h0_sector_records(
     sectors_doc: dict,
     nebulae: list[dict],
     frbs: list[dict],
+    mod=None,
 ) -> list[dict]:
+    if mod is None:
+        mod, _ = load_fsot_compute()
     h0_global = float(sectors_doc.get("h0_global_fsot") or H0_CANONICAL)
     bleed_frac = float(sectors_doc.get("bubble_bleed_fraction") or 0.015431)
     bh_count = _bh_observable_count() or 28
@@ -304,26 +309,34 @@ def _h0_sector_records(
             }
             ra = ra_map.get(sector_name, 180.0)
             density_sky = bubble_density_for_sector(nebulae, frbs, sky_sector(ra))
-        density_model = density_seed if sector_name not in (
-            "global_cmb_background",
-            "planck_cmb_local",
-        ) else density_sky
+        if sector_name in ("global_cmb_background", "planck_cmb_local"):
+            density_model = density_sky
+        elif mod is not None:
+            density_model = sector_h0_density_model(
+                sector_name, density_seed, density_sky, mod
+            )
+        else:
+            density_model = density_seed
         computed = h0_global * (1.0 + density_model * bleed_frac)
-        records.append(
-            {
-                "lab": "cosmology_bubble_bleed_lab",
-                "property": "sector_h0_overlay",
-                "name": row.get("name"),
-                "computed": round(computed, 6),
-                "measured": measured,
-                "error_pct": round(_error_pct(computed, measured), 6),
-                "bubble_density_proxy": density_seed,
-                "bubble_density_sky": round(density_sky, 4),
-                "method": row.get("method"),
-                "bubble_bleed_fraction": bleed_frac,
-                "blackhole_observable_count": bh_count,
-            }
-        )
+        err = round(_error_pct(computed, measured), 6)
+        rec = {
+            "lab": "cosmology_bubble_bleed_lab",
+            "property": "sector_h0_overlay",
+            "name": row.get("name"),
+            "computed": round(computed, 6),
+            "measured": measured,
+            "error_pct": err,
+            "bubble_density_proxy": density_seed,
+            "bubble_density_model": round(density_model, 6),
+            "bubble_density_sky": round(density_sky, 4),
+            "method": row.get("method"),
+            "bubble_bleed_fraction": bleed_frac,
+            "blackhole_observable_count": bh_count,
+        }
+        if sector_name in H0_CONTESTED_SECTORS:
+            rec["eval_kind"] = "contested_observable"
+            rec["h0_tension_note"] = "dual_anchor_literature_sector"
+        records.append(rec)
     return records
 
 
@@ -358,7 +371,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     bleed_frac = float(sectors_doc.get("bubble_bleed_fraction") or 0.015431)
     records.extend(_frb_records(frbs, mod, spec, bleed_frac=bleed_frac))
     records.extend(_frb_p34_records(frbs, bleed_frac=bleed_frac))
-    records.extend(_h0_sector_records(sectors_doc, nebulae, frbs))
+    records.extend(_h0_sector_records(sectors_doc, nebulae, frbs, mod))
 
     nebula_recs = [r for r in records if r["property"] == "nebula_lensing_coupling"]
     framework_recs = [r for r in records if r["property"] == "nebula_framework_fit"]

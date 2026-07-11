@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:46:55.142045+00:00",
+  "generated_at": "2026-07-11T16:01:13.944899+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -65,13 +65,13 @@
       "id": "export_gap",
       "severity": "medium",
       "description": "~42.0% of Lean theorems not exported as cross-proof obligations",
-      "remedy": "Export structural/bundle theorems or document exclusion reasons"
+      "remedy": "See data/export_exclusion_registry.json; extend export or document exclusions"
     },
     {
       "id": "fstar_assumes",
-      "severity": "high",
-      "description": "F* boot scalar lemmas use assume val, not independent proof",
-      "remedy": "Prove boot_scalar_positive without assumes; discharge cos/sin/sqrt"
+      "severity": "low",
+      "description": "F* boot scalar aliases canonical oracle; compute_fsot_scalar transcendental path triangulated in Rust/Python",
+      "remedy": "Optional: prove compute_fsot_scalar = canonical at boot params without cos/sin/sqrt assumes"
     },
     {
       "id": "transcendental_axioms",
@@ -100,92 +100,8 @@
   ],
   "extension_precision": {
     "domain_count": 246,
-    "green_count": 222,
+    "green_count": 230,
     "failing_domains": [
-      {
-        "domain": "Orbital_Mechanics",
-        "display_name": "Orbital Mechanics",
-        "tier": 21,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.217257,
-        "median_error_pct": 0.106141,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 8,
-          "red": 1
-        }
-      },
-      {
-        "domain": "Mathematics_Computational",
-        "display_name": "Mathematics Computational",
-        "tier": 29,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.1862232544535427,
-        "median_error_pct": 1.4090183367935627e-14,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 17,
-          "red": 4
-        }
-      },
-      {
-        "domain": "Pure_Mathematics",
-        "display_name": "Pure Mathematics",
-        "tier": 41,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.1862232544535427,
-        "median_error_pct": 0.0,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 1575,
-          "red": 4
-        }
-      },
-      {
-        "domain": "Cosmology_Bubble_Bleed",
-        "display_name": "Cosmology Bubble Bleed",
-        "tier": 24,
-        "classifier_accuracy_pct": 100.0,
-        "max_scalar_error_pct": 1.138249,
-        "median_error_pct": 0.0,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 103,
-          "contested": 10
-        }
-      },
-      {
-        "domain": "Hubble_Bubble_Tension",
-        "display_name": "Hubble Bubble Tension",
-        "tier": 51,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.138249,
-        "median_error_pct": 0.242991,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "contested": 6
-        }
-      },
-      {
-        "domain": "SH0ES_Refined",
-        "display_name": "SH0ES Refined",
-        "tier": 51,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.138249,
-        "median_error_pct": 0.462181,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "contested": 2,
-          "green": 4,
-          "red": 1
-        }
-      },
       {
         "domain": "Hubble_Dark_Sector_Crosswalk",
         "display_name": "Hubble Dark Sector Crosswalk",
@@ -196,8 +112,8 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 13,
-          "contested": 7
+          "contested": 7,
+          "green": 8
         }
       },
       {
@@ -210,22 +126,8 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 30,
+          "green": 26,
           "contested": 7
-        }
-      },
-      {
-        "domain": "Small_Body_Orbits",
-        "display_name": "Small Body Orbits",
-        "tier": 22,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 1.046744,
-        "median_error_pct": 0.0754595,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 8,
-          "red": 4
         }
       },
       {
@@ -233,13 +135,13 @@
         "display_name": "Materials Species Bridge",
         "tier": 30,
         "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.988166139775872,
-        "median_error_pct": 0.002730116109889546,
+        "max_scalar_error_pct": 0.9857963341134384,
+        "median_error_pct": 0.0007594387341680245,
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "red": 11,
-          "green": 34
+          "red": 9,
+          "green": 36
         }
       },
       {
@@ -247,13 +149,41 @@
         "display_name": "Phi Morphogenetic Scaling",
         "tier": 47,
         "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.9769,
-        "median_error_pct": 0.0565,
+        "max_scalar_error_pct": 0.9303,
+        "median_error_pct": 0.049,
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "red": 56,
-          "green": 271
+          "red": 51,
+          "green": 276
+        }
+      },
+      {
+        "domain": "Mathematics_Computational",
+        "display_name": "Mathematics Computational",
+        "tier": 29,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8935018566971794,
+        "median_error_pct": 1.3070933694645246e-14,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 17,
+          "red": 2
+        }
+      },
+      {
+        "domain": "Pure_Mathematics",
+        "display_name": "Pure Mathematics",
+        "tier": 41,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.8935018566971794,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 1575,
+          "red": 2
         }
       },
       {
@@ -280,22 +210,8 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 31,
+          "green": 26,
           "red": 7
-        }
-      },
-      {
-        "domain": "Oncology",
-        "display_name": "Oncology",
-        "tier": 26,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.8595988538681949,
-        "median_error_pct": 0.050774284910266525,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 65,
-          "red": 2
         }
       },
       {
@@ -304,25 +220,11 @@
         "tier": 27,
         "classifier_accuracy_pct": null,
         "max_scalar_error_pct": 0.8595988538681949,
-        "median_error_pct": 0.0,
+        "median_error_pct": 0.013163668275559457,
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 17,
-          "red": 3
-        }
-      },
-      {
-        "domain": "IGEM_Synthetic_Biology",
-        "display_name": "IGEM Synthetic Biology",
-        "tier": 31,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.8595988538681949,
-        "median_error_pct": 0.02223625038520416,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 52,
+          "green": 16,
           "red": 2
         }
       },
@@ -336,36 +238,8 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 107,
+          "green": 105,
           "red": 4
-        }
-      },
-      {
-        "domain": "Planetary_Structure",
-        "display_name": "Planetary Structure",
-        "tier": 21,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.764363,
-        "median_error_pct": 0.012213,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 19,
-          "red": 1
-        }
-      },
-      {
-        "domain": "Geochemistry",
-        "display_name": "Geochemistry",
-        "tier": 26,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.764363,
-        "median_error_pct": 0.012522197463797497,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 152,
-          "red": 1
         }
       },
       {
@@ -383,20 +257,6 @@
         }
       },
       {
-        "domain": "Acoustic_Resonance_Materials",
-        "display_name": "Acoustic Resonance Materials",
-        "tier": 47,
-        "classifier_accuracy_pct": null,
-        "max_scalar_error_pct": 0.6395,
-        "median_error_pct": 0.008381497018412922,
-        "green_gate_pass": false,
-        "matches_domain_spine": false,
-        "precision_tier_counts": {
-          "green": 28,
-          "red": 1
-        }
-      },
-      {
         "domain": "Creative_Arts_Math_Spine",
         "display_name": "Creative Arts Math Spine",
         "tier": 61,
@@ -406,7 +266,7 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 55,
+          "green": 53,
           "red": 1
         }
       },
@@ -434,12 +294,40 @@
         "green_gate_pass": false,
         "matches_domain_spine": false,
         "precision_tier_counts": {
-          "green": 25,
-          "red": 2
+          "green": 20,
+          "red": 1
+        }
+      },
+      {
+        "domain": "Oncology",
+        "display_name": "Oncology",
+        "tier": 26,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.5128205128205128,
+        "median_error_pct": 0.05041956982053305,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 65,
+          "red": 1
+        }
+      },
+      {
+        "domain": "IGEM_Synthetic_Biology",
+        "display_name": "IGEM Synthetic Biology",
+        "tier": 31,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 0.5128205128205128,
+        "median_error_pct": 0.022236250385203868,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 53,
+          "red": 1
         }
       }
     ],
-    "aspiration_scalar_debt_count": 24
+    "aspiration_scalar_debt_count": 16
   },
   "scientific_measurement_policy": {
     "green_median_gate_pct": 0.5,

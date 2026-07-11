@@ -1,0 +1,4806 @@
+{
+  "generated_at": "2026-07-11T15:58:18.432803+00:00",
+  "version": "1.0",
+  "lean_theorem_count": 2139,
+  "exported_obligation_count": 1181,
+  "unexported_theorem_count": 958,
+  "export_fraction_pct": 55.21,
+  "by_reason": {
+    "contains_non_exportable_proof_markers": 935,
+    "no_norm_num_certificate_in_module": 21,
+    "cross_proof_meta_module": 2
+  },
+  "exclusions": [
+    {
+      "theorem": "acoustic_rm_bundle",
+      "module": "AcousticResonanceMaterialsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "adj_rung_bundle",
+      "module": "AdjacentRungCouplingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "adv_brk_bundle",
+      "module": "AdversarialFractalBreakPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "aether_psi_con_solver_in_bounds",
+      "module": "AetherPrimePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "aether_eta_eff_solver_in_bounds",
+      "module": "AetherPrimePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "aether_prime_priors_bundle",
+      "module": "AetherPrimePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "agriculture_agroecology_gap_fill_bundle",
+      "module": "AgricultureAgroecologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_gal_br_bundle",
+      "module": "AIGalacticOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "anthropology_ext_bundle",
+      "module": "AnthropologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "architecture_building_science_gap_fill_bundle",
+      "module": "ArchitectureBuildingScienceGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "arxiv_primitives_v14_bundle",
+      "module": "ArxivPrimitivesV14Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "astrophysical_structure_crosswalk_bundle",
+      "module": "AstrophysicalStructureCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "atmospheric_physics_gap_fill_bundle",
+      "module": "AtmosphericPhysicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "atomic_physics_gap_fill_bundle",
+      "module": "AtomicPhysicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bibliography_lean_corpus_bundle",
+      "module": "BibliographyLeanCorpusPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "binary_decoder_rendlesham_bundle",
+      "module": "BinaryDecoderRendleshamPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biological_cuda_physarum_bundle",
+      "module": "BiologicalCudaPhysarumPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biology_strict_bundle",
+      "module": "BiologyStrictEmpiricalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biophysics_public_panel_bundle",
+      "module": "BiophysicsPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "blackhole_thesis_within_le_total",
+      "module": "BlackHoleThesisPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "blackhole_thesis_bundle",
+      "module": "BlackHoleThesisPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "botany_ext_bundle",
+      "module": "BotanyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "boundary_partition_tightening_bundle",
+      "module": "BoundaryPartitionTighteningPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_eq_real_pi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_sub_one_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_one_gt_367",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_one_lt_368",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_arg_gt_pi_div_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_arg_lt_three_pi_div_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_0298_lt_08",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_08_gt_m0298",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_03_gt_12",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_12_lt",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_two_lt_14142135624",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_ratio_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_ratio_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_perceived_adjust_eq_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_lt_pi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_prod_lt_three_tenths",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_le_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_le_pi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_theta_s_nonneg",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_div_phi_le_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "poof_factor_lt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0572_lt_1772",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1144_lt_31415",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_31415_gt_1144",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_gt_1144",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_11445_lt_3141592",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_gt_11445",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_div_e_gt_421",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0245_gt_1275",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_049_gt_16181",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_04813_gt_16181",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_16181_lt_04813",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_phi_lt_04813",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_phi_lt_0482",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "eta_log_phi_lt_0225",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_185_gt_626",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_185_lt_016",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_016_gt_m185",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "poof_factor_lt_point_one_six",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_nonneg",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_efficiency_lt_ten",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_arg_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_arg_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_lt_neg_half",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_nonneg",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_exp_factor_gt_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_lt_three_tenths",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_correction_gt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_efficiency_gt_nine_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_efficiency_gt_seven_tenths",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_inner_gt_eight_one_four",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_inner_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_gt_six_tenths",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_gt_seven_seven",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_077_gt_184",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_177_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_five_lt_one_seven_seven",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_exp_factor_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_arg_hi_tight",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_t_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_cos_lt_neg_093",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_cos_arg_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_cos_t_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_cos_lt_neg_083",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_exp_factor_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "growth_term_cosmological_gt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_growth_coherence_multiplier_gt_one_three_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_25_eq_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_9_eq_3",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "rpow_pi_pi_gt_27",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_minus_one_gt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_exp_exponent_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_five_gt_100",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_three_gt_twenty",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_six_gt_400",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_28_gt_410",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_N_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_P_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "suction_factor_abs_le_poof",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phase_variance_abs_le_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_div_e_lt_pi_div_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_pi_div_e_lt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "one_add_inv_phi_eq_phi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_lt_phi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_mul_sin_sq_le_phi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_inflow_pos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_inflow_le_acoustic_bleed_mul_phi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_one_sq_le",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_inflow_mul_cos_sq_le_phi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_gt_27182818283",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_lt_27182818286",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_gt_314159265358979323846",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_lt_314159265358979323847",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_gt_27182818283_mul_pi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_lt_27182818286_mul_pi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_gt_85397323",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_gt_8539732",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_lt_853973478",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_lt_85397348",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_pi_lt_8539736",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_bound_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_bound_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_bound_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_bound_hi",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_half_gt_02956",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_half_gt_1156",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neg_pi_half_le_zero",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_gt_290272",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_gt_291325",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_gt_0415068",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_gt_0415069",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_prod_gt_295163",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_prod_lt_295164",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psi_con_eta_in_Icc_sin",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_0295163_gt_0290272",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_0295164_lt_0291325",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_gt_290272",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_lt_291325",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_div_e_gt_115572734973",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_div_e_lt_115572734986",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pi_div_e_in_Icc_sin",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_eq_cos_pi_div_two_sub",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_eq_sin_pi_div_two_sub",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_0415069_gt_091385",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_0415068_lt_091541",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_pi_div_e_gt_91385",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_pi_div_e_lt_91541",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_gt_10455",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_lt_10476",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "theta_s_in_Icc_cos",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_0290272_lt_095825",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_0291325_gt_09575",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_theta_s_gt_09575",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_theta_s_lt_095825",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_inflow_gt_16639",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_inflow_lt_16695",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_div_inflow_gt_62600",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "acoustic_bleed_div_inflow_lt_62961",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_sq_gt_261792",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_sq_lt_26183",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "one_div_pi_gt_03183",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "one_div_pi_lt_03184",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_04807_lt_1618",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_1618_gt_04807",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_01530_gt_11653",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_01534_lt_1168",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_rpow_inv_pi_gt_11653",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_rpow_inv_pi_lt_1168",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phase_variance_eq_cos_theta_s",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phase_variance_gt_0955",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phase_variance_lt_0961",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1146_gt_31416",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_31416_lt_1146",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_lt_1146",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_11453_gt_pi23847",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi23847_lt_11453",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_lt_11453",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_pi_div_e_lt_422",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "k_gt_0420",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "k_lt_042042",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "eta_log_phi_gt_02244",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_theta_s_gt_02858",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_correction_lt_1002",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_efficiency_lt_1002",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_inner_lt_0824",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_lt_0826",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "consciousness_factor_gt_0285",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "consciousness_factor_lt_0302",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_02903_lt_1338",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_bound_poly_mono_lo",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sin_bound_poly_mono",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_1455_lt_0116",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_1555_lt_0016",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_1305_lt_0263",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_consciousness_phase_lt_132",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1434_gt_4167",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_1434_lt_24_div_25",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_ratio_D6_gt",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_040_lt_25_div_24",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_040_gt_24_div_25",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_ratio_D24_lt",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_gt_0773",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_lo_domain",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_hi_domain",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0822_gt_25_div_11",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_0822_lt_11_div_25",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_lo_D11",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0818_lt_25_div_11",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_neg_0818_gt_11_div_25",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_hi_D11",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_dp_pv_neg_of_ge_07",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_dp_pv_pos_of_le_06",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_cos_lt_neg_075",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_03865_gt_14716",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_13865_gt_four",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_four_lt_13865",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_exp_factor_gt_four",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_cos_lt_neg_099",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1618_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_five_lt_1618",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_exp_factor_gt_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_25_lt_neg_04",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "electron_cos_lt_neg_04",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "electron_exp_factor_gt_three",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_21_lt_neg_05",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "medical_cos_lt_neg_05",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_lt_one_tenth",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "medical_exp_factor_gt_one_three",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_11_gt_3316",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_11_lt_3317",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_8_lt_2829",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_13_lt_3606",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_24_gt_4898",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_24_lt_4899",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0602_lt_1838",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1602_lt_5",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_five_gt_1602",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0505_lt_1838",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0331_lt_1412",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1331_lt_384",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1505_lt_5",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_five_gt_1505",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_0351_lt_1470",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1351_lt_4",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_four_gt_1351",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_005_lt_115",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "growth_term_hits_zero_lt_one_point_one_five",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_2208_lt_neg_055",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_1355_lt_0215",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_1531_gt_003",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "molecular_cos_lt_neg_055",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "material_cos_lt_neg_075",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biological_cos_gt_003",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_1253_gt_34",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "log_34_lt_1253",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "molecular_exp_factor_gt_34",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biological_exp_factor_gt_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_10_lt_3163",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_12_lt_3465",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sqrt_12_gt_3463",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "growth_term_coherence_product_lt_11523",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "omega_abs_ge_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gamma_abs_eq",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chaos_factor_abs_lt_one",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "D_eff_shift_abs_le",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chaos_perturbation_abs_le_two",
+      "module": "Bounds.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "brain_prior_codon_pattern_space_eq_twenty_seven",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "brain_prior_codon_genetic_degeneracy",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neocortex_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cerebellum_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "brainstem_arousal_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hippocampus_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "basal_ganglia_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "thalamus_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "astrocyte_syncytium_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "oligodendrocyte_myelination_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "amygdala_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "microglial_surveillance_genetic_zero_is_superposition",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "brain_component_priors_trinary_bundle",
+      "module": "BrainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "breakthrough_discoveries_2024_2026_bundle",
+      "module": "BreakthroughDiscoveries20242026Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_framework_fit_le_total",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_wh_closure_match_le_total",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_bh_spin_match_le_total",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_nebula_match_le_total",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_frb_match_le_total",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_observability_ratio_nonneg",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bubble_bleed_bundle",
+      "module": "BubbleBleedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cameo_symbolic_bundle",
+      "module": "CameoPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cardiology_ext_bundle",
+      "module": "CardiologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cellular_priors_bundle",
+      "module": "CellularPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cern_open_data_lhc_bundle",
+      "module": "CernOpenDataLhcPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "certified_agent_qwen_bundle",
+      "module": "CertifiedAgentQwenPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chaos_pt_bundle",
+      "module": "ChaosMediatedPhaseTransitionsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chemical_engineering_ext_bundle",
+      "module": "ChemicalEngineeringExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chemical_structure_stability_panel_bundle",
+      "module": "ChemicalStructureStabilityPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "civil_engineering_ext_bundle",
+      "module": "CivilEngineeringExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "climate_science_bundle",
+      "module": "ClimateSciencePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "clinical_medicine_ext_bundle",
+      "module": "ClinicalMedicineExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "code_genome_bundle",
+      "module": "CodeGenomeStructurePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_primary_pattern_space_eq_eight",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_secondary_pattern_space_eq_twenty_seven",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_genomic_table_link",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stop_codon_fraction_cert",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aaa_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aaa_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aac_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aac_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aag_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aag_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aat_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aat_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aca_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aca_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_acc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_acc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_acg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_acg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_act_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_act_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aga_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_aga_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_agt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ata_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ata_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_atc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_atc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_atg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_atg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_att_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_att_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_caa_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_caa_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cac_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cac_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cag_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cag_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cat_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cat_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cca_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cca_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ccc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ccc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ccg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ccg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cct_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cct_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cga_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cga_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cgt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cta_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_cta_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ctt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gaa_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gaa_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gac_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gac_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gag_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gag_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gat_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gat_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gca_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gca_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gcc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gcc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gcg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gcg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gct_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gct_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gga_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gga_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ggt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gta_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gta_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_gtt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_taa_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_taa_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tac_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tac_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tag_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tag_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tat_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tat_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tca_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tca_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tcc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tcc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tcg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tcg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tct_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tct_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tga_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tga_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tgt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tta_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_tta_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttc_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttc_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttg_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttg_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttt_primary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_ttt_secondary_phase",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_trinary_map_bundle",
+      "module": "CodonPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cold_fusion_candidate_prereg_scaffold_bundle",
+      "module": "ColdFusionCandidatePreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cold_fusion_lab_synthesis_crosswalk_bundle",
+      "module": "ColdFusionLabSynthesisCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "comp_lad_bundle",
+      "module": "CompactificationLadderPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "compact_object_binary_events_bundle",
+      "module": "CompactObjectBinaryEventsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "computational_reasoning_bundle",
+      "module": "ComputationalReasoningPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "consciousness_econ_bundle",
+      "module": "ConsciousnessEconPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "c_gal_br_bundle",
+      "module": "ConsciousnessGalacticOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "consciousness_soul_bridge_bundle",
+      "module": "ConsciousnessSoulBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "c_cosm_pos",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "c_cosm_gt_061800",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "c_cosm_lt_061806",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "p_base_gt_021234",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "p_base_lt_0212371",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_s_MZ_pos",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_mul_pi_gt_one",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_s_MZ_lt_one",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "S_cosm_cached_neg",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "S_cosm_cached_bounds",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "S_cosm_cached_abs_bounds",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "omega_b_h2_fsot_cached_pos",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alpha_s_MZ_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "h0_fsot_cached_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "t_cmb_fsot_cached_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "n_s_fsot_cached_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "omega_b_h2_fsot_cached_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "p_base_pos",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "delta_lambda_cosm_pos",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "delta_lambda_cosm_lt_one",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "r_d_approx_value",
+      "module": "Cosmology.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_anomalies_resolved_le_total",
+      "module": "CosmologyAnomaliesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_anomalies_bundle",
+      "module": "CosmologyAnomaliesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_anomaly_deep_panel_bundle",
+      "module": "CosmologyAnomalyDeepPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_extended_within_le_total",
+      "module": "CosmologyExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_extended_bundle",
+      "module": "CosmologyExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_higher_waves_partition",
+      "module": "CosmologyHigherWavesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_higher_waves_bundle",
+      "module": "CosmologyHigherWavesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lambda_cdm_wave_partition",
+      "module": "CosmologyLab.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lambda_cdm_wave1_links_genomic_cosmology",
+      "module": "CosmologyLab.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_lambda_cdm_bundle",
+      "module": "CosmologyLab.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave10_bundle",
+      "module": "CosmologyWave10Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "wave4_observable_count_pos",
+      "module": "CosmologyWave4.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "cosmology_wave4_bundle",
+      "module": "CosmologyWave4Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave5_bundle",
+      "module": "CosmologyWave5Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave6_bundle",
+      "module": "CosmologyWave6Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave7_bundle",
+      "module": "CosmologyWave7Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave8_bundle",
+      "module": "CosmologyWave8Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_wave9_bundle",
+      "module": "CosmologyWave9Priors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "creative_arts_math_spine_bundle",
+      "module": "CreativeArtsMathSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cross_proof_connective_spine_bundle",
+      "module": "CrossProofConnectivePriors.lean",
+      "reason": "cross_proof_meta_module"
+    },
+    {
+      "theorem": "cross_proof_full_formal_spine_bundle",
+      "module": "CrossProofConnectivePriors.lean",
+      "reason": "cross_proof_meta_module"
+    },
+    {
+      "theorem": "cryosphere_match_le_total",
+      "module": "CryospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cryosphere_bundle",
+      "module": "CryospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "crypto_tech_bundle",
+      "module": "CryptographyTechnologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "culinary_arts_bundle",
+      "module": "CulinaryArtsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cve_hole_bundle",
+      "module": "CVECodonHoleFalsificationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_cpl_bundle",
+      "module": "DarkEnergyCPLPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_sector_bundle",
+      "module": "DarkSectorOpenProblemsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "distant_island_emergence_simulation_bundle",
+      "module": "DistantIslandEmergenceSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "distant_island_z128_z132_deep_panel_bundle",
+      "module": "DistantIslandZ128Z132DeepPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_coupling_bundle",
+      "module": "DomainCouplingSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_coupling_simulation_refresh_panel_bundle",
+      "module": "DomainCouplingSimulationRefreshPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_coverage_priors_bundle",
+      "module": "DomainCoveragePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "orb_pred_bundle",
+      "module": "DomainOrbitalPredictionsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmology_median_under_one_pct",
+      "module": "DomainPrecisionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "smiles_chemical_median_under_one_pct",
+      "module": "DomainPrecisionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_precision_priors_bundle",
+      "module": "DomainPrecisionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_domain_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_observed_false",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_D_eff_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_observed_false",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_D_eff_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_delta_bounds",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_observed_false",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_D_eff_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_observed_false",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_D_eff_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neural_observed_true",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term1_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term1_dominates_term3",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_raw_S_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_term1_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_params_eq",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_term2_eq_one",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_raw_S_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_term1_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term2_eq_one",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term3_abs_lt_fifth",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_raw_S_non_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neural_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "particle_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_raw_S_negative",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "chemical_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "electron_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "astronomical_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "higgs_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "galactic_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fusion_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "proton_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "medical_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "blackhole_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "consciousness_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "molecular_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "material_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "biological_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cellular_params_eq_biological",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cellular_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "nuclear_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "energy_raw_S_positive",
+      "module": "Domains.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "connective_e10d_wd_bundle",
+      "module": "E10dWdConnectivePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ecology_gap_fill_bundle",
+      "module": "EcologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ecology_bundle",
+      "module": "EcologyPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "econometrics_gap_fill_bundle",
+      "module": "EconometricsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "economics_gap_fill_bundle",
+      "module": "EconomicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "econophysics_bundle",
+      "module": "EconophysicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "electrical_power_systems_bundle",
+      "module": "ElectricalPowerSystemsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "element_synthesis_condition_scaffold_bundle",
+      "module": "ElementSynthesisConditionScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "emergent_observed_le_total",
+      "module": "EmergentDomainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "emergent_domain_priors_bundle",
+      "module": "EmergentDomainPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_ai_br_bundle",
+      "module": "EnergyAIOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "e_neu_br_bundle",
+      "module": "EnergyNeuralOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "entomology_ext_bundle",
+      "module": "EntomologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "environmental_engineering_ext_bundle",
+      "module": "EnvironmentalEngineeringExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "epidemiology_ext_bundle",
+      "module": "EpidemiologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "evolution_priors_bundle",
+      "module": "EvolutionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exogeology_ext_bundle",
+      "module": "ExogeologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exoplanet_system_architecture_bundle",
+      "module": "ExoplanetSystemArchitecturePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "experiment_synthesis_priors_bundle",
+      "module": "ExperimentSynthesisPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "external_oss_bundle",
+      "module": "ExternalOSSCodeGenomePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "finance_markets_ext_bundle",
+      "module": "FinanceMarketsExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fluid_dynamics_gap_fill_bundle",
+      "module": "FluidDynamicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fpc_spine_bundle",
+      "module": "FluidPhaseCurrentSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fluid_spacetime_observable_spine_bundle",
+      "module": "FluidSpacetimeObservableSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fluid_spacetime_prereg_validation_panel_bundle",
+      "module": "FluidSpacetimePreregValidationPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fold_dep_bundle",
+      "module": "FoldDepthMetricsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "food_microbiology_gap_fill_bundle",
+      "module": "FoodMicrobiologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fractal_bundle",
+      "module": "FormulaBranchingFractalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_closure_bundle",
+      "module": "FormulaCorpusClosurePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_cnc_bundle",
+      "module": "FormulaCorpusCncPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_matched_le_total",
+      "module": "FormulaCorpusPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_target_le_tolerable",
+      "module": "FormulaCorpusPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_tolerable_le_total",
+      "module": "FormulaCorpusPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_corpus_strict_empirical_bundle",
+      "module": "FormulaCorpusPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "formula_precision_spine_bundle",
+      "module": "FormulaPrecisionSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fpc_fluidlink_timing_deep_panel_bundle",
+      "module": "FpcFluidlinkTimingDeepPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fpc_link_bundle",
+      "module": "FPCTemporalCouplingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "const_rec_bundle",
+      "module": "FractalConstantRecursionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fsot_aggregate_organized_panel_bundle",
+      "module": "FsotAggregateOrganizedPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fsot_aggregate_unified_db_bundle",
+      "module": "FsotAggregateUnifiedDbPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fuel_candidate_prereg_scaffold_bundle",
+      "module": "FuelCandidatePreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fuel_resolved_le_entries",
+      "module": "FuelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fuel_lab_chemical_domain_positive",
+      "module": "FuelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fuel_lab_compound_bundle",
+      "module": "FuelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fuel_thermochemistry_public_anchors_bundle",
+      "module": "FuelThermochemistryPublicAnchorsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fusion_decay_chain_prereg_scaffold_bundle",
+      "module": "FusionDecayChainPreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "connective_fusion_grid_bundle",
+      "module": "FusionGridConnectivePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fusion_lab_certificate_spine_bundle",
+      "module": "FusionLabCertificateSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fusion_physics_public_panel_bundle",
+      "module": "FusionPhysicsPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gaia_astrometry_panel_deep_bundle",
+      "module": "GaiaAstrometryPanelDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gaia_dr3_tap_deep_bundle",
+      "module": "GaiaDR3TAPDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "galactic_structure_sample_bundle",
+      "module": "GalacticStructureSamplePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gbif_species_occurrence_bundle",
+      "module": "GbifSpeciesOccurrencePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_sq_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_ne_zero",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_sq_ne_zero",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_cubed_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "one_div_phi_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "one_div_phi_sq_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_zpow_neg5_eq_inv_pow5",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_table_size_eq_sixty_four",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_pattern_count_eq_twenty_seven",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_genetic_pattern_space_eq_twenty_seven",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "genetic_pattern_space_matches_trinary_count",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_genetic_degeneracy",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stop_codons_fraction_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "codon_trinary_degeneracy_eq",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "amino_acids_canonical_eq_twenty",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_pow5_gt_11089",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_pow5_lt_11094",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_pow_neg5_gt_09013",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_pow_neg5_lt_09018",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "autosome_haploid_count_eq_twenty_two",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "genomic_exact_identity_bundle",
+      "module": "Genomic.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "genomic_sciences_bundle",
+      "module": "GenomicSciencesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "geochemistry_bundle",
+      "module": "GeochemistryPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "geology_stratigraphy_ext_bundle",
+      "module": "GeologyStratigraphyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "geomagnetism_match_le_total",
+      "module": "GeomagnetismPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "geomagnetism_bundle",
+      "module": "GeomagnetismPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "grace_cryosphere_match_le_total",
+      "module": "GraceCryospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "grace_cryosphere_bundle",
+      "module": "GraceCryospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gwosc_live_event_deep_bundle",
+      "module": "GWOSCLiveEventDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "heavy_ion_lab_synthesis_panel_bundle",
+      "module": "HeavyIonLabSynthesisPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "higgs_branching_bundle",
+      "module": "HiggsBranchingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "higgs_mass_bundle",
+      "module": "HiggsMassPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "history_ext_bundle",
+      "module": "HistoryExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hubble_tension_bundle",
+      "module": "HubbleBubbleTensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hubble_dark_sector_crosswalk_bundle",
+      "module": "HubbleDarkSectorCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hvac_thermal_systems_bundle",
+      "module": "HvacThermalSystemsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hybrid_fi_sim_multi_hero_panel_bundle",
+      "module": "HybridFiSimMultiHeroPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hydrology_stability_match_le_total",
+      "module": "HydrologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hydrology_stability_match_rate_nonneg",
+      "module": "HydrologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "hydrology_bundle",
+      "module": "HydrologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "igem_live_fasta_bundle",
+      "module": "IGEMLiveFastaPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "igem_parts_expanded_bundle",
+      "module": "IGEMPartsExpandedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "igem_synthetic_biology_bundle",
+      "module": "IGEMSyntheticBiologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "immunology_median_error_under_half_pct",
+      "module": "ImmunologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "immunology_bundle",
+      "module": "ImmunologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "inertial_confinement_fusion_panel_bundle",
+      "module": "InertialConfinementFusionPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "information_theory_public_panel_bundle",
+      "module": "InformationTheoryPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "initiation_transformation_archetype_bundle",
+      "module": "InitiationTransformationArchetypePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fic_fertile_replay_match_le_total",
+      "module": "IntelligenceCompressionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fic_fertile_replay_match_rate_le_one",
+      "module": "IntelligenceCompressionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "intelligence_compression_priors_bundle",
+      "module": "IntelligenceCompressionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "interactive_media_prereg_scaffold_bundle",
+      "module": "InteractiveMediaPreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "interdisciplinary_spine_crosswalk_bundle",
+      "module": "InterdisciplinarySpineCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "intrinsic_llm_validators_bundle",
+      "module": "IntrinsicLLMValidatorsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "iono_chem_bundle",
+      "module": "IonosphericChemistryCouplingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "island_of_stability_deep_panel_bundle",
+      "module": "IslandOfStabilityDeepPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "knowledge_base_portable_bundle_panel_bundle",
+      "module": "KnowledgeBasePortableBundlePanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "knowledge_base_observable_matched_le_verified",
+      "module": "KnowledgeBasePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "knowledge_base_corpus_bundle",
+      "module": "KnowledgeBasePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "kronos_metrology_bundle",
+      "module": "KronosPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "smiles_k_matches_formal_k",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "thalamic_K_matches_formal_k",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "smiles_bleed_matches_formal",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "smiles_inflow_matches_formal",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_medical_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_neural_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_chemical_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_electron_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_quantum_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_particle_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_nuclear_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_energy_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_molecular_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_material_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_biological_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_cellular_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_consciousness_raw_S_positive",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "neurolab_genomic_exact_bundle",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "neurolab_bio_sign_bundle",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_smiles_domain_sign_bundle",
+      "module": "Lab.lean",
+      "reason": "no_norm_num_certificate_in_module"
+    },
+    {
+      "theorem": "lab_synthesis_metamaterial_spine_bundle",
+      "module": "LabSynthesisMetamaterialSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "law_policy_ext_bundle",
+      "module": "LawPolicyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lean_proofs_formal_constant_count_pos",
+      "module": "LeanProofsBridge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lean_proofs_domain_proven_count_pos",
+      "module": "LeanProofsBridge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lean_proofs_domain_proven_le_formal",
+      "module": "LeanProofsBridge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lean_proofs_constant_bundle",
+      "module": "LeanProofsBridge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "linguistics_formal_bundle",
+      "module": "LinguisticsFormalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "linguistics_priors_bundle",
+      "module": "LinguisticsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "live_ingest_spine_bundle",
+      "module": "LiveIngestSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magic_imbalance_penalty_in_unit_interval",
+      "module": "MagicCirclePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magic_backlash_threshold_in_unit_interval",
+      "module": "MagicCirclePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magic_circle_priors_bundle",
+      "module": "MagicCirclePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetic_confinement_fusion_panel_bundle",
+      "module": "MagneticConfinementFusionPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetic_string_bundle",
+      "module": "MagneticStringPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_extended_historical_match_le_total",
+      "module": "MagnetosphereExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_extended_storm_holdout_match_le_total",
+      "module": "MagnetosphereExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_extended_bz_match_le_total",
+      "module": "MagnetosphereExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_extended_bundle",
+      "module": "MagnetosphereExtendedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_match_le_total",
+      "module": "MagnetospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "magnetosphere_bundle",
+      "module": "MagnetospherePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "maillard_chemistry_gap_fill_bundle",
+      "module": "MaillardChemistryGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "malware_threat_bundle",
+      "module": "MalwareThreatIntelligencePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "marine_biology_ext_bundle",
+      "module": "MarineBiologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "material_in_silico_screening_scaffold_bundle",
+      "module": "MaterialInSilicoScreeningScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "material_property_verification_scaffold_bundle",
+      "module": "MaterialPropertyVerificationScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "materials_engineering_bundle",
+      "module": "MaterialsEngineeringPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "materials_genome_crosswalk_bundle",
+      "module": "MaterialsGenomeCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "materials_project_live_panel_bundle",
+      "module": "MaterialsProjectLivePanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "materials_species_bridge_bundle",
+      "module": "MaterialsSpeciesBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "mathematics_computational_bundle",
+      "module": "MathematicsComputationalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "math_generator_airfoil_rmse_bundle",
+      "module": "MathGeneratorAirfoilRmsePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "math_generator_benchmark_formula_eval_bundle",
+      "module": "MathGeneratorBenchmarkFormulaEvalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "math_generator_rule_observables_ge_corpora",
+      "module": "MathGeneratorPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "math_generator_priors_bundle",
+      "module": "MathGeneratorPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "math_generator_rules_eval_bundle",
+      "module": "MathGeneratorRulesEvalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "mechanical_engineering_ext_bundle",
+      "module": "MechanicalEngineeringExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "mech_cpl_bundle",
+      "module": "MechanisticCouplingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "med_gal_br_bundle",
+      "module": "MedicalGalacticOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "metamaterial_fluid_design_prereg_scaffold_bundle",
+      "module": "MetamaterialFluidDesignPreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "meteorology_gap_fill_bundle",
+      "module": "MeteorologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "music_harmonics_public_panel_bundle",
+      "module": "MusicHarmonicsPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "mycology_ext_bundle",
+      "module": "MycologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "nasa_exoplanet_archive_bundle",
+      "module": "NasaExoplanetArchivePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "natural_formation_element_simulation_bundle",
+      "module": "NaturalFormationElementSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "network_inet_bundle",
+      "module": "NetworkInternetProtocolsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "network_science_public_panel_bundle",
+      "module": "NetworkSciencePublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neu_gal_br_bundle",
+      "module": "NeuralGalacticOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuroeconomics_ext_bundle",
+      "module": "NeuroeconomicsExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuroimmunology_bundle",
+      "module": "NeuroimmunologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neurolab_gaps_math_spine_bundle",
+      "module": "NeurolabGapsMathSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neurolab_residual_math_spine_bundle",
+      "module": "NeurolabResidualMathSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuron_cohort_priors_bundle",
+      "module": "NeuronCohortPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuron_cohort_train_holdout_bundle",
+      "module": "NeuronCohortTrainHoldoutPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuron_K_matches_thalamic_gate",
+      "module": "NeuronHybridPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuron_hybrid_priors_bundle",
+      "module": "NeuronHybridPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "neuron_multi_hero_bundle",
+      "module": "NeuronMultiHeroPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "nist_codata_constants_bundle",
+      "module": "NistCodataConstantsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "noaa_coastal_tides_bundle",
+      "module": "NoaaCoastalTidesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "obs_ch_bundle",
+      "module": "ObserverChannelDerivationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "oceanography_gap_fill_bundle",
+      "module": "OceanographyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "omni_theory_genesis_bundle",
+      "module": "OmniTheoryGenesisPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "oncology_bundle",
+      "module": "OncologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "openalex_citation_graph_bundle",
+      "module": "OpenalexCitationGraphPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "openneuro_full_panel_bundle",
+      "module": "OpenNeuroFullPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "orbital_mechanics_bundle",
+      "module": "OrbitalMechanicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "paleoclimate_ext_bundle",
+      "module": "PaleoclimateExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "paleontology_ext_bundle",
+      "module": "PaleontologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "p_neu_br_bundle",
+      "module": "ParticleNeuralOrbitalBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "particle_physics_gap_fill_bundle",
+      "module": "ParticlePhysicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "particle_physics_components_sum",
+      "module": "ParticlePhysicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "particle_physics_bundle",
+      "module": "ParticlePhysicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "periodic_extension_decay_topology_scaffold_bundle",
+      "module": "PeriodicExtensionDecayTopologyScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "periodic_table_completion_spine_bundle",
+      "module": "PeriodicTableCompletionSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "periodic_table_extension_closure_spine_bundle",
+      "module": "PeriodicTableExtensionClosureSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "periodic_table_public_panel_bundle",
+      "module": "PeriodicTablePublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pharmacokinetics_gap_fill_bundle",
+      "module": "PharmacokineticsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pharmacology_bundle",
+      "module": "PharmacologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phi_morph_bundle",
+      "module": "PhiMorphogeneticScalingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "photonic_trinary_partition",
+      "module": "PhotonicForge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "photonic_voxel_count_pos",
+      "module": "PhotonicForge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "photonic_forge_bundle",
+      "module": "PhotonicForge.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "planetary_atmospheres_bundle",
+      "module": "PlanetaryAtmospheresPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "planetary_structure_bundle",
+      "module": "PlanetaryStructurePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "plasma_physics_median_error_under_half_pct",
+      "module": "PlasmaPhysicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "plasma_physics_bundle",
+      "module": "PlasmaPhysicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "clone_vf_bundle",
+      "module": "PortableCloneVerifyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "prediction_rederivation_bundle",
+      "module": "PredictionRederivationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "preregistered_outcome_tracking_bundle",
+      "module": "PreregisteredOutcomeTrackingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "prereg_bundle",
+      "module": "PreregisteredPredictionsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "preregistered_predictions_verification_scaffold_bundle",
+      "module": "PreregisteredPredictionsVerificationScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pl_laws_cross_domain_bridges_pos",
+      "module": "ProgrammingLanguageLawsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pl_laws_bundle",
+      "module": "ProgrammingLanguageLawsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "proof_cg_bundle",
+      "module": "ProofCarryingCodeGenomePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "proof_ledger_closure_spine_bundle",
+      "module": "ProofLedgerClosureSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_formula_catalog_count_eq_fifteen",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_proposed_formula_count_eq_three",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "disulfide_bridge_force_pos",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "disulfide_bridge_force_gt_seventeen",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "disulfide_bridge_force_lt_eighteen",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dipole_damping_denominator_pos",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "electrostatic_scale_eq_e",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_formula_closed_form_bundle",
+      "module": "ProteinFormulas.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_trinary_pattern_space_eq_twenty_seven",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_amino_acid_genomic_identity",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "alanine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cysteine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "aspartic_acid_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "glutamic_acid_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "phenylalanine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "glycine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "histidine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "isoleucine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "lysine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "leucine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "methionine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "asparagine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "proline_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "glutamine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "arginine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "serine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "threonine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "valine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "tryptophan_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "tyrosine_trinary_phase",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "protein_amino_acid_trinary_bundle",
+      "module": "ProteinPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "psychology_gap_fill_bundle",
+      "module": "PsychologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pubchem_compound_properties_bundle",
+      "module": "PubchemCompoundPropertiesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pubchem_live_deep_bundle",
+      "module": "PubChemLiveDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pubchem_stability_panel_bundle",
+      "module": "PubChemStabilityPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "published_fuel_property_panel_bundle",
+      "module": "PublishedFuelPropertyPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "pure_mathematics_ext_bundle",
+      "module": "PureMathematicsExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_computing_gap_fill_bundle",
+      "module": "QuantumComputingGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_information_bundle",
+      "module": "QuantumInformationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_materials_bundle",
+      "module": "QuantumMaterialsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_mechanics_gap_fill_bundle",
+      "module": "QuantumMechanicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quantum_optics_gap_fill_bundle",
+      "module": "QuantumOpticsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "rcsb_pdb_structures_bundle",
+      "module": "RcsbPdbStructuresPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "rd_interval_tightening_panel_bundle",
+      "module": "RdIntervalTighteningPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "fold_spine_bundle",
+      "module": "RealityFoldingSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "robotics_control_ext_bundle",
+      "module": "RoboticsControlSystemsExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "rust_lean_bridge_bundle",
+      "module": "RustLeanBridgePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "secure_sw_bundle",
+      "module": "SecureSoftwareEngineeringPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "seismology_deep_match_le_total",
+      "module": "SeismologyDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "seismology_deep_holdout_match_le_total",
+      "module": "SeismologyDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "seismology_deep_bundle",
+      "module": "SeismologyDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "seismology_match_le_total",
+      "module": "SeismologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "seismology_bundle",
+      "module": "SeismologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "semiconductor_physics_public_panel_bundle",
+      "module": "SemiconductorPhysicsPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sh0es_refined_bundle",
+      "module": "SH0ESRefinedPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "simbad_stellar_identity_deep_bundle",
+      "module": "SIMBADStellarIdentityDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "small_body_orbits_bundle",
+      "module": "SmallBodyOrbitsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sociology_gap_fill_bundle",
+      "module": "SociologyGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "solar_system_structure_deep_bundle",
+      "module": "SolarSystemStructureDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "soul_sibling_priors_bundle",
+      "module": "SoulSiblingPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "space_propulsion_systems_bundle",
+      "module": "SpacePropulsionSystemsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "space_weather_stability_match_le_total",
+      "module": "SpaceWeatherPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "space_weather_stability_match_rate_nonneg",
+      "module": "SpaceWeatherPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "space_weather_bundle",
+      "module": "SpaceWeatherPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "species_catalog_bundle",
+      "module": "SpeciesPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "speleology_ext_bundle",
+      "module": "SpeleologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "sports_biomechanics_gap_fill_bundle",
+      "module": "SportsBiomechanicsGapFillPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "statistical_mechanics_public_panel_bundle",
+      "module": "StatisticalMechanicsPublicPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stellar_multiplicity_catalog_bundle",
+      "module": "StellarMultiplicityCatalogPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stellar_multiplicity_live_deep_bundle",
+      "module": "StellarMultiplicityLiveDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "structure_calibration_links_codon_map",
+      "module": "StructureCalibrationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "structure_calibration_bundle",
+      "module": "StructureCalibrationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stumped_panel_bundle",
+      "module": "StumpedObservablesPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "stumped_spine_bundle",
+      "module": "StumpedObservablesSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "superheavy_element_stability_panel_bundle",
+      "module": "SuperheavyElementStabilityPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "superheavy_island_completion_spine_bundle",
+      "module": "SuperheavyIslandCompletionSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "superheavy_island_emergence_simulation_bundle",
+      "module": "SuperheavyIslandEmergenceSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "supply_chain_ext_bundle",
+      "module": "SupplyChainLogisticsExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "symbolic_archetype_panel_bundle",
+      "module": "SymbolicArchetypePanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "synthetic_biology_bundle",
+      "module": "SyntheticBiologyPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "tectonics_match_le_total",
+      "module": "TectonicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "tectonics_bundle",
+      "module": "TectonicsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_acoustic_bleed_depth_bundle",
+      "module": "Term3AcousticBleedDepthPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "coherence_efficiency_positive",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "bleed_in_factor_le_coherence",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cos_arg_negative_for_typical_delta_psi",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "growth_term_positive",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "exp_term_in_term1_base_bounded",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "perceived_adjust_positive_and_bounded",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_base_negative_for_high_D_eff",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_lt_one",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_lt_cent",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_lt_four_millis",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_lt_one_over_410",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "beta_nonneg",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_delta_bounds",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_D_bounds",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "growth_term_hits_zero_gt_one",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_delta_bounds",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term3_abs_lt_fifth",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_term3_abs_lt_fifth",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term2_default_eq_one",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term2_eq_one",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "raw_S_negative_when_term1_overcomes_defaults",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term1_base_abs_gt_fifth",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cosmological_term1_base_abs_gt_one_two",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "dark_energy_term1_base_abs_gt_one_two",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_base_dominates_term3_cosmological",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_dominates_in_cosmological_regime",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_dominates_term3_when_base_large",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_dominates_in_tight_window",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_dominates_for_very_high_D",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_dominates_with_recent_hits",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_dominates_for_high_D_no_observer_numeric",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "observer_modulates_term1",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "raw_S_positive_of_term1_gt_neg_08",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "raw_S_negative_of_term1_overcomes_term3",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term3_abs_lt_fifth_default",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_base_negative_of_typical_delta",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_positive_of_observer_negative_quirk",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quirkMod_neg_of_delta_psi_ge_07",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quirkMod_pos_of_delta_psi_le_06",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "ai_term1_base_abs_gt_one_six",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "cmb_term1_base_abs_gt_one_three_five",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_lt_neg_08_ai",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_ai_term1_overcomes_term3",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_lt_neg_08_cmb",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_cmb_term1_overcomes_term3",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "quirkMod_lt_exp_cos_bound",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "term1_gt_neg_08_of_observer_pos_quirk",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_positive_of_params",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_gt_neg_08_chemical",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_gt_neg_08_electron",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_gt_neg_08_medical",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_gt_neg_08_molecular",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_gt_neg_08_material",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "domain_term1_positive_biological",
+      "module": "Theorems.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "toe_spine_bundle",
+      "module": "TheoryCompletenessSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "thesis_simulation_bundle",
+      "module": "ThesisSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "time_xw_bundle",
+      "module": "TimeDomainCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "time_emergence_deep_panel_bundle",
+      "module": "TimeEmergenceDeepPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "time_em_bundle",
+      "module": "TimeEmergenceSimulationPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "toe_claim_certificate_bundle_bundle",
+      "module": "ToEClaimCertificateBundlePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "gap_spine_bundle",
+      "module": "ToEGapClosureSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "toe_unity_bundle",
+      "module": "ToEUnificationSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "tokenization_smoke_bundle",
+      "module": "TokenizationSmokePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_fluid_priors_bundle",
+      "module": "TrinaryFluidPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_hardware_motif_bundle",
+      "module": "TrinaryHardwareMotifPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_isa_rebuild_bundle",
+      "module": "TrinaryOSISARebuildPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_portable_bundle",
+      "module": "TrinaryOSPortablePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_hello_smaller_than_spawn",
+      "module": "TrinaryOSPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_fsotb_bundle",
+      "module": "TrinaryOSPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_round_trip_bundle",
+      "module": "TrinaryOSRoundTripPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "trinary_os_tier_e_bundle",
+      "module": "TrinaryOSTierEPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "undiscovered_element_candidate_prereg_scaffold_bundle",
+      "module": "UndiscoveredElementCandidatePreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "unified_db_candidate_crosswalk_bundle",
+      "module": "UnifiedDBCandidateCrosswalkPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "unified_db_crosswalk_spine_bundle",
+      "module": "UnifiedDBCrosswalkSpinePriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "unified_db_strict_le_total",
+      "module": "UnifiedDBPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "unified_db_meta_bundle",
+      "module": "UnifiedDBPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "uniprot_protein_annotations_bundle",
+      "module": "UniprotProteinAnnotationsPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "uniprot_structure_annotations_deep_bundle",
+      "module": "UniProtStructureAnnotationsDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "vibra_mc_prob_non_decrease_cp5_le_one",
+      "module": "VibRegisterPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "vibra_register_bundle",
+      "module": "VibRegisterPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "virology_ext_bundle",
+      "module": "VirologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "vizier_wds_tap_live_deep_bundle",
+      "module": "VizieRWdsTapLiveDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "vl_distill_atlas_bundle",
+      "module": "VlDistillAtlasPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_delta_phi_stable_le_raw",
+      "module": "WarpActuationDevelopmentPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_stable_run_band",
+      "module": "WarpActuationDevelopmentPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_actuation_core_bundle",
+      "module": "WarpActuationDevelopmentPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_actuation_stabilized_bundle",
+      "module": "WarpActuationDevelopmentPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_bh_wh_linked_to_blackhole_domain",
+      "module": "WarpBhWhPortalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "warp_bh_wh_portal_bundle",
+      "module": "WarpBhWhPortalPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "wds_live_multiplicity_deep_bundle",
+      "module": "WDSLiveMultiplicityDeepPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "weather_priors_bundle",
+      "module": "WeatherPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "world_bank_development_bundle",
+      "module": "WorldBankDevelopmentPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "xr_interactive_media_math_scaffold_bundle",
+      "module": "XRInteractiveMediaMathScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "z120_z126_beam_synthesis_panel_bundle",
+      "module": "Z120Z126BeamSynthesisPanelPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "z164_distant_island_prereg_scaffold_bundle",
+      "module": "Z164DistantIslandPreregScaffoldPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "zero_day_eval_bundle",
+      "module": "ZeroDayRiskEvaluatorPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    },
+    {
+      "theorem": "zoology_ext_bundle",
+      "module": "ZoologyExtensionPriors.lean",
+      "reason": "contains_non_exportable_proof_markers"
+    }
+  ],
+  "remedy": "Extend export_full_formal_obligations.py for structural/bundle patterns, or keep exclusions documented here with explicit reasons."
+}

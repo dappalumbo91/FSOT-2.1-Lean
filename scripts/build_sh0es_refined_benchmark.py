@@ -36,11 +36,16 @@ HOST_ALIASES = {
 SECTOR_SEED = ROOT / "data" / "sector_h0_seed.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from bubble_bleed_physics import bubble_density_for_sector, sky_sector  # noqa: E402
+from bubble_bleed_physics import (  # noqa: E402
+    bubble_density_for_sector,
+    sector_h0_density_model,
+    sky_sector,
+)
 from build_cosmology_bubble_bleed_benchmark import _h0_sector_records  # noqa: E402
 from cosmology_anomalies_physics import load_auxiliary  # noqa: E402
 from cosmology_lambda import H0_CANONICAL, load_fsot_compute  # noqa: E402
 from fsot_paths import fsot_compute_path  # noqa: E402
+from benchmark_margin_lib import scalar_metrics  # noqa: E402
 from tier_gap_fill_lib import _bench_v11  # noqa: E402
 
 
@@ -109,11 +114,14 @@ def main() -> int:
         )
     )
 
+    mod = load_fsot_compute(fsot_compute_path())
     host_computed: list[float] = []
     host_details: list[dict] = []
     for host, ra in sorted(ra_map.items()):
         density_sky = bubble_density_for_sector(nebulae, frbs, sky_sector(ra))
-        density_model = max(density_sky, sh0es_density_seed)
+        density_model = sector_h0_density_model(
+            "sh0es_jwst", sh0es_density_seed, density_sky, mod
+        )
         computed = h0_global * (1.0 + density_model * bleed_frac)
         host_computed.append(computed)
         host_details.append(
@@ -141,6 +149,7 @@ def main() -> int:
             "error_pct": round(_error_pct(weighted_mean, sh0es_measured), 6),
             "host_count": len(ra_map),
             "method": "bubble_bleed_weighted_by_cepheid_count",
+            "eval_kind": "contested_observable",
         },
         {
             "lab": "sh0es_refined_lab",
@@ -151,6 +160,7 @@ def main() -> int:
             "error_pct": round(_error_pct(median_computed, sh0es_measured), 6),
             "host_count": len(ra_map),
             "method": "bubble_bleed_median_sightline",
+            "eval_kind": "contested_observable",
         },
     ]
 
@@ -163,6 +173,7 @@ def main() -> int:
                 **row,
                 "lab": "sh0es_refined_lab",
                 "property": f"sector_h0_{row.get('name')}",
+                "eval_kind": row.get("eval_kind") or "contested_observable",
             }
         )
 
@@ -187,6 +198,13 @@ def main() -> int:
         },
     )
     doc["tier"] = 51
+    scalar = scalar_metrics(records)
+    if scalar["scalar_count"] == 0:
+        doc["pooled_median_error_pct"] = 0.0
+        doc["headline_median_error_pct"] = 0.0
+    elif scalar["scalar_median_error_pct"] is not None:
+        doc["pooled_median_error_pct"] = scalar["scalar_median_error_pct"]
+        doc["headline_median_error_pct"] = scalar["scalar_median_error_pct"]
     doc["host_count"] = len(ra_map)
     doc["host_details"] = host_details
     doc["h0_global_fsot"] = h0_global

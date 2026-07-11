@@ -120,6 +120,11 @@ def _mass_kg_from_density_radius(density_g_cm3: float, radius_km: float) -> floa
 
 
 NASA_EXTENDED_PHYSICAL_REFERENCE = {
+    "Venus": {
+        "radius_km": 6051.8,
+        "density_g_cm3": 5.204,
+        "mass_kg": _mass_kg_from_density_radius(5.204, 6051.8),
+    },
     "Eris": {
         "radius_km": 1163.0,
         "density_g_cm3": 2.43,
@@ -327,14 +332,36 @@ def resolve_body_physical(name: str, text: str) -> dict[str, Any]:
             phys["radius_km"] = ref.get("radius_km")
         if phys.get("density_g_cm3") is None:
             phys["density_g_cm3"] = ref.get("density_g_cm3")
-        radius = phys.get("radius_km") or ref.get("radius_km")
-        density = phys.get("density_g_cm3") or ref.get("density_g_cm3")
-        if radius and density:
-            # Horizons ELEMENTS mass for small moons is often inconsistent with published bulk density.
-            phys["mass_kg"] = _mass_kg_from_density_radius(float(density), float(radius))
-        elif phys.get("mass_kg") is None and ref.get("mass_kg") is not None:
-            phys["mass_kg"] = ref["mass_kg"]
+    radius = phys.get("radius_km") or (ref or {}).get("radius_km")
+    density = phys.get("density_g_cm3") or (ref or {}).get("density_g_cm3")
+    if radius and density:
+        # Published bulk density + mean radius is the self-consistent JPL anchor.
+        phys["mass_kg"] = _mass_kg_from_density_radius(float(density), float(radius))
+    elif phys.get("mass_kg") is None and ref and ref.get("mass_kg") is not None:
+        phys["mass_kg"] = ref["mass_kg"]
     return phys
+
+
+def resolve_semi_major_axis_au(
+    name: str,
+    text: str,
+    *,
+    table: dict[str, float] | None = None,
+    prefer_soe: bool = False,
+) -> float | None:
+    """Semi-major axis AU — NASA mean elements unless dwarf-body SOE is requested."""
+    lookup = table if table is not None else NASA_SEMI_MAJOR_AU
+    if prefer_soe:
+        soe = parse_soe_elements(text)
+        a_au = soe.get("semi_major_axis_au")
+        if a_au is not None:
+            return float(a_au)
+    ref = lookup.get(name)
+    if ref is not None:
+        return float(ref)
+    soe = parse_soe_elements(text)
+    a_au = soe.get("semi_major_axis_au")
+    return float(a_au) if a_au is not None else None
 
 
 def parse_soe_elements(text: str) -> dict[str, float | None]:

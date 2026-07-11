@@ -994,17 +994,16 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Unified DB Candidate Crosswalk",
   "tier_label": "Tier 69 \u2014 Unified DB Candidate Crosswalk cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.651560+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.097839+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 46,
+    "scalar_count": 15,
     "median_error_pct": 0.0,
-    "max_error_pct": 0.934579,
-    "mean_abs_delta": 0.021739130434782608,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
     "precision_tier_counts": {
-      "green": 45,
-      "red": 1
+      "green": 15
     },
-    "green_gate_fraction": 0.9782608695652174,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }

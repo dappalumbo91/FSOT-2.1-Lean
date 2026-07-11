@@ -100,12 +100,17 @@ def measurement_envelope(
 
 def domain_precision_summary(records: list[dict]) -> dict[str, Any]:
     """Aggregate σ/Δ stats for a domain benchmark."""
+    from benchmark_margin_lib import classify_record
+
     scalar_errs: list[float] = []
     deltas: list[float] = []
     tiers: dict[str, int] = {}
 
     for r in records:
-        env = r.get("scientific_measurement") or measurement_envelope(r)
+        if classify_record(r) != "scalar":
+            continue
+        contested = str(r.get("eval_kind") or "").lower() == "contested_observable"
+        env = r.get("scientific_measurement") or measurement_envelope(r, contested=contested)
         err = env.get("delta_pct") or r.get("error_pct")
         if err is None:
             continue

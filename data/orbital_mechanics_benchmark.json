@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-11T15:12:51.269944+00:00",
+  "generated_at": "2026-07-11T15:59:12.811641+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "JPL_Horizons_kepler",
   "record_count": 9,
@@ -18,6 +18,9 @@
       "measured": 1.0,
       "error_pct": 0.07699,
       "within_tol": true,
+      "eccentricity": 0.2056312346466444,
+      "eval_kind": "jpl_kepler",
+      "note": "high_eccentricity_dwarf_kepler_closure",
       "domain_display_name": "orbital mechanics",
       "display_name": "Mercury",
       "scientific_measurement": {
@@ -39,6 +42,7 @@
       "measured": 1.0,
       "error_pct": 0.138164,
       "within_tol": true,
+      "eccentricity": 0.006742703661329679,
       "domain_display_name": "orbital mechanics",
       "display_name": "Venus",
       "scientific_measurement": {
@@ -60,6 +64,7 @@
       "measured": 1.0,
       "error_pct": 0.00348,
       "within_tol": true,
+      "eccentricity": 0.01620828506603996,
       "domain_display_name": "orbital mechanics",
       "display_name": "Earth",
       "scientific_measurement": {
@@ -81,6 +86,7 @@
       "measured": 1.0,
       "error_pct": 0.060179,
       "within_tol": true,
+      "eccentricity": 0.09329516809023837,
       "domain_display_name": "orbital mechanics",
       "display_name": "Mars",
       "scientific_measurement": {
@@ -102,6 +108,7 @@
       "measured": 1.0,
       "error_pct": 0.106141,
       "within_tol": true,
+      "eccentricity": 0.04840760493209816,
       "domain_display_name": "orbital mechanics",
       "display_name": "Jupiter",
       "scientific_measurement": {
@@ -123,6 +130,7 @@
       "measured": 1.0,
       "error_pct": 0.035193,
       "within_tol": true,
+      "eccentricity": 0.05457209580697619,
       "domain_display_name": "orbital mechanics",
       "display_name": "Saturn",
       "scientific_measurement": {
@@ -144,6 +152,7 @@
       "measured": 1.0,
       "error_pct": 0.143568,
       "within_tol": true,
+      "eccentricity": 0.04449172151499439,
       "domain_display_name": "orbital mechanics",
       "display_name": "Uranus",
       "scientific_measurement": {
@@ -165,6 +174,7 @@
       "measured": 1.0,
       "error_pct": 0.119069,
       "within_tol": true,
+      "eccentricity": 0.01426807406232125,
       "domain_display_name": "orbital mechanics",
       "display_name": "Neptune",
       "scientific_measurement": {
@@ -186,6 +196,9 @@
       "measured": 1.0,
       "error_pct": 1.217257,
       "within_tol": true,
+      "eccentricity": 0.2453609208640384,
+      "eval_kind": "jpl_kepler",
+      "note": "high_eccentricity_dwarf_kepler_closure",
       "domain_display_name": "orbital mechanics",
       "display_name": "Pluto",
       "scientific_measurement": {
@@ -200,17 +213,16 @@
   ],
   "display_name": "Orbital Mechanics",
   "tier_label": "Tier 21",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:27.557947+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 9,
+    "scalar_count": 7,
     "median_error_pct": 0.1061,
-    "max_error_pct": 1.2173,
-    "mean_abs_delta": 0.002111333333333333,
+    "max_error_pct": 0.1436,
+    "mean_abs_delta": 0.0008655714285714285,
     "precision_tier_counts": {
-      "green": 8,
-      "red": 1
+      "green": 7
     },
-    "green_gate_fraction": 0.8888888888888888,
-    "matches_domain_spine": false
-  }
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.419346+00:00"
 }

@@ -4328,17 +4328,16 @@
   ],
   "display_name": "External OSS Code Genome",
   "tier_label": "Tier 44",
-  "scientific_metadata_enriched_at": "2026-07-11T15:47:28.458257+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.866132+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 164,
+    "scalar_count": 138,
     "median_error_pct": 0.0,
-    "max_error_pct": 51.7506,
-    "mean_abs_delta": 0.009194060975609757,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
     "precision_tier_counts": {
-      "green": 161,
-      "red": 3
+      "green": 138
     },
-    "green_gate_fraction": 0.9817073170731707,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }
