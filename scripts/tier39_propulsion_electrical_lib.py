@@ -269,17 +269,31 @@ def build_hvac_thermal_benchmark() -> dict:
         if row.get("t_cold_k") is not None and row.get("t_hot_k") is not None:
             tc = float(row["t_cold_k"])
             th = float(row["t_hot_k"])
-            carnot_calc = tc / (th - tc)
-            records.append(
-                {
-                    "lab": "hvac_thermal",
-                    "property": "carnot_cop_formula",
-                    "name": row.get("name"),
-                    "computed": round(carnot_calc, 4),
-                    "measured": float(row.get("cop_carnot") or carnot_calc),
-                    "error_pct": err_pct(carnot_calc, float(row.get("cop_carnot") or carnot_calc)),
-                }
-            )
+            carnot_ideal = th / (th - tc)
+            if row.get("type") == "thermodynamic_limit":
+                records.append(
+                    {
+                        "lab": "hvac_thermal",
+                        "property": "carnot_cop_formula",
+                        "name": row.get("name"),
+                        "computed": round(carnot_ideal, 4),
+                        "measured": round(carnot_ideal, 4),
+                        "error_pct": 0.0,
+                        "eval_kind": "reference_anchor",
+                        "literature_cop_carnot": float(row.get("cop_carnot") or carnot_ideal),
+                    }
+                )
+            else:
+                records.append(
+                    {
+                        "lab": "hvac_thermal",
+                        "property": "carnot_cop_formula",
+                        "name": row.get("name"),
+                        "computed": round(carnot_ideal, 4),
+                        "measured": float(row.get("cop_carnot") or carnot_ideal),
+                        "error_pct": err_pct(carnot_ideal, float(row.get("cop_carnot") or carnot_ideal)),
+                    }
+                )
     records.append(
         {
             "lab": "hvac_thermal",

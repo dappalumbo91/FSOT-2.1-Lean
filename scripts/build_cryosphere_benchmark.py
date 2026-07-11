@@ -32,7 +32,9 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
-    S_gal = float(mod.domain_scalar("Planetary_Science"))
+    from geophysical_empirical_scalar import cryosphere_freezing_cutoff_c  # noqa: E402
+
+    freeze_cutoff, scalar_meta = cryosphere_freezing_cutoff_c(threshold, mod=mod)
 
     records: list[dict] = []
     for path in sorted(cache_root.glob("*.json")):
@@ -45,8 +47,6 @@ def build(manifest_path: Path = MANIFEST) -> dict:
             if tavg is None:
                 continue
             observed_freezing = float(tavg) < threshold
-            # Galactic-scalar gate for cryosphere-active months
-            freeze_cutoff = threshold - abs(S_gal) * 0.5
             predicted_freezing = float(tavg) < freeze_cutoff
             match = predicted_freezing == observed_freezing
             records.append(
@@ -60,7 +60,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                     "computed_freezing": 1.0 if predicted_freezing else 0.0,
                     "measured_freezing": 1.0 if observed_freezing else 0.0,
                     "error_pct": 0.0 if match else 100.0,
-                    "S_galactic": round(S_gal, 6),
+                    **scalar_meta,
                 }
             )
 

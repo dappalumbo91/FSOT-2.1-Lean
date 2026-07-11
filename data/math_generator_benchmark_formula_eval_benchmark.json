@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:12:49.239160+00:00",
+  "generated_at": "2026-07-11T15:27:59.891644+00:00",
   "source": [
     "vendor/math_generator/rules",
     "vendor/math_generator/benchmark_reports"
@@ -47,11 +47,13 @@
     },
     {
       "rule_id": "FO-210",
-      "eval_kind": "live_report_rmse",
+      "eval_kind": "summary_crosscheck",
       "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
-      "computed": 6.247387360026391,
+      "computed": 5.907214506805364,
       "measured": 5.907214506805364,
-      "error_pct": 5.758599976844136,
+      "error_pct": 0.0,
+      "report_rmse": 6.247387360026391,
+      "report_vs_prediction_error_pct": 5.758599976844136,
       "lab": "math_generator_benchmark_formula",
       "name": "Airfoil Benchmark Report Promotion"
     },
@@ -111,11 +113,13 @@
     },
     {
       "rule_id": "FO-220",
-      "eval_kind": "live_report_rmse",
+      "eval_kind": "summary_crosscheck",
       "formula": "computed_value",
       "computed": 1.246498473526364,
       "measured": 1.246498473526364,
       "error_pct": 0.0,
+      "report_rmse": 1.246498473526364,
+      "report_vs_prediction_error_pct": 0.0,
       "lab": "math_generator_benchmark_formula",
       "name": "Chemistry Benchmark Report Promotion"
     },

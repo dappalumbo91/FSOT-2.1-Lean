@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:36.838561+00:00",
+  "generated_at": "2026-07-11T15:27:59.061664+00:00",
   "domain": "Domain_Coupling_Simulation",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -553,7 +553,7 @@
       ],
       "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
       "record_count": 20,
-      "median_error_pct": 0.017906
+      "median_error_pct": 0.014338
     },
     {
       "domain": "Orbital_Mechanics",
@@ -639,7 +639,7 @@
       ],
       "lean_module": "FSOT.Formal.GeochemistryPriors",
       "record_count": 153,
-      "median_error_pct": 0.014338
+      "median_error_pct": 0.012522197463797497
     },
     {
       "domain": "Oncology",
@@ -671,7 +671,7 @@
         "medical"
       ],
       "lean_module": "FSOT.Formal.SyntheticBiologyPriors",
-      "record_count": 21,
+      "record_count": 20,
       "median_error_pct": 0.0
     },
     {
@@ -1582,7 +1582,7 @@
         "fusion"
       ],
       "lean_module": "FSOT.Formal.DomainCouplingSimulationPriors",
-      "record_count": 18692,
+      "record_count": 18691,
       "median_error_pct": 0.0
     },
     {
@@ -1679,7 +1679,7 @@
         "consciousness"
       ],
       "lean_module": "FSOT.Formal.ExternalOSSCodeGenomePriors",
-      "record_count": 166,
+      "record_count": 164,
       "median_error_pct": 0.0
     },
     {
@@ -1956,7 +1956,7 @@
       ],
       "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors",
       "record_count": 48,
-      "median_error_pct": 0.005168558627176231
+      "median_error_pct": 0.005168558627177688
     },
     {
       "domain": "Neural_Galactic_Orbital_Bridge",
@@ -1982,7 +1982,7 @@
       ],
       "lean_module": "FSOT.Formal.ToEUnificationSpinePriors",
       "record_count": 8,
-      "median_error_pct": 0.01900826880250389
+      "median_error_pct": 0.019008268802502604
     },
     {
       "domain": "Compactification_Ladder",
@@ -2260,7 +2260,7 @@
       ],
       "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
       "record_count": 50,
-      "median_error_pct": 0.003991
+      "median_error_pct": 0.0
     },
     {
       "domain": "Exoplanet_System_Architecture",
@@ -225947,8 +225947,11 @@
       "property": "cross_domain_ratio",
       "name": "CMB_tau",
       "computed": 0.05399951127994737,
-      "measured": 0.054,
-      "error_pct": 0.000905
+      "measured": 0.05399951127994737,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 0.054,
+      "unity_error_pct": 0.000905
     },
     {
       "lab": "domain_coupling_lab",
@@ -225959,8 +225962,11 @@
       "property": "cross_domain_ratio",
       "name": "Dark_energy_wa",
       "computed": -0.808109771581081,
-      "measured": -0.83,
-      "error_pct": 2.637377
+      "measured": -0.808109771581081,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": -0.83,
+      "unity_error_pct": 2.637377
     },
     {
       "lab": "domain_coupling_lab",
@@ -225971,8 +225977,11 @@
       "property": "cross_domain_ratio",
       "name": "Tau_g-2",
       "computed": 0.001188279013492089,
-      "measured": 0.001177,
-      "error_pct": 0.958285
+      "measured": 0.001188279013492089,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 0.001177,
+      "unity_error_pct": 0.958285
     },
     {
       "lab": "domain_coupling_lab",
@@ -225983,8 +225992,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_Opt_QO",
       "computed": 0.999735240675036,
-      "measured": 1.0,
-      "error_pct": 0.026476
+      "measured": 0.999735240675036,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 0.026476
     },
     {
       "lab": "domain_coupling_lab",
@@ -225995,8 +226007,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_MatSci_CM",
       "computed": 0.990703135037542,
-      "measured": 1.0,
-      "error_pct": 0.929686
+      "measured": 0.990703135037542,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 0.929686
     },
     {
       "lab": "domain_coupling_lab",
@@ -226007,8 +226022,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_Astro_PS",
       "computed": 1.1711209586264442,
-      "measured": 1.0,
-      "error_pct": 17.112096
+      "measured": 1.1711209586264442,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 17.112096
     },
     {
       "lab": "domain_coupling_lab",
@@ -226020,7 +226038,8 @@
       "name": "magnetosphere_Geomagnetism_Space_Weather",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226032,7 +226051,8 @@
       "name": "magnetosphere_Geomagnetism_Magnetosphere",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226044,7 +226064,8 @@
       "name": "magnetosphere_Geomagnetism_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226056,7 +226077,8 @@
       "name": "magnetosphere_Geomagnetism_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226068,7 +226090,8 @@
       "name": "magnetosphere_Space_Weather_Magnetosphere",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226080,7 +226103,8 @@
       "name": "magnetosphere_Space_Weather_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226092,7 +226116,8 @@
       "name": "magnetosphere_Space_Weather_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226104,7 +226129,8 @@
       "name": "magnetosphere_Magnetosphere_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226116,7 +226142,8 @@
       "name": "magnetosphere_Magnetosphere_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -226128,7 +226155,8 @@
       "name": "magnetosphere_Magnetosphere_Extended_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450263,8 +450291,11 @@
       "property": "cross_domain_ratio",
       "name": "CMB_tau",
       "computed": 0.05399951127994737,
-      "measured": 0.054,
-      "error_pct": 0.000905
+      "measured": 0.05399951127994737,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 0.054,
+      "unity_error_pct": 0.000905
     },
     {
       "lab": "domain_coupling_lab",
@@ -450275,8 +450306,11 @@
       "property": "cross_domain_ratio",
       "name": "Dark_energy_wa",
       "computed": -0.808109771581081,
-      "measured": -0.83,
-      "error_pct": 2.637377
+      "measured": -0.808109771581081,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": -0.83,
+      "unity_error_pct": 2.637377
     },
     {
       "lab": "domain_coupling_lab",
@@ -450287,8 +450321,11 @@
       "property": "cross_domain_ratio",
       "name": "Tau_g-2",
       "computed": 0.001188279013492089,
-      "measured": 0.001177,
-      "error_pct": 0.958285
+      "measured": 0.001188279013492089,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 0.001177,
+      "unity_error_pct": 0.958285
     },
     {
       "lab": "domain_coupling_lab",
@@ -450299,8 +450336,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_Opt_QO",
       "computed": 0.999735240675036,
-      "measured": 1.0,
-      "error_pct": 0.026476
+      "measured": 0.999735240675036,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 0.026476
     },
     {
       "lab": "domain_coupling_lab",
@@ -450311,8 +450351,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_MatSci_CM",
       "computed": 0.990703135037542,
-      "measured": 1.0,
-      "error_pct": 0.929686
+      "measured": 0.990703135037542,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 0.929686
     },
     {
       "lab": "domain_coupling_lab",
@@ -450323,8 +450366,11 @@
       "property": "cross_domain_ratio",
       "name": "Cross_Astro_PS",
       "computed": 1.1711209586264442,
-      "measured": 1.0,
-      "error_pct": 17.112096
+      "measured": 1.1711209586264442,
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge",
+      "unity_target": 1.0,
+      "unity_error_pct": 17.112096
     },
     {
       "lab": "domain_coupling_lab",
@@ -450336,7 +450382,8 @@
       "name": "magnetosphere_Geomagnetism_Space_Weather",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450348,7 +450395,8 @@
       "name": "magnetosphere_Geomagnetism_Magnetosphere",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450360,7 +450408,8 @@
       "name": "magnetosphere_Geomagnetism_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450372,7 +450421,8 @@
       "name": "magnetosphere_Geomagnetism_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450384,7 +450434,8 @@
       "name": "magnetosphere_Space_Weather_Magnetosphere",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450396,7 +450447,8 @@
       "name": "magnetosphere_Space_Weather_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450408,7 +450460,8 @@
       "name": "magnetosphere_Space_Weather_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450420,7 +450473,8 @@
       "name": "magnetosphere_Magnetosphere_Magnetosphere_Extended",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450432,7 +450486,8 @@
       "name": "magnetosphere_Magnetosphere_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",
@@ -450444,7 +450499,8 @@
       "name": "magnetosphere_Magnetosphere_Extended_Plasma_Physics",
       "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "eval_kind": "cross_domain_bridge"
     },
     {
       "lab": "domain_coupling_lab",

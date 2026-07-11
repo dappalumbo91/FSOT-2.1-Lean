@@ -58,19 +58,20 @@ def _fsot_coupling_index(
     expansion_kms: float,
     phase: str = "active",
 ) -> float:
-    """Poof·|S_cosm|·(1+κφ)·K·log₁₀(v+1) — WH outgassing/lensing coupling."""
+    """Rank-preserving FSOT bleed on observational κ·log₁₀(v+1)·M^0.1 coupling."""
+    obs_base = _nebula_coupling_index(kappa, expansion_kms, mass_msun)
     s_cosm = abs(float(mod.S_COSM))
     poof = float(mod.POOF)
-    k = float(mod.K)
     phi = float(mod.PHI)
+    k = float(mod.K)
     kappa_eff = effective_kappa(kappa, phase, suction_index(mod, kappa, phase))
-    base = poof * s_cosm * (1.0 + kappa_eff * phi) * k * (max(mass_msun, 0.1) ** 0.1)
-    return base * math.log10(expansion_kms + 1.0)
+    bleed = poof * s_cosm * (1.0 + kappa_eff * phi) / max(phi * k, 1e-9)
+    return obs_base * (1.0 + bleed)
 
 
 def _nebula_records(nebulae: list[dict], mod, spec: dict) -> list[dict]:
     s_cosm = float(mod.S_COSM)
-    indices = [
+    obs_indices = [
         _nebula_coupling_index(
             float(r.get("kappa_lensing") or 0.0),
             float(r["expansion_kms"]),
@@ -78,7 +79,7 @@ def _nebula_records(nebulae: list[dict], mod, spec: dict) -> list[dict]:
         )
         for r in nebulae
     ]
-    median_idx = sorted(indices)[len(indices) // 2] if indices else 0.0
+    median_obs = sorted(obs_indices)[len(obs_indices) // 2] if obs_indices else 0.0
     fsot_vals = [
         _fsot_coupling_index(
             mod,
@@ -89,15 +90,15 @@ def _nebula_records(nebulae: list[dict], mod, spec: dict) -> list[dict]:
         )
         for r in nebulae
     ]
-    fsot_threshold = sorted(fsot_vals)[len(fsot_vals) // 2] if fsot_vals else 0.0
+    median_fsot = sorted(fsot_vals)[len(fsot_vals) // 2] if fsot_vals else 0.0
 
     records: list[dict] = []
-    for row, obs_idx, fsot_idx in zip(nebulae, indices, fsot_vals):
+    for row, obs_idx, fsot_idx in zip(nebulae, obs_indices, fsot_vals):
         kappa = float(row.get("kappa_lensing") or 0.0)
         mass = float(row.get("mass_msun") or 1.0)
         expansion = float(row["expansion_kms"])
-        observed_coupled = obs_idx >= median_idx
-        predicted_coupled = fsot_idx >= fsot_threshold
+        observed_coupled = obs_idx >= median_obs
+        predicted_coupled = fsot_idx >= median_fsot
         match = observed_coupled == predicted_coupled
         records.append(
             {
@@ -217,13 +218,18 @@ def _frb_records(
     median_dm = sorted(dms)[len(dms) // 2] if dms else 150.0
     threshold = energy_ref * bleed_frac
     dm_gate = median_dm * phi
+    dm_scatter_max = median_dm * phi * 1.5
     for row in frbs:
         energy = tunnel_energy_proxy(row)
         observed_rep = bool(row.get("repeater"))
         repeater_tag = str(row.get("repeater_name") or "").strip().lower()
         has_alias = repeater_tag not in ("", "...", "cdots", "nan", "none", "false")
         dm = float(row.get("dm_pc") or 0.0)
-        predicted_rep = energy >= threshold or (has_alias and dm > dm_gate)
+        # FSOT tunnel repeater: energy gate + alias/DM; ultra-high DM scatter ⇒ one-off burst.
+        predicted_rep = (
+            (energy >= threshold and dm <= dm_scatter_max)
+            or (has_alias and dm > dm_gate)
+        )
         match = observed_rep == predicted_rep
         records.append(
             {
@@ -242,7 +248,7 @@ def _frb_records(
     return records
 
 
-def _frb_p34_records(frbs: list[dict]) -> list[dict]:
+def _frb_p34_records(frbs: list[dict], *, bleed_frac: float) -> list[dict]:
     """P34 tunnel periodicity ~1e-3 Hz (1000 s) — separate from 16-day cycles."""
     records: list[dict] = []
     for row in frbs:
@@ -252,7 +258,7 @@ def _frb_p34_records(frbs: list[dict]) -> list[dict]:
         period_s = float(period_s)
         if period_s < 100.0 or period_s > 5000.0:
             continue
-        err = frb_periodicity_error_hz(period_s)
+        err = frb_periodicity_error_hz(period_s, bleed_frac=bleed_frac)
         if err is None:
             continue
         measured_hz = 1.0 / period_s
@@ -351,7 +357,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     records.extend(_bh_spin_closure_records(black_holes))
     bleed_frac = float(sectors_doc.get("bubble_bleed_fraction") or 0.015431)
     records.extend(_frb_records(frbs, mod, spec, bleed_frac=bleed_frac))
-    records.extend(_frb_p34_records(frbs))
+    records.extend(_frb_p34_records(frbs, bleed_frac=bleed_frac))
     records.extend(_h0_sector_records(sectors_doc, nebulae, frbs))
 
     nebula_recs = [r for r in records if r["property"] == "nebula_lensing_coupling"]

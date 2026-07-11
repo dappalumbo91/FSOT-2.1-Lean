@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:12:40.889126+00:00",
+  "generated_at": "2026-07-11T15:27:59.623811+00:00",
   "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
   "maps_to_lean": [
     "medical",
@@ -15,7 +15,8 @@
       "name": "CI2",
       "computed": -7.007584181144136,
       "measured": -7.0,
-      "error_pct": 0.108345
+      "error_pct": 0.108345,
+      "fsot_formula": "-\u03c6\u2074-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -23,7 +24,8 @@
       "name": "barnase",
       "computed": -8.79922884583726,
       "measured": -8.8,
-      "error_pct": 0.0087631154856993
+      "error_pct": 0.0087631154856993,
+      "fsot_formula": "S_cosm\u207b\u00b3-G"
     },
     {
       "lab": "immunology_lab",
@@ -31,7 +33,8 @@
       "name": "ubiquitin",
       "computed": -6.699379178638373,
       "measured": -6.7,
-      "error_pct": 0.009265990472048086
+      "error_pct": 0.009265990472048086,
+      "fsot_formula": "K\u2074-B_IN\u207b\u2078"
     },
     {
       "lab": "immunology_lab",
@@ -39,7 +42,8 @@
       "name": "lysozyme",
       "computed": -9.160572302574996,
       "measured": -9.2,
-      "error_pct": 0.428562
+      "error_pct": 0.428562,
+      "fsot_formula": "-e\u00b2-\u03c6-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -47,7 +51,8 @@
       "name": "RNase A",
       "computed": -8.683186676986617,
       "measured": -8.7,
-      "error_pct": 0.193257
+      "error_pct": 0.193257,
+      "fsot_formula": "-e\u00b2-\u03a9"
     },
     {
       "lab": "immunology_lab",
@@ -55,7 +60,8 @@
       "name": "cytochrome c",
       "computed": -10.081950177328737,
       "measured": -10.1,
-      "error_pct": 0.178711
+      "error_pct": 0.178711,
+      "fsot_formula": "-\u03c0\u00b2-P_BASE"
     },
     {
       "lab": "immunology_lab",
@@ -63,7 +69,8 @@
       "name": "myoglobin",
       "computed": -13.562305898749054,
       "measured": -13.6,
-      "error_pct": 0.27716250919812885
+      "error_pct": 0.27716250919812885,
+      "fsot_formula": "PHI\u00b2-C_COSM\u207b\u00b9"
     },
     {
       "lab": "immunology_lab",
@@ -71,7 +78,8 @@
       "name": "BPTI",
       "computed": -11.000000000000002,
       "measured": -11.0,
-      "error_pct": 1.6148698540002278e-14
+      "error_pct": 1.6148698540002278e-14,
+      "fsot_formula": "PHI\u207b\u2075-PHI\u2075"
     },
     {
       "lab": "immunology_lab",
@@ -79,7 +87,8 @@
       "name": "SH3 domain",
       "computed": -3.502756499504318,
       "measured": -3.5,
-      "error_pct": 0.07875712869480316
+      "error_pct": 0.07875712869480316,
+      "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075"
     },
     {
       "lab": "immunology_lab",
@@ -87,7 +96,8 @@
       "name": "chymotrypsin inh.",
       "computed": -4.291643461547232,
       "measured": -4.3,
-      "error_pct": 0.19433810355273806
+      "error_pct": 0.19433810355273806,
+      "fsot_formula": "CHAOS\u207b\u00b9\u00b7G\u207b\u2074"
     },
     {
       "lab": "immunology_lab",
@@ -95,7 +105,8 @@
       "name": "Gly_pK\u2081",
       "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 0.00047401701302970684
+      "error_pct": 0.00047401701302970684,
+      "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u2074"
     },
     {
       "lab": "immunology_lab",
@@ -103,7 +114,8 @@
       "name": "Gly_pK\u2082",
       "computed": 9.604206413193825,
       "measured": 9.6,
-      "error_pct": 0.0438168041023516
+      "error_pct": 0.0438168041023516,
+      "fsot_formula": "ETA\u207b\u00b3-ETA\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -111,7 +123,8 @@
       "name": "Ala_pK\u2081",
       "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 0.00047401701302970684
+      "error_pct": 0.00047401701302970684,
+      "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u2074"
     },
     {
       "lab": "immunology_lab",
@@ -119,7 +132,8 @@
       "name": "Ala_pK\u2082",
       "computed": 9.869604401089358,
       "measured": 9.87,
-      "error_pct": 0.004008
+      "error_pct": 0.004008,
+      "fsot_formula": "\u03c0\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -127,7 +141,8 @@
       "name": "Val_pK\u2081",
       "computed": 2.2980601642983487,
       "measured": 2.29,
-      "error_pct": 0.351972
+      "error_pct": 0.351972,
+      "fsot_formula": "e-K"
     },
     {
       "lab": "immunology_lab",
@@ -135,7 +150,8 @@
       "name": "Val_pK\u2082",
       "computed": 9.716122186194907,
       "measured": 9.72,
-      "error_pct": 0.039895
+      "error_pct": 0.039895,
+      "fsot_formula": "\u03c0\u00b2-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -143,7 +159,8 @@
       "name": "Leu_pK\u2081",
       "computed": 2.3298975496881877,
       "measured": 2.33,
-      "error_pct": 0.004397009090657935
+      "error_pct": 0.004397009090657935,
+      "fsot_formula": "PI\u00b2\u00b7PHI\u207b\u00b3"
     },
     {
       "lab": "immunology_lab",
@@ -151,7 +168,8 @@
       "name": "Leu_pK\u2082",
       "computed": 9.716122186194907,
       "measured": 9.74,
-      "error_pct": 0.245152
+      "error_pct": 0.245152,
+      "fsot_formula": "\u03c0\u00b2-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -159,7 +177,8 @@
       "name": "Asp_pKR",
       "computed": 3.6342474226362644,
       "measured": 3.65,
-      "error_pct": 0.431577
+      "error_pct": 0.431577,
+      "fsot_formula": "e+G"
     },
     {
       "lab": "immunology_lab",
@@ -167,7 +186,8 @@
       "name": "Glu_pKR",
       "computed": 4.23606797749979,
       "measured": 4.25,
-      "error_pct": 0.327812
+      "error_pct": 0.327812,
+      "fsot_formula": "\u03c6\u00b3"
     },
     {
       "lab": "immunology_lab",
@@ -175,7 +195,8 @@
       "name": "His_pKR",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076"
     },
     {
       "lab": "immunology_lab",
@@ -183,7 +204,8 @@
       "name": "Cys_pKR",
       "computed": 8.176996891207093,
       "measured": 8.18,
-      "error_pct": 0.036713
+      "error_pct": 0.036713,
+      "fsot_formula": "e\u00b2+B_IN"
     },
     {
       "lab": "immunology_lab",
@@ -191,7 +213,8 @@
       "name": "Tyr_pKR",
       "computed": 10.06799040289138,
       "measured": 10.07,
-      "error_pct": 0.019956277146172662
+      "error_pct": 0.019956277146172662,
+      "fsot_formula": "PSI\u207b\u2075+PSI\u2074"
     },
     {
       "lab": "immunology_lab",
@@ -199,7 +222,8 @@
       "name": "Lys_pKR",
       "computed": 10.501724959917917,
       "measured": 10.53,
-      "error_pct": 0.268519
+      "error_pct": 0.268519,
+      "fsot_formula": "\u03c0\u00b2+PSI"
     },
     {
       "lab": "immunology_lab",
@@ -207,7 +231,8 @@
       "name": "Arg_pKR",
       "computed": 12.487638389839253,
       "measured": 12.48,
-      "error_pct": 0.061205
+      "error_pct": 0.061205,
+      "fsot_formula": "\u03c0\u00b2+\u03c6\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -215,7 +240,8 @@
       "name": "Pro_pK\u2081",
       "computed": 1.9902242326903956,
       "measured": 1.99,
-      "error_pct": 0.01126797439173972
+      "error_pct": 0.01126797439173972,
+      "fsot_formula": "C_COSM\u2079-S_cosm\u207b\u00b9"
     },
     {
       "lab": "immunology_lab",
@@ -223,7 +249,8 @@
       "name": "Pro_pK\u2082",
       "computed": 10.571672795662035,
       "measured": 10.6,
-      "error_pct": 0.267238
+      "error_pct": 0.267238,
+      "fsot_formula": "\u03c0\u00b2+\u03c6-G"
     },
     {
       "lab": "immunology_lab",
@@ -231,7 +258,8 @@
       "name": "Phe_pK\u2081",
       "computed": 2.575736191370456,
       "measured": 2.58,
-      "error_pct": 0.165264
+      "error_pct": 0.165264,
+      "fsot_formula": "\u03c6+C_EFF"
     },
     {
       "lab": "immunology_lab",
@@ -239,7 +267,8 @@
       "name": "Trp_pK\u2081",
       "computed": 2.3801050513839623,
       "measured": 2.38,
-      "error_pct": 0.004413923695900844
+      "error_pct": 0.004413923695900844,
+      "fsot_formula": "K\u207b\u00b9+K\u2079"
     },
     {
       "lab": "immunology_lab",
@@ -247,7 +276,8 @@
       "name": "Trp_pK\u2082",
       "computed": 9.4026621941651,
       "measured": 9.39,
-      "error_pct": 0.134848
+      "error_pct": 0.134848,
+      "fsot_formula": "\u03c0\u00b2-ETA"
     },
     {
       "lab": "immunology_lab",
@@ -255,7 +285,8 @@
       "name": "aspirin/COX-1",
       "computed": 4.799985466052134,
       "measured": 4.8,
-      "error_pct": 0.0003027905805345436
+      "error_pct": 0.0003027905805345436,
+      "fsot_formula": "G\u00b2+S_cosm\u207b\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -263,7 +294,8 @@
       "name": "ibuprofen/COX-2",
       "computed": 5.098467250120926,
       "measured": 5.1,
-      "error_pct": 0.030053919197521404
+      "error_pct": 0.030053919197521404,
+      "fsot_formula": "GAMMA\u207b\u00b3-PI\u207b\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -271,7 +303,8 @@
       "name": "morphine/\u03bc-opioid",
       "computed": 8.176996891207093,
       "measured": 8.2,
-      "error_pct": 0.280526
+      "error_pct": 0.280526,
+      "fsot_formula": "e\u00b2+B_IN"
     },
     {
       "lab": "immunology_lab",
@@ -279,7 +312,8 @@
       "name": "penicillin G/PBP",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076"
     },
     {
       "lab": "immunology_lab",
@@ -287,7 +321,8 @@
       "name": "atorvastatin/HMG-CoA",
       "computed": 8.30502169310787,
       "measured": 8.3,
-      "error_pct": 0.060502
+      "error_pct": 0.060502,
+      "fsot_formula": "e\u00b2+G"
     },
     {
       "lab": "immunology_lab",
@@ -295,7 +330,8 @@
       "name": "metformin/AMPK",
       "computed": 4.499756240982774,
       "measured": 4.5,
-      "error_pct": 0.005416867049470556
+      "error_pct": 0.005416867049470556,
+      "fsot_formula": "OMEGA/C_FAC"
     },
     {
       "lab": "immunology_lab",
@@ -303,7 +339,8 @@
       "name": "warfarin/VKORC1",
       "computed": 6.700619751355234,
       "measured": 6.7,
-      "error_pct": 0.00925
+      "error_pct": 0.00925,
+      "fsot_formula": "\u03c6\u2074-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -311,7 +348,8 @@
       "name": "digoxin/Na-K-ATPase",
       "computed": 8.47213595499958,
       "measured": 8.5,
-      "error_pct": 0.327812
+      "error_pct": 0.327812,
+      "fsot_formula": "\u03c6\u2074+\u03c6"
     },
     {
       "lab": "immunology_lab",
@@ -319,7 +357,8 @@
       "name": "caffeine/A\u2082A",
       "computed": 4.703010184424049,
       "measured": 4.7,
-      "error_pct": 0.064046
+      "error_pct": 0.064046,
+      "fsot_formula": "\u03c6\u00b3+ETA"
     },
     {
       "lab": "immunology_lab",
@@ -327,7 +366,8 @@
       "name": "nicotine/nAChR",
       "computed": 7.088753822260279,
       "measured": 7.1,
-      "error_pct": 0.158397
+      "error_pct": 0.158397,
+      "fsot_formula": "e\u00b2-P_NEW"
     },
     {
       "lab": "immunology_lab",
@@ -335,7 +375,8 @@
       "name": "carbonic anhydrase",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076"
     },
     {
       "lab": "immunology_lab",
@@ -343,7 +384,8 @@
       "name": "catalase",
       "computed": 7.601401875170029,
       "measured": 7.6,
-      "error_pct": 0.018446
+      "error_pct": 0.018446,
+      "fsot_formula": "e\u00b2+P_BASE"
     },
     {
       "lab": "immunology_lab",
@@ -351,7 +393,8 @@
       "name": "acetylcholinesterase",
       "computed": 4.150702399695581,
       "measured": 4.15,
-      "error_pct": 0.01692529386942307
+      "error_pct": 0.01692529386942307,
+      "fsot_formula": "B_IN\u207b\u2076-A_IN\u207b\u2077"
     },
     {
       "lab": "immunology_lab",
@@ -359,7 +402,8 @@
       "name": "chymotrypsin",
       "computed": 2.0,
       "measured": 2.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "fsot_formula": "PHI\u207b\u00b2+PHI"
     },
     {
       "lab": "immunology_lab",
@@ -367,7 +411,8 @@
       "name": "lysozyme",
       "computed": -0.30030227667037146,
       "measured": -0.3,
-      "error_pct": 0.100759
+      "error_pct": 0.100759,
+      "fsot_formula": "-P_NEW"
     },
     {
       "lab": "immunology_lab",
@@ -375,7 +420,8 @@
       "name": "TPI",
       "computed": 3.6342474226362644,
       "measured": 3.63,
-      "error_pct": 0.117009
+      "error_pct": 0.117009,
+      "fsot_formula": "e+G"
     },
     {
       "lab": "immunology_lab",
@@ -383,7 +429,8 @@
       "name": "\u03b2-lactamase",
       "computed": 3.295074868484244,
       "measured": 3.3,
-      "error_pct": 0.149246
+      "error_pct": 0.149246,
+      "fsot_formula": "\u03c0+POOF"
     },
     {
       "lab": "immunology_lab",
@@ -391,7 +438,8 @@
       "name": "DNA polymerase",
       "computed": 2.4799461039763027,
       "measured": 2.48,
-      "error_pct": 0.002173226761988694
+      "error_pct": 0.002173226761988694,
+      "fsot_formula": "THETA\u207b\u00b9-C_EFF"
     },
     {
       "lab": "immunology_lab",
@@ -399,7 +447,8 @@
       "name": "lactate dehydrogenase",
       "computed": 2.9881104386953425,
       "measured": 3.0,
-      "error_pct": 0.396319
+      "error_pct": 0.396319,
+      "fsot_formula": "\u03c0-POOF"
     },
     {
       "lab": "immunology_lab",
@@ -407,7 +456,8 @@
       "name": "urease",
       "computed": 4.47964174690591,
       "measured": 4.48,
-      "error_pct": 0.007996720850222959
+      "error_pct": 0.007996720850222959,
+      "fsot_formula": "OMEGA\u00b2+OMEGA\u2074"
     },
     {
       "lab": "immunology_lab",
@@ -415,7 +465,8 @@
       "name": "hexokinase",
       "computed": 0.1498912826508499,
       "measured": 0.15,
-      "error_pct": 0.07247823276673726
+      "error_pct": 0.07247823276673726,
+      "fsot_formula": "A_BL\u207b\u2075/B_IN\u207b\u2077"
     },
     {
       "lab": "immunology_lab",
@@ -423,7 +474,8 @@
       "name": "pepsin",
       "computed": 0.30030227667037146,
       "measured": 0.3,
-      "error_pct": 0.100759
+      "error_pct": 0.100759,
+      "fsot_formula": "P_NEW"
     },
     {
       "lab": "immunology_lab",
@@ -431,7 +483,8 @@
       "name": "TPI",
       "computed": 0.9702311355036954,
       "measured": 0.97,
-      "error_pct": 0.023828402442831718
+      "error_pct": 0.023828402442831718,
+      "fsot_formula": "CHAOS+G\u207b\u00b3"
     },
     {
       "lab": "immunology_lab",
@@ -439,7 +492,8 @@
       "name": "alcohol dehydrogenase",
       "computed": 1.000286568515822,
       "measured": 1.0,
-      "error_pct": 0.028657
+      "error_pct": 0.028657,
+      "fsot_formula": "B_IN+P_BASE"
     },
     {
       "lab": "immunology_lab",
@@ -447,7 +501,8 @@
       "name": "\u03b2-galactosidase",
       "computed": 4.012412406515011,
       "measured": 4.0,
-      "error_pct": 0.31031
+      "error_pct": 0.31031,
+      "fsot_formula": "e+OMEGA"
     },
     {
       "lab": "immunology_lab",
@@ -455,7 +510,8 @@
       "name": "chymotrypsin",
       "computed": 4.999568084592974,
       "measured": 5.0,
-      "error_pct": 0.008638308140511697
+      "error_pct": 0.008638308140511697,
+      "fsot_formula": "B_IN\u207b\u2077-B_IN\u2075"
     },
     {
       "lab": "immunology_lab",
@@ -463,7 +519,8 @@
       "name": "lysozyme",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076"
     },
     {
       "lab": "immunology_lab",
@@ -471,7 +528,8 @@
       "name": "glucokinase",
       "computed": 10.0,
       "measured": 10.0,
-      "error_pct": 0.0
+      "error_pct": 0.0,
+      "fsot_formula": "C_COSM\u207b\u00b9/PHI"
     },
     {
       "lab": "immunology_lab",
@@ -479,7 +537,8 @@
       "name": "carbonic anhydrase",
       "computed": 12.006135537926694,
       "measured": 12.0,
-      "error_pct": 0.051129
+      "error_pct": 0.051129,
+      "fsot_formula": "\u03c6\u2075+G"
     },
     {
       "lab": "immunology_lab",
@@ -487,7 +546,8 @@
       "name": "catalase",
       "computed": 25.001165610844783,
       "measured": 25.0,
-      "error_pct": 0.004662443379132242
+      "error_pct": 0.004662443379132242,
+      "fsot_formula": "K\u2076\u00b7P_NEW\u207b\u2077"
     },
     {
       "lab": "immunology_lab",
@@ -495,7 +555,8 @@
       "name": "methotrexate_DHFR",
       "computed": 9.007090087680545,
       "measured": 9.0,
-      "error_pct": 0.078779
+      "error_pct": 0.078779,
+      "fsot_formula": "E\u00b2+PHI"
     },
     {
       "lab": "immunology_lab",
@@ -503,7 +564,8 @@
       "name": "acetazolamide_CAII",
       "computed": 7.901075596837235,
       "measured": 7.92,
-      "error_pct": 0.238944
+      "error_pct": 0.238944,
+      "fsot_formula": "PHI\u2074+A_BLEED"
     },
     {
       "lab": "immunology_lab",
@@ -511,7 +573,8 @@
       "name": "captopril_ACE",
       "computed": 8.768246556133533,
       "measured": 8.77,
-      "error_pct": 0.0199936586826242
+      "error_pct": 0.0199936586826242,
+      "fsot_formula": "OMEGA\u2079-C_EFF\u207b\u2078"
     },
     {
       "lab": "immunology_lab",
@@ -519,7 +582,8 @@
       "name": "sildenafil_PDE5",
       "computed": 8.436029729518202,
       "measured": 8.4,
-      "error_pct": 0.428925
+      "error_pct": 0.428925,
+      "fsot_formula": "E\u00b2+A_BLEED"
     },
     {
       "lab": "immunology_lab",
@@ -527,7 +591,8 @@
       "name": "donepezil_AChE",
       "computed": 7.642042758526128,
       "measured": 7.66,
-      "error_pct": 0.234429
+      "error_pct": 0.234429,
+      "fsot_formula": "PHI\u2074+B_IN"
     },
     {
       "lab": "immunology_lab",
@@ -535,7 +600,8 @@
       "name": "omeprazole_ATPase",
       "computed": 7.689358375601022,
       "measured": 7.7,
-      "error_pct": 0.138203
+      "error_pct": 0.138203,
+      "fsot_formula": "E\u00b2+P_NEW"
     },
     {
       "lab": "immunology_lab",
@@ -543,7 +609,8 @@
       "name": "warfarin_VKORC1",
       "computed": 6.276886301348152,
       "measured": 6.3,
-      "error_pct": 0.366884
+      "error_pct": 0.366884,
+      "fsot_formula": "PHI\u2074-GAMMA"
     },
     {
       "lab": "immunology_lab",
@@ -551,7 +618,8 @@
       "name": "allopurinol_XO",
       "computed": 6.152148753020613,
       "measured": 6.15,
-      "error_pct": 0.03493907350590267
+      "error_pct": 0.03493907350590267,
+      "fsot_formula": "B_IN\u00b3+K\u207b\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -559,7 +627,8 @@
       "name": "aspirin_COX1",
       "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 0.05041956982053305
+      "error_pct": 0.05041956982053305,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076"
     },
     {
       "lab": "immunology_lab",
@@ -567,7 +636,8 @@
       "name": "ibuprofen_COX2",
       "computed": 5.33631581720894,
       "measured": 5.35,
-      "error_pct": 0.255779
+      "error_pct": 0.255779,
+      "fsot_formula": "E+PHI\u00b2"
     },
     {
       "lab": "immunology_lab",
@@ -575,7 +645,8 @@
       "name": "penicillinG_PBP",
       "computed": 7.321044173173944,
       "measured": 7.3,
-      "error_pct": 0.288276
+      "error_pct": 0.288276,
+      "fsot_formula": "PHI\u2074+ETA"
     },
     {
       "lab": "immunology_lab",
@@ -583,7 +654,8 @@
       "name": "lovastatin_HMGR",
       "computed": 8.911902198468796,
       "measured": 8.92,
-      "error_pct": 0.090783
+      "error_pct": 0.090783,
+      "fsot_formula": "PI\u00b2-C_EFF"
     },
     {
       "lab": "immunology_lab",
@@ -591,7 +663,8 @@
       "name": "AA/TT",
       "computed": -1.000286568515822,
       "measured": -1.0,
-      "error_pct": 0.028657
+      "error_pct": 0.028657,
+      "fsot_formula": "-(B_IN+P_BASE)"
     },
     {
       "lab": "immunology_lab",
@@ -599,7 +672,8 @@
       "name": "AT/TA",
       "computed": -0.8775179415719043,
       "measured": -0.88,
-      "error_pct": 0.282052
+      "error_pct": 0.282052,
+      "fsot_formula": "-(GAMMA+P_NEW)"
     },
     {
       "lab": "immunology_lab",
@@ -607,7 +681,8 @@
       "name": "TA/AT",
       "computed": -0.5772156649015329,
       "measured": -0.58,
-      "error_pct": 0.480058
+      "error_pct": 0.480058,
+      "fsot_formula": "-GAMMA"
     },
     {
       "lab": "immunology_lab",
@@ -615,7 +690,8 @@
       "name": "CA/GT",
       "computed": -1.4492779683778432,
       "measured": -1.45,
-      "error_pct": 0.04979528428667465
+      "error_pct": 0.04979528428667465,
+      "fsot_formula": "G\u2077+S_cosm\u207b\u00b9"
     },
     {
       "lab": "immunology_lab",
@@ -623,7 +699,8 @@
       "name": "GT/CA",
       "computed": -1.4399623905429433,
       "measured": -1.44,
-      "error_pct": 0.002611767851157243
+      "error_pct": 0.002611767851157243,
+      "fsot_formula": "SUCTION\u2075/CHAOS\u2079"
     },
     {
       "lab": "immunology_lab",
@@ -631,7 +708,8 @@
       "name": "CT/GA",
       "computed": -1.2796363252433056,
       "measured": -1.28,
-      "error_pct": 0.02841209036675077
+      "error_pct": 0.02841209036675077,
+      "fsot_formula": "SUCTION\u00b2-G\u207b\u00b3"
     },
     {
       "lab": "immunology_lab",
@@ -639,7 +717,8 @@
       "name": "GA/CT",
       "computed": -1.2941305780559662,
       "measured": -1.3,
-      "error_pct": 0.451494
+      "error_pct": 0.451494,
+      "fsot_formula": "-OMEGA"
     },
     {
       "lab": "immunology_lab",
@@ -647,7 +726,8 @@
       "name": "CG/GC",
       "computed": -2.1673761839859265,
       "measured": -2.17,
-      "error_pct": 0.12091318037204912
+      "error_pct": 0.12091318037204912,
+      "fsot_formula": "BETA-OMEGA\u00b3"
     },
     {
       "lab": "immunology_lab",
@@ -655,7 +735,8 @@
       "name": "GC/CG",
       "computed": -2.2403440561097856,
       "measured": -2.24,
-      "error_pct": 0.015359647758276092
+      "error_pct": 0.015359647758276092,
+      "fsot_formula": "P_VAR\u207b\u00b2-P_NEW\u207b\u00b9"
     },
     {
       "lab": "immunology_lab",
@@ -663,7 +744,8 @@
       "name": "GG/CC",
       "computed": -1.8366053309085486,
       "measured": -1.84,
-      "error_pct": 0.1844928854049714
+      "error_pct": 0.1844928854049714,
+      "fsot_formula": "CHAOS\u2074-G\u207b\u2077"
     },
     {
       "lab": "immunology_lab",
@@ -671,7 +753,8 @@
       "name": "AC/TG",
       "computed": -1.4399623905429433,
       "measured": -1.44,
-      "error_pct": 0.002611767851157243
+      "error_pct": 0.002611767851157243,
+      "fsot_formula": "SUCTION\u2075/CHAOS\u2079"
     },
     {
       "lab": "immunology_lab",
@@ -679,7 +762,8 @@
       "name": "TC/AG",
       "computed": -1.2941305780559662,
       "measured": -1.3,
-      "error_pct": 0.451494
+      "error_pct": 0.451494,
+      "fsot_formula": "-OMEGA"
     }
   ]
 }

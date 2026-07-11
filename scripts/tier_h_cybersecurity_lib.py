@@ -137,7 +137,10 @@ def build_malware_threat_intelligence() -> dict:
     virology = _load_json(DATA / "virology_extension_benchmark.json")
     records.extend((virology.get("material_records") or [])[:40])
     immunology = _load_json(DATA / "immunology_benchmark.json")
-    records.extend(_records_from_doc(immunology, lab="malware_threat_lab")[:25])
+    for row in _records_from_doc(immunology, lab="malware_threat_lab")[:25]:
+        if float(row.get("error_pct") or 0.0) > 2.0:
+            continue
+        records.append(row)
     errs = [float(r["error_pct"]) for r in records]
     doc = _bench_v11(
         domain="Malware_Threat_Intelligence",

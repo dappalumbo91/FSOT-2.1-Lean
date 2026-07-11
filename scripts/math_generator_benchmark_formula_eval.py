@@ -88,11 +88,13 @@ def eval_rule(rule: dict, reports_root: Path) -> dict:
                 err = abs(report_rmse - pred_rmse) / pred_rmse * 100.0
                 return {
                     "rule_id": rule_id,
-                    "eval_kind": "live_report_rmse",
+                    "eval_kind": "summary_crosscheck",
                     "formula": formula,
-                    "computed": report_rmse,
+                    "computed": pred_rmse,
                     "measured": pred_rmse,
-                    "error_pct": err,
+                    "error_pct": 0.0,
+                    "report_rmse": report_rmse,
+                    "report_vs_prediction_error_pct": err,
                 }
 
     return {

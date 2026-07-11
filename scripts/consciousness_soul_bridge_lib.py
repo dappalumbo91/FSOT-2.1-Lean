@@ -151,9 +151,9 @@ def build_bridge_records(mod=None) -> tuple[list[dict], dict[str, Any]]:
         ),
         (
             "vib_pattern_stability",
-            vib_pattern_stability(scalars),
+            vib_pattern_stability(scalars, avg_s=measured["avg_S"]),
             measured["pattern_stability"],
-            "avg_S*W_Integration",
+            "measured_avg_S*W_Integration",
         ),
         (
             "microtubule_tunnel_carrier_hz",

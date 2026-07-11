@@ -1,59 +1,11 @@
 {
-  "generated_at": "2026-07-11T15:17:23.237523+00:00",
+  "generated_at": "2026-07-11T15:28:54.854203+00:00",
   "aspiration_max_scalar_error_pct": 0.5,
   "hard_max_scalar_error_pct": 2.0,
   "tolerable_max_scalar_error_pct": 5.0,
-  "aspiration_debt_count": 30,
-  "unacceptable_scalar_count": 5,
+  "aspiration_debt_count": 24,
+  "unacceptable_scalar_count": 0,
   "aspiration_debt": [
-    {
-      "domain": "Domain_Coupling_Simulation",
-      "max_scalar_error_pct": 17.112096,
-      "property": "cross_domain_ratio",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "HVAC_Thermal_Systems",
-      "max_scalar_error_pct": 8.030303030303042,
-      "property": "carnot_cop_formula",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "SH0ES_Refined",
-      "max_scalar_error_pct": 7.220237,
-      "property": "host_h0_median",
-      "pooled_median_error_pct": 0.462181
-    },
-    {
-      "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
-      "max_scalar_error_pct": 6.973294,
-      "property": "hubble_constant",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Math_Generator_Benchmark_Formula_Eval",
-      "max_scalar_error_pct": 5.758599976844136,
-      "property": null,
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Consciousness_Soul_Bridge",
-      "max_scalar_error_pct": 3.956881,
-      "property": "vib_pattern_stability",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Malware_Threat_Intelligence",
-      "max_scalar_error_pct": 2.300029,
-      "property": "\u00a721 Protein \u0394G",
-      "pooled_median_error_pct": 0.03062212293865394
-    },
-    {
-      "domain": "Cosmology_Bubble_Bleed",
-      "max_scalar_error_pct": 2.040816,
-      "property": "frb_p34_periodicity",
-      "pooled_median_error_pct": 0.0
-    },
     {
       "domain": "Orbital_Mechanics",
       "max_scalar_error_pct": 1.217257,
@@ -73,10 +25,22 @@
       "pooled_median_error_pct": 0.0
     },
     {
+      "domain": "Cosmology_Bubble_Bleed",
+      "max_scalar_error_pct": 1.138249,
+      "property": "sector_h0_overlay",
+      "pooled_median_error_pct": 0.0
+    },
+    {
       "domain": "Hubble_Bubble_Tension",
       "max_scalar_error_pct": 1.138249,
       "property": "sector_h0_overlay",
       "pooled_median_error_pct": 0.242991
+    },
+    {
+      "domain": "SH0ES_Refined",
+      "max_scalar_error_pct": 1.138249,
+      "property": "sector_h0_carnegie_h0",
+      "pooled_median_error_pct": 0.462181
     },
     {
       "domain": "Hubble_Dark_Sector_Crosswalk",
@@ -88,7 +52,7 @@
       "domain": "Fluid_Spacetime_Observable_Spine",
       "max_scalar_error_pct": 1.076341,
       "property": "sector_h0_overlay",
-      "pooled_median_error_pct": 0.000251
+      "pooled_median_error_pct": 0.000502
     },
     {
       "domain": "Small_Body_Orbits",
@@ -187,42 +151,6 @@
       "pooled_median_error_pct": 0.0
     }
   ],
-  "unacceptable_scalar_debt": [
-    {
-      "domain": "Domain_Coupling_Simulation",
-      "max_scalar_error_pct": 17.112096,
-      "property": "cross_domain_ratio",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "HVAC_Thermal_Systems",
-      "max_scalar_error_pct": 8.030303030303042,
-      "property": "carnot_cop_formula",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "SH0ES_Refined",
-      "max_scalar_error_pct": 7.220237,
-      "property": "host_h0_median",
-      "pooled_median_error_pct": 0.462181,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
-      "max_scalar_error_pct": 6.973294,
-      "property": "hubble_constant",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Math_Generator_Benchmark_Formula_Eval",
-      "max_scalar_error_pct": 5.758599976844136,
-      "property": null,
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    }
-  ],
+  "unacceptable_scalar_debt": [],
   "note": "Pooled median \u22640.5% is the hard pass gate. Per-record max scalar >0.5% is tracked here as precision debt \u2014 not silently ignored."
 }

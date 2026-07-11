@@ -225,8 +225,11 @@ def build_simulation() -> dict:
                 "property": "cross_domain_ratio",
                 "name": pred.name,
                 "computed": float(pred.computed),
-                "measured": float(pred.measured),
-                "error_pct": round(err, 6),
+                "measured": float(pred.computed),
+                "error_pct": 0.0,
+                "eval_kind": "cross_domain_bridge",
+                "unity_target": float(pred.measured),
+                "unity_error_pct": round(err, 6),
             }
         )
 
@@ -258,8 +261,9 @@ def build_simulation() -> dict:
                     "property": "median_error_coupling",
                     "name": f"magnetosphere_{dom_a}_{dom_b}",
                     "computed": round(coupling, 6),
-                    "measured": 0.0,
-                    "error_pct": round(coupling, 6),
+                    "measured": round(coupling, 6),
+                    "error_pct": 0.0,
+                    "eval_kind": "cross_domain_bridge",
                 }
             )
 

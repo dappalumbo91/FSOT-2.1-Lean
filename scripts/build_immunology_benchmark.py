@@ -45,9 +45,10 @@ def build() -> dict:
                 "lab": "immunology_lab",
                 "property": section,
                 "name": row.get("name"),
-                "computed": row.get("computed_value"),
-                "measured": row.get("target_value"),
+                "computed": float(row.get("computed_value") or row.get("computed") or 0),
+                "measured": float(row.get("target_value") or row.get("measured") or 0),
                 "error_pct": float(err),
+                "fsot_formula": row.get("fsot_formula"),
             }
         )
     errs = [r["error_pct"] for r in records]

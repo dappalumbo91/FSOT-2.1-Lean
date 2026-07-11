@@ -33,7 +33,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
-    S_gal = float(mod.domain_scalar("Planetary_Science"))
+    from geophysical_empirical_scalar import grace_mass_loss_cutoff_gt  # noqa: E402
+
+    loss_cutoff, scalar_meta = grace_mass_loss_cutoff_gt(threshold, mod=mod)
 
     series = sorted(doc.get("records") or [], key=lambda r: r.get("month") or "")
     records: list[dict] = []
@@ -42,7 +44,6 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         cur_mass = float(cur["mass_gt"])
         delta = cur_mass - prev_mass
         observed_loss = delta < threshold
-        loss_cutoff = threshold - abs(S_gal) * 15.0
         predicted_loss = delta < loss_cutoff
         match = observed_loss == predicted_loss
         records.append(
@@ -55,7 +56,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
                 "computed_loss": 1.0 if predicted_loss else 0.0,
                 "measured_loss": 1.0 if observed_loss else 0.0,
                 "error_pct": 0.0 if match else 100.0,
-                "S_galactic": round(S_gal, 6),
+                **scalar_meta,
             }
         )
 

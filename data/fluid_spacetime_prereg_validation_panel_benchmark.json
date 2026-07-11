@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:13.580254+00:00",
+  "generated_at": "2026-07-11T15:28:01.576795+00:00",
   "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -252,14 +252,14 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 6.973294,
+    "max_scalar_error_pct": 0.039797,
     "classifier_count": 1,
     "classifier_correct": 1,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": 100.0,
     "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

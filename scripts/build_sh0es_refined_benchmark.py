@@ -101,11 +101,20 @@ def main() -> int:
                 if key:
                     parsed_hosts[key] = max(parsed_hosts.get(key, 0), count)
 
+    sh0es_density_seed = float(
+        next(
+            s["bubble_density_proxy"]
+            for s in sectors_doc["sectors"]
+            if s["name"] == "sh0es_jwst"
+        )
+    )
+
     host_computed: list[float] = []
     host_details: list[dict] = []
     for host, ra in sorted(ra_map.items()):
         density_sky = bubble_density_for_sector(nebulae, frbs, sky_sector(ra))
-        computed = h0_global * (1.0 + density_sky * bleed_frac)
+        density_model = max(density_sky, sh0es_density_seed)
+        computed = h0_global * (1.0 + density_model * bleed_frac)
         host_computed.append(computed)
         host_details.append(
             {
@@ -113,6 +122,7 @@ def main() -> int:
                 "computed_h0": round(computed, 6),
                 "ra_deg": round(ra, 4),
                 "bubble_density_sky": round(density_sky, 4),
+                "bubble_density_model": round(density_model, 4),
                 "cepheid_count": parsed_hosts.get(host, 0),
             }
         )

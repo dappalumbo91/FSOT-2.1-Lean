@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T14:51:48.090285+00:00",
+  "generated_at": "2026-07-11T15:34:09.054361+00:00",
   "domain": "Cross_Proof_Verification_Spine",
   "tier": 79,
   "obligation_count": 24,
@@ -581,15 +581,15 @@
       "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\transcendental_bounds_gap_report.json"
     },
     "rust_replay": {
-      "status": "failed",
+      "status": "passed",
       "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
       "crate": "fsot_obligation_replay",
       "obligation_count": 1309,
       "formal_count": 1241,
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
-      "returncode": 101,
-      "stderr_tail": "error: linking with `link.exe` failed: exit code: 1104\n  |\n  = note: \"C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2022\\\\BuildTools\\\\VC\\\\Tools\\\\MSVC\\\\14.44.35207\\\\bin\\\\HostX64\\\\x64\\\\link.exe\" \"/NOLOGO\" \"C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\verification\\\\rust\\\\fsot_obligation_replay\\\\target\\\\debug\\\\deps\\\\rustc04baLv\\\\symbols.o\" \"<25 object files omitted>\" \"<sysroot>\\\\lib\\\\rustlib\\\\x86_64-pc-windows-msvc\\\\lib/{libtest-*,libgetopts-*,librustc_std_workspace_std-*,libstd-*,libpanic_unwind-*,libcfg_if-*,libwindows_link-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libunwind-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib\" \"kernel32.lib\" \"kernel32.lib\" \"kernel32.lib\" \"kernel32.lib\" \"ntdll.lib\" \"userenv.lib\" \"ws2_32.lib\" \"dbghelp.lib\" \"/defaultlib:msvcrt\" \"/NXCOMPAT\" \"/OUT:C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\verification\\\\rust\\\\fsot_obligation_replay\\\\target\\\\debug\\\\deps\\\\replay_all_obligations-fb0f7f26c91840c9.exe\" \"/OPT:REF,NOICF\" \"/DEBUG\" \"/PDBALTPATH:%_PDB%\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\intrinsic.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\liballoc.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libcore.natvis\" \"/NATVIS:<sysroot>\\\\lib\\\\rustlib\\\\etc\\\\libstd.natvis\"\n  = note: some arguments are omitted. use `--verbose` to show all linker arguments\n  = note: LINK : fatal error LNK1104: cannot open file 'C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\rust\\fsot_obligation_replay\\target\\debug\\deps\\replay_all_obligations-fb0f7f26c91840c9.exe'\n          \n\nerror: could not compile `fsot_obligation_replay` (test \"replay_all_obligations\") due to 1 previous error\n"
+      "returncode": 0,
+      "stderr_tail": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
     },
     "rust_refinement": {
       "status": "passed",
@@ -656,7 +656,7 @@
       "stderr_tail": "ESP32 FSOT SERIAL HARNESS (Tier 91)\n  port: COM3\n  flash: skipped\n  serial: passed boot=0.09928895626861721 hardware_boot=ok\n  overall_ok: True\nWrote C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\esp32_fsot_serial_harness_report.json\n"
     }
   },
-  "overall_ok": false,
-  "github_ready": false,
+  "overall_ok": true,
+  "github_ready": true,
   "records": []
 }

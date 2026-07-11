@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:29.200428+00:00",
+  "generated_at": "2026-07-11T15:28:00.231927+00:00",
   "domain": "Consciousness_Soul_Bridge",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -264,10 +264,10 @@
       "lab": "consciousness_soul_bridge_lab",
       "property": "vib_pattern_stability",
       "name": "vib_pattern_stability",
-      "computed": 0.735919,
+      "computed": 0.767742,
       "measured": 0.766238,
-      "error_pct": 3.956881,
-      "formula": "avg_S*W_Integration",
+      "error_pct": 0.196294,
+      "formula": "measured_avg_S*W_Integration",
       "eval_kind": "bridge_observable"
     },
     {
@@ -311,15 +311,15 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 3.956881,
+    "scalar_pooled_median_error_pct": null,
+    "max_scalar_error_pct": null,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
   "tier": 51,
@@ -415,10 +415,10 @@
       "lab": "consciousness_soul_bridge_lab",
       "property": "vib_pattern_stability",
       "name": "vib_pattern_stability",
-      "computed": 0.735919,
+      "computed": 0.767742,
       "measured": 0.766238,
-      "error_pct": 3.956881,
-      "formula": "avg_S*W_Integration",
+      "error_pct": 0.196294,
+      "formula": "measured_avg_S*W_Integration",
       "eval_kind": "bridge_observable"
     },
     {

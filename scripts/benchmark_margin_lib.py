@@ -35,6 +35,17 @@ STRUCTURAL_EVAL_KINDS = frozenset(
         "jpl_kepler",
         "reference_anchor",
         "jpl_elements",
+        "panel_anchor",
+        "contested_observable",
+        "cross_domain_bridge",
+        "bridge_observable",
+        "fsot_compute",
+        "certificate_gate",
+        "fic_valve",
+        "resonance_crosswalk",
+        "live_formula",
+        "summary_crosscheck",
+        "artifact_present",
     }
 )
 

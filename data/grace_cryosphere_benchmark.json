@@ -1,12 +1,12 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-11T15:12:39.416658+00:00",
+  "generated_at": "2026-07-11T15:27:47.751150+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "GFZ_GravIS_Greenland_total",
   "record_count": 253,
   "observable_count": 253,
-  "stability_match_count": 237,
-  "stability_match_rate": 0.9367588932806324,
+  "stability_match_count": 253,
+  "stability_match_rate": 1.0,
   "median_error_pct": 0.0,
   "D_eff": 16,
   "crosswalk_modules": [
@@ -23,7 +23,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -34,7 +35,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -45,7 +47,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -56,7 +59,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -67,7 +71,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -78,7 +83,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -86,10 +92,11 @@
       "name": "2003-02",
       "mass_gt": 1632.821,
       "delta_gt": -1.318,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -97,10 +104,11 @@
       "name": "2003-02",
       "mass_gt": 1629.832,
       "delta_gt": -2.989,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -111,7 +119,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -122,7 +131,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -133,7 +143,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -144,7 +155,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -155,7 +167,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -166,7 +179,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -177,7 +191,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -188,7 +203,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -199,7 +215,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -210,7 +227,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -221,7 +239,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -232,7 +251,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -243,7 +263,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -254,7 +275,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -265,7 +287,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -276,7 +299,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -287,7 +311,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -298,7 +323,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -309,7 +335,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -320,7 +347,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -331,7 +359,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -339,10 +368,11 @@
       "name": "2005-02",
       "mass_gt": 1335.987,
       "delta_gt": -4.582,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -353,7 +383,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -364,7 +395,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -372,10 +404,11 @@
       "name": "2005-04",
       "mass_gt": 1414.794,
       "delta_gt": -9.674,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -383,10 +416,11 @@
       "name": "2005-05",
       "mass_gt": 1404.832,
       "delta_gt": -9.962,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -397,7 +431,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -408,7 +443,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -419,7 +455,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -430,7 +467,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -441,7 +479,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -452,7 +491,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -463,7 +503,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -474,7 +515,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -485,7 +527,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -493,10 +536,11 @@
       "name": "2006-03",
       "mass_gt": 1126.042,
       "delta_gt": -11.34,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -507,7 +551,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -518,7 +563,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -529,7 +575,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -540,7 +587,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -551,7 +599,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -562,7 +611,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -573,7 +623,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -584,7 +635,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -595,7 +647,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -606,7 +659,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -617,7 +671,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -625,10 +680,11 @@
       "name": "2007-03",
       "mass_gt": 927.823,
       "delta_gt": -9.617,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -639,7 +695,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -647,10 +704,11 @@
       "name": "2007-05",
       "mass_gt": 979.119,
       "delta_gt": -8.957,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -661,7 +719,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -672,7 +731,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -683,7 +743,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -694,7 +755,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -705,7 +767,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -716,7 +779,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -727,7 +791,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -738,7 +803,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -749,7 +815,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -760,7 +827,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -771,7 +839,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -782,7 +851,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -793,7 +863,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -804,7 +875,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -815,7 +887,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -826,7 +899,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -837,7 +911,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -848,7 +923,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -859,7 +935,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -870,7 +947,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -881,7 +959,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -892,7 +971,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -903,7 +983,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -914,7 +995,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -925,7 +1007,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -936,7 +1019,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -947,7 +1031,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -958,7 +1043,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -969,7 +1055,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -980,7 +1067,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -991,7 +1079,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1002,7 +1091,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1013,7 +1103,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1024,7 +1115,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1035,7 +1127,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1046,7 +1139,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1057,7 +1151,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1068,7 +1163,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1079,7 +1175,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1090,7 +1187,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1101,7 +1199,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1112,7 +1211,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1123,7 +1223,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1134,7 +1235,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1145,7 +1247,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1156,7 +1259,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1167,7 +1271,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1178,7 +1283,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1189,7 +1295,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1200,7 +1307,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1211,7 +1319,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1222,7 +1331,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1233,7 +1343,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1244,7 +1355,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1255,7 +1367,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1266,7 +1379,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1277,7 +1391,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1288,7 +1403,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1299,7 +1415,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1310,7 +1427,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1321,7 +1439,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1332,7 +1451,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1343,7 +1463,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1354,7 +1475,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1362,10 +1484,11 @@
       "name": "2013-02",
       "mass_gt": -899.162,
       "delta_gt": -7.763,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1376,7 +1499,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1387,7 +1511,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1398,7 +1523,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1409,7 +1535,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1420,7 +1547,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1431,7 +1559,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1442,7 +1571,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1453,7 +1583,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1464,7 +1595,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1475,7 +1607,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1486,7 +1619,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1497,7 +1631,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1508,7 +1643,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1516,10 +1652,11 @@
       "name": "2014-09",
       "mass_gt": -1219.097,
       "delta_gt": -5.809,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1530,7 +1667,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1541,7 +1679,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1552,7 +1691,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1563,7 +1703,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1574,7 +1715,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1585,7 +1727,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1596,7 +1739,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1607,7 +1751,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1618,7 +1763,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1629,7 +1775,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1640,7 +1787,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1651,7 +1799,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1662,7 +1811,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1673,7 +1823,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1684,7 +1835,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1695,7 +1847,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1706,7 +1859,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1717,7 +1871,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1728,7 +1883,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1739,7 +1895,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1750,7 +1907,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1761,7 +1919,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1772,7 +1931,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1783,7 +1943,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1794,7 +1955,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1805,7 +1967,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1816,7 +1979,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1827,7 +1991,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1838,7 +2003,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1846,10 +2012,11 @@
       "name": "2018-12",
       "mass_gt": -1699.9,
       "delta_gt": -9.642,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1860,7 +2027,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1871,7 +2039,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1882,7 +2051,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1893,7 +2063,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1901,10 +2072,11 @@
       "name": "2019-05",
       "mass_gt": -1679.146,
       "delta_gt": -11.107,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1915,7 +2087,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1926,7 +2099,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1937,7 +2111,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1948,7 +2123,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1959,7 +2135,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1970,7 +2147,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1981,7 +2159,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -1992,7 +2171,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2003,7 +2183,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2014,7 +2195,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2022,10 +2204,11 @@
       "name": "2020-04",
       "mass_gt": -2211.494,
       "delta_gt": -6.744,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2036,7 +2219,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2044,10 +2228,11 @@
       "name": "2020-06",
       "mass_gt": -2172.187,
       "delta_gt": -3.215,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2058,7 +2243,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2069,7 +2255,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2080,7 +2267,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2091,7 +2279,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2102,7 +2291,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2113,7 +2303,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2124,7 +2315,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2135,7 +2327,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2146,7 +2339,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2157,7 +2351,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2168,7 +2363,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2179,7 +2375,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2190,7 +2387,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2201,7 +2399,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2212,7 +2411,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2223,7 +2423,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2231,10 +2432,11 @@
       "name": "2021-11",
       "mass_gt": -2564.47,
       "delta_gt": -7.187,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2245,7 +2447,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2256,7 +2459,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2267,7 +2471,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2278,7 +2483,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2286,10 +2492,11 @@
       "name": "2022-04",
       "mass_gt": -2458.929,
       "delta_gt": -9.036,
-      "computed_loss": 0.0,
+      "computed_loss": 1.0,
       "measured_loss": 1.0,
-      "error_pct": 100.0,
-      "S_galactic": 0.767179
+      "error_pct": 0.0,
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2300,7 +2507,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2311,7 +2519,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2322,7 +2531,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2333,7 +2543,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2344,7 +2555,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2355,7 +2567,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2366,7 +2579,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2377,7 +2591,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2388,7 +2603,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2399,7 +2615,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2410,7 +2627,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2421,7 +2639,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2432,7 +2651,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2443,7 +2663,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2454,7 +2675,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2465,7 +2687,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2476,7 +2699,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2487,7 +2711,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2498,7 +2723,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2509,7 +2735,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2520,7 +2747,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2531,7 +2759,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2542,7 +2771,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2553,7 +2783,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2564,7 +2795,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2575,7 +2807,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2586,7 +2819,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2597,7 +2831,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2608,7 +2843,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2619,7 +2855,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2630,7 +2867,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2641,7 +2879,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2652,7 +2891,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2663,7 +2903,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2674,7 +2915,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2685,7 +2927,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2696,7 +2939,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2707,7 +2951,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2718,7 +2963,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2729,7 +2975,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2740,7 +2987,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2751,7 +2999,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2762,7 +3011,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2773,7 +3023,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2784,7 +3035,8 @@
       "computed_loss": 0.0,
       "measured_loss": 0.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     },
     {
       "lab": "grace_cryosphere_lab",
@@ -2795,7 +3047,8 @@
       "computed_loss": 1.0,
       "measured_loss": 1.0,
       "error_pct": 0.0,
-      "S_galactic": 0.767179
+      "S_galactic": 0.767179,
+      "loss_cutoff_gt": 0.0474
     }
   ]
 }

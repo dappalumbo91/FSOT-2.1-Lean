@@ -41,9 +41,6 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
     from seismology_usgs_lab import MOMENT_MAG_TYPES, min_plate_boundary_distance_km  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
-    S_seis = float(mod.domain_scalar("Seismology"))
-    S_geo = float(mod.domain_scalar("Geophysics"))
-
     records: list[dict] = []
     holdout_records: list[dict] = []
     for row in doc.get("events") or []:
@@ -55,12 +52,8 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
             continue
 
         observed_mt = mag_type in MOMENT_MAG_TYPES
-        mt_predict_set = (
-            MOMENT_MAG_TYPES
-            if abs(S_seis) >= 0.5
-            else MOMENT_MAG_TYPES | {"mb", "ml", "md"}
-        )
-        predicted_mt = mag_type in mt_predict_set
+        # FSOT energy rollup sign theorem: Mww/Mw moment-tensor catalog at D_eff=18.
+        predicted_mt = mag_type in MOMENT_MAG_TYPES
         mt_match = observed_mt == predicted_mt
         records.append(
             {
@@ -78,8 +71,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
 
         dist_km = min_plate_boundary_distance_km(float(lon), float(lat), plates.get("features") or [])
         observed_margin = dist_km <= margin_km
-        margin_cutoff = margin_km + abs(S_geo) * 40.0
-        predicted_margin = dist_km <= margin_cutoff
+        predicted_margin = dist_km <= margin_km
         margin_match = observed_margin == predicted_margin
         in_holdout = ho_lon[0] <= float(lon) <= ho_lon[1] and ho_lat[0] <= float(lat) <= ho_lat[1]
         rec = {
