@@ -93,8 +93,15 @@ def main() -> int:
         "fsot_scale": {
             "extension_domains": n_domains,
             "priors_lean_modules": scan["priors_modules"],
+            "priors_only_theorems": scan["total_theorems"],
             "total_lean_theorems": scan["total_theorems"],
+            "cross_proof_spine_obligations": coq_full,
             "norm_num_certificate_uses": scan["norm_num_uses"],
+            "note": (
+                "priors_only_theorems counts *Priors.lean modules only. "
+                "cross_proof_spine_obligations is the authoritative 2146 export spine "
+                "(priors + extended + bounds)."
+            ),
         },
         "coq_cross_proof": {
             "tier": "79_connective_spine",

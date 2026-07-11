@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:11:44.150497+00:00",
+  "generated_at": "2026-07-11T22:21:17.628332+00:00",
   "version": "1.0",
   "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
   "headline_row_count": 7941,
@@ -8,12 +8,15 @@
   "live_recompute": {
     "enabled": true,
     "sample_size": 1325,
+    "pool_size": 1325,
     "checked": 1265,
+    "skipped_unsupported": 60,
+    "unevaluable_unique_gap": 0,
     "ok": 1265,
     "ok_ratio": 1.0,
     "drift_debt_count": 0
   },
-  "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute runs on deduped unique observables (1265/1265 OK).",
+  "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute on deduped uniques: 1265/1265 OK; 60 skipped (unsupported eval).",
   "verification_issues": [],
   "verification_passed": true,
   "full_summary": {

@@ -952,6 +952,7 @@ def main() -> int:
         "build_runtime_verification_scope_audit.py",
         "build_parameter_honesty_closure.py",
         "audit_scientific_pushback_coverage.py",
+        "build_adversarial_round3_audit.py",
     ):
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
 

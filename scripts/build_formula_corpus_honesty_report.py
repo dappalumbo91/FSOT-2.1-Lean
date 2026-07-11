@@ -30,7 +30,13 @@ def build() -> dict:
         "live_recompute": {
             "enabled": summary.get("live_recompute_deduped"),
             "sample_size": summary.get("live_recompute_sample_size"),
+            "pool_size": summary.get("live_recompute_pool_size"),
             "checked": summary.get("live_recompute_checked"),
+            "skipped_unsupported": summary.get("live_recompute_skipped_unsupported"),
+            "unevaluable_unique_gap": max(
+                0,
+                unique - int(summary.get("live_recompute_checked") or 0) - int(summary.get("live_recompute_skipped_unsupported") or 0),
+            ),
             "ok": summary.get("live_recompute_ok"),
             "ok_ratio": summary.get("live_recompute_ok_ratio"),
             "drift_debt_count": summary.get("live_recompute_drift_debt_count"),
@@ -38,9 +44,9 @@ def build() -> dict:
         "honest_statement": (
             f"strict_empirical.jsonl contains {total:,} rows representing "
             f"{unique:,} unique observables (concept+formula+target); "
-            f"~{factor}× project triplication. Live recompute runs on deduped "
-            f"unique observables ({summary.get('live_recompute_ok', 0)}/"
-            f"{summary.get('live_recompute_checked', 0)} OK)."
+            f"~{factor}× project triplication. Live recompute on deduped uniques: "
+            f"{summary.get('live_recompute_ok', 0)}/{summary.get('live_recompute_checked', 0)} OK; "
+            f"{summary.get('live_recompute_skipped_unsupported', 0)} skipped (unsupported eval)."
         ),
         "verification_issues": issues,
         "verification_passed": len(issues) == 0,

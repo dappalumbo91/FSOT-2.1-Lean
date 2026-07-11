@@ -149,8 +149,11 @@ def build(ledger_path: Path = LEDGER) -> dict:
     internal_count = sum(
         1 for r in records if r.get("comparison_class") == "internal_pipeline_metric"
     )
+    param_path = ROOT / "data" / "parameter_count_audit.json"
+    param_audit = json.loads(param_path.read_text(encoding="utf-8")) if param_path.exists() else {}
+    domain_table = param_audit.get("domain_table") or {}
     return {
-        "report_version": "1.1",
+        "report_version": "1.2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "observable_count": len(records),
         "headline_eligible_count": len(headline_records),
@@ -160,10 +163,16 @@ def build(ledger_path: Path = LEDGER) -> dict:
         "headline_beats_or_meets_count": headline_beats,
         "below_sota_ids": below,
         "headline_below_sota_ids": headline_below,
-        "fsot_free_parameters": int(spec.get("fsot_engine", {}).get("free_parameters", 0)),
+        "parameter_audit_verdict": param_audit.get("audit_verdict"),
+        "domain_table_slots": int(domain_table.get("total_domain_table_slots") or 0),
+        "scalar_input_fields": param_audit.get("scalar_input_fields"),
+        "fsot_free_parameters": int(domain_table.get("total_domain_table_slots") or 0),
+        "fsot_free_parameters_note": (
+            "NOT literal zero — domain_table_slots from parameter_count_audit.json; "
+            "intrinsic constants plus preregistered per-domain assignments."
+        ),
         "parameter_audit_note": (
-            "See data/parameter_count_audit.json — engine uses intrinsic constants "
-            "plus per-domain D_eff/δψ assignments, not a zero-knob claim."
+            "See data/parameter_count_audit.json and data/parameter_honesty_closure.json."
         ),
         "records": records,
     }

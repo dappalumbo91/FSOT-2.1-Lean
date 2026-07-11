@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:12:14.004774+00:00",
+  "generated_at": "2026-07-11T22:21:56.946372+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -89,7 +89,7 @@
     "provable_bundle_conj": 3,
     "structural_bundle_excluded": 323,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 13.64,
+    "conjunct_atomic_coverage_pct": 56.68,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.499999",
     "atomic_triangulated": "1820/1820",
@@ -102,9 +102,12 @@
     "structural_bundle_excluded": 323,
     "provable_bundle_conj": 3,
     "total_conjuncts": 1452,
-    "conjuncts_with_atomic_coverage": 198,
-    "conjunct_atomic_coverage_pct": 13.64,
-    "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Atomic conjuncts are replayed separately on the cross-proof spine; bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
+    "conjuncts_with_atomic_coverage": 823,
+    "conjunct_atomic_coverage_pct": 56.68,
+    "explicit_linked_conjuncts": 362,
+    "explicit_linked_in_spine": 362,
+    "explicit_link_hit_pct": 100.0,
+    "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Witness conjuncts with linked_obligation_id resolve 100% to atomic spine rows. Remaining conjuncts are eq_nat inventory tautologies proved inside Lean bundles only. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
     "obligation_total": 2146,
@@ -127,7 +130,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-11T22:11:44.150497+00:00",
+    "generated_at": "2026-07-11T22:21:17.628332+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -136,12 +139,15 @@
     "live_recompute": {
       "enabled": true,
       "sample_size": 1325,
+      "pool_size": 1325,
       "checked": 1265,
+      "skipped_unsupported": 60,
+      "unevaluable_unique_gap": 0,
       "ok": 1265,
       "ok_ratio": 1.0,
       "drift_debt_count": 0
     },
-    "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute runs on deduped unique observables (1265/1265 OK).",
+    "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute on deduped uniques: 1265/1265 OK; 60 skipped (unsupported eval).",
     "verification_issues": [],
     "verification_passed": true,
     "full_summary": {
@@ -446,7 +452,16 @@
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
     "note": "Cross-proof triangulates exported numeric obligations; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation)."
   },
-  "open_gaps_from_depth_audit": [],
+  "open_gaps_from_depth_audit": [
+    {
+      "id": "tier_scalar_aspiration",
+      "severity": "info",
+      "description": "57 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "closed": false,
+      "monitored": true
+    }
+  ],
   "findings": [],
   "source_reports": {
     "cross_proof": "data\\cross_proof_verification_report.json",

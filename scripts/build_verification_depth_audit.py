@@ -172,6 +172,8 @@ def build() -> dict:
         + atomic_provable_count
         + cross.get("transcendental_bounds", {}).get("obligation_count", 0)
     )
+    margin_pre = json.loads(MARGIN_AUDIT.read_text(encoding="utf-8")) if MARGIN_AUDIT.exists() else {}
+    tier_scalar_fails = int(margin_pre.get("tier_scalar_fail_count") or 0)
 
     gaps = [
         {
@@ -223,6 +225,17 @@ def build() -> dict:
             "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
             "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
             "closed": structural_ok,
+        },
+        {
+            "id": "tier_scalar_aspiration",
+            "severity": "info",
+            "description": (
+                f"{tier_scalar_fails} domains fail tier_scalar_pass (≤0.05% max record) "
+                "while green_gate uses pooled median ≤0.5%"
+            ),
+            "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+            "closed": tier_scalar_fails == 0,
+            "monitored": True,
         },
     ]
 

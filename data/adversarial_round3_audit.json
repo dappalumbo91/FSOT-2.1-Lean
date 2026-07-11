@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-07-11T22:22:00.082857+00:00",
+  "version": "1.0",
+  "tier": "adversarial_round3_v1",
+  "roles": {
+    "good_cop": [
+      "github_ready true with 0 false margin violations and 1820/1820 atomic Coq/Isabelle/Rust triangulation.",
+      "100% Lean export fraction (2146/2146) with dedicated ledgers for bundles, oracle debt, and runtime scope.",
+      "246/246 extension domains green on pooled median gate; aspiration scalar debt cleared.",
+      "Living FSOT QEMU hardware overall_ok; F* boot kernel triangulated with Rust oracle.",
+      "Honest claims manifest fail-closed for beats-SOTA, formula triplication, and parameter count."
+    ],
+    "bad_cop": [
+      "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
+      "323 bundle_conj rows sit off the cross-proof spine by design.",
+      "49 oracle-class obligations are Python-sampled or witness-instantiated, not Mathlib forall proofs.",
+      "Green gate uses pooled median \u22640.5%, not per-record max \u2014 tier_scalar 0.05% fails 57 domains silently.",
+      "13 stumped observables remain scientifically open; Hubble headline channel still >0.5%.",
+      "Formula corpus headline 7941 rows is ~6\u00d7 triplication of 1325 unique observables."
+    ],
+    "skeptic_verdict": "PUBLISHABLE_WITH_DOCUMENTED_DEBT",
+    "skeptic_summary": "Repo is audit-honest and mechanically green on the declared spine gates. Remaining debt is structural-bundle indexing, oracle replay class, aspirational tier_scalar precision, and open physics observables \u2014 all now named in ledgers, not buried in dashboards."
+  },
+  "gates": {
+    "overall_ok": true,
+    "github_ready": true,
+    "undeniable_toe_claim": true,
+    "open_gaps_depth_audit": [
+      {
+        "id": "tier_scalar_aspiration",
+        "severity": "info",
+        "description": "57 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+        "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+        "closed": false,
+        "monitored": true
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "structural_bundle_conjunct_linkage",
+      "severity": "low",
+      "attack": "56.68% total conjunct witness resolution; 100.0% explicit linked_obligation_id hit rate on spine.",
+      "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
+      "closed": true,
+      "evidence": "data/structural_bundle_ledger.json"
+    },
+    {
+      "id": "oracle_replay_not_independent_proof",
+      "severity": "documented_debt",
+      "attack": "49 Bounds/priors rows are oracle replay (sampling_oracle, witness_instantiation, certified_interval) \u2014 replayed not proved in Mathlib depth.",
+      "mitigation": "oracle_debt_ledger.json inventories triangulation_class; excluded from atomic triangulation headline.",
+      "closed": false,
+      "evidence": "data/oracle_debt_ledger.json"
+    },
+    {
+      "id": "hubble_headline_channel_0_5_gate",
+      "severity": "low",
+      "attack": "Hubble dual-anchor headline median 0.662298% exceeds 0.5% green gate; pooled median 0.0%.",
+      "mitigation": "scientific_pushback_audit.json hubble_headline_channel_gap; Lean theorem uses <1% bound.",
+      "closed": true,
+      "evidence": "data/scientific_pushback_audit.json"
+    },
+    {
+      "id": "tier_scalar_0_05_aspiration",
+      "severity": "info",
+      "attack": "57 benchmark domains fail tier_scalar_pass (max record \u22640.05%) while green_gate uses pooled median \u22640.5%.",
+      "mitigation": "benchmark_margin_audit.json tier_scalar_fail_count \u2014 aspirational precision tier, not github_ready blocker.",
+      "closed": false,
+      "evidence": "data/benchmark_margin_audit.json"
+    },
+    {
+      "id": "formula_corpus_unevaluable_unique",
+      "severity": "low",
+      "attack": "60 unique observables skipped live recompute (unsupported formula eval); 1265/1325 evaluable.",
+      "mitigation": "formula_corpus_honesty_report.json documents skipped_unsupported; drift debt 0 on evaluable rows.",
+      "closed": true,
+      "evidence": "data/formula_corpus_honesty_report.json"
+    },
+    {
+      "id": "not_literal_zero_parameters",
+      "severity": "info",
+      "attack": "Headline 'zero free parameters' contradicted by 175 domain-table slots.",
+      "mitigation": "parameter_honesty_closure.json + honest_claims_manifest verdict NOT_LITERAL_ZERO.",
+      "closed": true,
+      "evidence": "data/parameter_honesty_closure.json"
+    },
+    {
+      "id": "stumped_observables_unconfirmed",
+      "severity": "info",
+      "attack": "13 stumped observables tracked; preregistered predictions not yet confirmed.",
+      "mitigation": "scientific_pushback_audit.json stumped_observables + pushback_avenues monitored.",
+      "closed": true,
+      "evidence": "data/scientific_pushback_audit.json"
+    },
+    {
+      "id": "grid_sin_cos_zero_margin",
+      "severity": "low",
+      "attack": "Six Taylor sin/cos grid certificates report 0.0 margin at 0.001 step \u2014 tight bound, not independent forall proof.",
+      "mitigation": "grid_arithmetic=decimal_taylor in obligation JSON; proof_class=sampling_oracle.",
+      "closed": true,
+      "evidence": "data/oracle_debt_ledger.json"
+    },
+    {
+      "id": "coq_coverage_headline_confusion",
+      "severity": "info",
+      "attack": "cross_proof_coverage_audit pct_of_lean_theorems (~1.4%) counts connective-only vs priors scan \u2014 misleading if read as full-spine coverage.",
+      "mitigation": "full_formal_spine shows 1820/1820 atomic triangulated; coverage audit now labels priors_only_theorems vs cross_proof_spine_obligations.",
+      "closed": true,
+      "evidence": "data/cross_proof_coverage_audit.json"
+    },
+    {
+      "id": "sota_free_parameters_field",
+      "severity": "low",
+      "attack": "sota_observable_ledger_report.json historically emitted fsot_free_parameters: 0 despite parameter audit NOT_ZERO.",
+      "mitigation": "Ledger now emits domain_table_slots + parameter_audit_verdict from parameter_count_audit.json.",
+      "closed": true,
+      "evidence": "data/sota_observable_ledger_report.json"
+    }
+  ],
+  "open_gaps": [
+    {
+      "id": "oracle_replay_not_independent_proof",
+      "severity": "documented_debt",
+      "attack": "49 Bounds/priors rows are oracle replay (sampling_oracle, witness_instantiation, certified_interval) \u2014 replayed not proved in Mathlib depth.",
+      "mitigation": "oracle_debt_ledger.json inventories triangulation_class; excluded from atomic triangulation headline.",
+      "closed": false,
+      "evidence": "data/oracle_debt_ledger.json"
+    },
+    {
+      "id": "tier_scalar_0_05_aspiration",
+      "severity": "info",
+      "attack": "57 benchmark domains fail tier_scalar_pass (max record \u22640.05%) while green_gate uses pooled median \u22640.5%.",
+      "mitigation": "benchmark_margin_audit.json tier_scalar_fail_count \u2014 aspirational precision tier, not github_ready blocker.",
+      "closed": false,
+      "evidence": "data/benchmark_margin_audit.json"
+    }
+  ],
+  "open_gap_count": 2,
+  "blocking_open_count": 0,
+  "documented_debt_open_count": 1,
+  "remediation_priority": [
+    "oracle_replay_not_independent_proof",
+    "tier_scalar_0_05_aspiration"
+  ]
+}

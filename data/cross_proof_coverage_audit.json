@@ -1,10 +1,13 @@
 {
-  "generated_at": "2026-07-11T22:11:23.958361+00:00",
+  "generated_at": "2026-07-11T22:21:17.930173+00:00",
   "fsot_scale": {
     "extension_domains": 245,
     "priors_lean_modules": 308,
+    "priors_only_theorems": 1691,
     "total_lean_theorems": 1691,
-    "norm_num_certificate_uses": 1891
+    "cross_proof_spine_obligations": 2146,
+    "norm_num_certificate_uses": 1891,
+    "note": "priors_only_theorems counts *Priors.lean modules only. cross_proof_spine_obligations is the authoritative 2146 export spine (priors + extended + bounds)."
   },
   "coq_cross_proof": {
     "tier": "79_connective_spine",
