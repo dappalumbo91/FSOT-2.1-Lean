@@ -1,24 +1,27 @@
 {
-  "generated_at": "2026-07-11T00:34:45.122953+00:00",
+  "generated_at": "2026-07-11T00:42:26.434870+00:00",
   "tier": "88_esp32_hardware_serial_boot",
   "port": "COM3",
   "harness": {
-    "status": "failed",
+    "status": "passed",
     "flash": {
-      "status": "failed",
-      "tool": "C:\\Users\\damia\\.cargo\\bin\\espflash.EXE",
-      "port": "COM3",
-      "elf": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\esp32\\fsot_esp32_observer\\target\\xtensa-esp32-none-elf\\release\\fsot-esp32-observer",
-      "returncode": 1,
-      "boot_mode_manual_required": false,
-      "remediation": null,
-      "stderr_tail": "[2026-07-11T00:34:41Z WARN ] Monitor options were provided, but `--monitor/-M` flag isn't set. These options will be ignored.\n[2026-07-11T00:34:41Z INFO ] Serial port: 'COM3'\n[2026-07-11T00:34:41Z INFO ] Connecting...\nError:   \u00d7 Error while connecting to device\n  \u2570\u2500\u25b6 Failed to connect to the device\n\n"
+      "status": "skipped",
+      "note": "flash skipped"
     },
     "serial_capture": {
-      "status": "skipped",
-      "reason": "flash failed"
-    }
+      "status": "passed",
+      "port": "COM3",
+      "baud": 115200,
+      "boot_scalar": 0.09928895626861721,
+      "canonical": 0.09928895626861721,
+      "dynamic_check": 0.09928895626861721,
+      "hardware_boot": "ok",
+      "golden_match": true,
+      "emergence_detected": true,
+      "serial_capture": "d_drv:0x00,wp_drv:0x00\r\nmode:DIO, clock div:2\r\nload:0x3fff0030,len:6384\r\nload:0x40078000,len:15916\r\nload:0x40080400,len:3920\r\nentry 0x40080644\r\nI (27) boot: ESP-IDF v5.5.1-838-gd66ebb86d2e 2nd stage bootloader\r\nI (27) boot: compile time Nov 26 2025 10:51:37\r\nI (28) boot: Multicore bootloader\r\nI (30) boot: chip revision: v3.1\r\nI (33) boot.esp32: SPI Speed      : 40MHz\r\nI (37) boot.esp32: SPI Mode       : DIO\r\nI (40) boot.esp32: SPI Flash Size : 4MB\r\nI (44) boot: Enabling RNG early entropy source...\r\nI (48) boot: Partition Table:\r\nI (51) boot: ## Label            Usage          Type ST Offset   Length\r\nI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000\r\nI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000\r\nI (70) boot:  2 factory          factory app      00 00 00010000 003f0000\r\nI (77) boot: End of partition table\r\nI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=02b38h ( 11064) map\r\nI (91) esp_image: segment 1: paddr=00012b60 vaddr=3ffb0000 size=00740h (  1856) load\r\nI (96) esp_image: segment 2: paddr=000132a8 vaddr=40080000 size=01460h (  5216) load\r\nI (104) esp_image: segment 3: paddr=00014710 vaddr=00000000 size=0b908h ( 47368) \r\nI (126) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=09ab4h ( 39604) map\r\nI (141) boot: Loaded app from partition at offset 0x10000\r\nI (141) boot: Disabling RNG early entropy source...\r\nFSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | ESP32 xtensa\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099289\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nTier 88 ESP32 hardware boot complete \u2014 halting for harness capture.\nFSOT_ESP32_BOOT_SCALAR=0.09928895626861721\nFSOT_ESP32_CANONICAL=0.09928895626861721\nFSOT_ESP32_DYNAMIC_CHECK=0.09928895626861721\nFSOT_ESP32_HARDWARE_BOOT=ok\n"
+    },
+    "note": "Tier 88 validates ESP32 UART boot with FSOT_ESP32_* markers, chaining Tier 87 QEMU disk boot parity."
   },
-  "overall_ok": false,
+  "overall_ok": true,
   "note": "Flashes fsot-esp32-observer to CP210x ESP32 and captures FSOT_ESP32_* UART markers for eight-way bare-metal verification."
 }

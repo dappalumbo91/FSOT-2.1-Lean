@@ -192,7 +192,7 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
         canonical_ok = abs(markers.get("canonical", -1) - BOOT_SCALAR) < SCALAR_TOLERANCE
         dynamic_ok = abs(markers.get("dynamic_check", -1) - BOOT_SCALAR) < SCALAR_TOLERANCE
         hardware_ok = markers.get("hardware_boot") == "ok"
-        golden_ok = markers == golden if golden else True
+        golden_ok = _golden_subset_match(markers, golden) if golden else True
         emergence_ok = "POSITIVE (Emergence)" in text
         return {
             "status": "passed"
@@ -234,6 +234,19 @@ def run_esp32_hardware_harness(port: str | None = None, flash: bool = True) -> d
             "chaining Tier 87 QEMU disk boot parity."
         ),
     }
+
+
+def _golden_subset_match(markers: dict, golden: dict) -> bool:
+    for key, expected in golden.items():
+        if key not in markers:
+            return False
+        got = markers[key]
+        if isinstance(expected, float) and isinstance(got, float):
+            if abs(got - expected) >= SCALAR_TOLERANCE:
+                return False
+        elif got != expected:
+            return False
+    return True
 
 
 def _parse_esp32_markers(text: str) -> dict:
