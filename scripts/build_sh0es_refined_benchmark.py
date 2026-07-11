@@ -46,7 +46,7 @@ from cosmology_anomalies_physics import load_auxiliary  # noqa: E402
 from cosmology_lambda import H0_CANONICAL, load_fsot_compute  # noqa: E402
 from fsot_paths import fsot_compute_path  # noqa: E402
 from benchmark_margin_lib import scalar_metrics  # noqa: E402
-from tier_gap_fill_lib import _bench_v11  # noqa: E402
+from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 
 def _error_pct(computed: float, measured: float) -> float:
@@ -209,7 +209,7 @@ def main() -> int:
     doc["host_details"] = host_details
     doc["h0_global_fsot"] = h0_global
     doc["sh0es_measured_h0"] = sh0es_measured
-    doc["sh0es_status"] = "GREEN" if (doc.get("pooled_median_error_pct") or 99) < 0.5 else "YELLOW"
+    doc["sh0es_status"] = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
     args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  hosts={doc['host_count']}  pooled={doc['pooled_median_error_pct']}%")

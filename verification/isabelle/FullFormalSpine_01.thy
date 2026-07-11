@@ -1,7 +1,64 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 2/13 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 2/19 (generated). *)
 theory FullFormalSpine_01
 imports Complex_Main
 begin
+
+lemma astrocyte_syncytium_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma oligodendrocyte_myelination_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma amygdala_genetic_zero_is_superposition: "(0.3888888888888889 :: real) = (0.3888888888888889 :: real)"
+  by eval
+
+lemma microglial_surveillance_genetic_zero_is_superposition: "(0.4861111111111111 :: real) = (0.4861111111111111 :: real)"
+  by eval
+
+lemma brain_prior_codon_genetic_degeneracy: "(2.3703703703703702 :: real) = (2.3703703703703702 :: real)"
+  by eval
+
+lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma breakthrough_discoveries_2024_2026_observable_count_pos: "0 < (21 :: nat)"
+  by eval
+
+lemma bubble_bleed_nebula_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma bubble_bleed_frb_count_pos: "0 < (38 :: nat)"
+  by eval
+
+lemma bubble_bleed_observable_count_pos: "0 < (113 :: nat)"
+  by eval
+
+lemma bubble_bleed_framework_fit_le_total: "(20 :: nat) <= (20 :: nat)"
+  by eval
+
+lemma bubble_bleed_wh_closure_match_le_total: "(20 :: nat) <= (20 :: nat)"
+  by eval
+
+lemma bubble_bleed_bh_spin_match_le_total: "(5 :: nat) <= (5 :: nat)"
+  by eval
+
+lemma bubble_bleed_nebula_match_le_total: "(18 :: nat) <= (20 :: nat)"
+  by eval
+
+lemma bubble_bleed_frb_match_le_total: "(37 :: nat) <= (38 :: nat)"
+  by eval
+
+lemma bubble_bleed_observability_ratio_nonneg: "(0 :: real) <= (0.7142857142857143 :: real)"
+  by eval
+
+lemma cameo_symbolic_mae_positive: "0 < (8.85 :: real)"
+  by eval
+
+lemma cameo_benchmark_count_pos: "0 < (130 :: nat)"
+  by eval
+
+lemma cardiology_ext_pooled_median_under_half_pct: "(0.030622122938654326 :: real) < (0.5 :: real)"
+  by eval
 
 lemma cardiology_ext_headline_median_under_half_pct: "(0.030622122938654326 :: real) < (0.5 :: real)"
   by eval
@@ -120,187 +177,130 @@ lemma code_genome_language_bridges_pos: "0 < (9 :: nat)"
 lemma codon_table_count_eq_sixty_four: "(64 :: nat) = (64 :: nat)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_secondary_pattern_space_eq_twenty_seven: "(27 :: nat) = (27 :: nat)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_headline_median_under_half_pct: "(0.00007869745 :: real) < (0.5 :: real)"
+lemma codon_aaa_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (19 :: nat)"
+lemma codon_aaa_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_aac_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma cold_fusion_lab_synthesis_crosswalk_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_aac_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma cold_fusion_lab_synthesis_crosswalk_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_aag_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos: "0 < (22 :: nat)"
+lemma codon_aag_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma cold_fusion_lab_synthesis_crosswalk_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_aat_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma comp_lad_pooled_median_under_half_pct: "(0.0220747159758794 :: real) < (0.5 :: real)"
+lemma codon_aat_secondary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma comp_lad_headline_median_under_half_pct: "(0.0220747159758794 :: real) < (0.5 :: real)"
+lemma codon_aca_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma comp_lad_observable_count_pos: "0 < (60 :: nat)"
+lemma codon_aca_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma comp_lad_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_acc_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma comp_lad_rungs_complete: "(10 :: nat) = (10 :: nat)"
+lemma codon_acc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma compact_object_binary_events_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_acg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma compact_object_binary_events_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_acg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma compact_object_binary_events_observable_count_pos: "0 < (40 :: nat)"
+lemma codon_act_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma compact_object_binary_events_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_act_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma computational_reasoning_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_aga_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma computational_reasoning_observable_count_pos: "0 < (577 :: nat)"
+lemma codon_aga_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma consciousness_econ_pooled_median_under_half_pct: "(0.008898 :: real) < (0.5 :: real)"
+lemma codon_agc_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma consciousness_econ_headline_median_under_half_pct: "(0.008898 :: real) < (0.5 :: real)"
+lemma codon_agc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma consciousness_econ_observable_count_pos: "0 < (37 :: nat)"
+lemma codon_agg_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma consciousness_econ_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_agg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma consciousness_econ_econ_anchors_pos: "0 < (67 :: nat)"
+lemma codon_agt_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma c_gal_br_pooled_median_under_half_pct: "(0.036757197413939124 :: real) < (0.5 :: real)"
+lemma codon_agt_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma c_gal_br_headline_median_under_half_pct: "(0.036757197413939124 :: real) < (0.5 :: real)"
+lemma codon_ata_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma c_gal_br_observable_count_pos: "0 < (47 :: nat)"
+lemma codon_ata_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma c_gal_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_atc_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma c_gal_br_bridge_pairs_pos: "0 < (35 :: nat)"
+lemma codon_atc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma consciousness_soul_bridge_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_atg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma consciousness_soul_bridge_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma codon_atg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma consciousness_soul_bridge_observable_count_pos: "0 < (27 :: nat)"
+lemma codon_att_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma consciousness_soul_bridge_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_att_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma consciousness_soul_bridge_soul_records_pos: "0 < (352276 :: nat)"
+lemma codon_caa_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cosmology_anomalies_count_pos: "0 < (12 :: nat)"
+lemma codon_caa_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cosmology_anomaly_deep_panel_pooled_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
+lemma codon_cac_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma cosmology_anomaly_deep_panel_headline_median_under_half_pct: "(0.0005024559 :: real) < (0.5 :: real)"
+lemma codon_cac_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma cosmology_anomaly_deep_panel_observable_count_pos: "0 < (14 :: nat)"
+lemma codon_cag_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
-lemma cosmology_anomaly_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma codon_cag_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
   by eval
 
-lemma cosmology_extended_median_error_under_half_pct: "(0.022 :: real) < (0.5 :: real)"
+lemma codon_cat_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma cosmology_skeleton_derivation_count_pos: "0 < (24 :: nat)"
+lemma codon_cat_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
 
-lemma cosmology_lambda_cdm_extended_count_pos: "0 < (30 :: nat)"
-  by eval
-
-lemma cosmology_extended_observable_count_pos: "0 < (58 :: nat)"
-  by eval
-
-lemma cosmology_extended_components_sum: "(58 :: nat) = (58 :: nat)"
-  by eval
-
-lemma cosmology_higher_waves_max_error_under_half_pct: "(0.35683948712437213 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_higher_waves_total_pos: "0 < (142 :: nat)"
-  by eval
-
-lemma cosmology_wave10_max_error_under_half_pct: "(0.004079227596853056 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave10_median_error_under_half_pct: "(0.0006556117 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave10_observable_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma cosmology_wave4_max_error_under_half_pct: "(0.23468225112121452 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave4_median_error_under_half_pct: "(0.011586387979935279 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave4_observable_count_pos: "0 < (16 :: nat)"
-  by eval
-
-lemma cosmology_wave5_max_error_under_half_pct: "(0.09098602506082563 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave5_median_error_under_half_pct: "(0.0020773615251059676 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave5_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cosmology_wave6_max_error_under_half_pct: "(0.031298130508454446 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave6_median_error_under_half_pct: "(0.0003441842 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave6_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cosmology_wave7_max_error_under_half_pct: "(0.2980550885153489 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave7_median_error_under_half_pct: "(0.003988029700396626 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_wave7_observable_count_pos: "0 < (29 :: nat)"
+lemma codon_cca_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

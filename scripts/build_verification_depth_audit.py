@@ -116,7 +116,7 @@ def build() -> dict:
         "rust_f64_replay": {
             "status": (frameworks.get("rust_replay") or {}).get("status"),
             "obligation_count": (frameworks.get("rust_replay") or {}).get("obligation_count"),
-            "note": "Includes connective (24) + formal (1241) + transcendental (68) after Tier 84 update",
+            "note": "Includes connective + full_formal_spine + transcendental_bounds obligations",
         },
         "fstar": {
             "status": (frameworks.get("fstar") or {}).get("status"),
@@ -155,13 +155,31 @@ def build() -> dict:
     )
     structural_ok = bool(structural.get("overall_ok"))
 
+    export_fraction_reg = export_reg.get("export_fraction_pct")
+    export_gap_closed_reg = (
+        export_reg.get("unexported_theorem_count") == 0
+        or export_fraction_reg == 100.0
+    )
+    spine_path = ROOT / "verification" / "obligations" / "full_formal_spine.json"
+    spine_doc = json.loads(spine_path.read_text(encoding="utf-8")) if spine_path.exists() else {}
+    atomic_provable_count = sum(
+        1
+        for ob in spine_doc.get("obligations", [])
+        if ob.get("kind") != "bundle_conj" and ob.get("provable")
+    )
+    expected_rust_replay = (
+        cross.get("connective_spine", {}).get("obligation_count", 0)
+        + atomic_provable_count
+        + cross.get("transcendental_bounds", {}).get("obligation_count", 0)
+    )
+
     gaps = [
         {
             "id": "export_gap",
             "severity": "medium",
-            "description": f"~{100 - (export_pct or 0):.1f}% of Lean theorems not exported as cross-proof obligations",
+            "description": f"~{100 - (export_fraction_reg or export_pct or 0):.1f}% of Lean theorems not exported as cross-proof obligations",
             "remedy": "See data/export_exclusion_registry.json; extend export or document exclusions",
-            "closed": structural_bundle_left <= 6 and bundle_exported >= 300,
+            "closed": export_gap_closed_reg,
         },
         {
             "id": "fstar_assumes",
@@ -181,10 +199,8 @@ def build() -> dict:
             "id": "rust_report_stale",
             "severity": "low",
             "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-            "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1331",
-            "closed": (
-                (frameworks.get("rust_replay") or {}).get("obligation_count") == 1331
-            ),
+            "remedy": "Re-run run_cross_proof_verification.py to refresh rust obligation_count",
+            "closed": (frameworks.get("rust_replay") or {}).get("obligation_count") == expected_rust_replay,
         },
         {
             "id": "living_fsot_hardware",
@@ -198,6 +214,8 @@ def build() -> dict:
             "severity": "info",
             "description": "ESP32 RF observer verifies one boot scalar — distinct from Living FSOT QEMU body",
             "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification",
+            "closed": living_hw_ok,
+            "closure_note": "Superseded by living_fsot_hardware when overall_ok passes (see runtime_verification_scope_audit.json)",
         },
         {
             "id": "norm_num_depth",
@@ -215,14 +233,16 @@ def build() -> dict:
     pushback = json.loads(PUSHBACK_AUDIT.read_text(encoding="utf-8")) if PUSHBACK_AUDIT.exists() else {}
     margin = json.loads(MARGIN_AUDIT.read_text(encoding="utf-8")) if MARGIN_AUDIT.exists() else {}
     core_benchmark_failures = margin.get("green_gate_fail_count", 0) or 0
-    export_fraction = export_reg.get("export_fraction_pct") or export_pct
+    export_fraction = export_fraction_reg or export_pct
     no_proof_cert_count = int((export_reg.get("by_reason") or {}).get("no_proof_certificate_in_module", 0))
     cross_ok = bool(cross.get("overall_ok"))
     extension_green = len(failing) == 0
     aspiration_cleared = aspiration_count == 0
     core_benchmarks_green = core_benchmark_failures == 0
-    fixable_export_gaps = int((export_reg.get("by_reason") or {}).get("no_proof_certificate_in_module", 0))
-    export_gap_closed = fixable_export_gaps == 0
+    export_gap_closed = export_gap_closed_reg
+    margin_viol_path = ROOT / "verification" / "obligations" / "margin_violations.json"
+    margin_viol_doc = json.loads(margin_viol_path.read_text(encoding="utf-8")) if margin_viol_path.exists() else {}
+    margin_viol_count = int(margin_viol_doc.get("count", 0))
 
     undeniable = (
         cross_ok
@@ -231,6 +251,8 @@ def build() -> dict:
         and core_benchmarks_green
         and transcendental_ok
         and export_gap_closed
+        and margin_viol_count == 0
+        and formal_ob == lean_theorems
     )
 
     honest = (

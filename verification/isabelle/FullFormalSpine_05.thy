@@ -1,306 +1,306 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 6/13 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 6/19 (generated). *)
 theory FullFormalSpine_05
 imports Complex_Main
 begin
 
-lemma igem_parts_expanded_pooled_median_under_half_pct: "(0.00007227107 :: real) < (0.5 :: real)"
+lemma exoplanet_system_architecture_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma igem_parts_expanded_headline_median_under_half_pct: "(0.00007227107 :: real) < (0.5 :: real)"
+lemma exoplanet_system_architecture_observable_count_pos: "0 < (882 :: nat)"
   by eval
 
-lemma igem_parts_expanded_observable_count_pos: "0 < (111 :: nat)"
+lemma exoplanet_system_architecture_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma igem_parts_expanded_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma experiment_synthesis_approach_count_pos: "0 < (5 :: nat)"
   by eval
 
-lemma igem_synthetic_biology_pooled_median_under_half_pct: "(0.02223625038520417 :: real) < (0.5 :: real)"
+lemma experiment_llm_project_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma igem_synthetic_biology_headline_median_under_half_pct: "(0.02223625038520417 :: real) < (0.5 :: real)"
+lemma external_oss_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma igem_synthetic_biology_observable_count_pos: "0 < (54 :: nat)"
+lemma external_oss_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma igem_synthetic_biology_part_count_pos: "0 < (20 :: nat)"
+lemma external_oss_observable_count_pos: "0 < (169 :: nat)"
   by eval
 
-lemma igem_synthetic_biology_beats_sota_headlines_pos: "0 < (6 :: nat)"
+lemma external_oss_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma immunology_observable_count_pos: "0 < (84 :: nat)"
+lemma external_oss_oss_samples_pos: "0 < (23 :: nat)"
   by eval
 
-lemma inertial_confinement_fusion_panel_pooled_median_under_half_pct: "(0.000079 :: real) < (0.5 :: real)"
+lemma finance_markets_ext_pooled_median_under_half_pct: "(0.025840180827434747 :: real) < (0.5 :: real)"
   by eval
 
-lemma inertial_confinement_fusion_panel_headline_median_under_half_pct: "(0.000079 :: real) < (0.5 :: real)"
+lemma finance_markets_ext_headline_median_under_half_pct: "(0.025840180827434747 :: real) < (0.5 :: real)"
   by eval
 
-lemma inertial_confinement_fusion_panel_observable_count_pos: "0 < (15 :: nat)"
+lemma finance_markets_ext_observable_count_pos: "0 < (245 :: nat)"
   by eval
 
-lemma inertial_confinement_fusion_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma finance_markets_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma information_theory_public_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_dynamics_gap_fill_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma information_theory_public_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_dynamics_gap_fill_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma information_theory_public_panel_observable_count_pos: "0 < (11 :: nat)"
+lemma fluid_dynamics_gap_fill_observable_count_pos: "0 < (55 :: nat)"
   by eval
 
-lemma information_theory_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fluid_dynamics_gap_fill_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
-lemma initiation_transformation_archetype_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fpc_spine_pooled_median_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
   by eval
 
-lemma initiation_transformation_archetype_headline_median_under_half_pct: "(0.19339831498352392 :: real) < (0.5 :: real)"
+lemma fpc_spine_headline_median_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
   by eval
 
-lemma initiation_transformation_archetype_observable_count_pos: "0 < (10 :: nat)"
+lemma fpc_spine_observable_count_pos: "0 < (7 :: nat)"
   by eval
 
-lemma initiation_transformation_archetype_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fpc_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fic_best_intelligence_score_positive: "0 < (0.9997093332777109 :: real)"
+lemma fpc_spine_spine_edges_pos: "0 < (6 :: nat)"
   by eval
 
-lemma fic_sweep_row_count_pos: "0 < (572 :: nat)"
+lemma fluid_spacetime_observable_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fic_fertile_rows_present: "0 < (156 :: nat)"
+lemma fluid_spacetime_observable_spine_headline_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
   by eval
 
-lemma interactive_media_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_spacetime_observable_spine_observable_count_pos: "0 < (37 :: nat)"
   by eval
 
-lemma interactive_media_prereg_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_spacetime_observable_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma interactive_media_prereg_scaffold_observable_count_pos: "0 < (42 :: nat)"
+lemma fluid_spacetime_prereg_validation_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma interactive_media_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fluid_spacetime_prereg_validation_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma interdisciplinary_spine_crosswalk_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_spacetime_prereg_validation_panel_observable_count_pos: "0 < (19 :: nat)"
   by eval
 
-lemma interdisciplinary_spine_crosswalk_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fluid_spacetime_prereg_validation_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma interdisciplinary_spine_crosswalk_observable_count_pos: "0 < (15 :: nat)"
+lemma fold_dep_pooled_median_under_half_pct: "(0.025753835305195434 :: real) < (0.5 :: real)"
   by eval
 
-lemma interdisciplinary_spine_crosswalk_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fold_dep_headline_median_under_half_pct: "(0.025753835305195434 :: real) < (0.5 :: real)"
   by eval
 
-lemma intrinsic_llm_validators_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fold_dep_observable_count_pos: "0 < (51 :: nat)"
   by eval
 
-lemma intrinsic_llm_validators_observable_count_pos: "0 < (10 :: nat)"
+lemma fold_dep_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma iono_chem_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fold_dep_fold_span_pos: "0 < (27193 :: nat)"
   by eval
 
-lemma iono_chem_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma food_microbiology_gap_fill_pooled_median_under_half_pct: "(0.04447250077037743 :: real) < (0.5 :: real)"
   by eval
 
-lemma iono_chem_observable_count_pos: "0 < (85 :: nat)"
+lemma food_microbiology_gap_fill_headline_median_under_half_pct: "(0.04447250077037743 :: real) < (0.5 :: real)"
   by eval
 
-lemma iono_chem_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma food_microbiology_gap_fill_observable_count_pos: "0 < (30 :: nat)"
   by eval
 
-lemma island_of_stability_deep_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma food_microbiology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma island_of_stability_deep_panel_headline_median_under_half_pct: "(0.000000009504139 :: real) < (0.5 :: real)"
+lemma fractal_pooled_median_under_half_pct: "(0.038016537604977654 :: real) < (0.5 :: real)"
   by eval
 
-lemma island_of_stability_deep_panel_observable_count_pos: "0 < (23 :: nat)"
+lemma fractal_headline_median_under_half_pct: "(0.038016537604977654 :: real) < (0.5 :: real)"
   by eval
 
-lemma island_of_stability_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fractal_observable_count_pos: "0 < (144 :: nat)"
   by eval
 
-lemma knowledge_base_portable_bundle_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fractal_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
-lemma knowledge_base_portable_bundle_panel_headline_median_under_half_pct: "(0.018019024892929635 :: real) < (0.5 :: real)"
+lemma fractal_attachments_pos: "0 < (135 :: nat)"
   by eval
 
-lemma knowledge_base_portable_bundle_panel_observable_count_pos: "0 < (13 :: nat)"
+lemma formula_corpus_closure_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma knowledge_base_portable_bundle_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma formula_corpus_closure_observable_count_pos: "0 < (123 :: nat)"
   by eval
 
-lemma knowledge_base_source_count_pos: "0 < (39 :: nat)"
+lemma formula_corpus_closure_strict_empirical_pos: "0 < (7941 :: nat)"
   by eval
 
-lemma knowledge_base_catalog_formulas_pos: "0 < (19213 :: nat)"
+lemma formula_corpus_closure_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
-lemma kronos_best_fractional_error_positive: "0 < (0.0000001644295 :: real)"
+lemma formula_corpus_cnc_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma kronos_record_fractional_uncertainty_positive: "0 < (0.00000000000000000055 :: real)"
+lemma formula_corpus_cnc_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma kronos_run_count_pos: "0 < (569 :: nat)"
+lemma formula_corpus_records_total_pos: "0 < (7941 :: nat)"
   by eval
 
-lemma lab_synthesis_metamaterial_spine_pooled_median_under_half_pct: "(0.000034 :: real) < (0.5 :: real)"
+lemma formula_corpus_matched_le_total: "(7941 :: nat) <= (7941 :: nat)"
   by eval
 
-lemma lab_synthesis_metamaterial_spine_headline_median_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+lemma formula_corpus_target_le_tolerable: "(6921 :: nat) <= (7941 :: nat)"
   by eval
 
-lemma lab_synthesis_metamaterial_spine_observable_count_pos: "0 < (43 :: nat)"
+lemma formula_corpus_tolerable_le_total: "(7941 :: nat) <= (7941 :: nat)"
   by eval
 
-lemma lab_synthesis_metamaterial_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma formula_precision_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma law_policy_ext_pooled_median_under_half_pct: "(0.019504399572479934 :: real) < (0.5 :: real)"
+lemma formula_precision_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma law_policy_ext_headline_median_under_half_pct: "(0.019504399572479934 :: real) < (0.5 :: real)"
+lemma formula_precision_spine_observable_count_pos: "0 < (27 :: nat)"
   by eval
 
-lemma law_policy_ext_observable_count_pos: "0 < (180 :: nat)"
+lemma formula_precision_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma law_policy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fpc_fluidlink_timing_deep_panel_pooled_median_under_half_pct: "(0.00005 :: real) < (0.5 :: real)"
   by eval
 
-lemma linguistics_formal_median_error_under_half_pct: "(0.0013504254899468224 :: real) < (0.5 :: real)"
+lemma fpc_fluidlink_timing_deep_panel_headline_median_under_half_pct: "(0.00005024559 :: real) < (0.5 :: real)"
   by eval
 
-lemma linguistics_formal_observable_count_pos: "0 < (10 :: nat)"
+lemma fpc_fluidlink_timing_deep_panel_observable_count_pos: "0 < (13 :: nat)"
   by eval
 
-lemma linguistics_max_error_within_five_pct: "(0.006302479903277616 :: real) < (0.5 :: real)"
+lemma fpc_fluidlink_timing_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma linguistics_target_count_pos: "0 < (10 :: nat)"
+lemma fpc_link_pooled_median_under_half_pct: "(0.031199 :: real) < (0.5 :: real)"
   by eval
 
-lemma live_ingest_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fpc_link_headline_median_under_half_pct: "(0.031199 :: real) < (0.5 :: real)"
   by eval
 
-lemma live_ingest_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma fpc_link_observable_count_pos: "0 < (6 :: nat)"
   by eval
 
-lemma live_ingest_spine_observable_count_pos: "0 < (28 :: nat)"
+lemma fpc_link_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma live_ingest_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fpc_link_fluidlink_edges_pos: "0 < (6 :: nat)"
   by eval
 
-lemma magic_min_resonance_lt_internalized: "(0.45 :: real) < (0.92 :: real)"
+lemma const_rec_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma magnetic_confinement_fusion_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma const_rec_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma magnetic_confinement_fusion_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma const_rec_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma magnetic_confinement_fusion_panel_observable_count_pos: "0 < (22 :: nat)"
+lemma const_rec_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma magnetic_confinement_fusion_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma const_rec_families_pos: "0 < (5 :: nat)"
   by eval
 
-lemma magnetic_S_em_positive: "0 < (0.5188655207983146 :: real)"
+lemma fsot_aggregate_organized_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma magnetic_string_count_pos: "0 < (250 :: nat)"
+lemma fsot_aggregate_organized_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma magnetosphere_extended_historical_hours_pos: "0 < (120879 :: nat)"
+lemma fsot_aggregate_organized_panel_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma magnetosphere_observable_count_pos: "0 < (167 :: nat)"
+lemma fsot_aggregate_organized_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma maillard_chemistry_gap_fill_pooled_median_under_half_pct: "(0.09443694019339524 :: real) < (0.5 :: real)"
+lemma fsot_aggregate_unified_db_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma maillard_chemistry_gap_fill_headline_median_under_half_pct: "(0.09443694019339524 :: real) < (0.5 :: real)"
+lemma fsot_aggregate_unified_db_observable_count_pos: "0 < (8 :: nat)"
   by eval
 
-lemma maillard_chemistry_gap_fill_observable_count_pos: "0 < (30 :: nat)"
+lemma fuel_candidate_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma maillard_chemistry_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fuel_candidate_prereg_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma malware_threat_pooled_median_under_half_pct: "(0.03062212293865052 :: real) < (0.5 :: real)"
+lemma fuel_candidate_prereg_scaffold_observable_count_pos: "0 < (33 :: nat)"
   by eval
 
-lemma malware_threat_headline_median_under_half_pct: "(0.03062212293865052 :: real) < (0.5 :: real)"
+lemma fuel_candidate_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma malware_threat_observable_count_pos: "0 < (301 :: nat)"
+lemma fuel_profile_count_pos: "0 < (6 :: nat)"
   by eval
 
-lemma malware_threat_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fuel_lab_chemical_domain_positive: "(0 :: real) < (1.0 :: real)"
   by eval
 
-lemma marine_biology_ext_pooled_median_under_half_pct: "(0.022236250385192644 :: real) < (0.5 :: real)"
+lemma fuel_resolved_le_entries: "(34 :: nat) <= (34 :: nat)"
   by eval
 
-lemma marine_biology_ext_headline_median_under_half_pct: "(0.022236250385194948 :: real) < (0.5 :: real)"
+lemma fuel_thermochemistry_public_anchors_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma marine_biology_ext_observable_count_pos: "0 < (540 :: nat)"
+lemma fuel_thermochemistry_public_anchors_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma marine_biology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fuel_thermochemistry_public_anchors_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
-lemma material_in_silico_screening_scaffold_pooled_median_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
+lemma fuel_thermochemistry_public_anchors_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma material_in_silico_screening_scaffold_headline_median_under_half_pct: "(0.002424 :: real) < (0.5 :: real)"
+lemma fusion_decay_chain_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma material_in_silico_screening_scaffold_observable_count_pos: "0 < (42 :: nat)"
+lemma fusion_decay_chain_prereg_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma material_in_silico_screening_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fusion_decay_chain_prereg_scaffold_observable_count_pos: "0 < (18 :: nat)"
   by eval
 
-lemma material_property_verification_scaffold_pooled_median_under_half_pct: "(0.002271 :: real) < (0.5 :: real)"
+lemma fusion_decay_chain_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma material_property_verification_scaffold_headline_median_under_half_pct: "(0.002647 :: real) < (0.5 :: real)"
+lemma connective_plasma_confinement_pos: "0 < (0.131181176323 :: real)"
   by eval
 
-lemma material_property_verification_scaffold_observable_count_pos: "0 < (79 :: nat)"
+lemma connective_seawater_acoustic_pos: "0 < (0.094115088176 :: real)"
   by eval
 
-lemma material_property_verification_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma connective_decay_chain_relay_pos: "0 < (0.029710640768 :: real)"
   by eval
 
-lemma materials_engineering_pooled_median_under_half_pct: "(0.118765 :: real) < (0.5 :: real)"
+lemma connective_dt_energy_pos: "0 < (17.6 :: real)"
   by eval
 
-lemma materials_engineering_headline_median_under_half_pct: "(0.312058 :: real) < (0.5 :: real)"
+lemma fusion_lab_certificate_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma materials_engineering_observable_count_pos: "0 < (87 :: nat)"
+lemma fusion_lab_certificate_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

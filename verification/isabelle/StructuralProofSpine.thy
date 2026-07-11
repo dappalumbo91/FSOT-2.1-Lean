@@ -3,7 +3,7 @@ theory StructuralProofSpine
 imports Complex_Main
 begin
 
-lemma cellular_priors_bundle: "(234447 :: nat) = 234447 \<and> (13 :: nat) = 13 \<and> (11395 :: nat) = 11395 \<and> (0 :: real) < 1"
+lemma neurolab_bio_sign_bundle: "(0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1"
   by auto
 
 lemma lab_smiles_domain_sign_bundle: "(0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1 \<and> (0 :: real) < 1"

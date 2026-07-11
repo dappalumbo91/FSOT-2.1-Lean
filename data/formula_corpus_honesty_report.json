@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-11T22:11:44.150497+00:00",
+  "version": "1.0",
+  "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
+  "headline_row_count": 7941,
+  "unique_observable_count": 1325,
+  "project_triplication_factor": 5.993,
+  "live_recompute": {
+    "enabled": true,
+    "sample_size": 1325,
+    "checked": 1265,
+    "ok": 1265,
+    "ok_ratio": 1.0,
+    "drift_debt_count": 0
+  },
+  "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute runs on deduped unique observables (1265/1265 OK).",
+  "verification_issues": [],
+  "verification_passed": true,
+  "full_summary": {
+    "records_total": 7941,
+    "unique_observables": 1325,
+    "project_triplication_factor": 5.993,
+    "matched_count": 7941,
+    "unique_matched_count": 1325,
+    "unmatched_count": 0,
+    "within_target_2pct": 6921,
+    "unique_within_target_2pct": 1155,
+    "within_tolerable_5pct": 7941,
+    "unique_within_tolerable_5pct": 1325,
+    "max_error_pct": 4.841504,
+    "top_project_count": 3,
+    "top_projects": [
+      {
+        "project": "FSOT NEURON Gene LLM",
+        "records": 2647
+      },
+      {
+        "project": "FSOT SMILES Lab",
+        "records": 2647
+      },
+      {
+        "project": "Fsot3.0 code",
+        "records": 2647
+      }
+    ],
+    "corpus_path": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+    "live_recompute_pool_size": 1325,
+    "live_recompute_deduped": true,
+    "live_recompute_sample_size": 1325,
+    "live_recompute_checked": 1265,
+    "live_recompute_skipped_unsupported": 60,
+    "live_recompute_ok": 1265,
+    "live_recompute_ok_ratio": 1.0,
+    "live_recompute_drift_debt_count": 0,
+    "live_recompute_max_drift_pct": 0.0,
+    "live_recompute_debt_report": "data\\formula_live_recompute_debt.json",
+    "issues": 0
+  }
+}

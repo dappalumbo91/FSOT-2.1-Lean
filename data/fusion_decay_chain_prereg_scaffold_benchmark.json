@@ -115,7 +115,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -526,14 +526,14 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Fusion Decay Chain Prereg Scaffold",
   "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.484195+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.184517+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 7,
+    "scalar_count": 6,
     "median_error_pct": 9.5e-05,
     "max_error_pct": 9.5e-05,
-    "mean_abs_delta": 6.642857142857142e-05,
+    "mean_abs_delta": 7.75e-05,
     "precision_tier_counts": {
-      "green": 7
+      "green": 6
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true

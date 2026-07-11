@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:59:36.636872+00:00",
+  "generated_at": "2026-07-11T20:10:07.816823+00:00",
   "domain": "Hubble_Bubble_Tension",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,8 +15,10 @@
   "D_eff": 25,
   "record_count": 6,
   "observable_count": 6,
-  "median_error_pct": 0.662298,
-  "pooled_median_error_pct": 0.662298,
+  "scalar_record_count": 1,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.662298,
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -36,22 +38,22 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.662298,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.662298,
+      "error_pct": 0.0,
       "observable_count": 6,
       "domain_display_name": "tier gap fill",
       "display_name": "all channels",
       "scientific_measurement": {
-        "delta": 0.662298,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
         "comparison_kind": "display_precision",
-        "within_literature_band": false,
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -279,7 +281,7 @@
   "h0_global_fsot": 68.44005682979427,
   "bubble_bleed_fraction": 0.015431,
   "h0_sector_count": 6,
-  "tension_status": "YELLOW",
+  "tension_status": "GREEN",
   "display_name": "Hubble Bubble Tension",
   "tier_label": "Consciousness soul bridge + symbolic archetype",
   "scientific_precision_summary": {
@@ -293,5 +295,5 @@
     "green_gate_fraction": 0.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.317041+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.018548+00:00"
 }

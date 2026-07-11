@@ -112,10 +112,17 @@ def main() -> int:
             "Optional fourth-prover checks (Agda/Metamath); deepen independent proof scripts beyond "
             "numeric literal replay for structural theorems."
         ),
+        "certified_interval_export": "bounds_oracle_export.py certified_interval path (Decimal-backed)",
+        "proof_class_tags": {
+            "tier83_merge": "decimal_eval_chain",
+            "certified_interval": "certified_interval",
+            "grid_certificate": "sampling_oracle",
+            "parametric": "witness_instantiation",
+        },
         "note": (
-            "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal "
-            "certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals "
-            "use native Coq Taylor/lra proofs and Isabelle HOL-Decision_Procs.Approximation."
+            "Bounds.lean exports via bounds_oracle_export + bounds_remaining_export (277 spine rows). "
+            "pi/e tight intervals use certified_interval Decimal export plus native Coq/Isabelle replay. "
+            "Tier 83 merge covers remaining transcendental chains; grid sin/cos bounds are sampling_oracle."
         ),
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

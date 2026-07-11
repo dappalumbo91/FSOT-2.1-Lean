@@ -82,6 +82,20 @@ def core_context() -> dict[str, float]:
         "ain": a_in,
         "mathcal_c": c_cosm,
         "eta_eff": eta_eff,
+        "theta": theta_s,
+        "thetas": theta_s,
+        "psi": psi_con,
+        "eta": eta_eff,
+        "omega": omega,
+        "a_bleed": a_bleed,
+        "a_in": a_in,
+        "b_in": b_in,
+        "p_new": p_new,
+        "p_var": p_var,
+        "suction": suction,
+        "chaos": chaos,
+        "c_factor": c_factor,
+        "c_cosm": c_cosm,
     }
     return values
 
@@ -251,8 +265,16 @@ def _starts_expr(token: str) -> bool:
     return bool(re.fullmatch(r"[0-9]+(?:\.[0-9]*)?(?:[eE][+-]?[0-9]+)?|[a-z_][a-z0-9_]*", token)) or token == "("
 
 
+def _canonicalize_fsot_v4_formula(normalized: str) -> str:
+    """Align portable eval with fsot_numeric_eval_v4 SMILES electrode conventions."""
+    compact = normalized.replace(" ", "")
+    if compact == "theta-phi":
+        return "phi-theta"
+    return normalized
+
+
 def evaluate_formula(formula: str, env: Mapping[str, float]) -> float:
-    normalized = normalize_formula(formula)
+    normalized = _canonicalize_fsot_v4_formula(normalize_formula(formula))
     tokens = _insert_implicit_multiplication(_tokenize(normalized))
     return _FormulaParser(tokens, env).parse()
 

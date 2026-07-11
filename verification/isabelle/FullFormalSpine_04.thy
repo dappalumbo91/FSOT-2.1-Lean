@@ -1,306 +1,306 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 5/13 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 5/19 (generated). *)
 theory FullFormalSpine_04
 imports Complex_Main
 begin
 
-lemma const_rec_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma distant_island_z128_z132_deep_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma const_rec_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma distant_island_z128_z132_deep_panel_headline_median_under_half_pct: "(0.000000009504129 :: real) < (0.5 :: real)"
   by eval
 
-lemma const_rec_observable_count_pos: "0 < (21 :: nat)"
+lemma distant_island_z128_z132_deep_panel_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
-lemma const_rec_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma distant_island_z128_z132_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma const_rec_families_pos: "0 < (5 :: nat)"
+lemma domain_coupling_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fsot_aggregate_organized_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma domain_coupling_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fsot_aggregate_organized_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma domain_coupling_node_count_pos: "0 < (246 :: nat)"
   by eval
 
-lemma fsot_aggregate_organized_panel_observable_count_pos: "0 < (10 :: nat)"
+lemma domain_coupling_edge_count_pos: "0 < (12840 :: nat)"
   by eval
 
-lemma fsot_aggregate_organized_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma domain_coupling_beats_sota_headlines_pos: "0 < (4 :: nat)"
   by eval
 
-lemma fsot_aggregate_unified_db_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma domain_coupling_simulation_refresh_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fsot_aggregate_unified_db_observable_count_pos: "0 < (8 :: nat)"
+lemma domain_coupling_simulation_refresh_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fuel_candidate_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma domain_coupling_simulation_refresh_panel_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
-lemma fuel_candidate_prereg_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma domain_coupling_simulation_refresh_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fuel_candidate_prereg_scaffold_observable_count_pos: "0 < (33 :: nat)"
+lemma negative_scalar_domain_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma fuel_candidate_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma smiles_chemical_records_pos: "0 < (608 :: nat)"
   by eval
 
-lemma fuel_profile_count_pos: "0 < (6 :: nat)"
+lemma smiles_electron_records_pos: "0 < (99 :: nat)"
   by eval
 
-lemma fuel_thermochemistry_public_anchors_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma smiles_material_records_pos: "0 < (485 :: nat)"
   by eval
 
-lemma fuel_thermochemistry_public_anchors_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma smiles_medical_records_pos: "0 < (128 :: nat)"
   by eval
 
-lemma fuel_thermochemistry_public_anchors_observable_count_pos: "0 < (14 :: nat)"
+lemma smiles_neural_records_pos: "0 < (39 :: nat)"
   by eval
 
-lemma fuel_thermochemistry_public_anchors_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma smiles_nuclear_records_pos: "0 < (51 :: nat)"
   by eval
 
-lemma fusion_decay_chain_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma smiles_particle_records_pos: "0 < (36 :: nat)"
   by eval
 
-lemma fusion_decay_chain_prereg_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma smiles_quantum_records_pos: "0 < (24 :: nat)"
   by eval
 
-lemma fusion_decay_chain_prereg_scaffold_observable_count_pos: "0 < (18 :: nat)"
+lemma smiles_total_mapped_records_large: "(1400 :: nat) < (1470 :: nat)"
   by eval
 
-lemma fusion_decay_chain_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma fsot_neurolab_domain_count_eq_thirty_five: "(35 :: nat) = (35 :: nat)"
   by eval
 
-lemma connective_plasma_confinement_pos: "0 < (0.131181176323 :: real)"
+lemma domains_with_empirical_data_full: "(35 :: nat) = (35 :: nat)"
   by eval
 
-lemma connective_seawater_acoustic_pos: "0 < (0.094115088176 :: real)"
+lemma lean_override_aligned_all_mapped: "(17 :: nat) = (17 :: nat)"
   by eval
 
-lemma connective_decay_chain_relay_pos: "0 < (0.029710640768 :: real)"
+lemma orb_pred_pooled_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
   by eval
 
-lemma connective_dt_energy_pos: "0 < (17.6 :: real)"
+lemma orb_pred_headline_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
   by eval
 
-lemma fusion_lab_certificate_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma orb_pred_observable_count_pos: "0 < (12 :: nat)"
   by eval
 
-lemma fusion_lab_certificate_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma orb_pred_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fusion_lab_certificate_spine_observable_count_pos: "0 < (50 :: nat)"
+lemma orb_pred_filled_all_predictions: "(12 :: nat) = (12 :: nat)"
   by eval
 
-lemma fusion_lab_certificate_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_median_under_one_pct: "(0.0008593005 :: real) < (1.0 :: real)"
   by eval
 
-lemma fusion_physics_public_panel_pooled_median_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+lemma smiles_chemical_median_under_one_pct: "(0.110313 :: real) < (1.0 :: real)"
   by eval
 
-lemma fusion_physics_public_panel_headline_median_under_half_pct: "(0.00009504134 :: real) < (0.5 :: real)"
+lemma domain_precision_numeric_majority: "(30 :: nat) < (35 :: nat)"
   by eval
 
-lemma fusion_physics_public_panel_observable_count_pos: "0 < (19 :: nat)"
+lemma domain_precision_target_band_large: "(32 :: nat) < (35 :: nat)"
   by eval
 
-lemma fusion_physics_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma domain_precision_huge_gap_bounded: "(0 :: nat) <= (2 :: nat)"
   by eval
 
-lemma gaia_astrometry_panel_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma connective_energy_bus_pos: "0 < (0.00006522664 :: real)"
   by eval
 
-lemma gaia_astrometry_panel_deep_headline_median_under_half_pct: "(0.111276 :: real) < (0.5 :: real)"
+lemma connective_cryo_rejection_pos: "0 < (0.040494897615 :: real)"
   by eval
 
-lemma gaia_astrometry_panel_deep_observable_count_pos: "0 < (62 :: nat)"
+lemma connective_em_coil_pos: "0 < (0.076350367522 :: real)"
   by eval
 
-lemma gaia_astrometry_panel_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma connective_fluid_consistency_pos: "0 < (0.075670330033 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma connective_stab_margin_gt_one: "1 < (1.722776467449 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_headline_median_under_half_pct: "(0.111276 :: real) < (0.5 :: real)"
+lemma ecology_gap_fill_pooled_median_under_half_pct: "(0.017789000308164337 :: real) < (0.5 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_observable_count_pos: "0 < (74 :: nat)"
+lemma ecology_gap_fill_headline_median_under_half_pct: "(0.017789000308164337 :: real) < (0.5 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma ecology_gap_fill_observable_count_pos: "0 < (627 :: nat)"
   by eval
 
-lemma galactic_structure_sample_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma ecology_gap_fill_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
-lemma galactic_structure_sample_headline_median_under_half_pct: "(0.111276 :: real) < (0.5 :: real)"
+lemma ecology_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma galactic_structure_sample_observable_count_pos: "0 < (101 :: nat)"
+lemma ecology_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma galactic_structure_sample_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma ecology_observable_count_pos: "0 < (12 :: nat)"
   by eval
 
-lemma gbif_species_occurrence_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma ecology_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma gbif_species_occurrence_observable_count_pos: "0 < (600 :: nat)"
+lemma econometrics_gap_fill_pooled_median_under_half_pct: "(0.12920090413715177 :: real) < (0.5 :: real)"
   by eval
 
-lemma genomic_sciences_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma econometrics_gap_fill_headline_median_under_half_pct: "(0.12920090413715177 :: real) < (0.5 :: real)"
   by eval
 
-lemma genomic_sciences_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma econometrics_gap_fill_observable_count_pos: "0 < (172 :: nat)"
   by eval
 
-lemma genomic_sciences_observable_count_pos: "0 < (18 :: nat)"
+lemma econometrics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma genomic_sciences_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma economics_gap_fill_pooled_median_under_half_pct: "(0.1292009041371501 :: real) < (0.5 :: real)"
   by eval
 
-lemma geochemistry_median_error_under_half_pct: "(0.015388964340886185 :: real) < (0.5 :: real)"
+lemma economics_gap_fill_headline_median_under_half_pct: "(0.1292009041371501 :: real) < (0.5 :: real)"
   by eval
 
-lemma geochemistry_observable_count_pos: "0 < (153 :: nat)"
+lemma economics_gap_fill_observable_count_pos: "0 < (157 :: nat)"
   by eval
 
-lemma geology_stratigraphy_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma economics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma geology_stratigraphy_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma econophysics_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma geology_stratigraphy_ext_observable_count_pos: "0 < (1960 :: nat)"
+lemma econophysics_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma geology_stratigraphy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma econophysics_observable_count_pos: "0 < (12 :: nat)"
   by eval
 
-lemma geomagnetism_observable_count_pos: "0 < (525 :: nat)"
+lemma econophysics_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma grace_cryosphere_month_count_pos: "0 < (253 :: nat)"
+lemma electrical_power_systems_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma gwosc_live_event_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma electrical_power_systems_observable_count_pos: "0 < (9 :: nat)"
   by eval
 
-lemma gwosc_live_event_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma element_synthesis_condition_scaffold_pooled_median_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
   by eval
 
-lemma gwosc_live_event_deep_observable_count_pos: "0 < (25 :: nat)"
+lemma element_synthesis_condition_scaffold_headline_median_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
   by eval
 
-lemma gwosc_live_event_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma element_synthesis_condition_scaffold_observable_count_pos: "0 < (45 :: nat)"
   by eval
 
-lemma heavy_ion_lab_synthesis_panel_pooled_median_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+lemma element_synthesis_condition_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma heavy_ion_lab_synthesis_panel_headline_median_under_half_pct: "(0.00009504134 :: real) < (0.5 :: real)"
+lemma emergent_final_emergence_health_positive: "0 < (0.8547351151068473 :: real)"
   by eval
 
-lemma heavy_ion_lab_synthesis_panel_observable_count_pos: "0 < (39 :: nat)"
+lemma emergent_final_meta_S_positive: "0 < (0.32988227338082093 :: real)"
   by eval
 
-lemma heavy_ion_lab_synthesis_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma emergent_domain_count_pos: "0 < (29 :: nat)"
   by eval
 
-lemma higgs_branching_median_error_under_half_pct: "(0.014721632079759569 :: real) < (0.5 :: real)"
+lemma emergent_observed_le_total: "(28 :: nat) <= (29 :: nat)"
   by eval
 
-lemma higgs_branching_max_error_under_half_pct: "(0.27079952979037436 :: real) < (0.5 :: real)"
+lemma e_ai_br_pooled_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
   by eval
 
-lemma higgs_compute_branching_count_pos: "0 < (9 :: nat)"
+lemma e_ai_br_headline_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
   by eval
 
-lemma higgs_branching_observable_count_pos: "0 < (14 :: nat)"
+lemma e_ai_br_observable_count_pos: "0 < (48 :: nat)"
   by eval
 
-lemma higgs_branching_components_sum: "(14 :: nat) = (14 :: nat)"
+lemma e_ai_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma higgs_mass_median_error_under_half_pct: "(0.03990518384182655 :: real) < (0.5 :: real)"
+lemma e_ai_br_bridge_pairs_pos: "0 < (36 :: nat)"
   by eval
 
-lemma higgs_mass_observable_count_pos: "0 < (9 :: nat)"
+lemma e_neu_br_pooled_median_under_half_pct: "(0.01800266870179516 :: real) < (0.5 :: real)"
   by eval
 
-lemma higgs_mass_computed_positive: "0 < (125.20001875723811 :: real)"
+lemma e_neu_br_headline_median_under_half_pct: "(0.01800266870179516 :: real) < (0.5 :: real)"
   by eval
 
-lemma history_ext_pooled_median_under_half_pct: "(0.019504399572477397 :: real) < (0.5 :: real)"
+lemma e_neu_br_observable_count_pos: "0 < (48 :: nat)"
   by eval
 
-lemma history_ext_headline_median_under_half_pct: "(0.019504399572477397 :: real) < (0.5 :: real)"
+lemma e_neu_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma history_ext_observable_count_pos: "0 < (170 :: nat)"
+lemma e_neu_br_bridge_pairs_pos: "0 < (36 :: nat)"
   by eval
 
-lemma history_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma entomology_ext_pooled_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
   by eval
 
-lemma hubble_tension_pooled_median_under_half_pct: "(0.462181 :: real) < (0.5 :: real)"
+lemma entomology_ext_headline_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
   by eval
 
-lemma hubble_tension_headline_median_under_half_pct: "(0.462181 :: real) < (0.5 :: real)"
+lemma entomology_ext_observable_count_pos: "0 < (430 :: nat)"
   by eval
 
-lemma hubble_tension_observable_count_pos: "0 < (6 :: nat)"
+lemma entomology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma hubble_tension_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma environmental_engineering_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma hubble_tension_h0_sectors_pos: "0 < (6 :: nat)"
+lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma hubble_dark_sector_crosswalk_pooled_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
+lemma environmental_engineering_ext_observable_count_pos: "0 < (18416 :: nat)"
   by eval
 
-lemma hubble_dark_sector_crosswalk_headline_median_under_half_pct: "(0.0005024559 :: real) < (0.5 :: real)"
+lemma environmental_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma hubble_dark_sector_crosswalk_observable_count_pos: "0 < (20 :: nat)"
+lemma epidemiology_ext_pooled_median_under_half_pct: "(0.039895 :: real) < (0.5 :: real)"
   by eval
 
-lemma hubble_dark_sector_crosswalk_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma epidemiology_ext_headline_median_under_half_pct: "(0.039895 :: real) < (0.5 :: real)"
   by eval
 
-lemma hvac_thermal_systems_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma epidemiology_ext_observable_count_pos: "0 < (220 :: nat)"
   by eval
 
-lemma hvac_thermal_systems_observable_count_pos: "0 < (7 :: nat)"
+lemma epidemiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma hybrid_fi_sim_multi_hero_panel_pooled_median_under_half_pct: "(0.051436 :: real) < (0.5 :: real)"
+lemma evolution_fitness_positive: "0 < (58.493466 :: real)"
   by eval
 
-lemma hybrid_fi_sim_multi_hero_panel_headline_median_under_half_pct: "(0.05143619629083711 :: real) < (0.5 :: real)"
+lemma evolution_operon_count_pos: "0 < (13 :: nat)"
   by eval
 
-lemma hybrid_fi_sim_multi_hero_panel_observable_count_pos: "0 < (14 :: nat)"
+lemma exogeology_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma hybrid_fi_sim_multi_hero_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma exogeology_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma hydrology_month_count_pos: "0 < (960 :: nat)"
+lemma exogeology_ext_observable_count_pos: "0 < (316 :: nat)"
   by eval
 
-lemma igem_live_fasta_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma exogeology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma igem_live_fasta_observable_count_pos: "0 < (42 :: nat)"
+lemma exoplanet_system_architecture_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

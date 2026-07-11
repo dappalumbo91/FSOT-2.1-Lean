@@ -133,6 +133,7 @@ def build(ledger_path: Path = LEDGER) -> dict:
             "fsot_error_pct": fsot_err,
             "margin_vs_sota_pct": margin,
             "status": status,
+            "status_basis": "beats_sota_typical_error_pct",
             "parameter_advantage": int(row.get("sota_free_parameters") or 0),
         }
         if row.get("comparison_metric") == "rmse" and computed is not None:

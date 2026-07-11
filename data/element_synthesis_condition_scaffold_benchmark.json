@@ -94,7 +94,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -1098,14 +1098,14 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Element Synthesis Condition Scaffold",
   "tier_label": "Tier 73 \u2014 Heavy Ion Lab Synthesis Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.475276+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.161016+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 28,
+    "scalar_count": 27,
     "median_error_pct": 0.000787,
     "max_error_pct": 0.000952,
-    "mean_abs_delta": 0.001717642857142857,
+    "mean_abs_delta": 0.0017812592592592591,
     "precision_tier_counts": {
-      "green": 28
+      "green": 27
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true

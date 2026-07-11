@@ -43,13 +43,25 @@ def build_lean(bench: dict, domain: str) -> str:
             f"unfold {prefix}_econ_anchor_count; norm_num\n"
         )
     elif domain == "Dark_Energy_CPL":
-        wa = float(bench.get("fsot_wa") or 0.0)
+        dr = bench.get("dual_readout") or {}
+        w0_cmb = float(bench.get("fsot_w0_cmb") or dr.get("w0_cmb") or -1.03)
+        w0_bao = float(bench.get("fsot_w0_bao") or dr.get("w0_bao") or -0.73)
+        wa_cmb = float(bench.get("fsot_wa_cmb") or dr.get("wa_cmb") or -0.808)
+        wa_bao = float(bench.get("fsot_wa_bao") or dr.get("wa_bao") or -1.021)
         prereg = "true" if bench.get("preregistered") else "false"
         extra_defs = (
-            f"def {prefix}_fsot_wa : ℝ := ({wa} : ℝ)\n"
+            f"def {prefix}_fsot_w0_cmb : ℝ := ({w0_cmb} : ℝ)\n"
+            f"def {prefix}_fsot_w0_bao : ℝ := ({w0_bao} : ℝ)\n"
+            f"def {prefix}_fsot_wa_cmb : ℝ := ({wa_cmb} : ℝ)\n"
+            f"def {prefix}_fsot_wa_bao : ℝ := ({wa_bao} : ℝ)\n"
             f"def {prefix}_preregistered : Bool := {prereg}\n"
         )
-        extra_thms = f"theorem {prefix}_wa_negative : {prefix}_fsot_wa < (0 : ℝ) := by unfold {prefix}_fsot_wa; norm_num\n"
+        extra_thms = (
+            f"theorem {prefix}_w0_cmb_negative : {prefix}_fsot_w0_cmb < (0 : ℝ) := by unfold {prefix}_fsot_w0_cmb; norm_num\n"
+            f"theorem {prefix}_w0_bao_negative : {prefix}_fsot_w0_bao < (0 : ℝ) := by unfold {prefix}_fsot_w0_bao; norm_num\n"
+            f"theorem {prefix}_wa_cmb_negative : {prefix}_fsot_wa_cmb < (0 : ℝ) := by unfold {prefix}_fsot_wa_cmb; norm_num\n"
+            f"theorem {prefix}_wa_bao_negative : {prefix}_fsot_wa_bao < (0 : ℝ) := by unfold {prefix}_fsot_wa_bao; norm_num\n"
+        )
     elif domain == "SH0ES_Refined":
         hc = int(bench.get("host_count") or 0)
         extra_defs = f"def {prefix}_host_count : ℕ := {hc}\n"

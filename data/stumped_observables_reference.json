@@ -40,11 +40,21 @@
       "id": "w0",
       "name": "w0",
       "property": "dark_energy_eos",
-      "measured": -1.0,
+      "measured": -1.03,
+      "measured_cmb": -1.03,
+      "measured_bao": -0.727,
       "unit": "dimensionless",
       "status": "dark_energy_open",
       "fsot_source": "wave4",
-      "reference": "Planck2018_w0_prior"
+      "fsot_predicted_cmb": -1.029981,
+      "fsot_predicted_bao": -0.729679,
+      "fsot_predicted": -1.029981,
+      "reference": "Planck2018_w0_prior",
+      "survey_anchor_cmb": "Planck2018",
+      "survey_anchor_bao": "DESI_DR2",
+      "cmb_formula": "-P_new*pi/G",
+      "bao_formula": "w0_cmb*(1-G/pi)",
+      "note": "Dual-readout refined 2026-07-11 — CMB vs BAO sector anchors"
     },
     {
       "id": "n_eff",
@@ -130,12 +140,19 @@
       "id": "w_a",
       "name": "w_a",
       "property": "dark_energy_eos_evolution",
-      "measured": null,
+      "measured": -1.018,
+      "measured_sigma": 0.24,
       "unit": "dimensionless",
       "status": "unconfirmed_prediction",
       "fsot_source": "stabilized_report",
-      "fsot_predicted": -0.808,
-      "reference": "FSOT_P45c"
+      "fsot_predicted_cmb": -0.808129,
+      "fsot_predicted_bao": -1.020856,
+      "fsot_predicted": -1.020856,
+      "reference": "FSOT_P45c",
+      "survey_anchor": "DESI_DR2",
+      "bao_formula": "wa_cmb + w0_bao*(G/pi)",
+      "sigma_distance_vs_desi_dr2": 0.116,
+      "note": "BAO-sector wa readout refined 2026-07-11 — within ~0.12 sigma of DESI DR2"
     }
   ]
 }

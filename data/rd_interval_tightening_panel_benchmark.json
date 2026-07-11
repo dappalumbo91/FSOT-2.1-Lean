@@ -184,7 +184,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -374,17 +374,17 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "RD Interval Tightening Panel",
   "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.507253+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.192546+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 12,
+    "scalar_count": 11,
     "median_error_pct": 0.000503,
     "max_error_pct": 0.292338,
-    "mean_abs_delta": 0.03839116666666666,
+    "mean_abs_delta": 0.04188127272727272,
     "precision_tier_counts": {
-      "green": 9,
+      "green": 8,
       "contested": 3
     },
-    "green_gate_fraction": 0.75,
+    "green_gate_fraction": 0.7272727272727273,
     "matches_domain_spine": true
   }
 }

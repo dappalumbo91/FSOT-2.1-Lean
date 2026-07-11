@@ -1,9 +1,9 @@
-generated_at: '2026-07-01T19:01:54.695962+00:00'
+generated_at: '2026-07-11T19:46:46.821554+00:00'
 summary:
-  desktop_folders_listed: 53
-  projects_existing: 53
+  desktop_folders_listed: 54
+  projects_existing: 54
   wired_to_lean: 28
-  unwired_with_content: 18
+  unwired_with_content: 19
   neurolab_domain_slots: 35
   extension_domain_slots: 4
   math_generator_rule_corpora: 61
@@ -495,8 +495,8 @@ projects:
   wire_status: hub_or_skip
   exists: true
   item_count: 5
-  python_files: 211
-  json_files: 3261
+  python_files: 619
+  json_files: 5000
   lean_files: 5000
   empty: false
 - folder: New folder (7)
@@ -533,6 +533,18 @@ projects:
   item_count: 1
   python_files: 1
   json_files: 0
+  lean_files: 0
+  empty: false
+- folder: living fsot
+  path: C:\Users\damia\Desktop\living fsot
+  theme: living_fsot_hardware
+  theme_label: "Living FSOT \u2014 QEMU trinary body + Rust mind gym"
+  lean_lab: living_fsot_hardware_lab
+  wire_status: unwired
+  exists: true
+  item_count: 1
+  python_files: 24
+  json_files: 1005
   lean_files: 0
   empty: false
 - folder: FSOT Photonic V2 Experiments
@@ -709,6 +721,8 @@ by_theme:
   - New folder (8)
   linguistics:
   - FSOT linguistics
+  living_fsot_hardware:
+  - living fsot
   llm_experiments:
   - fsot llm expariments
   magnetic_strings:

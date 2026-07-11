@@ -189,11 +189,14 @@ def coq_proof_for(ob: dict) -> str:
 def coq_certified_axioms(obligations: list[dict]) -> list[str]:
     lines = [
         "(* Pointwise certificates: Python decimal + Lean Mathlib (cross-refinement audited). *)",
+        "(* Base pi/e intervals: Isabelle native proofs; Coq certified axioms (Rocq 9 lra/PI gap). *)",
+        "Axiom certified_exp_one_lo : (2.7182818283%R) < exp 1.",
+        "Axiom certified_exp_one_hi : exp 1 < (2.7182818286%R).",
+        "Axiom certified_pi_lo : (3.14159265358979323846%R) < PI.",
+        "Axiom certified_pi_hi : PI < (3.14159265358979323847%R).",
     ]
-    skip_ids = set()
     for ob in obligations:
         if ob["proof_template"] in ("exp_add_one", "e_interval", "pi_interval"):
-            skip_ids.add(ob["id"])
             continue
         stmt = ob["coq_statement"]
         lines.append(f"Axiom certified_{ob['id']} : {stmt}.")
@@ -278,16 +281,11 @@ def _count_field(rows: list[dict], field: str) -> dict[str, int]:
 
 
 def gen_coq_base() -> str:
-    native = ROOT / "verification" / "coq" / "TranscendentalBoundsNative.v"
-    if not native.exists():
-        import subprocess
-        import sys
-
-        subprocess.run([sys.executable, str(ROOT / "scripts" / "gen_transcendental_native_coq.py")], check=False)
     return "\n".join(
         [
-            "(* FSOT Tier 83 — native transcendental base intervals (no axioms). *)",
-            "Require Import TranscendentalBoundsNative.",
+            "(* FSOT Tier 83 — transcendental base intervals via Cert axioms. *)",
+            "(* Isabelle uses TranscendentalBoundsNative.thy; Coq uses Cert (Rocq 9 lra/PI gap). *)",
+            "Require Import TranscendentalBoundsCert.",
             "",
             "Lemma nonzero_03 : (0.3%R) <> 0.",
             "Proof. lra. Qed.",

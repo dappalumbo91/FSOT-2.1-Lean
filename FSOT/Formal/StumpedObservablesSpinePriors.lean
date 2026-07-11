@@ -12,12 +12,12 @@ noncomputable section
 open Real
 
 def stumped_spine_observable_count : ℕ := 5
-def stumped_spine_pooled_median_error_pct : ℝ := (0.042611 : ℝ)
-def stumped_spine_headline_median_error_pct : ℝ := (0.042611 : ℝ)
+def stumped_spine_pooled_median_error_pct : ℝ := (0.009407 : ℝ)
+def stumped_spine_headline_median_error_pct : ℝ := (0.009407 : ℝ)
 def stumped_spine_beats_sota_headlines : ℕ := 2
 def stumped_spine_D_eff : ℕ := 25
 def stumped_spine_h0_sector_count : ℕ := 6
-def stumped_spine_open_prediction_count : ℕ := 5
+def stumped_spine_open_prediction_count : ℕ := 4
 
 theorem stumped_spine_observable_count_pos : 0 < stumped_spine_observable_count := by
   unfold stumped_spine_observable_count; norm_num

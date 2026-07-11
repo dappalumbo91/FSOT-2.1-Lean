@@ -27,6 +27,11 @@ REPORTS = {
     "coverage": ROOT / "data" / "cross_proof_coverage_audit.json",
     "structural": ROOT / "data" / "structural_proof_depth_audit.json",
     "living_hardware": ROOT / "data" / "living_fsot_hardware_verification_report.json",
+    "bundle_ledger": ROOT / "data" / "structural_bundle_ledger.json",
+    "oracle_ledger": ROOT / "data" / "oracle_debt_ledger.json",
+    "formula_honesty": ROOT / "data" / "formula_corpus_honesty_report.json",
+    "runtime_scope": ROOT / "data" / "runtime_verification_scope_audit.json",
+    "parameter_closure": ROOT / "data" / "parameter_honesty_closure.json",
 }
 
 
@@ -48,17 +53,22 @@ def _expected_rust_count(cross: dict, coq_ref: dict) -> int:
     return conn + atomic + trans
 
 
-def _margin_bundle_analysis(cross: dict, coq_ref: dict) -> dict:
+def _margin_bundle_analysis(cross: dict, coq_ref: dict, bundle_ledger: dict) -> dict:
     formal = cross.get("full_formal_spine") or {}
     tri = coq_ref.get("triangulation") or {}
+    bl = bundle_ledger.get("summary") or {}
     return {
         "total_obligations": formal.get("obligation_count"),
         "provable_atomic": coq_ref.get("obligation_count_atomic_provable"),
         "provable_bundle_conj": coq_ref.get("obligation_count_bundle_conj"),
-        "margin_violation_bundles": formal.get("margin_violation_count"),
+        "structural_bundle_excluded": formal.get("structural_bundle_excluded_count")
+        or bl.get("structural_bundle_excluded"),
+        "false_margin_violations": formal.get("margin_violation_count"),
+        "conjunct_atomic_coverage_pct": bl.get("conjunct_atomic_coverage_pct"),
         "margin_violation_design": (
-            "Structural bundle theorems pool witness medians at lt_half 0.5% boundary; "
-            "excluded from Coq/Isabelle/Rust prover chunks by design."
+            "False margin violations are atomic inequalities that fail Python verify. "
+            "Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design — "
+            "see data/structural_bundle_ledger.json."
         ),
         "lt_half_pooled_median_margin": coq_ref.get("lt_half_pooled_median_margin_to_bound"),
         "atomic_triangulated": f"{tri.get('atomic_triangulated_ok', 0)}/{coq_ref.get('obligation_count_atomic_provable', 0)}",
@@ -108,6 +118,11 @@ def build() -> dict:
     fstar_ref = _load(REPORTS["fstar_refinement"])
     coverage = _load(REPORTS["coverage"])
     living_hw = _load(REPORTS["living_hardware"])
+    bundle_ledger = _load(REPORTS["bundle_ledger"])
+    oracle_ledger = _load(REPORTS["oracle_ledger"])
+    formula_honesty = _load(REPORTS["formula_honesty"])
+    runtime_scope = _load(REPORTS["runtime_scope"])
+    parameter_closure = _load(REPORTS["parameter_closure"])
 
     rust_expected = _expected_rust_count(cross, coq_ref)
     rust_actual = int((cross.get("frameworks") or {}).get("rust_replay", {}).get("obligation_count", 0))
@@ -215,7 +230,12 @@ def build() -> dict:
             },
             "fstar_checks": fstar_ref.get("checks"),
         },
-        "margin_bundle_analysis": _margin_bundle_analysis(cross, coq_ref),
+        "margin_bundle_analysis": _margin_bundle_analysis(cross, coq_ref, bundle_ledger),
+        "structural_bundle_ledger": bundle_ledger.get("summary") or {},
+        "oracle_debt_ledger": oracle_ledger.get("summary") or {},
+        "formula_corpus_honesty": formula_honesty.get("summary") or formula_honesty,
+        "runtime_verification_scope": runtime_scope,
+        "parameter_honesty_closure": parameter_closure.get("summary") or parameter_closure,
         "export_coverage": {
             "lean_theorem_count": export_reg.get("lean_theorem_count"),
             "exported_obligation_count": export_reg.get("exported_obligation_count"),

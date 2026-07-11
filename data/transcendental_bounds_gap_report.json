@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-11T19:38:08.214622+00:00",
+  "generated_at": "2026-07-11T22:11:00.090189+00:00",
   "tier": "83_transcendental_bounds_gap",
   "bounds_lean_file": "FSOT\\Formal\\Bounds.lean",
-  "exported_float_obligations_from_bounds": 24,
+  "exported_float_obligations_from_bounds": 277,
   "excluded_pi_e_interval_lemmas": [
     {
       "id": "e_lt_27182818286",
       "symbol": "e",
       "kind": "lt_lit",
       "literal_bound": "2.7182818286",
-      "exported_as_float_obligation": false,
+      "exported_as_float_obligation": true,
       "reason": "pi/e interval \u2014 requires Mathlib transcendental bounds, not float eval"
     },
     {
@@ -17,7 +17,7 @@
       "symbol": "pi",
       "kind": "lt_lit",
       "literal_bound": "3.14159265358979323847",
-      "exported_as_float_obligation": false,
+      "exported_as_float_obligation": true,
       "reason": "pi/e interval \u2014 requires Mathlib transcendental bounds, not float eval"
     }
   ],
@@ -96,5 +96,12 @@
   "tier_83_status": "coq_and_isabelle_artifacts_generated",
   "tier_83_obligations_json": "verification/obligations/transcendental_bounds.json",
   "next_tier_scope": "Optional fourth-prover checks (Agda/Metamath); deepen independent proof scripts beyond numeric literal replay for structural theorems.",
-  "note": "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals use native Coq Taylor/lra proofs and Isabelle HOL-Decision_Procs.Approximation."
+  "certified_interval_export": "bounds_oracle_export.py certified_interval path (Decimal-backed)",
+  "proof_class_tags": {
+    "tier83_merge": "decimal_eval_chain",
+    "certified_interval": "certified_interval",
+    "grid_certificate": "sampling_oracle",
+    "parametric": "witness_instantiation"
+  },
+  "note": "Bounds.lean exports via bounds_oracle_export + bounds_remaining_export (277 spine rows). pi/e tight intervals use certified_interval Decimal export plus native Coq/Isabelle replay. Tier 83 merge covers remaining transcendental chains; grid sin/cos bounds are sampling_oracle."
 }

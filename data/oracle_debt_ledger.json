@@ -1,0 +1,531 @@
+{
+  "generated_at": "2026-07-11T22:12:08.447533+00:00",
+  "version": "1.0",
+  "summary": {
+    "obligation_total": 2146,
+    "atomic_triangulated": 1771,
+    "oracle_replay": 49,
+    "structural_index": 326,
+    "oracle_fraction_pct": 2.28,
+    "atomic_fraction_pct": 82.53,
+    "grid_certificate_count": 6,
+    "proof_class_labels": {
+      "sampling_oracle": "Dense grid sampling certificate (not Mathlib forall proof)",
+      "witness_instantiation": "Single ledger witness \u2014 not full forall proof",
+      "oracle_tautology": "Oracle constant identity (documented tautology)",
+      "oracle_near_eq": "Oracle near-equality within float tolerance",
+      "decimal_eval_chain": "Python Decimal eval chain replay",
+      "certified_interval": "Decimal certified interval (tight pi/e bounds)",
+      "atomic_triangulated": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "structural_index": "Structural bundle index \u2014 conjunct witness linkage only"
+    },
+    "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
+  },
+  "by_triangulation_class": {
+    "atomic_triangulated": 1771,
+    "structural_index": 326,
+    "oracle_replay": 47,
+    "certified_oracle_replay": 2
+  },
+  "by_proof_class": {
+    "(none)": 2097,
+    "decimal_eval_chain": 30,
+    "certified_interval": 2,
+    "witness_instantiation": 8,
+    "oracle_tautology": 1,
+    "oracle_near_eq": 2,
+    "sampling_oracle": 6
+  },
+  "oracle_obligations": [
+    {
+      "id": "exp_0572_lt_1772",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.572 : \u211d) < (1.772 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_1144_lt_31415",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.144 : \u211d) < (3.1415 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_11445_lt_3141592",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.1445 : \u211d) < (3.141592 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_02903_lt_1338",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.2903 : \u211d) < (1.338 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0602_lt_1838",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.602 : \u211d) < (1.838 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_1602_lt_5",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.602 : \u211d) < (5 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0505_lt_1838",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.505 : \u211d) < (1.838 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0331_lt_1412",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.331 : \u211d) < (1.412 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_1331_lt_384",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.331 : \u211d) < (3.84 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_1505_lt_5",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.505 : \u211d) < (5 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0351_lt_1470",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.351 : \u211d) < (1.470 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_1351_lt_4",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (1.351 : \u211d) < (4 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_005_lt_115",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (0.05 : \u211d) < (1.15 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_11453_gt_pi23847",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(3.14159265358979323847 : \u211d) < exp (1.1453 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_gt_314159265358979323846",
+      "kind": "gt_lit",
+      "proof_class": "certified_interval",
+      "triangulation_class": "certified_oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "3.14159265358979323846 < 3.14159265358979323847",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_lt_314159265358979323847",
+      "kind": "lt_lit",
+      "proof_class": "certified_interval",
+      "triangulation_class": "certified_oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "3.14159265358979323846 < 3.14159265358979323847",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_div_e_lt_pi_div_two",
+      "kind": "r_lt_lit_pure",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "pi / e < pi / 2",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_lt_27182818286",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "e < (2.7182818286 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_gt_27182818283_mul_pi",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(2.7182818283 : \u211d) * (3.14159265358979323846 : \u211d) < e * pi",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_lt_27182818286_mul_pi",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "e * pi < (2.7182818286 : \u211d) * (3.14159265358979323847 : \u211d)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_gt_85397323",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(85397323 : \u211d) / 10000000 < e * pi",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_gt_8539732",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(8539732 : \u211d) / 1000000 < e * pi",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_lt_853973478",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "e * pi < (853973478 : \u211d) / 100000000",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_lt_85397348",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "e * pi < (85397348 : \u211d) / 10000000",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "e_pi_lt_8539736",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "e * pi < (8539736 : \u211d) / 1000000",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_neg_1434_lt_24_div_25",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (-1.434) < (6 : \u211d) / 25",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_040_lt_25_div_24",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp 0.040 < (25 : \u211d) / 24",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_neg_040_gt_24_div_25",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(24 : \u211d) / 25 < exp (-0.040)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0822_gt_25_div_11",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(25 : \u211d) / 11 < exp 0.822",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_neg_0822_lt_11_div_25",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp (-0.822) < (11 : \u211d) / 25",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_0818_lt_25_div_11",
+      "kind": "lt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "exp 0.818 < (25 : \u211d) / 11",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "exp_neg_0818_gt_11_div_25",
+      "kind": "gt_lit",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "(11 : \u211d) / 25 < exp (-0.818)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_arg_gt_pi_div_two",
+      "kind": "gt_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "1.5707963267948966 < cos_arg(cosmological)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_arg_lt_three_pi_div_two",
+      "kind": "lt_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "cos_arg(cosmological) < 4.71238898038469",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "perceived_adjust_lo",
+      "kind": "gt_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "0.91 < perceived_adjust(cosmological) = 1.0",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "perceived_adjust_hi",
+      "kind": "lt_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "perceived_adjust(cosmological) = 1.0 < 1.1",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "log_ratio_lo",
+      "kind": "r_le_sym",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "log(0.8) <= log(D/25) at cosmological",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "log_ratio_hi",
+      "kind": "r_le_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "log(D/25) <= log(1.2) at cosmological",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "pi_eq_real_pi",
+      "kind": "r_eq_lit",
+      "proof_class": "oracle_tautology",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "pi = \u03c0 (oracle constant)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "phase_variance_eq_cos_theta_s",
+      "kind": "r_eq_lit",
+      "proof_class": "oracle_near_eq",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "phase_variance = cos(theta_s) (oracle near-eq)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "gamma_abs_eq",
+      "kind": "r_eq_lit",
+      "proof_class": "oracle_near_eq",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "|gamma| = log2/phi (oracle near-eq)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "sin_bound_lo",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "sin_bound_hi",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_bound_lo",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_bound_hi",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "sin_bound_poly_mono_lo",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "sin_bound_poly_mono",
+      "kind": "r_nonneg",
+      "proof_class": "sampling_oracle",
+      "triangulation_class": "oracle_replay",
+      "grid_step": 0.001,
+      "grid_margin": 0.0,
+      "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_dp_pv_neg_of_ge_07",
+      "kind": "lt_lit",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "dp=1.0 witness",
+      "lean_module": "Bounds"
+    },
+    {
+      "id": "cos_dp_pv_pos_of_le_06",
+      "kind": "pos",
+      "proof_class": "witness_instantiation",
+      "triangulation_class": "oracle_replay",
+      "grid_step": null,
+      "grid_margin": null,
+      "statement": "dp=0.5 witness",
+      "lean_module": "Bounds"
+    }
+  ]
+}

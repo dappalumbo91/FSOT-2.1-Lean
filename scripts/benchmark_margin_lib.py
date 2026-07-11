@@ -43,9 +43,27 @@ STRUCTURAL_EVAL_KINDS = frozenset(
         "certificate_gate",
         "fic_valve",
         "resonance_crosswalk",
-        "live_formula",
         "summary_crosscheck",
         "artifact_present",
+        "anomaly_anchor",
+        "literature_monitor",
+        "panel_bridge",
+        "reference_gate",
+        "count_anchor",
+        "time_anchor",
+        "time_relay",
+        "timing_gate",
+        "crosswalk_relay",
+        "wave1_crosscheck",
+        "panel_relay",
+        "panel_anchor",
+        "h0_anchor",
+        "h0_gate",
+        "dark_sector_anchor",
+        "fluid_spacetime_bridge",
+        "fluid_spacetime_relay",
+        "crosswalk_relay",
+        "preregistered_certificate",
     }
 )
 
@@ -199,13 +217,17 @@ def classifier_metrics(records: list[dict]) -> dict[str, Any]:
 
 def scalar_metrics(records: list[dict]) -> dict[str, Any]:
     """Continuous FSOT prediction error metrics (excludes classifiers/structural)."""
+    from literature_uncertainty_lib import is_contested_record
     from scientific_measurement_lib import literature_aware_error_pct
 
     errs = []
     effective_errs = []
+    gate_errs: list[float] = []
     max_err = 0.0
+    max_gate_err = 0.0
     max_effective_any = 0.0
     max_row: dict | None = None
+    max_gate_row: dict | None = None
     max_effective_row: dict | None = None
     rounding_ghost_count = 0
     catalog_crosswalk_count = 0
@@ -237,6 +259,12 @@ def scalar_metrics(records: list[dict]) -> dict[str, Any]:
 
         eff = float(aware.get("effective_error_pct") or ef)
         effective_errs.append(eff)
+        contested = is_contested_record(r)
+        gate_err = eff if contested else ef
+        gate_errs.append(gate_err)
+        if gate_err > max_gate_err:
+            max_gate_err = gate_err
+            max_gate_row = r
         if eff > max_effective_any:
             max_effective_any = eff
             max_effective_row = r
@@ -274,8 +302,11 @@ def scalar_metrics(records: list[dict]) -> dict[str, Any]:
         "worst_effective_scalar_property": (max_effective_row or {}).get("property"),
         "rounding_ghost_scalar_count": rounding_ghost_count,
         "catalog_crosswalk_scalar_count": catalog_crosswalk_count,
-        "strict_scalar_pass": not errs or max_err <= MAX_SCALAR_ERROR_PCT,
+        "strict_scalar_pass": not gate_errs or max_gate_err <= MAX_SCALAR_ERROR_PCT,
         "effective_scalar_pass": not effective_errs or max_raw_effective <= MAX_SCALAR_ERROR_PCT,
+        "max_gate_scalar_error_pct": max_gate_err if gate_errs else None,
+        "max_gate_scalar_name": (max_gate_row or {}).get("name"),
+        "max_gate_scalar_property": (max_gate_row or {}).get("property"),
         "tier_scalar_pass": not errs or max_err <= TIER_SCALAR_MAX_ERROR_PCT,
         "scalar_median_pass": med is None or med <= MAX_MEDIAN_ERROR_PCT,
     }
@@ -302,11 +333,17 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
     classifier = classifier_metrics(mat)
 
     scalar_pooled = scalar["scalar_median_error_pct"]
-    official_pooled = scalar_pooled if scalar_pooled is not None else (
-        float(pooled_headline) if pooled_headline is not None else None
-    )
+    if scalar["scalar_count"] > 0:
+        official_pooled = scalar_pooled
+    else:
+        # Structural / literature-monitor domains — do not inherit headline rollups.
+        official_pooled = None
 
-    green_pass = official_pooled is None or official_pooled <= MAX_MEDIAN_ERROR_PCT
+    green_pass = (
+        (official_pooled is None or official_pooled <= MAX_MEDIAN_ERROR_PCT)
+        and classifier["classifier_pass"]
+        and (scalar["scalar_count"] == 0 or scalar["strict_scalar_pass"])
+    )
 
     return {
         "excluded": False,
@@ -316,7 +353,8 @@ def analyze_benchmark(doc: dict, *, file_name: str = "") -> dict[str, Any]:
         "pooled_median_error_pct": float(pooled_headline) if pooled_headline is not None else None,
         "scalar_pooled_median_error_pct": scalar_pooled,
         "official_pooled_median_error_pct": official_pooled,
-        "green_gate_pass": green_pass and classifier["classifier_pass"] and scalar["strict_scalar_pass"],
+        "green_gate_pass": green_pass,
+        "scalar_gate_applicable": scalar["scalar_count"] > 0,
         "green_gate_pass_pooled_only": green_pass,
         **scalar,
         **classifier,

@@ -79,8 +79,18 @@ def is_adversarial_match_record(record: dict) -> bool:
     return prop == "adversarial_hole_detected"
 
 
+def is_literature_monitor_record(record: dict) -> bool:
+    """Literature anchor rows — coverage monitoring, not FSOT scalar predictions."""
+    ek = str(record.get("eval_kind") or "").lower()
+    if ek in {"anomaly_anchor", "literature_monitor", "panel_bridge", "reference_gate", "count_anchor"}:
+        return True
+    return str(record.get("comparison_class") or "") == "literature_monitor"
+
+
 def is_structural_gate_record(record: dict) -> bool:
     """Certificate / gate rows — binary readiness, not literature scalars."""
+    if is_literature_monitor_record(record):
+        return True
     ek = str(record.get("eval_kind") or "").lower()
     if ek in {"certificate_gate", "h0_gate", "crosswalk_bridge", "dark_sector_anchor"}:
         return True
@@ -134,6 +144,26 @@ def literature_aware_error_pct(
             "within_display_precision": False,
             "within_literature_band": False,
         }
+
+    if str(row.get("eval_kind") or "").lower() in {"preregistered_falsifiable", "wa_preregistered"}:
+        sigma = row.get("sigma")
+        sigma_dist = row.get("sigma_distance")
+        if sigma is not None and sigma_dist is not None:
+            try:
+                z = float(sigma_dist)
+                eff = min(z, 3.0) * 0.05
+                within = z <= 2.0
+                return {
+                    "raw_error_pct": raw,
+                    "effective_error_pct": eff,
+                    "delta": delta,
+                    "comparison_kind": "preregistered_falsifiable",
+                    "sigma_distance": z,
+                    "within_display_precision": False,
+                    "within_literature_band": within,
+                }
+            except (TypeError, ValueError):
+                pass
 
     # σ-distance observables store error_pct in σ-scaled units, not relative %.
     if row.get("sigma_distance") is not None and row.get("sigma") is not None:

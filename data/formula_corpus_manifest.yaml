@@ -17,5 +17,6 @@ verification:
   within_tolerable_5pct_min: 7900
   unmatched_max: 0
   live_recompute_enabled: true
-  live_recompute_sample_size: 200
+  live_recompute_sample_size: 1325
+  live_recompute_dedupe_unique_observables: true
   live_recompute_max_drift_pct: 0.05

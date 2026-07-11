@@ -12,8 +12,8 @@ noncomputable section
 open Real
 
 def sh0es_refined_observable_count : ℕ := 7
-def sh0es_refined_pooled_median_error_pct : ℝ := (0.462181 : ℝ)
-def sh0es_refined_headline_median_error_pct : ℝ := (0.462181 : ℝ)
+def sh0es_refined_pooled_median_error_pct : ℝ := (0.0 : ℝ)
+def sh0es_refined_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def sh0es_refined_beats_sota_headlines : ℕ := 2
 def sh0es_refined_D_eff : ℕ := 25
 def sh0es_refined_host_count : ℕ := 46

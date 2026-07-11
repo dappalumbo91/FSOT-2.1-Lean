@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 1/13 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 1/19 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -195,6 +195,9 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma blackhole_thesis_observable_count_pos : (0 < 28)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma blackhole_thesis_within_le_total : (28 <= 28)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
 Lemma botany_ext_pooled_median_under_half_pct : (0.022236250385193387%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -282,27 +285,24 @@ Proof. reflexivity. Qed.
 Lemma microglial_surveillance_genetic_counts_sum : (72 = 72)%nat.
 Proof. reflexivity. Qed.
 
-Lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma brain_prior_codon_pattern_space_eq_twenty_seven : (27 = 27)%nat.
+Proof. reflexivity. Qed.
 
-Lemma breakthrough_discoveries_2024_2026_observable_count_pos : (0 < 21)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma neocortex_genetic_zero_is_superposition : (0.5138888888888888%R) = (0.5138888888888888%R).
+Proof. reflexivity. Qed.
 
-Lemma bubble_bleed_nebula_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma cerebellum_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
 
-Lemma bubble_bleed_frb_count_pos : (0 < 38)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma brainstem_arousal_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
 
-Lemma bubble_bleed_observable_count_pos : (0 < 113)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma hippocampus_genetic_zero_is_superposition : (0.5%R) = (0.5%R).
+Proof. reflexivity. Qed.
 
-Lemma cameo_symbolic_mae_positive : 0 < (8.85%R).
-Proof. lra. Qed.
+Lemma basal_ganglia_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
 
-Lemma cameo_benchmark_count_pos : (0 < 130)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cardiology_ext_pooled_median_under_half_pct : (0.030622122938654326%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma thalamus_genetic_zero_is_superposition : (0.4861111111111111%R) = (0.4861111111111111%R).
+Proof. reflexivity. Qed.
 

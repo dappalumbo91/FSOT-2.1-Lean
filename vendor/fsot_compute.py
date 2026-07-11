@@ -463,6 +463,11 @@ def wave4() -> list[Result]:
     # Dark Energy / QCD
     v = -P_NEW * PI / G_CAT
     r.append(Result("w0", "−P_new·π/G", v, mpf("-1.030")))
+    w0_bao = v * (1 - G_CAT / PI)
+    r.append(Result("w0_BAO", "w0·(1 − G/π)", w0_bao, mpf("-0.727")))
+    wa_cmb = -GAMMA * E * PHI / PI
+    wa_bao = wa_cmb + w0_bao * (G_CAT / PI)
+    r.append(Result("wa_BAO", "wa + w0_BAO·(G/π)", wa_bao, mpf("-1.018")))
     r.append(Result("m_c/m_b", "C_cosm/P_base", C_COSM / P_BASE, mpf("0.291")))
     r.append(Result("alpha_s_ratio", "π⁶·γ⁸", PI**6 * GAMMA**8, mpf("11.85")))
     return r

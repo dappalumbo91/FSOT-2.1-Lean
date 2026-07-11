@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:10:52.383868+00:00",
+  "generated_at": "2026-07-11T20:07:34.186527+00:00",
   "domain": "FPC_Fluidlink_Timing_Deep_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -17,9 +17,11 @@
   "D_eff": 20,
   "record_count": 13,
   "observable_count": 13,
-  "median_error_pct": 5e-05,
-  "pooled_median_error_pct": 5e-05,
-  "headline_median_error_pct": 5.024559461830336e-05,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.022181,
+  "pooled_median_error_pct": 0.022181,
+  "headline_median_error_pct": 0.022181,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,14 +40,14 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 5e-05,
+      "computed": 0.022181,
       "measured": 0.0,
-      "error_pct": 5e-05,
+      "error_pct": 0.022181,
       "observable_count": 13,
       "domain_display_name": "tier gap fill",
       "display_name": "all channels",
       "scientific_measurement": {
-        "delta": 5e-05,
+        "delta": 0.022181,
         "delta_pct": 100.0,
         "effective_error_pct": 100.0,
         "comparison_kind": "display_precision",
@@ -94,7 +96,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -368,7 +370,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 5e-05,
+    "scalar_pooled_median_error_pct": 0.022181,
     "max_scalar_error_pct": 0.039797,
     "classifier_count": 4,
     "classifier_correct": 4,
@@ -382,15 +384,15 @@
   "display_name": "FPC Fluidlink Timing Deep Panel",
   "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
   "scientific_precision_summary": {
-    "scalar_count": 9,
-    "median_error_pct": 5.6e-05,
+    "scalar_count": 7,
+    "median_error_pct": 0.0222,
     "max_error_pct": 0.039807,
-    "mean_abs_delta": 0.0002043333333333333,
+    "mean_abs_delta": 0.00026271428571428566,
     "precision_tier_counts": {
-      "green": 9
+      "green": 7
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.497055+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.192546+00:00"
 }

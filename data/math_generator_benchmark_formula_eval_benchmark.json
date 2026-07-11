@@ -318,8 +318,16 @@
   ],
   "display_name": "Math Generator Benchmark Formula Eval",
   "tier_label": "Math generator benchmark formula eval (FO-200/210/220)",
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:20.266908+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.925224+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 0
+    "scalar_count": 1,
+    "median_error_pct": 2.1125033444758682e-14,
+    "max_error_pct": 2.1125033444758682e-14,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 1
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   }
 }

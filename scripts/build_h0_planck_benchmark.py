@@ -33,7 +33,9 @@ def build() -> dict:
             "measured": PLANCK_H0,
             "error_pct": err,
             "eval_kind": "live_formula",
+            "comparison_class": "live_formula_prediction",
             "formula": FO200_FORMULA,
+            "reference": "Planck2018",
         },
         {
             "lab": "h0_planck",
@@ -43,6 +45,7 @@ def build() -> dict:
             "measured": 68.44005682979427,
             "error_pct": 0.0,
             "eval_kind": "wave1_crosscheck",
+            "comparison_class": "tension_sector_crosscheck",
             "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout.",
         },
     ]

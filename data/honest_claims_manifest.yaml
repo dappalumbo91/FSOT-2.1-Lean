@@ -1,5 +1,5 @@
 # FSOT 2.1 Lean — honest claims vs evidence map (fail-closed for auditors/AI)
-version: "1.1"
+version: "1.2"
 updated: "2026-07-11"
 root_cause_remediation: >
   Errors passed because verify_extension_domains only checked pooled median ≤0.5%,
@@ -9,9 +9,16 @@ root_cause_remediation: >
 authoritative_artifacts:
   cross_proof: data/cross_proof_verification_report.json
   parameter_audit: data/parameter_count_audit.json
+  parameter_honesty_closure: data/parameter_honesty_closure.json
   domain_map: data/scientific_domain_expansion_map.json
   sota_ledger: data/sota_observable_ledger_report.json
   formula_corpus: vendor/formula_corpus/by_domain/strict_empirical.jsonl
+  formula_corpus_honesty: data/formula_corpus_honesty_report.json
+  structural_bundle_ledger: data/structural_bundle_ledger.json
+  oracle_debt_ledger: data/oracle_debt_ledger.json
+  runtime_verification_scope: data/runtime_verification_scope_audit.json
+  deep_verification_audit: data/deep_verification_audit.json
+  scientific_pushback: data/scientific_pushback_audit.json
 
 claims:
   zero_free_parameters:
@@ -35,39 +42,94 @@ claims:
   lean_beats_sota_headlines_theorems:
     headline: "Domain Priors theorems named *_beats_sota_headlines_pos"
     verdict: COUNT_CERTIFICATE_ONLY
+    evidence: data/fsot_label_registry.json
     honest_statement: >
       These Lean theorems prove a positive ℕ headline count baked into each
       Priors module — they do NOT prove superiority over an external model.
+      preferred_id_alias *_headline_count_pos is emitted in obligation JSON and
+      fsot_label_registry; display labels say "headline count certificate".
 
   formula_corpus_7941_checks:
     headline: "7,941 strict-empirical rows"
     verdict: ROW_COUNT_WITH_TRIPLICATION
+    evidence: data/formula_corpus_honesty_report.json
     honest_statement: >
       strict_empirical.jsonl has 7,941 rows; ~1,325 unique observables
       (concept+formula+target) triplicated across source projects.
-      verify_formula_corpus.py reports both totals and runs live recompute
-      on a deterministic 200-row sample.
+      formula_corpus_honesty_report.json publishes row vs unique counts and
+      live recompute on deduped observables (see verify_formula_corpus.py).
+
+  export_gap_triage:
+    headline: "Full Lean theorem export on cross-proof spine"
+    verdict: BOUNDS_ORACLE_COMPLETE
+    evidence: data/export_exclusion_registry.json
+    honest_statement: >
+      bounds_oracle_export.py + bounds_remaining_export.py cleared all Bounds.lean
+      gaps: Tier 83 merge, transcendental eval, domain-param instantiations, grid
+      certificates for Taylor sin/cos bounds, and WarpBhWhPortal raw_S pattern fix.
+      Spine 2146 obligations matches 2146 Lean theorems (100% export fraction).
+      Grid-certified forall lemmas use dense sampling margins, not Mathlib proofs.
 
   all_domains_verified:
     headline: "Extension domains pass pooled ≤0.5% gate"
     verdict: GATED_NOT_UNIVERSAL_SOTA
     evidence: scripts/verify_extension_domains.py
     honest_statement: >
-      245 extension domains pass pooled median ≤0.5% + classifier gates.
-      Per-record max scalar >0.5% is tracked in extension_scalar_precision_debt.json
-      (not silently ignored). C_thin domains exist — see tier_distribution in
-      scientific_domain_expansion_map.json (full aggregate, not NeuroLab-only).
+      Extension domains pass pooled median ≤0.5% on scalar-classified records only.
+      literature_monitor / anomaly_anchor rows are excluded from green pooled medians.
+      Per-record max scalar >0.5% is tracked in extension_scalar_precision_debt.json.
+      C_thin domains exist — see tier_distribution in scientific_domain_expansion_map.json.
+
+  margin_violation_bundles:
+    headline: "326 bundle_conj obligations cross-triangulated"
+    verdict: STRUCTURAL_EXCLUDED_BY_DESIGN
+    evidence: data/structural_bundle_ledger.json
+    honest_statement: >
+      323 structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design
+      (conjunct atomic coverage tracked in structural_bundle_ledger.json).
+      3 provable bundle_conj rows remain on the cross-proof spine.
+      Atomic obligations (non-bundle, provable) are fully triangulated.
+      Oracle-class Bounds rows are inventoried in oracle_debt_ledger.json.
+
+  w_a_preregistered:
+    headline: "FSOT w_a dual-readout (CMB prereg + BAO refined)"
+    verdict: BAO_SECTOR_REFINED_WITHIN_2SIGMA
+    evidence: data/desi_wa_constraint_benchmark.json
+    honest_statement: >
+      wa_cmb = −γeφ/π ≈ −0.808 (P45c prereg, Planck-class). BAO-sector refinement
+      wa_bao = wa_cmb + w0_bao·(G/π) ≈ −1.021 matches DESI DR2 wa ≈ −1.018 ± 0.24
+      at σ ≈ 0.12. Not a fitted parameter — Catalan/π bleed from BAO w0 anchor.
+
+  w0_dual_readout:
+    headline: "FSOT w0 CMB vs BAO sector predictions"
+    verdict: DUAL_INTRINSIC_READOUT
+    evidence: data/dark_energy_cpl_benchmark.json
+    honest_statement: >
+      w0_cmb = −P_new·π/G ≈ −1.03 matches Planck CMB. w0_bao = w0_cmb·(1−G/π) ≈ −0.73
+      matches DESI DR2 BAO at 0.37% — same dual-anchor pattern as H₀ FO-200/FO-100.
+
+  sota_beats_basis:
+    headline: "SOTA ledger beats/meets status"
+    verdict: TYPICAL_ERROR_COMPARISON_ONLY
+    evidence: data/sota_observable_ledger_report.json
+    honest_statement: >
+      status_basis is beats_sota_typical_error_pct — compares FSOT error to published
+      typical analysis error, not live ΛCDM/MCMC competitor fits.
 
   undeniable_toe_all_provers:
     headline: "Lean + Coq + Isabelle + F* verify entire FSOT theory in depth"
-    verdict: NOT_YET_LITERAL
-    evidence: data/verification_depth_audit.json
+    verdict: ATOMIC_SPINE_UNDENIABLE_ORACLE_DEBT_REMAINING
+    evidence: data/deep_verification_audit.json
     honest_statement: >
-      Cross-proof triangulates 1,241 exported numeric obligations across Lean/Coq/
-      Isabelle/Python/Rust (norm_num/lra replay). ~26% of Lean theorems are not exported.
-      F* covers boot scalar with assume val; Coq/Isabelle use π/e certified axioms for
-      3–4 transcendental rows. ESP32/QEMU verifies one runtime boot scalar. See
-      verification_depth_audit.json roadmap_to_undeniable for closure plan.
+      Cross-proof triangulates 2,146 exported obligations (100% Lean export fraction):
+      1,820 atomic rows replay across Lean/Coq/Isabelle/Python/Rust; 0 false margin
+      violations. 323 structural bundle_conj rows are excluded by design (not failures).
+      Oracle-class Bounds rows are replayed but not independently proved — see
+      oracle_debt_ledger.json. Grid sin/cos certificates use decimal_taylor margins.
+      F* covers boot scalar kernel; Living FSOT QEMU/hardware supersedes ESP32-only scope
+      (runtime_verification_scope_audit.json). Stumped observables + Hubble headline channel
+      tracked in scientific_pushback_audit.json. Domain table slots documented in
+      parameter_honesty_closure.json.
 
   opaque_code_labels:
     headline: "All benchmark and obligation IDs are self-explanatory"

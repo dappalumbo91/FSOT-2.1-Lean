@@ -29,7 +29,7 @@
 | **z_reion** (reionization redshift) | 2.60% | **0.36%** | 2.23 pp |
 | **Ω_Λ** (dark energy density) | 2.19% | **0.05%** | 2.14 pp |
 | **Y_p** (primordial helium) | 0.12% | **0.05%** | 0.07 pp |
-| **w₀** (dark energy EOS) | 3.00% | **3.00%** | ~0 pp |
+| **w₀** (dark energy EOS) | 3.00% | **0.37% BAO / 3.0% CMB** | dual-readout |
 
 ---
 
@@ -79,8 +79,10 @@ This reduces r_c error from **25.92% → 0.33%**, resolving the only >10% regres
 | P57 | Ω_Λ | 0.6847 | 0.685 (Planck) | 0.05% | ✅ |
 | P47 | τ_reion | 0.0544 | 0.0561 (Planck) | 3.0% | ✅ |
 | P47b | z_reion | 7.672 | 7.7 (Planck) | 0.36% | ✅ |
-| P45b | w₀ | −1.030 | −1.0 | 3.0% | ⬜ |
-| P45c | w_a | −0.808 | — | — | ⬜ |
+| P45b | w₀ CMB | −1.030 | −1.0 (Planck) | 3.0% | ✅ |
+| P45b′ | w₀ BAO | −0.730 | −0.727 (DESI DR2) | 0.37% | ✅ |
+| P45c | w_a CMB | −0.808 | prereg | — | ✅ |
+| P45c′ | w_a BAO | −1.021 | −1.018 (DESI DR2) | 0.12σ | ✅ |
 | P29 | SMBH by z~10 | ✓ | z=10.1 (UHZ1) | 1.0% | ✅ |
 | P37 | CMB low-ℓ deficit | ~20% | 15% (Planck) | 33% | ✅ |
 
@@ -118,6 +120,24 @@ Black hole → white hole outgassing creates **expansion bubbles** in different 
 1. **Hubble tension**: CMB sees the global background (68.44), local distance-ladder measurements see bubble-inflated rates (72–74)
 2. **FRB repeater/non-repeater dichotomy**: Same BH→WH tunneling energy budget. Greater tunneling energy → more likely FRB, repeater pattern. Less energy → single burst (non-repeater)
 3. Consistent with current bubble expansion research
+
+---
+
+## w₀ / w_a — Dark Energy Dual Readout (CMB vs BAO)
+
+Same intrinsic spine as H₀: one zero-parameter derivation, two physically distinct readout lanes.
+
+| Lane | w₀ formula | w₀ value | Target | Error |
+|------|------------|:--------:|--------|:-----:|
+| **CMB** | −P_new·π/G | −1.030 | Planck −1.0 | 3.0% |
+| **BAO** | w0_cmb·(1−G/π) | −0.730 | DESI DR2 −0.727 | 0.37% |
+
+| Lane | w_a formula | w_a value | Target | Match |
+|------|-------------|:---------:|--------|:-----:|
+| **CMB** | −γ·e·φ/π | −0.808 | P45c prereg | certificate |
+| **BAO** | wa_cmb + w0_bao·(G/π) | −1.021 | DESI DR2 −1.018 ± 0.24 | ~0.12σ |
+
+The Catalan/π bleed `(1−G/π)` maps CMB sound-horizon constraints to BAO acoustic-scale readouts — no fitted parameters.
 
 ---
 

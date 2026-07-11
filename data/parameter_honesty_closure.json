@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-11T22:11:44.849469+00:00",
+  "version": "1.0",
+  "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
+  "headline_claim": "zero free parameters",
+  "scalar_input_fields": 24,
+  "domain_table": {
+    "domain_count": 35,
+    "per_domain_tunable_fields": 5,
+    "total_slots": 175,
+    "field_names": [
+      "D_eff",
+      "recent_hits",
+      "delta_psi",
+      "delta_theta",
+      "C"
+    ]
+  },
+  "honest_statement": "FSOT uses \u03c6/e/\u03c0/\u03b3-derived intrinsic constants plus a manifest-declared domain assignment table (35 domains \u00d7 5 fields = 175 slots). These are not per-observable least-squares fits in the verification pipeline \u2014 but the 'zero free parameters' headline is NOT_LITERAL_ZERO.",
+  "closure_actions": [
+    "Manifest claim zero_free_parameters uses verdict NOT_LITERAL_ZERO",
+    "parameter_count_audit.json is authoritative for auditor review",
+    "Domain slots are preregistered in extension_domains_manifest \u2014 not hidden tuning"
+  ],
+  "undeniable_boundary": "Intrinsic constant spine is fixed; domain table is declared assignment, not export gap."
+}

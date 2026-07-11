@@ -4,26 +4,14 @@ From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 Local Open Scope R_scope.
 
-Lemma cellular_priors_bundle_conj_0 : (234447 = 234447)%nat.
-Proof. reflexivity.
-Qed.
-
-Lemma cellular_priors_bundle_conj_1 : (13 = 13)%nat.
-Proof. reflexivity.
-Qed.
-
-Lemma cellular_priors_bundle_conj_2 : (11395 = 11395)%nat.
-Proof. reflexivity.
-Qed.
-
-Lemma cellular_priors_bundle : (234447 = 234447)%nat /\ (13 = 13)%nat /\ (11395 = 11395)%nat /\ 0 < (1.0%R).
+Lemma neurolab_bio_sign_bundle : 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R).
 Proof.
-  repeat split; [reflexivity|reflexivity|reflexivity|lra].
+  repeat split; lra.
 Qed.
 
 Lemma lab_smiles_domain_sign_bundle : 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R) /\ 0 < (1.0%R).
 Proof.
-  repeat split; [lra|lra|lra|lra|lra|lra|lra|lra|lra|lra|lra].
+  repeat split; lra.
 Qed.
 
 Lemma structural_warp_bridge_lt_node : (0.053926299704%R) < (0.059407798774%R).

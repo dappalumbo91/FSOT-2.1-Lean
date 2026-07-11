@@ -1,0 +1,104 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-11T20:07:33.464491+00:00",
+  "domain": "DESI_wa_Constraint",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\dark_energy_cpl_reference.json",
+    "scripts/dark_energy_dual_readout_lib.py"
+  ],
+  "maps_to_lean": [
+    "cosmological"
+  ],
+  "D_eff": 24,
+  "record_count": 1,
+  "observable_count": 1,
+  "scalar_record_count": 1,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.000595,
+  "pooled_median_error_pct": 0.000595,
+  "headline_median_error_pct": 0.000595,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "desi_dr2_posterior": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No unified w_a prediction before DESI DR2"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_wa_prereg_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.000595,
+      "measured": 0.0,
+      "error_pct": 0.000595,
+      "observable_count": 1
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "wa_prereg",
+      "name": "desi_dr2_posterior",
+      "computed": 0.000595,
+      "measured": 0.0,
+      "error_pct": 0.000595,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "desi_wa_constraint_lab",
+      "property": "dark_energy_eos_evolution",
+      "name": "w_a_FSOT_BAO_readout_vs_DESI_DR2",
+      "computed": -1.020856,
+      "measured": -1.018,
+      "error_pct": 0.000595,
+      "sigma_distance": 0.0119,
+      "sigma": 0.24,
+      "reference": "FSOT_P45c",
+      "survey": "DESI_DR2",
+      "survey_reference": "arxiv_2503.14738_DESI_DR2_BAO_Planck_w0waCDM",
+      "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
+      "eval_kind": "live_formula",
+      "comparison_class": "bao_sector_prediction",
+      "status": "within_2sigma"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000595,
+    "max_scalar_error_pct": 0.000595,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "dual_readout": {
+    "w0_cmb": -1.0299812921372637,
+    "w0_cmb_formula": "\u2212P_new\u00b7\u03c0/G",
+    "wa_cmb": -0.808109771581081,
+    "wa_cmb_formula": "\u2212\u03b3\u00b7e\u00b7\u03c6/\u03c0",
+    "w0_bao": -0.7296790154668923,
+    "w0_bao_formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
+    "wa_bao": -1.0208556449829258,
+    "wa_bao_formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
+    "bao_bleed_factor": 0.7084390959691812,
+    "g_over_pi": 0.2915609040308188,
+    "mechanism": "CMB sound-horizon vs BAO acoustic-scale readout (Catalan/\u03c0 bleed)"
+  },
+  "fsot_wa_bao": -1.0208556449829258,
+  "desi_dr2_wa_posterior": -1.018,
+  "desi_dr2_wa_sigma": 0.24,
+  "sigma_distance": 0.0119,
+  "falsification_status": "within_2sigma",
+  "public_data_mirror": "D:\\fsot_skeptic_public_data\\desi_wa_constraint_reference.json"
+}

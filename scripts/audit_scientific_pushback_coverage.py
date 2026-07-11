@@ -223,6 +223,26 @@ def build() -> dict:
     ]
     prereg_tracked = [s for s in stumped if s.get("status") == "unconfirmed_prediction"]
 
+    hubble_headline_gap: dict | None = None
+    hubble_path = ROOT / "data" / "hubble_bubble_tension_benchmark.json"
+    if hubble_path.exists():
+        hdoc = json.loads(hubble_path.read_text(encoding="utf-8"))
+        headline = float(hdoc.get("headline_median_error_pct") or 0.0)
+        pooled = float(hdoc.get("pooled_median_error_pct") or 0.0)
+        if headline > 0.5:
+            hubble_headline_gap = {
+                "domain": "Hubble_Bubble_Tension",
+                "channel": "dual_anchor_h0_panel",
+                "headline_median_error_pct": headline,
+                "pooled_median_error_pct": pooled,
+                "green_gate": "pooled_median_only",
+                "lean_theorem": "hubble_tension_headline_median_under_one_pct",
+                "mitigation": (
+                    "Headline channel exceeds 0.5% gate; pooled median passes. "
+                    "Honest Lean theorem uses <1% bound; pushback tracked not hidden."
+                ),
+            }
+
     pushback_avenues: list[dict] = []
     for s in stumped:
         if s.get("status") in {
@@ -267,6 +287,7 @@ def build() -> dict:
             "domains_raw_eff_divergence": sum(1 for r in domain_rows if (r.get("raw_eff_divergence_count") or 0) > 0),
         },
         "aspiration_debt": aspiration_debt,
+        "hubble_headline_channel_gap": hubble_headline_gap,
         "pushback_avenues": pushback_avenues,
         "stumped_observables": stumped,
         "stumped_gaps": stumped_gaps,

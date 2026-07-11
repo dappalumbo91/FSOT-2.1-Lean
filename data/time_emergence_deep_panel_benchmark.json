@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:10:52.380611+00:00",
+  "generated_at": "2026-07-11T20:07:34.186527+00:00",
   "domain": "Time_Emergence_Deep_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -16,6 +16,8 @@
   "D_eff": 19,
   "record_count": 17,
   "observable_count": 17,
+  "scalar_record_count": 1,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 5.0245583893760355e-08,
@@ -93,7 +95,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -474,7 +476,7 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.022272,
+    "max_scalar_error_pct": 0.0,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -487,16 +489,15 @@
   "display_name": "Time Emergence Deep Panel",
   "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
   "scientific_precision_summary": {
-    "scalar_count": 17,
+    "scalar_count": 1,
     "median_error_pct": 0.0,
-    "max_error_pct": 12.709942,
-    "mean_abs_delta": 0.27179141411764707,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
     "precision_tier_counts": {
-      "green": 16,
-      "red": 1
+      "green": 1
     },
-    "green_gate_fraction": 0.9411764705882353,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.497055+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.192546+00:00"
 }

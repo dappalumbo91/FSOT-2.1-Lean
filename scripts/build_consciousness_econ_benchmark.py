@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from consciousness_econ_lib import build_econ_records  # noqa: E402
 from cosmology_lambda import load_fsot_compute  # noqa: E402
 from fsot_paths import fsot_compute_path  # noqa: E402
-from tier_gap_fill_lib import _bench_v11  # noqa: E402
+from tier_gap_fill_lib import _bench_v11, pooled_gate_passes  # noqa: E402
 
 
 def main() -> int:
@@ -86,7 +86,7 @@ def main() -> int:
         "note": "Full open-valve information capacity awaiting resonant stimulus",
     }
     doc["tier"] = 51
-    doc["econ_status"] = "GREEN" if (doc.get("pooled_median_error_pct") or 99) < 0.5 else "YELLOW"
+    doc["econ_status"] = "GREEN" if pooled_gate_passes(doc.get("pooled_median_error_pct")) else "YELLOW"
     args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records={doc['record_count']}  pooled={doc['pooled_median_error_pct']:.4f}%")

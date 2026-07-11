@@ -14,18 +14,41 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from cross_proof_lib import (  # noqa: E402
     FORMAL,
-    load_scalar_constants,
+    load_formal_extended_globals,
     make_unique_coq_ids,
+    obligation_margin_violation,
+    obligation_provable,
     parse_formal_module,
 )
+
+EXTENDED_FORMAL_MODULES = (
+    "Theorems.lean",
+    "Bounds.lean",
+    "Domains.lean",
+    "Cosmology.lean",
+    "Genomic.lean",
+    "Lab.lean",
+    "ProteinFormulas.lean",
+    "LeanProofsBridge.lean",
+    "CosmologyLab.lean",
+    "PhotonicForge.lean",
+    "CosmologyWave4.lean",
+    "CrossProofConnectivePriors.lean",
+    "DomainCoveragePriors.lean",
+    "NeuronCohortStrataPriors.lean",
+    "DomainPrecisionPriors.lean",
+    "TrinaryOSPriors.lean",
+    "SotaCompetitivenessPriors.lean",
+)
 from fsot_label_registry_lib import annotate_obligation  # noqa: E402
+from undeniable_gap_lib import enrich_obligation_labels  # noqa: E402
 
 OUT = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 PRIORS_OUT = ROOT / "verification" / "obligations" / "full_priors_spine.json"
 
 
 def _export_sources() -> tuple[list[dict], dict]:
-    scalar_r = load_scalar_constants()
+    global_r, global_n, global_z = load_formal_extended_globals()
     all_ob: list[dict] = []
     modules_hit = 0
     by_tier: Counter[str] = Counter()
@@ -34,36 +57,29 @@ def _export_sources() -> tuple[list[dict], dict]:
     priors_paths = sorted(
         p for p in FORMAL.glob("*Priors.lean") if not p.stem.startswith("CrossProof")
     )
-    other_paths = [
-        FORMAL / "Bounds.lean",
-        FORMAL / "Lab.lean",
-        FORMAL / "CosmologyWave4.lean",
-        FORMAL / "CrossProofConnectivePriors.lean",
-        FORMAL / "DomainCoveragePriors.lean",
-        FORMAL / "NeuronCohortStrataPriors.lean",
-        FORMAL / "DomainPrecisionPriors.lean",
-        FORMAL / "BrainPriors.lean",
-        FORMAL / "CodonPriors.lean",
-        FORMAL / "ProteinPriors.lean",
-        FORMAL / "TrinaryOSPriors.lean",
-        FORMAL / "SotaCompetitivenessPriors.lean",
-    ]
+    other_paths = [FORMAL / name for name in EXTENDED_FORMAL_MODULES]
 
     seen_paths: set[Path] = set()
     ordered_paths: list[tuple[Path, str, bool]] = []
     for p in priors_paths:
+        if p in seen_paths:
+            continue
+        seen_paths.add(p)
         ordered_paths.append((p, "priors", True))
     for p in other_paths:
-        if p.exists() and p not in seen_paths:
-            tier = "bounds" if p.name == "Bounds.lean" else "extended"
-            ordered_paths.append((p, tier, p.name != "Bounds.lean"))
+        if not p.exists() or p in seen_paths:
+            continue
+        seen_paths.add(p)
+        tier = "bounds" if p.name == "Bounds.lean" else "extended"
+        ordered_paths.append((p, tier, p.name != "Bounds.lean"))
 
     for path, tier, require_norm_num in ordered_paths:
-        seen_paths.add(path)
         obs = parse_formal_module(
             path,
             require_norm_num=require_norm_num,
-            global_r=scalar_r,
+            global_r=global_r,
+            global_n=global_n,
+            global_z=global_z,
             source_tier=tier,
         )
         if obs:
@@ -74,6 +90,20 @@ def _export_sources() -> tuple[list[dict], dict]:
     all_ob = make_unique_coq_ids(all_ob)
     for ob in all_ob:
         by_kind[ob["kind"]] += 1
+        if ob.get("kind") == "bundle_conj":
+            ob["provable"] = obligation_provable(ob)
+            if not ob["provable"]:
+                ob["unprovable_reason"] = "structural_bundle_excluded"
+                ob["exclusion_class"] = "structural_bundle"
+        else:
+            violation = obligation_margin_violation(ob)
+            if violation:
+                ob["margin_violation"] = violation
+                ob["provable"] = False
+                ob["unprovable_reason"] = "margin_violation"
+                ob["exclusion_class"] = "margin_violation"
+            else:
+                ob["provable"] = obligation_provable(ob)
 
     meta = {
         "modules_hit": modules_hit,
@@ -85,7 +115,7 @@ def _export_sources() -> tuple[list[dict], dict]:
 
 def main() -> int:
     obligations, meta = _export_sources()
-    obligations = [annotate_obligation(ob) for ob in obligations]
+    obligations = [enrich_obligation_labels(annotate_obligation(ob)) for ob in obligations]
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "version": "2.0",

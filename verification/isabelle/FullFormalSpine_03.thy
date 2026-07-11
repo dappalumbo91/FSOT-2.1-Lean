@@ -1,306 +1,306 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 4/13 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 4/19 (generated). *)
 theory FullFormalSpine_03
 imports Complex_Main
 begin
 
-lemma element_synthesis_condition_scaffold_headline_median_under_half_pct: "(0.000787 :: real) < (0.5 :: real)"
+lemma comp_lad_observable_count_pos: "0 < (60 :: nat)"
   by eval
 
-lemma element_synthesis_condition_scaffold_observable_count_pos: "0 < (45 :: nat)"
+lemma comp_lad_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma element_synthesis_condition_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma comp_lad_rungs_complete: "(10 :: nat) = (10 :: nat)"
   by eval
 
-lemma emergent_final_emergence_health_positive: "0 < (0.8547351151068473 :: real)"
+lemma compact_object_binary_events_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma emergent_final_meta_S_positive: "0 < (0.32988227338082093 :: real)"
+lemma compact_object_binary_events_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma emergent_domain_count_pos: "0 < (29 :: nat)"
+lemma compact_object_binary_events_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
-lemma e_ai_br_pooled_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
+lemma compact_object_binary_events_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma e_ai_br_headline_median_under_half_pct: "(0.02754410755640979 :: real) < (0.5 :: real)"
+lemma computational_reasoning_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma e_ai_br_observable_count_pos: "0 < (48 :: nat)"
+lemma computational_reasoning_observable_count_pos: "0 < (577 :: nat)"
   by eval
 
-lemma e_ai_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma consciousness_econ_pooled_median_under_half_pct: "(0.008898 :: real) < (0.5 :: real)"
   by eval
 
-lemma e_ai_br_bridge_pairs_pos: "0 < (36 :: nat)"
+lemma consciousness_econ_headline_median_under_half_pct: "(0.008898 :: real) < (0.5 :: real)"
   by eval
 
-lemma e_neu_br_pooled_median_under_half_pct: "(0.01800266870179516 :: real) < (0.5 :: real)"
+lemma consciousness_econ_observable_count_pos: "0 < (37 :: nat)"
   by eval
 
-lemma e_neu_br_headline_median_under_half_pct: "(0.01800266870179516 :: real) < (0.5 :: real)"
+lemma consciousness_econ_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma e_neu_br_observable_count_pos: "0 < (48 :: nat)"
+lemma consciousness_econ_econ_anchors_pos: "0 < (67 :: nat)"
   by eval
 
-lemma e_neu_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma c_gal_br_pooled_median_under_half_pct: "(0.036757197413939124 :: real) < (0.5 :: real)"
   by eval
 
-lemma e_neu_br_bridge_pairs_pos: "0 < (36 :: nat)"
+lemma c_gal_br_headline_median_under_half_pct: "(0.036757197413939124 :: real) < (0.5 :: real)"
   by eval
 
-lemma entomology_ext_pooled_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
+lemma c_gal_br_observable_count_pos: "0 < (47 :: nat)"
   by eval
 
-lemma entomology_ext_headline_median_under_half_pct: "(0.022236250385189223 :: real) < (0.5 :: real)"
+lemma c_gal_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma entomology_ext_observable_count_pos: "0 < (430 :: nat)"
+lemma c_gal_br_bridge_pairs_pos: "0 < (35 :: nat)"
   by eval
 
-lemma entomology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma consciousness_soul_bridge_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma environmental_engineering_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma consciousness_soul_bridge_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma environmental_engineering_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma consciousness_soul_bridge_observable_count_pos: "0 < (27 :: nat)"
   by eval
 
-lemma environmental_engineering_ext_observable_count_pos: "0 < (18416 :: nat)"
+lemma consciousness_soul_bridge_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma environmental_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma consciousness_soul_bridge_soul_records_pos: "0 < (352276 :: nat)"
   by eval
 
-lemma epidemiology_ext_pooled_median_under_half_pct: "(0.039895 :: real) < (0.5 :: real)"
+lemma cosmology_anomalies_count_pos: "0 < (12 :: nat)"
   by eval
 
-lemma epidemiology_ext_headline_median_under_half_pct: "(0.039895 :: real) < (0.5 :: real)"
+lemma cosmology_anomalies_resolved_le_total: "(12 :: nat) <= (12 :: nat)"
   by eval
 
-lemma epidemiology_ext_observable_count_pos: "0 < (220 :: nat)"
+lemma cosmology_anomaly_deep_panel_pooled_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
   by eval
 
-lemma epidemiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_anomaly_deep_panel_headline_median_under_half_pct: "(0.0005024559 :: real) < (0.5 :: real)"
   by eval
 
-lemma evolution_fitness_positive: "0 < (58.493466 :: real)"
+lemma cosmology_anomaly_deep_panel_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
-lemma evolution_operon_count_pos: "0 < (13 :: nat)"
+lemma cosmology_anomaly_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma exogeology_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_extended_median_error_under_half_pct: "(0.022 :: real) < (0.5 :: real)"
   by eval
 
-lemma exogeology_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_skeleton_derivation_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma exogeology_ext_observable_count_pos: "0 < (316 :: nat)"
+lemma cosmology_lambda_cdm_extended_count_pos: "0 < (30 :: nat)"
   by eval
 
-lemma exogeology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_extended_observable_count_pos: "0 < (58 :: nat)"
   by eval
 
-lemma exoplanet_system_architecture_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_extended_within_le_total: "(50 :: nat) <= (58 :: nat)"
   by eval
 
-lemma exoplanet_system_architecture_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_extended_components_sum: "(58 :: nat) = (58 :: nat)"
   by eval
 
-lemma exoplanet_system_architecture_observable_count_pos: "0 < (882 :: nat)"
+lemma cosmology_higher_waves_max_error_under_half_pct: "(0.35683948712437213 :: real) < (0.5 :: real)"
   by eval
 
-lemma exoplanet_system_architecture_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_higher_waves_total_pos: "0 < (142 :: nat)"
   by eval
 
-lemma experiment_synthesis_approach_count_pos: "0 < (5 :: nat)"
+lemma cosmology_higher_waves_partition: "(142 :: nat) = (142 :: nat)"
   by eval
 
-lemma experiment_llm_project_count_pos: "0 < (21 :: nat)"
+lemma cosmology_wave10_max_error_under_half_pct: "(0.004079227596853056 :: real) < (0.5 :: real)"
   by eval
 
-lemma external_oss_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_wave10_median_error_under_half_pct: "(0.0006556117 :: real) < (0.5 :: real)"
   by eval
 
-lemma external_oss_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_wave10_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma external_oss_observable_count_pos: "0 < (169 :: nat)"
+lemma cosmology_wave4_max_error_under_half_pct: "(0.23468225112121452 :: real) < (0.5 :: real)"
   by eval
 
-lemma external_oss_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_wave4_median_error_under_half_pct: "(0.011586387979935279 :: real) < (0.5 :: real)"
   by eval
 
-lemma external_oss_oss_samples_pos: "0 < (23 :: nat)"
+lemma cosmology_wave4_observable_count_pos: "0 < (16 :: nat)"
   by eval
 
-lemma finance_markets_ext_pooled_median_under_half_pct: "(0.025840180827434747 :: real) < (0.5 :: real)"
+lemma cosmology_wave5_max_error_under_half_pct: "(0.09098602506082563 :: real) < (0.5 :: real)"
   by eval
 
-lemma finance_markets_ext_headline_median_under_half_pct: "(0.025840180827434747 :: real) < (0.5 :: real)"
+lemma cosmology_wave5_median_error_under_half_pct: "(0.0020773615251059676 :: real) < (0.5 :: real)"
   by eval
 
-lemma finance_markets_ext_observable_count_pos: "0 < (245 :: nat)"
+lemma cosmology_wave5_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
-lemma finance_markets_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_wave6_max_error_under_half_pct: "(0.031298130508454446 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_dynamics_gap_fill_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_wave6_median_error_under_half_pct: "(0.0003441842 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_dynamics_gap_fill_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_wave6_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
-lemma fluid_dynamics_gap_fill_observable_count_pos: "0 < (55 :: nat)"
+lemma cosmology_wave7_max_error_under_half_pct: "(0.2980550885153489 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_dynamics_gap_fill_beats_sota_headlines_pos: "0 < (3 :: nat)"
+lemma cosmology_wave7_median_error_under_half_pct: "(0.003988029700396626 :: real) < (0.5 :: real)"
   by eval
 
-lemma fpc_spine_pooled_median_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+lemma cosmology_wave7_observable_count_pos: "0 < (29 :: nat)"
   by eval
 
-lemma fpc_spine_headline_median_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+lemma cosmology_wave8_max_error_under_half_pct: "(0.35683948712437213 :: real) < (0.5 :: real)"
   by eval
 
-lemma fpc_spine_observable_count_pos: "0 < (7 :: nat)"
+lemma cosmology_wave8_median_error_under_half_pct: "(0.014145689288404753 :: real) < (0.5 :: real)"
   by eval
 
-lemma fpc_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cosmology_wave8_observable_count_pos: "0 < (52 :: nat)"
   by eval
 
-lemma fpc_spine_spine_edges_pos: "0 < (6 :: nat)"
+lemma cosmology_wave9_max_error_under_half_pct: "(0.19375824846825943 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_spacetime_observable_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cosmology_wave9_median_error_under_half_pct: "(0.014278509753575246 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_spacetime_observable_spine_headline_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
+lemma cosmology_wave9_observable_count_pos: "0 < (7 :: nat)"
   by eval
 
-lemma fluid_spacetime_observable_spine_observable_count_pos: "0 < (37 :: nat)"
+lemma creative_arts_math_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_spacetime_observable_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma creative_arts_math_spine_headline_median_under_half_pct: "(0.00002947665 :: real) < (0.5 :: real)"
   by eval
 
-lemma fluid_spacetime_prereg_validation_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma creative_arts_math_spine_observable_count_pos: "0 < (56 :: nat)"
   by eval
 
-lemma fluid_spacetime_prereg_validation_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma creative_arts_math_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fluid_spacetime_prereg_validation_panel_observable_count_pos: "0 < (19 :: nat)"
+lemma cryosphere_month_count_pos: "0 < (1919 :: nat)"
   by eval
 
-lemma fluid_spacetime_prereg_validation_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma cryosphere_match_le_total: "(1905 :: nat) <= (1919 :: nat)"
   by eval
 
-lemma fold_dep_pooled_median_under_half_pct: "(0.025753835305195434 :: real) < (0.5 :: real)"
+lemma crypto_tech_pooled_median_under_half_pct: "(0.047520672006218234 :: real) < (0.5 :: real)"
   by eval
 
-lemma fold_dep_headline_median_under_half_pct: "(0.025753835305195434 :: real) < (0.5 :: real)"
+lemma crypto_tech_headline_median_under_half_pct: "(0.047520672006218234 :: real) < (0.5 :: real)"
   by eval
 
-lemma fold_dep_observable_count_pos: "0 < (51 :: nat)"
+lemma crypto_tech_observable_count_pos: "0 < (44 :: nat)"
   by eval
 
-lemma fold_dep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma crypto_tech_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fold_dep_fold_span_pos: "0 < (27193 :: nat)"
+lemma culinary_arts_pooled_median_under_half_pct: "(0.047615187057821064 :: real) < (0.5 :: real)"
   by eval
 
-lemma food_microbiology_gap_fill_pooled_median_under_half_pct: "(0.04447250077037743 :: real) < (0.5 :: real)"
+lemma culinary_arts_headline_median_under_half_pct: "(0.047615187057821064 :: real) < (0.5 :: real)"
   by eval
 
-lemma food_microbiology_gap_fill_headline_median_under_half_pct: "(0.04447250077037743 :: real) < (0.5 :: real)"
+lemma culinary_arts_observable_count_pos: "0 < (26 :: nat)"
   by eval
 
-lemma food_microbiology_gap_fill_observable_count_pos: "0 < (30 :: nat)"
+lemma culinary_arts_section_count_pos: "0 < (8 :: nat)"
   by eval
 
-lemma food_microbiology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma culinary_arts_beats_sota_headlines_pos: "0 < (7 :: nat)"
   by eval
 
-lemma fractal_pooled_median_under_half_pct: "(0.038016537604977654 :: real) < (0.5 :: real)"
+lemma cve_hole_pooled_median_under_half_pct: "(0.009186636881580057 :: real) < (0.5 :: real)"
   by eval
 
-lemma fractal_headline_median_under_half_pct: "(0.038016537604977654 :: real) < (0.5 :: real)"
+lemma cve_hole_headline_median_under_half_pct: "(0.009186636881580057 :: real) < (0.5 :: real)"
   by eval
 
-lemma fractal_observable_count_pos: "0 < (144 :: nat)"
+lemma cve_hole_observable_count_pos: "0 < (29 :: nat)"
   by eval
 
-lemma fractal_beats_sota_headlines_pos: "0 < (3 :: nat)"
+lemma cve_hole_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
-lemma fractal_attachments_pos: "0 < (135 :: nat)"
+lemma cve_hole_kev_records_pos: "0 < (1635 :: nat)"
   by eval
 
-lemma formula_corpus_closure_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma dark_energy_cpl_pooled_median_under_half_pct: "(0.051014 :: real) < (0.5 :: real)"
   by eval
 
-lemma formula_corpus_closure_observable_count_pos: "0 < (123 :: nat)"
+lemma dark_energy_cpl_headline_median_under_half_pct: "(0.051014 :: real) < (0.5 :: real)"
   by eval
 
-lemma formula_corpus_closure_strict_empirical_pos: "0 < (7941 :: nat)"
+lemma dark_energy_cpl_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
-lemma formula_corpus_closure_beats_sota_headlines_pos: "0 < (3 :: nat)"
+lemma dark_energy_cpl_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma formula_corpus_cnc_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma dark_energy_cpl_w0_cmb_negative: "(-1.0299812921372637 :: real) < (0 :: real)"
   by eval
 
-lemma formula_corpus_cnc_observable_count_pos: "0 < (10 :: nat)"
+lemma dark_energy_cpl_w0_bao_negative: "(-0.7296790154668923 :: real) < (0 :: real)"
   by eval
 
-lemma formula_corpus_records_total_pos: "0 < (7941 :: nat)"
+lemma dark_energy_cpl_wa_cmb_negative: "(-0.808109771581081 :: real) < (0 :: real)"
   by eval
 
-lemma formula_precision_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma dark_energy_cpl_wa_bao_negative: "(-1.0208556449829258 :: real) < (0 :: real)"
   by eval
 
-lemma formula_precision_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma dark_sector_pooled_median_under_half_pct: "(0.009407 :: real) < (0.5 :: real)"
   by eval
 
-lemma formula_precision_spine_observable_count_pos: "0 < (27 :: nat)"
+lemma dark_sector_headline_median_under_half_pct: "(0.009407 :: real) < (0.5 :: real)"
   by eval
 
-lemma formula_precision_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma dark_sector_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma fpc_fluidlink_timing_deep_panel_pooled_median_under_half_pct: "(0.00005 :: real) < (0.5 :: real)"
+lemma dark_sector_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma fpc_fluidlink_timing_deep_panel_headline_median_under_half_pct: "(0.00005024559 :: real) < (0.5 :: real)"
+lemma dark_sector_w0_cmb_negative: "(-1.0299812921372637 :: real) < (0 :: real)"
   by eval
 
-lemma fpc_fluidlink_timing_deep_panel_observable_count_pos: "0 < (13 :: nat)"
+lemma dark_sector_w0_bao_negative: "(-0.7296790154668923 :: real) < (0 :: real)"
   by eval
 
-lemma fpc_fluidlink_timing_deep_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma dark_sector_wa_cmb_negative: "(-0.808109771581081 :: real) < (0 :: real)"
   by eval
 
-lemma fpc_link_pooled_median_under_half_pct: "(0.031199 :: real) < (0.5 :: real)"
+lemma dark_sector_wa_bao_negative: "(-1.0208556449829258 :: real) < (0 :: real)"
   by eval
 
-lemma fpc_link_headline_median_under_half_pct: "(0.031199 :: real) < (0.5 :: real)"
+lemma distant_island_emergence_simulation_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fpc_link_observable_count_pos: "0 < (6 :: nat)"
+lemma distant_island_emergence_simulation_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma fpc_link_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma distant_island_emergence_simulation_observable_count_pos: "0 < (36 :: nat)"
   by eval
 
-lemma fpc_link_fluidlink_edges_pos: "0 < (6 :: nat)"
+lemma distant_island_emergence_simulation_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 end

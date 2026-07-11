@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:45:03.258700+00:00",
+  "generated_at": "2026-07-11T22:12:14.004774+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -13,49 +13,64 @@
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 1557,
-    "full_formal_provable": 1241,
+    "full_formal_total": 2146,
+    "full_formal_provable": 1823,
     "transcendental": 68,
-    "rust_replay_total": 1331,
-    "rust_replay_expected": 1331,
+    "rust_replay_total": 1912,
+    "rust_replay_expected": 1912,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "lt_half": 458,
-      "nat_pos": 579,
-      "bundle_conj": 318,
-      "eq_nat": 20,
-      "gt_lit": 24,
-      "lt_lit": 31,
-      "eq_nat_arith": 46,
-      "pos": 45,
-      "nat_gt_lit": 23,
-      "nat_le_lit": 4,
+      "lt_half": 457,
+      "nat_pos": 574,
+      "bundle_conj": 326,
+      "eq_nat": 30,
+      "gt_lit": 135,
+      "lt_lit": 157,
+      "nat_le_sym": 31,
+      "eq_nat_arith": 32,
+      "r_eq_sym": 12,
+      "r_eq_lit": 28,
+      "r_nonneg": 10,
+      "pos": 95,
+      "int_tuple3_eq": 148,
+      "nat_gt_lit": 13,
+      "r_lt_lit_pure": 39,
+      "nat_le_lit": 2,
       "gt_one": 6,
-      "lt": 3
+      "r_le_lit": 11,
+      "lt": 10,
+      "nat_sum2_pos": 1,
+      "nat_lt_sym": 1,
+      "r_le_sym": 11,
+      "r_interval_le_conj": 7,
+      "abs_diff_lt_lit": 7,
+      "r_nonpos": 1,
+      "r_interval_conj": 1,
+      "abs_interval_conj": 1
     }
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 1239,
+      "atomic_triangulated_ok": 1820,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 2,
+      "bundle_conj_triangulated_ok": 3,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
-      "margin_violations_confirmed_fail": 316,
+      "margin_violations_confirmed_fail": 323,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 1239,
+      "atomic_triangulated_ok": 1820,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 2,
+      "bundle_conj_triangulated_ok": 3,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 1239,
+      "formal_ok": 1820,
       "transcendental_ok": 68,
-      "total": 1331
+      "total": 1912
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -69,28 +84,181 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 1557,
-    "provable_atomic": 1239,
-    "provable_bundle_conj": 2,
-    "margin_violation_bundles": 316,
-    "margin_violation_design": "Structural bundle theorems pool witness medians at lt_half 0.5% boundary; excluded from Coq/Isabelle/Rust prover chunks by design.",
-    "lt_half_pooled_median_margin": "0.499966",
-    "atomic_triangulated": "1239/1239",
-    "bundle_conj_triangulated": "2/2",
+    "total_obligations": 2146,
+    "provable_atomic": 1820,
+    "provable_bundle_conj": 3,
+    "structural_bundle_excluded": 323,
+    "false_margin_violations": 0,
+    "conjunct_atomic_coverage_pct": 13.64,
+    "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
+    "lt_half_pooled_median_margin": "0.499999",
+    "atomic_triangulated": "1820/1820",
+    "bundle_conj_triangulated": "3/3",
     "margin_violations_confirmed_in_lean": 0,
-    "margin_violations_unconfirmed": 316
+    "margin_violations_unconfirmed": 323
+  },
+  "structural_bundle_ledger": {
+    "bundle_conj_total": 326,
+    "structural_bundle_excluded": 323,
+    "provable_bundle_conj": 3,
+    "total_conjuncts": 1452,
+    "conjuncts_with_atomic_coverage": 198,
+    "conjunct_atomic_coverage_pct": 13.64,
+    "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Atomic conjuncts are replayed separately on the cross-proof spine; bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
+  },
+  "oracle_debt_ledger": {
+    "obligation_total": 2146,
+    "atomic_triangulated": 1771,
+    "oracle_replay": 49,
+    "structural_index": 326,
+    "oracle_fraction_pct": 2.28,
+    "atomic_fraction_pct": 82.53,
+    "grid_certificate_count": 6,
+    "proof_class_labels": {
+      "sampling_oracle": "Dense grid sampling certificate (not Mathlib forall proof)",
+      "witness_instantiation": "Single ledger witness \u2014 not full forall proof",
+      "oracle_tautology": "Oracle constant identity (documented tautology)",
+      "oracle_near_eq": "Oracle near-equality within float tolerance",
+      "decimal_eval_chain": "Python Decimal eval chain replay",
+      "certified_interval": "Decimal certified interval (tight pi/e bounds)",
+      "atomic_triangulated": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "structural_index": "Structural bundle index \u2014 conjunct witness linkage only"
+    },
+    "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
+  },
+  "formula_corpus_honesty": {
+    "generated_at": "2026-07-11T22:11:44.150497+00:00",
+    "version": "1.0",
+    "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
+    "headline_row_count": 7941,
+    "unique_observable_count": 1325,
+    "project_triplication_factor": 5.993,
+    "live_recompute": {
+      "enabled": true,
+      "sample_size": 1325,
+      "checked": 1265,
+      "ok": 1265,
+      "ok_ratio": 1.0,
+      "drift_debt_count": 0
+    },
+    "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute runs on deduped unique observables (1265/1265 OK).",
+    "verification_issues": [],
+    "verification_passed": true,
+    "full_summary": {
+      "records_total": 7941,
+      "unique_observables": 1325,
+      "project_triplication_factor": 5.993,
+      "matched_count": 7941,
+      "unique_matched_count": 1325,
+      "unmatched_count": 0,
+      "within_target_2pct": 6921,
+      "unique_within_target_2pct": 1155,
+      "within_tolerable_5pct": 7941,
+      "unique_within_tolerable_5pct": 1325,
+      "max_error_pct": 4.841504,
+      "top_project_count": 3,
+      "top_projects": [
+        {
+          "project": "FSOT NEURON Gene LLM",
+          "records": 2647
+        },
+        {
+          "project": "FSOT SMILES Lab",
+          "records": 2647
+        },
+        {
+          "project": "Fsot3.0 code",
+          "records": 2647
+        }
+      ],
+      "corpus_path": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "live_recompute_pool_size": 1325,
+      "live_recompute_deduped": true,
+      "live_recompute_sample_size": 1325,
+      "live_recompute_checked": 1265,
+      "live_recompute_skipped_unsupported": 60,
+      "live_recompute_ok": 1265,
+      "live_recompute_ok_ratio": 1.0,
+      "live_recompute_drift_debt_count": 0,
+      "live_recompute_max_drift_pct": 0.0,
+      "live_recompute_debt_report": "data\\formula_live_recompute_debt.json",
+      "issues": 0
+    }
+  },
+  "runtime_verification_scope": {
+    "generated_at": "2026-07-11T22:11:44.515884+00:00",
+    "version": "1.0",
+    "overall_runtime_ok": true,
+    "esp32_scalar_only_gap_closed": true,
+    "layers": [
+      {
+        "id": "lean_coq_isabelle_rust",
+        "scope": "2146 exported obligations; 1820 atomic triangulated",
+        "status": "passed",
+        "undeniable_for": "numeric atomic spine"
+      },
+      {
+        "id": "fstar_boot_scalar",
+        "scope": "FSOTScalarBoot.fst kernel \u2014 boot scalar UART parity",
+        "status": "passed",
+        "undeniable_for": "boot scalar formal spec",
+        "expansion_debt": "full transcendental kernel \u2014 tracked in cross_refinement_fstar_report.json"
+      },
+      {
+        "id": "qemu_bare_metal",
+        "scope": "serial + disk boot harness",
+        "status": "passed",
+        "undeniable_for": "bare-metal runtime parity"
+      },
+      {
+        "id": "esp32_uart",
+        "scope": "single boot scalar UART on CP210x",
+        "status": "passed",
+        "undeniable_for": "hardware UART boot scalar",
+        "note": "One scalar only \u2014 not full FSOT theory on chip"
+      },
+      {
+        "id": "living_fsot_qemu_body",
+        "scope": "fsot-trinary-body UEFI + mind ABI + habitat loop",
+        "status": "passed",
+        "undeniable_for": "closed-loop trinary body verification",
+        "supersedes": "esp32_scalar_only info gap when living_fsot passes"
+      }
+    ],
+    "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
+  },
+  "parameter_honesty_closure": {
+    "generated_at": "2026-07-11T22:11:44.849469+00:00",
+    "version": "1.0",
+    "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
+    "headline_claim": "zero free parameters",
+    "scalar_input_fields": 24,
+    "domain_table": {
+      "domain_count": 35,
+      "per_domain_tunable_fields": 5,
+      "total_slots": 175,
+      "field_names": [
+        "D_eff",
+        "recent_hits",
+        "delta_psi",
+        "delta_theta",
+        "C"
+      ]
+    },
+    "honest_statement": "FSOT uses \u03c6/e/\u03c0/\u03b3-derived intrinsic constants plus a manifest-declared domain assignment table (35 domains \u00d7 5 fields = 175 slots). These are not per-observable least-squares fits in the verification pipeline \u2014 but the 'zero free parameters' headline is NOT_LITERAL_ZERO.",
+    "closure_actions": [
+      "Manifest claim zero_free_parameters uses verdict NOT_LITERAL_ZERO",
+      "parameter_count_audit.json is authoritative for auditor review",
+      "Domain slots are preregistered in extension_domains_manifest \u2014 not hidden tuning"
+    ],
+    "undeniable_boundary": "Intrinsic constant spine is fixed; domain table is declared assignment, not export gap."
   },
   "export_coverage": {
-    "lean_theorem_count": 2139,
-    "exported_obligation_count": 1491,
-    "export_fraction_pct": 69.71,
-    "by_reason": {
-      "not_matched_by_cross_proof_export_patterns": 472,
-      "extended_formal_not_in_export_spine": 116,
-      "structural_bundle_theorem": 6,
-      "contains_non_exportable_proof_markers": 54
-    },
-    "structural_bundle_excluded": 6
+    "lean_theorem_count": 2146,
+    "exported_obligation_count": 2146,
+    "export_fraction_pct": 100.0,
+    "by_reason": {},
+    "structural_bundle_excluded": null
   },
   "transcendental": {
     "certificate_audit_ok": true,
@@ -115,7 +283,7 @@
   "extension_precision": {
     "domain_count": 246,
     "green_gate_pass_count": 246,
-    "core_benchmark_green": 270,
+    "core_benchmark_green": 272,
     "worst_scalar_max_pct": 0.5
   },
   "scientific_pushback": {
@@ -137,32 +305,47 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 1557,
-      "modules_in_full_json": 318,
+      "obligations_in_full_json": 2146,
+      "modules_in_full_json": 319,
       "by_tier": {
-        "priors": 1459,
-        "bounds": 24,
-        "extended": 74
+        "priors": 1685,
+        "extended": 184,
+        "bounds": 277
       },
       "by_kind": {
-        "lt_half": 458,
-        "nat_pos": 579,
-        "bundle_conj": 318,
-        "eq_nat": 20,
-        "gt_lit": 24,
-        "lt_lit": 31,
-        "eq_nat_arith": 46,
-        "pos": 45,
-        "nat_gt_lit": 23,
-        "nat_le_lit": 4,
+        "lt_half": 457,
+        "nat_pos": 574,
+        "bundle_conj": 326,
+        "eq_nat": 30,
+        "gt_lit": 135,
+        "lt_lit": 157,
+        "nat_le_sym": 31,
+        "eq_nat_arith": 32,
+        "r_eq_sym": 12,
+        "r_eq_lit": 28,
+        "r_nonneg": 10,
+        "pos": 95,
+        "int_tuple3_eq": 148,
+        "nat_gt_lit": 13,
+        "r_lt_lit_pure": 39,
+        "nat_le_lit": 2,
         "gt_one": 6,
-        "lt": 3
+        "r_le_lit": 11,
+        "lt": 10,
+        "nat_sum2_pos": 1,
+        "nat_lt_sym": 1,
+        "r_le_sym": 11,
+        "r_interval_le_conj": 7,
+        "abs_diff_lt_lit": 7,
+        "r_nonpos": 1,
+        "r_interval_conj": 1,
+        "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 92.4584,
-      "coq_chunks_generated": 13,
+      "pct_of_formal_theorems": 126.9072,
+      "coq_chunks_generated": 19,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 1557,
-      "coq_proved_yet": 1557,
+      "coq_provable_target": 2146,
+      "coq_proved_yet": 2146,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -172,14 +355,18 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-11T19:41:43.222949+00:00",
+    "generated_at": "2026-07-11T22:11:26.246576+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
-    "provable_bundle_conj_count": 2,
+    "provable_bundle_conj_count": 3,
     "provable_bundles": [
       {
         "id": "cellular_priors_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "neurolab_bio_sign_bundle",
         "conjunct_count": 4
       },
       {
@@ -187,11 +374,11 @@
         "conjunct_count": 11
       }
     ],
-    "structural_proof_count": 15,
+    "structural_proof_count": 12,
     "min_required": 10,
     "breakdown": {
       "bundle_split_lemmas": 2,
-      "bundle_conjunct_lemmas": 3,
+      "bundle_conjunct_lemmas": 0,
       "connective_ordering_lemmas": 3,
       "native_transcendental_chain_lemmas": 7
     },
@@ -226,13 +413,13 @@
     "live_operational": {
       "body_online": true,
       "body_transport": "file",
-      "body_tick": 37894,
+      "body_tick": 37905,
       "habitat_tick": 500,
-      "generation": 6,
+      "generation": 36,
       "genome_fp_match": true,
-      "hero_raw_s": 0.9575783565392747,
-      "hero_d_eff": 11.967685300007808,
-      "hero_delta_psi": 0.2417936604319875,
+      "hero_raw_s": 0.6728806667664186,
+      "hero_d_eff": 11.778150821394094,
+      "hero_delta_psi": 0.20832280173466694,
       "benchmark_pass_rate": 1.0,
       "benchmark_n_pass": 37,
       "benchmark_n_total": 37,
@@ -259,14 +446,7 @@
     "coq_connective_coverage_pct_of_lean_theorems": 1.43,
     "note": "Cross-proof triangulates exported numeric obligations; F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native (Isabelle via HOL-Decision_Procs.Approximation)."
   },
-  "open_gaps_from_depth_audit": [
-    {
-      "id": "esp32_scalar_only",
-      "severity": "info",
-      "description": "ESP32 RF observer verifies one boot scalar \u2014 distinct from Living FSOT QEMU body",
-      "remedy": "ESP32 expansion deferred; Living FSOT covers QEMU-level hardware verification"
-    }
-  ],
+  "open_gaps_from_depth_audit": [],
   "findings": [],
   "source_reports": {
     "cross_proof": "data\\cross_proof_verification_report.json",
@@ -283,6 +463,11 @@
     "fstar_refinement": "data\\cross_refinement_fstar_report.json",
     "coverage": "data\\cross_proof_coverage_audit.json",
     "structural": "data\\structural_proof_depth_audit.json",
-    "living_hardware": "data\\living_fsot_hardware_verification_report.json"
+    "living_hardware": "data\\living_fsot_hardware_verification_report.json",
+    "bundle_ledger": "data\\structural_bundle_ledger.json",
+    "oracle_ledger": "data\\oracle_debt_ledger.json",
+    "formula_honesty": "data\\formula_corpus_honesty_report.json",
+    "runtime_scope": "data\\runtime_verification_scope_audit.json",
+    "parameter_closure": "data\\parameter_honesty_closure.json"
   }
 }

@@ -6,7 +6,7 @@ import re
 from typing import Any
 
 BUNDLE_THEOREM_RE = re.compile(
-    r"theorem\s+(\w+_bundle)\s*:\s*(.+?)\s*:=\s*by",
+    r"theorem\s+(\w+)\s*:\s*((?:(?!\n(?:theorem|lemma)\s).)+)\s*:=\s*by",
     re.DOTALL,
 )
 EXACT_WITNESS_RE = re.compile(r"\bexact\s+(\w+)")
@@ -54,6 +54,25 @@ def classify_conjunct(
     if not c:
         return None
 
+    m = re.fullmatch(r"4 \* phi \^ 3 \+ 8 / phi \^ 2 = (\d+)", c)
+    if m and "phi" in r_defs:
+        try:
+            from cross_proof_lib import _eval_r_expr  # noqa: WPS433
+
+            val = _eval_r_expr("4 * phi ^ 3 + 8 / phi ^ 2", r_defs, n_defs)
+            rhs = int(m.group(1))
+            if val is not None and abs(val - rhs) < 1e-6:
+                return {
+                    "kind": "r_eq_lit",
+                    "left_expr": "4 * phi ^ 3 + 8 / phi ^ 2",
+                    "value": val,
+                    "right_value": float(rhs),
+                    "statement": f"{val} = {rhs}",
+                    "lean_conjunct": c,
+                }
+        except Exception:
+            pass
+
     m = re.fullmatch(r"(\w+)\s*=\s*(\d+)", c)
     if m and m.group(1) in n_defs:
         rhs = int(m.group(2))
@@ -88,6 +107,97 @@ def classify_conjunct(
                 "value": val,
                 "bound": bound,
                 "statement": f"{val} < {bound}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\(([0-9.eE+-]+)\s*:\s*ℝ\)\s*<\s*(\w+)", c)
+    if m:
+        bound = _parse_float_lit(m.group(1))
+        sym = m.group(2)
+        if bound is not None and sym in r_defs:
+            val = r_defs[sym]
+            return {
+                "kind": "gt_lit",
+                "symbol": sym,
+                "value": val,
+                "bound": bound,
+                "statement": f"{val} > {bound}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*<\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)", c)
+    if m and m.group(1) in r_defs:
+        bound = _parse_float_lit(m.group(2))
+        if bound is not None:
+            val = r_defs[m.group(1)]
+            return {
+                "kind": "lt_lit",
+                "symbol": m.group(1),
+                "value": val,
+                "bound": bound,
+                "statement": f"{val} < {bound}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\(([0-9.eE+-]+)\s*:\s*ℝ\)\s*<\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)", c)
+    if m:
+        left = _parse_float_lit(m.group(1))
+        right = _parse_float_lit(m.group(2))
+        if left is not None and right is not None:
+            return {
+                "kind": "r_lt_lit_pure",
+                "left_value": left,
+                "right_value": right,
+                "statement": f"{left} < {right}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\((\d+)\s*:\s*ℕ\)\s*<\s*(\w+)", c)
+    if m and m.group(2) in n_defs:
+        return {
+            "kind": "nat_gt_lit",
+            "symbol": m.group(2),
+            "value": n_defs[m.group(2)],
+            "bound": int(m.group(1)),
+            "statement": f"{m.group(1)} < {n_defs[m.group(2)]}",
+            "lean_conjunct": c,
+        }
+
+    m = re.fullmatch(r"(\w+)\s*(?:≤|<=)\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)", c)
+    if m and m.group(1) in r_defs:
+        bound = _parse_float_lit(m.group(2))
+        if bound is not None:
+            val = r_defs[m.group(1)]
+            return {
+                "kind": "r_le_lit",
+                "symbol": m.group(1),
+                "value": val,
+                "bound": bound,
+                "statement": f"{val} <= {bound}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*>\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)", c)
+    if m and m.group(1) in n_defs:
+        bound = _parse_float_lit(m.group(2))
+        if bound is not None:
+            return {
+                "kind": "nat_gt_lit",
+                "symbol": m.group(1),
+                "value": n_defs[m.group(1)],
+                "bound": int(bound) if bound == int(bound) else int(bound),
+                "statement": f"{n_defs[m.group(1)]} > {bound}",
+                "lean_conjunct": c,
+            }
+    if m and m.group(1) in r_defs:
+        bound = _parse_float_lit(m.group(2))
+        if bound is not None:
+            return {
+                "kind": "gt_lit",
+                "symbol": m.group(1),
+                "value": r_defs[m.group(1)],
+                "bound": bound,
+                "statement": f"{r_defs[m.group(1)]} > {bound}",
                 "lean_conjunct": c,
             }
 
@@ -179,7 +289,7 @@ def _witness_ids(proof_body: str) -> list[str | None]:
             em = EXACT_WITNESS_RE.search(line)
             if em:
                 witnesses.append(em.group(1))
-            elif NORM_NUM_RE.search(line) and line.startswith("by"):
+            elif NORM_NUM_RE.search(line) and (line.startswith("by") or "unfold" in line):
                 witnesses.append(None)
             elif em := EXACT_WITNESS_RE.search(line.removeprefix("·").strip()):
                 witnesses.append(em.group(1))
@@ -205,6 +315,8 @@ def parse_bundle_obligations(
     for m in BUNDLE_THEOREM_RE.finditer(clean):
         bundle_id = m.group(1)
         type_body = m.group(2).strip()
+        if "∧" not in type_body:
+            continue
         conjunct_texts = [_normalize_conjunct(p) for p in CONJ_SPLIT_RE.split(type_body) if p.strip()]
         proof_body = _extract_proof_body(clean, bundle_id)
         witnesses = _witness_ids(proof_body)

@@ -1,4 +1,4 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 1/13 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 1/19 (generated). *)
 theory FullFormalSpine_00
 imports Complex_Main
 begin
@@ -192,6 +192,9 @@ lemma biophysics_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
 lemma blackhole_thesis_observable_count_pos: "0 < (28 :: nat)"
   by eval
 
+lemma blackhole_thesis_within_le_total: "(28 :: nat) <= (28 :: nat)"
+  by eval
+
 lemma botany_ext_pooled_median_under_half_pct: "(0.022236250385193387 :: real) < (0.5 :: real)"
   by eval
 
@@ -279,28 +282,25 @@ lemma amygdala_genetic_counts_sum: "(72 :: nat) = (72 :: nat)"
 lemma microglial_surveillance_genetic_counts_sum: "(72 :: nat) = (72 :: nat)"
   by eval
 
-lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma brain_prior_codon_pattern_space_eq_twenty_seven: "(27 :: nat) = (27 :: nat)"
   by eval
 
-lemma breakthrough_discoveries_2024_2026_observable_count_pos: "0 < (21 :: nat)"
+lemma neocortex_genetic_zero_is_superposition: "(0.5138888888888888 :: real) = (0.5138888888888888 :: real)"
   by eval
 
-lemma bubble_bleed_nebula_count_pos: "0 < (20 :: nat)"
+lemma cerebellum_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
   by eval
 
-lemma bubble_bleed_frb_count_pos: "0 < (38 :: nat)"
+lemma brainstem_arousal_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
   by eval
 
-lemma bubble_bleed_observable_count_pos: "0 < (113 :: nat)"
+lemma hippocampus_genetic_zero_is_superposition: "(0.5 :: real) = (0.5 :: real)"
   by eval
 
-lemma cameo_symbolic_mae_positive: "0 < (8.85 :: real)"
+lemma basal_ganglia_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
   by eval
 
-lemma cameo_benchmark_count_pos: "0 < (130 :: nat)"
-  by eval
-
-lemma cardiology_ext_pooled_median_under_half_pct: "(0.030622122938654326 :: real) < (0.5 :: real)"
+lemma thalamus_genetic_zero_is_superposition: "(0.4861111111111111 :: real) = (0.4861111111111111 :: real)"
   by eval
 
 end

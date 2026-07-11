@@ -31,6 +31,8 @@ _KIND_LABELS = {
     "bundle_conj": "structural bundle index (conjunct witness linkage)",
 }
 
+_HEADLINE_COUNT_KIND = "headline ℕ count > 0 (not SOTA superiority proof)"
+
 _CONNECTIVE_SYMBOLS = {
     "warp_psi_friction": "Warp ψ friction coupling (actuation)",
     "warp_psi_node": "Warp ψ node coupling (actuation)",
@@ -200,7 +202,15 @@ def resolve_record_label(record: dict) -> dict[str, str]:
 
 def annotate_obligation(ob: dict) -> dict:
     enriched = dict(ob)
-    enriched["display_label"] = resolve_obligation_label(ob)
+    oid = str(ob.get("id") or "")
+    if "_beats_sota_headlines_pos" in oid or oid.endswith("_beats_sota_headlines_pos"):
+        module = str(ob.get("lean_module") or "")
+        module_name = humanize_domain_key(module.replace("Priors", "").replace(".lean", ""))
+        sym = str(ob.get("symbol") or "").replace("_beats_sota_headlines", "_headline_count")
+        enriched["display_label"] = f"{module_name}: {humanize_domain_key(sym)} — {_HEADLINE_COUNT_KIND}"
+        enriched["preferred_id_alias"] = oid.replace("_beats_sota_headlines_pos", "_headline_count_pos")
+    else:
+        enriched["display_label"] = resolve_obligation_label(ob)
     return enriched
 
 

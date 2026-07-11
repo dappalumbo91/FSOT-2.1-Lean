@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T19:33:10.214439+00:00",
+  "generated_at": "2026-07-11T21:58:34.035824+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -71,6 +71,7 @@
     "FSOT.Formal.CosmologyWave8Priors",
     "FSOT.Formal.CosmologyWave9Priors",
     "FSOT.Formal.CreativeArtsMathSpinePriors",
+    "FSOT.Formal.CrossProofConnectivePriors",
     "FSOT.Formal.CryospherePriors",
     "FSOT.Formal.CryptographyTechnologyPriors",
     "FSOT.Formal.CulinaryArtsPriors",
@@ -84,6 +85,7 @@
     "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
     "FSOT.Formal.DomainPrecisionPriors",
+    "FSOT.Formal.E10dWdConnectivePriors",
     "FSOT.Formal.EcologyGapFillPriors",
     "FSOT.Formal.EcologyPublicPanelPriors",
     "FSOT.Formal.EconometricsGapFillPriors",
@@ -123,6 +125,7 @@
     "FSOT.Formal.FuelPriors",
     "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors",
     "FSOT.Formal.FusionDecayChainPreregScaffoldPriors",
+    "FSOT.Formal.FusionGridConnectivePriors",
     "FSOT.Formal.FusionLabCertificateSpinePriors",
     "FSOT.Formal.FusionPhysicsPublicPanelPriors",
     "FSOT.Formal.GaiaAstrometryPanelDeepPriors",
@@ -313,6 +316,8 @@
     "FSOT.Formal.VirologyExtensionPriors",
     "FSOT.Formal.VizieRWdsTapLiveDeepPriors",
     "FSOT.Formal.VlDistillAtlasPriors",
+    "FSOT.Formal.WarpActuationDevelopmentPriors",
+    "FSOT.Formal.WarpBhWhPortalPriors",
     "FSOT.Formal.WDSLiveMultiplicityDeepPriors",
     "FSOT.Formal.WeatherPriors",
     "FSOT.Formal.WorldBankDevelopmentPriors",
@@ -1770,6 +1775,14 @@
       "creative_arts_math_spine_beats_sota_headlines_pos",
       "creative_arts_math_spine_bundle"
     ],
+    "CrossProofConnectivePriors": [
+      "cross_proof_obligation_count_pos",
+      "cross_proof_lean_modules_pos",
+      "cross_proof_full_formal_obligation_count_pos",
+      "cross_proof_full_formal_provable_count_pos",
+      "cross_proof_connective_spine_bundle",
+      "cross_proof_full_formal_spine_bundle"
+    ],
     "CryospherePriors": [
       "cryosphere_month_count_pos",
       "cryosphere_match_le_total",
@@ -1803,7 +1816,10 @@
       "dark_energy_cpl_pooled_median_under_half_pct",
       "dark_energy_cpl_headline_median_under_half_pct",
       "dark_energy_cpl_beats_sota_headlines_pos",
-      "dark_energy_cpl_wa_negative",
+      "dark_energy_cpl_w0_cmb_negative",
+      "dark_energy_cpl_w0_bao_negative",
+      "dark_energy_cpl_wa_cmb_negative",
+      "dark_energy_cpl_wa_bao_negative",
       "dark_energy_cpl_bundle"
     ],
     "DarkSectorOpenProblemsPriors": [
@@ -1811,6 +1827,10 @@
       "dark_sector_pooled_median_under_half_pct",
       "dark_sector_headline_median_under_half_pct",
       "dark_sector_beats_sota_headlines_pos",
+      "dark_sector_w0_cmb_negative",
+      "dark_sector_w0_bao_negative",
+      "dark_sector_wa_cmb_negative",
+      "dark_sector_wa_bao_negative",
       "dark_sector_bundle"
     ],
     "DistantIslandEmergenceSimulationPriors": [
@@ -1918,6 +1938,14 @@
       "cellular_raw_S_positive",
       "nuclear_raw_S_positive",
       "energy_raw_S_positive"
+    ],
+    "E10dWdConnectivePriors": [
+      "connective_energy_bus_pos",
+      "connective_cryo_rejection_pos",
+      "connective_em_coil_pos",
+      "connective_fluid_consistency_pos",
+      "connective_stab_margin_gt_one",
+      "connective_e10d_wd_bundle"
     ],
     "EcologyGapFillPriors": [
       "ecology_gap_fill_observable_count_pos",
@@ -2189,6 +2217,13 @@
       "fusion_decay_chain_prereg_scaffold_beats_sota_headlines_pos",
       "fusion_decay_chain_prereg_scaffold_bundle"
     ],
+    "FusionGridConnectivePriors": [
+      "connective_plasma_confinement_pos",
+      "connective_seawater_acoustic_pos",
+      "connective_decay_chain_relay_pos",
+      "connective_dt_energy_pos",
+      "connective_fusion_grid_bundle"
+    ],
     "FusionLabCertificateSpinePriors": [
       "fusion_lab_certificate_spine_observable_count_pos",
       "fusion_lab_certificate_spine_pooled_median_under_half_pct",
@@ -2319,7 +2354,7 @@
     "HubbleBubbleTensionPriors": [
       "hubble_tension_observable_count_pos",
       "hubble_tension_pooled_median_under_half_pct",
-      "hubble_tension_headline_median_under_half_pct",
+      "hubble_tension_headline_median_under_one_pct",
       "hubble_tension_beats_sota_headlines_pos",
       "hubble_tension_h0_sectors_pos",
       "hubble_tension_bundle"
@@ -3599,6 +3634,35 @@
       "vl_distill_atlas_median_error_under_half_pct",
       "vl_distill_atlas_bundle"
     ],
+    "WarpActuationDevelopmentPriors": [
+      "warp_psi_friction_pos",
+      "warp_psi_node_pos",
+      "warp_tunneling_bridge_pos",
+      "warp_psi_stabilization_pos",
+      "warp_psi_run_pos",
+      "warp_delta_phi_stable_pos",
+      "warp_bridge_lt_node",
+      "warp_exotic_lt_friction",
+      "warp_delta_phi_stable_le_raw",
+      "warp_stabilization_margin_gt_one",
+      "warp_stable_run_band",
+      "warp_y_exotic_byproduct_pos",
+      "warp_actuation_core_bundle",
+      "warp_actuation_stabilized_bundle"
+    ],
+    "WarpBhWhPortalPriors": [
+      "warp_bh_wh_portal_observable_count_pos",
+      "warp_bh_wh_portal_pooled_under_half_pct",
+      "warp_psi_bh_inlet_pos",
+      "warp_psi_wh_outlet_pos",
+      "warp_psi_portal_doorway_pos",
+      "warp_info_preservation_pos",
+      "warp_psi_entangle_gate_pos",
+      "warp_psi_traverse_pos",
+      "warp_portal_stabilization_margin_gt_one",
+      "warp_bh_wh_linked_to_blackhole_domain",
+      "warp_bh_wh_portal_bundle"
+    ],
     "WDSLiveMultiplicityDeepPriors": [
       "wds_live_multiplicity_deep_observable_count_pos",
       "wds_live_multiplicity_deep_pooled_median_under_half_pct",
@@ -3669,12 +3733,12 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "377406EE861857B3CACD2C1CC5E731AD6E4A2AC43CC53AC74AF9BDF44A2D91C8",
+    "scripts/fsot_verification_runner.py": "C4BB4A5FDB88EF0182F3BA2CE8B9F25353E393BE1E1F81AD090570F490E31097",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 315,
-  "lean_target_count": 316,
+  "formal_module_count": 320,
+  "lean_target_count": 321,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

@@ -29,7 +29,7 @@ from cross_proof_lib import (  # noqa: E402
     obligation_margin,
     obligation_margin_violation,
     obligation_provable,
-    load_scalar_constants,
+    load_formal_extended_globals,
     make_unique_coq_ids,
     parse_formal_module,
     python_verify_obligation,
@@ -73,7 +73,7 @@ def _load_coq_lemmas() -> dict[str, dict]:
 
 
 def _reparse_lean_index(exported: list[dict]) -> dict[str, dict]:
-    scalar_r = load_scalar_constants()
+    global_r, global_n, global_z = load_formal_extended_globals()
     tier_by_module = {ob.get("lean_module", ""): ob.get("source_tier", "priors") for ob in exported}
     idx: dict[str, dict] = {}
     for stem in sorted(tier_by_module):
@@ -83,7 +83,12 @@ def _reparse_lean_index(exported: list[dict]) -> dict[str, dict]:
         tier = tier_by_module[stem]
         require_norm = path.name != "Bounds.lean"
         for ob in parse_formal_module(
-            path, require_norm_num=require_norm, global_r=scalar_r, source_tier=tier
+            path,
+            require_norm_num=require_norm,
+            global_r=global_r,
+            global_n=global_n,
+            global_z=global_z,
+            source_tier=tier,
         ):
             idx[ob["id"]] = ob
     return idx
@@ -139,14 +144,37 @@ def _compare_provable_obligation(
             if "bound" in exported and "bound" in lean_reparsed:
                 if not _values_equal(exported["bound"], lean_reparsed["bound"], kind):
                     issues.append("bound_lean_json_drift")
-        elif kind in ("nat_pos", "nat_gt_lit", "nat_le_lit"):
+        elif kind in ("nat_pos", "nat_gt_lit", "nat_le_lit", "nat_le_sym"):
             if int(exported["value"]) != int(lean_reparsed["value"]):
+                issues.append("value_lean_json_drift")
+            if kind == "nat_le_sym" and int(exported.get("right_value", -1)) != int(
+                lean_reparsed.get("right_value", -2)
+            ):
+                issues.append("right_value_lean_json_drift")
+        elif kind == "r_nonneg":
+            if not _values_equal(exported["value"], lean_reparsed["value"], "lt_lit"):
                 issues.append("value_lean_json_drift")
         elif kind in ("eq_nat", "eq_nat_arith"):
             if int(exported["value"]) != int(lean_reparsed["value"]):
                 issues.append("value_lean_json_drift")
             if int(exported["right_value"]) != int(lean_reparsed["right_value"]):
                 issues.append("right_value_lean_json_drift")
+        elif kind == "int_tuple3_eq":
+            for key in ("val0", "val1", "val2", "exp0", "exp1", "exp2"):
+                if int(exported.get(key, 0)) != int(lean_reparsed.get(key, -1)):
+                    issues.append(f"{key}_lean_json_drift")
+        elif kind in ("r_eq_lit", "r_eq_sym"):
+            if not _values_equal(exported["value"], lean_reparsed["value"], "lt_lit"):
+                issues.append("value_lean_json_drift")
+            if not _values_equal(exported["right_value"], lean_reparsed["right_value"], "lt_lit"):
+                issues.append("right_value_lean_json_drift")
+        elif kind == "r_interval_conj":
+            if not _values_equal(exported["value"], lean_reparsed["value"], "lt_lit"):
+                issues.append("value_lean_json_drift")
+            if not _values_equal(exported["lower"], lean_reparsed["lower"], "lt_lit"):
+                issues.append("lower_lean_json_drift")
+            if not _values_equal(exported["upper"], lean_reparsed["upper"], "lt_lit"):
+                issues.append("upper_lean_json_drift")
         elif kind == "lt":
             if not _values_equal(exported["left_value"], lean_reparsed["left_value"], kind):
                 issues.append("left_value_lean_json_drift")

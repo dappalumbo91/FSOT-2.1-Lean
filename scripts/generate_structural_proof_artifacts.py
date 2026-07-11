@@ -39,8 +39,26 @@ def _provable_bundles(obligations: list[dict]) -> list[dict]:
             continue
         if not obligation_provable(ob) or not python_verify_obligation(ob):
             continue
+        # Rocq 9 stack-overflow on large literal nat reflexivity in structural spine.
+        if any(
+            c.get("kind") == "eq_nat" and int(c.get("value") or 0) > 10_000
+            for c in ob.get("conjuncts") or []
+        ):
+            continue
         out.append(ob)
     return out
+
+
+def _coq_nested_split_proof(tacs: list[str], depth: int = 0) -> list[str]:
+    """Nested split proofs — avoids repeat-split goal-count bugs on large nat equalities."""
+    pad = "  " * (depth + 1)
+    if len(tacs) == 1:
+        return [f"{pad}{tacs[0]}."]
+    return [
+        f"{pad}split.",
+        *_coq_nested_split_proof(tacs[1:], depth + 1),
+        f"{pad}- {tacs[0]}.",
+    ]
 
 
 def _coq_conjunct_proof(conj: dict) -> tuple[str, str]:
@@ -97,8 +115,12 @@ def gen_coq(bundles: list[dict]) -> str:
                 tacs.append("lra")
         if len(tacs) == 1:
             proof_line = f"  {tacs[0]}."
+        elif len(set(tacs)) == 1:
+            proof_line = f"  repeat split; {tacs[0]}."
         else:
-            proof_line = f"  repeat split; [{'|'.join(tacs)}]."
+            proof_lines = _coq_nested_split_proof(tacs)
+            lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", *proof_lines, "Qed.", ""]
+            continue
         lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", proof_line, "Qed.", ""]
 
     for name, lo, hi in CONNECTIVE_ORDERING:

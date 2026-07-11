@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from formula_corpus import (  # noqa: E402
     err_pct_from_values,
     load_strict_empirical_jsonl,
+    observable_key,
     summarize_formula_corpus,
 )
 from fsot_paths import rel_repo_path, strict_empirical_jsonl_path  # noqa: E402
@@ -42,11 +43,25 @@ def _extended_eval_context() -> dict[str, float]:
     return ctx
 
 
+def _dedupe_unique_observables(rows: list[dict]) -> list[dict]:
+    """Keep first row per (concept, formula, target) — avoids triplicate oversampling."""
+    seen: set[tuple[str, str, str]] = set()
+    unique: list[dict] = []
+    for row in rows:
+        key = observable_key(row)
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(row)
+    return unique
+
+
 def _live_recompute_sample(
     rows: list[dict],
     *,
     sample_size: int,
     max_drift_pct: float,
+    dedupe_unique: bool = True,
 ) -> tuple[list[str], dict]:
     """Re-evaluate a deterministic sample via math_formula_eval (fail-closed)."""
     from math_formula_eval import evaluate_formula  # noqa: E402
@@ -61,12 +76,9 @@ def _live_recompute_sample(
     if not eligible:
         return ["formula_corpus: no rows eligible for live recompute"], {}
 
+    pool = _dedupe_unique_observables(eligible) if dedupe_unique else eligible
     rng = random.Random(42)
-    sample = (
-        eligible
-        if len(eligible) <= sample_size
-        else rng.sample(eligible, sample_size)
-    )
+    sample = pool if len(pool) <= sample_size else rng.sample(pool, sample_size)
     ctx = _extended_eval_context()
     checked = 0
     skipped_unsupported = 0
@@ -134,6 +146,8 @@ def _live_recompute_sample(
     DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2), encoding="utf-8")
 
     return issues, {
+        "live_recompute_pool_size": len(pool),
+        "live_recompute_deduped": dedupe_unique,
         "live_recompute_sample_size": len(sample),
         "live_recompute_checked": checked,
         "live_recompute_skipped_unsupported": skipped_unsupported,
@@ -188,8 +202,12 @@ def verify_formula_corpus(
     if ver.get("live_recompute_enabled", True):
         sample_size = int(ver.get("live_recompute_sample_size", 200))
         max_drift = float(ver.get("live_recompute_max_drift_pct", 0.05))
+        dedupe_unique = bool(ver.get("live_recompute_dedupe_unique_observables", True))
         recompute_issues, recompute_stats = _live_recompute_sample(
-            rows, sample_size=sample_size, max_drift_pct=max_drift
+            rows,
+            sample_size=sample_size,
+            max_drift_pct=max_drift,
+            dedupe_unique=dedupe_unique,
         )
         issues.extend(recompute_issues)
         live.update(recompute_stats)

@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-11T22:11:44.515884+00:00",
+  "version": "1.0",
+  "overall_runtime_ok": true,
+  "esp32_scalar_only_gap_closed": true,
+  "layers": [
+    {
+      "id": "lean_coq_isabelle_rust",
+      "scope": "2146 exported obligations; 1820 atomic triangulated",
+      "status": "passed",
+      "undeniable_for": "numeric atomic spine"
+    },
+    {
+      "id": "fstar_boot_scalar",
+      "scope": "FSOTScalarBoot.fst kernel \u2014 boot scalar UART parity",
+      "status": "passed",
+      "undeniable_for": "boot scalar formal spec",
+      "expansion_debt": "full transcendental kernel \u2014 tracked in cross_refinement_fstar_report.json"
+    },
+    {
+      "id": "qemu_bare_metal",
+      "scope": "serial + disk boot harness",
+      "status": "passed",
+      "undeniable_for": "bare-metal runtime parity"
+    },
+    {
+      "id": "esp32_uart",
+      "scope": "single boot scalar UART on CP210x",
+      "status": "passed",
+      "undeniable_for": "hardware UART boot scalar",
+      "note": "One scalar only \u2014 not full FSOT theory on chip"
+    },
+    {
+      "id": "living_fsot_qemu_body",
+      "scope": "fsot-trinary-body UEFI + mind ABI + habitat loop",
+      "status": "passed",
+      "undeniable_for": "closed-loop trinary body verification",
+      "supersedes": "esp32_scalar_only info gap when living_fsot passes"
+    }
+  ],
+  "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
+}

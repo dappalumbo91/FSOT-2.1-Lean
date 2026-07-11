@@ -30,6 +30,13 @@ def _f64_lit(v: float | int) -> str:
 def rust_assertion_full_formal(ob: dict) -> str:
     kind = ob["kind"]
     oid = ob["id"]
+    if ob.get("certified_interval") and ob.get("decimal_value") and ob.get("decimal_bound"):
+        dv = str(ob["decimal_value"])
+        db = str(ob["decimal_bound"])
+        if kind == "gt_lit":
+            return f'assert!("{dv}" > "{db}", "{oid}");'
+        if kind == "lt_lit":
+            return f'assert!("{dv}" < "{db}", "{oid}");'
     if kind == "pos":
         return f"assert!({_f64_lit(ob['value'])} > 0.0, \"{oid}\");"
     if kind == "gt_one":
@@ -52,8 +59,58 @@ def rust_assertion_full_formal(ob: dict) -> str:
         return f"assert!({int(ob['value'])} > {int(ob['bound'])}, \"{oid}\");"
     if kind == "nat_le_lit":
         return f"assert!({int(ob['value'])} <= {int(ob['bound'])}, \"{oid}\");"
+    if kind == "nat_le_sym":
+        return (
+            f"assert!({int(ob['value'])} <= {int(ob['right_value'])}, \"{oid}\");"
+        )
+    if kind == "r_nonneg":
+        return f"assert!({_f64_lit(ob['value'])} >= 0.0, \"{oid}\");"
     if kind in ("eq_nat", "eq_nat_arith"):
         return f"assert_eq!({int(ob['value'])}, {int(ob['right_value'])}, \"{oid}\");"
+    if kind == "int_tuple3_eq":
+        parts = [
+            f"assert_eq!({int(ob[f'val{i}'])}, {int(ob[f'exp{i}'])}, \"{oid}_{i}\");"
+            for i in range(3)
+        ]
+        return "\n        ".join(parts)
+    if kind in ("r_eq_lit", "r_eq_sym"):
+        return (
+            f"assert!(({_f64_lit(ob['value'])} - {_f64_lit(ob['right_value'])}).abs() "
+            f"< 1e-9, \"{oid}\");"
+        )
+    if kind == "r_interval_conj":
+        val = _f64_lit(ob["value"])
+        lo = _f64_lit(ob["lower"])
+        hi = _f64_lit(ob["upper"])
+        return (
+            f"assert!({lo} < {val} && {val} < {hi}, \"{oid}\");"
+        )
+    if kind == "r_interval_le_conj":
+        val = _f64_lit(ob["value"])
+        lo = _f64_lit(ob["lower"])
+        hi = _f64_lit(ob["upper"])
+        return f"assert!({lo} < {val} && {val} <= {hi}, \"{oid}\");"
+    if kind == "r_lt_lit_pure":
+        return (
+            f"assert!({_f64_lit(ob['left_value'])} < {_f64_lit(ob['right_value'])}, \"{oid}\");"
+        )
+    if kind == "r_le_lit":
+        return f"assert!({_f64_lit(ob['value'])} <= {_f64_lit(ob['bound'])}, \"{oid}\");"
+    if kind == "r_le_sym":
+        return (
+            f"assert!({_f64_lit(ob['value'])} <= {_f64_lit(ob['right_value'])}, \"{oid}\");"
+        )
+    if kind == "nat_lt_sym":
+        return f"assert!({int(ob['value'])} < {int(ob['right_value'])}, \"{oid}\");"
+    if kind == "nat_sum2_pos":
+        return f"assert!({int(ob['value'])} > 0, \"{oid}\");"
+    if kind == "abs_interval_conj":
+        val = _f64_lit(ob["value"])
+        lo = _f64_lit(ob["lower"])
+        hi = _f64_lit(ob["upper"])
+        return f"assert!({lo} < {val} && {val} < {hi}, \"{oid}\");"
+    if kind == "r_nonpos":
+        return f"assert!({_f64_lit(ob['value'])} <= 0.0, \"{oid}\");"
     raise ValueError(f"unsupported kind: {kind}")
 
 

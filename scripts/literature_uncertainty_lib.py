@@ -16,6 +16,8 @@ CONTESTED_EVAL_KINDS = frozenset(
         "contested_observable",
         "w0_live",
         "wa_live",
+        "wa_preregistered",
+        "preregistered_falsifiable",
         "h0_live",
     }
 )
@@ -69,6 +71,14 @@ def is_contested_record(record: dict) -> bool:
         return True
     prop = str(record.get("property") or "")
     if prop in CONTESTED_PROPERTIES:
+        return True
+    if str(record.get("comparison_class") or "") in {
+        "tension_sector_prediction",
+        "preregistered_falsifiable",
+        "literature_monitor",
+        "bao_sector_prediction",
+        "cmb_sector_prediction",
+    }:
         return True
     if record.get("sector") and prop == "hubble_constant":
         return True

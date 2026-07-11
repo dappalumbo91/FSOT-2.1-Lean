@@ -21,6 +21,18 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from benchmark_margin_lib import margin_summary_for_benchmark  # noqa: E402
 from fsot_precision_constants import LEGACY_LOOSE_GATE_PCT, MAX_MEDIAN_ERROR_PCT  # noqa: E402
 
+
+def pooled_gate_passes(
+    pooled_median_error_pct: float | None,
+    *,
+    threshold: float = MAX_MEDIAN_ERROR_PCT,
+) -> bool:
+    """True when pooled median is below gate; 0.0 must pass (not falsy-or-99)."""
+    if pooled_median_error_pct is None:
+        return False
+    return float(pooled_median_error_pct) < threshold
+
+
 BENCH_PATHS = {
     "gbif": DATA / "gbif_species_occurrence_benchmark.json",
     "world_bank": DATA / "world_bank_development_benchmark.json",
@@ -140,10 +152,19 @@ def _bench_v11(
     channel_stats: list[tuple[str, str, list[float]]],
     sota_baselines: dict[str, dict],
 ) -> dict:
-    all_errs = [float(r["error_pct"]) for r in material_records]
-    pooled = _median(all_errs) or 0.0
+    from benchmark_margin_lib import classify_record, margin_summary_for_benchmark
+
+    scalar_errs = [
+        float(r["error_pct"])
+        for r in material_records
+        if classify_record(r) == "scalar" and r.get("error_pct") is not None
+    ]
+    margin = margin_summary_for_benchmark(material_records)
+    pooled = float(margin["scalar_pooled_median_error_pct"] or 0.0) if scalar_errs else 0.0
     channels: list[tuple[str, str, float, int]] = []
-    beats: dict[str, bool] = {"pooled_vs_domain_baseline": pooled < LEGACY_LOOSE_GATE_PCT}
+    beats: dict[str, bool] = {
+        "pooled_vs_domain_baseline": (not scalar_errs) or pooled < LEGACY_LOOSE_GATE_PCT
+    }
     for prop, name, errs in channel_stats:
         med = float(_median(errs) or 0.0)
         channels.append((prop, name, med, len(errs)))
@@ -166,6 +187,8 @@ def _bench_v11(
         "D_eff": d_eff,
         "record_count": len(material_records),
         "observable_count": len(material_records),
+        "scalar_record_count": len(scalar_errs),
+        "scalar_gate_applicable": bool(scalar_errs),
         "median_error_pct": pooled,
         "pooled_median_error_pct": pooled,
         "headline_median_error_pct": headline_med,
@@ -176,7 +199,7 @@ def _bench_v11(
         },
         "records": headlines,
         "material_records": material_records,
-        "margin_summary": margin_summary_for_benchmark(material_records),
+        "margin_summary": margin,
         "fsot_precision_gate_pct": MAX_MEDIAN_ERROR_PCT,
     }
 

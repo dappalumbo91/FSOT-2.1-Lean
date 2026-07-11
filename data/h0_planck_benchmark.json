@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T01:41:29.191889+00:00",
+  "generated_at": "2026-07-11T20:01:11.148112+00:00",
   "source": [
     "vendor/math_generator/benchmark_reports/hubble_report.json",
     "scripts/math_generator_benchmark_formula_eval.py"
@@ -20,7 +20,9 @@
       "measured": 67.36,
       "error_pct": 0.13329620344595866,
       "eval_kind": "live_formula",
-      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))"
+      "comparison_class": "live_formula_prediction",
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "reference": "Planck2018"
     },
     {
       "lab": "h0_planck",
@@ -30,6 +32,7 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "eval_kind": "wave1_crosscheck",
+      "comparison_class": "tension_sector_crosscheck",
       "note": "Global FSOT H0 remains 68.44 for tension sector; Planck uses FO-200 readout."
     }
   ]

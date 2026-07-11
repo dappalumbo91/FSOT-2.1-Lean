@@ -93,7 +93,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -414,14 +414,14 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Distant Island Z128 Z132 Deep Panel",
   "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.491493+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.184517+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 10,
+    "scalar_count": 9,
     "median_error_pct": 0.0,
     "max_error_pct": 9.2e-05,
-    "mean_abs_delta": 0.00037137000000000004,
+    "mean_abs_delta": 0.00041263333333333335,
     "precision_tier_counts": {
-      "green": 10
+      "green": 9
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true

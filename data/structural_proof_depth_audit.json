@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-07-11T19:41:43.222949+00:00",
+  "generated_at": "2026-07-11T22:11:26.246576+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
   "overall_ok": true,
-  "provable_bundle_conj_count": 2,
+  "provable_bundle_conj_count": 3,
   "provable_bundles": [
     {
       "id": "cellular_priors_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "neurolab_bio_sign_bundle",
       "conjunct_count": 4
     },
     {
@@ -14,11 +18,11 @@
       "conjunct_count": 11
     }
   ],
-  "structural_proof_count": 15,
+  "structural_proof_count": 12,
   "min_required": 10,
   "breakdown": {
     "bundle_split_lemmas": 2,
-    "bundle_conjunct_lemmas": 3,
+    "bundle_conjunct_lemmas": 0,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 7
   },

@@ -35,6 +35,11 @@ EXPORT_SKIP_MARKERS = (
 )
 
 
+def _strip_lean_comments(text: str) -> str:
+    text = re.sub(r"/-.*?-/", "", text, flags=re.DOTALL)
+    return re.sub(r"--.*?$", "", text, flags=re.MULTILINE)
+
+
 def _lean_theorems() -> dict[str, list[str]]:
     by_module: dict[str, list[str]] = {}
     for path in sorted(FORMAL.glob("*.lean")):
@@ -57,7 +62,7 @@ def _exclusion_reason(path: Path, name: str, text: str, exported: set[str]) -> s
         return "cross_proof_meta_module"
     if not any(m in text for m in PROOF_CERTIFICATE_MARKERS) and path.name != "Bounds.lean":
         return "no_proof_certificate_in_module"
-    if any(m in text for m in EXPORT_SKIP_MARKERS):
+    if any(m in _strip_lean_comments(text) for m in EXPORT_SKIP_MARKERS):
         return "contains_non_exportable_proof_markers"
     if (name.endswith("_bundle") or "bundle" in name.lower()) and name not in exported:
         return "structural_bundle_theorem"
@@ -90,18 +95,63 @@ def build() -> dict:
             )
 
     total = sum(len(v) for v in by_module.values())
+    structural_ok = {
+        "structural_bundle_theorem",
+        "cross_proof_meta_module",
+        "contains_non_exportable_proof_markers",
+    }
+    triage = {
+        "documented_structural": [
+            e for e in exclusions if e["reason"] in structural_ok
+        ],
+        "bounds_and_transcendental_helpers": [
+            e for e in exclusions if e["module"] == "Bounds.lean"
+        ],
+        "export_pattern_candidates": [
+            e
+            for e in exclusions
+            if e["reason"] == "not_matched_by_cross_proof_export_patterns"
+        ],
+        "extended_formal_off_spine": [
+            e for e in exclusions if e["reason"] == "extended_formal_not_in_export_spine"
+        ],
+    }
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "version": "1.0",
+        "version": "1.1",
         "lean_theorem_count": total,
         "exported_obligation_count": len(exported),
         "unexported_theorem_count": len(exclusions),
         "export_fraction_pct": round(100.0 * len(exported) / total, 2) if total else None,
         "by_reason": dict(reason_counts),
+        "triage_summary": {
+            k: len(v) for k, v in triage.items()
+        },
         "exclusions": exclusions,
+        "export_patterns_extended": [
+            "nat_le_sym",
+            "r_nonneg",
+            "int_tuple3_eq",
+            "r_eq_lit",
+            "r_eq_sym",
+            "r_interval_conj",
+            "r_interval_le_conj",
+            "r_lt_lit_pure",
+            "r_le_lit",
+            "r_le_sym",
+            "nat_lt_sym",
+            "nat_sum6_eq",
+            "nat_sum2_pos",
+            "abs_diff_const_lt",
+            "nat_pow_eq",
+            "multi_conj_bundle",
+        ],
         "remedy": (
-            "Extend export_full_formal_obligations.py for structural/bundle patterns, "
-            "or keep exclusions documented here with explicit reasons."
+            "cross_proof_lib exports Wave-1 cached approx, abs expr/lit, domain param oracle, "
+            "phi-power brackets, codon/tuple phases, real equalities, interval bounds, "
+            "literal comparisons, nat ordering/sums, and multi-conjunct bundles. "
+            "Genomic/Cosmology/Domains on extended spine. "
+            "Bounds.lean interval helpers remain documented structural (~220)."
         ),
     }
 

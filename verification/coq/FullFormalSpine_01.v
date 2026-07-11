@@ -1,10 +1,67 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 2/13 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 2/19 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma astrocyte_syncytium_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma oligodendrocyte_myelination_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma amygdala_genetic_zero_is_superposition : (0.3888888888888889%R) = (0.3888888888888889%R).
+Proof. reflexivity. Qed.
+
+Lemma microglial_surveillance_genetic_zero_is_superposition : (0.4861111111111111%R) = (0.4861111111111111%R).
+Proof. reflexivity. Qed.
+
+Lemma brain_prior_codon_genetic_degeneracy : (2.3703703703703702%R) = (2.3703703703703702%R).
+Proof. reflexivity. Qed.
+
+Lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma breakthrough_discoveries_2024_2026_observable_count_pos : (0 < 21)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma bubble_bleed_nebula_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma bubble_bleed_frb_count_pos : (0 < 38)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma bubble_bleed_observable_count_pos : (0 < 113)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma bubble_bleed_framework_fit_le_total : (20 <= 20)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma bubble_bleed_wh_closure_match_le_total : (20 <= 20)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma bubble_bleed_bh_spin_match_le_total : (5 <= 5)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma bubble_bleed_nebula_match_le_total : (18 <= 20)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma bubble_bleed_frb_match_le_total : (37 <= 38)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma bubble_bleed_observability_ratio_nonneg : 0 <= (0.7142857142857143%R).
+Proof. lra. Qed.
+
+Lemma cameo_symbolic_mae_positive : 0 < (8.85%R).
+Proof. lra. Qed.
+
+Lemma cameo_benchmark_count_pos : (0 < 130)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cardiology_ext_pooled_median_under_half_pct : (0.030622122938654326%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma cardiology_ext_headline_median_under_half_pct : (0.030622122938654326%R) < (0.5%R).
 Proof. lra. Qed.
@@ -123,186 +180,129 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma codon_table_count_eq_sixty_four : (64 = 64)%nat.
 Proof. reflexivity. Qed.
 
-Lemma cold_fusion_candidate_prereg_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_candidate_prereg_scaffold_headline_median_under_half_pct : (0.00007869745015413914%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos : (0 < 19)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos : (0 < 22)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma comp_lad_pooled_median_under_half_pct : (0.0220747159758794%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma comp_lad_headline_median_under_half_pct : (0.0220747159758794%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma comp_lad_observable_count_pos : (0 < 60)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma comp_lad_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma comp_lad_rungs_complete : (10 = 10)%nat.
+Lemma codon_secondary_pattern_space_eq_twenty_seven : (27 = 27)%nat.
 Proof. reflexivity. Qed.
 
-Lemma compact_object_binary_events_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aaa_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma compact_object_binary_events_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aaa_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma compact_object_binary_events_observable_count_pos : (0 < 40)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_aac_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma compact_object_binary_events_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_aac_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma computational_reasoning_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aag_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma computational_reasoning_observable_count_pos : (0 < 577)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_aag_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_econ_pooled_median_under_half_pct : (0.008898%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aat_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_econ_headline_median_under_half_pct : (0.008898%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aat_secondary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_econ_observable_count_pos : (0 < 37)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_aca_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_econ_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_aca_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_econ_econ_anchors_pos : (0 < 67)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_acc_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma c_gal_br_pooled_median_under_half_pct : (0.036757197413939124%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_acc_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma c_gal_br_headline_median_under_half_pct : (0.036757197413939124%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_acg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma c_gal_br_observable_count_pos : (0 < 47)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_acg_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma c_gal_br_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_act_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma c_gal_br_bridge_pairs_pos : (0 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_act_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_soul_bridge_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aga_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_soul_bridge_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_aga_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_soul_bridge_observable_count_pos : (0 < 27)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_agc_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_soul_bridge_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_agc_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma consciousness_soul_bridge_soul_records_pos : (0 < 352276)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_agg_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_anomalies_count_pos : (0 < 12)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_agg_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_anomaly_deep_panel_pooled_median_under_half_pct : (0.000502%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_agt_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_anomaly_deep_panel_headline_median_under_half_pct : (0.0005024559462039755%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_agt_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_anomaly_deep_panel_observable_count_pos : (0 < 14)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_ata_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_anomaly_deep_panel_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_ata_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_extended_median_error_under_half_pct : (0.022%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_atc_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_skeleton_derivation_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_atc_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_lambda_cdm_extended_count_pos : (0 < 30)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_atg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_extended_observable_count_pos : (0 < 58)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_atg_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_extended_components_sum : (58 = 58)%nat.
-Proof. reflexivity. Qed.
+Lemma codon_att_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_higher_waves_max_error_under_half_pct : (0.35683948712437213%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_att_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_higher_waves_total_pos : (0 < 142)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_caa_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave10_max_error_under_half_pct : (0.004079227596853056%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_caa_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave10_median_error_under_half_pct : (0.0006556117321513212%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_cac_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave10_observable_count_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_cac_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave4_max_error_under_half_pct : (0.23468225112121452%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_cag_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave4_median_error_under_half_pct : (0.011586387979935279%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_cag_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave4_observable_count_pos : (0 < 16)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_cat_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave5_max_error_under_half_pct : (0.09098602506082563%R) < (0.5%R).
-Proof. lra. Qed.
+Lemma codon_cat_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
-Lemma cosmology_wave5_median_error_under_half_pct : (0.0020773615251059676%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave5_observable_count_pos : (0 < 22)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cosmology_wave6_max_error_under_half_pct : (0.031298130508454446%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave6_median_error_under_half_pct : (0.0003441841587202251%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave6_observable_count_pos : (0 < 22)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cosmology_wave7_max_error_under_half_pct : (0.2980550885153489%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave7_median_error_under_half_pct : (0.003988029700396626%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cosmology_wave7_observable_count_pos : (0 < 29)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma codon_cca_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 

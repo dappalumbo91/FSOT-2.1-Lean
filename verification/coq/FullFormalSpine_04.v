@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 5/13 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 5/19 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -6,303 +6,303 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma const_rec_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma distant_island_z128_z132_deep_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma const_rec_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma distant_island_z128_z132_deep_panel_headline_median_under_half_pct : (0.000000009504128963901446%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma const_rec_observable_count_pos : (0 < 21)%nat.
+Lemma distant_island_z128_z132_deep_panel_observable_count_pos : (0 < 14)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma const_rec_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma distant_island_z128_z132_deep_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma const_rec_families_pos : (0 < 5)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fsot_aggregate_organized_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma domain_coupling_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_aggregate_organized_panel_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma domain_coupling_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_aggregate_organized_panel_observable_count_pos : (0 < 10)%nat.
+Lemma domain_coupling_node_count_pos : (0 < 246)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fsot_aggregate_organized_panel_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma domain_coupling_edge_count_pos : (0 < 12840)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fsot_aggregate_unified_db_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma domain_coupling_beats_sota_headlines_pos : (0 < 4)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma domain_coupling_simulation_refresh_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fsot_aggregate_unified_db_observable_count_pos : (0 < 8)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fuel_candidate_prereg_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma domain_coupling_simulation_refresh_panel_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma fuel_candidate_prereg_scaffold_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fuel_candidate_prereg_scaffold_observable_count_pos : (0 < 33)%nat.
+Lemma domain_coupling_simulation_refresh_panel_observable_count_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_candidate_prereg_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma domain_coupling_simulation_refresh_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_profile_count_pos : (0 < 6)%nat.
+Lemma negative_scalar_domain_count_pos : (0 < 10)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_thermochemistry_public_anchors_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fuel_thermochemistry_public_anchors_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fuel_thermochemistry_public_anchors_observable_count_pos : (0 < 14)%nat.
+Lemma smiles_chemical_records_pos : (0 < 608)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fuel_thermochemistry_public_anchors_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma smiles_electron_records_pos : (0 < 99)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fusion_decay_chain_prereg_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_decay_chain_prereg_scaffold_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_decay_chain_prereg_scaffold_observable_count_pos : (0 < 18)%nat.
+Lemma smiles_material_records_pos : (0 < 485)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fusion_decay_chain_prereg_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma smiles_medical_records_pos : (0 < 128)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma connective_plasma_confinement_pos : 0 < (0.131181176323%R).
-Proof. lra. Qed.
-
-Lemma connective_seawater_acoustic_pos : 0 < (0.094115088176%R).
-Proof. lra. Qed.
-
-Lemma connective_decay_chain_relay_pos : 0 < (0.029710640768%R).
-Proof. lra. Qed.
-
-Lemma connective_dt_energy_pos : 0 < (17.6%R).
-Proof. lra. Qed.
-
-Lemma fusion_lab_certificate_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_lab_certificate_spine_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_lab_certificate_spine_observable_count_pos : (0 < 50)%nat.
+Lemma smiles_neural_records_pos : (0 < 39)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fusion_lab_certificate_spine_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma smiles_nuclear_records_pos : (0 < 51)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fusion_physics_public_panel_pooled_median_under_half_pct : (0.000095%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_physics_public_panel_headline_median_under_half_pct : (0.0000950413440155747%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fusion_physics_public_panel_observable_count_pos : (0 < 19)%nat.
+Lemma smiles_particle_records_pos : (0 < 36)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma fusion_physics_public_panel_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma smiles_quantum_records_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma gaia_astrometry_panel_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gaia_astrometry_panel_deep_headline_median_under_half_pct : (0.111276%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gaia_astrometry_panel_deep_observable_count_pos : (0 < 62)%nat.
+Lemma smiles_total_mapped_records_large : (1400 < 1470)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma gaia_astrometry_panel_deep_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma gaia_dr3_tap_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gaia_dr3_tap_deep_headline_median_under_half_pct : (0.111276%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gaia_dr3_tap_deep_observable_count_pos : (0 < 74)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma gaia_dr3_tap_deep_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma galactic_structure_sample_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma galactic_structure_sample_headline_median_under_half_pct : (0.111276%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma galactic_structure_sample_observable_count_pos : (0 < 101)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma galactic_structure_sample_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma gbif_species_occurrence_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gbif_species_occurrence_observable_count_pos : (0 < 600)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma genomic_sciences_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma genomic_sciences_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma genomic_sciences_observable_count_pos : (0 < 18)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma genomic_sciences_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma geochemistry_median_error_under_half_pct : (0.015388964340886185%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma geochemistry_observable_count_pos : (0 < 153)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma geology_stratigraphy_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma geology_stratigraphy_ext_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma geology_stratigraphy_ext_observable_count_pos : (0 < 1960)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma geology_stratigraphy_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma geomagnetism_observable_count_pos : (0 < 525)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma grace_cryosphere_month_count_pos : (0 < 253)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma gwosc_live_event_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gwosc_live_event_deep_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gwosc_live_event_deep_observable_count_pos : (0 < 25)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma gwosc_live_event_deep_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma heavy_ion_lab_synthesis_panel_pooled_median_under_half_pct : (0.000095%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma heavy_ion_lab_synthesis_panel_headline_median_under_half_pct : (0.000095041344017055%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma heavy_ion_lab_synthesis_panel_observable_count_pos : (0 < 39)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma heavy_ion_lab_synthesis_panel_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma higgs_branching_median_error_under_half_pct : (0.014721632079759569%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma higgs_branching_max_error_under_half_pct : (0.27079952979037436%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma higgs_compute_branching_count_pos : (0 < 9)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma higgs_branching_observable_count_pos : (0 < 14)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma higgs_branching_components_sum : (14 = 14)%nat.
+Lemma fsot_neurolab_domain_count_eq_thirty_five : (35 = 35)%nat.
 Proof. reflexivity. Qed.
 
-Lemma higgs_mass_median_error_under_half_pct : (0.03990518384182655%R) < (0.5%R).
+Lemma domains_with_empirical_data_full : (35 = 35)%nat.
+Proof. reflexivity. Qed.
+
+Lemma lean_override_aligned_all_mapped : (17 = 17)%nat.
+Proof. reflexivity. Qed.
+
+Lemma orb_pred_pooled_median_under_half_pct : (0.02754410755640979%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma higgs_mass_observable_count_pos : (0 < 9)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma higgs_mass_computed_positive : 0 < (125.20001875723811%R).
+Lemma orb_pred_headline_median_under_half_pct : (0.02754410755640979%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma history_ext_pooled_median_under_half_pct : (0.019504399572477397%R) < (0.5%R).
+Lemma orb_pred_observable_count_pos : (0 < 12)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma orb_pred_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma orb_pred_filled_all_predictions : (12 = 12)%nat.
+Proof. reflexivity. Qed.
+
+Lemma cosmology_median_under_one_pct : (0.0008593004744053731%R) < (1.0%R).
 Proof. lra. Qed.
 
-Lemma history_ext_headline_median_under_half_pct : (0.019504399572477397%R) < (0.5%R).
+Lemma smiles_chemical_median_under_one_pct : (0.110313%R) < (1.0%R).
 Proof. lra. Qed.
 
-Lemma history_ext_observable_count_pos : (0 < 170)%nat.
+Lemma domain_precision_numeric_majority : (30 < 35)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma history_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma domain_precision_target_band_large : (32 < 35)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma hubble_tension_pooled_median_under_half_pct : (0.462181%R) < (0.5%R).
+Lemma domain_precision_huge_gap_bounded : (0 <= 2)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma connective_energy_bus_pos : 0 < (0.000065226644%R).
 Proof. lra. Qed.
 
-Lemma hubble_tension_headline_median_under_half_pct : (0.462181%R) < (0.5%R).
+Lemma connective_cryo_rejection_pos : 0 < (0.040494897615%R).
 Proof. lra. Qed.
 
-Lemma hubble_tension_observable_count_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hubble_tension_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hubble_tension_h0_sectors_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hubble_dark_sector_crosswalk_pooled_median_under_half_pct : (0.000502%R) < (0.5%R).
+Lemma connective_em_coil_pos : 0 < (0.076350367522%R).
 Proof. lra. Qed.
 
-Lemma hubble_dark_sector_crosswalk_headline_median_under_half_pct : (0.0005024559462089657%R) < (0.5%R).
+Lemma connective_fluid_consistency_pos : 0 < (0.075670330033%R).
 Proof. lra. Qed.
 
-Lemma hubble_dark_sector_crosswalk_observable_count_pos : (0 < 20)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hubble_dark_sector_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hvac_thermal_systems_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma connective_stab_margin_gt_one : 1 < (1.722776467449%R).
 Proof. lra. Qed.
 
-Lemma hvac_thermal_systems_observable_count_pos : (0 < 7)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma hybrid_fi_sim_multi_hero_panel_pooled_median_under_half_pct : (0.051436%R) < (0.5%R).
+Lemma ecology_gap_fill_pooled_median_under_half_pct : (0.017789000308164337%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma hybrid_fi_sim_multi_hero_panel_headline_median_under_half_pct : (0.05143619629083711%R) < (0.5%R).
+Lemma ecology_gap_fill_headline_median_under_half_pct : (0.017789000308164337%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma hybrid_fi_sim_multi_hero_panel_observable_count_pos : (0 < 14)%nat.
+Lemma ecology_gap_fill_observable_count_pos : (0 < 627)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma hybrid_fi_sim_multi_hero_panel_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma ecology_gap_fill_beats_sota_headlines_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma hydrology_month_count_pos : (0 < 960)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_live_fasta_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma ecology_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma igem_live_fasta_observable_count_pos : (0 < 42)%nat.
+Lemma ecology_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma ecology_observable_count_pos : (0 < 12)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma ecology_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma econometrics_gap_fill_pooled_median_under_half_pct : (0.12920090413715177%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma econometrics_gap_fill_headline_median_under_half_pct : (0.12920090413715177%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma econometrics_gap_fill_observable_count_pos : (0 < 172)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma econometrics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma economics_gap_fill_pooled_median_under_half_pct : (0.1292009041371501%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma economics_gap_fill_headline_median_under_half_pct : (0.1292009041371501%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma economics_gap_fill_observable_count_pos : (0 < 157)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma economics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma econophysics_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma econophysics_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma econophysics_observable_count_pos : (0 < 12)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma econophysics_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma electrical_power_systems_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma electrical_power_systems_observable_count_pos : (0 < 9)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma element_synthesis_condition_scaffold_pooled_median_under_half_pct : (0.000787%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma element_synthesis_condition_scaffold_headline_median_under_half_pct : (0.000787%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma element_synthesis_condition_scaffold_observable_count_pos : (0 < 45)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma element_synthesis_condition_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma emergent_final_emergence_health_positive : 0 < (0.8547351151068473%R).
+Proof. lra. Qed.
+
+Lemma emergent_final_meta_S_positive : 0 < (0.32988227338082093%R).
+Proof. lra. Qed.
+
+Lemma emergent_domain_count_pos : (0 < 29)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma emergent_observed_le_total : (28 <= 29)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma e_ai_br_pooled_median_under_half_pct : (0.02754410755640979%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma e_ai_br_headline_median_under_half_pct : (0.02754410755640979%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma e_ai_br_observable_count_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma e_ai_br_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma e_ai_br_bridge_pairs_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma e_neu_br_pooled_median_under_half_pct : (0.01800266870179516%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma e_neu_br_headline_median_under_half_pct : (0.01800266870179516%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma e_neu_br_observable_count_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma e_neu_br_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma e_neu_br_bridge_pairs_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma entomology_ext_pooled_median_under_half_pct : (0.022236250385189223%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma entomology_ext_headline_median_under_half_pct : (0.022236250385189223%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma entomology_ext_observable_count_pos : (0 < 430)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma entomology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma environmental_engineering_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma environmental_engineering_ext_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma environmental_engineering_ext_observable_count_pos : (0 < 18416)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma environmental_engineering_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma epidemiology_ext_pooled_median_under_half_pct : (0.039895%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma epidemiology_ext_headline_median_under_half_pct : (0.039895%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma epidemiology_ext_observable_count_pos : (0 < 220)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma epidemiology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma evolution_fitness_positive : 0 < (58.493466%R).
+Proof. lra. Qed.
+
+Lemma evolution_operon_count_pos : (0 < 13)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma exogeology_ext_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma exogeology_ext_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma exogeology_ext_observable_count_pos : (0 < 316)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma exogeology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma exoplanet_system_architecture_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
 

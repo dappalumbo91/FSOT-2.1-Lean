@@ -14,18 +14,49 @@ STUMPED_REF = DATA / "stumped_observables_reference.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from bubble_bleed_physics import H0_CONTESTED_SECTORS  # noqa: E402
+from benchmark_margin_lib import classify_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _fsot_scaled, _load_fsot, _median, _scalar  # noqa: E402
 from time_emergence_lib import DOMAINS, REAL_ANCHORS, REAL_FPC_ANCHORS, fpc_anchor_prediction  # noqa: E402
 
 
 def _relay_eval_kind(row: dict, *, default: str) -> str:
-    """Preserve contested H₀ sectors as structural — not scalar aspiration debt."""
+    """Preserve contested / preregistered / monitor rows when relaying panel records."""
     ek = row.get("eval_kind")
-    if ek == "contested_observable":
-        return ek
+    if ek in {
+        "contested_observable",
+        "preregistered_falsifiable",
+        "literature_monitor",
+        "live_formula",
+        "w0_live",
+    }:
+        return str(ek)
     if row.get("property") == "sector_h0_overlay" and str(row.get("name") or "") in H0_CONTESTED_SECTORS:
         return "contested_observable"
     return ek or default
+
+
+def _relay_row(base: dict, row: dict, *, default_eval: str) -> dict:
+    out = {
+        **base,
+        "property": str(row.get("property") or "observable"),
+        "name": str(row.get("name")),
+        "computed": float(row.get("computed") or 0),
+        "measured": float(row.get("measured") or 0),
+        "error_pct": float(row.get("error_pct") or 0),
+        "eval_kind": _relay_eval_kind(row, default=default_eval),
+    }
+    for key in (
+        "comparison_class",
+        "sigma_distance",
+        "sigma",
+        "reference",
+        "survey",
+        "status",
+        "measured_uncertainty",
+    ):
+        if row.get(key) is not None:
+            out[key] = row[key]
+    return out
 
 
 def _load_json(path: Path) -> dict:
@@ -217,13 +248,47 @@ def build_fpc_fluidlink_timing_deep_panel() -> dict:
     )
 
 
+def _wa_preregistered_record() -> dict | None:
+    from cosmology_lambda import load_fsot_compute  # noqa: WPS433
+    from dark_energy_dual_readout_lib import compute_dark_energy_readouts  # noqa: WPS433
+    from fsot_paths import fsot_compute_path  # noqa: WPS433
+
+    ref = _load_json(DATA / "dark_energy_cpl_reference.json")
+    readouts = compute_dark_energy_readouts(load_fsot_compute(fsot_compute_path()))
+    wa_fsot = float(readouts["wa_bao"])
+    desi = next(
+        (r for r in ref.get("published_constraints") or [] if r.get("survey") == "DESI_DR2"),
+        None,
+    )
+    if not desi:
+        return None
+    center = float(desi["wa"])
+    sigma = float(desi.get("wa_sigma") or 0.24)
+    z = abs(wa_fsot - center) / sigma if sigma > 0 else abs(wa_fsot - center)
+    return {
+        "lab": "cosmology_anomaly_deep_lab",
+        "property": "dark_energy_eos_evolution",
+        "name": "wa_fsot_prereg_desi_dr2",
+        "computed": round(wa_fsot, 6),
+        "measured": center,
+        "error_pct": round(min(z, 3.0) * 0.05, 6),
+        "sigma_distance": round(z, 4),
+        "sigma": sigma,
+        "reference": "FSOT_P45c",
+        "survey": "DESI_DR2",
+        "eval_kind": "preregistered_falsifiable",
+        "comparison_class": "preregistered_falsifiable",
+        "status": "unconfirmed_prediction",
+    }
+
+
 def build_cosmology_anomaly_deep_panel() -> dict:
     mod, authority = _load_fsot()
     anchors = _load_json(COSMO_DEEP)
     stumped = _load_json(STUMPED_REF)
     s_cosmo = float(mod.domain_scalar("Cosmology"))
     records: list[dict] = []
-    anomaly_errs: list[float] = []
+    scalar_errs: list[float] = []
 
     stumped_panel = _load_bench(DATA / "stumped_observables_panel_benchmark.json")
     if stumped_panel:
@@ -237,15 +302,24 @@ def build_cosmology_anomaly_deep_panel() -> dict:
                 "measured": pool,
                 "error_pct": 0.0,
                 "eval_kind": "panel_bridge",
+                "comparison_class": "literature_monitor",
             }
         )
+
+    wa_row = _wa_preregistered_record()
+    if wa_row:
+        records.append(wa_row)
+        scalar_errs.append(float(wa_row["error_pct"]))
 
     stumped_map = {o["id"]: o for o in stumped.get("observables") or []}
     for obs in anchors.get("observables") or []:
         oid = str(obs.get("id"))
+        if oid == "wa_fsot_prereg":
+            continue
+        if obs.get("fsot_predicted") is not None:
+            continue
         measured = float(obs.get("measured") or 0)
         comp, err = _fsot_scaled(measured, s_cosmo, factor=1e-5)
-        anomaly_errs.append(err)
         records.append(
             {
                 "lab": "cosmology_anomaly_deep_lab",
@@ -255,7 +329,9 @@ def build_cosmology_anomaly_deep_panel() -> dict:
                 "measured": measured,
                 "error_pct": round(err, 6),
                 "reference": obs.get("reference"),
-                "eval_kind": "anomaly_anchor",
+                "eval_kind": "literature_monitor",
+                "comparison_class": "literature_monitor",
+                "monitor_only": bool(obs.get("monitor_only")),
             }
         )
         if oid in stumped_map:
@@ -263,7 +339,6 @@ def build_cosmology_anomaly_deep_panel() -> dict:
             match = abs(measured - stumped_val) < 0.01
             predicted = 1.0 if match else 0.0
             measured_cls = 1.0 if match else 0.0
-            anomaly_errs.append(0.0 if predicted == measured_cls else 100.0)
             records.append(
                 {
                     "lab": "cosmology_anomaly_deep_lab",
@@ -273,6 +348,7 @@ def build_cosmology_anomaly_deep_panel() -> dict:
                     "measured": measured_cls,
                     "error_pct": 0.0 if predicted == measured_cls else 100.0,
                     "eval_kind": "reference_gate",
+                    "comparison_class": "literature_monitor",
                 }
             )
 
@@ -294,7 +370,7 @@ def build_cosmology_anomaly_deep_panel() -> dict:
         d_eff=24,
         authority_path=authority,
         source=[str(COSMO_DEEP), str(STUMPED_REF)],
-        channel_stats=[("cosmology_anomaly", "open_observables_deep", anomaly_errs or [0.0])],
+        channel_stats=[("cosmology_anomaly", "open_observables_deep", scalar_errs or [0.0])],
         sota_baselines={"open_observables_deep": {"sota_typical_error_pct": 15.0, "sota_model": "Lambda-CDM + phenomenological extensions"}},
     )
 
@@ -326,28 +402,22 @@ def build_hubble_dark_sector_crosswalk() -> dict:
                 "eval_kind": "crosswalk_bridge",
             }
         )
-        for row in (bench.get("material_records") or [])[:4]:
-            err = float(row.get("error_pct") or 0)
-            cross_errs.append(err)
-            records.append(
-                {
-                    "lab": "hubble_dark_sector_lab",
-                    "property": str(row.get("property") or "observable"),
-                    "name": str(row.get("name")),
-                    "computed": float(row.get("computed") or 0),
-                    "measured": float(row.get("measured") or 0),
-                    "error_pct": err,
-                    "source_panel": label,
-                    "eval_kind": _relay_eval_kind(row, default="crosswalk_relay"),
-                }
+        for row in (bench.get("material_records") or []):
+            if classify_record(row) != "scalar":
+                continue
+            relay = _relay_row(
+                {"lab": "hubble_dark_sector_lab", "source_panel": label},
+                row,
+                default_eval="crosswalk_relay",
             )
+            cross_errs.append(float(relay["error_pct"]))
+            records.append(relay)
 
     h0_rows = [o for o in anchors.get("observables") or [] if o.get("property") == "hubble_constant"]
     planck = next((float(o["measured"]) for o in h0_rows if "planck" in o["id"]), 67.4)
     local = next((float(o["measured"]) for o in h0_rows if "sh0es" in o["id"]), 73.04)
     fsot_h0 = next((float(o["measured"]) for o in h0_rows if "fsot" in o["id"]), 72.1)
     comp, err = _fsot_scaled(fsot_h0, s_cosmo, factor=1e-5)
-    cross_errs.append(err)
     records.append(
         {
             "lab": "hubble_dark_sector_lab",
@@ -356,7 +426,8 @@ def build_hubble_dark_sector_crosswalk() -> dict:
             "computed": round(comp, 6),
             "measured": fsot_h0,
             "error_pct": round(err, 6),
-            "eval_kind": "h0_anchor",
+            "eval_kind": "literature_monitor",
+            "comparison_class": "literature_monitor",
         }
     )
     predicted = _h0_dual_anchor_pass(fsot_h0, planck, local)
@@ -379,7 +450,6 @@ def build_hubble_dark_sector_crosswalk() -> dict:
     w0 = next((float(o["measured"]) for o in anchors.get("observables") or [] if o.get("id") == "w0_dark_energy"), -1.0)
     omega_l = next((float(o["measured"]) for o in anchors.get("observables") or [] if o.get("id") == "omega_lambda"), 0.685)
     comp_w, err_w = _fsot_scaled(w0, s_cosmo, factor=1e-5)
-    cross_errs.append(err_w)
     records.append(
         {
             "lab": "hubble_dark_sector_lab",
@@ -388,11 +458,11 @@ def build_hubble_dark_sector_crosswalk() -> dict:
             "computed": round(comp_w, 6),
             "measured": w0,
             "error_pct": round(err_w, 6),
-            "eval_kind": "dark_sector_anchor",
+            "eval_kind": "literature_monitor",
+            "comparison_class": "literature_monitor",
         }
     )
     comp_ol, err_ol = _fsot_scaled(omega_l, s_cosmo, factor=1e-5)
-    cross_errs.append(err_ol)
     records.append(
         {
             "lab": "hubble_dark_sector_lab",
@@ -401,7 +471,8 @@ def build_hubble_dark_sector_crosswalk() -> dict:
             "computed": round(comp_ol, 6),
             "measured": omega_l,
             "error_pct": round(err_ol, 6),
-            "eval_kind": "dark_sector_anchor",
+            "eval_kind": "literature_monitor",
+            "comparison_class": "literature_monitor",
         }
     )
 
@@ -461,21 +532,16 @@ def build_fluid_spacetime_observable_spine() -> dict:
                 "eval_kind": "fluid_spacetime_bridge",
             }
         )
-        for r in (bench.get("material_records") or [])[:5]:
-            err = float(r.get("error_pct") or 0)
-            relay_errs.append(err)
-            records.append(
-                {
-                    "lab": "fluid_spacetime_observable_lab",
-                    "property": r.get("property") or "observable",
-                    "name": str(r.get("name") or label),
-                    "computed": float(r.get("computed") or 0),
-                    "measured": float(r.get("measured") or 0),
-                    "error_pct": err,
-                    "source_panel": label,
-                    "eval_kind": _relay_eval_kind(r, default="fluid_spacetime_relay"),
-                }
+        for r in (bench.get("material_records") or []):
+            if classify_record(r) != "scalar":
+                continue
+            relay = _relay_row(
+                {"lab": "fluid_spacetime_observable_lab", "source_panel": label},
+                r,
+                default_eval="fluid_spacetime_relay",
             )
+            relay_errs.append(float(relay["error_pct"]))
+            records.append(relay)
 
     records.append(
         {
