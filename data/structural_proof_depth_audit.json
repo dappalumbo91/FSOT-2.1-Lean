@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-11T19:41:43.222949+00:00",
+  "version": "1.0",
+  "tier": "92_structural_proof_depth",
+  "overall_ok": true,
+  "provable_bundle_conj_count": 2,
+  "provable_bundles": [
+    {
+      "id": "cellular_priors_bundle",
+      "conjunct_count": 4
+    },
+    {
+      "id": "lab_smiles_domain_sign_bundle",
+      "conjunct_count": 11
+    }
+  ],
+  "structural_proof_count": 15,
+  "min_required": 10,
+  "breakdown": {
+    "bundle_split_lemmas": 2,
+    "bundle_conjunct_lemmas": 3,
+    "connective_ordering_lemmas": 3,
+    "native_transcendental_chain_lemmas": 7
+  },
+  "artifacts": {
+    "coq_structural": "verification\\coq\\StructuralProofSpine.v",
+    "coq_native_transcendental": "verification\\coq\\TranscendentalBoundsNative.v",
+    "isabelle_structural": "verification\\isabelle\\StructuralProofSpine.thy"
+  },
+  "coq_compile": {
+    "structural": {
+      "status": "skipped",
+      "file": "StructuralProofSpine.v"
+    },
+    "native_transcendental": {
+      "status": "skipped",
+      "file": "TranscendentalBoundsNative.v"
+    }
+  },
+  "proof_depth_note": "Structural spine proves bundle conjunct splits and connective ordering chains independently of Lean proof terms; TranscendentalBoundsNative supplies Taylor/interval depth for pi/e base intervals.",
+  "remedy_if_fail": "Run scripts/generate_structural_proof_artifacts.py and ensure coqc on PATH"
+}

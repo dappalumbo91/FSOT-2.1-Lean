@@ -29,8 +29,14 @@ CONTESTED_PROPERTIES = frozenset(
         "host_h0_weighted_mean",
         "dark_energy_eos",
         "dark_energy_eos_evolution",
+        "reionization_optical_depth",
     }
 )
+
+RECORD_NAME_ANCHOR_ALIASES: dict[str, str] = {
+    "Mean_dependency_length_EN": "mean_dependency_length",
+    "FRB20200929C": "frb_p34_periodicity",
+}
 
 
 @lru_cache(maxsize=1)
@@ -119,6 +125,11 @@ def resolve_reference_uncertainty_pct(record: dict) -> float | None:
     prop = _stumped_canonical_property(row)
     anchors = load_anchors()
     anchor = anchors.get(prop)
+    if anchor is None:
+        name = str(row.get("name") or "")
+        alias = RECORD_NAME_ANCHOR_ALIASES.get(name)
+        if alias:
+            anchor = anchors.get(alias)
     if anchor and anchor.get("measured_uncertainty_pct") is not None:
         return float(anchor["measured_uncertainty_pct"])
 

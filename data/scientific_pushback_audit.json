@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:38:13.545688+00:00",
+  "generated_at": "2026-07-11T19:41:29.350132+00:00",
   "version": "1.0",
   "summary": {
     "extension_domain_count": 246,
@@ -10,7 +10,7 @@
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
     "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 8
+    "domains_raw_eff_divergence": 0
   },
   "aspiration_debt": [],
   "pushback_avenues": [
@@ -244,104 +244,7 @@
   ],
   "high_pushback_domains": [],
   "missing_uncertainty_domains": [],
-  "raw_eff_divergence_domains": [
-    {
-      "domain": "Adversarial_Fractal_Break_Tests",
-      "count": 4,
-      "top": {
-        "property": "adversarial_hole_detected",
-        "name": "adv_c_memcpy_chain",
-        "raw_pct": 0.0,
-        "effective_pct": 500.0,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Cosmology_Bubble_Bleed",
-      "count": 3,
-      "top": {
-        "property": "frb_p34_periodicity",
-        "name": "FRB20200929C",
-        "raw_pct": 0.0,
-        "effective_pct": 2.0000000000000067,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Dark_Sector_Open_Problems",
-      "count": 2,
-      "top": {
-        "property": "reionization_optical_depth",
-        "name": "tau_reion",
-        "raw_pct": 0.006335,
-        "effective_pct": 3.036446519949971,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Linguistics_Formal",
-      "count": 1,
-      "top": {
-        "property": "",
-        "name": "Mean_dependency_length_EN",
-        "raw_pct": 0.0005659871035364658,
-        "effective_pct": 4.348416682194786,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Anthropology",
-      "count": 1,
-      "top": {
-        "property": "",
-        "name": "Mean_dependency_length_EN",
-        "raw_pct": 0.0005659871035364658,
-        "effective_pct": 4.348416682194786,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Programming_Language_Laws",
-      "count": 1,
-      "top": {
-        "property": "linguistics_formal_bridge",
-        "name": "Mean_dependency_length_EN",
-        "raw_pct": 0.0005659871035364658,
-        "effective_pct": 4.348416682194786,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Creative_Arts_Math_Spine",
-      "count": 1,
-      "top": {
-        "property": "observable",
-        "name": "Mean_dependency_length_EN",
-        "raw_pct": 0.0005659871035364658,
-        "effective_pct": 4.348416682194786,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    },
-    {
-      "domain": "Hubble_Dark_Sector_Crosswalk",
-      "count": 1,
-      "top": {
-        "property": "dark_energy_eos",
-        "name": "w0",
-        "raw_pct": 0.001816,
-        "effective_pct": 2.998129213726375,
-        "comparison_kind": "display_precision"
-      },
-      "green_gate_pass": true
-    }
-  ],
+  "raw_eff_divergence_domains": [],
   "failing_green_gate_domains": [],
   "remediation_priority": [
     "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",

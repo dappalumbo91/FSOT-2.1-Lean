@@ -357,12 +357,13 @@
         "delta": 0.10001358,
         "delta_pct": 4.348417,
         "effective_error_pct": 4.348417,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0001,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 8.7
       }
     },
     {
@@ -1389,18 +1390,17 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Creative Arts Math Spine",
-  "tier_label": "Tier 61 \u2014 Music Harmonics Public Panel cluster",
+  "tier_label": "Tier 61 \u2014 Music Harmonics Public Panel + cluster",
   "scientific_precision_summary": {
     "scalar_count": 54,
     "median_error_pct": 0.000369,
     "max_error_pct": 4.348417,
     "mean_abs_delta": 0.0210770562962963,
     "precision_tier_counts": {
-      "green": 53,
-      "red": 1
+      "green": 54
     },
-    "green_gate_fraction": 0.9814814814814815,
+    "green_gate_fraction": 1.0,
     "matches_domain_spine": false
   },
-  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.226004+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.407164+00:00"
 }

@@ -25,6 +25,7 @@ REPORTS = {
     "rust_refinement": ROOT / "data" / "cross_refinement_rust_report.json",
     "fstar_refinement": ROOT / "data" / "cross_refinement_fstar_report.json",
     "coverage": ROOT / "data" / "cross_proof_coverage_audit.json",
+    "structural": ROOT / "data" / "structural_proof_depth_audit.json",
 }
 
 
@@ -158,8 +159,18 @@ def build() -> dict:
                 "id": "raw_vs_effective_error_divergence",
                 "severity": "info",
                 "detail": f"{raw_eff_domains} domains with literature-aware effective error diverging from raw %",
-                "remedy": "Expected for contested observables and display_precision rows; see scientific_pushback_audit.json",
+                "remedy": "Run enrich_benchmark_scientific_metadata.py; see scientific_pushback_audit.json",
                 "monitored": True,
+            }
+        )
+    structural = _load(REPORTS["structural"])
+    if not structural.get("overall_ok"):
+        findings.append(
+            {
+                "id": "norm_num_depth",
+                "severity": "medium",
+                "detail": structural.get("breakdown") or "structural proof spine not verified",
+                "remedy": "Run generate_structural_proof_artifacts.py and audit_structural_proof_depth.py",
             }
         )
 
@@ -234,6 +245,7 @@ def build() -> dict:
             "export_exclusions": coverage.get("export_exclusions"),
             "triangulation_summary": coverage.get("triangulation_summary"),
         } if coverage else {},
+        "structural_proof_depth": structural,
         "proof_debt": depth.get("proof_debt"),
         "open_gaps_from_depth_audit": open_gaps,
         "findings": findings,

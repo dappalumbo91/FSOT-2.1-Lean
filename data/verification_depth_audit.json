@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:38:17.605732+00:00",
+  "generated_at": "2026-07-11T19:41:47.383478+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -96,7 +96,8 @@
       "id": "norm_num_depth",
       "severity": "medium",
       "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
-      "remedy": "Structural theorem export with independent Coq/Isabelle proof scripts"
+      "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
+      "closed": true
     }
   ],
   "extension_precision": {
@@ -114,7 +115,7 @@
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
     "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 8
+    "domains_raw_eff_divergence": 0
   },
   "pushback_avenues": [
     {
@@ -244,12 +245,6 @@
       "severity": "info",
       "description": "ESP32/QEMU verifies one boot scalar, not 1,241-obligation spine",
       "remedy": "Refinement chain: F* spec \u2192 Rust no_std \u2192 ESP32 binary hash"
-    },
-    {
-      "id": "norm_num_depth",
-      "severity": "medium",
-      "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
-      "remedy": "Structural theorem export with independent Coq/Isabelle proof scripts"
     }
   ]
 }

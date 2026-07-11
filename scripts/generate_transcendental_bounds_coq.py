@@ -76,7 +76,9 @@ def main() -> int:
 
     project = COQ_DIR / "_CoqProject"
     existing = project.read_text(encoding="utf-8").splitlines() if project.exists() else []
-    spine = [ln for ln in existing if ln == "ConnectiveSpine.v" or ln.startswith("FullFormalSpine_")]
+    spine = [ln for ln in existing if ln in ("ConnectiveSpine.v", "StructuralProofSpine.v") or ln.startswith("FullFormalSpine_")]
+    if "StructuralProofSpine.v" not in spine and (COQ_DIR / "StructuralProofSpine.v").exists():
+        spine.insert(1 if "ConnectiveSpine.v" in spine else 0, "StructuralProofSpine.v")
     transcendental = [
         "TranscendentalBoundsNative.v",
         "TranscendentalBoundsBase.v",

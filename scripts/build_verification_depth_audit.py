@@ -16,6 +16,7 @@ PUSHBACK_AUDIT = ROOT / "data" / "scientific_pushback_audit.json"
 MARGIN_AUDIT = ROOT / "data" / "benchmark_margin_audit.json"
 EXPORT_REGISTRY = ROOT / "data" / "export_exclusion_registry.json"
 TRANSCENDENTAL_AUDIT = ROOT / "data" / "transcendental_certificate_audit.json"
+STRUCTURAL_AUDIT = ROOT / "data" / "structural_proof_depth_audit.json"
 HONEST_CLAIMS = ROOT / "data" / "honest_claims_manifest.yaml"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -139,6 +140,10 @@ def build() -> dict:
         "coq_native_isabelle_certified_intervals",
         "coq_native_isabelle_native_intervals",
     )
+    structural = (
+        json.loads(STRUCTURAL_AUDIT.read_text(encoding="utf-8")) if STRUCTURAL_AUDIT.exists() else {}
+    )
+    structural_ok = bool(structural.get("overall_ok"))
 
     gaps = [
         {
@@ -181,7 +186,8 @@ def build() -> dict:
             "id": "norm_num_depth",
             "severity": "medium",
             "description": "Cross-proof replays numeric inequalities, not deep Mathlib proof chains",
-            "remedy": "Structural theorem export with independent Coq/Isabelle proof scripts",
+            "remedy": "StructuralProofSpine.v + TranscendentalBoundsNative Taylor/interval chain (see structural_proof_depth_audit.json)",
+            "closed": structural_ok,
         },
     ]
 

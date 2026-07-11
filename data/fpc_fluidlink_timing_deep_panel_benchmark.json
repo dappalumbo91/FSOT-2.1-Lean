@@ -358,7 +358,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -380,7 +380,7 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "FPC Fluidlink Timing Deep Panel",
-  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
   "scientific_precision_summary": {
     "scalar_count": 9,
     "median_error_pct": 5.6e-05,
@@ -392,5 +392,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.305733+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.497055+00:00"
 }

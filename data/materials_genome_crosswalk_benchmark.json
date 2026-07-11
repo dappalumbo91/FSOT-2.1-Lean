@@ -94,7 +94,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -232,7 +232,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -370,7 +370,7 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "structural_gate",
         "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
@@ -992,7 +992,7 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Materials Genome Crosswalk",
-  "tier_label": "Tier 55 \u2014 PubChem Stability Panel cluster",
+  "tier_label": "Tier 55 \u2014 PubChem Stability Panel + cluster",
   "scientific_precision_summary": {
     "scalar_count": 33,
     "median_error_pct": 0.0,
@@ -1004,5 +1004,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": false
   },
-  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.196008+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T19:41:21.377197+00:00"
 }

@@ -56,7 +56,7 @@ def main() -> int:
             old.unlink()
 
     chunks = [obligations[i : i + CHUNK_SIZE] for i in range(0, len(obligations), CHUNK_SIZE)]
-    theory_names = ["ConnectiveSpine", *isabelle_transcendental_theory_prefix()]
+    theory_names = ["ConnectiveSpine", "StructuralProofSpine", *isabelle_transcendental_theory_prefix()]
     for idx, chunk in enumerate(chunks):
         theory = f"TranscendentalBounds_{idx:02d}"
         lines = [

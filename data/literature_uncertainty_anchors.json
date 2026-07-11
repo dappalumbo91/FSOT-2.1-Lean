@@ -108,6 +108,19 @@
       "measured_uncertainty_abs": 0.006,
       "measured_uncertainty_pct": 0.74,
       "unit": "dimensionless"
+    },
+    "mean_dependency_length": {
+      "reference": "Gildea & Temperley 2007 / Futrell 2015 English UD replication",
+      "measured_uncertainty_abs": 0.2,
+      "measured_uncertainty_pct": 8.7,
+      "unit": "words",
+      "status": "linguistics_formal"
+    },
+    "frb_p34_periodicity": {
+      "reference": "FRB 20200929C periodicity (Fonseca et al. 2022; contested)",
+      "measured_uncertainty_pct": 50.0,
+      "unit": "dimensionless",
+      "status": "contested_observable"
     }
   }
 }

@@ -181,9 +181,15 @@ def run_coq_full() -> dict:
         return {"status": "skipped", "reason": "coqc/rocqc not on PATH"}
 
     targets = [
-        COQ_DIR / "ConnectiveSpine.v",
-        *sorted(COQ_DIR.glob("TranscendentalBounds_*.v")),
-        *sorted(COQ_DIR.glob("FullFormalSpine_*.v")),
+        p
+        for p in (
+            COQ_DIR / "ConnectiveSpine.v",
+            COQ_DIR / "StructuralProofSpine.v",
+            COQ_DIR / "TranscendentalBoundsNative.v",
+            *sorted(COQ_DIR.glob("TranscendentalBounds_*.v")),
+            *sorted(COQ_DIR.glob("FullFormalSpine_*.v")),
+        )
+        if p.exists()
     ]
     if len(targets) < 2:
         return {"status": "failed", "reason": "missing FullFormalSpine chunks"}
@@ -207,6 +213,9 @@ def _isabelle_theory_chunks(thy_dir: Path) -> list[dict]:
     connective = thy_dir / "ConnectiveSpine.thy"
     if connective.exists():
         chunks.append({"theory": "ConnectiveSpine", "file": connective.name, "scope": "connective"})
+    structural = thy_dir / "StructuralProofSpine.thy"
+    if structural.exists():
+        chunks.append({"theory": "StructuralProofSpine", "file": structural.name, "scope": "structural_proof"})
     for path in sorted(thy_dir.glob("TranscendentalBounds_*.thy")):
         if path.name in ("TranscendentalBoundsBase.thy", "TranscendentalBoundsCert.thy"):
             continue
@@ -609,6 +618,7 @@ def main() -> int:
         "generate_transcendental_bounds_coq.py",
         "generate_full_formal_isabelle_artifacts.py",
         "generate_transcendental_bounds_isabelle.py",
+        "generate_structural_proof_artifacts.py",
         "generate_rust_obligation_replay.py",
     ]
     for script in pipeline:
@@ -888,6 +898,10 @@ def main() -> int:
 
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "build_fsot_label_registry.py")],
+        cwd=str(ROOT),
+    )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "audit_structural_proof_depth.py")],
         cwd=str(ROOT),
     )
     subprocess.run(

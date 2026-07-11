@@ -71,6 +71,23 @@ def is_catalog_crosswalk_record(record: dict) -> bool:
     return prop in {"biology_strict_operon_replication", "coding_bp_sum_bridge"}
 
 
+def is_adversarial_match_record(record: dict) -> bool:
+    """Adversarial harness rows — pass/fail on hole detection, not scalar error."""
+    if record.get("expected_holes") is not None and record.get("match") is not None:
+        return True
+    prop = str(record.get("property") or "")
+    return prop == "adversarial_hole_detected"
+
+
+def is_structural_gate_record(record: dict) -> bool:
+    """Certificate / gate rows — binary readiness, not literature scalars."""
+    ek = str(record.get("eval_kind") or "").lower()
+    if ek in {"certificate_gate", "h0_gate", "crosswalk_bridge", "dark_sector_anchor"}:
+        return True
+    prop = str(record.get("property") or "")
+    return prop.endswith("_ready") or prop.endswith("_gate")
+
+
 def literature_aware_error_pct(
     computed: float,
     measured: float,
@@ -86,6 +103,27 @@ def literature_aware_error_pct(
     row = record or {}
     raw = relative_error_pct(computed, measured)
     delta = computed - measured
+
+    if is_adversarial_match_record(row):
+        matched = bool(row.get("match"))
+        return {
+            "raw_error_pct": raw,
+            "effective_error_pct": 0.0 if matched else 100.0,
+            "delta": delta,
+            "comparison_kind": "adversarial_match",
+            "within_display_precision": matched,
+            "within_literature_band": matched,
+        }
+
+    if is_structural_gate_record(row):
+        return {
+            "raw_error_pct": raw,
+            "effective_error_pct": raw,
+            "delta": delta,
+            "comparison_kind": "structural_gate",
+            "within_display_precision": raw <= GREEN_SCALAR_PCT,
+            "within_literature_band": raw <= GREEN_SCALAR_PCT,
+        }
 
     if is_catalog_crosswalk_record(row):
         return {
@@ -113,7 +151,14 @@ def literature_aware_error_pct(
             "within_literature_band": float(row["sigma_distance"]) <= 2.0,
         }
 
-    unc_pct = row.get("reference_uncertainty_pct")
+    from literature_uncertainty_lib import resolve_reference_uncertainty_pct  # noqa: WPS433
+
+    unc_pct = resolve_reference_uncertainty_pct(row)
+    if unc_pct is None and row.get("reference_uncertainty_pct") is not None:
+        try:
+            unc_pct = float(row["reference_uncertainty_pct"])
+        except (TypeError, ValueError):
+            unc_pct = None
     if unc_pct is None and row.get("measured_uncertainty_rel") is not None:
         try:
             unc_pct = float(row["measured_uncertainty_rel"]) * 100.0
