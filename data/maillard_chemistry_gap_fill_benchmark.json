@@ -68,12 +68,13 @@
         "delta": 0.094437,
         "delta_pct": 100.0,
         "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": false,
+        "sigma_equivalent": 666.6667,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "reference_uncertainty_pct": 0.15
       }
     }
   ],
@@ -429,12 +430,13 @@
         "delta": 0.165265,
         "delta_pct": 0.094437,
         "effective_error_pct": 0.094437,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.6296,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -451,12 +453,13 @@
         "delta": 0.056662,
         "delta_pct": 0.094437,
         "effective_error_pct": 0.094437,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.6296,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -473,12 +476,13 @@
         "delta": 0.000293,
         "delta_pct": 0.094516,
         "effective_error_pct": 0.094516,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.6296,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -495,12 +499,13 @@
         "delta": 0.025687,
         "delta_pct": 0.094438,
         "effective_error_pct": 0.094438,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.6296,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -671,12 +676,13 @@
         "delta": 0.014166,
         "delta_pct": 0.0787,
         "effective_error_pct": 0.0787,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.5246,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -760,7 +766,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Maillard Chemistry",
   "tier_label": "Tier 34",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.766145+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.469263+00:00",
   "scientific_precision_summary": {
     "scalar_count": 30,
     "median_error_pct": 0.094436,

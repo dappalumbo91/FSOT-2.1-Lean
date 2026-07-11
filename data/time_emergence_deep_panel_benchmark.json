@@ -183,12 +183,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -370,12 +371,13 @@
         "delta": 3.417e-05,
         "delta_pct": 5e-05,
         "effective_error_pct": 5e-05,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0003,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15,
         "unit": "km/s/Mpc"
       }
     },
@@ -499,5 +501,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.192546+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.982193+00:00"
 }

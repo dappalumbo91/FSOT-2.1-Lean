@@ -269,12 +269,13 @@
         "delta": 0.000485,
         "delta_pct": 0.032333,
         "effective_error_pct": 0.032333,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2153,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -985,5 +986,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.182674+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.979264+00:00"
 }

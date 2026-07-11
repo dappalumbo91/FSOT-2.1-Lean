@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:29.510105+00:00",
+  "generated_at": "2026-07-11T22:25:54.273603+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "mechanism": "bh_wh_bubble_bleed_anomalies",
   "h0_global_fsot": 68.44005682979427,
@@ -27,6 +27,8 @@
       "error_pct": 0.027466,
       "unit": "km/s/Mpc_delta",
       "reference": "Riess2024_vs_Planck2018",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "H0 tension SH0ES vs Planck",
       "scientific_measurement": {
@@ -36,7 +38,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Riess2024_vs_Planck2018",
@@ -53,6 +55,8 @@
       "error_pct": 0.227322,
       "unit": "km/s/Mpc_delta",
       "reference": "Freedman2019",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "H0 tension Carnegie vs Planck",
       "scientific_measurement": {
@@ -62,7 +66,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Freedman2019",
@@ -79,6 +83,8 @@
       "error_pct": 0.195214,
       "unit": "S8_delta",
       "reference": "DES_Y3_2022",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "S8 tension Planck vs DES Y3",
       "scientific_measurement": {
@@ -88,7 +94,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "DES_Y3_2022",
@@ -105,6 +111,8 @@
       "error_pct": 0.0,
       "unit": "S8",
       "reference": "Planck2018",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "S8 Planck2018",
       "scientific_measurement": {
@@ -114,7 +122,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Planck2018",
@@ -131,6 +139,8 @@
       "error_pct": 0.014591,
       "unit": "S8",
       "reference": "DES_Y3_2022",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "S8 DES Y3",
       "scientific_measurement": {
@@ -140,7 +150,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "DES_Y3_2022",
@@ -157,6 +167,8 @@
       "error_pct": 0.316322,
       "unit": "underproduction_factor",
       "reference": "BBN_obs_vs_theory",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "Lithium problem factor",
       "scientific_measurement": {
@@ -166,7 +178,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "BBN_obs_vs_theory",
@@ -183,6 +195,8 @@
       "error_pct": 0.486991,
       "unit": "abundance",
       "reference": "Cooke_2018",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "Li7 over H observed",
       "scientific_measurement": {
@@ -192,7 +206,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Cooke_2018",
@@ -209,6 +223,8 @@
       "error_pct": 0.325823,
       "unit": "probability",
       "reference": "Planck2016_low_ell",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "CMB axis of evil alignment",
       "scientific_measurement": {
@@ -218,7 +234,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Planck2016_low_ell",
@@ -235,6 +251,8 @@
       "error_pct": 0.140126,
       "unit": "sigma",
       "reference": "Planck2015_cold_spot",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "CMB cold spot significance",
       "scientific_measurement": {
@@ -244,7 +262,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "Planck2015_cold_spot",
@@ -261,6 +279,8 @@
       "error_pct": 0.096204,
       "unit": "fractional_deficit",
       "reference": "WMAP_Planck_low_ell",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "CMB low ell power deficit",
       "scientific_measurement": {
@@ -270,7 +290,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "WMAP_Planck_low_ell",
@@ -287,6 +307,8 @@
       "error_pct": 0.086916,
       "unit": "redshift",
       "reference": "JWST_2023_2024",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "JWST early massive galaxy z",
       "scientific_measurement": {
@@ -296,7 +318,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "JWST_2023_2024",
@@ -313,6 +335,8 @@
       "error_pct": 0.042611,
       "unit": "pc_cm3_excess",
       "reference": "CHIME_high_DM",
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "cosmology anomalies",
       "display_name": "FRB DM excess vs IGM",
       "scientific_measurement": {
@@ -322,7 +346,7 @@
         "comparison_kind": "display_precision",
         "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
         "reference": "CHIME_high_DM",
@@ -330,18 +354,11 @@
       }
     }
   ],
+  "tier_scalar_refined_at": "2026-07-11T22:25:54.690685+00:00",
   "display_name": "Cosmology Anomalies",
   "tier_label": "Cosmology bubble-bleed / SH0ES / fluid spacetime",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:09.047079+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 12,
-    "median_error_pct": 0.140126,
-    "max_error_pct": 0.486991,
-    "mean_abs_delta": 0.010101250833333334,
-    "precision_tier_counts": {
-      "green": 12
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+    "scalar_count": 0
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T22:29:56.444127+00:00"
 }

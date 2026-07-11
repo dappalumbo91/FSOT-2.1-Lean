@@ -40,6 +40,7 @@ def core_context() -> dict[str, float]:
     c_factor = c_eff * p_new
     k = phi * (gamma / e) * math.sqrt(2.0) / math.log(pi) * 0.99
     c_cosm = 1.0 / (phi * 10.0)
+    gate = phi / (1.0 + phi)
 
     values = {
         "pi": pi,
@@ -96,13 +97,48 @@ def core_context() -> dict[str, float]:
         "chaos": chaos,
         "c_factor": c_factor,
         "c_cosm": c_cosm,
+        "g_cat": g_cat,
+        "catalan": g_cat,
+        "c": g_cat,
+        "big_g": g_cat,
+        "gate": gate,
+        "omega": omega,
+        "gamma": gamma,
+        "pnew": p_new,
+        "pbase": p_base,
+        "b_in": b_in,
+        "poof": poof,
     }
     return values
 
 
+_GREEK_TO_LATIN = {
+    "Ω": "omega",
+    "Ψ": "psi",
+    "Θ": "theta",
+    "Η": "eta",
+    "Γ": "gamma",
+    "Φ": "phi",
+    "Π": "pi",
+    "Α": "alpha",
+    "α": "alpha",
+    "β": "beta",
+    "ω": "omega",
+    "ψ": "psi",
+    "θ": "theta",
+    "η": "eta",
+    "γ": "gamma",
+    "φ": "phi",
+    "π": "pi",
+}
+
+
 def normalize_formula(text: str) -> str:
+    out = text
+    for src, dst in _GREEK_TO_LATIN.items():
+        out = out.replace(src, dst)
     out = (
-        text.replace("**", "^")
+        out.replace("**", "^")
         .replace("·", "*")
         .replace("•", "*")
         .replace("×", "*")
@@ -110,12 +146,17 @@ def normalize_formula(text: str) -> str:
         .replace("–", "-")
         .replace("—", "-")
         .replace("⁄", "/")
-        .replace("π", "pi")
-        .replace("φ", "phi")
-        .replace("γ", "gamma")
+        .replace("→", "->")
         .lower()
     )
+    out = re.sub(r"\(\s*rad\s*->\s*°\s*\)", " * 180 / pi ", out)
+    out = re.sub(r"\(\s*rad\s*->\s*deg\s*\)", " * 180 / pi ", out)
     out = re.sub(r"√\s*([a-z0-9_()]+)", r"sqrt(\1)", out)
+    out = re.sub(r"\s+", "", out)
+    out = re.sub(r"\btheta_s\b", "theta_s", out)
+    out = re.sub(r"\btheta\b(?!_)", "theta_s", out)
+    out = re.sub(r"\bg\b(?![_a-z])", "g_cat", out)
+    out = re.sub(r"\bc\b(?![_a-z])", "g_cat", out)
     return out
 
 
@@ -232,6 +273,14 @@ class _FormulaParser:
             return math.cos(args[0])
         if name == "exp":
             return math.exp(args[0])
+        if name == "arccos":
+            return math.acos(args[0])
+        if name == "acos":
+            return math.acos(args[0])
+        if name == "arcsin":
+            return math.asin(args[0])
+        if name == "asin":
+            return math.asin(args[0])
         raise ValueError(f"unsupported function: {name}")
 
 

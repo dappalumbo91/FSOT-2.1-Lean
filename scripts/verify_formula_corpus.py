@@ -38,6 +38,13 @@ def _extended_eval_context() -> dict[str, float]:
             "psi": ctx["psi_con"],
             "theta": ctx["theta_s"],
             "g": ctx["g_cat"],
+            "gate": ctx["gate"],
+            "omega": ctx["omega"],
+            "gamma": ctx["gamma"],
+            "pnew": ctx["pnew"],
+            "pbase": ctx["pbase"],
+            "b_in": ctx["b_in"],
+            "poof": ctx["poof"],
         }
     )
     return ctx

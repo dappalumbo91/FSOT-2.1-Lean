@@ -7,6 +7,14 @@ from typing import Any
 ORACLE_PROOF_CLASSES = frozenset(
     {
         "sampling_oracle",
+        "oracle_tautology",
+        "oracle_near_eq",
+    }
+)
+
+PROOF_DEPTH_ORACLE_CLASSES = frozenset(
+    {
+        "sampling_oracle",
         "witness_instantiation",
         "oracle_tautology",
         "oracle_near_eq",
@@ -31,9 +39,7 @@ def triangulation_class(ob: dict) -> str:
     if ob.get("kind") == "bundle_conj":
         return "structural_index"
     pc = ob.get("proof_class")
-    if pc == "certified_interval":
-        return "certified_oracle_replay"
-    if pc in ORACLE_PROOF_CLASSES:
+    if pc in ORACLE_PROOF_CLASSES or ob.get("grid_certificate"):
         return "oracle_replay"
     return "atomic_triangulated"
 
@@ -47,6 +53,12 @@ def annotate_triangulation(ob: dict) -> dict:
         out["proof_class_label"] = PROOF_CLASS_LABELS.get(
             str(ob["proof_class"]), str(ob["proof_class"])
         )
+        pc = str(ob["proof_class"])
+        if pc in PROOF_DEPTH_ORACLE_CLASSES and tc == "atomic_triangulated":
+            out["proof_depth_note"] = (
+                "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); "
+                f"proof_class={pc} is eval/witness depth, not sampling-only oracle."
+            )
     return out
 
 

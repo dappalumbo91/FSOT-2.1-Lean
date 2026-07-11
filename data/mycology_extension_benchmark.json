@@ -1763,12 +1763,13 @@
         "delta": 0.01318,
         "delta_pct": 0.022237,
         "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1482,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -1785,12 +1786,13 @@
         "delta": 0.003224,
         "delta_pct": 0.017789,
         "effective_error_pct": 0.017789,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1186,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -9023,12 +9025,13 @@
         "delta": 0.008005,
         "delta_pct": 0.044472,
         "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2965,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -9045,12 +9048,13 @@
         "delta": 0.001957,
         "delta_pct": 0.044477,
         "effective_error_pct": 0.044477,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2965,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -9067,12 +9071,13 @@
         "delta": 0.005337,
         "delta_pct": 0.044475,
         "effective_error_pct": 0.044475,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2965,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -9351,5 +9356,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.051857+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.828276+00:00"
 }

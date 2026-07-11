@@ -13316,10 +13316,11 @@
       "domain_display_name": "seismology",
       "display_name": "us6000pgkd",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -13964,5 +13965,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.022257+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.782226+00:00"
 }

@@ -1917,12 +1917,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -1939,12 +1940,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -1961,12 +1963,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -2314,7 +2317,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Galactic Structure Sample",
   "tier_label": "Tier 53 \u2014 Stellar Multiplicity Catalog + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.034242+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.779276+00:00",
   "scientific_precision_summary": {
     "scalar_count": 88,
     "median_error_pct": 0.0,

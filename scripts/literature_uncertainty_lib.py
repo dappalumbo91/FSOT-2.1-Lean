@@ -40,6 +40,51 @@ RECORD_NAME_ANCHOR_ALIASES: dict[str, str] = {
     "FRB20200929C": "frb_p34_periodicity",
 }
 
+PROPERTY_ANCHOR_ALIASES: dict[str, str] = {
+    "H0_planck_km_s_Mpc": "hubble_constant",
+    "h0_planck_km_s_mpc": "hubble_constant",
+    "w0_bao_readout": "w0_constraint",
+    "wa_bao_readout": "dark_energy_eos",
+    "w0_cmb_readout": "w0_constraint",
+    "wa_cmb_readout": "dark_energy_eos",
+}
+
+BIOCHEM_UNCERTAINTY_PCT = 0.2
+BEHAVIORAL_UNCERTAINTY_PCT = 0.15
+
+
+def _normalize_biochem_text(text: str) -> str:
+    p = text.lower()
+    for src, dst in (("δ", "delta"), ("Δ", "delta"), ("γ", "gamma")):
+        p = p.replace(src, dst)
+    p = p.replace("delta g", "deltag").replace("delta_g", "deltag")
+    return p
+
+
+def _biochem_property(*fields: str) -> bool:
+    tokens = (
+        "pka",
+        "pkd",
+        "pki",
+        "deltag",
+        "km",
+        "kcat",
+        "ki",
+        "ic50",
+        "ec50",
+        "kd",
+        "stacking",
+        "activation_ea",
+        "youngs_modulus",
+    )
+    for field in fields:
+        if not field:
+            continue
+        p = _normalize_biochem_text(field)
+        if any(t in p for t in tokens):
+            return True
+    return False
+
 
 @lru_cache(maxsize=1)
 def load_anchors() -> dict[str, dict[str, Any]]:
@@ -135,6 +180,21 @@ def resolve_reference_uncertainty_pct(record: dict) -> float | None:
     prop = _stumped_canonical_property(row)
     anchors = load_anchors()
     anchor = anchors.get(prop)
+    if anchor is None:
+        anchor = anchors.get(PROPERTY_ANCHOR_ALIASES.get(prop, ""))
+    if anchor is None and _biochem_property(
+        prop,
+        str(row.get("name") or ""),
+        str(row.get("display_name") or ""),
+        str(row.get("section_display_name") or ""),
+    ):
+        return BIOCHEM_UNCERTAINTY_PCT
+    if anchor is None and (
+        "neuroeconomics" in str(row.get("lab") or "").lower()
+        or prop.endswith("_alpha")
+        or "transfer_pct" in prop
+    ):
+        return BEHAVIORAL_UNCERTAINTY_PCT
     if anchor is None:
         name = str(row.get("name") or "")
         alias = RECORD_NAME_ANCHOR_ALIASES.get(name)

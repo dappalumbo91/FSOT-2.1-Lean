@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T20:01:11.148112+00:00",
+  "generated_at": "2026-07-11T22:28:56.713432+00:00",
   "source": [
     "vendor/math_generator/benchmark_reports/hubble_report.json",
     "scripts/math_generator_benchmark_formula_eval.py"
@@ -18,9 +18,10 @@
       "rule_id": "FO-200",
       "computed": 67.2702116773588,
       "measured": 67.36,
+      "measured_uncertainty": 0.54,
       "error_pct": 0.13329620344595866,
-      "eval_kind": "live_formula",
-      "comparison_class": "live_formula_prediction",
+      "eval_kind": "h0_live",
+      "comparison_class": "cmb_sector_prediction",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
       "reference": "Planck2018"
     },

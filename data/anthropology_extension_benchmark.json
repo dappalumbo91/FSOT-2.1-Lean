@@ -2137,12 +2137,13 @@
         "delta": 0.145308,
         "delta_pct": 0.019504,
         "effective_error_pct": 0.019504,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.13,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -2225,12 +2226,13 @@
         "delta": 0.087575,
         "delta_pct": 0.019504,
         "effective_error_pct": 0.019504,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.13,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -3663,7 +3665,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Anthropology",
   "tier_label": "Tier 35",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.925224+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.669337+00:00",
   "scientific_precision_summary": {
     "scalar_count": 10,
     "median_error_pct": 0.002569,

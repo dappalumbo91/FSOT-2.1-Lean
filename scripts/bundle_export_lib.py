@@ -20,7 +20,19 @@ def _strip_comments(text: str) -> str:
 
 def _normalize_conjunct(raw: str) -> str:
     s = " ".join(raw.strip().split())
-    s = s.strip("()")
+    if s.startswith("(") and s.endswith(")"):
+        depth = 0
+        wraps = True
+        for i, ch in enumerate(s):
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0 and i != len(s) - 1:
+                    wraps = False
+                    break
+        if wraps:
+            s = s[1:-1].strip()
     return s
 
 
@@ -281,6 +293,62 @@ def _extract_proof_body(text: str, theorem: str) -> str:
     return rest[:i]
 
 
+def _atomic_candidates(sym: str, kind: str | None, val: object | None) -> list[str]:
+    val_suffix = ""
+    if val is not None and kind == "eq_nat":
+        try:
+            val_suffix = f"_eq_{int(val)}"
+        except (TypeError, ValueError):
+            pass
+    cands = [
+        f"{sym}_pos",
+        f"{sym}{val_suffix}",
+        f"{sym}_eq_nat",
+        sym,
+    ]
+    if kind in ("lt_lit", "lt_half"):
+        cands.extend([f"{sym}_under_half_pct", f"{sym}_in_bounds"])
+    if kind == "gt_lit":
+        cands.append(f"{sym}_in_bounds")
+    if sym.endswith("_pooled_median_error_pct"):
+        base = sym[: -len("_pooled_median_error_pct")]
+        cands.append(f"{base}_pooled_median_under_half_pct")
+    if sym.endswith("_headline_median_error_pct"):
+        base = sym[: -len("_headline_median_error_pct")]
+        cands.append(f"{base}_headline_median_under_half_pct")
+    if sym.endswith("_median_error_pct"):
+        base = sym[: -len("_median_error_pct")]
+        cands.append(f"{base}_median_under_half_pct")
+    return cands
+
+
+def _find_atomic_link(
+    row: dict,
+    atomic_by_id: dict[str, dict],
+) -> str | None:
+    sym = row.get("symbol")
+    kind = row.get("kind")
+    val = row.get("value")
+    if row.get("proof_witness_id") and row["proof_witness_id"] in atomic_by_id:
+        return row["proof_witness_id"]
+    if sym:
+        for cand in _atomic_candidates(sym, kind, val):
+            if cand in atomic_by_id:
+                return cand
+        for aid, aob in atomic_by_id.items():
+            if aob.get("symbol") == sym and aob.get("kind") == kind:
+                return aid
+            if sym in aid and aob.get("kind") in (kind, "nat_pos", "eq_nat", "lt_lit", "gt_lit"):
+                return aid
+    if row.get("kind") == "opaque_conj":
+        stmt = row.get("statement") or ""
+        for tok in re.findall(r"[a-z][a-z0-9_]*", stmt):
+            for cand in (tok, f"{tok}_in_bounds", f"{tok}_under_half_pct"):
+                if cand in atomic_by_id:
+                    return cand
+    return None
+
+
 def _witness_ids(proof_body: str) -> list[str | None]:
     witnesses: list[str | None] = []
     if "refine ⟨" in proof_body or "refine \u27e8" in proof_body:
@@ -335,14 +403,11 @@ def parse_bundle_obligations(
                 row["proof_style"] = "exact"
                 if witness in atomic_by_id:
                     row["linked_obligation_id"] = witness
-            elif NORM_NUM_RE.search(proof_body):
+            elif row.get("kind") == "eq_nat" or NORM_NUM_RE.search(proof_body):
                 row["proof_style"] = "norm_num"
-            linked = row.get("linked_obligation_id")
-            if not linked and row.get("kind") not in ("opaque_conj",):
-                for aid, aob in atomic_by_id.items():
-                    if aob.get("kind") == row.get("kind") and aob.get("symbol") == row.get("symbol"):
-                        row["linked_obligation_id"] = aid
-                        break
+            linked = _find_atomic_link(row, atomic_by_id)
+            if linked:
+                row["linked_obligation_id"] = linked
             conjuncts.append(row)
 
         unparsed = sum(1 for c in conjuncts if c.get("kind") == "opaque_conj")

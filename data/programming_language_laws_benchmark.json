@@ -287,12 +287,13 @@
         "delta": 0.000148,
         "delta_pct": 0.0074,
         "effective_error_pct": 0.0074,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0492,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -1622,12 +1623,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -2521,14 +2523,14 @@
   ],
   "display_name": "Programming Language Laws",
   "tier_label": "Tier 44",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.881130+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.614400+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 75,
+    "scalar_count": 74,
     "median_error_pct": 0.0,
     "max_error_pct": 4.348417,
-    "mean_abs_delta": 0.002528436222222222,
+    "mean_abs_delta": 0.002585900681818182,
     "precision_tier_counts": {
-      "green": 75
+      "green": 74
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": false

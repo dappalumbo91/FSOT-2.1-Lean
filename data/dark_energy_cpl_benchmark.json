@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T20:09:40.662095+00:00",
+  "generated_at": "2026-07-11T22:28:55.981546+00:00",
   "domain": "Dark_Energy_CPL",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,11 +15,11 @@
   "D_eff": 24,
   "record_count": 14,
   "observable_count": 14,
-  "scalar_record_count": 13,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.051014,
-  "pooled_median_error_pct": 0.051014,
-  "headline_median_error_pct": 0.051014,
+  "median_error_pct": 0.090985,
+  "pooled_median_error_pct": 0.090985,
+  "headline_median_error_pct": 0.101159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,20 +38,22 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.051014,
+      "computed": 0.090985,
       "measured": 0.0,
-      "error_pct": 0.051014,
+      "error_pct": 0.090985,
       "observable_count": 14,
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "tier gap fill",
       "display_name": "all channels",
       "scientific_measurement": {
-        "delta": 0.051014,
+        "delta": 0.090985,
         "delta_pct": 100.0,
         "effective_error_pct": 100.0,
         "comparison_kind": "display_precision",
         "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
@@ -60,20 +62,22 @@
       "lab": "tier_gap_fill_lab",
       "property": "cpl",
       "name": "survey_constraint_panel",
-      "computed": 0.051014,
+      "computed": 0.101159,
       "measured": 0.0,
-      "error_pct": 0.051014,
-      "observable_count": 13,
+      "error_pct": 0.101159,
+      "observable_count": 8,
+      "eval_kind": "contested_observable",
+      "comparison_class": "external_observable",
       "domain_display_name": "tier gap fill",
       "display_name": "survey constraint panel",
       "scientific_measurement": {
-        "delta": 0.051014,
+        "delta": 0.101159,
         "delta_pct": 100.0,
         "effective_error_pct": 100.0,
         "comparison_kind": "display_precision",
         "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
+        "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
@@ -97,12 +101,13 @@
         "delta": 1.9e-05,
         "delta_pct": 0.001845,
         "effective_error_pct": 0.001845,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0006,
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
         "reference": "Planck2018"
       }
     },
@@ -123,12 +128,13 @@
         "delta": -0.002679,
         "delta_pct": 0.368501,
         "effective_error_pct": 0.368501,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1228,
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
         "reference": "DESI_DR2"
       }
     },
@@ -150,12 +156,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
         "reference": "FSOT_P45c"
       }
     },
@@ -176,12 +183,13 @@
         "delta": -0.002856,
         "delta_pct": 0.28055,
         "effective_error_pct": 0.28055,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0935,
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
         "reference": "DESI_DR2"
       }
     },
@@ -502,7 +510,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.051014,
+    "scalar_pooled_median_error_pct": 0.090985,
     "max_scalar_error_pct": 0.368503,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -590,18 +598,19 @@
     }
   ],
   "cpl_status": "GREEN",
+  "tier_scalar_refined_at": "2026-07-11T22:28:56.276308+00:00",
   "display_name": "Dark Energy CPL",
   "tier_label": "Consciousness soul bridge + symbolic archetype",
   "scientific_precision_summary": {
-    "scalar_count": 13,
-    "median_error_pct": 0.978529,
+    "scalar_count": 8,
+    "median_error_pct": 100.0,
     "max_error_pct": 708.11,
-    "mean_abs_delta": 0.20777330769230767,
+    "mean_abs_delta": 0.320902875,
     "precision_tier_counts": {
-      "contested": 13
+      "contested": 8
     },
     "green_gate_fraction": 0.0,
     "matches_domain_spine": false
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.026010+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.770645+00:00"
 }

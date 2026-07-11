@@ -5899,12 +5899,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -5921,12 +5922,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -5943,12 +5945,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -5965,12 +5968,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -6251,12 +6255,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -6273,12 +6278,13 @@
         "delta": 0.0,
         "delta_pct": 0.0,
         "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
+        "comparison_kind": "uncertainty_band",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       },
       "source": "nasa_exoplanet"
     },
@@ -7056,5 +7062,5 @@
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.103171+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.884222+00:00"
 }

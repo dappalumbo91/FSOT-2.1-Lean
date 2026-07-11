@@ -53,10 +53,11 @@
       "domain_display_name": "tectonics",
       "display_name": "us6000pgkd",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -11018,7 +11019,7 @@
   ],
   "display_name": "Tectonics",
   "tier_label": "Tier 21",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.590742+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.267207+00:00",
   "scientific_precision_summary": {
     "scalar_count": 0
   }

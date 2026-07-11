@@ -5783,12 +5783,13 @@
         "delta": 0.000178,
         "delta_pct": 0.0178,
         "effective_error_pct": 0.0178,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1187,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -6052,12 +6053,13 @@
         "delta": 0.000309,
         "delta_pct": 0.0309,
         "effective_error_pct": 0.0309,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2058,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -8619,7 +8621,7 @@
   ],
   "display_name": "Time Domain Crosswalk",
   "tier_label": "Tier 50",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.002442+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.749509+00:00",
   "scientific_precision_summary": {
     "scalar_count": 250,
     "median_error_pct": 0.0281,

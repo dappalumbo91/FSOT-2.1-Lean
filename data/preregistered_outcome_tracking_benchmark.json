@@ -71,10 +71,11 @@
         "effective_error_pct": 0.0,
         "comparison_kind": "structural_gate",
         "within_literature_band": true,
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     }
   ],
@@ -1488,7 +1489,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Preregistered Outcome Tracking",
   "tier_label": "Tier 70 \u2014 Proof Ledger Closure Spine + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:14.145112+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.930226+00:00",
   "scientific_precision_summary": {
     "scalar_count": 28,
     "median_error_pct": 0.0,

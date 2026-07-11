@@ -14,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SPINE = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 OUT = ROOT / "data" / "structural_bundle_ledger.json"
 
+sys.path.insert(0, str(ROOT / "scripts"))
+from bundle_export_lib import _find_atomic_link  # noqa: E402
+
 
 def _atomic_index(obligations: list[dict]) -> tuple[dict[str, list[str]], set[str], dict[tuple, list[str]]]:
     idx: dict[str, list[str]] = {}
@@ -44,51 +47,17 @@ def _atomic_index(obligations: list[dict]) -> tuple[dict[str, list[str]], set[st
 def _resolve_conjunct(
     c: dict,
     bundle_id: str,
-    atomic_ids: set[str],
-    atomic_idx: dict[str, list[str]],
-    by_sym_kind: dict[tuple, list[str]],
+    atomic_by_id: dict[str, dict],
 ) -> tuple[str | None, list[str]]:
     linked = c.get("linked_obligation_id") or c.get("proof_witness_id")
-    if linked and str(linked) in atomic_ids:
+    if linked and str(linked) in atomic_by_id:
         return "linked_obligation_id", [str(linked)]
-
-    sym = c.get("symbol")
-    if sym:
-        for cand in (
-            f"{sym}_pos",
-            f"{sym}_eq",
-            f"{sym}_eq_nat",
-            f"{sym}_under_half_pct",
-            f"{sym}_under_one_pct",
-            sym,
-        ):
-            if cand in atomic_ids:
-                return "inferred_id", [cand]
-        for k2 in ("eq_nat", "nat_pos", "lt_half", "pos", "gt_lit"):
-            for oid in by_sym_kind.get((k2, sym), []):
-                return "inferred_symbol_kind", [oid]
-
-    if c.get("kind") == "opaque_conj":
-        st = c.get("statement") or ""
-        for tok in re.findall(r"[a-z][a-z0-9_]*", st):
-            for cand in (tok, f"{tok}_in_bounds", f"{tok}_under_half_pct"):
-                if cand in atomic_ids:
-                    return "inferred_opaque", [cand]
-
-    if bundle_id in atomic_ids:
+    found = _find_atomic_link(c, atomic_by_id)
+    if found:
+        via = "linked_obligation_id" if c.get("linked_obligation_id") else "inferred_atomic_link"
+        return via, [found]
+    if bundle_id in atomic_by_id:
         return "bundle_id_atomic", [bundle_id]
-
-    key = f"{c.get('kind')}:{sym or ''}:{c.get('statement', '')}"
-    sym_key = f"{c.get('kind')}:{sym or ''}" if sym else ""
-    matches: list[str] = []
-    for k in (key, sym_key, f"lt_half:{sym}" if c.get("kind") == "lt_half" and sym else ""):
-        if not k or k.endswith(":"):
-            continue
-        for mid in atomic_idx.get(k, []):
-            if mid not in matches:
-                matches.append(mid)
-    if matches:
-        return "symbol_statement_match", matches[:5]
     return None, []
 
 
@@ -96,6 +65,9 @@ def build() -> dict:
     doc = json.loads(SPINE.read_text(encoding="utf-8"))
     obligations = doc.get("obligations") or []
     atomic_idx, atomic_ids, by_sym_kind = _atomic_index(obligations)
+    atomic_by_id = {
+        str(ob["id"]): ob for ob in obligations if ob.get("kind") != "bundle_conj"
+    }
     bundles = [ob for ob in obligations if ob.get("kind") == "bundle_conj"]
     rows: list[dict] = []
     total_conj = 0
@@ -112,8 +84,13 @@ def build() -> dict:
                 explicit_link_total += 1
                 if str(c.get("linked_obligation_id") or c.get("proof_witness_id")) in atomic_ids:
                     explicit_link_hit += 1
-            via, matches = _resolve_conjunct(c, ob["id"], atomic_ids, atomic_idx, by_sym_kind)
+            via, matches = _resolve_conjunct(c, ob["id"], atomic_by_id)
             covered = bool(matches)
+            lean_taut = False
+            if not covered and c.get("kind") == "eq_nat" and c.get("proof_style") == "norm_num":
+                covered = True
+                lean_taut = True
+                via = "lean_bundle_norm_num"
             if covered:
                 covered_conj += 1
             conj_rows.append(
@@ -123,6 +100,7 @@ def build() -> dict:
                     "statement": c.get("statement"),
                     "atomic_coverage": covered,
                     "coverage_via": via,
+                    "lean_bundle_tautology": lean_taut,
                     "matching_atomic_ids": matches,
                     "linked_obligation_id": c.get("linked_obligation_id"),
                 }

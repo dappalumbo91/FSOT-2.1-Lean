@@ -118,10 +118,11 @@
       "domain_display_name": "geology stratigraphy",
       "display_name": "us6000pgkd",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -11618,10 +11619,11 @@
       "domain_display_name": "geology stratigraphy",
       "display_name": "us6000pgkd",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -44213,7 +44215,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Geology Stratigraphy",
   "tier_label": "Tier 35",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.799914+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.514210+00:00",
   "scientific_precision_summary": {
     "scalar_count": 0
   }

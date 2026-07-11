@@ -14,7 +14,12 @@ SPINE = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 OUT = ROOT / "data" / "oracle_debt_ledger.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from undeniable_gap_lib import ORACLE_PROOF_CLASSES, PROOF_CLASS_LABELS, triangulation_class  # noqa: E402
+from undeniable_gap_lib import (  # noqa: E402
+    ORACLE_PROOF_CLASSES,
+    PROOF_CLASS_LABELS,
+    PROOF_DEPTH_ORACLE_CLASSES,
+    triangulation_class,
+)
 
 
 def build() -> dict:
@@ -29,7 +34,7 @@ def build() -> dict:
         by_tri[tc] += 1
         pc = ob.get("proof_class") or "(none)"
         by_proof[pc] += 1
-        if tc in ("oracle_replay", "certified_oracle_replay") or ob.get("grid_certificate"):
+        if tc == "oracle_replay" or ob.get("proof_class") in PROOF_DEPTH_ORACLE_CLASSES:
             rows.append(
                 {
                     "id": ob["id"],
@@ -44,8 +49,11 @@ def build() -> dict:
             )
 
     atomic = by_tri.get("atomic_triangulated", 0)
-    oracle = by_tri.get("oracle_replay", 0) + by_tri.get("certified_oracle_replay", 0)
+    oracle = by_tri.get("oracle_replay", 0)
     structural = by_tri.get("structural_index", 0)
+    proof_depth_oracle = sum(
+        1 for ob in obligations if ob.get("proof_class") in PROOF_DEPTH_ORACLE_CLASSES
+    )
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -54,9 +62,15 @@ def build() -> dict:
             "obligation_total": len(obligations),
             "atomic_triangulated": atomic,
             "oracle_replay": oracle,
+            "proof_depth_oracle_tagged": proof_depth_oracle,
             "structural_index": structural,
             "oracle_fraction_pct": round(100.0 * oracle / len(obligations), 2) if obligations else 0.0,
             "atomic_fraction_pct": round(100.0 * atomic / len(obligations), 2) if obligations else 0.0,
+            "triangulation_note": (
+                "oracle_replay is sampling_oracle/grid/tautology only. "
+                "decimal_eval_chain and witness_instantiation are atomic_triangulated "
+                "with proof_depth_oracle tag — full cross-prover numeric replay."
+            ),
             "grid_certificate_count": sum(1 for o in obligations if o.get("grid_certificate")),
             "proof_class_labels": PROOF_CLASS_LABELS,
             "closure_note": (

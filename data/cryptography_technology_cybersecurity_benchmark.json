@@ -423,12 +423,13 @@
         "delta": 342.148838,
         "delta_pct": 0.057025,
         "effective_error_pct": 0.057025,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.3802,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -445,12 +446,13 @@
         "delta": 11.094746,
         "delta_pct": 0.057025,
         "effective_error_pct": 0.057025,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.3802,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -1042,14 +1044,14 @@
   ],
   "display_name": "Cryptography Technology",
   "tier_label": "Cybersecurity engineering (Tier H)",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:13.846490+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.579860+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 32,
-    "median_error_pct": 0.057025,
-    "max_error_pct": 0.057033,
-    "mean_abs_delta": 19.716535049999997,
+    "scalar_count": 20,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.057025,
+    "mean_abs_delta": 44.381337625,
     "precision_tier_counts": {
-      "green": 32
+      "green": 20
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true

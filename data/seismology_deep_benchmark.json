@@ -5396,10 +5396,11 @@
       "domain_display_name": "seismology deep",
       "display_name": "us7000nvkm",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -5414,10 +5415,11 @@
       "domain_display_name": "seismology deep",
       "display_name": "us7000nvkm",
       "scientific_measurement": {
-        "sigma_equivalent": null,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
       }
     },
     {
@@ -18521,7 +18523,7 @@
   ],
   "display_name": "Seismology Deep",
   "tier_label": "Tier 23",
-  "scientific_metadata_enriched_at": "2026-07-11T20:10:12.645022+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.324206+00:00",
   "scientific_precision_summary": {
     "scalar_count": 0
   }
