@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:39:48.493225+00:00",
+  "generated_at": "2026-07-11T22:42:39.643279+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
@@ -31,7 +31,7 @@
     {
       "id": "structural_bundle_conjunct_linkage",
       "severity": "low",
-      "attack": "99.66% total conjunct witness resolution; 100.0% explicit linked_obligation_id hit rate on spine.",
+      "attack": "100.0% total conjunct witness resolution; 100.0% explicit linked_obligation_id hit rate on spine.",
       "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
       "closed": true,
       "evidence": "data/structural_bundle_ledger.json"

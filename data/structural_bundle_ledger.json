@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-07-11T22:39:47.946021+00:00",
+  "generated_at": "2026-07-11T22:42:34.599917+00:00",
   "version": "1.2",
   "summary": {
     "bundle_conj_total": 326,
-    "structural_bundle_excluded": 64,
-    "provable_bundle_conj": 262,
+    "structural_bundle_excluded": 56,
+    "provable_bundle_conj": 270,
     "total_conjuncts": 1452,
-    "conjuncts_with_atomic_coverage": 1447,
-    "conjunct_atomic_coverage_pct": 99.66,
-    "explicit_linked_conjuncts": 948,
-    "explicit_linked_in_spine": 948,
+    "conjuncts_with_atomic_coverage": 1452,
+    "conjunct_atomic_coverage_pct": 100.0,
+    "explicit_linked_conjuncts": 1231,
+    "explicit_linked_in_spine": 1231,
     "explicit_link_hit_pct": 100.0,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "by_module": {
+    "AetherPrimePriors": 1,
     "BlackHoleThesisPriors": 1,
     "BubbleBleedPriors": 1,
     "CameoPriors": 1,
@@ -28,7 +29,6 @@
     "CosmologyWave7Priors": 1,
     "CosmologyWave8Priors": 1,
     "CosmologyWave9Priors": 1,
-    "CryospherePriors": 1,
     "DomainCoveragePriors": 1,
     "DomainPrecisionPriors": 1,
     "EmergentDomainPriors": 1,
@@ -36,31 +36,25 @@
     "ExperimentSynthesisPriors": 1,
     "FormulaCorpusPriors": 1,
     "FuelPriors": 1,
-    "GeomagnetismPriors": 1,
-    "GraceCryospherePriors": 1,
     "HiggsBranchingPriors": 1,
     "HiggsMassPriors": 1,
     "HydrologyPriors": 1,
-    "IntelligenceCompressionPriors": 1,
     "KnowledgeBasePriors": 1,
     "KronosPriors": 1,
     "LinguisticsPriors": 1,
     "MagicCirclePriors": 1,
     "MagneticStringPriors": 1,
-    "MagnetosphereExtendedPriors": 1,
-    "MagnetospherePriors": 1,
     "MathGeneratorPriors": 1,
     "NeuronCohortPriors": 1,
+    "NeuronCohortStrataPriors": 1,
+    "NeuronCohortTrainHoldoutPriors": 1,
     "NeuronHybridPriors": 1,
     "ParticlePhysicsPriors": 1,
     "ProteinPriors": 1,
-    "SeismologyDeepPriors": 1,
-    "SeismologyPriors": 1,
     "SoulSiblingPriors": 1,
     "SpaceWeatherPriors": 1,
     "SpeciesPriors": 1,
     "StructureCalibrationPriors": 1,
-    "TectonicsPriors": 1,
     "ThesisSimulationPriors": 1,
     "TrinaryFluidPriors": 1,
     "TrinaryOSPriors": 1,
@@ -69,7 +63,6 @@
     "WarpBhWhPortalPriors": 1,
     "WeatherPriors": 1,
     "Domains": 3,
-    "Genomic": 2,
     "LeanProofsBridge": 1,
     "CosmologyLab": 1,
     "PhotonicForge": 1,
@@ -81,7 +74,6 @@
     "adv_brk_bundle",
     "aether_psi_con_solver_in_bounds",
     "aether_eta_eff_solver_in_bounds",
-    "aether_prime_priors_bundle",
     "agriculture_agroecology_gap_fill_bundle",
     "ai_gal_br_bundle",
     "anthropology_ext_bundle",
@@ -120,6 +112,7 @@
     "consciousness_soul_bridge_bundle",
     "cosmology_anomaly_deep_panel_bundle",
     "creative_arts_math_spine_bundle",
+    "cryosphere_bundle",
     "crypto_tech_bundle",
     "culinary_arts_bundle",
     "cve_hole_bundle",
@@ -175,6 +168,8 @@
     "genomic_sciences_bundle",
     "geochemistry_bundle",
     "geology_stratigraphy_ext_bundle",
+    "geomagnetism_bundle",
+    "grace_cryosphere_bundle",
     "gwosc_live_event_deep_bundle",
     "heavy_ion_lab_synthesis_panel_bundle",
     "history_ext_bundle",
@@ -189,6 +184,7 @@
     "inertial_confinement_fusion_panel_bundle",
     "information_theory_public_panel_bundle",
     "initiation_transformation_archetype_bundle",
+    "intelligence_compression_priors_bundle",
     "interactive_media_prereg_scaffold_bundle",
     "interdisciplinary_spine_crosswalk_bundle",
     "intrinsic_llm_validators_bundle",
@@ -202,6 +198,8 @@
     "magic_imbalance_penalty_in_unit_interval",
     "magic_backlash_threshold_in_unit_interval",
     "magnetic_confinement_fusion_panel_bundle",
+    "magnetosphere_extended_bundle",
+    "magnetosphere_bundle",
     "maillard_chemistry_gap_fill_bundle",
     "malware_threat_bundle",
     "marine_biology_ext_bundle",
@@ -231,8 +229,6 @@
     "neuroimmunology_bundle",
     "neurolab_gaps_math_spine_bundle",
     "neurolab_residual_math_spine_bundle",
-    "neuron_cohort_strata_bundle",
-    "neuron_cohort_train_holdout_bundle",
     "neuron_multi_hero_bundle",
     "nist_codata_constants_bundle",
     "noaa_coastal_tides_bundle",
@@ -282,6 +278,8 @@
     "robotics_control_ext_bundle",
     "rust_lean_bridge_bundle",
     "secure_sw_bundle",
+    "seismology_deep_bundle",
+    "seismology_bundle",
     "semiconductor_physics_public_panel_bundle",
     "sh0es_refined_bundle",
     "simbad_stellar_identity_deep_bundle",
@@ -303,6 +301,7 @@
     "supply_chain_ext_bundle",
     "symbolic_archetype_panel_bundle",
     "synthetic_biology_bundle",
+    "tectonics_bundle",
     "term3_acoustic_bleed_depth_bundle",
     "toe_spine_bundle",
     "time_xw_bundle",
@@ -335,8 +334,10 @@
     "z164_distant_island_prereg_scaffold_bundle",
     "zero_day_eval_bundle",
     "zoology_ext_bundle",
+    "genomic_exact_identity_bundle",
     "neurolab_bio_sign_bundle",
     "lab_smiles_domain_sign_bundle",
+    "neurolab_genomic_exact_bundle",
     "protein_formula_closed_form_bundle"
   ],
   "bundles": [
@@ -549,8 +550,8 @@
     {
       "id": "aether_prime_priors_bundle",
       "lean_module": "AetherPrimePriors",
-      "provable": true,
-      "unprovable_reason": null,
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
       "conjunct_count": 8,
       "conjuncts": [
         {
@@ -638,9 +639,9 @@
           "linked_obligation_id": "aether_golden_angle_gt_137"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "aether_distill_row_count",
-          "statement": "0 < 120",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(0 ) < aether_distill_row_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -712,7 +713,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -828,7 +829,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -898,7 +899,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -956,7 +957,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -1072,7 +1073,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -1142,7 +1143,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -1200,7 +1201,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -1258,7 +1259,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -1316,7 +1317,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -1374,10 +1375,10 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "biological_raw_S_positive"
+            "lab_biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -1462,26 +1463,26 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "blackhole_thesis_within_target_2pct \u2264 blackhole_thesis_observable_count",
+          "statement": "28 <= 28",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "blackhole_thesis_bundle"
+            "blackhole_thesis_within_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "blackhole_thesis_within_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"blackhole\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "blackhole_thesis_bundle"
+            "blackhole_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -1548,7 +1549,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -1962,7 +1963,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -2064,86 +2065,86 @@
           "linked_obligation_id": "bubble_bleed_observable_count_pos"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "bubble_bleed_framework_fit_count \u2264 bubble_bleed_framework_count",
+          "statement": "20 <= 20",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "bubble_bleed_bundle"
+            "bubble_bleed_framework_fit_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "bubble_bleed_framework_fit_le_total"
+        },
+        {
+          "kind": "nat_le_sym",
+          "symbol": null,
+          "statement": "20 <= 20",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "bubble_bleed_wh_closure_match_le_total"
+          ],
+          "linked_obligation_id": "bubble_bleed_wh_closure_match_le_total"
+        },
+        {
+          "kind": "nat_le_sym",
+          "symbol": null,
+          "statement": "5 <= 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "bubble_bleed_bh_spin_match_le_total"
+          ],
+          "linked_obligation_id": "bubble_bleed_bh_spin_match_le_total"
+        },
+        {
+          "kind": "nat_le_sym",
+          "symbol": null,
+          "statement": "18 <= 20",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "bubble_bleed_nebula_match_le_total"
+          ],
+          "linked_obligation_id": "bubble_bleed_nebula_match_le_total"
+        },
+        {
+          "kind": "nat_le_sym",
+          "symbol": null,
+          "statement": "37 <= 38",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "bubble_bleed_frb_match_le_total"
+          ],
+          "linked_obligation_id": "bubble_bleed_frb_match_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "bubble_bleed_wh_closure_match_count \u2264 bubble_bleed_wh_closure_count",
+          "statement": "0 <= bubble_bleed_observability_ratio",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "bubble_bleed_bundle"
+            "bubble_bleed_observability_ratio_nonneg"
           ],
-          "linked_obligation_id": null
-        },
-        {
-          "kind": "opaque_conj",
-          "symbol": null,
-          "statement": "bubble_bleed_bh_spin_match_count \u2264 bubble_bleed_bh_spin_count",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "bubble_bleed_bundle"
-          ],
-          "linked_obligation_id": null
-        },
-        {
-          "kind": "opaque_conj",
-          "symbol": null,
-          "statement": "bubble_bleed_nebula_match_count \u2264 bubble_bleed_nebula_count",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "bubble_bleed_bundle"
-          ],
-          "linked_obligation_id": null
-        },
-        {
-          "kind": "opaque_conj",
-          "symbol": null,
-          "statement": "bubble_bleed_frb_match_count \u2264 bubble_bleed_frb_count",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "bubble_bleed_bundle"
-          ],
-          "linked_obligation_id": null
-        },
-        {
-          "kind": "opaque_conj",
-          "symbol": null,
-          "statement": "0 \u2264 bubble_bleed_observability_ratio",
-          "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
-          "matching_atomic_ids": [
-            "bubble_bleed_bundle"
-          ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "bubble_bleed_observability_ratio_nonneg"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "|h0_fsot S_cosm_cached - h0_fsot_canonical| < (0.11 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "bubble_bleed_bundle"
+            "h0_fsot_cached_approx_value"
           ],
           "linked_obligation_id": null
         }
@@ -2198,10 +2199,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"molecular\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cameo_symbolic_bundle"
+            "molecular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -2268,7 +2269,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -2326,10 +2327,10 @@
           "symbol": "raw_S_cellular",
           "statement": "raw_S(cellular) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cellular_raw_S_positive"
+            "lab_cellular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -2384,7 +2385,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -2442,7 +2443,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -2558,7 +2559,7 @@
           "symbol": "raw_S_chemical",
           "statement": "raw_S(chemical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "chemical_raw_S_positive"
@@ -2674,7 +2675,7 @@
           "symbol": "raw_S_material",
           "statement": "raw_S(material) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "material_raw_S_positive"
@@ -2780,7 +2781,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -2850,7 +2851,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -2964,7 +2965,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "distinct_primary_codon_patterns \u2264 2 ^ 3",
+          "statement": "distinct_primary_codon_patterns <= 2 ^ 3",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
@@ -2976,7 +2977,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "distinct_secondary_codon_patterns \u2264 genetic_trinary_alphabet_card ^ 3",
+          "statement": "distinct_secondary_codon_patterns <= genetic_trinary_alphabet_card ^ 3",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
@@ -2990,180 +2991,180 @@
           "symbol": "genetic_trinary_alphabet_card",
           "statement": "27 = 27",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "brain_prior_codon_pattern_space_eq_twenty_seven"
+            "codon_secondary_pattern_space_eq_twenty_seven"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_secondary_pattern_space_eq_twenty_seven"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "64 = 64",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_genomic_table_link"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_genomic_table_link"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "0.046875 = 0.046875",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "stop_codon_fraction_cert"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "stop_codon_fraction_cert"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_aaa_primary_0, codon_aaa_primary_1, codon_aaa_primary_2) = (1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_aaa_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_aaa_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_ttt_primary_0, codon_ttt_primary_1, codon_ttt_primary_2) = (-1, -1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_ttt_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_ttt_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_gca_primary_0, codon_gca_primary_1, codon_gca_primary_2) = (1, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_gca_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_gca_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_cgt_primary_0, codon_cgt_primary_1, codon_cgt_primary_2) = (-1, 1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_cgt_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_cgt_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_atg_primary_0, codon_atg_primary_1, codon_atg_primary_2) = (1, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_atg_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_atg_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_taa_primary_0, codon_taa_primary_1, codon_taa_primary_2) = (-1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_taa_primary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_taa_primary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_aaa_secondary_0, codon_aaa_secondary_1, codon_aaa_secondary_2) = (1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_aaa_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_aaa_secondary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_ttt_secondary_0, codon_ttt_secondary_1, codon_ttt_secondary_2) = (-1, -1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_ttt_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_ttt_secondary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_gca_secondary_0, codon_gca_secondary_1, codon_gca_secondary_2) = (0, 0, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_gca_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_gca_secondary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_cgt_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_cgt_secondary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_atg_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_atg_secondary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "codon_trinary_map_bundle"
+            "codon_taa_secondary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_taa_secondary_phase"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -3400,7 +3401,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -3568,26 +3569,26 @@
           "linked_obligation_id": "cosmology_anomalies_count_pos"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "cosmology_anomalies_resolved_count \u2264 cosmology_anomalies_count",
+          "statement": "12 <= 12",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_anomalies_bundle"
+            "cosmology_anomalies_resolved_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cosmology_anomalies_resolved_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "|h0_fsot S_cosm_cached - h0_fsot_canonical| < (0.11 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_anomalies_bundle"
+            "h0_fsot_cached_approx_value"
           ],
           "linked_obligation_id": null
         }
@@ -3700,12 +3701,12 @@
           "symbol": null,
           "statement": "cosmology_skeleton_derivation_count + cosmology_lambda_cdm_extended_count + cosmology_thesis_wave_count = 58",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_extended_bundle"
+            "cosmology_extended_components_sum"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cosmology_extended_components_sum"
         },
         {
           "kind": "lt_half",
@@ -3724,10 +3725,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_extended_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -3830,12 +3831,12 @@
           "symbol": null,
           "statement": "cosmology_wave5_count + cosmology_wave6_count + cosmology_wave7_count + cosmology_wave8_count + cosmology_wave9_count + cosmology_wave10_count = 142",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_higher_waves_bundle"
+            "cosmology_higher_waves_partition"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cosmology_higher_waves_partition"
         },
         {
           "kind": "lt_half",
@@ -3854,10 +3855,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_higher_waves_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -3912,10 +3913,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave10_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -3970,10 +3971,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave4_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4028,10 +4029,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave5_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4086,10 +4087,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave6_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4144,10 +4145,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave7_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4202,10 +4203,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave8_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4260,10 +4261,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_wave9_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -4319,8 +4320,8 @@
     {
       "id": "cryosphere_bundle",
       "lean_module": "CryospherePriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 6,
       "conjuncts": [
         {
@@ -4372,23 +4373,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "cryosphere_match_count \u2264 cryosphere_month_count",
+          "statement": "1905 <= 1919",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cryosphere_bundle"
+            "cryosphere_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cryosphere_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -4528,7 +4529,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -4840,7 +4841,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -4920,29 +4921,29 @@
           "symbol": "domains_with_empirical_data_count",
           "statement": "35 = 35",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_coverage_priors_bundle"
+            "domains_with_empirical_data_full"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "domains_with_empirical_data_full"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "lean_override_aligned_count = lean_override_mapped_count",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_coverage_priors_bundle"
+            "lean_override_aligned_all_mapped"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "lean_override_aligned_all_mapped"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "negative_scalar_domain_count",
-          "statement": "0 < 10",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(0 ) < negative_scalar_domain_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -4952,9 +4953,9 @@
           "linked_obligation_id": "negative_scalar_domain_count_pos"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "smiles_total_mapped_records",
-          "statement": "1400 < 1470",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(1400 ) < smiles_total_mapped_records",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -4980,10 +4981,10 @@
           "symbol": null,
           "statement": "raw_S (get_domain_params \"cosmological\") < 0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_coverage_priors_bundle"
+            "cosmological_raw_S_negative"
           ],
           "linked_obligation_id": null
         },
@@ -4992,10 +4993,10 @@
           "symbol": "raw_S_neural",
           "statement": "raw_S(neural) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "raw_S_positive_of_term1_gt_neg_08"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         },
@@ -5004,10 +5005,10 @@
           "symbol": "raw_S_quantum",
           "statement": "raw_S(quantum) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "witness_bundle_link",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "lab_quantum_raw_S_positive"
+            "quantum_raw_S_positive"
           ],
           "linked_obligation_id": null
         },
@@ -5016,7 +5017,7 @@
           "symbol": "raw_S_chemical",
           "statement": "raw_S(chemical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "chemical_raw_S_positive"
@@ -5084,17 +5085,17 @@
           "symbol": null,
           "statement": "fsot_neurolab_domain_count = 35",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_precision_priors_bundle"
+            "fsot_neurolab_domain_count_eq_thirty_five"
           ],
           "linked_obligation_id": null
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "domain_precision_numeric_count",
-          "statement": "30 < 35",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(30 ) < domain_precision_numeric_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -5104,9 +5105,9 @@
           "linked_obligation_id": "domain_precision_numeric_majority"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "domain_precision_target_band_count",
-          "statement": "32 < 35",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(32 ) < domain_precision_target_band_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -5118,38 +5119,38 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "domain_precision_huge_gap_count \u2264 (2 : \u2115)",
+          "statement": "domain_precision_huge_gap_count <= (2 )",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_precision_priors_bundle"
+            "domain_precision_huge_gap_bounded"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "domain_precision_huge_gap_bounded"
         },
         {
           "kind": "r_lt_lit_pure",
           "symbol": null,
           "statement": "0.0008593004744053731 < 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_precision_priors_bundle"
+            "cosmology_median_under_one_pct"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cosmology_median_under_one_pct"
         },
         {
           "kind": "r_lt_lit_pure",
           "symbol": null,
           "statement": "0.110313 < 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_precision_priors_bundle"
+            "smiles_chemical_median_under_one_pct"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "smiles_chemical_median_under_one_pct"
         },
         {
           "kind": "opaque_conj",
@@ -5168,10 +5169,10 @@
           "symbol": null,
           "statement": "raw_S (get_domain_params \"cosmological\") < 0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "domain_precision_priors_bundle"
+            "cosmological_raw_S_negative"
           ],
           "linked_obligation_id": null
         },
@@ -5180,7 +5181,7 @@
           "symbol": "raw_S_chemical",
           "statement": "raw_S(chemical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "chemical_raw_S_positive"
@@ -5202,12 +5203,12 @@
           "symbol": "connective_qveh_warp_energy_bus",
           "statement": "6.5226644e-05 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "connective_e10d_wd_bundle"
+            "connective_energy_bus_pos"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "connective_energy_bus_pos"
         },
         {
           "kind": "gt_lit",
@@ -5308,7 +5309,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -5424,7 +5425,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -5494,7 +5495,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -5598,7 +5599,7 @@
           "symbol": "raw_S_electron",
           "statement": "raw_S(electron) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "electron_raw_S_positive"
@@ -5686,16 +5687,16 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "emergent_observed_domain_count \u2264 emergent_domain_count",
+          "statement": "28 <= 29",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "emergent_domain_priors_bundle"
+            "emergent_observed_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "emergent_observed_le_total"
         },
         {
           "kind": "opaque_conj",
@@ -5726,10 +5727,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"quantum\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "emergent_domain_priors_bundle"
+            "quantum_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -5888,7 +5889,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -5958,7 +5959,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -6028,7 +6029,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -6086,22 +6087,22 @@
           "symbol": "evolution_best_fitness",
           "statement": "58.493466 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "evolution_priors_bundle"
+            "evolution_fitness_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "evolution_fitness_positive"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"biological\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "evolution_priors_bundle"
+            "lab_biological_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -6168,7 +6169,7 @@
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -6260,10 +6261,10 @@
           "symbol": null,
           "statement": "allen_cohort_fi_median_rel_err < (0.30 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "allen_cohort_fi_median_rel_err_lt_thirty_pct"
           ],
           "linked_obligation_id": null
         },
@@ -6272,22 +6273,22 @@
           "symbol": null,
           "statement": "hero_certified_fi_mean_rel_err < (0.15 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "hero_certified_fi_mean_rel_err_lt_fifteen_pct"
           ],
           "linked_obligation_id": null
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "(2100 : \u2115) < held_out_cell_count",
+          "statement": "(2100 ) < held_out_cell_count",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "held_out_cell_count_large"
           ],
           "linked_obligation_id": null
         },
@@ -6308,22 +6309,22 @@
           "symbol": null,
           "statement": "magic_min_resonance_for_emergence < magic_internalized_threshold",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "magic_min_resonance_lt_internalized"
           ],
           "linked_obligation_id": null
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "(7900 : \u2115) < neurolab_strict_empirical_records",
+          "statement": "(7900 ) < neurolab_strict_empirical_records",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "neurolab_strict_empirical_records_large"
           ],
           "linked_obligation_id": null
         },
@@ -6332,10 +6333,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"neural\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "experiment_synthesis_priors_bundle"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -6448,7 +6449,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -6518,7 +6519,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -6772,7 +6773,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -6888,7 +6889,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -6946,7 +6947,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -7012,38 +7013,38 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "formula_corpus_matched_count \u2264 formula_corpus_records_total",
+          "statement": "7941 <= 7941",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "formula_corpus_strict_empirical_bundle"
+            "formula_corpus_matched_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "formula_corpus_matched_le_total"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "formula_corpus_within_target_2pct \u2264 formula_corpus_within_tolerable_5pct",
+          "statement": "6921 <= 7941",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "formula_corpus_strict_empirical_bundle"
+            "formula_corpus_target_le_tolerable"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "formula_corpus_target_le_tolerable"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"molecular\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "formula_corpus_strict_empirical_bundle"
+            "molecular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -7328,7 +7329,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -7428,26 +7429,26 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "fuel_resolved_entry_count \u2264 fuel_lookup_entry_count",
+          "statement": "34 <= 34",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "fuel_lab_compound_bundle"
+            "fuel_resolved_le_entries"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "fuel_resolved_le_entries"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"chemical\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "fuel_lab_compound_bundle"
+            "chemical_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -7558,12 +7559,12 @@
           "symbol": "connective_plasma_confinement_coupling",
           "statement": "0.131181176323 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "connective_fusion_grid_bundle"
+            "connective_plasma_confinement_pos"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "connective_plasma_confinement_pos"
         },
         {
           "kind": "gt_lit",
@@ -7882,7 +7883,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -7986,7 +7987,7 @@
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -8056,7 +8057,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -8069,8 +8070,8 @@
     {
       "id": "geomagnetism_bundle",
       "lean_module": "GeomagnetismPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 5,
       "conjuncts": [
         {
@@ -8110,23 +8111,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "geomagnetism_match_count \u2264 geomagnetism_observable_count",
+          "statement": "525 <= 525",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "geomagnetism_bundle"
+            "geomagnetism_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "geomagnetism_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_electron",
           "statement": "raw_S(electron) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "electron_raw_S_positive"
@@ -8139,8 +8140,8 @@
     {
       "id": "grace_cryosphere_bundle",
       "lean_module": "GraceCryospherePriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 5,
       "conjuncts": [
         {
@@ -8180,23 +8181,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "grace_cryosphere_match_count \u2264 grace_cryosphere_month_count",
+          "statement": "237 <= 253",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "grace_cryosphere_bundle"
+            "grace_cryosphere_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "grace_cryosphere_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -8346,12 +8347,12 @@
           "symbol": null,
           "statement": "higgs_compute_branching_count + higgs_thesis_target_count = 14",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "higgs_branching_bundle"
+            "higgs_branching_components_sum"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "higgs_branching_components_sum"
         },
         {
           "kind": "lt_half",
@@ -8382,10 +8383,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"higgs\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "higgs_branching_bundle"
+            "higgs_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -8440,10 +8441,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"particle\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "higgs_mass_bundle"
+            "particle_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -8510,7 +8511,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -8660,7 +8661,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -8772,35 +8773,35 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "hydrology_stability_match_count \u2264 hydrology_month_count",
+          "statement": "957 <= 960",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "hydrology_bundle"
+            "hydrology_stability_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "hydrology_stability_match_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "(0 : \u211d) \u2264 hydrology_stability_match_rate",
+          "statement": "(0 : \u211d) <= hydrology_stability_match_rate",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "hydrology_bundle"
+            "hydrology_stability_match_rate_nonneg"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "hydrology_stability_match_rate_nonneg"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -8858,7 +8859,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -8998,7 +8999,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -9044,19 +9045,19 @@
           "symbol": null,
           "statement": "0.451494 < 0.5",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "immunology_bundle"
+            "immunology_median_error_under_half_pct"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "immunology_median_error_under_half_pct"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -9207,8 +9208,8 @@
     {
       "id": "intelligence_compression_priors_bundle",
       "lean_module": "IntelligenceCompressionPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 8,
       "conjuncts": [
         {
@@ -9264,34 +9265,34 @@
           "symbol": "fic_best_intelligence_score",
           "statement": "0.9997093332777109 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "intelligence_compression_priors_bundle"
+            "fic_best_intelligence_score_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "fic_best_intelligence_score_positive"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "fic_fertile_replay_match_count \u2264 fic_sweep_row_count",
+          "statement": "572 <= 572",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "intelligence_compression_priors_bundle"
+            "fic_fertile_replay_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "fic_fertile_replay_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_neural",
           "statement": "raw_S(neural) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "raw_S_positive_of_term1_gt_neg_08"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         },
@@ -9300,7 +9301,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -9450,7 +9451,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -9738,26 +9739,26 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "knowledge_base_observable_verified_matched \u2264 knowledge_base_observable_verified_formulas",
+          "statement": "7941 <= 7941",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "knowledge_base_corpus_bundle"
+            "knowledge_base_observable_matched_le_verified"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "knowledge_base_observable_matched_le_verified"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"molecular\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "knowledge_base_corpus_bundle"
+            "molecular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -9812,10 +9813,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"medical\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "kronos_metrology_bundle"
+            "medical_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -9928,7 +9929,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -9986,7 +9987,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -10056,10 +10057,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"neural\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "linguistics_priors_bundle"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -10192,60 +10193,60 @@
           "symbol": null,
           "statement": "magic_min_resonance_for_emergence < magic_internalized_threshold",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magic_circle_priors_bundle"
+            "magic_min_resonance_lt_internalized"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magic_min_resonance_lt_internalized"
         },
         {
           "kind": "gt_lit",
           "symbol": "magic_imbalance_penalty_max",
           "statement": "0.65 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magic_circle_priors_bundle"
+            "magic_imbalance_penalty_in_unit_interval"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magic_imbalance_penalty_in_unit_interval"
         },
         {
           "kind": "r_le_lit",
           "symbol": "magic_imbalance_penalty_max",
           "statement": "0.65 <= 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magic_circle_priors_bundle"
+            "magic_imbalance_penalty_in_unit_interval"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magic_imbalance_penalty_in_unit_interval"
         },
         {
           "kind": "gt_lit",
           "symbol": "magic_backlash_risk_threshold_high",
           "statement": "0.35 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magic_circle_priors_bundle"
+            "magic_backlash_threshold_in_unit_interval"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magic_backlash_threshold_in_unit_interval"
         },
         {
           "kind": "lt_lit",
           "symbol": "magic_backlash_risk_threshold_high",
           "statement": "0.35 < 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "witness_bundle_link",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magic_circle_priors_bundle"
+            "magic_backlash_threshold_in_unit_interval"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magic_backlash_threshold_in_unit_interval"
         },
         {
           "kind": "opaque_conj",
@@ -10356,22 +10357,22 @@
           "symbol": "magnetic_S_em",
           "statement": "0.5188655207983146 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magnetic_string_bundle"
+            "magnetic_S_em_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magnetic_S_em_positive"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"electron\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magnetic_string_bundle"
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -10381,8 +10382,8 @@
     {
       "id": "magnetosphere_extended_bundle",
       "lean_module": "MagnetosphereExtendedPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 9,
       "conjuncts": [
         {
@@ -10470,21 +10471,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "magnetosphere_extended_historical_match_count \u2264 magnetosphere_extended_historical_hours",
-          "atomic_coverage": false,
-          "coverage_via": null,
+          "statement": "120879 <= 120879",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
-          "matching_atomic_ids": [],
-          "linked_obligation_id": null
+          "matching_atomic_ids": [
+            "magnetosphere_extended_historical_match_le_total"
+          ],
+          "linked_obligation_id": "magnetosphere_extended_historical_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_electron",
           "statement": "raw_S(electron) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "electron_raw_S_positive"
@@ -10492,13 +10495,13 @@
           "linked_obligation_id": null
         }
       ],
-      "conjunct_atomic_coverage_pct": 88.89
+      "conjunct_atomic_coverage_pct": 100.0
     },
     {
       "id": "magnetosphere_bundle",
       "lean_module": "MagnetospherePriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 5,
       "conjuncts": [
         {
@@ -10538,23 +10541,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "magnetosphere_match_count \u2264 magnetosphere_observable_count",
+          "statement": "167 <= 167",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "magnetosphere_bundle"
+            "magnetosphere_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "magnetosphere_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_electron",
           "statement": "raw_S(electron) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "electron_raw_S_positive"
@@ -10624,7 +10627,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -10740,7 +10743,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -10926,7 +10929,7 @@
           "symbol": "raw_S_material",
           "statement": "raw_S(material) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "material_raw_S_positive"
@@ -11076,7 +11079,7 @@
           "symbol": "raw_S_material",
           "statement": "raw_S(material) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "material_raw_S_positive"
@@ -11134,7 +11137,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -11192,7 +11195,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -11250,7 +11253,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -11340,26 +11343,26 @@
           "linked_obligation_id": "math_generator_rule_observable_count_pos"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "math_generator_rule_corpus_count \u2264 math_generator_rule_observable_count",
+          "statement": "61 <= 1520",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "math_generator_priors_bundle"
+            "math_generator_rule_observables_ge_corpora"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "math_generator_rule_observables_ge_corpora"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"particle\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "math_generator_priors_bundle"
+            "particle_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -11462,7 +11465,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -11532,7 +11535,7 @@
           "symbol": "raw_S_material",
           "statement": "raw_S(material) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "material_raw_S_positive"
@@ -11740,7 +11743,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -11856,7 +11859,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -11914,7 +11917,7 @@
           "symbol": "raw_S_astronomical",
           "statement": "raw_S(astronomical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "astronomical_raw_S_positive"
@@ -12168,7 +12171,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -12262,7 +12265,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -12460,24 +12463,24 @@
           "symbol": "canonical_bridge_scale",
           "statement": "1.1099062765752818 > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_cohort_priors_bundle"
+            "canonical_bridge_scale_gt_one"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "canonical_bridge_scale_gt_one"
         },
         {
           "kind": "gt_lit",
           "symbol": "cohort_canonical_scalar_min",
           "statement": "0.25241247006708056 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_cohort_priors_bundle"
+            "cohort_canonical_scalar_min_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cohort_canonical_scalar_min_positive"
         },
         {
           "kind": "eq_nat",
@@ -12492,9 +12495,9 @@
           "linked_obligation_id": "neurolab_smiles_mapped_records_pos"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "neurolab_strict_empirical_records",
-          "statement": "7900 < 7941",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(7900 ) < neurolab_strict_empirical_records",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12520,10 +12523,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"neural\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_cohort_priors_bundle"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -12533,14 +12536,14 @@
     {
       "id": "neuron_cohort_strata_bundle",
       "lean_module": "NeuronCohortStrataPriors",
-      "provable": true,
-      "unprovable_reason": null,
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
       "conjunct_count": 15,
       "conjuncts": [
         {
-          "kind": "nat_gt_lit",
-          "symbol": "held_out_cell_count",
-          "statement": "2100 < 2165",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(2100 ) < held_out_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12574,9 +12577,9 @@
           "linked_obligation_id": "held_out_fi_pearson_r_gt_fifty_five"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "stratum_sst_cell_count",
-          "statement": "150 < 154",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(150 ) < stratum_sst_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12610,9 +12613,9 @@
           "linked_obligation_id": "stratum_sst_fi_pearson_gt_bound"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "stratum_pv_cell_count",
-          "statement": "200 < 222",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(200 ) < stratum_pv_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12646,9 +12649,9 @@
           "linked_obligation_id": "stratum_pv_fi_pearson_gt_bound"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "stratum_vip_cell_count",
-          "statement": "140 < 146",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(140 ) < stratum_vip_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12682,9 +12685,9 @@
           "linked_obligation_id": "stratum_vip_fi_pearson_gt_bound"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "stratum_l23_pyramidal_cell_count",
-          "statement": "1100 < 1127",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(1100 ) < stratum_l23_pyramidal_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12723,8 +12726,8 @@
     {
       "id": "neuron_cohort_train_holdout_bundle",
       "lean_module": "NeuronCohortTrainHoldoutPriors",
-      "provable": true,
-      "unprovable_reason": null,
+      "provable": false,
+      "unprovable_reason": "structural_bundle_excluded",
       "conjunct_count": 7,
       "conjuncts": [
         {
@@ -12752,28 +12755,28 @@
           "linked_obligation_id": "neuron_holdout_cell_count_pos"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "neuron_train_cell_count",
-          "statement": "1744 < 1745",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(1744 ) < neuron_train_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_train_cell_count_pos"
+            "neuron_train_cell_count_ge_gate"
           ],
-          "linked_obligation_id": "neuron_train_cell_count_pos"
+          "linked_obligation_id": "neuron_train_cell_count_ge_gate"
         },
         {
-          "kind": "nat_gt_lit",
-          "symbol": "neuron_holdout_cell_count",
-          "statement": "419 < 420",
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(419 ) < neuron_holdout_cell_count",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_holdout_cell_count_pos"
+            "neuron_holdout_cell_count_ge_gate"
           ],
-          "linked_obligation_id": "neuron_holdout_cell_count_pos"
+          "linked_obligation_id": "neuron_holdout_cell_count_ge_gate"
         },
         {
           "kind": "lt_lit",
@@ -12874,34 +12877,34 @@
           "symbol": null,
           "statement": "|k - neuron_K_cached| < (5e-4 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_hybrid_priors_bundle"
+            "neuron_K_matches_thalamic_gate"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "neuron_K_matches_thalamic_gate"
         },
         {
           "kind": "gt_lit",
           "symbol": "neuron_canonical_neuroscience_S",
           "statement": "0.5143619629083619 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_hybrid_priors_bundle"
+            "neuron_canonical_neuroscience_S_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "neuron_canonical_neuroscience_S_positive"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"neural\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neuron_hybrid_priors_bundle"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -12980,10 +12983,10 @@
           "symbol": "raw_S_neural",
           "statement": "raw_S(neural) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "raw_S_positive_of_term1_gt_neg_08"
+            "neural_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -13038,7 +13041,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -13096,7 +13099,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -13212,7 +13215,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -13270,7 +13273,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -13364,7 +13367,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -13422,7 +13425,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -13526,7 +13529,7 @@
           "symbol": "raw_S_astronomical",
           "statement": "raw_S(astronomical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "astronomical_raw_S_positive"
@@ -13596,7 +13599,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -13666,7 +13669,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -13782,7 +13785,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -13864,12 +13867,12 @@
           "symbol": null,
           "statement": "particle_smiles_record_count + particle_thesis_wave_count + particle_wave4_count + particle_math_physics_rule_count = 98",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "particle_physics_bundle"
+            "particle_physics_components_sum"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "particle_physics_components_sum"
         },
         {
           "kind": "lt_half",
@@ -13900,10 +13903,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"particle\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "particle_physics_bundle"
+            "particle_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -14154,7 +14157,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -14212,7 +14215,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -14352,7 +14355,7 @@
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -14410,7 +14413,7 @@
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -14456,19 +14459,19 @@
           "symbol": null,
           "statement": "0.0 < 0.5",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "plasma_physics_bundle"
+            "plasma_physics_median_error_under_half_pct"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "plasma_physics_median_error_under_half_pct"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -14572,7 +14575,7 @@
           "symbol": "raw_S_galactic",
           "statement": "raw_S(galactic) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "galactic_raw_S_positive"
@@ -14892,7 +14895,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "distinct_aa_trinary_patterns \u2264 genetic_trinary_alphabet_card ^ 3",
+          "statement": "distinct_aa_trinary_patterns <= genetic_trinary_alphabet_card ^ 3",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
@@ -14906,264 +14909,264 @@
           "symbol": "genetic_trinary_alphabet_card",
           "statement": "27 = 27",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "brain_prior_codon_pattern_space_eq_twenty_seven"
+            "protein_trinary_pattern_space_eq_twenty_seven"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "protein_trinary_pattern_space_eq_twenty_seven"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "20.0 = 20",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "protein_amino_acid_genomic_identity"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "protein_amino_acid_genomic_identity"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(alanine_charge, alanine_polarity, alanine_volume) = (0, -1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "alanine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "alanine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(cysteine_charge, cysteine_polarity, cysteine_volume) = (0, 0, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "cysteine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "cysteine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(aspartic_acid_charge, aspartic_acid_polarity, aspartic_acid_volume) = (-1, 1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "aspartic_acid_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "aspartic_acid_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(glutamic_acid_charge, glutamic_acid_polarity, glutamic_acid_volume) = (-1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "glutamic_acid_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "glutamic_acid_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(phenylalanine_charge, phenylalanine_polarity, phenylalanine_volume) = (0, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "phenylalanine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "phenylalanine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(glycine_charge, glycine_polarity, glycine_volume) = (0, -1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "glycine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "glycine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(histidine_charge, histidine_polarity, histidine_volume) = (1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "histidine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "histidine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(isoleucine_charge, isoleucine_polarity, isoleucine_volume) = (0, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "isoleucine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "isoleucine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(lysine_charge, lysine_polarity, lysine_volume) = (1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "lysine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "lysine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(leucine_charge, leucine_polarity, leucine_volume) = (0, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "leucine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "leucine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(methionine_charge, methionine_polarity, methionine_volume) = (0, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "methionine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "methionine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(asparagine_charge, asparagine_polarity, asparagine_volume) = (0, 1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "asparagine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "asparagine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(proline_charge, proline_polarity, proline_volume) = (0, -1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "proline_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "proline_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(glutamine_charge, glutamine_polarity, glutamine_volume) = (0, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "glutamine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "glutamine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(arginine_charge, arginine_polarity, arginine_volume) = (1, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "arginine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "arginine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(serine_charge, serine_polarity, serine_volume) = (0, 1, -1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "serine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "serine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(threonine_charge, threonine_polarity, threonine_volume) = (0, 1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "threonine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "threonine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(valine_charge, valine_polarity, valine_volume) = (0, -1, 0)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "valine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "valine_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "tryptophan_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "tryptophan_trinary_phase"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_amino_acid_trinary_bundle"
+            "tyrosine_trinary_phase"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "tyrosine_trinary_phase"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -15228,7 +15231,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -15286,7 +15289,7 @@
           "symbol": "raw_S_electron",
           "statement": "raw_S(electron) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "electron_raw_S_positive"
@@ -15494,7 +15497,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -15564,7 +15567,7 @@
           "symbol": "raw_S_particle",
           "statement": "raw_S(particle) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "particle_raw_S_positive"
@@ -15704,7 +15707,7 @@
           "symbol": "raw_S_material",
           "statement": "raw_S(material) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "material_raw_S_positive"
@@ -15774,10 +15777,10 @@
           "symbol": "raw_S_quantum",
           "statement": "raw_S(quantum) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "witness_bundle_link",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "lab_quantum_raw_S_positive"
+            "quantum_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15844,10 +15847,10 @@
           "symbol": "raw_S_quantum",
           "statement": "raw_S(quantum) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "witness_bundle_link",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "lab_quantum_raw_S_positive"
+            "quantum_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -15902,7 +15905,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -16064,7 +16067,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -16122,7 +16125,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -16181,8 +16184,8 @@
     {
       "id": "seismology_deep_bundle",
       "lean_module": "SeismologyDeepPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 7,
       "conjuncts": [
         {
@@ -16246,23 +16249,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "seismology_deep_match_count \u2264 seismology_deep_observable_count",
+          "statement": "810 <= 1000",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "seismology_deep_bundle"
+            "seismology_deep_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "seismology_deep_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -16275,8 +16278,8 @@
     {
       "id": "seismology_bundle",
       "lean_module": "SeismologyPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 5,
       "conjuncts": [
         {
@@ -16316,23 +16319,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "seismology_match_count \u2264 seismology_event_count",
+          "statement": "493 <= 500",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "seismology_bundle"
+            "seismology_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "seismology_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -16528,7 +16531,7 @@
           "symbol": "raw_S_astronomical",
           "statement": "raw_S(astronomical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "astronomical_raw_S_positive"
@@ -16598,7 +16601,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -16702,10 +16705,10 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "consciousness_raw_S_positive"
+            "lab_consciousness_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -16760,7 +16763,7 @@
           "symbol": "raw_S_fusion",
           "statement": "raw_S(fusion) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "fusion_raw_S_positive"
@@ -16826,26 +16829,26 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "space_weather_stability_match_count \u2264 space_weather_kp_record_count",
+          "statement": "271810 <= 271813",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "space_weather_bundle"
+            "space_weather_stability_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "space_weather_stability_match_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"fusion\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "space_weather_bundle"
+            "fusion_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -16912,12 +16915,12 @@
           "symbol": "species_metal_count",
           "statement": "141 = 141",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "species_catalog_bundle"
+            "species_total_count_eq_sum"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "species_total_count_eq_sum"
         },
         {
           "kind": "eq_nat",
@@ -16936,10 +16939,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"material\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "species_catalog_bundle"
+            "material_raw_S_positive"
           ],
           "linked_obligation_id": null
         },
@@ -16948,10 +16951,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"molecular\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "species_catalog_bundle"
+            "molecular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -17018,7 +17021,7 @@
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -17088,7 +17091,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -17248,7 +17251,7 @@
           "symbol": "codon_table_count",
           "statement": "64 = 64",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "codon_table_count_eq_sixty_four"
@@ -17354,7 +17357,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -17654,7 +17657,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -17758,7 +17761,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -17771,8 +17774,8 @@
     {
       "id": "tectonics_bundle",
       "lean_module": "TectonicsPriors",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 6,
       "conjuncts": [
         {
@@ -17824,23 +17827,23 @@
           "linked_obligation_id": null
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "tectonics_match_count \u2264 tectonics_event_count",
+          "statement": "494 <= 500",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "tectonics_bundle"
+            "tectonics_match_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "tectonics_match_le_total"
         },
         {
           "kind": "pos",
           "symbol": "raw_S_energy",
           "statement": "raw_S(energy) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "energy_raw_S_positive"
@@ -18005,19 +18008,19 @@
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "thesis_wave_target_count_pos"
+            "thesis_simulation_components_le_total"
           ],
-          "linked_obligation_id": "thesis_wave_target_count_pos"
+          "linked_obligation_id": "thesis_simulation_components_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"particle\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "thesis_simulation_bundle"
+            "particle_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -18348,7 +18351,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -18418,10 +18421,10 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "consciousness_raw_S_positive"
+            "lab_consciousness_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -18476,7 +18479,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -18534,7 +18537,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -18592,7 +18595,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -18686,22 +18689,22 @@
           "symbol": null,
           "statement": "trinary_os_hello_bytes < trinary_os_spawn_join_bytes",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "trinary_os_fsotb_bundle"
+            "trinary_os_hello_smaller_than_spawn"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "trinary_os_hello_smaller_than_spawn"
         },
         {
           "kind": "gt_lit",
           "symbol": "k",
           "statement": "0.420222080893624 > 0.42",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "adv_brk_observable_count_pos"
+            "k_gt_0420"
           ],
           "linked_obligation_id": null
         }
@@ -18756,7 +18759,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -18826,7 +18829,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -19042,26 +19045,26 @@
           "linked_obligation_id": "unified_db_top_project_count_pos"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "unified_db_strict_empirical \u2264 unified_db_total_candidates",
+          "statement": "9403 <= 13637",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "unified_db_meta_bundle"
+            "unified_db_strict_le_total"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "unified_db_strict_le_total"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"molecular\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "unified_db_meta_bundle"
+            "lab_molecular_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -19116,7 +19119,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -19244,34 +19247,34 @@
           "symbol": "vibra_pattern_stability",
           "statement": "0.7662378870755164 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "vibra_register_bundle"
+            "vibra_pattern_stability_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "vibra_pattern_stability_positive"
         },
         {
           "kind": "gt_lit",
           "symbol": "vibra_avg_S_mean",
           "statement": "0.4744906315011612 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "vibra_register_bundle"
+            "vibra_avg_S_mean_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "vibra_avg_S_mean_positive"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "raw_S (get_domain_params \"ai\") \u2264 0",
+          "statement": "raw_S (get_domain_params \"ai\") <= 0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "vibra_register_bundle"
+            "ai_raw_S_non_positive"
           ],
           "linked_obligation_id": null
         }
@@ -19338,7 +19341,7 @@
           "symbol": "raw_S_medical",
           "statement": "raw_S(medical) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "medical_raw_S_positive"
@@ -19442,7 +19445,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -19464,24 +19467,24 @@
           "symbol": "warp_stabilization_margin",
           "statement": "1.722776467449 > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "warp_stable_run_band"
+            "warp_stabilization_margin_gt_one"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "warp_stabilization_margin_gt_one"
         },
         {
           "kind": "gt_lit",
           "symbol": "warp_psi_run_sustained",
           "statement": "0.14178559741 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "warp_stable_run_band"
+            "warp_psi_run_pos"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "warp_psi_run_pos"
         }
       ],
       "conjunct_atomic_coverage_pct": 100.0
@@ -19556,12 +19559,12 @@
           "symbol": "warp_stabilization_margin",
           "statement": "1.722776467449 > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "warp_actuation_stabilized_bundle"
+            "warp_stabilization_margin_gt_one"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "warp_stabilization_margin_gt_one"
         },
         {
           "kind": "gt_lit",
@@ -19650,22 +19653,22 @@
           "symbol": "warp_stabilization_margin_portal",
           "statement": "1.722776467449 > 1.0",
           "atomic_coverage": true,
-          "coverage_via": "linked_obligation_id",
-          "lean_bundle_tautology": false,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "warp_portal_stabilization_margin_gt_one"
+            "warp_bh_wh_portal_bundle"
           ],
-          "linked_obligation_id": "warp_portal_stabilization_margin_gt_one"
+          "linked_obligation_id": null
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"blackhole\")",
           "atomic_coverage": true,
-          "coverage_via": "linked_obligation_id",
-          "lean_bundle_tautology": false,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "blackhole_raw_S_positive"
+            "warp_bh_wh_portal_bundle"
           ],
           "linked_obligation_id": null
         }
@@ -19778,22 +19781,22 @@
           "symbol": "weather_S_min",
           "statement": "0.364542 > 0.0",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "weather_priors_bundle"
+            "weather_S_min_positive"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "weather_S_min_positive"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"medical\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "weather_priors_bundle"
+            "medical_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -19848,7 +19851,7 @@
           "symbol": "raw_S_consciousness",
           "statement": "raw_S(consciousness) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "consciousness_raw_S_positive"
@@ -20102,7 +20105,7 @@
           "symbol": "raw_S_biological",
           "statement": "raw_S(biological) > 0",
           "atomic_coverage": true,
-          "coverage_via": "inferred_atomic_link",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "biological_raw_S_positive"
@@ -20122,7 +20125,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "term1 (get_domain_params \"cmb\") < 0 := by set p := get_domain_params \"cmb\" have h_obs := cmb_observed_false have h_quirk : quirkMod p = 1 := by simp [quirkMod, p, get_domain_params, h_obs] have h_D_bounds : (20 : \u211d) \u2264 p.D_eff",
+          "statement": "term1 (get_domain_params \"cmb\") < 0 := by set p := get_domain_params \"cmb\" have h_obs := cmb_observed_false have h_quirk : quirkMod p = 1 := by simp [quirkMod, p, get_domain_params, h_obs] have h_D_bounds : (20 : \u211d) <= p.D_eff",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -20134,7 +20137,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "p.D_eff \u2264 30 := by simp [p, get_domain_params]; norm_num have h_adj_pos : (0 : \u211d) < 1 + new_perceived_param * log (p.D_eff / 25) := lt_trans (by norm_num) (perceived_adjust_lo p h_D_bounds) have h_base := term1_base_negative_for_high_D_eff p h_D_bounds.1 h_obs cmb_delta_bounds (by simp [p, get_domain_params]) (by simp [p, get_domain_params]) have h_term1 : term1 p = term1_base p * (1 + new_perceived_param * log (p.D_eff / 25))",
+          "statement": "p.D_eff <= 30 := by simp [p, get_domain_params]; norm_num have h_adj_pos : (0 : \u211d) < 1 + new_perceived_param * log (p.D_eff / 25) := lt_trans (by norm_num) (perceived_adjust_lo p h_D_bounds) have h_base := term1_base_negative_for_high_D_eff p h_D_bounds.1 h_obs cmb_delta_bounds (by simp [p, get_domain_params]) (by simp [p, get_domain_params]) have h_term1 : term1 p = term1_base p * (1 + new_perceived_param * log (p.D_eff / 25))",
           "atomic_coverage": true,
           "coverage_via": "inferred_atomic_link",
           "lean_bundle_tautology": false,
@@ -20156,7 +20159,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "raw_S (get_domain_params \"quantum\") > 0 := by have h_obs : (get_domain_params \"quantum\").observed = true := by simp [get_domain_params] have h_delta : (0.35 : \u211d) \u2264 (get_domain_params \"quantum\").delta_psi",
+          "statement": "raw_S (get_domain_params \"quantum\") > 0 := by have h_obs : (get_domain_params \"quantum\").observed = true := by simp [get_domain_params] have h_delta : (0.35 : \u211d) <= (get_domain_params \"quantum\").delta_psi",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -20168,7 +20171,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "(get_domain_params \"quantum\").delta_psi \u2264 (1.3 : \u211d) := by simp [get_domain_params]; constructor <;> norm_num have h_dp : (0.7 : \u211d) \u2264 (get_domain_params \"quantum\").delta_psi := by simp [get_domain_params]; norm_num have hN : (0 : \u211d) < (get_domain_params \"quantum\").N := by simp [get_domain_params] have hP : (0 : \u211d) < (get_domain_params \"quantum\").P := by simp [get_domain_params] have hD : (6 : \u211d) \u2264 (get_domain_params \"quantum\").D_eff := by simp [get_domain_params] have h_term1 := domain_term1_positive_of_params (get_domain_params \"quantum\") h_obs h_delta h_dp hN hP hD have h_term3 : abs (term3 (get_domain_params \"quantum\")) < (0.2 : \u211d)",
+          "statement": "(get_domain_params \"quantum\").delta_psi <= (1.3 : \u211d) := by simp [get_domain_params]; constructor <;> norm_num have h_dp : (0.7 : \u211d) <= (get_domain_params \"quantum\").delta_psi := by simp [get_domain_params]; norm_num have hN : (0 : \u211d) < (get_domain_params \"quantum\").N := by simp [get_domain_params] have hP : (0 : \u211d) < (get_domain_params \"quantum\").P := by simp [get_domain_params] have hD : (6 : \u211d) <= (get_domain_params \"quantum\").D_eff := by simp [get_domain_params] have h_term1 := domain_term1_positive_of_params (get_domain_params \"quantum\") h_obs h_delta h_dp hN hP hD have h_term3 : abs (term3 (get_domain_params \"quantum\")) < (0.2 : \u211d)",
           "atomic_coverage": true,
           "coverage_via": "inferred_atomic_link",
           "lean_bundle_tautology": false,
@@ -20190,7 +20193,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "raw_S (get_domain_params \"proton\") > 0 := by have h_obs : (get_domain_params \"proton\").observed = true := by simp [get_domain_params] have h_delta : (0.35 : \u211d) \u2264 (get_domain_params \"proton\").delta_psi",
+          "statement": "raw_S (get_domain_params \"proton\") > 0 := by have h_obs : (get_domain_params \"proton\").observed = true := by simp [get_domain_params] have h_delta : (0.35 : \u211d) <= (get_domain_params \"proton\").delta_psi",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -20202,7 +20205,7 @@
         {
           "kind": "opaque_conj",
           "symbol": null,
-          "statement": "(get_domain_params \"proton\").delta_psi \u2264 (1.3 : \u211d) := by simp [get_domain_params]; constructor <;> norm_num have h_dp : (0.7 : \u211d) \u2264 (get_domain_params \"proton\").delta_psi := by simp [get_domain_params] have hN : (0 : \u211d) < (get_domain_params \"proton\").N := by simp [get_domain_params] have hP : (0 : \u211d) < (get_domain_params \"proton\").P := by simp [get_domain_params] have hD : (6 : \u211d) \u2264 (get_domain_params \"proton\").D_eff := by simp [get_domain_params]; norm_num have h_term1 := domain_term1_positive_of_params (get_domain_params \"proton\") h_obs h_delta h_dp hN hP hD have h_term3 : abs (term3 (get_domain_params \"proton\")) < (0.2 : \u211d)",
+          "statement": "(get_domain_params \"proton\").delta_psi <= (1.3 : \u211d) := by simp [get_domain_params]; constructor <;> norm_num have h_dp : (0.7 : \u211d) <= (get_domain_params \"proton\").delta_psi := by simp [get_domain_params] have hN : (0 : \u211d) < (get_domain_params \"proton\").N := by simp [get_domain_params] have hP : (0 : \u211d) < (get_domain_params \"proton\").P := by simp [get_domain_params] have hD : (6 : \u211d) <= (get_domain_params \"proton\").D_eff := by simp [get_domain_params]; norm_num have h_term1 := domain_term1_positive_of_params (get_domain_params \"proton\") h_obs h_delta h_dp hN hP hD have h_term3 : abs (term3 (get_domain_params \"proton\")) < (0.2 : \u211d)",
           "atomic_coverage": true,
           "coverage_via": "inferred_atomic_link",
           "lean_bundle_tautology": false,
@@ -20217,8 +20220,8 @@
     {
       "id": "genomic_exact_identity_bundle",
       "lean_module": "Genomic",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 6,
       "conjuncts": [
         {
@@ -20226,71 +20229,75 @@
           "symbol": null,
           "statement": "64 = 64",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "genomic_exact_identity_bundle"
+            "codon_table_size_eq_sixty_four"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_table_size_eq_sixty_four"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "27 = 27",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "genomic_exact_identity_bundle"
+            "trinary_pattern_count_eq_twenty_seven"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "trinary_pattern_count_eq_twenty_seven"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "0.046875 = 0.046875",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "genomic_exact_identity_bundle"
+            "stop_codons_fraction_eq"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "stop_codons_fraction_eq"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "2.37037037037037 = 2.3703703703703702",
-          "atomic_coverage": false,
-          "coverage_via": null,
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
-          "matching_atomic_ids": [],
-          "linked_obligation_id": null
+          "matching_atomic_ids": [
+            "codon_trinary_degeneracy_eq"
+          ],
+          "linked_obligation_id": "codon_trinary_degeneracy_eq"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "20.0 = 20",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "genomic_exact_identity_bundle"
+            "amino_acids_canonical_eq_twenty"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "amino_acids_canonical_eq_twenty"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "abs_diff_lt_lit",
           "symbol": null,
-          "statement": "|(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
-          "atomic_coverage": false,
-          "coverage_via": null,
+          "statement": "3.552713678800501e-15 < 0.01",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
-          "matching_atomic_ids": [],
-          "linked_obligation_id": null
+          "matching_atomic_ids": [
+            "autosome_haploid_count_eq_twenty_two"
+          ],
+          "linked_obligation_id": "autosome_haploid_count_eq_twenty_two"
         }
       ],
-      "conjunct_atomic_coverage_pct": 66.67
+      "conjunct_atomic_coverage_pct": 100.0
     },
     {
       "id": "neurolab_bio_sign_bundle",
@@ -20495,8 +20502,8 @@
     {
       "id": "neurolab_genomic_exact_bundle",
       "lean_module": "Genomic",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
+      "provable": true,
+      "unprovable_reason": null,
       "conjunct_count": 6,
       "conjuncts": [
         {
@@ -20504,71 +20511,75 @@
           "symbol": null,
           "statement": "64 = 64",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neurolab_genomic_exact_bundle"
+            "codon_table_size_eq_sixty_four"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "codon_table_size_eq_sixty_four"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "27 = 27",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neurolab_genomic_exact_bundle"
+            "trinary_pattern_count_eq_twenty_seven"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "trinary_pattern_count_eq_twenty_seven"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "0.046875 = 0.046875",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neurolab_genomic_exact_bundle"
+            "stop_codons_fraction_eq"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "stop_codons_fraction_eq"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "2.37037037037037 = 2.3703703703703702",
-          "atomic_coverage": false,
-          "coverage_via": null,
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
-          "matching_atomic_ids": [],
-          "linked_obligation_id": null
+          "matching_atomic_ids": [
+            "codon_trinary_degeneracy_eq"
+          ],
+          "linked_obligation_id": "codon_trinary_degeneracy_eq"
         },
         {
           "kind": "r_eq_lit",
           "symbol": null,
           "statement": "20.0 = 20",
           "atomic_coverage": true,
-          "coverage_via": "numeric_conjunct_tautology",
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "neurolab_genomic_exact_bundle"
+            "amino_acids_canonical_eq_twenty"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "amino_acids_canonical_eq_twenty"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "abs_diff_lt_lit",
           "symbol": null,
-          "statement": "|(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
-          "atomic_coverage": false,
-          "coverage_via": null,
+          "statement": "3.552713678800501e-15 < 0.01",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
-          "matching_atomic_ids": [],
-          "linked_obligation_id": null
+          "matching_atomic_ids": [
+            "autosome_haploid_count_eq_twenty_two"
+          ],
+          "linked_obligation_id": "autosome_haploid_count_eq_twenty_two"
         }
       ],
-      "conjunct_atomic_coverage_pct": 66.67
+      "conjunct_atomic_coverage_pct": 100.0
     },
     {
       "id": "protein_formula_closed_form_bundle",
@@ -20621,9 +20632,9 @@
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "disulfide_bridge_force_pos"
+            "disulfide_bridge_force_gt_seventeen"
           ],
-          "linked_obligation_id": "disulfide_bridge_force_pos"
+          "linked_obligation_id": "disulfide_bridge_force_gt_seventeen"
         },
         {
           "kind": "lt_lit",
@@ -20633,9 +20644,9 @@
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "disulfide_bridge_force_pos"
+            "disulfide_bridge_force_lt_eighteen"
           ],
-          "linked_obligation_id": "disulfide_bridge_force_pos"
+          "linked_obligation_id": "disulfide_bridge_force_lt_eighteen"
         },
         {
           "kind": "pos",
@@ -20654,10 +20665,10 @@
           "symbol": null,
           "statement": "20.0 = 20",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "protein_formula_closed_form_bundle"
+            "amino_acids_canonical_eq_twenty"
           ],
           "linked_obligation_id": null
         }
@@ -20696,26 +20707,26 @@
           "linked_obligation_id": "lean_proofs_domain_proven_count_pos"
         },
         {
-          "kind": "opaque_conj",
+          "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "lean_proofs_domain_proven_count \u2264 lean_proofs_formal_constant_count",
+          "statement": "28 <= 28",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "lean_proofs_constant_bundle"
+            "lean_proofs_domain_proven_le_formal"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "lean_proofs_domain_proven_le_formal"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "|k - smiles_k_cached| < (5e-4 : \u211d)",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "lean_proofs_constant_bundle"
+            "smiles_k_matches_formal_k"
           ],
           "linked_obligation_id": null
         }
@@ -20782,22 +20793,22 @@
           "symbol": null,
           "statement": "lambda_cdm_wave1_count + lambda_cdm_wave2_count + lambda_cdm_wave3_count = 30",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_lambda_cdm_bundle"
+            "lambda_cdm_wave_partition"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "lambda_cdm_wave_partition"
         },
         {
           "kind": "opaque_conj",
           "symbol": null,
           "statement": "(0 : \u211d) < omega_b_h2_fsot S_cosm_cached S_quant_cached",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "cosmology_lambda_cdm_bundle"
+            "omega_b_h2_fsot_cached_pos"
           ],
           "linked_obligation_id": null
         }
@@ -20828,12 +20839,12 @@
           "symbol": "photonic_trinary_neg_count",
           "statement": "180 = 180",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "photonic_forge_bundle"
+            "photonic_trinary_partition"
           ],
-          "linked_obligation_id": null
+          "linked_obligation_id": "photonic_trinary_partition"
         },
         {
           "kind": "eq_nat",
@@ -20876,10 +20887,10 @@
           "symbol": null,
           "statement": "(0 : \u211d) < raw_S (get_domain_params \"electron\")",
           "atomic_coverage": true,
-          "coverage_via": "lean_bundle_norm_num",
-          "lean_bundle_tautology": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "photonic_forge_bundle"
+            "electron_raw_S_positive"
           ],
           "linked_obligation_id": null
         }
@@ -20922,10 +20933,10 @@
           "symbol": null,
           "statement": "(1 : \u211d) < warp_stabilization_margin",
           "atomic_coverage": true,
-          "coverage_via": "linked_obligation_id",
-          "lean_bundle_tautology": false,
+          "coverage_via": "lean_bundle_norm_num",
+          "lean_bundle_tautology": true,
           "matching_atomic_ids": [
-            "warp_stabilization_margin_gt_one"
+            "cross_proof_connective_spine_bundle"
           ],
           "linked_obligation_id": null
         }

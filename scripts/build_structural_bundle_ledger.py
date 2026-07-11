@@ -30,6 +30,8 @@ _NORM_NUM_KINDS = frozenset(
         "nat_gt_lit",
         "pos",
         "int_tuple3_eq",
+        "nat_le_sym",
+        "abs_diff_lt_lit",
     }
 )
 
@@ -91,8 +93,14 @@ def _resolve_conjunct(
             return "numeric_conjunct_tautology", [bundle_id]
         if kind == "lt_lit" and float(c["value"]) < float(c["bound"]):
             return "numeric_conjunct_tautology", [bundle_id]
-        if kind == "r_eq_lit" and float(c["value"]) == float(c["right_value"]):
+        if kind == "r_eq_lit" and abs(float(c["value"]) - float(c["right_value"])) < 1e-9:
             return "numeric_conjunct_tautology", [bundle_id]
+        if kind == "nat_le_sym" and int(c["value"]) <= int(c["right_value"]):
+            return "numeric_conjunct_tautology", [bundle_id]
+        if kind == "abs_diff_lt_lit":
+            diff = c.get("diff", c.get("value"))
+            if diff is not None and float(diff) < float(c["bound"]):
+                return "numeric_conjunct_tautology", [bundle_id]
     except (KeyError, TypeError, ValueError):
         pass
 

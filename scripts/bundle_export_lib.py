@@ -20,6 +20,9 @@ def _strip_comments(text: str) -> str:
 
 def _normalize_conjunct(raw: str) -> str:
     s = " ".join(raw.strip().split())
+    s = s.replace("≤", "<=").replace("≥", ">=")
+    s = re.sub(r":\s*ℤ", "", s)
+    s = re.sub(r":\s*ℕ", "", s)
     if s.startswith("(") and s.endswith(")"):
         depth = 0
         wraps = True
@@ -287,6 +290,21 @@ def classify_conjunct(
         }
 
     m = re.fullmatch(r"(\w+)\s*(?:≤|<=)\s*(\w+)", c)
+    if m and m.group(1) in n_defs and m.group(2) in n_defs:
+        left = n_defs[m.group(1)]
+        right = n_defs[m.group(2)]
+        if left <= right:
+            return {
+                "kind": "nat_le_sym",
+                "left": m.group(1),
+                "right": m.group(2),
+                "value": left,
+                "right_value": right,
+                "statement": f"{left} <= {right}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*(?:≤|<=)\s*(\w+)", c)
     if m and m.group(1) in r_defs and m.group(2) in r_defs:
         if r_defs[m.group(1)] <= r_defs[m.group(2)]:
             return {
@@ -387,6 +405,43 @@ def classify_conjunct(
             "opaque": True,
         }
 
+    m = re.fullmatch(
+        r"\|\((.+?)\)\s*-\s*(\d+)\|\s*<\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)",
+        c,
+    )
+    if m:
+        bound = _parse_float_lit(m.group(3))
+        if bound is not None:
+            inner = m.group(1)
+            target = int(m.group(2))
+            val = None
+            if "phi ^ 5" in inner and "phi ^ (-5" in inner:
+                try:
+                    from cross_proof_lib import _eval_r_expr  # noqa: WPS433
+
+                    expr_val = _eval_r_expr(
+                        f"abs((2 * (phi ^ 5 - phi ^ -5)) - {target})",
+                        r_defs,
+                        n_defs,
+                    )
+                    if expr_val is not None:
+                        val = expr_val
+                except Exception:
+                    pass
+            row: dict[str, Any] = {
+                "kind": "abs_diff_lt_lit",
+                "left_expr": inner,
+                "right": str(target),
+                "bound": bound,
+                "statement": f"|({inner}) - {target}| < {bound}",
+                "lean_conjunct": c,
+            }
+            if val is not None:
+                row["diff"] = val
+                row["value"] = val
+                row["statement"] = f"{val} < {bound}"
+            return row
+
     return {
         "kind": "opaque_conj",
         "statement": c,
@@ -408,10 +463,11 @@ def _extract_proof_body(text: str, theorem: str) -> str:
             depth += 1
         elif ch == ")":
             depth = max(0, depth - 1)
-        elif rest.startswith("theorem ", i) and depth == 0:
-            break
-        elif rest.startswith("end", i) and depth == 0:
-            break
+        elif depth == 0:
+            if rest.startswith("theorem ", i):
+                break
+            if re.match(r"\bend\b", rest[i:]):
+                break
         i += 1
     return rest[:i]
 
@@ -442,6 +498,27 @@ def _atomic_candidates(sym: str, kind: str | None, val: object | None) -> list[s
     if sym.endswith("_median_error_pct"):
         base = sym[: -len("_median_error_pct")]
         cands.append(f"{base}_median_under_half_pct")
+    if kind == "nat_le_sym":
+        left = row.get("left") or sym
+        if left:
+            cands.extend(
+                [
+                    f"{left}_match_le_total",
+                    f"{left}_le_total",
+                ]
+            )
+            right = row.get("right")
+            if right:
+                cands.append(f"{left}_le_{right}")
+    if kind == "abs_diff_lt_lit":
+        cands.extend(
+            [
+                "autosome_haploid_count_eq_twenty_two",
+                "codon_trinary_degeneracy_eq",
+            ]
+        )
+    if kind == "r_eq_lit" and row.get("lean_conjunct", "").find("4 : ℝ) / 3") >= 0:
+        cands.append("codon_trinary_degeneracy_eq")
     if kind == "eq_nat_arith" and sym:
         for suffix in ("_counts_sum", "_from_dna", "_count_eq", "_sum"):
             if sym.endswith("_plus") or sym.endswith("_count"):
@@ -486,24 +563,63 @@ def _find_atomic_link(
     if row.get("kind") == "opaque_conj":
         stmt = row.get("statement") or ""
         for tok in re.findall(r"[a-z][a-z0-9_]*", stmt):
-            for cand in (tok, f"{tok}_in_bounds", f"{tok}_under_half_pct"):
+            for cand in (
+                tok,
+                f"{tok}_in_bounds",
+                f"{tok}_under_half_pct",
+                f"{tok}_match_le_total",
+            ):
                 if cand in atomic_by_id:
                     return cand
+    left = row.get("left")
+    if left and row.get("kind") == "nat_le_sym":
+        for cand in (f"{left}_match_le_total", f"{left}_le_total"):
+            if cand in atomic_by_id:
+                return cand
     return None
+
+
+def _split_refine_tuple(content: str) -> list[str]:
+    items: list[str] = []
+    depth = 0
+    current: list[str] = []
+    for ch in content:
+        if ch in "([{⟨<":
+            depth += 1
+        elif ch in ")]}⟩>":
+            depth -= 1
+        if ch == "," and depth == 0:
+            item = "".join(current).strip()
+            if item:
+                items.append(item)
+            current = []
+        else:
+            current.append(ch)
+    item = "".join(current).strip()
+    if item:
+        items.append(item)
+    return items
+
+
+def _refine_item_witness(item: str) -> str | None:
+    item = item.strip().lstrip("·").strip()
+    if not item:
+        return None
+    if item.startswith("by ") or (NORM_NUM_RE.search(item) and "exact" not in item):
+        return None
+    em = EXACT_WITNESS_RE.search(item)
+    if em:
+        return em.group(1)
+    m = re.match(r"^(\w+)", item)
+    return m.group(1) if m else None
 
 
 def _witness_ids(proof_body: str) -> list[str | None]:
     witnesses: list[str | None] = []
-    if "refine ⟨" in proof_body or "refine \u27e8" in proof_body:
-        for line in proof_body.splitlines():
-            line = line.strip()
-            em = EXACT_WITNESS_RE.search(line)
-            if em:
-                witnesses.append(em.group(1))
-            elif NORM_NUM_RE.search(line) and (line.startswith("by") or "unfold" in line):
-                witnesses.append(None)
-            elif em := EXACT_WITNESS_RE.search(line.removeprefix("·").strip()):
-                witnesses.append(em.group(1))
+    refine_m = re.search(r"refine\s*[⟨<](.+?)[⟩>]", proof_body, re.DOTALL)
+    if refine_m:
+        for item in _split_refine_tuple(refine_m.group(1)):
+            witnesses.append(_refine_item_witness(item))
         if witnesses:
             return witnesses
     for em in EXACT_WITNESS_RE.finditer(proof_body):
