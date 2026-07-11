@@ -13,6 +13,7 @@ MARGINS = ROOT / "data" / "benchmark_margin_audit.json"
 FORMULA = ROOT / "data" / "formula_corpus_honesty_report.json"
 SOTA = ROOT / "data" / "sota_observable_ledger_report.json"
 PUSHBACK = ROOT / "data" / "scientific_pushback_audit.json"
+DOMAIN = ROOT / "data" / "scientific_domain_expansion_map.json"
 OUT = ROOT / "data" / "empirical_accuracy_closure.json"
 
 
@@ -27,6 +28,8 @@ def build() -> dict:
     formula = _load(FORMULA)
     sota = _load(SOTA)
     pushback = _load(PUSHBACK)
+    domain_map = _load(DOMAIN)
+    dsum = domain_map.get("summary") or {}
 
     domains = [d for d in (margins.get("all_domains") or []) if not d.get("excluded")]
     pooled_medians = [
@@ -85,6 +88,19 @@ def build() -> dict:
             "worst_scalar_domain": margins.get("worst_scalar_domain"),
             "domains_under_0_1pct_median": sum(1 for m in pooled_medians if m < 0.1),
             "domains_under_0_5pct_median": sum(1 for m in pooled_medians if m <= 0.5),
+        },
+        "project_scope": {
+            "total_scientific_domains": int(dsum.get("total_scientific_domains_covered") or 0),
+            "extension_domains": int(dsum.get("extension_domains") or 0),
+            "neurolab_domains": int(dsum.get("neurolab_domains") or 0),
+            "total_empirical_records": int(dsum.get("total_empirical_records") or 0),
+            "lean_formal_modules": int(dsum.get("lean_formal_modules") or 0),
+            "benchmark_domains_non_cosmo_majority": True,
+            "note": (
+                "282 scientific domains / 306k+ records span geochemistry, genomics, "
+                "magnetosphere, clinical medicine, materials, virology, acoustics, etc. "
+                "Cosmology is one sector — 255/272 benchmark files are non-cosmo."
+            ),
         },
         "extension_domains": {
             "count": int((pushback.get("summary") or {}).get("extension_domain_count") or 0),

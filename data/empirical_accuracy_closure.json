@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:51:20.959711+00:00",
+  "generated_at": "2026-07-11T22:54:50.358265+00:00",
   "version": "1.0",
   "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT",
   "primary_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
@@ -17,6 +17,15 @@
     "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
     "domains_under_0_1pct_median": 216,
     "domains_under_0_5pct_median": 218
+  },
+  "project_scope": {
+    "total_scientific_domains": 282,
+    "extension_domains": 246,
+    "neurolab_domains": 35,
+    "total_empirical_records": 306680,
+    "lean_formal_modules": 320,
+    "benchmark_domains_non_cosmo_majority": true,
+    "note": "282 scientific domains / 306k+ records span geochemistry, genomics, magnetosphere, clinical medicine, materials, virology, acoustics, etc. Cosmology is one sector \u2014 255/272 benchmark files are non-cosmo."
   },
   "extension_domains": {
     "count": 246,

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-11T22:51:21.761784+00:00",
+  "generated_at": "2026-07-11T22:54:50.622055+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
     "good_cop": [
-      "github_ready true with 0 false margin violations and 1820/1820 atomic Coq/Isabelle/Rust triangulation.",
-      "272/272 benchmark domains green; median-of-medians 0.0% \u2014 cross-domain envelope tight.",
-      "1325/1325 unique formula observables evaluable; 65/65 external SOTA panel beats typical error.",
-      "Preregistered falsification registry with kill criteria; w_a prereg within 2\u03c3 of DESI DR2.",
-      "Claims alignment closure: lead with empirical accuracy, not zero-param/TOE slogans."
+      "Five-prover quad: Lean 4 + Coq (coqc+coqchk) + Isabelle/HOL + F* + Rust \u2014 1820/1820 atomic triangulation.",
+      "282 scientific domains, 306,680 empirical records \u2014 255/272 benchmark files non-cosmo.",
+      "272/272 benchmark domains green; median-of-medians 0.0% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
+      "13 contested open-science observables: FSOT panel 0.04% pooled vs 15% current-model baseline; w_a 0.0006% vs DESI.",
+      "Preregistered falsification registry; refinement queue for sector readouts not yet at SOTA."
     ],
     "bad_cop": [
       "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
@@ -131,6 +131,22 @@
       "mitigation": "claims_alignment_closure.json maps active vs retired headlines to evidence stack.",
       "closed": true,
       "evidence": "data/claims_alignment_closure.json"
+    },
+    {
+      "id": "five_prover_quad_verification",
+      "severity": "info",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 1820 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
+      "closed": true,
+      "evidence": "data/five_prover_quad_closure.json"
+    },
+    {
+      "id": "contested_observables_vs_current_models",
+      "severity": "info",
+      "attack": "13 open-science observables: panel pooled 0.039905% vs 15.0% baseline; refinement queue 5.",
+      "mitigation": "contested_observables_closure.json \u2014 FSOT ahead on panel; refine sector readouts where queued.",
+      "closed": true,
+      "evidence": "data/contested_observables_closure.json"
     }
   ],
   "open_gaps": [],

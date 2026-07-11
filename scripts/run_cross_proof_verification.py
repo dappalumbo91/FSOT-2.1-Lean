@@ -957,6 +957,8 @@ def main() -> int:
         "build_empirical_accuracy_closure.py",
         "build_falsification_registry_closure.py",
         "build_claims_alignment_closure.py",
+        "build_five_prover_quad_closure.py",
+        "build_contested_observables_closure.py",
     ):
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
 

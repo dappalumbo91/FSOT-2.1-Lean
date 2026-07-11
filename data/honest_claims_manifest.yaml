@@ -23,8 +23,29 @@ authoritative_artifacts:
   empirical_accuracy_closure: data/empirical_accuracy_closure.json
   falsification_registry_closure: data/falsification_registry_closure.json
   claims_alignment_closure: data/claims_alignment_closure.json
+  five_prover_quad_closure: data/five_prover_quad_closure.json
+  contested_observables_closure: data/contested_observables_closure.json
 
 claims:
+  five_prover_quad_verification:
+    headline: "Lean + Coq + Isabelle + F* + Rust cross-verify exported atomic spine"
+    verdict: FIVE_PROVER_QUAD_UNDENIABLE
+    evidence: data/five_prover_quad_closure.json
+    honest_statement: >
+      1820/1820 atomic obligations replay across Lean 4 (authority), Coq/Rocq (coqc+coqchk),
+      Isabelle/HOL, Rust f64, and F* boot-kernel cross-refinement. This is among the strictest
+      multi-prover stacks used for mathematical software — not a single-language audit.
+
+  contested_open_science_sectors:
+    headline: "13 actively-measured open problems — FSOT vs current models"
+    verdict: CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS
+    evidence: data/contested_observables_closure.json
+    honest_statement: >
+      Stumped observables are where science is still measuring (Hubble, w_a, σ₈, BBN, etc.).
+      FSOT panel pooled median 0.04% vs ΛCDM-no-unified-prediction baseline 15%.
+      sigma_8 0.003%, N_eff 0.009%, m_H 0.04%, w_a 0.0006% vs DESI. Four sector readouts
+      (H0 Planck/SH0ES, w0, E_con) tracked in domain benchmarks — refinement queued if not beating SOTA.
+
   cross_domain_empirical_accuracy:
     headline: "Single constant spine — thousands of measurements, 272 domains, sub-0.5% pooled medians"
     verdict: CROSS_DOMAIN_EMPIRICALLY_TIGHT

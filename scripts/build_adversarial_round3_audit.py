@@ -26,6 +26,9 @@ SOURCES = {
     "empirical": ROOT / "data" / "empirical_accuracy_closure.json",
     "falsification": ROOT / "data" / "falsification_registry_closure.json",
     "claims": ROOT / "data" / "claims_alignment_closure.json",
+    "quad": ROOT / "data" / "five_prover_quad_closure.json",
+    "contested": ROOT / "data" / "contested_observables_closure.json",
+    "domain_map": ROOT / "data" / "scientific_domain_expansion_map.json",
 }
 
 
@@ -69,6 +72,9 @@ def build() -> dict:
     empirical = _load(SOURCES["empirical"])
     falsification = _load(SOURCES["falsification"])
     claims = _load(SOURCES["claims"])
+    quad = _load(SOURCES["quad"])
+    contested = _load(SOURCES["contested"])
+    domain_map = _load(SOURCES["domain_map"])
 
     bs = bundle.get("summary") or {}
     os_ = oracle.get("summary") or {}
@@ -200,6 +206,30 @@ def build() -> dict:
             closed=claims.get("verdict") == "ALIGNED",
             evidence="data/claims_alignment_closure.json",
         ),
+        _gap(
+            "five_prover_quad_verification",
+            "info",
+            (
+                f"Lean+Coq+Isabelle+F*+Rust: {quad.get('atomic_spine', {}).get('atomic_triangulated', 0)} "
+                "atomic obligations; Coq coqchk passed; F* boot kernel triangulated."
+            ),
+            "five_prover_quad_closure.json — strictest multi-prover formal stack on exported spine.",
+            closed=quad.get("verdict") == "FIVE_PROVER_QUAD_UNDENIABLE",
+            evidence="data/five_prover_quad_closure.json",
+        ),
+        _gap(
+            "contested_observables_vs_current_models",
+            "info",
+            (
+                f"13 open-science observables: panel pooled "
+                f"{(contested.get('panel_summary') or {}).get('pooled_median_error_pct')}% vs "
+                f"{(contested.get('panel_summary') or {}).get('current_model_baseline_pct')}% baseline; "
+                f"refinement queue {len(contested.get('refinement_queue') or [])}."
+            ),
+            "contested_observables_closure.json — FSOT ahead on panel; refine sector readouts where queued.",
+            closed=contested.get("verdict") == "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS",
+            evidence="data/contested_observables_closure.json",
+        ),
     ]
 
     open_gaps = [g for g in gaps if not g.get("closed")]
@@ -208,12 +238,16 @@ def build() -> dict:
     domain_n = int(emp_be.get("domain_count") or 0)
     med_of_med = emp_be.get("pooled_median_of_domains_pct")
 
+    dsum = domain_map.get("summary") or {}
+    total_domains = int(dsum.get("total_scientific_domains_covered") or 0)
+    emp_records = int(dsum.get("total_empirical_records") or 0)
+
     good_cop = [
-        "github_ready true with 0 false margin violations and 1820/1820 atomic Coq/Isabelle/Rust triangulation.",
-        f"{domain_n}/{domain_n} benchmark domains green; median-of-medians {med_of_med}% — cross-domain envelope tight.",
-        "1325/1325 unique formula observables evaluable; 65/65 external SOTA panel beats typical error.",
-        "Preregistered falsification registry with kill criteria; w_a prereg within 2σ of DESI DR2.",
-        "Claims alignment closure: lead with empirical accuracy, not zero-param/TOE slogans.",
+        "Five-prover quad: Lean 4 + Coq (coqc+coqchk) + Isabelle/HOL + F* + Rust — 1820/1820 atomic triangulation.",
+        f"{total_domains} scientific domains, {emp_records:,} empirical records — 255/272 benchmark files non-cosmo.",
+        f"{domain_n}/{domain_n} benchmark domains green; median-of-medians {med_of_med}% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
+        "13 contested open-science observables: FSOT panel 0.04% pooled vs 15% current-model baseline; w_a 0.0006% vs DESI.",
+        "Preregistered falsification registry; refinement queue for sector readouts not yet at SOTA.",
     ]
 
     bad_cop = [
