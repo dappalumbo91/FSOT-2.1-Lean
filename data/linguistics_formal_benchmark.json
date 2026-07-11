@@ -27,6 +27,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -48,10 +51,13 @@
       "scientific_measurement": {
         "delta": 0.10001358,
         "delta_pct": 4.348417,
+        "effective_error_pct": 4.348417,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
         "unit": "words"
       }
     },
@@ -69,6 +75,9 @@
       "scientific_measurement": {
         "delta": -0.00041863,
         "delta_pct": 0.00135,
+        "effective_error_pct": 0.00135,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -90,6 +99,9 @@
       "scientific_measurement": {
         "delta": 2.506e-05,
         "delta_pct": 0.0006,
+        "effective_error_pct": 0.0006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -111,6 +123,9 @@
       "scientific_measurement": {
         "delta": -0.00028361,
         "delta_pct": 0.006302,
+        "effective_error_pct": 0.006302,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -132,6 +147,9 @@
       "scientific_measurement": {
         "delta": 0.00021361,
         "delta_pct": 0.00267,
+        "effective_error_pct": 0.00267,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -153,6 +171,9 @@
       "scientific_measurement": {
         "delta": -0.01191413,
         "delta_pct": 0.005295,
+        "effective_error_pct": 0.005295,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -174,6 +195,9 @@
       "scientific_measurement": {
         "delta": -2.21e-06,
         "delta_pct": 0.000369,
+        "effective_error_pct": 0.000369,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -195,6 +219,9 @@
       "scientific_measurement": {
         "delta": -0.00047206,
         "delta_pct": 0.001206,
+        "effective_error_pct": 0.001206,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -216,6 +243,9 @@
       "scientific_measurement": {
         "delta": -0.00043674,
         "delta_pct": 0.002569,
+        "effective_error_pct": 0.002569,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -226,16 +256,17 @@
   ],
   "display_name": "Linguistics Formal",
   "tier_label": "Tier 29",
-  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.511719+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:57.995841+00:00",
   "scientific_precision_summary": {
     "scalar_count": 10,
     "median_error_pct": 0.002569,
     "max_error_pct": 4.348417,
     "mean_abs_delta": 0.011377963000000001,
     "precision_tier_counts": {
-      "green": 10
+      "green": 9,
+      "red": 1
     },
-    "green_gate_fraction": 1.0,
+    "green_gate_fraction": 0.9,
     "matches_domain_spine": false
   }
 }

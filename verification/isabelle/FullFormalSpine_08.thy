@@ -3,9 +3,6 @@ theory FullFormalSpine_08
 imports Complex_Main
 begin
 
-lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct: "(0.00241237063663613 :: real) < (0.5 :: real)"
-  by eval
-
 lemma pharmacokinetics_gap_fill_headline_median_under_half_pct: "(0.04593318440797578 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma rd_interval_tightening_panel_pooled_median_under_half_pct: "(0.000502 :: r
   by eval
 
 lemma rd_interval_tightening_panel_headline_median_under_half_pct: "(0.005024559462094211 :: real) < (0.5 :: real)"
+  by eval
+
+lemma rd_interval_tightening_panel_observable_count_pos: "0 < (12 :: nat)"
   by eval
 
 end

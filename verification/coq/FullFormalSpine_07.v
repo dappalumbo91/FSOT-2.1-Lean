@@ -63,9 +63,6 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma stratum_l23_pyramidal_cell_count_pos : (1100 < 1127)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma neuron_cohort_strata_bundle : (2100 < 2165)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
 Lemma neuron_train_cell_count_pos : (0 < 1745)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -305,4 +302,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma periodic_table_public_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct : (0.00241237063663613%R) < (0.5%R).
+Proof. lra. Qed.
 

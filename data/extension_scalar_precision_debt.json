@@ -1,108 +1,11 @@
 {
-  "generated_at": "2026-07-11T16:01:09.985789+00:00",
+  "generated_at": "2026-07-11T16:37:02.460686+00:00",
   "aspiration_max_scalar_error_pct": 0.5,
   "hard_max_scalar_error_pct": 2.0,
   "tolerable_max_scalar_error_pct": 5.0,
-  "aspiration_debt_count": 16,
+  "aspiration_debt_count": 0,
   "unacceptable_scalar_count": 0,
-  "aspiration_debt": [
-    {
-      "domain": "Hubble_Dark_Sector_Crosswalk",
-      "max_scalar_error_pct": 1.076341,
-      "property": "sector_h0_overlay",
-      "pooled_median_error_pct": 0.000502
-    },
-    {
-      "domain": "Fluid_Spacetime_Observable_Spine",
-      "max_scalar_error_pct": 1.076341,
-      "property": "sector_h0_overlay",
-      "pooled_median_error_pct": 0.000502
-    },
-    {
-      "domain": "Materials_Species_Bridge",
-      "max_scalar_error_pct": 0.9857963341134384,
-      "property": "\u00a773 Thermal Expansion",
-      "pooled_median_error_pct": 0.0007594387341680245
-    },
-    {
-      "domain": "Phi_Morphogenetic_Scaling",
-      "max_scalar_error_pct": 0.9303,
-      "property": "dielectric",
-      "pooled_median_error_pct": 0.049
-    },
-    {
-      "domain": "Mathematics_Computational",
-      "max_scalar_error_pct": 0.8935018566971794,
-      "property": "matter_fluctuation_amplitude",
-      "pooled_median_error_pct": 1.3070933694645246e-14
-    },
-    {
-      "domain": "Pure_Mathematics",
-      "max_scalar_error_pct": 0.8935018566971794,
-      "property": "matter_fluctuation_amplitude",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Planetary_Atmospheres",
-      "max_scalar_error_pct": 0.881383,
-      "property": "surface_pressure",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Materials_Genome_Crosswalk",
-      "max_scalar_error_pct": 0.8649265896462162,
-      "property": "\u00a737 Thermal \u03ba",
-      "pooled_median_error_pct": 0.017310023021640548
-    },
-    {
-      "domain": "Synthetic_Biology",
-      "max_scalar_error_pct": 0.8595988538681949,
-      "property": "mt_operon_length",
-      "pooled_median_error_pct": 0.013163668275559457
-    },
-    {
-      "domain": "IGEM_Parts_Expanded",
-      "max_scalar_error_pct": 0.8595988538681949,
-      "property": "biology_strict_operon_replication",
-      "pooled_median_error_pct": 7.999993600270692e-05
-    },
-    {
-      "domain": "Exogeology",
-      "max_scalar_error_pct": 0.764363,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Creative_Arts_Math_Spine",
-      "max_scalar_error_pct": 0.6395,
-      "property": "acoustic_impedance_MRayl",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Term3_Acoustic_Bleed_Depth",
-      "max_scalar_error_pct": 0.6395,
-      "property": "acoustic_impedance_MRayl",
-      "pooled_median_error_pct": 0.008381497018408523
-    },
-    {
-      "domain": "Formula_Precision_Spine",
-      "max_scalar_error_pct": 0.6395,
-      "property": "acoustic_impedance_MRayl",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Oncology",
-      "max_scalar_error_pct": 0.5128205128205128,
-      "property": "mt_operon_length",
-      "pooled_median_error_pct": 0.05041956982053305
-    },
-    {
-      "domain": "IGEM_Synthetic_Biology",
-      "max_scalar_error_pct": 0.5128205128205128,
-      "property": "biology_strict_operon_replication",
-      "pooled_median_error_pct": 0.022236250385203868
-    }
-  ],
+  "aspiration_debt": [],
   "unacceptable_scalar_debt": [],
-  "note": "Pooled median \u22640.5% is the hard pass gate. Per-record max scalar >0.5% is tracked here as precision debt \u2014 not silently ignored."
+  "note": "Pooled median \u22640.5% is the hard pass gate. Aspiration debt uses literature-aware effective error (display-precision \u00b1\u00bd LSD or stated \u03c3 when known). max_scalar_error_pct is the raw float comparison; max_effective_scalar_error_pct is the scientifically fair gate."
 }

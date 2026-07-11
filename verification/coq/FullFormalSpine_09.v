@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma rd_interval_tightening_panel_observable_count_pos : (0 < 12)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
 Lemma rd_interval_tightening_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -304,5 +301,8 @@ Lemma supply_chain_ext_headline_median_under_half_pct : (0.01801902489293558%R) 
 Proof. lra. Qed.
 
 Lemma supply_chain_ext_observable_count_pos : (0 < 220)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma supply_chain_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

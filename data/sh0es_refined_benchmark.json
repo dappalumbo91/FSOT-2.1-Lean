@@ -40,7 +40,20 @@
       "computed": 0.625765,
       "measured": 0.0,
       "error_pct": 0.625765,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.625765,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.625765,
       "measured": 0.0,
       "error_pct": 0.625765,
-      "observable_count": 7
+      "observable_count": 7,
+      "domain_display_name": "tier gap fill",
+      "display_name": "per host h0 panel",
+      "scientific_measurement": {
+        "delta": 0.625765,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "material_records": [
@@ -62,7 +88,20 @@
       "error_pct": 0.74287,
       "host_count": 46,
       "method": "bubble_bleed_weighted_by_cepheid_count",
-      "eval_kind": "contested_observable"
+      "eval_kind": "contested_observable",
+      "domain_display_name": "sh0es refined",
+      "display_name": "SH0ES cepheid hosts weighted",
+      "scientific_measurement": {
+        "delta": 0.542592,
+        "delta_pct": 0.74287,
+        "effective_error_pct": 0.74287,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -73,7 +112,20 @@
       "error_pct": 0.625765,
       "host_count": 46,
       "method": "bubble_bleed_median_sightline",
-      "eval_kind": "contested_observable"
+      "eval_kind": "contested_observable",
+      "domain_display_name": "sh0es refined",
+      "display_name": "SH0ES cepheid hosts median",
+      "scientific_measurement": {
+        "delta": 0.457059,
+        "delta_pct": 0.625765,
+        "effective_error_pct": 0.625765,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -88,7 +140,20 @@
       "method": "FSOT_Wave1_CMB",
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
-      "eval_kind": "contested_observable"
+      "eval_kind": "contested_observable",
+      "domain_display_name": "sh0es refined",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -104,7 +169,20 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector"
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "domain_display_name": "sh0es refined",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -120,7 +198,20 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector"
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "domain_display_name": "sh0es refined",
+      "display_name": "freedman jwst",
+      "scientific_measurement": {
+        "delta": -0.110662,
+        "delta_pct": 0.157213,
+        "effective_error_pct": 0.157213,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -136,7 +227,20 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector"
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "domain_display_name": "sh0es refined",
+      "display_name": "fsot document local",
+      "scientific_measurement": {
+        "delta": -0.598017,
+        "delta_pct": 0.829427,
+        "effective_error_pct": 0.829427,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "sh0es_refined_lab",
@@ -152,7 +256,20 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "eval_kind": "contested_observable",
-      "h0_tension_note": "dual_anchor_literature_sector"
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "domain_display_name": "sh0es refined",
+      "display_name": "carnegie h0",
+      "scientific_measurement": {
+        "delta": 0.617583,
+        "delta_pct": 0.884789,
+        "effective_error_pct": 0.884789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -541,5 +658,11 @@
   ],
   "h0_global_fsot": 68.44005682979427,
   "sh0es_measured_h0": 73.04,
-  "sh0es_status": "YELLOW"
+  "sh0es_status": "YELLOW",
+  "display_name": "SH0ES Refined",
+  "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 0
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.156020+00:00"
 }

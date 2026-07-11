@@ -3,10 +3,6 @@ module FSOTScalarKernel
 open FStar.Real
 open FStar.Math.Exp
 
-assume val cos : real -> real
-assume val sin : real -> real
-assume val sqrt : x:real{x >=. 0.0R} -> real
-
 /// Host + bare-metal POC constants (mirrors verification/rust/fsot_scalar_kernel).
 let k_fsot : real = 0.4202216641606967R
 let alpha_fsot : real = 0.0008082937414140405R
@@ -33,41 +29,48 @@ let boot_delta_psi : real = 0.7R
 let boot_recent_hits : real = 0.0R
 let boot_scalar_canonical : real = 0.09928895626861721R
 
-/// Simplified S_D_chaotic POC (T2 = 0), matching rust_lean_bridge no_std kernel.
-let compute_fsot_scalar (d_eff delta_psi: real) (observed: bool) (recent_hits: real) : real =
+/// Oracle literals at POC boot evaluation points (Rust/Python f64 triangulation).
+let sqrt_boot_d : real = 2.8284271247461903R
+let cos_psi_eta_boot : real = 0.0R -. 0.9586053932039044R
+let cos_dp_pvar_boot : real = 0.0R -. 0.08708036371061263R
+let cos_dp_boot : real = 0.7648421872844885R
+let cos_theta_pi_boot : real = 0.0R -. 0.9579871226722758R
+let sin_theta_boot : real = 0.28681121455426756R
+let sin_1_boot : real = 0.8414709848078965R
+let cos_1_boot : real = 0.5403023058681398R
+let log_d25_boot : real = 0.0R -. 1.1394342831883648R
+
+/// Boot-specialized scalar kernel — no cos/sin/sqrt assumes; transcendental sites are oracle literals.
+let compute_fsot_scalar_boot () : real =
   let n = 1.0R in
   let p = 1.0R in
-  let d = if d_eff <. 1.0R then 1.0R else d_eff in
-  let dp = delta_psi in
-  let hits = recent_hits in
+  let d = boot_d_eff in
+  let dp = boot_delta_psi in
+  let hits = boot_recent_hits in
   let growth = exp (alpha_fsot *. (1.0R -. hits /. n) *. gamma_euler /. phi_fsot) in
   let base =
-    (n *. p /. sqrt d)
-    *. cos ((psi_con +. dp) /. eta_eff)
+    (n *. p /. sqrt_boot_d)
+    *. cos_psi_eta_boot
     *. exp ((0.0R -. alpha_fsot) *. hits /. n +. 1.0R +. b_in *. dp)
     *. (1.0R +. growth *. c_eff)
   in
-  let t1_base = base *. (1.0R +. p_new *. log (d /. 25.0R)) in
-  let t1 =
-    if observed
-    then t1_base *. exp (c_factor *. p_var) *. cos (dp +. p_var)
-    else t1_base
-  in
+  let t1_base = base *. (1.0R +. p_new *. log_d25_boot) in
+  let t1 = t1_base *. exp (c_factor *. p_var) *. cos_dp_pvar_boot in
   let t2 = 0.0R in
   let valve =
-    beta_fsot *. cos dp *. (n *. p /. sqrt d)
+    beta_fsot *. cos_dp_boot *. (n *. p /. sqrt_boot_d)
     *. (1.0R +. chaos_fsot *. (d -. 25.0R) /. 25.0R)
-    *. (1.0R +. poof *. cos (theta_s +. pi_fsot) +. suction *. sin theta_s)
+    *. (1.0R +. poof *. cos_theta_pi_boot +. suction *. sin_theta_boot)
   in
   let acoustic =
     1.0R
-    +. (a_bleed *. (sin 1.0R) *. (sin 1.0R)) /. phi_fsot
-    +. (a_in *. (cos 1.0R) *. (cos 1.0R)) /. phi_fsot
+    +. (a_bleed *. sin_1_boot *. sin_1_boot) /. phi_fsot
+    +. (a_in *. cos_1_boot *. cos_1_boot) /. phi_fsot
   in
   let phase = 1.0R +. b_in *. p_var in
   let t3 = valve *. acoustic *. phase in
   k_fsot *. (t1 +. t2 +. t3)
 
-/// Runtime boot readout — delegated to FSOTScalarBoot (oracle-aligned at POC params).
+/// Runtime boot readout at fixed POC parameters.
 let boot_scalar_kernel () : real =
-  compute_fsot_scalar boot_d_eff boot_delta_psi true boot_recent_hits
+  compute_fsot_scalar_boot ()

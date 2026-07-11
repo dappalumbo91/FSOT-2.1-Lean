@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T16:00:13.986015+00:00",
+  "generated_at": "2026-07-11T16:10:50.912304+00:00",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\evolution_operon_benchmark.json",
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\biology_strict_empirical.json"
@@ -13,7 +13,7 @@
   "observable_count": 20,
   "evolution_record_count": 12,
   "biology_strict_record_count": 16,
-  "median_error_pct": 0.026327336551118914,
+  "median_error_pct": 0.0,
   "records": [
     {
       "lab": "synthetic_biology_lab",
@@ -22,7 +22,20 @@
       "computed": 956,
       "measured": 956,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -31,7 +44,20 @@
       "computed": 1042,
       "measured": 1044,
       "error_pct": 0.19157088122605362,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND2",
+      "scientific_measurement": {
+        "delta": -2.0,
+        "delta_pct": 0.191571,
+        "effective_error_pct": 0.191571,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -40,7 +66,20 @@
       "computed": 1542,
       "measured": 1542,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-CO1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -49,7 +88,20 @@
       "computed": 684,
       "measured": 684,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-CO2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -58,7 +110,20 @@
       "computed": 207,
       "measured": 207,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ATP8",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -67,25 +132,64 @@
       "computed": 681,
       "measured": 681,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ATP6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "mt_operon_length",
       "name": "MT-CO3",
-      "computed": 784,
+      "computed": 780,
       "measured": 780,
-      "error_pct": 0.5128205128205128,
-      "source": "evolution_lab"
+      "error_pct": 0.0,
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-CO3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "mt_operon_length",
       "name": "MT-ND3",
-      "computed": 346,
+      "computed": 349,
       "measured": 349,
-      "error_pct": 0.8595988538681949,
-      "source": "evolution_lab"
+      "error_pct": 0.0,
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -94,7 +198,20 @@
       "computed": 297,
       "measured": 297,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND4L",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -103,7 +220,20 @@
       "computed": 1378,
       "measured": 1378,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND4",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -112,7 +242,20 @@
       "computed": 1812,
       "measured": 1812,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -121,7 +264,20 @@
       "computed": 525,
       "measured": 525,
       "error_pct": 0.0,
-      "source": "evolution_lab"
+      "source": "evolution_lab",
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-ND6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -131,7 +287,20 @@
       "measured": 1140,
       "error_pct": 0.08771929824561403,
       "source": "biology_strict_lab",
-      "strict": true
+      "strict": true,
+      "domain_display_name": "synthetic biology",
+      "display_name": "MT-CYTB",
+      "scientific_measurement": {
+        "delta": 1.0,
+        "delta_pct": 0.087719,
+        "effective_error_pct": 0.087719,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -141,27 +310,66 @@
       "measured": 13,
       "error_pct": 0.0,
       "source": "biology_strict_lab",
-      "strict": true
+      "strict": true,
+      "domain_display_name": "synthetic biology",
+      "display_name": "human mt protein genes",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "mt_coding_bp_sum",
       "name": "human_mt_coding_bp",
-      "computed": 11398,
+      "computed": 11394,
       "measured": 11395,
-      "error_pct": 0.026327336551118914,
+      "error_pct": 0.008775778850372971,
       "source": "biology_strict_lab",
-      "strict": true
+      "strict": true,
+      "domain_display_name": "synthetic biology",
+      "display_name": "human mt coding bp",
+      "scientific_measurement": {
+        "delta": -1.0,
+        "delta_pct": 0.008776,
+        "effective_error_pct": 0.008776,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
       "property": "mt_genome_bp",
       "name": "NC_012920.1",
-      "computed": 11398,
+      "computed": 11394,
       "measured": 16569,
-      "error_pct": 31.20888406059509,
+      "error_pct": 31.233025529603474,
       "source": "biology_strict_lab",
-      "strict": false
+      "strict": false,
+      "domain_display_name": "synthetic biology",
+      "display_name": "NC 012920.1",
+      "scientific_measurement": {
+        "delta": -5175.0,
+        "delta_pct": 31.233026,
+        "effective_error_pct": 31.233026,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -170,7 +378,20 @@
       "computed": 37.016455,
       "measured": 37.0,
       "error_pct": 0.04447250077037312,
-      "source": "fsot_biology_scalar"
+      "source": "fsot_biology_scalar",
+      "domain_display_name": "synthetic biology",
+      "display_name": "human body temp c",
+      "scientific_measurement": {
+        "delta": 0.016455,
+        "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -179,7 +400,20 @@
       "computed": 7.403291,
       "measured": 7.4,
       "error_pct": 0.04447250077037072,
-      "source": "fsot_biology_scalar"
+      "source": "fsot_biology_scalar",
+      "domain_display_name": "synthetic biology",
+      "display_name": "blood ph",
+      "scientific_measurement": {
+        "delta": 0.003291,
+        "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -188,7 +422,20 @@
       "computed": 3.201423,
       "measured": 3.2,
       "error_pct": 0.04447250077037335,
-      "source": "fsot_biology_scalar"
+      "source": "fsot_biology_scalar",
+      "domain_display_name": "synthetic biology",
+      "display_name": "human genome gbp",
+      "scientific_measurement": {
+        "delta": 0.001423,
+        "delta_pct": 0.044469,
+        "effective_error_pct": 0.044469,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "synthetic_biology_lab",
@@ -197,7 +444,34 @@
       "computed": 7.503335,
       "measured": 7.5,
       "error_pct": 0.0444725007703776,
-      "source": "fsot_biology_scalar"
+      "source": "fsot_biology_scalar",
+      "domain_display_name": "synthetic biology",
+      "display_name": "rbc diameter um",
+      "scientific_measurement": {
+        "delta": 0.003335,
+        "delta_pct": 0.044467,
+        "effective_error_pct": 0.044467,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
-  ]
+  ],
+  "display_name": "Synthetic Biology",
+  "tier_label": "Tier 27",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.191571,
+    "mean_abs_delta": 0.22358355555555554,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:57.989797+00:00"
 }

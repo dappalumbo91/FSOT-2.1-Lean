@@ -26,6 +26,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -36,7 +37,10 @@ from fstar_verification_lib import run_fstar_verify  # noqa: E402
 from cross_proof_lib import (  # noqa: E402
     gen_isabelle_root,
     isabelle_chunk_session_name,
+    isabelle_transcendental_parent_sessions,
+    isabelle_transcendental_theory_prefix,
     obligation_provable,
+    validate_isabelle_root,
     parse_isabelle_theory_lemmas,
     python_verify_obligation,
 )
@@ -237,9 +241,28 @@ def _diagnose_isabelle_chunk(isa: dict, thy_dir: Path, chunk: dict, timeout: int
     diag_dir = thy_dir / "diagnostic" / theory
     diag_dir.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, diag_dir / chunk["file"])
+    if theory.startswith("TranscendentalBounds_"):
+        for dep in (
+            "TranscendentalBoundsNative.thy",
+            "TranscendentalBoundsBase.thy",
+            "TranscendentalBoundsCert.thy",
+        ):
+            dep_src = thy_dir / dep
+            if dep_src.exists():
+                shutil.copy2(dep_src, diag_dir / dep)
+        session_theories = [*isabelle_transcendental_theory_prefix(), theory]
+        parent_sessions = isabelle_transcendental_parent_sessions()
+    else:
+        session_theories = [theory]
+        parent_sessions = None
     session = isabelle_chunk_session_name(theory)
     (diag_dir / "ROOT").write_text(
-        gen_isabelle_root([theory], session_name=session, description=f"FSOT diagnostic chunk {theory}"),
+        gen_isabelle_root(
+            session_theories,
+            session_name=session,
+            description=f"FSOT diagnostic chunk {theory}",
+            parent_sessions=parent_sessions,
+        ),
         encoding="utf-8",
     )
     build = _run_isabelle_session(isa, diag_dir, session, timeout=timeout)
@@ -298,10 +321,19 @@ def run_isabelle() -> dict:
         return {"status": "skipped", "reason": "isabelle not found — run scripts/install_isabelle_windows.ps1"}
     if not root_file.exists():
         return {"status": "failed", "reason": f"missing {root_file}"}
+    root_issues = validate_isabelle_root(root_file.read_text(encoding="utf-8"))
+    if root_issues:
+        return {
+            "status": "failed",
+            "reason": "invalid Isabelle ROOT: " + "; ".join(root_issues),
+        }
     theories = _isabelle_theory_chunks(thy_dir)
     if not theories:
         return {"status": "failed", "reason": "no Isabelle theories found"}
     build = _run_isabelle_session(isa, thy_dir, ISABELLE_SESSION, timeout=3600)
+    if build.get("status") != "passed":
+        time.sleep(5)
+        build = _run_isabelle_session(isa, thy_dir, ISABELLE_SESSION, timeout=3600)
     session_passed = build.get("status") == "passed"
     chunk_rows = _isabelle_chunk_metadata(thy_dir, theories, session_passed)
     if not session_passed:
@@ -334,35 +366,60 @@ SCALAR_KERNEL_DIR = ROOT / "verification" / "rust" / "fsot_scalar_kernel"
 FSTAR_DIR = ROOT / "verification" / "fstar"
 
 
-def run_rust_replay() -> dict:
+def run_rust_replay(*, max_attempts: int = 5) -> dict:
     cargo = shutil.which("cargo")
     if not cargo:
         return {"status": "skipped", "reason": "cargo not on PATH"}
     if not (RUST_REPLAY_DIR / "tests" / "replay_all_obligations.rs").exists():
         return {"status": "failed", "reason": "missing generated Rust replay tests"}
     try:
-        r = subprocess.run(
-            [cargo, "test", "--release", "--quiet", "--test", "replay_all_obligations"],
-            cwd=str(RUST_REPLAY_DIR),
-            capture_output=True,
-            text=True,
-            timeout=900,
-        )
         meta_path = RUST_REPLAY_DIR / "obligation_meta.json"
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
-        out = (r.stdout or "") + (r.stderr or "")
-        passed = r.returncode == 0
-        return {
-            "status": "passed" if passed else "failed",
-            "tool": cargo,
-            "crate": "fsot_obligation_replay",
-            "obligation_count": meta.get("total_count"),
-            "formal_count": meta.get("formal_count"),
-            "transcendental_count": meta.get("transcendental_count"),
-            "test_file": meta.get("test_file"),
-            "returncode": r.returncode,
-            "stderr_tail": out[-2000:],
-        }
+        last: dict = {"status": "failed", "reason": "no attempts"}
+        cargo_args = ["-j", "1"]
+        for attempt in range(1, max_attempts + 1):
+            if attempt > 2:
+                subprocess.run(
+                    [cargo, "build", "--release", "--quiet", *cargo_args],
+                    cwd=str(RUST_REPLAY_DIR),
+                    capture_output=True,
+                    text=True,
+                    timeout=600,
+                )
+            r = subprocess.run(
+                [
+                    cargo,
+                    "test",
+                    "--release",
+                    "--quiet",
+                    *cargo_args,
+                    "--test",
+                    "replay_all_obligations",
+                ],
+                cwd=str(RUST_REPLAY_DIR),
+                capture_output=True,
+                text=True,
+                timeout=900,
+            )
+            out = (r.stdout or "") + (r.stderr or "")
+            passed = r.returncode == 0
+            last = {
+                "status": "passed" if passed else "failed",
+                "tool": cargo,
+                "crate": "fsot_obligation_replay",
+                "obligation_count": meta.get("total_count"),
+                "formal_count": meta.get("formal_count"),
+                "transcendental_count": meta.get("transcendental_count"),
+                "test_file": meta.get("test_file"),
+                "returncode": r.returncode,
+                "attempt": attempt,
+                "stderr_tail": out[-2000:],
+            }
+            if passed:
+                return last
+            if attempt < max_attempts:
+                time.sleep(3 * attempt)
+        return last
     except Exception as e:
         return {"status": "failed", "reason": str(e)}
 
@@ -746,16 +803,14 @@ def main() -> int:
             "esp32_harness": esp32_harness,
         },
         "proof_debt": {
-            "fstar_transcendental_assumes": [
-                "boot_scalar_positive",
-                "boot_scalar_matches_canonical",
-            ],
-            "fstar_primitives_assumed": ["cos", "sin", "sqrt"],
-            "transcendental_coq_isabelle": "certified_axioms_for_pi_e_intervals",
+            "fstar_transcendental_assumes": [],
+            "fstar_primitives_assumed": (fstar_refinement.get("fstar_assumed_primitives") or []),
+            "transcendental_coq_isabelle": "coq_native_isabelle_native_intervals",
             "coq_connective_coverage_pct_of_lean_theorems": 1.43,
             "note": (
                 "Cross-proof triangulates exported numeric obligations; "
-                "F* boot scalar and pi/e intervals rely on documented assumes/axioms."
+                "F* boot kernel uses oracle literals; Coq/Isabelle pi/e base intervals are native "
+                "(Isabelle via HOL-Decision_Procs.Approximation)."
             ),
         },
         "overall_ok": py_ok

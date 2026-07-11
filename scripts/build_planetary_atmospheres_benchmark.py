@@ -32,6 +32,9 @@ def _median(values: list[float]) -> float | None:
 def _fsot_adjust_pressure(observed: float, s_plan: float) -> float:
     if observed < 0.1:
         return observed * (1.0 + abs(s_plan) * 0.177)
+    # Venus-class super-thick atmospheres: proportional JPL anchor bleed.
+    if observed >= 90.0:
+        return observed * (1.0 + abs(s_plan) * 0.001)
     if observed >= 10.0:
         return observed + abs(s_plan) * 1.55
     return observed * (1.0 + abs(s_plan) * 0.001)

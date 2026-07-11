@@ -30,6 +30,19 @@ THM_LT_LIT = re.compile(
     r"(?:theorem|lemma)\s+(\w+)\s*:\s*(\w+)\s*<\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)\s*(?::=|;)",
     re.M,
 )
+THM_ABS_DIFF_LT_LIT = re.compile(
+    r"(?:theorem|lemma)\s+(\w+)\s*:\s*\|(\w+)\s*-\s*(\w+)\|\s*<\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)",
+    re.M,
+)
+PROOF_CERTIFICATE_MARKERS = (
+    "norm_num",
+    "nlinarith",
+    "linarith",
+    "decide",
+    "native_decide",
+    "ring_nf",
+    "omega",
+)
 THM_GT_LIT = re.compile(
     r"(?:theorem|lemma)\s+(\w+)\s*:\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)\s*<\s*(\w+)\s*(?::=|;)",
     re.M,
@@ -157,7 +170,7 @@ def parse_formal_module(
     source_tier: str = "priors",
 ) -> list[dict]:
     text = path.read_text(encoding="utf-8")
-    if require_norm_num and "norm_num" not in text:
+    if require_norm_num and not any(m in text for m in PROOF_CERTIFICATE_MARKERS):
         return []
     r_defs, n_defs = _collect_defs(text, global_r or {}, global_n or {})
     out: list[dict] = []
@@ -261,6 +274,26 @@ def parse_formal_module(
                 "statement": f"{bound} < {r_defs[sym]}",
             }
         )
+    for thm, left, right, lit in THM_ABS_DIFF_LT_LIT.findall(text):
+        if left not in r_defs or right not in r_defs:
+            continue
+        bound = _parse_float_lit(lit)
+        if bound is None:
+            continue
+        diff = abs(r_defs[left] - r_defs[right])
+        add(
+            {
+                "id": thm,
+                "kind": "abs_diff_lt_lit",
+                "left": left,
+                "right": right,
+                "left_value": r_defs[left],
+                "right_value": r_defs[right],
+                "diff": diff,
+                "bound": bound,
+                "statement": f"|{r_defs[left]} - {r_defs[right]}| < {bound}",
+            }
+        )
     for thm, lit, sym in THM_NAT_GT_LIT.findall(text):
         if sym not in n_defs:
             continue
@@ -361,6 +394,25 @@ def parse_formal_module(
         )
 
     flush()
+    atomic_by_id = {ob["id"]: ob for ob in out}
+    try:
+        from bundle_export_lib import parse_bundle_obligations  # noqa: WPS433
+
+        bundles = parse_bundle_obligations(
+            text,
+            r_defs=r_defs,
+            n_defs=n_defs,
+            atomic_by_id=atomic_by_id,
+            lean_module=path.stem,
+            source_file=path.name,
+            source_tier=source_tier,
+        )
+        bundle_ids = {b["id"] for b in bundles}
+        if bundle_ids:
+            out = [ob for ob in out if ob["id"] not in bundle_ids]
+        out.extend(bundles)
+    except Exception:
+        pass
     return out
 
 
@@ -397,6 +449,8 @@ def obligation_margin(ob: dict) -> Decimal | None:
         return Decimal("0.5") - Decimal(str(ob["value"]))
     if kind == "lt_lit":
         return Decimal(str(ob["bound"])) - Decimal(str(ob["value"]))
+    if kind == "abs_diff_lt_lit":
+        return Decimal(str(ob["bound"])) - Decimal(str(ob["diff"]))
     if kind == "gt_lit":
         return Decimal(str(ob["value"])) - Decimal(str(ob["bound"]))
     if kind == "lt":
@@ -468,6 +522,8 @@ def python_verify_obligation(ob: dict) -> bool:
         return Decimal(str(ob["value"])) < Decimal("0.5")
     if kind == "lt_lit":
         return Decimal(str(ob["value"])) < Decimal(str(ob["bound"]))
+    if kind == "abs_diff_lt_lit":
+        return Decimal(str(ob["diff"])) < Decimal(str(ob["bound"]))
     if kind == "gt_lit":
         return Decimal(str(ob["value"])) > Decimal(str(ob["bound"]))
     if kind == "nat_pos":
@@ -478,6 +534,17 @@ def python_verify_obligation(ob: dict) -> bool:
         return int(ob["value"]) <= int(ob["bound"])
     if kind in ("eq_nat", "eq_nat_arith"):
         return int(ob["value"]) == int(ob["right_value"])
+    if kind == "bundle_conj":
+        conjuncts = ob.get("conjuncts") or []
+        if not conjuncts:
+            return False
+        for conj in conjuncts:
+            ck = conj.get("kind")
+            if ck == "opaque_conj" or conj.get("opaque"):
+                continue
+            if not python_verify_obligation(conj):
+                return False
+        return ob.get("unparsed_conjunct_count", 0) == 0
     return False
 
 
@@ -501,6 +568,10 @@ def gen_coq_lemma(ob: dict) -> tuple[str, str, str]:
         lit = coq_lit_real(float(ob["value"]))
         b = coq_lit_real(float(ob["bound"]))
         return oid, f"{lit} < {b}", "lra"
+    if kind == "abs_diff_lt_lit":
+        diff = coq_lit_real(float(ob["diff"]))
+        b = coq_lit_real(float(ob["bound"]))
+        return oid, f"{diff} < {b}", "lra"
     if kind == "gt_lit":
         b = coq_lit_real(float(ob["bound"]))
         lit = coq_lit_real(float(ob["value"]))
@@ -584,6 +655,10 @@ def gen_isabelle_lemma(ob: dict) -> tuple[str, str]:
         lit = isa_lit_real(float(ob["value"]))
         b = isa_lit_real(float(ob["bound"]))
         return oid, f"({lit} :: real) < ({b} :: real)"
+    if kind == "abs_diff_lt_lit":
+        diff = isa_lit_real(float(ob["diff"]))
+        b = isa_lit_real(float(ob["bound"]))
+        return oid, f"({diff} :: real) < ({b} :: real)"
     if kind == "gt_lit":
         b = isa_lit_real(float(ob["bound"]))
         lit = isa_lit_real(float(ob["value"]))
@@ -657,6 +732,7 @@ def gen_isabelle_root(
     *,
     session_name: str = "FSOT_CrossProof",
     description: str | None = None,
+    parent_sessions: list[str] | None = None,
 ) -> str:
     desc = description or f"FSOT full-scope cross-proof ({len(theory_names)} theories)"
     lines = [
@@ -664,11 +740,39 @@ def gen_isabelle_root(
         "",
         f"session {session_name} = HOL +",
         f'  description "{desc}"',
-        "  theories",
     ]
+    if parent_sessions:
+        lines.append("  sessions")
+        lines.extend(f'    "{name}"' for name in parent_sessions)
+    lines.append("  theories")
     lines.extend(f"    {name}" for name in theory_names)
     lines.append("")
     return "\n".join(lines) + "\n"
+
+
+def isabelle_transcendental_parent_sessions() -> list[str]:
+    """Sessions required for native pi/e proofs in TranscendentalBoundsNative.thy."""
+    return ["HOL-Decision_Procs"]
+
+
+def isabelle_transcendental_theory_prefix() -> list[str]:
+    """Theories that must precede transcendental obligation chunks in ROOT."""
+    return [
+        "TranscendentalBoundsNative",
+        "TranscendentalBoundsBase",
+        "TranscendentalBoundsCert",
+    ]
+
+
+def validate_isabelle_root(root_text: str) -> list[str]:
+    """Return human-readable issues if ROOT is not ready for native transcendental build."""
+    issues: list[str] = []
+    for theory in isabelle_transcendental_theory_prefix():
+        if theory not in root_text:
+            issues.append(f"missing theory {theory}")
+    if "HOL-Decision_Procs" not in root_text:
+        issues.append('missing parent session "HOL-Decision_Procs"')
+    return issues
 
 
 def isabelle_chunk_session_name(theory: str) -> str:

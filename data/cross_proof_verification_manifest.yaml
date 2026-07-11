@@ -83,9 +83,9 @@ status_local:
   six_way_formal_executable: true
   seven_way_bare_metal: true
   eight_way_hardware: true
-  github_ready: true
+  github_ready: false
   overall_ok: true
-  report_generated_at: 2026-07-11T15:34:08.985112+00:00
+  report_generated_at: 2026-07-11T19:23:59.370525+00:00
 coverage_audit:
   script: scripts/audit_cross_proof_coverage.py
   output: data/cross_proof_coverage_audit.json

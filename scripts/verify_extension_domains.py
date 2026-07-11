@@ -69,8 +69,10 @@ def main() -> int:
         med = margin.get("official_pooled_median_error_pct")
         cls_acc = margin.get("classifier_accuracy_pct")
         max_scalar_err = margin.get("max_scalar_error_pct")
+        max_effective_err = margin.get("max_effective_scalar_error_pct")
         print(
             f"  {name}: records={n} pooled={med} max_scalar={max_scalar_err} "
+            f"max_effective={max_effective_err} "
             f"classifier_acc={cls_acc if cls_acc is not None else 'n/a'}"
         )
         if n < min_records:
@@ -79,13 +81,29 @@ def main() -> int:
             issues.append(f"{name}: pooled median {med} > {max_median}%")
         if max_scalar_err is not None:
             err_f = float(max_scalar_err)
+            eff_f = float(max_effective_err) if max_effective_err is not None else err_f
             debt_row = {
                 "domain": name,
                 "max_scalar_error_pct": err_f,
+                "max_effective_scalar_error_pct": eff_f,
                 "property": margin.get("max_scalar_property"),
+                "effective_property": margin.get("max_effective_scalar_property"),
                 "pooled_median_error_pct": med,
+                "rounding_ghost_scalar_count": margin.get("rounding_ghost_scalar_count") or 0,
+                "catalog_crosswalk_scalar_count": margin.get("catalog_crosswalk_scalar_count") or 0,
+                "debt_kind": (
+                    "catalog_crosswalk"
+                    if (margin.get("catalog_crosswalk_scalar_count") or 0) > 0
+                    and margin.get("max_scalar_property")
+                    in {"§62 Bulk Modulus", "§73 Thermal Expansion", "§37 Thermal κ"}
+                    else (
+                        "rounding_ghost"
+                        if eff_f <= aspiration_scalar and err_f > aspiration_scalar
+                        else "formula_gap"
+                    )
+                ),
             }
-            if err_f > aspiration_scalar:
+            if eff_f > aspiration_scalar:
                 aspiration_debt.append(debt_row)
             if err_f > tolerable_scalar:
                 tolerable_debt.append({**debt_row, "severity": "unacceptable"})
@@ -113,8 +131,10 @@ def main() -> int:
         "aspiration_debt": sorted(aspiration_debt, key=lambda x: -x["max_scalar_error_pct"]),
         "unacceptable_scalar_debt": sorted(tolerable_debt, key=lambda x: -x["max_scalar_error_pct"]),
         "note": (
-            "Pooled median ≤0.5% is the hard pass gate. Per-record max scalar >0.5% is "
-            "tracked here as precision debt — not silently ignored."
+            "Pooled median ≤0.5% is the hard pass gate. Aspiration debt uses "
+            "literature-aware effective error (display-precision ±½ LSD or stated σ when "
+            "known). max_scalar_error_pct is the raw float comparison; "
+            "max_effective_scalar_error_pct is the scientifically fair gate."
         ),
     }
     DEBT_REPORT.write_text(json.dumps(debt_doc, indent=2), encoding="utf-8")

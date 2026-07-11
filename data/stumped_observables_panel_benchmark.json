@@ -48,6 +48,9 @@
       "scientific_measurement": {
         "delta": 0.042611,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -67,6 +70,9 @@
       "scientific_measurement": {
         "delta": 0.042611,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -92,10 +98,14 @@
       "scientific_measurement": {
         "delta": -0.00154908,
         "delta_pct": 0.027466,
+        "effective_error_pct": 0.027466,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Riess2024_vs_Planck2018",
         "unit": "km/s/Mpc_delta"
       }
     },
@@ -116,10 +126,14 @@
       "scientific_measurement": {
         "delta": -0.00545572,
         "delta_pct": 0.227322,
+        "effective_error_pct": 0.227322,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Freedman2019",
         "unit": "km/s/Mpc_delta"
       }
     },
@@ -140,10 +154,14 @@
       "scientific_measurement": {
         "delta": -0.00011322,
         "delta_pct": 0.195207,
+        "effective_error_pct": 0.195207,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "DES_Y3_2022",
         "unit": "S8_delta"
       }
     },
@@ -164,10 +182,14 @@
       "scientific_measurement": {
         "delta": 0.00948965,
         "delta_pct": 0.316322,
+        "effective_error_pct": 0.316322,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "BBN_obs_vs_theory",
         "unit": "underproduction_factor"
       }
     },
@@ -188,10 +210,14 @@
       "scientific_measurement": {
         "delta": 0.08522203,
         "delta_pct": 0.042611,
+        "effective_error_pct": 0.042611,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "CHIME_high_DM",
         "unit": "pc_cm3_excess"
       }
     },
@@ -211,6 +237,9 @@
       "scientific_measurement": {
         "delta": -0.00028655,
         "delta_pct": 0.009407,
+        "effective_error_pct": 0.009407,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -234,6 +263,9 @@
       "scientific_measurement": {
         "delta": -1.095e-05,
         "delta_pct": 0.0016,
+        "effective_error_pct": 0.0016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -257,6 +289,9 @@
       "scientific_measurement": {
         "delta": 2.4e-05,
         "delta_pct": 0.00296,
+        "effective_error_pct": 0.00296,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -280,6 +315,9 @@
       "scientific_measurement": {
         "delta": -3.45e-06,
         "delta_pct": 0.006335,
+        "effective_error_pct": 0.006335,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -303,6 +341,9 @@
       "scientific_measurement": {
         "delta": -2e-08,
         "delta_pct": 0.090986,
+        "effective_error_pct": 0.090986,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -327,10 +368,16 @@
       "scientific_measurement": {
         "delta": 0.00204615,
         "delta_pct": 0.341025,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.341025,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0204,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 16.7,
+        "reference": "Fornax_dwarf",
+        "observable_status": "cusp_core_problem",
         "unit": "kpc"
       }
     },
@@ -350,10 +397,16 @@
       "scientific_measurement": {
         "delta": -0.04998124,
         "delta_pct": 0.039905,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.039905,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.2934,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.136,
+        "reference": "ATLAS_CMS_combined",
+        "observable_status": "hierarchy_problem",
         "unit": "GeV"
       }
     },
@@ -373,10 +426,16 @@
       "scientific_measurement": {
         "delta": -0.333233,
         "delta_pct": 0.462182,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.462182,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.6229,
         "precision_tier": "contested",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "PREDICTION_REDERIVATION_REPORT",
+        "observable_status": "fsot_dual_anchor",
         "unit": "km/s/Mpc"
       }
     }
@@ -439,7 +498,7 @@
   "panel_status": "GREEN",
   "display_name": "Stumped Observables Panel",
   "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.976514+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.146129+00:00",
   "scientific_precision_summary": {
     "scalar_count": 13,
     "median_error_pct": 0.042611,

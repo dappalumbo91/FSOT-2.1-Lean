@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:02.637419+00:00",
+  "generated_at": "2026-07-11T16:11:59.816802+00:00",
   "domain": "IGEM_Parts_Expanded",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,9 +15,9 @@
   "D_eff": 14,
   "record_count": 111,
   "observable_count": 111,
-  "median_error_pct": 7.227106853889602e-05,
-  "pooled_median_error_pct": 7.227106853889602e-05,
-  "headline_median_error_pct": 7.227106853889602e-05,
+  "median_error_pct": 5.882356401581393e-05,
+  "pooled_median_error_pct": 5.882356401581393e-05,
+  "headline_median_error_pct": 5.882356401581393e-05,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -36,15 +36,18 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 7.2e-05,
+      "computed": 5.9e-05,
       "measured": 0.0,
-      "error_pct": 7.227106853889602e-05,
+      "error_pct": 5.882356401581393e-05,
       "observable_count": 111,
       "domain_display_name": "tier gap fill",
       "display_name": "all channels",
       "scientific_measurement": {
-        "delta": 7.2e-05,
+        "delta": 5.9e-05,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -55,15 +58,18 @@
       "lab": "tier_gap_fill_lab",
       "property": "igem_panel",
       "name": "igem_expanded",
-      "computed": 7.2e-05,
+      "computed": 5.9e-05,
       "measured": 0.0,
-      "error_pct": 7.227106853889602e-05,
+      "error_pct": 5.882356401581393e-05,
       "observable_count": 111,
       "domain_display_name": "tier gap fill",
       "display_name": "igem expanded",
       "scientific_measurement": {
-        "delta": 7.2e-05,
+        "delta": 5.9e-05,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -88,6 +94,9 @@
       "scientific_measurement": {
         "delta": 0.005337,
         "delta_pct": 0.044475,
+        "effective_error_pct": 0.044475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -110,6 +119,9 @@
       "scientific_measurement": {
         "delta": 0.009265,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -132,6 +144,9 @@
       "scientific_measurement": {
         "delta": 0.009784,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -154,6 +169,9 @@
       "scientific_measurement": {
         "delta": 0.010107,
         "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -176,6 +194,9 @@
       "scientific_measurement": {
         "delta": 0.006671,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -198,6 +219,9 @@
       "scientific_measurement": {
         "delta": 0.010377,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -220,6 +244,9 @@
       "scientific_measurement": {
         "delta": 0.015565,
         "delta_pct": 0.044471,
+        "effective_error_pct": 0.044471,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -242,6 +269,9 @@
       "scientific_measurement": {
         "delta": 0.0108,
         "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -264,6 +294,9 @@
       "scientific_measurement": {
         "delta": 0.02357,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -286,6 +319,9 @@
       "scientific_measurement": {
         "delta": 0.010489,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -308,6 +344,9 @@
       "scientific_measurement": {
         "delta": 0.022681,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -330,6 +369,9 @@
       "scientific_measurement": {
         "delta": 0.010028,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -352,6 +394,9 @@
       "scientific_measurement": {
         "delta": 0.02446,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -374,6 +419,9 @@
       "scientific_measurement": {
         "delta": 0.010512,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -396,6 +444,9 @@
       "scientific_measurement": {
         "delta": 0.020013,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -418,6 +469,9 @@
       "scientific_measurement": {
         "delta": 0.010871,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -440,6 +494,9 @@
       "scientific_measurement": {
         "delta": 0.052922,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -462,6 +519,9 @@
       "scientific_measurement": {
         "delta": 0.011772,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -484,6 +544,9 @@
       "scientific_measurement": {
         "delta": 0.018234,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -506,6 +569,9 @@
       "scientific_measurement": {
         "delta": 0.011389,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -528,6 +594,9 @@
       "scientific_measurement": {
         "delta": 0.05737,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -550,6 +619,9 @@
       "scientific_measurement": {
         "delta": 0.011721,
         "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -572,6 +644,9 @@
       "scientific_measurement": {
         "delta": 0.320202,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -594,6 +669,9 @@
       "scientific_measurement": {
         "delta": 0.010686,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -616,6 +694,9 @@
       "scientific_measurement": {
         "delta": 0.316199,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -638,6 +719,9 @@
       "scientific_measurement": {
         "delta": 0.010758,
         "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -660,6 +744,9 @@
       "scientific_measurement": {
         "delta": 0.352222,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -682,6 +769,9 @@
       "scientific_measurement": {
         "delta": 0.010529,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -704,6 +794,9 @@
       "scientific_measurement": {
         "delta": 0.531002,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -726,6 +819,9 @@
       "scientific_measurement": {
         "delta": 0.011062,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -748,6 +844,9 @@
       "scientific_measurement": {
         "delta": 0.421599,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -770,6 +869,9 @@
       "scientific_measurement": {
         "delta": 0.010837,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -792,6 +894,9 @@
       "scientific_measurement": {
         "delta": 0.349554,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -814,6 +919,9 @@
       "scientific_measurement": {
         "delta": 0.010694,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -836,6 +944,9 @@
       "scientific_measurement": {
         "delta": 1.480045,
         "delta_pct": 0.044473,
+        "effective_error_pct": 0.044473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -858,6 +969,9 @@
       "scientific_measurement": {
         "delta": 0.01065,
         "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -880,6 +994,9 @@
       "scientific_measurement": {
         "delta": 1.823817,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -902,6 +1019,9 @@
       "scientific_measurement": {
         "delta": 0.011647,
         "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -924,6 +1044,9 @@
       "scientific_measurement": {
         "delta": 0.921025,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -946,6 +1069,9 @@
       "scientific_measurement": {
         "delta": 0.011392,
         "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -968,6 +1094,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -990,6 +1119,9 @@
       "scientific_measurement": {
         "delta": -2.0,
         "delta_pct": 0.191571,
+        "effective_error_pct": 0.191571,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1012,6 +1144,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1034,6 +1169,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1056,6 +1194,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1078,6 +1219,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1088,9 +1232,9 @@
       "lab": "igem_parts_expanded_lab",
       "property": "biology_strict_operon_replication",
       "name": "MT-CO3",
-      "computed": 784.0,
+      "computed": 780.0,
       "measured": 780,
-      "error_pct": 0.5128205128205128,
+      "error_pct": 0.0,
       "strict": true,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "source_benchmark": "igem_synthetic_biology_benchmark.json",
@@ -1098,21 +1242,24 @@
       "domain_display_name": "igem parts expanded",
       "display_name": "MT-CO3",
       "scientific_measurement": {
-        "delta": 4.0,
-        "delta_pct": 0.512821,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
       "lab": "igem_parts_expanded_lab",
       "property": "biology_strict_operon_replication",
       "name": "MT-ND3",
-      "computed": 346.0,
+      "computed": 349.0,
       "measured": 349,
-      "error_pct": 0.8595988538681949,
+      "error_pct": 0.0,
       "strict": true,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "source_benchmark": "igem_synthetic_biology_benchmark.json",
@@ -1120,12 +1267,15 @@
       "domain_display_name": "igem parts expanded",
       "display_name": "MT-ND3",
       "scientific_measurement": {
-        "delta": -3.0,
-        "delta_pct": 0.859599,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -1144,6 +1294,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1166,6 +1319,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1188,6 +1344,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1210,6 +1369,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1232,6 +1394,9 @@
       "scientific_measurement": {
         "delta": 1.0,
         "delta_pct": 0.087719,
+        "effective_error_pct": 0.087719,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1255,6 +1420,9 @@
       "scientific_measurement": {
         "delta": 5.067641,
         "delta_pct": 0.044472,
+        "effective_error_pct": 0.044472,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -1270,18 +1438,21 @@
       "measured": 12,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0034",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1292,18 +1463,21 @@
       "measured": 41.6667,
       "error_pct": 7.999993600270692e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0034",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1314,18 +1488,21 @@
       "measured": 22,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0032",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1336,18 +1513,21 @@
       "measured": 45.4545,
       "error_pct": 0.00010000009999062986,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0032",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1358,18 +1538,21 @@
       "measured": 15,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B1002",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1380,18 +1563,21 @@
       "measured": 46.6667,
       "error_pct": 7.14285204105709e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B1002",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1402,18 +1588,21 @@
       "measured": 35,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa J23100",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1424,18 +1613,21 @@
       "measured": 48.5714,
       "error_pct": 5.882356401581393e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa J23100",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1446,18 +1638,21 @@
       "measured": 53,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0010",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1468,18 +1663,21 @@
       "measured": 47.1698,
       "error_pct": 2.400000575767171e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0010",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1490,18 +1688,21 @@
       "measured": 51,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0051",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1512,18 +1713,21 @@
       "measured": 45.098,
       "error_pct": 8.695659736293715e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0051",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1534,18 +1738,21 @@
       "measured": 55,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1556,18 +1763,21 @@
       "measured": 47.2727,
       "error_pct": 5.769234097689932e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa R0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1578,18 +1788,21 @@
       "measured": 45,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa I52002",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1600,18 +1813,21 @@
       "measured": 48.8889,
       "error_pct": 2.2727267567583718e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa I52002",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1622,18 +1838,21 @@
       "measured": 119,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0010",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1644,18 +1863,21 @@
       "measured": 52.9412,
       "error_pct": 4.444442470152661e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0010",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1666,18 +1888,21 @@
       "measured": 41,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0012",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1688,18 +1913,21 @@
       "measured": 51.2195,
       "error_pct": 2.380952948398675e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0012",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1710,18 +1938,21 @@
       "measured": 129,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0015",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1732,18 +1963,21 @@
       "measured": 52.7132,
       "error_pct": 4.117645363177062e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa B0015",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1754,18 +1988,21 @@
       "measured": 720,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1776,18 +2013,21 @@
       "measured": 48.0556,
       "error_pct": 9.248546359047207e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1798,18 +2038,21 @@
       "measured": 711,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0062",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1820,18 +2063,21 @@
       "measured": 48.3826,
       "error_pct": 8.313946575213666e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0062",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1842,18 +2088,21 @@
       "measured": 792,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0012",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1864,18 +2113,21 @@
       "measured": 47.3485,
       "error_pct": 3.199998975697284e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0012",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1886,18 +2138,21 @@
       "measured": 1194,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0261",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1908,18 +2163,21 @@
       "measured": 49.7487,
       "error_pct": 8.78788651014094e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0261",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1930,18 +2188,21 @@
       "measured": 948,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa E0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1952,18 +2213,21 @@
       "measured": 48.7342,
       "error_pct": 4.675322489651731e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa E0040",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1974,18 +2238,21 @@
       "measured": 786,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0051",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -1996,18 +2263,21 @@
       "measured": 48.0916,
       "error_pct": 6.349206754233128e-06,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa C0051",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2018,18 +2288,21 @@
       "measured": 3328,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa I13504",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2040,18 +2313,21 @@
       "measured": 47.8966,
       "error_pct": 7.227106853889602e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa I13504",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2062,18 +2338,21 @@
       "measured": 4101,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa K608000",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2084,18 +2363,21 @@
       "measured": 52.3775,
       "error_pct": 5.9357506661387664e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa K608000",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2106,18 +2388,21 @@
       "measured": 2071,
       "error_pct": 0.0,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa P10001",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2128,18 +2413,21 @@
       "measured": 51.2313,
       "error_pct": 2.1017903207268704e-05,
       "fasta_source": "synthetic_curated",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "BBa P10001",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2148,18 +2436,21 @@
       "measured": 0,
       "error_pct": 0.0,
       "note": "live API optional; bundled FASTA fallback accepted",
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "api reachable flag",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2167,18 +2458,21 @@
       "computed": 20,
       "measured": 20,
       "error_pct": 0.0,
-      "source_benchmark": "igem_live_fasta_benchmark.json",
-      "eval_kind": "igem_relay",
       "domain_display_name": "igem parts expanded",
       "display_name": "fasta cache count",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_benchmark": "igem_live_fasta_benchmark.json",
+      "eval_kind": "igem_relay"
     },
     {
       "lab": "igem_parts_expanded_lab",
@@ -2195,6 +2489,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2216,6 +2513,9 @@
       "scientific_measurement": {
         "delta": -2.0,
         "delta_pct": 0.191571,
+        "effective_error_pct": 0.191571,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2237,6 +2537,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2258,6 +2561,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2279,6 +2585,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2300,6 +2609,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2310,42 +2622,48 @@
       "lab": "igem_parts_expanded_lab",
       "property": "mt_operon_length",
       "name": "MT-CO3",
-      "computed": 784,
+      "computed": 780,
       "measured": 780,
-      "error_pct": 0.5128205128205128,
+      "error_pct": 0.0,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "strict": true,
       "eval_kind": "biology_strict_bridge",
       "domain_display_name": "igem parts expanded",
       "display_name": "MT-CO3",
       "scientific_measurement": {
-        "delta": 4.0,
-        "delta_pct": 0.512821,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
       "lab": "igem_parts_expanded_lab",
       "property": "mt_operon_length",
       "name": "MT-ND3",
-      "computed": 346,
+      "computed": 349,
       "measured": 349,
-      "error_pct": 0.8595988538681949,
+      "error_pct": 0.0,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "strict": true,
       "eval_kind": "biology_strict_bridge",
       "domain_display_name": "igem parts expanded",
       "display_name": "MT-ND3",
       "scientific_measurement": {
-        "delta": -3.0,
-        "delta_pct": 0.859599,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -2363,6 +2681,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2384,6 +2705,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2405,6 +2729,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2426,6 +2753,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2447,6 +2777,9 @@
       "scientific_measurement": {
         "delta": 1.0,
         "delta_pct": 0.087719,
+        "effective_error_pct": 0.087719,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2468,6 +2801,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2478,17 +2814,20 @@
       "lab": "igem_parts_expanded_lab",
       "property": "mt_coding_bp_sum",
       "name": "human_mt_coding_bp",
-      "computed": 11395,
+      "computed": 11394,
       "measured": 11395,
-      "error_pct": 0.0,
+      "error_pct": 0.008775778850372971,
       "source": "evolution_sim+NCBI_NC_012920.1",
       "strict": true,
       "eval_kind": "biology_strict_bridge",
       "domain_display_name": "igem parts expanded",
       "display_name": "human mt coding bp",
       "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
+        "delta": -1.0,
+        "delta_pct": 0.008776,
+        "effective_error_pct": 0.008776,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -2497,30 +2836,29 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 7.999993600270692e-05,
-    "max_scalar_error_pct": 0.8595988538681949,
+    "scalar_pooled_median_error_pct": 5.9357506661387664e-05,
+    "max_scalar_error_pct": 0.19157088122605362,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "IGEM Parts Expanded",
   "tier_label": "Tier 56 \u2014 UniProt Structure Annotations Deep cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.034379+00:00",
   "scientific_precision_summary": {
     "scalar_count": 109,
-    "median_error_pct": 7.999993600270692e-05,
-    "max_error_pct": 0.859599,
-    "mean_abs_delta": 0.2940871467889908,
+    "median_error_pct": 5.9357506661387664e-05,
+    "max_error_pct": 0.191571,
+    "mean_abs_delta": 0.17482109174311924,
     "precision_tier_counts": {
-      "green": 105,
-      "red": 4
+      "green": 109
     },
-    "green_gate_fraction": 0.963302752293578,
-    "matches_domain_spine": false
-  }
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.205708+00:00"
 }

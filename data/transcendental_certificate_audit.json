@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T15:58:54.139165+00:00",
+  "generated_at": "2026-07-11T17:04:46.687415+00:00",
   "version": "1.0",
-  "prover_note": "Coq/Isabelle TranscendentalBoundsBase uses certificate axioms; this audit proves intervals in Python decimal (triangulation, not Coq-native proof).",
+  "prover_note": "Coq TranscendentalBoundsNative + Isabelle approximation prove pi/e base intervals; this audit decimal-triangulates the certified bounds.",
   "overall_ok": true,
   "checks": [
     {
@@ -23,5 +23,5 @@
       "margin_hi": 8.881784197001252e-16
     }
   ],
-  "remedy": "Replace axioms with native interval proofs when Coq/Isabelle transcendental libs are wired."
+  "remedy": "Keep native base proofs in sync with Bounds.lean certified intervals."
 }

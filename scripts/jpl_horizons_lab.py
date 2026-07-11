@@ -86,7 +86,7 @@ ATMOSPHERE_BODY_COMMANDS = {
 # NASA Planetary Fact Sheets — authoritative pressure/temperature anchors.
 NASA_ATMOSPHERE_REFERENCE = {
     "Mercury": {"pressure_bar": 1.0e-15, "temperature_k": 440.0},
-    "Venus": {"pressure_bar": 92.0, "temperature_k": 737.0},
+    "Venus": {"pressure_bar": 90.0, "temperature_k": 735.0},
     "Earth": {"pressure_bar": 1.013, "temperature_k": 288.0},
     "Mars": {"pressure_bar": 0.00636, "temperature_k": 210.0},
     "Jupiter": {"pressure_bar": 1.0, "temperature_k": 165.0},

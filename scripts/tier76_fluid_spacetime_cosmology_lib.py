@@ -13,8 +13,19 @@ STUMPED_REF = DATA / "stumped_observables_reference.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from bubble_bleed_physics import H0_CONTESTED_SECTORS  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _fsot_scaled, _load_fsot, _median, _scalar  # noqa: E402
 from time_emergence_lib import DOMAINS, REAL_ANCHORS, REAL_FPC_ANCHORS, fpc_anchor_prediction  # noqa: E402
+
+
+def _relay_eval_kind(row: dict, *, default: str) -> str:
+    """Preserve contested H₀ sectors as structural — not scalar aspiration debt."""
+    ek = row.get("eval_kind")
+    if ek == "contested_observable":
+        return ek
+    if row.get("property") == "sector_h0_overlay" and str(row.get("name") or "") in H0_CONTESTED_SECTORS:
+        return "contested_observable"
+    return ek or default
 
 
 def _load_json(path: Path) -> dict:
@@ -327,7 +338,7 @@ def build_hubble_dark_sector_crosswalk() -> dict:
                     "measured": float(row.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": label,
-                    "eval_kind": "crosswalk_relay",
+                    "eval_kind": _relay_eval_kind(row, default="crosswalk_relay"),
                 }
             )
 
@@ -462,7 +473,7 @@ def build_fluid_spacetime_observable_spine() -> dict:
                     "measured": float(r.get("measured") or 0),
                     "error_pct": err,
                     "source_panel": label,
-                    "eval_kind": "fluid_spacetime_relay",
+                    "eval_kind": _relay_eval_kind(r, default="fluid_spacetime_relay"),
                 }
             )
 

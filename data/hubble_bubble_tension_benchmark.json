@@ -45,6 +45,9 @@
       "scientific_measurement": {
         "delta": 0.662298,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "red",
         "within_green_gate": false,
@@ -64,6 +67,9 @@
       "scientific_measurement": {
         "delta": 0.662298,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "red",
         "within_green_gate": false,
@@ -92,6 +98,9 @@
       "scientific_measurement": {
         "delta": 1.7e-07,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -120,6 +129,9 @@
       "scientific_measurement": {
         "delta": -0.016042,
         "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -148,10 +160,13 @@
       "scientific_measurement": {
         "delta": 0.483742,
         "delta_pct": 0.662297,
+        "effective_error_pct": 0.662297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -176,6 +191,9 @@
       "scientific_measurement": {
         "delta": -0.110662,
         "delta_pct": 0.157213,
+        "effective_error_pct": 0.157213,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -204,10 +222,13 @@
       "scientific_measurement": {
         "delta": -0.598017,
         "delta_pct": 0.829427,
+        "effective_error_pct": 0.829427,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -232,10 +253,13 @@
       "scientific_measurement": {
         "delta": 0.617583,
         "delta_pct": 0.884789,
+        "effective_error_pct": 0.884789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     }
   ],
@@ -269,5 +293,5 @@
     "green_gate_fraction": 0.0,
     "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.976514+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.146129+00:00"
 }

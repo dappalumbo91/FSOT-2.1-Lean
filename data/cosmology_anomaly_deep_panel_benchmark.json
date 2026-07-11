@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:13.068870+00:00",
+  "generated_at": "2026-07-11T16:10:52.383868+00:00",
   "domain": "Cosmology_Anomaly_Deep_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -47,6 +47,9 @@
       "scientific_measurement": {
         "delta": 0.000502,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -66,6 +69,9 @@
       "scientific_measurement": {
         "delta": 0.000502,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -87,6 +93,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -107,10 +116,16 @@
       "scientific_measurement": {
         "delta": 0.000339,
         "delta_pct": 0.000503,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck2018",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -127,10 +142,16 @@
       "scientific_measurement": {
         "delta": 0.000367,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Riess2024",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -147,10 +168,16 @@
       "scientific_measurement": {
         "delta": 0.000362,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "FSOT_bubble_bleed_dual_anchor",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -167,10 +194,16 @@
       "scientific_measurement": {
         "delta": -5e-06,
         "delta_pct": 0.0005,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 0.0005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0002,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
+        "reference": "Planck2018",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -187,10 +220,14 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference": "Planck2018_prior"
       }
     },
     {
@@ -207,10 +244,16 @@
       "scientific_measurement": {
         "delta": 4e-06,
         "delta_pct": 0.000493,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000493,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.74,
+        "reference": "Euclid_Q1_2024",
+        "observable_status": "s8_tension"
       }
     },
     {
@@ -227,10 +270,16 @@
       "scientific_measurement": {
         "delta": 3e-06,
         "delta_pct": 0.000438,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000438,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0004,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.02,
+        "reference": "Planck2018",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -246,6 +295,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -266,10 +318,16 @@
       "scientific_measurement": {
         "delta": 1.5e-05,
         "delta_pct": 0.000492,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000492,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0149,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.033,
+        "reference": "SM_N_eff",
+        "observable_status": "cmb_open"
       }
     },
     {
@@ -286,10 +344,16 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 13.0,
+        "reference": "Planck2018",
+        "observable_status": "cmb_open"
       }
     },
     {
@@ -305,6 +369,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -325,10 +392,14 @@
       "scientific_measurement": {
         "delta": 0.000739,
         "delta_pct": 0.000502,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference": "Planck2018_BAO"
       }
     },
     {
@@ -344,6 +415,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -365,17 +439,17 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Cosmology Anomaly Deep Panel",
   "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.155262+00:00",
   "scientific_precision_summary": {
     "scalar_count": 11,
     "median_error_pct": 0.0005,
     "max_error_pct": 0.000503,
     "mean_abs_delta": 0.00016672727272727274,
     "precision_tier_counts": {
-      "green": 8,
-      "contested": 3
+      "green": 7,
+      "contested": 4
     },
-    "green_gate_fraction": 0.7272727272727273,
+    "green_gate_fraction": 0.6363636363636364,
     "matches_domain_spine": true
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.310850+00:00"
 }

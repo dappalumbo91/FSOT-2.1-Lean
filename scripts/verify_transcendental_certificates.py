@@ -36,12 +36,12 @@ def build() -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "version": "1.0",
         "prover_note": (
-            "Coq/Isabelle TranscendentalBoundsBase uses certificate axioms; "
-            "this audit proves intervals in Python decimal (triangulation, not Coq-native proof)."
+            "Coq TranscendentalBoundsNative proves pi/e base intervals natively; "
+            "Isabelle uses certified axioms; this audit decimal-triangulates the bounds."
         ),
         "overall_ok": all_ok,
         "checks": checks,
-        "remedy": "Replace axioms with native interval proofs when Coq/Isabelle transcendental libs are wired.",
+        "remedy": "Keep native base proofs in sync with Bounds.lean certified intervals.",
     }
 
 

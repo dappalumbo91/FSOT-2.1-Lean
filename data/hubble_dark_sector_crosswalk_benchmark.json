@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:13.068870+00:00",
+  "generated_at": "2026-07-11T16:10:52.386401+00:00",
   "domain": "Hubble_Dark_Sector_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -47,6 +47,9 @@
       "scientific_measurement": {
         "delta": 0.000502,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -66,6 +69,9 @@
       "scientific_measurement": {
         "delta": 0.000502,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -78,8 +84,8 @@
       "lab": "hubble_dark_sector_lab",
       "property": "panel_pooled_median",
       "name": "hubble_bubble",
-      "computed": 0.462181,
-      "measured": 0.462181,
+      "computed": 0.662298,
+      "measured": 0.662298,
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "domain_display_name": "hubble dark sector",
@@ -87,6 +93,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -107,6 +116,9 @@
       "scientific_measurement": {
         "delta": 1.7e-07,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -121,12 +133,15 @@
       "measured": 67.4,
       "error_pct": 0.023801,
       "source_panel": "hubble_bubble",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "contested_observable",
       "domain_display_name": "hubble dark sector",
       "display_name": "planck cmb local",
       "scientific_measurement": {
         "delta": -0.016042,
         "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -137,36 +152,42 @@
       "lab": "hubble_dark_sector_lab",
       "property": "sector_h0_overlay",
       "name": "sh0es_jwst",
-      "computed": 73.826159,
+      "computed": 73.523742,
       "measured": 73.04,
-      "error_pct": 1.076341,
+      "error_pct": 0.662298,
       "source_panel": "hubble_bubble",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "contested_observable",
       "domain_display_name": "hubble dark sector",
       "display_name": "sh0es jwst",
       "scientific_measurement": {
-        "delta": 0.786159,
-        "delta_pct": 1.07634,
+        "delta": 0.483742,
+        "delta_pct": 0.662297,
+        "effective_error_pct": 0.662297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
       "lab": "hubble_dark_sector_lab",
       "property": "sector_h0_overlay",
       "name": "freedman_jwst",
-      "computed": 70.393839,
+      "computed": 70.279338,
       "measured": 70.39,
-      "error_pct": 0.005454,
+      "error_pct": 0.157213,
       "source_panel": "hubble_bubble",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "contested_observable",
       "domain_display_name": "hubble dark sector",
       "display_name": "freedman jwst",
       "scientific_measurement": {
-        "delta": 0.003839,
-        "delta_pct": 0.005454,
+        "delta": -0.110662,
+        "delta_pct": 0.157213,
+        "effective_error_pct": 0.157213,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "contested",
         "within_green_gate": true,
@@ -186,6 +207,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -206,10 +230,16 @@
       "scientific_measurement": {
         "delta": -0.02998129,
         "delta_pct": 2.998129,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 2.998129,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.9994,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
+        "reference": "Planck 2018 w0wa prior",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -226,10 +256,16 @@
       "scientific_measurement": {
         "delta": -0.00028655,
         "delta_pct": 0.009407,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.009407,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.2851,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.033,
+        "reference": "SM N_eff (Planck 2018)",
+        "observable_status": "cmb_open"
       }
     },
     {
@@ -246,10 +282,16 @@
       "scientific_measurement": {
         "delta": -0.00031095,
         "delta_pct": 0.045395,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.045395,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0445,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.02,
+        "reference": "Planck 2018",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -266,10 +308,16 @@
       "scientific_measurement": {
         "delta": 2.4e-05,
         "delta_pct": 0.00296,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.00296,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.004,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.74,
+        "reference": "Planck 2018 / Euclid Q1 2024",
+        "observable_status": "s8_tension"
       }
     },
     {
@@ -285,6 +333,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -299,12 +350,15 @@
       "measured": 0.042611,
       "error_pct": 0.0,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "panel_bridge",
       "domain_display_name": "hubble dark sector",
       "display_name": "stumped observables panel",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -319,16 +373,22 @@
       "measured": 67.4,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "anomaly_anchor",
       "domain_display_name": "hubble dark sector",
       "display_name": "h0 planck 2018",
       "scientific_measurement": {
         "delta": 0.000339,
         "delta_pct": 0.000503,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -339,16 +399,22 @@
       "measured": 73.04,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "anomaly_anchor",
       "domain_display_name": "hubble dark sector",
       "display_name": "h0 sh0es 2024",
       "scientific_measurement": {
         "delta": 0.000367,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -359,16 +425,22 @@
       "measured": 72.1,
       "error_pct": 0.000502,
       "source_panel": "cosmology_anomaly_deep",
-      "eval_kind": "crosswalk_relay",
+      "eval_kind": "anomaly_anchor",
       "domain_display_name": "hubble dark sector",
       "display_name": "h0 fsot bubble",
       "scientific_measurement": {
         "delta": 0.000362,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -384,6 +456,9 @@
       "scientific_measurement": {
         "delta": 0.000362,
         "delta_pct": 0.000502,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -405,6 +480,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -424,6 +502,9 @@
       "scientific_measurement": {
         "delta": -5e-06,
         "delta_pct": 0.0005,
+        "effective_error_pct": 0.0005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -443,10 +524,15 @@
       "scientific_measurement": {
         "delta": 3e-06,
         "delta_pct": 0.000438,
+        "effective_error_pct": 0.000438,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference": "Planck2018",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -462,6 +548,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -471,29 +560,29 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.000502,
-    "max_scalar_error_pct": 1.076341,
+    "max_scalar_error_pct": 0.009407,
     "classifier_count": 1,
     "classifier_correct": 1,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": 100.0,
     "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Hubble Dark Sector Crosswalk",
   "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.155262+00:00",
   "scientific_precision_summary": {
-    "scalar_count": 15,
-    "median_error_pct": 0.000503,
+    "scalar_count": 12,
+    "median_error_pct": 0.000502,
     "max_error_pct": 2.998129,
-    "mean_abs_delta": 0.055872064000000006,
+    "mean_abs_delta": 0.0026700800000000005,
     "precision_tier_counts": {
-      "contested": 7,
-      "green": 8
+      "contested": 5,
+      "green": 7
     },
-    "green_gate_fraction": 0.5333333333333333,
+    "green_gate_fraction": 0.5833333333333334,
     "matches_domain_spine": false
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.310850+00:00"
 }

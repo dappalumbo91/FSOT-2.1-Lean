@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-07-11",
+  "note": "Published 1σ (or quoted uncertainty) for literature-aware precision gates. Contested sectors use eval_kind contested_observable or sigma_distance rows.",
+  "anchors": {
+    "hubble_constant": {
+      "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+      "measured_uncertainty_abs": 0.5,
+      "measured_uncertainty_pct": 0.742,
+      "unit": "km/s/Mpc",
+      "status": "hubble_tension_cmb",
+      "contested_sectors": ["sh0es_jwst", "fsot_document_local", "local_distance_ladder"]
+    },
+    "matter_clustering": {
+      "reference": "Planck 2018 / Euclid Q1 2024",
+      "measured_uncertainty_abs": 0.006,
+      "measured_uncertainty_pct": 0.74,
+      "unit": "dimensionless",
+      "status": "s8_tension"
+    },
+    "sigma_8": {
+      "reference": "Planck 2018",
+      "measured_uncertainty_abs": 0.006,
+      "measured_uncertainty_pct": 0.74,
+      "unit": "dimensionless",
+      "status": "s8_tension"
+    },
+    "dark_energy_eos": {
+      "reference": "Planck 2018 w0wa prior",
+      "measured_uncertainty_abs": 0.03,
+      "measured_uncertainty_pct": 3.0,
+      "unit": "dimensionless",
+      "status": "dark_energy_open",
+      "use_sigma_distance": true
+    },
+    "w0_constraint": {
+      "reference": "DESI DR2 BAO + Planck CMB",
+      "measured_uncertainty_abs": 0.031,
+      "measured_uncertainty_pct": 3.0,
+      "unit": "dimensionless",
+      "status": "dark_energy_open",
+      "use_sigma_distance": true
+    },
+    "neutrino_species": {
+      "reference": "SM N_eff (Planck 2018)",
+      "measured_uncertainty_abs": 0.001,
+      "measured_uncertainty_pct": 0.033,
+      "unit": "dimensionless",
+      "status": "cmb_open"
+    },
+    "reionization_optical_depth": {
+      "reference": "Planck 2018",
+      "measured_uncertainty_abs": 0.0073,
+      "measured_uncertainty_pct": 13.0,
+      "unit": "dimensionless",
+      "status": "cmb_open"
+    },
+    "deuterium_abundance": {
+      "reference": "Cooke et al. 2018 BBN",
+      "measured_uncertainty_abs": 3.0e-7,
+      "measured_uncertainty_pct": 1.2,
+      "unit": "dimensionless",
+      "status": "bbn_open"
+    },
+    "higgs_mass": {
+      "reference": "ATLAS+CMS combined 2023",
+      "measured_uncertainty_abs": 0.17,
+      "measured_uncertainty_pct": 0.136,
+      "unit": "GeV",
+      "status": "hierarchy_problem"
+    },
+    "dark_energy_density": {
+      "reference": "Planck 2018",
+      "measured_uncertainty_abs": 0.007,
+      "measured_uncertainty_pct": 1.02,
+      "unit": "dimensionless",
+      "status": "dark_energy_open"
+    },
+    "brain_power": {
+      "reference": "Human brain metabolic ~20 W (literature range 15–25 W)",
+      "measured_uncertainty_abs": 5.0,
+      "measured_uncertainty_pct": 25.0,
+      "unit": "W",
+      "status": "consciousness_open"
+    },
+    "brain_power_w": {
+      "reference": "Human brain metabolic ~20 W (AnAge / literature 15–25 W)",
+      "measured_uncertainty_abs": 5.0,
+      "measured_uncertainty_pct": 25.0,
+      "unit": "W",
+      "status": "consciousness_open"
+    },
+    "dwarf_core_radius": {
+      "reference": "Fornax dwarf core scale ~0.5–0.7 kpc",
+      "measured_uncertainty_abs": 0.1,
+      "measured_uncertainty_pct": 16.7,
+      "unit": "kpc",
+      "status": "cusp_core_problem"
+    },
+    "external_planck_h0": {
+      "reference": "Planck 2018 H0",
+      "measured_uncertainty_abs": 0.5,
+      "measured_uncertainty_pct": 0.742,
+      "unit": "km/s/Mpc"
+    },
+    "external_planck_sigma8": {
+      "reference": "Planck 2018 sigma8",
+      "measured_uncertainty_abs": 0.006,
+      "measured_uncertainty_pct": 0.74,
+      "unit": "dimensionless"
+    }
+  }
+}

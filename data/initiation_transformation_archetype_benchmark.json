@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:06.279029+00:00",
+  "generated_at": "2026-07-11T16:10:55.596778+00:00",
   "domain": "Initiation_Transformation_Archetype",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -45,6 +45,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -64,6 +67,9 @@
       "scientific_measurement": {
         "delta": 0.193398,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -85,6 +91,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -104,6 +113,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -123,6 +135,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -142,6 +157,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -161,6 +179,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -180,6 +201,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -201,6 +225,9 @@
       "scientific_measurement": {
         "delta": 0.00506,
         "delta_pct": 0.94543,
+        "effective_error_pct": 0.94543,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "red",
         "within_green_gate": false,
@@ -222,6 +249,9 @@
       "scientific_measurement": {
         "delta": -0.001183,
         "delta_pct": 0.19336,
+        "effective_error_pct": 0.19336,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -243,6 +273,9 @@
       "scientific_measurement": {
         "delta": -8.3e-05,
         "delta_pct": 0.005039,
+        "effective_error_pct": 0.005039,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -264,6 +297,9 @@
       "scientific_measurement": {
         "delta": -0.000979,
         "delta_pct": 0.121995,
+        "effective_error_pct": 0.121995,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -285,7 +321,6 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Initiation Transformation Archetype",
   "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.088807+00:00",
   "scientific_precision_summary": {
     "scalar_count": 6,
     "median_error_pct": 0.0,
@@ -296,5 +331,6 @@
     },
     "green_gate_fraction": 1.0,
     "matches_domain_spine": true
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.254459+00:00"
 }

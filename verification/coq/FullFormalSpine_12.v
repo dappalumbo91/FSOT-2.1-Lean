@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma NeuronCohortStrataPriors_stratum_sst_fi_pearson_gt_bound : (0.5%R) < (0.5196512945807779%R).
-Proof. lra. Qed.
-
 Lemma NeuronCohortStrataPriors_stratum_pv_fi_pearson_gt_bound : (0.35%R) < (0.3915167429133035%R).
 Proof. lra. Qed.
 
@@ -31,9 +28,6 @@ Lemma NeuronCohortStrataPriors_stratum_vip_cell_count_pos : (140 < 146)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_cell_count_pos : (1100 < 1127)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma NeuronCohortStrataPriors_neuron_cohort_strata_bundle : (2100 < 2165)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma DomainPrecisionPriors_domain_precision_numeric_majority : (30 < 35)%nat.

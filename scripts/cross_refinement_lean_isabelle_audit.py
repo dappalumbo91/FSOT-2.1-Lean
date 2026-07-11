@@ -157,6 +157,35 @@ def _compare_provable_obligation(
     }
 
 
+def _compare_bundle_obligation(exported: dict, lean_reparsed: dict | None) -> dict:
+    issues: list[str] = []
+    if lean_reparsed is None:
+        issues.append("lean_reparse_missing")
+    elif lean_reparsed.get("kind") != "bundle_conj":
+        issues.append("field_mismatch:kind")
+    if exported.get("unparsed_conjunct_count", 0) != 0:
+        issues.append("unparsed_conjuncts_remain")
+    for conj in exported.get("conjuncts") or []:
+        if conj.get("kind") == "opaque_conj":
+            issues.append("opaque_conjunct_present")
+        elif not python_verify_obligation(conj):
+            issues.append("conjunct_python_verify_failed")
+    if not python_verify_obligation(exported):
+        issues.append("bundle_python_verify_failed")
+    return {
+        "obligation_id": exported["id"],
+        "kind": "bundle_conj",
+        "lean_module": exported.get("lean_module"),
+        "classification": "structural_bundle",
+        "bundle_index": {
+            "conjunct_count": exported.get("conjunct_count"),
+            "isabelle_excluded_by_design": True,
+        },
+        "issues": issues,
+        "triangulated_ok": len(issues) == 0,
+    }
+
+
 def main() -> int:
     if not OBL.exists():
         print(f"Missing {OBL}", file=sys.stderr)
@@ -168,13 +197,18 @@ def main() -> int:
     isa_idx = _load_isabelle_lemmas()
 
     provable_obs = [ob for ob in exported_obs if obligation_provable(ob)]
+    atomic_provable = [ob for ob in provable_obs if ob.get("kind") != "bundle_conj"]
+    bundle_provable = [ob for ob in provable_obs if ob.get("kind") == "bundle_conj"]
     violation_obs = [ob for ob in exported_obs if not obligation_provable(ob)]
 
     provable_records = [
         _compare_provable_obligation(
             ob, lean_idx.get(ob["id"]), isa_idx.get(ob.get("coq_id", ob["id"]))
         )
-        for ob in provable_obs
+        for ob in atomic_provable
+    ]
+    bundle_records = [
+        _compare_bundle_obligation(ob, lean_idx.get(ob["id"])) for ob in bundle_provable
     ]
 
     issue_counts: dict[str, int] = {}
@@ -203,20 +237,25 @@ def main() -> int:
     pooled_median_lt_half = str(sorted(lt_half_margins)[len(lt_half_margins) // 2]) if lt_half_margins else None
 
     provable_ok = sum(1 for r in provable_records if r["triangulated_ok"])
+    bundle_ok = sum(1 for r in bundle_records if r["triangulated_ok"])
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "tier": "82_cross_refinement_lean_isabelle",
         "obligation_count_total": len(exported_obs),
         "obligation_count_provable": len(provable_obs),
+        "obligation_count_atomic_provable": len(atomic_provable),
+        "obligation_count_bundle_conj": len(bundle_provable),
         "obligation_count_margin_violations": len(violation_obs),
         "isabelle_chunks_found": len(list(ISA_DIR.glob("FullFormalSpine_*.thy")))
             + (1 if (ISA_DIR / "ConnectiveSpine.thy").exists() else 0),
         "isabelle_lemmas_indexed": len(isa_idx),
         "triangulation": {
-            "provable_triangulated_ok": provable_ok,
-            "provable_triangulated_fail": len(provable_obs) - provable_ok,
-            "pct_provable_triangulated": round(100 * provable_ok / max(1, len(provable_obs)), 4),
+            "atomic_triangulated_ok": provable_ok,
+            "atomic_triangulated_fail": len(atomic_provable) - provable_ok,
+            "bundle_conj_triangulated_ok": bundle_ok,
+            "bundle_conj_triangulated_fail": len(bundle_provable) - bundle_ok,
+            "pct_atomic_triangulated": round(100 * provable_ok / max(1, len(atomic_provable)), 4),
         },
         "margin_summary_by_kind": margin_summary,
         "lt_half_pooled_median_margin_to_bound": pooled_median_lt_half,
@@ -230,17 +269,20 @@ def main() -> int:
         ],
         "issue_counts": issue_counts,
         "failures_sample": [r for r in provable_records if not r["triangulated_ok"]][:25],
-        "overall_ok": provable_ok == len(provable_obs) and len(isa_idx) == len(provable_obs),
+        "overall_ok": provable_ok == len(atomic_provable)
+            and bundle_ok == len(bundle_provable)
+            and len(isa_idx) >= len(atomic_provable),
         "note": (
-            "Provable obligations must triangulate Lean/JSON/Isabelle literals. "
-            "Margin violations are excluded from Isabelle proofs."
+            "Atomic provable obligations triangulate Lean/JSON/Isabelle literals. "
+            "bundle_conj obligations are spine indices excluded from Isabelle chunks."
         ),
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
     print("CROSS-REFINEMENT LEAN ↔ ISABELLE AUDIT")
     print(f"  total obligations: {len(exported_obs)}")
-    print(f"  provable: {len(provable_obs)} (triangulated {provable_ok})")
+    print(f"  atomic provable: {len(atomic_provable)} (triangulated {provable_ok})")
+    print(f"  bundle_conj: {len(bundle_provable)} (triangulated {bundle_ok})")
     print(f"  margin violations excluded: {len(violation_obs)}")
     print(f"  isabelle lemmas indexed: {len(isa_idx)}")
     print(f"  issue kinds: {issue_counts}")

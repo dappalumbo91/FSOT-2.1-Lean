@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:58:12.027532+00:00",
+  "generated_at": "2026-07-11T16:11:53.306402+00:00",
   "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\math_generator\\generated_formula_comparison_report.json",
   "maps_to_lean": [
     "particle",
@@ -24,6 +24,9 @@
       "scientific_measurement": {
         "delta": -0.12978832,
         "delta_pct": 0.192564,
+        "effective_error_pct": 0.192564,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -35,20 +38,24 @@
       "lab": "math_generator_lab",
       "case_id": "external_alma_chromosphere",
       "property": "brightness_temperature_rms_k",
-      "computed": 100.55873127515892,
+      "computed": 99.99581522012987,
       "measured": 100.0,
-      "error_pct": 0.5587312751589195,
+      "error_pct": 0.004184779870129773,
       "unit": "K",
-      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent",
+      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
+      "eval_kind": "live_formula",
       "domain_display_name": "math generator",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
-        "delta": 0.55873128,
-        "delta_pct": 0.558731,
+        "delta": -0.00418478,
+        "delta_pct": 0.004185,
+        "effective_error_pct": 0.004185,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
         "unit": "K"
       }
     },
@@ -67,6 +74,9 @@
       "scientific_measurement": {
         "delta": -0.01604169,
         "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -78,20 +88,24 @@
       "lab": "math_generator_lab",
       "case_id": "external_planck_sigma8",
       "property": "matter_fluctuation_amplitude",
-      "computed": 0.8037536999421859,
+      "computed": 0.8111240047382514,
       "measured": 0.811,
-      "error_pct": 0.8935018566971794,
+      "error_pct": 0.01529034996934153,
       "unit": "dimensionless",
-      "formula": "B_in * sound_horizon_mpc * matter_density_ratio * baryon_density_physical",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "eval_kind": "live_formula",
       "domain_display_name": "math generator",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
-        "delta": -0.0072463,
-        "delta_pct": 0.893502,
+        "delta": 0.000124,
+        "delta_pct": 0.01529,
+        "effective_error_pct": 0.01529,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
         "unit": "dimensionless"
       }
     },
@@ -109,6 +123,9 @@
       "scientific_measurement": {
         "delta": 0.00271507,
         "delta_pct": 0.123412,
+        "effective_error_pct": 0.123412,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -130,6 +147,9 @@
       "scientific_measurement": {
         "delta": -0.00076238,
         "delta_pct": 0.032033,
+        "effective_error_pct": 0.032033,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -149,6 +169,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -167,6 +190,9 @@
       "scientific_measurement": {
         "delta": -0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -185,6 +211,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -203,6 +232,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -221,6 +253,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -239,6 +274,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -257,6 +295,9 @@
       "scientific_measurement": {
         "delta": -0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -275,6 +316,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -293,6 +337,9 @@
       "scientific_measurement": {
         "delta": -0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -311,6 +358,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -329,6 +379,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -347,6 +400,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -365,6 +421,9 @@
       "scientific_measurement": {
         "delta": -0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -383,6 +442,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -393,16 +455,15 @@
   "display_name": "Mathematics Computational",
   "tier_label": "Tier 29",
   "scientific_precision_summary": {
-    "scalar_count": 19,
-    "median_error_pct": 1.3070933694645246e-14,
-    "max_error_pct": 0.893502,
-    "mean_abs_delta": 0.03680228157894737,
+    "scalar_count": 17,
+    "median_error_pct": 1.1592570441910361e-14,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.00783916294117647,
     "precision_tier_counts": {
-      "green": 17,
-      "red": 2
+      "green": 17
     },
-    "green_gate_fraction": 0.8947368421052632,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.511719+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:57.995841+00:00"
 }

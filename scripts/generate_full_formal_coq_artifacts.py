@@ -25,9 +25,10 @@ def main() -> int:
         print("No obligations in full_formal_spine.json", file=sys.stderr)
         return 1
 
+    atomic = [ob for ob in all_obligations if ob.get("kind") != "bundle_conj"]
     provable: list[dict] = []
     violations: list[dict] = []
-    for ob in all_obligations:
+    for ob in atomic:
         v = obligation_margin_violation(ob)
         if v is None:
             provable.append(ob)

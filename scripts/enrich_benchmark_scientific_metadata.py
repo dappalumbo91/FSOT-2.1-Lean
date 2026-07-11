@@ -13,17 +13,8 @@ MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_label_registry_lib import annotate_record, resolve_extension_domain  # noqa: E402
+from literature_uncertainty_lib import is_contested_record  # noqa: E402
 from scientific_measurement_lib import domain_precision_summary, measurement_envelope  # noqa: E402
-
-CONTESTED_PROPERTIES = frozenset(
-    {
-        "hubble_constant",
-        "sector_h0_overlay",
-        "frb_p34_periodicity",
-        "host_h0_median",
-        "host_h0_weighted_mean",
-    }
-)
 
 
 def _yaml(path: Path) -> dict:
@@ -55,8 +46,7 @@ def enrich_benchmark(path: Path, domain_key: str) -> dict | None:
         enriched: list[dict] = []
         for rec in recs:
             row = annotate_record(rec)
-            contested = str(row.get("property") or "") in CONTESTED_PROPERTIES
-            row["scientific_measurement"] = measurement_envelope(row, contested=contested)
+            row["scientific_measurement"] = measurement_envelope(row, contested=is_contested_record(row))
             enriched.append(row)
         doc[key] = enriched
         doc["scientific_precision_summary"] = domain_precision_summary(enriched)

@@ -32,10 +32,14 @@
       "scientific_measurement": {
         "delta": -0.00154908,
         "delta_pct": 0.027466,
+        "effective_error_pct": 0.027466,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Riess2024_vs_Planck2018",
         "unit": "km/s/Mpc_delta"
       }
     },
@@ -54,10 +58,14 @@
       "scientific_measurement": {
         "delta": -0.00545572,
         "delta_pct": 0.227322,
+        "effective_error_pct": 0.227322,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Freedman2019",
         "unit": "km/s/Mpc_delta"
       }
     },
@@ -76,10 +84,14 @@
       "scientific_measurement": {
         "delta": -0.00011322,
         "delta_pct": 0.195207,
+        "effective_error_pct": 0.195207,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "DES_Y3_2022",
         "unit": "S8_delta"
       }
     },
@@ -98,10 +110,14 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Planck2018",
         "unit": "S8"
       }
     },
@@ -120,10 +136,14 @@
       "scientific_measurement": {
         "delta": 0.00011322,
         "delta_pct": 0.01459,
+        "effective_error_pct": 0.01459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "DES_Y3_2022",
         "unit": "S8"
       }
     },
@@ -142,10 +162,14 @@
       "scientific_measurement": {
         "delta": 0.00948965,
         "delta_pct": 0.316322,
+        "effective_error_pct": 0.316322,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "BBN_obs_vs_theory",
         "unit": "underproduction_factor"
       }
     },
@@ -164,10 +188,14 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.486991,
+        "effective_error_pct": 0.486991,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Cooke_2018",
         "unit": "abundance"
       }
     },
@@ -186,10 +214,14 @@
       "scientific_measurement": {
         "delta": 1.3e-06,
         "delta_pct": 0.325,
+        "effective_error_pct": 0.325,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Planck2016_low_ell",
         "unit": "probability"
       }
     },
@@ -208,10 +240,14 @@
       "scientific_measurement": {
         "delta": 0.00700629,
         "delta_pct": 0.140126,
+        "effective_error_pct": 0.140126,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "Planck2015_cold_spot",
         "unit": "sigma"
       }
     },
@@ -230,10 +266,14 @@
       "scientific_measurement": {
         "delta": -9.62e-05,
         "delta_pct": 0.0962,
+        "effective_error_pct": 0.0962,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "WMAP_Planck_low_ell",
         "unit": "fractional_deficit"
       }
     },
@@ -252,10 +292,14 @@
       "scientific_measurement": {
         "delta": 0.0121683,
         "delta_pct": 0.086916,
+        "effective_error_pct": 0.086916,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "JWST_2023_2024",
         "unit": "redshift"
       }
     },
@@ -274,17 +318,21 @@
       "scientific_measurement": {
         "delta": 0.08522203,
         "delta_pct": 0.042611,
+        "effective_error_pct": 0.042611,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true,
+        "reference": "CHIME_high_DM",
         "unit": "pc_cm3_excess"
       }
     }
   ],
   "display_name": "Cosmology Anomalies",
   "tier_label": "Tier 25",
-  "scientific_metadata_enriched_at": "2026-07-11T15:59:55.501147+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:54.596739+00:00",
   "scientific_precision_summary": {
     "scalar_count": 12,
     "median_error_pct": 0.140126,

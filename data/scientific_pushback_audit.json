@@ -1,0 +1,284 @@
+{
+  "generated_at": "2026-07-11T16:37:07.516404+00:00",
+  "version": "1.0",
+  "summary": {
+    "extension_domain_count": 246,
+    "green_gate_pass_count": 246,
+    "green_gate_fail_count": 0,
+    "aspiration_scalar_debt_count": 0,
+    "stumped_observable_count": 13,
+    "stumped_without_benchmark_row": 0,
+    "preregistered_predictions_tracked": 1,
+    "domains_missing_uncertainty_metadata": 1,
+    "domains_raw_eff_divergence": 8
+  },
+  "aspiration_debt": [],
+  "pushback_avenues": [
+    {
+      "avenue": "h0_planck",
+      "status": "hubble_tension_cmb",
+      "reference": "Planck2018",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "h0_sh0es",
+      "status": "hubble_tension_local",
+      "reference": "Riess2024",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "w0",
+      "status": "dark_energy_open",
+      "reference": "Planck2018_w0_prior",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "n_eff",
+      "status": "cmb_open",
+      "reference": "SM_N_eff",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "omega_lambda",
+      "status": "dark_energy_open",
+      "reference": "Planck2018",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "sigma_8",
+      "status": "s8_tension",
+      "reference": "Euclid_Q1_2024",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "r_c",
+      "status": "cusp_core_problem",
+      "reference": "Fornax_dwarf",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "m_h",
+      "status": "hierarchy_problem",
+      "reference": "ATLAS_CMS_combined",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "tau_reion",
+      "status": "cmb_open",
+      "reference": "Planck2018",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "d_h",
+      "status": "bbn_open",
+      "reference": "Cooke_2018",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "e_con",
+      "status": "consciousness_open",
+      "reference": "human_brain_metabolic",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    },
+    {
+      "avenue": "w_a",
+      "status": "unconfirmed_prediction",
+      "reference": "FSOT_P45c",
+      "benchmark_coverage": true,
+      "severity": "monitored",
+      "mitigation": "contested_observable eval_kind + literature_uncertainty_anchors"
+    }
+  ],
+  "stumped_observables": [
+    {
+      "id": "h0_planck",
+      "property": "hubble_constant",
+      "status": "hubble_tension_cmb",
+      "reference": "Planck2018",
+      "measured": 67.4,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "hubble_tension_cmb"
+    },
+    {
+      "id": "h0_sh0es",
+      "property": "hubble_constant",
+      "status": "hubble_tension_local",
+      "reference": "Riess2024",
+      "measured": 73.04,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "hubble_tension_local"
+    },
+    {
+      "id": "h0_fsot_local",
+      "property": "hubble_constant",
+      "status": "fsot_dual_anchor",
+      "reference": "PREDICTION_REDERIVATION_REPORT",
+      "measured": 72.1,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "fsot_dual_anchor"
+    },
+    {
+      "id": "w0",
+      "property": "dark_energy_eos",
+      "status": "dark_energy_open",
+      "reference": "Planck2018_w0_prior",
+      "measured": -1.0,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "dark_energy_open"
+    },
+    {
+      "id": "n_eff",
+      "property": "neutrino_species",
+      "status": "cmb_open",
+      "reference": "SM_N_eff",
+      "measured": 3.046,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "cmb_open"
+    },
+    {
+      "id": "omega_lambda",
+      "property": "dark_energy_density",
+      "status": "dark_energy_open",
+      "reference": "Planck2018",
+      "measured": 0.685,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "dark_energy_open"
+    },
+    {
+      "id": "sigma_8",
+      "property": "matter_clustering",
+      "status": "s8_tension",
+      "reference": "Euclid_Q1_2024",
+      "measured": 0.8111,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "s8_tension"
+    },
+    {
+      "id": "r_c",
+      "property": "dwarf_core_radius",
+      "status": "cusp_core_problem",
+      "reference": "Fornax_dwarf",
+      "measured": 0.6,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "cusp_core_problem"
+    },
+    {
+      "id": "m_h",
+      "property": "higgs_mass",
+      "status": "hierarchy_problem",
+      "reference": "ATLAS_CMS_combined",
+      "measured": 125.25,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "hierarchy_problem"
+    },
+    {
+      "id": "tau_reion",
+      "property": "reionization_optical_depth",
+      "status": "cmb_open",
+      "reference": "Planck2018",
+      "measured": 0.0561,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "cmb_open"
+    },
+    {
+      "id": "d_h",
+      "property": "deuterium_abundance",
+      "status": "bbn_open",
+      "reference": "Cooke_2018",
+      "measured": 2.527e-05,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "bbn_open"
+    },
+    {
+      "id": "e_con",
+      "property": "brain_power",
+      "status": "consciousness_open",
+      "reference": "human_brain_metabolic",
+      "measured": 20.0,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "consciousness_open"
+    },
+    {
+      "id": "w_a",
+      "property": "dark_energy_eos_evolution",
+      "status": "unconfirmed_prediction",
+      "reference": "FSOT_P45c",
+      "measured": null,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "unconfirmed_prediction"
+    }
+  ],
+  "stumped_gaps": [],
+  "preregistered_predictions": [
+    {
+      "id": "w_a",
+      "property": "dark_energy_eos_evolution",
+      "status": "unconfirmed_prediction",
+      "reference": "FSOT_P45c",
+      "measured": null,
+      "in_extension_benchmarks": true,
+      "pushback_risk": "unconfirmed_prediction"
+    }
+  ],
+  "high_pushback_domains": [],
+  "missing_uncertainty_domains": [
+    {
+      "domain": "Hubble_Dark_Sector_Crosswalk",
+      "scalar_count": 12,
+      "missing_scientific_measurement": 0,
+      "stumped_missing_uncertainty": 1,
+      "stumped_untagged_contested": 4,
+      "max_scalar_error_pct": 0.009407,
+      "max_effective_scalar_error_pct": 0.009407278780006465,
+      "pooled_median_error_pct": 0.000502,
+      "green_gate_pass": true,
+      "raw_eff_divergence_count": 1,
+      "top_raw_eff_divergence": [
+        {
+          "property": "dark_energy_eos",
+          "name": "w0",
+          "raw_pct": 0.001816,
+          "effective_pct": 2.998129213726375,
+          "comparison_kind": "display_precision"
+        }
+      ],
+      "max_pushback_scalar": {
+        "property": "dark_energy_density",
+        "name": "Omega_Lambda",
+        "raw_pct": 0.0016,
+        "effective_pct": 0.04539452185406796,
+        "contested": false
+      }
+    }
+  ],
+  "failing_green_gate_domains": [],
+  "remediation_priority": [
+    "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",
+    "Tag H0 / dark-sector rows with contested_observable where literature spans >5%",
+    "Use sigma_distance rows for DESI w0 (not raw relative %)",
+    "Close stumped_gaps: benchmark panel for observables not yet in extension domains",
+    "Re-run verification_depth_audit after each remediation batch"
+  ]
+}

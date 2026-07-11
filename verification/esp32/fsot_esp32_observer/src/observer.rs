@@ -1,8 +1,11 @@
-//! Tier 89–91 — RF/sensor observer mapping into FSOT scalar + trinary collapse.
+//! Tier 89–93 — RF/sensor observer mapping into FSOT scalar + trinary collapse.
 
 use fsot_scalar_kernel::{
     compute_fsot_scalar, BOOT_D_EFF, BOOT_DELTA_PSI, C_EFF, P_VAR,
 };
+
+use crate::ble_scan::BleHit;
+use crate::csi::CsiSnapshot;
 
 pub const COLLAPSE_THRESHOLD: f64 = C_EFF * P_VAR;
 
@@ -91,6 +94,63 @@ impl ObserverSnapshot {
 
 pub trait ApRssi {
     fn rssi(&self) -> i8;
+}
+
+#[derive(Debug, Clone, Copy, Default)]
+pub struct FluidSonarSnapshot {
+    pub wifi: ObserverSnapshot,
+    pub csi: CsiSnapshot,
+    pub ble_count: u32,
+    pub ble_rssi_mean: f64,
+    pub ble_rssi_var: f64,
+}
+
+impl FluidSonarSnapshot {
+    pub fn from_layers(
+        wifi: ObserverSnapshot,
+        csi: CsiSnapshot,
+        ble_hits: &[BleHit],
+    ) -> Self {
+        let ble_count = ble_hits.len() as u32;
+        let (ble_rssi_mean, ble_rssi_var) = if ble_count == 0 {
+            (0.0, 0.0)
+        } else {
+            let mut sum = 0.0_f64;
+            for hit in ble_hits {
+                sum += hit.rssi as f64;
+            }
+            let mean = sum / ble_count as f64;
+            let mut var = 0.0_f64;
+            for hit in ble_hits {
+                let d = hit.rssi as f64 - mean;
+                var += d * d;
+            }
+            var /= ble_count as f64;
+            (mean, var)
+        };
+        Self {
+            wifi,
+            csi,
+            ble_count,
+            ble_rssi_mean,
+            ble_rssi_var,
+        }
+    }
+
+    pub fn fluid_scalar(&self) -> f64 {
+        let (d, mut dp, mut observed, mut hits) = self.wifi.scalar_inputs();
+        dp += self.csi.amp_var_mean * 0.00005;
+        dp += self.ble_rssi_var * 0.00008;
+        dp += (self.csi.packets as f64) * 0.0002;
+        hits += self.ble_count.min(8) as f64;
+        hits += (self.csi.packets.min(32) as f64) * 0.15;
+        observed |= self.csi.packets > 0 || self.ble_count > 0;
+        compute_fsot_scalar(d, dp, observed, hits)
+    }
+
+    pub fn rf_scalar(&self) -> f64 {
+        self.wifi.rf_scalar()
+    }
 }
 
 pub fn trinary_collapse(s: f64) -> TrinaryState {

@@ -8,9 +8,12 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OPERONS = Path(
-    r"C:\Users\damia\Desktop\fsot_evolution_\files-b7d9d6b8\fsot_evolution_sim\results\biological_mt_operons.json"
-)
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import evolution_operons_path  # noqa: E402
+
+DEFAULT_OPERONS = evolution_operons_path()
 OUTPUT = ROOT / "data" / "evolution_operon_benchmark.json"
 
 HUMAN_MT_OPERON_REF = {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:34:09.350287+00:00",
+  "generated_at": "2026-07-11T19:23:59.747355+00:00",
   "fsot_scale": {
     "extension_domains": 245,
     "priors_lean_modules": 308,
@@ -15,31 +15,32 @@
     "pct_of_extension_domains": 1.2245
   },
   "full_formal_spine": {
-    "obligations_in_full_json": 1241,
-    "modules_in_full_json": 317,
+    "obligations_in_full_json": 1557,
+    "modules_in_full_json": 318,
     "by_tier": {
-      "priors": 1153,
+      "priors": 1459,
       "bounds": 24,
-      "extended": 64
+      "extended": 74
     },
     "by_kind": {
       "lt_half": 458,
       "nat_pos": 579,
+      "bundle_conj": 318,
       "eq_nat": 20,
       "gt_lit": 24,
       "lt_lit": 31,
       "eq_nat_arith": 46,
       "pos": 45,
-      "nat_gt_lit": 25,
+      "nat_gt_lit": 23,
       "nat_le_lit": 4,
       "gt_one": 6,
       "lt": 3
     },
-    "pct_of_formal_theorems": 73.6936,
+    "pct_of_formal_theorems": 92.4584,
     "coq_chunks_generated": 13,
     "margin_violations_excluded": 0,
-    "coq_provable_target": 1241,
-    "coq_proved_yet": 1241,
+    "coq_provable_target": 1557,
+    "coq_proved_yet": 1557,
     "coq_proved_pct_of_full_export": 100.0,
     "coq_proved_pct_of_provable": 100.0,
     "coq_compile_status": "passed",
@@ -47,11 +48,11 @@
   },
   "full_priors_spine": {
     "obligations_exportable": 615,
-    "obligations_in_full_json": 1153,
+    "obligations_in_full_json": 1459,
     "modules_in_full_json": 307,
     "pct_of_priors_modules": 99.6753,
-    "pct_of_lean_theorems": 68.4679,
-    "cross_refinement_triangulated_pct": 100.0
+    "pct_of_lean_theorems": 86.639,
+    "cross_refinement_triangulated_pct": null
   },
   "interpretation": "Tier 82: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). Numeric certificates cross-proved in Lean+Coq+Isabelle with literal triangulation. Transcendental pi/e interval lemmas inventoried in transcendental_bounds_gap_report.json.",
   "scan": {

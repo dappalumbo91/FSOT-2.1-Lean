@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:13.068870+00:00",
+  "generated_at": "2026-07-11T16:10:52.380611+00:00",
   "domain": "Time_Emergence_Deep_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -46,6 +46,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -65,6 +68,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -86,6 +92,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -105,6 +114,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -124,6 +136,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -143,6 +158,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -162,6 +180,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -181,6 +202,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -200,6 +224,9 @@
       "scientific_measurement": {
         "delta": 0.000299,
         "delta_pct": 0.022247,
+        "effective_error_pct": 0.022247,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -220,6 +247,9 @@
       "scientific_measurement": {
         "delta": 4.61889076,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -241,6 +271,9 @@
       "scientific_measurement": {
         "delta": 4.3e-05,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -262,6 +295,9 @@
       "scientific_measurement": {
         "delta": 8e-08,
         "delta_pct": 0.108119,
+        "effective_error_pct": 0.108119,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -283,6 +319,9 @@
       "scientific_measurement": {
         "delta": 0.001186,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -304,10 +343,13 @@
       "scientific_measurement": {
         "delta": 3.4e-07,
         "delta_pct": 12.709942,
+        "effective_error_pct": 12.709942,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
         "unit": "rad/s"
       }
     },
@@ -325,6 +367,9 @@
       "scientific_measurement": {
         "delta": 3.417e-05,
         "delta_pct": 5e-05,
+        "effective_error_pct": 5e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -346,6 +391,9 @@
       "scientific_measurement": {
         "delta": -2.7e-07,
         "delta_pct": 4.7e-05,
+        "effective_error_pct": 4.7e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -367,6 +415,9 @@
       "scientific_measurement": {
         "delta": 4.2e-07,
         "delta_pct": 5.1e-05,
+        "effective_error_pct": 5.1e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -388,6 +439,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -408,6 +462,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -429,16 +486,17 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Time Emergence Deep Panel",
   "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.155262+00:00",
   "scientific_precision_summary": {
     "scalar_count": 17,
     "median_error_pct": 0.0,
     "max_error_pct": 12.709942,
     "mean_abs_delta": 0.27179141411764707,
     "precision_tier_counts": {
-      "green": 17
+      "green": 16,
+      "red": 1
     },
-    "green_gate_fraction": 1.0,
+    "green_gate_fraction": 0.9411764705882353,
     "matches_domain_spine": false
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.305733+00:00"
 }

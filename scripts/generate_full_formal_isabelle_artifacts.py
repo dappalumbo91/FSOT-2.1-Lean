@@ -12,7 +12,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from cross_proof_lib import (  # noqa: E402
     gen_isabelle_chunk,
-    gen_isabelle_root,
     obligation_margin_violation,
     obligation_provable,
 )
@@ -29,7 +28,9 @@ def main() -> int:
         print("No obligations in full_formal_spine.json", file=sys.stderr)
         return 1
 
-    provable = [ob for ob in all_obligations if obligation_provable(ob)]
+    provable = [
+        ob for ob in all_obligations if ob.get("kind") != "bundle_conj" and obligation_provable(ob)
+    ]
     violations = [ob for ob in all_obligations if obligation_margin_violation(ob) is not None]
     print(f"Isabelle provable: {len(provable)} | margin violations excluded: {len(violations)}")
 
@@ -48,10 +49,9 @@ def main() -> int:
         theory_names.append(name)
         print(f"Wrote {path} ({len(chunk)} obligations)")
 
-    (ISA_DIR / "ROOT").write_text(gen_isabelle_root(theory_names), encoding="utf-8")
     print(
-        f"Updated ROOT (session FSOT_CrossProof, {len(theory_names)} theories, "
-        f"{len(provable)} provable obligations)"
+        f"Wrote {len(theory_names) - 1} FullFormalSpine chunks "
+        f"({len(provable)} provable obligations); ROOT finalized by generate_transcendental_bounds_isabelle.py"
     )
     return 0
 

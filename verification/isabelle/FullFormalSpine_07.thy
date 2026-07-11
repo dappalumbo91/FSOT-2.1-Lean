@@ -60,9 +60,6 @@ lemma stratum_vip_cell_count_pos: "(140 :: nat) < (146 :: nat)"
 lemma stratum_l23_pyramidal_cell_count_pos: "(1100 :: nat) < (1127 :: nat)"
   by eval
 
-lemma neuron_cohort_strata_bundle: "(2100 :: nat) < (2165 :: nat)"
-  by eval
-
 lemma neuron_train_cell_count_pos: "0 < (1745 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma periodic_table_public_panel_observable_count_pos: "0 < (52 :: nat)"
   by eval
 
 lemma periodic_table_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct: "(0.00241237063663613 :: real) < (0.5 :: real)"
   by eval
 
 end

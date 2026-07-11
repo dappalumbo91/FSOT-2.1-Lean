@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:12:52.194690+00:00",
+  "generated_at": "2026-07-11T16:10:51.935767+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "JPL_Horizons_x_NASA_fact_sheets",
   "source_repo": "vendor/planetary_atmospheres",
@@ -68,6 +68,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -87,6 +90,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -106,6 +112,9 @@
       "scientific_measurement": {
         "delta": 0.176451,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -130,6 +139,9 @@
       "scientific_measurement": {
         "delta": -0.776385,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -143,19 +155,22 @@
       "body": "Venus",
       "source": "JPL_Horizons",
       "observed": 90.0,
-      "computed": 91.189128,
-      "measured": 92.0,
-      "error_pct": 0.881383,
+      "computed": 90.069046,
+      "measured": 90.0,
+      "error_pct": 0.076718,
       "S_plan": 0.767179,
       "domain_display_name": "planetary atmospheres",
       "display_name": "Venus:surface pressure",
       "scientific_measurement": {
-        "delta": -0.810872,
-        "delta_pct": 0.881383,
+        "delta": 0.069046,
+        "delta_pct": 0.076718,
+        "effective_error_pct": 0.076718,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -166,14 +181,17 @@
       "source": "JPL_Horizons",
       "observed": 735.0,
       "computed": 733.703084,
-      "measured": 737.0,
-      "error_pct": 0.447343,
+      "measured": 735.0,
+      "error_pct": 0.176451,
       "S_plan": 0.767179,
       "domain_display_name": "planetary atmospheres",
       "display_name": "Venus:mean temperature",
       "scientific_measurement": {
-        "delta": -3.296916,
-        "delta_pct": 0.447343,
+        "delta": -1.296916,
+        "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -196,6 +214,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -218,6 +239,9 @@
       "scientific_measurement": {
         "delta": -0.370548,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -240,6 +264,9 @@
       "scientific_measurement": {
         "delta": -0.291144,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -262,6 +289,9 @@
       "scientific_measurement": {
         "delta": -0.236445,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -284,6 +314,9 @@
       "scientific_measurement": {
         "delta": -0.134103,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -306,6 +339,9 @@
       "scientific_measurement": {
         "delta": -0.127045,
         "delta_pct": 0.176451,
+        "effective_error_pct": 0.176451,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -328,6 +364,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -350,6 +389,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -372,6 +414,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -394,6 +439,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -416,10 +464,13 @@
       "scientific_measurement": {
         "delta": -0.0,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
       }
     },
     {
@@ -438,6 +489,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -460,10 +514,13 @@
       "scientific_measurement": {
         "delta": -1e-08,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
       }
     },
     {
@@ -482,6 +539,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -504,6 +564,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -526,6 +589,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -548,6 +614,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -570,6 +639,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -583,17 +655,17 @@
   ],
   "display_name": "Planetary Atmospheres",
   "tier_label": "Tier 23",
-  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.470660+00:00",
   "scientific_precision_summary": {
     "scalar_count": 21,
     "median_error_pct": 0.006729,
     "max_error_pct": 100.0,
-    "mean_abs_delta": 0.2877837147619048,
+    "mean_abs_delta": 0.15722057190476188,
     "precision_tier_counts": {
-      "green": 20,
-      "red": 1
+      "green": 19,
+      "red": 2
     },
-    "green_gate_fraction": 0.9523809523809523,
+    "green_gate_fraction": 0.9047619047619048,
     "matches_domain_spine": false
-  }
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:57.959693+00:00"
 }

@@ -15,8 +15,8 @@ open Real
 /-- Legacy alias: Wave-4 observable count (see `cosmology_wave4_observable_count`). -/
 def wave4_observable_count : ℕ := cosmology_wave4_observable_count
 
-theorem wave4_observable_count_pos : 0 < wave4_observable_count :=
-  cosmology_wave4_observable_count_pos
+theorem wave4_observable_count_pos : 0 < wave4_observable_count := by
+  unfold wave4_observable_count cosmology_wave4_observable_count; norm_num
 
 end
 

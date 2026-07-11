@@ -3,9 +3,6 @@ theory FullFormalSpine_11
 imports Complex_Main
 begin
 
-lemma vizier_wds_tap_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
 lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (25 :: nat)"
   by eval
 
@@ -301,6 +298,9 @@ lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_fi_median_lt_bound: "(0.221
   by eval
 
 lemma NeuronCohortStrataPriors_held_out_fi_pearson_r_gt_fifty_five: "(0.55 :: real) < (0.6068416819088323 :: real)"
+  by eval
+
+lemma NeuronCohortStrataPriors_stratum_sst_fi_pearson_gt_bound: "(0.5 :: real) < (0.5196512945807779 :: real)"
   by eval
 
 end

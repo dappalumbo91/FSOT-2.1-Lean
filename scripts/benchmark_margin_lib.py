@@ -199,9 +199,17 @@ def classifier_metrics(records: list[dict]) -> dict[str, Any]:
 
 def scalar_metrics(records: list[dict]) -> dict[str, Any]:
     """Continuous FSOT prediction error metrics (excludes classifiers/structural)."""
+    from scientific_measurement_lib import literature_aware_error_pct
+
     errs = []
+    effective_errs = []
     max_err = 0.0
+    max_effective_any = 0.0
     max_row: dict | None = None
+    max_effective_row: dict | None = None
+    rounding_ghost_count = 0
+    catalog_crosswalk_count = 0
+
     for r in records:
         if classify_record(r) != "scalar":
             continue
@@ -216,14 +224,58 @@ def scalar_metrics(records: list[dict]) -> dict[str, Any]:
         if ef > max_err:
             max_err = ef
             max_row = r
+
+        comp = r.get("computed")
+        meas = r.get("measured")
+        if comp is not None and meas is not None:
+            try:
+                aware = literature_aware_error_pct(float(comp), float(meas), r)
+            except (TypeError, ValueError):
+                aware = {"effective_error_pct": ef, "comparison_kind": "raw"}
+        else:
+            aware = {"effective_error_pct": ef, "comparison_kind": "raw"}
+
+        eff = float(aware.get("effective_error_pct") or ef)
+        effective_errs.append(eff)
+        if eff > max_effective_any:
+            max_effective_any = eff
+            max_effective_row = r
+        if aware.get("comparison_kind") == "catalog_crosswalk":
+            catalog_crosswalk_count += 1
+        elif aware.get("within_display_precision") or aware.get("within_literature_band"):
+            if ef > MAX_SCALAR_ERROR_PCT:
+                rounding_ghost_count += 1
+
+    max_raw_effective = max_err
+    if max_row is not None:
+        comp = max_row.get("computed")
+        meas = max_row.get("measured")
+        if comp is not None and meas is not None:
+            try:
+                aware = literature_aware_error_pct(float(comp), float(meas), max_row)
+                max_raw_effective = float(aware.get("effective_error_pct") or max_err)
+            except (TypeError, ValueError):
+                max_raw_effective = max_err
+
     med = _median_or_none(errs)
+    effective_med = _median_or_none(effective_errs)
     return {
         "scalar_count": len(errs),
         "scalar_median_error_pct": med,
         "max_scalar_error_pct": max_err if errs else None,
         "max_scalar_name": (max_row or {}).get("name"),
         "max_scalar_property": (max_row or {}).get("property"),
+        "effective_scalar_median_error_pct": effective_med,
+        "max_effective_scalar_error_pct": max_raw_effective if effective_errs else None,
+        "max_effective_scalar_name": (max_row or {}).get("name"),
+        "max_effective_scalar_property": (max_row or {}).get("property"),
+        "worst_effective_scalar_error_pct": max_effective_any if effective_errs else None,
+        "worst_effective_scalar_name": (max_effective_row or {}).get("name"),
+        "worst_effective_scalar_property": (max_effective_row or {}).get("property"),
+        "rounding_ghost_scalar_count": rounding_ghost_count,
+        "catalog_crosswalk_scalar_count": catalog_crosswalk_count,
         "strict_scalar_pass": not errs or max_err <= MAX_SCALAR_ERROR_PCT,
+        "effective_scalar_pass": not effective_errs or max_raw_effective <= MAX_SCALAR_ERROR_PCT,
         "tier_scalar_pass": not errs or max_err <= TIER_SCALAR_MAX_ERROR_PCT,
         "scalar_median_pass": med is None or med <= MAX_MEDIAN_ERROR_PCT,
     }

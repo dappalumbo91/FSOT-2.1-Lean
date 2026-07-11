@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:06.268265+00:00",
+  "generated_at": "2026-07-11T16:10:52.728754+00:00",
   "domain": "Term3_Acoustic_Bleed_Depth",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -46,6 +46,9 @@
       "scientific_measurement": {
         "delta": 0.008381,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -65,6 +68,9 @@
       "scientific_measurement": {
         "delta": 0.008381,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -84,17 +90,20 @@
       "section": "molecules",
       "formula": "(e*((((\u03b3)^2)^2)^2)^2)",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Air 20C",
       "scientific_measurement": {
         "delta": -2.3e-07,
         "delta_pct": 0.056588,
+        "effective_error_pct": 0.056588,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -107,17 +116,20 @@
       "section": "molecules",
       "formula": "PI-A_IN",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Water 20C",
       "scientific_measurement": {
         "delta": -0.00526119,
         "delta_pct": 0.355486,
+        "effective_error_pct": 0.355486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -130,17 +142,20 @@
       "section": "molecules",
       "formula": "E\u00b3-PI",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Aluminum",
       "scientific_measurement": {
         "delta": -0.05605573,
         "delta_pct": 0.32974,
+        "effective_error_pct": 0.32974,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -153,17 +168,20 @@
       "section": "molecules",
       "formula": "((3)^2*(2+3))",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Steel",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -176,40 +194,46 @@
       "section": "molecules",
       "formula": "((\u03c6+3)/((\u03b3)^2)^2)",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Copper",
       "scientific_measurement": {
         "delta": 0.00108809,
         "delta_pct": 0.002616,
+        "effective_error_pct": 0.002616,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
       "property": "acoustic_impedance_MRayl",
       "name": "Titanium",
-      "computed": 27.474593022118317,
+      "computed": 27.321110807223864,
       "measured": 27.3,
-      "error_pct": 0.6395,
+      "error_pct": 0.077329,
       "source": "fsot_species_catalog.json",
       "section": "molecules",
-      "formula": "E\u00b3+E\u00b2",
+      "formula": "E\u00b3+E\u00b2\u2212Poof",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Titanium",
       "scientific_measurement": {
-        "delta": 0.17459302,
-        "delta_pct": 0.639535,
+        "delta": 0.02111081,
+        "delta_pct": 0.077329,
+        "effective_error_pct": 0.077329,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -222,17 +246,20 @@
       "section": "molecules",
       "formula": "(((2)^2)^2-(3/2))",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Glass",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -245,17 +272,20 @@
       "section": "molecules",
       "formula": "PHI\u2078+PHI\u00b2",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Nickel",
       "scientific_measurement": {
         "delta": 0.09674775,
         "delta_pct": 0.19545,
+        "effective_error_pct": 0.19545,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -268,17 +298,20 @@
       "section": "molecules",
       "formula": "E-P_NEW",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Glycerin",
       "scientific_measurement": {
         "delta": -0.00202045,
         "delta_pct": 0.08349,
+        "effective_error_pct": 0.08349,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -289,17 +322,20 @@
       "error_pct": 0.008381497018409132,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Residential SEER 14 baseline",
       "scientific_measurement": {
         "delta": 0.001173,
         "delta_pct": 0.008379,
+        "effective_error_pct": 0.008379,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -310,17 +346,20 @@
       "error_pct": 0.008381497018409132,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Residential SEER 14 baseline",
       "scientific_measurement": {
         "delta": 0.000293,
         "delta_pct": 0.008371,
+        "effective_error_pct": 0.008371,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -331,17 +370,20 @@
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "High-efficiency SEER 22",
       "scientific_measurement": {
         "delta": 0.001844,
         "delta_pct": 0.008382,
+        "effective_error_pct": 0.008382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -352,17 +394,20 @@
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "High-efficiency SEER 22",
       "scientific_measurement": {
         "delta": 0.000461,
         "delta_pct": 0.008382,
+        "effective_error_pct": 0.008382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -373,17 +418,20 @@
       "error_pct": 0.008381497018401518,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Heat pump HSPF 10",
       "scientific_measurement": {
         "delta": 0.000838,
         "delta_pct": 0.00838,
+        "effective_error_pct": 0.00838,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -394,17 +442,20 @@
       "error_pct": 0.00838149701841336,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Heat pump HSPF 10",
       "scientific_measurement": {
         "delta": 0.000251,
         "delta_pct": 0.008367,
+        "effective_error_pct": 0.008367,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -415,17 +466,20 @@
       "error_pct": 0.008381497018411083,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Heat pump HSPF 13",
       "scientific_measurement": {
         "delta": 0.00109,
         "delta_pct": 0.008385,
+        "effective_error_pct": 0.008385,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -436,17 +490,20 @@
       "error_pct": 0.008381497018404791,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Heat pump HSPF 13",
       "scientific_measurement": {
         "delta": 0.000318,
         "delta_pct": 0.008368,
+        "effective_error_pct": 0.008368,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -457,17 +514,20 @@
       "error_pct": 0.008381497018399903,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Carnot COP (0C cold, 27C hot)",
       "scientific_measurement": {
         "delta": 0.000922,
         "delta_pct": 0.008382,
+        "effective_error_pct": 0.008382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -478,17 +538,20 @@
       "error_pct": 0.008381497018412922,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Carnot COP (0C cold, 27C hot)",
       "scientific_measurement": {
         "delta": 0.022894,
         "delta_pct": 0.008381,
+        "effective_error_pct": 0.008381,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -499,17 +562,20 @@
       "error_pct": 0.008381497018408523,
       "source": "architecture_building_science_gap_fill_benchmark.json",
       "formula_branch": "term3.acoustic_bleed",
-      "eval_kind": "acoustic_formula",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "Carnot COP (0C cold, 27C hot)",
       "scientific_measurement": {
         "delta": 0.025157,
         "delta_pct": 0.008381,
+        "effective_error_pct": 0.008381,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "eval_kind": "acoustic_formula"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -519,17 +585,20 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "eval_kind": "harmonic_consistency",
-      "source_panel": "music_harmonics",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "circle of fifths compound",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "music_harmonics"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -539,17 +608,20 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "eval_kind": "temperament_consistency",
-      "source_panel": "music_harmonics",
       "domain_display_name": "term3 acoustic bleed depth",
       "display_name": "equal temperament compound",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "music_harmonics"
     },
     {
       "lab": "term3_acoustic_bleed_depth_lab",
@@ -565,6 +637,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -574,29 +649,28 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.008381497018408523,
-    "max_scalar_error_pct": 0.6395,
+    "max_scalar_error_pct": 0.3555,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
   "display_name": "Term3 Acoustic Bleed Depth",
   "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.088807+00:00",
   "scientific_precision_summary": {
     "scalar_count": 23,
     "median_error_pct": 0.008381,
-    "max_error_pct": 0.639535,
-    "mean_abs_delta": 0.017000324347826085,
+    "max_error_pct": 0.355486,
+    "mean_abs_delta": 0.010327184782608696,
     "precision_tier_counts": {
-      "green": 22,
-      "red": 1
+      "green": 23
     },
-    "green_gate_fraction": 0.9565217391304348,
-    "matches_domain_spine": false
-  }
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.250903+00:00"
 }

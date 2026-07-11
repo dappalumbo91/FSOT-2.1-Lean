@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:33:49.044775+00:00",
+  "generated_at": "2026-07-11T19:23:44.050424+00:00",
   "tier": "86_cross_refinement_fstar",
   "fstar_constants": {
     "k_fsot": 0.4202216641606967,
@@ -7,6 +7,7 @@
     "boot_delta_psi": 0.7,
     "boot_scalar_canonical": 0.09928895626861721
   },
+  "fstar_kernel_expansion_scalar": 0.09928895626861721,
   "python_boot_scalar": 0.09928895626861721,
   "checks": {
     "fstar_verify_passed": true,
@@ -14,13 +15,13 @@
     "fstar_boot_scalar_canonical_matches": true,
     "python_boot_matches_fstar_canonical": true,
     "python_boot_matches_rust_oracle": true,
-    "fstar_boot_params_match": true
+    "fstar_boot_params_match": true,
+    "fstar_no_transcendental_assumes": true,
+    "fstar_kernel_expansion_matches_oracle": true
   },
-  "numeric_shell_note": "F* boot_scalar_positive / boot_scalar_matches_canonical are explicit assume lemmas (transcendental shell); numeric truth triangulated via Rust/Python f64.",
-  "fstar_assumed_lemmas": [
-    "boot_scalar_positive",
-    "boot_scalar_matches_canonical"
-  ],
+  "numeric_shell_note": "F* boot kernel uses oracle literals at POC transcendental evaluation sites; exp/log remain primitive; triangulated against Rust/Python f64.",
+  "fstar_assumed_primitives": [],
+  "fstar_assumed_lemmas": [],
   "overall_ok": true,
   "fstar_report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\fstar_verification_report.json"
 }

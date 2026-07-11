@@ -276,20 +276,16 @@ def _count_field(rows: list[dict], field: str) -> dict[str, int]:
 
 
 def gen_coq_base() -> str:
+    native = ROOT / "verification" / "coq" / "TranscendentalBoundsNative.v"
+    if not native.exists():
+        import subprocess
+        import sys
+
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "gen_transcendental_native_coq.py")], check=False)
     return "\n".join(
         [
-            "(* FSOT Tier 83 — certified transcendental base intervals. *)",
-            "(* Decimal-verified + Lean Mathlib; cross-refinement audited. *)",
-            "From Stdlib Require Import Reals.",
-            "From Stdlib Require Import Rpower.",
-            "From Stdlib Require Import Rtrigo1.",
-            "From Stdlib Require Import Psatz.",
-            "Local Open Scope R_scope.",
-            "",
-            "Axiom certified_exp_one_lo : (2.7182818283%R) < exp 1.",
-            "Axiom certified_exp_one_hi : exp 1 < (2.7182818286%R).",
-            "Axiom certified_pi_lo : (3.14159265358979323846%R) < PI.",
-            "Axiom certified_pi_hi : PI < (3.14159265358979323847%R).",
+            "(* FSOT Tier 83 — native transcendental base intervals (no axioms). *)",
+            "Require Import TranscendentalBoundsNative.",
             "",
             "Lemma nonzero_03 : (0.3%R) <> 0.",
             "Proof. lra. Qed.",
@@ -299,18 +295,13 @@ def gen_coq_base() -> str:
 
 
 def gen_isabelle_base() -> str:
+    """Isabelle base intervals — re-export native proofs from TranscendentalBoundsNative.thy."""
     return "\n".join(
         [
-            "(* FSOT Tier 83 — certified transcendental base intervals. *)",
+            "(* FSOT Tier 83 — pi/e base intervals via native proofs (no axioms). *)",
             "theory TranscendentalBoundsBase",
-            "imports Complex_Main",
+            "imports TranscendentalBoundsNative",
             "begin",
-            "",
-            "axiomatization where",
-            '  certified_exp_one_lo: "2.7182818283 < exp (1::real)"',
-            'and certified_exp_one_hi: "exp (1::real) < 2.7182818286"',
-            'and certified_pi_lo: "3.14159265358979323846 < pi"',
-            'and certified_pi_hi: "pi < 3.14159265358979323847"',
             "",
             "end",
             "",

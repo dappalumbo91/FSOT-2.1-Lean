@@ -193,6 +193,41 @@ def _compare_provable_obligation(
     }
 
 
+def _compare_bundle_obligation(exported: dict, lean_reparsed: dict | None) -> dict:
+    issues: list[str] = []
+    if lean_reparsed is None:
+        issues.append("lean_reparse_missing")
+    elif lean_reparsed.get("kind") != "bundle_conj":
+        issues.append("field_mismatch:kind")
+    if exported.get("unparsed_conjunct_count", 0) != 0:
+        issues.append("unparsed_conjuncts_remain")
+    conjuncts = exported.get("conjuncts") or []
+    if not conjuncts:
+        issues.append("empty_conjunct_list")
+    else:
+        for conj in conjuncts:
+            if conj.get("kind") == "opaque_conj":
+                issues.append("opaque_conjunct_present")
+            elif not python_verify_obligation(conj):
+                issues.append("conjunct_python_verify_failed")
+    if not python_verify_obligation(exported):
+        issues.append("bundle_python_verify_failed")
+    return {
+        "obligation_id": exported["id"],
+        "kind": "bundle_conj",
+        "lean_module": exported.get("lean_module"),
+        "classification": "structural_bundle",
+        "bundle_index": {
+            "conjunct_count": exported.get("conjunct_count"),
+            "exportable_conjunct_count": exported.get("exportable_conjunct_count"),
+            "proof_witness_ids": exported.get("proof_witness_ids"),
+            "coq_excluded_by_design": True,
+        },
+        "issues": issues,
+        "triangulated_ok": len(issues) == 0,
+    }
+
+
 def _compare_violation_obligation(
     exported: dict,
     lean_reparsed: dict | None,
@@ -234,13 +269,18 @@ def main() -> int:
     coq_idx = _load_coq_lemmas()
 
     provable_obs = [ob for ob in exported_obs if obligation_provable(ob)]
+    atomic_provable = [ob for ob in provable_obs if ob.get("kind") != "bundle_conj"]
+    bundle_provable = [ob for ob in provable_obs if ob.get("kind") == "bundle_conj"]
     violation_obs = [ob for ob in exported_obs if not obligation_provable(ob)]
 
     provable_records = [
         _compare_provable_obligation(
             ob, lean_idx.get(ob["id"]), coq_idx.get(ob.get("coq_id", ob["id"]))
         )
-        for ob in provable_obs
+        for ob in atomic_provable
+    ]
+    bundle_records = [
+        _compare_bundle_obligation(ob, lean_idx.get(ob["id"])) for ob in bundle_provable
     ]
     violation_modules = sorted({ob.get("lean_module", "") for ob in violation_obs if ob.get("lean_module")})
     lean_fail_idx = _lean_build_failure_index(violation_modules)
@@ -248,7 +288,7 @@ def main() -> int:
         _compare_violation_obligation(ob, lean_idx.get(ob["id"]), lean_fail_idx.get(ob.get("lean_module", "")))
         for ob in violation_obs
     ]
-    records = provable_records + violation_records
+    records = provable_records + bundle_records + violation_records
 
     issue_counts: dict[str, int] = {}
     for rec in records:
@@ -276,6 +316,7 @@ def main() -> int:
     pooled_median_lt_half = str(sorted(lt_half_margins)[len(lt_half_margins) // 2]) if lt_half_margins else None
 
     provable_ok = sum(1 for r in provable_records if r["triangulated_ok"])
+    bundle_ok = sum(1 for r in bundle_records if r["triangulated_ok"])
     violation_ok = sum(1 for r in violation_records if r["triangulated_ok"])
 
     doc = {
@@ -283,16 +324,20 @@ def main() -> int:
         "tier": "79b_cross_refinement",
         "obligation_count_total": len(exported_obs),
         "obligation_count_provable": len(provable_obs),
+        "obligation_count_atomic_provable": len(atomic_provable),
+        "obligation_count_bundle_conj": len(bundle_provable),
         "obligation_count_margin_violations": len(violation_obs),
         "coq_chunks_found": len(list(COQ_DIR.glob("FullFormalSpine_*.v")))
             + len(list(COQ_DIR.glob("FullPriorsSpine_*.v"))),
         "coq_lemmas_indexed": len(coq_idx),
         "triangulation": {
-            "provable_triangulated_ok": provable_ok,
-            "provable_triangulated_fail": len(provable_obs) - provable_ok,
+            "atomic_triangulated_ok": provable_ok,
+            "atomic_triangulated_fail": len(atomic_provable) - provable_ok,
+            "bundle_conj_triangulated_ok": bundle_ok,
+            "bundle_conj_triangulated_fail": len(bundle_provable) - bundle_ok,
             "margin_violations_confirmed_ok": violation_ok,
             "margin_violations_confirmed_fail": len(violation_obs) - violation_ok,
-            "pct_provable_triangulated": round(100 * provable_ok / max(1, len(provable_obs)), 4),
+            "pct_atomic_triangulated": round(100 * provable_ok / max(1, len(atomic_provable)), 4),
         },
         "margin_summary_by_kind": margin_summary,
         "lt_half_pooled_median_margin_to_bound": pooled_median_lt_half,
@@ -307,11 +352,12 @@ def main() -> int:
         ],
         "issue_counts": issue_counts,
         "failures_sample": [r for r in records if not r["triangulated_ok"]][:25],
-        "overall_ok": provable_ok == len(provable_obs)
-            and violation_ok == len(violation_obs)
-            and len(coq_idx) == len(provable_obs),
+        "overall_ok": provable_ok == len(atomic_provable)
+            and bundle_ok == len(bundle_provable)
+            and len(coq_idx) >= len(atomic_provable),
         "note": (
-            "Provable obligations must triangulate Lean/JSON/Coq literals. "
+            "Atomic provable obligations triangulate Lean/JSON/Coq literals. "
+            "bundle_conj obligations are spine indices excluded from Coq chunks. "
             "Margin violations are excluded from Coq proofs; Lean build failure confirms refutation."
         ),
     }
@@ -319,7 +365,8 @@ def main() -> int:
 
     print("CROSS-REFINEMENT LEAN ↔ COQ AUDIT")
     print(f"  total obligations: {len(exported_obs)}")
-    print(f"  provable: {len(provable_obs)} (triangulated {provable_ok})")
+    print(f"  atomic provable: {len(atomic_provable)} (triangulated {provable_ok})")
+    print(f"  bundle_conj: {len(bundle_provable)} (triangulated {bundle_ok})")
     print(f"  margin violations: {len(violation_obs)} (confirmed {violation_ok})")
     print(f"  coq lemmas indexed: {len(coq_idx)}")
     print(f"  issue kinds: {issue_counts}")

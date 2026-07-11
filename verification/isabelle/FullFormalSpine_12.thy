@@ -3,9 +3,6 @@ theory FullFormalSpine_12
 imports Complex_Main
 begin
 
-lemma NeuronCohortStrataPriors_stratum_sst_fi_pearson_gt_bound: "(0.5 :: real) < (0.5196512945807779 :: real)"
-  by eval
-
 lemma NeuronCohortStrataPriors_stratum_pv_fi_pearson_gt_bound: "(0.35 :: real) < (0.3915167429133035 :: real)"
   by eval
 
@@ -28,9 +25,6 @@ lemma NeuronCohortStrataPriors_stratum_vip_cell_count_pos: "(140 :: nat) < (146 
   by eval
 
 lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_cell_count_pos: "(1100 :: nat) < (1127 :: nat)"
-  by eval
-
-lemma NeuronCohortStrataPriors_neuron_cohort_strata_bundle: "(2100 :: nat) < (2165 :: nat)"
   by eval
 
 lemma DomainPrecisionPriors_domain_precision_numeric_majority: "(30 :: nat) < (35 :: nat)"

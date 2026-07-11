@@ -1,15 +1,19 @@
 {
-  "generated_at": "2026-07-11T15:33:41.907474+00:00",
+  "generated_at": "2026-07-11T19:23:36.599179+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
-  "obligation_count_total": 1241,
+  "obligation_count_total": 1557,
   "obligation_count_provable": 1241,
-  "obligation_count_margin_violations": 0,
+  "obligation_count_atomic_provable": 1239,
+  "obligation_count_bundle_conj": 2,
+  "obligation_count_margin_violations": 316,
   "isabelle_chunks_found": 14,
-  "isabelle_lemmas_indexed": 1241,
+  "isabelle_lemmas_indexed": 1239,
   "triangulation": {
-    "provable_triangulated_ok": 1241,
-    "provable_triangulated_fail": 0,
-    "pct_provable_triangulated": 100.0
+    "atomic_triangulated_ok": 1239,
+    "atomic_triangulated_fail": 0,
+    "bundle_conj_triangulated_ok": 2,
+    "bundle_conj_triangulated_fail": 0,
+    "pct_atomic_triangulated": 100.0
   },
   "margin_summary_by_kind": {
     "lt_half": {
@@ -43,9 +47,9 @@
       "max_margin": "125.20001875723811"
     },
     "nat_gt_lit": {
-      "count": 25,
+      "count": 23,
       "min_margin": "1",
-      "median_margin": "6",
+      "median_margin": "5",
       "max_margin": "70"
     },
     "nat_le_lit": {
@@ -68,9 +72,2538 @@
     }
   },
   "lt_half_pooled_median_margin_to_bound": "0.499966",
-  "margin_violations_excluded": [],
+  "margin_violations_excluded": [
+    {
+      "id": "acoustic_rm_bundle",
+      "module": "AcousticResonanceMaterialsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "adj_rung_bundle",
+      "module": "AdjacentRungCouplingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "adv_brk_bundle",
+      "module": "AdversarialFractalBreakPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "aether_prime_priors_bundle",
+      "module": "AetherPrimePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "agriculture_agroecology_gap_fill_bundle",
+      "module": "AgricultureAgroecologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "ai_gal_br_bundle",
+      "module": "AIGalacticOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "anthropology_ext_bundle",
+      "module": "AnthropologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "architecture_building_science_gap_fill_bundle",
+      "module": "ArchitectureBuildingScienceGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "arxiv_primitives_v14_bundle",
+      "module": "ArxivPrimitivesV14Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "astrophysical_structure_crosswalk_bundle",
+      "module": "AstrophysicalStructureCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "atmospheric_physics_gap_fill_bundle",
+      "module": "AtmosphericPhysicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "atomic_physics_gap_fill_bundle",
+      "module": "AtomicPhysicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "bibliography_lean_corpus_bundle",
+      "module": "BibliographyLeanCorpusPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "binary_decoder_rendlesham_bundle",
+      "module": "BinaryDecoderRendleshamPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "biological_cuda_physarum_bundle",
+      "module": "BiologicalCudaPhysarumPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "biology_strict_bundle",
+      "module": "BiologyStrictEmpiricalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "biophysics_public_panel_bundle",
+      "module": "BiophysicsPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "blackhole_thesis_bundle",
+      "module": "BlackHoleThesisPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "botany_ext_bundle",
+      "module": "BotanyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "boundary_partition_tightening_bundle",
+      "module": "BoundaryPartitionTighteningPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "brain_component_priors_trinary_bundle",
+      "module": "BrainPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "breakthrough_discoveries_2024_2026_bundle",
+      "module": "BreakthroughDiscoveries20242026Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "bubble_bleed_bundle",
+      "module": "BubbleBleedPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cameo_symbolic_bundle",
+      "module": "CameoPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cardiology_ext_bundle",
+      "module": "CardiologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cern_open_data_lhc_bundle",
+      "module": "CernOpenDataLhcPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "certified_agent_qwen_bundle",
+      "module": "CertifiedAgentQwenPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "chaos_pt_bundle",
+      "module": "ChaosMediatedPhaseTransitionsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "chemical_engineering_ext_bundle",
+      "module": "ChemicalEngineeringExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "chemical_structure_stability_panel_bundle",
+      "module": "ChemicalStructureStabilityPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "civil_engineering_ext_bundle",
+      "module": "CivilEngineeringExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "climate_science_bundle",
+      "module": "ClimateSciencePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "clinical_medicine_ext_bundle",
+      "module": "ClinicalMedicineExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "code_genome_bundle",
+      "module": "CodeGenomeStructurePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "codon_trinary_map_bundle",
+      "module": "CodonPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cold_fusion_candidate_prereg_scaffold_bundle",
+      "module": "ColdFusionCandidatePreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cold_fusion_lab_synthesis_crosswalk_bundle",
+      "module": "ColdFusionLabSynthesisCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "comp_lad_bundle",
+      "module": "CompactificationLadderPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "compact_object_binary_events_bundle",
+      "module": "CompactObjectBinaryEventsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "computational_reasoning_bundle",
+      "module": "ComputationalReasoningPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "consciousness_econ_bundle",
+      "module": "ConsciousnessEconPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "c_gal_br_bundle",
+      "module": "ConsciousnessGalacticOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "consciousness_soul_bridge_bundle",
+      "module": "ConsciousnessSoulBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_anomalies_bundle",
+      "module": "CosmologyAnomaliesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_anomaly_deep_panel_bundle",
+      "module": "CosmologyAnomalyDeepPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_extended_bundle",
+      "module": "CosmologyExtendedPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_higher_waves_bundle",
+      "module": "CosmologyHigherWavesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave10_bundle",
+      "module": "CosmologyWave10Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave4_bundle",
+      "module": "CosmologyWave4Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave5_bundle",
+      "module": "CosmologyWave5Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave6_bundle",
+      "module": "CosmologyWave6Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave7_bundle",
+      "module": "CosmologyWave7Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave8_bundle",
+      "module": "CosmologyWave8Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cosmology_wave9_bundle",
+      "module": "CosmologyWave9Priors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "creative_arts_math_spine_bundle",
+      "module": "CreativeArtsMathSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cryosphere_bundle",
+      "module": "CryospherePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "crypto_tech_bundle",
+      "module": "CryptographyTechnologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "culinary_arts_bundle",
+      "module": "CulinaryArtsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cve_hole_bundle",
+      "module": "CVECodonHoleFalsificationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "dark_energy_cpl_bundle",
+      "module": "DarkEnergyCPLPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "dark_sector_bundle",
+      "module": "DarkSectorOpenProblemsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "distant_island_emergence_simulation_bundle",
+      "module": "DistantIslandEmergenceSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "distant_island_z128_z132_deep_panel_bundle",
+      "module": "DistantIslandZ128Z132DeepPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_coupling_bundle",
+      "module": "DomainCouplingSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_coupling_simulation_refresh_panel_bundle",
+      "module": "DomainCouplingSimulationRefreshPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_coverage_priors_bundle",
+      "module": "DomainCoveragePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "orb_pred_bundle",
+      "module": "DomainOrbitalPredictionsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_precision_priors_bundle",
+      "module": "DomainPrecisionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "connective_e10d_wd_bundle",
+      "module": "E10dWdConnectivePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "ecology_gap_fill_bundle",
+      "module": "EcologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "ecology_bundle",
+      "module": "EcologyPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "econometrics_gap_fill_bundle",
+      "module": "EconometricsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "economics_gap_fill_bundle",
+      "module": "EconomicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "econophysics_bundle",
+      "module": "EconophysicsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "electrical_power_systems_bundle",
+      "module": "ElectricalPowerSystemsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "element_synthesis_condition_scaffold_bundle",
+      "module": "ElementSynthesisConditionScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "emergent_domain_priors_bundle",
+      "module": "EmergentDomainPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "e_ai_br_bundle",
+      "module": "EnergyAIOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "e_neu_br_bundle",
+      "module": "EnergyNeuralOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "entomology_ext_bundle",
+      "module": "EntomologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "environmental_engineering_ext_bundle",
+      "module": "EnvironmentalEngineeringExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "epidemiology_ext_bundle",
+      "module": "EpidemiologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "evolution_priors_bundle",
+      "module": "EvolutionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "exogeology_ext_bundle",
+      "module": "ExogeologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "exoplanet_system_architecture_bundle",
+      "module": "ExoplanetSystemArchitecturePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "experiment_synthesis_priors_bundle",
+      "module": "ExperimentSynthesisPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "external_oss_bundle",
+      "module": "ExternalOSSCodeGenomePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "finance_markets_ext_bundle",
+      "module": "FinanceMarketsExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fluid_dynamics_gap_fill_bundle",
+      "module": "FluidDynamicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fpc_spine_bundle",
+      "module": "FluidPhaseCurrentSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fluid_spacetime_observable_spine_bundle",
+      "module": "FluidSpacetimeObservableSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fluid_spacetime_prereg_validation_panel_bundle",
+      "module": "FluidSpacetimePreregValidationPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fold_dep_bundle",
+      "module": "FoldDepthMetricsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "food_microbiology_gap_fill_bundle",
+      "module": "FoodMicrobiologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fractal_bundle",
+      "module": "FormulaBranchingFractalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "formula_corpus_closure_bundle",
+      "module": "FormulaCorpusClosurePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "formula_corpus_cnc_bundle",
+      "module": "FormulaCorpusCncPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "formula_corpus_strict_empirical_bundle",
+      "module": "FormulaCorpusPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "formula_precision_spine_bundle",
+      "module": "FormulaPrecisionSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fpc_fluidlink_timing_deep_panel_bundle",
+      "module": "FpcFluidlinkTimingDeepPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fpc_link_bundle",
+      "module": "FPCTemporalCouplingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "const_rec_bundle",
+      "module": "FractalConstantRecursionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fsot_aggregate_organized_panel_bundle",
+      "module": "FsotAggregateOrganizedPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fsot_aggregate_unified_db_bundle",
+      "module": "FsotAggregateUnifiedDbPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fuel_candidate_prereg_scaffold_bundle",
+      "module": "FuelCandidatePreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fuel_lab_compound_bundle",
+      "module": "FuelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fuel_thermochemistry_public_anchors_bundle",
+      "module": "FuelThermochemistryPublicAnchorsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fusion_decay_chain_prereg_scaffold_bundle",
+      "module": "FusionDecayChainPreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "connective_fusion_grid_bundle",
+      "module": "FusionGridConnectivePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fusion_lab_certificate_spine_bundle",
+      "module": "FusionLabCertificateSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fusion_physics_public_panel_bundle",
+      "module": "FusionPhysicsPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "gaia_astrometry_panel_deep_bundle",
+      "module": "GaiaAstrometryPanelDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "gaia_dr3_tap_deep_bundle",
+      "module": "GaiaDR3TAPDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "galactic_structure_sample_bundle",
+      "module": "GalacticStructureSamplePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "gbif_species_occurrence_bundle",
+      "module": "GbifSpeciesOccurrencePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "genomic_sciences_bundle",
+      "module": "GenomicSciencesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "geochemistry_bundle",
+      "module": "GeochemistryPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "geology_stratigraphy_ext_bundle",
+      "module": "GeologyStratigraphyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "geomagnetism_bundle",
+      "module": "GeomagnetismPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "grace_cryosphere_bundle",
+      "module": "GraceCryospherePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "gwosc_live_event_deep_bundle",
+      "module": "GWOSCLiveEventDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "heavy_ion_lab_synthesis_panel_bundle",
+      "module": "HeavyIonLabSynthesisPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "higgs_branching_bundle",
+      "module": "HiggsBranchingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "higgs_mass_bundle",
+      "module": "HiggsMassPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "history_ext_bundle",
+      "module": "HistoryExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "hubble_tension_bundle",
+      "module": "HubbleBubbleTensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "hubble_dark_sector_crosswalk_bundle",
+      "module": "HubbleDarkSectorCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "hvac_thermal_systems_bundle",
+      "module": "HvacThermalSystemsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "hybrid_fi_sim_multi_hero_panel_bundle",
+      "module": "HybridFiSimMultiHeroPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "hydrology_bundle",
+      "module": "HydrologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "igem_live_fasta_bundle",
+      "module": "IGEMLiveFastaPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "igem_parts_expanded_bundle",
+      "module": "IGEMPartsExpandedPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "igem_synthetic_biology_bundle",
+      "module": "IGEMSyntheticBiologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "immunology_bundle",
+      "module": "ImmunologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "inertial_confinement_fusion_panel_bundle",
+      "module": "InertialConfinementFusionPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "information_theory_public_panel_bundle",
+      "module": "InformationTheoryPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "initiation_transformation_archetype_bundle",
+      "module": "InitiationTransformationArchetypePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "intelligence_compression_priors_bundle",
+      "module": "IntelligenceCompressionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "interactive_media_prereg_scaffold_bundle",
+      "module": "InteractiveMediaPreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "interdisciplinary_spine_crosswalk_bundle",
+      "module": "InterdisciplinarySpineCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "intrinsic_llm_validators_bundle",
+      "module": "IntrinsicLLMValidatorsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "iono_chem_bundle",
+      "module": "IonosphericChemistryCouplingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "island_of_stability_deep_panel_bundle",
+      "module": "IslandOfStabilityDeepPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "knowledge_base_portable_bundle_panel_bundle",
+      "module": "KnowledgeBasePortableBundlePanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "knowledge_base_corpus_bundle",
+      "module": "KnowledgeBasePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "kronos_metrology_bundle",
+      "module": "KronosPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "lab_synthesis_metamaterial_spine_bundle",
+      "module": "LabSynthesisMetamaterialSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "law_policy_ext_bundle",
+      "module": "LawPolicyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "linguistics_formal_bundle",
+      "module": "LinguisticsFormalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "linguistics_priors_bundle",
+      "module": "LinguisticsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "live_ingest_spine_bundle",
+      "module": "LiveIngestSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "magic_circle_priors_bundle",
+      "module": "MagicCirclePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "magnetic_confinement_fusion_panel_bundle",
+      "module": "MagneticConfinementFusionPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "magnetic_string_bundle",
+      "module": "MagneticStringPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "magnetosphere_extended_bundle",
+      "module": "MagnetosphereExtendedPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "magnetosphere_bundle",
+      "module": "MagnetospherePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "maillard_chemistry_gap_fill_bundle",
+      "module": "MaillardChemistryGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "malware_threat_bundle",
+      "module": "MalwareThreatIntelligencePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "marine_biology_ext_bundle",
+      "module": "MarineBiologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "material_in_silico_screening_scaffold_bundle",
+      "module": "MaterialInSilicoScreeningScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "material_property_verification_scaffold_bundle",
+      "module": "MaterialPropertyVerificationScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "materials_engineering_bundle",
+      "module": "MaterialsEngineeringPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "materials_genome_crosswalk_bundle",
+      "module": "MaterialsGenomeCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "materials_project_live_panel_bundle",
+      "module": "MaterialsProjectLivePanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "materials_species_bridge_bundle",
+      "module": "MaterialsSpeciesBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "mathematics_computational_bundle",
+      "module": "MathematicsComputationalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "math_generator_airfoil_rmse_bundle",
+      "module": "MathGeneratorAirfoilRmsePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "math_generator_benchmark_formula_eval_bundle",
+      "module": "MathGeneratorBenchmarkFormulaEvalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "math_generator_priors_bundle",
+      "module": "MathGeneratorPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "math_generator_rules_eval_bundle",
+      "module": "MathGeneratorRulesEvalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "mechanical_engineering_ext_bundle",
+      "module": "MechanicalEngineeringExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "mech_cpl_bundle",
+      "module": "MechanisticCouplingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "med_gal_br_bundle",
+      "module": "MedicalGalacticOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "metamaterial_fluid_design_prereg_scaffold_bundle",
+      "module": "MetamaterialFluidDesignPreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "meteorology_gap_fill_bundle",
+      "module": "MeteorologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "music_harmonics_public_panel_bundle",
+      "module": "MusicHarmonicsPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "mycology_ext_bundle",
+      "module": "MycologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "nasa_exoplanet_archive_bundle",
+      "module": "NasaExoplanetArchivePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "natural_formation_element_simulation_bundle",
+      "module": "NaturalFormationElementSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "network_inet_bundle",
+      "module": "NetworkInternetProtocolsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "network_science_public_panel_bundle",
+      "module": "NetworkSciencePublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neu_gal_br_bundle",
+      "module": "NeuralGalacticOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuroeconomics_ext_bundle",
+      "module": "NeuroeconomicsExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuroimmunology_bundle",
+      "module": "NeuroimmunologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neurolab_gaps_math_spine_bundle",
+      "module": "NeurolabGapsMathSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neurolab_residual_math_spine_bundle",
+      "module": "NeurolabResidualMathSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_cohort_priors_bundle",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_cohort_strata_bundle",
+      "module": "NeuronCohortStrataPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_cohort_train_holdout_bundle",
+      "module": "NeuronCohortTrainHoldoutPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_hybrid_priors_bundle",
+      "module": "NeuronHybridPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_multi_hero_bundle",
+      "module": "NeuronMultiHeroPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "nist_codata_constants_bundle",
+      "module": "NistCodataConstantsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "noaa_coastal_tides_bundle",
+      "module": "NoaaCoastalTidesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "obs_ch_bundle",
+      "module": "ObserverChannelDerivationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "oceanography_gap_fill_bundle",
+      "module": "OceanographyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "omni_theory_genesis_bundle",
+      "module": "OmniTheoryGenesisPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "oncology_bundle",
+      "module": "OncologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "openalex_citation_graph_bundle",
+      "module": "OpenalexCitationGraphPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "openneuro_full_panel_bundle",
+      "module": "OpenNeuroFullPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "orbital_mechanics_bundle",
+      "module": "OrbitalMechanicsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "paleoclimate_ext_bundle",
+      "module": "PaleoclimateExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "paleontology_ext_bundle",
+      "module": "PaleontologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "p_neu_br_bundle",
+      "module": "ParticleNeuralOrbitalBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "particle_physics_gap_fill_bundle",
+      "module": "ParticlePhysicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "particle_physics_bundle",
+      "module": "ParticlePhysicsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "periodic_extension_decay_topology_scaffold_bundle",
+      "module": "PeriodicExtensionDecayTopologyScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "periodic_table_completion_spine_bundle",
+      "module": "PeriodicTableCompletionSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "periodic_table_extension_closure_spine_bundle",
+      "module": "PeriodicTableExtensionClosureSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "periodic_table_public_panel_bundle",
+      "module": "PeriodicTablePublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pharmacokinetics_gap_fill_bundle",
+      "module": "PharmacokineticsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pharmacology_bundle",
+      "module": "PharmacologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "phi_morph_bundle",
+      "module": "PhiMorphogeneticScalingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "planetary_atmospheres_bundle",
+      "module": "PlanetaryAtmospheresPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "planetary_structure_bundle",
+      "module": "PlanetaryStructurePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "plasma_physics_bundle",
+      "module": "PlasmaPhysicsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "clone_vf_bundle",
+      "module": "PortableCloneVerifyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "prediction_rederivation_bundle",
+      "module": "PredictionRederivationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "preregistered_outcome_tracking_bundle",
+      "module": "PreregisteredOutcomeTrackingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "prereg_bundle",
+      "module": "PreregisteredPredictionsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "preregistered_predictions_verification_scaffold_bundle",
+      "module": "PreregisteredPredictionsVerificationScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pl_laws_bundle",
+      "module": "ProgrammingLanguageLawsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "proof_cg_bundle",
+      "module": "ProofCarryingCodeGenomePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "proof_ledger_closure_spine_bundle",
+      "module": "ProofLedgerClosureSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "protein_amino_acid_trinary_bundle",
+      "module": "ProteinPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "psychology_gap_fill_bundle",
+      "module": "PsychologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pubchem_compound_properties_bundle",
+      "module": "PubchemCompoundPropertiesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pubchem_live_deep_bundle",
+      "module": "PubChemLiveDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pubchem_stability_panel_bundle",
+      "module": "PubChemStabilityPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "published_fuel_property_panel_bundle",
+      "module": "PublishedFuelPropertyPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "pure_mathematics_ext_bundle",
+      "module": "PureMathematicsExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "quantum_computing_gap_fill_bundle",
+      "module": "QuantumComputingGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "quantum_information_bundle",
+      "module": "QuantumInformationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "quantum_materials_bundle",
+      "module": "QuantumMaterialsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "quantum_mechanics_gap_fill_bundle",
+      "module": "QuantumMechanicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "quantum_optics_gap_fill_bundle",
+      "module": "QuantumOpticsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "rcsb_pdb_structures_bundle",
+      "module": "RcsbPdbStructuresPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "rd_interval_tightening_panel_bundle",
+      "module": "RdIntervalTighteningPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "fold_spine_bundle",
+      "module": "RealityFoldingSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "robotics_control_ext_bundle",
+      "module": "RoboticsControlSystemsExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "rust_lean_bridge_bundle",
+      "module": "RustLeanBridgePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "secure_sw_bundle",
+      "module": "SecureSoftwareEngineeringPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "seismology_deep_bundle",
+      "module": "SeismologyDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "seismology_bundle",
+      "module": "SeismologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "semiconductor_physics_public_panel_bundle",
+      "module": "SemiconductorPhysicsPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "sh0es_refined_bundle",
+      "module": "SH0ESRefinedPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "simbad_stellar_identity_deep_bundle",
+      "module": "SIMBADStellarIdentityDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "small_body_orbits_bundle",
+      "module": "SmallBodyOrbitsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "sociology_gap_fill_bundle",
+      "module": "SociologyGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "solar_system_structure_deep_bundle",
+      "module": "SolarSystemStructureDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "soul_sibling_priors_bundle",
+      "module": "SoulSiblingPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "space_propulsion_systems_bundle",
+      "module": "SpacePropulsionSystemsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "space_weather_bundle",
+      "module": "SpaceWeatherPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "species_catalog_bundle",
+      "module": "SpeciesPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "speleology_ext_bundle",
+      "module": "SpeleologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "sports_biomechanics_gap_fill_bundle",
+      "module": "SportsBiomechanicsGapFillPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "statistical_mechanics_public_panel_bundle",
+      "module": "StatisticalMechanicsPublicPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "stellar_multiplicity_catalog_bundle",
+      "module": "StellarMultiplicityCatalogPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "stellar_multiplicity_live_deep_bundle",
+      "module": "StellarMultiplicityLiveDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "structure_calibration_bundle",
+      "module": "StructureCalibrationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "stumped_panel_bundle",
+      "module": "StumpedObservablesPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "stumped_spine_bundle",
+      "module": "StumpedObservablesSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "superheavy_element_stability_panel_bundle",
+      "module": "SuperheavyElementStabilityPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "superheavy_island_completion_spine_bundle",
+      "module": "SuperheavyIslandCompletionSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "superheavy_island_emergence_simulation_bundle",
+      "module": "SuperheavyIslandEmergenceSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "supply_chain_ext_bundle",
+      "module": "SupplyChainLogisticsExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "symbolic_archetype_panel_bundle",
+      "module": "SymbolicArchetypePanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "synthetic_biology_bundle",
+      "module": "SyntheticBiologyPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "tectonics_bundle",
+      "module": "TectonicsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "term3_acoustic_bleed_depth_bundle",
+      "module": "Term3AcousticBleedDepthPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "toe_spine_bundle",
+      "module": "TheoryCompletenessSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "thesis_simulation_bundle",
+      "module": "ThesisSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "time_xw_bundle",
+      "module": "TimeDomainCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "time_emergence_deep_panel_bundle",
+      "module": "TimeEmergenceDeepPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "time_em_bundle",
+      "module": "TimeEmergenceSimulationPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "toe_claim_certificate_bundle_bundle",
+      "module": "ToEClaimCertificateBundlePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "gap_spine_bundle",
+      "module": "ToEGapClosureSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "toe_unity_bundle",
+      "module": "ToEUnificationSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "tokenization_smoke_bundle",
+      "module": "TokenizationSmokePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_fluid_priors_bundle",
+      "module": "TrinaryFluidPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_hardware_motif_bundle",
+      "module": "TrinaryHardwareMotifPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_isa_rebuild_bundle",
+      "module": "TrinaryOSISARebuildPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_portable_bundle",
+      "module": "TrinaryOSPortablePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_fsotb_bundle",
+      "module": "TrinaryOSPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_round_trip_bundle",
+      "module": "TrinaryOSRoundTripPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_tier_e_bundle",
+      "module": "TrinaryOSTierEPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "undiscovered_element_candidate_prereg_scaffold_bundle",
+      "module": "UndiscoveredElementCandidatePreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "unified_db_candidate_crosswalk_bundle",
+      "module": "UnifiedDBCandidateCrosswalkPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "unified_db_crosswalk_spine_bundle",
+      "module": "UnifiedDBCrosswalkSpinePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "unified_db_meta_bundle",
+      "module": "UnifiedDBPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "uniprot_protein_annotations_bundle",
+      "module": "UniprotProteinAnnotationsPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "uniprot_structure_annotations_deep_bundle",
+      "module": "UniProtStructureAnnotationsDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "vibra_register_bundle",
+      "module": "VibRegisterPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "virology_ext_bundle",
+      "module": "VirologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "vizier_wds_tap_live_deep_bundle",
+      "module": "VizieRWdsTapLiveDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "vl_distill_atlas_bundle",
+      "module": "VlDistillAtlasPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "warp_actuation_core_bundle",
+      "module": "WarpActuationDevelopmentPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "warp_actuation_stabilized_bundle",
+      "module": "WarpActuationDevelopmentPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "warp_bh_wh_portal_bundle",
+      "module": "WarpBhWhPortalPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "wds_live_multiplicity_deep_bundle",
+      "module": "WDSLiveMultiplicityDeepPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "weather_priors_bundle",
+      "module": "WeatherPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "world_bank_development_bundle",
+      "module": "WorldBankDevelopmentPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "xr_interactive_media_math_scaffold_bundle",
+      "module": "XRInteractiveMediaMathScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "z120_z126_beam_synthesis_panel_bundle",
+      "module": "Z120Z126BeamSynthesisPanelPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "z164_distant_island_prereg_scaffold_bundle",
+      "module": "Z164DistantIslandPreregScaffoldPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "zero_day_eval_bundle",
+      "module": "ZeroDayRiskEvaluatorPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "zoology_ext_bundle",
+      "module": "ZoologyExtensionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neurolab_genomic_exact_bundle",
+      "module": "Lab",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cross_proof_connective_spine_bundle",
+      "module": "CrossProofConnectivePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "cross_proof_full_formal_spine_bundle",
+      "module": "CrossProofConnectivePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_coverage_priors_bundle",
+      "module": "DomainCoveragePriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "neuron_cohort_strata_bundle",
+      "module": "NeuronCohortStrataPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "domain_precision_priors_bundle",
+      "module": "DomainPrecisionPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "brain_component_priors_trinary_bundle",
+      "module": "BrainPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "codon_trinary_map_bundle",
+      "module": "CodonPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "protein_amino_acid_trinary_bundle",
+      "module": "ProteinPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    },
+    {
+      "id": "trinary_os_fsotb_bundle",
+      "module": "TrinaryOSPriors",
+      "violation": {
+        "violation_kind": "unknown",
+        "kind": "bundle_conj"
+      }
+    }
+  ],
   "issue_counts": {},
   "failures_sample": [],
   "overall_ok": true,
-  "note": "Provable obligations must triangulate Lean/JSON/Isabelle literals. Margin violations are excluded from Isabelle proofs."
+  "note": "Atomic provable obligations triangulate Lean/JSON/Isabelle literals. bundle_conj obligations are spine indices excluded from Isabelle chunks."
 }

@@ -28,6 +28,7 @@ _KIND_LABELS = {
     "eq_nat_arith": "count arithmetic identity",
     "nat_gt_lit": "count exceeds bound",
     "nat_le_lit": "count within bound",
+    "bundle_conj": "structural bundle index (conjunct witness linkage)",
 }
 
 _CONNECTIVE_SYMBOLS = {

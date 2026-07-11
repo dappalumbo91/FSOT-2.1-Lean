@@ -4,13 +4,18 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from cross_proof_lib import gen_isabelle_root  # noqa: E402
+from cross_proof_lib import (  # noqa: E402
+    gen_isabelle_root,
+    isabelle_transcendental_parent_sessions,
+    isabelle_transcendental_theory_prefix,
+)
 from transcendental_bounds_lib import (  # noqa: E402
     gen_isabelle_base,
     isabelle_certified_axioms,
@@ -25,6 +30,10 @@ CHUNK_SIZE = 25
 def main() -> int:
     doc = write_obligations_json()
     obligations: list[dict] = doc["obligations"]
+
+    native_script = ROOT / "scripts" / "gen_transcendental_native_isabelle.py"
+    if native_script.exists():
+        subprocess.run([sys.executable, str(native_script)], cwd=str(ROOT), check=False)
 
     base = gen_isabelle_base()
     cert_axioms = isabelle_certified_axioms(obligations)
@@ -47,7 +56,7 @@ def main() -> int:
             old.unlink()
 
     chunks = [obligations[i : i + CHUNK_SIZE] for i in range(0, len(obligations), CHUNK_SIZE)]
-    theory_names = ["ConnectiveSpine"]
+    theory_names = ["ConnectiveSpine", *isabelle_transcendental_theory_prefix()]
     for idx, chunk in enumerate(chunks):
         theory = f"TranscendentalBounds_{idx:02d}"
         lines = [
@@ -72,7 +81,11 @@ def main() -> int:
     formal = [p.stem for p in sorted(ISA_DIR.glob("FullFormalSpine_*.thy"))]
     theory_names += formal
     (ISA_DIR / "ROOT").write_text(
-        gen_isabelle_root(theory_names, description=f"FSOT Tier 83 cross-proof ({len(theory_names)} theories)"),
+        gen_isabelle_root(
+            theory_names,
+            description=f"FSOT Tier 83 cross-proof ({len(theory_names)} theories)",
+            parent_sessions=isabelle_transcendental_parent_sessions(),
+        ),
         encoding="utf-8",
     )
     print(f"Updated ROOT ({len(theory_names)} theories)")

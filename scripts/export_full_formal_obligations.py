@@ -36,6 +36,8 @@ def _export_sources() -> tuple[list[dict], dict]:
     )
     other_paths = [
         FORMAL / "Bounds.lean",
+        FORMAL / "Lab.lean",
+        FORMAL / "CosmologyWave4.lean",
         FORMAL / "CrossProofConnectivePriors.lean",
         FORMAL / "DomainCoveragePriors.lean",
         FORMAL / "NeuronCohortStrataPriors.lean",

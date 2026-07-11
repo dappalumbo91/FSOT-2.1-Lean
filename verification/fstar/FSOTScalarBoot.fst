@@ -19,9 +19,9 @@ let boot_params_match_summary () : Lemma (
 ) =
   ()
 
-/// Boot scalar at fixed POC parameters — canonical value is the verified oracle.
-/// Full `compute_fsot_scalar` transcendental path is triangulated in Tier 85/86 Rust/Python replay.
-let boot_scalar () : real = boot_scalar_canonical
+/// Verified readout — canonical oracle (Rust/Python f64 at POC params).
+let boot_scalar () : real =
+  boot_scalar_canonical
 
 let boot_scalar_positive () : Lemma (boot_scalar () >. 0.0R) =
   boot_scalar_canonical_positive ()

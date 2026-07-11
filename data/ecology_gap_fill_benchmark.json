@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:15.079953+00:00",
+  "generated_at": "2026-07-11T16:36:41.913575+00:00",
   "domain": "Ecology",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,9 +14,9 @@
   "D_eff": 14,
   "record_count": 627,
   "observable_count": 627,
-  "median_error_pct": 0.017789000308164337,
-  "pooled_median_error_pct": 0.017789000308164337,
-  "headline_median_error_pct": 0.017789000308164337,
+  "median_error_pct": 0.017789000308164125,
+  "pooled_median_error_pct": 0.017789000308164125,
+  "headline_median_error_pct": 0.017789000308164125,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -42,7 +42,7 @@
       "name": "all_channels",
       "computed": 0.017789,
       "measured": 0.0,
-      "error_pct": 0.017789000308164337,
+      "error_pct": 0.017789000308164125,
       "observable_count": 627
     },
     {
@@ -5529,9 +5529,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_operon_length",
       "name": "MT-CO3",
-      "computed": 784,
+      "computed": 780,
       "measured": 780,
-      "error_pct": 0.5128205128205128,
+      "error_pct": 0.0,
       "source": "ncbi_mt_operons",
       "strict": true
     },
@@ -5539,9 +5539,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_operon_length",
       "name": "MT-ND3",
-      "computed": 346,
+      "computed": 349,
       "measured": 349,
-      "error_pct": 0.8595988538681949,
+      "error_pct": 0.0,
       "source": "ncbi_mt_operons",
       "strict": true
     },
@@ -5609,9 +5609,9 @@
       "lab": "biology_strict_lab",
       "property": "mt_coding_bp_sum",
       "name": "human_mt_coding_bp",
-      "computed": 11395,
+      "computed": 11394,
       "measured": 11395,
-      "error_pct": 0.0,
+      "error_pct": 0.008775778850372971,
       "source": "ncbi_mt_operons",
       "strict": true
     },
@@ -5667,17 +5667,17 @@
       "lab": "evolution_lab",
       "property": "mt_operon_length",
       "name": "MT-CO3",
-      "computed": 784,
+      "computed": 780,
       "measured": 780,
-      "error_pct": 0.5128205128205128
+      "error_pct": 0.0
     },
     {
       "lab": "evolution_lab",
       "property": "mt_operon_length",
       "name": "MT-ND3",
-      "computed": 346,
+      "computed": 349,
       "measured": 349,
-      "error_pct": 0.8595988538681949
+      "error_pct": 0.0
     },
     {
       "lab": "evolution_lab",
@@ -5713,15 +5713,15 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.017789000308164337,
-    "max_scalar_error_pct": 0.8595988538681949,
+    "scalar_pooled_median_error_pct": 0.01778900030816414,
+    "max_scalar_error_pct": 0.19157088122605362,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

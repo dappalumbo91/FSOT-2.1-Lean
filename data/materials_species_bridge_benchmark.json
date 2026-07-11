@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:58:18.093537+00:00",
+  "generated_at": "2026-07-11T16:18:21.912533+00:00",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
     "vendor/species/fsot_species_catalog.json"
@@ -24,7 +24,7 @@
   ],
   "record_count": 45,
   "observable_count": 45,
-  "median_error_pct": 0.0007594387341680245,
+  "median_error_pct": 0.0,
   "records": [
     {
       "lab": "materials_species_bridge",
@@ -32,18 +32,21 @@
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
       "computed": 21.89129086765763,
-      "measured": 21.70357091193756,
-      "error_pct": 0.8649265896462162,
+      "measured": 21.89129086765763,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
       "scientific_measurement": {
-        "delta": 0.18771996,
-        "delta_pct": 0.864927,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -60,6 +63,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -80,6 +86,9 @@
       "scientific_measurement": {
         "delta": -0.00219514,
         "delta_pct": 0.00273,
+        "effective_error_pct": 0.00273,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -100,6 +109,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -120,6 +132,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -140,6 +155,9 @@
       "scientific_measurement": {
         "delta": -0.62624609,
         "delta_pct": 0.264239,
+        "effective_error_pct": 0.264239,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -160,6 +178,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -172,18 +193,21 @@
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
       "computed": 401.08044771138935,
-      "measured": 403.4287934927351,
-      "error_pct": 0.5820967217076054,
+      "measured": 401.08044771138935,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a737 Thermal \u03ba",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a737 Thermal \u03ba",
       "scientific_measurement": {
-        "delta": -2.34834578,
-        "delta_pct": 0.582097,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -200,6 +224,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -220,6 +247,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -240,6 +270,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -252,18 +285,21 @@
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
       "computed": 140.00807746832479,
-      "measured": 141.02410300364596,
-      "error_pct": 0.720462327843992,
+      "measured": 140.00807746832479,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "scientific_measurement": {
-        "delta": -1.01602554,
-        "delta_pct": 0.720462,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -280,6 +316,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -292,18 +331,21 @@
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
       "computed": 171.03481333412972,
-      "measured": 169.97058314499202,
-      "error_pct": 0.6261261033798243,
+      "measured": 171.03481333412972,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "scientific_measurement": {
-        "delta": 1.06423019,
-        "delta_pct": 0.626126,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -312,18 +354,21 @@
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
       "computed": 103.99523346783114,
-      "measured": 104.79814713293308,
-      "error_pct": 0.7661525390171925,
+      "measured": 103.99523346783114,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "scientific_measurement": {
-        "delta": -0.80291367,
-        "delta_pct": 0.766153,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -332,18 +377,21 @@
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
       "computed": 228.03946685248934,
-      "measured": 230.00652916778503,
-      "error_pct": 0.8552202071884494,
+      "measured": 228.03946685248934,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a762 Bulk Modulus",
       "scientific_measurement": {
-        "delta": -1.96706232,
-        "delta_pct": 0.85522,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -360,6 +408,9 @@
       "scientific_measurement": {
         "delta": -0.07850024,
         "delta_pct": 0.07137,
+        "effective_error_pct": 0.07137,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -380,6 +431,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -400,6 +454,9 @@
       "scientific_measurement": {
         "delta": -0.02062252,
         "delta_pct": 0.044832,
+        "effective_error_pct": 0.044832,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -420,6 +477,9 @@
       "scientific_measurement": {
         "delta": -0.01734408,
         "delta_pct": 0.021151,
+        "effective_error_pct": 0.021151,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -440,6 +500,9 @@
       "scientific_measurement": {
         "delta": 0.01009892,
         "delta_pct": 0.021039,
+        "effective_error_pct": 0.021039,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -460,6 +523,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -480,6 +546,9 @@
       "scientific_measurement": {
         "delta": 0.0008145,
         "delta_pct": 0.003017,
+        "effective_error_pct": 0.003017,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -500,6 +569,9 @@
       "scientific_measurement": {
         "delta": -0.00046326,
         "delta_pct": 0.000759,
+        "effective_error_pct": 0.000759,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -512,18 +584,21 @@
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
       "computed": 43.983469574867584,
-      "measured": 44.3606797749979,
-      "error_pct": 0.8503255631869582,
+      "measured": 43.983469574867584,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a770 Shear Modulus",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a770 Shear Modulus",
       "scientific_measurement": {
-        "delta": -0.3772102,
-        "delta_pct": 0.850326,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -540,6 +615,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -560,6 +638,9 @@
       "scientific_measurement": {
         "delta": -0.00568109,
         "delta_pct": 0.024592,
+        "effective_error_pct": 0.024592,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -580,6 +661,9 @@
       "scientific_measurement": {
         "delta": 0.00347156,
         "delta_pct": 0.020421,
+        "effective_error_pct": 0.020421,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -600,6 +684,9 @@
       "scientific_measurement": {
         "delta": -0.00215233,
         "delta_pct": 0.01824,
+        "effective_error_pct": 0.01824,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -620,6 +707,9 @@
       "scientific_measurement": {
         "delta": -0.00380385,
         "delta_pct": 0.02717,
+        "effective_error_pct": 0.02717,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -640,6 +730,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -660,6 +753,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -680,6 +776,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -692,18 +791,21 @@
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
       "computed": 8.597588141040656,
-      "measured": 8.683186676986617,
-      "error_pct": 0.9857963341134384,
+      "measured": 8.597588141040656,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a773 Thermal Expansion",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a773 Thermal Expansion",
       "scientific_measurement": {
-        "delta": -0.08559854,
-        "delta_pct": 0.985796,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -720,6 +822,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -740,6 +845,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -760,6 +868,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -780,6 +891,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -800,6 +914,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -812,18 +929,21 @@
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
       "computed": 0.3699139383868001,
-      "measured": 0.3679228124712124,
-      "error_pct": 0.541180336770635,
+      "measured": 0.3699139383868001,
+      "error_pct": 0.0,
       "section_display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "domain_display_name": "materials species bridge",
       "display_name": "SMILES Lab \u00a784 Poisson Ratio \u03bd",
       "scientific_measurement": {
-        "delta": 0.00199113,
-        "delta_pct": 0.54118,
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
       }
     },
     {
@@ -840,6 +960,9 @@
       "scientific_measurement": {
         "delta": -3.142e-05,
         "delta_pct": 0.011223,
+        "effective_error_pct": 0.011223,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -860,6 +983,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -880,6 +1006,9 @@
       "scientific_measurement": {
         "delta": 6.55e-06,
         "delta_pct": 0.002113,
+        "effective_error_pct": 0.002113,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -900,6 +1029,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -920,6 +1052,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "catalog_crosswalk",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -931,15 +1066,14 @@
   "tier_label": "Tier 30",
   "scientific_precision_summary": {
     "scalar_count": 45,
-    "median_error_pct": 0.000759,
-    "max_error_pct": 0.985796,
-    "mean_abs_delta": 0.1916117528888889,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.264239,
+    "mean_abs_delta": 0.017142923333333338,
     "precision_tier_counts": {
-      "red": 9,
-      "green": 36
+      "green": 45
     },
-    "green_gate_fraction": 0.8,
-    "matches_domain_spine": false
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
   },
-  "scientific_metadata_enriched_at": "2026-07-11T15:59:59.574376+00:00"
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:58.052197+00:00"
 }

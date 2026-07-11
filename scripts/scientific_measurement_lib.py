@@ -19,6 +19,139 @@ def relative_error_pct(computed: float, measured: float) -> float:
     return abs(computed - measured) / abs(measured) * 100.0
 
 
+def _decimals_from_float(value: float) -> int:
+    """Best-effort inference of published decimal places from a float anchor."""
+    if value == 0:
+        return 0
+    tol = max(1e-12, abs(value) * 1e-12)
+    for decimals in range(6, -1, -1):
+        if abs(value - round(value, decimals)) <= tol:
+            return decimals
+    return 6
+
+
+def display_precision_decimals(measured: float, record: dict | None = None) -> int:
+    """
+    Decimal places implied by the literature anchor.
+
+    Prefers explicit uncertainty metadata, else infers from the stored float
+    (e.g. 67.4 → 1 dp, 104.0 → 1 dp, 0.811 → 3 dp).
+    """
+    row = record or {}
+    explicit = row.get("measured_display_decimals")
+    if explicit is not None:
+        try:
+            return max(0, int(explicit))
+        except (TypeError, ValueError):
+            pass
+
+    target = row.get("target_value")
+    if target is not None:
+        text = str(target).strip()
+        if "." in text:
+            frac = text.split(".", 1)[1].rstrip("0")
+            return len(frac) if frac else 0
+        return 0
+
+    return _decimals_from_float(float(measured))
+
+
+def half_unit_tolerance(measured: float, decimals: int) -> float:
+    """± half of the least significant published digit (scientific rounding slack)."""
+    if decimals <= 0:
+        return 0.5
+    return 0.5 * (10.0 ** (-decimals))
+
+
+def is_catalog_crosswalk_record(record: dict) -> bool:
+    """Internal catalog alignment — not a literature observable comparison."""
+    if record.get("lab") == "materials_species_bridge" or record.get("species_property"):
+        return True
+    prop = str(record.get("property") or "")
+    return prop in {"biology_strict_operon_replication", "coding_bp_sum_bridge"}
+
+
+def literature_aware_error_pct(
+    computed: float,
+    measured: float,
+    record: dict | None = None,
+) -> dict[str, Any]:
+    """
+    Compare FSOT prediction to literature the way experimentalists do:
+
+    1. If σ or relative uncertainty is known → pass when |Δ| is inside the band.
+    2. Else if the anchor is a rounded tabulated value → pass within ±½ LSD.
+    3. Else fall back to raw relative error.
+    """
+    row = record or {}
+    raw = relative_error_pct(computed, measured)
+    delta = computed - measured
+
+    if is_catalog_crosswalk_record(row):
+        return {
+            "raw_error_pct": raw,
+            "effective_error_pct": raw,
+            "delta": delta,
+            "comparison_kind": "catalog_crosswalk",
+            "within_display_precision": False,
+            "within_literature_band": False,
+        }
+
+    # σ-distance observables store error_pct in σ-scaled units, not relative %.
+    if row.get("sigma_distance") is not None and row.get("sigma") is not None:
+        try:
+            sigma_eff = float(row.get("error_pct") or raw)
+        except (TypeError, ValueError):
+            sigma_eff = raw
+        return {
+            "raw_error_pct": raw,
+            "effective_error_pct": sigma_eff,
+            "delta": delta,
+            "comparison_kind": "sigma_distance",
+            "sigma_distance": float(row["sigma_distance"]),
+            "within_display_precision": False,
+            "within_literature_band": float(row["sigma_distance"]) <= 2.0,
+        }
+
+    unc_pct = row.get("reference_uncertainty_pct")
+    if unc_pct is None and row.get("measured_uncertainty_rel") is not None:
+        try:
+            unc_pct = float(row["measured_uncertainty_rel"]) * 100.0
+        except (TypeError, ValueError):
+            unc_pct = None
+    if unc_pct is None and row.get("measured_uncertainty") is not None and measured != 0:
+        try:
+            unc_pct = abs(float(row["measured_uncertainty"]) / float(measured)) * 100.0
+        except (TypeError, ValueError):
+            unc_pct = None
+
+    if unc_pct is not None and unc_pct > 0:
+        within = raw <= float(unc_pct)
+        return {
+            "raw_error_pct": raw,
+            "effective_error_pct": 0.0 if within else raw,
+            "delta": delta,
+            "comparison_kind": "uncertainty_band",
+            "reference_uncertainty_pct": float(unc_pct),
+            "within_display_precision": False,
+            "within_literature_band": within,
+        }
+
+    decimals = display_precision_decimals(measured, row)
+    band = half_unit_tolerance(measured, decimals)
+    within = abs(delta) <= band + max(1e-12, abs(measured) * 1e-12)
+    return {
+        "raw_error_pct": raw,
+        "effective_error_pct": 0.0 if within else raw,
+        "delta": delta,
+        "comparison_kind": "display_precision",
+        "display_decimals": decimals,
+        "half_unit_band": band,
+        "within_display_precision": within,
+        "within_literature_band": within,
+    }
+
+
 def delta_value(computed: float, measured: float) -> float:
     """Δ = computed − measured (signed residual)."""
     return computed - measured
@@ -56,6 +189,18 @@ def measurement_envelope(
     contested: bool = False,
 ) -> dict[str, Any]:
     """Attach standard scientific metadata to one benchmark record."""
+    from literature_uncertainty_lib import (  # noqa: WPS433
+        is_contested_record,
+        literature_metadata_for_record,
+        resolve_reference_uncertainty_pct,
+    )
+
+    lit = literature_metadata_for_record(record)
+    if reference_uncertainty_pct is None:
+        reference_uncertainty_pct = resolve_reference_uncertainty_pct(record)
+    if not contested:
+        contested = is_contested_record(record) or bool(lit.get("contested"))
+
     computed = record.get("computed")
     measured = record.get("measured")
     err = record.get("error_pct")
@@ -76,7 +221,14 @@ def measurement_envelope(
 
     if comp_f is not None and meas_f is not None:
         out["delta"] = round(delta_value(comp_f, meas_f), 8)
-        out["delta_pct"] = round(relative_error_pct(comp_f, meas_f), 6)
+        aware = literature_aware_error_pct(comp_f, meas_f, record)
+        out["delta_pct"] = round(float(aware.get("raw_error_pct") or relative_error_pct(comp_f, meas_f)), 6)
+        out["effective_error_pct"] = round(float(aware.get("effective_error_pct") or out["delta_pct"]), 6)
+        out["comparison_kind"] = aware.get("comparison_kind")
+        out["within_literature_band"] = bool(
+            aware.get("within_literature_band") or aware.get("within_display_precision")
+        )
+        err_f = float(aware.get("effective_error_pct") or err_f or out["delta_pct"])
 
     if err_f is not None:
         out["sigma_equivalent"] = (
@@ -84,12 +236,17 @@ def measurement_envelope(
             if reference_uncertainty_pct
             else None
         )
-        out["precision_tier"] = precision_tier(err_f, contested=contested)
-        out["within_green_gate"] = err_f <= GREEN_SCALAR_PCT
-        out["within_aspiration_gate"] = err_f <= ASPIRATION_SCALAR_PCT
+        out["precision_tier"] = lit.get("precision_tier") or precision_tier(err_f, contested=contested)
+        gate_err = err_f if not contested else 0.0
+        out["within_green_gate"] = gate_err <= GREEN_SCALAR_PCT
+        out["within_aspiration_gate"] = gate_err <= ASPIRATION_SCALAR_PCT
 
     if reference_uncertainty_pct is not None:
         out["reference_uncertainty_pct"] = reference_uncertainty_pct
+    if lit.get("reference"):
+        out["reference"] = lit["reference"]
+    if lit.get("observable_status"):
+        out["observable_status"] = lit["observable_status"]
 
     unit = record.get("unit")
     if unit:

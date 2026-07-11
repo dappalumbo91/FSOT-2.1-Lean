@@ -16,12 +16,22 @@ OBLIGATIONS = ROOT / "verification" / "obligations" / "full_formal_spine.json"
 OUT = ROOT / "data" / "export_exclusion_registry.json"
 
 THM_RE = re.compile(r"(?:theorem|lemma)\s+(\w+)\b")
+PROOF_CERTIFICATE_MARKERS = (
+    "norm_num",
+    "nlinarith",
+    "linarith",
+    "decide",
+    "native_decide",
+    "ring_nf",
+    "omega",
+)
 EXPORT_SKIP_MARKERS = (
     "sorry",
     "admit",
     "axiom ",
     "private theorem",
-    "noncomputable",
+    "noncomputable theorem",
+    "noncomputable lemma",
 )
 
 
@@ -42,14 +52,14 @@ def _exported_ids() -> set[str]:
     return {str(ob.get("id") or "") for ob in doc.get("obligations") or [] if ob.get("id")}
 
 
-def _exclusion_reason(path: Path, name: str, text: str) -> str:
+def _exclusion_reason(path: Path, name: str, text: str, exported: set[str]) -> str:
     if path.name.startswith("CrossProof"):
         return "cross_proof_meta_module"
-    if "norm_num" not in text and path.name != "Bounds.lean":
-        return "no_norm_num_certificate_in_module"
+    if not any(m in text for m in PROOF_CERTIFICATE_MARKERS) and path.name != "Bounds.lean":
+        return "no_proof_certificate_in_module"
     if any(m in text for m in EXPORT_SKIP_MARKERS):
         return "contains_non_exportable_proof_markers"
-    if name.endswith("_bundle") or "bundle" in name.lower():
+    if (name.endswith("_bundle") or "bundle" in name.lower()) and name not in exported:
         return "structural_bundle_theorem"
     if "Priors" not in path.name and path.name != "Bounds.lean":
         return "extended_formal_not_in_export_spine"
@@ -69,7 +79,7 @@ def build() -> dict:
         for name in names:
             if name in exported:
                 continue
-            reason = _exclusion_reason(path, name, text)
+            reason = _exclusion_reason(path, name, text, exported)
             reason_counts[reason] += 1
             exclusions.append(
                 {

@@ -46,6 +46,9 @@
       "scientific_measurement": {
         "delta": 0.000502,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -65,6 +68,9 @@
       "scientific_measurement": {
         "delta": 0.005025,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -87,6 +93,9 @@
       "scientific_measurement": {
         "delta": 0.007412,
         "delta_pct": 0.005024,
+        "effective_error_pct": 0.005024,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -106,6 +115,9 @@
       "scientific_measurement": {
         "delta": 0.43,
         "delta_pct": 0.292338,
+        "effective_error_pct": 0.292338,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -127,6 +139,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -146,6 +161,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -165,6 +183,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -185,6 +206,9 @@
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -205,10 +229,16 @@
       "scientific_measurement": {
         "delta": 0.000339,
         "delta_pct": 0.000503,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -225,10 +255,16 @@
       "scientific_measurement": {
         "delta": 0.000367,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -245,10 +281,16 @@
       "scientific_measurement": {
         "delta": 0.000362,
         "delta_pct": 0.000502,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.000502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0007,
         "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.742,
+        "reference": "Planck Collaboration 2018 (TT,TE,EE+lowE+lensing+BAO)",
+        "observable_status": "fsot_dual_anchor"
       }
     },
     {
@@ -264,6 +306,9 @@
       "scientific_measurement": {
         "delta": 0.007391,
         "delta_pct": 0.005025,
+        "effective_error_pct": 0.005025,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -283,6 +328,9 @@
       "scientific_measurement": {
         "delta": 0.007412,
         "delta_pct": 0.005024,
+        "effective_error_pct": 0.005024,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -302,6 +350,9 @@
       "scientific_measurement": {
         "delta": 0.007411,
         "delta_pct": 0.005024,
+        "effective_error_pct": 0.005024,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -323,7 +374,7 @@
   "fsot_precision_gate_pct": 0.5,
   "display_name": "RD Interval Tightening Panel",
   "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:01.161273+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.315990+00:00",
   "scientific_precision_summary": {
     "scalar_count": 12,
     "median_error_pct": 0.000503,

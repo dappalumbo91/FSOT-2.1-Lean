@@ -755,7 +755,6 @@ fn replay_all_obligations() {
     assert!(222 > 200, "stratum_pv_cell_count_pos");
     assert!(146 > 140, "stratum_vip_cell_count_pos");
     assert!(1127 > 1100, "stratum_l23_pyramidal_cell_count_pos");
-    assert!(2165 > 2100, "neuron_cohort_strata_bundle");
     assert!(1745 > 0, "neuron_train_cell_count_pos");
     assert!(420 > 0, "neuron_holdout_cell_count_pos");
     assert!(0.24544591854270223_f64 < 0.3_f64, "neuron_train_fi_median_lt_thirty_pct");
@@ -786,8 +785,8 @@ fn replay_all_obligations() {
     assert!(0.0_f64 < 0.5, "omni_theory_genesis_median_error_under_half_pct");
     assert!(27 > 0, "omni_theory_genesis_observable_count_pos");
     assert!(0.078779_f64 < 0.5, "oncology_pooled_median_under_half_pct");
-    // full_formal chunk 05 (150 obligations)
     assert!(0.078779_f64 < 0.5, "oncology_headline_median_under_half_pct");
+    // full_formal chunk 05 (150 obligations)
     assert!(67 > 0, "oncology_observable_count_pos");
     assert!(5 > 0, "oncology_section_count_pos");
     assert!(5 > 0, "oncology_beats_sota_headlines_pos");
@@ -937,8 +936,8 @@ fn replay_all_obligations() {
     assert!(86 > 0, "rcsb_pdb_structures_observable_count_pos");
     assert!(0.000502_f64 < 0.5, "rd_interval_tightening_panel_pooled_median_under_half_pct");
     assert!(0.005024559462094211_f64 < 0.5, "rd_interval_tightening_panel_headline_median_under_half_pct");
-    // full_formal chunk 06 (150 obligations)
     assert!(12 > 0, "rd_interval_tightening_panel_observable_count_pos");
+    // full_formal chunk 06 (150 obligations)
     assert!(2 > 0, "rd_interval_tightening_panel_beats_sota_headlines_pos");
     assert!(0.019008268802505057_f64 < 0.5, "fold_spine_pooled_median_under_half_pct");
     assert!(0.019008268802505057_f64 < 0.5, "fold_spine_headline_median_under_half_pct");
@@ -1088,8 +1087,8 @@ fn replay_all_obligations() {
     assert!(5 > 0, "gap_spine_pillars_pos");
     assert!(0.019008268802504343_f64 < 0.5, "toe_unity_pooled_median_under_half_pct");
     assert!(0.019008268802504343_f64 < 0.5, "toe_unity_headline_median_under_half_pct");
-    // full_formal chunk 07 (150 obligations)
     assert!(8 > 0, "toe_unity_observable_count_pos");
+    // full_formal chunk 07 (150 obligations)
     assert!(2 > 0, "toe_unity_beats_sota_headlines_pos");
     assert!(171 > 0, "toe_unity_coupling_nodes_pos");
     assert!(0.0_f64 < 0.5, "tokenization_smoke_median_error_under_half_pct");
@@ -1239,8 +1238,8 @@ fn replay_all_obligations() {
     assert!(0.2972767467532461_f64 < 0.35_f64, "stratum_vip_fi_median_lt_bound");
     assert!(0.22104086005830942_f64 < 0.25_f64, "stratum_l23_pyramidal_fi_median_lt_bound");
     assert!(0.6068416819088323_f64 > 0.55_f64, "held_out_fi_pearson_r_gt_fifty_five");
-    // full_formal chunk 08 (41 obligations)
     assert!(0.5196512945807779_f64 > 0.5_f64, "stratum_sst_fi_pearson_gt_bound");
+    // full_formal chunk 08 (39 obligations)
     assert!(0.3915167429133035_f64 > 0.35_f64, "stratum_pv_fi_pearson_gt_bound");
     assert!(0.42970594991301575_f64 > 0.4_f64, "stratum_vip_fi_pearson_gt_bound");
     assert!(0.22516239104042488_f64 > 0.2_f64, "stratum_l23_pyramidal_fi_pearson_gt_bound");
@@ -1249,7 +1248,6 @@ fn replay_all_obligations() {
     assert!(222 > 200, "stratum_pv_cell_count_pos");
     assert!(146 > 140, "stratum_vip_cell_count_pos");
     assert!(1127 > 1100, "stratum_l23_pyramidal_cell_count_pos");
-    assert!(2165 > 2100, "neuron_cohort_strata_bundle");
     assert!(35 > 30, "domain_precision_numeric_majority");
     assert!(35 > 32, "domain_precision_target_band_large");
     assert!(0 <= 2, "domain_precision_huge_gap_bounded");

@@ -3,9 +3,6 @@ theory FullFormalSpine_10
 imports Complex_Main
 begin
 
-lemma supply_chain_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
 lemma symbolic_archetype_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -301,6 +298,9 @@ lemma virology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
 lemma vizier_wds_tap_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vizier_wds_tap_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

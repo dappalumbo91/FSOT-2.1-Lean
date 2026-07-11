@@ -77,7 +77,11 @@ def main() -> int:
     project = COQ_DIR / "_CoqProject"
     existing = project.read_text(encoding="utf-8").splitlines() if project.exists() else []
     spine = [ln for ln in existing if ln == "ConnectiveSpine.v" or ln.startswith("FullFormalSpine_")]
-    transcendental = ["TranscendentalBoundsBase.v", "TranscendentalBoundsCert.v"]
+    transcendental = [
+        "TranscendentalBoundsNative.v",
+        "TranscendentalBoundsBase.v",
+        "TranscendentalBoundsCert.v",
+    ]
     transcendental += sorted(p.name for p in COQ_DIR.glob("TranscendentalBounds_[0-9]*.v"))
     project.write_text("\n".join(["-R .", *spine, *transcendental]) + "\n", encoding="utf-8")
     print(f"Updated _CoqProject ({len(transcendental)} transcendental files)")

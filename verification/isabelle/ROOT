@@ -1,9 +1,14 @@
 (* FSOT cross-proof Isabelle session (generated). *)
 
 session FSOT_CrossProof = HOL +
-  description "FSOT Tier 83 cross-proof (17 theories)"
+  description "FSOT Tier 83 cross-proof (20 theories)"
+  sessions
+    "HOL-Decision_Procs"
   theories
     ConnectiveSpine
+    TranscendentalBoundsNative
+    TranscendentalBoundsBase
+    TranscendentalBoundsCert
     TranscendentalBounds_00
     TranscendentalBounds_01
     TranscendentalBounds_02

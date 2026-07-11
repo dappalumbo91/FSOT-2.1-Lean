@@ -44,6 +44,9 @@
       "scientific_measurement": {
         "delta": 0.006335,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -63,6 +66,9 @@
       "scientific_measurement": {
         "delta": 0.006335,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -86,10 +92,16 @@
       "scientific_measurement": {
         "delta": -0.02998129,
         "delta_pct": 2.998129,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 2.998129,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.9994,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
+        "reference": "Planck 2018 w0wa prior",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -107,10 +119,16 @@
       "scientific_measurement": {
         "delta": -0.00028655,
         "delta_pct": 0.009407,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.009407,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.2851,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.033,
+        "reference": "SM N_eff (Planck 2018)",
+        "observable_status": "cmb_open"
       }
     },
     {
@@ -128,10 +146,16 @@
       "scientific_measurement": {
         "delta": -0.00031095,
         "delta_pct": 0.045395,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.045395,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.0445,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.02,
+        "reference": "Planck 2018",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -149,10 +173,16 @@
       "scientific_measurement": {
         "delta": 2.4e-05,
         "delta_pct": 0.00296,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.00296,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.004,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.74,
+        "reference": "Planck 2018 / Euclid Q1 2024",
+        "observable_status": "s8_tension"
       }
     },
     {
@@ -170,10 +200,16 @@
       "scientific_measurement": {
         "delta": -0.00170345,
         "delta_pct": 3.036447,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
+        "effective_error_pct": 3.036447,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": 0.2336,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "reference_uncertainty_pct": 13.0,
+        "reference": "Planck 2018",
+        "observable_status": "cmb_open"
       }
     },
     {
@@ -191,10 +227,16 @@
       "scientific_measurement": {
         "delta": 1.8e-07,
         "delta_pct": 0.699746,
-        "sigma_equivalent": null,
+        "effective_error_pct": 0.699746,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0758,
         "precision_tier": "green",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 1.2,
+        "reference": "Cooke et al. 2018 BBN",
+        "observable_status": "bbn_open"
       }
     },
     {
@@ -212,6 +254,9 @@
       "scientific_measurement": {
         "delta": -0.000119,
         "delta_pct": 0.048592,
+        "effective_error_pct": 0.048592,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -235,16 +280,18 @@
   "dark_sector_status": "GREEN",
   "display_name": "Dark Sector Open Problems",
   "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.976514+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.146129+00:00",
   "scientific_precision_summary": {
     "scalar_count": 7,
     "median_error_pct": 0.048592,
     "max_error_pct": 3.036447,
     "mean_abs_delta": 0.004632202857142858,
     "precision_tier_counts": {
-      "green": 7
+      "contested": 1,
+      "green": 5,
+      "red": 1
     },
-    "green_gate_fraction": 1.0,
+    "green_gate_fraction": 0.7142857142857143,
     "matches_domain_spine": false
   }
 }

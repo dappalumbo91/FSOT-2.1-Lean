@@ -44,6 +44,9 @@
       "scientific_measurement": {
         "delta": 0.025535,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -63,6 +66,9 @@
       "scientific_measurement": {
         "delta": 0.025535,
         "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -85,6 +91,9 @@
       "scientific_measurement": {
         "delta": 1.9e-05,
         "delta_pct": 0.001845,
+        "effective_error_pct": 0.001845,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -108,10 +117,16 @@
       "scientific_measurement": {
         "delta": 1.9e-05,
         "delta_pct": 0.001845,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 3.1e-05,
+        "comparison_kind": "sigma_distance",
+        "within_literature_band": true,
+        "sigma_equivalent": 1.0,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.1e-05,
+        "reference": "DESI DR2 BAO + Planck CMB",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -131,10 +146,16 @@
       "scientific_measurement": {
         "delta": -0.051981,
         "delta_pct": 5.315031,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 0.034198,
+        "comparison_kind": "sigma_distance",
+        "within_literature_band": true,
+        "sigma_equivalent": 1.0,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.034198,
+        "reference": "DESI DR2 BAO + Planck CMB",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -154,10 +175,16 @@
       "scientific_measurement": {
         "delta": -0.022981,
         "delta_pct": 2.282125,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 0.025535,
+        "comparison_kind": "sigma_distance",
+        "within_literature_band": true,
+        "sigma_equivalent": 1.0,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.025535,
+        "reference": "DESI DR2 BAO + Planck CMB",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -177,10 +204,16 @@
       "scientific_measurement": {
         "delta": -0.009981,
         "delta_pct": 0.978529,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 0.012477,
+        "comparison_kind": "sigma_distance",
+        "within_literature_band": true,
+        "sigma_equivalent": 1.0,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.012477,
+        "reference": "DESI DR2 BAO + Planck CMB",
+        "observable_status": "dark_energy_open"
       }
     },
     {
@@ -200,10 +233,16 @@
       "scientific_measurement": {
         "delta": -0.302981,
         "delta_pct": 41.675516,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
+        "effective_error_pct": 0.15,
+        "comparison_kind": "sigma_distance",
+        "within_literature_band": false,
+        "sigma_equivalent": 1.0,
+        "precision_tier": "contested",
         "within_green_gate": true,
-        "within_aspiration_gate": true
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15,
+        "reference": "DESI DR2 BAO + Planck CMB",
+        "observable_status": "dark_energy_open"
       }
     }
   ],
@@ -274,16 +313,16 @@
   "cpl_status": "GREEN",
   "display_name": "Dark Energy CPL",
   "tier_label": "Tier 51 \u2014 Consciousness Soul Bridge cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T16:00:00.986551+00:00",
+  "scientific_metadata_enriched_at": "2026-07-11T16:36:59.156020+00:00",
   "scientific_precision_summary": {
     "scalar_count": 5,
     "median_error_pct": 2.282125,
     "max_error_pct": 41.675516,
     "mean_abs_delta": 0.0775886,
     "precision_tier_counts": {
-      "green": 5
+      "contested": 5
     },
-    "green_gate_fraction": 1.0,
+    "green_gate_fraction": 0.0,
     "matches_domain_spine": false
   }
 }

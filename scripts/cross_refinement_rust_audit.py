@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from cross_proof_lib import obligation_provable, python_verify_obligation  # noqa: E402
 from rust_replay_lib import (  # noqa: E402
+    OBL_CONNECTIVE,
     OBL_FORMAL,
     OBL_TRANSCENDENTAL,
     RUST_DIR,
@@ -24,7 +25,14 @@ OUT = ROOT / "data" / "cross_refinement_rust_report.json"
 
 def main() -> int:
     formal = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
-    provable = [ob for ob in formal["obligations"] if obligation_provable(ob)]
+    provable = [
+        ob
+        for ob in formal["obligations"]
+        if obligation_provable(ob) and ob.get("kind") != "bundle_conj"
+    ]
+    connective = []
+    if OBL_CONNECTIVE.exists():
+        connective = json.loads(OBL_CONNECTIVE.read_text(encoding="utf-8")).get("obligations") or []
     trans = []
     if OBL_TRANSCENDENTAL.exists():
         trans = json.loads(OBL_TRANSCENDENTAL.read_text(encoding="utf-8")).get("obligations") or []
@@ -41,18 +49,24 @@ def main() -> int:
         trans_ok += int(ok)
         trans_results.append({"id": ob["id"], "python_f64_ok": ok, "skipped": py is None})
 
+    connective_ok = sum(1 for ob in connective if obligation_provable(ob))
+    expected_total = len(connective) + len(provable) + len(trans)
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "tier": "84_cross_refinement_rust",
+        "connective_count": len(connective),
+        "connective_python_f64_ok": connective_ok,
         "formal_provable_count": len(provable),
         "formal_python_f64_ok": formal_ok,
         "transcendental_count": len(trans),
         "transcendental_python_f64_ok": trans_ok,
         "rust_meta": meta,
         "total_exported_to_rust": meta.get("total_count", 0),
-        "overall_ok": formal_ok == len(provable)
+        "expected_total": expected_total,
+        "overall_ok": connective_ok == len(connective)
+            and formal_ok == len(provable)
             and trans_ok == len(trans)
-            and meta.get("total_count") == len(provable) + len(trans),
+            and meta.get("total_count") == expected_total,
         "note": (
             "Rust replay uses f64 execution; formal spine matches Python decimal when obligations are float-stable."
         ),
@@ -60,6 +74,7 @@ def main() -> int:
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
 
     print("CROSS-REFINEMENT RUST EXECUTABLE AUDIT")
+    print(f"  connective: {len(connective)} (f64 oracle {connective_ok})")
     print(f"  formal provable: {len(provable)} (f64 oracle {formal_ok})")
     print(f"  transcendental: {len(trans)} (f64 oracle {trans_ok})")
     print(f"  rust exported: {meta.get('total_count', 0)}")

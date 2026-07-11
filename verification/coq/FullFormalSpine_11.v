@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma vizier_wds_tap_live_deep_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 25)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -304,5 +301,8 @@ Lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_fi_median_lt_bound : (0.221
 Proof. lra. Qed.
 
 Lemma NeuronCohortStrataPriors_held_out_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.6068416819088323%R).
+Proof. lra. Qed.
+
+Lemma NeuronCohortStrataPriors_stratum_sst_fi_pearson_gt_bound : (0.5%R) < (0.5196512945807779%R).
 Proof. lra. Qed.
 

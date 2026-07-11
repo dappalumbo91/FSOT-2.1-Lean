@@ -42,6 +42,8 @@ def rust_assertion_full_formal(ob: dict) -> str:
         return f"assert!({_f64_lit(ob['value'])} < 0.5, \"{oid}\");"
     if kind == "lt_lit":
         return f"assert!({_f64_lit(ob['value'])} < {_f64_lit(ob['bound'])}, \"{oid}\");"
+    if kind == "abs_diff_lt_lit":
+        return f"assert!({_f64_lit(ob['diff'])} < {_f64_lit(ob['bound'])}, \"{oid}\");"
     if kind == "gt_lit":
         return f"assert!({_f64_lit(ob['value'])} > {_f64_lit(ob['bound'])}, \"{oid}\");"
     if kind == "nat_pos":
@@ -155,7 +157,11 @@ def load_provable_formal() -> list[dict]:
     doc = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
     from cross_proof_lib import obligation_provable  # noqa: WPS433
 
-    return [ob for ob in doc["obligations"] if obligation_provable(ob)]
+    return [
+        ob
+        for ob in doc["obligations"]
+        if ob.get("kind") != "bundle_conj" and obligation_provable(ob)
+    ]
 
 
 def load_transcendental() -> list[dict]:

@@ -6,9 +6,6 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct : (0.00241237063663613%R) < (0.5%R).
-Proof. lra. Qed.
-
 Lemma pharmacokinetics_gap_fill_headline_median_under_half_pct : (0.04593318440797578%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -305,4 +302,7 @@ Proof. lra. Qed.
 
 Lemma rd_interval_tightening_panel_headline_median_under_half_pct : (0.005024559462094211%R) < (0.5%R).
 Proof. lra. Qed.
+
+Lemma rd_interval_tightening_panel_observable_count_pos : (0 < 12)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

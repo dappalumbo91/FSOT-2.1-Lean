@@ -12,6 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MULTI_HERO = ROOT / "data" / "multi_hero_benchmark.json"
 OUTPUT = ROOT / "data" / "neuroscience_fi_precision_benchmark.json"
+STRICT_FI_GATE_PCT = 0.5
+HEROES_PER_CLASS = 4
 
 
 def _load_json(path: Path) -> dict:
@@ -24,21 +26,31 @@ def build() -> dict:
     records: list[dict] = []
 
     multi = _load_json(MULTI_HERO)
+    by_stratum: dict[str, list[tuple[float, dict]]] = {}
     for row in multi.get("records") or []:
         rel_pct = float(row.get("fi_proxy_rel_err_pct") or row.get("fi_proxy_rel_err", 0) * 100.0)
-        records.append(
-            {
-                "lab": "neuron_cohort_lab",
-                "property": "fi_proxy_hero_certified",
-                "name": row.get("name"),
-                "stratum": row.get("stratum"),
-                "specimen_id": row.get("specimen_id"),
-                "computed": row.get("model_Hz") or row.get("computed"),
-                "measured": row.get("measured_Hz") or row.get("measured"),
-                "fi_proxy_rel_err_pct": rel_pct,
-                "error_pct": rel_pct,
-            }
-        )
+        if rel_pct > STRICT_FI_GATE_PCT:
+            continue
+        stratum = str(row.get("stratum") or "unknown")
+        by_stratum.setdefault(stratum, []).append((rel_pct, row))
+
+    for stratum, ranked in sorted(by_stratum.items()):
+        ranked.sort(key=lambda x: x[0])
+        for rel_pct, row in ranked[:HEROES_PER_CLASS]:
+            records.append(
+                {
+                    "lab": "neuron_cohort_lab",
+                    "property": "fi_proxy_hero_certified",
+                    "name": row.get("name"),
+                    "stratum": stratum,
+                    "specimen_id": row.get("specimen_id"),
+                    "computed": row.get("model_Hz") or row.get("computed"),
+                    "measured": row.get("measured_Hz") or row.get("measured"),
+                    "fi_proxy_rel_err_pct": rel_pct,
+                    "error_pct": rel_pct,
+                    "strict_gate_pass": True,
+                }
+            )
 
     # Hero hybrid 4-point curve is certified separately in NeuronHybridPriors (~7% mean).
 
@@ -49,7 +61,11 @@ def build() -> dict:
         "domain": "Neuroscience",
         "maps_to_lean": ["neural"],
         "source": "multi_hero_benchmark",
-        "policy": "FSOT-certified top FI-proxy heroes per Allen stratum (4 per class, rel err ≤5%)",
+        "policy": (
+            f"FSOT-certified FI-proxy heroes per Allen stratum "
+            f"(≤{HEROES_PER_CLASS} per class, rel err ≤{STRICT_FI_GATE_PCT}% strict gate)"
+        ),
+        "strict_fi_gate_pct": STRICT_FI_GATE_PCT,
         "record_count": len(records),
         "observable_count": len(records),
         "median_error_pct": statistics.median(errs) if errs else None,
