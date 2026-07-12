@@ -14,6 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 VENDOR_PUBCHEM = ROOT / "vendor" / "public_data" / "pubchem"
 PANEL_PATH = VENDOR_PUBCHEM / "pubchem_preregistered_panel.json"
+CULINARY_PANEL_PATH = VENDOR_PUBCHEM / "pubchem_culinary_expansion.json"
 BUNDLED_SUMMARY = VENDOR_PUBCHEM / "pubchem_summary.json"
 
 PUG_PROPERTIES = (
@@ -40,24 +41,31 @@ def _deep_mode() -> bool:
     return False
 
 
-def load_panel() -> list[dict]:
-    doc = json.loads(PANEL_PATH.read_text(encoding="utf-8"))
+def _merge_panel_rows(*docs: dict) -> list[dict]:
     seen: set[int] = set()
     out: list[dict] = []
-    for row in doc.get("compounds") or []:
-        cid = int(row["cid"])
-        if cid in seen:
-            continue
-        seen.add(cid)
-        out.append(row)
+    for doc in docs:
+        for row in doc.get("compounds") or []:
+            cid = int(row["cid"])
+            if cid in seen:
+                continue
+            seen.add(cid)
+            out.append(row)
     return out
+
+
+def load_panel() -> list[dict]:
+    docs = [json.loads(PANEL_PATH.read_text(encoding="utf-8"))]
+    if CULINARY_PANEL_PATH.exists():
+        docs.append(json.loads(CULINARY_PANEL_PATH.read_text(encoding="utf-8")))
+    return _merge_panel_rows(*docs)
 
 
 def panel_cids(*, deep: bool | None = None) -> list[int]:
     panel = load_panel()
     if deep is None:
         deep = _deep_mode()
-    limit = len(panel) if deep else min(50, len(panel))
+    limit = len(panel) if deep else min(150, len(panel))
     return [int(r["cid"]) for r in panel[:limit]]
 
 
@@ -82,10 +90,14 @@ def fetch_compounds_batch(cids: list[int]) -> list[dict]:
             f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid_str}/"
             f"property/{PUG_PROPERTIES}/JSON"
         )
-        try:
-            payload = _fetch_json(url)
-        except Exception:
-            time.sleep(0.35)
+        payload: dict | None = None
+        for attempt in range(3):
+            try:
+                payload = _fetch_json(url)
+                break
+            except Exception:
+                time.sleep(0.35 * (attempt + 1))
+        if payload is None:
             continue
         for props in (payload.get("PropertyTable") or {}).get("Properties") or []:
             cid = props.get("CID")

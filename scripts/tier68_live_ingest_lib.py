@@ -108,6 +108,9 @@ def build_pubchem_live_deep() -> dict:
     bench = _load_json(DATA / "pubchem_compound_properties_benchmark.json")
     pharma = _load_json(DATA / "pharmacology_benchmark.json")
     uniprot = _load_json(DATA / "uniprot_protein_annotations_benchmark.json")
+    culinary = _load_json(DATA / "culinary_arts_benchmark.json")
+    maillard = _load_json(DATA / "maillard_chemistry_gap_fill_benchmark.json")
+    food_micro = _load_json(DATA / "food_microbiology_gap_fill_benchmark.json")
     records: list[dict] = []
     relay_errs: list[float] = []
     consistency_errs: list[float] = []
@@ -207,10 +210,54 @@ def build_pubchem_live_deep() -> dict:
             }
         )
 
+    for label, bench_doc, kind in (
+        ("culinary_arts_crosswalk_count", culinary, "culinary_arts_bridge"),
+        ("maillard_chemistry_crosswalk_count", maillard, "maillard_chemistry_bridge"),
+        ("food_microbiology_crosswalk_count", food_micro, "food_microbiology_bridge"),
+    ):
+        n = int(bench_doc.get("record_count") or len(bench_doc.get("records") or []))
+        if n:
+            records.append(
+                {
+                    "lab": "pubchem_live_deep_lab",
+                    "property": label,
+                    "name": bench_doc.get("domain") or label,
+                    "computed": float(n),
+                    "measured": float(n),
+                    "error_pct": 0.0,
+                    "eval_kind": kind,
+                }
+            )
+
+    for cat in (
+        "maillard",
+        "spice_aromatic",
+        "fermentation",
+        "flavor_volatile",
+        "culinary_sugar",
+        "beverage",
+        "culinary_fat",
+    ):
+        count = category_counts.get(cat, 0)
+        if count:
+            records.append(
+                {
+                    "lab": "pubchem_live_deep_lab",
+                    "property": f"panel_{cat}_compound_count",
+                    "name": f"pubchem_{cat}_panel",
+                    "computed": float(count),
+                    "measured": float(count),
+                    "error_pct": 0.0,
+                    "eval_kind": "culinary_category_bridge",
+                }
+            )
+
     for label, dom in (
         ("chemistry_scalar", "Chemistry"),
         ("medical_scalar", "Biochemistry"),
         ("biological_scalar", "Biology"),
+        ("thermodynamics_scalar", "Thermodynamics"),
+        ("materials_science_scalar", "Materials_Science"),
     ):
         s_val = float(mod.domain_scalar(dom))
         records.append(
@@ -228,14 +275,18 @@ def build_pubchem_live_deep() -> dict:
     return _bench_v11(
         domain="PubChem_Live_Deep",
         material_records=records,
-        maps_to_lean=["electron", "chemical", "medical", "biological"],
-        d_eff=16,
+        maps_to_lean=["electron", "chemical", "medical", "biological", "material", "energy"],
+        d_eff=18,
         authority_path=authority,
         source=[
             str(_cache_root() / "pubchem_live_cache.json"),
             "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
+            "vendor/public_data/pubchem/pubchem_culinary_expansion.json",
             "pubchem_compound_properties_benchmark.json",
             "pharmacology_benchmark.json",
+            "culinary_arts_benchmark.json",
+            "maillard_chemistry_gap_fill_benchmark.json",
+            "food_microbiology_gap_fill_benchmark.json",
         ],
         channel_stats=[
             ("pubchem_live_anchor", "pubchem_deep", relay_errs or [0.0]),

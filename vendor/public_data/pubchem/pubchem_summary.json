@@ -1,6 +1,6 @@
 {
   "source": "PubChem_PUG_REST",
-  "compound_count": 80,
+  "compound_count": 192,
   "compounds": [
     {
       "cid": 2244,
@@ -183,8 +183,8 @@
       "molecular_formula": "C8H10N4O2",
       "molecular_weight": "194.19",
       "iupac_name": "1,3,7-trimethylpurine-2,6-dione",
-      "category": "drug_stimulant",
-      "domain": "medical"
+      "category": "beverage",
+      "domain": "culinary"
     },
     {
       "cid": 5280805,
@@ -239,16 +239,16 @@
       "molecular_formula": "C2H6O",
       "molecular_weight": "46.07",
       "iupac_name": "ethanol",
-      "category": "solvent",
-      "domain": "chemical"
+      "category": "beverage",
+      "domain": "culinary"
     },
     {
       "cid": 962,
       "molecular_formula": "H2O",
       "molecular_weight": "18.015",
       "iupac_name": "oxidane",
-      "category": "solvent",
-      "domain": "chemical"
+      "category": "culinary_solvent",
+      "domain": "culinary"
     },
     {
       "cid": 5280453,
@@ -335,16 +335,16 @@
       "molecular_formula": "C6H12O6",
       "molecular_weight": "180.16",
       "iupac_name": "(3R,4S,5S,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
-      "category": "metabolite",
-      "domain": "biological"
+      "category": "culinary_sugar",
+      "domain": "culinary"
     },
     {
       "cid": 5988,
       "molecular_formula": "C12H22O11",
       "molecular_weight": "342.30",
       "iupac_name": "(2R,3R,4S,5S,6R)-2-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
-      "category": "metabolite",
-      "domain": "biological"
+      "category": "culinary_sugar",
+      "domain": "culinary"
     },
     {
       "cid": 5997,
@@ -641,8 +641,904 @@
       "iupac_name": "sodium",
       "category": "mineral",
       "domain": "chemical"
+    },
+    {
+      "cid": 5234,
+      "molecular_formula": "ClNa",
+      "molecular_weight": "58.44",
+      "iupac_name": "sodium chloride",
+      "category": "culinary_salt",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5984,
+      "molecular_formula": "C6H12O6",
+      "molecular_weight": "180.16",
+      "iupac_name": "(3S,4R,5R)-1,3,4,5,6-pentahydroxyhexan-2-one",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 439186,
+      "molecular_formula": "C12H22O11",
+      "molecular_weight": "342.30",
+      "iupac_name": "(2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[(2R,3S,4R,5R)-4,5,6-trihydroxy-2-(hydroxymethyl)oxan-3-yl]oxyoxane-3,4,5-triol",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6134,
+      "molecular_formula": "C12H22O11",
+      "molecular_weight": "342.30",
+      "iupac_name": "(2R,3R,4S,5R,6S)-2-(hydroxymethyl)-6-[(2R,3S,4R,5R,6R)-4,5,6-trihydroxy-2-(hydroxymethyl)oxan-3-yl]oxyoxane-3,4,5-triol",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6036,
+      "molecular_formula": "C6H12O6",
+      "molecular_weight": "180.16",
+      "iupac_name": "(3R,4S,5R,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 7427,
+      "molecular_formula": "C12H22O11",
+      "molecular_weight": "342.30",
+      "iupac_name": "(2R,3S,4S,5R,6R)-2-(hydroxymethyl)-6-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxane-3,4,5-triol",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 439242,
+      "molecular_formula": "C18H32O16",
+      "molecular_weight": "504.4",
+      "iupac_name": "(2S,3R,4S,5R,6R)-2-[[(2R,3S,4S,5R,6R)-6-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-3,4,5-trihydroxyoxan-2-yl]methoxy]-6-(hydroxymethyl)oxane-3,4,5-triol",
+      "category": "culinary_sugar",
+      "domain": "culinary"
+    },
+    {
+      "cid": 311,
+      "molecular_formula": "C6H8O7",
+      "molecular_weight": "192.12",
+      "iupac_name": "2-hydroxypropane-1,2,3-tricarboxylic acid",
+      "category": "culinary_acid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 525,
+      "molecular_formula": "C4H6O5",
+      "molecular_weight": "134.09",
+      "iupac_name": "2-hydroxybutanedioic acid",
+      "category": "culinary_acid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 875,
+      "molecular_formula": "C4H6O6",
+      "molecular_weight": "150.09",
+      "iupac_name": "2,3-dihydroxybutanedioic acid",
+      "category": "culinary_acid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 176,
+      "molecular_formula": "C2H4O2",
+      "molecular_weight": "60.05",
+      "iupac_name": "acetic acid",
+      "category": "culinary_acid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 612,
+      "molecular_formula": "C3H6O3",
+      "molecular_weight": "90.08",
+      "iupac_name": "2-hydroxypropanoic acid",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 264,
+      "molecular_formula": "C4H8O2",
+      "molecular_weight": "88.11",
+      "iupac_name": "butanoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 445639,
+      "molecular_formula": "C18H34O2",
+      "molecular_weight": "282.5",
+      "iupac_name": "(Z)-octadec-9-enoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 985,
+      "molecular_formula": "C16H32O2",
+      "molecular_weight": "256.42",
+      "iupac_name": "hexadecanoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281,
+      "molecular_formula": "C18H36O2",
+      "molecular_weight": "284.5",
+      "iupac_name": "octadecanoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5280450,
+      "molecular_formula": "C18H32O2",
+      "molecular_weight": "280.4",
+      "iupac_name": "(9Z,12Z)-octadeca-9,12-dienoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 379,
+      "molecular_formula": "C8H16O2",
+      "molecular_weight": "144.21",
+      "iupac_name": "octanoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 3893,
+      "molecular_formula": "C12H24O2",
+      "molecular_weight": "200.32",
+      "iupac_name": "dodecanoic acid",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1183,
+      "molecular_formula": "C8H8O3",
+      "molecular_weight": "152.15",
+      "iupac_name": "4-hydroxy-3-methoxybenzaldehyde",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 3314,
+      "molecular_formula": "C10H12O2",
+      "molecular_weight": "164.20",
+      "iupac_name": "2-methoxy-4-prop-2-enylphenol",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 637511,
+      "molecular_formula": "C9H8O",
+      "molecular_weight": "132.16",
+      "iupac_name": "(E)-3-phenylprop-2-enal",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1254,
+      "molecular_formula": "C10H20O",
+      "molecular_weight": "156.26",
+      "iupac_name": "5-methyl-2-propan-2-ylcyclohexan-1-ol",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6989,
+      "molecular_formula": "C10H14O",
+      "molecular_weight": "150.22",
+      "iupac_name": "5-methyl-2-propan-2-ylphenol",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 10364,
+      "molecular_formula": "C10H14O",
+      "molecular_weight": "150.22",
+      "iupac_name": "2-methyl-5-propan-2-ylphenol",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 638024,
+      "molecular_formula": "C17H19NO3",
+      "molecular_weight": "285.34",
+      "iupac_name": "(2E,4E)-5-(1,3-benzodioxol-5-yl)-1-piperidin-1-ylpenta-2,4-dien-1-one",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1548943,
+      "molecular_formula": "C18H27NO3",
+      "molecular_weight": "305.4",
+      "iupac_name": "(E)-N-[(4-hydroxy-3-methoxyphenyl)methyl]-8-methylnon-6-enamide",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 442793,
+      "molecular_formula": "C17H26O4",
+      "molecular_weight": "294.4",
+      "iupac_name": "(5S)-5-hydroxy-1-(4-hydroxy-3-methoxyphenyl)decan-3-one",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 31211,
+      "molecular_formula": "C11H14O3",
+      "molecular_weight": "194.23",
+      "iupac_name": "4-(4-hydroxy-3-methoxyphenyl)butan-2-one",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281794,
+      "molecular_formula": "C17H24O3",
+      "molecular_weight": "276.4",
+      "iupac_name": "(E)-1-(4-hydroxy-3-methoxyphenyl)dec-4-en-3-one",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 65036,
+      "molecular_formula": "C6H10OS2",
+      "molecular_weight": "162.3",
+      "iupac_name": "3-prop-2-enylsulfinylsulfanylprop-1-ene",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 16590,
+      "molecular_formula": "C6H10S2",
+      "molecular_weight": "146.3",
+      "iupac_name": "3-(prop-2-enyldisulfanyl)prop-1-ene",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281792,
+      "molecular_formula": "C18H16O8",
+      "molecular_weight": "360.3",
+      "iupac_name": "(2R)-3-(3,4-dihydroxyphenyl)-2-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]oxypropanoic acid",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 4276,
+      "molecular_formula": "C11H12O3",
+      "molecular_weight": "192.21",
+      "iupac_name": "4-methoxy-6-prop-2-enyl-1,3-benzodioxole",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5970,
+      "molecular_formula": "C7H16ClNO3",
+      "molecular_weight": "197.66",
+      "iupac_name": "(3-carboxy-2-hydroxypropyl)-trimethylazanium chloride",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 22311,
+      "molecular_formula": "C10H16",
+      "molecular_weight": "136.23",
+      "iupac_name": "1-methyl-4-prop-1-en-2-ylcyclohexene",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6549,
+      "molecular_formula": "C10H18O",
+      "molecular_weight": "154.25",
+      "iupac_name": "3,7-dimethylocta-1,6-dien-3-ol",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 637566,
+      "molecular_formula": "C10H18O",
+      "molecular_weight": "154.25",
+      "iupac_name": "(2E)-3,7-dimethylocta-2,6-dien-1-ol",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 638011,
+      "molecular_formula": "C10H16O",
+      "molecular_weight": "152.23",
+      "iupac_name": "(2E)-3,7-dimethylocta-2,6-dienal",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 3329,
+      "molecular_formula": "C12H15NO5S",
+      "molecular_weight": "285.32",
+      "iupac_name": "6-(1-hydroxyethyl)-7-oxo-3-(oxolan-2-yl)-4-thia-1-azabicyclo[3.2.0]hept-2-ene-2-carboxylic acid",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 650,
+      "molecular_formula": "C4H6O2",
+      "molecular_weight": "86.09",
+      "iupac_name": "butane-2,3-dione",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 7362,
+      "molecular_formula": "C5H4O2",
+      "molecular_weight": "96.08",
+      "iupac_name": "furan-2-carbaldehyde",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 237332,
+      "molecular_formula": "C6H6O3",
+      "molecular_weight": "126.11",
+      "iupac_name": "5-(hydroxymethyl)furan-2-carbaldehyde",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6579,
+      "molecular_formula": "C3H5NO",
+      "molecular_weight": "71.08",
+      "iupac_name": "prop-2-enamide",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 9261,
+      "molecular_formula": "C4H4N2",
+      "molecular_weight": "80.09",
+      "iupac_name": "pyrazine",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 8369,
+      "molecular_formula": "C6H6O3",
+      "molecular_weight": "126.11",
+      "iupac_name": "3-hydroxy-2-methylpyran-4-one",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 9945,
+      "molecular_formula": "C14H12FNO",
+      "molecular_weight": "229.25",
+      "iupac_name": "2-fluoro-N-(4-phenylphenyl)acetamide",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 240,
+      "molecular_formula": "C7H6O",
+      "molecular_weight": "106.12",
+      "iupac_name": "benzaldehyde",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 179,
+      "molecular_formula": "C4H8O2",
+      "molecular_weight": "88.11",
+      "iupac_name": "3-hydroxybutan-2-one",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 31260,
+      "molecular_formula": "C5H12O",
+      "molecular_weight": "88.15",
+      "iupac_name": "3-methylbutan-1-ol",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 8857,
+      "molecular_formula": "C4H8O2",
+      "molecular_weight": "88.11",
+      "iupac_name": "ethyl acetate",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5429,
+      "molecular_formula": "C7H8N4O2",
+      "molecular_weight": "180.16",
+      "iupac_name": "3,7-dimethylpurine-2,6-dione",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 2153,
+      "molecular_formula": "C7H8N4O2",
+      "molecular_weight": "180.16",
+      "iupac_name": "1,3-dimethyl-7H-purine-2,6-dione",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1794427,
+      "molecular_formula": "C16H18O9",
+      "molecular_weight": "354.31",
+      "iupac_name": "(1S,3R,4R,5R)-3-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]oxy-1,4,5-trihydroxycyclohexane-1-carboxylic acid",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5570,
+      "molecular_formula": "C7H7NO2",
+      "molecular_weight": "137.14",
+      "iupac_name": "1-methylpyridin-1-ium-3-carboxylate",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 439378,
+      "molecular_formula": "C7H14N2O3",
+      "molecular_weight": "174.20",
+      "iupac_name": "(2S)-2-amino-5-(ethylamino)-5-oxopentanoic acid",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 9064,
+      "molecular_formula": "C15H14O6",
+      "molecular_weight": "290.27",
+      "iupac_name": "(2R,3S)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 72277,
+      "molecular_formula": "C15H14O7",
+      "molecular_weight": "306.27",
+      "iupac_name": "(2R,3R)-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281525,
+      "molecular_formula": "C15H26O",
+      "molecular_weight": "222.37",
+      "iupac_name": "(3S,6E)-3,7,11-trimethyldodeca-1,6,10-trien-3-ol",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1001,
+      "molecular_formula": "C8H11N",
+      "molecular_weight": "121.18",
+      "iupac_name": "2-phenylethanamine",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 516892,
+      "molecular_formula": "CHNaO3",
+      "molecular_weight": "84.007",
+      "iupac_name": "sodium hydrogen carbonate",
+      "category": "baking",
+      "domain": "culinary"
+    },
+    {
+      "cid": 23672308,
+      "molecular_formula": "C5H8NNaO4",
+      "molecular_weight": "169.11",
+      "iupac_name": "sodium (2S)-2-amino-5-hydroxy-5-oxopentanoate",
+      "category": "umami",
+      "domain": "culinary"
+    },
+    {
+      "cid": 135398631,
+      "molecular_formula": "C10H14N5O8P",
+      "molecular_weight": "363.22",
+      "iupac_name": "[(2R,3S,4R,5R)-5-(2-amino-6-oxo-1H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate",
+      "category": "umami",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281704,
+      "molecular_formula": "C17H14O5",
+      "molecular_weight": "298.29",
+      "iupac_name": "7-hydroxy-6-methoxy-3-(4-methoxyphenyl)chromen-4-one",
+      "category": "legume",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5317750,
+      "molecular_formula": "C16H12O5",
+      "molecular_weight": "284.26",
+      "iupac_name": "7-hydroxy-3-(4-hydroxyphenyl)-6-methoxychromen-4-one",
+      "category": "legume",
+      "domain": "culinary"
+    },
+    {
+      "cid": 439224,
+      "molecular_formula": "C9H14N4O3",
+      "molecular_weight": "226.23",
+      "iupac_name": "(2S)-2-(3-aminopropanoylamino)-3-(1H-imidazol-5-yl)propanoic acid",
+      "category": "meat_dairy",
+      "domain": "culinary"
+    },
+    {
+      "cid": 112072,
+      "molecular_formula": "C10H16N4O3",
+      "molecular_weight": "240.26",
+      "iupac_name": "(2S)-2-(3-aminopropanoylamino)-3-(3-methylimidazol-4-yl)propanoic acid",
+      "category": "meat_dairy",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1123,
+      "molecular_formula": "C2H7NO3S",
+      "molecular_weight": "125.15",
+      "iupac_name": "2-aminoethanesulfonic acid",
+      "category": "meat_dairy",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5610,
+      "molecular_formula": "C8H11NO",
+      "molecular_weight": "137.18",
+      "iupac_name": "4-(2-aminoethyl)phenol",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 774,
+      "molecular_formula": "C5H9N3",
+      "molecular_weight": "111.15",
+      "iupac_name": "2-(1H-imidazol-5-yl)ethanamine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1045,
+      "molecular_formula": "C4H12N2",
+      "molecular_weight": "88.15",
+      "iupac_name": "butane-1,4-diamine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 446284,
+      "molecular_formula": "C20H30O2",
+      "molecular_weight": "302.5",
+      "iupac_name": "(5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoic acid",
+      "category": "seafood",
+      "domain": "culinary"
+    },
+    {
+      "cid": 445580,
+      "molecular_formula": "C22H32O2",
+      "molecular_weight": "328.5",
+      "iupac_name": "(4Z,7Z,10Z,13Z,16Z,19Z)-docosa-4,7,10,13,16,19-hexaenoic acid",
+      "category": "seafood",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5280489,
+      "molecular_formula": "C40H56",
+      "molecular_weight": "536.9",
+      "iupac_name": "1,3,3-trimethyl-2-[(1E,3E,5E,7E,9E,11E,13E,15E,17E)-3,7,12,16-tetramethyl-18-(2,6,6-trimethylcyclohexen-1-yl)octadeca-1,3,5,7,9,11,13,15,17-nonaenyl]cyclohexene",
+      "category": "food_color",
+      "domain": "culinary"
+    },
+    {
+      "cid": 446925,
+      "molecular_formula": "C40H56",
+      "molecular_weight": "536.9",
+      "iupac_name": "(6E,8E,10E,12E,14E,16E,18E,20E,22E,24E,26E)-2,6,10,14,19,23,27,31-octamethyldotriaconta-2,6,8,10,12,14,16,18,20,22,24,26,30-tridecaene",
+      "category": "food_color",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281243,
+      "molecular_formula": "C40H56O2",
+      "molecular_weight": "568.9",
+      "iupac_name": "(1R)-4-[(1E,3E,5E,7E,9E,11E,13E,15E,17E)-18-[(1R,4R)-4-hydroxy-2,6,6-trimethylcyclohex-2-en-1-yl]-3,7,12,16-tetramethyloctadeca-1,3,5,7,9,11,13,15,17-nonaenyl]-3,5,5-trimethylcyclohex-3-en-1-ol",
+      "category": "food_color",
+      "domain": "culinary"
+    },
+    {
+      "cid": 517055,
+      "molecular_formula": "C7H5NaO2",
+      "molecular_weight": "144.10",
+      "iupac_name": "sodium benzoate",
+      "category": "preservative",
+      "domain": "culinary"
+    },
+    {
+      "cid": 23676745,
+      "molecular_formula": "C6H7KO2",
+      "molecular_weight": "150.22",
+      "iupac_name": "potassium (2E,4E)-hexa-2,4-dienoate",
+      "category": "preservative",
+      "domain": "culinary"
+    },
+    {
+      "cid": 31404,
+      "molecular_formula": "C15H24O",
+      "molecular_weight": "220.35",
+      "iupac_name": "2,6-ditert-butyl-4-methylphenol",
+      "category": "preservative",
+      "domain": "culinary"
+    },
+    {
+      "cid": 134601,
+      "molecular_formula": "C14H18N2O5",
+      "molecular_weight": "294.30",
+      "iupac_name": "(3S)-3-amino-4-[[(2S)-1-methoxy-1-oxo-3-phenylpropan-2-yl]amino]-4-oxobutanoic acid",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 71485,
+      "molecular_formula": "C12H19Cl3O8",
+      "molecular_weight": "397.6",
+      "iupac_name": "(2R,3R,4R,5R,6R)-2-[(2R,3S,4S,5S)-2,5-bis(chloromethyl)-3,4-dihydroxyoxolan-2-yl]oxy-5-chloro-6-(hydroxymethyl)oxane-3,4-diol",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5143,
+      "molecular_formula": "C7H5NO3S",
+      "molecular_weight": "183.19",
+      "iupac_name": "1,1-dioxo-1,2-benzothiazol-3-one",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 441431,
+      "molecular_formula": "C9H15N2O6P",
+      "molecular_weight": "278.20",
+      "iupac_name": "[(2R,3S,5R)-3-hydroxy-5-(2H-pyrimidin-1-yl)oxolan-2-yl]methyl dihydrogen phosphate",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 82755,
+      "molecular_formula": "C8H10O3",
+      "molecular_weight": "154.16",
+      "iupac_name": "4-(2-hydroxyethyl)benzene-1,2-diol",
+      "category": "olive_oil",
+      "domain": "culinary"
+    },
+    {
+      "cid": 828810,
+      "molecular_formula": "C12H15NO3",
+      "molecular_weight": "221.25",
+      "iupac_name": "ethyl 3-(propanoylamino)benzoate",
+      "category": "olive_oil",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5287971,
+      "molecular_formula": "C42H80NO8P",
+      "molecular_weight": "758.1",
+      "iupac_name": "[(2R)-3-hexadecanoyloxy-2-[(9Z,12Z)-octadeca-9,12-dienoyl]oxypropyl] 2-(trimethylazaniumyl)ethyl phosphate",
+      "category": "emulsifier",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6133,
+      "molecular_formula": "C9H15N2O15P3",
+      "molecular_weight": "484.14",
+      "iupac_name": "[[(2R,3S,4R,5R)-5-(2,4-dioxopyrimidin-1-yl)-3,4-dihydroxyoxolan-2-yl]methoxy-hydroxyphosphoryl] phosphono hydrogen phosphate",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6322,
+      "molecular_formula": "C6H14N4O2",
+      "molecular_weight": "174.20",
+      "iupac_name": "(2S)-2-amino-5-(diaminomethylideneamino)pentanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6274,
+      "molecular_formula": "C6H9N3O2",
+      "molecular_weight": "155.15",
+      "iupac_name": "(2S)-2-amino-3-(1H-imidazol-5-yl)propanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6149,
+      "molecular_formula": "C11H17N2NaO3",
+      "molecular_weight": "248.25",
+      "iupac_name": "sodium 5-ethyl-5-(3-methylbutyl)-4,6-dioxo-1H-pyrimidin-2-olate",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6057,
+      "molecular_formula": "C9H11NO3",
+      "molecular_weight": "181.19",
+      "iupac_name": "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6306,
+      "molecular_formula": "C6H13NO2",
+      "molecular_weight": "131.17",
+      "iupac_name": "(2S,3S)-2-amino-3-methylpentanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6288,
+      "molecular_formula": "C4H9NO3",
+      "molecular_weight": "119.12",
+      "iupac_name": "(2S,3R)-2-amino-3-hydroxybutanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6267,
+      "molecular_formula": "C4H8N2O3",
+      "molecular_weight": "132.12",
+      "iupac_name": "(2S)-2,4-diamino-4-oxobutanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5961,
+      "molecular_formula": "C5H10N2O3",
+      "molecular_weight": "146.14",
+      "iupac_name": "(2S)-2,5-diamino-5-oxopentanoic acid",
+      "category": "amino_acid_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 124886,
+      "molecular_formula": "C10H17N3O6S",
+      "molecular_weight": "307.33",
+      "iupac_name": "(2S)-2-amino-5-[[(2R)-1-(carboxymethylamino)-1-oxo-3-sulfanylpropan-2-yl]amino]-5-oxopentanoic acid",
+      "category": "antioxidant_food",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5280443,
+      "molecular_formula": "C15H10O5",
+      "molecular_weight": "270.24",
+      "iupac_name": "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "category": "herb_polyphenol",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5280445,
+      "molecular_formula": "C15H10O6",
+      "molecular_weight": "286.24",
+      "iupac_name": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+      "category": "herb_polyphenol",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5280863,
+      "molecular_formula": "C15H10O6",
+      "molecular_weight": "286.24",
+      "iupac_name": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "category": "herb_polyphenol",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1030,
+      "molecular_formula": "C3H8O2",
+      "molecular_weight": "76.09",
+      "iupac_name": "propane-1,2-diol",
+      "category": "culinary_fat",
+      "domain": "culinary"
+    },
+    {
+      "cid": 4873,
+      "molecular_formula": "ClK",
+      "molecular_weight": "74.55",
+      "iupac_name": "potassium chloride",
+      "category": "culinary_salt",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1032,
+      "molecular_formula": "C3H6O2",
+      "molecular_weight": "74.08",
+      "iupac_name": "propanoic acid",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 10930,
+      "molecular_formula": "C5H11NO",
+      "molecular_weight": "101.15",
+      "iupac_name": "3-methylbutanamide",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281232,
+      "molecular_formula": "C20H24O4",
+      "molecular_weight": "328.4",
+      "iupac_name": "(2E,4E,6E,8E,10E,12E,14E)-2,6,11,15-tetramethylhexadeca-2,4,6,8,10,12,14-heptaenedioic acid",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 11965427,
+      "molecular_formula": "C29H24Cl2N2O7S",
+      "molecular_weight": "615.5",
+      "iupac_name": "(2S)-2-[[2-(1-benzofuran-6-carbonyl)-5,7-dichloro-3,4-dihydro-1H-isoquinoline-6-carbonyl]amino]-3-(3-methylsulfonylphenyl)propanoic acid",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 92772,
+      "molecular_formula": "C18H32O5",
+      "molecular_weight": "328.4",
+      "iupac_name": "5-[3,5-di(butan-2-yl)cyclopenten-1-yl]-2,3,5-trihydroxypentanoic acid",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281224,
+      "molecular_formula": "C40H52O4",
+      "molecular_weight": "596.8",
+      "iupac_name": "(6S)-6-hydroxy-3-[(1E,3E,5E,7E,9E,11E,13E,15E,17E)-18-[(4S)-4-hydroxy-2,6,6-trimethyl-3-oxocyclohexen-1-yl]-3,7,12,16-tetramethyloctadeca-1,3,5,7,9,11,13,15,17-nonaenyl]-2,4,4-trimethylcyclohex-2-en-1-one",
+      "category": "seafood",
+      "domain": "culinary"
+    },
+    {
+      "cid": 16129778,
+      "molecular_formula": "C76H52O46",
+      "molecular_weight": "1701.2",
+      "iupac_name": "[2,3-dihydroxy-5-[[(2R,3R,4S,5R,6S)-3,4,5,6-tetrakis[[3,4-dihydroxy-5-(3,4,5-trihydroxybenzoyl)oxybenzoyl]oxy]oxan-2-yl]methoxycarbonyl]phenyl] 3,4,5-trihydroxybenzoate",
+      "category": "beverage",
+      "domain": "culinary"
+    },
+    {
+      "cid": 971,
+      "molecular_formula": "C2H2O4",
+      "molecular_weight": "90.03",
+      "iupac_name": "oxalic acid",
+      "category": "culinary_acid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 284,
+      "molecular_formula": "CH2O2",
+      "molecular_weight": "46.025",
+      "iupac_name": "formic acid",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 798,
+      "molecular_formula": "C8H7N",
+      "molecular_weight": "117.15",
+      "iupac_name": "1H-indole",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6736,
+      "molecular_formula": "C9H9N",
+      "molecular_weight": "131.17",
+      "iupac_name": "3-methyl-1H-indole",
+      "category": "fermentation",
+      "domain": "culinary"
     }
   ],
-  "fetched_at": "2026-07-12T00:30:08.243893+00:00",
+  "fetched_at": "2026-07-12T03:39:09.176407+00:00",
   "external_cache": "G:\\FSOT-PublicData\\pubchem\\pubchem_cache.json"
 }
