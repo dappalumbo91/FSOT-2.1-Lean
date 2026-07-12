@@ -1,0 +1,26 @@
+{
+  "source": "epidemiology_reference_observables_bundled",
+  "credential_free": true,
+  "metrics": [
+    {"name": "influenza_r0", "property": "basic_reproduction_R0", "measured": 1.8},
+    {"name": "measles_r0", "property": "basic_reproduction_R0", "measured": 15.0},
+    {"name": "covid19_r0_wildtype", "property": "basic_reproduction_R0", "measured": 2.5},
+    {"name": "ebola_case_fatality", "property": "case_fatality_rate", "measured": 0.5},
+    {"name": "malaria_incidence_per_1000", "property": "incidence_per_1000", "measured": 229.0},
+    {"name": "tb_incidence_per_100k", "property": "incidence_per_100k", "measured": 127.0},
+    {"name": "hiv_prevalence_pct", "property": "prevalence_pct", "measured": 0.7},
+    {"name": "cholera_incubation_days", "property": "incubation_period_days", "measured": 2.0},
+    {"name": "dengue_r0", "property": "basic_reproduction_R0", "measured": 3.0},
+    {"name": "pertussis_r0", "property": "basic_reproduction_R0", "measured": 5.5},
+    {"name": "norovirus_r0", "property": "basic_reproduction_R0", "measured": 7.0},
+    {"name": "hepatitis_b_chronic_rate", "property": "chronic_infection_rate", "measured": 0.05},
+    {"name": "zika_incubation_days", "property": "incubation_period_days", "measured": 6.0},
+    {"name": "mumps_r0", "property": "basic_reproduction_R0", "measured": 10.0},
+    {"name": "rubella_r0", "property": "basic_reproduction_R0", "measured": 6.0},
+    {"name": "polio_r0", "property": "basic_reproduction_R0", "measured": 5.0},
+    {"name": "meningococcal_attack_rate", "property": "attack_rate", "measured": 0.001},
+    {"name": "salmonella_incubation_h", "property": "incubation_period_hours", "measured": 12.0},
+    {"name": "strep_pneumo_carriage_pct", "property": "carriage_prevalence_pct", "measured": 40.0},
+    {"name": "c_diff_attack_rate_hospital", "property": "attack_rate", "measured": 0.05}
+  ]
+}

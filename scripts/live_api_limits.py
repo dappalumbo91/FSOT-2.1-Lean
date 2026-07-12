@@ -45,6 +45,10 @@ def tier82_deep() -> bool:
     return _flag("FSOT_TIER82_DEEP") or mega_deep()
 
 
+def tier84_deep() -> bool:
+    return _flag("FSOT_TIER84_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -312,3 +316,59 @@ def cartography_feature_limit() -> int:
     if tier82_deep():
         return 12
     return 8
+
+
+def epidemiology_indicator_limit() -> int:
+    if mega_deep():
+        return 8
+    if tier84_deep():
+        return 6
+    return 4
+
+
+def virology_genome_limit() -> int:
+    if mega_deep():
+        return 8
+    if tier84_deep():
+        return 6
+    return 4
+
+
+def paleontology_occurrence_limit() -> int:
+    if mega_deep():
+        return 30
+    if tier84_deep():
+        return 20
+    return 10
+
+
+def arxiv_gw_paper_limit() -> int:
+    if mega_deep():
+        return 20
+    if tier84_deep():
+        return 12
+    return 8
+
+
+def tier84_gbif_limit() -> int:
+    if mega_deep():
+        return 30
+    if tier84_deep():
+        return 20
+    return 10
+
+
+def marine_obis_limit() -> int:
+    if mega_deep():
+        return 30
+    if tier84_deep():
+        return 20
+    return 10
+
+
+def immunology_cid_limit() -> int:
+    if mega_deep():
+        return 8
+    if tier84_deep():
+        return 6
+    return 4

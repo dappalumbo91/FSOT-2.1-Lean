@@ -1,0 +1,26 @@
+{
+  "source": "robotics_control_reference_observables_bundled",
+  "credential_free": true,
+  "metrics": [
+    {"name": "pid_kp_default", "property": "proportional_gain", "measured": 1.0},
+    {"name": "pid_ki_default", "property": "integral_gain", "measured": 0.1},
+    {"name": "pid_kd_default", "property": "derivative_gain", "measured": 0.05},
+    {"name": "servo_accuracy_deg", "property": "positioning_accuracy_deg", "measured": 0.01},
+    {"name": "encoder_resolution_bits", "property": "encoder_resolution_bits", "measured": 17.0},
+    {"name": "control_loop_rate_hz", "property": "control_frequency_hz", "measured": 1000.0},
+    {"name": "robot_repeatability_mm", "property": "repeatability_mm", "measured": 0.05},
+    {"name": "robot_payload_kg", "property": "payload_capacity_kg", "measured": 20.0},
+    {"name": "joint_velocity_max", "property": "joint_velocity_deg_s", "measured": 180.0},
+    {"name": "lidar_range_m", "property": "lidar_range_m", "measured": 100.0},
+    {"name": "imu_gyro_noise", "property": "gyro_noise_deg_s", "measured": 0.01},
+    {"name": "slam_pose_error_cm", "property": "localization_error_cm", "measured": 5.0},
+    {"name": "quadcopter_hover_thrust", "property": "thrust_to_weight", "measured": 2.0},
+    {"name": "gripper_force_n", "property": "grip_force_n", "measured": 50.0},
+    {"name": "stepper_steps_per_rev", "property": "steps_per_revolution", "measured": 200.0},
+    {"name": "dc_motor_back_emf", "property": "back_emf_constant_v_krpm", "measured": 10.0},
+    {"name": "kalman_process_noise", "property": "process_noise_covariance", "measured": 0.01},
+    {"name": "mpc_horizon_steps", "property": "prediction_horizon", "measured": 20.0},
+    {"name": "compliance_stiffness", "property": "stiffness_n_m", "measured": 1000.0},
+    {"name": "haptic_refresh_hz", "property": "haptic_update_hz", "measured": 1000.0}
+  ]
+}

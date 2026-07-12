@@ -33,6 +33,7 @@ def _env() -> dict[str, str]:
         "FSOT_TIER80_DEEP",
         "FSOT_TIER81_DEEP",
         "FSOT_TIER82_DEEP",
+        "FSOT_TIER84_DEEP",
     ):
         env[key] = "1"
     return env
@@ -73,6 +74,7 @@ def main() -> int:
             ("Tier 80 government open data", [py, "scripts/ingest_tier80_government_open_data.py", "--deep"]),
             ("Tier 81 public verifiable", [py, "scripts/ingest_tier81_public_verifiable.py", "--deep"]),
             ("Tier 82 scientific expansion", [py, "scripts/ingest_tier82_scientific_expansion.py", "--deep"]),
+            ("Tier 84 scientific expansion", [py, "scripts/ingest_tier84_scientific_expansion.py", "--deep"]),
             ("Tier 38 benchmarks", [py, "scripts/build_tier38_public_data_benchmarks.py"]),
             ("Tier 58 benchmarks", [py, "scripts/build_tier58_live_catalog_benchmarks.py"]),
             ("Tier 60 benchmarks", [py, "scripts/build_tier60_astrometry_benchmarks.py"]),
@@ -82,12 +84,14 @@ def main() -> int:
             ("Tier 80 benchmarks", [py, "scripts/build_tier80_government_open_data_benchmarks.py", "--skip-ingest"]),
             ("Tier 81 benchmarks", [py, "scripts/build_tier81_public_verifiable_benchmarks.py", "--skip-ingest"]),
             ("Tier 82 benchmarks", [py, "scripts/build_tier82_scientific_expansion_benchmarks.py", "--skip-ingest"]),
+            ("Tier 84 benchmarks", [py, "scripts/build_tier84_scientific_expansion_benchmarks.py", "--skip-ingest"]),
             ("Lean priors tier 38", [py, "scripts/gen_tier38_public_data_lean.py"]),
             ("Lean priors tier 68-70", [py, "scripts/gen_tiers_68_70_lean.py"]),
             ("Lean priors tier 79", [py, "scripts/gen_tier79_telescope_lean.py"]),
             ("Lean priors tier 80", [py, "scripts/gen_tier80_government_lean.py"]),
             ("Lean priors tier 81", [py, "scripts/gen_tier81_public_verifiable_lean.py"]),
             ("Lean priors tier 82", [py, "scripts/gen_tier82_scientific_expansion_lean.py"]),
+            ("Lean priors tier 84", [py, "scripts/gen_tier84_scientific_expansion_lean.py"]),
             ("Core formula fractal sync", [py, "scripts/sync_core_formula_fractal_branches.py"]),
             ("C_thin panel upgrade", [py, "scripts/upgrade_c_thin_panels.py"]),
         ]

@@ -3591,6 +3591,169 @@ extension_domains:
     lean_module: FSOT.Formal.ScientificExpansionSpinePriors
     note: "Tier 82 cross-panel spine — ten new scientific domains"
 
+  Epidemiology_Panel:
+    tier: 84
+    D_eff: 15
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological]
+    formula_branch_override: term1.growth_term
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/epidemiology_panel_benchmark.json
+    lean_module: FSOT.Formal.EpidemiologyPanelPriors
+    note: "Epidemiology — World Bank health indicators + WHO reference anchors"
+
+  Virology_Panel:
+    tier: 84
+    D_eff: 14
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/virology_panel_benchmark.json
+    lean_module: FSOT.Formal.VirologyPanelPriors
+    note: "Virology — NCBI nuccore genome lengths + antiviral reference"
+
+  Paleontology_Panel:
+    tier: 84
+    D_eff: 18
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, energy]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/paleontology_panel_benchmark.json
+    lean_module: FSOT.Formal.PaleontologyPanelPriors
+    note: "Paleontology — PBDB Ammonoidea occurrences (deep-time cross-check)"
+
+  Arxiv_Gravitational_Waves_Panel:
+    tier: 84
+    D_eff: 21
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, astronomical]
+    formula_branch_override: term3.chaos_factor
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/arxiv_gravitational_waves_panel_benchmark.json
+    lean_module: FSOT.Formal.ArxivGravitationalWavesPanelPriors
+    note: "Gravitational-wave theory — arXiv gr-qc preprint metadata panel"
+
+  Entomology_Panel:
+    tier: 84
+    D_eff: 16
+    delta_psi: 0.4
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, ecological]
+    formula_branch_override: term1.growth_term
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/entomology_panel_benchmark.json
+    lean_module: FSOT.Formal.EntomologyPanelPriors
+    note: "Entomology — GBIF Insecta occurrence coordinates"
+
+  Mycology_Panel:
+    tier: 84
+    D_eff: 15
+    delta_psi: 0.35
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    formula_branch_override: term2.scale
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/mycology_panel_benchmark.json
+    lean_module: FSOT.Formal.MycologyPanelPriors
+    note: "Mycology — GBIF Fungi occurrence panel"
+
+  Marine_Biology_Panel:
+    tier: 84
+    D_eff: 17
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, energy]
+    formula_branch_override: term2.trend_bias
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/marine_biology_panel_benchmark.json
+    lean_module: FSOT.Formal.MarineBiologyPanelPriors
+    note: "Marine biology — OBIS occurrence depth/lat/lon"
+
+  Immunology_Panel:
+    tier: 84
+    D_eff: 13
+    delta_psi: 0.45
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/immunology_panel_benchmark.json
+    lean_module: FSOT.Formal.ImmunologyPanelPriors
+    note: "Immunology — PubChem immune-modulator physicochemistry"
+
+  Cardiology_Panel:
+    tier: 84
+    D_eff: 14
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/cardiology_panel_benchmark.json
+    lean_module: FSOT.Formal.CardiologyPanelPriors
+    note: "Cardiology — AHA/ESC clinical reference anchors"
+
+  Robotics_Control_Systems_Panel:
+    tier: 84
+    D_eff: 15
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy]
+    formula_branch_override: term3.chaos_factor
+    ingest_script: scripts/ingest_tier84_scientific_expansion.py
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/robotics_control_systems_panel_benchmark.json
+    lean_module: FSOT.Formal.RoboticsControlSystemsPanelPriors
+    note: "Robotics/control — IEEE published control-system anchors"
+
+  Scientific_Expansion_Wave2_Spine:
+    tier: 84
+    D_eff: 17
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological, particle, material]
+    build_script: scripts/build_tier84_scientific_expansion_benchmarks.py
+    manifest: data/tier84_scientific_expansion_manifest.yaml
+    benchmark_data: data/scientific_expansion_wave2_spine_benchmark.json
+    lean_module: FSOT.Formal.ScientificExpansionWave2SpinePriors
+    note: "Tier 84 cross-panel spine — remaining unentered scientific domains"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

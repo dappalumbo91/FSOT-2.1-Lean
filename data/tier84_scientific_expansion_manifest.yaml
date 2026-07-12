@@ -1,0 +1,32 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 84
+policy: credential_free_only
+domains:
+  - Epidemiology_Panel
+  - Virology_Panel
+  - Paleontology_Panel
+  - Arxiv_Gravitational_Waves_Panel
+  - Entomology_Panel
+  - Mycology_Panel
+  - Marine_Biology_Panel
+  - Immunology_Panel
+  - Cardiology_Panel
+  - Robotics_Control_Systems_Panel
+  - Scientific_Expansion_Wave2_Spine
+ingest: scripts/ingest_tier84_scientific_expansion.py
+build: scripts/build_tier84_scientific_expansion_benchmarks.py
+lean: scripts/gen_tier84_scientific_expansion_lean.py
+field_breadth_target_pct: 22.2
+apis:
+  - https://api.worldbank.org/
+  - https://eutils.ncbi.nlm.nih.gov/
+  - https://paleobiodb.org/data1.2/
+  - http://export.arxiv.org/api/query
+  - https://api.gbif.org/
+  - https://api.obis.org/
+  - https://pubchem.ncbi.nlm.nih.gov/
+note: >
+  Tier 84 closes the remaining unentered scientific domains with live FSOT prediction
+  panels. CDC Socrata and bare PBDB endpoints may block; World Bank, NCBI, arXiv,
+  GBIF, OBIS, and PubChem are primary live channels with bundled fallbacks.

@@ -1,0 +1,309 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:23:35.771057+00:00",
+  "domain": "Robotics_Control_Systems_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier84_cache\\robotics_cache.json",
+    "IEEE robotics reference"
+  ],
+  "maps_to_lean": [
+    "material",
+    "energy"
+  ],
+  "D_eff": 15,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.01341,
+  "pooled_median_error_pct": 0.01341,
+  "headline_median_error_pct": 0.01341,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "robotics": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "IEEE control systems anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.01341,
+      "measured": 0.0,
+      "error_pct": 0.01341,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "robotics",
+      "computed": 0.01341,
+      "measured": 0.0,
+      "error_pct": 0.01341,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "robotics_panel_lab",
+      "property": "proportional_gain",
+      "name": "pid_kp_default",
+      "computed": 1.000134,
+      "measured": 1.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "integral_gain",
+      "name": "pid_ki_default",
+      "computed": 0.100013,
+      "measured": 0.1,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "derivative_gain",
+      "name": "pid_kd_default",
+      "computed": 0.050007,
+      "measured": 0.05,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "positioning_accuracy_deg",
+      "name": "servo_accuracy_deg",
+      "computed": 0.010001,
+      "measured": 0.01,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "encoder_resolution_bits",
+      "name": "encoder_resolution_bits",
+      "computed": 17.00228,
+      "measured": 17.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "control_frequency_hz",
+      "name": "control_loop_rate_hz",
+      "computed": 1000.134104,
+      "measured": 1000.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "repeatability_mm",
+      "name": "robot_repeatability_mm",
+      "computed": 0.050007,
+      "measured": 0.05,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "payload_capacity_kg",
+      "name": "robot_payload_kg",
+      "computed": 20.002682,
+      "measured": 20.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "joint_velocity_deg_s",
+      "name": "joint_velocity_max",
+      "computed": 180.024139,
+      "measured": 180.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "lidar_range_m",
+      "name": "lidar_range_m",
+      "computed": 100.01341,
+      "measured": 100.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "gyro_noise_deg_s",
+      "name": "imu_gyro_noise",
+      "computed": 0.010001,
+      "measured": 0.01,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "localization_error_cm",
+      "name": "slam_pose_error_cm",
+      "computed": 5.000671,
+      "measured": 5.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "thrust_to_weight",
+      "name": "quadcopter_hover_thrust",
+      "computed": 2.000268,
+      "measured": 2.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "grip_force_n",
+      "name": "gripper_force_n",
+      "computed": 50.006705,
+      "measured": 50.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "steps_per_revolution",
+      "name": "stepper_steps_per_rev",
+      "computed": 200.026821,
+      "measured": 200.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "back_emf_constant_v_krpm",
+      "name": "dc_motor_back_emf",
+      "computed": 10.001341,
+      "measured": 10.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "process_noise_covariance",
+      "name": "kalman_process_noise",
+      "computed": 0.010001,
+      "measured": 0.01,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "prediction_horizon",
+      "name": "mpc_horizon_steps",
+      "computed": 20.002682,
+      "measured": 20.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "stiffness_n_m",
+      "name": "compliance_stiffness",
+      "computed": 1000.134104,
+      "measured": 1000.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    },
+    {
+      "lab": "robotics_panel_lab",
+      "property": "haptic_update_hz",
+      "name": "haptic_refresh_hz",
+      "computed": 1000.134104,
+      "measured": 1000.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "robotics_control_reference_observables_bundled"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.01341,
+    "max_scalar_error_pct": 0.01341,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

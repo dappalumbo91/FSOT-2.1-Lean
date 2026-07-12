@@ -203,6 +203,35 @@ def main() -> int:
         )
         return f"features={len(data.get('features') or [])}"
 
+    def tier84_world_bank():
+        data = fetch_json(
+            "https://api.worldbank.org/v2/country/USA/indicator/SH.DYN.NMRT?format=json&per_page=3",
+            timeout=30,
+        )
+        rows = data[1] if isinstance(data, list) and len(data) > 1 else []
+        return f"rows={len(rows)}"
+
+    def tier84_arxiv_grqc():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "http://export.arxiv.org/api/query?search_query=cat:gr-qc&max_results=2",
+            timeout=30,
+        )
+        return f"bytes={len(raw)}"
+
+    def tier84_pbdb():
+        data = fetch_json(
+            "https://paleobiodb.org/data1.2/occs/list.json?"
+            "limit=3&show=coords,ages&taxon_name=Ammonoidea",
+            timeout=30,
+        )
+        return f"records={len(data.get('records') or [])}"
+
+    def tier84_obis():
+        data = fetch_json("https://api.obis.org/v3/occurrence?limit=3", timeout=30)
+        return f"results={len(data.get('results') or [])}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -225,6 +254,10 @@ def main() -> int:
         ("tier82_usgs_nwis", tier82_usgs_nwis),
         ("tier82_soilgrids", tier82_soilgrids),
         ("tier82_natural_earth", tier82_natural_earth),
+        ("tier84_world_bank", tier84_world_bank),
+        ("tier84_arxiv_grqc", tier84_arxiv_grqc),
+        ("tier84_pbdb", tier84_pbdb),
+        ("tier84_obis", tier84_obis),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T14:25:39.607506+00:00",
+  "generated_at": "2026-07-12T15:23:37.689525+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 274,
+  "extension_panels": 285,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -3570,6 +3570,140 @@
       ],
       "D_eff": 19,
       "benchmark_data": "data/volcanology_panel_benchmark.json"
+    },
+    {
+      "panel": "Arxiv_Gravitational_Waves_Panel",
+      "tier": 84,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "particle",
+        "astronomical"
+      ],
+      "D_eff": 21,
+      "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json"
+    },
+    {
+      "panel": "Cardiology_Panel",
+      "tier": 84,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/cardiology_panel_benchmark.json"
+    },
+    {
+      "panel": "Entomology_Panel",
+      "tier": 84,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/entomology_panel_benchmark.json"
+    },
+    {
+      "panel": "Epidemiology_Panel",
+      "tier": 84,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/epidemiology_panel_benchmark.json"
+    },
+    {
+      "panel": "Immunology_Panel",
+      "tier": 84,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "D_eff": 13,
+      "benchmark_data": "data/immunology_panel_benchmark.json"
+    },
+    {
+      "panel": "Marine_Biology_Panel",
+      "tier": 84,
+      "primary_branch": "term2.trend_bias",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/marine_biology_panel_benchmark.json"
+    },
+    {
+      "panel": "Mycology_Panel",
+      "tier": 84,
+      "primary_branch": "term2.scale",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/mycology_panel_benchmark.json"
+    },
+    {
+      "panel": "Paleontology_Panel",
+      "tier": 84,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/paleontology_panel_benchmark.json"
+    },
+    {
+      "panel": "Robotics_Control_Systems_Panel",
+      "tier": 84,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/robotics_control_systems_panel_benchmark.json"
+    },
+    {
+      "panel": "Scientific_Expansion_Wave2_Spine",
+      "tier": 84,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.4,
+      "maps_to_lean": [
+        "medical",
+        "biological",
+        "particle",
+        "material"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+    },
+    {
+      "panel": "Virology_Panel",
+      "tier": 84,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 23.7,
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/virology_panel_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -4653,6 +4787,18 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/scientific_expansion_spine_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Gravitational_Waves_Panel",
+        "tier": 84,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "particle",
+          "astronomical"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json"
       }
     ],
     "atomic": [
@@ -5471,6 +5617,116 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/soil_science_panel_benchmark.json"
+      },
+      {
+        "panel": "Cardiology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/cardiology_panel_benchmark.json"
+      },
+      {
+        "panel": "Entomology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "ecological"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/entomology_panel_benchmark.json"
+      },
+      {
+        "panel": "Epidemiology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/epidemiology_panel_benchmark.json"
+      },
+      {
+        "panel": "Immunology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/immunology_panel_benchmark.json"
+      },
+      {
+        "panel": "Marine_Biology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "energy"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/marine_biology_panel_benchmark.json"
+      },
+      {
+        "panel": "Mycology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.scale",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "medical"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/mycology_panel_benchmark.json"
+      },
+      {
+        "panel": "Paleontology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "energy"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/paleontology_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave2_Spine",
+        "tier": 84,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.4,
+        "maps_to_lean": [
+          "medical",
+          "biological",
+          "particle",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Virology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "medical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/virology_panel_benchmark.json"
       }
     ],
     "biophysics": [
@@ -7743,6 +7999,18 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/ethology_panel_benchmark.json"
+      },
+      {
+        "panel": "Entomology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "ecological"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/entomology_panel_benchmark.json"
       }
     ],
     "economic": [
@@ -9040,6 +9308,42 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/volcanology_panel_benchmark.json"
+      },
+      {
+        "panel": "Marine_Biology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "energy"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/marine_biology_panel_benchmark.json"
+      },
+      {
+        "panel": "Paleontology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "energy"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/paleontology_panel_benchmark.json"
+      },
+      {
+        "panel": "Robotics_Control_Systems_Panel",
+        "tier": 84,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/robotics_control_systems_panel_benchmark.json"
       }
     ],
     "fluid_dynamics": [
@@ -10894,6 +11198,32 @@
         ],
         "D_eff": 13,
         "benchmark_data": "data/toxicology_panel_benchmark.json"
+      },
+      {
+        "panel": "Robotics_Control_Systems_Panel",
+        "tier": 84,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/robotics_control_systems_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave2_Spine",
+        "tier": 84,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.4,
+        "maps_to_lean": [
+          "medical",
+          "biological",
+          "particle",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
       }
     ],
     "mathematical": [
@@ -12199,6 +12529,80 @@
         ],
         "D_eff": 13,
         "benchmark_data": "data/toxicology_panel_benchmark.json"
+      },
+      {
+        "panel": "Cardiology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/cardiology_panel_benchmark.json"
+      },
+      {
+        "panel": "Epidemiology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/epidemiology_panel_benchmark.json"
+      },
+      {
+        "panel": "Immunology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "medical",
+          "biological"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/immunology_panel_benchmark.json"
+      },
+      {
+        "panel": "Mycology_Panel",
+        "tier": 84,
+        "primary_branch": "term2.scale",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "medical"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/mycology_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave2_Spine",
+        "tier": 84,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.4,
+        "maps_to_lean": [
+          "medical",
+          "biological",
+          "particle",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Virology_Panel",
+        "tier": 84,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "biological",
+          "medical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/virology_panel_benchmark.json"
       }
     ],
     "neural": [
@@ -14468,6 +14872,32 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/volcanology_panel_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Gravitational_Waves_Panel",
+        "tier": 84,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 23.7,
+        "maps_to_lean": [
+          "particle",
+          "astronomical"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave2_Spine",
+        "tier": 84,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.4,
+        "maps_to_lean": [
+          "medical",
+          "biological",
+          "particle",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
       }
     ],
     "perceived": [
