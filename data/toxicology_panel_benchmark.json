@@ -1,0 +1,321 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T14:06:49.225478+00:00",
+  "domain": "Toxicology_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\live_cache\\toxicology_cache.json",
+    "PubChem BioAssay"
+  ],
+  "maps_to_lean": [
+    "medical",
+    "material"
+  ],
+  "D_eff": 13,
+  "record_count": 21,
+  "observable_count": 21,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.033401,
+  "pooled_median_error_pct": 0.033401,
+  "headline_median_error_pct": 0.033401,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "toxicology": {
+        "sota_typical_error_pct": 9.0,
+        "sota_model": "EPA/PubChem toxicology"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.033401,
+      "measured": 0.0,
+      "error_pct": 0.033401,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "toxicology",
+      "computed": 0.033401,
+      "measured": 0.0,
+      "error_pct": 0.033401,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "2244",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "2244",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "2244",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "1983",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "1983",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "1983",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "3672",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "3672",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "3672",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "5353432",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "5353432",
+      "computed": 4.000612,
+      "measured": 4.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "5353432",
+      "computed": 0.307795,
+      "measured": 0.3076923076923077,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "2519",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "2519",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "2519",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "3386",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "3386",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "3386",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "bioassay_count",
+      "name": "3679",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "active_assay_count",
+      "name": "3679",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "pubchem_assaysummary"
+    },
+    {
+      "lab": "toxicology_lab",
+      "property": "activity_ratio",
+      "name": "3679",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Physical_Chemistry",
+      "fsot_scalar": 0.334013,
+      "ingest_source": "pubchem_assaysummary"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.033401,
+    "max_scalar_error_pct": 0.033401,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

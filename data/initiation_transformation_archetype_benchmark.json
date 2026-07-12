@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:10:55.596778+00:00",
+  "generated_at": "2026-07-12T14:25:17.228836+00:00",
   "domain": "Initiation_Transformation_Archetype",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\formula_precision\\archetype_refinements.json",
-    "symbolic_archetype_panel_benchmark.json"
+    "symbolic_archetype_panel_benchmark.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -13,22 +14,24 @@
     "mathematical"
   ],
   "D_eff": 17,
-  "record_count": 10,
-  "observable_count": 10,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 17,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.19339831498352392,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "transformation_cluster": {
-        "sota_typical_error_pct": 25.0,
-        "sota_model": "No archetype scalar mapping"
+      "Initiation_Transformation_Archetype_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_archetype_precision_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 10,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "archetype_precision",
-      "name": "transformation_cluster",
-      "computed": 0.193398,
+      "property": "depth_relay",
+      "name": "Initiation_Transformation_Archetype_depth",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.19339831498352392,
-      "observable_count": 4,
-      "domain_display_name": "tier gap fill",
-      "display_name": "transformation cluster",
-      "scientific_measurement": {
-        "delta": 0.193398,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -305,11 +282,358 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "case_id": "engine_native_h0",
+      "property": "engine_native_h0",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "domain_display_name": "math generator",
+      "display_name": "engine native h0",
+      "scientific_measurement": {
+        "delta": -0.12978832,
+        "delta_pct": 0.192564,
+        "effective_error_pct": 0.192564,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "case_id": "external_alma_chromosphere",
+      "property": "brightness_temperature_rms_k",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "unit": "K",
+      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "brightness temperature rms k",
+      "scientific_measurement": {
+        "delta": -0.00418478,
+        "delta_pct": 0.004185,
+        "effective_error_pct": 0.004185,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "K"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "case_id": "external_planck_h0",
+      "property": "hubble_constant_km_s_mpc",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "hubble constant km s mpc",
+      "scientific_measurement": {
+        "delta": -0.01604169,
+        "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1587,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "case_id": "external_planck_sigma8",
+      "property": "matter_fluctuation_amplitude",
+      "computed": 0.8111240047382514,
+      "measured": 0.811,
+      "error_pct": 0.01529034996934153,
+      "unit": "dimensionless",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "matter fluctuation amplitude",
+      "scientific_measurement": {
+        "delta": 0.000124,
+        "delta_pct": 0.01529,
+        "effective_error_pct": 0.01529,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "rule_id": "AA-001",
+      "corpus": "ABSTRACT_ALGEBRA",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "display_name": "",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "source_panel": "Math_Generator_Rules_Eval",
+      "depth_relay_from": "Math_Generator_Rules_Eval"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Complexity",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "boundary partition tightening",
+      "display_name": "W Complexity",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Boundary_Partition_Tightening",
+      "depth_relay_from": "Boundary_Partition_Tightening"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Radial_coupling",
+      "computed": 0.865256,
+      "measured": 0.865256,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "boundary partition tightening",
+      "display_name": "Radial coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Boundary_Partition_Tightening",
+      "depth_relay_from": "Boundary_Partition_Tightening"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Cross_coupling",
+      "computed": 0.577216,
+      "measured": 0.577216,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "boundary partition tightening",
+      "display_name": "Cross coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Boundary_Partition_Tightening",
+      "depth_relay_from": "Boundary_Partition_Tightening"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency",
+      "domain_display_name": "boundary partition tightening",
+      "display_name": "Metatron Spheres",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Boundary_Partition_Tightening",
+      "depth_relay_from": "Boundary_Partition_Tightening"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Pathways",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "symbolic archetype panel",
+      "display_name": "Metatron Pathways",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Symbolic_Archetype_Panel",
+      "depth_relay_from": "Symbolic_Archetype_Panel"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.6180339887498949,
+      "measured": 0.6180339887498949,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "symbolic archetype panel",
+      "display_name": "Consciousness Gate",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Symbolic_Archetype_Panel",
+      "depth_relay_from": "Symbolic_Archetype_Panel"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Persistence",
+      "computed": 0.8652559794322651,
+      "measured": 0.8652559794322651,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_compute",
+      "domain_display_name": "symbolic archetype panel",
+      "display_name": "Resonance Persistence",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Symbolic_Archetype_Panel",
+      "depth_relay_from": "Symbolic_Archetype_Panel"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "domain_divergence_depth",
+      "name": "Plasma_Physics",
+      "computed": 6.55249,
+      "measured": 6.55,
+      "error_pct": 0.03801653760497784,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod",
+      "domain_display_name": "formula branching fractal",
+      "display_name": "Plasma Physics",
+      "scientific_measurement": {
+        "delta": 0.00249,
+        "delta_pct": 0.038015,
+        "effective_error_pct": 0.038015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Formula_Branching_Fractal",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Formula_Branching_Fractal"
+    },
+    {
+      "lab": "initiation_transformation_archetype_depth_lab",
+      "property": "domain_divergence_depth",
+      "name": "Immunology",
+      "computed": 6.202357,
+      "measured": 6.2,
+      "error_pct": 0.03801653760497401,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod",
+      "domain_display_name": "formula branching fractal",
+      "display_name": "Immunology",
+      "scientific_measurement": {
+        "delta": 0.002357,
+        "delta_pct": 0.038016,
+        "effective_error_pct": 0.038016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Formula_Branching_Fractal",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Formula_Branching_Fractal"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "max_scalar_error_pct": 0.192564276915754,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -318,19 +642,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Initiation Transformation Archetype",
-  "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 6,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 6
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.909333+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

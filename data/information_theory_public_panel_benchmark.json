@@ -1,10 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:05.279726+00:00",
+  "generated_at": "2026-07-12T14:25:09.234104+00:00",
   "domain": "Information_Theory_Public_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_gaps\\information_theory_public_anchors.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_gaps\\information_theory_public_anchors.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "mathematical",
@@ -13,22 +14,24 @@
     "neural"
   ],
   "D_eff": 8,
-  "record_count": 11,
-  "observable_count": 11,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "information_theory": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "NeuroLab literature anchors"
+      "Information_Theory_Public_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_literature_anchor_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 11,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "literature_anchor",
-      "name": "information_theory",
+      "property": "depth_relay",
+      "name": "Information_Theory_Public_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1,
-      "domain_display_name": "tier gap fill",
-      "display_name": "information theory",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -329,11 +306,339 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "culinary_arts",
+      "computed": 0.047615,
+      "measured": 0.047615,
+      "error_pct": 0.0,
+      "record_count": 26,
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "culinary arts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Creative_Arts_Math_Spine",
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "\u00a71 Foundation",
+      "name": "pH_water",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a71 Foundation",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a71 Foundation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "\u00a745 Activation Ea",
+      "name": "sucrose_hydrolysis",
+      "computed": 108.49926097775192,
+      "measured": 108.0,
+      "error_pct": 0.462279,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a745 Activation Ea",
+      "scientific_measurement": {
+        "delta": 0.49926098,
+        "delta_pct": 0.462279,
+        "effective_error_pct": 0.462279,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "glucose",
+      "computed": 0.6727328685350314,
+      "measured": 0.673,
+      "error_pct": 0.039692639668439104,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -0.00026713,
+        "delta_pct": 0.039693,
+        "effective_error_pct": 0.039693,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "frame_budget_90hz_ms",
+      "name": "90 Hz frame budget",
+      "computed": 11.1111111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "90 Hz frame budget",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "mtp_latency_target_ms",
+      "name": "Motion-to-photon latency target",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "Motion-to-photon latency target",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "comfort_angular_velocity_deg_s",
+      "name": "Locomotion angular velocity cap",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "Locomotion angular velocity cap",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "stereo_ipd_mm",
+      "name": "Stereo IPD reference",
+      "computed": 63.0,
+      "measured": 63.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "Stereo IPD reference",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "ipd_mean_mm",
+      "name": "Mean interpupillary distance",
+      "computed": 63.0,
+      "measured": 63.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor",
+      "domain_display_name": "xr game math scaffold",
+      "display_name": "Mean interpupillary distance",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "XR_Interactive_Media_Math_Scaffold",
+      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "hfov_deg",
+      "name": "Typical VR horizontal FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor",
+      "domain_display_name": "xr game math scaffold",
+      "display_name": "Typical VR horizontal FOV",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "XR_Interactive_Media_Math_Scaffold",
+      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "vfov_deg",
+      "name": "Typical VR vertical FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor",
+      "domain_display_name": "xr game math scaffold",
+      "display_name": "Typical VR vertical FOV",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "XR_Interactive_Media_Math_Scaffold",
+      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
+    },
+    {
+      "lab": "information_theory_public_panel_depth_lab",
+      "property": "aspect_16_9",
+      "name": "16:9 display aspect ratio",
+      "computed": 1.7777777778,
+      "measured": 1.7777777778,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor",
+      "domain_display_name": "xr game math scaffold",
+      "display_name": "16:9 display aspect ratio",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "XR_Interactive_Media_Math_Scaffold",
+      "depth_relay_from": "XR_Interactive_Media_Math_Scaffold"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "max_scalar_error_pct": 0.462279,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -342,19 +647,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Information Theory Public Panel",
-  "tier_label": "Tier 64 \u2014 Information Theory Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.886604+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 11,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 11
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

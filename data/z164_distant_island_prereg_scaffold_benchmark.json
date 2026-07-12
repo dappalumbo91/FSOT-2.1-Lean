@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.583034+00:00",
+  "generated_at": "2026-07-12T14:25:27.142070+00:00",
   "domain": "Z164_Distant_Island_Prereg_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\distant_island_z128_z164_anchors.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "particle",
@@ -13,22 +14,24 @@
     "fusion"
   ],
   "D_eff": 24,
-  "record_count": 7,
-  "observable_count": 7,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 19,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "z164_distant_island": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No Z=164 observation"
+      "Z164_Distant_Island_Prereg_Scaffold_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_prereg_gate_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 7,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "prereg_gate",
-      "name": "z164_distant_island",
+      "property": "depth_relay",
+      "name": "Z164_Distant_Island_Prereg_Scaffold_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 5,
-      "domain_display_name": "tier gap fill",
-      "display_name": "z164 distant island",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -233,32 +210,441 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Small_Body_Orbits",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Small_Body_Orbits__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "particle_mass_relay",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111,
+      "eval_kind": "particle_relay",
+      "domain_display_name": "superheavy stability",
+      "display_name": "proton",
+      "scientific_measurement": {
+        "delta": 3.03165665,
+        "delta_pct": 0.323111,
+        "effective_error_pct": 0.323111,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Element_Stability_Panel",
+      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "particle_mass_relay",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049,
+      "eval_kind": "particle_relay",
+      "domain_display_name": "superheavy stability",
+      "display_name": "neutron",
+      "scientific_measurement": {
+        "delta": 1.73865665,
+        "delta_pct": 0.185049,
+        "effective_error_pct": 0.185049,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Element_Stability_Panel",
+      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "half_life_s",
+      "name": "Rf",
+      "Z": 104,
+      "computed": 8100.000076983489,
+      "measured": 8100.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7.698e-05,
+        "delta_pct": 1e-06,
+        "effective_error_pct": 1e-06,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Element_Stability_Panel",
+      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Rf",
+      "Z": 104,
+      "computed": 7.154309,
+      "measured": 7.154302,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy",
+      "domain_display_name": "superheavy stability",
+      "display_name": "Rf",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 9.8e-05,
+        "effective_error_pct": 9.8e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Element_Stability_Panel",
+      "depth_relay_from": "Superheavy_Element_Stability_Panel"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "superheavy_stability_bridge",
+      "name": "superheavy_element_stability_panel",
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "superheavy element stability panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Element_Synthesis_Condition_Scaffold",
+      "depth_relay_from": "Element_Synthesis_Condition_Scaffold"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Og_2006",
+      "product_Z": 118,
+      "computed": 246.930031,
+      "measured": 246.928088,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.001943,
+        "delta_pct": 0.000787,
+        "effective_error_pct": 0.000787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Element_Synthesis_Condition_Scaffold",
+      "depth_relay_from": "Element_Synthesis_Condition_Scaffold"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Og_2006",
+      "computed": 35.000333,
+      "measured": 35.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.000333,
+        "delta_pct": 0.000951,
+        "effective_error_pct": 0.000951,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Element_Synthesis_Condition_Scaffold",
+      "depth_relay_from": "Element_Synthesis_Condition_Scaffold"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Og_2006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate",
+      "domain_display_name": "element synthesis condition",
+      "display_name": "Og 2006",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Element_Synthesis_Condition_Scaffold",
+      "depth_relay_from": "Element_Synthesis_Condition_Scaffold"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__r_process_supernova",
+      "Z": 119,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim",
+      "domain_display_name": "superheavy island emergence",
+      "display_name": "Z119 N177 r process supernova",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Island_Emergence_Simulation",
+      "depth_relay_from": "Superheavy_Island_Emergence_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__s_process_agb",
+      "Z": 119,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim",
+      "domain_display_name": "superheavy island emergence",
+      "display_name": "Z119 N177 s process agb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Island_Emergence_Simulation",
+      "depth_relay_from": "Superheavy_Island_Emergence_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__cosmic_ray_spallation",
+      "Z": 119,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim",
+      "domain_display_name": "superheavy island emergence",
+      "display_name": "Z119 N177 cosmic ray spallation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Island_Emergence_Simulation",
+      "depth_relay_from": "Superheavy_Island_Emergence_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__heavy_ion_fusion_lab",
+      "Z": 119,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim",
+      "domain_display_name": "superheavy island emergence",
+      "display_name": "Z119 N177 heavy ion fusion lab",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Superheavy_Island_Emergence_Simulation",
+      "depth_relay_from": "Superheavy_Island_Emergence_Simulation"
+    },
+    {
+      "lab": "z164_distant_island_prereg_scaffold_depth_lab",
+      "property": "fusion_physics_panel_bridge",
+      "name": "fusion_physics_public_panel",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "eval_kind": "fusion_bridge",
+      "domain_display_name": "natural formation element",
+      "display_name": "fusion physics public panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Natural_Formation_Element_Simulation",
+      "depth_relay_from": "Natural_Formation_Element_Simulation"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 5e-07,
-    "max_scalar_error_pct": 1e-06,
-    "classifier_count": 1,
-    "classifier_correct": 1,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.323111,
+    "classifier_count": 2,
+    "classifier_correct": 2,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": 100.0,
     "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Z164 Distant Island Prereg Scaffold",
-  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.974669+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 4,
-    "median_error_pct": 1e-06,
-    "max_error_pct": 1e-06,
-    "mean_abs_delta": 7.13e-06,
-    "precision_tier_counts": {
-      "green": 4
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

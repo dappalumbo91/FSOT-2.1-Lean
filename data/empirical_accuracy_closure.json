@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:25:08.122104+00:00",
+  "generated_at": "2026-07-12T14:56:21.711505+00:00",
   "version": "1.0",
   "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT",
   "primary_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
@@ -9,7 +9,7 @@
     "green_gate_pass_count": 276,
     "green_gate_fail_count": 0,
     "green_gate_threshold_pct": 0.5,
-    "total_scalar_records": 43903,
+    "total_scalar_records": 44127,
     "pooled_median_of_domains_pct": 0.0,
     "mean_pooled_median_pct": 0.010380703111256911,
     "p95_pooled_median_pct": 0.039905,
@@ -19,17 +19,17 @@
     "domains_under_0_5pct_median": 220
   },
   "project_scope": {
-    "total_scientific_domains": 282,
-    "extension_domains": 246,
+    "total_scientific_domains": 310,
+    "extension_domains": 274,
     "neurolab_domains": 35,
     "total_empirical_records": 306680,
-    "lean_formal_modules": 320,
+    "lean_formal_modules": 407,
     "benchmark_domains_non_cosmo_majority": true,
     "note": "282 scientific domains / 306k+ records span geochemistry, genomics, magnetosphere, clinical medicine, materials, virology, acoustics, etc. Cosmology is one sector \u2014 255/272 benchmark files are non-cosmo."
   },
   "extension_domains": {
-    "count": 250,
-    "green_pass": 250,
+    "count": 274,
+    "green_pass": 274,
     "green_fail": 0
   },
   "formula_corpus_unique": {

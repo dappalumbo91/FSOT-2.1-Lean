@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:24:56.153429+00:00",
+  "generated_at": "2026-07-12T14:56:09.988555+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -18,26 +18,26 @@
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2158,
+      "full_formal_obligations": 2073,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 2158,
+      "lean_theorem_count_estimate": 2073,
       "export_fraction_pct": 100.0,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
       "status": "passed",
-      "chunks_passed": 24,
+      "chunks_passed": 22,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2102,
+      "provable_obligations": 2019,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1920,
+      "obligation_count": 1752,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -123,14 +123,14 @@
     }
   ],
   "extension_precision": {
-    "domain_count": 250,
-    "green_count": 250,
+    "domain_count": 274,
+    "green_count": 274,
     "failing_domains": [],
     "aspiration_scalar_debt_count": 0
   },
   "scientific_pushback_audit": {
-    "extension_domain_count": 250,
-    "green_gate_pass_count": 250,
+    "extension_domain_count": 274,
+    "green_gate_pass_count": 274,
     "green_gate_fail_count": 0,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,

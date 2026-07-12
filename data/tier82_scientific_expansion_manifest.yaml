@@ -1,0 +1,33 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 82
+policy: credential_free_only
+domains:
+  - Volcanology_Panel
+  - Limnology_Panel
+  - Radio_Astronomy_Panel
+  - Petrology_Geochemistry_Panel
+  - Actuarial_Science_Panel
+  - Ethology_Panel
+  - Toxicology_Panel
+  - Soil_Science_Panel
+  - Neutrino_Physics_Panel
+  - Cartography_GIS_Panel
+  - Scientific_Expansion_Spine
+ingest: scripts/ingest_tier82_scientific_expansion.py
+build: scripts/build_tier82_scientific_expansion_benchmarks.py
+lean: scripts/gen_tier82_scientific_expansion_lean.py
+field_breadth_target_pct: 22.2
+apis:
+  - https://earthquake.usgs.gov/
+  - https://waterservices.usgs.gov/
+  - https://vizier.cds.unistra.fr/
+  - https://pubchem.ncbi.nlm.nih.gov/
+  - https://rest.isric.org/
+  - https://api.gbif.org/
+  - https://raw.githubusercontent.com/nvkelso/natural-earth-vector/
+note: >
+  Tier 82 closes the ten unentered scientific domains with FSOT predictions at
+  the same precision band as existing panels. Each domain routes through nearest
+  core FSOT domains (Geophysics, Ecology, Astronomy, etc.) with bundled fallbacks
+  when live APIs block credential-free access.

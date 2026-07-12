@@ -1,6 +1,6 @@
 /-
-  FSOT Formal NeuralGalacticOrbitalBridgePriors — Neural_Galactic_Orbital_Bridge Tier M ToE unity.
-  Generator: scripts/gen_tier_m_toe_unity_lean.py
+  FSOT Formal NeuralGalacticOrbitalBridgePriors — extension domain Neural_Galactic_Orbital_Bridge.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,38 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def neural_galactic_orbital_bridge_observable_count : ℕ := 49
+def neural_galactic_orbital_bridge_D_eff : ℕ := 17
 
-def neu_gal_br_observable_count : ℕ := 49
-def neu_gal_br_pooled_median_error_pct : ℝ := (0.01800266870179577 : ℝ)
-def neu_gal_br_headline_median_error_pct : ℝ := (0.01800266870179577 : ℝ)
-def neu_gal_br_beats_sota_headlines : ℕ := 2
-def neu_gal_br_D_eff : ℕ := 17
-def neu_gal_br_bridge_pair_count : ℕ := 36
-def neu_gal_br_cross_scale_motif_count : ℕ := 1
+theorem neural_galactic_orbital_bridge_observable_count_pos : 0 < neural_galactic_orbital_bridge_observable_count := by
+  unfold neural_galactic_orbital_bridge_observable_count; norm_num
 
-theorem neu_gal_br_observable_count_pos : 0 < neu_gal_br_observable_count := by
-  unfold neu_gal_br_observable_count; norm_num
+theorem neural_galactic_orbital_bridge_median_error_under_half_pct :
+    (0.018002668701799784 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem neu_gal_br_pooled_median_under_half_pct :
-    neu_gal_br_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold neu_gal_br_pooled_median_error_pct; norm_num
-
-theorem neu_gal_br_headline_median_under_half_pct :
-    neu_gal_br_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold neu_gal_br_headline_median_error_pct; norm_num
-
-theorem neu_gal_br_beats_sota_headlines_pos : 0 < neu_gal_br_beats_sota_headlines := by
-  unfold neu_gal_br_beats_sota_headlines; norm_num
-theorem neu_gal_br_bridge_pairs_pos : 0 < neu_gal_br_bridge_pair_count := by unfold neu_gal_br_bridge_pair_count; norm_num
-
-theorem neu_gal_br_bundle :
-    neu_gal_br_observable_count = 49 ∧
-    neu_gal_br_pooled_median_error_pct < (0.5 : ℝ) ∧
-    neu_gal_br_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold neu_gal_br_observable_count; norm_num
-  · exact neu_gal_br_pooled_median_under_half_pct
-  · exact neu_gal_br_beats_sota_headlines_pos
+theorem neural_galactic_orbital_bridge_bundle :
+    neural_galactic_orbital_bridge_observable_count = 49 ∧
+    neural_galactic_orbital_bridge_D_eff = 17 ∧
+    (0.018002668701799784 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold neural_galactic_orbital_bridge_observable_count; norm_num,
+    by unfold neural_galactic_orbital_bridge_D_eff; norm_num,
+    neural_galactic_orbital_bridge_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

@@ -16,12 +16,12 @@ theorem immunology_observable_count_pos : 0 < immunology_observable_count := by
   unfold immunology_observable_count; norm_num
 
 theorem immunology_median_error_under_half_pct :
-    (0.451494 : ℝ) < (0.5 : ℝ) := by norm_num
+    (0.061205 : ℝ) < (0.5 : ℝ) := by norm_num
 
 theorem immunology_bundle :
     immunology_observable_count = 84 ∧
     immunology_D_eff = 13 ∧
-    (0.451494 : ℝ) < (0.5 : ℝ) ∧
+    (0.061205 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold immunology_observable_count; norm_num,

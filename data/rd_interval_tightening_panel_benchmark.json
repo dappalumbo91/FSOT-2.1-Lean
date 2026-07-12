@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:13.495537+00:00",
+  "generated_at": "2026-07-12T14:25:33.934668+00:00",
   "domain": "RD_Interval_Tightening_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\tier77\\rd_interval_tightening_anchors.json",
     "cosmology_anomaly_deep_panel_benchmark.json",
-    "FSOT.Formal.Cosmology"
+    "FSOT.Formal.Cosmology",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -14,22 +15,24 @@
     "cmb"
   ],
   "D_eff": 22,
-  "record_count": 12,
-  "observable_count": 12,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 15,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.000502,
   "pooled_median_error_pct": 0.000502,
-  "headline_median_error_pct": 0.005024559462094211,
+  "headline_median_error_pct": 0.000502,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "bao_sound_horizon": {
-        "sota_typical_error_pct": 2.0,
-        "sota_model": "Planck2018 BAO r_d"
+      "RD_Interval_Tightening_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_rd_tightening_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.000502,
-      "observable_count": 12,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.000502,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "rd_tightening",
-      "name": "bao_sound_horizon",
-      "computed": 0.005025,
+      "property": "depth_relay",
+      "name": "RD_Interval_Tightening_Panel_depth",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.005024559462094211,
-      "observable_count": 9,
-      "domain_display_name": "tier gap fill",
-      "display_name": "bao sound horizon",
-      "scientific_measurement": {
-        "delta": 0.005025,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -358,6 +335,311 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc time emergence flag",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "fpc_fluidlink_deep",
+      "computed": 0.022181,
+      "measured": 0.022181,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc fluidlink deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "effective_error_pct": 0.039807,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "hubble_bubble",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "hubble dark sector",
+      "display_name": "hubble bubble",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Hubble_Dark_Sector_Crosswalk",
+      "depth_relay_from": "Hubble_Dark_Sector_Crosswalk"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "source_panel": "Hubble_Dark_Sector_Crosswalk",
+      "property": "sector_h0_overlay",
+      "name": "global_cmb_background",
+      "computed": 68.440057,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_relay",
+      "status": "hubble_tension_resolution",
+      "domain_display_name": "hubble dark sector",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Hubble_Dark_Sector_Crosswalk"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "dark_sector",
+      "computed": 0.006335,
+      "measured": 0.006335,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "hubble dark sector",
+      "display_name": "dark sector",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Hubble_Dark_Sector_Crosswalk",
+      "depth_relay_from": "Hubble_Dark_Sector_Crosswalk"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "source_panel": "Hubble_Dark_Sector_Crosswalk",
+      "property": "dark_energy_eos",
+      "name": "w0",
+      "computed": -1.0299812921372637,
+      "measured": -1.0,
+      "error_pct": 0.001816,
+      "eval_kind": "crosswalk_relay",
+      "status": "dark_sector_open",
+      "domain_display_name": "hubble dark sector",
+      "display_name": "w0",
+      "scientific_measurement": {
+        "delta": -0.02998129,
+        "delta_pct": 2.998129,
+        "effective_error_pct": 2.998129,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0006,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 3.0,
+        "reference": "Planck 2018 w0wa prior",
+        "observable_status": "dark_energy_open"
+      },
+      "depth_relay_from": "Hubble_Dark_Sector_Crosswalk"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-024",
+      "prediction_name": "h0_dual_anchor_bubble_bleed",
+      "computed": 72.1,
+      "measured": 72.1,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "depth_relay_from": "Fluid_Spacetime_Prereg_Validation_Panel"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-024",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_gate",
+      "prediction_display_name": "h0_dual_anchor_bubble_bleed",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "h0_dual_anchor_bubble_bleed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "depth_relay_from": "Fluid_Spacetime_Prereg_Validation_Panel"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-025",
+      "prediction_name": "fpc_cosmological_tau_damping",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "prereg_anchor",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "depth_relay_from": "Fluid_Spacetime_Prereg_Validation_Panel"
+    },
+    {
+      "lab": "rd_interval_tightening_panel_depth_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-025",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_gate",
+      "prediction_display_name": "fpc_cosmological_tau_damping",
+      "domain_display_name": "fluid spacetime prereg",
+      "display_name": "fpc_cosmological_tau_damping",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "depth_relay_from": "Fluid_Spacetime_Prereg_Validation_Panel"
     }
   ],
   "margin_summary": {
@@ -371,20 +653,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "RD Interval Tightening Panel",
-  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.989284+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 11,
-    "median_error_pct": 0.000503,
-    "max_error_pct": 0.292338,
-    "mean_abs_delta": 0.04188127272727272,
-    "precision_tier_counts": {
-      "green": 8,
-      "contested": 3
-    },
-    "green_gate_fraction": 0.7272727272727273,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

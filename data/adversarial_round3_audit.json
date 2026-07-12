@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-12T12:25:07.404520+00:00",
+  "generated_at": "2026-07-12T14:56:20.866010+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
     "good_cop": [
       "Five-prover quad: Lean 4 + Coq (coqc+coqchk) + Isabelle/HOL + F* + Rust \u2014 1820/1820 atomic triangulation.",
-      "282 scientific domains, 306,680 empirical records \u2014 255/272 benchmark files non-cosmo.",
+      "310 scientific domains, 306,680 empirical records \u2014 255/272 benchmark files non-cosmo.",
       "276/276 benchmark domains green; median-of-medians 0.0% across geochemistry, genomics, materials, medicine, magnetosphere, etc.",
       "13 contested open-science observables: FSOT panel 0.04% pooled vs 15% current-model baseline; w_a 0.0006% vs DESI.",
       "Preregistered falsification registry; refinement queue for sector readouts not yet at SOTA."
     ],
     "bad_cop": [
       "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
-      "56 bundle_conj rows sit off the cross-proof spine by design.",
+      "54 bundle_conj rows sit off the cross-proof spine by design.",
       "49 proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
       "Green gate uses pooled median \u22640.5%, not per-record universal max \u2014 worst single scalar 0.499%.",
       "13 stumped observables remain scientifically contested \u2014 kill criteria registered, not resolved.",
@@ -31,7 +31,7 @@
     {
       "id": "structural_bundle_conjunct_linkage",
       "severity": "low",
-      "attack": "100.0% total conjunct witness resolution; 100.0% explicit linked_obligation_id hit rate on spine.",
+      "attack": "99.9% total conjunct witness resolution; 99.87% explicit linked_obligation_id hit rate on spine.",
       "mitigation": "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
       "closed": true,
       "evidence": "data/structural_bundle_ledger.json"
@@ -47,7 +47,7 @@
     {
       "id": "hubble_headline_channel_0_5_gate",
       "severity": "low",
-      "attack": "Hubble dual-anchor headline median 0.662298% exceeds 0.5% green gate; pooled median 0.0%.",
+      "attack": "Hubble dual-anchor headline median None% exceeds 0.5% green gate; pooled median None%.",
       "mitigation": "scientific_pushback_audit.json hubble_headline_channel_gap; Lean theorem uses <1% bound.",
       "closed": true,
       "evidence": "data/scientific_pushback_audit.json"
@@ -135,23 +135,34 @@
     {
       "id": "five_prover_quad_verification",
       "severity": "info",
-      "attack": "Lean+Coq+Isabelle+F*+Rust: 1828 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 1659 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
       "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
-      "closed": true,
+      "closed": false,
       "evidence": "data/five_prover_quad_closure.json"
     },
     {
       "id": "contested_observables_vs_current_models",
       "severity": "info",
-      "attack": "13 open-science observables: panel pooled 0.039905% vs 15.0% baseline; refinement queue 0.",
+      "attack": "13 open-science observables: panel pooled 0.029748999999999998% vs 15.0% baseline; refinement queue 0.",
       "mitigation": "contested_observables_closure.json \u2014 FSOT ahead on panel; refine sector readouts where queued.",
       "closed": true,
       "evidence": "data/contested_observables_closure.json"
     }
   ],
-  "open_gaps": [],
-  "open_gap_count": 0,
+  "open_gaps": [
+    {
+      "id": "five_prover_quad_verification",
+      "severity": "info",
+      "attack": "Lean+Coq+Isabelle+F*+Rust: 1659 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
+      "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
+      "closed": false,
+      "evidence": "data/five_prover_quad_closure.json"
+    }
+  ],
+  "open_gap_count": 1,
   "blocking_open_count": 0,
   "documented_debt_open_count": 0,
-  "remediation_priority": []
+  "remediation_priority": [
+    "five_prover_quad_verification"
+  ]
 }

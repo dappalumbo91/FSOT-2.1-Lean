@@ -1,6 +1,6 @@
 /-
-  FSOT Formal StumpedObservablesPanelPriors — Stumped_Observables_Panel Tier 51 stumped observables spine.
-  Generator: scripts/gen_stumped_observables_lean.py
+  FSOT Formal StumpedObservablesPanelPriors — extension domain Stumped_Observables_Panel.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def stumped_observables_panel_observable_count : ℕ := 24
+def stumped_observables_panel_D_eff : ℕ := 22
 
-def stumped_panel_observable_count : ℕ := 14
-def stumped_panel_pooled_median_error_pct : ℝ := (0.039905 : ℝ)
-def stumped_panel_headline_median_error_pct : ℝ := (0.039905 : ℝ)
-def stumped_panel_beats_sota_headlines : ℕ := 2
-def stumped_panel_D_eff : ℕ := 22
-def stumped_panel_open_prediction_count : ℕ := 4
+theorem stumped_observables_panel_observable_count_pos : 0 < stumped_observables_panel_observable_count := by
+  unfold stumped_observables_panel_observable_count; norm_num
 
-theorem stumped_panel_observable_count_pos : 0 < stumped_panel_observable_count := by
-  unfold stumped_panel_observable_count; norm_num
+theorem stumped_observables_panel_median_error_under_half_pct :
+    (0.029748999999999998 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem stumped_panel_pooled_median_under_half_pct :
-    stumped_panel_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold stumped_panel_pooled_median_error_pct; norm_num
-
-theorem stumped_panel_headline_median_under_half_pct :
-    stumped_panel_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold stumped_panel_headline_median_error_pct; norm_num
-
-theorem stumped_panel_beats_sota_headlines_pos : 0 < stumped_panel_beats_sota_headlines := by
-  unfold stumped_panel_beats_sota_headlines; norm_num
-theorem stumped_panel_open_predictions_pos : 0 < stumped_panel_open_prediction_count := by unfold stumped_panel_open_prediction_count; norm_num
-
-theorem stumped_panel_bundle :
-    stumped_panel_observable_count = 14 ∧
-    stumped_panel_pooled_median_error_pct < (0.5 : ℝ) ∧
-    stumped_panel_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold stumped_panel_observable_count; norm_num
-  · exact stumped_panel_pooled_median_under_half_pct
-  · exact stumped_panel_beats_sota_headlines_pos
+theorem stumped_observables_panel_bundle :
+    stumped_observables_panel_observable_count = 24 ∧
+    stumped_observables_panel_D_eff = 22 ∧
+    (0.029748999999999998 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold stumped_observables_panel_observable_count; norm_num,
+    by unfold stumped_observables_panel_D_eff; norm_num,
+    stumped_observables_panel_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

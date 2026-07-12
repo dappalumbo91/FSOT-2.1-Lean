@@ -1,51 +1,50 @@
 {
-  "generated_at": "2026-07-12T12:24:46.653664+00:00",
+  "generated_at": "2026-07-12T14:56:00.558426+00:00",
   "fsot_scale": {
     "extension_domains": 245,
-    "priors_lean_modules": 312,
-    "priors_only_theorems": 1703,
-    "total_lean_theorems": 1703,
-    "cross_proof_spine_obligations": 2158,
-    "norm_num_certificate_uses": 1907,
+    "priors_lean_modules": 395,
+    "priors_only_theorems": 1618,
+    "total_lean_theorems": 1618,
+    "cross_proof_spine_obligations": 2073,
+    "norm_num_certificate_uses": 2043,
     "note": "priors_only_theorems counts *Priors.lean modules only. cross_proof_spine_obligations is the authoritative 2146 export spine (priors + extended + bounds)."
   },
   "coq_cross_proof": {
     "tier": "79_connective_spine",
     "lean_source_modules": 3,
     "obligations_proved_in_coq": 24,
-    "pct_of_priors_modules": 0.9615,
-    "pct_of_lean_theorems": 1.4093,
+    "pct_of_priors_modules": 0.7595,
+    "pct_of_lean_theorems": 1.4833,
     "pct_of_extension_domains": 1.2245
   },
   "full_formal_spine": {
-    "obligations_in_full_json": 2158,
-    "modules_in_full_json": 323,
+    "obligations_in_full_json": 2073,
+    "modules_in_full_json": 406,
     "by_tier": {
-      "priors": 1697,
+      "priors": 1612,
       "extended": 184,
       "bounds": 277
     },
     "by_kind": {
-      "lt_half": 447,
-      "nat_pos": 578,
-      "bundle_conj": 330,
-      "eq_nat": 30,
+      "nat_pos": 481,
+      "r_lt_lit_pure": 246,
+      "bundle_conj": 413,
+      "lt_lit": 180,
+      "lt_half": 168,
       "gt_lit": 135,
-      "lt_lit": 171,
-      "nat_le_sym": 31,
+      "eq_nat": 25,
+      "nat_le_sym": 30,
       "eq_nat_arith": 32,
       "r_eq_sym": 12,
       "r_eq_lit": 28,
       "r_nonneg": 10,
-      "pos": 95,
+      "pos": 94,
       "int_tuple3_eq": 148,
       "nat_gt_lit": 13,
-      "r_lt_lit_pure": 39,
       "nat_le_lit": 2,
       "gt_one": 6,
       "r_le_lit": 11,
       "lt": 10,
-      "nat_sum2_pos": 1,
       "nat_lt_sym": 1,
       "r_le_sym": 11,
       "r_interval_le_conj": 7,
@@ -54,31 +53,31 @@
       "r_interval_conj": 1,
       "abs_interval_conj": 1
     },
-    "pct_of_formal_theorems": 126.7176,
-    "coq_chunks_generated": 19,
+    "pct_of_formal_theorems": 128.1211,
+    "coq_chunks_generated": 17,
     "margin_violations_excluded": 0,
-    "coq_provable_target": 2158,
-    "coq_proved_yet": 2158,
+    "coq_provable_target": 2073,
+    "coq_proved_yet": 2073,
     "coq_proved_pct_of_full_export": 100.0,
     "coq_proved_pct_of_provable": 100.0,
     "coq_compile_status": "passed",
     "cross_refinement_ok": true
   },
   "full_priors_spine": {
-    "obligations_exportable": 619,
-    "obligations_in_full_json": 1697,
-    "modules_in_full_json": 311,
-    "pct_of_priors_modules": 99.6795,
-    "pct_of_lean_theorems": 99.6477,
+    "obligations_exportable": 521,
+    "obligations_in_full_json": 1612,
+    "modules_in_full_json": 394,
+    "pct_of_priors_modules": 99.7468,
+    "pct_of_lean_theorems": 99.6292,
     "cross_refinement_triangulated_pct": null
   },
   "interpretation": "Tier 82: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). Numeric certificates cross-proved in Lean+Coq+Isabelle with literal triangulation. Transcendental pi/e interval lemmas inventoried in transcendental_bounds_gap_report.json.",
   "scan": {
-    "priors_modules": 312,
-    "total_theorems": 1703,
-    "norm_num_uses": 1907,
-    "exportable_theorem_hints": 619,
-    "modules_with_exportable": 303,
+    "priors_modules": 395,
+    "total_theorems": 1618,
+    "norm_num_uses": 2043,
+    "exportable_theorem_hints": 521,
+    "modules_with_exportable": 386,
     "top_exportable_modules": [
       {
         "module": "DomainCoveragePriors",
@@ -126,33 +125,33 @@
         "exportable_hints": 4
       },
       {
-        "module": "SymbolicArchetypePanelPriors",
-        "theorems": 7,
-        "exportable_hints": 4
-      },
-      {
         "module": "ThesisSimulationPriors",
         "theorems": 6,
         "exportable_hints": 4
       },
       {
-        "module": "AcousticResonanceMaterialsPriors",
-        "theorems": 6,
-        "exportable_hints": 3
-      },
-      {
-        "module": "AIGalacticOrbitalBridgePriors",
-        "theorems": 6,
-        "exportable_hints": 3
-      },
-      {
-        "module": "AstrophysicalStructureCrosswalkPriors",
-        "theorems": 6,
-        "exportable_hints": 3
-      },
-      {
         "module": "BubbleBleedPriors",
         "theorems": 10,
+        "exportable_hints": 3
+      },
+      {
+        "module": "CosmologyExtendedPriors",
+        "theorems": 7,
+        "exportable_hints": 3
+      },
+      {
+        "module": "EmergentDomainPriors",
+        "theorems": 5,
+        "exportable_hints": 3
+      },
+      {
+        "module": "IGEMSyntheticBiologyPriors",
+        "theorems": 6,
+        "exportable_hints": 3
+      },
+      {
+        "module": "MaterialsEngineeringPriors",
+        "theorems": 6,
         "exportable_hints": 3
       }
     ]

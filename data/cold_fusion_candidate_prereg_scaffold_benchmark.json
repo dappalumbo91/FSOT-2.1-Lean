@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:11.278670+00:00",
+  "generated_at": "2026-07-12T14:25:21.615710+00:00",
   "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fusion\\cold_fusion_prereg_anchors.json",
-    "term3_acoustic_bleed_depth_benchmark.json"
+    "term3_acoustic_bleed_depth_benchmark.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "fusion",
@@ -14,22 +15,24 @@
     "material"
   ],
   "D_eff": 14,
-  "record_count": 19,
-  "observable_count": 19,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 14,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 7.869745015413914e-05,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "cold_fusion_screening": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No reproducible cold-fusion baseline"
+      "Cold_Fusion_Candidate_Prereg_Scaffold_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_prereg_gate_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "prereg_gate",
-      "name": "cold_fusion_screening",
-      "computed": 7.9e-05,
+      "property": "depth_relay",
+      "name": "Cold_Fusion_Candidate_Prereg_Scaffold_depth",
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 7.869745015413914e-05,
-      "observable_count": 12,
-      "domain_display_name": "tier gap fill",
-      "display_name": "cold fusion screening",
-      "scientific_measurement": {
-        "delta": 7.9e-05,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+      "error_pct": 0.0,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -521,10 +498,135 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "cold_fusion_candidate_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "cold_fusion_candidate_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "cold_fusion_candidate_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "cold_fusion_candidate_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Small_Body_Orbits",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Small_Body_Orbits__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "cold_fusion_candidate_prereg_scaffold_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_physics_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "fusion_panel_bridge",
+      "domain_display_name": "fusion certificate",
+      "display_name": "fusion physics public",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fusion_Lab_Certificate_Spine",
+      "depth_relay_from": "Fusion_Lab_Certificate_Spine"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 7.9e-05,
+    "scalar_pooled_median_error_pct": 0.0,
     "max_scalar_error_pct": 7.9e-05,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -534,19 +636,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Cold Fusion Candidate Prereg Scaffold",
-  "tier_label": "Tier 71 \u2014 Fusion Physics Public Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.937535+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 9,
-    "median_error_pct": 6.2e-05,
-    "max_error_pct": 9.5e-05,
-    "mean_abs_delta": 9.443694555555556,
-    "precision_tier_counts": {
-      "green": 9
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

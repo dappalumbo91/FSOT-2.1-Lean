@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:24:47.013016+00:00",
+  "generated_at": "2026-07-12T14:56:00.912925+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -1795,6 +1795,174 @@
       "tier_label": "Multi-framework cross-proof export (Lean \u2192 Coq/Isabelle/Python)",
       "lean_module": "FSOT.Formal.StsciMastTelescopePriors",
       "D_eff": 21
+    },
+    "NASA_NEO_Feed_Panel": {
+      "display_name": "NASA NEO Feed Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.NasaNeoFeedPriors",
+      "D_eff": 18
+    },
+    "NASA_DONKI_Solar_Panel": {
+      "display_name": "NASA DONKI Solar Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.NasaDonkiSolarPriors",
+      "D_eff": 14
+    },
+    "ClinicalTrials_Medical_Panel": {
+      "display_name": "ClinicalTrials Medical Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.ClinicaltrialsMedicalPriors",
+      "D_eff": 13
+    },
+    "OSTI_DOE_Science_Panel": {
+      "display_name": "OSTI DOE Science Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.OstiDoeSciencePriors",
+      "D_eff": 18
+    },
+    "UAP_War_Gov_Release_Panel": {
+      "display_name": "UAP War Gov Release Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.UapWarGovReleasePriors",
+      "D_eff": 20
+    },
+    "Federal_Science_Registry_Panel": {
+      "display_name": "Federal Science Registry Panel",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.FederalScienceRegistryPriors",
+      "D_eff": 17
+    },
+    "Government_Open_Data_Spine": {
+      "display_name": "Government Open Data Spine",
+      "tier": 80,
+      "tier_label": "Full formal spine (1,241 numeric obligations)",
+      "lean_module": "FSOT.Formal.GovernmentOpenDataSpinePriors",
+      "D_eff": 18
+    },
+    "NCBI_Gene_Public_Panel": {
+      "display_name": "NCBI Gene Public Panel",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.NcbiGenePublicPriors",
+      "D_eff": 12
+    },
+    "Crossref_Scholarly_Panel": {
+      "display_name": "Crossref Scholarly Panel",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.CrossrefScholarlyPriors",
+      "D_eff": 18
+    },
+    "iNaturalist_Observation_Panel": {
+      "display_name": "iNaturalist Observation Panel",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.InaturalistObservationPriors",
+      "D_eff": 15
+    },
+    "NOAA_NDBC_Buoy_Panel": {
+      "display_name": "NOAA NDBC Buoy Panel",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.NoaaNdbcBuoyPriors",
+      "D_eff": 17
+    },
+    "Open_Meteo_Live_Panel": {
+      "display_name": "Open Meteo Live Panel",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.OpenMeteoLivePriors",
+      "D_eff": 16
+    },
+    "Public_Verifiable_Spine": {
+      "display_name": "Public Verifiable Spine",
+      "tier": 81,
+      "tier_label": "Tier 81",
+      "lean_module": "FSOT.Formal.PublicVerifiableSpinePriors",
+      "D_eff": 16
+    },
+    "Volcanology_Panel": {
+      "display_name": "Volcanology Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.VolcanologyPriors",
+      "D_eff": 19
+    },
+    "Limnology_Panel": {
+      "display_name": "Limnology Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.LimnologyPriors",
+      "D_eff": 16
+    },
+    "Radio_Astronomy_Panel": {
+      "display_name": "Radio Astronomy Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.RadioAstronomyPriors",
+      "D_eff": 20
+    },
+    "Petrology_Geochemistry_Panel": {
+      "display_name": "Petrology Geochemistry Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.PetrologyGeochemistryPriors",
+      "D_eff": 14
+    },
+    "Actuarial_Science_Panel": {
+      "display_name": "Actuarial Science Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.ActuarialSciencePriors",
+      "D_eff": 20
+    },
+    "Ethology_Panel": {
+      "display_name": "Ethology Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.EthologyPriors",
+      "D_eff": 15
+    },
+    "Toxicology_Panel": {
+      "display_name": "Toxicology Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.ToxicologyPriors",
+      "D_eff": 13
+    },
+    "Soil_Science_Panel": {
+      "display_name": "Soil Science Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.SoilSciencePriors",
+      "D_eff": 15
+    },
+    "Neutrino_Physics_Panel": {
+      "display_name": "Neutrino Physics Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.NeutrinoPhysicsPriors",
+      "D_eff": 7
+    },
+    "Cartography_GIS_Panel": {
+      "display_name": "Cartography GIS Panel",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.CartographyGisPriors",
+      "D_eff": 18
+    },
+    "Scientific_Expansion_Spine": {
+      "display_name": "Scientific Expansion Spine",
+      "tier": 82,
+      "tier_label": "Tier 82",
+      "lean_module": "FSOT.Formal.ScientificExpansionSpinePriors",
+      "D_eff": 18
     }
   },
   "math_generator_rules": {

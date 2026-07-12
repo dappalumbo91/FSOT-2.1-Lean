@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:03.680280+00:00",
+  "generated_at": "2026-07-12T14:25:06.660708+00:00",
   "domain": "Fuel_Thermochemistry_Public_Anchors",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "thermochemistry_public_anchors.json",
-    "public_fuel_property_catalog.json"
+    "public_fuel_property_catalog.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "energy",
@@ -13,22 +14,24 @@
     "material"
   ],
   "D_eff": 16,
-  "record_count": 14,
-  "observable_count": 14,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 19,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fuel_public": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "NIST thermochemistry"
+      "Fuel_Thermochemistry_Public_Anchors_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_thermochemistry_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,42 +42,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "thermochemistry",
-      "name": "fuel_public",
+      "property": "depth_relay",
+      "name": "Fuel_Thermochemistry_Public_Anchors_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 14,
-      "domain_display_name": "tier gap fill",
-      "display_name": "fuel public",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -393,11 +370,225 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C8H9NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C13H18O2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "molecular_weight",
+      "name": "3033",
+      "computed": 296.147,
+      "measured": 296.1,
+      "error_pct": 0.015873,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C14H11Cl2NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_engineering",
+      "computed": 0.02717,
+      "measured": 0.02717,
+      "error_pct": 0.0,
+      "record_count": 87,
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material verification scaffold",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Material_Property_Verification_Scaffold",
+      "depth_relay_from": "Material_Property_Verification_Scaffold"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Pb",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "source_panel": "Material_Property_Verification_Scaffold",
+      "eval_kind": "material_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material verification scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Material_Property_Verification_Scaffold"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Mg",
+      "computed": 45.00137640336734,
+      "measured": 45.0,
+      "error_pct": 0.003058674149640537,
+      "source_panel": "Material_Property_Verification_Scaffold",
+      "eval_kind": "material_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material verification scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.0013764,
+        "delta_pct": 0.003059,
+        "effective_error_pct": 0.003059,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Material_Property_Verification_Scaffold"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Al",
+      "computed": 70.20479159671953,
+      "measured": 70.0,
+      "error_pct": 0.292559,
+      "source_panel": "Material_Property_Verification_Scaffold",
+      "eval_kind": "material_relay",
+      "section_display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "domain_display_name": "material verification scaffold",
+      "display_name": "SMILES Lab \u00a734 Young's Modulus",
+      "scientific_measurement": {
+        "delta": 0.2047916,
+        "delta_pct": 0.292559,
+        "effective_error_pct": 0.292559,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Material_Property_Verification_Scaffold"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "lhv_mj_kg",
+      "name": "hydrogen",
+      "formula": "H2",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay",
+      "domain_display_name": "published fuel property",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Published_Fuel_Property_Panel",
+      "depth_relay_from": "Published_Fuel_Property_Panel"
+    },
+    {
+      "lab": "fuel_thermochemistry_public_anchors_depth_lab",
+      "property": "density_kg_m3",
+      "name": "hydrogen",
+      "formula": "H2",
+      "computed": 0.0899,
+      "measured": 0.0899,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay",
+      "domain_display_name": "published fuel property",
+      "display_name": "hydrogen",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Published_Fuel_Property_Panel",
+      "depth_relay_from": "Published_Fuel_Property_Panel"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "max_scalar_error_pct": 0.292559,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -406,19 +597,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Fuel Thermochemistry Public Anchors",
-  "tier_label": "Tier 59 \u2014 Material Property Verification Scaffold + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.864271+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 13,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 13
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

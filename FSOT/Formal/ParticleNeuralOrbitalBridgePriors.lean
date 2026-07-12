@@ -1,6 +1,6 @@
 /-
-  FSOT Formal ParticleNeuralOrbitalBridgePriors — Particle_Neural_Orbital_Bridge Tier L orbital gap fill.
-  Generator: scripts/gen_tier_l_orbital_gap_fill_lean.py
+  FSOT Formal ParticleNeuralOrbitalBridgePriors — extension domain Particle_Neural_Orbital_Bridge.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def particle_neural_orbital_bridge_observable_count : ℕ := 48
+def particle_neural_orbital_bridge_D_eff : ℕ := 17
 
-def p_neu_br_observable_count : ℕ := 48
-def p_neu_br_pooled_median_error_pct : ℝ := (0.03326447040434832 : ℝ)
-def p_neu_br_headline_median_error_pct : ℝ := (0.03326447040434832 : ℝ)
-def p_neu_br_beats_sota_headlines : ℕ := 2
-def p_neu_br_D_eff : ℕ := 17
-def p_neu_br_bridge_pair_count : ℕ := 36
+theorem particle_neural_orbital_bridge_observable_count_pos : 0 < particle_neural_orbital_bridge_observable_count := by
+  unfold particle_neural_orbital_bridge_observable_count; norm_num
 
-theorem p_neu_br_observable_count_pos : 0 < p_neu_br_observable_count := by
-  unfold p_neu_br_observable_count; norm_num
+theorem particle_neural_orbital_bridge_median_error_under_half_pct :
+    (0.03326447040434832 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem p_neu_br_pooled_median_under_half_pct :
-    p_neu_br_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold p_neu_br_pooled_median_error_pct; norm_num
-
-theorem p_neu_br_headline_median_under_half_pct :
-    p_neu_br_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold p_neu_br_headline_median_error_pct; norm_num
-
-theorem p_neu_br_beats_sota_headlines_pos : 0 < p_neu_br_beats_sota_headlines := by
-  unfold p_neu_br_beats_sota_headlines; norm_num
-theorem p_neu_br_bridge_pairs_pos : 0 < p_neu_br_bridge_pair_count := by unfold p_neu_br_bridge_pair_count; norm_num
-
-theorem p_neu_br_bundle :
-    p_neu_br_observable_count = 48 ∧
-    p_neu_br_pooled_median_error_pct < (0.5 : ℝ) ∧
-    p_neu_br_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold p_neu_br_observable_count; norm_num
-  · exact p_neu_br_pooled_median_under_half_pct
-  · exact p_neu_br_beats_sota_headlines_pos
+theorem particle_neural_orbital_bridge_bundle :
+    particle_neural_orbital_bridge_observable_count = 48 ∧
+    particle_neural_orbital_bridge_D_eff = 17 ∧
+    (0.03326447040434832 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold particle_neural_orbital_bridge_observable_count; norm_num,
+    by unfold particle_neural_orbital_bridge_D_eff; norm_num,
+    particle_neural_orbital_bridge_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

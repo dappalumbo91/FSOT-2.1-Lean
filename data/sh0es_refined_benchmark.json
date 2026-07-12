@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:01:06.686246+00:00",
+  "generated_at": "2026-07-12T14:25:03.209292+00:00",
   "domain": "SH0ES_Refined",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "G:/FSOT-PublicData/anomaly_observables/sh0es",
     "data/sh0es_host_coordinates.json",
-    "data/sector_h0_seed.json"
+    "data/sector_h0_seed.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -14,22 +15,24 @@
     "cmb"
   ],
   "D_eff": 25,
-  "record_count": 7,
-  "observable_count": 7,
-  "median_error_pct": 0.625765,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 8,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.024894,
+  "pooled_median_error_pct": 0.024894,
+  "headline_median_error_pct": 0.024894,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "per_host_h0_panel": {
-        "sota_typical_error_pct": 5.0,
-        "sota_model": "Single H0 ignores sightline bubble structure"
+      "SH0ES_Refined_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_sh0es_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -37,45 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.625765,
+      "computed": 0.024894,
       "measured": 0.0,
-      "error_pct": 0.625765,
-      "observable_count": 7,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.625765,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+      "error_pct": 0.024894,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "sh0es",
-      "name": "per_host_h0_panel",
-      "computed": 0.625765,
+      "property": "depth_relay",
+      "name": "SH0ES_Refined_depth",
+      "computed": 0.023801,
       "measured": 0.0,
-      "error_pct": 0.625765,
-      "observable_count": 7,
-      "domain_display_name": "tier gap fill",
-      "display_name": "per host h0 panel",
-      "scientific_measurement": {
-        "delta": 0.625765,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+      "error_pct": 0.023801,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -270,399 +247,493 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "sector_h0_overlay",
+      "name": "global_cmb_background",
+      "computed": 68.440057,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "bubble_density_proxy": 0.0,
+      "bubble_density_model": 0.0,
+      "bubble_density_sky": 0.0,
+      "method": "FSOT_Wave1_CMB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion",
+      "source_panel": "Hubble_Bubble_Tension",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Hubble_Bubble_Tension"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "sector_h0_overlay",
+      "name": "planck_cmb_local",
+      "computed": 67.383958,
+      "measured": 67.4,
+      "error_pct": 0.023801,
+      "bubble_density_proxy": -1.0,
+      "bubble_density_model": -1.0,
+      "bubble_density_sky": -1.0,
+      "method": "Planck2018",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "eval_kind": "contested_observable",
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion",
+      "source_panel": "Hubble_Bubble_Tension",
+      "depth_relay_from": "Hubble_Bubble_Tension"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "sector_h0_overlay",
+      "name": "sh0es_jwst",
+      "computed": 73.523742,
+      "measured": 73.04,
+      "error_pct": 0.662298,
+      "bubble_density_proxy": 5.1,
+      "bubble_density_model": 4.813647,
+      "bubble_density_sky": -0.5862,
+      "method": "SH0ES_Cepheid_TRGB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "eval_kind": "contested_observable",
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion",
+      "source_panel": "Hubble_Bubble_Tension",
+      "depth_relay_from": "Hubble_Bubble_Tension"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "sector_h0_overlay",
+      "name": "freedman_jwst",
+      "computed": 70.279338,
+      "measured": 70.39,
+      "error_pct": 0.157213,
+      "bubble_density_proxy": 1.85,
+      "bubble_density_model": 1.741581,
+      "bubble_density_sky": -0.2759,
+      "method": "JWST_TRGB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "eval_kind": "contested_observable",
+      "h0_tension_note": "dual_anchor_literature_sector",
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion",
+      "source_panel": "Hubble_Bubble_Tension",
+      "depth_relay_from": "Hubble_Bubble_Tension"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "nebula_lensing_coupling",
+      "name": "Orion_Nebula",
+      "expansion_kms": 13.0,
+      "computed_coupled": 0.0,
+      "measured_coupled": 0.0,
+      "computed": 0.03281214,
+      "measured": 0.02941151,
+      "error_pct": 0.0,
+      "eval_kind": "classifier_match",
+      "record_kind": "classifier",
+      "kappa_lensing": 0.012,
+      "mass_msun": 2000.0,
+      "S_cosm": -0.502456,
+      "domain_display_name": "cosmology bubble bleed",
+      "display_name": "Orion Nebula",
+      "scientific_measurement": {
+        "delta": 0.00340063,
+        "delta_pct": 11.562242,
+        "effective_error_pct": 11.562242,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      },
+      "source_panel": "Cosmology_Bubble_Bleed",
+      "depth_relay_from": "Cosmology_Bubble_Bleed"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "nebula_lensing_coupling",
+      "name": "Crab_Nebula",
+      "expansion_kms": 1500.0,
+      "computed_coupled": 1.0,
+      "measured_coupled": 1.0,
+      "computed": 0.18518605,
+      "measured": 0.16613698,
+      "error_pct": 0.0,
+      "eval_kind": "classifier_match",
+      "record_kind": "classifier",
+      "kappa_lensing": 0.045,
+      "mass_msun": 4.5,
+      "S_cosm": -0.502456,
+      "domain_display_name": "cosmology bubble bleed",
+      "display_name": "Crab Nebula",
+      "scientific_measurement": {
+        "delta": 0.01904907,
+        "delta_pct": 11.465882,
+        "effective_error_pct": 11.465882,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      },
+      "source_panel": "Cosmology_Bubble_Bleed",
+      "depth_relay_from": "Cosmology_Bubble_Bleed"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "nebula_lensing_coupling",
+      "name": "Helix_Nebula",
+      "expansion_kms": 20.0,
+      "computed_coupled": 0.0,
+      "measured_coupled": 0.0,
+      "computed": 0.02525378,
+      "measured": 0.02261472,
+      "error_pct": 0.0,
+      "eval_kind": "classifier_match",
+      "record_kind": "classifier",
+      "kappa_lensing": 0.018,
+      "mass_msun": 0.6,
+      "S_cosm": -0.502456,
+      "domain_display_name": "cosmology bubble bleed",
+      "display_name": "Helix Nebula",
+      "scientific_measurement": {
+        "delta": 0.00263906,
+        "delta_pct": 11.669656,
+        "effective_error_pct": 11.669656,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      },
+      "source_panel": "Cosmology_Bubble_Bleed",
+      "depth_relay_from": "Cosmology_Bubble_Bleed"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "nebula_lensing_coupling",
+      "name": "Ring_Nebula",
+      "expansion_kms": 17.0,
+      "computed_coupled": 0.0,
+      "measured_coupled": 0.0,
+      "computed": 0.02027972,
+      "measured": 0.01816934,
+      "error_pct": 0.0,
+      "eval_kind": "classifier_match",
+      "record_kind": "classifier",
+      "kappa_lensing": 0.015,
+      "mass_msun": 0.7,
+      "S_cosm": -0.502456,
+      "domain_display_name": "cosmology bubble bleed",
+      "display_name": "Ring Nebula",
+      "scientific_measurement": {
+        "delta": 0.00211038,
+        "delta_pct": 11.615061,
+        "effective_error_pct": 11.615061,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      },
+      "source_panel": "Cosmology_Bubble_Bleed",
+      "depth_relay_from": "Cosmology_Bubble_Bleed"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.005169,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "effective_error_pct": 0.0297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "source_domain": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 15,
+      "S": -0.512165,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "effective_error_pct": 0.0201,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "source_domain": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "source_median_error_pct": 0.020098,
+      "D_eff": 17,
+      "S": 0.793204,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.0314,
+        "effective_error_pct": 0.0314,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "source_domain": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "effective_error_pct": 0.0298,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc time emergence flag",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "fpc_fluidlink_deep",
+      "computed": 0.022181,
+      "measured": 0.022181,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc fluidlink deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "effective_error_pct": 0.039807,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "sh0es_refined_depth_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "source": "NIST SI second definition (Cs-133 hyperfine transition)",
+      "domain_display_name": "real data anchors",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Emergence_Simulation"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": null,
-    "max_scalar_error_pct": null,
-    "classifier_count": 0,
-    "classifier_correct": 0,
+    "scalar_pooled_median_error_pct": 0.024894,
+    "max_scalar_error_pct": 0.039797,
+    "classifier_count": 4,
+    "classifier_correct": 4,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": null,
-    "classifier_misclass_rate_pct": null,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 51,
-  "host_count": 46,
-  "host_details": [
-    {
-      "host": "LMC",
-      "computed_h0": 73.603794,
-      "ra_deg": 80.894,
-      "bubble_density_sky": -0.431,
-      "bubble_density_model": 4.8894,
-      "cepheid_count": 137
-    },
-    {
-      "host": "M101",
-      "computed_h0": 73.497059,
-      "ra_deg": 210.802,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 518
-    },
-    {
-      "host": "M31",
-      "computed_h0": 74.164154,
-      "ra_deg": 11.1871,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 55
-    },
-    {
-      "host": "N1015",
-      "computed_h0": 74.164154,
-      "ra_deg": 39.5485,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 39
-    },
-    {
-      "host": "N1309",
-      "computed_h0": 74.164154,
-      "ra_deg": 50.529,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 95
-    },
-    {
-      "host": "N1365",
-      "computed_h0": 74.164154,
-      "ra_deg": 53.443,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 93
-    },
-    {
-      "host": "N1448",
-      "computed_h0": 74.164154,
-      "ra_deg": 56.1663,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 146
-    },
-    {
-      "host": "N2442",
-      "computed_h0": 73.603794,
-      "ra_deg": 114.0751,
-      "bubble_density_sky": -0.431,
-      "bubble_density_model": 4.8894,
-      "cepheid_count": 303
-    },
-    {
-      "host": "N3021",
-      "computed_h0": 73.470375,
-      "ra_deg": 147.7347,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 30
-    },
-    {
-      "host": "N3370",
-      "computed_h0": 73.470375,
-      "ra_deg": 161.7676,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 133
-    },
-    {
-      "host": "N3447",
-      "computed_h0": 73.470375,
-      "ra_deg": 163.3606,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 203
-    },
-    {
-      "host": "N3972",
-      "computed_h0": 73.470375,
-      "ra_deg": 178.9381,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 99
-    },
-    {
-      "host": "N3982",
-      "computed_h0": 73.470375,
-      "ra_deg": 179.116,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 47
-    },
-    {
-      "host": "N4038",
-      "computed_h0": 73.497059,
-      "ra_deg": 180.4694,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 58
-    },
-    {
-      "host": "N4258",
-      "computed_h0": 73.497059,
-      "ra_deg": 184.7285,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 841
-    },
-    {
-      "host": "N4424",
-      "computed_h0": 73.497059,
-      "ra_deg": 186.8019,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 10
-    },
-    {
-      "host": "N4536",
-      "computed_h0": 73.497059,
-      "ra_deg": 188.5808,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 81
-    },
-    {
-      "host": "N4639",
-      "computed_h0": 73.497059,
-      "ra_deg": 190.7192,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 55
-    },
-    {
-      "host": "N5584",
-      "computed_h0": 73.497059,
-      "ra_deg": 215.6005,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 328
-    },
-    {
-      "host": "N5917",
-      "computed_h0": 73.497059,
-      "ra_deg": 230.3889,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 27
-    },
-    {
-      "host": "N7250",
-      "computed_h0": 73.523742,
-      "ra_deg": 334.5721,
-      "bubble_density_sky": -0.5862,
-      "bubble_density_model": 4.8136,
-      "cepheid_count": 33
-    },
-    {
-      "host": "NGC1015",
-      "computed_h0": 74.164154,
-      "ra_deg": 39.5485,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 39
-    },
-    {
-      "host": "NGC1309",
-      "computed_h0": 74.164154,
-      "ra_deg": 50.423,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 95
-    },
-    {
-      "host": "NGC1365",
-      "computed_h0": 74.164154,
-      "ra_deg": 53.401,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 93
-    },
-    {
-      "host": "NGC1448",
-      "computed_h0": 74.164154,
-      "ra_deg": 56.138,
-      "bubble_density_sky": 0.6552,
-      "bubble_density_model": 5.42,
-      "cepheid_count": 146
-    },
-    {
-      "host": "NGC1559",
-      "computed_h0": 73.603794,
-      "ra_deg": 67.767,
-      "bubble_density_sky": -0.431,
-      "bubble_density_model": 4.8894,
-      "cepheid_count": 0
-    },
-    {
-      "host": "NGC2442",
-      "computed_h0": 73.603794,
-      "ra_deg": 111.108,
-      "bubble_density_sky": -0.431,
-      "bubble_density_model": 4.8894,
-      "cepheid_count": 303
-    },
-    {
-      "host": "NGC3021",
-      "computed_h0": 73.470375,
-      "ra_deg": 147.371,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 30
-    },
-    {
-      "host": "NGC3370",
-      "computed_h0": 73.470375,
-      "ra_deg": 161.132,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 133
-    },
-    {
-      "host": "NGC3447",
-      "computed_h0": 73.470375,
-      "ra_deg": 163.3606,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 203
-    },
-    {
-      "host": "NGC3627",
-      "computed_h0": 73.470375,
-      "ra_deg": 170.062,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 0
-    },
-    {
-      "host": "NGC3972",
-      "computed_h0": 73.470375,
-      "ra_deg": 178.9381,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 99
-    },
-    {
-      "host": "NGC3982",
-      "computed_h0": 73.470375,
-      "ra_deg": 179.075,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 47
-    },
-    {
-      "host": "NGC4038",
-      "computed_h0": 73.497059,
-      "ra_deg": 180.466,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 58
-    },
-    {
-      "host": "NGC4254",
-      "computed_h0": 73.497059,
-      "ra_deg": 184.674,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 0
-    },
-    {
-      "host": "NGC4258",
-      "computed_h0": 73.497059,
-      "ra_deg": 184.74,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 841
-    },
-    {
-      "host": "NGC4321",
-      "computed_h0": 73.497059,
-      "ra_deg": 185.899,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 0
-    },
-    {
-      "host": "NGC4424",
-      "computed_h0": 73.497059,
-      "ra_deg": 186.8019,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 10
-    },
-    {
-      "host": "NGC4536",
-      "computed_h0": 73.497059,
-      "ra_deg": 188.614,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 81
-    },
-    {
-      "host": "NGC4639",
-      "computed_h0": 73.497059,
-      "ra_deg": 190.677,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 55
-    },
-    {
-      "host": "NGC5584",
-      "computed_h0": 73.497059,
-      "ra_deg": 215.289,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 328
-    },
-    {
-      "host": "NGC5643",
-      "computed_h0": 73.497059,
-      "ra_deg": 219.059,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 0
-    },
-    {
-      "host": "NGC5917",
-      "computed_h0": 73.497059,
-      "ra_deg": 232.288,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 27
-    },
-    {
-      "host": "NGC7250",
-      "computed_h0": 73.523742,
-      "ra_deg": 334.215,
-      "bubble_density_sky": -0.5862,
-      "bubble_density_model": 4.8136,
-      "cepheid_count": 33
-    },
-    {
-      "host": "U9391",
-      "computed_h0": 73.497059,
-      "ra_deg": 218.6547,
-      "bubble_density_sky": -0.6379,
-      "bubble_density_model": 4.7884,
-      "cepheid_count": 66
-    },
-    {
-      "host": "UGC9391",
-      "computed_h0": 73.470375,
-      "ra_deg": 175.628,
-      "bubble_density_sky": -0.6897,
-      "bubble_density_model": 4.7631,
-      "cepheid_count": 66
-    }
-  ],
-  "h0_global_fsot": 68.44005682979427,
-  "sh0es_measured_h0": 73.04,
-  "sh0es_status": "YELLOW",
-  "display_name": "SH0ES Refined",
-  "tier_label": "Consciousness soul bridge + symbolic archetype",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.770645+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

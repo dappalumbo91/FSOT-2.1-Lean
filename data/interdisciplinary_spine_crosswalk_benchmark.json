@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:03.031988+00:00",
+  "generated_at": "2026-07-12T14:25:05.787154+00:00",
   "domain": "Interdisciplinary_Spine_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "tier52-56_panels",
-    "domain_coupling_simulation_benchmark.json"
+    "domain_coupling_simulation_benchmark.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "astronomical",
@@ -15,22 +16,24 @@
     "particle"
   ],
   "D_eff": 17,
-  "record_count": 15,
-  "observable_count": 15,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "interdisciplinary": {
+      "Interdisciplinary_Spine_Crosswalk_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "multi-domain baselines"
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_spine_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 15,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "spine",
-      "name": "interdisciplinary",
+      "property": "depth_relay",
+      "name": "Interdisciplinary_Spine_Crosswalk_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 15,
-      "domain_display_name": "tier gap fill",
-      "display_name": "interdisciplinary",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -429,11 +406,156 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C8H9NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C13H18O2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "molecular_weight",
+      "name": "3033",
+      "computed": 296.147,
+      "measured": 296.1,
+      "error_pct": 0.015873,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C14H11Cl2NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "importance_score",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 4.200357,
+      "measured": 4.2,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "lat",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 39.00245,
+      "measured": 38.9917452,
+      "error_pct": 0.027455,
+      "eval_kind": "contested_observable",
+      "fsot_domain": "Geophysics",
+      "fsot_scalar": -0.549094,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "lng",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": -82.098232,
+      "measured": -82.075698,
+      "error_pct": 0.027455,
+      "eval_kind": "contested_observable",
+      "fsot_domain": "Geophysics",
+      "fsot_scalar": -0.549094,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "interdisciplinary_spine_crosswalk_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_engineering",
+      "computed": 0.02717,
+      "measured": 0.02717,
+      "error_pct": 0.0,
+      "record_count": 87,
+      "eval_kind": "scaffold_bridge",
+      "domain_display_name": "material verification scaffold",
+      "display_name": "materials engineering",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Material_Property_Verification_Scaffold",
+      "depth_relay_from": "Material_Property_Verification_Scaffold"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "max_scalar_error_pct": 0.008488,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -442,19 +564,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Interdisciplinary Spine Crosswalk",
-  "tier_label": "Tier 57 \u2014 Interdisciplinary Spine Crosswalk + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.849577+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 4,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 4
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

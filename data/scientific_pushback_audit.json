@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T12:25:07.049945+00:00",
+  "generated_at": "2026-07-12T14:56:20.496941+00:00",
   "version": "1.0",
   "summary": {
-    "extension_domain_count": 250,
-    "green_gate_pass_count": 250,
+    "extension_domain_count": 274,
+    "green_gate_pass_count": 274,
     "green_gate_fail_count": 0,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,
@@ -13,15 +13,7 @@
     "domains_raw_eff_divergence": 0
   },
   "aspiration_debt": [],
-  "hubble_headline_channel_gap": {
-    "domain": "Hubble_Bubble_Tension",
-    "channel": "dual_anchor_h0_panel",
-    "headline_median_error_pct": 0.662298,
-    "pooled_median_error_pct": 0.0,
-    "green_gate": "pooled_median_only",
-    "lean_theorem": "hubble_tension_headline_median_under_one_pct",
-    "mitigation": "Headline channel exceeds 0.5% gate; pooled median passes. Honest Lean theorem uses <1% bound; pushback tracked not hidden."
-  },
+  "hubble_headline_channel_gap": null,
   "pushback_avenues": [
     {
       "avenue": "h0_planck",

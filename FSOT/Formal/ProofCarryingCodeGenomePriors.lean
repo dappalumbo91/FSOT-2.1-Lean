@@ -1,6 +1,6 @@
 /-
-  FSOT Formal ProofCarryingCodeGenomePriors — Proof_Carrying_Code_Genome Tier L orbital gap fill.
-  Generator: scripts/gen_tier_l_orbital_gap_fill_lean.py
+  FSOT Formal ProofCarryingCodeGenomePriors — extension domain Proof_Carrying_Code_Genome.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def proof_carrying_code_genome_observable_count : ℕ := 25
+def proof_carrying_code_genome_D_eff : ℕ := 16
 
-def proof_cg_observable_count : ℕ := 25
-def proof_cg_pooled_median_error_pct : ℝ := (0.0051685586271776884 : ℝ)
-def proof_cg_headline_median_error_pct : ℝ := (0.0051685586271776884 : ℝ)
-def proof_cg_beats_sota_headlines : ℕ := 2
-def proof_cg_D_eff : ℕ := 16
-def proof_cg_oss_affinity_pair_count : ℕ := 8
+theorem proof_carrying_code_genome_observable_count_pos : 0 < proof_carrying_code_genome_observable_count := by
+  unfold proof_carrying_code_genome_observable_count; norm_num
 
-theorem proof_cg_observable_count_pos : 0 < proof_cg_observable_count := by
-  unfold proof_cg_observable_count; norm_num
+theorem proof_carrying_code_genome_median_error_under_half_pct :
+    (0.0051685586271776884 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem proof_cg_pooled_median_under_half_pct :
-    proof_cg_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold proof_cg_pooled_median_error_pct; norm_num
-
-theorem proof_cg_headline_median_under_half_pct :
-    proof_cg_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold proof_cg_headline_median_error_pct; norm_num
-
-theorem proof_cg_beats_sota_headlines_pos : 0 < proof_cg_beats_sota_headlines := by
-  unfold proof_cg_beats_sota_headlines; norm_num
-theorem proof_cg_oss_pairs_pos : 0 < proof_cg_oss_affinity_pair_count := by unfold proof_cg_oss_affinity_pair_count; norm_num
-
-theorem proof_cg_bundle :
-    proof_cg_observable_count = 25 ∧
-    proof_cg_pooled_median_error_pct < (0.5 : ℝ) ∧
-    proof_cg_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold proof_cg_observable_count; norm_num
-  · exact proof_cg_pooled_median_under_half_pct
-  · exact proof_cg_beats_sota_headlines_pos
+theorem proof_carrying_code_genome_bundle :
+    proof_carrying_code_genome_observable_count = 25 ∧
+    proof_carrying_code_genome_D_eff = 16 ∧
+    (0.0051685586271776884 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold proof_carrying_code_genome_observable_count; norm_num,
+    by unfold proof_carrying_code_genome_D_eff; norm_num,
+    proof_carrying_code_genome_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

@@ -178,6 +178,31 @@ def main() -> int:
         hours = (data.get("hourly") or {}).get("temperature_2m") or []
         return f"hours={len(hours)}"
 
+    def tier82_usgs_nwis():
+        data = fetch_json(
+            "https://waterservices.usgs.gov/nwis/iv/?format=json"
+            "&sites=01646500&parameterCd=00010&period=P1D",
+            timeout=30,
+        )
+        series = ((data.get("value") or {}).get("timeSeries")) or []
+        return f"series={len(series)}"
+
+    def tier82_soilgrids():
+        data = fetch_json(
+            "https://rest.isric.org/soilgrids/v2.0/properties/query?"
+            "lon=-95&lat=37&property=bdod&depth=0-5cm&value=mean",
+            timeout=30,
+        )
+        return f"layers={len((data.get('properties') or {}).get('layers') or [])}"
+
+    def tier82_natural_earth():
+        data = fetch_json(
+            "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/"
+            "geojson/ne_110m_admin_0_countries.geojson",
+            timeout=30,
+        )
+        return f"features={len(data.get('features') or [])}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -197,6 +222,9 @@ def main() -> int:
         ("inaturalist_obs", inaturalist_obs),
         ("noaa_ndbc_buoy", noaa_ndbc_buoy),
         ("open_meteo_forecast", open_meteo_forecast),
+        ("tier82_usgs_nwis", tier82_usgs_nwis),
+        ("tier82_soilgrids", tier82_soilgrids),
+        ("tier82_natural_earth", tier82_natural_earth),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

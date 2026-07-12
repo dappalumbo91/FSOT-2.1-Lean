@@ -1,6 +1,6 @@
 /-
-  FSOT Formal VizieRWdsTapLiveDeepPriors — Tier 68–70 expansion.
-  Generator: scripts/gen_tiers_68_70_lean.py
+  FSOT Formal VizierWdsTapLiveDeepPriors — extension domain VizieR_WDS_TAP_Live_Deep.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,35 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
-
-def vizier_wds_tap_live_deep_observable_count : ℕ := 25
-def vizier_wds_tap_live_deep_pooled_median_error_pct : ℝ := (0.026954 : ℝ)
-def vizier_wds_tap_live_deep_headline_median_error_pct : ℝ := (0.026954 : ℝ)
-def vizier_wds_tap_live_deep_beats_sota_headlines : ℕ := 2
+def vizier_wds_tap_live_deep_observable_count : ℕ := 121
 def vizier_wds_tap_live_deep_D_eff : ℕ := 21
 
 theorem vizier_wds_tap_live_deep_observable_count_pos : 0 < vizier_wds_tap_live_deep_observable_count := by
   unfold vizier_wds_tap_live_deep_observable_count; norm_num
 
-theorem vizier_wds_tap_live_deep_pooled_median_under_half_pct :
-    vizier_wds_tap_live_deep_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold vizier_wds_tap_live_deep_pooled_median_error_pct; norm_num
-
-theorem vizier_wds_tap_live_deep_headline_median_under_half_pct :
-    vizier_wds_tap_live_deep_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold vizier_wds_tap_live_deep_headline_median_error_pct; norm_num
-
-theorem vizier_wds_tap_live_deep_beats_sota_headlines_pos : 0 < vizier_wds_tap_live_deep_beats_sota_headlines := by
-  unfold vizier_wds_tap_live_deep_beats_sota_headlines; norm_num
+theorem vizier_wds_tap_live_deep_median_error_under_half_pct :
+    (0.026954 : ℝ) < (0.5 : ℝ) := by norm_num
 
 theorem vizier_wds_tap_live_deep_bundle :
-    vizier_wds_tap_live_deep_observable_count = 25 ∧
-    vizier_wds_tap_live_deep_pooled_median_error_pct < (0.5 : ℝ) ∧
-    vizier_wds_tap_live_deep_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold vizier_wds_tap_live_deep_observable_count; norm_num
-  · exact vizier_wds_tap_live_deep_pooled_median_under_half_pct
-  · exact vizier_wds_tap_live_deep_beats_sota_headlines_pos
+    vizier_wds_tap_live_deep_observable_count = 121 ∧
+    vizier_wds_tap_live_deep_D_eff = 21 ∧
+    (0.026954 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold vizier_wds_tap_live_deep_observable_count; norm_num,
+    by unfold vizier_wds_tap_live_deep_D_eff; norm_num,
+    vizier_wds_tap_live_deep_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

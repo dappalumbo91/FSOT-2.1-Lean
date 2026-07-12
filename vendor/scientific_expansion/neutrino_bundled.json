@@ -1,0 +1,26 @@
+{
+  "source": "pdg_2024_neutrino_properties",
+  "credential_free": true,
+  "observables": [
+    {"name": "delta_m21_sq_eV2", "value": 7.53e-5, "property": "mass_splitting"},
+    {"name": "delta_m31_sq_eV2", "value": 2.453e-3, "property": "mass_splitting"},
+    {"name": "sin2_theta12", "value": 0.307, "property": "mixing_angle"},
+    {"name": "sin2_theta23", "value": 0.546, "property": "mixing_angle"},
+    {"name": "sin2_theta13", "value": 0.0220, "property": "mixing_angle"},
+    {"name": "delta_cp_deg", "value": 195.0, "property": "cp_phase"},
+    {"name": "sum_mass_eV", "value": 0.12, "property": "mass_sum"},
+    {"name": "effective_majorana_mass_eV", "value": 0.018, "property": "majorana_mass"},
+    {"name": "reactor_theta13_deg", "value": 8.54, "property": "mixing_angle"},
+    {"name": "atmospheric_theta23_deg", "value": 49.2, "property": "mixing_angle"},
+    {"name": "solar_theta12_deg", "value": 33.44, "property": "mixing_angle"},
+    {"name": "delta_m32_sq_eV2", "value": 2.536e-3, "property": "mass_splitting"},
+    {"name": "neutrino_flux_solar_cm2s", "value": 6.5e10, "property": "flux"},
+    {"name": "atmospheric_nu_energy_GeV", "value": 1.0, "property": "energy_scale"},
+    {"name": "reactor_nu_energy_MeV", "value": 4.0, "property": "energy_scale"},
+    {"name": "oscillation_length_km", "value": 295.0, "property": "oscillation_length"},
+    {"name": "matter_potential_eV2", "value": 7.6e-14, "property": "matter_effect"},
+    {"name": "tau_neutrino_mass_bound_eV", "value": 0.45, "property": "mass_bound"},
+    {"name": "sterile_mixing_bound", "value": 0.01, "property": "sterile_bound"},
+    {"name": "neutrino_temperature_K", "value": 1.95, "property": "cmb_neutrino"}
+  ]
+}

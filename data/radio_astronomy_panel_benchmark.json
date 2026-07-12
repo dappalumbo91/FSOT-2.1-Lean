@@ -1,0 +1,429 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T14:06:49.170090+00:00",
+  "domain": "Radio_Astronomy_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\live_cache\\radio_astronomy_cache.json",
+    "VizieR NVSS"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "particle"
+  ],
+  "D_eff": 20,
+  "record_count": 30,
+  "observable_count": 30,
+  "scalar_record_count": 30,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.022461,
+  "pooled_median_error_pct": 0.022461,
+  "headline_median_error_pct": 0.022461,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "radio_astronomy": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "VizieR radio catalogs"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022461,
+      "measured": 0.0,
+      "error_pct": 0.022461,
+      "observable_count": 30
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "radio_astronomy",
+      "computed": 0.022461,
+      "measured": 0.0,
+      "error_pct": 0.022461,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "obs",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "obs",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "obs",
+      "computed": 15.803549,
+      "measured": 15.8,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "150.0",
+      "computed": 150.026954,
+      "measured": 150.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "150.0",
+      "computed": 55.01456,
+      "measured": 55.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "150.0",
+      "computed": 3.400764,
+      "measured": 3.4,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "323.0",
+      "computed": 323.05804,
+      "measured": 323.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "323.0",
+      "computed": -0.800212,
+      "measured": -0.8,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "323.0",
+      "computed": 5.201168,
+      "measured": 5.2,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "53.0",
+      "computed": 53.009524,
+      "measured": 53.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "53.0",
+      "computed": -8.002118,
+      "measured": -8.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "53.0",
+      "computed": 2.100472,
+      "measured": 2.1,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "187.0",
+      "computed": 187.033602,
+      "measured": 187.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "187.0",
+      "computed": 12.003177,
+      "measured": 12.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "187.0",
+      "computed": 1.800404,
+      "measured": 1.8,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "299.0",
+      "computed": 299.053728,
+      "measured": 299.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "299.0",
+      "computed": 40.010589,
+      "measured": 40.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "299.0",
+      "computed": 4.601033,
+      "measured": 4.6,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "12.0",
+      "computed": 12.002156,
+      "measured": 12.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "12.0",
+      "computed": 30.007942,
+      "measured": 30.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "12.0",
+      "computed": 0.900202,
+      "measured": 0.9,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "95.0",
+      "computed": 95.017071,
+      "measured": 95.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "95.0",
+      "computed": -52.013766,
+      "measured": -52.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "95.0",
+      "computed": 6.701505,
+      "measured": 6.7,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "201.0",
+      "computed": 201.036118,
+      "measured": 201.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "201.0",
+      "computed": 16.004236,
+      "measured": 16.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "201.0",
+      "computed": 2.400539,
+      "measured": 2.4,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "raj2000",
+      "name": "78.0",
+      "computed": 78.014016,
+      "measured": 78.0,
+      "error_pct": 0.017969,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "dej2000",
+      "name": "78.0",
+      "computed": -6.001588,
+      "measured": -6.0,
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411,
+      "ingest_source": "vizier_nvss_catalog"
+    },
+    {
+      "lab": "radio_astronomy_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "78.0",
+      "computed": 3.100696,
+      "measured": 3.1,
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "vizier_nvss_catalog"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.022461,
+    "max_scalar_error_pct": 0.026472,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

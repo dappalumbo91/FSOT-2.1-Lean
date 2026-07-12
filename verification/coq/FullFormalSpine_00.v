@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 1/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 1/17 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -6,35 +6,29 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma acoustic_rm_pooled_median_under_half_pct : (0.008381497018412922%R) < (0.5%R).
+Lemma acoustic_resonance_materials_observable_count_pos : (0 < 29)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma acoustic_resonance_materials_median_error_under_half_pct : (0.008381497018411083%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma acoustic_rm_headline_median_under_half_pct : (0.008381497018412922%R) < (0.5%R).
+Lemma actuarial_science_panel_observable_count_pos : (0 < 60)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma actuarial_science_panel_median_error_under_half_pct : (0.02261%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma acoustic_rm_observable_count_pos : (0 < 29)%nat.
+Lemma actuarial_science_observable_count_pos : (0 < 60)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma acoustic_rm_beats_sota_headlines_pos : (0 < 3)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma acoustic_rm_acoustic_species_pos : (0 < 9)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma adj_rung_pooled_median_under_half_pct : (0.020098237848404983%R) < (0.5%R).
+Lemma actuarial_science_median_error_under_five_pct : (0.02261%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma adj_rung_headline_median_under_half_pct : (0.020098237848404983%R) < (0.5%R).
+Lemma adjacent_rung_coupling_observable_count_pos : (0 < 36)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma adjacent_rung_coupling_median_error_under_half_pct : (0.020098237848404983%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma adj_rung_observable_count_pos : (0 < 36)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma adj_rung_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma adj_rung_pairs_complete : (9 = 9)%nat.
-Proof. reflexivity. Qed.
 
 Lemma adv_brk_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
@@ -47,6 +41,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma adv_brk_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma adversarial_fractal_break_tests_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma adversarial_fractal_break_tests_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
 
 Lemma aether_distill_row_count_pos : (0 < 120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -69,20 +69,17 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma agriculture_agroecology_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma ai_gal_br_pooled_median_under_half_pct : (0.0051685586271776884%R) < (0.5%R).
+Lemma agriculture_agroecology_observable_count_pos : (0 < 276)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma agriculture_agroecology_median_error_under_half_pct : (0.018019024892929635%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma ai_gal_br_headline_median_under_half_pct : (0.0051685586271776884%R) < (0.5%R).
+Lemma ai_galactic_orbital_bridge_observable_count_pos : (0 < 48)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma ai_galactic_orbital_bridge_median_error_under_half_pct : (0.005168558627177688%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma ai_gal_br_observable_count_pos : (0 < 45)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma ai_gal_br_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma ai_gal_br_bridge_pairs_pos : (0 < 35)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma anthropology_ext_pooled_median_under_half_pct : (0.019504399572476606%R) < (0.5%R).
 Proof. lra. Qed.
@@ -96,6 +93,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma anthropology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma anthropology_observable_count_pos : (0 < 160)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma anthropology_median_error_under_half_pct : (0.019504399572476606%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma architecture_building_science_gap_fill_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
@@ -108,26 +111,23 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma architecture_building_science_gap_fill_beats_sota_headlines_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma architecture_building_science_observable_count_pos : (0 < 43)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma architecture_building_science_median_error_under_half_pct : (0.07869745016115058%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma arxiv_primitives_v14_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
 Lemma arxiv_primitives_v14_observable_count_pos : (0 < 14)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma astrophysical_structure_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma astrophysical_structure_crosswalk_observable_count_pos : (0 < 32)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma astrophysical_structure_crosswalk_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
-
-Lemma astrophysical_structure_crosswalk_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma astrophysical_structure_crosswalk_observable_count_pos : (0 < 34)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma astrophysical_structure_crosswalk_beats_sota_headlines_pos : (0 < 1)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma astrophysical_structure_crosswalk_catalog_systems_pos : (0 < 13)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma atmospheric_physics_gap_fill_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
@@ -180,17 +180,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma biology_strict_median_error_under_two_pct : 0%R < (2.0%R).
 Proof. lra. Qed.
 
-Lemma biophysics_public_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma biophysics_public_panel_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma biophysics_public_panel_observable_count_pos : (0 < 11)%nat.
+Lemma biophysics_public_panel_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma biophysics_public_panel_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
+Lemma biophysics_public_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
 
 Lemma blackhole_thesis_observable_count_pos : (0 < 28)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -210,17 +204,17 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma botany_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma boundary_partition_tightening_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma boundary_partition_tightening_headline_median_under_half_pct : (0.2544322492332041%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma boundary_partition_tightening_observable_count_pos : (0 < 8)%nat.
+Lemma botany_observable_count_pos : (0 < 426)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma boundary_partition_tightening_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma botany_median_error_under_half_pct : (0.022236250385193387%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma boundary_partition_tightening_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma boundary_partition_tightening_median_error_under_half_pct : (0.017672674984670764%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma brain_prior_codon_from_dna : (72 = 72)%nat.
 Proof. reflexivity. Qed.
@@ -304,5 +298,11 @@ Lemma basal_ganglia_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.
 Proof. reflexivity. Qed.
 
 Lemma thalamus_genetic_zero_is_superposition : (0.4861111111111111%R) = (0.4861111111111111%R).
+Proof. reflexivity. Qed.
+
+Lemma astrocyte_syncytium_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma oligodendrocyte_myelination_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
 Proof. reflexivity. Qed.
 

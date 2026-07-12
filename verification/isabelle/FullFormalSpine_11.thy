@@ -1,306 +1,306 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 12/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 12/17 (generated). *)
 theory FullFormalSpine_11
 imports Complex_Main
 begin
 
-lemma quantum_materials_section_count_pos: "0 < (13 :: nat)"
+lemma thesis_simulation_components_le_total: "(156 :: nat) = (156 :: nat)"
   by eval
 
-lemma quantum_materials_beats_sota_headlines_pos: "0 < (6 :: nat)"
+lemma time_domain_crosswalk_observable_count_pos: "0 < (250 :: nat)"
   by eval
 
-lemma quantum_mechanics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+lemma time_domain_crosswalk_median_error_under_half_pct: "(0.028056 :: real) < (0.5 :: real)"
   by eval
 
-lemma quantum_mechanics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+lemma time_emergence_deep_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma quantum_mechanics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
+lemma time_emergence_deep_panel_median_error_under_half_pct: "(0.024894 :: real) < (0.5 :: real)"
   by eval
 
-lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma time_emergence_simulation_observable_count_pos: "0 < (28 :: nat)"
   by eval
 
-lemma quantum_optics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+lemma time_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma quantum_optics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+lemma toe_claim_certificate_bundle_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma quantum_optics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
+lemma toe_claim_certificate_bundle_median_error_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
   by eval
 
-lemma quantum_optics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma toe_gap_closure_spine_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma rcsb_pdb_structures_observable_count_pos: "0 < (159 :: nat)"
+lemma toe_gap_closure_spine_median_error_under_half_pct: "(0.021927861384483893 :: real) < (0.5 :: real)"
   by eval
 
-lemma rcsb_pdb_structures_median_error_under_five_pct: "(0.022236 :: real) < (5.0 :: real)"
+lemma toe_unification_spine_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma rd_interval_tightening_panel_pooled_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
+lemma toe_unification_spine_median_error_under_half_pct: "(0.01900826880249791 :: real) < (0.5 :: real)"
   by eval
 
-lemma rd_interval_tightening_panel_headline_median_under_half_pct: "(0.005024559462094211 :: real) < (0.5 :: real)"
+lemma tokenization_smoke_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma rd_interval_tightening_panel_observable_count_pos: "0 < (12 :: nat)"
+lemma tokenization_smoke_observable_count_pos: "0 < (9 :: nat)"
   by eval
 
-lemma rd_interval_tightening_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma toxicology_panel_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma fold_spine_pooled_median_under_half_pct: "(0.019008268802505057 :: real) < (0.5 :: real)"
+lemma toxicology_panel_median_error_under_half_pct: "(0.033401 :: real) < (0.5 :: real)"
   by eval
 
-lemma fold_spine_headline_median_under_half_pct: "(0.019008268802505057 :: real) < (0.5 :: real)"
+lemma toxicology_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma fold_spine_observable_count_pos: "0 < (8 :: nat)"
+lemma toxicology_median_error_under_five_pct: "(0.033401 :: real) < (5.0 :: real)"
   by eval
 
-lemma fold_spine_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma trinary_ignition_coherence_positive: "0 < (0.3921734915875944 :: real)"
   by eval
 
-lemma fold_spine_ladder_rungs_pos: "0 < (10 :: nat)"
+lemma trinary_resonance_persist_positive: "0 < (0.8652559794322651 :: real)"
   by eval
 
-lemma robotics_control_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma trinary_metatron_pathways_pos: "0 < (27 :: nat)"
   by eval
 
-lemma robotics_control_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma trinary_hardware_motif_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma robotics_control_ext_observable_count_pos: "0 < (45 :: nat)"
+lemma trinary_hardware_motif_observable_count_pos: "0 < (8 :: nat)"
   by eval
 
-lemma robotics_control_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma trinary_os_isa_rebuild_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma rust_lean_bridge_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma trinary_os_isa_rebuild_observable_count_pos: "0 < (38 :: nat)"
   by eval
 
-lemma rust_lean_bridge_observable_count_pos: "0 < (9 :: nat)"
+lemma trinary_os_portable_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma secure_sw_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma trinary_os_portable_observable_count_pos: "0 < (8 :: nat)"
   by eval
 
-lemma secure_sw_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma trinary_os_word_width_eq_27: "(27 :: nat) = (27 :: nat)"
   by eval
 
-lemma secure_sw_observable_count_pos: "0 < (59 :: nat)"
+lemma trinary_os_hello_smaller_than_spawn: "(264 :: nat) < (440 :: nat)"
   by eval
 
-lemma secure_sw_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma trinary_os_round_trip_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
+lemma trinary_os_round_trip_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
-lemma seismology_deep_match_le_total: "(810 :: nat) <= (1000 :: nat)"
+lemma trinary_os_tier_e_observable_count_pos: "0 < (68 :: nat)"
   by eval
 
-lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
+lemma trinary_os_tier_e_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma seismology_event_count_pos: "0 < (500 :: nat)"
+lemma uap_war_gov_release_panel_observable_count_pos: "0 < (542 :: nat)"
   by eval
 
-lemma seismology_match_le_total: "(493 :: nat) <= (500 :: nat)"
+lemma uap_war_gov_release_panel_median_error_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
   by eval
 
-lemma semiconductor_physics_public_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma uap_war_gov_release_observable_count_pos: "0 < (542 :: nat)"
   by eval
 
-lemma semiconductor_physics_public_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma uap_war_gov_release_median_error_under_five_pct: "(0.008488 :: real) < (5.0 :: real)"
   by eval
 
-lemma semiconductor_physics_public_panel_observable_count_pos: "0 < (11 :: nat)"
+lemma undiscovered_element_candidate_prereg_scaffold_observable_count_pos: "0 < (25 :: nat)"
   by eval
 
-lemma semiconductor_physics_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma undiscovered_element_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma sh0es_refined_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma unified_db_candidate_crosswalk_observable_count_pos: "0 < (46 :: nat)"
   by eval
 
-lemma sh0es_refined_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma unified_db_candidate_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma sh0es_refined_observable_count_pos: "0 < (7 :: nat)"
+lemma unified_db_crosswalk_spine_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma sh0es_refined_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma unified_db_crosswalk_spine_median_error_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
   by eval
 
-lemma sh0es_refined_hosts_pos: "0 < (46 :: nat)"
+lemma unified_db_evaluation_ok_pos: "0 < (146 :: nat)"
   by eval
 
-lemma simbad_stellar_identity_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma unified_db_records_total_pos: "0 < (30984 :: nat)"
   by eval
 
-lemma simbad_stellar_identity_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma unified_db_top_project_count_pos: "0 < (15 :: nat)"
   by eval
 
-lemma simbad_stellar_identity_deep_observable_count_pos: "0 < (140 :: nat)"
+lemma unified_db_strict_le_total: "(9403 :: nat) <= (13637 :: nat)"
   by eval
 
-lemma simbad_stellar_identity_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma uniprot_protein_annotations_observable_count_pos: "0 < (102 :: nat)"
   by eval
 
-lemma small_body_orbit_count_pos: "0 < (12 :: nat)"
+lemma uniprot_protein_annotations_median_error_under_five_pct: "(0.026684 :: real) < (5.0 :: real)"
   by eval
 
-lemma small_body_median_error_under_eight_pct: "(0.094587 :: real) < (8.0 :: real)"
+lemma uniprot_structure_annotations_deep_observable_count_pos: "0 < (121 :: nat)"
   by eval
 
-lemma sociology_gap_fill_pooled_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
+lemma uniprot_structure_annotations_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma sociology_gap_fill_headline_median_under_half_pct: "(0.019504399572475274 :: real) < (0.5 :: real)"
+lemma vibra_pattern_stability_positive: "0 < (0.7662378870755164 :: real)"
   by eval
 
-lemma sociology_gap_fill_observable_count_pos: "0 < (200 :: nat)"
+lemma vibra_avg_S_mean_positive: "0 < (0.4744906315011612 :: real)"
   by eval
 
-lemma sociology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma vibra_mc_prob_non_decrease_cp5_le_one: "(1.0 :: real) <= (1.0 :: real)"
   by eval
 
-lemma solar_system_structure_deep_pooled_median_under_half_pct: "(0.009693 :: real) < (0.5 :: real)"
+lemma virology_ext_pooled_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
   by eval
 
-lemma solar_system_structure_deep_headline_median_under_half_pct: "(0.032274 :: real) < (0.5 :: real)"
+lemma virology_ext_headline_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
   by eval
 
-lemma solar_system_structure_deep_observable_count_pos: "0 < (50 :: nat)"
+lemma virology_ext_observable_count_pos: "0 < (163 :: nat)"
   by eval
 
-lemma solar_system_structure_deep_beats_sota_headlines_pos: "0 < (3 :: nat)"
+lemma virology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma sota_beats_majority: "(32 :: nat) < (35 :: nat)"
+lemma virology_observable_count_pos: "0 < (50 :: nat)"
   by eval
 
-lemma sota_meets_or_beats_large: "(32 :: nat) < (35 :: nat)"
+lemma virology_median_error_under_half_pct: "(0.04593318440797614 :: real) < (0.5 :: real)"
   by eval
 
-lemma sota_below_bounded: "(0 :: nat) <= (5 :: nat)"
+lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
   by eval
 
-lemma sota_zero_free_parameters: "(0 :: nat) = (0 :: nat)"
+lemma vizier_wds_tap_live_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
   by eval
 
-lemma soul_sibling_D_compact_positive: "0 < (24.98 :: real)"
+lemma vl_distill_atlas_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma soul_sibling_fidelity_threshold_positive: "0 < (0.05 :: real)"
+lemma vl_distill_atlas_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma space_propulsion_systems_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma volcanology_panel_observable_count_pos: "0 < (90 :: nat)"
   by eval
 
-lemma space_propulsion_systems_observable_count_pos: "0 < (21 :: nat)"
+lemma volcanology_panel_median_error_under_half_pct: "(0.023502 :: real) < (0.5 :: real)"
   by eval
 
-lemma space_weather_kp_record_count_pos: "0 < (271813 :: nat)"
+lemma volcanology_observable_count_pos: "0 < (90 :: nat)"
   by eval
 
-lemma space_weather_stability_match_le_total: "(271810 :: nat) <= (271813 :: nat)"
+lemma volcanology_median_error_under_five_pct: "(0.023502 :: real) < (5.0 :: real)"
   by eval
 
-lemma space_weather_stability_match_rate_nonneg: "(0 :: real) <= (0.999988963000298 :: real)"
+lemma warp_psi_friction_pos: "0 < (0.082300635102 :: real)"
   by eval
 
-lemma species_property_count_pos: "0 < (684 :: nat)"
+lemma warp_psi_node_pos: "0 < (0.059407798774 :: real)"
   by eval
 
-lemma species_total_count_eq_sum: "(141 :: nat) = (141 :: nat)"
+lemma warp_tunneling_bridge_pos: "0 < (0.053926299704 :: real)"
   by eval
 
-lemma speleology_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_psi_stabilization_pos: "0 < (2.386649570184 :: real)"
   by eval
 
-lemma speleology_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_psi_run_pos: "0 < (0.14178559741 :: real)"
   by eval
 
-lemma speleology_ext_observable_count_pos: "0 < (200 :: nat)"
+lemma warp_delta_phi_stable_pos: "0 < (0.004581413686 :: real)"
   by eval
 
-lemma speleology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma warp_y_exotic_byproduct_pos: "0 < (0.011637689406 :: real)"
   by eval
 
-lemma sports_biomechanics_gap_fill_pooled_median_under_half_pct: "(0.04447250077037523 :: real) < (0.5 :: real)"
+lemma warp_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
   by eval
 
-lemma sports_biomechanics_gap_fill_headline_median_under_half_pct: "(0.04447250077037523 :: real) < (0.5 :: real)"
+lemma warp_bridge_lt_node: "(0.053926299704 :: real) < (0.059407798774 :: real)"
   by eval
 
-lemma sports_biomechanics_gap_fill_observable_count_pos: "0 < (35 :: nat)"
+lemma warp_exotic_lt_friction: "(0.011637689406 :: real) < (0.082300635102 :: real)"
   by eval
 
-lemma sports_biomechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma warp_delta_phi_stable_le_raw: "(0.004581413686 :: real) <= (0.004581413686 :: real)"
   by eval
 
-lemma statistical_mechanics_public_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma statistical_mechanics_public_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_bh_wh_portal_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma statistical_mechanics_public_panel_observable_count_pos: "0 < (10 :: nat)"
+lemma warp_psi_bh_inlet_pos: "0 < (0.009663204175 :: real)"
   by eval
 
-lemma statistical_mechanics_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma warp_psi_wh_outlet_pos: "0 < (0.501689416811 :: real)"
   by eval
 
-lemma stellar_multiplicity_catalog_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
   by eval
 
-lemma stellar_multiplicity_catalog_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_info_preservation_pos: "0 < (0.981227203621 :: real)"
   by eval
 
-lemma stellar_multiplicity_catalog_observable_count_pos: "0 < (68 :: nat)"
+lemma warp_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
   by eval
 
-lemma stellar_multiplicity_catalog_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma warp_psi_traverse_pos: "0 < (0.0004641395 :: real)"
   by eval
 
-lemma stellar_multiplicity_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_portal_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
   by eval
 
-lemma stellar_multiplicity_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma warp_bh_wh_portal_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma stellar_multiplicity_live_deep_observable_count_pos: "0 < (69 :: nat)"
+lemma warp_bh_wh_portal_observable_count_pos: "0 < (11 :: nat)"
   by eval
 
-lemma stellar_multiplicity_live_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma warp_bh_wh_linked_to_blackhole_domain: "0 < (2.427813814074099 :: real)"
   by eval
 
-lemma structure_calibration_residue_count_pos: "0 < (32338 :: nat)"
+lemma wds_live_multiplicity_deep_observable_count_pos: "0 < (281 :: nat)"
   by eval
 
-lemma structure_calibration_burial_beats_fifty_pct: "(50.0 :: real) < (59.47 :: real)"
+lemma wds_live_multiplicity_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
   by eval
 
-lemma stsci_mast_telescope_observable_count_pos: "0 < (377 :: nat)"
+lemma weather_S_min_positive: "0 < (0.364542 :: real)"
   by eval
 
-lemma stsci_mast_telescope_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
+lemma weather_hour_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma stumped_panel_pooled_median_under_half_pct: "(0.039905 :: real) < (0.5 :: real)"
+lemma world_bank_development_observable_count_pos: "0 < (420 :: nat)"
   by eval
 
-lemma stumped_panel_headline_median_under_half_pct: "(0.039905 :: real) < (0.5 :: real)"
+lemma world_bank_development_median_error_under_five_pct: "(0.02584 :: real) < (5.0 :: real)"
   by eval
 
-lemma stumped_panel_observable_count_pos: "0 < (14 :: nat)"
+lemma xr_interactive_media_math_scaffold_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma stumped_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma xr_interactive_media_math_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

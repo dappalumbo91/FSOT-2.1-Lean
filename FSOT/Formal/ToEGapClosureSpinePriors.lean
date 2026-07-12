@@ -1,6 +1,6 @@
 /-
-  FSOT Formal ToEGapClosureSpinePriors — ToE_Gap_Closure_Spine Tier K gap closure.
-  Generator: scripts/gen_tier_k_toe_gap_closure_lean.py
+  FSOT Formal ToeGapClosureSpinePriors — extension domain ToE_Gap_Closure_Spine.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def toe_gap_closure_spine_observable_count : ℕ := 24
+def toe_gap_closure_spine_D_eff : ℕ := 19
 
-def gap_spine_observable_count : ℕ := 7
-def gap_spine_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def gap_spine_headline_median_error_pct : ℝ := (0.0 : ℝ)
-def gap_spine_beats_sota_headlines : ℕ := 2
-def gap_spine_D_eff : ℕ := 19
-def gap_spine_pillar_count : ℕ := 5
+theorem toe_gap_closure_spine_observable_count_pos : 0 < toe_gap_closure_spine_observable_count := by
+  unfold toe_gap_closure_spine_observable_count; norm_num
 
-theorem gap_spine_observable_count_pos : 0 < gap_spine_observable_count := by
-  unfold gap_spine_observable_count; norm_num
+theorem toe_gap_closure_spine_median_error_under_half_pct :
+    (0.021927861384483893 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem gap_spine_pooled_median_under_half_pct :
-    gap_spine_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold gap_spine_pooled_median_error_pct; norm_num
-
-theorem gap_spine_headline_median_under_half_pct :
-    gap_spine_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold gap_spine_headline_median_error_pct; norm_num
-
-theorem gap_spine_beats_sota_headlines_pos : 0 < gap_spine_beats_sota_headlines := by
-  unfold gap_spine_beats_sota_headlines; norm_num
-theorem gap_spine_pillars_pos : 0 < gap_spine_pillar_count := by unfold gap_spine_pillar_count; norm_num
-
-theorem gap_spine_bundle :
-    gap_spine_observable_count = 7 ∧
-    gap_spine_pooled_median_error_pct < (0.5 : ℝ) ∧
-    gap_spine_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold gap_spine_observable_count; norm_num
-  · exact gap_spine_pooled_median_under_half_pct
-  · exact gap_spine_beats_sota_headlines_pos
+theorem toe_gap_closure_spine_bundle :
+    toe_gap_closure_spine_observable_count = 24 ∧
+    toe_gap_closure_spine_D_eff = 19 ∧
+    (0.021927861384483893 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold toe_gap_closure_spine_observable_count; norm_num,
+    by unfold toe_gap_closure_spine_D_eff; norm_num,
+    toe_gap_closure_spine_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

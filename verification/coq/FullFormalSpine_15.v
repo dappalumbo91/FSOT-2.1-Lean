@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 16/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 16/17 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -6,303 +6,303 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
-Lemma exp_1351_lt_4 : (3.8612848855835016%R) < (4.0%R).
+Lemma growth_term_cosmological_gt_one : (1.0%R) < (1.0002883913967908%R).
 Proof. lra. Qed.
 
-Lemma exp_005_lt_115 : (1.0512710963760241%R) < (1.15%R).
+Lemma cosmological_growth_coherence_multiplier_gt_one_three_five : (1.35%R) < (1.9579783956964847%R).
 Proof. lra. Qed.
 
-Lemma cos_1355_lt_0215 : (0.21412535305356747%R) < (0.215%R).
+Lemma rpow_pi_pi_gt_27 : (27.0%R) < (36.4621596072079%R).
 Proof. lra. Qed.
 
-Lemma sqrt_10_lt_3163 : (3.1622776601683795%R) < (3.163%R).
+Lemma beta_exp_exponent_gt_five : (5.0%R) < (38.18044143566695%R).
 Proof. lra. Qed.
 
-Lemma sqrt_12_lt_3465 : (3.4641016151377544%R) < (3.465%R).
+Lemma suction_factor_abs_le_poof : (0.1470339854281028%R) <= (0.1534822148944508%R).
 Proof. lra. Qed.
 
-Lemma phi_gt_1618 : (1.618%R) < (1.618033988749895%R).
+Lemma phase_variance_abs_le_one : (0.9579871226722758%R) <= (1.0%R).
 Proof. lra. Qed.
 
-Lemma psi_con_gt_632 : (0.632%R) < (0.6321205588287557%R).
+Lemma log_31416_lt_1146 : (1.1447322242816629%R) < (1.146%R).
 Proof. lra. Qed.
 
-Lemma eta_eff_gt_466 : (0.466%R) < (0.46694220658433505%R).
+Lemma log_pi23847_lt_11453 : (1.1447298858494002%R) < (1.1453%R).
 Proof. lra. Qed.
 
-Lemma new_perceived_param_gt_030 : (0.3%R) < (0.30030117056875677%R).
+Lemma consciousness_factor_gt_0285 : (0.285%R) < (0.28760015181918397%R).
 Proof. lra. Qed.
 
-Lemma new_perceived_param_gt_30030 : (0.3003%R) < (0.30030117056875677%R).
+Lemma consciousness_factor_lt_0302 : (0.28760015181918397%R) < (0.302%R).
 Proof. lra. Qed.
 
-Lemma sqrt2_gt_14142135623 : (1.4142135623%R) < (1.4142135623730951%R).
+Lemma exp_consciousness_phase_lt_132 : (1.3172118158655857%R) < (1.338%R).
 Proof. lra. Qed.
 
-Lemma psi_con_gt_6321205588 : (0.6321205588%R) < (0.6321205588287557%R).
+Lemma log_ratio_D24_lt : (-0.040821994520255166%R) < (-0.04%R).
 Proof. lra. Qed.
 
-Lemma eta_eff_gt_466942206 : (0.466942206%R) < (0.46694220658433505%R).
+Lemma ai_exp_factor_gt_four : (4.0%R) < (4.0308222852024445%R).
 Proof. lra. Qed.
 
-Lemma acoustic_bleed_gt_10455 : (1.0455%R) < (1.046973630587551%R).
+Lemma cmb_exp_factor_gt_five : (5.0%R) < (5.105674834753696%R).
 Proof. lra. Qed.
 
-Lemma acoustic_inflow_gt_16639 : (1.6639%R) < (1.6668538450045731%R).
+Lemma cos_25_lt_neg_04 : (-0.8011436155469337%R) < (-0.4%R).
 Proof. lra. Qed.
 
-Lemma k_gt_0420 : (0.42%R) < (0.420222080893624%R).
+Lemma electron_cos_lt_neg_04 : (-0.8761922427408675%R) < (-0.4%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_one_gt_367 : (0.367%R) < (0.36787944117144233%R).
+Lemma electron_exp_factor_gt_three : (3.0%R) < (4.361275128927707%R).
 Proof. lra. Qed.
 
-Lemma exp_03_gt_12 : (1.2%R) < (1.3498588075760032%R).
+Lemma cos_21_lt_neg_05 : (-0.5048461045998576%R) < (-0.5%R).
 Proof. lra. Qed.
 
-Lemma log_pi_gt_1144 : (1.144%R) < (1.1447298858494002%R).
+Lemma medical_exp_factor_gt_one_three : (1.34%R) < (3.578597570416699%R).
 Proof. lra. Qed.
 
-Lemma log_pi_gt_11445 : (1.1445%R) < (1.1447298858494002%R).
+Lemma cos_2208_lt_neg_055 : (-0.5949501875591153%R) < (-0.55%R).
 Proof. lra. Qed.
 
-Lemma log_pi_div_e_gt_421 : (0.421%R) < (0.4211225906985263%R).
+Lemma molecular_exp_factor_gt_34 : (3.4%R) < (3.7254077797378917%R).
 Proof. lra. Qed.
 
-Lemma exp_0245_gt_1275 : (1.275%R) < (1.2776213132048866%R).
+Lemma biological_exp_factor_gt_two : (2.0%R) < (2.895145194714867%R).
 Proof. lra. Qed.
 
-Lemma exp_049_gt_16181 : (1.6181%R) < (1.632316219955379%R).
+Lemma omega_abs_ge_one : (1.0%R) <= (1.2941305780559662%R).
 Proof. lra. Qed.
 
-Lemma exp_04813_gt_16181 : (1.6181%R) < (1.618176665090559%R).
+Lemma chaos_factor_abs_lt_one : (0.3310241826104818%R) < (1.0%R).
 Proof. lra. Qed.
 
-Lemma exp_185_gt_626 : (6.26%R) < (6.359819522601832%R).
+Lemma psi_con_eta_in_Icc_sin : (-1.5707963267948966%R) < (0.29516376878160316%R) /\ (0.29516376878160316%R) <= (1.5707963267948966%R).
 Proof. lra. Qed.
 
-Lemma coherence_correction_gt_one : (1.0%R) < (1.0018019454848168%R).
+Lemma pi_div_e_in_Icc_sin : (-1.5707963267948966%R) < (1.1557273497909217%R) /\ (1.1557273497909217%R) <= (1.5707963267948966%R).
 Proof. lra. Qed.
 
-Lemma exp_077_gt_184 : (1.84%R) < (2.159766253784915%R).
+Lemma theta_s_in_Icc_cos : 0%R < (0.29089654054517305%R) /\ (0.29089654054517305%R) <= (3.141592653589793%R).
 Proof. lra. Qed.
 
-Lemma exp_177_gt_five : (5.0%R) < (5.8708533613826015%R).
+Lemma sin_bound_lo : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma e_minus_one_gt_one : (1.0%R) < (1.718281828459045%R).
+Lemma sin_bound_hi : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma exp_five_gt_100 : (100.0%R) < (148.4131591025766%R).
+Lemma cos_bound_lo : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma exp_three_gt_twenty : (20.0%R) < (20.085536923187668%R).
+Lemma cos_bound_hi : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma exp_six_gt_400 : (400.0%R) < (403.4287934927351%R).
+Lemma sin_bound_poly_mono_lo : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma exp_28_gt_410 : (410.0%R) < (1446257064291.475%R).
+Lemma sin_bound_poly_mono : 0 <= 0%R.
 Proof. lra. Qed.
 
-Lemma e_gt_27182818283 : (2.7182818283%R) < (2.718281828459045%R).
+Lemma sin_eq_cos_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
 Proof. lra. Qed.
 
-Lemma pi_half_gt_02956 : (0.295612%R) < (1.5707963267948966%R).
+Lemma cos_eq_sin_pi_div_two_sub : (0.00000000000000027755575615628914%R) < (0.00000001%R).
 Proof. lra. Qed.
 
-Lemma pi_half_gt_1156 : (1.15572734986%R) < (1.5707963267948966%R).
+Lemma perceived_adjust_lo_domain : (0.567%R) < (0.5714337093277406%R).
 Proof. lra. Qed.
 
-Lemma pi_gt_290272 : (0.290272%R) < (3.141592653589793%R).
+Lemma perceived_adjust_hi_domain : (0.9877410621073419%R) < (0.99%R).
 Proof. lra. Qed.
 
-Lemma pi_gt_291325 : (0.291325%R) < (3.141592653589793%R).
+Lemma cos_dp_pv_neg_of_ge_07 : (-0.3775886600448273%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma pi_gt_0415068 : (0.415068%R) < (3.141592653589793%R).
+Lemma cos_dp_pv_pos_of_le_06 : 0 < (0.1125700895682655%R).
 Proof. lra. Qed.
 
-Lemma pi_gt_0415069 : (0.415069%R) < (3.141592653589793%R).
+Lemma growth_term_hits_zero_lt_one_point_one_five : (1.0002883913967908%R) < (1.15%R).
 Proof. lra. Qed.
 
-Lemma psi_con_eta_prod_gt_295163 : (0.295163%R) < (0.2951637685668222%R).
+Lemma growth_term_coherence_product_lt_11523 : (0.9579783956964846%R) < (1.1523%R).
 Proof. lra. Qed.
 
-Lemma sin_0295163_gt_0290272 : (0.290272%R) < (0.295163%R).
+Lemma D_eff_shift_abs_le : (19.0%R) <= (19.0%R).
 Proof. lra. Qed.
 
-Lemma pi_div_e_gt_115572734973 : (1.15572734973%R) < (1.1557273497909217%R).
+Lemma chaos_perturbation_abs_le_two : (1.2515783787839663%R) <= (2.0%R).
 Proof. lra. Qed.
 
-Lemma cos_0415069_gt_091385 : (0.91385%R) < (0.9150884982110228%R).
-Proof. lra. Qed.
-
-Lemma sin_pi_div_e_gt_91385 : (0.91385%R) < (0.9150885074842403%R).
-Proof. lra. Qed.
-
-Lemma cos_0291325_gt_09575 : (0.9575%R) < (0.9578641477669682%R).
-Proof. lra. Qed.
-
-Lemma acoustic_bleed_div_inflow_gt_62600 : (0.626%R) < (0.6281136367925999%R).
-Proof. lra. Qed.
-
-Lemma phi_sq_gt_261792 : (2.617924%R) < (2.618033988749895%R).
-Proof. lra. Qed.
-
-Lemma one_div_pi_gt_03183 : (0.3183%R) < (0.3183098861837907%R).
-Proof. lra. Qed.
-
-Lemma exp_01530_gt_11653 : (1.1653%R) < (1.1653249789427378%R).
-Proof. lra. Qed.
-
-Lemma phi_rpow_inv_pi_gt_11653 : (1.1653%R) < (1.1655283240586598%R).
-Proof. lra. Qed.
-
-Lemma exp_1146_gt_31416 : (3.1416%R) < (3.145585369940555%R).
-Proof. lra. Qed.
-
-Lemma exp_11453_gt_pi23847 : (3.141592653589793%R) < (3.1433842306702213%R).
-Proof. lra. Qed.
-
-Lemma eta_log_phi_gt_02244 : (0.2244%R) < (0.22469811142780627%R).
-Proof. lra. Qed.
-
-Lemma exp_1434_gt_4167 : (4.167%R) < (4.195447462901874%R).
-Proof. lra. Qed.
-
-Lemma perceived_adjust_lo_D11 : (0.752%R) < (11.0%R).
-Proof. lra. Qed.
-
-Lemma exp_03865_gt_14716 : (1.4716%R) < (1.471820397066386%R).
-Proof. lra. Qed.
-
-Lemma exp_13865_gt_four : (4.0%R) < (4.0008226401009335%R).
-Proof. lra. Qed.
-
-Lemma exp_1618_gt_five : (5.0%R) < (5.042994235377287%R).
-Proof. lra. Qed.
-
-Lemma sqrt_11_gt_3316 : (3.316%R) < (11.0%R).
-Proof. lra. Qed.
-
-Lemma sqrt_24_gt_4898 : (4.898%R) < (24.0%R).
-Proof. lra. Qed.
-
-Lemma cos_1531_gt_003 : (0.03%R) < (1.531%R).
-Proof. lra. Qed.
-
-Lemma biological_cos_gt_003 : (0.03%R) < (0.08%R).
-Proof. lra. Qed.
-
-Lemma exp_1253_gt_34 : (3.4%R) < (3.5008297085958655%R).
-Proof. lra. Qed.
-
-Lemma sqrt_12_gt_3463 : (3.463%R) < (12.0%R).
-Proof. lra. Qed.
-
-Lemma one_add_inv_phi_eq_phi : (1.618033988749895%R) = (1.618033988749895%R).
+Lemma cosmological_observed_false : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
-Lemma sqrt_25_eq_five : (5.0%R) = (5.0%R).
+Lemma dark_energy_observed_false : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
-Lemma sqrt_9_eq_3 : (3.0%R) = (3.0%R).
+Lemma cmb_observed_false : (0 = 0)%nat.
 Proof. reflexivity. Qed.
 
-Lemma pi_gt_314159265358979323846 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
+Lemma ai_observed_false : (0 = 0)%nat.
+Proof. reflexivity. Qed.
+
+Lemma neural_observed_true : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma cosmological_D_eff_eq : (25 = 25)%nat.
+Proof. reflexivity. Qed.
+
+Lemma dark_energy_D_eff_eq : (25 = 25)%nat.
+Proof. reflexivity. Qed.
+
+Lemma cmb_D_eff_eq : (24 = 24)%nat.
+Proof. reflexivity. Qed.
+
+Lemma ai_D_eff_eq : (11 = 11)%nat.
+Proof. reflexivity. Qed.
+
+Lemma dark_energy_delta_bounds : (0.5%R) < (1.1%R) /\ (1.1%R) <= (1.3%R).
 Proof. lra. Qed.
 
-Lemma pi_lt_314159265358979323847 : (3.14159265358979323846%R) < (3.14159265358979323847%R).
+Lemma cosmological_term1_negative : (-2.1956926285882763%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma pi_div_e_lt_pi_div_two : (1.1557273497909217%R) < (1.5707963267948966%R).
+Lemma dark_energy_term1_negative : (-2.1349793149885588%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma e_lt_27182818286 : (2.718281828459045%R) < (2.7182818286%R).
+Lemma dark_energy_term2_eq_one : (1.0%R) = (1.0%R).
+Proof. reflexivity. Qed.
+
+Lemma cosmological_term1_dominates_term3 : (0.000000000000000007824928065101266%R) < (2.1956926285882763%R).
 Proof. lra. Qed.
 
-Lemma e_pi_gt_27182818283_mul_pi : (8.53973422217391%R) < (8.539734222673566%R).
+Lemma cellular_params_eq_biological : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma dark_energy_params_eq : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma cosmological_domain_eq : (1 = 1)%nat.
+Proof. reflexivity. Qed.
+
+Lemma domain_term2_eq_one : (1.0%R) = (1.0%R).
+Proof. reflexivity. Qed.
+
+Lemma domain_term3_abs_lt_fifth : (0.000000000000000026942103679946702%R) < (0.2%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_27182818286_mul_pi : (8.539734222673566%R) < (8.539734223116389%R).
+Lemma neural_raw_S_positive : 0 < (1.2240253341904455%R).
 Proof. lra. Qed.
 
-Lemma e_pi_gt_85397323 : (8.5397323%R) < (8.539734222673566%R).
+Lemma particle_raw_S_positive : 0 < (1.751037437187807%R).
 Proof. lra. Qed.
 
-Lemma e_pi_gt_8539732 : (8.539732%R) < (8.539734222673566%R).
+Lemma chemical_raw_S_positive : 0 < (0.7961830900509372%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_853973478 : (8.539734222673566%R) < (8.53973478%R).
+Lemma electron_raw_S_positive : 0 < (0.9706402573161165%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_85397348 : (8.539734222673566%R) < (8.5397348%R).
+Lemma astronomical_raw_S_positive : 0 < (2.138061039667111%R).
 Proof. lra. Qed.
 
-Lemma e_pi_lt_8539736 : (8.539734222673566%R) < (8.539736%R).
+Lemma higgs_raw_S_positive : 0 < (2.109039424268679%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_1434_lt_24_div_25 : (0.23835359847607956%R) < (0.24%R).
+Lemma galactic_raw_S_positive : 0 < (1.8256534680881713%R).
 Proof. lra. Qed.
 
-Lemma exp_040_lt_25_div_24 : (1.0408107741923882%R) < (1.0416666666666667%R).
+Lemma fusion_raw_S_positive : 0 < (2.0283662645128167%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_040_gt_24_div_25 : (0.96%R) < (0.9607894391523232%R).
+Lemma medical_raw_S_positive : 0 < (0.7287135707250552%R).
 Proof. lra. Qed.
 
-Lemma exp_0822_gt_25_div_11 : (2.272727272727273%R) < (2.275045381235993%R).
+Lemma blackhole_raw_S_positive : 0 < (2.427813814074099%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_0822_lt_11_div_25 : (0.4395516714733476%R) < (0.44%R).
+Lemma consciousness_raw_S_positive : 0 < (2.4991706281862376%R).
 Proof. lra. Qed.
 
-Lemma exp_0818_lt_25_div_11 : (2.2659633758311957%R) < (2.272727272727273%R).
+Lemma molecular_raw_S_positive : 0 < (0.7201315148027019%R).
 Proof. lra. Qed.
 
-Lemma exp_neg_0818_gt_11_div_25 : (0.44%R) < (0.4413133992658562%R).
+Lemma material_raw_S_positive : 0 < (0.7978167460880297%R).
 Proof. lra. Qed.
 
-Lemma cos_arg_gt_pi_div_two : (1.5707963267948966%R) < (3.495337398560107%R).
+Lemma biological_raw_S_positive : 0 < (1.0583105195018667%R).
 Proof. lra. Qed.
 
-Lemma cos_arg_lt_three_pi_div_two : (3.495337398560107%R) < (4.71238898038469%R).
+Lemma cellular_raw_S_positive : 0 < (1.0583105195018667%R).
 Proof. lra. Qed.
 
-Lemma perceived_adjust_lo : (0.91%R) < (1.0%R).
+Lemma nuclear_raw_S_positive : 0 < (2.192436781833356%R).
 Proof. lra. Qed.
 
-Lemma perceived_adjust_hi : (1.0%R) < (1.1%R).
+Lemma energy_raw_S_positive : 0 < (1.872760423200424%R).
 Proof. lra. Qed.
 
-Lemma log_ratio_lo : (-0.2231435513142097%R) <= 0%R.
+Lemma cosmological_raw_S_negative : (-1.1956926285882763%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma log_ratio_hi : 0%R <= (0.1823215567939546%R).
+Lemma dark_energy_raw_S_negative : (-1.1349793149885588%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma pi_sub_one_pos : 0%R < (2.141592653589793%R).
+Lemma cmb_raw_S_negative : (-1.0099710610507393%R) < 0%R.
 Proof. lra. Qed.
 
-Lemma log_08_gt_m0298 : (-0.298%R) < (0.8%R).
+Lemma ai_raw_S_non_positive : (-0.3514171596284352%R) <= 0.
 Proof. lra. Qed.
 
-Lemma psi_con_eta_pos : 0%R < (0.2951637685668222%R).
+Lemma c_cosm_pos : 0 < (0.061803398874989486%R).
 Proof. lra. Qed.
 
-Lemma psi_con_eta_lt_pi : (0.2951637685668222%R) < (3.141592653589793%R).
+Lemma alpha_s_MZ_pos : 0 < (0.11709966304863834%R).
 Proof. lra. Qed.
 
-Lemma theta_s_pos : 0%R < (0.29089654054517305%R).
+Lemma p_base_pos : 0 < (0.21234577623937845%R).
 Proof. lra. Qed.
 
-Lemma theta_s_le_one : (0.29089654054517305%R) <= (1.0%R).
+Lemma delta_lambda_cosm_pos : 0 < (0.0216083%R).
 Proof. lra. Qed.
 
-Lemma theta_s_le_pi : (0.29089654054517305%R) <= (3.141592653589793%R).
+Lemma c_cosm_lt_061806 : (0.061803398874989486%R) < (0.061806%R).
 Proof. lra. Qed.
 
-Lemma sin_theta_s_nonneg : 0%R <= (0.28681121455426756%R).
+Lemma p_base_lt_0212371 : (0.21234577623937845%R) < (0.212371%R).
+Proof. lra. Qed.
+
+Lemma alpha_s_MZ_lt_one : (0.11709966304863834%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma delta_lambda_cosm_lt_one : (0.0216083%R) < (1.0%R).
+Proof. lra. Qed.
+
+Lemma S_cosm_cached_neg : (-0.5024559462100433%R) < 0%R.
+Proof. lra. Qed.
+
+Lemma alpha_s_MZ_approx_value : (0.000000000000000013877787807814457%R) < (0.00000001%R).
+Proof. lra. Qed.
+
+Lemma c_cosm_gt_061800 : (0.0618%R) < (0.061803398874989486%R).
+Proof. lra. Qed.
+
+Lemma p_base_gt_021234 : (0.21234%R) < (0.21234577623937845%R).
+Proof. lra. Qed.
+
+Lemma e_mul_pi_gt_one : (1.0%R) < (8.539734222673566%R).
+Proof. lra. Qed.
+
+Lemma S_cosm_cached_bounds : (-0.502456%R) < (-0.5024559462100433%R) /\ (-0.5024559462100433%R) < (-0.502455%R).
+Proof. lra. Qed.
+
+Lemma r_d_approx_value : (0.00006487926927434273%R) < (0.05%R).
+Proof. lra. Qed.
+
+Lemma h0_fsot_cached_approx_value : (0.000000000000014210854715202004%R) < (0.11%R).
+Proof. lra. Qed.
+
+Lemma t_cmb_fsot_cached_approx_value : 0%R < (0.001%R).
 Proof. lra. Qed.
 

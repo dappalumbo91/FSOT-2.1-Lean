@@ -1,8 +1,12 @@
 {
-  "generated_at": "2026-07-11T15:14:56.193298+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T14:24:25.952512+00:00",
+  "domain": "Trinary_OS_Portable",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "vendor/trinary_os",
-    "data/trinary_os_manifest.yaml"
+    "data/trinary_os_manifest.yaml",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -10,48 +14,83 @@
     "neural"
   ],
   "D_eff": 12,
-  "oracle_count": 3,
-  "record_count": 8,
-  "observable_count": 8,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 18,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Trinary_OS_Portable_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
   "records": [
     {
-      "lab": "trinary_os_portable",
-      "property": "seeds_hash_hex",
-      "computed": "0xc627292ec4eb3b90",
-      "measured": "0xc627292ec4eb3b90",
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
-      "display_name": "seeds hash hex",
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Trinary_OS_Portable_depth",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
       "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
     },
     {
-      "lab": "trinary_os_portable",
-      "property": "panel_S_hex",
-      "computed": "0x3fee69c97260701a",
-      "measured": "0x3fee69c97260701a",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
-      "display_name": "panel S hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "trinary_os_portable",
+      "lab": "trinary_os_portable_depth_lab",
       "property": "hello_file_size",
+      "abi_tier": "v1_0",
       "computed": 264,
       "measured": 264,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
+      "domain_display_name": "trinary os isa rebuild",
       "display_name": "hello file size",
       "scientific_measurement": {
         "delta": 0.0,
@@ -63,15 +102,43 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Trinary_OS_ISA_Rebuild",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_ISA_Rebuild"
     },
     {
-      "lab": "trinary_os_portable",
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "hello_instructions",
+      "abi_tier": "v1_0",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "hello instructions",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_ISA_Rebuild",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_ISA_Rebuild"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
       "property": "call_ret_file_size",
+      "abi_tier": "v1_1",
       "computed": 312,
       "measured": 312,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
+      "domain_display_name": "trinary os isa rebuild",
       "display_name": "call ret file size",
       "scientific_measurement": {
         "delta": 0.0,
@@ -83,16 +150,20 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Trinary_OS_ISA_Rebuild",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_ISA_Rebuild"
     },
     {
-      "lab": "trinary_os_portable",
-      "property": "spawn_join_file_size",
-      "computed": 440,
-      "measured": 440,
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "call_ret_instructions",
+      "abi_tier": "v1_1",
+      "computed": 10,
+      "measured": 10,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
-      "display_name": "spawn join file size",
+      "domain_display_name": "trinary os isa rebuild",
+      "display_name": "call ret instructions",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -103,16 +174,74 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Trinary_OS_ISA_Rebuild",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_ISA_Rebuild"
     },
     {
-      "lab": "trinary_os_portable",
-      "property": "num_task_slots",
-      "computed": 8,
-      "measured": 8,
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "eeg_dataset_count",
+      "name": "openneuro_eeg_dataset_count",
+      "computed": 444.079932,
+      "measured": 444.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "source_panel": "OpenNeuro_Full_Panel",
+      "depth_relay_from": "OpenNeuro_Full_Panel"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "mri_dataset_count",
+      "name": "openneuro_mri_dataset_count",
+      "computed": 56.010081,
+      "measured": 56.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "source_panel": "OpenNeuro_Full_Panel",
+      "depth_relay_from": "OpenNeuro_Full_Panel"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001785",
+      "computed": 1.000154,
+      "measured": 1.0,
+      "error_pct": 0.015431,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "dataset_name": "Perithreshold Tactile detection task with confidence",
+      "source_panel": "OpenNeuro_Full_Panel",
+      "depth_relay_from": "OpenNeuro_Full_Panel"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001787",
+      "computed": 1.000154,
+      "measured": 1.0,
+      "error_pct": 0.015431,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "dataset_name": "EEG meditation study",
+      "source_panel": "OpenNeuro_Full_Panel",
+      "depth_relay_from": "OpenNeuro_Full_Panel"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "hello_blob_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
-      "display_name": "num task slots",
+      "domain_display_name": "trinary os round trip",
+      "display_name": "hello blob size",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -123,16 +252,20 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Trinary_OS_Round_Trip",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Round_Trip"
     },
     {
-      "lab": "trinary_os_portable",
-      "property": "trit_word_width",
-      "computed": 27,
-      "measured": 27,
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "hello_round_trip_byte_identical",
+      "abi_tier": "v1_0",
+      "computed": 1,
+      "measured": 1,
       "error_pct": 0.0,
-      "domain_display_name": "trinary os portable",
-      "display_name": "trit word width",
+      "domain_display_name": "trinary os round trip",
+      "display_name": "hello round trip byte identical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -143,16 +276,56 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Trinary_OS_Round_Trip",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Round_Trip"
     },
     {
-      "lab": "trinary_os_portable",
-      "property": "cortical_layers",
-      "computed": 6,
-      "measured": 6,
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
       "error_pct": 0.0,
       "domain_display_name": "trinary os portable",
-      "display_name": "cortical layers",
+      "display_name": "seeds hash hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0,
+      "domain_display_name": "trinary os portable",
+      "display_name": "panel S hex",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Trinary_OS_Tier_E",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Trinary_OS_Tier_E"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "S_positive",
+      "name": "Genesis 1:1",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:1",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -163,21 +336,277 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "D_eff",
+      "name": "Genesis 1:1",
+      "computed": 25.0,
+      "measured": 25.0,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "S_positive",
+      "name": "Genesis 1:2",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "D_eff",
+      "name": "Genesis 1:2",
+      "computed": 24.5,
+      "measured": 24.5,
+      "error_pct": 0.0,
+      "domain_display_name": "omni theory genesis",
+      "display_name": "Genesis 1:2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Omni_Theory_Genesis",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Omni_Theory_Genesis"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "historical_coupled_dst_kp_storm_classifier",
+      "name": "historical_coupled_dst_kp_storm_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 120879,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "historical coupled dst kp storm classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      },
+      "source_panel": "Magnetosphere_Extended",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Magnetosphere_Extended"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "storm_holdout_g_scale_classifier",
+      "name": "storm_holdout_g_scale_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 91421,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "storm holdout g scale classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      },
+      "source_panel": "Magnetosphere_Extended",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Magnetosphere_Extended"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "solar_wind_bz_southward_classifier",
+      "name": "solar_wind_bz_southward_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 1416,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "solar wind bz southward classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      },
+      "source_panel": "Magnetosphere_Extended",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Magnetosphere_Extended"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "property": "median_error_pct",
+      "name": "pooled_magnetosphere_extended_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 122295,
+      "domain_display_name": "magnetosphere extended",
+      "display_name": "pooled magnetosphere extended classifier",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "misclassification_pct"
+      },
+      "source_panel": "Magnetosphere_Extended",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Magnetosphere_Extended"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "trinary_os_portable_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
     }
   ],
-  "display_name": "Trinary OS Portable",
-  "tier_label": "Tier 30",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.439238+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 8,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 8
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.015431,
+    "classifier_count": 3,
+    "classifier_correct": 3,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

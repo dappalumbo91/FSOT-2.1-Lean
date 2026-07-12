@@ -1,0 +1,2605 @@
+{
+  "generated_at": "2026-07-12T14:00:12.233935+00:00",
+  "summary": {
+    "fsot_formula_core_domains": 35,
+    "core_domains_with_empirical_data": 35,
+    "core_total_empirical_records": 306680,
+    "extension_panels_verified": 263,
+    "total_scientific_surface": 299,
+    "tier_A_strong": 103,
+    "tier_B_verified": 121,
+    "tier_C_thin": 75,
+    "lean_formal_modules": 337,
+    "credential_free_policy": "scripts/public_api_policy.py"
+  },
+  "core_35_depth_audit": [
+    {
+      "fsot_core_domain": "Optics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 9,
+      "subfields_touched_by_fsot": 2,
+      "coverage_vs_field_pct": 22.2,
+      "depth_note": "MAST wavelengths; thin on interferometry, nonlinear optics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Psychology",
+      "empirical_records": 10,
+      "median_error_pct": 0.0013504254899468224,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 302,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 3,
+      "coverage_vs_field_pct": 25.0,
+      "depth_note": "OpenAlex/citations; thin on psychometrics, RCT outcomes",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Quantum_Computing",
+      "empirical_records": 3,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 2,
+      "coverage_vs_field_pct": 25.0,
+      "depth_note": "Classifier/scaffold; thin on gate fidelity, error correction",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Acoustics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 7,
+      "subfields_touched_by_fsot": 2,
+      "coverage_vs_field_pct": 28.6,
+      "depth_note": "SMILES relay; thin on sonar, architectural acoustics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Condensed_Matter",
+      "empirical_records": 2154,
+      "median_error_pct": 0.2350703412848426,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 14,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 28.6,
+      "depth_note": "Materials/quantum materials; thin on superconductivity Tc",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Quantum_Optics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 7,
+      "subfields_touched_by_fsot": 2,
+      "coverage_vs_field_pct": 28.6,
+      "depth_note": "Cross-domain; thin on squeezed light, cavity QED",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Biology",
+      "empirical_records": 234498,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 153,
+      "field_subfields_studied_in_discipline": 20,
+      "subfields_touched_by_fsot": 6,
+      "coverage_vs_field_pct": 30.0,
+      "depth_note": "UniProt/GBIF/NCBI; thin on developmental, structural bio",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Quantum_Mechanics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 3,
+      "coverage_vs_field_pct": 30.0,
+      "depth_note": "NIST constants; thin on entanglement benchmarks, decoherence",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Sociology",
+      "empirical_records": 10,
+      "median_error_pct": 0.0013504254899468224,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 114,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 3,
+      "coverage_vs_field_pct": 30.0,
+      "depth_note": "UAP years/registry; thin on survey panels, networks",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Neuroscience",
+      "empirical_records": 3636,
+      "median_error_pct": 24.522634418835963,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 122,
+      "field_subfields_studied_in_discipline": 15,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 33.3,
+      "depth_note": "OpenNeuro/neuron cohort; thin on connectomics, fMRI meta",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Particle_Physics",
+      "empirical_records": 98,
+      "median_error_pct": 0.014415233331492876,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 1,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 33.3,
+      "depth_note": "PDG/Higgs/CERN; thin on neutrino oscillation, lattice QCD",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Quantum_Gravity",
+      "empirical_records": 86,
+      "median_error_pct": 0.718,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 6,
+      "subfields_touched_by_fsot": 2,
+      "coverage_vs_field_pct": 33.3,
+      "depth_note": "Scaffold/crosswalk; thin on LQG observables",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Materials_Science",
+      "empirical_records": 2154,
+      "median_error_pct": 0.2350703412848426,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 121,
+      "field_subfields_studied_in_discipline": 14,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 35.7,
+      "depth_note": "Materials Project bundled; thin on creep, fracture",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Atomic_Physics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 3,
+      "coverage_vs_field_pct": 37.5,
+      "depth_note": "CODATA + periodic table; thin on Rydberg molecules, laser cooling",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Atmospheric_Physics",
+      "empirical_records": 24,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 288,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "Weather/climate; thin on aerosol microphysics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Chemistry",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 5216,
+      "field_subfields_studied_in_discipline": 15,
+      "subfields_touched_by_fsot": 6,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "PubChem/CRC; thin on organometallic, solid-state synth",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Economics",
+      "empirical_records": 10,
+      "median_error_pct": 0.0013504254899468224,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 427,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "World Bank/Crossref; thin on macro VAR, trade gravity",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Fluid_Dynamics",
+      "empirical_records": 27,
+      "median_error_pct": 99.3,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "Fluid spacetime + HVAC; thin on turbulence DNS",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Nuclear_Physics",
+      "empirical_records": 1498,
+      "median_error_pct": 0.718,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 201,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "OSTI/HEP; thin on cross-section databases",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Physical_Chemistry",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 40.0,
+      "depth_note": "PubChem thermochem; thin on kinetics, surface chem",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Biochemistry",
+      "empirical_records": 1508,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 496,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 41.7,
+      "depth_note": "PDB/ChEMBL/ClinicalTrials; thin on metabolomics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Ecology",
+      "empirical_records": 13,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 2288,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 41.7,
+      "depth_note": "GBIF/iNaturalist; thin on food-web, population dynamics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Astrophysics",
+      "empirical_records": 274,
+      "median_error_pct": 0.03162247159570792,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 52,
+      "field_subfields_studied_in_discipline": 14,
+      "subfields_touched_by_fsot": 6,
+      "coverage_vs_field_pct": 42.9,
+      "depth_note": "Stellar/galactic; thin on stellar evolution grids",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Electromagnetism",
+      "empirical_records": 45888,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 800,
+      "field_subfields_studied_in_discipline": 9,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 44.4,
+      "depth_note": "GOES x-ray, geomagnetism; thin on antenna theory, plasmonics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Geophysics",
+      "empirical_records": 1049,
+      "median_error_pct": 0.0,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 246,
+      "field_subfields_studied_in_discipline": 11,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 45.5,
+      "depth_note": "USGS/seismology/grace; thin on magnetotellurics",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Oceanography",
+      "empirical_records": 24,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 361,
+      "field_subfields_studied_in_discipline": 11,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 45.5,
+      "depth_note": "NOAA tides/NDBC; thin on ARGO float profiles",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Astronomy",
+      "empirical_records": 162,
+      "median_error_pct": 0.022,
+      "extension_panels_routing_here": 7,
+      "fsot_prediction_records_in_extensions": 2960,
+      "field_subfields_studied_in_discipline": 15,
+      "subfields_touched_by_fsot": 7,
+      "coverage_vs_field_pct": 46.7,
+      "depth_note": "Gaia/SIMBAD/MAST/WDS; thin on radio VLBI",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Meteorology",
+      "empirical_records": 24,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 419,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 50.0,
+      "depth_note": "Open-Meteo/NDBC; thin on NWP ensemble verification",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Molecular_Chemistry",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 50.0,
+      "depth_note": "SMILES/PDB; thin on conformer ensembles",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Particle_Astrophysics",
+      "empirical_records": 216,
+      "median_error_pct": 0.03162247159570792,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 364,
+      "field_subfields_studied_in_discipline": 10,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 50.0,
+      "depth_note": "GWOSC/UAP; thin on cosmic-ray spectrum",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Planetary_Science",
+      "empirical_records": 74,
+      "median_error_pct": 0.03162247159570792,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 1044,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 6,
+      "coverage_vs_field_pct": 50.0,
+      "depth_note": "Exoplanet/JPL NEO/Horizons; thin on regolith, atm chemistry",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "Thermodynamics",
+      "empirical_records": 34,
+      "median_error_pct": 0.0,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 50.0,
+      "depth_note": "Fuel/NIST; thin on non-equilibrium, phase diagrams",
+      "coverage_tier": "B_verified"
+    },
+    {
+      "fsot_core_domain": "High_Energy_Physics",
+      "empirical_records": 158,
+      "median_error_pct": 0.03281523581363995,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 202,
+      "field_subfields_studied_in_discipline": 9,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 55.6,
+      "depth_note": "CERN/GWOSC/Higgs; thin on B-physics, jet substructure",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Cosmology",
+      "empirical_records": 288,
+      "median_error_pct": 0.022,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 12,
+      "subfields_touched_by_fsot": 7,
+      "coverage_vs_field_pct": 58.3,
+      "depth_note": "CMB/bubble-bleed/H0; thin on BAO full survey ingest",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Seismology",
+      "empirical_records": 1000,
+      "median_error_pct": 0.0,
+      "extension_panels_routing_here": 0,
+      "fsot_prediction_records_in_extensions": 0,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 62.5,
+      "depth_note": "USGS deep catalog; thin on full moment-tensor relay",
+      "coverage_tier": "A_strong"
+    }
+  ],
+  "extension_panel_index": [
+    {
+      "panel": "Plasma_Physics",
+      "tier": 12,
+      "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Immunology",
+      "tier": 12,
+      "records": 84,
+      "pooled_median_error_pct": 0.061205,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Climate_Science",
+      "tier": 12,
+      "records": 17296,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_climate_ncei_chunked.py"
+    },
+    {
+      "panel": "Cosmology_Extended",
+      "tier": 16,
+      "records": 58,
+      "pooled_median_error_pct": 0.021954848848277954,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Particle_Physics",
+      "tier": 16,
+      "records": 98,
+      "pooled_median_error_pct": 0.014415233331492876,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Higgs_Mass",
+      "tier": 17,
+      "records": 9,
+      "pooled_median_error_pct": 0.03990518384182655,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Space_Weather",
+      "tier": 17,
+      "records": 271813,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_space_weather_swpc.py"
+    },
+    {
+      "panel": "Hydrology",
+      "tier": 19,
+      "records": 960,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_hydrology_usgs_chunked.py"
+    },
+    {
+      "panel": "Pharmacology",
+      "tier": 20,
+      "records": 120,
+      "pooled_median_error_pct": 0.0011715432153059484,
+      "observed": true,
+      "ingest": "scripts/ingest_pharmacology_chembl.py"
+    },
+    {
+      "panel": "Cryosphere",
+      "tier": 20,
+      "records": 2399,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Seismology",
+      "tier": 21,
+      "records": 500,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_seismology_usgs.py"
+    },
+    {
+      "panel": "Tectonics",
+      "tier": 21,
+      "records": 500,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tectonics_plates.py"
+    },
+    {
+      "panel": "Geomagnetism",
+      "tier": 21,
+      "records": 525,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_geomagnetism_swpc.py"
+    },
+    {
+      "panel": "Planetary_Structure",
+      "tier": 21,
+      "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_planetary_jpl.py"
+    },
+    {
+      "panel": "Orbital_Mechanics",
+      "tier": 21,
+      "records": 9,
+      "pooled_median_error_pct": 0.106141,
+      "observed": true,
+      "ingest": "scripts/ingest_planetary_jpl.py"
+    },
+    {
+      "panel": "Small_Body_Orbits",
+      "tier": 22,
+      "records": 12,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_small_body_jpl.py"
+    },
+    {
+      "panel": "Magnetosphere",
+      "tier": 22,
+      "records": 167,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Grace_Cryosphere",
+      "tier": 23,
+      "records": 253,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_grace_greenland.py"
+    },
+    {
+      "panel": "Seismology_Deep",
+      "tier": 23,
+      "records": 1000,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_seismology_deep_usgs.py"
+    },
+    {
+      "panel": "Planetary_Atmospheres",
+      "tier": 23,
+      "records": 21,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_planetary_atmospheres_jpl.py"
+    },
+    {
+      "panel": "Cosmology_Bubble_Bleed",
+      "tier": 24,
+      "records": 113,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_nebula_lensing.py"
+    },
+    {
+      "panel": "Cosmology_Anomalies",
+      "tier": 25,
+      "records": 12,
+      "pooled_median_error_pct": 0.140126,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Magnetosphere_Extended",
+      "tier": 25,
+      "records": 122295,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_kyoto_dst_historical.py"
+    },
+    {
+      "panel": "Geochemistry",
+      "tier": 26,
+      "records": 153,
+      "pooled_median_error_pct": 0.006625234573930708,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Oncology",
+      "tier": 26,
+      "records": 67,
+      "pooled_median_error_pct": 0.05041956982053305,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neuroimmunology",
+      "tier": 26,
+      "records": 92,
+      "pooled_median_error_pct": 0.05041956982053305,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Synthetic_Biology",
+      "tier": 27,
+      "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Quantum_Materials",
+      "tier": 27,
+      "records": 168,
+      "pooled_median_error_pct": 0.024318115591995593,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neuron_Multi_Hero",
+      "tier": 27,
+      "records": 16,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Linguistics_Formal",
+      "tier": 29,
+      "records": 10,
+      "pooled_median_error_pct": 0.0013504254899468224,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Mathematics_Computational",
+      "tier": 29,
+      "records": 20,
+      "pooled_median_error_pct": 1.4090183367935627e-14,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Materials_Engineering",
+      "tier": 29,
+      "records": 87,
+      "pooled_median_error_pct": 0.027170334947435038,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Computational_Reasoning",
+      "tier": 29,
+      "records": 577,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Math_Generator_Rules_Eval",
+      "tier": 30,
+      "records": 1552,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Trinary_OS_Portable",
+      "tier": 30,
+      "records": 8,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Materials_Species_Bridge",
+      "tier": 30,
+      "records": 45,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "IGEM_Synthetic_Biology",
+      "tier": 31,
+      "records": 54,
+      "pooled_median_error_pct": 0.022236250385203583,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Math_Generator_Benchmark_Formula_Eval",
+      "tier": 31,
+      "records": 13,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Trinary_OS_ISA_Rebuild",
+      "tier": 31,
+      "records": 38,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "IGEM_Live_FASTA_Ingest",
+      "tier": 32,
+      "records": 42,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Math_Generator_Airfoil_RMSE",
+      "tier": 32,
+      "records": 5,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Trinary_OS_Round_Trip",
+      "tier": 32,
+      "records": 22,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Culinary_Arts",
+      "tier": 33,
+      "records": 26,
+      "pooled_median_error_pct": 0.047615187057821064,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Tokenization_Smoke",
+      "tier": 33,
+      "records": 9,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Trinary_Hardware_Motif",
+      "tier": 33,
+      "records": 8,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Intrinsic_LLM_Validators",
+      "tier": 33,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Pharmacokinetics",
+      "tier": 34,
+      "records": 56,
+      "pooled_median_error_pct": 0.00241237063663613,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Food_Microbiology",
+      "tier": 34,
+      "records": 30,
+      "pooled_median_error_pct": 0.04447250077037743,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Agriculture_Agroecology",
+      "tier": 34,
+      "records": 276,
+      "pooled_median_error_pct": 0.018019024892929635,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Maillard_Chemistry",
+      "tier": 34,
+      "records": 30,
+      "pooled_median_error_pct": 0.09443694019339477,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Econometrics",
+      "tier": 34,
+      "records": 172,
+      "pooled_median_error_pct": 0.12920090413715177,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Sports_Biomechanics",
+      "tier": 34,
+      "records": 35,
+      "pooled_median_error_pct": 0.04447250077037523,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Architecture_Building_Science",
+      "tier": 34,
+      "records": 43,
+      "pooled_median_error_pct": 0.07869745016115058,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Biological_CUDA_Physarum",
+      "tier": 34,
+      "records": 35,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Arxiv_Primitives_V14",
+      "tier": 34,
+      "records": 14,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Formula_Corpus_CNC",
+      "tier": 34,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Geology_Stratigraphy",
+      "tier": 35,
+      "records": 1960,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Botany",
+      "tier": 35,
+      "records": 426,
+      "pooled_median_error_pct": 0.022236250385193387,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Zoology",
+      "tier": 35,
+      "records": 1000,
+      "pooled_median_error_pct": 0.01778900030815634,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Clinical_Medicine",
+      "tier": 35,
+      "records": 260,
+      "pooled_median_error_pct": 0.002458296751538192,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Chemical_Engineering",
+      "tier": 35,
+      "records": 186,
+      "pooled_median_error_pct": 0.0010333425185953097,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Environmental_Engineering",
+      "tier": 35,
+      "records": 1120,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Anthropology",
+      "tier": 35,
+      "records": 160,
+      "pooled_median_error_pct": 0.019504399572476606,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Binary_Decoder_Rendlesham",
+      "tier": 35,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Certified_Agent_Qwen",
+      "tier": 35,
+      "records": 8,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Omni_Theory_Genesis",
+      "tier": 35,
+      "records": 27,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "FSOT_Aggregate_Unified_DB",
+      "tier": 36,
+      "records": 8,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Prediction_Rederivation",
+      "tier": 36,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "VL_Distill_Atlas",
+      "tier": 37,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Rust_Lean_Bridge",
+      "tier": 37,
+      "records": 9,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Bibliography_Lean_Corpus",
+      "tier": 37,
+      "records": 9,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "NIST_CODATA_Constants",
+      "tier": 38,
+      "records": 6,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "GBIF_Species_Occurrence",
+      "tier": 38,
+      "records": 2000,
+      "pooled_median_error_pct": 0.006006,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "NOAA_Coastal_Tides",
+      "tier": 38,
+      "records": 40,
+      "pooled_median_error_pct": 0.030173,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "World_Bank_Development",
+      "tier": 38,
+      "records": 420,
+      "pooled_median_error_pct": 0.02584,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "NASA_Exoplanet_Archive",
+      "tier": 38,
+      "records": 988,
+      "pooled_median_error_pct": 0.023015,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "RCSB_PDB_Structures",
+      "tier": 38,
+      "records": 159,
+      "pooled_median_error_pct": 0.022236,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "OpenAlex_Citation_Graph",
+      "tier": 38,
+      "records": 200,
+      "pooled_median_error_pct": 0.031506,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "PubChem_Compound_Properties",
+      "tier": 38,
+      "records": 521,
+      "pooled_median_error_pct": 0.002629,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "CERN_Open_Data_LHC",
+      "tier": 38,
+      "records": 200,
+      "pooled_median_error_pct": 0.013294,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "UniProt_Protein_Annotations",
+      "tier": 38,
+      "records": 102,
+      "pooled_median_error_pct": 0.026684,
+      "observed": true,
+      "ingest": "scripts/ingest_tier38_public_data.py"
+    },
+    {
+      "panel": "Space_Propulsion_Systems",
+      "tier": 39,
+      "records": 21,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier39_propulsion_electrical.py"
+    },
+    {
+      "panel": "Electrical_Power_Systems",
+      "tier": 39,
+      "records": 9,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier39_propulsion_electrical.py"
+    },
+    {
+      "panel": "HVAC_Thermal_Systems",
+      "tier": 39,
+      "records": 7,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier39_propulsion_electrical.py"
+    },
+    {
+      "panel": "Breakthrough_Discoveries_2024_2026",
+      "tier": 39,
+      "records": 21,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier39_propulsion_electrical.py"
+    },
+    {
+      "panel": "Trinary_OS_Tier_E",
+      "tier": 40,
+      "records": 68,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Paleontology",
+      "tier": 41,
+      "records": 630,
+      "pooled_median_error_pct": 0.017836062884406152,
+      "observed": true,
+      "ingest": "scripts/build_tier_f_extension_benchmarks.py"
+    },
+    {
+      "panel": "Marine_Biology",
+      "tier": 41,
+      "records": 540,
+      "pooled_median_error_pct": 0.022236250385192644,
+      "observed": true,
+      "ingest": "scripts/build_tier_f_extension_benchmarks.py"
+    },
+    {
+      "panel": "Mycology",
+      "tier": 41,
+      "records": 420,
+      "pooled_median_error_pct": 0.022236250385193498,
+      "observed": true,
+      "ingest": "scripts/build_tier_f_extension_benchmarks.py"
+    },
+    {
+      "panel": "Entomology",
+      "tier": 41,
+      "records": 430,
+      "pooled_median_error_pct": 0.022236250385189223,
+      "observed": true,
+      "ingest": "scripts/build_tier_f_extension_benchmarks.py"
+    },
+    {
+      "panel": "Virology",
+      "tier": 41,
+      "records": 50,
+      "pooled_median_error_pct": 0.04593318440797614,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Epidemiology",
+      "tier": 41,
+      "records": 20,
+      "pooled_median_error_pct": 0.03062212293865052,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Cardiology",
+      "tier": 41,
+      "records": 45,
+      "pooled_median_error_pct": 0.030622122938654326,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Civil_Engineering",
+      "tier": 41,
+      "records": 37,
+      "pooled_median_error_pct": 0.0335259880736416,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Mechanical_Engineering",
+      "tier": 41,
+      "records": 50,
+      "pooled_median_error_pct": 0.017310023021640548,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Robotics_Control_Systems",
+      "tier": 41,
+      "records": 45,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neuroeconomics",
+      "tier": 41,
+      "records": 65,
+      "pooled_median_error_pct": 0.10502056403980387,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Paleoclimate",
+      "tier": 41,
+      "records": 40,
+      "pooled_median_error_pct": 0.015015854077432778,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Speleology",
+      "tier": 41,
+      "records": 65,
+      "pooled_median_error_pct": 0.0034072140135262413,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Exogeology",
+      "tier": 41,
+      "records": 316,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Pure_Mathematics",
+      "tier": 41,
+      "records": 1578,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "History",
+      "tier": 41,
+      "records": 170,
+      "pooled_median_error_pct": 0.019504399572477397,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Law_Policy",
+      "tier": 41,
+      "records": 180,
+      "pooled_median_error_pct": 0.019504399572479934,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Finance_Markets",
+      "tier": 41,
+      "records": 150,
+      "pooled_median_error_pct": 0.025840180827433133,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Supply_Chain_Logistics",
+      "tier": 41,
+      "records": 40,
+      "pooled_median_error_pct": 0.03230022603427978,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Domain_Coupling_Simulation",
+      "tier": 42,
+      "records": 18691,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Formula_Corpus_Closure",
+      "tier": 42,
+      "records": 123,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Cryptography_Technology",
+      "tier": 43,
+      "records": 44,
+      "pooled_median_error_pct": 0.047520672006218234,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Network_Internet_Protocols",
+      "tier": 43,
+      "records": 22,
+      "pooled_median_error_pct": 0.010337117254355377,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Malware_Threat_Intelligence",
+      "tier": 43,
+      "records": 85,
+      "pooled_median_error_pct": 0.04593318440797134,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Secure_Software_Engineering",
+      "tier": 43,
+      "records": 59,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Code_Genome_Structure",
+      "tier": 43,
+      "records": 205,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Zero_Day_Risk_Evaluator",
+      "tier": 43,
+      "records": 26,
+      "pooled_median_error_pct": 0.010337117254355377,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "External_OSS_Code_Genome",
+      "tier": 44,
+      "records": 164,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Programming_Language_Laws",
+      "tier": 44,
+      "records": 107,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Formula_Branching_Fractal",
+      "tier": 45,
+      "records": 255,
+      "pooled_median_error_pct": 0.038016537604979236,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Mechanistic_Coupling",
+      "tier": 45,
+      "records": 116,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "CVE_Codon_Hole_Falsification",
+      "tier": 45,
+      "records": 29,
+      "pooled_median_error_pct": 0.009186636881580057,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Theory_Completeness_Spine",
+      "tier": 45,
+      "records": 6,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fractal_Constant_Recursion",
+      "tier": 46,
+      "records": 21,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Preregistered_Predictions",
+      "tier": 46,
+      "records": 27,
+      "pooled_median_error_pct": 0.020098237848408945,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Portable_Clone_Verify",
+      "tier": 46,
+      "records": 290,
+      "pooled_median_error_pct": 0.0,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Observer_Channel_Derivation",
+      "tier": 46,
+      "records": 247,
+      "pooled_median_error_pct": 0.0525102820198906,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Adversarial_Fractal_Break_Tests",
+      "tier": 46,
+      "records": 13,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "ToE_Gap_Closure_Spine",
+      "tier": 46,
+      "records": 7,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Acoustic_Resonance_Materials",
+      "tier": 47,
+      "records": 29,
+      "pooled_median_error_pct": 0.008381497018411083,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Chaos_Mediated_Phase_Transitions",
+      "tier": 47,
+      "records": 21,
+      "pooled_median_error_pct": 0.03147898006445882,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Phi_Morphogenetic_Scaling",
+      "tier": 47,
+      "records": 289,
+      "pooled_median_error_pct": 0.01760779720633292,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Ionospheric_Chemistry_Coupling",
+      "tier": 47,
+      "records": 85,
+      "pooled_median_error_pct": 0.0,
+      "observed": false,
+      "ingest": null
+    },
+    {
+      "panel": "Energy_AI_Orbital_Bridge",
+      "tier": 47,
+      "records": 48,
+      "pooled_median_error_pct": 0.027544107556407217,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Consciousness_Galactic_Orbital_Bridge",
+      "tier": 47,
+      "records": 48,
+      "pooled_median_error_pct": 0.036757197413939124,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Energy_Neural_Orbital_Bridge",
+      "tier": 47,
+      "records": 48,
+      "pooled_median_error_pct": 0.018002668701796887,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Particle_Neural_Orbital_Bridge",
+      "tier": 47,
+      "records": 48,
+      "pooled_median_error_pct": 0.03326447040434832,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Proof_Carrying_Code_Genome",
+      "tier": 47,
+      "records": 25,
+      "pooled_median_error_pct": 0.0051685586271776884,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Domain_Orbital_Predictions",
+      "tier": 48,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Medical_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "records": 48,
+      "pooled_median_error_pct": 0.010717743028517818,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "AI_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "records": 48,
+      "pooled_median_error_pct": 0.005168558627177688,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neural_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "records": 49,
+      "pooled_median_error_pct": 0.018002668701799784,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "ToE_Unification_Spine",
+      "tier": 48,
+      "records": 8,
+      "pooled_median_error_pct": 0.019008268802502604,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Compactification_Ladder",
+      "tier": 49,
+      "records": 60,
+      "pooled_median_error_pct": 0.0220747159758794,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Adjacent_Rung_Coupling",
+      "tier": 49,
+      "records": 36,
+      "pooled_median_error_pct": 0.020098237848404983,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fold_Depth_Metrics",
+      "tier": 49,
+      "records": 51,
+      "pooled_median_error_pct": 0.025753835305195434,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Reality_Folding_Spine",
+      "tier": 49,
+      "records": 8,
+      "pooled_median_error_pct": 0.019008268802510223,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Time_Emergence_Simulation",
+      "tier": 50,
+      "records": 28,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Time_Domain_Crosswalk",
+      "tier": 50,
+      "records": 250,
+      "pooled_median_error_pct": 0.028056,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "FPC_Temporal_Coupling",
+      "tier": 50,
+      "records": 6,
+      "pooled_median_error_pct": 0.031199,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fluid_Phase_Current_Spine",
+      "tier": 50,
+      "records": 7,
+      "pooled_median_error_pct": 0.009504,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Stumped_Observables_Panel",
+      "tier": 51,
+      "records": 19,
+      "pooled_median_error_pct": 0.039905,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Hubble_Bubble_Tension",
+      "tier": 51,
+      "records": 6,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Dark_Sector_Open_Problems",
+      "tier": 51,
+      "records": 10,
+      "pooled_median_error_pct": 0.009407,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Stumped_Observables_Spine",
+      "tier": 51,
+      "records": 5,
+      "pooled_median_error_pct": 0.009407,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Consciousness_Econ",
+      "tier": 51,
+      "records": 37,
+      "pooled_median_error_pct": 0.008898,
+      "observed": true,
+      "ingest": "scripts/ingest_anomaly_public_data.py"
+    },
+    {
+      "panel": "Dark_Energy_CPL",
+      "tier": 51,
+      "records": 14,
+      "pooled_median_error_pct": 0.090985,
+      "observed": true,
+      "ingest": "scripts/ingest_anomaly_public_data.py"
+    },
+    {
+      "panel": "SH0ES_Refined",
+      "tier": 51,
+      "records": 7,
+      "pooled_median_error_pct": 0.625765,
+      "observed": true,
+      "ingest": "scripts/ingest_anomaly_public_data.py"
+    },
+    {
+      "panel": "Consciousness_Soul_Bridge",
+      "tier": 51,
+      "records": 27,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_fringe_desktop_data.py"
+    },
+    {
+      "panel": "Symbolic_Archetype_Panel",
+      "tier": 51,
+      "records": 28,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_fringe_desktop_data.py"
+    },
+    {
+      "panel": "Astrophysical_Structure_Crosswalk",
+      "tier": 52,
+      "records": 32,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Stellar_Multiplicity_Catalog",
+      "tier": 53,
+      "records": 68,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Compact_Object_Binary_Events",
+      "tier": 53,
+      "records": 40,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Galactic_Structure_Sample",
+      "tier": 53,
+      "records": 101,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Solar_System_Structure_Deep",
+      "tier": 54,
+      "records": 50,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_planetary_jpl.py"
+    },
+    {
+      "panel": "Exoplanet_System_Architecture",
+      "tier": 54,
+      "records": 882,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "PubChem_Stability_Panel",
+      "tier": 55,
+      "records": 59,
+      "pooled_median_error_pct": 0.0024238898584426276,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Materials_Genome_Crosswalk",
+      "tier": 55,
+      "records": 38,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "UniProt_Structure_Annotations_Deep",
+      "tier": 56,
+      "records": 121,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "IGEM_Parts_Expanded",
+      "tier": 56,
+      "records": 111,
+      "pooled_median_error_pct": 5.882356401581393e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Interdisciplinary_Spine_Crosswalk",
+      "tier": 57,
+      "records": 15,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Chemical_Structure_Stability_Panel",
+      "tier": 57,
+      "records": 32,
+      "pooled_median_error_pct": 0.00206,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Published_Fuel_Property_Panel",
+      "tier": 57,
+      "records": 31,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "GWOSC_Live_Event_Deep",
+      "tier": 58,
+      "records": 191,
+      "pooled_median_error_pct": 0.008488,
+      "observed": true,
+      "ingest": "scripts/ingest_tier58_live_catalogs.py"
+    },
+    {
+      "panel": "Stellar_Multiplicity_Live_Deep",
+      "tier": 58,
+      "records": 69,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier58_live_catalogs.py"
+    },
+    {
+      "panel": "Material_Property_Verification_Scaffold",
+      "tier": 59,
+      "records": 79,
+      "pooled_median_error_pct": 0.002271,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fuel_Thermochemistry_Public_Anchors",
+      "tier": 59,
+      "records": 14,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "SIMBAD_Stellar_Identity_Deep",
+      "tier": 60,
+      "records": 520,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": "scripts/ingest_tier60_live_astrometry.py"
+    },
+    {
+      "panel": "Gaia_Astrometry_Panel_Deep",
+      "tier": 60,
+      "records": 62,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Music_Harmonics_Public_Panel",
+      "tier": 61,
+      "records": 18,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "XR_Interactive_Media_Math_Scaffold",
+      "tier": 61,
+      "records": 24,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Creative_Arts_Math_Spine",
+      "tier": 61,
+      "records": 56,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "WDS_Live_Multiplicity_Deep",
+      "tier": 62,
+      "records": 281,
+      "pooled_median_error_pct": 0.026954,
+      "observed": true,
+      "ingest": "scripts/ingest_tier62_live_astrometry.py"
+    },
+    {
+      "panel": "Gaia_DR3_TAP_Deep",
+      "tier": 62,
+      "records": 1826,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": "scripts/ingest_tier62_live_astrometry.py"
+    },
+    {
+      "panel": "Preregistered_Predictions_Verification_Scaffold",
+      "tier": 63,
+      "records": 60,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Information_Theory_Public_Panel",
+      "tier": 64,
+      "records": 11,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Network_Science_Public_Panel",
+      "tier": 64,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Semiconductor_Physics_Public_Panel",
+      "tier": 64,
+      "records": 11,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Statistical_Mechanics_Public_Panel",
+      "tier": 64,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Biophysics_Public_Panel",
+      "tier": 64,
+      "records": 11,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neurolab_Gaps_Math_Spine",
+      "tier": 64,
+      "records": 35,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Material_In_Silico_Screening_Scaffold",
+      "tier": 65,
+      "records": 42,
+      "pooled_median_error_pct": 0.00206,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fuel_Candidate_Prereg_Scaffold",
+      "tier": 65,
+      "records": 33,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Interactive_Media_Prereg_Scaffold",
+      "tier": 65,
+      "records": 42,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Quantum_Information",
+      "tier": 66,
+      "records": 14,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Econophysics",
+      "tier": 66,
+      "records": 12,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Ecology",
+      "tier": 66,
+      "records": 12,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Genomic_Sciences",
+      "tier": 66,
+      "records": 18,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Neurolab_Residual_Math_Spine",
+      "tier": 66,
+      "records": 28,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Term3_Acoustic_Bleed_Depth",
+      "tier": 67,
+      "records": 23,
+      "pooled_median_error_pct": 0.008381497018408523,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Initiation_Transformation_Archetype",
+      "tier": 67,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Boundary_Partition_Tightening",
+      "tier": 67,
+      "records": 8,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Formula_Precision_Spine",
+      "tier": 67,
+      "records": 27,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Materials_Project_Live_Panel",
+      "tier": 68,
+      "records": 141,
+      "pooled_median_error_pct": 0.011734,
+      "observed": true,
+      "ingest": "scripts/ingest_tier68_live_ingest.py"
+    },
+    {
+      "panel": "PubChem_Live_Deep",
+      "tier": 68,
+      "records": 5254,
+      "pooled_median_error_pct": 0.032631,
+      "observed": true,
+      "ingest": "scripts/ingest_tier68_live_ingest.py"
+    },
+    {
+      "panel": "OpenNeuro_Full_Panel",
+      "tier": 68,
+      "records": 123,
+      "pooled_median_error_pct": 0.015431,
+      "observed": true,
+      "ingest": "scripts/ingest_tier68_live_ingest.py"
+    },
+    {
+      "panel": "VizieR_WDS_TAP_Live_Deep",
+      "tier": 68,
+      "records": 121,
+      "pooled_median_error_pct": 0.026954,
+      "observed": true,
+      "ingest": "scripts/ingest_tier68_live_ingest.py"
+    },
+    {
+      "panel": "Live_Ingest_Spine",
+      "tier": 68,
+      "records": 28,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Unified_DB_Candidate_Crosswalk",
+      "tier": 69,
+      "records": 46,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "FSOT_Aggregate_Organized_Panel",
+      "tier": 69,
+      "records": 10,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Unified_DB_Crosswalk_Spine",
+      "tier": 69,
+      "records": 18,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Proof_Ledger_Closure_Spine",
+      "tier": 70,
+      "records": 17,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Preregistered_Outcome_Tracking",
+      "tier": 70,
+      "records": 56,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "ToE_Claim_Certificate_Bundle",
+      "tier": 70,
+      "records": 7,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fusion_Physics_Public_Panel",
+      "tier": 71,
+      "records": 19,
+      "pooled_median_error_pct": 9.5e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Magnetic_Confinement_Fusion_Panel",
+      "tier": 71,
+      "records": 22,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Inertial_Confinement_Fusion_Panel",
+      "tier": 71,
+      "records": 15,
+      "pooled_median_error_pct": 7.9e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "tier": 71,
+      "records": 19,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fusion_Lab_Certificate_Spine",
+      "tier": 71,
+      "records": 50,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Periodic_Table_Public_Panel",
+      "tier": 72,
+      "records": 52,
+      "pooled_median_error_pct": 9.5e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Superheavy_Element_Stability_Panel",
+      "tier": 72,
+      "records": 50,
+      "pooled_median_error_pct": 1e-06,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "tier": 72,
+      "records": 25,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Natural_Formation_Element_Simulation",
+      "tier": 72,
+      "records": 44,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Periodic_Table_Completion_Spine",
+      "tier": 72,
+      "records": 38,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Heavy_Ion_Lab_Synthesis_Panel",
+      "tier": 73,
+      "records": 39,
+      "pooled_median_error_pct": 9.5e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Element_Synthesis_Condition_Scaffold",
+      "tier": 73,
+      "records": 45,
+      "pooled_median_error_pct": 0.000787,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "tier": 73,
+      "records": 22,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "tier": 73,
+      "records": 25,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Lab_Synthesis_Metamaterial_Spine",
+      "tier": 73,
+      "records": 43,
+      "pooled_median_error_pct": 3.4e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Island_Of_Stability_Deep_Panel",
+      "tier": 74,
+      "records": 23,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Z120_Z126_Beam_Synthesis_Panel",
+      "tier": 74,
+      "records": 20,
+      "pooled_median_error_pct": 9.5e-05,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "tier": 74,
+      "records": 18,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Superheavy_Island_Emergence_Simulation",
+      "tier": 74,
+      "records": 44,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Superheavy_Island_Completion_Spine",
+      "tier": 74,
+      "records": 43,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Distant_Island_Z128_Z132_Deep_Panel",
+      "tier": 75,
+      "records": 14,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Z164_Distant_Island_Prereg_Scaffold",
+      "tier": 75,
+      "records": 7,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Periodic_Extension_Decay_Topology_Scaffold",
+      "tier": 75,
+      "records": 19,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Distant_Island_Emergence_Simulation",
+      "tier": 75,
+      "records": 36,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Periodic_Table_Extension_Closure_Spine",
+      "tier": 75,
+      "records": 41,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Time_Emergence_Deep_Panel",
+      "tier": 76,
+      "records": 17,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "FPC_Fluidlink_Timing_Deep_Panel",
+      "tier": 76,
+      "records": 13,
+      "pooled_median_error_pct": 0.022181,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Cosmology_Anomaly_Deep_Panel",
+      "tier": 76,
+      "records": 15,
+      "pooled_median_error_pct": 0.000595,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Hubble_Dark_Sector_Crosswalk",
+      "tier": 76,
+      "records": 17,
+      "pooled_median_error_pct": 0.000595,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fluid_Spacetime_Observable_Spine",
+      "tier": 76,
+      "records": 29,
+      "pooled_median_error_pct": 0.000595,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "tier": 77,
+      "records": 14,
+      "pooled_median_error_pct": 0.051436,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Knowledge_Base_Portable_Bundle_Panel",
+      "tier": 77,
+      "records": 13,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "RD_Interval_Tightening_Panel",
+      "tier": 77,
+      "records": 12,
+      "pooled_median_error_pct": 0.000502,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Domain_Coupling_Simulation_Refresh_Panel",
+      "tier": 77,
+      "records": 22,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "tier": 77,
+      "records": 19,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Warp_BH_WH_Portal_Panel",
+      "tier": 78,
+      "records": 11,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "PDG_Particle_Properties",
+      "tier": 78,
+      "records": 12,
+      "pooled_median_error_pct": 0.041994,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "CRC_Handbook_Properties",
+      "tier": 78,
+      "records": 391,
+      "pooled_median_error_pct": 0.026922,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "NIST_DLMF_Special_Functions",
+      "tier": 78,
+      "records": 5,
+      "pooled_median_error_pct": 0.001661,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "STScI_MAST_Telescope_Panel",
+      "tier": 79,
+      "records": 377,
+      "pooled_median_error_pct": 0.022461,
+      "observed": true,
+      "ingest": "scripts/ingest_stsci_mast.py"
+    },
+    {
+      "panel": "NASA_NEO_Feed_Panel",
+      "tier": 80,
+      "records": 56,
+      "pooled_median_error_pct": 0.021097,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "NASA_DONKI_Solar_Panel",
+      "tier": 80,
+      "records": 1200,
+      "pooled_median_error_pct": 0.020755,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "ClinicalTrials_Medical_Panel",
+      "tier": 80,
+      "records": 394,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "OSTI_DOE_Science_Panel",
+      "tier": 80,
+      "records": 100,
+      "pooled_median_error_pct": 0.01382,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "UAP_War_Gov_Release_Panel",
+      "tier": 80,
+      "records": 542,
+      "pooled_median_error_pct": 0.008488,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "Federal_Science_Registry_Panel",
+      "tier": 80,
+      "records": 16,
+      "pooled_median_error_pct": 0.024225,
+      "observed": true,
+      "ingest": "scripts/ingest_tier80_government_open_data.py"
+    },
+    {
+      "panel": "Government_Open_Data_Spine",
+      "tier": 80,
+      "records": 28,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "NCBI_Gene_Public_Panel",
+      "tier": 81,
+      "records": 48,
+      "pooled_median_error_pct": 0.025571999999999998,
+      "observed": true,
+      "ingest": "scripts/ingest_tier81_public_verifiable.py"
+    },
+    {
+      "panel": "Crossref_Scholarly_Panel",
+      "tier": 81,
+      "records": 200,
+      "pooled_median_error_pct": 0.01382,
+      "observed": true,
+      "ingest": "scripts/ingest_tier81_public_verifiable.py"
+    },
+    {
+      "panel": "iNaturalist_Observation_Panel",
+      "tier": 81,
+      "records": 288,
+      "pooled_median_error_pct": 0.006006,
+      "observed": true,
+      "ingest": "scripts/ingest_tier81_public_verifiable.py"
+    },
+    {
+      "panel": "NOAA_NDBC_Buoy_Panel",
+      "tier": 81,
+      "records": 596,
+      "pooled_median_error_pct": 0.028287,
+      "observed": true,
+      "ingest": "scripts/ingest_tier81_public_verifiable.py"
+    },
+    {
+      "panel": "Open_Meteo_Live_Panel",
+      "tier": 81,
+      "records": 432,
+      "pooled_median_error_pct": 0.026204,
+      "observed": true,
+      "ingest": "scripts/ingest_tier81_public_verifiable.py"
+    },
+    {
+      "panel": "Public_Verifiable_Spine",
+      "tier": 81,
+      "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    }
+  ],
+  "ten_unentered_domain_candidates": [
+    {
+      "domain": "Epidemiology",
+      "fsot_nearest": "Medical / Biochemistry",
+      "public_api": "https://data.cdc.gov/ (Socrata open data, no key)",
+      "why": "Disease incidence, R0, vaccination coverage \u2014 independent public-health validation"
+    },
+    {
+      "domain": "Virology",
+      "fsot_nearest": "Biology / Immunology",
+      "public_api": "https://www.ncbi.nlm.nih.gov/genbank/ + Virus Pathogen DB",
+      "why": "Genome length, mutation rate \u2014 complements NCBI gene panel"
+    },
+    {
+      "domain": "Paleontology",
+      "fsot_nearest": "Geology / Ecology",
+      "public_api": "https://paleobiodb.org/data1.2/ (PBDB public API)",
+      "why": "Fossil occurrence depth/age \u2014 deep-time cross-check vs climate"
+    },
+    {
+      "domain": "Volcanology",
+      "fsot_nearest": "Geophysics / Seismology",
+      "public_api": "https://volcano.si.edu/database/ + USGS volcano API",
+      "why": "VEI, eruption chronology \u2014 geohazard independent channel"
+    },
+    {
+      "domain": "Limnology",
+      "fsot_nearest": "Hydrology / Ecology",
+      "public_api": "https://waterservices.usgs.gov/ (lake sites) + EPA STORET",
+      "why": "Freshwater chemistry \u2014 fills gap between ocean and streamflow"
+    },
+    {
+      "domain": "Radio_Astronomy",
+      "fsot_nearest": "Astronomy / Astrophysics",
+      "public_api": "https://archive.nrao.edu/ + VizieR radio catalogs",
+      "why": "Flux density, spectral index \u2014 optical-heavy astronomy balance"
+    },
+    {
+      "domain": "Petrology_Geochemistry",
+      "fsot_nearest": "Geochemistry / Materials_Science",
+      "public_api": "https://earthchem.org/ + OpenGEOTHERM",
+      "why": "Melt inclusion chemistry, isotope ratios \u2014 solid-earth gap"
+    },
+    {
+      "domain": "Actuarial_Science",
+      "fsot_nearest": "Economics / Statistics",
+      "public_api": "https://www.ssa.gov/oact/STATS/ (public mortality tables)",
+      "why": "Mortality/life-table scalars \u2014 independent of World Bank macro"
+    },
+    {
+      "domain": "Ethology",
+      "fsot_nearest": "Ecology / Zoology",
+      "public_api": "https://www.movebank.org/ (animal tracking, public subset)",
+      "why": "Movement speed, migration distance \u2014 behavioral ecology layer"
+    },
+    {
+      "domain": "Arxiv_Gravitational_Waves_Theory",
+      "fsot_nearest": "Particle_Astrophysics",
+      "public_api": "http://export.arxiv.org/api/query (gr-qc, no key)",
+      "why": "Preprint metadata crosswalk \u2014 complements GWOSC events"
+    }
+  ]
+}

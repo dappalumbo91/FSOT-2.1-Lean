@@ -92,7 +92,7 @@ def gen_coq(bundles: list[dict]) -> str:
         "",
     ]
     for bundle in bundles:
-        bid = bundle["id"]
+        bid = bundle.get("coq_id") or bundle["id"]
         for i, conj in enumerate(bundle.get("conjuncts") or []):
             if conj.get("opaque"):
                 continue
@@ -142,7 +142,7 @@ def gen_isabelle(bundles: list[dict]) -> str:
         "",
     ]
     for bundle in bundles:
-        bid = bundle["id"]
+        bid = bundle.get("coq_id") or bundle["id"]
         parts = [_isabelle_conjunct(c) for c in (bundle.get("conjuncts") or [])]
         stmt = " \\<and> ".join(parts)
         lines += [f'lemma {bid}: "{stmt}"', "  by auto", ""]

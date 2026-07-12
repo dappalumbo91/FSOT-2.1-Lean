@@ -1,36 +1,30 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 1/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 1/17 (generated). *)
 theory FullFormalSpine_00
 imports Complex_Main
 begin
 
-lemma acoustic_rm_pooled_median_under_half_pct: "(0.008381497018412922 :: real) < (0.5 :: real)"
+lemma acoustic_resonance_materials_observable_count_pos: "0 < (29 :: nat)"
   by eval
 
-lemma acoustic_rm_headline_median_under_half_pct: "(0.008381497018412922 :: real) < (0.5 :: real)"
+lemma acoustic_resonance_materials_median_error_under_half_pct: "(0.008381497018411083 :: real) < (0.5 :: real)"
   by eval
 
-lemma acoustic_rm_observable_count_pos: "0 < (29 :: nat)"
+lemma actuarial_science_panel_observable_count_pos: "0 < (60 :: nat)"
   by eval
 
-lemma acoustic_rm_beats_sota_headlines_pos: "0 < (3 :: nat)"
+lemma actuarial_science_panel_median_error_under_half_pct: "(0.02261 :: real) < (0.5 :: real)"
   by eval
 
-lemma acoustic_rm_acoustic_species_pos: "0 < (9 :: nat)"
+lemma actuarial_science_observable_count_pos: "0 < (60 :: nat)"
   by eval
 
-lemma adj_rung_pooled_median_under_half_pct: "(0.020098237848404983 :: real) < (0.5 :: real)"
+lemma actuarial_science_median_error_under_five_pct: "(0.02261 :: real) < (5.0 :: real)"
   by eval
 
-lemma adj_rung_headline_median_under_half_pct: "(0.020098237848404983 :: real) < (0.5 :: real)"
+lemma adjacent_rung_coupling_observable_count_pos: "0 < (36 :: nat)"
   by eval
 
-lemma adj_rung_observable_count_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma adj_rung_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma adj_rung_pairs_complete: "(9 :: nat) = (9 :: nat)"
+lemma adjacent_rung_coupling_median_error_under_half_pct: "(0.020098237848404983 :: real) < (0.5 :: real)"
   by eval
 
 lemma adv_brk_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -43,6 +37,12 @@ lemma adv_brk_observable_count_pos: "0 < (13 :: nat)"
   by eval
 
 lemma adv_brk_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma adversarial_fractal_break_tests_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma adversarial_fractal_break_tests_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma aether_distill_row_count_pos: "0 < (120 :: nat)"
@@ -66,19 +66,16 @@ lemma agriculture_agroecology_gap_fill_observable_count_pos: "0 < (276 :: nat)"
 lemma agriculture_agroecology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma ai_gal_br_pooled_median_under_half_pct: "(0.0051685586271776884 :: real) < (0.5 :: real)"
+lemma agriculture_agroecology_observable_count_pos: "0 < (276 :: nat)"
   by eval
 
-lemma ai_gal_br_headline_median_under_half_pct: "(0.0051685586271776884 :: real) < (0.5 :: real)"
+lemma agriculture_agroecology_median_error_under_half_pct: "(0.018019024892929635 :: real) < (0.5 :: real)"
   by eval
 
-lemma ai_gal_br_observable_count_pos: "0 < (45 :: nat)"
+lemma ai_galactic_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
   by eval
 
-lemma ai_gal_br_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma ai_gal_br_bridge_pairs_pos: "0 < (35 :: nat)"
+lemma ai_galactic_orbital_bridge_median_error_under_half_pct: "(0.005168558627177688 :: real) < (0.5 :: real)"
   by eval
 
 lemma anthropology_ext_pooled_median_under_half_pct: "(0.019504399572476606 :: real) < (0.5 :: real)"
@@ -93,6 +90,12 @@ lemma anthropology_ext_observable_count_pos: "0 < (160 :: nat)"
 lemma anthropology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
+lemma anthropology_observable_count_pos: "0 < (160 :: nat)"
+  by eval
+
+lemma anthropology_median_error_under_half_pct: "(0.019504399572476606 :: real) < (0.5 :: real)"
+  by eval
+
 lemma architecture_building_science_gap_fill_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
@@ -105,25 +108,22 @@ lemma architecture_building_science_gap_fill_observable_count_pos: "0 < (83 :: n
 lemma architecture_building_science_gap_fill_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
+lemma architecture_building_science_observable_count_pos: "0 < (43 :: nat)"
+  by eval
+
+lemma architecture_building_science_median_error_under_half_pct: "(0.07869745016115058 :: real) < (0.5 :: real)"
+  by eval
+
 lemma arxiv_primitives_v14_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma arxiv_primitives_v14_observable_count_pos: "0 < (14 :: nat)"
   by eval
 
-lemma astrophysical_structure_crosswalk_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma astrophysical_structure_crosswalk_observable_count_pos: "0 < (32 :: nat)"
   by eval
 
-lemma astrophysical_structure_crosswalk_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma astrophysical_structure_crosswalk_observable_count_pos: "0 < (34 :: nat)"
-  by eval
-
-lemma astrophysical_structure_crosswalk_beats_sota_headlines_pos: "0 < (1 :: nat)"
-  by eval
-
-lemma astrophysical_structure_crosswalk_catalog_systems_pos: "0 < (13 :: nat)"
+lemma astrophysical_structure_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma atmospheric_physics_gap_fill_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -177,16 +177,10 @@ lemma biology_strict_operon_count_pos: "0 < (13 :: nat)"
 lemma biology_strict_median_error_under_two_pct: "(0 :: real) < (2.0 :: real)"
   by eval
 
-lemma biophysics_public_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma biophysics_public_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma biophysics_public_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma biophysics_public_panel_observable_count_pos: "0 < (11 :: nat)"
-  by eval
-
-lemma biophysics_public_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma biophysics_public_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma blackhole_thesis_observable_count_pos: "0 < (28 :: nat)"
@@ -207,16 +201,16 @@ lemma botany_ext_observable_count_pos: "0 < (426 :: nat)"
 lemma botany_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma boundary_partition_tightening_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma botany_observable_count_pos: "0 < (426 :: nat)"
   by eval
 
-lemma boundary_partition_tightening_headline_median_under_half_pct: "(0.2544322492332041 :: real) < (0.5 :: real)"
+lemma botany_median_error_under_half_pct: "(0.022236250385193387 :: real) < (0.5 :: real)"
   by eval
 
-lemma boundary_partition_tightening_observable_count_pos: "0 < (8 :: nat)"
+lemma boundary_partition_tightening_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma boundary_partition_tightening_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma boundary_partition_tightening_median_error_under_half_pct: "(0.017672674984670764 :: real) < (0.5 :: real)"
   by eval
 
 lemma brain_prior_codon_from_dna: "(72 :: nat) = (72 :: nat)"
@@ -301,6 +295,12 @@ lemma basal_ganglia_genetic_zero_is_superposition: "(0.5416666666666666 :: real)
   by eval
 
 lemma thalamus_genetic_zero_is_superposition: "(0.4861111111111111 :: real) = (0.4861111111111111 :: real)"
+  by eval
+
+lemma astrocyte_syncytium_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma oligodendrocyte_myelination_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
   by eval
 
 end

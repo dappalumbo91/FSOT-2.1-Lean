@@ -1,64 +1,78 @@
-# FSOT main formula spine — all domains trace back to this branching fractal tree.
-version: "1.0"
-updated: "2026-07-10"
-notes: >
-  Intrinsic pattern discovery: new domains attach to branches of raw_S without
+version: '1.0'
+updated: '2026-07-12'
+notes: 'Intrinsic pattern discovery: new domains attach to branches of raw_S without
   domain-specific fitting. Divergence depth measures fractal distance from root.
 
+  '
 root: raw_S
 scaled: scaled_S
-
 branches:
   term1:
     children:
-      - term1_base
-      - perceived_adjust
-      - quirkMod
+    - term1_base
+    - perceived_adjust
+    - quirkMod
     term1_base_children:
-      - growth_term
-      - coherence_efficiency
-      - bleed_in_factor
-    lean_domains: [consciousness, neural, medical, perceived]
+    - growth_term
+    - coherence_efficiency
+    - bleed_in_factor
+    lean_domains:
+    - consciousness
+    - neural
+    - medical
+    - perceived
     divergence_class: observer_coupled
-
   term2:
     children:
-      - scale
-      - amplitude
-      - trend_bias
-    lean_domains: [energy, material]
+    - scale
+    - amplitude
+    - trend_bias
+    lean_domains:
+    - energy
+    - material
     divergence_class: linear_bias
-
   term3:
     children:
-      - chaos_factor
-      - poof_factor
-      - suction_factor
-      - acoustic_bleed
-      - acoustic_inflow
-    lean_domains: [particle, higgs, nuclear, fusion, plasma]
+    - chaos_factor
+    - poof_factor
+    - suction_factor
+    - acoustic_bleed
+    - acoustic_inflow
+    lean_domains:
+    - particle
+    - higgs
+    - nuclear
+    - fusion
+    - plasma
     divergence_class: chaotic_resonance
-
 constants:
   primitives:
-    - alpha
-    - phi
-    - psi_con
-    - eta_eff
-    - beta
-    - gamma
-    - omega
-    - theta_s
-    - k
-    - poof_factor
-    - consciousness_factor
+  - alpha
+  - phi
+  - psi_con
+  - eta_eff
+  - beta
+  - gamma
+  - omega
+  - theta_s
+  - k
+  - poof_factor
+  - consciousness_factor
   corpus_tokens:
-    gamma: [gamma, γ]
-    phi: [phi, φ]
-    pi: [pi, π]
-    e: [e]
-    g_cat: [G, g_cat]
-
+    gamma:
+    - gamma
+    - "\u03B3"
+    phi:
+    - phi
+    - "\u03C6"
+    pi:
+    - pi
+    - "\u03C0"
+    e:
+    - e
+    g_cat:
+    - G
+    - g_cat
 fractal_rules:
   branch_select:
     observed_true: term1.quirkMod
@@ -69,13 +83,19 @@ fractal_rules:
     per_maps_to_lean_tag: 1
     per_tier: 0.25
     per_constant_family: 0.5
-
 observer_derivation:
   method: consciousness_factor_channel_strength
-  formula: "channel = f(D_eff/25, |delta_psi|, consciousness_tag)"
+  formula: channel = f(D_eff/25, |delta_psi|, consciousness_tag)
   quirkmod_threshold: 0.65
   lean_constants:
-    - consciousness_factor
-    - phase_variance
-    - quirkMod
-  note: "Observer channel derived from spine constants — not boolean observed flag alone"
+  - consciousness_factor
+  - phase_variance
+  - quirkMod
+  note: "Observer channel derived from spine constants \u2014 not boolean observed\
+    \ flag alone"
+extension_branch_index:
+  panel_count: 274
+  core_domain_count: 35
+  index_path: data/core_formula_fractal_branch_index.json
+  note: All extension panels attach to raw_S fractal branches without domain-specific
+    fitting.

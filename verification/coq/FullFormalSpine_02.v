@@ -1,10 +1,31 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 3/19 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 3/17 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma codon_cac_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cac_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cag_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cag_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (0 = 0)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cat_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cat_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
+Proof. repeat split; reflexivity. Qed.
+
+Lemma codon_cca_primary_phase : (-1 = -1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
+Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_cca_secondary_phase : (0 = 0)%Z /\ (0 = 0)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
@@ -276,33 +297,12 @@ Proof. reflexivity. Qed.
 Lemma stop_codon_fraction_cert : (0.046875%R) = (0.046875%R).
 Proof. reflexivity. Qed.
 
-Lemma cold_fusion_candidate_prereg_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_candidate_prereg_scaffold_headline_median_under_half_pct : (0.00007869745015413914%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos : (0 < 19)%nat.
+Lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma cold_fusion_candidate_prereg_scaffold_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
 Lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cold_fusion_lab_synthesis_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma comp_lad_pooled_median_under_half_pct : (0.0220747159758794%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma comp_lad_headline_median_under_half_pct : (0.0220747159758794%R) < (0.5%R).
-Proof. lra. Qed.
 

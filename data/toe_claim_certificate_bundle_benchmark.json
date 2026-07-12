@@ -1,12 +1,13 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:10.949511+00:00",
+  "generated_at": "2026-07-12T14:25:20.658044+00:00",
   "domain": "ToE_Claim_Certificate_Bundle",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "fsot_verification_progress.yaml",
     "FSOT_VERIFIED_SCOPE.yaml",
-    "scientific_domain_expansion_map.json"
+    "scientific_domain_expansion_map.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -15,22 +16,24 @@
     "consciousness"
   ],
   "D_eff": 25,
-  "record_count": 7,
-  "observable_count": 7,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 22,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0020923899350648867,
+  "pooled_median_error_pct": 0.0020923899350648867,
+  "headline_median_error_pct": 0.0020923899350648867,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "toe_bundle": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No unified ToE certificate artifact"
+      "ToE_Claim_Certificate_Bundle_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_certificate_anchor_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -38,45 +41,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.002092,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 7,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0020923899350648867,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "certificate_anchor",
-      "name": "toe_bundle",
+      "property": "depth_relay",
+      "name": "ToE_Claim_Certificate_Bundle_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1,
-      "domain_display_name": "tier gap fill",
-      "display_name": "toe bundle",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -238,11 +215,486 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.005169,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "effective_error_pct": 0.0297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "source_domain": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 15,
+      "S": -0.512165,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "effective_error_pct": 0.0201,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "source_domain": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "source_median_error_pct": 0.020098,
+      "D_eff": 17,
+      "S": 0.793204,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.0314,
+        "effective_error_pct": 0.0314,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "source_domain": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "effective_error_pct": 0.0298,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "case_id": "engine_native_h0",
+      "property": "engine_native_h0",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "domain_display_name": "math generator",
+      "display_name": "engine native h0",
+      "scientific_measurement": {
+        "delta": -0.12978832,
+        "delta_pct": 0.192564,
+        "effective_error_pct": 0.192564,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "case_id": "external_alma_chromosphere",
+      "property": "brightness_temperature_rms_k",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "unit": "K",
+      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "brightness temperature rms k",
+      "scientific_measurement": {
+        "delta": -0.00418478,
+        "delta_pct": 0.004185,
+        "effective_error_pct": 0.004185,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "K"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "case_id": "external_planck_h0",
+      "property": "hubble_constant_km_s_mpc",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "hubble constant km s mpc",
+      "scientific_measurement": {
+        "delta": -0.01604169,
+        "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1587,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "case_id": "external_planck_sigma8",
+      "property": "matter_fluctuation_amplitude",
+      "computed": 0.8111240047382514,
+      "measured": 0.811,
+      "error_pct": 0.01529034996934153,
+      "unit": "dimensionless",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "matter fluctuation amplitude",
+      "scientific_measurement": {
+        "delta": 0.000124,
+        "delta_pct": 0.01529,
+        "effective_error_pct": 0.01529,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "rule_id": "AA-001",
+      "corpus": "ABSTRACT_ALGEBRA",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "display_name": "",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "source_panel": "Math_Generator_Rules_Eval",
+      "depth_relay_from": "Math_Generator_Rules_Eval"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "proved_entry_count",
+      "name": "proof_ledger",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0,
+      "eval_kind": "ledger_anchor",
+      "domain_display_name": "proof ledger closure",
+      "display_name": "proof ledger",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Proof_Ledger_Closure_Spine",
+      "depth_relay_from": "Proof_Ledger_Closure_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "sorry_count_formal",
+      "name": "formal_layer",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formal_gate",
+      "domain_display_name": "proof ledger closure",
+      "display_name": "formal layer",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Proof_Ledger_Closure_Spine",
+      "depth_relay_from": "Proof_Ledger_Closure_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "proved_claims",
+      "name": "verification_progress",
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.0,
+      "eval_kind": "progress_anchor",
+      "domain_display_name": "proof ledger closure",
+      "display_name": "verification progress",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Proof_Ledger_Closure_Spine",
+      "depth_relay_from": "Proof_Ledger_Closure_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "zero_sorry_gate",
+      "name": "formal_closure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "ledger_gate",
+      "domain_display_name": "proof ledger closure",
+      "display_name": "formal closure",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Proof_Ledger_Closure_Spine",
+      "depth_relay_from": "Proof_Ledger_Closure_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_pillar",
+      "name": "time_emergence_simulation",
+      "computed": 28.0,
+      "measured": 28.0,
+      "error_pct": 0.0,
+      "source": "Time_Emergence_Simulation",
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Phase_Current_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Fluid_Phase_Current_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_pillar",
+      "name": "time_domain_crosswalk",
+      "computed": 250.0,
+      "measured": 250.0,
+      "error_pct": 0.028056,
+      "source": "Time_Domain_Crosswalk",
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "time domain crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Phase_Current_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Fluid_Phase_Current_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fpc_pillar",
+      "name": "fpc_temporal_coupling",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.031199,
+      "source": "FPC_Temporal_Coupling",
+      "status": "GREEN",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "fpc temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Phase_Current_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Fluid_Phase_Current_Spine"
+    },
+    {
+      "lab": "toe_claim_certificate_bundle_depth_lab",
+      "property": "fluidlink_edges",
+      "name": "temporal_coupling",
+      "computed": 6.00057,
+      "measured": 6.0,
+      "error_pct": 0.009504,
+      "source": "fluid_phase_current_spine",
+      "domain_display_name": "fluid phase current spine",
+      "display_name": "temporal coupling",
+      "scientific_measurement": {
+        "delta": 0.00057,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Phase_Current_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Fluid_Phase_Current_Spine"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.0020923899350648867,
+    "max_scalar_error_pct": 0.192564276915754,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -251,19 +703,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "ToE Claim Certificate Bundle",
-  "tier_label": "Tier 70 \u2014 Proof Ledger Closure Spine + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.930226+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 7,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 7
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

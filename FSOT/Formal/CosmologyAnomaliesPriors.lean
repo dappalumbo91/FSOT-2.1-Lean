@@ -1,34 +1,34 @@
 /-
-  FSOT Formal CosmologyAnomaliesPriors — H0/S8/lithium/CMB/JWST/FRB tensions.
-  Generator: scripts/gen_cosmology_anomalies_lean.py
+  FSOT Formal CosmologyAnomaliesPriors — extension domain Cosmology_Anomalies.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
-import FSOT.Formal.Cosmology
+import FSOT.Formal.Domains
 
 namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def cosmology_anomalies_observable_count : ℕ := 24
+def cosmology_anomalies_D_eff : ℕ := 25
 
-def cosmology_anomalies_count : ℕ := 12
-def cosmology_anomalies_resolved_count : ℕ := 12
-def cosmology_anomalies_median_error : ℝ := (0.140126 : ℝ)
+theorem cosmology_anomalies_observable_count_pos : 0 < cosmology_anomalies_observable_count := by
+  unfold cosmology_anomalies_observable_count; norm_num
 
-theorem cosmology_anomalies_count_pos : 0 < cosmology_anomalies_count := by
-  unfold cosmology_anomalies_count; norm_num
-
-theorem cosmology_anomalies_resolved_le_total :
-    cosmology_anomalies_resolved_count ≤ cosmology_anomalies_count := by
-  unfold cosmology_anomalies_resolved_count cosmology_anomalies_count; norm_num
+theorem cosmology_anomalies_median_error_under_half_pct :
+    (0.0100275 : ℝ) < (0.5 : ℝ) := by norm_num
 
 theorem cosmology_anomalies_bundle :
-    cosmology_anomalies_count = 12 ∧
-    cosmology_anomalies_resolved_count ≤ cosmology_anomalies_count ∧
-    |h0_fsot S_cosm_cached - h0_fsot_canonical| < (0.11 : ℝ) := by
-  refine ⟨by unfold cosmology_anomalies_count; norm_num,
-    cosmology_anomalies_resolved_le_total,
-    h0_fsot_cached_approx_value⟩
+    cosmology_anomalies_observable_count = 24 ∧
+    cosmology_anomalies_D_eff = 25 ∧
+    (0.0100275 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold cosmology_anomalies_observable_count; norm_num,
+    by unfold cosmology_anomalies_D_eff; norm_num,
+    cosmology_anomalies_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
 

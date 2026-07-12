@@ -1,0 +1,470 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T14:06:49.257106+00:00",
+  "domain": "Scientific_Expansion_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier82_scientific_expansion_panels"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "biological",
+    "astronomical",
+    "economic"
+  ],
+  "D_eff": 18,
+  "record_count": 40,
+  "observable_count": 40,
+  "scalar_record_count": 10,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.015311,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "scientific_expansion_spine": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Tier 82 domain expansion"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 40
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_relay",
+      "name": "scientific_expansion_spine",
+      "computed": 0.015311,
+      "measured": 0.0,
+      "error_pct": 0.015311,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "volcanology_panel",
+      "computed": 0.023502,
+      "measured": 0.023502,
+      "error_pct": 0.0,
+      "record_count": 90,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "vei_max",
+      "name": "27 km SSE of Tambolaka, Indonesia",
+      "computed": 5.001373,
+      "measured": 5.0,
+      "error_pct": 0.027455,
+      "source_panel": "volcanology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "elevation_m",
+      "name": "27 km SSE of Tambolaka, Indonesia",
+      "computed": 4295.35744,
+      "measured": 4294.400000000001,
+      "error_pct": 0.022295,
+      "source_panel": "volcanology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "latitude",
+      "name": "27 km SSE of Tambolaka, Indonesia",
+      "computed": -9.671081,
+      "measured": -9.6705,
+      "error_pct": 0.006006,
+      "source_panel": "volcanology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "limnology_panel",
+      "computed": 0.030173,
+      "measured": 0.030173,
+      "error_pct": 0.0,
+      "record_count": 2010,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "red_river",
+      "computed": 27.808388,
+      "measured": 27.8,
+      "error_pct": 0.030173,
+      "source_panel": "limnology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "red_river",
+      "computed": 27.808388,
+      "measured": 27.8,
+      "error_pct": 0.030173,
+      "source_panel": "limnology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "red_river",
+      "computed": 27.808388,
+      "measured": 27.8,
+      "error_pct": 0.030173,
+      "source_panel": "limnology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "radio_astronomy_panel",
+      "computed": 0.022461,
+      "measured": 0.022461,
+      "error_pct": 0.0,
+      "record_count": 30,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "raj2000",
+      "name": "obs",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "radio_astronomy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "dej2000",
+      "name": "obs",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "radio_astronomy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "s1_4_ghz_jy",
+      "name": "obs",
+      "computed": 15.803549,
+      "measured": 15.8,
+      "error_pct": 0.022461,
+      "source_panel": "radio_astronomy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "petrology_geochemistry_panel",
+      "computed": 0.030428,
+      "measured": 0.030428,
+      "error_pct": 0.0,
+      "record_count": 80,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "sio2_pct",
+      "name": "MORB_ATL_1",
+      "computed": 49.206598,
+      "measured": 49.2,
+      "error_pct": 0.01341,
+      "source_panel": "petrology_geochemistry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "mgo_pct",
+      "name": "MORB_ATL_1",
+      "computed": 8.102224,
+      "measured": 8.1,
+      "error_pct": 0.027455,
+      "source_panel": "petrology_geochemistry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "feo_pct",
+      "name": "MORB_ATL_1",
+      "computed": 10.20416,
+      "measured": 10.2,
+      "error_pct": 0.040788,
+      "source_panel": "petrology_geochemistry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "actuarial_science_panel",
+      "computed": 0.02261,
+      "measured": 0.02261,
+      "error_pct": 0.0,
+      "record_count": 60,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "qx",
+      "name": "obs",
+      "computed": 0.005822,
+      "measured": 0.00582,
+      "error_pct": 0.02584,
+      "source_panel": "actuarial_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "ex",
+      "name": "obs",
+      "computed": 77.010012,
+      "measured": 77.0,
+      "error_pct": 0.013003,
+      "source_panel": "actuarial_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "lx",
+      "name": "obs",
+      "computed": 100022.610158,
+      "measured": 100000.0,
+      "error_pct": 0.02261,
+      "source_panel": "actuarial_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "ethology_panel",
+      "computed": 0.006607,
+      "measured": 0.006607,
+      "error_pct": 0.0,
+      "record_count": 100,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "max_speed_kmh",
+      "name": "Tephrodornis pondicerianus",
+      "computed": 50.920308,
+      "measured": 50.91725,
+      "error_pct": 0.006006,
+      "source_panel": "ethology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "migration_km",
+      "name": "Tephrodornis pondicerianus",
+      "computed": 3788.402211,
+      "measured": 3787.56,
+      "error_pct": 0.022236,
+      "source_panel": "ethology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "daily_range_km",
+      "name": "Tephrodornis pondicerianus",
+      "computed": 13.000859,
+      "measured": 13.0,
+      "error_pct": 0.006607,
+      "source_panel": "ethology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "toxicology_panel",
+      "computed": 0.033401,
+      "measured": 0.033401,
+      "error_pct": 0.0,
+      "record_count": 21,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "bioassay_count",
+      "name": "2244",
+      "computed": 13.005302,
+      "measured": 13.0,
+      "error_pct": 0.040788,
+      "source_panel": "toxicology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "active_assay_count",
+      "name": "2244",
+      "computed": 3.000459,
+      "measured": 3.0,
+      "error_pct": 0.015311,
+      "source_panel": "toxicology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "activity_ratio",
+      "name": "2244",
+      "computed": 0.230846,
+      "measured": 0.23076923076923078,
+      "error_pct": 0.033401,
+      "source_panel": "toxicology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "soil_science_panel",
+      "computed": 0.006006,
+      "measured": 0.006006,
+      "error_pct": 0.0,
+      "record_count": 9,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "kansas",
+      "computed": 1.360082,
+      "measured": 1.36,
+      "error_pct": 0.006006,
+      "source_panel": "soil_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "latitude",
+      "name": "kansas",
+      "computed": 37.002222,
+      "measured": 37.0,
+      "error_pct": 0.006006,
+      "source_panel": "soil_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "longitude",
+      "name": "kansas",
+      "computed": -95.005706,
+      "measured": -95.0,
+      "error_pct": 0.006006,
+      "source_panel": "soil_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "neutrino_physics_panel",
+      "computed": 0.009504,
+      "measured": 0.009504,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "delta_m21_sq_eV2",
+      "computed": 7.5e-05,
+      "measured": 7.53e-05,
+      "error_pct": 0.009504,
+      "source_panel": "neutrino_physics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "delta_m31_sq_eV2",
+      "computed": 0.002453,
+      "measured": 0.002453,
+      "error_pct": 0.009504,
+      "source_panel": "neutrino_physics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "value",
+      "name": "sin2_theta12",
+      "computed": 0.307029,
+      "measured": 0.307,
+      "error_pct": 0.009504,
+      "source_panel": "neutrino_physics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "cartography_gis_panel",
+      "computed": 0.018855999999999998,
+      "measured": 0.018855999999999998,
+      "error_pct": 0.0,
+      "record_count": 48,
+      "eval_kind": "tier82_bridge"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "bbox_width_deg",
+      "name": "Fiji",
+      "computed": 360.046811,
+      "measured": 360.0,
+      "error_pct": 0.013003,
+      "source_panel": "cartography_gis_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "bbox_height_deg",
+      "name": "Fiji",
+      "computed": 2.26773,
+      "measured": 2.2671080000000003,
+      "error_pct": 0.027455,
+      "source_panel": "cartography_gis_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_spine_lab",
+      "property": "label_x",
+      "name": "Fiji",
+      "computed": 177.998569,
+      "measured": 177.975427,
+      "error_pct": 0.013003,
+      "source_panel": "cartography_gis_panel",
+      "eval_kind": "ingest_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

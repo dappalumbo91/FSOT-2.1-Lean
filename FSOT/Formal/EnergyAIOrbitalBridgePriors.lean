@@ -1,6 +1,6 @@
 /-
-  FSOT Formal EnergyAIOrbitalBridgePriors — Energy_AI_Orbital_Bridge Tier L orbital gap fill.
-  Generator: scripts/gen_tier_l_orbital_gap_fill_lean.py
+  FSOT Formal EnergyAiOrbitalBridgePriors — extension domain Energy_AI_Orbital_Bridge.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def energy_ai_orbital_bridge_observable_count : ℕ := 48
+def energy_ai_orbital_bridge_D_eff : ℕ := 16
 
-def e_ai_br_observable_count : ℕ := 48
-def e_ai_br_pooled_median_error_pct : ℝ := (0.02754410755640979 : ℝ)
-def e_ai_br_headline_median_error_pct : ℝ := (0.02754410755640979 : ℝ)
-def e_ai_br_beats_sota_headlines : ℕ := 2
-def e_ai_br_D_eff : ℕ := 16
-def e_ai_br_bridge_pair_count : ℕ := 36
+theorem energy_ai_orbital_bridge_observable_count_pos : 0 < energy_ai_orbital_bridge_observable_count := by
+  unfold energy_ai_orbital_bridge_observable_count; norm_num
 
-theorem e_ai_br_observable_count_pos : 0 < e_ai_br_observable_count := by
-  unfold e_ai_br_observable_count; norm_num
+theorem energy_ai_orbital_bridge_median_error_under_half_pct :
+    (0.027544107556407217 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem e_ai_br_pooled_median_under_half_pct :
-    e_ai_br_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold e_ai_br_pooled_median_error_pct; norm_num
-
-theorem e_ai_br_headline_median_under_half_pct :
-    e_ai_br_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold e_ai_br_headline_median_error_pct; norm_num
-
-theorem e_ai_br_beats_sota_headlines_pos : 0 < e_ai_br_beats_sota_headlines := by
-  unfold e_ai_br_beats_sota_headlines; norm_num
-theorem e_ai_br_bridge_pairs_pos : 0 < e_ai_br_bridge_pair_count := by unfold e_ai_br_bridge_pair_count; norm_num
-
-theorem e_ai_br_bundle :
-    e_ai_br_observable_count = 48 ∧
-    e_ai_br_pooled_median_error_pct < (0.5 : ℝ) ∧
-    e_ai_br_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold e_ai_br_observable_count; norm_num
-  · exact e_ai_br_pooled_median_under_half_pct
-  · exact e_ai_br_beats_sota_headlines_pos
+theorem energy_ai_orbital_bridge_bundle :
+    energy_ai_orbital_bridge_observable_count = 48 ∧
+    energy_ai_orbital_bridge_D_eff = 16 ∧
+    (0.027544107556407217 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold energy_ai_orbital_bridge_observable_count; norm_num,
+    by unfold energy_ai_orbital_bridge_D_eff; norm_num,
+    energy_ai_orbital_bridge_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

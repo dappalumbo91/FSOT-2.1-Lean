@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:15:02.064035+00:00",
+  "generated_at": "2026-07-12T14:25:36.854828+00:00",
   "domain": "Warp_BH_WH_Portal_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\lab_registry.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\lab_registry.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "blackhole",
@@ -15,22 +16,24 @@
     "electromagnetism"
   ],
   "D_eff": 29,
-  "record_count": 11,
-  "observable_count": 11,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 14,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "bh_wh_entanglement_gate": {
-        "sota_typical_error_pct": 50.0,
-        "sota_model": "No unified BH/WH micro-portal Lean baseline"
+      "Warp_BH_WH_Portal_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_warp_bh_wh_portal_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,42 +44,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 11,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "warp_bh_wh_portal",
-      "name": "bh_wh_entanglement_gate",
+      "property": "depth_relay",
+      "name": "Warp_BH_WH_Portal_Panel_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 9,
-      "domain_display_name": "tier gap fill",
-      "display_name": "bh wh entanglement gate",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -88,20 +65,7 @@
       "measured": 0.718,
       "error_pct": 0.0,
       "observable_count": 28,
-      "eval_kind": "blackhole_thesis_bridge",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "bh thermo observable max err",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "blackhole_thesis_bridge"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -110,20 +74,7 @@
       "computed": 1.722776467449,
       "measured": 1.0,
       "error_pct": 72.277647,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "garattini desitter stable band",
-      "scientific_measurement": {
-        "delta": 0.72277647,
-        "delta_pct": 72.277647,
-        "effective_error_pct": 72.277647,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "red",
-        "within_green_gate": false,
-        "within_aspiration_gate": false
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -132,20 +83,7 @@
       "computed": 0.009663204175,
       "measured": 0.009663204175,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "bh inlet compactification proxy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -154,20 +92,7 @@
       "computed": 0.501689416811,
       "measured": 0.501689416811,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "wh outgassing proxy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -176,20 +101,7 @@
       "computed": 0.009663204175,
       "measured": 0.009663204175,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "micro portal doorway",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -198,20 +110,7 @@
       "computed": 0.981227203621,
       "measured": 0.981227203621,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "info preservation no deconstruction",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -220,20 +119,7 @@
       "computed": 0.04803163401,
       "measured": 0.04803163401,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "quantum entanglement gate",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -242,20 +128,7 @@
       "computed": 0.043599802456,
       "measured": 0.043599802456,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "entangled gate pair coupling",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -264,20 +137,7 @@
       "computed": 0.000464139486,
       "measured": 0.000464139486,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "doorway traverse scalar",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -286,20 +146,7 @@
       "computed": 0.053926299704,
       "measured": 0.053926299704,
       "error_pct": 0.0,
-      "eval_kind": "warp_bh_wh_portal",
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "paired node bridge relay",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "warp_bh_wh_portal"
     },
     {
       "lab": "warp_bh_wh_portal_lab",
@@ -313,9 +160,168 @@
         "WarpBhWhPortalPriors",
         "BlackHoleThesisPriors",
         "WarpActuationDevelopmentPriors"
+      ]
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.005169,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "ai",
+        "galactic"
       ],
-      "domain_display_name": "warp bh wh portal",
-      "display_name": "lambda stab gt one and info preserve",
+      "priority": false,
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "effective_error_pct": 0.0297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "source_domain": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 15,
+      "S": -0.512165,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "effective_error_pct": 0.0201,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "source_domain": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "source_median_error_pct": 0.020098,
+      "D_eff": 17,
+      "S": 0.793204,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.0314,
+        "effective_error_pct": 0.0314,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "source_domain": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "effective_error_pct": 0.0298,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
@@ -326,12 +332,207 @@
         "precision_tier": "green",
         "within_green_gate": true,
         "within_aspiration_gate": true
-      }
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc time emergence flag",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "fpc_fluidlink_deep",
+      "computed": 0.022181,
+      "measured": 0.022181,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc fluidlink deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "effective_error_pct": 0.039807,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "time_emergence_bridge",
+      "name": "time_emergence_simulation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge",
+      "domain_display_name": "time emergence deep",
+      "display_name": "time emergence simulation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Deep_Panel",
+      "depth_relay_from": "Time_Emergence_Deep_Panel"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Deep_Panel",
+      "depth_relay_from": "Time_Emergence_Deep_Panel"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "earth sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Deep_Panel",
+      "depth_relay_from": "Time_Emergence_Deep_Panel"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "physical_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 2.6616995272150692e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay",
+      "domain_display_name": "time emergence deep",
+      "display_name": "moon sidereal omega rad s",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Deep_Panel",
+      "depth_relay_from": "Time_Emergence_Deep_Panel"
+    },
+    {
+      "lab": "warp_bh_wh_portal_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "hubble_bubble",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "domain_display_name": "hubble dark sector",
+      "display_name": "hubble bubble",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "structural_gate",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Hubble_Dark_Sector_Crosswalk",
+      "depth_relay_from": "Hubble_Dark_Sector_Crosswalk"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "max_scalar_error_pct": 0.039797,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -340,28 +541,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "bh_wh_portal_meta": {
-    "s_bh_bridge": 0.882410798418,
-    "lean_domain": "blackhole",
-    "python_domain_bridge": "Astrophysics",
-    "bh_thesis_anchor": "BlackHoleThesisPriors \u2014 28/28 observables within 2%",
-    "wh_mechanism": "bubble_bleed active outgassing \u2014 no post-closure suction spike",
-    "doorway_interpretation": "Step-through traversal without information deconstruction caveat",
-    "entanglement_interpretation": "Two gates quantum-entangled via \u03c6_lock\u00b2 \u00b7 |S_QM|\u00b2 channel"
-  },
-  "display_name": "Warp BH WH Portal Panel",
-  "tier_label": "Tier 78 \u2014 Warp BH WH Portal Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.996541+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 8,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 8
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

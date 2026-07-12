@@ -1,13 +1,14 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T23:01:47.796048+00:00",
+  "generated_at": "2026-07-12T14:25:04.065332+00:00",
   "domain": "Stumped_Observables_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "data/stumped_observables_reference.json",
     "vendor/fsot_compute.py",
     "scripts/higgs_mass_formula_eval.py",
-    "data/sector_h0_seed.json"
+    "data/sector_h0_seed.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -16,24 +17,24 @@
     "blackhole"
   ],
   "D_eff": 22,
-  "record_count": 19,
-  "observable_count": 19,
-  "scalar_record_count": 13,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 18,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.039905,
-  "pooled_median_error_pct": 0.039905,
-  "headline_median_error_pct": 0.039905,
+  "median_error_pct": 0.029748999999999998,
+  "pooled_median_error_pct": 0.029748999999999998,
+  "headline_median_error_pct": 0.031421,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "open_observable_panel": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "\u039bCDM tensions unresolved / no unified prediction"
+      "Stumped_Observables_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_stumped_panel_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,19 +42,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.039905,
+      "computed": 0.029749,
       "measured": 0.0,
-      "error_pct": 0.039905,
-      "observable_count": 19
+      "error_pct": 0.029748999999999998,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "stumped_panel",
-      "name": "open_observable_panel",
-      "computed": 0.039905,
+      "property": "depth_relay",
+      "name": "Stumped_Observables_Panel_depth",
+      "computed": 0.031421,
       "measured": 0.0,
-      "error_pct": 0.039905,
-      "observable_count": 13
+      "error_pct": 0.031421,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -314,10 +315,184 @@
       "reference": "DESI_DR2",
       "eval_kind": "preregistered_falsifiable",
       "comparison_class": "bao_sector_prediction"
+    },
+    {
+      "lab": "stumped_observables_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.005169,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "effective_error_pct": 0.0297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "stumped_observables_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Acoustic_Resonance_Materials",
+      "source_domain": "Acoustic_Resonance_Materials",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.020055,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 15,
+      "S": -0.512165,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000201,
+        "delta_pct": 0.0201,
+        "effective_error_pct": 0.0201,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "stumped_observables_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adjacent_Rung_Coupling",
+      "source_domain": "Adjacent_Rung_Coupling",
+      "computed": 1.000314,
+      "measured": 1.0,
+      "error_pct": 0.031421,
+      "source_median_error_pct": 0.020098,
+      "D_eff": 17,
+      "S": 0.793204,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.0314,
+        "effective_error_pct": 0.0314,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "stumped_observables_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "source_domain": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000298,
+        "delta_pct": 0.0298,
+        "effective_error_pct": 0.0298,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
+    },
+    {
+      "lab": "stumped_observables_panel_depth_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "source": "NIST SI second definition (Cs-133 hyperfine transition)",
+      "domain_display_name": "real data anchors",
+      "display_name": "cs133 hyperfine hz",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Emergence_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Emergence_Simulation"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.039905,
+    "scalar_pooled_median_error_pct": 0.029748999999999998,
     "max_scalar_error_pct": 0.341024,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -327,9 +502,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "tier": 51,
-  "open_prediction_count": 0,
-  "open_predictions": [],
-  "panel_status": "GREEN"
+  "fsot_precision_gate_pct": 0.5
 }

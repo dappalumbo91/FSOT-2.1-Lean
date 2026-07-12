@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T13:58:17.477402+00:00",
+  "generated_at": "2026-07-12T14:24:10.800943+00:00",
   "domain": "Government_Open_Data_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -111,15 +111,15 @@
       "computed": 0.020755,
       "measured": 0.020755,
       "error_pct": 0.0,
-      "record_count": 1200,
+      "record_count": 2148,
       "eval_kind": "tier80_bridge"
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "goes_flux",
-      "name": "2026-07-12T07:58:00Z",
+      "name": "2026-07-12T08:22:00Z",
       "computed": 1e-06,
-      "measured": 9.82062147159013e-07,
+      "measured": 7.780074611218879e-07,
       "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"
@@ -127,9 +127,9 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "goes_observed_flux",
-      "name": "2026-07-12T07:58:00Z",
+      "name": "2026-07-12T08:22:00Z",
       "computed": 1e-06,
-      "measured": 1.002397880256467e-06,
+      "measured": 8.017254344849789e-07,
       "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"
@@ -137,7 +137,7 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "satellite_id",
-      "name": "2026-07-12T07:58:00Z",
+      "name": "2026-07-12T08:22:00Z",
       "computed": 18.004043,
       "measured": 18.0,
       "error_pct": 0.022461,
@@ -147,9 +147,9 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "goes_flux",
-      "name": "2026-07-12T07:58:00Z",
-      "computed": 8e-06,
-      "measured": 7.976876986504067e-06,
+      "name": "2026-07-12T08:22:00Z",
+      "computed": 9e-06,
+      "measured": 8.680288374307565e-06,
       "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"

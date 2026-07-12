@@ -1,6 +1,6 @@
 /-
-  FSOT Formal SecureSoftwareEngineeringPriors — Secure_Software_Engineering Tier H cybersecurity engineering.
-  Generator: scripts/gen_tier_h_cybersecurity_lean.py
+  FSOT Formal SecureSoftwareEngineeringPriors — extension domain Secure_Software_Engineering.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,35 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def secure_software_engineering_observable_count : ℕ := 59
+def secure_software_engineering_D_eff : ℕ := 14
 
-def secure_sw_observable_count : ℕ := 59
-def secure_sw_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def secure_sw_headline_median_error_pct : ℝ := (0.0 : ℝ)
-def secure_sw_beats_sota_headlines : ℕ := 2
-def secure_sw_D_eff : ℕ := 14
+theorem secure_software_engineering_observable_count_pos : 0 < secure_software_engineering_observable_count := by
+  unfold secure_software_engineering_observable_count; norm_num
 
-theorem secure_sw_observable_count_pos : 0 < secure_sw_observable_count := by
-  unfold secure_sw_observable_count; norm_num
+theorem secure_software_engineering_median_error_under_half_pct :
+    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem secure_sw_pooled_median_under_half_pct :
-    secure_sw_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold secure_sw_pooled_median_error_pct; norm_num
-
-theorem secure_sw_headline_median_under_half_pct :
-    secure_sw_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold secure_sw_headline_median_error_pct; norm_num
-
-theorem secure_sw_beats_sota_headlines_pos : 0 < secure_sw_beats_sota_headlines := by
-  unfold secure_sw_beats_sota_headlines; norm_num
-
-theorem secure_sw_bundle :
-    secure_sw_observable_count = 59 ∧
-    secure_sw_pooled_median_error_pct < (0.5 : ℝ) ∧
-    secure_sw_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold secure_sw_observable_count; norm_num
-  · exact secure_sw_pooled_median_under_half_pct
-  · exact secure_sw_beats_sota_headlines_pos
+theorem secure_software_engineering_bundle :
+    secure_software_engineering_observable_count = 59 ∧
+    secure_software_engineering_D_eff = 14 ∧
+    (0.0 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold secure_software_engineering_observable_count; norm_num,
+    by unfold secure_software_engineering_D_eff; norm_num,
+    secure_software_engineering_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

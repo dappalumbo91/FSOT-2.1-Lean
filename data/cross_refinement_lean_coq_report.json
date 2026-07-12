@@ -1,34 +1,46 @@
 {
-  "generated_at": "2026-07-12T12:23:51.544351+00:00",
+  "generated_at": "2026-07-12T14:54:09.014939+00:00",
   "tier": "79b_cross_refinement",
-  "obligation_count_total": 2158,
-  "obligation_count_provable": 2102,
-  "obligation_count_atomic_provable": 1828,
-  "obligation_count_bundle_conj": 274,
-  "obligation_count_margin_violations": 56,
-  "coq_chunks_found": 19,
-  "coq_lemmas_indexed": 1828,
+  "obligation_count_total": 2073,
+  "obligation_count_provable": 2019,
+  "obligation_count_atomic_provable": 1660,
+  "obligation_count_bundle_conj": 359,
+  "obligation_count_margin_violations": 54,
+  "coq_chunks_found": 17,
+  "coq_lemmas_indexed": 1660,
   "triangulation": {
-    "atomic_triangulated_ok": 1828,
+    "atomic_triangulated_ok": 1660,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 274,
+    "bundle_conj_triangulated_ok": 359,
     "bundle_conj_triangulated_fail": 0,
     "margin_violations_confirmed_ok": 0,
-    "margin_violations_confirmed_fail": 56,
+    "margin_violations_confirmed_fail": 54,
     "pct_atomic_triangulated": 100.0
   },
   "margin_summary_by_kind": {
-    "lt_half": {
-      "count": 447,
-      "min_margin": "0.007472",
-      "median_margin": "0.499905",
-      "max_margin": "0.5"
-    },
     "nat_pos": {
-      "count": 578,
-      "min_margin": "1",
-      "median_margin": "14",
-      "max_margin": "352276"
+      "count": 481,
+      "min_margin": "2",
+      "median_margin": "39",
+      "max_margin": "271813"
+    },
+    "r_lt_lit_pure": {
+      "count": 246,
+      "min_margin": "0.000192875570426",
+      "median_margin": "0.494831441372822312",
+      "max_margin": "19.102"
+    },
+    "lt_lit": {
+      "count": 180,
+      "min_margin": "0E-15",
+      "median_margin": "0.0442977973794388",
+      "max_margin": "3269016.3724721107"
+    },
+    "lt_half": {
+      "count": 168,
+      "min_margin": "0.007472",
+      "median_margin": "0.488413612020064721",
+      "max_margin": "0.5"
     },
     "gt_lit": {
       "count": 135,
@@ -36,14 +48,8 @@
       "median_margin": "0.0482032061315143",
       "max_margin": "1446257063881.475"
     },
-    "lt_lit": {
-      "count": 171,
-      "min_margin": "0E-15",
-      "median_margin": "0.0162552524847247",
-      "max_margin": "3269016.3724721107"
-    },
     "nat_le_sym": {
-      "count": 31,
+      "count": 30,
       "min_margin": "0",
       "median_margin": "0",
       "max_margin": "4234"
@@ -55,22 +61,16 @@
       "max_margin": "0.999988963000298"
     },
     "pos": {
-      "count": 95,
+      "count": 94,
       "min_margin": "5.5E-19",
       "median_margin": "0.7961830900509372",
-      "max_margin": "125.20001875723811"
+      "max_margin": "58.493466"
     },
     "nat_gt_lit": {
       "count": 13,
       "min_margin": "1",
       "median_margin": "5",
       "max_margin": "70"
-    },
-    "r_lt_lit_pure": {
-      "count": 39,
-      "min_margin": "0.000192875570426",
-      "median_margin": "0.24",
-      "max_margin": "19.102"
     },
     "nat_le_lit": {
       "count": 2,
@@ -95,12 +95,6 @@
       "min_margin": "0.005481499070",
       "median_margin": "1.0099710610507393",
       "max_margin": "2.8464288850229708"
-    },
-    "nat_sum2_pos": {
-      "count": 1,
-      "min_margin": "38",
-      "median_margin": "38",
-      "max_margin": "38"
     },
     "nat_lt_sym": {
       "count": 1,
@@ -133,7 +127,7 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.499905",
+  "lt_half_pooled_median_margin_to_bound": "0.488413612020064721",
   "margin_violations": [
     {
       "id": "aether_prime_priors_bundle",
@@ -162,12 +156,6 @@
     {
       "id": "codon_trinary_map_bundle",
       "module": "CodonPriors",
-      "violation": {},
-      "lean_build_fails": false
-    },
-    {
-      "id": "cosmology_anomalies_bundle",
-      "module": "CosmologyAnomaliesPriors",
       "violation": {},
       "lean_build_fails": false
     },
@@ -270,12 +258,6 @@
     {
       "id": "higgs_branching_bundle",
       "module": "HiggsBranchingPriors",
-      "violation": {},
-      "lean_build_fails": false
-    },
-    {
-      "id": "higgs_mass_bundle",
-      "module": "HiggsMassPriors",
       "violation": {},
       "lean_build_fails": false
     },
@@ -473,7 +455,7 @@
     }
   ],
   "issue_counts": {
-    "lean_expected_build_failure_not_confirmed": 56
+    "lean_expected_build_failure_not_confirmed": 54
   },
   "failures_sample": [
     {
@@ -544,22 +526,6 @@
       "obligation_id": "codon_trinary_map_bundle",
       "kind": "bundle_conj",
       "lean_module": "CodonPriors",
-      "classification": "margin_violation",
-      "margin_violation": {},
-      "cross_framework_agreement": {
-        "python_decimal_refutes": true,
-        "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
-      },
-      "issues": [
-        "lean_expected_build_failure_not_confirmed"
-      ],
-      "triangulated_ok": false
-    },
-    {
-      "obligation_id": "cosmology_anomalies_bundle",
-      "kind": "bundle_conj",
-      "lean_module": "CosmologyAnomaliesPriors",
       "classification": "margin_violation",
       "margin_violation": {},
       "cross_framework_agreement": {
@@ -845,9 +811,9 @@
       "triangulated_ok": false
     },
     {
-      "obligation_id": "higgs_mass_bundle",
+      "obligation_id": "hydrology_bundle",
       "kind": "bundle_conj",
-      "lean_module": "HiggsMassPriors",
+      "lean_module": "HydrologyPriors",
       "classification": "margin_violation",
       "margin_violation": {},
       "cross_framework_agreement": {
@@ -861,9 +827,25 @@
       "triangulated_ok": false
     },
     {
-      "obligation_id": "hydrology_bundle",
+      "obligation_id": "knowledge_base_corpus_bundle",
       "kind": "bundle_conj",
-      "lean_module": "HydrologyPriors",
+      "lean_module": "KnowledgeBasePriors",
+      "classification": "margin_violation",
+      "margin_violation": {},
+      "cross_framework_agreement": {
+        "python_decimal_refutes": true,
+        "coq_excluded_from_proofs": true,
+        "lean_build_fails": false
+      },
+      "issues": [
+        "lean_expected_build_failure_not_confirmed"
+      ],
+      "triangulated_ok": false
+    },
+    {
+      "obligation_id": "kronos_metrology_bundle",
+      "kind": "bundle_conj",
+      "lean_module": "KronosPriors",
       "classification": "margin_violation",
       "margin_violation": {},
       "cross_framework_agreement": {

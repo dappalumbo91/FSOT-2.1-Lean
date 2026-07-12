@@ -1713,6 +1713,9 @@ def make_unique_coq_ids(obligations: list[dict]) -> list[dict]:
         seen.add(coq_id)
         ob = dict(ob)
         ob["coq_id"] = coq_id
+        if coq_id != base:
+            ob["id"] = coq_id
+            ob["id_alias"] = base
         out.append(ob)
     return out
 

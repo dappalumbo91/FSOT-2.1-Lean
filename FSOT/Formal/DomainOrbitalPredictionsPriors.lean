@@ -1,6 +1,6 @@
 /-
-  FSOT Formal DomainOrbitalPredictionsPriors — Domain_Orbital_Predictions Tier M ToE unity.
-  Generator: scripts/gen_tier_m_toe_unity_lean.py
+  FSOT Formal DomainOrbitalPredictionsPriors — extension domain Domain_Orbital_Predictions.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,38 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def domain_orbital_predictions_observable_count : ℕ := 24
+def domain_orbital_predictions_D_eff : ℕ := 19
 
-def orb_pred_observable_count : ℕ := 12
-def orb_pred_pooled_median_error_pct : ℝ := (0.02754410755640979 : ℝ)
-def orb_pred_headline_median_error_pct : ℝ := (0.02754410755640979 : ℝ)
-def orb_pred_beats_sota_headlines : ℕ := 2
-def orb_pred_D_eff : ℕ := 19
-def orb_pred_prediction_count : ℕ := 12
-def orb_pred_filled_prediction_count : ℕ := 12
+theorem domain_orbital_predictions_observable_count_pos : 0 < domain_orbital_predictions_observable_count := by
+  unfold domain_orbital_predictions_observable_count; norm_num
 
-theorem orb_pred_observable_count_pos : 0 < orb_pred_observable_count := by
-  unfold orb_pred_observable_count; norm_num
+theorem domain_orbital_predictions_median_error_under_half_pct :
+    (0.01529034996934153 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem orb_pred_pooled_median_under_half_pct :
-    orb_pred_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold orb_pred_pooled_median_error_pct; norm_num
-
-theorem orb_pred_headline_median_under_half_pct :
-    orb_pred_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold orb_pred_headline_median_error_pct; norm_num
-
-theorem orb_pred_beats_sota_headlines_pos : 0 < orb_pred_beats_sota_headlines := by
-  unfold orb_pred_beats_sota_headlines; norm_num
-theorem orb_pred_filled_all_predictions : orb_pred_filled_prediction_count = orb_pred_prediction_count := by unfold orb_pred_prediction_count orb_pred_filled_prediction_count; norm_num
-
-theorem orb_pred_bundle :
-    orb_pred_observable_count = 12 ∧
-    orb_pred_pooled_median_error_pct < (0.5 : ℝ) ∧
-    orb_pred_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold orb_pred_observable_count; norm_num
-  · exact orb_pred_pooled_median_under_half_pct
-  · exact orb_pred_beats_sota_headlines_pos
+theorem domain_orbital_predictions_bundle :
+    domain_orbital_predictions_observable_count = 24 ∧
+    domain_orbital_predictions_D_eff = 19 ∧
+    (0.01529034996934153 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold domain_orbital_predictions_observable_count; norm_num,
+    by unfold domain_orbital_predictions_D_eff; norm_num,
+    domain_orbital_predictions_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

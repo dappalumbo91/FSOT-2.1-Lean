@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T20:07:34.192175+00:00",
+  "generated_at": "2026-07-12T14:25:27.980682+00:00",
   "domain": "Cosmology_Anomaly_Deep_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\stumped_observables_reference.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\stumped_observables_reference.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "cosmological",
@@ -15,24 +16,24 @@
     "cmb"
   ],
   "D_eff": 24,
-  "record_count": 15,
-  "observable_count": 15,
-  "scalar_record_count": 1,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 7,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.000595,
-  "pooled_median_error_pct": 0.000595,
-  "headline_median_error_pct": 0.000595,
+  "median_error_pct": 0.029733,
+  "pooled_median_error_pct": 0.029733,
+  "headline_median_error_pct": 0.029733,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "open_observables_deep": {
-        "sota_typical_error_pct": 15.0,
-        "sota_model": "Lambda-CDM + phenomenological extensions"
+      "Cosmology_Anomaly_Deep_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_cosmology_anomaly_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,45 +41,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.000595,
+      "computed": 0.029733,
       "measured": 0.0,
-      "error_pct": 0.000595,
-      "observable_count": 15,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.000595,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.029733,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "cosmology_anomaly",
-      "name": "open_observables_deep",
-      "computed": 0.000595,
+      "property": "depth_relay",
+      "name": "Cosmology_Anomaly_Deep_Panel_depth",
+      "computed": 0.000502,
       "measured": 0.0,
-      "error_pct": 0.000595,
-      "observable_count": 1,
-      "domain_display_name": "tier gap fill",
-      "display_name": "open observables deep",
-      "scientific_measurement": {
-        "delta": 0.000595,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.000502,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -481,11 +456,197 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "time emergence deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc time emergence flag",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "fpc_fluidlink_deep",
+      "computed": 0.022181,
+      "measured": 0.022181,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "fluid_spacetime_bridge",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "fpc fluidlink deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "source_panel": "Fluid_Spacetime_Observable_Spine",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor",
+      "domain_display_name": "fluid spacetime observable",
+      "display_name": "cs133 fpc equilibrium",
+      "scientific_measurement": {
+        "delta": 0.000535,
+        "delta_pct": 0.039807,
+        "effective_error_pct": 0.039807,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Fluid_Spacetime_Observable_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "stumped_pillar",
+      "name": "stumped_observables_panel",
+      "computed": 19.0,
+      "measured": 19.0,
+      "error_pct": 0.039905,
+      "source": "Stumped_Observables_Panel",
+      "status": "GREEN",
+      "source_panel": "Stumped_Observables_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Stumped_Observables_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "stumped_pillar",
+      "name": "hubble_bubble_tension",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "source": "Hubble_Bubble_Tension",
+      "status": "GREEN",
+      "source_panel": "Stumped_Observables_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Stumped_Observables_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "stumped_pillar",
+      "name": "dark_sector_open_problems",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.009407,
+      "source": "Dark_Sector_Open_Problems",
+      "status": "GREEN",
+      "source_panel": "Stumped_Observables_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Stumped_Observables_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "cosmology_anomalies_link",
+      "name": "cosmology_anomalies_tier25",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "source": "Cosmology_Anomalies",
+      "status": "GREEN",
+      "source_panel": "Stumped_Observables_Spine",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Stumped_Observables_Spine"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_panel_depth_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.005169,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
+      "domain_display_name": "time domain crosswalk",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.0297,
+        "effective_error_pct": 0.0297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Time_Domain_Crosswalk",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Time_Domain_Crosswalk"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.000595,
-    "max_scalar_error_pct": 0.000595,
+    "scalar_pooled_median_error_pct": 0.029733,
+    "max_scalar_error_pct": 0.140126,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -494,19 +655,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Cosmology Anomaly Deep Panel",
-  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
-  "scientific_precision_summary": {
-    "scalar_count": 1,
-    "median_error_pct": 0.28055,
-    "max_error_pct": 0.28055,
-    "mean_abs_delta": 0.002856,
-    "precision_tier_counts": {
-      "contested": 1
-    },
-    "green_gate_fraction": 0.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.982193+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

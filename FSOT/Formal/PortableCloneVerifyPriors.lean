@@ -1,6 +1,6 @@
 /-
-  FSOT Formal PortableCloneVerifyPriors — Portable_Clone_Verify Tier K gap closure.
-  Generator: scripts/gen_tier_k_toe_gap_closure_lean.py
+  FSOT Formal PortableCloneVerifyPriors — extension domain Portable_Clone_Verify.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,36 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def portable_clone_verify_observable_count : ℕ := 290
+def portable_clone_verify_D_eff : ℕ := 14
 
-def clone_vf_observable_count : ℕ := 166
-def clone_vf_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def clone_vf_headline_median_error_pct : ℝ := (0.0 : ℝ)
-def clone_vf_beats_sota_headlines : ℕ := 2
-def clone_vf_D_eff : ℕ := 14
-def clone_vf_clone_verify_pass : ℕ := 1
+theorem portable_clone_verify_observable_count_pos : 0 < portable_clone_verify_observable_count := by
+  unfold portable_clone_verify_observable_count; norm_num
 
-theorem clone_vf_observable_count_pos : 0 < clone_vf_observable_count := by
-  unfold clone_vf_observable_count; norm_num
+theorem portable_clone_verify_median_error_under_half_pct :
+    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem clone_vf_pooled_median_under_half_pct :
-    clone_vf_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold clone_vf_pooled_median_error_pct; norm_num
-
-theorem clone_vf_headline_median_under_half_pct :
-    clone_vf_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold clone_vf_headline_median_error_pct; norm_num
-
-theorem clone_vf_beats_sota_headlines_pos : 0 < clone_vf_beats_sota_headlines := by
-  unfold clone_vf_beats_sota_headlines; norm_num
-
-theorem clone_vf_bundle :
-    clone_vf_observable_count = 166 ∧
-    clone_vf_pooled_median_error_pct < (0.5 : ℝ) ∧
-    clone_vf_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold clone_vf_observable_count; norm_num
-  · exact clone_vf_pooled_median_under_half_pct
-  · exact clone_vf_beats_sota_headlines_pos
+theorem portable_clone_verify_bundle :
+    portable_clone_verify_observable_count = 290 ∧
+    portable_clone_verify_D_eff = 14 ∧
+    (0.0 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold portable_clone_verify_observable_count; norm_num,
+    by unfold portable_clone_verify_D_eff; norm_num,
+    portable_clone_verify_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T13:58:17.472318+00:00",
+  "generated_at": "2026-07-12T14:25:37.927955+00:00",
   "domain": "Federal_Science_Registry_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\government_open_data\\live_cache\\federal_science_registry_cache.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\government_open_data\\federal_science_registry_bundled.json"
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\government_open_data\\federal_science_registry_bundled.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "economic",
@@ -13,24 +14,24 @@
     "energy"
   ],
   "D_eff": 17,
-  "record_count": 16,
-  "observable_count": 16,
-  "scalar_record_count": 16,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 22,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.024225,
-  "pooled_median_error_pct": 0.024225,
-  "headline_median_error_pct": 0.02584,
+  "median_error_pct": 0.013352,
+  "pooled_median_error_pct": 0.013352,
+  "headline_median_error_pct": 0.016254,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "federal_science_registry": {
-        "sota_typical_error_pct": 12.0,
-        "sota_model": "Federal open-science initiative metadata (NAIRR/Genesis/OSTI)"
+      "Federal_Science_Registry_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -38,19 +39,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.024225,
+      "computed": 0.013352,
       "measured": 0.0,
-      "error_pct": 0.024225,
-      "observable_count": 16
+      "error_pct": 0.013352,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "federal_science_registry",
-      "computed": 0.02584,
+      "property": "depth_relay",
+      "name": "Federal_Science_Registry_Panel_depth",
+      "computed": 0.016254,
       "measured": 0.0,
-      "error_pct": 0.02584,
-      "observable_count": 16
+      "error_pct": 0.016254,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -261,10 +262,170 @@
       "fsot_scalar": 1.050206,
       "initiative": "AARO UAP Records Release",
       "agency": "DoW"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Small_Body_Orbits",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Small_Body_Orbits__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "property": "importance_score",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 4.200357,
+      "measured": 4.2,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "property": "lat",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 39.00245,
+      "measured": 38.9917452,
+      "error_pct": 0.027455,
+      "eval_kind": "contested_observable",
+      "fsot_domain": "Geophysics",
+      "fsot_scalar": -0.549094,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    },
+    {
+      "lab": "federal_science_registry_panel_depth_lab",
+      "property": "lng",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": -82.098232,
+      "measured": -82.075698,
+      "error_pct": 0.027455,
+      "eval_kind": "contested_observable",
+      "fsot_domain": "Geophysics",
+      "fsot_scalar": -0.549094,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.024225,
+    "scalar_pooled_median_error_pct": 0.013352,
     "max_scalar_error_pct": 0.031506,
     "classifier_count": 0,
     "classifier_correct": 0,

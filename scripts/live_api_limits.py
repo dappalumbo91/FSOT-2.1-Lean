@@ -41,6 +41,10 @@ def tier81_deep() -> bool:
     return _flag("FSOT_TIER81_DEEP") or mega_deep()
 
 
+def tier82_deep() -> bool:
+    return _flag("FSOT_TIER82_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -252,3 +256,59 @@ def open_meteo_site_count() -> int:
     if tier81_deep():
         return 6
     return 3
+
+
+def volcanology_limit() -> int:
+    if mega_deep():
+        return 20
+    if tier82_deep():
+        return 15
+    return 8
+
+
+def limnology_site_count() -> int:
+    if mega_deep():
+        return 6
+    if tier82_deep():
+        return 5
+    return 3
+
+
+def radio_source_limit() -> int:
+    if mega_deep():
+        return 25
+    if tier82_deep():
+        return 15
+    return 8
+
+
+def ethology_gbif_limit() -> int:
+    if mega_deep():
+        return 30
+    if tier82_deep():
+        return 20
+    return 10
+
+
+def toxicology_cid_limit() -> int:
+    if mega_deep():
+        return 10
+    if tier82_deep():
+        return 8
+    return 5
+
+
+def soilgrids_point_count() -> int:
+    if mega_deep():
+        return 6
+    if tier82_deep():
+        return 5
+    return 3
+
+
+def cartography_feature_limit() -> int:
+    if mega_deep():
+        return 20
+    if tier82_deep():
+        return 12
+    return 8

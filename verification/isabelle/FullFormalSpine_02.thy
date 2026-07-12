@@ -1,7 +1,28 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 3/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 3/17 (generated). *)
 theory FullFormalSpine_02
 imports Complex_Main
 begin
+
+lemma codon_cac_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_cac_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_cag_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_cag_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_cat_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_cat_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_cca_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
 
 lemma codon_cca_secondary_phase: "(0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
@@ -273,34 +294,13 @@ lemma codon_genomic_table_link: "(64.0 :: real) = (64.0 :: real)"
 lemma stop_codon_fraction_cert: "(0.046875 :: real) = (0.046875 :: real)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma cold_fusion_candidate_prereg_scaffold_headline_median_under_half_pct: "(0.00007869745 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (19 :: nat)"
-  by eval
-
-lemma cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma cold_fusion_lab_synthesis_crosswalk_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cold_fusion_lab_synthesis_crosswalk_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cold_fusion_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma cold_fusion_lab_synthesis_crosswalk_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma comp_lad_pooled_median_under_half_pct: "(0.0220747159758794 :: real) < (0.5 :: real)"
-  by eval
-
-lemma comp_lad_headline_median_under_half_pct: "(0.0220747159758794 :: real) < (0.5 :: real)"
   by eval
 
 end

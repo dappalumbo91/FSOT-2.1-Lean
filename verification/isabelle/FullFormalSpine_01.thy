@@ -1,13 +1,7 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 2/19 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 2/17 (generated). *)
 theory FullFormalSpine_01
 imports Complex_Main
 begin
-
-lemma astrocyte_syncytium_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
-
-lemma oligodendrocyte_myelination_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
 
 lemma amygdala_genetic_zero_is_superposition: "(0.3888888888888889 :: real) = (0.3888888888888889 :: real)"
   by eval
@@ -69,6 +63,24 @@ lemma cardiology_ext_observable_count_pos: "0 < (126 :: nat)"
 lemma cardiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
+lemma cardiology_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma cardiology_median_error_under_half_pct: "(0.030622122938654326 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cartography_gis_panel_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma cartography_gis_panel_median_error_under_half_pct: "(0.018855999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cartography_gis_observable_count_pos: "0 < (48 :: nat)"
+  by eval
+
+lemma cartography_gis_median_error_under_five_pct: "(0.018855999999999998 :: real) < (5.0 :: real)"
+  by eval
+
 lemma cellular_soul_records_pos: "0 < (234447 :: nat)"
   by eval
 
@@ -87,16 +99,10 @@ lemma certified_agent_qwen_median_error_under_half_pct: "(0 :: real) < (0.5 :: r
 lemma certified_agent_qwen_observable_count_pos: "0 < (8 :: nat)"
   by eval
 
-lemma chaos_pt_pooled_median_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
+lemma chaos_mediated_phase_transitions_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma chaos_pt_headline_median_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
-  by eval
-
-lemma chaos_pt_observable_count_pos: "0 < (21 :: nat)"
-  by eval
-
-lemma chaos_pt_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma chaos_mediated_phase_transitions_median_error_under_half_pct: "(0.03147898006445882 :: real) < (0.5 :: real)"
   by eval
 
 lemma chemical_engineering_ext_pooled_median_under_half_pct: "(0.0010333425185953097 :: real) < (0.5 :: real)"
@@ -111,16 +117,16 @@ lemma chemical_engineering_ext_observable_count_pos: "0 < (186 :: nat)"
 lemma chemical_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma chemical_structure_stability_panel_pooled_median_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
+lemma chemical_engineering_observable_count_pos: "0 < (186 :: nat)"
   by eval
 
-lemma chemical_structure_stability_panel_headline_median_under_half_pct: "(0.0024238898584426276 :: real) < (0.5 :: real)"
+lemma chemical_engineering_median_error_under_half_pct: "(0.0010333425185953097 :: real) < (0.5 :: real)"
   by eval
 
 lemma chemical_structure_stability_panel_observable_count_pos: "0 < (32 :: nat)"
   by eval
 
-lemma chemical_structure_stability_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma chemical_structure_stability_panel_median_error_under_half_pct: "(0.00206 :: real) < (0.5 :: real)"
   by eval
 
 lemma civil_engineering_ext_pooled_median_under_half_pct: "(0.021151317926568283 :: real) < (0.5 :: real)"
@@ -133,6 +139,12 @@ lemma civil_engineering_ext_observable_count_pos: "0 < (201 :: nat)"
   by eval
 
 lemma civil_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma civil_engineering_observable_count_pos: "0 < (37 :: nat)"
+  by eval
+
+lemma civil_engineering_median_error_under_half_pct: "(0.0335259880736416 :: real) < (0.5 :: real)"
   by eval
 
 lemma climate_science_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -159,19 +171,28 @@ lemma clinical_medicine_ext_observable_count_pos: "0 < (260 :: nat)"
 lemma clinical_medicine_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma code_genome_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma clinical_medicine_observable_count_pos: "0 < (260 :: nat)"
   by eval
 
-lemma code_genome_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma clinical_medicine_median_error_under_half_pct: "(0.002458296751538192 :: real) < (0.5 :: real)"
   by eval
 
-lemma code_genome_observable_count_pos: "0 < (205 :: nat)"
+lemma clinicaltrials_medical_panel_observable_count_pos: "0 < (394 :: nat)"
   by eval
 
-lemma code_genome_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma clinicaltrials_medical_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma code_genome_language_bridges_pos: "0 < (9 :: nat)"
+lemma clinicaltrials_medical_observable_count_pos: "0 < (394 :: nat)"
+  by eval
+
+lemma clinicaltrials_medical_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma code_genome_structure_observable_count_pos: "0 < (205 :: nat)"
+  by eval
+
+lemma code_genome_structure_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 lemma codon_table_count_eq_sixty_four: "(64 :: nat) = (64 :: nat)"
@@ -280,27 +301,6 @@ lemma codon_caa_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1
   by eval
 
 lemma codon_caa_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_cac_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_cac_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_cag_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_cag_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_cat_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_cat_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_cca_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

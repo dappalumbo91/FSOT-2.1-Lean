@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.594055+00:00",
+  "generated_at": "2026-07-12T14:25:26.227060+00:00",
   "domain": "Periodic_Extension_Decay_Topology_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\decay_topology_prereg_candidates.json",
-    "fusion_decay_chain_prereg_scaffold_benchmark.json"
+    "fusion_decay_chain_prereg_scaffold_benchmark.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "fusion",
@@ -14,22 +15,24 @@
     "energy"
   ],
   "D_eff": 22,
-  "record_count": 19,
-  "observable_count": 19,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 15,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "periodic_extension_graph": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No unified decay topology"
+      "Periodic_Extension_Decay_Topology_Scaffold_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_decay_topology_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 19,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "decay_topology",
-      "name": "periodic_extension_graph",
+      "property": "depth_relay",
+      "name": "Periodic_Extension_Decay_Topology_Scaffold_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 10,
-      "domain_display_name": "tier gap fill",
-      "display_name": "periodic extension graph",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -505,6 +482,131 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "periodic_extension_decay_topology_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "periodic_extension_decay_topology_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "periodic_extension_decay_topology_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "periodic_extension_decay_topology_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Small_Body_Orbits",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Small_Body_Orbits__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "periodic_extension_decay_topology_scaffold_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "heavy_ion_lab_synthesis",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 39,
+      "eval_kind": "synthesis_panel_bridge",
+      "domain_display_name": "lab synthesis metamaterial",
+      "display_name": "heavy ion lab synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Lab_Synthesis_Metamaterial_Spine",
+      "depth_relay_from": "Lab_Synthesis_Metamaterial_Spine"
     }
   ],
   "margin_summary": {
@@ -518,19 +620,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Periodic Extension Decay Topology Scaffold",
-  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.974669+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 10,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 10
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

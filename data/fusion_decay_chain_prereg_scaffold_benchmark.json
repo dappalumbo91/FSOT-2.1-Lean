@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:12.249394+00:00",
+  "generated_at": "2026-07-12T14:25:24.448175+00:00",
   "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\fusion_decay_chain_prereg_candidates.json",
-    "cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+    "cold_fusion_lab_synthesis_crosswalk_benchmark.json",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "fusion",
@@ -14,22 +15,24 @@
     "energy"
   ],
   "D_eff": 17,
-  "record_count": 18,
-  "observable_count": 18,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "fusion_decay_chain": {
-        "sota_typical_error_pct": 100.0,
-        "sota_model": "No Z>118 decay chain observation"
+      "Fusion_Decay_Chain_Prereg_Scaffold_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_prereg_gate_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -40,42 +43,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 18,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "prereg_gate",
-      "name": "fusion_decay_chain",
+      "property": "depth_relay",
+      "name": "Fusion_Decay_Chain_Prereg_Scaffold_depth",
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 12,
-      "domain_display_name": "tier gap fill",
-      "display_name": "fusion decay chain",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "structural_gate",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -510,10 +487,159 @@
         "within_green_gate": true,
         "within_aspiration_gate": true
       }
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Cosmology_Extended",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Cosmology_Extended__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Planetary_Structure",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Planetary_Structure__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Orbital_Mechanics",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Orbital_Mechanics__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "edge_type": "maps_to_lean_overlap",
+      "source_domain": "Astronomy",
+      "target_domain": "Small_Body_Orbits",
+      "lean_tag": "astronomical",
+      "property": "scalar_ratio_unity",
+      "name": "Astronomy__Small_Body_Orbits__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain_display_name": "domain coupling",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Domain_Coupling_Simulation",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Domain_Coupling_Simulation"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "heavy_ion_lab_synthesis",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 39,
+      "eval_kind": "synthesis_panel_bridge",
+      "domain_display_name": "lab synthesis metamaterial",
+      "display_name": "heavy ion lab synthesis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Lab_Synthesis_Metamaterial_Spine",
+      "depth_relay_from": "Lab_Synthesis_Metamaterial_Spine"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_scaffold_depth_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "Lab_Synthesis_Metamaterial_Spine",
+      "eval_kind": "synthesis_relay",
+      "domain_display_name": "lab synthesis metamaterial",
+      "display_name": "dt fusion",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 9.7e-05,
+        "effective_error_pct": 9.7e-05,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Lab_Synthesis_Metamaterial_Spine"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 9.5e-05,
+    "scalar_pooled_median_error_pct": 0.0,
     "max_scalar_error_pct": 9.5e-05,
     "classifier_count": 4,
     "classifier_correct": 4,
@@ -523,19 +649,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Fusion Decay Chain Prereg Scaffold",
-  "tier_label": "Tier 74 \u2014 Island Of Stability Deep Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.967794+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 6,
-    "median_error_pct": 9.5e-05,
-    "max_error_pct": 9.5e-05,
-    "mean_abs_delta": 7.75e-05,
-    "precision_tier_counts": {
-      "green": 6
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

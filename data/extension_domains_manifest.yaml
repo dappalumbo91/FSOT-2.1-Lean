@@ -3428,6 +3428,169 @@ extension_domains:
     lean_module: FSOT.Formal.PublicVerifiableSpinePriors
     note: "Tier 81 credential-free spine — reproducible without API keys"
 
+  Volcanology_Panel:
+    tier: 82
+    D_eff: 19
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, energy]
+    formula_branch_override: term3.chaos_factor
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/volcanology_panel_benchmark.json
+    lean_module: FSOT.Formal.VolcanologyPriors
+    note: "Volcanology — GVP/USGS geohazard cross-ref Geophysics/Seismology"
+
+  Limnology_Panel:
+    tier: 82
+    D_eff: 16
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, biological]
+    formula_branch_override: term2.scale
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/limnology_panel_benchmark.json
+    lean_module: FSOT.Formal.LimnologyPriors
+    note: "Limnology — USGS NWIS freshwater chemistry/physics"
+
+  Radio_Astronomy_Panel:
+    tier: 82
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, particle]
+    formula_branch_override: term1.term1_base
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/radio_astronomy_panel_benchmark.json
+    lean_module: FSOT.Formal.RadioAstronomyPriors
+    note: "Radio astronomy — VizieR NVSS flux density / coordinates"
+
+  Petrology_Geochemistry_Panel:
+    tier: 82
+    D_eff: 14
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, particle]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/petrology_geochemistry_panel_benchmark.json
+    lean_module: FSOT.Formal.PetrologyGeochemistryPriors
+    note: "Petrology/geochemistry — EarthChem oxide chemistry relay"
+
+  Actuarial_Science_Panel:
+    tier: 82
+    D_eff: 20
+    delta_psi: 1.5
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [economic, consciousness]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/actuarial_science_panel_benchmark.json
+    lean_module: FSOT.Formal.ActuarialSciencePriors
+    note: "Actuarial science — SSA mortality/life-table scalars"
+
+  Ethology_Panel:
+    tier: 82
+    D_eff: 15
+    delta_psi: 0.35
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, ecological]
+    formula_branch_override: term1.growth_term
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/ethology_panel_benchmark.json
+    lean_module: FSOT.Formal.EthologyPriors
+    note: "Ethology — animal movement speed/migration (GBIF + literature)"
+
+  Toxicology_Panel:
+    tier: 82
+    D_eff: 13
+    delta_psi: 0.45
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, material]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/toxicology_panel_benchmark.json
+    lean_module: FSOT.Formal.ToxicologyPriors
+    note: "Toxicology — PubChem BioAssay activity summaries"
+
+  Soil_Science_Panel:
+    tier: 82
+    D_eff: 15
+    delta_psi: 0.4
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, material]
+    formula_branch_override: term2.trend_bias
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/soil_science_panel_benchmark.json
+    lean_module: FSOT.Formal.SoilSciencePriors
+    note: "Soil science — ISRIC SoilGrids bulk density / CEC / pH"
+
+  Neutrino_Physics_Panel:
+    tier: 82
+    D_eff: 7
+    delta_psi: 0.95
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [particle, higgs]
+    formula_branch_override: term3.chaos_factor
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/neutrino_physics_panel_benchmark.json
+    lean_module: FSOT.Formal.NeutrinoPhysicsPriors
+    note: "Neutrino physics — PDG oscillation parameters / mass splittings"
+
+  Cartography_GIS_Panel:
+    tier: 82
+    D_eff: 18
+    delta_psi: 1.2
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [economic, energy]
+    formula_branch_override: term2.scale
+    ingest_script: scripts/ingest_tier82_scientific_expansion.py
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/cartography_gis_panel_benchmark.json
+    lean_module: FSOT.Formal.CartographyGisPriors
+    note: "Cartography/GIS — Natural Earth admin boundaries"
+
+  Scientific_Expansion_Spine:
+    tier: 82
+    D_eff: 18
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, biological, astronomical, economic]
+    build_script: scripts/build_tier82_scientific_expansion_benchmarks.py
+    manifest: data/tier82_scientific_expansion_manifest.yaml
+    benchmark_data: data/scientific_expansion_spine_benchmark.json
+    lean_module: FSOT.Formal.ScientificExpansionSpinePriors
+    note: "Tier 82 cross-panel spine — ten new scientific domains"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

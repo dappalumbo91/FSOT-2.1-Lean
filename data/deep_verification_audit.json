@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:24:56.581284+00:00",
+  "generated_at": "2026-07-12T14:56:10.418018+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -13,33 +13,32 @@
   },
   "obligation_spine": {
     "connective": 24,
-    "full_formal_total": 2158,
-    "full_formal_provable": 2102,
+    "full_formal_total": 2073,
+    "full_formal_provable": 2019,
     "transcendental": 68,
-    "rust_replay_total": 1920,
-    "rust_replay_expected": 1920,
+    "rust_replay_total": 1752,
+    "rust_replay_expected": 1752,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "lt_half": 447,
-      "nat_pos": 578,
-      "bundle_conj": 330,
-      "eq_nat": 30,
+      "nat_pos": 481,
+      "r_lt_lit_pure": 246,
+      "bundle_conj": 413,
+      "lt_lit": 180,
+      "lt_half": 168,
       "gt_lit": 135,
-      "lt_lit": 171,
-      "nat_le_sym": 31,
+      "eq_nat": 25,
+      "nat_le_sym": 30,
       "eq_nat_arith": 32,
       "r_eq_sym": 12,
       "r_eq_lit": 28,
       "r_nonneg": 10,
-      "pos": 95,
+      "pos": 94,
       "int_tuple3_eq": 148,
       "nat_gt_lit": 13,
-      "r_lt_lit_pure": 39,
       "nat_le_lit": 2,
       "gt_one": 6,
       "r_le_lit": 11,
       "lt": 10,
-      "nat_sum2_pos": 1,
       "nat_lt_sym": 1,
       "r_le_sym": 11,
       "r_interval_le_conj": 7,
@@ -51,26 +50,26 @@
   },
   "triangulation": {
     "coq_atomic": {
-      "atomic_triangulated_ok": 1828,
+      "atomic_triangulated_ok": 1660,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 274,
+      "bundle_conj_triangulated_ok": 359,
       "bundle_conj_triangulated_fail": 0,
       "margin_violations_confirmed_ok": 0,
-      "margin_violations_confirmed_fail": 56,
+      "margin_violations_confirmed_fail": 54,
       "pct_atomic_triangulated": 100.0
     },
     "isabelle_atomic": {
-      "atomic_triangulated_ok": 1828,
+      "atomic_triangulated_ok": 1660,
       "atomic_triangulated_fail": 0,
-      "bundle_conj_triangulated_ok": 274,
+      "bundle_conj_triangulated_ok": 359,
       "bundle_conj_triangulated_fail": 0,
       "pct_atomic_triangulated": 100.0
     },
     "rust": {
       "connective_ok": 24,
-      "formal_ok": 1828,
+      "formal_ok": 1660,
       "transcendental_ok": 68,
-      "total": 1920
+      "total": 1752
     },
     "fstar_checks": {
       "fstar_verify_passed": true,
@@ -84,39 +83,39 @@
     }
   },
   "margin_bundle_analysis": {
-    "total_obligations": 2158,
-    "provable_atomic": 1828,
-    "provable_bundle_conj": 274,
-    "structural_bundle_excluded": 56,
+    "total_obligations": 2073,
+    "provable_atomic": 1660,
+    "provable_bundle_conj": 359,
+    "structural_bundle_excluded": 54,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 100.0,
+    "conjunct_atomic_coverage_pct": 99.9,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
-    "lt_half_pooled_median_margin": "0.499905",
-    "atomic_triangulated": "1828/1828",
-    "bundle_conj_triangulated": "274/274",
+    "lt_half_pooled_median_margin": "0.488413612020064721",
+    "atomic_triangulated": "1660/1660",
+    "bundle_conj_triangulated": "359/359",
     "margin_violations_confirmed_in_lean": 0,
-    "margin_violations_unconfirmed": 56
+    "margin_violations_unconfirmed": 54
   },
   "structural_bundle_ledger": {
-    "bundle_conj_total": 330,
-    "structural_bundle_excluded": 56,
-    "provable_bundle_conj": 274,
-    "total_conjuncts": 1468,
-    "conjuncts_with_atomic_coverage": 1468,
-    "conjunct_atomic_coverage_pct": 100.0,
-    "explicit_linked_conjuncts": 1243,
-    "explicit_linked_in_spine": 1243,
-    "explicit_link_hit_pct": 100.0,
+    "bundle_conj_total": 413,
+    "structural_bundle_excluded": 54,
+    "provable_bundle_conj": 359,
+    "total_conjuncts": 1930,
+    "conjuncts_with_atomic_coverage": 1928,
+    "conjunct_atomic_coverage_pct": 99.9,
+    "explicit_linked_conjuncts": 1482,
+    "explicit_linked_in_spine": 1480,
+    "explicit_link_hit_pct": 99.87,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
-    "obligation_total": 2158,
-    "atomic_triangulated": 1828,
+    "obligation_total": 2073,
+    "atomic_triangulated": 1660,
     "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
-    "structural_index": 330,
+    "structural_index": 413,
     "oracle_fraction_pct": 0.0,
-    "atomic_fraction_pct": 84.71,
+    "atomic_fraction_pct": 80.08,
     "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
@@ -133,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-12T12:20:56.516620+00:00",
+    "generated_at": "2026-07-12T14:46:46.283190+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -195,15 +194,15 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-07-12T12:20:56.881005+00:00",
+    "generated_at": "2026-07-12T14:46:46.569301+00:00",
     "version": "1.0",
-    "overall_runtime_ok": true,
+    "overall_runtime_ok": false,
     "esp32_scalar_only_gap_closed": true,
     "layers": [
       {
         "id": "lean_coq_isabelle_rust",
         "scope": "2146 exported obligations; 1820 atomic triangulated",
-        "status": "passed",
+        "status": "failed",
         "undeniable_for": "numeric atomic spine"
       },
       {
@@ -237,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-07-12T12:20:57.210457+00:00",
+    "generated_at": "2026-07-12T14:46:46.851577+00:00",
     "version": "1.0",
     "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
     "headline_claim": "zero free parameters",
@@ -290,15 +289,15 @@
     ]
   },
   "extension_precision": {
-    "domain_count": 250,
-    "green_gate_pass_count": 250,
+    "domain_count": 274,
+    "green_gate_pass_count": 274,
     "core_benchmark_green": 276,
     "worst_scalar_max_pct": 0.4989
   },
   "scientific_pushback": {
     "summary": {
-      "extension_domain_count": 250,
-      "green_gate_pass_count": 250,
+      "extension_domain_count": 274,
+      "green_gate_pass_count": 274,
       "green_gate_fail_count": 0,
       "aspiration_scalar_debt_count": 0,
       "stumped_observable_count": 13,
@@ -314,34 +313,33 @@
   },
   "coverage_audit": {
     "full_formal_spine": {
-      "obligations_in_full_json": 2158,
-      "modules_in_full_json": 323,
+      "obligations_in_full_json": 2073,
+      "modules_in_full_json": 406,
       "by_tier": {
-        "priors": 1697,
+        "priors": 1612,
         "extended": 184,
         "bounds": 277
       },
       "by_kind": {
-        "lt_half": 447,
-        "nat_pos": 578,
-        "bundle_conj": 330,
-        "eq_nat": 30,
+        "nat_pos": 481,
+        "r_lt_lit_pure": 246,
+        "bundle_conj": 413,
+        "lt_lit": 180,
+        "lt_half": 168,
         "gt_lit": 135,
-        "lt_lit": 171,
-        "nat_le_sym": 31,
+        "eq_nat": 25,
+        "nat_le_sym": 30,
         "eq_nat_arith": 32,
         "r_eq_sym": 12,
         "r_eq_lit": 28,
         "r_nonneg": 10,
-        "pos": 95,
+        "pos": 94,
         "int_tuple3_eq": 148,
         "nat_gt_lit": 13,
-        "r_lt_lit_pure": 39,
         "nat_le_lit": 2,
         "gt_one": 6,
         "r_le_lit": 11,
         "lt": 10,
-        "nat_sum2_pos": 1,
         "nat_lt_sym": 1,
         "r_le_sym": 11,
         "r_interval_le_conj": 7,
@@ -350,11 +348,11 @@
         "r_interval_conj": 1,
         "abs_interval_conj": 1
       },
-      "pct_of_formal_theorems": 126.7176,
-      "coq_chunks_generated": 19,
+      "pct_of_formal_theorems": 128.1211,
+      "coq_chunks_generated": 17,
       "margin_violations_excluded": 0,
-      "coq_provable_target": 2158,
-      "coq_proved_yet": 2158,
+      "coq_provable_target": 2073,
+      "coq_proved_yet": 2073,
       "coq_proved_pct_of_full_export": 100.0,
       "coq_proved_pct_of_provable": 100.0,
       "coq_compile_status": "passed",
@@ -364,23 +362,35 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-12T12:24:49.205957+00:00",
+    "generated_at": "2026-07-12T14:56:03.176542+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
-    "provable_bundle_conj_count": 274,
+    "provable_bundle_conj_count": 359,
     "provable_bundles": [
       {
-        "id": "acoustic_rm_bundle",
-        "conjunct_count": 3
+        "id": "acoustic_resonance_materials_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "adj_rung_bundle",
-        "conjunct_count": 3
+        "id": "actuarial_science_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "actuarial_science_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "adjacent_rung_coupling_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "adv_brk_bundle",
         "conjunct_count": 3
+      },
+      {
+        "id": "adversarial_fractal_break_tests_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "aether_psi_con_solver_in_bounds",
@@ -395,16 +405,28 @@
         "conjunct_count": 5
       },
       {
-        "id": "ai_gal_br_bundle",
-        "conjunct_count": 3
+        "id": "agriculture_agroecology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ai_galactic_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "anthropology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "anthropology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "architecture_building_science_gap_fill_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "architecture_building_science_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "arxiv_primitives_v14_bundle",
@@ -412,7 +434,7 @@
       },
       {
         "id": "astrophysical_structure_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "atmospheric_physics_gap_fill_bundle",
@@ -440,15 +462,19 @@
       },
       {
         "id": "biophysics_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "botany_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "botany_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "boundary_partition_tightening_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "brain_component_priors_trinary_bundle",
@@ -463,6 +489,18 @@
         "conjunct_count": 5
       },
       {
+        "id": "cardiology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "cartography_gis_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "cartography_gis_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "cellular_priors_bundle",
         "conjunct_count": 4
       },
@@ -475,20 +513,28 @@
         "conjunct_count": 4
       },
       {
-        "id": "chaos_pt_bundle",
-        "conjunct_count": 3
+        "id": "chaos_mediated_phase_transitions_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "chemical_engineering_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "chemical_engineering_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "chemical_structure_stability_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "civil_engineering_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "civil_engineering_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "climate_science_bundle",
@@ -499,24 +545,36 @@
         "conjunct_count": 5
       },
       {
-        "id": "code_genome_bundle",
-        "conjunct_count": 3
+        "id": "clinical_medicine_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "clinicaltrials_medical_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "clinicaltrials_medical_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "code_genome_structure_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "cold_fusion_candidate_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "cold_fusion_lab_synthesis_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "comp_lad_bundle",
-        "conjunct_count": 3
+        "id": "compactification_ladder_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "compact_object_binary_events_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "computational_reasoning_bundle",
@@ -524,19 +582,27 @@
       },
       {
         "id": "consciousness_econ_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "c_gal_br_bundle",
-        "conjunct_count": 3
+        "id": "consciousness_galactic_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "consciousness_soul_bridge_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "cosmology_anomalies_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "cosmology_anomaly_deep_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "cosmology_bubble_bleed_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "crc_handbook_properties_bundle",
@@ -544,51 +610,59 @@
       },
       {
         "id": "creative_arts_math_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "crossref_scholarly_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "crossref_scholarly_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "cryosphere_bundle",
         "conjunct_count": 6
       },
       {
-        "id": "crypto_tech_bundle",
-        "conjunct_count": 3
+        "id": "cryptography_technology_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "culinary_arts_bundle",
-        "conjunct_count": 7
+        "conjunct_count": 4
       },
       {
-        "id": "cve_hole_bundle",
-        "conjunct_count": 3
+        "id": "cve_codon_hole_falsification_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "dark_energy_cpl_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "dark_sector_bundle",
-        "conjunct_count": 3
+        "id": "dark_sector_open_problems_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "distant_island_emergence_simulation_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "distant_island_z128_z132_deep_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "domain_coupling_bundle",
-        "conjunct_count": 6
+        "id": "domain_coupling_simulation_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "domain_coupling_simulation_refresh_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "orb_pred_bundle",
-        "conjunct_count": 3
+        "id": "domain_orbital_predictions_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "connective_e10d_wd_bundle",
@@ -600,6 +674,10 @@
       },
       {
         "id": "ecology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ecology_public_panel_bundle",
         "conjunct_count": 3
       },
       {
@@ -607,12 +685,16 @@
         "conjunct_count": 5
       },
       {
+        "id": "econometrics_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "economics_gap_fill_bundle",
         "conjunct_count": 5
       },
       {
         "id": "econophysics_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "electrical_power_systems_bundle",
@@ -620,75 +702,115 @@
       },
       {
         "id": "element_synthesis_condition_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "e_ai_br_bundle",
-        "conjunct_count": 3
+        "id": "energy_ai_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "e_neu_br_bundle",
-        "conjunct_count": 3
+        "id": "energy_neural_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "entomology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "entomology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "environmental_engineering_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "environmental_engineering_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "epidemiology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "epidemiology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ethology_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ethology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "exogeology_ext_bundle",
         "conjunct_count": 5
       },
       {
-        "id": "exoplanet_system_architecture_bundle",
-        "conjunct_count": 3
+        "id": "exogeology_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "external_oss_bundle",
-        "conjunct_count": 3
+        "id": "exoplanet_system_architecture_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "external_oss_code_genome_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "federal_science_registry_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "federal_science_registry_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "finance_markets_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "finance_markets_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "fluid_dynamics_gap_fill_bundle",
         "conjunct_count": 5
       },
       {
-        "id": "fpc_spine_bundle",
-        "conjunct_count": 3
+        "id": "fluid_phase_current_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "fluid_spacetime_observable_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fluid_spacetime_prereg_validation_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "fold_dep_bundle",
-        "conjunct_count": 3
+        "id": "fold_depth_metrics_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "food_microbiology_gap_fill_bundle",
         "conjunct_count": 5
       },
       {
-        "id": "fractal_bundle",
-        "conjunct_count": 3
+        "id": "food_microbiology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "formula_branching_fractal_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "formula_corpus_closure_bundle",
-        "conjunct_count": 5
+        "conjunct_count": 4
       },
       {
         "id": "formula_corpus_cnc_bundle",
@@ -696,23 +818,23 @@
       },
       {
         "id": "formula_precision_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fpc_fluidlink_timing_deep_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "fpc_link_bundle",
-        "conjunct_count": 3
+        "id": "fpc_temporal_coupling_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "const_rec_bundle",
-        "conjunct_count": 3
+        "id": "fractal_constant_recursion_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "fsot_aggregate_organized_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fsot_aggregate_unified_db_bundle",
@@ -720,15 +842,15 @@
       },
       {
         "id": "fuel_candidate_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fuel_thermochemistry_public_anchors_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fusion_decay_chain_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "connective_fusion_grid_bundle",
@@ -736,23 +858,23 @@
       },
       {
         "id": "fusion_lab_certificate_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "fusion_physics_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "gaia_astrometry_panel_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "gaia_dr3_tap_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "galactic_structure_sample_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "gbif_species_occurrence_bundle",
@@ -760,7 +882,7 @@
       },
       {
         "id": "genomic_sciences_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "geochemistry_bundle",
@@ -771,8 +893,16 @@
         "conjunct_count": 5
       },
       {
+        "id": "geology_stratigraphy_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "geomagnetism_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "government_open_data_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "grace_cryosphere_bundle",
@@ -780,23 +910,31 @@
       },
       {
         "id": "gwosc_live_event_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "heavy_ion_lab_synthesis_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "higgs_mass_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "history_ext_bundle",
         "conjunct_count": 5
       },
       {
-        "id": "hubble_tension_bundle",
-        "conjunct_count": 3
+        "id": "history_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "hubble_bubble_tension_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "hubble_dark_sector_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "hvac_thermal_systems_bundle",
@@ -804,7 +942,7 @@
       },
       {
         "id": "hybrid_fi_sim_multi_hero_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "igem_live_fasta_bundle",
@@ -812,7 +950,7 @@
       },
       {
         "id": "igem_parts_expanded_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "igem_synthetic_biology_bundle",
@@ -823,16 +961,24 @@
         "conjunct_count": 4
       },
       {
+        "id": "inaturalist_observation_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "inaturalist_observation_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "inertial_confinement_fusion_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "information_theory_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "initiation_transformation_archetype_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "intelligence_compression_priors_bundle",
@@ -840,35 +986,47 @@
       },
       {
         "id": "interactive_media_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "interdisciplinary_spine_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "intrinsic_llm_validators_bundle",
         "conjunct_count": 4
       },
       {
-        "id": "iono_chem_bundle",
-        "conjunct_count": 3
+        "id": "ionospheric_chemistry_coupling_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "island_of_stability_deep_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "knowledge_base_portable_bundle_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "lab_synthesis_metamaterial_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "law_policy_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "law_policy_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "limnology_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "limnology_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "linguistics_formal_bundle",
@@ -876,7 +1034,7 @@
       },
       {
         "id": "live_ingest_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "magic_imbalance_penalty_in_unit_interval",
@@ -888,7 +1046,7 @@
       },
       {
         "id": "magnetic_confinement_fusion_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "magnetosphere_extended_bundle",
@@ -903,20 +1061,28 @@
         "conjunct_count": 5
       },
       {
-        "id": "malware_threat_bundle",
-        "conjunct_count": 3
+        "id": "maillard_chemistry_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "malware_threat_intelligence_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "marine_biology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "marine_biology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "material_in_silico_screening_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "material_property_verification_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "materials_engineering_bundle",
@@ -924,11 +1090,11 @@
       },
       {
         "id": "materials_genome_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "materials_project_live_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "materials_species_bridge_bundle",
@@ -955,16 +1121,20 @@
         "conjunct_count": 5
       },
       {
-        "id": "mech_cpl_bundle",
-        "conjunct_count": 3
+        "id": "mechanical_engineering_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "med_gal_br_bundle",
-        "conjunct_count": 3
+        "id": "mechanistic_coupling_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "medical_galactic_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "metamaterial_fluid_design_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "meteorology_gap_fill_bundle",
@@ -972,35 +1142,67 @@
       },
       {
         "id": "music_harmonics_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "mycology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "mycology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "nasa_donki_solar_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "nasa_donki_solar_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "nasa_exoplanet_archive_bundle",
         "conjunct_count": 4
       },
       {
-        "id": "natural_formation_element_simulation_bundle",
-        "conjunct_count": 3
+        "id": "nasa_neo_feed_panel_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "network_inet_bundle",
-        "conjunct_count": 3
+        "id": "nasa_neo_feed_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "natural_formation_element_simulation_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ncbi_gene_public_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "ncbi_gene_public_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "network_internet_protocols_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "network_science_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "neu_gal_br_bundle",
-        "conjunct_count": 3
+        "id": "neural_galactic_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "neuroeconomics_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "neuroeconomics_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "neuroimmunology_bundle",
@@ -1008,15 +1210,23 @@
       },
       {
         "id": "neurolab_gaps_math_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "neurolab_residual_math_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "neuron_multi_hero_bundle",
         "conjunct_count": 6
+      },
+      {
+        "id": "neutrino_physics_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "neutrino_physics_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "nist_codata_constants_bundle",
@@ -1031,8 +1241,16 @@
         "conjunct_count": 4
       },
       {
-        "id": "obs_ch_bundle",
-        "conjunct_count": 3
+        "id": "noaa_ndbc_buoy_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "noaa_ndbc_buoy_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "observer_channel_derivation_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "oceanography_gap_fill_bundle",
@@ -1051,11 +1269,27 @@
         "conjunct_count": 4
       },
       {
+        "id": "open_meteo_live_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "open_meteo_live_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "openneuro_full_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "orbital_mechanics_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "osti_doe_science_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "osti_doe_science_bundle",
         "conjunct_count": 4
       },
       {
@@ -1063,12 +1297,20 @@
         "conjunct_count": 5
       },
       {
+        "id": "paleoclimate_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "paleontology_ext_bundle",
         "conjunct_count": 5
       },
       {
-        "id": "p_neu_br_bundle",
-        "conjunct_count": 3
+        "id": "paleontology_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "particle_neural_orbital_bridge_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "particle_physics_gap_fill_bundle",
@@ -1080,31 +1322,43 @@
       },
       {
         "id": "periodic_extension_decay_topology_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "periodic_table_completion_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "periodic_table_extension_closure_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "periodic_table_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "petrology_geochemistry_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "petrology_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "pharmacokinetics_gap_fill_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "pharmacokinetics_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "pharmacology_bundle",
         "conjunct_count": 4
       },
       {
-        "id": "phi_morph_bundle",
-        "conjunct_count": 3
+        "id": "phi_morphogenetic_scaling_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "planetary_atmospheres_bundle",
@@ -1119,8 +1373,8 @@
         "conjunct_count": 4
       },
       {
-        "id": "clone_vf_bundle",
-        "conjunct_count": 3
+        "id": "portable_clone_verify_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "prediction_rederivation_bundle",
@@ -1128,27 +1382,27 @@
       },
       {
         "id": "preregistered_outcome_tracking_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "prereg_bundle",
-        "conjunct_count": 3
+        "id": "preregistered_predictions_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "preregistered_predictions_verification_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "pl_laws_bundle",
-        "conjunct_count": 3
+        "id": "programming_language_laws_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "proof_cg_bundle",
-        "conjunct_count": 3
+        "id": "proof_carrying_code_genome_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "proof_ledger_closure_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "psychology_gap_fill_bundle",
@@ -1160,19 +1414,27 @@
       },
       {
         "id": "pubchem_live_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "pubchem_stability_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
+      },
+      {
+        "id": "public_verifiable_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "published_fuel_property_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "pure_mathematics_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "pure_mathematics_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "quantum_computing_gap_fill_bundle",
@@ -1180,7 +1442,7 @@
       },
       {
         "id": "quantum_information_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "quantum_materials_bundle",
@@ -1195,28 +1457,44 @@
         "conjunct_count": 5
       },
       {
+        "id": "radio_astronomy_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "radio_astronomy_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "rcsb_pdb_structures_bundle",
         "conjunct_count": 4
       },
       {
         "id": "rd_interval_tightening_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "fold_spine_bundle",
-        "conjunct_count": 3
+        "id": "reality_folding_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "robotics_control_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "robotics_control_systems_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "rust_lean_bridge_bundle",
         "conjunct_count": 4
       },
       {
-        "id": "secure_sw_bundle",
-        "conjunct_count": 3
+        "id": "scientific_expansion_spine_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "secure_software_engineering_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "seismology_deep_bundle",
@@ -1228,15 +1506,15 @@
       },
       {
         "id": "semiconductor_physics_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "sh0es_refined_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "simbad_stellar_identity_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "small_body_orbits_bundle",
@@ -1247,8 +1525,16 @@
         "conjunct_count": 5
       },
       {
+        "id": "soil_science_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "soil_science_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "solar_system_structure_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "space_propulsion_systems_bundle",
@@ -1259,56 +1545,72 @@
         "conjunct_count": 5
       },
       {
+        "id": "speleology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "sports_biomechanics_gap_fill_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "sports_biomechanics_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "statistical_mechanics_public_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "stellar_multiplicity_catalog_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "stellar_multiplicity_live_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "structure_calibration_links_codon_map",
         "conjunct_count": 3
       },
       {
+        "id": "stsci_mast_telescope_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "stsci_mast_telescope_bundle",
         "conjunct_count": 4
       },
       {
-        "id": "stumped_panel_bundle",
-        "conjunct_count": 3
+        "id": "stumped_observables_panel_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "stumped_spine_bundle",
-        "conjunct_count": 3
+        "id": "stumped_observables_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "superheavy_element_stability_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "superheavy_island_completion_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "superheavy_island_emergence_simulation_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "supply_chain_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "supply_chain_logistics_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "symbolic_archetype_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "synthetic_biology_bundle",
@@ -1320,38 +1622,46 @@
       },
       {
         "id": "term3_acoustic_bleed_depth_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "toe_spine_bundle",
-        "conjunct_count": 3
+        "id": "theory_completeness_spine_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "time_xw_bundle",
-        "conjunct_count": 3
+        "id": "time_domain_crosswalk_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "time_emergence_deep_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "time_em_bundle",
-        "conjunct_count": 3
+        "id": "time_emergence_simulation_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "toe_claim_certificate_bundle_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "gap_spine_bundle",
-        "conjunct_count": 3
+        "id": "toe_gap_closure_spine_bundle",
+        "conjunct_count": 4
       },
       {
-        "id": "toe_unity_bundle",
-        "conjunct_count": 3
+        "id": "toe_unification_spine_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "tokenization_smoke_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "toxicology_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "toxicology_bundle",
         "conjunct_count": 4
       },
       {
@@ -1372,19 +1682,27 @@
       },
       {
         "id": "trinary_os_tier_e_bundle",
-        "conjunct_count": 5
+        "conjunct_count": 4
+      },
+      {
+        "id": "uap_war_gov_release_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "uap_war_gov_release_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "undiscovered_element_candidate_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "unified_db_candidate_crosswalk_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "unified_db_crosswalk_spine_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "uniprot_protein_annotations_bundle",
@@ -1392,18 +1710,30 @@
       },
       {
         "id": "uniprot_structure_annotations_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "virology_ext_bundle",
         "conjunct_count": 5
       },
       {
+        "id": "virology_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "vizier_wds_tap_live_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "vl_distill_atlas_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "volcanology_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
+        "id": "volcanology_bundle",
         "conjunct_count": 4
       },
       {
@@ -1419,8 +1749,12 @@
         "conjunct_count": 3
       },
       {
+        "id": "warp_bh_wh_portal_panel_bundle",
+        "conjunct_count": 4
+      },
+      {
         "id": "wds_live_multiplicity_deep_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "world_bank_development_bundle",
@@ -1428,23 +1762,27 @@
       },
       {
         "id": "xr_interactive_media_math_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "z120_z126_beam_synthesis_panel_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
         "id": "z164_distant_island_prereg_scaffold_bundle",
-        "conjunct_count": 3
+        "conjunct_count": 4
       },
       {
-        "id": "zero_day_eval_bundle",
-        "conjunct_count": 3
+        "id": "zero_day_risk_evaluator_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "zoology_ext_bundle",
         "conjunct_count": 5
+      },
+      {
+        "id": "zoology_bundle",
+        "conjunct_count": 4
       },
       {
         "id": "genomic_exact_identity_bundle",
@@ -1467,11 +1805,11 @@
         "conjunct_count": 7
       }
     ],
-    "structural_proof_count": 1200,
+    "structural_proof_count": 1535,
     "min_required": 10,
     "breakdown": {
-      "bundle_split_lemmas": 264,
-      "bundle_conjunct_lemmas": 926,
+      "bundle_split_lemmas": 349,
+      "bundle_conjunct_lemmas": 1176,
       "connective_ordering_lemmas": 3,
       "native_transcendental_chain_lemmas": 7
     },
@@ -1507,12 +1845,12 @@
       "body_online": true,
       "body_transport": "file",
       "body_tick": 37905,
-      "habitat_tick": 60,
+      "habitat_tick": 40,
       "generation": 90,
       "genome_fp_match": true,
-      "hero_raw_s": 0.6572884372952474,
-      "hero_d_eff": 12.122676748061469,
-      "hero_delta_psi": 0.20669040536648076,
+      "hero_raw_s": 0.9037417990033995,
+      "hero_d_eff": 12.926457443178158,
+      "hero_delta_psi": 0.4296223456994096,
       "benchmark_pass_rate": 1.0,
       "benchmark_n_pass": 37,
       "benchmark_n_total": 37,

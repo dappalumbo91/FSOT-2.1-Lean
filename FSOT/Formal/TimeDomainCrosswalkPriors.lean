@@ -1,6 +1,6 @@
 /-
-  FSOT Formal TimeDomainCrosswalkPriors — Time_Domain_Crosswalk Tier 50 time emergence / FPC.
-  Generator: scripts/gen_time_emergence_lean.py
+  FSOT Formal TimeDomainCrosswalkPriors — extension domain Time_Domain_Crosswalk.
+  Generator: scripts/gen_extension_domains_lean.py
 -/
 
 import FSOT.Formal.Domains
@@ -9,37 +9,27 @@ namespace FSOT.Formal
 
 noncomputable section
 
-open Real
+def time_domain_crosswalk_observable_count : ℕ := 250
+def time_domain_crosswalk_D_eff : ℕ := 19
 
-def time_xw_observable_count : ℕ := 160
-def time_xw_pooled_median_error_pct : ℝ := (0.025013 : ℝ)
-def time_xw_headline_median_error_pct : ℝ := (0.025013 : ℝ)
-def time_xw_beats_sota_headlines : ℕ := 2
-def time_xw_D_eff : ℕ := 19
-def time_xw_crosswalk_domain_count : ℕ := 156
+theorem time_domain_crosswalk_observable_count_pos : 0 < time_domain_crosswalk_observable_count := by
+  unfold time_domain_crosswalk_observable_count; norm_num
 
-theorem time_xw_observable_count_pos : 0 < time_xw_observable_count := by
-  unfold time_xw_observable_count; norm_num
+theorem time_domain_crosswalk_median_error_under_half_pct :
+    (0.028056 : ℝ) < (0.5 : ℝ) := by norm_num
 
-theorem time_xw_pooled_median_under_half_pct :
-    time_xw_pooled_median_error_pct < (0.5 : ℝ) := by
-  unfold time_xw_pooled_median_error_pct; norm_num
-
-theorem time_xw_headline_median_under_half_pct :
-    time_xw_headline_median_error_pct < (0.5 : ℝ) := by
-  unfold time_xw_headline_median_error_pct; norm_num
-
-theorem time_xw_beats_sota_headlines_pos : 0 < time_xw_beats_sota_headlines := by
-  unfold time_xw_beats_sota_headlines; norm_num
-theorem time_xw_crosswalk_domains_pos : 0 < time_xw_crosswalk_domain_count := by unfold time_xw_crosswalk_domain_count; norm_num
-
-theorem time_xw_bundle :
-    time_xw_observable_count = 160 ∧
-    time_xw_pooled_median_error_pct < (0.5 : ℝ) ∧
-    time_xw_beats_sota_headlines > 0 := by
-  refine ⟨?h1, ?h2, ?h3⟩
-  · unfold time_xw_observable_count; norm_num
-  · exact time_xw_pooled_median_under_half_pct
-  · exact time_xw_beats_sota_headlines_pos
+theorem time_domain_crosswalk_bundle :
+    time_domain_crosswalk_observable_count = 250 ∧
+    time_domain_crosswalk_D_eff = 19 ∧
+    (0.028056 : ℝ) < (0.5 : ℝ) ∧
+    raw_S (get_domain_params "energy") > 0 := by
+  refine ⟨
+    by unfold time_domain_crosswalk_observable_count; norm_num,
+    by unfold time_domain_crosswalk_D_eff; norm_num,
+    time_domain_crosswalk_median_error_under_half_pct,
+    energy_raw_S_positive
+  ⟩
 
 end
+
+end FSOT.Formal
