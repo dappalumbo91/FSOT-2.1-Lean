@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:10.070192+00:00",
+  "generated_at": "2026-07-12T00:30:17.196251+00:00",
   "domain": "OpenNeuro_Full_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,6 +15,8 @@
   "D_eff": 14,
   "record_count": 15,
   "observable_count": 15,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -39,20 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 15,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 15
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -61,20 +50,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1,
-      "domain_display_name": "tier gap fill",
-      "display_name": "openneuro full",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 1
     }
   ],
   "material_records": [
@@ -85,20 +61,7 @@
       "computed": 55.0,
       "measured": 55.0,
       "error_pct": 0.0,
-      "eval_kind": "catalog_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "openneuro eeg index",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "catalog_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -107,20 +70,7 @@
       "computed": 5.0,
       "measured": 5.0,
       "error_pct": 0.0,
-      "eval_kind": "catalog_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "openneuro mri index",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "catalog_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -130,20 +80,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Perithreshold Tactile detection task with confidence",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds001785",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -153,20 +90,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "EEG meditation study",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds001787",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -176,20 +100,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds001810",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -199,20 +110,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "RS_TMSEEG_Data",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds001849",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -222,20 +120,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Audiocue walking study",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds001971",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -245,20 +130,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Real-time EEG feedback on alpha power lateralization leads to behavioral improvements in a covert attention task",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002034",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -268,20 +140,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Single-pulse open-loop TMS-EEG dataset",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002094",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -291,20 +150,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Simultaneous eeg-fmri for a speeded discrimination task with confidence",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002158",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -314,20 +160,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "CRYPTO and PROVIDE EEG Baseline Data",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002181",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -337,20 +170,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "Auditory and Visual Rhythm Omission EEG",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002218",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -360,20 +180,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP1",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002336",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -383,20 +190,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP2",
-      "eval_kind": "dataset_anchor",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "ds002338",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "dataset_anchor"
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -405,20 +199,7 @@
       "computed": 0.514362,
       "measured": 0.514362,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge",
-      "domain_display_name": "openneuro full panel",
-      "display_name": "fsot Neuroscience",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "scalar_bridge"
     }
   ],
   "margin_summary": {
@@ -432,19 +213,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "OpenNeuro Full Panel",
-  "tier_label": "Tier 68 \u2014 Materials Project Live Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.914389+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 12,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 12
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

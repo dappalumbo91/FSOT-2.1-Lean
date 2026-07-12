@@ -70,55 +70,11 @@ def ingest_materials_project() -> dict:
     return doc
 
 
-def _pubchem_deep_mode() -> bool:
-    return os.environ.get("FSOT_TIER68_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
-
-
-def _pubchem_fetch_cids(bundled: dict) -> list[int]:
-    bundled_cids = [int(c["cid"]) for c in bundled.get("compounds") or [] if c.get("cid") is not None]
-    if _pubchem_deep_mode():
-        return bundled_cids
-    # Normal mode: refresh a broader live slice (15 compounds).
-    return bundled_cids[:15]
-
-
 def ingest_pubchem_live() -> dict:
+    from pubchem_live_lib import ingest_pubchem_live as _ingest  # noqa: WPS433
+
     out_path = cache_root() / "pubchem_live_cache.json"
-    bundled = json.loads(PUBCHEM_BUNDLED.read_text(encoding="utf-8")) if PUBCHEM_BUNDLED.exists() else {"compounds": []}
-    compounds = list(bundled.get("compounds") or [])
-    source = "pubchem_bundled"
-    fetch_cids = _pubchem_fetch_cids(bundled)
-    live: list[dict] = []
-    for cid in fetch_cids:
-        try:
-            url = (
-                f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/"
-                "property/MolecularWeight,MolecularFormula,IUPACName/JSON"
-            )
-            req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier68"})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                payload = json.loads(resp.read().decode("utf-8"))
-            props = (payload.get("PropertyTable") or {}).get("Properties") or [{}]
-            row = props[0] if props else {}
-            if row:
-                live.append(
-                    {
-                        "cid": cid,
-                        "molecular_formula": row.get("MolecularFormula"),
-                        "molecular_weight": row.get("MolecularWeight"),
-                        "iupac_name": row.get("IUPACName"),
-                        "source": "pubchem_pug_live",
-                    }
-                )
-        except Exception:
-            continue
-    if live:
-        seen = {c["cid"] for c in compounds}
-        compounds.extend(c for c in live if c["cid"] not in seen)
-        source = "pubchem_pug_live+bundled"
-    doc = {"ingested_at": datetime.now(timezone.utc).isoformat(), "source": source, "compounds": compounds}
-    _write(out_path, doc)
-    return doc
+    return _ingest(cache_path=out_path)
 
 
 def ingest_openneuro_full() -> dict:

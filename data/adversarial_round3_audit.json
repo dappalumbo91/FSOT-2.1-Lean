@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:25:23.260031+00:00",
+  "generated_at": "2026-07-12T00:39:08.731632+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
@@ -137,7 +137,7 @@
       "severity": "info",
       "attack": "Lean+Coq+Isabelle+F*+Rust: 1828 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
       "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
-      "closed": false,
+      "closed": true,
       "evidence": "data/five_prover_quad_closure.json"
     },
     {
@@ -149,20 +149,9 @@
       "evidence": "data/contested_observables_closure.json"
     }
   ],
-  "open_gaps": [
-    {
-      "id": "five_prover_quad_verification",
-      "severity": "info",
-      "attack": "Lean+Coq+Isabelle+F*+Rust: 1828 atomic obligations; Coq coqchk passed; F* boot kernel triangulated.",
-      "mitigation": "five_prover_quad_closure.json \u2014 strictest multi-prover formal stack on exported spine.",
-      "closed": false,
-      "evidence": "data/five_prover_quad_closure.json"
-    }
-  ],
-  "open_gap_count": 1,
+  "open_gaps": [],
+  "open_gap_count": 0,
   "blocking_open_count": 0,
   "documented_debt_open_count": 0,
-  "remediation_priority": [
-    "five_prover_quad_verification"
-  ]
+  "remediation_priority": []
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:25:13.654620+00:00",
+  "generated_at": "2026-07-12T00:38:59.454924+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -133,7 +133,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-12T00:17:25.805910+00:00",
+    "generated_at": "2026-07-12T00:25:14.684908+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -195,21 +195,21 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-07-12T00:17:26.078509+00:00",
+    "generated_at": "2026-07-12T00:25:14.944794+00:00",
     "version": "1.0",
-    "overall_runtime_ok": false,
+    "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
     "layers": [
       {
         "id": "lean_coq_isabelle_rust",
         "scope": "2146 exported obligations; 1820 atomic triangulated",
-        "status": "failed",
+        "status": "passed",
         "undeniable_for": "numeric atomic spine"
       },
       {
         "id": "fstar_boot_scalar",
         "scope": "FSOTScalarBoot.fst kernel \u2014 boot scalar UART parity",
-        "status": "pending",
+        "status": "passed",
         "undeniable_for": "boot scalar formal spec",
         "expansion_debt": "full transcendental kernel \u2014 tracked in cross_refinement_fstar_report.json"
       },
@@ -237,7 +237,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-07-12T00:17:26.335266+00:00",
+    "generated_at": "2026-07-12T00:25:15.201252+00:00",
     "version": "1.0",
     "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
     "headline_claim": "zero free parameters",
@@ -364,7 +364,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-12T00:25:07.048866+00:00",
+    "generated_at": "2026-07-12T00:38:53.008987+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,

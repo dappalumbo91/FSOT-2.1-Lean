@@ -1,194 +1,648 @@
 {
   "source": "PubChem_PUG_REST",
-  "compound_count": 31,
+  "compound_count": 80,
   "compounds": [
     {
       "cid": 2244,
       "molecular_formula": "C9H8O4",
-      "molecular_weight": 180.16,
-      "iupac_name": "2-acetyloxybenzoic acid"
-    },
-    {
-      "cid": 702,
-      "molecular_formula": "C2H6O",
-      "molecular_weight": 46.07,
-      "iupac_name": "ethanol"
-    },
-    {
-      "cid": 3672,
-      "molecular_formula": "C13H18O2",
-      "molecular_weight": 206.28,
-      "iupac_name": "2-[4-(2-methylpropyl)phenyl]propanoic acid"
-    },
-    {
-      "cid": 5360545,
-      "molecular_formula": "Na",
-      "molecular_weight": 22.9897693,
-      "iupac_name": "sodium"
-    },
-    {
-      "cid": 2519,
-      "molecular_formula": "C8H10N4O2",
-      "molecular_weight": 194.19,
-      "iupac_name": "1,3,7-trimethylpurine-2,6-dione"
-    },
-    {
-      "cid": 5280453,
-      "molecular_formula": "C27H44O3",
-      "molecular_weight": 416.6,
-      "iupac_name": "trans-(1R,3S,5Z)-5-[(2E)-2-[(1R,3aS,7aR)-1-[(2R)-6-hydroxy-6-methylheptan-2-yl]-7a-methyl-2,3,3a,5,6,7-hexahydro-1H-inden-4-ylidene]ethylidene]-4-methylidenecyclohexane-1,3-diol"
-    },
-    {
-      "cid": 54670067,
-      "molecular_formula": "C6H8O6",
-      "molecular_weight": 176.12,
-      "iupac_name": "(2R)-2-[(1S)-1,2-dihydroxyethyl]-3,4-dihydroxy-2H-furan-5-one"
-    },
-    {
-      "cid": 962,
-      "molecular_formula": "H2O",
-      "molecular_weight": 18.015,
-      "iupac_name": "oxidane"
-    },
-    {
-      "cid": 5957,
-      "molecular_formula": "C10H16N5O13P3",
-      "molecular_weight": 507.18,
-      "iupac_name": "[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methoxy-hydroxyphosphoryl] phosphono hydrogen phosphate"
-    },
-    {
-      "cid": 2249,
-      "molecular_formula": "C14H22N2O3",
-      "molecular_weight": 266.34,
-      "iupac_name": "2-[4-[2-hydroxy-3-(propan-2-ylamino)propoxy]phenyl]acetamide"
-    },
-    {
-      "cid": 3386,
-      "molecular_formula": "C17H18F3NO",
-      "molecular_weight": 309.33,
-      "iupac_name": "N-methyl-3-phenyl-3-[4-(trifluoromethyl)phenoxy]propan-1-amine"
-    },
-    {
-      "cid": 3676,
-      "molecular_formula": "C14H22N2O",
-      "molecular_weight": 234.34,
-      "iupac_name": "2-(diethylamino)-N-(2,6-dimethylphenyl)acetamide"
+      "molecular_weight": "180.16",
+      "iupac_name": "2-acetyloxybenzoic acid",
+      "category": "drug_analgesic",
+      "domain": "medical"
     },
     {
       "cid": 1983,
       "molecular_formula": "C8H9NO2",
-      "molecular_weight": 151.16,
-      "iupac_name": "N-(4-hydroxyphenyl)acetamide"
+      "molecular_weight": "151.16",
+      "iupac_name": "N-(4-hydroxyphenyl)acetamide",
+      "category": "drug_analgesic",
+      "domain": "medical"
     },
     {
-      "cid": 5280343,
-      "molecular_formula": "C15H10O7",
-      "molecular_weight": 302.23,
-      "iupac_name": "2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one"
-    },
-    {
-      "cid": 446157,
-      "molecular_formula": "C22H28FN3O6S",
-      "molecular_weight": 481.5,
-      "iupac_name": "(E,3R,5S)-7-[4-(4-fluorophenyl)-2-[methyl(methylsulfonyl)amino]-6-propan-2-ylpyrimidin-5-yl]-3,5-dihydroxyhept-6-enoic acid"
-    },
-    {
-      "cid": 5284373,
-      "molecular_formula": "C62H111N11O12",
-      "molecular_weight": 1202.6,
-      "iupac_name": "(3S,6S,9S,12R,15S,18S,21S,24S,30S,33S)-30-ethyl-33-[(E,1R,2R)-1-hydroxy-2-methylhex-4-enyl]-1,4,7,10,12,15,19,25,28-nonamethyl-6,9,18,24-tetrakis(2-methylpropyl)-3,21-di(propan-2-yl)-1,4,7,10,13,16,19,22,25,28,31-undecazacyclotritriacontane-2,5,8,11,14,17,20,23,26,29,32-undecone"
+      "cid": 3672,
+      "molecular_formula": "C13H18O2",
+      "molecular_weight": "206.28",
+      "iupac_name": "2-[4-(2-methylpropyl)phenyl]propanoic acid",
+      "category": "drug_analgesic",
+      "domain": "medical"
     },
     {
       "cid": 3033,
       "molecular_formula": "C14H11Cl2NO2",
-      "molecular_weight": 296.1,
-      "iupac_name": "2-[2-(2,6-dichloroanilino)phenyl]acetic acid"
+      "molecular_weight": "296.1",
+      "iupac_name": "2-[2-(2,6-dichloroanilino)phenyl]acetic acid",
+      "category": "drug_analgesic",
+      "domain": "medical"
     },
     {
-      "cid": 5280961,
-      "molecular_formula": "C15H10O5",
-      "molecular_weight": 270.24,
-      "iupac_name": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one"
+      "cid": 2249,
+      "molecular_formula": "C14H22N2O3",
+      "molecular_weight": "266.34",
+      "iupac_name": "2-[4-[2-hydroxy-3-(propan-2-ylamino)propoxy]phenyl]acetamide",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 446157,
+      "molecular_formula": "C22H28FN3O6S",
+      "molecular_weight": "481.5",
+      "iupac_name": "(E,3R,5S)-7-[4-(4-fluorophenyl)-2-[methyl(methylsulfonyl)amino]-6-propan-2-ylpyrimidin-5-yl]-3,5-dihydroxyhept-6-enoic acid",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
     },
     {
       "cid": 4091,
       "molecular_formula": "C4H11N5",
-      "molecular_weight": 129.16,
-      "iupac_name": "3-(diaminomethylidene)-1,1-dimethylguanidine"
+      "molecular_weight": "129.16",
+      "iupac_name": "3-(diaminomethylidene)-1,1-dimethylguanidine",
+      "category": "drug_metabolic",
+      "domain": "medical"
     },
     {
-      "cid": 31703,
-      "molecular_formula": "C27H29NO11",
-      "molecular_weight": 543.5,
-      "iupac_name": "(7S,9S)-7-[(2R,4S,5S,6S)-4-amino-5-hydroxy-6-methyloxan-2-yl]oxy-6,9,11-trihydroxy-9-(2-hydroxyacetyl)-4-methoxy-8,10-dihydro-7H-tetracene-5,12-dione"
+      "cid": 5362119,
+      "molecular_formula": "C21H31N3O5",
+      "molecular_weight": "405.5",
+      "iupac_name": "(2S)-1-[(2S)-6-amino-2-[[(1S)-1-carboxy-3-phenylpropyl]amino]hexanoyl]pyrrolidine-2-carboxylic acid",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
     },
     {
-      "cid": 2723949,
-      "molecular_formula": "C2H5NS",
-      "molecular_weight": 75.14,
-      "iupac_name": "ethanethioamide"
+      "cid": 4594,
+      "molecular_formula": "C17H19N3O3S",
+      "molecular_weight": "345.4",
+      "iupac_name": "6-methoxy-2-[(4-methoxy-3,5-dimethyl-2-pyridinyl)methylsulfinyl]-1H-benzimidazole",
+      "category": "drug_gi",
+      "domain": "medical"
     },
     {
-      "cid": 441244,
-      "molecular_formula": "C10H9AgN4O2S",
-      "molecular_weight": 357.14,
-      "iupac_name": "silver (4-aminophenyl)sulfonyl-pyrimidin-2-ylazanide"
+      "cid": 54678486,
+      "molecular_formula": "C19H16O4",
+      "molecular_weight": "308.3",
+      "iupac_name": "4-hydroxy-3-(3-oxo-1-phenylbutyl)chromen-2-one",
+      "category": "drug_anticoagulant",
+      "domain": "medical"
+    },
+    {
+      "cid": 33613,
+      "molecular_formula": "C16H19N3O5S",
+      "molecular_weight": "365.4",
+      "iupac_name": "(2S,5R,6R)-6-[[(2R)-2-amino-2-(4-hydroxyphenyl)acetyl]amino]-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",
+      "category": "drug_antibiotic",
+      "domain": "medical"
+    },
+    {
+      "cid": 27698,
+      "molecular_formula": "C22H17NO",
+      "molecular_weight": "311.4",
+      "iupac_name": "2-(4-methoxyphenyl)-3,3-diphenylprop-2-enenitrile",
+      "category": "drug_antibiotic",
+      "domain": "medical"
+    },
+    {
+      "cid": 447043,
+      "molecular_formula": "C38H72N2O12",
+      "molecular_weight": "749.0",
+      "iupac_name": "(2R,3S,4R,5R,8R,10R,11R,12S,13S,14R)-11-[(2S,3R,4S,6R)-4-(dimethylamino)-3-hydroxy-6-methyloxan-2-yl]oxy-2-ethyl-3,4,10-trihydroxy-13-[(2R,4R,5S,6S)-5-hydroxy-4-methoxy-4,6-dimethyloxan-2-yl]oxy-3,5,6,8,10,12,14-heptamethyl-1-oxa-6-azacyclopentadecan-15-one",
+      "category": "drug_antibiotic",
+      "domain": "medical"
     },
     {
       "cid": 5702160,
       "molecular_formula": "C8H15N7O2S3",
-      "molecular_weight": 337.5,
-      "iupac_name": "3-[[2-(diaminomethylideneamino)-1,3-thiazol-4-yl]methylsulfanyl]-N'-sulfamoylpropanimidamide"
+      "molecular_weight": "337.5",
+      "iupac_name": "3-[[2-(diaminomethylideneamino)-1,3-thiazol-4-yl]methylsulfanyl]-N'-sulfamoylpropanimidamide",
+      "category": "drug_gi",
+      "domain": "medical"
     },
     {
-      "cid": 65064,
-      "molecular_formula": "C22H18O11",
-      "molecular_weight": 458.4,
-      "iupac_name": "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate"
+      "cid": 3386,
+      "molecular_formula": "C17H18F3NO",
+      "molecular_weight": "309.33",
+      "iupac_name": "N-methyl-3-phenyl-3-[4-(trifluoromethyl)phenoxy]propan-1-amine",
+      "category": "drug_psychiatric",
+      "domain": "medical"
     },
     {
-      "cid": 5288826,
-      "molecular_formula": "C17H19NO3",
-      "molecular_weight": 285.34,
-      "iupac_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol"
+      "cid": 3676,
+      "molecular_formula": "C14H22N2O",
+      "molecular_weight": "234.34",
+      "iupac_name": "2-(diethylamino)-N-(2,6-dimethylphenyl)acetamide",
+      "category": "drug_anesthetic",
+      "domain": "medical"
     },
     {
-      "cid": 445858,
-      "molecular_formula": "C10H10O4",
-      "molecular_weight": 194.18,
-      "iupac_name": "(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid"
+      "cid": 31703,
+      "molecular_formula": "C27H29NO11",
+      "molecular_weight": "543.5",
+      "iupac_name": "(7S,9S)-7-[(2R,4S,5S,6S)-4-amino-5-hydroxy-6-methyloxan-2-yl]oxy-6,9,11-trihydroxy-9-(2-hydroxyacetyl)-4-methoxy-8,10-dihydro-7H-tetracene-5,12-dione",
+      "category": "drug_oncology",
+      "domain": "medical"
     },
     {
-      "cid": 5282379,
-      "molecular_formula": "C20H28O2",
-      "molecular_weight": 300.4,
-      "iupac_name": "(2Z,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraenoic acid"
+      "cid": 5284373,
+      "molecular_formula": "C62H111N11O12",
+      "molecular_weight": "1202.6",
+      "iupac_name": "(3S,6S,9S,12R,15S,18S,21S,24S,30S,33S)-30-ethyl-33-[(E,1R,2R)-1-hydroxy-2-methylhex-4-enyl]-1,4,7,10,12,15,19,25,28-nonamethyl-6,9,18,24-tetrakis(2-methylpropyl)-3,21-di(propan-2-yl)-1,4,7,10,13,16,19,22,25,28,31-undecazacyclotritriacontane-2,5,8,11,14,17,20,23,26,29,32-undecone",
+      "category": "drug_immunosuppressant",
+      "domain": "medical"
     },
     {
       "cid": 5284616,
       "molecular_formula": "C51H79NO13",
-      "molecular_weight": 914.2,
-      "iupac_name": "(1R,9S,12S,15R,16E,18R,19R,21R,23S,24E,26E,28E,30S,32S,35R)-1,18-dihydroxy-12-[(2R)-1-[(1S,3R,4R)-4-hydroxy-3-methoxycyclohexyl]propan-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.04,9]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone"
+      "molecular_weight": "914.2",
+      "iupac_name": "(1R,9S,12S,15R,16E,18R,19R,21R,23S,24E,26E,28E,30S,32S,35R)-1,18-dihydroxy-12-[(2R)-1-[(1S,3R,4R)-4-hydroxy-3-methoxycyclohexyl]propan-2-yl]-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-azatricyclo[30.3.1.04,9]hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentone",
+      "category": "drug_immunosuppressant",
+      "domain": "medical"
     },
     {
       "cid": 5360515,
       "molecular_formula": "C20H23NO4",
-      "molecular_weight": 341.4,
-      "iupac_name": "(4R,4aS,7aR,12bS)-3-(cyclopropylmethyl)-4a,9-dihydroxy-2,4,5,6,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-one"
+      "molecular_weight": "341.4",
+      "iupac_name": "(4R,4aS,7aR,12bS)-3-(cyclopropylmethyl)-4a,9-dihydroxy-2,4,5,6,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinolin-7-one",
+      "category": "drug_analgesic",
+      "domain": "medical"
+    },
+    {
+      "cid": 5288826,
+      "molecular_formula": "C17H19NO3",
+      "molecular_weight": "285.34",
+      "iupac_name": "(4R,4aR,7S,7aR,12bS)-3-methyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol",
+      "category": "drug_analgesic",
+      "domain": "medical"
+    },
+    {
+      "cid": 89594,
+      "molecular_formula": "C10H14N2",
+      "molecular_weight": "162.23",
+      "iupac_name": "3-[(2S)-1-methylpyrrolidin-2-yl]pyridine",
+      "category": "drug_stimulant",
+      "domain": "medical"
+    },
+    {
+      "cid": 2519,
+      "molecular_formula": "C8H10N4O2",
+      "molecular_weight": "194.19",
+      "iupac_name": "1,3,7-trimethylpurine-2,6-dione",
+      "category": "drug_stimulant",
+      "domain": "medical"
+    },
+    {
+      "cid": 5280805,
+      "molecular_formula": "C27H30O16",
+      "molecular_weight": "610.5",
+      "iupac_name": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-[[(2R,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxymethyl]oxan-2-yl]oxychromen-4-one",
+      "category": "drug_psychiatric",
+      "domain": "medical"
+    },
+    {
+      "cid": 16078,
+      "molecular_formula": "C21H30O2",
+      "molecular_weight": "314.5",
+      "iupac_name": "(6aR,10aR)-6,6,9-trimethyl-3-pentyl-6a,7,8,10a-tetrahydrobenzo[c]chromen-1-ol",
+      "category": "drug_psychoactive",
+      "domain": "medical"
+    },
+    {
+      "cid": 644019,
+      "molecular_formula": "C21H30O2",
+      "molecular_weight": "314.5",
+      "iupac_name": "2-[(1R,6R)-3-methyl-6-prop-1-en-2-ylcyclohex-2-en-1-yl]-5-pentylbenzene-1,3-diol",
+      "category": "drug_psychoactive",
+      "domain": "medical"
+    },
+    {
+      "cid": 5904,
+      "molecular_formula": "C16H18N2O4S",
+      "molecular_weight": "334.4",
+      "iupac_name": "(2S,5R,6R)-3,3-dimethyl-7-oxo-6-[(2-phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",
+      "category": "drug_antibiotic",
+      "domain": "medical"
     },
     {
       "cid": 2724385,
       "molecular_formula": "C41H64O14",
-      "molecular_weight": 780.9,
-      "iupac_name": "3-[(3S,5R,8R,9S,10S,12R,13S,14S,17R)-3-[(2R,4S,5S,6R)-5-[(2S,4S,5S,6R)-5-[(2S,4S,5S,6R)-4,5-dihydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-12,14-dihydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]-2H-furan-5-one"
+      "molecular_weight": "780.9",
+      "iupac_name": "3-[(3S,5R,8R,9S,10S,12R,13S,14S,17R)-3-[(2R,4S,5S,6R)-5-[(2S,4S,5S,6R)-5-[(2S,4S,5S,6R)-4,5-dihydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-4-hydroxy-6-methyloxan-2-yl]oxy-12,14-dihydroxy-10,13-dimethyl-1,2,3,4,5,6,7,8,9,11,12,15,16,17-tetradecahydrocyclopenta[a]phenanthren-17-yl]-2H-furan-5-one",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 441244,
+      "molecular_formula": "C10H9AgN4O2S",
+      "molecular_weight": "357.14",
+      "iupac_name": "silver (4-aminophenyl)sulfonyl-pyrimidin-2-ylazanide",
+      "category": "drug_antibiotic",
+      "domain": "medical"
+    },
+    {
+      "cid": 702,
+      "molecular_formula": "C2H6O",
+      "molecular_weight": "46.07",
+      "iupac_name": "ethanol",
+      "category": "solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 962,
+      "molecular_formula": "H2O",
+      "molecular_weight": "18.015",
+      "iupac_name": "oxidane",
+      "category": "solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 5280453,
+      "molecular_formula": "C27H44O3",
+      "molecular_weight": "416.6",
+      "iupac_name": "trans-(1R,3S,5Z)-5-[(2E)-2-[(1R,3aS,7aR)-1-[(2R)-6-hydroxy-6-methylheptan-2-yl]-7a-methyl-2,3,3a,5,6,7-hexahydro-1H-inden-4-ylidene]ethylidene]-4-methylidenecyclohexane-1,3-diol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 54670067,
+      "molecular_formula": "C6H8O6",
+      "molecular_weight": "176.12",
+      "iupac_name": "(2R)-2-[(1S)-1,2-dihydroxyethyl]-3,4-dihydroxy-2H-furan-5-one",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 1130,
+      "molecular_formula": "C12H17N4OS+",
+      "molecular_weight": "265.36",
+      "iupac_name": "2-[3-[(4-amino-2-methylpyrimidin-5-yl)methyl]-4-methyl-1,3-thiazol-3-ium-5-yl]ethanol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 493570,
+      "molecular_formula": "C17H20N4O6",
+      "molecular_weight": "376.4",
+      "iupac_name": "7,8-dimethyl-10-[(2S,3S,4R)-2,3,4,5-tetrahydroxypentyl]benzo[g]pteridine-2,4-dione",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 938,
+      "molecular_formula": "C6H5NO2",
+      "molecular_weight": "123.11",
+      "iupac_name": "pyridine-3-carboxylic acid",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 1054,
+      "molecular_formula": "C8H11NO3",
+      "molecular_weight": "169.18",
+      "iupac_name": "4,5-bis(hydroxymethyl)-2-methylpyridin-3-ol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 171548,
+      "molecular_formula": "C10H16N2O3S",
+      "molecular_weight": "244.31",
+      "iupac_name": "5-[(3aS,4S,6aR)-2-oxo-1,3,3a,4,6,6a-hexahydrothieno[3,4-d]imidazol-4-yl]pentanoic acid",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 445354,
+      "molecular_formula": "C20H30O",
+      "molecular_weight": "286.5",
+      "iupac_name": "(2E,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraen-1-ol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5282379,
+      "molecular_formula": "C20H28O2",
+      "molecular_weight": "300.4",
+      "iupac_name": "(2Z,4E,6E,8E)-3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraenoic acid",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 135398658,
+      "molecular_formula": "C19H19N7O6",
+      "molecular_weight": "441.4",
+      "iupac_name": "(2S)-2-[[4-[(2-amino-4-oxo-3H-pteridin-6-yl)methylamino]benzoyl]amino]pentanedioic acid",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5793,
+      "molecular_formula": "C6H12O6",
+      "molecular_weight": "180.16",
+      "iupac_name": "(3R,4S,5S,6R)-6-(hydroxymethyl)oxane-2,3,4,5-tetrol",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 5988,
+      "molecular_formula": "C12H22O11",
+      "molecular_weight": "342.30",
+      "iupac_name": "(2R,3R,4S,5S,6R)-2-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 5997,
+      "molecular_formula": "C27H46O",
+      "molecular_weight": "386.7",
+      "iupac_name": "(3S,8S,9S,10R,13R,14S,17R)-10,13-dimethyl-17-[(2R)-6-methylheptan-2-yl]-2,3,4,7,8,9,11,12,14,15,16,17-dodecahydro-1H-cyclopenta[a]phenanthren-3-ol",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 1176,
+      "molecular_formula": "CH4N2O",
+      "molecular_weight": "60.056",
+      "iupac_name": "urea",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 588,
+      "molecular_formula": "C4H7N3O",
+      "molecular_weight": "113.12",
+      "iupac_name": "2-amino-3-methyl-4H-imidazol-5-one",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 1070,
+      "molecular_formula": "C20H28O",
+      "molecular_weight": "284.4",
+      "iupac_name": "3,7-dimethyl-9-(2,6,6-trimethylcyclohexen-1-yl)nona-2,4,6,8-tetraenal",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280352,
+      "molecular_formula": "C33H36N4O6",
+      "molecular_weight": "584.7",
+      "iupac_name": "3-[2-[[3-(2-carboxyethyl)-5-[(Z)-(3-ethenyl-4-methyl-5-oxopyrrol-2-ylidene)methyl]-4-methyl-1H-pyrrol-2-yl]methyl]-5-[(Z)-(4-ethenyl-3-methyl-5-oxopyrrol-2-ylidene)methyl]-4-methyl-1H-pyrrol-3-yl]propanoic acid",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 444098,
+      "molecular_formula": "C34H32FeN4O4",
+      "molecular_weight": "616.5",
+      "iupac_name": "3-[18-(2-carboxyethyl)-8,13-bis(ethenyl)-3,7,12,17-tetramethylporphyrin-21,23-diid-2-yl]propanoic acid;iron(2+)",
+      "category": "metabolite",
+      "domain": "biological"
+    },
+    {
+      "cid": 5957,
+      "molecular_formula": "C10H16N5O13P3",
+      "molecular_weight": "507.18",
+      "iupac_name": "[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methoxy-hydroxyphosphoryl] phosphono hydrogen phosphate",
+      "category": "nucleotide",
+      "domain": "biological"
+    },
+    {
+      "cid": 190,
+      "molecular_formula": "C5H5N5",
+      "molecular_weight": "135.13",
+      "iupac_name": "7H-purin-6-amine",
+      "category": "nucleobase",
+      "domain": "biological"
+    },
+    {
+      "cid": 764,
+      "molecular_formula": "C5H5N5O",
+      "molecular_weight": "151.13",
+      "iupac_name": "2-amino-3,7-dihydropurin-6-one",
+      "category": "nucleobase",
+      "domain": "biological"
+    },
+    {
+      "cid": 597,
+      "molecular_formula": "C4H5N3O",
+      "molecular_weight": "111.10",
+      "iupac_name": "6-amino-1H-pyrimidin-2-one",
+      "category": "nucleobase",
+      "domain": "biological"
+    },
+    {
+      "cid": 1135,
+      "molecular_formula": "C5H6N2O2",
+      "molecular_weight": "126.11",
+      "iupac_name": "5-methyl-1H-pyrimidine-2,4-dione",
+      "category": "nucleobase",
+      "domain": "biological"
+    },
+    {
+      "cid": 1174,
+      "molecular_formula": "C4H4N2O2",
+      "molecular_weight": "112.09",
+      "iupac_name": "1H-pyrimidine-2,4-dione",
+      "category": "nucleobase",
+      "domain": "biological"
+    },
+    {
+      "cid": 750,
+      "molecular_formula": "C2H5NO2",
+      "molecular_weight": "75.07",
+      "iupac_name": "2-aminoacetic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5950,
+      "molecular_formula": "C3H7NO2",
+      "molecular_weight": "89.09",
+      "iupac_name": "(2S)-2-aminopropanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 6106,
+      "molecular_formula": "C6H13NO2",
+      "molecular_weight": "131.17",
+      "iupac_name": "(2S)-2-amino-4-methylpentanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5962,
+      "molecular_formula": "C6H14N2O2",
+      "molecular_weight": "146.19",
+      "iupac_name": "(2S)-2,6-diaminohexanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 6305,
+      "molecular_formula": "C11H12N2O2",
+      "molecular_weight": "204.22",
+      "iupac_name": "(2S)-2-amino-3-(1H-indol-3-yl)propanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 33032,
+      "molecular_formula": "C5H9NO4",
+      "molecular_weight": "147.13",
+      "iupac_name": "(2S)-2-aminopentanedioic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5862,
+      "molecular_formula": "C3H7NO2S",
+      "molecular_weight": "121.16",
+      "iupac_name": "(2R)-2-amino-3-sulfanylpropanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 6287,
+      "molecular_formula": "C5H11NO2",
+      "molecular_weight": "117.15",
+      "iupac_name": "(2S)-2-amino-3-methylbutanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 6140,
+      "molecular_formula": "C9H11NO2",
+      "molecular_weight": "165.19",
+      "iupac_name": "(2S)-2-amino-3-phenylpropanoic acid",
+      "category": "amino_acid",
+      "domain": "biological"
+    },
+    {
+      "cid": 681,
+      "molecular_formula": "C8H11NO2",
+      "molecular_weight": "153.18",
+      "iupac_name": "4-(2-aminoethyl)benzene-1,2-diol",
+      "category": "neurotransmitter",
+      "domain": "biological"
+    },
+    {
+      "cid": 5202,
+      "molecular_formula": "C10H12N2O",
+      "molecular_weight": "176.21",
+      "iupac_name": "3-(2-aminoethyl)-1H-indol-5-ol",
+      "category": "neurotransmitter",
+      "domain": "biological"
+    },
+    {
+      "cid": 439153,
+      "molecular_formula": "C21H29N7O14P2",
+      "molecular_weight": "665.4",
+      "iupac_name": "[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-dihydroxyoxolan-2-yl]methoxy-hydroxyphosphoryl] [(2R,3S,4R,5R)-5-(3-carbamoyl-4H-pyridin-1-yl)-3,4-dihydroxyoxolan-2-yl]methyl hydrogen phosphate",
+      "category": "neurotransmitter",
+      "domain": "biological"
+    },
+    {
+      "cid": 6013,
+      "molecular_formula": "C19H28O2",
+      "molecular_weight": "288.4",
+      "iupac_name": "(8R,9S,10R,13S,14S,17S)-17-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",
+      "category": "hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 5757,
+      "molecular_formula": "C18H24O2",
+      "molecular_weight": "272.4",
+      "iupac_name": "(8R,9S,13S,14S,17S)-13-methyl-6,7,8,9,11,12,14,15,16,17-decahydrocyclopenta[a]phenanthrene-3,17-diol",
+      "category": "hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 5819,
+      "molecular_formula": "C15H11I4NO4",
+      "molecular_weight": "776.87",
+      "iupac_name": "(2S)-2-amino-3-[4-(4-hydroxy-3,5-diiodophenoxy)-3,5-diiodophenyl]propanoic acid",
+      "category": "hormone",
+      "domain": "medical"
+    },
+    {
+      "cid": 5281795,
+      "molecular_formula": "C11H10O5",
+      "molecular_weight": "222.19",
+      "iupac_name": "(E)-3-(4-hydroxyphenyl)pent-2-enedioic acid",
+      "category": "hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280343,
+      "molecular_formula": "C15H10O7",
+      "molecular_weight": "302.23",
+      "iupac_name": "2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280961,
+      "molecular_formula": "C15H10O5",
+      "molecular_weight": "270.24",
+      "iupac_name": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 65064,
+      "molecular_formula": "C22H18O11",
+      "molecular_weight": "458.4",
+      "iupac_name": "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 445858,
+      "molecular_formula": "C10H10O4",
+      "molecular_weight": "194.18",
+      "iupac_name": "(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 5281670,
+      "molecular_formula": "C15H10O7",
+      "molecular_weight": "302.23",
+      "iupac_name": "2-(2,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 5462311,
+      "molecular_formula": "B",
+      "molecular_weight": "10.81",
+      "iupac_name": "boron",
+      "category": "phytochemical",
+      "domain": "biological"
+    },
+    {
+      "cid": 2723949,
+      "molecular_formula": "C2H5NS",
+      "molecular_weight": "75.14",
+      "iupac_name": "ethanethioamide",
+      "category": "metabolite",
+      "domain": "chemical"
     },
     {
       "cid": 3007857,
       "molecular_formula": "OZn",
-      "molecular_weight": 81.4,
-      "iupac_name": "zinc oxygen(2-)"
+      "molecular_weight": "81.4",
+      "iupac_name": "zinc oxygen(2-)",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 5360545,
+      "molecular_formula": "Na",
+      "molecular_weight": "22.9897693",
+      "iupac_name": "sodium",
+      "category": "mineral",
+      "domain": "chemical"
     }
   ],
-  "fetched_at": "2026-07-09T12:23:17.396156+00:00",
+  "fetched_at": "2026-07-12T00:30:08.243893+00:00",
   "external_cache": "G:\\FSOT-PublicData\\pubchem\\pubchem_cache.json"
 }

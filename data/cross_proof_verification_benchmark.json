@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T00:25:04.564936+00:00",
+  "generated_at": "2026-07-12T00:38:50.566713+00:00",
   "domain": "Cross_Proof_Verification_Spine",
   "tier": 79,
   "obligation_count": 24,
@@ -697,8 +697,8 @@
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "0:00:05 elapsed time\n",
-        "stderr": "0:00:05 elapsed time\n"
+        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:44 elapsed time)\n0:00:54 elapsed time\n",
+        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:44 elapsed time)\n0:00:54 elapsed time\n"
       }
     },
     "isabelle_refinement": {
@@ -722,7 +722,7 @@
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
       "returncode": 0,
-      "attempt": 2,
+      "attempt": 1,
       "stderr_tail": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
     },
     "rust_refinement": {

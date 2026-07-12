@@ -1409,9 +1409,9 @@ fn replay_all_obligations() {
     assert!(0.0024238898584426276_f64 < 0.5, "pubchem_compound_properties_median_error_under_half_pct");
     assert!(29 > 0, "pubchem_compound_properties_observable_count_pos");
     assert!(0.0_f64 < 0.5, "pubchem_live_deep_pooled_median_under_half_pct");
-    assert!(0.002059838302688438_f64 < 0.5, "pubchem_live_deep_headline_median_under_half_pct");
-    assert!(47 > 0, "pubchem_live_deep_observable_count_pos");
-    assert!(2 > 0, "pubchem_live_deep_beats_sota_headlines_pos");
+    assert!(0.0_f64 < 0.5, "pubchem_live_deep_headline_median_under_half_pct");
+    assert!(591 > 0, "pubchem_live_deep_observable_count_pos");
+    assert!(3 > 0, "pubchem_live_deep_beats_sota_headlines_pos");
     assert!(0.0024238898584426276_f64 < 0.5, "pubchem_stability_panel_pooled_median_under_half_pct");
     assert!(0.0024238898584426276_f64 < 0.5, "pubchem_stability_panel_headline_median_under_half_pct");
     assert!(59 > 0, "pubchem_stability_panel_observable_count_pos");

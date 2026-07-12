@@ -582,7 +582,7 @@ lemma psychology_gap_fill_bundle: "(160 :: nat) = 160 \<and> True \<and> True \<
 lemma pubchem_compound_properties_bundle: "(29 :: nat) = 29 \<and> (8 :: nat) = 8 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma pubchem_live_deep_bundle: "(47 :: nat) = 47 \<and> True \<and> True"
+lemma pubchem_live_deep_bundle: "(591 :: nat) = 591 \<and> True \<and> True"
   by auto
 
 lemma pubchem_stability_panel_bundle: "(59 :: nat) = 59 \<and> True \<and> True"

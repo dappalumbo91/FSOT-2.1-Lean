@@ -415,35 +415,9 @@ def ingest_openalex() -> dict:
 
 
 def ingest_pubchem() -> dict:
-    cids = [
-        2244, 702, 3672, 5360545, 2519, 5280453, 54670067, 962, 5957, 2249, 3386, 3676,
-        1983, 5280343, 446157, 5284373, 3033, 5280961, 4091, 31703, 2723949, 441244, 5702160,
-        65064, 5288826, 445858, 5282379, 5284616, 5360515, 2724385, 3007857,
-    ] if _deep_mode() else [2244, 702, 3672, 5360545, 2519, 5280453, 54670067, 962, 5957, 2249, 3386, 3676]
-    compounds: list[dict] = []
-    for cid in cids:
-        url = (
-            f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/property/"
-            "MolecularFormula,MolecularWeight,IUPACName/JSON"
-        )
-        try:
-            raw = _fetch_json(url)
-        except Exception:
-            continue
-        props = ((raw.get("PropertyTable") or {}).get("Properties") or [{}])[0]
-        formula = props.get("MolecularFormula")
-        mw = props.get("MolecularWeight")
-        if not formula or mw is None:
-            continue
-        compounds.append(
-            {
-                "cid": cid,
-                "molecular_formula": formula,
-                "molecular_weight": float(mw),
-                "iupac_name": props.get("IUPACName"),
-            }
-        )
-    doc = {"source": "PubChem_PUG_REST", "compound_count": len(compounds), "compounds": compounds}
+    from pubchem_live_lib import ingest_pubchem_tier38_summary  # noqa: WPS433
+
+    doc = ingest_pubchem_tier38_summary()
     _write_bundle("pubchem", "pubchem_cache.json", "pubchem_summary.json", doc)
     return doc
 

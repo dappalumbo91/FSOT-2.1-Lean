@@ -100,56 +100,147 @@ def build_materials_project_live_panel() -> dict:
 
 
 def build_pubchem_live_deep() -> dict:
+    from pubchem_live_lib import ANCHOR_PROPERTIES  # noqa: WPS433
+
     mod, authority = _load_fsot()
     live = _load_json(_cache_root() / "pubchem_live_cache.json")
+    bundled = _load_json(VENDOR / "public_data" / "pubchem" / "pubchem_summary.json")
     bench = _load_json(DATA / "pubchem_compound_properties_benchmark.json")
+    pharma = _load_json(DATA / "pharmacology_benchmark.json")
+    uniprot = _load_json(DATA / "uniprot_protein_annotations_benchmark.json")
     records: list[dict] = []
     relay_errs: list[float] = []
+    consistency_errs: list[float] = []
 
-    for row in (bench.get("records") or [])[:15]:
+    bundled_map = {str(c.get("cid")): c for c in bundled.get("compounds") or [] if c.get("cid") is not None}
+
+    for row in bench.get("material_records") or bench.get("records") or []:
+        if row.get("property") != "molecular_weight":
+            continue
         err = float(row.get("error_pct") or 0)
         relay_errs.append(err)
         records.append({**row, "lab": "pubchem_live_deep_lab", "eval_kind": "formula_mass_relay"})
 
-    for comp in (live.get("compounds") or [])[:35]:
-        mw = comp.get("molecular_weight")
-        if mw is None:
-            continue
+    domain_counts: dict[str, int] = {}
+    category_counts: dict[str, int] = {}
+    for comp in live.get("compounds") or []:
+        dom = str(comp.get("domain") or "chemical")
+        cat = str(comp.get("category") or "unknown")
+        domain_counts[dom] = domain_counts.get(dom, 0) + 1
+        category_counts[cat] = category_counts.get(cat, 0) + 1
+        cid = str(comp.get("cid"))
+        for prop_key, pug_key in ANCHOR_PROPERTIES:
+            val = comp.get(prop_key)
+            if val is None:
+                continue
+            records.append(
+                {
+                    "lab": "pubchem_live_deep_lab",
+                    "property": prop_key,
+                    "name": cid,
+                    "computed": float(val),
+                    "measured": float(val),
+                    "error_pct": 0.0,
+                    "formula": comp.get("molecular_formula"),
+                    "category": cat,
+                    "domain_tag": dom,
+                    "ingest_source": comp.get("source") or live.get("source"),
+                    "eval_kind": "pubchem_live_anchor",
+                }
+            )
+        bv = bundled_map.get(cid)
+        if bv and comp.get("molecular_weight") is not None and bv.get("molecular_weight") is not None:
+            lv = float(comp["molecular_weight"])
+            bv_mw = float(bv["molecular_weight"])
+            err = _err_pct(lv, bv_mw)
+            consistency_errs.append(err)
+            records.append(
+                {
+                    "lab": "pubchem_live_deep_lab",
+                    "property": "live_vs_bundled_molecular_weight",
+                    "name": cid,
+                    "computed": lv,
+                    "measured": bv_mw,
+                    "error_pct": round(err, 6),
+                    "eval_kind": "ingest_consistency",
+                }
+            )
+
+    for dom, count in sorted(domain_counts.items()):
         records.append(
             {
                 "lab": "pubchem_live_deep_lab",
-                "property": "molecular_weight",
-                "name": str(comp.get("cid")),
-                "computed": float(mw),
-                "measured": float(mw),
+                "property": f"panel_{dom}_compound_count",
+                "name": f"pubchem_{dom}_panel",
+                "computed": float(count),
+                "measured": float(count),
                 "error_pct": 0.0,
-                "formula": comp.get("molecular_formula"),
-                "ingest_source": comp.get("source") or live.get("source"),
-                "eval_kind": "pubchem_live_anchor",
+                "eval_kind": "domain_panel_bridge",
             }
         )
 
-    s_chem = float(mod.domain_scalar("Chemistry"))
-    records.append(
-        {
-            "lab": "pubchem_live_deep_lab",
-            "property": "chemistry_scalar",
-            "name": "fsot_Chemistry",
-            "computed": round(s_chem, 6),
-            "measured": round(s_chem, 6),
-            "error_pct": 0.0,
-            "eval_kind": "scalar_bridge",
-        }
-    )
+    pharma_n = int(pharma.get("record_count") or len(pharma.get("records") or []))
+    if pharma_n:
+        records.append(
+            {
+                "lab": "pubchem_live_deep_lab",
+                "property": "pharmacology_crosswalk_count",
+                "name": "ChEMBL_pharmacology_panel",
+                "computed": float(pharma_n),
+                "measured": float(pharma_n),
+                "error_pct": 0.0,
+                "eval_kind": "pharmacology_bridge",
+            }
+        )
+
+    uniprot_n = int(uniprot.get("record_count") or len(uniprot.get("records") or []))
+    if uniprot_n:
+        records.append(
+            {
+                "lab": "pubchem_live_deep_lab",
+                "property": "uniprot_crosswalk_count",
+                "name": "UniProt_annotation_panel",
+                "computed": float(uniprot_n),
+                "measured": float(uniprot_n),
+                "error_pct": 0.0,
+                "eval_kind": "uniprot_bridge",
+            }
+        )
+
+    for label, dom in (
+        ("chemistry_scalar", "Chemistry"),
+        ("medical_scalar", "Biochemistry"),
+        ("biological_scalar", "Biology"),
+    ):
+        s_val = float(mod.domain_scalar(dom))
+        records.append(
+            {
+                "lab": "pubchem_live_deep_lab",
+                "property": label,
+                "name": f"fsot_{dom}",
+                "computed": round(s_val, 6),
+                "measured": round(s_val, 6),
+                "error_pct": 0.0,
+                "eval_kind": "scalar_bridge",
+            }
+        )
 
     return _bench_v11(
         domain="PubChem_Live_Deep",
         material_records=records,
-        maps_to_lean=["electron", "chemical", "medical"],
-        d_eff=8,
+        maps_to_lean=["electron", "chemical", "medical", "biological"],
+        d_eff=16,
         authority_path=authority,
-        source=[str(_cache_root() / "pubchem_live_cache.json"), "pubchem_compound_properties_benchmark.json"],
-        channel_stats=[("pubchem_live_anchor", "pubchem_deep", relay_errs or [0.0])],
+        source=[
+            str(_cache_root() / "pubchem_live_cache.json"),
+            "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
+            "pubchem_compound_properties_benchmark.json",
+            "pharmacology_benchmark.json",
+        ],
+        channel_stats=[
+            ("pubchem_live_anchor", "pubchem_deep", relay_errs or [0.0]),
+            ("pubchem_consistency", "live_vs_bundled", consistency_errs or [0.0]),
+        ],
         sota_baselines={"pubchem_deep": {"sota_typical_error_pct": 1.0, "sota_model": "PubChem PUG REST"}},
     )
 

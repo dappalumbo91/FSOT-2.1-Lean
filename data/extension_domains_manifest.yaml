@@ -2593,17 +2593,17 @@ extension_domains:
 
   PubChem_Live_Deep:
     tier: 68
-    D_eff: 8
+    D_eff: 16
     delta_psi: 0.5
-    recent_hits: 2
+    recent_hits: 3
     observed: true
-    maps_to_lean: [electron, chemical, medical]
+    maps_to_lean: [electron, chemical, medical, biological]
     ingest_script: scripts/ingest_tier68_live_ingest.py
     build_script: scripts/build_tier68_live_ingest_benchmarks.py
     manifest: data/tier68_live_ingest_manifest.yaml
     benchmark_data: data/pubchem_live_deep_benchmark.json
     lean_module: FSOT.Formal.PubChemLiveDeepPriors
-    note: "PubChem PUG REST live + formula-mass relay depth"
+    note: "PubChem preregistered medical/biological panel — multi-property PUG REST + ChEMBL/UniProt bridges"
 
   OpenNeuro_Full_Panel:
     tier: 68

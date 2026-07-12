@@ -4757,7 +4757,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma pubchem_live_deep_bundle_conj_0 : (47 = 47)%nat.
+Lemma pubchem_live_deep_bundle_conj_0 : (591 = 591)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4769,7 +4769,7 @@ Lemma pubchem_live_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma pubchem_live_deep_bundle : (47 = 47)%nat /\ True /\ True.
+Lemma pubchem_live_deep_bundle : (591 = 591)%nat /\ True /\ True.
 Proof.
   split.
     split.

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:10.070192+00:00",
+  "generated_at": "2026-07-12T00:30:17.196251+00:00",
   "domain": "VizieR_WDS_TAP_Live_Deep",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,6 +15,8 @@
   "D_eff": 21,
   "record_count": 25,
   "observable_count": 25,
+  "scalar_record_count": 25,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -39,20 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 25,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 25
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -61,20 +50,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1,
-      "domain_display_name": "tier gap fill",
-      "display_name": "vizier wds",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 1
     }
   ],
   "material_records": [
@@ -86,20 +62,7 @@
       "measured": 5.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -109,20 +72,7 @@
       "measured": 2300.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -132,20 +82,7 @@
       "measured": 230.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -155,20 +92,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -178,20 +102,7 @@
       "measured": 830.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -201,20 +112,7 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -224,20 +122,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -247,20 +132,7 @@
       "measured": 360.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -270,20 +142,7 @@
       "measured": 18.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -293,20 +152,7 @@
       "measured": 4.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -316,20 +162,7 @@
       "measured": 1200.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -339,20 +172,7 @@
       "measured": 50.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -362,20 +182,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -385,20 +192,7 @@
       "measured": 7500.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -408,20 +202,7 @@
       "measured": 300.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -431,20 +212,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -454,20 +222,7 @@
       "measured": 169.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -477,20 +232,7 @@
       "measured": 9.5,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -500,20 +242,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -523,20 +252,7 @@
       "measured": 12.5,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -546,20 +262,7 @@
       "measured": 0.8,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -569,20 +272,7 @@
       "measured": 2.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -592,20 +282,7 @@
       "measured": 59.2,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -615,20 +292,7 @@
       "measured": 12.0,
       "error_pct": 0.0,
       "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "wds_live_anchor"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -638,20 +302,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "record_count": 57,
-      "eval_kind": "tier62_bridge",
-      "domain_display_name": "vizier wds tap live",
-      "display_name": "wds live multiplicity deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier62_bridge"
     }
   ],
   "margin_summary": {
@@ -665,19 +316,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "VizieR WDS TAP Live Deep",
-  "tier_label": "Tier 68 \u2014 Materials Project Live Panel + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.919542+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 25,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 25
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

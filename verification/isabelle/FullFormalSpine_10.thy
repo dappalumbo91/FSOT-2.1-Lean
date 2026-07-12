@@ -225,13 +225,13 @@ lemma pubchem_compound_properties_observable_count_pos: "0 < (29 :: nat)"
 lemma pubchem_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma pubchem_live_deep_headline_median_under_half_pct: "(0.002059838302688438 :: real) < (0.5 :: real)"
+lemma pubchem_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma pubchem_live_deep_observable_count_pos: "0 < (47 :: nat)"
+lemma pubchem_live_deep_observable_count_pos: "0 < (591 :: nat)"
   by eval
 
-lemma pubchem_live_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma pubchem_live_deep_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
 lemma pubchem_stability_panel_pooled_median_under_half_pct: "(0.0024238898584426276 :: real) < (0.5 :: real)"
