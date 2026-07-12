@@ -72,7 +72,7 @@ lemma breakthrough_discoveries_2024_2026_bundle: "(21 :: nat) = 21 \<and> (22 ::
 lemma cardiology_ext_bundle: "(126 :: nat) = 126 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma cern_open_data_lhc_bundle: "(83 :: nat) = 83 \<and> (19 :: nat) = 19 \<and> True \<and> (0 :: real) < 1"
+lemma cern_open_data_lhc_bundle: "(200 :: nat) = 200 \<and> (19 :: nat) = 19 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma certified_agent_qwen_bundle: "(8 :: nat) = 8 \<and> (12 :: nat) = 12 \<and> True \<and> (0 :: real) < 1"
@@ -282,7 +282,7 @@ lemma gaia_dr3_tap_deep_bundle: "(386 :: nat) = 386 \<and> True \<and> True"
 lemma galactic_structure_sample_bundle: "(101 :: nat) = 101 \<and> True \<and> True"
   by auto
 
-lemma gbif_species_occurrence_bundle: "(600 :: nat) = 600 \<and> (15 :: nat) = 15 \<and> True \<and> (0 :: real) < 1"
+lemma gbif_species_occurrence_bundle: "(2000 :: nat) = 2000 \<and> (15 :: nat) = 15 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma genomic_sciences_bundle: "(18 :: nat) = 18 \<and> True \<and> True"
@@ -300,7 +300,7 @@ lemma geomagnetism_bundle: "(525 :: nat) = 525 \<and> (525 :: nat) = 525 \<and> 
 lemma grace_cryosphere_bundle: "(253 :: nat) = 253 \<and> (237 :: nat) = 237 \<and> (16 :: nat) = 16 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma gwosc_live_event_deep_bundle: "(25 :: nat) = 25 \<and> True \<and> True"
+lemma gwosc_live_event_deep_bundle: "(191 :: nat) = 191 \<and> True \<and> True"
   by auto
 
 lemma heavy_ion_lab_synthesis_panel_bundle: "(39 :: nat) = 39 \<and> True \<and> True"
@@ -408,7 +408,7 @@ lemma materials_engineering_bundle: "(87 :: nat) = 87 \<and> (7 :: nat) = 7 \<an
 lemma materials_genome_crosswalk_bundle: "(38 :: nat) = 38 \<and> True \<and> True"
   by auto
 
-lemma materials_project_live_panel_bundle: "(51 :: nat) = 51 \<and> True \<and> True"
+lemma materials_project_live_panel_bundle: "(141 :: nat) = 141 \<and> True \<and> True"
   by auto
 
 lemma materials_species_bridge_bundle: "(45 :: nat) = 45 \<and> (14 :: nat) = 14 \<and> True \<and> (0 :: real) < 1"
@@ -447,7 +447,7 @@ lemma music_harmonics_public_panel_bundle: "(18 :: nat) = 18 \<and> True \<and> 
 lemma mycology_ext_bundle: "(420 :: nat) = 420 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma nasa_exoplanet_archive_bundle: "(296 :: nat) = 296 \<and> (21 :: nat) = 21 \<and> True \<and> (0 :: real) < 1"
+lemma nasa_exoplanet_archive_bundle: "(988 :: nat) = 988 \<and> (21 :: nat) = 21 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma natural_formation_element_simulation_bundle: "(44 :: nat) = 44 \<and> True \<and> True"
@@ -498,10 +498,10 @@ lemma omni_theory_genesis_bundle: "(27 :: nat) = 27 \<and> (25 :: nat) = 25 \<an
 lemma oncology_bundle: "(67 :: nat) = 67 \<and> (5 :: nat) = 5 \<and> (14 :: nat) = 14 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma openalex_citation_graph_bundle: "(150 :: nat) = 150 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
+lemma openalex_citation_graph_bundle: "(200 :: nat) = 200 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma openneuro_full_panel_bundle: "(15 :: nat) = 15 \<and> True \<and> True"
+lemma openneuro_full_panel_bundle: "(123 :: nat) = 123 \<and> True \<and> True"
   by auto
 
 lemma orbital_mechanics_bundle: "(9 :: nat) = 9 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
@@ -579,10 +579,10 @@ lemma proof_ledger_closure_spine_bundle: "(17 :: nat) = 17 \<and> True \<and> Tr
 lemma psychology_gap_fill_bundle: "(160 :: nat) = 160 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma pubchem_compound_properties_bundle: "(29 :: nat) = 29 \<and> (8 :: nat) = 8 \<and> True \<and> (0 :: real) < 1"
+lemma pubchem_compound_properties_bundle: "(521 :: nat) = 521 \<and> (8 :: nat) = 8 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma pubchem_live_deep_bundle: "(591 :: nat) = 591 \<and> True \<and> True"
+lemma pubchem_live_deep_bundle: "(5254 :: nat) = 5254 \<and> True \<and> True"
   by auto
 
 lemma pubchem_stability_panel_bundle: "(59 :: nat) = 59 \<and> True \<and> True"
@@ -609,7 +609,7 @@ lemma quantum_mechanics_gap_fill_bundle: "(50 :: nat) = 50 \<and> True \<and> Tr
 lemma quantum_optics_gap_fill_bundle: "(50 :: nat) = 50 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma rcsb_pdb_structures_bundle: "(86 :: nat) = 86 \<and> (13 :: nat) = 13 \<and> True \<and> (0 :: real) < 1"
+lemma rcsb_pdb_structures_bundle: "(159 :: nat) = 159 \<and> (13 :: nat) = 13 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma rd_interval_tightening_panel_bundle: "(12 :: nat) = 12 \<and> True \<and> True"
@@ -672,7 +672,7 @@ lemma stellar_multiplicity_live_deep_bundle: "(69 :: nat) = 69 \<and> True \<and
 lemma structure_calibration_links_codon_map: "(64 :: nat) = 64 \<and> True \<and> True"
   by auto
 
-lemma stsci_mast_telescope_bundle: "(130 :: nat) = 130 \<and> (21 :: nat) = 21 \<and> True \<and> (0 :: real) < 1"
+lemma stsci_mast_telescope_bundle: "(377 :: nat) = 377 \<and> (21 :: nat) = 21 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma stumped_panel_bundle: "(14 :: nat) = 14 \<and> True \<and> True"
@@ -753,7 +753,7 @@ lemma unified_db_candidate_crosswalk_bundle: "(46 :: nat) = 46 \<and> True \<and
 lemma unified_db_crosswalk_spine_bundle: "(18 :: nat) = 18 \<and> True \<and> True"
   by auto
 
-lemma uniprot_protein_annotations_bundle: "(62 :: nat) = 62 \<and> (12 :: nat) = 12 \<and> True \<and> (0 :: real) < 1"
+lemma uniprot_protein_annotations_bundle: "(102 :: nat) = 102 \<and> (12 :: nat) = 12 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma uniprot_structure_annotations_deep_bundle: "(121 :: nat) = 121 \<and> True \<and> True"
@@ -780,7 +780,7 @@ lemma warp_actuation_stabilized_bundle: "True \<and> True \<and> True"
 lemma wds_live_multiplicity_deep_bundle: "(57 :: nat) = 57 \<and> True \<and> True"
   by auto
 
-lemma world_bank_development_bundle: "(165 :: nat) = 165 \<and> (20 :: nat) = 20 \<and> True \<and> (0 :: real) < 1"
+lemma world_bank_development_bundle: "(420 :: nat) = 420 \<and> (20 :: nat) = 20 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma xr_interactive_media_math_scaffold_bundle: "(24 :: nat) = 24 \<and> True \<and> True"

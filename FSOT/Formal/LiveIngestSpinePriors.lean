@@ -13,7 +13,7 @@ open Real
 
 def live_ingest_spine_observable_count : ℕ := 28
 def live_ingest_spine_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def live_ingest_spine_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def live_ingest_spine_headline_median_error_pct : ℝ := (0.015431 : ℝ)
 def live_ingest_spine_beats_sota_headlines : ℕ := 2
 def live_ingest_spine_D_eff : ℕ := 17
 

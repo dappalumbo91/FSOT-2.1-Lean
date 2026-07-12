@@ -625,6 +625,8 @@ def build_nist_codata_benchmark() -> dict:
 
 
 def build_gbif_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("gbif", "gbif_occurrence_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -632,20 +634,21 @@ def build_gbif_benchmark() -> dict:
         for prop in ("decimalLatitude", "decimalLongitude"):
             val = float(row[prop])
             records.append(
-                {
-                    "lab": "gbif",
-                    "property": prop,
-                    "name": row.get("species"),
-                    "computed": val,
-                    "measured": val,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="gbif",
+                    property_name=prop,
+                    name=str(row.get("species") or ""),
+                    measured=val,
+                    domain="Ecology",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("GBIF_Species_Occurrence", ["biological", "ecological"], 15, records, errs, doc.get("source"), authority)
 
 
 def build_noaa_tides_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("noaa_tides", "noaa_tides_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -653,40 +656,42 @@ def build_noaa_tides_benchmark() -> dict:
         for prop in ("mean_height_m", "max_height_m", "min_height_m", "prediction_count"):
             val = float(row[prop])
             records.append(
-                {
-                    "lab": "noaa_tides",
-                    "property": prop,
-                    "name": row.get("name"),
-                    "computed": val,
-                    "measured": val,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="noaa_tides",
+                    property_name=prop,
+                    name=str(row.get("name") or ""),
+                    measured=val,
+                    domain="Oceanography",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("NOAA_Coastal_Tides", ["energy", "galactic"], 17, records, errs, doc.get("source"), authority)
 
 
 def build_world_bank_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("world_bank", "world_bank_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
     for row in doc.get("rows") or []:
         val = float(row["value"])
         records.append(
-            {
-                "lab": "world_bank",
-                "property": row.get("indicator"),
-                "name": f"{row.get('country')}_{row.get('year')}",
-                "computed": val,
-                "measured": val,
-                "error_pct": 0.0,
-            }
+            make_fsot_record(
+                lab="world_bank",
+                property_name=str(row.get("indicator") or "indicator"),
+                name=f"{row.get('country')}_{row.get('year')}",
+                measured=val,
+                domain="Economics",
+            )
         )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("World_Bank_Development", ["consciousness", "economic"], 20, records, errs, doc.get("source"), authority)
 
 
 def build_nasa_exoplanet_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("nasa_exoplanet", "nasa_exoplanet_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -694,14 +699,13 @@ def build_nasa_exoplanet_benchmark() -> dict:
         for prop in ("pl_rade", "pl_bmasse"):
             val = float(row[prop])
             records.append(
-                {
-                    "lab": "nasa_exoplanet",
-                    "property": prop,
-                    "name": row.get("pl_name"),
-                    "computed": val,
-                    "measured": val,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="nasa_exoplanet",
+                    property_name=prop,
+                    name=str(row.get("pl_name") or ""),
+                    measured=val,
+                    domain="Planetary_Science",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("NASA_Exoplanet_Archive", ["astronomical", "galactic"], 21, records, errs, doc.get("source"), authority)
@@ -719,6 +723,8 @@ def _scalar_field(val: object) -> float | None:
 
 
 def build_rcsb_pdb_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("rcsb_pdb", "rcsb_pdb_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -728,20 +734,21 @@ def build_rcsb_pdb_benchmark() -> dict:
             if val_f is None:
                 continue
             records.append(
-                {
-                    "lab": "rcsb_pdb",
-                    "property": prop,
-                    "name": row.get("pdb_id"),
-                    "computed": val_f,
-                    "measured": val_f,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="rcsb_pdb",
+                    property_name=prop,
+                    name=str(row.get("pdb_id") or ""),
+                    measured=val_f,
+                    domain="Biochemistry",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("RCSB_PDB_Structures", ["medical", "biological"], 13, records, errs, doc.get("source"), authority)
 
 
 def build_openalex_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("openalex", "openalex_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -751,20 +758,21 @@ def build_openalex_benchmark() -> dict:
             continue
         val = float(cites)
         records.append(
-            {
-                "lab": "openalex",
-                "property": "cited_by_count",
-                "name": (row.get("title") or "")[:60],
-                "computed": val,
-                "measured": val,
-                "error_pct": 0.0,
-            }
+            make_fsot_record(
+                lab="openalex",
+                property_name="cited_by_count",
+                name=(row.get("title") or "")[:60],
+                measured=val,
+                domain="Psychology",
+            )
         )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("OpenAlex_Citation_Graph", ["consciousness", "linguistic"], 18, records, errs, doc.get("source"), authority)
 
 
 def build_pubchem_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("pubchem", "pubchem_summary.json")
     mod, authority = load_fsot()
     S_chem = float(mod.domain_scalar("Chemistry"))
@@ -774,29 +782,25 @@ def build_pubchem_benchmark() -> dict:
         mw = row.get("molecular_weight")
         if not formula or mw is None:
             continue
-        computed = formula_mass(str(formula))
-        if computed is None:
-            continue
         measured = float(mw)
         tol = 0.5 + abs(S_chem) * 0.2
-        e = err_pct(computed, measured)
-        records.append(
-            {
-                "lab": "pubchem",
-                "property": "molecular_weight",
-                "name": str(row.get("cid")),
-                "formula": formula,
-                "computed": round(computed, 4),
-                "measured": measured,
-                "error_pct": e,
-                "within_band": e <= tol,
-            }
+        rec = make_fsot_record(
+            lab="pubchem",
+            property_name="molecular_weight",
+            name=str(row.get("cid")),
+            measured=measured,
+            domain="Chemistry",
+            formula=str(formula),
         )
+        rec["within_band"] = float(rec["error_pct"]) <= tol
+        records.append(rec)
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("PubChem_Compound_Properties", ["electron", "chemical"], 8, records, errs, doc.get("source"), authority)
 
 
 def build_cern_opendata_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("cern_opendata", "cern_opendata_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -807,34 +811,34 @@ def build_cern_opendata_benchmark() -> dict:
             if nums:
                 val = float(nums[0])
                 records.append(
-                    {
-                        "lab": "cern_opendata",
-                        "property": "collision_energy_tev",
-                        "name": row.get("title", "")[:80],
-                        "computed": val,
-                        "measured": val,
-                        "error_pct": 0.0,
-                    }
+                    make_fsot_record(
+                        lab="cern_opendata",
+                        property_name="collision_energy_tev",
+                        name=row.get("title", "")[:80],
+                        measured=val,
+                        domain="High_Energy_Physics",
+                    )
                 )
                 continue
         year = row.get("date_published")
         if year and str(year).isdigit():
             val = float(year)
             records.append(
-                {
-                    "lab": "cern_opendata",
-                    "property": "dataset_publication_year",
-                    "name": row.get("title", "")[:80],
-                    "computed": val,
-                    "measured": val,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="cern_opendata",
+                    property_name="dataset_publication_year",
+                    name=row.get("title", "")[:80],
+                    measured=val,
+                    domain="High_Energy_Physics",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("CERN_Open_Data_LHC", ["particle", "high_energy"], 19, records, errs, doc.get("source"), authority)
 
 
 def build_uniprot_benchmark() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
+
     doc = load_summary("uniprot", "uniprot_summary.json")
     _, authority = load_fsot()
     records: list[dict] = []
@@ -845,14 +849,13 @@ def build_uniprot_benchmark() -> dict:
                 continue
             val_f = float(val)
             records.append(
-                {
-                    "lab": "uniprot",
-                    "property": prop,
-                    "name": row.get("accession"),
-                    "computed": val_f,
-                    "measured": val_f,
-                    "error_pct": 0.0,
-                }
+                make_fsot_record(
+                    lab="uniprot",
+                    property_name=prop,
+                    name=str(row.get("accession") or ""),
+                    measured=val_f,
+                    domain="Biology",
+                )
             )
     errs = sorted(r["error_pct"] for r in records)
     return _bench_doc("UniProt_Protein_Annotations", ["biological", "medical"], 12, records, errs, doc.get("source"), authority)

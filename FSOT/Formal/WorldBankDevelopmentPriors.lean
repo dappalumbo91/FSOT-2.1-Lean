@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def world_bank_development_observable_count : ℕ := 420
-def world_bank_development_median_error_pct : ℝ := (0.0 : ℝ)
+def world_bank_development_median_error_pct : ℝ := (0.02584 : ℝ)
 def world_bank_development_D_eff : ℕ := 20
 
 theorem world_bank_development_observable_count_pos : 0 < world_bank_development_observable_count := by

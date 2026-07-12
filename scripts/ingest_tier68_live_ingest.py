@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import ssl
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -19,7 +20,8 @@ PUBCHEM_BUNDLED = VENDOR / "public_data" / "pubchem" / "pubchem_summary.json"
 OPENNEURO_BUNDLED = VENDOR / "public_data" / "consciousness" / "openneuro_summary.json"
 WDS_BUNDLED = VENDOR / "stellar_structures" / "wds_multiplicity_expanded.json"
 
-VIZIER_TAP = "https://cdsarc.cds.unistra.fr/viz-bin/votable"
+VIZIER_TAP = "https://tapvizier.cds.unistra.fr/TAPVizierTap/sync"
+VIZIER_VOTABLE = "https://cdsarc.cds.unistra.fr/viz-bin/votable"
 
 
 def _wds_adql() -> str:
@@ -133,32 +135,79 @@ def ingest_openneuro_full() -> dict:
     return doc
 
 
+def _vizier_ssl_context() -> ssl.SSLContext:
+    ctx = ssl.create_default_context()
+    try:
+        import certifi  # noqa: WPS433
+
+        ctx.load_verify_locations(certifi.where())
+    except Exception:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
+
+def _urlopen_json(url: str, *, timeout: int = 120) -> object:
+    req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier68"})
+    ctx = _vizier_ssl_context()
+    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _parse_vizier_rows(payload: object) -> list[dict]:
+    if isinstance(payload, list):
+        return [r for r in payload if isinstance(r, dict)]
+    if isinstance(payload, dict):
+        for key in ("data", "rows", "result"):
+            data = payload.get(key)
+            if isinstance(data, list):
+                return [r for r in data if isinstance(r, dict)]
+    return []
+
+
+def _fetch_vizier_tap(adql: str) -> list[dict]:
+    errors: list[str] = []
+    tap_params = urllib.parse.urlencode(
+        {"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "json", "QUERY": adql}
+    )
+    for url in (
+        f"{VIZIER_TAP}?{tap_params}",
+        f"{VIZIER_VOTABLE}?{urllib.parse.urlencode({'-source': 'II/213/wds', '-out': 'JSON', '-query': adql})}",
+    ):
+        try:
+            rows = _parse_vizier_rows(_urlopen_json(url))
+            if rows:
+                return rows
+        except Exception as exc:
+            errors.append(f"{url}: {exc}")
+    if errors:
+        raise RuntimeError("; ".join(errors[-2:]))
+    return []
+
+
 def ingest_vizier_wds_tap() -> dict:
     out_path = cache_root() / "vizier_wds_tap_live_cache.json"
     bundled = json.loads(WDS_BUNDLED.read_text(encoding="utf-8")) if WDS_BUNDLED.exists() else {"systems": []}
     systems = list(bundled.get("systems") or [])
     source = "wds_bundled"
     try:
-        params = urllib.parse.urlencode({"-source": "II/213/wds", "-out": "JSON", "-query": _wds_adql()})
-        url = f"{VIZIER_TAP}?{params}"
-        req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier68"})
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-        rows = payload if isinstance(payload, list) else payload.get("data") or []
+        rows = _fetch_vizier_tap(_wds_adql())
         live = []
         from live_api_limits import wds_vizier_top_limit  # noqa: WPS433
 
         for row in rows[: wds_vizier_top_limit()]:
-            if isinstance(row, dict):
-                live.append(
-                    {
-                        "id": row.get("WDS") or row.get("wds"),
-                        "separation_arcsec": row.get("Sep") or row.get("sep"),
-                        "mag1": row.get("mag1"),
-                        "mag2": row.get("mag2"),
-                        "source": "vizier_wds_tap_live",
-                    }
-                )
+            sep = row.get("Sep") or row.get("sep") or row.get("SEPARATION")
+            live.append(
+                {
+                    "id": row.get("WDS") or row.get("wds"),
+                    "separation_arcsec": float(sep) if sep is not None else None,
+                    "mag1": row.get("mag1") or row.get("MAG1"),
+                    "mag2": row.get("mag2") or row.get("MAG2"),
+                    "multiplicity": row.get("comp") or row.get("COMP"),
+                    "source": "vizier_wds_tap_live",
+                }
+            )
+        live = [r for r in live if r.get("id")]
         if live:
             systems = live
             source = "vizier_wds_tap_live"

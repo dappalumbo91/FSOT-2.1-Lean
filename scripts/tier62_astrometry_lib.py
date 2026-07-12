@@ -13,6 +13,7 @@ GAIA_BUNDLED = VENDOR / "gaia_dr3_tap_sample.json"
 WDS_LIVE = VENDOR / "wds_live_cache.json"
 WDS_BUNDLED = VENDOR / "wds_multiplicity_expanded.json"
 
+from fsot_api_predict_lib import make_fsot_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
 
 
@@ -33,24 +34,23 @@ def build_wds_live_multiplicity_deep() -> dict:
     live_sys = {str(s.get("id")): s for s in live.get("objects") or []}
     bundled_sys = {str(s.get("id")): s for s in bundled.get("systems") or []}
     records: list[dict] = []
+    pred_errs: list[float] = []
 
     for sid, row in sorted(live_sys.items()):
         for prop in ("multiplicity", "period_years", "separation_au", "total_mass_msun"):
             val = row.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "wds_live_multiplicity_lab",
-                    "property": prop,
-                    "name": sid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "ingest_source": live.get("source"),
-                    "eval_kind": "wds_anchor",
-                }
+            rec = make_fsot_record(
+                lab="wds_live_multiplicity_lab",
+                property_name=prop,
+                name=sid,
+                measured=float(val),
+                domain="Astronomy" if prop != "total_mass_msun" else "Astrophysics",
+                extra={"ingest_source": live.get("source")},
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         if sid in bundled_sys:
             for prop in ("period_years", "separation_au", "total_mass_msun"):
                 lv = row.get(prop)
@@ -73,17 +73,15 @@ def build_wds_live_multiplicity_deep() -> dict:
             for prop in ("multiplicity", "period_years", "separation_au", "total_mass_msun"):
                 val = row.get(prop)
                 if val is not None:
-                    records.append(
-                        {
-                            "lab": "wds_live_multiplicity_lab",
-                            "property": prop,
-                            "name": sid,
-                            "computed": float(val),
-                            "measured": float(val),
-                            "error_pct": 0.0,
-                            "eval_kind": "bundled_anchor",
-                        }
+                    rec = make_fsot_record(
+                        lab="wds_live_multiplicity_lab",
+                        property_name=prop,
+                        name=sid,
+                        measured=float(val),
+                        domain="Astronomy" if prop != "total_mass_msun" else "Astrophysics",
                     )
+                    records.append(rec)
+                    pred_errs.append(float(rec["error_pct"]))
 
     tier53 = _load_json(DATA / "stellar_multiplicity_catalog_benchmark.json")
     if tier53:
@@ -108,7 +106,10 @@ def build_wds_live_multiplicity_deep() -> dict:
         d_eff=19,
         authority_path=authority,
         source=[str(WDS_LIVE), str(WDS_BUNDLED)],
-        channel_stats=[("wds_consistency", "multiplicity_deep", cons or [0.0])],
+        channel_stats=[
+            ("fsot_prediction", "multiplicity_deep", pred_errs or [0.0]),
+            ("wds_consistency", "multiplicity_deep", cons or [0.0]),
+        ],
         sota_baselines={"multiplicity_deep": {"sota_typical_error_pct": 10.0, "sota_model": "WDS orbital catalog"}},
     )
 
@@ -121,24 +122,23 @@ def build_gaia_dr3_tap_deep() -> dict:
     live_stars = {str(s.get("source_id") or s.get("name")): s for s in live.get("objects") or []}
     bundled_stars = {str(s.get("source_id") or s.get("name")): s for s in bundled.get("stars") or []}
     records: list[dict] = []
+    pred_errs: list[float] = []
 
     for sid, row in sorted(live_stars.items()):
         for prop in ("parallax_mas", "pm_total_masyr", "phot_g_mean_mag", "bp_rp", "distance_pc"):
             val = row.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "gaia_dr3_tap_lab",
-                    "property": prop,
-                    "name": str(row.get("name") or sid),
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "ingest_source": live.get("source"),
-                    "eval_kind": "gaia_anchor",
-                }
+            rec = make_fsot_record(
+                lab="gaia_dr3_tap_lab",
+                property_name=prop,
+                name=str(row.get("name") or sid),
+                measured=float(val),
+                domain="Astronomy",
+                extra={"ingest_source": live.get("source")},
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         plx = row.get("parallax_mas")
         dist = row.get("distance_pc")
         if plx and dist and float(plx) > 0:
@@ -160,17 +160,15 @@ def build_gaia_dr3_tap_deep() -> dict:
             for prop in ("parallax_mas", "pm_total_masyr", "distance_pc"):
                 val = row.get(prop)
                 if val is not None:
-                    records.append(
-                        {
-                            "lab": "gaia_dr3_tap_lab",
-                            "property": prop,
-                            "name": str(row.get("name") or sid),
-                            "computed": float(val),
-                            "measured": float(val),
-                            "error_pct": 0.0,
-                            "eval_kind": "bundled_anchor",
-                        }
+                    rec = make_fsot_record(
+                        lab="gaia_dr3_tap_lab",
+                        property_name=prop,
+                        name=str(row.get("name") or sid),
+                        measured=float(val),
+                        domain="Astronomy",
                     )
+                    records.append(rec)
+                    pred_errs.append(float(rec["error_pct"]))
 
     gaia60 = _load_json(DATA / "gaia_astrometry_panel_deep_benchmark.json")
     if gaia60:
@@ -206,7 +204,10 @@ def build_gaia_dr3_tap_deep() -> dict:
         d_eff=20,
         authority_path=authority,
         source=[str(GAIA_LIVE), str(GAIA_BUNDLED)],
-        channel_stats=[("parallax_distance", "gaia_dr3", plx_errs or [0.0])],
+        channel_stats=[
+            ("fsot_prediction", "gaia_dr3", pred_errs or [0.0]),
+            ("parallax_distance", "gaia_dr3", plx_errs or [0.0]),
+        ],
         sota_baselines={"gaia_dr3": {"sota_typical_error_pct": 5.0, "sota_model": "Gaia DR3 TAP astrometry"}},
     )
 

@@ -12,8 +12,8 @@ noncomputable section
 open Real
 
 def openneuro_full_panel_observable_count : ℕ := 123
-def openneuro_full_panel_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def openneuro_full_panel_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def openneuro_full_panel_pooled_median_error_pct : ℝ := (0.015431 : ℝ)
+def openneuro_full_panel_headline_median_error_pct : ℝ := (0.015431 : ℝ)
 def openneuro_full_panel_beats_sota_headlines : ℕ := 2
 def openneuro_full_panel_D_eff : ℕ := 14
 

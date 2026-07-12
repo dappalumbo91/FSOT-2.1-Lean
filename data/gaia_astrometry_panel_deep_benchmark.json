@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T11:20:59.458346+00:00",
+  "generated_at": "2026-07-12T12:11:17.704357+00:00",
   "domain": "Gaia_Astrometry_Panel_Deep",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,11 +14,11 @@
   "D_eff": 20,
   "record_count": 62,
   "observable_count": 62,
-  "scalar_record_count": 61,
+  "scalar_record_count": 60,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.111276,
+  "median_error_pct": 0.022461,
+  "pooled_median_error_pct": 0.022461,
+  "headline_median_error_pct": 0.022461,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -29,6 +29,7 @@
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true,
       "channel_parallax_distance_vs_baseline": true
     }
   },
@@ -37,10 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.022461,
       "measured": 0.0,
-      "error_pct": 0.0,
+      "error_pct": 0.022461,
       "observable_count": 62
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "gaia_astrometry",
+      "computed": 0.022461,
+      "measured": 0.0,
+      "error_pct": 0.022461,
+      "observable_count": 48
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -57,19 +67,23 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Sirius",
-      "computed": 379.21,
+      "computed": 379.295176,
       "measured": 379.21,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Sirius",
-      "computed": 1318.7,
+      "computed": 1318.9962,
       "measured": 1318.7,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -78,16 +92,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Sirius",
-      "computed": 2.64,
+      "computed": 2.640593,
       "measured": 2.64,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -102,37 +120,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Alpha_Cen",
-      "computed": 747.1,
+      "computed": 747.26781,
       "measured": 747.1,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Alpha_Cen",
-      "computed": 3688.0,
+      "computed": 3688.82838,
       "measured": 3688.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Alpha_Cen",
-      "computed": 0.24,
+      "computed": 0.240064,
       "measured": 0.24,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Alpha_Cen",
-      "computed": 1.34,
+      "computed": 1.340301,
       "measured": 1.34,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -147,37 +173,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Vega",
-      "computed": 130.23,
+      "computed": 130.259252,
       "measured": 130.23,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Vega",
-      "computed": 327.8,
+      "computed": 327.873629,
       "measured": 327.8,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Vega",
-      "computed": -0.5,
+      "computed": -0.500132,
       "measured": -0.5,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Vega",
-      "computed": 7.68,
+      "computed": 7.681725,
       "measured": 7.68,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -192,37 +226,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Betelgeuse",
-      "computed": 4.51,
+      "computed": 4.511013,
       "measured": 4.51,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Betelgeuse",
-      "computed": 27.5,
+      "computed": 27.506177,
       "measured": 27.5,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Betelgeuse",
-      "computed": 0.05,
+      "computed": 0.050013,
       "measured": 0.05,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Betelgeuse",
-      "computed": 222.0,
+      "computed": 222.049865,
       "measured": 222.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -237,37 +279,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Rigel",
-      "computed": 2.78,
+      "computed": 2.780624,
       "measured": 2.78,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Rigel",
-      "computed": 1.87,
+      "computed": 1.87042,
       "measured": 1.87,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Rigel",
-      "computed": -0.06,
+      "computed": -0.060016,
       "measured": -0.06,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Rigel",
-      "computed": 360.0,
+      "computed": 360.080861,
       "measured": 360.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -282,37 +332,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Procyon",
-      "computed": 286.05,
+      "computed": 286.114251,
       "measured": 286.05,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Procyon",
-      "computed": 3230.0,
+      "computed": 3230.725506,
       "measured": 3230.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Procyon",
-      "computed": -0.05,
+      "computed": -0.050013,
       "measured": -0.05,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Procyon",
-      "computed": 3.5,
+      "computed": 3.500786,
       "measured": 3.5,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -327,37 +385,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Altair",
-      "computed": 53.95,
+      "computed": 53.962118,
       "measured": 53.95,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Altair",
-      "computed": 536.8,
+      "computed": 536.920573,
       "measured": 536.8,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Altair",
-      "computed": -0.2,
+      "computed": -0.200053,
       "measured": -0.2,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Altair",
-      "computed": 18.5,
+      "computed": 18.504155,
       "measured": 18.5,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -372,37 +438,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Pollux",
-      "computed": 96.54,
+      "computed": 96.561684,
       "measured": 96.54,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Pollux",
-      "computed": 622.0,
+      "computed": 622.13971,
       "measured": 622.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Pollux",
-      "computed": 0.08,
+      "computed": 0.080021,
       "measured": 0.08,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Pollux",
-      "computed": 10.36,
+      "computed": 10.362327,
       "measured": 10.36,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -417,37 +491,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Fomalhaut",
-      "computed": 129.81,
+      "computed": 129.839157,
       "measured": 129.81,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Fomalhaut",
-      "computed": 374.2,
+      "computed": 374.284051,
       "measured": 374.2,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Fomalhaut",
-      "computed": -0.03,
+      "computed": -0.030008,
       "measured": -0.03,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Fomalhaut",
-      "computed": 7.7,
+      "computed": 7.70173,
       "measured": 7.7,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -462,37 +544,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Tau_Ceti",
-      "computed": 273.96,
+      "computed": 274.021535,
       "measured": 273.96,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Tau_Ceti",
-      "computed": 1709.0,
+      "computed": 1709.383867,
       "measured": 1709.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Tau_Ceti",
-      "computed": -0.52,
+      "computed": -0.520138,
       "measured": -0.52,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Tau_Ceti",
-      "computed": 3.65,
+      "computed": 3.65082,
       "measured": 3.65,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -507,37 +597,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "Epsilon_Eri",
-      "computed": 310.94,
+      "computed": 311.009842,
       "measured": 310.94,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "Epsilon_Eri",
-      "computed": 4650.0,
+      "computed": 4651.044459,
       "measured": 4650.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "Epsilon_Eri",
-      "computed": -0.06,
+      "computed": -0.060016,
       "measured": -0.06,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "Epsilon_Eri",
-      "computed": 3.22,
+      "computed": 3.220723,
       "measured": 3.22,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -552,37 +650,45 @@
       "lab": "gaia_astrometry_panel_lab",
       "property": "parallax_mas",
       "name": "61_Cyg_A",
-      "computed": 287.18,
+      "computed": 287.244505,
       "measured": 287.18,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "pm_total_masyr",
       "name": "61_Cyg_A",
-      "computed": 5293.0,
+      "computed": 5294.188887,
       "measured": 5293.0,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "metallicity_dex",
       "name": "61_Cyg_A",
-      "computed": -0.26,
+      "computed": -0.260069,
       "measured": -0.26,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.026472,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astrophysics",
+      "fsot_scalar": 0.882411
     },
     {
       "lab": "gaia_astrometry_panel_lab",
       "property": "distance_pc",
       "name": "61_Cyg_A",
-      "computed": 3.48,
+      "computed": 3.480782,
       "measured": 3.48,
-      "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor"
+      "error_pct": 0.022461,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -613,7 +719,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.022461,
     "max_scalar_error_pct": 0.192871,
     "classifier_count": 0,
     "classifier_correct": 0,

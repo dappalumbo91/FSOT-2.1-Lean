@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T11:30:39.587891+00:00",
+  "generated_at": "2026-07-12T12:24:57.039758+00:00",
   "version": "1.2",
   "summary": {
     "bundle_conj_total": 330,
@@ -2375,7 +2375,7 @@
         {
           "kind": "lt_lit",
           "symbol": "cern_open_data_lhc_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.013294 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -7907,7 +7907,7 @@
         {
           "kind": "eq_nat",
           "symbol": "gbif_species_occurrence_observable_count",
-          "statement": "600 = 600",
+          "statement": "2000 = 2000",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -7931,7 +7931,7 @@
         {
           "kind": "lt_lit",
           "symbol": "gbif_species_occurrence_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.006006 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -8279,7 +8279,7 @@
         {
           "kind": "eq_nat",
           "symbol": "gwosc_live_event_deep_observable_count",
-          "statement": "25 = 25",
+          "statement": "191 = 191",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -8291,7 +8291,7 @@
         {
           "kind": "lt_half",
           "symbol": "gwosc_live_event_deep_pooled_median_error_pct",
-          "statement": "0.0 < 0.5",
+          "statement": "0.008488 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -8303,7 +8303,7 @@
         {
           "kind": "nat_pos",
           "symbol": "gwosc_live_event_deep_beats_sota_headlines",
-          "statement": "0 < 2",
+          "statement": "0 < 3",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -11069,7 +11069,7 @@
         {
           "kind": "lt_half",
           "symbol": "materials_project_live_panel_pooled_median_error_pct",
-          "statement": "0.0 < 0.5",
+          "statement": "0.011734 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -11965,7 +11965,7 @@
         {
           "kind": "lt_lit",
           "symbol": "nasa_exoplanet_archive_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.023015 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -13205,7 +13205,7 @@
         {
           "kind": "lt_lit",
           "symbol": "noaa_coastal_tides_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.030173 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -13507,7 +13507,7 @@
         {
           "kind": "eq_nat",
           "symbol": "openalex_citation_graph_observable_count",
-          "statement": "150 = 150",
+          "statement": "200 = 200",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -13531,7 +13531,7 @@
         {
           "kind": "lt_lit",
           "symbol": "openalex_citation_graph_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.031506 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -13577,7 +13577,7 @@
         {
           "kind": "lt_half",
           "symbol": "openneuro_full_panel_pooled_median_error_pct",
-          "statement": "0.0 < 0.5",
+          "statement": "0.015431 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -15429,7 +15429,7 @@
         {
           "kind": "eq_nat",
           "symbol": "pubchem_compound_properties_observable_count",
-          "statement": "187 = 187",
+          "statement": "521 = 521",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -15453,7 +15453,7 @@
         {
           "kind": "lt_lit",
           "symbol": "pubchem_compound_properties_median_error_pct",
-          "statement": "0.0023785253143068304 < 5.0",
+          "statement": "0.002629 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -15487,7 +15487,7 @@
         {
           "kind": "eq_nat",
           "symbol": "pubchem_live_deep_observable_count",
-          "statement": "4591 = 4591",
+          "statement": "5254 = 5254",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -15499,7 +15499,7 @@
         {
           "kind": "lt_half",
           "symbol": "pubchem_live_deep_pooled_median_error_pct",
-          "statement": "0.0 < 0.5",
+          "statement": "0.032631 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -16069,7 +16069,7 @@
         {
           "kind": "lt_lit",
           "symbol": "rcsb_pdb_structures_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.022236 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -17579,7 +17579,7 @@
         {
           "kind": "lt_lit",
           "symbol": "stsci_mast_telescope_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.022461 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -19341,7 +19341,7 @@
         {
           "kind": "lt_lit",
           "symbol": "uniprot_protein_annotations_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.026684 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -19609,7 +19609,7 @@
         {
           "kind": "lt_half",
           "symbol": "vizier_wds_tap_live_deep_pooled_median_error_pct",
-          "statement": "0.0 < 0.5",
+          "statement": "0.026954 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -20049,7 +20049,7 @@
         {
           "kind": "eq_nat",
           "symbol": "world_bank_development_observable_count",
-          "statement": "390 = 390",
+          "statement": "420 = 420",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -20073,7 +20073,7 @@
         {
           "kind": "lt_lit",
           "symbol": "world_bank_development_median_error_pct",
-          "statement": "0.0 < 5.0",
+          "statement": "0.02584 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,

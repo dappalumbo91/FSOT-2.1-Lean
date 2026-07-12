@@ -12,8 +12,8 @@ noncomputable section
 open Real
 
 def vizier_wds_tap_live_deep_observable_count : ℕ := 25
-def vizier_wds_tap_live_deep_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def vizier_wds_tap_live_deep_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def vizier_wds_tap_live_deep_pooled_median_error_pct : ℝ := (0.026954 : ℝ)
+def vizier_wds_tap_live_deep_headline_median_error_pct : ℝ := (0.026954 : ℝ)
 def vizier_wds_tap_live_deep_beats_sota_headlines : ℕ := 2
 def vizier_wds_tap_live_deep_D_eff : ℕ := 21
 

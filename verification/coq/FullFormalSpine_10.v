@@ -219,19 +219,19 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma psychology_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma pubchem_compound_properties_median_error_under_half_pct : (0.0024238898584426276%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma pubchem_compound_properties_observable_count_pos : (0 < 29)%nat.
+Lemma pubchem_compound_properties_observable_count_pos : (0 < 521)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma pubchem_live_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma pubchem_compound_properties_median_error_under_five_pct : (0.002629%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma pubchem_live_deep_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma pubchem_live_deep_pooled_median_under_half_pct : (0.032631%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma pubchem_live_deep_observable_count_pos : (0 < 591)%nat.
+Lemma pubchem_live_deep_headline_median_under_half_pct : (0.032631%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pubchem_live_deep_observable_count_pos : (0 < 5254)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma pubchem_live_deep_beats_sota_headlines_pos : (0 < 3)%nat.

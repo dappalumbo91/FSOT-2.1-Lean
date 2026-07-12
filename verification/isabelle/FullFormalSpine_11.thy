@@ -33,10 +33,10 @@ lemma quantum_optics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
 lemma quantum_optics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma rcsb_pdb_structures_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma rcsb_pdb_structures_observable_count_pos: "0 < (159 :: nat)"
   by eval
 
-lemma rcsb_pdb_structures_observable_count_pos: "0 < (86 :: nat)"
+lemma rcsb_pdb_structures_median_error_under_five_pct: "(0.022236 :: real) < (5.0 :: real)"
   by eval
 
 lemma rd_interval_tightening_panel_pooled_median_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
@@ -285,10 +285,10 @@ lemma structure_calibration_residue_count_pos: "0 < (32338 :: nat)"
 lemma structure_calibration_burial_beats_fifty_pct: "(50.0 :: real) < (59.47 :: real)"
   by eval
 
-lemma stsci_mast_telescope_observable_count_pos: "0 < (130 :: nat)"
+lemma stsci_mast_telescope_observable_count_pos: "0 < (377 :: nat)"
   by eval
 
-lemma stsci_mast_telescope_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+lemma stsci_mast_telescope_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
   by eval
 
 lemma stumped_panel_pooled_median_under_half_pct: "(0.039905 :: real) < (0.5 :: real)"

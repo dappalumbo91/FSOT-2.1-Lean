@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def openalex_citation_graph_observable_count : ℕ := 200
-def openalex_citation_graph_median_error_pct : ℝ := (0.0 : ℝ)
+def openalex_citation_graph_median_error_pct : ℝ := (0.031506 : ℝ)
 def openalex_citation_graph_D_eff : ℕ := 18
 
 theorem openalex_citation_graph_observable_count_pos : 0 < openalex_citation_graph_observable_count := by

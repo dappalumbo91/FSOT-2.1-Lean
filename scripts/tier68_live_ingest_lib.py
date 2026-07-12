@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 VENDOR = ROOT / "vendor"
 
+from fsot_api_predict_lib import make_fsot_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
 
 
@@ -45,18 +46,19 @@ def build_materials_project_live_panel() -> dict:
             if val is None:
                 continue
             records.append(
-                {
-                    "lab": "materials_project_live_lab",
-                    "property": prop,
-                    "name": mp_id,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "formula": row.get("formula"),
-                    "ingest_source": row.get("source") or live.get("source"),
-                    "eval_kind": "mp_anchor",
-                }
+                make_fsot_record(
+                    lab="materials_project_live_lab",
+                    property_name=prop,
+                    name=mp_id,
+                    measured=float(val),
+                    domain="Materials_Science",
+                    formula=row.get("formula"),
+                    extra={
+                        "ingest_source": row.get("source") or live.get("source"),
+                    },
+                )
             )
+            relay_errs.append(float(records[-1]["error_pct"]))
         if mp_id in bundled_map:
             for prop in ("band_gap_eV", "formation_energy_eV_per_atom"):
                 lv, bv = row.get(prop), bundled_map[mp_id].get(prop)
@@ -94,7 +96,7 @@ def build_materials_project_live_panel() -> dict:
         d_eff=16,
         authority_path=authority,
         source=[str(_cache_root() / "materials_project_live_cache.json"), "vendor/materials_live/materials_project_bundled.json"],
-        channel_stats=[("mp_anchor", "materials_project", relay_errs or [0.0])],
+        channel_stats=[("fsot_prediction", "materials_project", relay_errs or [0.0])],
         sota_baselines={"materials_project": {"sota_typical_error_pct": 5.0, "sota_model": "Materials Project DFT class"}},
     )
 
@@ -136,21 +138,21 @@ def build_pubchem_live_deep() -> dict:
             val = comp.get(prop_key)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "pubchem_live_deep_lab",
-                    "property": prop_key,
-                    "name": cid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "formula": comp.get("molecular_formula"),
+            rec = make_fsot_record(
+                lab="pubchem_live_deep_lab",
+                property_name=prop_key,
+                name=cid,
+                measured=float(val),
+                domain="Chemistry",
+                formula=comp.get("molecular_formula"),
+                extra={
                     "category": cat,
                     "domain_tag": dom,
                     "ingest_source": comp.get("source") or live.get("source"),
-                    "eval_kind": "pubchem_live_anchor",
-                }
+                },
             )
+            records.append(rec)
+            relay_errs.append(float(rec["error_pct"]))
         bv = bundled_map.get(cid)
         if bv and comp.get("molecular_weight") is not None and bv.get("molecular_weight") is not None:
             lv = float(comp["molecular_weight"])
@@ -283,7 +285,7 @@ def build_pubchem_live_deep() -> dict:
             "food_microbiology_gap_fill_benchmark.json",
         ],
         channel_stats=[
-            ("pubchem_live_anchor", "pubchem_deep", relay_errs or [0.0]),
+            ("fsot_prediction", "pubchem_deep", relay_errs or [0.0]),
             ("pubchem_consistency", "live_vs_bundled", consistency_errs or [0.0]),
         ],
         sota_baselines={"pubchem_deep": {"sota_typical_error_pct": 1.0, "sota_model": "PubChem PUG REST"}},
@@ -300,58 +302,43 @@ def build_openneuro_full_panel() -> dict:
     eeg = [d for d in (live.get("datasets") or bundled.get("datasets") or []) if "EEG" in str(d.get("modality_filter") or "")]
     mri = [d for d in (live.get("datasets") or bundled.get("datasets") or []) if "MRI" in str(d.get("modality_filter") or "")]
 
-    records.append(
-        {
-            "lab": "openneuro_full_panel_lab",
-            "property": "eeg_dataset_count",
-            "name": "openneuro_eeg_index",
-            "computed": float(len(eeg)),
-            "measured": float(len(eeg)),
-            "error_pct": 0.0,
-            "eval_kind": "catalog_anchor",
-        }
-    )
-    records.append(
-        {
-            "lab": "openneuro_full_panel_lab",
-            "property": "mri_dataset_count",
-            "name": "openneuro_mri_index",
-            "computed": float(len(mri)),
-            "measured": float(len(mri)),
-            "error_pct": 0.0,
-            "eval_kind": "catalog_anchor",
-        }
-    )
+    pred_errs: list[float] = []
+    for prop, count in (("eeg_dataset_count", len(eeg)), ("mri_dataset_count", len(mri))):
+        rec = make_fsot_record(
+            lab="openneuro_full_panel_lab",
+            property_name=prop,
+            name=f"openneuro_{prop}",
+            measured=float(count),
+            domain="Neuroscience",
+        )
+        records.append(rec)
+        pred_errs.append(float(rec["error_pct"]))
     from live_api_limits import mega_deep, tier68_deep  # noqa: WPS433
 
     eeg_cap = 80 if mega_deep() else (40 if tier68_deep() else 12)
     mri_cap = 40 if mega_deep() else (20 if tier68_deep() else 8)
     for ds in eeg[:eeg_cap]:
-        records.append(
-            {
-                "lab": "openneuro_full_panel_lab",
-                "property": "eeg_dataset_id",
-                "name": str(ds.get("id")),
-                "computed": 1.0,
-                "measured": 1.0,
-                "error_pct": 0.0,
-                "dataset_name": ds.get("name"),
-                "eval_kind": "dataset_anchor",
-            }
+        rec = make_fsot_record(
+            lab="openneuro_full_panel_lab",
+            property_name="eeg_dataset_id",
+            name=str(ds.get("id")),
+            measured=1.0,
+            domain="Neuroscience",
+            extra={"dataset_name": ds.get("name")},
         )
+        records.append(rec)
+        pred_errs.append(float(rec["error_pct"]))
     for ds in mri[:mri_cap]:
-        records.append(
-            {
-                "lab": "openneuro_full_panel_lab",
-                "property": "mri_dataset_id",
-                "name": str(ds.get("id")),
-                "computed": 1.0,
-                "measured": 1.0,
-                "error_pct": 0.0,
-                "dataset_name": ds.get("name"),
-                "eval_kind": "dataset_anchor",
-            }
+        rec = make_fsot_record(
+            lab="openneuro_full_panel_lab",
+            property_name="mri_dataset_id",
+            name=str(ds.get("id")),
+            measured=1.0,
+            domain="Neuroscience",
+            extra={"dataset_name": ds.get("name")},
         )
+        records.append(rec)
+        pred_errs.append(float(rec["error_pct"]))
     records.append(
         {
             "lab": "openneuro_full_panel_lab",
@@ -371,7 +358,7 @@ def build_openneuro_full_panel() -> dict:
         d_eff=14,
         authority_path=authority,
         source=[str(_cache_root() / "openneuro_full_cache.json"), "vendor/public_data/consciousness/openneuro_summary.json"],
-        channel_stats=[("dataset_anchor", "openneuro_full", [0.0])],
+        channel_stats=[("fsot_prediction", "openneuro_full", pred_errs or [0.0])],
         sota_baselines={"openneuro_full": {"sota_typical_error_pct": 10.0, "sota_model": "OpenNeuro EEG/MRI catalog"}},
     )
 
@@ -392,18 +379,16 @@ def build_vizier_wds_tap_live_deep() -> dict:
             val = obj.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "vizier_wds_tap_live_lab",
-                    "property": prop,
-                    "name": sid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "ingest_source": live.get("source"),
-                    "eval_kind": "wds_live_anchor",
-                }
+            rec = make_fsot_record(
+                lab="vizier_wds_tap_live_lab",
+                property_name=prop,
+                name=sid,
+                measured=float(val),
+                domain="Astronomy",
+                extra={"ingest_source": live.get("source")},
             )
+            records.append(rec)
+            relay_errs.append(float(rec["error_pct"]))
 
     if wds62:
         pool = float(wds62.get("pooled_median_error_pct") or 0.0)
@@ -427,7 +412,7 @@ def build_vizier_wds_tap_live_deep() -> dict:
         d_eff=21,
         authority_path=authority,
         source=[str(_cache_root() / "vizier_wds_tap_live_cache.json"), "wds_live_multiplicity_deep_benchmark.json"],
-        channel_stats=[("wds_live_anchor", "vizier_wds", relay_errs or [0.0])],
+        channel_stats=[("fsot_prediction", "vizier_wds", relay_errs or [0.0])],
         sota_baselines={"vizier_wds": {"sota_typical_error_pct": 3.0, "sota_model": "WDS catalog astrometry"}},
     )
 

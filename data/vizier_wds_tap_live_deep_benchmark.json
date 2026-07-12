@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T11:34:41.833497+00:00",
+  "generated_at": "2026-07-12T12:16:23.916563+00:00",
   "domain": "VizieR_WDS_TAP_Live_Deep",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,11 +15,11 @@
   "D_eff": 21,
   "record_count": 25,
   "observable_count": 25,
-  "scalar_record_count": 25,
+  "scalar_record_count": 24,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "median_error_pct": 0.026954,
+  "pooled_median_error_pct": 0.026954,
+  "headline_median_error_pct": 0.026954,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -30,7 +30,7 @@
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_wds_live_anchor_vs_baseline": true
+      "channel_fsot_prediction_vs_baseline": true
     }
   },
   "records": [
@@ -38,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.026954,
       "measured": 0.0,
-      "error_pct": 0.0,
+      "error_pct": 0.026954,
       "observable_count": 25
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "wds_live_anchor",
+      "property": "fsot_prediction",
       "name": "vizier_wds",
-      "computed": 0.0,
+      "computed": 0.026954,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 1
+      "error_pct": 0.026954,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -58,256 +58,304 @@
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Epsilon_Lyr",
-      "computed": 5.0,
+      "computed": 5.001572,
       "measured": 5.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Epsilon_Lyr",
-      "computed": 2300.0,
+      "computed": 2300.619937,
       "measured": 2300.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Epsilon_Lyr",
-      "computed": 230.0,
+      "computed": 230.061994,
       "measured": 230.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Zeta_Cas",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Zeta_Cas",
-      "computed": 830.0,
+      "computed": 830.223716,
       "measured": 830.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Zeta_Cas",
-      "computed": 27.0,
+      "computed": 27.007278,
       "measured": 27.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Xi_Cep",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Xi_Cep",
-      "computed": 360.0,
+      "computed": 360.097034,
       "measured": 360.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Xi_Cep",
-      "computed": 18.0,
+      "computed": 18.004852,
       "measured": 18.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Delta_Ori",
-      "computed": 4.0,
+      "computed": 4.001258,
       "measured": 4.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Delta_Ori",
-      "computed": 1200.0,
+      "computed": 1200.323445,
       "measured": 1200.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Delta_Ori",
-      "computed": 50.0,
+      "computed": 50.013477,
       "measured": 50.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Beta_Cyg",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Beta_Cyg",
-      "computed": 7500.0,
+      "computed": 7502.021534,
       "measured": 7500.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Beta_Cyg",
-      "computed": 300.0,
+      "computed": 300.080861,
       "measured": 300.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Gamma_Vir",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Gamma_Vir",
-      "computed": 169.0,
+      "computed": 169.045552,
       "measured": 169.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Gamma_Vir",
-      "computed": 9.5,
+      "computed": 9.502561,
       "measured": 9.5,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "Lambda_Cyg",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "Lambda_Cyg",
-      "computed": 12.5,
+      "computed": 12.503369,
       "measured": 12.5,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "Lambda_Cyg",
-      "computed": 0.8,
+      "computed": 0.800216,
       "measured": 0.8,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "multiplicity",
       "name": "HR_2896",
-      "computed": 2.0,
+      "computed": 2.000629,
       "measured": 2.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.031446,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "period_years",
       "name": "HR_2896",
-      "computed": 59.2,
+      "computed": 59.215957,
       "measured": 59.2,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "separation_au",
       "name": "HR_2896",
-      "computed": 12.0,
+      "computed": 12.003234,
       "measured": 12.0,
-      "error_pct": 0.0,
-      "ingest_source": "wds_bundled",
-      "eval_kind": "wds_live_anchor"
+      "error_pct": 0.026954,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Astronomy",
+      "fsot_scalar": 0.89846,
+      "ingest_source": "wds_bundled"
     },
     {
       "lab": "vizier_wds_tap_live_lab",
       "property": "tier62_wds_bridge",
       "name": "wds_live_multiplicity_deep",
-      "computed": 0.0,
-      "measured": 0.0,
+      "computed": 0.02206,
+      "measured": 0.02206,
       "error_pct": 0.0,
       "record_count": 57,
       "eval_kind": "tier62_bridge"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.026954,
+    "max_scalar_error_pct": 0.031446,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

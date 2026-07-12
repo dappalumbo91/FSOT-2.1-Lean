@@ -138,7 +138,7 @@ lemma linguistics_target_count_pos: "0 < (10 :: nat)"
 lemma live_ingest_spine_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma live_ingest_spine_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma live_ingest_spine_headline_median_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
   by eval
 
 lemma live_ingest_spine_observable_count_pos: "0 < (28 :: nat)"
@@ -273,13 +273,13 @@ lemma materials_genome_crosswalk_observable_count_pos: "0 < (38 :: nat)"
 lemma materials_genome_crosswalk_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma materials_project_live_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma materials_project_live_panel_pooled_median_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
   by eval
 
-lemma materials_project_live_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma materials_project_live_panel_headline_median_under_half_pct: "(0.011734 :: real) < (0.5 :: real)"
   by eval
 
-lemma materials_project_live_panel_observable_count_pos: "0 < (51 :: nat)"
+lemma materials_project_live_panel_observable_count_pos: "0 < (141 :: nat)"
   by eval
 
 lemma materials_project_live_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"

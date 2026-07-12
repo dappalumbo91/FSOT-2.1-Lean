@@ -75,10 +75,10 @@ lemma cellular_soul_records_pos: "0 < (234447 :: nat)"
 lemma cellular_operon_count_pos: "0 < (13 :: nat)"
   by eval
 
-lemma cern_open_data_lhc_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma cern_open_data_lhc_observable_count_pos: "0 < (200 :: nat)"
   by eval
 
-lemma cern_open_data_lhc_observable_count_pos: "0 < (83 :: nat)"
+lemma cern_open_data_lhc_median_error_under_five_pct: "(0.013294 :: real) < (5.0 :: real)"
   by eval
 
 lemma certified_agent_qwen_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"

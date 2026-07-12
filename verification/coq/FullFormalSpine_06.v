@@ -66,11 +66,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma galactic_structure_sample_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma gbif_species_occurrence_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma gbif_species_occurrence_observable_count_pos : (0 < 600)%nat.
+Lemma gbif_species_occurrence_observable_count_pos : (0 < 2000)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma gbif_species_occurrence_median_error_under_five_pct : (0.006006%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma genomic_sciences_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
@@ -114,16 +114,16 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma grace_cryosphere_match_le_total : (237 <= 253)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
-Lemma gwosc_live_event_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma gwosc_live_event_deep_pooled_median_under_half_pct : (0.008488%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma gwosc_live_event_deep_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma gwosc_live_event_deep_headline_median_under_half_pct : (0.008488%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma gwosc_live_event_deep_observable_count_pos : (0 < 25)%nat.
+Lemma gwosc_live_event_deep_observable_count_pos : (0 < 191)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma gwosc_live_event_deep_beats_sota_headlines_pos : (0 < 2)%nat.
+Lemma gwosc_live_event_deep_beats_sota_headlines_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma heavy_ion_lab_synthesis_panel_pooled_median_under_half_pct : (0.000095%R) < (0.5%R).

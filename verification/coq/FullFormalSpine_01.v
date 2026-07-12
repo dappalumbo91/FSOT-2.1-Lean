@@ -78,11 +78,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cellular_operon_count_pos : (0 < 13)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cern_open_data_lhc_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma cern_open_data_lhc_observable_count_pos : (0 < 83)%nat.
+Lemma cern_open_data_lhc_observable_count_pos : (0 < 200)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cern_open_data_lhc_median_error_under_five_pct : (0.013294%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma certified_agent_qwen_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.

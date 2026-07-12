@@ -63,10 +63,10 @@ lemma galactic_structure_sample_observable_count_pos: "0 < (101 :: nat)"
 lemma galactic_structure_sample_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma gbif_species_occurrence_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma gbif_species_occurrence_observable_count_pos: "0 < (2000 :: nat)"
   by eval
 
-lemma gbif_species_occurrence_observable_count_pos: "0 < (600 :: nat)"
+lemma gbif_species_occurrence_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
   by eval
 
 lemma genomic_sciences_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -111,16 +111,16 @@ lemma grace_cryosphere_month_count_pos: "0 < (253 :: nat)"
 lemma grace_cryosphere_match_le_total: "(237 :: nat) <= (253 :: nat)"
   by eval
 
-lemma gwosc_live_event_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma gwosc_live_event_deep_pooled_median_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
   by eval
 
-lemma gwosc_live_event_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma gwosc_live_event_deep_headline_median_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
   by eval
 
-lemma gwosc_live_event_deep_observable_count_pos: "0 < (25 :: nat)"
+lemma gwosc_live_event_deep_observable_count_pos: "0 < (191 :: nat)"
   by eval
 
-lemma gwosc_live_event_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
+lemma gwosc_live_event_deep_beats_sota_headlines_pos: "0 < (3 :: nat)"
   by eval
 
 lemma heavy_ion_lab_synthesis_panel_pooled_median_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"

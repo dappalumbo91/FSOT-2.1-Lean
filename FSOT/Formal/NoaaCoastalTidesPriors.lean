@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def noaa_coastal_tides_observable_count : ℕ := 40
-def noaa_coastal_tides_median_error_pct : ℝ := (0.0 : ℝ)
+def noaa_coastal_tides_median_error_pct : ℝ := (0.030173 : ℝ)
 def noaa_coastal_tides_D_eff : ℕ := 17
 
 theorem noaa_coastal_tides_observable_count_pos : 0 < noaa_coastal_tides_observable_count := by

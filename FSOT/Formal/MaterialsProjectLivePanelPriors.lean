@@ -12,8 +12,8 @@ noncomputable section
 open Real
 
 def materials_project_live_panel_observable_count : ℕ := 141
-def materials_project_live_panel_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def materials_project_live_panel_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def materials_project_live_panel_pooled_median_error_pct : ℝ := (0.011734 : ℝ)
+def materials_project_live_panel_headline_median_error_pct : ℝ := (0.011734 : ℝ)
 def materials_project_live_panel_beats_sota_headlines : ℕ := 2
 def materials_project_live_panel_D_eff : ℕ := 16
 

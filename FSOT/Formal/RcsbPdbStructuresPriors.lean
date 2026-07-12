@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def rcsb_pdb_structures_observable_count : ℕ := 159
-def rcsb_pdb_structures_median_error_pct : ℝ := (0.0 : ℝ)
+def rcsb_pdb_structures_median_error_pct : ℝ := (0.022236 : ℝ)
 def rcsb_pdb_structures_D_eff : ℕ := 13
 
 theorem rcsb_pdb_structures_observable_count_pos : 0 < rcsb_pdb_structures_observable_count := by

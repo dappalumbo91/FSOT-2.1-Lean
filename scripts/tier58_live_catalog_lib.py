@@ -11,6 +11,7 @@ VENDOR = ROOT / "vendor" / "stellar_structures"
 GWOSC_LIVE = VENDOR / "gwosc_live_cache.json"
 GWOSC_BUNDLED = VENDOR / "gwosc_public_events.json"
 
+from fsot_api_predict_lib import make_fsot_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
 
 
@@ -25,22 +26,21 @@ def build_gwosc_live_event_deep() -> dict:
     live_events = {str(e.get("id")): e for e in live.get("events") or []}
     bundled_events = {str(e.get("id")): e for e in bundled.get("events") or []}
     records: list[dict] = []
+    pred_errs: list[float] = []
 
     for eid, row in sorted(live_events.items()):
         chirp = row.get("chirp_mass_msun")
         if chirp is not None:
-            records.append(
-                {
-                    "lab": "gwosc_live_event_lab",
-                    "property": "chirp_mass_msun",
-                    "name": eid,
-                    "computed": float(chirp),
-                    "measured": float(chirp),
-                    "error_pct": 0.0,
-                    "ingest_source": live.get("source"),
-                    "eval_kind": "gwosc_live_anchor",
-                }
+            rec = make_fsot_record(
+                lab="gwosc_live_event_lab",
+                property_name="chirp_mass_msun",
+                name=eid,
+                measured=float(chirp),
+                domain="Particle_Astrophysics",
+                extra={"ingest_source": live.get("source")},
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         if eid in bundled_events:
             bch = bundled_events[eid].get("chirp_mass_msun")
             lch = row.get("chirp_mass_msun")
@@ -62,17 +62,15 @@ def build_gwosc_live_event_deep() -> dict:
         if eid not in live_events:
             chirp = row.get("chirp_mass_msun")
             if chirp is not None:
-                records.append(
-                    {
-                        "lab": "gwosc_live_event_lab",
-                        "property": "chirp_mass_msun",
-                        "name": eid,
-                        "computed": float(chirp),
-                        "measured": float(chirp),
-                        "error_pct": 0.0,
-                        "eval_kind": "bundled_only_anchor",
-                    }
+                rec = make_fsot_record(
+                    lab="gwosc_live_event_lab",
+                    property_name="chirp_mass_msun",
+                    name=eid,
+                    measured=float(chirp),
+                    domain="Particle_Astrophysics",
                 )
+                records.append(rec)
+                pred_errs.append(float(rec["error_pct"]))
 
     records.append(
         {
@@ -93,7 +91,10 @@ def build_gwosc_live_event_deep() -> dict:
         d_eff=20,
         authority_path=authority,
         source=[str(GWOSC_LIVE), str(GWOSC_BUNDLED)],
-        channel_stats=[("ingest_consistency", "gwosc_live", cons_errs or [0.0])],
+        channel_stats=[
+            ("fsot_prediction", "gwosc_live", pred_errs or [0.0]),
+            ("ingest_consistency", "gwosc_live", cons_errs or [0.0]),
+        ],
         sota_baselines={"gwosc_live": {"sota_typical_error_pct": 5.0, "sota_model": "GWOSC event API"}},
     )
 

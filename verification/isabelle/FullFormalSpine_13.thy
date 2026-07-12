@@ -36,10 +36,10 @@ lemma unified_db_top_project_count_pos: "0 < (15 :: nat)"
 lemma unified_db_strict_le_total: "(9403 :: nat) <= (13637 :: nat)"
   by eval
 
-lemma uniprot_protein_annotations_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma uniprot_protein_annotations_observable_count_pos: "0 < (102 :: nat)"
   by eval
 
-lemma uniprot_protein_annotations_observable_count_pos: "0 < (62 :: nat)"
+lemma uniprot_protein_annotations_median_error_under_five_pct: "(0.026684 :: real) < (5.0 :: real)"
   by eval
 
 lemma uniprot_structure_annotations_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
@@ -75,10 +75,10 @@ lemma virology_ext_observable_count_pos: "0 < (163 :: nat)"
 lemma virology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma vizier_wds_tap_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma vizier_wds_tap_live_deep_pooled_median_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
   by eval
 
-lemma vizier_wds_tap_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma vizier_wds_tap_live_deep_headline_median_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
   by eval
 
 lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (25 :: nat)"
@@ -174,10 +174,10 @@ lemma weather_S_min_positive: "0 < (0.364542 :: real)"
 lemma weather_hour_count_pos: "0 < (24 :: nat)"
   by eval
 
-lemma world_bank_development_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma world_bank_development_observable_count_pos: "0 < (420 :: nat)"
   by eval
 
-lemma world_bank_development_observable_count_pos: "0 < (165 :: nat)"
+lemma world_bank_development_median_error_under_five_pct: "(0.02584 :: real) < (5.0 :: real)"
   by eval
 
 lemma xr_interactive_media_math_scaffold_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"

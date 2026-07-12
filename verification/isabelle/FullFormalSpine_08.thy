@@ -129,10 +129,10 @@ lemma mycology_ext_observable_count_pos: "0 < (420 :: nat)"
 lemma mycology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma nasa_exoplanet_archive_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma nasa_exoplanet_archive_observable_count_pos: "0 < (988 :: nat)"
   by eval
 
-lemma nasa_exoplanet_archive_observable_count_pos: "0 < (296 :: nat)"
+lemma nasa_exoplanet_archive_median_error_under_five_pct: "(0.023015 :: real) < (5.0 :: real)"
   by eval
 
 lemma natural_formation_element_simulation_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"

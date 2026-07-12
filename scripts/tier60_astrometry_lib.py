@@ -12,6 +12,7 @@ SIMBAD_LIVE = VENDOR / "simbad_live_cache.json"
 SIMBAD_BUNDLED = VENDOR / "simbad_stellar_identity_sample.json"
 GAIA_SAMPLE = VENDOR / "galactic_structure_sample.json"
 
+from fsot_api_predict_lib import make_fsot_record  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: E402
 
 
@@ -32,25 +33,23 @@ def build_simbad_stellar_identity_deep() -> dict:
     live_objs = {str(o.get("main_id")): o for o in live.get("objects") or []}
     bundled_objs = {str(o.get("main_id")): o for o in bundled.get("objects") or []}
     records: list[dict] = []
+    pred_errs: list[float] = []
 
     for mid, row in sorted(live_objs.items()):
         for prop in ("plx_mas", "pm_total_masyr"):
             val = row.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "simbad_stellar_identity_lab",
-                    "property": prop,
-                    "name": mid,
-                    "otype": row.get("otype"),
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "ingest_source": live.get("source"),
-                    "eval_kind": "simbad_anchor",
-                }
+            rec = make_fsot_record(
+                lab="simbad_stellar_identity_lab",
+                property_name=prop,
+                name=mid,
+                measured=float(val),
+                domain="Astronomy",
+                extra={"otype": row.get("otype"), "ingest_source": live.get("source")},
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         if mid in bundled_objs:
             for prop in ("plx_mas", "pm_total_masyr"):
                 lv = row.get(prop)
@@ -73,17 +72,16 @@ def build_simbad_stellar_identity_deep() -> dict:
             for prop in ("plx_mas", "pm_total_masyr"):
                 val = row.get(prop)
                 if val is not None:
-                    records.append(
-                        {
-                            "lab": "simbad_stellar_identity_lab",
-                            "property": prop,
-                            "name": mid,
-                            "computed": float(val),
-                            "measured": float(val),
-                            "error_pct": 0.0,
-                            "eval_kind": "bundled_anchor",
-                        }
+                    rec = make_fsot_record(
+                        lab="simbad_stellar_identity_lab",
+                        property_name=prop,
+                        name=mid,
+                        measured=float(val),
+                        domain="Astronomy",
+                        eval_kind="fsot_prediction",
                     )
+                    records.append(rec)
+                    pred_errs.append(float(rec["error_pct"]))
 
     cons = [float(r["error_pct"]) for r in records if r.get("eval_kind") == "ingest_consistency"]
     return _bench_v11(
@@ -93,7 +91,10 @@ def build_simbad_stellar_identity_deep() -> dict:
         d_eff=20,
         authority_path=authority,
         source=[str(SIMBAD_LIVE), str(SIMBAD_BUNDLED)],
-        channel_stats=[("simbad_consistency", "stellar_identity", cons or [0.0])],
+        channel_stats=[
+            ("fsot_prediction", "stellar_identity", pred_errs or [0.0]),
+            ("simbad_consistency", "stellar_identity", cons or [0.0]),
+        ],
         sota_baselines={"stellar_identity": {"sota_typical_error_pct": 8.0, "sota_model": "SIMBAD TAP"}},
     )
 
@@ -105,23 +106,22 @@ def build_gaia_astrometry_panel_deep() -> dict:
     gal_bench = _load_json(DATA / "galactic_structure_sample_benchmark.json")
     records: list[dict] = []
 
+    pred_errs: list[float] = []
     for star in gaia.get("stars") or []:
         sid = str(star.get("id") or "")
         for prop in ("parallax_mas", "pm_total_masyr", "metallicity_dex", "distance_pc"):
             val = star.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "gaia_astrometry_panel_lab",
-                    "property": prop,
-                    "name": sid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
-                    "eval_kind": "gaia_literature_anchor",
-                }
+            rec = make_fsot_record(
+                lab="gaia_astrometry_panel_lab",
+                property_name=prop,
+                name=sid,
+                measured=float(val),
+                domain="Astronomy" if prop != "metallicity_dex" else "Astrophysics",
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         plx = star.get("parallax_mas")
         dist = star.get("distance_pc")
         if plx and dist and float(plx) > 0:
@@ -171,7 +171,10 @@ def build_gaia_astrometry_panel_deep() -> dict:
         d_eff=20,
         authority_path=authority,
         source=["galactic_structure_sample.json", "galactic_structure_sample_benchmark.json"],
-        channel_stats=[("parallax_distance", "gaia_astrometry", plx_errs or [0.0])],
+        channel_stats=[
+            ("fsot_prediction", "gaia_astrometry", pred_errs or [0.0]),
+            ("parallax_distance", "gaia_astrometry", plx_errs or [0.0]),
+        ],
         sota_baselines={"gaia_astrometry": {"sota_typical_error_pct": 5.0, "sota_model": "Gaia DR3 astrometry"}},
     )
 

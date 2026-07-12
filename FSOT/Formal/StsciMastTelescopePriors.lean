@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def stsci_mast_telescope_observable_count : ℕ := 377
-def stsci_mast_telescope_median_error_pct : ℝ := (0.0 : ℝ)
+def stsci_mast_telescope_median_error_pct : ℝ := (0.022461 : ℝ)
 def stsci_mast_telescope_D_eff : ℕ := 21
 
 theorem stsci_mast_telescope_observable_count_pos : 0 < stsci_mast_telescope_observable_count := by

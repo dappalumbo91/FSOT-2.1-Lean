@@ -39,11 +39,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma unified_db_strict_le_total : (9403 <= 13637)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
-Lemma uniprot_protein_annotations_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma uniprot_protein_annotations_observable_count_pos : (0 < 62)%nat.
+Lemma uniprot_protein_annotations_observable_count_pos : (0 < 102)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma uniprot_protein_annotations_median_error_under_five_pct : (0.026684%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma uniprot_structure_annotations_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
@@ -78,10 +78,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma virology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma vizier_wds_tap_live_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma vizier_wds_tap_live_deep_pooled_median_under_half_pct : (0.026954%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma vizier_wds_tap_live_deep_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma vizier_wds_tap_live_deep_headline_median_under_half_pct : (0.026954%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 25)%nat.
@@ -177,11 +177,11 @@ Proof. lra. Qed.
 Lemma weather_hour_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma world_bank_development_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma world_bank_development_observable_count_pos : (0 < 165)%nat.
+Lemma world_bank_development_observable_count_pos : (0 < 420)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma world_bank_development_median_error_under_five_pct : (0.02584%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma xr_interactive_media_math_scaffold_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.

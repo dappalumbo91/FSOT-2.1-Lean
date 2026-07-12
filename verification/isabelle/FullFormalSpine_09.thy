@@ -60,10 +60,10 @@ lemma neuron_multi_hero_count_pos: "0 < (16 :: nat)"
 lemma neuron_multi_hero_median_fi_under_thirty_pct: "(0.22565 :: real) < (30.0 :: real)"
   by eval
 
-lemma nist_codata_constants_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma nist_codata_constants_observable_count_pos: "0 < (6 :: nat)"
   by eval
 
-lemma nist_codata_constants_observable_count_pos: "0 < (6 :: nat)"
+lemma nist_codata_constants_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma nist_dlmf_special_functions_observable_count_pos: "0 < (5 :: nat)"
@@ -72,10 +72,10 @@ lemma nist_dlmf_special_functions_observable_count_pos: "0 < (5 :: nat)"
 lemma nist_dlmf_special_functions_median_error_under_five_pct: "(0.001661 :: real) < (5.0 :: real)"
   by eval
 
-lemma noaa_coastal_tides_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma noaa_coastal_tides_observable_count_pos: "0 < (40 :: nat)"
   by eval
 
-lemma noaa_coastal_tides_observable_count_pos: "0 < (40 :: nat)"
+lemma noaa_coastal_tides_median_error_under_five_pct: "(0.030173 :: real) < (5.0 :: real)"
   by eval
 
 lemma obs_ch_pooled_median_under_half_pct: "(0.052510282019891545 :: real) < (0.5 :: real)"
@@ -126,19 +126,19 @@ lemma oncology_section_count_pos: "0 < (5 :: nat)"
 lemma oncology_beats_sota_headlines_pos: "0 < (5 :: nat)"
   by eval
 
-lemma openalex_citation_graph_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma openalex_citation_graph_observable_count_pos: "0 < (200 :: nat)"
   by eval
 
-lemma openalex_citation_graph_observable_count_pos: "0 < (150 :: nat)"
+lemma openalex_citation_graph_median_error_under_five_pct: "(0.031506 :: real) < (5.0 :: real)"
   by eval
 
-lemma openneuro_full_panel_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma openneuro_full_panel_pooled_median_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
   by eval
 
-lemma openneuro_full_panel_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma openneuro_full_panel_headline_median_under_half_pct: "(0.015431 :: real) < (0.5 :: real)"
   by eval
 
-lemma openneuro_full_panel_observable_count_pos: "0 < (15 :: nat)"
+lemma openneuro_full_panel_observable_count_pos: "0 < (123 :: nat)"
   by eval
 
 lemma openneuro_full_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"

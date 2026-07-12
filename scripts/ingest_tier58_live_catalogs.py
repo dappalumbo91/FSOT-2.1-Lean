@@ -28,23 +28,88 @@ def external_cache_root() -> Path:
     return root
 
 
-def fetch_gwosc_events() -> list[dict]:
-    req = urllib.request.Request(GWOSC_URL, headers={"User-Agent": "FSOT-2.1-Lean/tier58"})
+def _fetch_json(url: str) -> object:
+    req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier58"})
     with urllib.request.urlopen(req, timeout=90) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def _event_row(name: str, row: dict) -> dict | None:
+    chirp = (
+        row.get("chirp_mass_source")
+        or row.get("chirp_mass")
+        or row.get("mass_1_source")
+    )
+    common = row.get("commonName") or name
+    eid = str(common or name).split("-v")[0]
+    if not eid:
+        return None
+    out: dict = {
+        "id": eid,
+        "chirp_mass_msun": float(chirp) if chirp is not None else None,
+        "mass_ratio": row.get("mass_ratio"),
+        "source": "GWOSC_live",
+    }
+    final_mass = row.get("final_mass_source") or row.get("final_mass")
+    if final_mass is not None:
+        out["final_mass_msun"] = float(final_mass)
+    return out
+
+
+def fetch_gwosc_events() -> list[dict]:
+    """GWOSC event API v2 — nested catalog URLs with per-event JSON payloads."""
+    payload = _fetch_json(GWOSC_URL)
     events: list[dict] = []
-    for row in payload if isinstance(payload, list) else payload.get("events") or []:
-        if isinstance(row, dict):
-            name = row.get("name") or row.get("id") or row.get("GW")
-            chirp = row.get("chirp_mass_source") or row.get("chirp_mass") or row.get("mass_1_source")
-            events.append(
-                {
-                    "id": str(name),
-                    "chirp_mass_msun": float(chirp) if chirp is not None else None,
-                    "mass_ratio": row.get("mass_ratio"),
-                    "source": "GWOSC_live",
-                }
-            )
+    seen: set[str] = set()
+
+    def _ingest_event_dict(name: str, row: dict) -> None:
+        rec = _event_row(name, row)
+        if rec is None or rec["id"] in seen:
+            return
+        seen.add(rec["id"])
+        events.append(rec)
+
+    if isinstance(payload, list):
+        for row in payload:
+            if isinstance(row, dict):
+                _ingest_event_dict(str(row.get("name") or row.get("id") or ""), row)
+        return events
+
+    if isinstance(payload, dict):
+        flat = payload.get("events")
+        if isinstance(flat, dict):
+            for name, row in flat.items():
+                if isinstance(row, dict):
+                    _ingest_event_dict(str(name), row)
+            return events
+        if isinstance(flat, list):
+            for row in flat:
+                if isinstance(row, dict):
+                    _ingest_event_dict(str(row.get("name") or row.get("id") or ""), row)
+            return events
+
+        catalog_keys = (
+            "GWTC-4.1",
+            "GWTC-4.0",
+            "GWTC-3-confident",
+            "GWTC-2.1-confident",
+            "GWTC-2-confident",
+            "GWTC-1-confident",
+        )
+        for key in catalog_keys:
+            cat = payload.get(key)
+            if not isinstance(cat, dict):
+                continue
+            sub_url = cat.get("url")
+            if not sub_url:
+                continue
+            sub = _fetch_json(str(sub_url))
+            sub_events = sub.get("events") if isinstance(sub, dict) else None
+            if isinstance(sub_events, dict):
+                for name, row in sub_events.items():
+                    if isinstance(row, dict):
+                        _ingest_event_dict(str(name), row)
+
     return [e for e in events if e.get("id")]
 
 

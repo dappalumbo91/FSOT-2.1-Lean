@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def uniprot_protein_annotations_observable_count : ℕ := 102
-def uniprot_protein_annotations_median_error_pct : ℝ := (0.0 : ℝ)
+def uniprot_protein_annotations_median_error_pct : ℝ := (0.026684 : ℝ)
 def uniprot_protein_annotations_D_eff : ℕ := 12
 
 theorem uniprot_protein_annotations_observable_count_pos : 0 < uniprot_protein_annotations_observable_count := by

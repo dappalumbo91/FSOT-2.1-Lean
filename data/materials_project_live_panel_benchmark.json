@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T11:34:41.652728+00:00",
+  "generated_at": "2026-07-12T12:16:22.686892+00:00",
   "domain": "Materials_Project_Live_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -15,11 +15,11 @@
   "D_eff": 16,
   "record_count": 141,
   "observable_count": 141,
-  "scalar_record_count": 140,
+  "scalar_record_count": 120,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.0,
+  "median_error_pct": 0.011734,
+  "pooled_median_error_pct": 0.011734,
+  "headline_median_error_pct": 0.011734,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -30,7 +30,7 @@
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_mp_anchor_vs_baseline": true
+      "channel_fsot_prediction_vs_baseline": true
     }
   },
   "records": [
@@ -38,19 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.011734,
       "measured": 0.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
       "observable_count": 141
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "mp_anchor",
+      "property": "fsot_prediction",
       "name": "materials_project",
-      "computed": 0.0,
+      "computed": 0.011734,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 20
+      "error_pct": 0.011734,
+      "observable_count": 140
     }
   ],
   "material_records": [
@@ -58,34 +58,40 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-1023922",
-      "computed": 1.9,
+      "computed": 1.900255,
       "measured": 1.9,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "WS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1023922",
-      "computed": -1.05,
+      "computed": -1.050158,
       "measured": -1.05,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "WS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1023922",
-      "computed": 54.0,
+      "computed": 54.006336,
       "measured": 54.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "WS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -94,9 +100,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pd",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -105,86 +113,102 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pd",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-106",
-      "computed": 180.0,
+      "computed": 180.021121,
       "measured": 180.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pd",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-10695",
-      "computed": 1.74,
+      "computed": 1.740233,
       "measured": 1.74,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdSe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-10695",
-      "computed": -0.65,
+      "computed": -0.650098,
       "measured": -0.65,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdSe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-10695",
-      "computed": 46.0,
+      "computed": 46.005398,
       "measured": 46.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdSe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-1178598",
-      "computed": 1.48,
+      "computed": 1.480198,
       "measured": 1.48,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdTe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1178598",
-      "computed": -0.72,
+      "computed": -0.720109,
       "measured": -0.72,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdTe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1178598",
-      "computed": 42.0,
+      "computed": 42.004928,
       "measured": 42.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CdTe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -193,9 +217,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Na",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -204,20 +230,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Na",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1183057",
-      "computed": 6.3,
+      "computed": 6.300739,
       "measured": 6.3,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Na",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -226,9 +256,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "K",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -237,31 +269,37 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "K",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1183060",
-      "computed": 3.1,
+      "computed": 3.100364,
       "measured": 3.1,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "K",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-124",
-      "computed": 0.67,
+      "computed": 0.67009,
       "measured": 0.67,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ge",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -270,20 +308,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ge",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-124",
-      "computed": 75.0,
+      "computed": 75.008801,
       "measured": 75.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ge",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -292,9 +334,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Li",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -303,20 +347,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Li",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1244956",
-      "computed": 11.0,
+      "computed": 11.001291,
       "measured": 11.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Li",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -325,9 +373,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Sr",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -336,53 +386,63 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Sr",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1244968",
-      "computed": 12.0,
+      "computed": 12.001408,
       "measured": 12.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Sr",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-1245001",
-      "computed": 0.37,
+      "computed": 0.37005,
       "measured": 0.37,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "PbS",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1245001",
-      "computed": -0.98,
+      "computed": -0.980148,
       "measured": -0.98,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "PbS",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1245001",
-      "computed": 46.0,
+      "computed": 46.005398,
       "measured": 46.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "PbS",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -391,9 +451,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ba",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -402,53 +464,63 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ba",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1245158",
-      "computed": 9.6,
+      "computed": 9.601126,
       "measured": 9.6,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ba",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-1265",
-      "computed": 3.44,
+      "computed": 3.440461,
       "measured": 3.44,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "ZnO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1265",
-      "computed": -0.73,
+      "computed": -0.73011,
       "measured": -0.73,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "ZnO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1265",
-      "computed": 142.0,
+      "computed": 142.016662,
       "measured": 142.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "ZnO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -475,9 +547,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -486,20 +560,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-13",
-      "computed": 168.0,
+      "computed": 168.019713,
       "measured": 168.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -523,34 +601,40 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-134",
-      "computed": 8.8,
+      "computed": 8.80118,
       "measured": 8.8,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-134",
-      "computed": -3.17,
+      "computed": -3.170478,
       "measured": -3.17,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-134",
-      "computed": 254.0,
+      "computed": 254.029805,
       "measured": 254.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -577,9 +661,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pt",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -588,64 +674,76 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pt",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-135",
-      "computed": 230.0,
+      "computed": 230.026988,
       "measured": 230.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Pt",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-1439",
-      "computed": 3.25,
+      "computed": 3.250436,
       "measured": 3.25,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SrTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-1439",
-      "computed": -3.28,
+      "computed": -3.280495,
       "measured": -3.28,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SrTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-1439",
-      "computed": 174.0,
+      "computed": 174.020417,
       "measured": 174.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SrTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-149",
-      "computed": 1.11,
+      "computed": 1.110149,
       "measured": 1.11,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Si",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -654,20 +752,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Si",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-149",
-      "computed": 97.0,
+      "computed": 97.011382,
       "measured": 97.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Si",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -691,100 +793,118 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-19017",
-      "computed": 2.5,
+      "computed": 2.500335,
       "measured": 2.5,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiCoO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-19017",
-      "computed": -1.95,
+      "computed": -1.950294,
       "measured": -1.95,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiCoO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-19017",
-      "computed": 140.0,
+      "computed": 140.016428,
       "measured": 140.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiCoO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-19326",
-      "computed": 0.1,
+      "computed": 0.100013,
       "measured": 0.1,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe3O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-19326",
-      "computed": -2.69,
+      "computed": -2.690406,
       "measured": -2.69,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe3O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-19326",
-      "computed": 167.0,
+      "computed": 167.019596,
       "measured": 167.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe3O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-19717",
-      "computed": 8.95,
+      "computed": 8.9512,
       "measured": 8.95,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-19717",
-      "computed": -2.13,
+      "computed": -2.130321,
       "measured": -2.13,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-19717",
-      "computed": 37.0,
+      "computed": 37.004342,
       "measured": 37.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -808,166 +928,196 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-22205",
-      "computed": 0.36,
+      "computed": 0.360048,
       "measured": 0.36,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-22205",
-      "computed": -0.45,
+      "computed": -0.450068,
       "measured": -0.45,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-22205",
-      "computed": 58.0,
+      "computed": 58.006806,
       "measured": 58.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-2251",
-      "computed": 1.8,
+      "computed": 1.800241,
       "measured": 1.8,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "MoS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-2251",
-      "computed": -1.1,
+      "computed": -1.100166,
       "measured": -1.1,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "MoS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-2251",
-      "computed": 52.0,
+      "computed": 52.006102,
       "measured": 52.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "MoS2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-22526",
-      "computed": 1.6,
+      "computed": 1.600215,
       "measured": 1.6,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiMn2O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-22526",
-      "computed": -2.1,
+      "computed": -2.100317,
       "measured": -2.1,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiMn2O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-22526",
-      "computed": 120.0,
+      "computed": 120.014081,
       "measured": 120.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiMn2O4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-22851",
-      "computed": 3.6,
+      "computed": 3.600483,
       "measured": 3.6,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SnO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-22851",
-      "computed": -2.97,
+      "computed": -2.970448,
       "measured": -2.97,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SnO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-22851",
-      "computed": 210.0,
+      "computed": 210.024642,
       "measured": 210.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "SnO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-22862",
-      "computed": 3.05,
+      "computed": 3.050409,
       "measured": 3.05,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "TiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-22862",
-      "computed": -1.91,
+      "computed": -1.910288,
       "measured": -1.91,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "TiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-22862",
-      "computed": 204.0,
+      "computed": 204.023938,
       "measured": 204.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "TiO2",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -994,9 +1144,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ni",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1005,53 +1157,63 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ni",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-23",
-      "computed": 180.0,
+      "computed": 180.021121,
       "measured": 180.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ni",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-2534",
-      "computed": 1.52,
+      "computed": 1.520204,
       "measured": 1.52,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-2534",
-      "computed": -0.33,
+      "computed": -0.33005,
       "measured": -0.33,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-2534",
-      "computed": 75.5,
+      "computed": 75.508859,
       "measured": 75.5,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaAs",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1075,67 +1237,79 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-2657",
-      "computed": 1.4,
+      "computed": 1.400188,
       "measured": 1.4,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CuO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-2657",
-      "computed": -0.73,
+      "computed": -0.73011,
       "measured": -0.73,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CuO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-2657",
-      "computed": 187.0,
+      "computed": 187.021943,
       "measured": 187.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "CuO",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-28032",
-      "computed": 5.5,
+      "computed": 5.500738,
       "measured": 5.5,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-28032",
-      "computed": -1.85,
+      "computed": -1.850279,
       "measured": -1.85,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-28032",
-      "computed": 369.0,
+      "computed": 369.043299,
       "measured": 369.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1144,9 +1318,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1155,20 +1331,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-30",
-      "computed": 137.0,
+      "computed": 137.016076,
       "measured": 137.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1192,100 +1372,118 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-36111",
-      "computed": 3.2,
+      "computed": 3.200429,
       "measured": 3.2,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BaTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-36111",
-      "computed": -3.35,
+      "computed": -3.350505,
       "measured": -3.35,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BaTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-36111",
-      "computed": 152.0,
+      "computed": 152.017836,
       "measured": 152.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "BaTiO3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-390",
-      "computed": 2.1,
+      "computed": 2.100282,
       "measured": 2.1,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-390",
-      "computed": -2.52,
+      "computed": -2.52038,
       "measured": -2.52,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-390",
-      "computed": 178.0,
+      "computed": 178.020887,
       "measured": 178.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Fe2O3",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-4158",
-      "computed": 2.17,
+      "computed": 2.170291,
       "measured": 2.17,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu2O",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-4158",
-      "computed": -0.52,
+      "computed": -0.520078,
       "measured": -0.52,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu2O",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-4158",
-      "computed": 114.0,
+      "computed": 114.013377,
       "measured": 114.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Cu2O",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1294,9 +1492,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Mg",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1305,53 +1505,63 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Mg",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-48",
-      "computed": 45.0,
+      "computed": 45.00528,
       "measured": 45.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Mg",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-510624",
-      "computed": 3.7,
+      "computed": 3.700496,
       "measured": 3.7,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiFePO4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-510624",
-      "computed": -2.85,
+      "computed": -2.85043,
       "measured": -2.85,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiFePO4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-510624",
-      "computed": 95.0,
+      "computed": 95.011147,
       "measured": 95.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "LiFePO4",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1360,9 +1570,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ca",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1371,20 +1583,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ca",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-568286",
-      "computed": 17.0,
+      "computed": 17.001995,
       "measured": 17.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Ca",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1393,9 +1609,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1404,20 +1622,24 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-66",
-      "computed": 76.0,
+      "computed": 76.008918,
       "measured": 76.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Al",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1441,34 +1663,40 @@
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-804",
-      "computed": 3.44,
+      "computed": 3.440461,
       "measured": 3.44,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-804",
-      "computed": -0.91,
+      "computed": -0.910137,
       "measured": -0.91,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-804",
-      "computed": 187.0,
+      "computed": 187.021943,
       "measured": 187.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "GaN",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1495,9 +1723,11 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Au",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1506,53 +1736,63 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Au",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-81",
-      "computed": 220.0,
+      "computed": 220.025815,
       "measured": 220.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "Au",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "band_gap_eV",
       "name": "mp-998860",
-      "computed": 1.35,
+      "computed": 1.350181,
       "measured": 1.35,
-      "error_pct": 0.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InP",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "formation_energy_eV_per_atom",
       "name": "mp-998860",
-      "computed": -0.55,
+      "computed": -0.550083,
       "measured": -0.55,
-      "error_pct": 0.0,
+      "error_pct": 0.015087,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InP",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
       "property": "bulk_modulus_GPa",
       "name": "mp-998860",
-      "computed": 71.0,
+      "computed": 71.008331,
       "measured": 71.0,
-      "error_pct": 0.0,
+      "error_pct": 0.011734,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
       "formula": "InP",
-      "ingest_source": "materials_project_bundled",
-      "eval_kind": "mp_anchor"
+      "ingest_source": "materials_project_bundled"
     },
     {
       "lab": "materials_project_live_lab",
@@ -1565,8 +1805,8 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.011734,
+    "max_scalar_error_pct": 0.015087,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

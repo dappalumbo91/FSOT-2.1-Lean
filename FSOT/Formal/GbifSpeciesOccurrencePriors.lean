@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def gbif_species_occurrence_observable_count : ℕ := 2000
-def gbif_species_occurrence_median_error_pct : ℝ := (0.0 : ℝ)
+def gbif_species_occurrence_median_error_pct : ℝ := (0.006006 : ℝ)
 def gbif_species_occurrence_D_eff : ℕ := 15
 
 theorem gbif_species_occurrence_observable_count_pos : 0 < gbif_species_occurrence_observable_count := by

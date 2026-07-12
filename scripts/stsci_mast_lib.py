@@ -150,6 +150,7 @@ def _err_pct(c: float, m: float) -> float:
 
 
 def build_stsci_mast_telescope_panel() -> dict:
+    from fsot_api_predict_lib import make_fsot_record  # noqa: WPS433
     from tier_gap_fill_lib import _bench_v11, _load_fsot  # noqa: WPS433
 
     mod, authority = _load_fsot()
@@ -159,6 +160,7 @@ def build_stsci_mast_telescope_panel() -> dict:
     live_objs = {str(o.get("id")): o for o in live.get("objects") or [] if o.get("id")}
     bundled_objs = {str(o.get("id")): o for o in bundled.get("objects") or [] if o.get("id")}
     records: list[dict] = []
+    pred_errs: list[float] = []
 
     scalar_props = (
         "obs_count_total",
@@ -177,19 +179,19 @@ def build_stsci_mast_telescope_panel() -> dict:
             val = row.get(prop)
             if val is None:
                 continue
-            records.append(
-                {
-                    "lab": "stsci_mast_telescope_lab",
-                    "property": prop,
-                    "name": tid,
-                    "computed": float(val),
-                    "measured": float(val),
-                    "error_pct": 0.0,
+            rec = make_fsot_record(
+                lab="stsci_mast_telescope_lab",
+                property_name=prop,
+                name=tid,
+                measured=float(val),
+                domain="Astronomy",
+                extra={
                     "ingest_source": live.get("source"),
-                    "eval_kind": "mast_anchor",
                     "reference": "MAST CAOM cone",
-                }
+                },
             )
+            records.append(rec)
+            pred_errs.append(float(rec["error_pct"]))
         if tid in bundled_objs:
             for prop in ("hst_fraction", "jwst_fraction", "median_exptime_hst_s", "obs_count_total"):
                 lv = row.get(prop)
@@ -212,17 +214,15 @@ def build_stsci_mast_telescope_panel() -> dict:
         for prop in scalar_props:
             val = row.get(prop)
             if val is not None:
-                records.append(
-                    {
-                        "lab": "stsci_mast_telescope_lab",
-                        "property": prop,
-                        "name": tid,
-                        "computed": float(val),
-                        "measured": float(val),
-                        "error_pct": 0.0,
-                        "eval_kind": "bundled_anchor",
-                    }
+                rec = make_fsot_record(
+                    lab="stsci_mast_telescope_lab",
+                    property_name=prop,
+                    name=tid,
+                    measured=float(val),
+                    domain="Astronomy",
                 )
+                records.append(rec)
+                pred_errs.append(float(rec["error_pct"]))
 
     simbad = _load_json(SIMBAD_LIVE)
     simbad_n = len(simbad.get("objects") or [])
@@ -252,7 +252,10 @@ def build_stsci_mast_telescope_panel() -> dict:
     )
 
     cons = [float(r["error_pct"]) for r in records if r.get("eval_kind") == "ingest_consistency"]
-    channel_stats = [("mast_consistency", "telescope_ingest", cons or [0.0])]
+    channel_stats = [
+        ("fsot_prediction", "telescope_ingest", pred_errs or [0.0]),
+        ("mast_consistency", "telescope_ingest", cons or [0.0]),
+    ]
     return _bench_v11(
         domain="STScI_MAST_Telescope_Panel",
         material_records=records,

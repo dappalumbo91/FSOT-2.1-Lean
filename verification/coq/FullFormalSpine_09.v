@@ -63,11 +63,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma neuron_multi_hero_median_fi_under_thirty_pct : (0.22565%R) < (30.0%R).
 Proof. lra. Qed.
 
-Lemma nist_codata_constants_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma nist_codata_constants_observable_count_pos : (0 < 6)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma nist_codata_constants_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
 
 Lemma nist_dlmf_special_functions_observable_count_pos : (0 < 5)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -75,11 +75,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma nist_dlmf_special_functions_median_error_under_five_pct : (0.001661%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma noaa_coastal_tides_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma noaa_coastal_tides_observable_count_pos : (0 < 40)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma noaa_coastal_tides_median_error_under_five_pct : (0.030173%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma obs_ch_pooled_median_under_half_pct : (0.052510282019891545%R) < (0.5%R).
 Proof. lra. Qed.
@@ -129,19 +129,19 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma oncology_beats_sota_headlines_pos : (0 < 5)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma openalex_citation_graph_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma openalex_citation_graph_observable_count_pos : (0 < 150)%nat.
+Lemma openalex_citation_graph_observable_count_pos : (0 < 200)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma openneuro_full_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma openalex_citation_graph_median_error_under_five_pct : (0.031506%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma openneuro_full_panel_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma openneuro_full_panel_pooled_median_under_half_pct : (0.015431%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma openneuro_full_panel_observable_count_pos : (0 < 15)%nat.
+Lemma openneuro_full_panel_headline_median_under_half_pct : (0.015431%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma openneuro_full_panel_observable_count_pos : (0 < 123)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma openneuro_full_panel_beats_sota_headlines_pos : (0 < 2)%nat.

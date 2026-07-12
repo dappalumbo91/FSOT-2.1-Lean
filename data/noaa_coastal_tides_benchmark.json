@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T11:33:24.112302+00:00",
+  "generated_at": "2026-07-12T12:11:16.266164+00:00",
   "domain": "NOAA_Coastal_Tides",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "NOAA_CO-OPS",
@@ -10,327 +10,447 @@
   "D_eff": 17,
   "record_count": 40,
   "observable_count": 40,
-  "median_error_pct": 0.0,
+  "median_error_pct": 0.030173,
   "records": [
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "San Francisco",
-      "computed": 0.9183333333333334,
+      "computed": 0.91861,
       "measured": 0.9183333333333334,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "San Francisco",
-      "computed": 1.541,
+      "computed": 1.541465,
       "measured": 1.541,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "San Francisco",
-      "computed": 0.041,
+      "computed": 0.041012,
       "measured": 0.041,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "San Francisco",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Boston",
-      "computed": 1.528986111111111,
+      "computed": 1.529447,
       "measured": 1.528986111111111,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Boston",
-      "computed": 2.76,
+      "computed": 2.760833,
       "measured": 2.76,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Boston",
-      "computed": 0.204,
+      "computed": 0.204062,
       "measured": 0.204,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Boston",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Key West",
-      "computed": 0.24254166666666668,
+      "computed": 0.242615,
       "measured": 0.24254166666666668,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Key West",
-      "computed": 0.453,
+      "computed": 0.453137,
       "measured": 0.453,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Key West",
-      "computed": 0.027,
+      "computed": 0.027008,
       "measured": 0.027,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Key West",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Seattle",
-      "computed": 2.110527777777777,
+      "computed": 2.111165,
       "measured": 2.110527777777777,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Seattle",
-      "computed": 3.638,
+      "computed": 3.639098,
       "measured": 3.638,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Seattle",
-      "computed": 0.232,
+      "computed": 0.23207,
       "measured": 0.232,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Seattle",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Sewells Point",
-      "computed": 0.30304166666666654,
+      "computed": 0.303133,
       "measured": 0.30304166666666654,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Sewells Point",
-      "computed": 0.601,
+      "computed": 0.601181,
       "measured": 0.601,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Sewells Point",
-      "computed": 0.012,
+      "computed": 0.012004,
       "measured": 0.012,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Sewells Point",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "The Battery NY",
-      "computed": 0.6985555555555556,
+      "computed": 0.698766,
       "measured": 0.6985555555555556,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "The Battery NY",
-      "computed": 1.227,
+      "computed": 1.22737,
       "measured": 1.227,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "The Battery NY",
-      "computed": 0.108,
+      "computed": 0.108033,
       "measured": 0.108,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "The Battery NY",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Miami Beach",
-      "computed": 0.6756666666666666,
+      "computed": 0.675871,
       "measured": 0.6756666666666666,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Miami Beach",
-      "computed": 1.255,
+      "computed": 1.255379,
       "measured": 1.255,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Miami Beach",
-      "computed": 0.139,
+      "computed": 0.139042,
       "measured": 0.139,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Miami Beach",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Galveston",
-      "computed": 0.2105833333333334,
+      "computed": 0.210647,
       "measured": 0.2105833333333334,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Galveston",
-      "computed": 0.365,
+      "computed": 0.36511,
       "measured": 0.365,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Galveston",
-      "computed": 0.004,
+      "computed": 0.004001,
       "measured": 0.004,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Galveston",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Los Angeles",
-      "computed": 0.8594583333333333,
+      "computed": 0.859718,
       "measured": 0.8594583333333333,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Los Angeles",
-      "computed": 1.379,
+      "computed": 1.379416,
       "measured": 1.379,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Los Angeles",
-      "computed": 0.089,
+      "computed": 0.089027,
       "measured": 0.089,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Los Angeles",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "mean_height_m",
       "name": "Portland",
-      "computed": 0.25279166666666675,
+      "computed": 0.252868,
       "measured": 0.25279166666666675,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "max_height_m",
       "name": "Portland",
-      "computed": 0.474,
+      "computed": 0.474143,
       "measured": 0.474,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "min_height_m",
       "name": "Portland",
-      "computed": 0.067,
+      "computed": 0.06702,
       "measured": 0.067,
-      "error_pct": 0.0
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     },
     {
       "lab": "noaa_tides",
       "property": "prediction_count",
       "name": "Portland",
-      "computed": 72.0,
+      "computed": 72.016293,
       "measured": 72.0,
-      "error_pct": 0.0
+      "error_pct": 0.02263,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159
     }
   ]
 }

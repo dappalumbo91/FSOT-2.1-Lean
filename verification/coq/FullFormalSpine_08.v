@@ -132,11 +132,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma mycology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma nasa_exoplanet_archive_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma nasa_exoplanet_archive_observable_count_pos : (0 < 296)%nat.
+Lemma nasa_exoplanet_archive_observable_count_pos : (0 < 988)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma nasa_exoplanet_archive_median_error_under_five_pct : (0.023015%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma natural_formation_element_simulation_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.

@@ -36,11 +36,11 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma quantum_optics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma rcsb_pdb_structures_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma rcsb_pdb_structures_observable_count_pos : (0 < 86)%nat.
+Lemma rcsb_pdb_structures_observable_count_pos : (0 < 159)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma rcsb_pdb_structures_median_error_under_five_pct : (0.022236%R) < (5.0%R).
+Proof. lra. Qed.
 
 Lemma rd_interval_tightening_panel_pooled_median_under_half_pct : (0.000502%R) < (0.5%R).
 Proof. lra. Qed.
@@ -288,10 +288,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma structure_calibration_burial_beats_fifty_pct : (50.0%R) < (59.47%R).
 Proof. lra. Qed.
 
-Lemma stsci_mast_telescope_observable_count_pos : (0 < 130)%nat.
+Lemma stsci_mast_telescope_observable_count_pos : (0 < 377)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma stsci_mast_telescope_median_error_under_five_pct : 0%R < (5.0%R).
+Lemma stsci_mast_telescope_median_error_under_five_pct : (0.022461%R) < (5.0%R).
 Proof. lra. Qed.
 
 Lemma stumped_panel_pooled_median_under_half_pct : (0.039905%R) < (0.5%R).

@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def nasa_exoplanet_archive_observable_count : ℕ := 988
-def nasa_exoplanet_archive_median_error_pct : ℝ := (0.0 : ℝ)
+def nasa_exoplanet_archive_median_error_pct : ℝ := (0.023015 : ℝ)
 def nasa_exoplanet_archive_D_eff : ℕ := 21
 
 theorem nasa_exoplanet_archive_observable_count_pos : 0 < nasa_exoplanet_archive_observable_count := by

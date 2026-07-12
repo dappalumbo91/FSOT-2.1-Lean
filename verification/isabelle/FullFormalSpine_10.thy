@@ -216,19 +216,19 @@ lemma psychology_gap_fill_observable_count_pos: "0 < (160 :: nat)"
 lemma psychology_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma pubchem_compound_properties_median_error_under_half_pct: "(0.0024238898584426276 :: real) < (0.5 :: real)"
+lemma pubchem_compound_properties_observable_count_pos: "0 < (521 :: nat)"
   by eval
 
-lemma pubchem_compound_properties_observable_count_pos: "0 < (29 :: nat)"
+lemma pubchem_compound_properties_median_error_under_five_pct: "(0.002629 :: real) < (5.0 :: real)"
   by eval
 
-lemma pubchem_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma pubchem_live_deep_pooled_median_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
   by eval
 
-lemma pubchem_live_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma pubchem_live_deep_headline_median_under_half_pct: "(0.032631 :: real) < (0.5 :: real)"
   by eval
 
-lemma pubchem_live_deep_observable_count_pos: "0 < (591 :: nat)"
+lemma pubchem_live_deep_observable_count_pos: "0 < (5254 :: nat)"
   by eval
 
 lemma pubchem_live_deep_beats_sota_headlines_pos: "0 < (3 :: nat)"

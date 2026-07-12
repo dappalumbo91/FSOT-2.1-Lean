@@ -1,79 +1,1562 @@
 {
-  "fetched_at": "2026-07-12T11:16:00.125862+00:00",
-  "source": "bundled_fallback_empty_live",
-  "event_count": 12,
+  "fetched_at": "2026-07-12T12:04:48.019170+00:00",
+  "source": "GWOSC_live",
+  "event_count": 230,
   "events": [
     {
-      "id": "GW150914",
-      "chirp_mass_msun": 28.6,
-      "mass_ratio": 0.82,
-      "final_mass_msun": 62.0
+      "id": "GW240109_050431",
+      "chirp_mass_msun": 19.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 45.2
     },
     {
-      "id": "GW151226",
-      "chirp_mass_msun": 8.9,
-      "mass_ratio": 0.53,
-      "final_mass_msun": 20.5
+      "id": "GW240107_013215",
+      "chirp_mass_msun": 36.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 87.0
     },
     {
-      "id": "GW170104",
-      "chirp_mass_msun": 21.8,
-      "mass_ratio": 0.64,
-      "final_mass_msun": 48.7
+      "id": "GW240105_151143",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
     },
     {
-      "id": "GW170608",
-      "chirp_mass_msun": 7.9,
-      "mass_ratio": 0.69,
-      "final_mass_msun": 18.0
+      "id": "GW240104_164932",
+      "chirp_mass_msun": 31.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 70.7
     },
     {
-      "id": "GW170729",
-      "chirp_mass_msun": 24.1,
-      "mass_ratio": 0.36,
-      "final_mass_msun": 51.2
+      "id": "GW231231_154016",
+      "chirp_mass_msun": 17.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 38.1
     },
     {
-      "id": "GW170809",
-      "chirp_mass_msun": 35.2,
-      "mass_ratio": 0.56,
+      "id": "GW231231_120147",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231230_170116",
+      "chirp_mass_msun": 37.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 86.0
+    },
+    {
+      "id": "GW231226_101520",
+      "chirp_mass_msun": 32.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 71.6
+    },
+    {
+      "id": "GW231224_024321",
+      "chirp_mass_msun": 7.13,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 15.89
+    },
+    {
+      "id": "GW231223_202619",
+      "chirp_mass_msun": 8.35,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.7
+    },
+    {
+      "id": "GW231223_075055",
+      "chirp_mass_msun": 7.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.1
+    },
+    {
+      "id": "GW231223_032836",
+      "chirp_mass_msun": 31.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 73.0
+    },
+    {
+      "id": "GW231221_135041",
+      "chirp_mass_msun": 31.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 73.0
+    },
+    {
+      "id": "GW231220_173406",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231213_111417",
+      "chirp_mass_msun": 26.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.6
+    },
+    {
+      "id": "GW231206_233901",
+      "chirp_mass_msun": 28.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 63.1
+    },
+    {
+      "id": "GW231206_233134",
+      "chirp_mass_msun": 27.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.6
+    },
+    {
+      "id": "GW231206_010629",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231204_090648",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231129_081745",
+      "chirp_mass_msun": 27.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
       "final_mass_msun": 66.0
+    },
+    {
+      "id": "GW231127_165300",
+      "chirp_mass_msun": 30.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 71.0
+    },
+    {
+      "id": "GW231127_061546",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231126_010928",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231123_135430",
+      "chirp_mass_msun": 101.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 222.0
+    },
+    {
+      "id": "GW231120_022103",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231119_075248",
+      "chirp_mass_msun": 34.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 79.0
+    },
+    {
+      "id": "GW231118_090602",
+      "chirp_mass_msun": 8.36,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.6
+    },
+    {
+      "id": "GW231118_071402",
+      "chirp_mass_msun": 30.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 69.0
+    },
+    {
+      "id": "GW231118_005626",
+      "chirp_mass_msun": 12.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 29.4
+    },
+    {
+      "id": "GW231114_043211",
+      "chirp_mass_msun": 11.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 30.1
+    },
+    {
+      "id": "GW231113_200417",
+      "chirp_mass_msun": 8.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.3
+    },
+    {
+      "id": "GW231113_150041",
+      "chirp_mass_msun": 34.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 82.0
+    },
+    {
+      "id": "GW231113_122623",
+      "chirp_mass_msun": 27.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 63.0
+    },
+    {
+      "id": "GW231113_112825",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231113_062050",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231110_040320",
+      "chirp_mass_msun": 13.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 30.6
+    },
+    {
+      "id": "GW231108_125142",
+      "chirp_mass_msun": 17.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 38.9
+    },
+    {
+      "id": "GW231104_133418",
+      "chirp_mass_msun": 8.84,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 20.0
+    },
+    {
+      "id": "GW231102_232433",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231102_071736",
+      "chirp_mass_msun": 43.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 98.0
+    },
+    {
+      "id": "GW231102_052214",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231029_111508",
+      "chirp_mass_msun": 44.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 101.0
+    },
+    {
+      "id": "GW231028_153006",
+      "chirp_mass_msun": 63.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 144.0
+    },
+    {
+      "id": "GW231026_130704",
+      "chirp_mass_msun": 22.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 53.0
+    },
+    {
+      "id": "GW231025_142306",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231024_023603",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231020_142947",
+      "chirp_mass_msun": 8.07,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.8
+    },
+    {
+      "id": "GW231018_233037",
+      "chirp_mass_msun": 7.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.2
+    },
+    {
+      "id": "GW231014_040532",
+      "chirp_mass_msun": 15.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 33.8
+    },
+    {
+      "id": "GW231013_135504",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231008_142521",
+      "chirp_mass_msun": 29.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 69.0
+    },
+    {
+      "id": "GW231007_134720",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231005_144455",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231005_091549",
+      "chirp_mass_msun": 21.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 48.0
+    },
+    {
+      "id": "GW231005_021030",
+      "chirp_mass_msun": 54.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 127.0
+    },
+    {
+      "id": "GW231004_232346",
+      "chirp_mass_msun": 40.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 96.0
+    },
+    {
+      "id": "GW231002_143916",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW231001_140220",
+      "chirp_mass_msun": 46.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 111.0
+    },
+    {
+      "id": "GW230930_110730",
+      "chirp_mass_msun": 24.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 56.3
+    },
+    {
+      "id": "GW230928_215827",
+      "chirp_mass_msun": 33.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 79.0
+    },
+    {
+      "id": "GW230927_153832",
+      "chirp_mass_msun": 16.37,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 36.5
+    },
+    {
+      "id": "GW230927_043729",
+      "chirp_mass_msun": 26.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.0
+    },
+    {
+      "id": "GW230925_143957",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230924_124453",
+      "chirp_mass_msun": 22.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 49.4
+    },
+    {
+      "id": "GW230922_040658",
+      "chirp_mass_msun": 52.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 119.0
+    },
+    {
+      "id": "GW230922_020344",
+      "chirp_mass_msun": 29.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 65.4
+    },
+    {
+      "id": "GW230920_071124",
+      "chirp_mass_msun": 23.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 53.8
+    },
+    {
+      "id": "GW230920_064709",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230919_215712",
+      "chirp_mass_msun": 21.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 46.5
+    },
+    {
+      "id": "GW230914_111401",
+      "chirp_mass_msun": 39.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 91.2
+    },
+    {
+      "id": "GW230911_195324",
+      "chirp_mass_msun": 23.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 53.1
+    },
+    {
+      "id": "GW230904_152545",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230904_051013",
+      "chirp_mass_msun": 7.53,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 17.1
+    },
+    {
+      "id": "GW230902_224555",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230902_172430",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230902_150325",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230902_122814",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230831_134621",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230831_015414",
+      "chirp_mass_msun": 30.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 69.0
+    },
+    {
+      "id": "GW230830_064744",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230825_041334",
+      "chirp_mass_msun": 29.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 67.0
+    },
+    {
+      "id": "GW230824_135331",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230824_033047",
+      "chirp_mass_msun": 36.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 84.0
+    },
+    {
+      "id": "GW230823_142524",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230822_230337",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230820_212515",
+      "chirp_mass_msun": 38.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 92.0
+    },
+    {
+      "id": "GW230819_171910",
+      "chirp_mass_msun": 42.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 102.0
+    },
+    {
+      "id": "GW230817_212349",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230814_230901",
+      "chirp_mass_msun": 26.78,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.0
+    },
+    {
+      "id": "GW230814_061920",
+      "chirp_mass_msun": 46.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 106.0
+    },
+    {
+      "id": "GW230811_032116",
+      "chirp_mass_msun": 24.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 55.3
+    },
+    {
+      "id": "GW230807_205045",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230806_204041",
+      "chirp_mass_msun": 35.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 82.0
+    },
+    {
+      "id": "GW230805_034249",
+      "chirp_mass_msun": 23.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 52.4
+    },
+    {
+      "id": "GW230803_033412",
+      "chirp_mass_msun": 30.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 70.0
+    },
+    {
+      "id": "GW230731_215307",
+      "chirp_mass_msun": 7.78,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 17.4
+    },
+    {
+      "id": "GW230729_082317",
+      "chirp_mass_msun": 8.34,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.3
+    },
+    {
+      "id": "GW230728_083628",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230726_002940",
+      "chirp_mass_msun": 27.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.6
+    },
+    {
+      "id": "GW230723_101834",
+      "chirp_mass_msun": 11.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 26.4
+    },
+    {
+      "id": "GW230723_084820",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230721_222634",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230717_102139",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230712_090405",
+      "chirp_mass_msun": 16.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 44.0
+    },
+    {
+      "id": "GW230709_122727",
+      "chirp_mass_msun": 30.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 71.0
+    },
+    {
+      "id": "GW230709_063445",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230708_230935",
+      "chirp_mass_msun": 42.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 99.0
+    },
+    {
+      "id": "GW230708_071859",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230708_053705",
+      "chirp_mass_msun": 22.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 49.4
+    },
+    {
+      "id": "GW230707_124047",
+      "chirp_mass_msun": 35.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 78.0
+    },
+    {
+      "id": "GW230706_104333",
+      "chirp_mass_msun": 11.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 26.6
+    },
+    {
+      "id": "GW230704_212616",
+      "chirp_mass_msun": 56.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 132.0
+    },
+    {
+      "id": "GW230704_021211",
+      "chirp_mass_msun": 21.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 50.7
+    },
+    {
+      "id": "GW230702_185453",
+      "chirp_mass_msun": 22.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 57.0
+    },
+    {
+      "id": "GW230702_162025",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230630_234532",
+      "chirp_mass_msun": 7.06,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 16.1
+    },
+    {
+      "id": "GW230630_125806",
+      "chirp_mass_msun": 35.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 80.0
+    },
+    {
+      "id": "GW230630_070659",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230628_231200",
+      "chirp_mass_msun": 25.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 56.4
+    },
+    {
+      "id": "GW230627_015337",
+      "chirp_mass_msun": 6.02,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 13.57
+    },
+    {
+      "id": "GW230625_211655",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230624_214944",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230624_113103",
+      "chirp_mass_msun": 18.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 41.7
+    },
+    {
+      "id": "GW230618_102550",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230615_160825",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230610_061439",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230609_064958",
+      "chirp_mass_msun": 25.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 58.0
+    },
+    {
+      "id": "GW230609_010824",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230608_205047",
+      "chirp_mass_msun": 32.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 75.0
+    },
+    {
+      "id": "GW230606_065320",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230606_024545",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230606_004305",
+      "chirp_mass_msun": 26.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.8
+    },
+    {
+      "id": "GW230605_065343",
+      "chirp_mass_msun": 11.95,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 27.3
+    },
+    {
+      "id": "GW230603_174756",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230601_224134",
+      "chirp_mass_msun": 45.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 102.0
+    },
+    {
+      "id": "GW230531_141100",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230529_181500",
+      "chirp_mass_msun": 1.94,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230528_145129",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230518_125908",
+      "chirp_mass_msun": 2.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW230517_044807",
+      "chirp_mass_msun": null,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW200322_091133",
+      "chirp_mass_msun": 15.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 48.0
+    },
+    {
+      "id": "GW200316_215756",
+      "chirp_mass_msun": 8.75,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 20.2
+    },
+    {
+      "id": "GW200311_115853",
+      "chirp_mass_msun": 26.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.0
+    },
+    {
+      "id": "GW200308_173609",
+      "chirp_mass_msun": 34.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 88.0
+    },
+    {
+      "id": "GW200306_093714",
+      "chirp_mass_msun": 17.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 41.7
+    },
+    {
+      "id": "GW200302_015811",
+      "chirp_mass_msun": 23.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 55.5
+    },
+    {
+      "id": "GW200225_060421",
+      "chirp_mass_msun": 14.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 32.1
+    },
+    {
+      "id": "GW200224_222234",
+      "chirp_mass_msun": 31.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 68.7
+    },
+    {
+      "id": "GW200220_124850",
+      "chirp_mass_msun": 28.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 64.0
+    },
+    {
+      "id": "GW200220_061928",
+      "chirp_mass_msun": 62.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 141.0
+    },
+    {
+      "id": "GW200219_094415",
+      "chirp_mass_msun": 27.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 62.2
+    },
+    {
+      "id": "GW200216_220804",
+      "chirp_mass_msun": 32.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 78.0
+    },
+    {
+      "id": "GW200210_092254",
+      "chirp_mass_msun": 6.56,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 26.7
+    },
+    {
+      "id": "GW200209_085452",
+      "chirp_mass_msun": 26.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.9
+    },
+    {
+      "id": "GW200208_222617",
+      "chirp_mass_msun": 19.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 61.0
+    },
+    {
+      "id": "GW200208_130117",
+      "chirp_mass_msun": 27.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 62.5
+    },
+    {
+      "id": "GW200202_154313",
+      "chirp_mass_msun": 7.49,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 16.76
+    },
+    {
+      "id": "GW200129_065458",
+      "chirp_mass_msun": 27.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.2
+    },
+    {
+      "id": "GW200128_022011",
+      "chirp_mass_msun": 32.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 71.0
+    },
+    {
+      "id": "GW200115_042309",
+      "chirp_mass_msun": 2.43,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 7.2
+    },
+    {
+      "id": "GW200112_155838",
+      "chirp_mass_msun": 27.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.8
+    },
+    {
+      "id": "GW191230_180458",
+      "chirp_mass_msun": 36.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 82.0
+    },
+    {
+      "id": "GW191222_033537",
+      "chirp_mass_msun": 33.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 75.5
+    },
+    {
+      "id": "GW191219_163120",
+      "chirp_mass_msun": 4.31,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 32.2
+    },
+    {
+      "id": "GW191216_213338",
+      "chirp_mass_msun": 8.33,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 18.87
+    },
+    {
+      "id": "GW191215_223052",
+      "chirp_mass_msun": 18.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 41.4
+    },
+    {
+      "id": "GW191204_171526",
+      "chirp_mass_msun": 8.56,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.18
+    },
+    {
+      "id": "GW191204_110529",
+      "chirp_mass_msun": 19.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 45.0
+    },
+    {
+      "id": "GW191129_134029",
+      "chirp_mass_msun": 7.31,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 16.8
+    },
+    {
+      "id": "GW191127_050227",
+      "chirp_mass_msun": 29.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 76.0
+    },
+    {
+      "id": "GW191126_115259",
+      "chirp_mass_msun": 8.65,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.6
+    },
+    {
+      "id": "GW191113_071753",
+      "chirp_mass_msun": 10.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 34.0
+    },
+    {
+      "id": "GW191109_010717",
+      "chirp_mass_msun": 47.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 107.0
+    },
+    {
+      "id": "GW191105_143521",
+      "chirp_mass_msun": 7.82,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 17.6
+    },
+    {
+      "id": "GW191103_012549",
+      "chirp_mass_msun": 8.34,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.0
+    },
+    {
+      "id": "GW190930_133541",
+      "chirp_mass_msun": 8.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 20.2
+    },
+    {
+      "id": "GW190929_012149",
+      "chirp_mass_msun": 35.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 90.3
+    },
+    {
+      "id": "GW190926_050336",
+      "chirp_mass_msun": 24.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.6
+    },
+    {
+      "id": "GW190925_232845",
+      "chirp_mass_msun": 15.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 34.9
+    },
+    {
+      "id": "GW190924_021846",
+      "chirp_mass_msun": 5.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 13.3
+    },
+    {
+      "id": "GW190917_114630",
+      "chirp_mass_msun": 3.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 11.6
+    },
+    {
+      "id": "GW190916_200658",
+      "chirp_mass_msun": 26.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 65.0
+    },
+    {
+      "id": "GW190915_235702",
+      "chirp_mass_msun": 24.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 54.7
+    },
+    {
+      "id": "GW190910_112807",
+      "chirp_mass_msun": 33.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 74.4
+    },
+    {
+      "id": "GW190828_065509",
+      "chirp_mass_msun": 13.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 33.0
+    },
+    {
+      "id": "GW190828_063405",
+      "chirp_mass_msun": 24.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 54.3
+    },
+    {
+      "id": "GW190814",
+      "chirp_mass_msun": 6.11,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 25.7
+    },
+    {
+      "id": "GW190805_211137",
+      "chirp_mass_msun": 31.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 72.4
+    },
+    {
+      "id": "GW190803_022701",
+      "chirp_mass_msun": 27.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 62.1
+    },
+    {
+      "id": "GW190731_140936",
+      "chirp_mass_msun": 29.7,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 67.4
+    },
+    {
+      "id": "GW190728_064510",
+      "chirp_mass_msun": 8.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.7
+    },
+    {
+      "id": "GW190727_060333",
+      "chirp_mass_msun": 29.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 65.4
+    },
+    {
+      "id": "GW190725_174728",
+      "chirp_mass_msun": 7.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 17.6
+    },
+    {
+      "id": "GW190720_000836",
+      "chirp_mass_msun": 9.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 20.8
+    },
+    {
+      "id": "GW190719_215514",
+      "chirp_mass_msun": 22.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 54.5
+    },
+    {
+      "id": "GW190708_232457",
+      "chirp_mass_msun": 13.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 30.1
+    },
+    {
+      "id": "GW190707_093326",
+      "chirp_mass_msun": 8.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 19.2
+    },
+    {
+      "id": "GW190706_222641",
+      "chirp_mass_msun": 45.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 107.3
+    },
+    {
+      "id": "GW190701_203306",
+      "chirp_mass_msun": 40.2,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 90.2
+    },
+    {
+      "id": "GW190630_185205",
+      "chirp_mass_msun": 25.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 56.6
+    },
+    {
+      "id": "GW190620_030421",
+      "chirp_mass_msun": 38.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 88.0
+    },
+    {
+      "id": "GW190602_175927",
+      "chirp_mass_msun": 48.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 110.5
+    },
+    {
+      "id": "GW190527_092055",
+      "chirp_mass_msun": 23.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 55.5
+    },
+    {
+      "id": "GW190521_074359",
+      "chirp_mass_msun": 32.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 72.6
+    },
+    {
+      "id": "GW190521",
+      "chirp_mass_msun": 63.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 147.4
+    },
+    {
+      "id": "GW190519_153544",
+      "chirp_mass_msun": 44.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 100.0
+    },
+    {
+      "id": "GW190517_055101",
+      "chirp_mass_msun": 26.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 60.1
+    },
+    {
+      "id": "GW190514_065416",
+      "chirp_mass_msun": 29.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 66.4
+    },
+    {
+      "id": "GW190513_205428",
+      "chirp_mass_msun": 21.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 52.1
+    },
+    {
+      "id": "GW190512_180714",
+      "chirp_mass_msun": 14.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 34.3
+    },
+    {
+      "id": "GW190503_185404",
+      "chirp_mass_msun": 29.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 66.5
+    },
+    {
+      "id": "GW190426_190642",
+      "chirp_mass_msun": 76.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 172.9
+    },
+    {
+      "id": "GW190425",
+      "chirp_mass_msun": 1.44,
+      "mass_ratio": null,
+      "source": "GWOSC_live"
+    },
+    {
+      "id": "GW190421_213856",
+      "chirp_mass_msun": 31.4,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 70.5
+    },
+    {
+      "id": "GW190413_134308",
+      "chirp_mass_msun": 33.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 78.0
+    },
+    {
+      "id": "GW190413_052954",
+      "chirp_mass_msun": 24.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 55.5
+    },
+    {
+      "id": "GW190412",
+      "chirp_mass_msun": 13.3,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 35.6
+    },
+    {
+      "id": "GW190408_181802",
+      "chirp_mass_msun": 18.5,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 41.4
+    },
+    {
+      "id": "GW190403_051519",
+      "chirp_mass_msun": 34.0,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 102.2
+    },
+    {
+      "id": "GW170823",
+      "chirp_mass_msun": 28.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 63.9
+    },
+    {
+      "id": "GW170818",
+      "chirp_mass_msun": 26.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 59.7
     },
     {
       "id": "GW170814",
       "chirp_mass_msun": 24.1,
-      "mass_ratio": 0.82,
-      "final_mass_msun": 53.0
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 53.2
+    },
+    {
+      "id": "GW170809",
+      "chirp_mass_msun": 24.8,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 55.7
+    },
+    {
+      "id": "GW170729",
+      "chirp_mass_msun": 34.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 80.3
+    },
+    {
+      "id": "GW170608",
+      "chirp_mass_msun": 7.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 17.7
+    },
+    {
+      "id": "GW170104",
+      "chirp_mass_msun": 21.1,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 47.5
+    },
+    {
+      "id": "GW151226",
+      "chirp_mass_msun": 8.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 20.7
+    },
+    {
+      "id": "GW151012",
+      "chirp_mass_msun": 15.6,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 37.1
+    },
+    {
+      "id": "GW150914",
+      "chirp_mass_msun": 27.9,
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 61.5
     },
     {
       "id": "GW170817",
       "chirp_mass_msun": 1.186,
-      "mass_ratio": 0.63,
-      "final_mass_msun": 2.74
-    },
-    {
-      "id": "GW190412",
-      "chirp_mass_msun": 19.0,
-      "mass_ratio": 0.28,
-      "final_mass_msun": 42.0
-    },
-    {
-      "id": "GW190521",
-      "chirp_mass_msun": 72.0,
-      "mass_ratio": 0.81,
-      "final_mass_msun": 142.0
-    },
-    {
-      "id": "GW200115",
-      "chirp_mass_msun": 6.2,
-      "mass_ratio": 0.11,
-      "final_mass_msun": 7.1
-    },
-    {
-      "id": "GW240109",
-      "chirp_mass_msun": 85.0,
-      "mass_ratio": 0.75,
-      "final_mass_msun": 150.0
+      "mass_ratio": null,
+      "source": "GWOSC_live",
+      "final_mass_msun": 2.8
     }
   ]
 }

@@ -141,7 +141,7 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma live_ingest_spine_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma live_ingest_spine_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma live_ingest_spine_headline_median_under_half_pct : (0.015431%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma live_ingest_spine_observable_count_pos : (0 < 28)%nat.
@@ -276,13 +276,13 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma materials_genome_crosswalk_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma materials_project_live_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
+Lemma materials_project_live_panel_pooled_median_under_half_pct : (0.011734%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma materials_project_live_panel_headline_median_under_half_pct : 0%R < (0.5%R).
+Lemma materials_project_live_panel_headline_median_under_half_pct : (0.011734%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma materials_project_live_panel_observable_count_pos : (0 < 51)%nat.
+Lemma materials_project_live_panel_observable_count_pos : (0 < 141)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma materials_project_live_panel_beats_sota_headlines_pos : (0 < 2)%nat.

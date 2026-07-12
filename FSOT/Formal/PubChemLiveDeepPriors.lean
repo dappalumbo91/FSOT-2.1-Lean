@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def pubchem_live_deep_observable_count : ℕ := 5227
-def pubchem_live_deep_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def pubchem_live_deep_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def pubchem_live_deep_observable_count : ℕ := 5254
+def pubchem_live_deep_pooled_median_error_pct : ℝ := (0.032631 : ℝ)
+def pubchem_live_deep_headline_median_error_pct : ℝ := (0.032631 : ℝ)
 def pubchem_live_deep_beats_sota_headlines : ℕ := 3
 def pubchem_live_deep_D_eff : ℕ := 20
 
@@ -32,7 +32,7 @@ theorem pubchem_live_deep_beats_sota_headlines_pos : 0 < pubchem_live_deep_beats
   unfold pubchem_live_deep_beats_sota_headlines; norm_num
 
 theorem pubchem_live_deep_bundle :
-    pubchem_live_deep_observable_count = 5227 ∧
+    pubchem_live_deep_observable_count = 5254 ∧
     pubchem_live_deep_pooled_median_error_pct < (0.5 : ℝ) ∧
     pubchem_live_deep_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
