@@ -4189,6 +4189,66 @@ extension_domains:
     lean_module: FSOT.Formal.TheWellVerificationSpinePriors
     note: "Tier 89 The Well verification spine — Polymathic 15TB numeric truth outcomes layer"
 
+  Microtubule_Quantum_Consciousness_Panel:
+    tier: 90
+    D_eff: 17
+    delta_psi: 1.15
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, neural, particle]
+    formula_branch_override: term1.quirkMod
+    external_cache_root: G:/FSOT-PublicData/anomaly_observables/consciousness
+    ingest_script: scripts/ingest_tier90_consciousness_expansion.py
+    build_script: scripts/build_tier90_consciousness_expansion_benchmarks.py
+    manifest: data/tier90_consciousness_expansion_manifest.yaml
+    benchmark_data: data/microtubule_quantum_consciousness_panel_benchmark.json
+    lean_module: FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors
+    note: "Microtubule tunnel valves + consciousness_factor/quirkMod — formal scaffold, measurable proxies"
+
+  Consciousness_Species_Multi_Panel:
+    tier: 90
+    D_eff: 18
+    delta_psi: 1.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, neural, biological]
+    formula_branch_override: term1.growth_term
+    external_cache_root: G:/FSOT-PublicData/anomaly_observables/consciousness
+    ingest_script: scripts/ingest_tier90_consciousness_expansion.py
+    build_script: scripts/build_tier90_consciousness_expansion_benchmarks.py
+    manifest: data/tier90_consciousness_expansion_manifest.yaml
+    benchmark_data: data/consciousness_species_multi_panel_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors
+    note: "AnAge live + 72+ species brain metabolic / E_con cross-species consciousness panel"
+
+  Observer_Effect_Cross_Species_Panel:
+    tier: 90
+    D_eff: 16
+    delta_psi: 1.15
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, perceived]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier90_consciousness_expansion.py
+    build_script: scripts/build_tier90_consciousness_expansion_benchmarks.py
+    manifest: data/tier90_consciousness_expansion_manifest.yaml
+    benchmark_data: data/observer_effect_cross_species_panel_benchmark.json
+    lean_module: FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors
+    note: "Per-species quirkMod observer effect + yin-yang duality paired observables"
+
+  Consciousness_Expansion_Spine:
+    tier: 90
+    D_eff: 19
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, biological, particle]
+    build_script: scripts/build_tier90_consciousness_expansion_benchmarks.py
+    manifest: data/tier90_consciousness_expansion_manifest.yaml
+    benchmark_data: data/consciousness_expansion_spine_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessExpansionSpinePriors
+    note: "Tier 90 consciousness expansion spine — microtubule + species + observer crosswalk"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:47:41.469347+00:00",
+  "generated_at": "2026-07-12T17:05:54.257254+00:00",
   "domain": "The_Well_Verification_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "tier89_the_well_panels",
-    "polymathic_ai_the_well"
+    "polymathic_ai_the_well",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "particle",
@@ -14,24 +15,24 @@
     "material"
   ],
   "D_eff": 19,
-  "record_count": 11,
-  "observable_count": 11,
-  "scalar_record_count": 2,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 11,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.0,
-  "pooled_median_error_pct": 0.0,
+  "median_error_pct": 0.028287,
+  "pooled_median_error_pct": 0.028287,
   "headline_median_error_pct": 0.031159,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "the_well_verification": {
-        "sota_typical_error_pct": 8.0,
-        "sota_model": "Tier 89 Polymathic The Well outcomes verification layer"
+      "The_Well_Verification_Spine_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_ingest_relay_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -39,19 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0,
+      "computed": 0.028287,
       "measured": 0.0,
-      "error_pct": 0.0,
-      "observable_count": 11
+      "error_pct": 0.028287,
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "ingest_relay",
-      "name": "the_well_verification",
+      "property": "depth_relay",
+      "name": "The_Well_Verification_Spine_depth",
       "computed": 0.031159,
       "measured": 0.0,
       "error_pct": 0.031159,
-      "observable_count": 8
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -62,7 +63,7 @@
       "computed": 0.031159,
       "measured": 0.031159,
       "error_pct": 0.0,
-      "record_count": 267,
+      "record_count": 381,
       "eval_kind": "tier89_bridge"
     },
     {
@@ -163,11 +164,220 @@
       "measured": 17.0,
       "error_pct": 0.0,
       "eval_kind": "tier89_meta"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "mean_density",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 3.959933,
+      "measured": 3.9587,
+      "error_pct": 0.031159,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "hf_storage_gb": 162.24,
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "mean_pressure",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.103852,
+      "measured": 0.10382,
+      "error_pct": 0.031159,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "hf_storage_gb": 162.24,
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "mean_speed_of_sound",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 1.084638,
+      "measured": 1.0843,
+      "error_pct": 0.031159,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "hf_storage_gb": 162.24,
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "mean_velocity_0",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.004738,
+      "measured": 0.0047369,
+      "error_pct": 0.031159,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "polymathic_ai_the_well_hf_stats",
+      "verification_mode": "stats_yaml_aggregate",
+      "hf_storage_gb": 162.24,
+      "source_panel": "The_Well_Outcomes_Verification_Panel",
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "wspd",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1.000264,
+      "measured": 1.0,
+      "error_pct": 0.026401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "pres",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1013.694898,
+      "measured": 1013.4,
+      "error_pct": 0.0291,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Meteorology",
+      "fsot_scalar": -0.484997,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "wtmp",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 12.703592,
+      "measured": 12.7,
+      "error_pct": 0.028287,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "wdir",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 290.077357,
+      "measured": 290.0,
+      "error_pct": 0.026675,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Meteorology",
+      "fsot_scalar": -0.484997,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C8H9NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C13H18O2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "molecular_weight",
+      "name": "3033",
+      "computed": 296.147,
+      "measured": 296.1,
+      "error_pct": 0.015873,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C14H11Cl2NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "the_well_verification_spine_depth_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.769058,
+      "measured": 36.762501,
+      "error_pct": 0.017836062884406634,
+      "source": "pbdb_api",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.006557,
+        "delta_pct": 0.017836,
+        "effective_error_pct": 0.017836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.0,
+    "scalar_pooled_median_error_pct": 0.028287,
+    "max_scalar_error_pct": 0.031159,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

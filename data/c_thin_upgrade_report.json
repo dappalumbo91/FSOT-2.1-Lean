@@ -1,108 +1,38 @@
 {
-  "generated_at": "2026-07-12T16:20:36.346202+00:00",
-  "c_thin_before": 10,
+  "generated_at": "2026-07-12T17:06:04.427716+00:00",
+  "c_thin_before": 3,
   "c_thin_after": 0,
-  "promoted_to_B": 10,
+  "promoted_to_B": 3,
   "promoted_to_A": 0,
   "c_thin_panels": [
     {
-      "panel": "Rust_Lean_Bridge",
-      "records": 9,
+      "panel": "The_Well_Spot_Check_Panel",
+      "records": 12,
+      "median_error_pct": 0.031159,
+      "ingest_script": "scripts/ingest_tier89_the_well.py",
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
+      "records_after": 24,
+      "median_after": 0.031159,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "The_Well_Verification_Spine",
+      "records": 11,
       "median_error_pct": 0.0,
       "ingest_script": null,
-      "build_script": "scripts/build_rust_lean_bridge_benchmark.py",
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.0,
+      "median_after": 0.028287,
       "tier_after": "B_verified"
     },
     {
-      "panel": "Epidemiology_Panel",
-      "records": 15,
-      "median_error_pct": 0.015311,
-      "ingest_script": "scripts/ingest_tier84_scientific_expansion.py",
-      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.015311,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Virology_Panel",
-      "records": 6,
-      "median_error_pct": 0.022236,
-      "ingest_script": "scripts/ingest_tier84_scientific_expansion.py",
-      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.022236,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Immunology_Panel",
-      "records": 18,
-      "median_error_pct": 0.040788,
-      "ingest_script": "scripts/ingest_tier84_scientific_expansion.py",
-      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.040788,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Speleology_Panel",
-      "records": 10,
-      "median_error_pct": 0.04459,
-      "ingest_script": "scripts/ingest_tier85_scientific_expansion.py",
-      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.04459,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+      "panel": "Consciousness_Expansion_Spine",
       "records": 19,
-      "median_error_pct": 0.018003,
-      "ingest_script": "scripts/ingest_tier86_scientific_expansion.py",
-      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.018003,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
-      "records": 15,
-      "median_error_pct": 0.033841,
-      "ingest_script": "scripts/ingest_tier87_scientific_expansion.py",
-      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.033841,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Tokenization_Live_Panel",
-      "records": 9,
-      "median_error_pct": 0.031506,
-      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
-      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.015099000000000001,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Certified_Agent_Formal_Panel",
-      "records": 13,
-      "median_error_pct": 0.014767,
-      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
-      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.014767,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Desktop_Application_Wiring_Spine",
-      "records": 17,
       "median_error_pct": 0.0,
       "ingest_script": null,
-      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.0,
+      "median_after": 0.008488,
       "tier_after": "B_verified"
     }
   ],
@@ -592,19 +522,10 @@
     },
     {
       "panel": "Rust_Lean_Bridge",
-      "skipped": false,
-      "records_before": 0,
-      "records_after": 24,
-      "median_after": 0.0,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Computational_Reasoning",
-        "Trinary_OS_Tier_E",
-        "Omni_Theory_Genesis",
-        "VL_Distill_Atlas",
-        "Certified_Agent_Qwen",
-        "Binary_Decoder_Rendlesham"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "VL_Distill_Atlas",
@@ -2057,19 +1978,10 @@
     },
     {
       "panel": "Epidemiology_Panel",
-      "skipped": false,
-      "records_before": 15,
-      "records_after": 24,
-      "median_after": 0.015311,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Zoology",
-        "PubChem_Live_Deep",
-        "ClinicalTrials_Medical_Panel",
-        "Limnology_Panel",
-        "Phi_Morphogenetic_Scaling",
-        "Clinical_Medicine"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Immunology_Panel",
@@ -2115,19 +2027,10 @@
     },
     {
       "panel": "Virology_Panel",
-      "skipped": false,
-      "records_before": 8,
-      "records_after": 24,
-      "median_after": 0.022236,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Zoology",
-        "PubChem_Live_Deep",
-        "ClinicalTrials_Medical_Panel",
-        "Limnology_Panel",
-        "Phi_Morphogenetic_Scaling",
-        "Clinical_Medicine"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Civil_Engineering_Panel",
@@ -2194,19 +2097,10 @@
     },
     {
       "panel": "Speleology_Panel",
-      "skipped": false,
-      "records_before": 10,
-      "records_after": 24,
-      "median_after": 0.04459,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Paleontology",
-        "Environmental_Engineering",
-        "Limnology_Panel",
-        "NOAA_NDBC_Buoy_Panel",
-        "PubChem_Live_Deep",
-        "Marine_Biology"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Supply_Chain_Logistics_Panel",
@@ -2224,19 +2118,10 @@
     },
     {
       "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
-      "skipped": false,
-      "records_before": 19,
-      "records_after": 24,
-      "median_after": 0.018003,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Computational_Reasoning",
-        "Neuroscience_Connectomics_Depth_Panel",
-        "Hybrid_FI_Sim_Multi_Hero_Panel",
-        "Observer_Channel_Derivation",
-        "UAP_War_Gov_Release_Panel",
-        "Pure_Mathematics"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Materials_Species_Bridge_Live_Panel",
@@ -2261,19 +2146,10 @@
     },
     {
       "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
-      "skipped": false,
-      "records_before": 15,
-      "records_after": 24,
-      "median_after": 0.033841,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "PubChem_Live_Deep",
-        "Domain_Coupling_Simulation",
-        "Materials_Project_Live_Panel",
-        "Material_Property_Verification_Scaffold",
-        "Fusion_Lab_Certificate_Spine",
-        "Lab_Synthesis_Metamaterial_Spine"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Neuroscience_Connectomics_Depth_Panel",
@@ -2305,35 +2181,17 @@
     },
     {
       "panel": "Certified_Agent_Formal_Panel",
-      "skipped": false,
-      "records_before": 13,
-      "records_after": 24,
-      "median_after": 0.014767,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Pure_Mathematics",
-        "Math_Generator_Rules_Eval",
-        "Computational_Reasoning",
-        "Programming_Language_Laws",
-        "Creative_Arts_Math_Spine",
-        "Interactive_Media_Prereg_Scaffold"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Desktop_Application_Wiring_Spine",
-      "skipped": false,
-      "records_before": 17,
-      "records_after": 24,
-      "median_after": 0.0,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Computational_Reasoning",
-        "Creative_Arts_Math_Spine",
-        "Interactive_Media_Prereg_Scaffold",
-        "XR_Interactive_Media_Math_Scaffold",
-        "Information_Theory_Public_Panel",
-        "Pure_Mathematics"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Living_FSOT_Hardware_Panel",
@@ -2344,19 +2202,10 @@
     },
     {
       "panel": "Tokenization_Live_Panel",
-      "skipped": false,
-      "records_before": 9,
-      "records_after": 24,
-      "median_after": 0.015099000000000001,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Computational_Reasoning",
-        "Living_FSOT_Hardware_Panel",
-        "Trinary_Hardware_Live_Panel",
-        "Desktop_Application_Wiring_Spine",
-        "OpenNeuro_Full_Panel",
-        "Trinary_OS_Tier_E"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Trinary_Hardware_Live_Panel",
@@ -2364,55 +2213,99 @@
       "reason": "not_c_thin",
       "records": 37,
       "tier": "B_verified"
+    },
+    {
+      "panel": "The_Well_Outcomes_Verification_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 381,
+      "tier": "A_strong"
+    },
+    {
+      "panel": "The_Well_Spot_Check_Panel",
+      "skipped": false,
+      "records_before": 12,
+      "records_after": 24,
+      "median_after": 0.031159,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "The_Well_Outcomes_Verification_Panel",
+        "NOAA_NDBC_Buoy_Panel",
+        "Paleontology",
+        "Hydrology",
+        "Geology_Stratigraphy",
+        "Environmental_Engineering"
+      ]
+    },
+    {
+      "panel": "The_Well_Verification_Spine",
+      "skipped": false,
+      "records_before": 11,
+      "records_after": 24,
+      "median_after": 0.028287,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "The_Well_Outcomes_Verification_Panel",
+        "NOAA_NDBC_Buoy_Panel",
+        "PubChem_Live_Deep",
+        "Paleontology",
+        "Hydrology",
+        "Geology_Stratigraphy"
+      ]
+    },
+    {
+      "panel": "Consciousness_Expansion_Spine",
+      "skipped": false,
+      "records_before": 19,
+      "records_after": 24,
+      "median_after": 0.008488,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Consciousness_Species_Multi_Panel",
+        "UAP_War_Gov_Release_Panel",
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval",
+        "Domain_Coupling_Simulation",
+        "Computational_Reasoning"
+      ]
+    },
+    {
+      "panel": "Consciousness_Species_Multi_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 269,
+      "tier": "A_strong"
+    },
+    {
+      "panel": "Microtubule_Quantum_Consciousness_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 63,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Observer_Effect_Cross_Species_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 289,
+      "tier": "A_strong"
     }
   ],
   "actions": [
     {
-      "ingest_script": "scripts/ingest_tier84_scientific_expansion.py",
+      "ingest_script": "scripts/ingest_tier89_the_well.py",
       "exit_code": 0
     },
     {
-      "ingest_script": "scripts/ingest_tier85_scientific_expansion.py",
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
       "exit_code": 0
     },
     {
-      "ingest_script": "scripts/ingest_tier86_scientific_expansion.py",
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
       "exit_code": 0
     },
     {
-      "ingest_script": "scripts/ingest_tier87_scientific_expansion.py",
-      "exit_code": 0
-    },
-    {
-      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
-      "exit_code": 0
-    },
-    {
-      "build_script": "scripts/build_rust_lean_bridge_benchmark.py",
-      "exit_code": 2
-    },
-    {
-      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "depth_pass_panels": 311
+      "depth_pass_panels": 318
     }
   ],
   "still_thin": []

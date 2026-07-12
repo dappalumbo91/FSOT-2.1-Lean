@@ -1,0 +1,332 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T17:05:55.212123+00:00",
+  "domain": "Consciousness_Expansion_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier90_consciousness_panels",
+    "AnAge_HAGR",
+    "OpenNeuro",
+    "c_thin_depth_pass"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "biological",
+    "particle"
+  ],
+  "D_eff": 19,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.008488,
+  "pooled_median_error_pct": 0.008488,
+  "headline_median_error_pct": 0.008488,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Consciousness_Expansion_Spine_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.008488,
+      "measured": 0.0,
+      "error_pct": 0.008488,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Consciousness_Expansion_Spine_depth",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "panel_pooled_median",
+      "name": "microtubule_quantum_consciousness_panel",
+      "computed": 0.044671,
+      "measured": 0.044671,
+      "error_pct": 0.0,
+      "record_count": 63,
+      "eval_kind": "tier90_bridge"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "microtubule_tunnel_carrier_hz",
+      "name": "gamma_gate_carrier",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "source_panel": "microtubule_quantum_consciousness_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "microtubule_harmonic_hz",
+      "name": "harmonic_f0",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "source_panel": "microtubule_quantum_consciousness_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "microtubule_harmonic_hz",
+      "name": "harmonic_f1",
+      "computed": 15.6869,
+      "measured": 15.6869,
+      "error_pct": 0.0,
+      "source_panel": "microtubule_quantum_consciousness_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "microtubule_harmonic_hz",
+      "name": "harmonic_f2",
+      "computed": 6.152,
+      "measured": 6.152,
+      "error_pct": 0.0,
+      "source_panel": "microtubule_quantum_consciousness_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "info_uplift_fraction",
+      "name": "resting_valve_closed",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "microtubule_quantum_consciousness_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "panel_pooled_median",
+      "name": "consciousness_species_multi_panel",
+      "computed": 0.0201195,
+      "measured": 0.0201195,
+      "error_pct": 0.0,
+      "record_count": 269,
+      "eval_kind": "tier90_bridge"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_species_multi_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "brain_power_w",
+      "name": "Homo_sapiens",
+      "computed": 20.003601,
+      "measured": 20.0,
+      "error_pct": 0.018003,
+      "source_panel": "consciousness_species_multi_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "total_metabolic_w",
+      "name": "Homo_sapiens",
+      "computed": 82.798407,
+      "measured": 82.78,
+      "error_pct": 0.022236,
+      "source_panel": "consciousness_species_multi_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "E_con_resting",
+      "name": "Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_species_multi_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "brain_energy_fraction",
+      "name": "Mus_musculus",
+      "computed": 0.100032,
+      "measured": 0.1,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_species_multi_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "panel_pooled_median",
+      "name": "observer_effect_cross_species_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 289,
+      "eval_kind": "tier90_bridge"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "quirk_mod_species",
+      "name": "Homo_sapiens",
+      "computed": -0.67426191,
+      "measured": -0.67404954,
+      "error_pct": 0.031506,
+      "source_panel": "observer_effect_cross_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "observer_channel_strength",
+      "name": "Homo_sapiens",
+      "computed": 0.90214,
+      "measured": 0.901667,
+      "error_pct": 0.05251,
+      "source_panel": "observer_effect_cross_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "yin_yang_balance",
+      "name": "Homo_sapiens",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "observer_effect_cross_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "yin_yang_duality_product",
+      "name": "Homo_sapiens",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "observer_effect_cross_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "quirk_mod_species",
+      "name": "Pan_troglodytes",
+      "computed": -0.61379876,
+      "measured": -0.61360544,
+      "error_pct": 0.031506,
+      "source_panel": "observer_effect_cross_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "consciousness_expansion_lab",
+      "property": "merged_species_count",
+      "name": "consciousness_reference",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier90_meta"
+    },
+    {
+      "lab": "consciousness_expansion_spine_depth_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "order": null,
+      "reference": "Clarke_Sokoloff_1999_brain_20W",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_expansion_spine_depth_lab",
+      "property": "brain_power_w",
+      "name": "Homo_sapiens",
+      "computed": 20.003601,
+      "measured": 20.0,
+      "error_pct": 0.018003,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "brain_energy_fraction": 0.2416,
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_expansion_spine_depth_lab",
+      "property": "total_metabolic_w",
+      "name": "Homo_sapiens",
+      "computed": 82.798407,
+      "measured": 82.78,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_live",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "anage_hagrid": "02789",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_expansion_spine_depth_lab",
+      "property": "E_con_resting",
+      "name": "Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "brain_energy_fraction": 0.2416,
+      "eval_kind": "consciousness_information_floor",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_expansion_spine_depth_lab",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "war_gov_uap_hf_live",
+      "agency": "Department of War",
+      "source_panel": "UAP_War_Gov_Release_Panel",
+      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.008488,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

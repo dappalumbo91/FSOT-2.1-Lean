@@ -1,7 +1,6 @@
 {
-  "ingested_at": "2026-07-12T17:05:10.502759+00:00",
-  "source": "https://openneuro.org/crn/graphql",
-  "dataset_count": 113,
+  "source": "openneuro_graphql_consciousness",
+  "dataset_count": 60,
   "datasets": [
     {
       "id": "ds001785",
@@ -303,5 +302,8 @@
       "name": "ds000008",
       "modality_filter": "MRI"
     }
-  ]
+  ],
+  "summary_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\public_data\\consciousness\\openneuro_summary.json",
+  "fetched_at": "2026-07-12T17:05:10.515439+00:00",
+  "credential_free": true
 }

@@ -1,0 +1,21 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 90
+policy: credential_free_only
+external_cache_default: G:/FSOT-PublicData/anomaly_observables/consciousness
+domains:
+  - Microtubule_Quantum_Consciousness_Panel
+  - Consciousness_Species_Multi_Panel
+  - Observer_Effect_Cross_Species_Panel
+  - Consciousness_Expansion_Spine
+ingest: scripts/ingest_tier90_consciousness_expansion.py
+build: scripts/build_tier90_consciousness_expansion_benchmarks.py
+lean: scripts/gen_tier90_consciousness_expansion_lean.py
+apis:
+  - https://genomics.senescence.info/species/dataset.zip
+  - https://openneuro.org/crn/graphql
+note: >
+  Tier 90 solidifies microtubule quantum information flow (formal scaffold + measurable
+  proxies), observer/quirkMod cross-species consciousness effects, and yin-yang duality
+  observables. AnAge live ingest + 72+ species reference panel. Orch-OR empirical proof
+  remains contested — FSOT provides zero-parameter prediction layer for verification.

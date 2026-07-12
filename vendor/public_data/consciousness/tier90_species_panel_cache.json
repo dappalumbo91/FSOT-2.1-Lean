@@ -1,9 +1,35 @@
 {
-  "schema_version": "1.0",
-  "source": "AnAge HAGR + literature brain metabolic anchors",
-  "updated": "2026-07-12",
-  "brain_energy_fraction_default": 0.2416,
-  "notes": "brain_energy_fraction = 20W / 82.78W human AnAge total MR (Clarke & Sokoloff anchor).",
+  "source": "AnAge_HAGR_consciousness_species_deep",
+  "anage_metabolic_rows": 627,
+  "anage_panel_count": 62,
+  "merged_species_count": 72,
+  "orders_represented": [
+    "Afrosoricida",
+    "Artiodactyla",
+    "Carnivora",
+    "Cetacea",
+    "Chiroptera",
+    "Cingulata",
+    "Dasyuromorphia",
+    "Didelphimorphia",
+    "Diprotodontia",
+    "Erinaceomorpha",
+    "Hyracoidea",
+    "Lagomorpha",
+    "Macroscelidea",
+    "Monotremata",
+    "Peramelemorphia",
+    "Perissodactyla",
+    "Pholidota",
+    "Pilosa",
+    "Primates",
+    "Proboscidea",
+    "Rodentia",
+    "Scandentia",
+    "Sirenia",
+    "Soricomorpha",
+    "Tubulidentata"
+  ],
   "species": [
     {
       "name": "Homo sapiens",
@@ -617,35 +643,7 @@
       "reference": "AnAge_HAGR_tubulidentata_taxon_fraction"
     }
   ],
-  "human_channels": [
-    {
-      "name": "resting_brain_metabolic",
-      "property": "brain_power_w",
-      "measured": 20.0,
-      "condition": "resting_awake",
-      "reference": "Clarke_Sokoloff_1999"
-    },
-    {
-      "name": "active_cognition_pet",
-      "property": "brain_power_w",
-      "measured": 23.0,
-      "condition": "cognitive_task_PET",
-      "reference": "Raichle_2001"
-    },
-    {
-      "name": "sleep_nrem",
-      "property": "brain_power_w",
-      "measured": 18.0,
-      "condition": "NREM_sleep",
-      "reference": "literature_sleep_metabolic"
-    },
-    {
-      "name": "anage_total_body_mr",
-      "property": "total_metabolic_w",
-      "measured": 82.78,
-      "condition": "resting_adult",
-      "reference": "AnAge_HAGR_build15"
-    }
-  ],
-  "anage_panel_count": 62
+  "reference_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\consciousness_reference_observables.json",
+  "fetched_at": "2026-07-12T17:05:03.036201+00:00",
+  "credential_free": true
 }

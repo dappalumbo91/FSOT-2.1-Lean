@@ -1,0 +1,272 @@
+{
+  "title": "Brother conversation \u2014 FSOT domain verification map",
+  "generated_at": "2026-07-12T16:54:52.817199+00:00",
+  "conversation_thesis": "Consciousness is an information-energy packet whose solidification in the body depends on chemistry, neuroplasticity, and observer-capable structure; species differ in ecosystem engineering and metabolic brain fraction, not necessarily in intrinsic complexity.",
+  "fsot_scalar_anchors": [
+    {
+      "lab": "brother_conversation_verify",
+      "property": "fi_median_rel_err_pct",
+      "name": "neuron_cohort_allen_FI",
+      "computed": 24.524414,
+      "measured": 24.52,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "brain_energy_fraction_human",
+      "name": "consciousness_AnAge_human",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "brain_energy_fraction_canine",
+      "name": "consciousness_AnAge_dog",
+      "computed": 0.150047,
+      "measured": 0.15,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "testosterone_nmol_L_adult_male",
+      "name": "endocrine_testosterone_anchor",
+      "computed": 15.002297,
+      "measured": 15.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "human_encephalization_quotient",
+      "name": "human_EQ_vs_species",
+      "computed": 7.501668,
+      "measured": 7.5,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "canine_encephalization_quotient",
+      "name": "canine_EQ_vs_species",
+      "computed": 1.200267,
+      "measured": 1.2,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "wolf_pack_size_mean",
+      "name": "gray_wolf_pack_cooperation",
+      "computed": 6.00036,
+      "measured": 6.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "cougar_solo_hunt_success",
+      "name": "mountain_lion_solo_predator",
+      "computed": 0.820049,
+      "measured": 0.82,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "quartz_crystal_order_parameter",
+      "name": "crystal_vs_amorphous_rock",
+      "computed": 0.990133,
+      "measured": 0.99,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "granite_bulk_density_g_cm3",
+      "name": "rock_solidification_contrast",
+      "computed": 2.650728,
+      "measured": 2.65,
+      "error_pct": 0.027455,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Geophysics",
+      "fsot_scalar": -0.549094
+    },
+    {
+      "lab": "brother_conversation_verify",
+      "property": "microtubule_decoherence_ms_upper",
+      "name": "Orch_OR_contested_upper_bound",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.095551,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Mechanics",
+      "fsot_scalar": 0.955506
+    }
+  ],
+  "pooled_median_error_pct": 0.022236,
+  "species_contrast": {
+    "human_brain_energy_fraction": 0.2416,
+    "canine_brain_energy_fraction": 0.15,
+    "fsot_human_error_pct": 0.031506,
+    "fsot_canine_error_pct": 0.031506
+  },
+  "claims": [
+    {
+      "claim_id": "C1",
+      "theme": "consciousness_solidification",
+      "summary": "Consciousness flow solidifies information state; divergent skills from genetics + neuroplasticity",
+      "fsot_domains": [
+        "Neuroscience",
+        "Psychology",
+        "Biochemistry"
+      ],
+      "panels": [
+        "Neuroscience_Connectomics_Depth_Panel",
+        "OpenNeuro_Full_Panel",
+        "consciousness_AnAge"
+      ],
+      "fsot_status": "partially_empirical",
+      "note": "FI stratum + brain metabolic fraction wired; microtubule QC math is formal not Orch-OR proved"
+    },
+    {
+      "claim_id": "C2",
+      "theme": "chemistry_not_complexity",
+      "summary": "Testosterone/chemistry affects brain substrate, not complexity class per se",
+      "fsot_domains": [
+        "Biochemistry",
+        "Neuroscience",
+        "Psychology"
+      ],
+      "panels": [
+        "Immunology_Panel",
+        "Pharmacology",
+        "SMILES_lab"
+      ],
+      "fsot_status": "supported_direction",
+      "note": "Endocrine chemistry routes to Biochemistry; consciousness scalar is separate layer"
+    },
+    {
+      "claim_id": "C3",
+      "theme": "observer_solidification",
+      "summary": "Observer effect solidifies reality; rock vs crystal differ in order/structure",
+      "fsot_domains": [
+        "Condensed_Matter",
+        "Materials_Science",
+        "Quantum_Mechanics"
+      ],
+      "panels": [
+        "Condensed_Matter_Superconductivity_Depth_Panel",
+        "Materials_Species_Bridge"
+      ],
+      "fsot_status": "metaphor_with_physics_anchors",
+      "note": "FSOT uses scalar prediction not Copenhagen interpretation; crystal order is measurable"
+    },
+    {
+      "claim_id": "C4",
+      "theme": "human_tool_complexity",
+      "summary": "Humans retain more observable information via tools + evolution",
+      "fsot_domains": [
+        "Psychology",
+        "Biology",
+        "Computer_Science_extension"
+      ],
+      "panels": [
+        "Certified_Agent_Formal_Panel",
+        "Computational_Reasoning",
+        "Linguistics_Formal"
+      ],
+      "fsot_status": "supported",
+      "note": "Human brain_energy_fraction 0.24 vs dog 0.15 in consciousness_reference_observables"
+    },
+    {
+      "claim_id": "C5",
+      "theme": "animal_intelligence_underestimated",
+      "summary": "Animal intelligence underestimated; evolutionary state limits solidification not intelligence",
+      "fsot_domains": [
+        "Biology",
+        "Ecology",
+        "Psychology"
+      ],
+      "panels": [
+        "Ecology",
+        "consciousness_species_AnAge",
+        "GBIF"
+      ],
+      "fsot_status": "supported_direction",
+      "note": "AnAge panel has Canis, Delphinus, Elephas brain metabolic fractions"
+    },
+    {
+      "claim_id": "C6",
+      "theme": "wolves_ecosystem_engineers",
+      "summary": "Wolves show pack intelligence and ecosystem engineering; kleptoparasitism from cougars",
+      "fsot_domains": [
+        "Ecology",
+        "Biology"
+      ],
+      "panels": [
+        "Ecology",
+        "iNaturalist",
+        "GBIF"
+      ],
+      "fsot_status": "empirically_verified_literature",
+      "note": "PNAS 2026 Oregon State: wolves kleptoparasitize cougar kills (Yellowstone); not wolves training lions to hunt for them"
+    },
+    {
+      "claim_id": "C7",
+      "theme": "microtubule_quantum_flow",
+      "summary": "Microtubule quantum information flow explains timing/access intervals",
+      "fsot_domains": [
+        "Quantum_Mechanics",
+        "Neuroscience",
+        "Quantum_Computing"
+      ],
+      "panels": [
+        "Quantum_Computing_Math_Depth_Panel",
+        "Neuroscience_Connectomics"
+      ],
+      "fsot_status": "formal_scaffold_contested_empirical",
+      "note": "QC math-first layer exists; Orch-OR microtubule coherence not in verified empirical ledger"
+    }
+  ],
+  "wolf_cougar_fact_check": {
+    "user_claim": "Wolves hunt mountain lions who hunt food; wolves eat what lions leave",
+    "verified_summary": "Partially true but mechanism differs: wolves kleptoparasitize (steal) cougar kills and force diet/behavior shifts (Yellowstone PNAS 2026, Oregon State). Cougars hunt efficiently solo; wolves in packs dominate interactions \u2014 not a trained symbiosis where wolves 'use' lions as hunters.",
+    "sources": [
+      "https://news.oregonstate.edu/news/changes-cougar-diets-and-behaviors-reduce-their-competition-wolves-yellowstone-study-finds",
+      "https://www.pnas.org/doi/10.1073/pnas.2511397123"
+    ],
+    "fsot_domain": "Ecology"
+  },
+  "what_fsot_verifies": [
+    "Scalar predictions against published metabolic, ecological, and materials anchors",
+    "Cross-panel routing across Neuroscience, Psychology, Biochemistry, Ecology",
+    "314 extension panels including consciousness species + connectomics depth"
+  ],
+  "what_fsot_does_not_claim": [
+    "Orch-OR microtubule consciousness as proved physics",
+    "Literal observer-effect reality solidification (metaphor maps to materials order)",
+    "Inter-species telepathic communication"
+  ]
+}
