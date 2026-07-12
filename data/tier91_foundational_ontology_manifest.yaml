@@ -1,0 +1,18 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 91
+policy: credential_free_only
+domains:
+  - Nothing_Perfection_Friction_Origin_Panel
+  - Zero_Boundary_Not_Entity_Panel
+  - Overflow_Carry_Emergence_Panel
+  - Complexity_Folding_Emergence_Panel
+  - Foundational_Ontology_Spine
+ingest: scripts/ingest_tier91_foundational_ontology.py
+build: scripts/build_tier91_foundational_ontology_benchmarks.py
+lean: scripts/gen_tier91_foundational_ontology_lean.py
+axioms: data/foundational_ontology_axioms.yaml
+note: >
+  Tier 91 formalizes FSOT foundational ontology: nothing-perfection friction origin (not Big Bang
+  singularity), zero as absence/infinity boundary, carry overflow emergence, complexity folding.
+  Verified against phase_shift, bubble_bleed, compactification ladder, reality folding spine.

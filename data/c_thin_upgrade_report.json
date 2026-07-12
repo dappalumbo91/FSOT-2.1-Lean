@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-07-12T17:06:04.427716+00:00",
+  "generated_at": "2026-07-12T17:36:39.292844+00:00",
   "c_thin_before": 3,
   "c_thin_after": 0,
   "promoted_to_B": 3,
   "promoted_to_A": 0,
   "c_thin_panels": [
     {
-      "panel": "The_Well_Spot_Check_Panel",
-      "records": 12,
-      "median_error_pct": 0.031159,
-      "ingest_script": "scripts/ingest_tier89_the_well.py",
-      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.031159,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "The_Well_Verification_Spine",
-      "records": 11,
+      "panel": "Nothing_Perfection_Friction_Origin_Panel",
+      "records": 6,
       "median_error_pct": 0.0,
-      "ingest_script": null,
-      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.028287,
-      "tier_after": "B_verified"
-    },
-    {
-      "panel": "Consciousness_Expansion_Spine",
-      "records": 19,
-      "median_error_pct": 0.0,
-      "ingest_script": null,
-      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
       "records_after": 24,
       "median_after": 0.008488,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "Zero_Boundary_Not_Entity_Panel",
+      "records": 6,
+      "median_error_pct": 0.009504,
+      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "records_after": 24,
+      "median_after": 0.020055,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Spine",
+      "records": 8,
+      "median_error_pct": 0.0,
+      "ingest_script": null,
+      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
+      "records_after": 24,
+      "median_after": 0.004184779870129773,
       "tier_after": "B_verified"
     }
   ],
@@ -2223,51 +2223,24 @@
     },
     {
       "panel": "The_Well_Spot_Check_Panel",
-      "skipped": false,
-      "records_before": 12,
-      "records_after": 24,
-      "median_after": 0.031159,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "The_Well_Outcomes_Verification_Panel",
-        "NOAA_NDBC_Buoy_Panel",
-        "Paleontology",
-        "Hydrology",
-        "Geology_Stratigraphy",
-        "Environmental_Engineering"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "The_Well_Verification_Spine",
-      "skipped": false,
-      "records_before": 11,
-      "records_after": 24,
-      "median_after": 0.028287,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "The_Well_Outcomes_Verification_Panel",
-        "NOAA_NDBC_Buoy_Panel",
-        "PubChem_Live_Deep",
-        "Paleontology",
-        "Hydrology",
-        "Geology_Stratigraphy"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Consciousness_Expansion_Spine",
-      "skipped": false,
-      "records_before": 19,
-      "records_after": 24,
-      "median_after": 0.008488,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Consciousness_Species_Multi_Panel",
-        "UAP_War_Gov_Release_Panel",
-        "Pure_Mathematics",
-        "Math_Generator_Rules_Eval",
-        "Domain_Coupling_Simulation",
-        "Computational_Reasoning"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Consciousness_Species_Multi_Panel",
@@ -2289,23 +2262,99 @@
       "reason": "not_c_thin",
       "records": 289,
       "tier": "A_strong"
+    },
+    {
+      "panel": "Complexity_Folding_Emergence_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 29,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Foundational_Ontology_Spine",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 21,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Nothing_Perfection_Friction_Origin_Panel",
+      "skipped": false,
+      "records_before": 6,
+      "records_after": 24,
+      "median_after": 0.008488,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Time_Domain_Crosswalk",
+        "UAP_War_Gov_Release_Panel",
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval",
+        "Domain_Coupling_Simulation",
+        "Foundational_Ontology_Spine"
+      ]
+    },
+    {
+      "panel": "Overflow_Carry_Emergence_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 29,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Zero_Boundary_Not_Entity_Panel",
+      "skipped": false,
+      "records_before": 6,
+      "records_after": 24,
+      "median_after": 0.020055,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval",
+        "Formula_Branching_Fractal",
+        "Time_Domain_Crosswalk",
+        "UAP_War_Gov_Release_Panel",
+        "Domain_Coupling_Simulation"
+      ]
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 56,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Spine",
+      "skipped": false,
+      "records_before": 8,
+      "records_after": 24,
+      "median_after": 0.004184779870129773,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval",
+        "Computational_Reasoning",
+        "Programming_Language_Laws",
+        "Desktop_Application_Wiring_Spine",
+        "Certified_Agent_Formal_Panel"
+      ]
     }
   ],
   "actions": [
     {
-      "ingest_script": "scripts/ingest_tier89_the_well.py",
+      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
       "exit_code": 0
     },
     {
-      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
       "exit_code": 0
     },
     {
-      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
       "exit_code": 0
     },
     {
-      "depth_pass_panels": 318
+      "depth_pass_panels": 325
     }
   ],
   "still_thin": []

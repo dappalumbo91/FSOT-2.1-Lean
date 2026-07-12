@@ -1,0 +1,15 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 92
+policy: computational_explorer
+domains:
+  - Alternate_Base_Mathematics_Explorer_Panel
+  - Alternate_Base_Mathematics_Spine
+ingest: scripts/ingest_tier92_alternate_base_mathematics.py
+build: scripts/build_tier92_alternate_base_mathematics_benchmarks.py
+lean: scripts/gen_tier92_alternate_base_mathematics_lean.py
+bases_explored: [2, 3, 5, 8, 10, 12, 16, 20, 60]
+note: >
+  Tier 92 explores alternate mathematical bases (historical + FSOT trinary alignment) without
+  modifying FSOT canonical seeds (pi, e, phi, gamma). Compares carry density, zero-digit fraction
+  as absence-marker, and seed encoding complexity per base.

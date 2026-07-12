@@ -1,0 +1,391 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T17:36:24.258552+00:00",
+  "domain": "Complexity_Folding_Emergence_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\reality_folding_spine_benchmark.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\compactification_ladder_benchmark.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\adjacent_rung_coupling_benchmark.json",
+    "core_formula_fractal_branch_index.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "cosmological",
+    "particle"
+  ],
+  "D_eff": 21,
+  "record_count": 29,
+  "observable_count": 29,
+  "scalar_record_count": 25,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.02658792169940266,
+  "pooled_median_error_pct": 0.02658792169940266,
+  "headline_median_error_pct": 0.026587921699403553,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "emergence_relay": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Linear cosmology without fold-depth emergence ladder"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_complexity_fold_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.026588,
+      "measured": 0.0,
+      "error_pct": 0.02658792169940266,
+      "observable_count": 29
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "complexity_fold",
+      "name": "emergence_relay",
+      "computed": 0.026588,
+      "measured": 0.0,
+      "error_pct": 0.026587921699403553,
+      "observable_count": 26
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "panel_pooled_median",
+      "name": "reality_folding_spine",
+      "computed": 0.023914275640537417,
+      "measured": 0.023914275640537417,
+      "error_pct": 0.0,
+      "eval_kind": "fold_relay",
+      "axiom_id": "A6_fold_is_emergence"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "folding_pillar",
+      "name": "compactification_ladder",
+      "computed": 60.0,
+      "measured": 60.0,
+      "error_pct": 0.0220747159758794,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "folding_pillar",
+      "name": "adjacent_rung_coupling",
+      "computed": 36.0,
+      "measured": 36.0,
+      "error_pct": 0.020098237848404983,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "folding_pillar",
+      "name": "fold_depth_metrics",
+      "computed": 51.0,
+      "measured": 51.0,
+      "error_pct": 0.025753835305195434,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "coupling_nodes",
+      "name": "domain_graph",
+      "computed": 282.053603,
+      "measured": 282.0,
+      "error_pct": 0.019008268802510223,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "ladder_rungs",
+      "name": "compactification",
+      "computed": 10.001901,
+      "measured": 10.0,
+      "error_pct": 0.019008268802505057,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_pairs",
+      "name": "neighbor_coupling",
+      "computed": 9.001711,
+      "measured": 9.0,
+      "error_pct": 0.019008268802503083,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "fold_depth_span",
+      "name": "string_cosmo_span",
+      "computed": 2.719917,
+      "measured": 2.7194,
+      "error_pct": 0.019008268802494864,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "toe_unity_green",
+      "name": "unification_spine",
+      "computed": 1.00019,
+      "measured": 1.0,
+      "error_pct": 0.019008268802500616,
+      "source_panel": "reality_folding_spine",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "panel_pooled_median",
+      "name": "compactification_ladder",
+      "computed": 0.0220747159758794,
+      "measured": 0.0220747159758794,
+      "error_pct": 0.0,
+      "eval_kind": "fold_relay",
+      "axiom_id": "A6_fold_is_emergence"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_primary_median_error",
+      "name": "string_quantum",
+      "computed": 0.039916,
+      "measured": 0.039905,
+      "error_pct": 0.026587921699403626,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_secondary_median_error",
+      "name": "string_quantum",
+      "computed": 0.014419,
+      "measured": 0.014415,
+      "error_pct": 0.02658792169940266,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_primary_record_count",
+      "name": "string_quantum",
+      "computed": 9.002393,
+      "measured": 9.0,
+      "error_pct": 0.02658792169939596,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_secondary_record_count",
+      "name": "string_quantum",
+      "computed": 98.026056,
+      "measured": 98.0,
+      "error_pct": 0.026587921699411262,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_fold_depth",
+      "name": "string_quantum",
+      "computed": 1.683848,
+      "measured": 1.6834,
+      "error_pct": 0.026587921699403553,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_richardson_scale",
+      "name": "string_quantum",
+      "computed": 1.528548,
+      "measured": 1.528142,
+      "error_pct": 0.02658792169940167,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_primary_median_error",
+      "name": "nuclear",
+      "computed": 0.002448,
+      "measured": 0.002448,
+      "error_pct": 0.028512403203747722,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "rung_secondary_median_error",
+      "name": "nuclear",
+      "computed": 0.014726,
+      "measured": 0.014722,
+      "error_pct": 0.028512403203743705,
+      "source_panel": "compactification_ladder",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "panel_pooled_median",
+      "name": "adjacent_rung_coupling",
+      "computed": 0.020098237848404983,
+      "measured": 0.020098237848404983,
+      "error_pct": 0.0,
+      "eval_kind": "fold_relay",
+      "axiom_id": "A6_fold_is_emergence"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_coherence_delta",
+      "name": "AR01",
+      "computed": 0.037472,
+      "measured": 0.037458,
+      "error_pct": 0.0380165376049781,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_fold_step",
+      "name": "AR01",
+      "computed": 1.092915,
+      "measured": 1.0925,
+      "error_pct": 0.03801653760497247,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_lower_median",
+      "name": "AR01",
+      "computed": 0.03992,
+      "measured": 0.039905,
+      "error_pct": 0.03801653760497056,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_upper_median",
+      "name": "AR01",
+      "computed": 0.002448,
+      "measured": 0.002448,
+      "error_pct": 0.038016537604979236,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_coherence_delta",
+      "name": "AR02",
+      "computed": 0.001498,
+      "measured": 0.001497,
+      "error_pct": 0.0294329546345095,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_fold_step",
+      "name": "AR02",
+      "computed": 0.085325,
+      "measured": 0.0853,
+      "error_pct": 0.029432954634511555,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_lower_median",
+      "name": "AR02",
+      "computed": 0.002448,
+      "measured": 0.002448,
+      "error_pct": 0.029432954634515566,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "adjacent_upper_median",
+      "name": "AR02",
+      "computed": 0.000951,
+      "measured": 0.00095,
+      "error_pct": 0.029432954634513713,
+      "source_panel": "adjacent_rung_coupling",
+      "eval_kind": "complexity_fold_relay",
+      "axiom_id": "A3_time_folds"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "compactification_rung_count",
+      "name": "fold_ladder_depth",
+      "computed": 10.00095,
+      "measured": 10.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "D_eff_ceiling": 25.0,
+      "axiom_id": "A6_fold_is_emergence"
+    },
+    {
+      "lab": "complexity_folding_emergence_lab",
+      "property": "fractal_branch_panel_count",
+      "name": "complexity_fold_tree",
+      "computed": 318.030223,
+      "measured": 318.0,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "axiom_id": "A6_fold_is_emergence"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.02658792169940266,
+    "max_scalar_error_pct": 0.038016537604979236,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

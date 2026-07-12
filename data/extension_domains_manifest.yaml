@@ -4249,6 +4249,105 @@ extension_domains:
     lean_module: FSOT.Formal.ConsciousnessExpansionSpinePriors
     note: "Tier 90 consciousness expansion spine — microtubule + species + observer crosswalk"
 
+  Nothing_Perfection_Friction_Origin_Panel:
+    tier: 91
+    D_eff: 22
+    delta_psi: 1.15
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [cosmological, particle, consciousness]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier91_foundational_ontology.py
+    build_script: scripts/build_tier91_foundational_ontology_benchmarks.py
+    manifest: data/tier91_foundational_ontology_manifest.yaml
+    benchmark_data: data/nothing_perfection_friction_origin_panel_benchmark.json
+    lean_module: FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors
+    note: "Nothing-perfection friction origin — phase bleed outgas, not Big Bang singularity"
+
+  Zero_Boundary_Not_Entity_Panel:
+    tier: 91
+    D_eff: 18
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness]
+    formula_branch_override: term1.term1_base
+    ingest_script: scripts/ingest_tier91_foundational_ontology.py
+    build_script: scripts/build_tier91_foundational_ontology_benchmarks.py
+    manifest: data/tier91_foundational_ontology_manifest.yaml
+    benchmark_data: data/zero_boundary_not_entity_panel_benchmark.json
+    lean_module: FSOT.Formal.ZeroBoundaryNotEntityPanelPriors
+    note: "Zero as absence/infinity boundary — carry emergence, no zero fundamental seed"
+
+  Overflow_Carry_Emergence_Panel:
+    tier: 91
+    D_eff: 19
+    delta_psi: 1.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, consciousness, neural]
+    formula_branch_override: term1.growth_term
+    build_script: scripts/build_tier91_foundational_ontology_benchmarks.py
+    manifest: data/tier91_foundational_ontology_manifest.yaml
+    benchmark_data: data/overflow_carry_emergence_panel_benchmark.json
+    lean_module: FSOT.Formal.OverflowCarryEmergencePanelPriors
+    note: "Digit saturation carry → emergence (9+1=10); multi-base overflow analysis"
+
+  Complexity_Folding_Emergence_Panel:
+    tier: 91
+    D_eff: 21
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, cosmological, particle]
+    formula_branch_override: term1.quirkMod
+    build_script: scripts/build_tier91_foundational_ontology_benchmarks.py
+    manifest: data/tier91_foundational_ontology_manifest.yaml
+    benchmark_data: data/complexity_folding_emergence_panel_benchmark.json
+    lean_module: FSOT.Formal.ComplexityFoldingEmergencePanelPriors
+    note: "Complexity folding in on itself — compactification ladder + reality folding relay"
+
+  Foundational_Ontology_Spine:
+    tier: 91
+    D_eff: 22
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, cosmological, consciousness, particle]
+    build_script: scripts/build_tier91_foundational_ontology_benchmarks.py
+    manifest: data/tier91_foundational_ontology_manifest.yaml
+    benchmark_data: data/foundational_ontology_spine_benchmark.json
+    lean_module: FSOT.Formal.FoundationalOntologySpinePriors
+    note: "Tier 91 foundational ontology spine — friction, zero, overflow, folding"
+
+  Alternate_Base_Mathematics_Explorer_Panel:
+    tier: 92
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 1
+    observed: false
+    maps_to_lean: [mathematical, ai, particle]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier92_alternate_base_mathematics.py
+    build_script: scripts/build_tier92_alternate_base_mathematics_benchmarks.py
+    manifest: data/tier92_alternate_base_mathematics_manifest.yaml
+    benchmark_data: data/alternate_base_mathematics_explorer_panel_benchmark.json
+    lean_module: FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors
+    note: "Exploratory base 2/3/5/8/10/12/16/20/60 — does not modify FSOT seeds"
+
+  Alternate_Base_Mathematics_Spine:
+    tier: 92
+    D_eff: 18
+    delta_psi: 0.9
+    recent_hits: 1
+    observed: false
+    maps_to_lean: [mathematical, ai, consciousness]
+    build_script: scripts/build_tier92_alternate_base_mathematics_benchmarks.py
+    manifest: data/tier92_alternate_base_mathematics_manifest.yaml
+    benchmark_data: data/alternate_base_mathematics_spine_benchmark.json
+    lean_module: FSOT.Formal.AlternateBaseMathematicsSpinePriors
+    note: "Tier 92 alternate base mathematics explorer spine"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

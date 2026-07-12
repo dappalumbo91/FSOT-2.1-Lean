@@ -1,8 +1,8 @@
-generated_at: '2026-07-12T17:05:58.347292+00:00'
+generated_at: '2026-07-12T17:36:32.588930+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 318
-  total_scientific_domains_covered: 354
+  extension_domains: 325
+  total_scientific_domains_covered: 361
   total_empirical_records: 306680
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -14,11 +14,11 @@ summary:
     unverified: 0
   tier_distribution:
     A_strong: 113
-    B_verified: 241
+    B_verified: 248
     C_thin: 0
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 451
+  lean_formal_modules: 458
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -2306,6 +2306,48 @@ extension_domains:
   median_error_pct: 0.008488
   coverage_tier: B_verified
   lean_module: FSOT.Formal.ConsciousnessExpansionSpinePriors
+- domain: Nothing_Perfection_Friction_Origin_Panel
+  tier: 91
+  record_count: 24
+  median_error_pct: 0.008488
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors
+- domain: Zero_Boundary_Not_Entity_Panel
+  tier: 91
+  record_count: 24
+  median_error_pct: 0.020055
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ZeroBoundaryNotEntityPanelPriors
+- domain: Overflow_Carry_Emergence_Panel
+  tier: 91
+  record_count: 29
+  median_error_pct: 0.009504
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.OverflowCarryEmergencePanelPriors
+- domain: Complexity_Folding_Emergence_Panel
+  tier: 91
+  record_count: 29
+  median_error_pct: 0.02658792169940266
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ComplexityFoldingEmergencePanelPriors
+- domain: Foundational_Ontology_Spine
+  tier: 91
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FoundationalOntologySpinePriors
+- domain: Alternate_Base_Mathematics_Explorer_Panel
+  tier: 92
+  record_count: 56
+  median_error_pct: 0.009504
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors
+- domain: Alternate_Base_Mathematics_Spine
+  tier: 92
+  record_count: 24
+  median_error_pct: 0.004184779870129773
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AlternateBaseMathematicsSpinePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

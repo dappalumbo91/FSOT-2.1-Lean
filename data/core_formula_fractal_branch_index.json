@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T17:05:56.861043+00:00",
+  "generated_at": "2026-07-12T17:36:30.976164+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 318,
+  "extension_panels": 325,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -4134,6 +4134,98 @@
       ],
       "D_eff": 16,
       "benchmark_data": "data/observer_effect_cross_species_panel_benchmark.json"
+    },
+    {
+      "panel": "Complexity_Folding_Emergence_Panel",
+      "tier": 91,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.8,
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "particle"
+      ],
+      "D_eff": 21,
+      "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json"
+    },
+    {
+      "panel": "Foundational_Ontology_Spine",
+      "tier": 91,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.15,
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "consciousness",
+        "particle"
+      ],
+      "D_eff": 22,
+      "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+    },
+    {
+      "panel": "Nothing_Perfection_Friction_Origin_Panel",
+      "tier": 91,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.8,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness"
+      ],
+      "D_eff": 22,
+      "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
+    },
+    {
+      "panel": "Overflow_Carry_Emergence_Panel",
+      "tier": 91,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 25.8,
+      "maps_to_lean": [
+        "mathematical",
+        "consciousness",
+        "neural"
+      ],
+      "D_eff": 19,
+      "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json"
+    },
+    {
+      "panel": "Zero_Boundary_Not_Entity_Panel",
+      "tier": 91,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 25.8,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json"
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+      "tier": 92,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 26.05,
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "particle"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
+    },
+    {
+      "panel": "Alternate_Base_Mathematics_Spine",
+      "tier": 92,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 26.05,
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -4890,6 +4982,32 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+        "tier": 92,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "particle"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Spine",
+        "tier": 92,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json"
       }
     ],
     "astronomical": [
@@ -8295,6 +8413,72 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/observer_effect_cross_species_panel_benchmark.json"
+      },
+      {
+        "panel": "Foundational_Ontology_Spine",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.15,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "consciousness",
+          "particle"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+      },
+      {
+        "panel": "Nothing_Perfection_Friction_Origin_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
+      },
+      {
+        "panel": "Overflow_Carry_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json"
+      },
+      {
+        "panel": "Zero_Boundary_Not_Entity_Panel",
+        "tier": 91,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Spine",
+        "tier": 92,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json"
       }
     ],
     "cosmological": [
@@ -8762,6 +8946,46 @@
         ],
         "D_eff": 29,
         "benchmark_data": "data/warp_bh_wh_portal_benchmark.json"
+      },
+      {
+        "panel": "Complexity_Folding_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "particle"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json"
+      },
+      {
+        "panel": "Foundational_Ontology_Spine",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.15,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "consciousness",
+          "particle"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+      },
+      {
+        "panel": "Nothing_Perfection_Friction_Origin_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
       }
     ],
     "ecological": [
@@ -13315,6 +13539,85 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+      },
+      {
+        "panel": "Complexity_Folding_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "particle"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json"
+      },
+      {
+        "panel": "Foundational_Ontology_Spine",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.15,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "consciousness",
+          "particle"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+      },
+      {
+        "panel": "Overflow_Carry_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json"
+      },
+      {
+        "panel": "Zero_Boundary_Not_Entity_Panel",
+        "tier": 91,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+        "tier": 92,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "particle"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Spine",
+        "tier": 92,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json"
       }
     ],
     "medical": [
@@ -14697,6 +15000,19 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/observer_effect_cross_species_panel_benchmark.json"
+      },
+      {
+        "panel": "Overflow_Carry_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json"
       }
     ],
     "nuclear": [
@@ -16627,6 +16943,72 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json"
+      },
+      {
+        "panel": "Complexity_Folding_Emergence_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "particle"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json"
+      },
+      {
+        "panel": "Foundational_Ontology_Spine",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.15,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "consciousness",
+          "particle"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+      },
+      {
+        "panel": "Nothing_Perfection_Friction_Origin_Panel",
+        "tier": 91,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
+      },
+      {
+        "panel": "Zero_Boundary_Not_Entity_Panel",
+        "tier": 91,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json"
+      },
+      {
+        "panel": "Alternate_Base_Mathematics_Explorer_Panel",
+        "tier": 92,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.05,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "particle"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
       }
     ],
     "perceived": [

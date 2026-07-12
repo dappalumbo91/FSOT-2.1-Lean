@@ -1,0 +1,927 @@
+{
+  "source": "alternate_base_mathematics_explorer",
+  "explore_note": "Comparative base analysis only \u2014 FSOT canonical seeds remain pi,e,phi,gamma. Explores whether non-decimal bases reduce zero-as-absence-marker usage.",
+  "bases_analyzed": 9,
+  "ranked_bases": [
+    3,
+    2,
+    5,
+    8,
+    10,
+    12,
+    16,
+    20,
+    60
+  ],
+  "best_fsot_alignment_base": 3,
+  "analyses": [
+    {
+      "base": 2,
+      "saturation_digit": 1,
+      "first_overflow_decimal": 2,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.501002,
+      "fsot_trinary_alignment": 0.741667,
+      "seed_digit_total": 54,
+      "mean_zero_digit_fraction": 0.445055,
+      "absence_marker_score": 0.554945,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "digit_count": 14,
+          "zero_digit_fraction": 0.571429
+        },
+        "e": {
+          "digits": [
+            1,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "digit_count": 14,
+          "zero_digit_fraction": 0.285714
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.384615
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.538462
+        }
+      }
+    },
+    {
+      "base": 3,
+      "saturation_digit": 2,
+      "first_overflow_decimal": 3,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.332665,
+      "fsot_trinary_alignment": 6.5,
+      "seed_digit_total": 53,
+      "mean_zero_digit_fraction": 0.282967,
+      "absence_marker_score": 0.717033,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "digit_count": 14,
+          "zero_digit_fraction": 0.285714
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.461538
+        }
+      }
+    },
+    {
+      "base": 5,
+      "saturation_digit": 4,
+      "first_overflow_decimal": 5,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.200401,
+      "fsot_trinary_alignment": 0.407308,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.153846,
+      "absence_marker_score": 0.846154,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            0,
+            3,
+            2,
+            3,
+            2,
+            2,
+            1,
+            4,
+            3,
+            0,
+            3,
+            3
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            3,
+            2,
+            4,
+            3,
+            4,
+            3,
+            0,
+            3,
+            4,
+            0,
+            4,
+            4
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            3,
+            0,
+            2,
+            1,
+            1,
+            1,
+            3,
+            4,
+            2,
+            3,
+            0,
+            4
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            2,
+            4,
+            2,
+            0,
+            3,
+            3,
+            4,
+            4,
+            4,
+            1,
+            3,
+            3
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      }
+    },
+    {
+      "base": 8,
+      "saturation_digit": 7,
+      "first_overflow_decimal": 8,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.124248,
+      "fsot_trinary_alignment": 0.18761,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.134615,
+      "absence_marker_score": 0.865385,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            1,
+            0,
+            3,
+            7,
+            5,
+            5,
+            2,
+            4,
+            2,
+            1,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            5,
+            5,
+            7,
+            6,
+            0,
+            5,
+            2,
+            1,
+            3,
+            0,
+            5,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            4,
+            7,
+            4,
+            3,
+            3,
+            5,
+            7,
+            1,
+            5,
+            6,
+            2,
+            7
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            4,
+            4,
+            7,
+            4,
+            2,
+            1,
+            4,
+            7,
+            7,
+            0,
+            6,
+            7
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      }
+    },
+    {
+      "base": 10,
+      "saturation_digit": 9,
+      "first_overflow_decimal": 10,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.1002,
+      "fsot_trinary_alignment": 0.13741,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.057692,
+      "absence_marker_score": 0.942308,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            4,
+            1,
+            5,
+            9,
+            2,
+            6,
+            5,
+            3,
+            5,
+            8,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            7,
+            1,
+            8,
+            2,
+            8,
+            1,
+            8,
+            2,
+            8,
+            4,
+            5,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            6,
+            1,
+            8,
+            0,
+            3,
+            3,
+            9,
+            8,
+            8,
+            7,
+            4,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            5,
+            7,
+            7,
+            2,
+            1,
+            5,
+            6,
+            6,
+            4,
+            9,
+            0,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      }
+    },
+    {
+      "base": 12,
+      "saturation_digit": 11,
+      "first_overflow_decimal": 12,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.082164,
+      "fsot_trinary_alignment": 0.108234,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.096154,
+      "absence_marker_score": 0.903846,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            8,
+            4,
+            8,
+            0,
+            9,
+            4,
+            9,
+            3,
+            11,
+            9,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            8,
+            7,
+            5,
+            2,
+            3,
+            6,
+            0,
+            6,
+            9,
+            8,
+            2,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            7,
+            4,
+            11,
+            11,
+            6,
+            7,
+            7,
+            2,
+            8,
+            0,
+            2,
+            10
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            6,
+            11,
+            1,
+            5,
+            1,
+            8,
+            8,
+            10,
+            6,
+            7,
+            6,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      }
+    },
+    {
+      "base": 16,
+      "saturation_digit": 15,
+      "first_overflow_decimal": 16,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.062124,
+      "fsot_trinary_alignment": 0.075829,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.038462,
+      "absence_marker_score": 0.961538,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            2,
+            4,
+            3,
+            15,
+            6,
+            10,
+            8,
+            8,
+            8,
+            5,
+            10,
+            3
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            11,
+            7,
+            14,
+            1,
+            5,
+            1,
+            6,
+            2,
+            8,
+            10,
+            14,
+            13
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            9,
+            14,
+            3,
+            7,
+            7,
+            9,
+            11,
+            9,
+            7,
+            15,
+            4,
+            10
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            9,
+            3,
+            12,
+            4,
+            6,
+            7,
+            14,
+            3,
+            7,
+            13,
+            11,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      }
+    },
+    {
+      "base": 20,
+      "saturation_digit": 19,
+      "first_overflow_decimal": 20,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.0501,
+      "fsot_trinary_alignment": 0.058295,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.057692,
+      "absence_marker_score": 0.942308,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            2,
+            16,
+            12,
+            14,
+            16,
+            9,
+            16,
+            11,
+            17,
+            19,
+            9,
+            12
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            14,
+            7,
+            6,
+            5,
+            1,
+            17,
+            0,
+            8,
+            11,
+            0,
+            12,
+            8
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            12,
+            7,
+            4,
+            5,
+            8,
+            15,
+            5,
+            11,
+            19,
+            18,
+            18,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            11,
+            10,
+            17,
+            14,
+            10,
+            2,
+            11,
+            1,
+            9,
+            11,
+            13,
+            18
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        }
+      }
+    },
+    {
+      "base": 60,
+      "saturation_digit": 59,
+      "first_overflow_decimal": 60,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.016032,
+      "fsot_trinary_alignment": 0.017527,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.038462,
+      "absence_marker_score": 0.961538,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            8,
+            29,
+            44,
+            0,
+            47,
+            25,
+            53,
+            7,
+            23,
+            43,
+            33,
+            18
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            43,
+            5,
+            48,
+            52,
+            29,
+            48,
+            35,
+            6,
+            45,
+            10,
+            25,
+            17
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            37,
+            4,
+            55,
+            20,
+            29,
+            39,
+            6,
+            54,
+            20,
+            51,
+            34,
+            34
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            34,
+            37,
+            58,
+            35,
+            1,
+            1,
+            38,
+            45,
+            17,
+            37,
+            51,
+            11
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        }
+      }
+    }
+  ],
+  "historical_bases": [
+    {
+      "base": 2,
+      "culture": "binary_computing"
+    },
+    {
+      "base": 3,
+      "culture": "fsot_trinary_native",
+      "note": "27 Metatron opcodes = 3^3"
+    },
+    {
+      "base": 5,
+      "culture": "historical_variants"
+    },
+    {
+      "base": 8,
+      "culture": "octal_computing"
+    },
+    {
+      "base": 10,
+      "culture": "decimal_modern",
+      "saturation_digit": 9
+    },
+    {
+      "base": 12,
+      "culture": "dozenal_proposals"
+    },
+    {
+      "base": 16,
+      "culture": "hexadecimal_computing"
+    },
+    {
+      "base": 20,
+      "culture": "mayan_vigesimal"
+    },
+    {
+      "base": 60,
+      "culture": "babylonian_sexagesimal"
+    }
+  ],
+  "fetched_at": "2026-07-12T17:26:41.581249+00:00"
+}
