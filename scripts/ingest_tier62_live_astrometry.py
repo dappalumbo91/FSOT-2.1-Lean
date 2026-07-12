@@ -135,8 +135,18 @@ def main() -> int:
             print(f"Gaia fetch failed ({exc}); bundled fallback")
             gaia = load_gaia_bundled()
             gaia_source = "bundled_fallback"
-        wds = load_wds_bundled()
         wds_source = "WDS_bundled_vizier_roadmap"
+        wds = load_wds_bundled()
+        try:
+            from live_api_limits import wds_vizier_top_limit  # noqa: WPS433
+            from vizier_wds_fetch_lib import fetch_wds_systems  # noqa: WPS433
+
+            live_wds, src_tag = fetch_wds_systems(top=wds_vizier_top_limit())
+            if live_wds:
+                wds = live_wds
+                wds_source = src_tag
+        except Exception as exc:
+            print(f"VizieR WDS fetch failed ({exc}); bundled fallback ({len(wds)} systems)")
     write_cache(GAIA_CACHE, gaia_source, gaia)
     write_cache(WDS_CACHE, wds_source, wds)
     return 0

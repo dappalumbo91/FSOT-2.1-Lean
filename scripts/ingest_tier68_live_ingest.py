@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import ssl
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -20,18 +19,11 @@ PUBCHEM_BUNDLED = VENDOR / "public_data" / "pubchem" / "pubchem_summary.json"
 OPENNEURO_BUNDLED = VENDOR / "public_data" / "consciousness" / "openneuro_summary.json"
 WDS_BUNDLED = VENDOR / "stellar_structures" / "wds_multiplicity_expanded.json"
 
-VIZIER_TAP = "https://tapvizier.cds.unistra.fr/TAPVizierTap/sync"
-VIZIER_VOTABLE = "https://cdsarc.cds.unistra.fr/viz-bin/votable"
-
-
 def _wds_adql() -> str:
     from live_api_limits import wds_vizier_top_limit  # noqa: WPS433
+    from vizier_wds_fetch_lib import wds_adql  # noqa: WPS433
 
-    top = wds_vizier_top_limit()
-    return (
-        f"SELECT TOP {top} WDS, RAdeg, DEdeg, Sep, mag1, mag2, comp "
-        "FROM \"II/213/wds\" WHERE Sep IS NOT NULL ORDER BY Sep"
-    )
+    return wds_adql(wds_vizier_top_limit())
 
 
 def cache_root() -> Path:
@@ -86,8 +78,8 @@ def ingest_materials_project() -> dict:
             if live:
                 materials = live
                 source = "materials_project_api_live"
-        except Exception:
-            pass
+        except Exception as exc:
+            print(f"Materials Project API failed ({exc}); using bundled+expansion ({len(materials)} materials)")
     doc = {"ingested_at": datetime.now(timezone.utc).isoformat(), "source": source, "materials": materials}
     _write(out_path, doc)
     return doc
@@ -135,85 +127,28 @@ def ingest_openneuro_full() -> dict:
     return doc
 
 
-def _vizier_ssl_context() -> ssl.SSLContext:
-    ctx = ssl.create_default_context()
-    try:
-        import certifi  # noqa: WPS433
-
-        ctx.load_verify_locations(certifi.where())
-    except Exception:
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-    return ctx
-
-
-def _urlopen_json(url: str, *, timeout: int = 120) -> object:
-    req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier68"})
-    ctx = _vizier_ssl_context()
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-        return json.loads(resp.read().decode("utf-8"))
-
-
-def _parse_vizier_rows(payload: object) -> list[dict]:
-    if isinstance(payload, list):
-        return [r for r in payload if isinstance(r, dict)]
-    if isinstance(payload, dict):
-        for key in ("data", "rows", "result"):
-            data = payload.get(key)
-            if isinstance(data, list):
-                return [r for r in data if isinstance(r, dict)]
-    return []
-
-
-def _fetch_vizier_tap(adql: str) -> list[dict]:
-    errors: list[str] = []
-    tap_params = urllib.parse.urlencode(
-        {"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "json", "QUERY": adql}
-    )
-    for url in (
-        f"{VIZIER_TAP}?{tap_params}",
-        f"{VIZIER_VOTABLE}?{urllib.parse.urlencode({'-source': 'II/213/wds', '-out': 'JSON', '-query': adql})}",
-    ):
-        try:
-            rows = _parse_vizier_rows(_urlopen_json(url))
-            if rows:
-                return rows
-        except Exception as exc:
-            errors.append(f"{url}: {exc}")
-    if errors:
-        raise RuntimeError("; ".join(errors[-2:]))
-    return []
-
-
 def ingest_vizier_wds_tap() -> dict:
     out_path = cache_root() / "vizier_wds_tap_live_cache.json"
     bundled = json.loads(WDS_BUNDLED.read_text(encoding="utf-8")) if WDS_BUNDLED.exists() else {"systems": []}
     systems = list(bundled.get("systems") or [])
     source = "wds_bundled"
     try:
-        rows = _fetch_vizier_tap(_wds_adql())
-        live = []
         from live_api_limits import wds_vizier_top_limit  # noqa: WPS433
+        from vizier_wds_fetch_lib import fetch_wds_systems  # noqa: WPS433
 
-        for row in rows[: wds_vizier_top_limit()]:
-            sep = row.get("Sep") or row.get("sep") or row.get("SEPARATION")
-            live.append(
-                {
-                    "id": row.get("WDS") or row.get("wds"),
-                    "separation_arcsec": float(sep) if sep is not None else None,
-                    "mag1": row.get("mag1") or row.get("MAG1"),
-                    "mag2": row.get("mag2") or row.get("MAG2"),
-                    "multiplicity": row.get("comp") or row.get("COMP"),
-                    "source": "vizier_wds_tap_live",
-                }
-            )
-        live = [r for r in live if r.get("id")]
+        live, src_tag = fetch_wds_systems(top=wds_vizier_top_limit())
         if live:
             systems = live
-            source = "vizier_wds_tap_live"
-    except Exception:
-        pass
-    doc = {"ingested_at": datetime.now(timezone.utc).isoformat(), "source": source, "systems": systems, "objects": systems}
+            source = src_tag
+    except Exception as exc:
+        print(f"VizieR WDS TAP failed ({exc}); using bundled ({len(systems)} systems)")
+    doc = {
+        "ingested_at": datetime.now(timezone.utc).isoformat(),
+        "source": source,
+        "system_count": len(systems),
+        "systems": systems,
+        "objects": systems,
+    }
     _write(out_path, doc)
     return doc
 

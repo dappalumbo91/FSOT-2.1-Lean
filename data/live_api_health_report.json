@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-07-12T12:39:48.889713+00:00",
+  "mega_deep": true,
+  "channels": [
+    {
+      "channel": "gbif",
+      "status": "ok",
+      "detail": "count=3736048101"
+    },
+    {
+      "channel": "gwosc",
+      "status": "ok",
+      "detail": "catalogs=18"
+    },
+    {
+      "channel": "simbad_tap",
+      "status": "ok",
+      "detail": "rows=3"
+    },
+    {
+      "channel": "gaia_dr3_tap",
+      "status": "ok",
+      "detail": "rows=3"
+    },
+    {
+      "channel": "vizier_wds",
+      "status": "fail",
+      "error_type": "RuntimeError",
+      "error": "vizier_tap_get: HTTP Error 503: Service Unavailable; vizier_tap_post: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "channel": "materials_project",
+      "status": "ok",
+      "detail": "skipped_no_MP_API_KEY (bundled+expansion panel used)"
+    },
+    {
+      "channel": "openneuro_graphql",
+      "status": "ok",
+      "detail": "datasets=12"
+    },
+    {
+      "channel": "pubchem_pug",
+      "status": "ok",
+      "detail": "cid=2244 ok"
+    }
+  ],
+  "fail_count": 1,
+  "ok_count": 7
+}

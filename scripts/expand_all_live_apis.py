@@ -59,6 +59,8 @@ def main() -> int:
 
     steps.extend(
         [
+            ("Live API health probe", [py, "scripts/live_api_health_check.py"]),
+            ("WDS bundled panel expand", [py, "scripts/expand_wds_bundled_panel.py"]),
             ("Tier 38 public APIs", [py, "scripts/ingest_tier38_public_data.py", "--deep"]),
             ("Tier 58 GWOSC", [py, "scripts/ingest_tier58_live_catalogs.py"]),
             ("Tier 60 SIMBAD", [py, "scripts/ingest_tier60_live_astrometry.py", "--deep"]),
@@ -85,9 +87,13 @@ def main() -> int:
         steps.append(("Cross-proof verification", [py, "scripts/run_cross_proof_verification.py"]))
 
     failed: list[str] = []
+    non_fatal = {"Live API health probe"}
     for label, cmd in steps:
-        if _run(cmd, label=label) != 0:
+        rc = _run(cmd, label=label)
+        if rc != 0 and label not in non_fatal:
             failed.append(label)
+        elif rc != 0:
+            print(f"Warning (non-fatal): {label}", file=sys.stderr)
 
     if failed:
         print(f"\nPipeline completed with failures: {failed}", file=sys.stderr)
