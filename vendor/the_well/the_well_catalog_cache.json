@@ -1,0 +1,2413 @@
+{
+  "source": "polymathic_ai_the_well_hf_stats",
+  "collection": "The Well \u2014 15TB physics simulations (outcomes verification only)",
+  "paper": "https://arxiv.org/abs/2412.00568",
+  "github": "https://github.com/PolymathicAI/the_well",
+  "verification_mode": "aggregate_stats_yaml_not_full_tensors",
+  "external_cache_root": "G:\\FSOT-PublicData\\the_well",
+  "dataset_count": 17,
+  "catalog": [
+    {
+      "dataset": "acoustic_scattering_discontinuous",
+      "used_storage_bytes": 162235893285,
+      "downloads": 211,
+      "likes": 1,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Acoustics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 3.9587
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.10382
+        },
+        {
+          "property": "mean_speed_of_sound",
+          "measured": 1.0843
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0047369
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.0057331
+        },
+        {
+          "property": "rms_density",
+          "measured": 4.2603
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.33302
+        },
+        {
+          "property": "rms_speed_of_sound",
+          "measured": 1.1181
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.060155
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.059884
+        },
+        {
+          "property": "std_density",
+          "measured": 1.5746
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.31643
+        },
+        {
+          "property": "std_speed_of_sound",
+          "measured": 0.27287
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.059968
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.059609
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -0.00080499
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 7.2094e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 7.906e-05
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.10198
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.020739
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.020864
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.10197
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.020739
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.020864
+        }
+      ]
+    },
+    {
+      "dataset": "acoustic_scattering_inclusions",
+      "used_storage_bytes": 308096918489,
+      "downloads": 10996,
+      "likes": 0,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Acoustics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 262.54
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.099185
+        },
+        {
+          "property": "mean_speed_of_sound",
+          "measured": 1.011
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0034241
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.0033008
+        },
+        {
+          "property": "rms_density",
+          "measured": 1716.9
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.30833
+        },
+        {
+          "property": "rms_speed_of_sound",
+          "measured": 1.0888
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.053853
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.054035
+        },
+        {
+          "property": "std_density",
+          "measured": 1696.7
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.29194
+        },
+        {
+          "property": "std_speed_of_sound",
+          "measured": 0.40424
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.053744
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.053934
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -0.00055849
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 5.3296e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 5.4172e-05
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.090357
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.018046
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.018004
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.090355
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.018046
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.018004
+        }
+      ]
+    },
+    {
+      "dataset": "acoustic_scattering_maze",
+      "used_storage_bytes": 319619064459,
+      "downloads": 261,
+      "likes": 0,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Acoustics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 575390.0
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.011643
+        },
+        {
+          "property": "mean_speed_of_sound",
+          "measured": 0.49145
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 7.812e-05
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.00013354
+        },
+        {
+          "property": "rms_density",
+          "measured": 758540.0
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.1249
+        },
+        {
+          "property": "rms_speed_of_sound",
+          "measured": 0.75243
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.024986
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.025002
+        },
+        {
+          "property": "std_density",
+          "measured": 494280.0
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.12435
+        },
+        {
+          "property": "std_speed_of_sound",
+          "measured": 0.56976
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.024985
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.025001
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -1.043e-05
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 5.4225e-07
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 8.6719e-07
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.10308
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.020988
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.020781
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.10308
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.020988
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.020781
+        }
+      ]
+    },
+    {
+      "dataset": "active_matter",
+      "used_storage_bytes": 55816734516,
+      "downloads": 809,
+      "likes": 4,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Biology",
+      "stats_scalar_count": 66,
+      "stats_scalars": [
+        {
+          "property": "mean_D_0_0",
+          "measured": 0.50184
+        },
+        {
+          "property": "mean_D_0_1",
+          "measured": -0.006222
+        },
+        {
+          "property": "mean_D_1_0",
+          "measured": -0.006222
+        },
+        {
+          "property": "mean_D_1_1",
+          "measured": 0.49816
+        },
+        {
+          "property": "mean_E_0_0",
+          "measured": 4.6094e-13
+        },
+        {
+          "property": "mean_E_0_1",
+          "measured": 1.6762e-13
+        },
+        {
+          "property": "mean_E_1_0",
+          "measured": 1.6762e-13
+        },
+        {
+          "property": "mean_E_1_1",
+          "measured": -4.6094e-13
+        },
+        {
+          "property": "mean_concentration",
+          "measured": 1.0
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": -1.384e-13
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 1.6432e-13
+        },
+        {
+          "property": "rms_D_0_0",
+          "measured": 0.59526
+        },
+        {
+          "property": "rms_D_0_1",
+          "measured": 0.33111
+        },
+        {
+          "property": "rms_D_1_0",
+          "measured": 0.33111
+        },
+        {
+          "property": "rms_D_1_1",
+          "measured": 0.59218
+        },
+        {
+          "property": "rms_E_0_0",
+          "measured": 0.4073
+        },
+        {
+          "property": "rms_E_0_1",
+          "measured": 0.43216
+        },
+        {
+          "property": "rms_E_1_0",
+          "measured": 0.43216
+        },
+        {
+          "property": "rms_E_1_1",
+          "measured": 0.4073
+        },
+        {
+          "property": "rms_concentration",
+          "measured": 1.0
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.57718
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.56706
+        },
+        {
+          "property": "std_D_0_0",
+          "measured": 0.32013
+        },
+        {
+          "property": "std_D_0_1",
+          "measured": 0.33105
+        },
+        {
+          "property": "std_D_1_0",
+          "measured": 0.33105
+        },
+        {
+          "property": "std_D_1_1",
+          "measured": 0.32018
+        },
+        {
+          "property": "std_E_0_0",
+          "measured": 0.4073
+        },
+        {
+          "property": "std_E_0_1",
+          "measured": 0.43216
+        },
+        {
+          "property": "std_E_1_0",
+          "measured": 0.43216
+        },
+        {
+          "property": "std_E_1_1",
+          "measured": 0.4073
+        },
+        {
+          "property": "std_concentration",
+          "measured": 0.0029541
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.57718
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.56706
+        },
+        {
+          "property": "mean_delta_D_0_0",
+          "measured": -3.8141e-05
+        },
+        {
+          "property": "mean_delta_D_0_1",
+          "measured": -5.1451e-05
+        },
+        {
+          "property": "mean_delta_D_1_0",
+          "measured": -5.1451e-05
+        },
+        {
+          "property": "mean_delta_D_1_1",
+          "measured": 3.8141e-05
+        },
+        {
+          "property": "mean_delta_E_0_0",
+          "measured": 2.7144e-14
+        },
+        {
+          "property": "mean_delta_E_0_1",
+          "measured": 2.0984e-14
+        },
+        {
+          "property": "mean_delta_E_1_0",
+          "measured": 2.0984e-14
+        },
+        {
+          "property": "mean_delta_E_1_1",
+          "measured": -2.7144e-14
+        },
+        {
+          "property": "mean_delta_concentration",
+          "measured": 1.0028e-12
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 7.2876e-14
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 6.4934e-14
+        },
+        {
+          "property": "rms_delta_D_0_0",
+          "measured": 0.14943
+        },
+        {
+          "property": "rms_delta_D_0_1",
+          "measured": 0.14891
+        },
+        {
+          "property": "rms_delta_D_1_0",
+          "measured": 0.14891
+        },
+        {
+          "property": "rms_delta_D_1_1",
+          "measured": 0.14944
+        },
+        {
+          "property": "rms_delta_E_0_0",
+          "measured": 0.24759
+        },
+        {
+          "property": "rms_delta_E_0_1",
+          "measured": 0.25014
+        },
+        {
+          "property": "rms_delta_E_1_0",
+          "measured": 0.25014
+        },
+        {
+          "property": "rms_delta_E_1_1",
+          "measured": 0.24759
+        },
+        {
+          "property": "rms_delta_concentration",
+          "measured": 0.00082259
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.19117
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.19125
+        },
+        {
+          "property": "std_delta_D_0_0",
+          "measured": 0.14943
+        },
+        {
+          "property": "std_delta_D_0_1",
+          "measured": 0.14891
+        },
+        {
+          "property": "std_delta_D_1_0",
+          "measured": 0.14891
+        },
+        {
+          "property": "std_delta_D_1_1",
+          "measured": 0.14944
+        },
+        {
+          "property": "std_delta_E_0_0",
+          "measured": 0.24759
+        },
+        {
+          "property": "std_delta_E_0_1",
+          "measured": 0.25014
+        },
+        {
+          "property": "std_delta_E_1_0",
+          "measured": 0.25014
+        },
+        {
+          "property": "std_delta_E_1_1",
+          "measured": 0.24759
+        },
+        {
+          "property": "std_delta_concentration",
+          "measured": 0.00082259
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.19117
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.19125
+        }
+      ]
+    },
+    {
+      "dataset": "convective_envelope_rsg",
+      "used_storage_bytes": 584344476857,
+      "downloads": 93,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Astrophysics",
+      "stats_scalar_count": 36,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 0.088655
+        },
+        {
+          "property": "mean_energy",
+          "measured": 0.12879
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.068504
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": -0.42748
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -0.0088583
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": -7.6633e-05
+        },
+        {
+          "property": "rms_density",
+          "measured": 0.29402
+        },
+        {
+          "property": "rms_energy",
+          "measured": 0.37673
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.19324
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.69312
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.15688
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 0.14817
+        },
+        {
+          "property": "std_density",
+          "measured": 0.28033
+        },
+        {
+          "property": "std_energy",
+          "measured": 0.35403
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.18069
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.5456
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.15663
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 0.14817
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": -1.7359e-05
+        },
+        {
+          "property": "mean_delta_energy",
+          "measured": -5.3165e-05
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -2.1435e-05
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -0.00021341
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -5.1328e-06
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": 8.2137e-07
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 0.0055052
+        },
+        {
+          "property": "rms_delta_energy",
+          "measured": 0.0073686
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.0024397
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.030877
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.016769
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 0.016681
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 0.0055051
+        },
+        {
+          "property": "std_delta_energy",
+          "measured": 0.0073684
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.0024396
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.030876
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.016769
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 0.016681
+        }
+      ]
+    },
+    {
+      "dataset": "gray_scott_reaction_diffusion",
+      "used_storage_bytes": 157991933482,
+      "downloads": 778,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Biology",
+      "stats_scalar_count": 12,
+      "stats_scalars": [
+        {
+          "property": "mean_A",
+          "measured": 0.72923
+        },
+        {
+          "property": "mean_B",
+          "measured": 0.096587
+        },
+        {
+          "property": "rms_A",
+          "measured": 0.76767
+        },
+        {
+          "property": "rms_B",
+          "measured": 0.15691
+        },
+        {
+          "property": "std_A",
+          "measured": 0.23989
+        },
+        {
+          "property": "std_B",
+          "measured": 0.12366
+        },
+        {
+          "property": "mean_delta_A",
+          "measured": -0.00020054
+        },
+        {
+          "property": "mean_delta_B",
+          "measured": 3.19e-05
+        },
+        {
+          "property": "rms_delta_A",
+          "measured": 0.018492
+        },
+        {
+          "property": "rms_delta_B",
+          "measured": 0.01128
+        },
+        {
+          "property": "std_delta_A",
+          "measured": 0.018491
+        },
+        {
+          "property": "std_delta_B",
+          "measured": 0.01128
+        }
+      ]
+    },
+    {
+      "dataset": "helmholtz_staircase",
+      "used_storage_bytes": 54762032055,
+      "downloads": 205,
+      "likes": 0,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Acoustics",
+      "stats_scalar_count": 15,
+      "stats_scalars": [
+        {
+          "property": "mean_mask",
+          "measured": 0.064869
+        },
+        {
+          "property": "mean_pressure_im",
+          "measured": 0.0010585
+        },
+        {
+          "property": "mean_pressure_re",
+          "measured": 7.4248e-05
+        },
+        {
+          "property": "rms_mask",
+          "measured": 0.25469
+        },
+        {
+          "property": "rms_pressure_im",
+          "measured": 0.19992
+        },
+        {
+          "property": "rms_pressure_re",
+          "measured": 0.19963
+        },
+        {
+          "property": "std_mask",
+          "measured": 0.24629
+        },
+        {
+          "property": "std_pressure_im",
+          "measured": 0.19992
+        },
+        {
+          "property": "std_pressure_re",
+          "measured": 0.19963
+        },
+        {
+          "property": "mean_delta_pressure_im",
+          "measured": 2.8587e-17
+        },
+        {
+          "property": "mean_delta_pressure_re",
+          "measured": 5.8285e-18
+        },
+        {
+          "property": "rms_delta_pressure_im",
+          "measured": 0.025599
+        },
+        {
+          "property": "rms_delta_pressure_re",
+          "measured": 0.025599
+        },
+        {
+          "property": "std_delta_pressure_im",
+          "measured": 0.025599
+        },
+        {
+          "property": "std_delta_pressure_re",
+          "measured": 0.025599
+        }
+      ]
+    },
+    {
+      "dataset": "MHD_64",
+      "used_storage_bytes": 159229510189,
+      "downloads": 389,
+      "likes": 1,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Astrophysics",
+      "stats_scalar_count": 42,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 1.0015
+        },
+        {
+          "property": "mean_magnetic_field_0",
+          "measured": 0.5333
+        },
+        {
+          "property": "mean_magnetic_field_1",
+          "measured": 0.0
+        },
+        {
+          "property": "mean_magnetic_field_2",
+          "measured": 0.0
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0096
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.0678
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": 0.0193
+        },
+        {
+          "property": "rms_density",
+          "measured": 1.3414
+        },
+        {
+          "property": "rms_magnetic_field_0",
+          "measured": 0.7509
+        },
+        {
+          "property": "rms_magnetic_field_1",
+          "measured": 0.3171
+        },
+        {
+          "property": "rms_magnetic_field_2",
+          "measured": 0.3201
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.4852
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.4434
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 0.479
+        },
+        {
+          "property": "std_density",
+          "measured": 0.8923
+        },
+        {
+          "property": "std_magnetic_field_0",
+          "measured": 0.5287
+        },
+        {
+          "property": "std_magnetic_field_1",
+          "measured": 0.3171
+        },
+        {
+          "property": "std_magnetic_field_2",
+          "measured": 0.3201
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.4852
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.4381
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 0.4786
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": 0.0
+        },
+        {
+          "property": "mean_delta_magnetic_field_0",
+          "measured": 0.0
+        },
+        {
+          "property": "mean_delta_magnetic_field_1",
+          "measured": -0.0
+        },
+        {
+          "property": "mean_delta_magnetic_field_2",
+          "measured": 0.0
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 0.0001
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 0.0002
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": 0.0
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 0.5664
+        },
+        {
+          "property": "rms_delta_magnetic_field_0",
+          "measured": 0.1429
+        },
+        {
+          "property": "rms_delta_magnetic_field_1",
+          "measured": 0.1495
+        },
+        {
+          "property": "rms_delta_magnetic_field_2",
+          "measured": 0.1494
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.1439
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.1426
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 0.143
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 0.5664
+        },
+        {
+          "property": "std_delta_magnetic_field_0",
+          "measured": 0.1429
+        },
+        {
+          "property": "std_delta_magnetic_field_1",
+          "measured": 0.1495
+        },
+        {
+          "property": "std_delta_magnetic_field_2",
+          "measured": 0.1494
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.1439
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.1426
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 0.143
+        }
+      ]
+    },
+    {
+      "dataset": "planetswe",
+      "used_storage_bytes": 192443358094,
+      "downloads": 637,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Planetary_Science",
+      "stats_scalar_count": 18,
+      "stats_scalars": [
+        {
+          "property": "mean_height",
+          "measured": -56.605
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0011792
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -0.055897
+        },
+        {
+          "property": "rms_height",
+          "measured": 302.01
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 7.2242
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 13.896
+        },
+        {
+          "property": "std_height",
+          "measured": 296.66
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 7.2242
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 13.896
+        },
+        {
+          "property": "mean_delta_height",
+          "measured": 0.033673
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": 4.3778e-06
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -0.002274
+        },
+        {
+          "property": "rms_delta_height",
+          "measured": 3.9978
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.33236
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.26372
+        },
+        {
+          "property": "std_delta_height",
+          "measured": 3.9976
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.33236
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.26371
+        }
+      ]
+    },
+    {
+      "dataset": "post_neutron_star_merger",
+      "used_storage_bytes": 112900552043,
+      "downloads": 162,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Nuclear_Physics",
+      "stats_scalar_count": 72,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 0.018164
+        },
+        {
+          "property": "mean_electron_fraction",
+          "measured": 0.33712
+        },
+        {
+          "property": "mean_entropy",
+          "measured": 430.48
+        },
+        {
+          "property": "mean_internal_energy",
+          "measured": 0.00037829
+        },
+        {
+          "property": "mean_magnetic_field_0",
+          "measured": 9.6022e-06
+        },
+        {
+          "property": "mean_magnetic_field_1",
+          "measured": -2.336e-05
+        },
+        {
+          "property": "mean_magnetic_field_2",
+          "measured": -3.8436e-05
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 9.7213e-05
+        },
+        {
+          "property": "mean_temperature",
+          "measured": 0.80709
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.041801
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -0.00034019
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": 0.071353
+        },
+        {
+          "property": "rms_density",
+          "measured": 0.074215
+        },
+        {
+          "property": "rms_electron_fraction",
+          "measured": 0.34861
+        },
+        {
+          "property": "rms_entropy",
+          "measured": 1317.5
+        },
+        {
+          "property": "rms_internal_energy",
+          "measured": 0.0016175
+        },
+        {
+          "property": "rms_magnetic_field_0",
+          "measured": 0.0037137
+        },
+        {
+          "property": "rms_magnetic_field_1",
+          "measured": 0.00039432
+        },
+        {
+          "property": "rms_magnetic_field_2",
+          "measured": 0.0097312
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.00045802
+        },
+        {
+          "property": "rms_temperature",
+          "measured": 1.3382
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.16182
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.0099128
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 0.22856
+        },
+        {
+          "property": "std_density",
+          "measured": 0.071958
+        },
+        {
+          "property": "std_electron_fraction",
+          "measured": 0.088762
+        },
+        {
+          "property": "std_entropy",
+          "measured": 1245.2
+        },
+        {
+          "property": "std_internal_energy",
+          "measured": 0.0015727
+        },
+        {
+          "property": "std_magnetic_field_0",
+          "measured": 0.0037137
+        },
+        {
+          "property": "std_magnetic_field_1",
+          "measured": 0.00039363
+        },
+        {
+          "property": "std_magnetic_field_2",
+          "measured": 0.0097311
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.00044759
+        },
+        {
+          "property": "std_temperature",
+          "measured": 1.0674
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.15633
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.009907
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 0.21713
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": -0.00011779
+        },
+        {
+          "property": "mean_delta_electron_fraction",
+          "measured": -0.00019662
+        },
+        {
+          "property": "mean_delta_entropy",
+          "measured": -5.7222
+        },
+        {
+          "property": "mean_delta_internal_energy",
+          "measured": -1.819e-06
+        },
+        {
+          "property": "mean_delta_magnetic_field_0",
+          "measured": 5.2601e-08
+        },
+        {
+          "property": "mean_delta_magnetic_field_1",
+          "measured": 1.3995e-07
+        },
+        {
+          "property": "mean_delta_magnetic_field_2",
+          "measured": -9.7766e-08
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -4.0469e-07
+        },
+        {
+          "property": "mean_delta_temperature",
+          "measured": -0.00075914
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -7.2536e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -1.9976e-06
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": -0.00011048
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 0.022821
+        },
+        {
+          "property": "rms_delta_electron_fraction",
+          "measured": 0.015124
+        },
+        {
+          "property": "rms_delta_entropy",
+          "measured": 251.13
+        },
+        {
+          "property": "rms_delta_internal_energy",
+          "measured": 0.00073244
+        },
+        {
+          "property": "rms_delta_magnetic_field_0",
+          "measured": 0.003018
+        },
+        {
+          "property": "rms_delta_magnetic_field_1",
+          "measured": 0.00049183
+        },
+        {
+          "property": "rms_delta_magnetic_field_2",
+          "measured": 0.0085401
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.00024223
+        },
+        {
+          "property": "rms_delta_temperature",
+          "measured": 0.2709
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.032996
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.0071573
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 0.040241
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 0.022821
+        },
+        {
+          "property": "std_delta_electron_fraction",
+          "measured": 0.015123
+        },
+        {
+          "property": "std_delta_entropy",
+          "measured": 251.07
+        },
+        {
+          "property": "std_delta_internal_energy",
+          "measured": 0.00073244
+        },
+        {
+          "property": "std_delta_magnetic_field_0",
+          "measured": 0.003018
+        },
+        {
+          "property": "std_delta_magnetic_field_1",
+          "measured": 0.00049183
+        },
+        {
+          "property": "std_delta_magnetic_field_2",
+          "measured": 0.0085401
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.00024223
+        },
+        {
+          "property": "std_delta_temperature",
+          "measured": 0.2709
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.032996
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.0071573
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 0.040241
+        }
+      ]
+    },
+    {
+      "dataset": "rayleigh_benard",
+      "used_storage_bytes": 369954897966,
+      "downloads": 835,
+      "likes": 0,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Fluid_Dynamics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_buoyancy",
+          "measured": 0.37085
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.0078417
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 2.1672e-05
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 1.0063e-13
+        },
+        {
+          "property": "rms_buoyancy",
+          "measured": 0.44684
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.14953
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.20773
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.17953
+        },
+        {
+          "property": "std_buoyancy",
+          "measured": 0.24928
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.14932
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.20773
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.17953
+        },
+        {
+          "property": "mean_delta_buoyancy",
+          "measured": 0.00052857
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": 0.00010872
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -4.2876e-07
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 3.3606e-15
+        },
+        {
+          "property": "rms_delta_buoyancy",
+          "measured": 0.051374
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.026063
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.06565
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.058977
+        },
+        {
+          "property": "std_delta_buoyancy",
+          "measured": 0.051371
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.026063
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.06565
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.058977
+        }
+      ]
+    },
+    {
+      "dataset": "rayleigh_taylor_instability",
+      "used_storage_bytes": 259806557961,
+      "downloads": 191,
+      "likes": 4,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Fluid_Dynamics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 0.77363
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": -6.0036e-06
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -1.688e-05
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": -4.4674e-06
+        },
+        {
+          "property": "rms_density",
+          "measured": 0.81901
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.0082252
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.0081858
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 0.013937
+        },
+        {
+          "property": "std_density",
+          "measured": 0.26884
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.0082252
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.0081858
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 0.013937
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": -5.116e-11
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -3.2712e-08
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -2.4829e-07
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": -1.7763e-08
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 0.022927
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.00319
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.003191
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 0.0034335
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 0.022927
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.00319
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.003191
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 0.0034335
+        }
+      ]
+    },
+    {
+      "dataset": "shear_flow",
+      "used_storage_bytes": 471192396830,
+      "downloads": 48370,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Fluid_Dynamics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_pressure",
+          "measured": -1.231e-09
+        },
+        {
+          "property": "mean_tracer",
+          "measured": 0.0023845
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0023845
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -1.7308e-07
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.082052
+        },
+        {
+          "property": "rms_tracer",
+          "measured": 0.35829
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.40195
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.10421
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.082052
+        },
+        {
+          "property": "std_tracer",
+          "measured": 0.35828
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.40194
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.10421
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -3.0097e-12
+        },
+        {
+          "property": "mean_delta_tracer",
+          "measured": -2.2663e-10
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -1.7552e-10
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 1.5735e-13
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.004527
+        },
+        {
+          "property": "rms_delta_tracer",
+          "measured": 0.069233
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.0088585
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.0092226
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.004527
+        },
+        {
+          "property": "std_delta_tracer",
+          "measured": 0.069233
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.0088585
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.0092226
+        }
+      ]
+    },
+    {
+      "dataset": "supernova_explosion_64",
+      "used_storage_bytes": 277480670513,
+      "downloads": 243,
+      "likes": 0,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Astrophysics",
+      "stats_scalar_count": 36,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 0.29236
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.058572
+        },
+        {
+          "property": "mean_temperature",
+          "measured": 157050.0
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0050175
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.0047698
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": -0.00017156
+        },
+        {
+          "property": "rms_density",
+          "measured": 0.81292
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 5.7896
+        },
+        {
+          "property": "rms_temperature",
+          "measured": 1854800.0
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 1.346
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 1.337
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 1.3396
+        },
+        {
+          "property": "std_density",
+          "measured": 0.75853
+        },
+        {
+          "property": "std_pressure",
+          "measured": 5.7894
+        },
+        {
+          "property": "std_temperature",
+          "measured": 1848100.0
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 1.346
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 1.337
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 1.3396
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": 6.5495e-05
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": 0.00063258
+        },
+        {
+          "property": "mean_delta_temperature",
+          "measured": 4264.2
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -5.5719e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": 2.1411e-05
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": 9.9219e-06
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 0.065067
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 8.1213
+        },
+        {
+          "property": "rms_delta_temperature",
+          "measured": 473800.0
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 1.0004
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 1.0017
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 1.0026
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 0.065067
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 8.1213
+        },
+        {
+          "property": "std_delta_temperature",
+          "measured": 473780.0
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 1.0004
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 1.0017
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 1.0026
+        }
+      ]
+    },
+    {
+      "dataset": "turbulence_gravity_cooling",
+      "used_storage_bytes": 851615227732,
+      "downloads": 698,
+      "likes": 3,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Astrophysics",
+      "stats_scalar_count": 36,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 0.25579
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.043333
+        },
+        {
+          "property": "mean_temperature",
+          "measured": 385.73
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": -0.0032339
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": 0.0012261
+        },
+        {
+          "property": "mean_velocity_2",
+          "measured": -0.0019061
+        },
+        {
+          "property": "rms_density",
+          "measured": 1.8296
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.071906
+        },
+        {
+          "property": "rms_temperature",
+          "measured": 574.61
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.50944
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.50436
+        },
+        {
+          "property": "rms_velocity_2",
+          "measured": 0.50678
+        },
+        {
+          "property": "std_density",
+          "measured": 1.8116
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.057383
+        },
+        {
+          "property": "std_temperature",
+          "measured": 425.89
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.50943
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.50436
+        },
+        {
+          "property": "std_velocity_2",
+          "measured": 0.50678
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": -0.00015926
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -0.00025596
+        },
+        {
+          "property": "mean_delta_temperature",
+          "measured": 1.4229
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -5.4114e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -8.2541e-05
+        },
+        {
+          "property": "mean_delta_velocity_2",
+          "measured": -0.00011979
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 2.3917
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.018122
+        },
+        {
+          "property": "rms_delta_temperature",
+          "measured": 78.519
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.073216
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.072924
+        },
+        {
+          "property": "rms_delta_velocity_2",
+          "measured": 0.073133
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 2.3917
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.01812
+        },
+        {
+          "property": "std_delta_temperature",
+          "measured": 78.506
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.073216
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.072924
+        },
+        {
+          "property": "std_delta_velocity_2",
+          "measured": 0.073133
+        }
+      ]
+    },
+    {
+      "dataset": "turbulent_radiative_layer_2D",
+      "used_storage_bytes": 7856083849,
+      "downloads": 492,
+      "likes": 3,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Astrophysics",
+      "stats_scalar_count": 24,
+      "stats_scalars": [
+        {
+          "property": "mean_density",
+          "measured": 34.847
+        },
+        {
+          "property": "mean_pressure",
+          "measured": 0.94475
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.0061707
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -0.024651
+        },
+        {
+          "property": "rms_density",
+          "measured": 56.351
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.94671
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 0.042217
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.047067
+        },
+        {
+          "property": "std_density",
+          "measured": 44.284
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.06097
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.041764
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.040095
+        },
+        {
+          "property": "mean_delta_density",
+          "measured": 0.021029
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -0.00079411
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -9.5112e-05
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -0.00032201
+        },
+        {
+          "property": "rms_delta_density",
+          "measured": 12.029
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.035387
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.016924
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.019898
+        },
+        {
+          "property": "std_delta_density",
+          "measured": 12.029
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.035378
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.016923
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.019896
+        }
+      ]
+    },
+    {
+      "dataset": "viscoelastic_instability",
+      "used_storage_bytes": 68074647235,
+      "downloads": 265,
+      "likes": 2,
+      "gated": false,
+      "license": "cc-by-4.0",
+      "fsot_domain": "Fluid_Dynamics",
+      "stats_scalar_count": 48,
+      "stats_scalars": [
+        {
+          "property": "mean_C_0_0",
+          "measured": 1961.1
+        },
+        {
+          "property": "mean_C_0_1",
+          "measured": -0.27848
+        },
+        {
+          "property": "mean_C_1_0",
+          "measured": -0.27848
+        },
+        {
+          "property": "mean_C_1_1",
+          "measured": 9.8888
+        },
+        {
+          "property": "mean_c_zz",
+          "measured": 0.55936
+        },
+        {
+          "property": "mean_pressure",
+          "measured": -5.1973e-05
+        },
+        {
+          "property": "mean_velocity_0",
+          "measured": 0.99804
+        },
+        {
+          "property": "mean_velocity_1",
+          "measured": -2.0371e-08
+        },
+        {
+          "property": "rms_C_0_0",
+          "measured": 2299.8
+        },
+        {
+          "property": "rms_C_0_1",
+          "measured": 148.67
+        },
+        {
+          "property": "rms_C_1_0",
+          "measured": 148.67
+        },
+        {
+          "property": "rms_C_1_1",
+          "measured": 34.585
+        },
+        {
+          "property": "rms_c_zz",
+          "measured": 0.59978
+        },
+        {
+          "property": "rms_pressure",
+          "measured": 0.0067901
+        },
+        {
+          "property": "rms_velocity_0",
+          "measured": 1.0793
+        },
+        {
+          "property": "rms_velocity_1",
+          "measured": 0.010613
+        },
+        {
+          "property": "std_C_0_0",
+          "measured": 1201.3
+        },
+        {
+          "property": "std_C_0_1",
+          "measured": 148.67
+        },
+        {
+          "property": "std_C_1_0",
+          "measured": 148.67
+        },
+        {
+          "property": "std_C_1_1",
+          "measured": 33.141
+        },
+        {
+          "property": "std_c_zz",
+          "measured": 0.21646
+        },
+        {
+          "property": "std_pressure",
+          "measured": 0.0067899
+        },
+        {
+          "property": "std_velocity_0",
+          "measured": 0.4108
+        },
+        {
+          "property": "std_velocity_1",
+          "measured": 0.010613
+        },
+        {
+          "property": "mean_delta_C_0_0",
+          "measured": -0.79413
+        },
+        {
+          "property": "mean_delta_C_0_1",
+          "measured": -0.010014
+        },
+        {
+          "property": "mean_delta_C_1_0",
+          "measured": -0.010014
+        },
+        {
+          "property": "mean_delta_C_1_1",
+          "measured": 0.023664
+        },
+        {
+          "property": "mean_delta_c_zz",
+          "measured": 8.488e-05
+        },
+        {
+          "property": "mean_delta_pressure",
+          "measured": -3.1086e-07
+        },
+        {
+          "property": "mean_delta_velocity_0",
+          "measured": -4.0094e-11
+        },
+        {
+          "property": "mean_delta_velocity_1",
+          "measured": -4.0383e-09
+        },
+        {
+          "property": "rms_delta_C_0_0",
+          "measured": 1218.8
+        },
+        {
+          "property": "rms_delta_C_0_1",
+          "measured": 210.83
+        },
+        {
+          "property": "rms_delta_C_1_0",
+          "measured": 210.83
+        },
+        {
+          "property": "rms_delta_C_1_1",
+          "measured": 42.839
+        },
+        {
+          "property": "rms_delta_c_zz",
+          "measured": 0.13743
+        },
+        {
+          "property": "rms_delta_pressure",
+          "measured": 0.0091305
+        },
+        {
+          "property": "rms_delta_velocity_0",
+          "measured": 0.031729
+        },
+        {
+          "property": "rms_delta_velocity_1",
+          "measured": 0.015659
+        },
+        {
+          "property": "std_delta_C_0_0",
+          "measured": 1218.8
+        },
+        {
+          "property": "std_delta_C_0_1",
+          "measured": 210.83
+        },
+        {
+          "property": "std_delta_C_1_0",
+          "measured": 210.83
+        },
+        {
+          "property": "std_delta_C_1_1",
+          "measured": 42.839
+        },
+        {
+          "property": "std_delta_c_zz",
+          "measured": 0.13743
+        },
+        {
+          "property": "std_delta_pressure",
+          "measured": 0.0091305
+        },
+        {
+          "property": "std_delta_velocity_0",
+          "measured": 0.031729
+        },
+        {
+          "property": "std_delta_velocity_1",
+          "measured": 0.015659
+        }
+      ]
+    }
+  ],
+  "fetched_at": "2026-07-12T16:47:40.997897+00:00",
+  "credential_free": true
+}

@@ -4144,6 +4144,51 @@ extension_domains:
     lean_module: FSOT.Formal.DesktopApplicationWiringSpinePriors
     note: "Tier 88 application spine — desktop unwired projects wired to Lean"
 
+  The_Well_Outcomes_Verification_Panel:
+    tier: 89
+    D_eff: 20
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, energy, galactic, material]
+    formula_branch_override: term1.term1_base
+    external_cache_root: G:/FSOT-PublicData/the_well
+    ingest_script: scripts/ingest_tier89_the_well.py
+    build_script: scripts/build_tier89_the_well_benchmarks.py
+    manifest: data/tier89_the_well_manifest.yaml
+    benchmark_data: data/the_well_outcomes_verification_panel_benchmark.json
+    lean_module: FSOT.Formal.TheWellOutcomesVerificationPanelPriors
+    note: "Polymathic The Well — stats.yaml aggregate outcomes verification (not 15TB tensors)"
+
+  The_Well_Spot_Check_Panel:
+    tier: 89
+    D_eff: 18
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, energy, galactic]
+    formula_branch_override: term2.amplitude
+    external_cache_root: G:/FSOT-PublicData/the_well/spot_checks
+    ingest_script: scripts/ingest_tier89_the_well.py
+    build_script: scripts/build_tier89_the_well_benchmarks.py
+    manifest: data/tier89_the_well_manifest.yaml
+    benchmark_data: data/the_well_spot_check_panel_benchmark.json
+    lean_module: FSOT.Formal.TheWellSpotCheckPanelPriors
+    note: "The Well spot HDF5 chunk scalars — external drive cache, single-file stream"
+
+  The_Well_Verification_Spine:
+    tier: 89
+    D_eff: 19
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, energy, galactic, material]
+    build_script: scripts/build_tier89_the_well_benchmarks.py
+    manifest: data/tier89_the_well_manifest.yaml
+    benchmark_data: data/the_well_verification_spine_benchmark.json
+    lean_module: FSOT.Formal.TheWellVerificationSpinePriors
+    note: "Tier 89 The Well verification spine — Polymathic 15TB numeric truth outcomes layer"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

@@ -66,6 +66,7 @@ def main() -> int:
         "FSOT_TIER86_DEEP",
         "FSOT_TIER87_DEEP",
         "FSOT_TIER88_DEEP",
+        "FSOT_TIER89_DEEP",
     ):
         os.environ[key] = "1"
 

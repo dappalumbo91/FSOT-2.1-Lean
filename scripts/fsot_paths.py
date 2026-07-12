@@ -812,6 +812,17 @@ def trinary_os_isa_registry_path(*, require: bool = True) -> Path:
     return path
 
 
+def the_well_cache_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_THE_WELL_CACHE",
+        Path(os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "G:/FSOT-PublicData")).expanduser() / "the_well",
+        VENDOR_ROOT / "the_well",
+    )
+    if path is None and require:
+        raise FileNotFoundError("The Well cache root not found. Set FSOT_EXTERNAL_DATA_ROOT.")
+    return path
+
+
 def species_catalog_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_SPECIES_CATALOG",

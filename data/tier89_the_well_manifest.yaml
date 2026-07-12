@@ -1,0 +1,19 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 89
+policy: credential_free_only
+external_cache_default: G:/FSOT-PublicData/the_well
+domains:
+  - The_Well_Outcomes_Verification_Panel
+  - The_Well_Spot_Check_Panel
+  - The_Well_Verification_Spine
+ingest: scripts/ingest_tier89_the_well.py
+build: scripts/build_tier89_the_well_benchmarks.py
+lean: scripts/gen_tier89_the_well_lean.py
+apis:
+  - https://huggingface.co/datasets/polymathic-ai/
+  - https://github.com/PolymathicAI/the_well
+note: >
+  Tier 89 verifies FSOT against Polymathic AI The Well (15TB physics simulations)
+  using aggregate stats.yaml outcomes (~MB) plus optional single HDF5 spot chunks on
+  FSOT_EXTERNAL_DATA_ROOT. Full tensor corpus not required.

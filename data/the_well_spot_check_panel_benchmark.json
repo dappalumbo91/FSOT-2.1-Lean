@@ -1,0 +1,214 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T16:47:41.466835+00:00",
+  "domain": "The_Well_Spot_Check_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "G:\\FSOT-PublicData\\the_well\\the_well_spot_checks_cache.json",
+    "the_well_hdf5_spot_chunks"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "energy",
+    "galactic"
+  ],
+  "D_eff": 18,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.031159,
+  "pooled_median_error_pct": 0.031159,
+  "headline_median_error_pct": 0.031159,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "the_well_spot": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Direct numerical simulation field RMSE baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_the_well_spot_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031159,
+      "measured": 0.0,
+      "error_pct": 0.031159,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "the_well_spot",
+      "name": "hdf5_field_scalars",
+      "computed": 0.031159,
+      "measured": 0.0,
+      "error_pct": 0.031159,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_density",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 3.959933,
+      "measured": 3.9587,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_pressure",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.103852,
+      "measured": 0.10382,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_speed_of_sound",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 1.084638,
+      "measured": 1.0843,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_velocity_0",
+      "name": "acoustic_scattering_discontinuous",
+      "computed": 0.004738,
+      "measured": 0.0047369,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_density",
+      "name": "acoustic_scattering_inclusions",
+      "computed": 262.621805,
+      "measured": 262.54,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_pressure",
+      "name": "acoustic_scattering_inclusions",
+      "computed": 0.099216,
+      "measured": 0.099185,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_speed_of_sound",
+      "name": "acoustic_scattering_inclusions",
+      "computed": 1.011315,
+      "measured": 1.011,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_velocity_0",
+      "name": "acoustic_scattering_inclusions",
+      "computed": 0.003425,
+      "measured": 0.0034241,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_density",
+      "name": "acoustic_scattering_maze",
+      "computed": 575569.286229,
+      "measured": 575390.0,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_pressure",
+      "name": "acoustic_scattering_maze",
+      "computed": 0.011647,
+      "measured": 0.011643,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_speed_of_sound",
+      "name": "acoustic_scattering_maze",
+      "computed": 0.491603,
+      "measured": 0.49145,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    },
+    {
+      "lab": "the_well_spot_check_lab",
+      "property": "relay_mean_velocity_0",
+      "name": "acoustic_scattering_maze",
+      "computed": 7.8e-05,
+      "measured": 7.812e-05,
+      "error_pct": 0.031159,
+      "eval_kind": "spot_fallback",
+      "fsot_domain": "Acoustics",
+      "fsot_scalar": 0.311591,
+      "ingest_source": "stats_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.031159,
+    "max_scalar_error_pct": 0.031159,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

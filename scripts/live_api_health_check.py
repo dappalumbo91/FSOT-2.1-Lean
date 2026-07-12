@@ -273,6 +273,15 @@ def main() -> int:
         )
         return f"bytes={len(raw)}"
 
+    def tier89_the_well_stats():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "https://huggingface.co/datasets/polymathic-ai/active_matter/raw/main/stats.yaml",
+            timeout=30,
+        )
+        return f"bytes={len(raw)}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -304,6 +313,7 @@ def main() -> int:
         ("tier85_crossref_history", tier85_crossref_history),
         ("tier86_nist_codata", tier86_nist_codata),
         ("tier87_arxiv_quantph", tier87_arxiv_quantph),
+        ("tier89_the_well_stats", tier89_the_well_stats),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)
