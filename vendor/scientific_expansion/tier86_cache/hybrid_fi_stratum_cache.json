@@ -1,0 +1,48 @@
+{
+  "source": "neuron_cohort_per_stratum_fi_sim",
+  "strata": [
+    {
+      "stratum_id": "Sst_interneuron",
+      "cell_count": 154.0,
+      "catalog_cells": 165.0,
+      "fi_median_rel_err_pct": 35.479861060568474,
+      "fi_mean_rel_err_pct": 44.625082316243905,
+      "fi_pearson_r": 0.5196512945807779
+    },
+    {
+      "stratum_id": "PV_interneuron",
+      "cell_count": 222.0,
+      "catalog_cells": 242.0,
+      "fi_median_rel_err_pct": 29.59837154055862,
+      "fi_mean_rel_err_pct": 70.43124112229106,
+      "fi_pearson_r": 0.3915167429133035
+    },
+    {
+      "stratum_id": "VIP_interneuron",
+      "cell_count": 146.0,
+      "catalog_cells": 155.0,
+      "fi_median_rel_err_pct": 29.72767467532461,
+      "fi_mean_rel_err_pct": 44.46332521589662,
+      "fi_pearson_r": 0.42970594991301575
+    },
+    {
+      "stratum_id": "L2_3_pyramidal",
+      "cell_count": 1127.0,
+      "catalog_cells": 1224.0,
+      "fi_median_rel_err_pct": 22.104086005830943,
+      "fi_mean_rel_err_pct": 32.5860726984197,
+      "fi_pearson_r": 0.22516239104042488
+    },
+    {
+      "stratum_id": "hero_certified",
+      "cell_count": 4.0,
+      "fi_median_rel_err_pct": 7.002728543379658,
+      "fi_pearson_r": 1.0,
+      "specimen_id": 324257146
+    }
+  ],
+  "stratum_count": 5,
+  "cohort_cell_count": 2166,
+  "fetched_at": "2026-07-12T16:03:30.215605+00:00",
+  "credential_free": true
+}

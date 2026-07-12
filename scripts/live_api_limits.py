@@ -53,6 +53,10 @@ def tier85_deep() -> bool:
     return _flag("FSOT_TIER85_DEEP") or mega_deep()
 
 
+def tier86_deep() -> bool:
+    return _flag("FSOT_TIER86_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -416,3 +420,11 @@ def tier85_crossref_limit() -> int:
     if tier85_deep():
         return 12
     return 8
+
+
+def tier86_pubchem_limit() -> int:
+    if mega_deep():
+        return 12
+    if tier86_deep():
+        return 10
+    return 6

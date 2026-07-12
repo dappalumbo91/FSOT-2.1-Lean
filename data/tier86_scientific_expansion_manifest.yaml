@@ -1,0 +1,21 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 86
+policy: credential_free_only
+domains:
+  - Pure_Mathematics_Panel
+  - Hybrid_FI_Sim_Stratum_Deep_Panel
+  - Culinary_Fermentation_Maillard_Panel
+  - Materials_Species_Bridge_Live_Panel
+  - Scientific_Expansion_Depth_Spine
+ingest: scripts/ingest_tier86_scientific_expansion.py
+build: scripts/build_tier86_scientific_expansion_benchmarks.py
+lean: scripts/gen_tier86_scientific_expansion_lean.py
+field_breadth_target_pct: 22.2
+apis:
+  - https://physics.nist.gov/
+  - https://pubchem.ncbi.nlm.nih.gov/
+note: >
+  Tier 86 closes the last Tier-41 gap (Pure Mathematics) and delivers the audit
+  depth wave: per-stratum hybrid FI sim, culinary fermentation + Maillard kinetics,
+  and materials/species-catalog bridge with live FSOT predictions.

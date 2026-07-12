@@ -1,0 +1,269 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T16:03:49.204125+00:00",
+  "domain": "Scientific_Expansion_Depth_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier86_depth_wave_panels"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "neural",
+    "material"
+  ],
+  "D_eff": 17,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.040788,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "scientific_expansion_depth": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Tier 86 depth wave expansion"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_relay",
+      "name": "scientific_expansion_depth",
+      "computed": 0.040788,
+      "measured": 0.0,
+      "error_pct": 0.040788,
+      "observable_count": 16
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "pure_mathematics_panel",
+      "computed": 0.02584,
+      "measured": 0.02584,
+      "error_pct": 0.0,
+      "record_count": 44,
+      "eval_kind": "tier86_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "engine_native_h0",
+      "name": "dlmf",
+      "computed": 67.464401,
+      "measured": 67.4,
+      "error_pct": 0.095551,
+      "source_panel": "pure_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "brightness_temperature_rms_k",
+      "name": "dlmf",
+      "computed": 100.095551,
+      "measured": 100.0,
+      "error_pct": 0.095551,
+      "source_panel": "pure_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "hubble_constant_km_s_mpc",
+      "name": "dlmf",
+      "computed": 67.464401,
+      "measured": 67.4,
+      "error_pct": 0.095551,
+      "source_panel": "pure_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "matter_fluctuation_amplitude",
+      "name": "dlmf",
+      "computed": 0.811775,
+      "measured": 0.811,
+      "error_pct": 0.095551,
+      "source_panel": "pure_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "hybrid_fi_sim_stratum_deep_panel",
+      "computed": 0.018003,
+      "measured": 0.018003,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "tier86_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "cell_count",
+      "name": "Sst_interneuron",
+      "computed": 154.027724,
+      "measured": 154.0,
+      "error_pct": 0.018003,
+      "source_panel": "hybrid_fi_sim_stratum_deep_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "Sst_interneuron",
+      "computed": 35.485293,
+      "measured": 35.479861060568474,
+      "error_pct": 0.015311,
+      "source_panel": "hybrid_fi_sim_stratum_deep_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "fi_pearson_r",
+      "name": "Sst_interneuron",
+      "computed": 0.519815,
+      "measured": 0.5196512945807779,
+      "error_pct": 0.031506,
+      "source_panel": "hybrid_fi_sim_stratum_deep_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "fi_mean_rel_err_pct",
+      "name": "Sst_interneuron",
+      "computed": 44.633116,
+      "measured": 44.625082316243905,
+      "error_pct": 0.018003,
+      "source_panel": "hybrid_fi_sim_stratum_deep_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "culinary_fermentation_maillard_panel",
+      "computed": 0.040788,
+      "measured": 0.040788,
+      "error_pct": 0.0,
+      "record_count": 130,
+      "eval_kind": "tier86_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "molecular_weight",
+      "name": "sodium_chloride",
+      "computed": 58.463837,
+      "measured": 58.44,
+      "error_pct": 0.040788,
+      "source_panel": "culinary_fermentation_maillard_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "molecular_weight",
+      "name": "fructose",
+      "computed": 180.233484,
+      "measured": 180.16,
+      "error_pct": 0.040788,
+      "source_panel": "culinary_fermentation_maillard_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "molecular_weight",
+      "name": "maltose",
+      "computed": 342.439619,
+      "measured": 342.3,
+      "error_pct": 0.040788,
+      "source_panel": "culinary_fermentation_maillard_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "molecular_weight",
+      "name": "lactose",
+      "computed": 342.439619,
+      "measured": 342.3,
+      "error_pct": 0.040788,
+      "source_panel": "culinary_fermentation_maillard_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_species_bridge_live_panel",
+      "computed": 0.01341,
+      "measured": 0.01341,
+      "error_pct": 0.0,
+      "record_count": 150,
+      "eval_kind": "tier86_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "thermal_cond_W_mK_measured",
+      "name": "Fe",
+      "computed": 80.410782,
+      "measured": 80.4,
+      "error_pct": 0.01341,
+      "source_panel": "materials_species_bridge_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "thermal_cond_W_mK_species_computed",
+      "name": "Fe",
+      "computed": 80.431968,
+      "measured": 80.4047585604223,
+      "error_pct": 0.033841,
+      "source_panel": "materials_species_bridge_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "thermal_cond_W_mK_species_error_pct",
+      "name": "Fe",
+      "computed": 0.005919,
+      "measured": 0.005918607490409002,
+      "error_pct": 0.01341,
+      "source_panel": "materials_species_bridge_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_lab",
+      "property": "bulk_GPa_measured",
+      "name": "Fe",
+      "computed": 170.022798,
+      "measured": 170.0,
+      "error_pct": 0.01341,
+      "source_panel": "materials_species_bridge_live_panel",
+      "eval_kind": "ingest_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

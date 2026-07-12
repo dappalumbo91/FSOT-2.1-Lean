@@ -258,6 +258,12 @@ def main() -> int:
         )
         return f"items={len((data.get('message') or {}).get('items') or [])}"
 
+    def tier86_nist_codata():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes("https://physics.nist.gov/cuu/Constants/Table/allascii.txt", timeout=30)
+        return f"bytes={len(raw)}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -287,6 +293,7 @@ def main() -> int:
         ("tier85_exoplanet_tap", tier85_exoplanet_tap),
         ("tier85_open_meteo_archive", tier85_open_meteo_archive),
         ("tier85_crossref_history", tier85_crossref_history),
+        ("tier86_nist_codata", tier86_nist_codata),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

@@ -3917,6 +3917,79 @@ extension_domains:
     lean_module: FSOT.Formal.ScientificExpansionWave3SpinePriors
     note: "Tier 85 cross-panel spine — Tier-41 gap domain live panels"
 
+  Pure_Mathematics_Panel:
+    tier: 86
+    D_eff: 18
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness]
+    formula_branch_override: term1.term1_base
+    ingest_script: scripts/ingest_tier86_scientific_expansion.py
+    build_script: scripts/build_tier86_scientific_expansion_benchmarks.py
+    manifest: data/tier86_scientific_expansion_manifest.yaml
+    benchmark_data: data/pure_mathematics_panel_benchmark.json
+    lean_module: FSOT.Formal.PureMathematicsPanelPriors
+    note: "Pure mathematics — NIST CODATA live + DLMF + math-generator rules"
+
+  Hybrid_FI_Sim_Stratum_Deep_Panel:
+    tier: 86
+    D_eff: 18
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [neural, consciousness, biophysics]
+    formula_branch_override: term3.chaos_factor
+    ingest_script: scripts/ingest_tier86_scientific_expansion.py
+    build_script: scripts/build_tier86_scientific_expansion_benchmarks.py
+    manifest: data/tier86_scientific_expansion_manifest.yaml
+    benchmark_data: data/hybrid_fi_sim_stratum_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.HybridFiSimStratumDeepPanelPriors
+    note: "Per-stratum hybrid FI sim — neuron cohort stratum metrics (not slope proxy)"
+
+  Culinary_Fermentation_Maillard_Panel:
+    tier: 86
+    D_eff: 15
+    delta_psi: 0.45
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, medical, material]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier86_scientific_expansion.py
+    build_script: scripts/build_tier86_scientific_expansion_benchmarks.py
+    manifest: data/tier86_scientific_expansion_manifest.yaml
+    benchmark_data: data/culinary_fermentation_maillard_panel_benchmark.json
+    lean_module: FSOT.Formal.CulinaryFermentationMaillardPanelPriors
+    note: "Culinary depth — PubChem Maillard precursors + fermentation kinetics"
+
+  Materials_Species_Bridge_Live_Panel:
+    tier: 86
+    D_eff: 14
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier86_scientific_expansion.py
+    build_script: scripts/build_tier86_scientific_expansion_benchmarks.py
+    manifest: data/tier86_scientific_expansion_manifest.yaml
+    benchmark_data: data/materials_species_bridge_live_panel_benchmark.json
+    lean_module: FSOT.Formal.MaterialsSpeciesBridgeLivePanelPriors
+    note: "Materials engineering ↔ species-catalog machine/molecule bridge live"
+
+  Scientific_Expansion_Depth_Spine:
+    tier: 86
+    D_eff: 17
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, neural, material]
+    build_script: scripts/build_tier86_scientific_expansion_benchmarks.py
+    manifest: data/tier86_scientific_expansion_manifest.yaml
+    benchmark_data: data/scientific_expansion_depth_spine_benchmark.json
+    lean_module: FSOT.Formal.ScientificExpansionDepthSpinePriors
+    note: "Tier 86 depth wave spine — Pure Math closure + audit depth panels"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

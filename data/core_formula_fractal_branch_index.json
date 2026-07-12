@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T15:44:06.374497+00:00",
+  "generated_at": "2026-07-12T16:03:52.883584+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 296,
+  "extension_panels": 301,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -3844,6 +3844,70 @@
       ],
       "D_eff": 18,
       "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
+    },
+    {
+      "panel": "Culinary_Fermentation_Maillard_Panel",
+      "tier": 86,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 24.55,
+      "maps_to_lean": [
+        "energy",
+        "medical",
+        "material"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
+    },
+    {
+      "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+      "tier": 86,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 24.55,
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
+    },
+    {
+      "panel": "Materials_Species_Bridge_Live_Panel",
+      "tier": 86,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.2,
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json"
+    },
+    {
+      "panel": "Pure_Mathematics_Panel",
+      "tier": 86,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.55,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
+    },
+    {
+      "panel": "Scientific_Expansion_Depth_Spine",
+      "tier": 86,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.55,
+      "maps_to_lean": [
+        "mathematical",
+        "neural",
+        "material"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -5921,6 +5985,19 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json"
+      },
+      {
+        "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+        "tier": 86,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
       }
     ],
     "blackhole": [
@@ -7674,6 +7751,32 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
+      },
+      {
+        "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+        "tier": 86,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
+      },
+      {
+        "panel": "Pure_Mathematics_Panel",
+        "tier": 86,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
       }
     ],
     "cosmological": [
@@ -9727,6 +9830,31 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/speleology_panel_benchmark.json"
+      },
+      {
+        "panel": "Culinary_Fermentation_Maillard_Panel",
+        "tier": 86,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "energy",
+          "medical",
+          "material"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
+      },
+      {
+        "panel": "Materials_Species_Bridge_Live_Panel",
+        "tier": 86,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.2,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json"
       }
     ],
     "fluid_dynamics": [
@@ -11709,6 +11837,44 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
+      },
+      {
+        "panel": "Culinary_Fermentation_Maillard_Panel",
+        "tier": 86,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "energy",
+          "medical",
+          "material"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
+      },
+      {
+        "panel": "Materials_Species_Bridge_Live_Panel",
+        "tier": 86,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.2,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Spine",
+        "tier": 86,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "neural",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
       }
     ],
     "mathematical": [
@@ -12402,6 +12568,32 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
+      },
+      {
+        "panel": "Pure_Mathematics_Panel",
+        "tier": 86,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Spine",
+        "tier": 86,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "neural",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
       }
     ],
     "medical": [
@@ -13114,6 +13306,19 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/virology_panel_benchmark.json"
+      },
+      {
+        "panel": "Culinary_Fermentation_Maillard_Panel",
+        "tier": 86,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "energy",
+          "medical",
+          "material"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
       }
     ],
     "neural": [
@@ -13612,6 +13817,32 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
+      },
+      {
+        "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+        "tier": 86,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Spine",
+        "tier": 86,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "neural",
+          "material"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
       }
     ],
     "nuclear": [
@@ -15422,6 +15653,19 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Pure_Mathematics_Panel",
+        "tier": 86,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.55,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
       }
     ],
     "perceived": [

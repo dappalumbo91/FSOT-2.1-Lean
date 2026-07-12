@@ -1,0 +1,298 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T16:03:49.132823+00:00",
+  "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier86_cache\\hybrid_fi_stratum_cache.json",
+    "neuron_cohort_per_stratum"
+  ],
+  "maps_to_lean": [
+    "neural",
+    "consciousness",
+    "biophysics"
+  ],
+  "D_eff": 18,
+  "record_count": 19,
+  "observable_count": 19,
+  "scalar_record_count": 14,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.018003,
+  "pooled_median_error_pct": 0.018003,
+  "headline_median_error_pct": 0.018003,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "per_stratum_fi_sim": {
+        "sota_typical_error_pct": 40.0,
+        "sota_model": "Allen FI linear slope proxy"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_hybrid_fi_stratum_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.018003,
+      "measured": 0.0,
+      "error_pct": 0.018003,
+      "observable_count": 19
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "hybrid_fi_stratum",
+      "name": "per_stratum_fi_sim",
+      "computed": 0.018003,
+      "measured": 0.0,
+      "error_pct": 0.018003,
+      "observable_count": 19
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "cell_count",
+      "name": "Sst_interneuron",
+      "computed": 154.027724,
+      "measured": 154.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "Sst_interneuron",
+      "computed": 35.485293,
+      "measured": 35.479861060568474,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_pearson_r",
+      "name": "Sst_interneuron",
+      "computed": 0.519815,
+      "measured": 0.5196512945807779,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_mean_rel_err_pct",
+      "name": "Sst_interneuron",
+      "computed": 44.633116,
+      "measured": 44.625082316243905,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "cell_count",
+      "name": "PV_interneuron",
+      "computed": 222.039966,
+      "measured": 222.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "PV_interneuron",
+      "computed": 29.602903,
+      "measured": 29.59837154055862,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_pearson_r",
+      "name": "PV_interneuron",
+      "computed": 0.39164,
+      "measured": 0.3915167429133035,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_mean_rel_err_pct",
+      "name": "PV_interneuron",
+      "computed": 70.443921,
+      "measured": 70.43124112229106,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "cell_count",
+      "name": "VIP_interneuron",
+      "computed": 146.026284,
+      "measured": 146.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "VIP_interneuron",
+      "computed": 29.732226,
+      "measured": 29.72767467532461,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_pearson_r",
+      "name": "VIP_interneuron",
+      "computed": 0.429841,
+      "measured": 0.42970594991301575,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_mean_rel_err_pct",
+      "name": "VIP_interneuron",
+      "computed": 44.47133,
+      "measured": 44.46332521589662,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "cell_count",
+      "name": "L2_3_pyramidal",
+      "computed": 1127.20289,
+      "measured": 1127.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "L2_3_pyramidal",
+      "computed": 22.10747,
+      "measured": 22.104086005830943,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_pearson_r",
+      "name": "L2_3_pyramidal",
+      "computed": 0.225233,
+      "measured": 0.22516239104042488,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_mean_rel_err_pct",
+      "name": "L2_3_pyramidal",
+      "computed": 32.591939,
+      "measured": 32.5860726984197,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "cell_count",
+      "name": "hero_certified",
+      "computed": 4.00072,
+      "measured": 4.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_median_rel_err_pct",
+      "name": "hero_certified",
+      "computed": 7.003801,
+      "measured": 7.002728543379658,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    },
+    {
+      "lab": "hybrid_fi_stratum_lab",
+      "property": "fi_pearson_r",
+      "name": "hero_certified",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.018003,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
