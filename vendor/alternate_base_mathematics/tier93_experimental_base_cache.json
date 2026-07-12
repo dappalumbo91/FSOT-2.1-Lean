@@ -1,0 +1,718 @@
+{
+  "source": "tier93_experimental_base_mathematics",
+  "experiment_count": 7,
+  "ranked_experiments": [
+    "fsot_native_trinary",
+    "balanced_ternary",
+    "octal_experimental",
+    "metatron_square",
+    "decimal_control",
+    "dozenal_experimental",
+    "metatron_cube"
+  ],
+  "recommended_experimental": "fsot_native_trinary",
+  "analyses": [
+    {
+      "base": 3,
+      "saturation_digit": 2,
+      "first_overflow_decimal": 3,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.332665,
+      "fsot_trinary_alignment": 7.5,
+      "seed_digit_total": 53,
+      "mean_zero_digit_fraction": 0.282967,
+      "absence_marker_score": 0.717033,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "digit_count": 14,
+          "zero_digit_fraction": 0.285714
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.461538
+        }
+      },
+      "experiment_id": "fsot_native_trinary",
+      "kind": "fsot_native",
+      "note": "Tier 92 #1 ranked"
+    },
+    {
+      "base": 9,
+      "saturation_digit": 8,
+      "first_overflow_decimal": 9,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.11022,
+      "fsot_trinary_alignment": 0.158689,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.096154,
+      "absence_marker_score": 0.903846,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            2,
+            4,
+            1,
+            8,
+            8,
+            1,
+            2,
+            4,
+            0,
+            7,
+            4
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            6,
+            4,
+            1,
+            5,
+            5,
+            7,
+            3,
+            6,
+            4,
+            1,
+            8,
+            8
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            5,
+            5,
+            0,
+            4,
+            8,
+            2,
+            5,
+            3,
+            6,
+            1,
+            2,
+            3
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            5,
+            1,
+            6,
+            7,
+            1,
+            0,
+            0,
+            5,
+            6,
+            1,
+            3,
+            4
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        }
+      },
+      "experiment_id": "metatron_square",
+      "kind": "power_of_3",
+      "note": "3^2 digit closure"
+    },
+    {
+      "base": 27,
+      "saturation_digit": 26,
+      "first_overflow_decimal": 27,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.036072,
+      "fsot_trinary_alignment": 0.041463,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.019231,
+      "absence_marker_score": 0.980769,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            3,
+            22,
+            5,
+            26,
+            3,
+            22,
+            2,
+            13,
+            12,
+            25,
+            26,
+            6
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            19,
+            10,
+            16,
+            25,
+            11,
+            4,
+            5,
+            26,
+            11,
+            4,
+            6,
+            24
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            16,
+            18,
+            14,
+            20,
+            16,
+            6,
+            3,
+            21,
+            3,
+            18,
+            11,
+            22
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            15,
+            15,
+            21,
+            9,
+            1,
+            24,
+            4,
+            4,
+            19,
+            6,
+            4,
+            3
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        }
+      },
+      "experiment_id": "metatron_cube",
+      "kind": "power_of_3",
+      "note": "27 FSOTB opcodes = 3^3"
+    },
+    {
+      "base": 12,
+      "saturation_digit": 11,
+      "first_overflow_decimal": 12,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.082164,
+      "fsot_trinary_alignment": 0.108234,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.096154,
+      "absence_marker_score": 0.903846,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            8,
+            4,
+            8,
+            0,
+            9,
+            4,
+            9,
+            3,
+            11,
+            9,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            8,
+            7,
+            5,
+            2,
+            3,
+            6,
+            0,
+            6,
+            9,
+            8,
+            2,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            7,
+            4,
+            11,
+            11,
+            6,
+            7,
+            7,
+            2,
+            8,
+            0,
+            2,
+            10
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            6,
+            11,
+            1,
+            5,
+            1,
+            8,
+            8,
+            10,
+            6,
+            7,
+            6,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      },
+      "experiment_id": "dozenal_experimental",
+      "kind": "historical",
+      "note": "12-fold carry symmetry"
+    },
+    {
+      "base": 8,
+      "saturation_digit": 7,
+      "first_overflow_decimal": 8,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.124248,
+      "fsot_trinary_alignment": 0.18761,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.134615,
+      "absence_marker_score": 0.865385,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            1,
+            0,
+            3,
+            7,
+            5,
+            5,
+            2,
+            4,
+            2,
+            1,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            5,
+            5,
+            7,
+            6,
+            0,
+            5,
+            2,
+            1,
+            3,
+            0,
+            5,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            4,
+            7,
+            4,
+            3,
+            3,
+            5,
+            7,
+            1,
+            5,
+            6,
+            2,
+            7
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            4,
+            4,
+            7,
+            4,
+            2,
+            1,
+            4,
+            7,
+            7,
+            0,
+            6,
+            7
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      },
+      "experiment_id": "octal_experimental",
+      "kind": "historical",
+      "note": "byte sub-block"
+    },
+    {
+      "base": 10,
+      "saturation_digit": 9,
+      "first_overflow_decimal": 10,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.1002,
+      "fsot_trinary_alignment": 0.13741,
+      "seed_digit_total": 52,
+      "mean_zero_digit_fraction": 0.057692,
+      "absence_marker_score": 0.942308,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            3,
+            -1,
+            1,
+            4,
+            1,
+            5,
+            9,
+            2,
+            6,
+            5,
+            3,
+            5,
+            8,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            7,
+            1,
+            8,
+            2,
+            8,
+            1,
+            8,
+            2,
+            8,
+            4,
+            5,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.0
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            6,
+            1,
+            8,
+            0,
+            3,
+            3,
+            9,
+            8,
+            8,
+            7,
+            4,
+            9
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.076923
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            5,
+            7,
+            7,
+            2,
+            1,
+            5,
+            6,
+            6,
+            4,
+            9,
+            0,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        }
+      },
+      "experiment_id": "decimal_control",
+      "kind": "control",
+      "note": "zero-heavy control"
+    },
+    {
+      "base": 3,
+      "saturation_digit": 2,
+      "first_overflow_decimal": 3,
+      "representation_of_ten": [
+        1,
+        0
+      ],
+      "carry_density_1_to_500": 0.332665,
+      "fsot_trinary_alignment": 6.5,
+      "seed_digit_total": 53,
+      "mean_zero_digit_fraction": 0.282967,
+      "absence_marker_score": 0.608517,
+      "seed_stats": {
+        "pi": {
+          "digits": [
+            1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "digit_count": 14,
+          "zero_digit_fraction": 0.285714
+        },
+        "e": {
+          "digits": [
+            2,
+            -1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.153846
+        },
+        "phi": {
+          "digits": [
+            1,
+            -1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.230769
+        },
+        "gamma": {
+          "digits": [
+            0,
+            -1,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "digit_count": 13,
+          "zero_digit_fraction": 0.461538
+        }
+      },
+      "experiment_id": "balanced_ternary",
+      "kind": "balanced_ternary",
+      "note": "digits -1,0,+1; zero as balance",
+      "balanced_ternary_digit_set": [
+        -1,
+        0,
+        1
+      ],
+      "zero_is_balance_point": true
+    }
+  ],
+  "does_not_modify_fsot_core": true
+}

@@ -4348,6 +4348,65 @@ extension_domains:
     lean_module: FSOT.Formal.AlternateBaseMathematicsSpinePriors
     note: "Tier 92 alternate base mathematics explorer spine"
 
+  Consciousness_Genetics_Species_Panel:
+    tier: 93
+    D_eff: 18
+    delta_psi: 1.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, neural, biological]
+    formula_branch_override: term1.growth_term
+    external_cache_root: G:/FSOT-PublicData/consciousness_genetics
+    ingest_script: scripts/ingest_tier93_dual_wave.py
+    build_script: scripts/build_tier93_dual_wave_benchmarks.py
+    manifest: data/tier93_dual_wave_manifest.yaml
+    benchmark_data: data/consciousness_genetics_species_panel_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors
+    note: "NCBI taxonomy + genome assembly cross-walk for consciousness species"
+
+  Consciousness_Genetics_Coupling_Panel:
+    tier: 93
+    D_eff: 17
+    delta_psi: 1.15
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, neural, biological]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier93_dual_wave.py
+    build_script: scripts/build_tier93_dual_wave_benchmarks.py
+    manifest: data/tier93_dual_wave_manifest.yaml
+    benchmark_data: data/consciousness_genetics_coupling_panel_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors
+    note: "Genotype-phenotype consciousness coupling — genome × brain fraction × quirkMod"
+
+  Experimental_Base_Mathematics_Panel:
+    tier: 93
+    D_eff: 17
+    delta_psi: 0.95
+    recent_hits: 1
+    observed: false
+    maps_to_lean: [mathematical, ai, consciousness]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier93_dual_wave.py
+    build_script: scripts/build_tier93_dual_wave_benchmarks.py
+    manifest: data/tier93_dual_wave_manifest.yaml
+    benchmark_data: data/experimental_base_mathematics_panel_benchmark.json
+    lean_module: FSOT.Formal.ExperimentalBaseMathematicsPanelPriors
+    note: "Experimental bases — trinary native, 9, 27, balanced ternary, dozenal (non-core)"
+
+  Tier_93_Dual_Wave_Spine:
+    tier: 93
+    D_eff: 19
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, mathematical, biological, neural]
+    build_script: scripts/build_tier93_dual_wave_benchmarks.py
+    manifest: data/tier93_dual_wave_manifest.yaml
+    benchmark_data: data/tier_93_dual_wave_spine_benchmark.json
+    lean_module: FSOT.Formal.Tier93DualWaveSpinePriors
+    note: "Tier 93 dual wave spine — consciousness genetics + experimental base mathematics"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

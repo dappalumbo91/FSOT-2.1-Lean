@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T17:36:32.588930+00:00",
+  "generated_at": "2026-07-12T17:46:18.042320+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 325,
-    "total_scientific_domains_covered": 361,
+    "extension_domains": 329,
+    "total_scientific_domains_covered": 365,
     "total_empirical_records": 306680,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -16,12 +16,12 @@
     },
     "tier_distribution": {
       "A_strong": 113,
-      "B_verified": 248,
+      "B_verified": 252,
       "C_thin": 0,
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 458
+    "lean_formal_modules": 462
   },
   "neurolab_domains": [
     {
@@ -3107,6 +3107,38 @@
       "median_error_pct": 0.004184779870129773,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.AlternateBaseMathematicsSpinePriors"
+    },
+    {
+      "domain": "Consciousness_Genetics_Species_Panel",
+      "tier": 93,
+      "record_count": 27,
+      "median_error_pct": 0.022236,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors"
+    },
+    {
+      "domain": "Consciousness_Genetics_Coupling_Panel",
+      "tier": 93,
+      "record_count": 24,
+      "median_error_pct": 0.031506,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors"
+    },
+    {
+      "domain": "Experimental_Base_Mathematics_Panel",
+      "tier": 93,
+      "record_count": 36,
+      "median_error_pct": 0.009504,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ExperimentalBaseMathematicsPanelPriors"
+    },
+    {
+      "domain": "Tier_93_Dual_Wave_Spine",
+      "tier": 93,
+      "record_count": 24,
+      "median_error_pct": 0.011093889935064888,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.Tier93DualWaveSpinePriors"
     }
   ],
   "intelligence_compression": {

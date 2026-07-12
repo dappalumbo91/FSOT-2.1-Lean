@@ -81,6 +81,18 @@ def tier92_deep() -> bool:
     return _flag("FSOT_TIER92_DEEP") or mega_deep()
 
 
+def tier93_deep() -> bool:
+    return _flag("FSOT_TIER93_DEEP") or mega_deep()
+
+
+def tier93_ncbi_species_cap() -> int:
+    if mega_deep():
+        return 72
+    if tier93_deep():
+        return 48
+    return 20
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000

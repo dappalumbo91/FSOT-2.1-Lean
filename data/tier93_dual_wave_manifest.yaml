@@ -1,0 +1,19 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 93
+policy: credential_free_ncbi_eutils
+external_cache_default: G:/FSOT-PublicData/consciousness_genetics
+domains:
+  - Consciousness_Genetics_Species_Panel
+  - Consciousness_Genetics_Coupling_Panel
+  - Experimental_Base_Mathematics_Panel
+  - Tier_93_Dual_Wave_Spine
+ingest: scripts/ingest_tier93_dual_wave.py
+build: scripts/build_tier93_dual_wave_benchmarks.py
+lean: scripts/gen_tier93_dual_wave_lean.py
+apis:
+  - https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+note: >
+  Tier 93 dual wave: (1) consciousness variables cross-walked to NCBI taxonomy + genome assembly
+  for AnAge/consciousness species; (2) experimental base mathematics (trinary native, 9, 27,
+  balanced ternary, dozenal) building on Tier 92 base-3 ranking. Does not modify FSOT core seeds.

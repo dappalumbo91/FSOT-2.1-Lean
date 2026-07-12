@@ -1,0 +1,376 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T17:46:14.774988+00:00",
+  "domain": "Tier_93_Dual_Wave_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier93_dual_wave_panels",
+    "c_thin_depth_pass"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "mathematical",
+    "biological",
+    "neural"
+  ],
+  "D_eff": 19,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 10,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.011093889935064888,
+  "pooled_median_error_pct": 0.011093889935064888,
+  "headline_median_error_pct": 0.022236,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Tier_93_Dual_Wave_Spine_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.011094,
+      "measured": 0.0,
+      "error_pct": 0.011093889935064888,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Tier_93_Dual_Wave_Spine_depth",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "panel_pooled_median",
+      "name": "consciousness_genetics_species_panel",
+      "computed": 0.022236,
+      "measured": 0.022236,
+      "error_pct": 0.0,
+      "record_count": 27,
+      "eval_kind": "tier93_bridge"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "ncbi_taxid",
+      "name": "Homo_sapiens",
+      "computed": 9608.136014,
+      "measured": 9606.0,
+      "error_pct": 0.022236,
+      "source_panel": "consciousness_genetics_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "genome_bp",
+      "name": "Homo_sapiens",
+      "computed": 3100689323.7619,
+      "measured": 3100000000.0,
+      "error_pct": 0.022236,
+      "source_panel": "consciousness_genetics_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_genetics_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "ncbi_taxid",
+      "name": "Mus_musculus",
+      "computed": 10092.243638,
+      "measured": 10090.0,
+      "error_pct": 0.022236,
+      "source_panel": "consciousness_genetics_species_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "panel_pooled_median",
+      "name": "consciousness_genetics_coupling_panel",
+      "computed": 0.031506,
+      "measured": 0.031506,
+      "error_pct": 0.0,
+      "record_count": 18,
+      "eval_kind": "tier93_bridge"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Homo_sapiens",
+      "computed": 0.30287908,
+      "measured": 0.30278369,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_genetics_coupling_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Homo_sapiens",
+      "computed": -0.63996636,
+      "measured": -0.6397648,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_genetics_coupling_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Mus_musculus",
+      "computed": 0.09436032,
+      "measured": 0.0943306,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_genetics_coupling_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Mus_musculus",
+      "computed": -0.15751534,
+      "measured": -0.15746573,
+      "error_pct": 0.031506,
+      "source_panel": "consciousness_genetics_coupling_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "panel_pooled_median",
+      "name": "experimental_base_mathematics_panel",
+      "computed": 0.009504,
+      "measured": 0.009504,
+      "error_pct": 0.0,
+      "record_count": 36,
+      "eval_kind": "tier93_bridge"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "fsot_trinary_alignment",
+      "name": "fsot_native_trinary",
+      "computed": 7.500713,
+      "measured": 7.5,
+      "error_pct": 0.009504,
+      "source_panel": "experimental_base_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "absence_marker_score",
+      "name": "fsot_native_trinary",
+      "computed": 0.717101,
+      "measured": 0.717033,
+      "error_pct": 0.009504,
+      "source_panel": "experimental_base_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "mean_zero_digit_fraction",
+      "name": "fsot_native_trinary",
+      "computed": 0.282994,
+      "measured": 0.282967,
+      "error_pct": 0.009504,
+      "source_panel": "experimental_base_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "carry_density_1_to_500",
+      "name": "fsot_native_trinary",
+      "computed": 0.332697,
+      "measured": 0.332665,
+      "error_pct": 0.009504,
+      "source_panel": "experimental_base_mathematics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "dual_wave_species_genome_count",
+      "name": "consciousness_genetics",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier93_meta"
+    },
+    {
+      "lab": "tier_93_dual_wave_lab",
+      "property": "experimental_base_count",
+      "name": "base_mathematics",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier93_meta"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "order": null,
+      "reference": "Clarke_Sokoloff_1999_brain_20W",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "property": "brain_power_w",
+      "name": "Homo_sapiens",
+      "computed": 20.003601,
+      "measured": 20.0,
+      "error_pct": 0.018003,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "brain_energy_fraction": 0.2416,
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "property": "total_metabolic_w",
+      "name": "Homo_sapiens",
+      "computed": 82.798407,
+      "measured": 82.78,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_live",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "anage_hagrid": "02789",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "property": "E_con_resting",
+      "name": "Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "brain_energy_fraction": 0.2416,
+      "eval_kind": "consciousness_information_floor",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "case_id": "engine_native_h0",
+      "property": "engine_native_h0",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.192564276915754,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "domain_display_name": "math generator",
+      "display_name": "engine native h0",
+      "scientific_measurement": {
+        "delta": -0.12978832,
+        "delta_pct": 0.192564,
+        "effective_error_pct": 0.192564,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "case_id": "external_alma_chromosphere",
+      "property": "brightness_temperature_rms_k",
+      "computed": 99.99581522012987,
+      "measured": 100.0,
+      "error_pct": 0.004184779870129773,
+      "unit": "K",
+      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "brightness temperature rms k",
+      "scientific_measurement": {
+        "delta": -0.00418478,
+        "delta_pct": 0.004185,
+        "effective_error_pct": 0.004185,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "K"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    },
+    {
+      "lab": "tier_93_dual_wave_spine_depth_lab",
+      "case_id": "external_planck_h0",
+      "property": "hubble_constant_km_s_mpc",
+      "computed": 67.38395831285372,
+      "measured": 67.4,
+      "error_pct": 0.023800722768967785,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
+      "eval_kind": "live_formula",
+      "domain_display_name": "math generator",
+      "display_name": "hubble constant km s mpc",
+      "scientific_measurement": {
+        "delta": -0.01604169,
+        "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1587,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15,
+        "unit": "km s^-1 Mpc^-1"
+      },
+      "source_panel": "Pure_Mathematics",
+      "depth_relay_from": "Pure_Mathematics"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.011093889935064888,
+    "max_scalar_error_pct": 0.192564276915754,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

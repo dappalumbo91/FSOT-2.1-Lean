@@ -83,6 +83,7 @@ def main() -> int:
             ("Tier 90 consciousness expansion", [py, "scripts/ingest_tier90_consciousness_expansion.py", "--deep"]),
             ("Tier 91 foundational ontology", [py, "scripts/ingest_tier91_foundational_ontology.py", "--deep"]),
             ("Tier 92 alternate base math", [py, "scripts/ingest_tier92_alternate_base_mathematics.py", "--deep"]),
+            ("Tier 93 dual wave", [py, "scripts/ingest_tier93_dual_wave.py", "--deep"]),
             ("Tier 38 benchmarks", [py, "scripts/build_tier38_public_data_benchmarks.py"]),
             ("Tier 58 benchmarks", [py, "scripts/build_tier58_live_catalog_benchmarks.py"]),
             ("Tier 60 benchmarks", [py, "scripts/build_tier60_astrometry_benchmarks.py"]),
@@ -101,6 +102,7 @@ def main() -> int:
             ("Tier 90 benchmarks", [py, "scripts/build_tier90_consciousness_expansion_benchmarks.py", "--skip-ingest"]),
             ("Tier 91 benchmarks", [py, "scripts/build_tier91_foundational_ontology_benchmarks.py", "--skip-ingest"]),
             ("Tier 92 benchmarks", [py, "scripts/build_tier92_alternate_base_mathematics_benchmarks.py", "--skip-ingest"]),
+            ("Tier 93 benchmarks", [py, "scripts/build_tier93_dual_wave_benchmarks.py", "--skip-ingest"]),
             ("Lean priors tier 38", [py, "scripts/gen_tier38_public_data_lean.py"]),
             ("Lean priors tier 68-70", [py, "scripts/gen_tiers_68_70_lean.py"]),
             ("Lean priors tier 79", [py, "scripts/gen_tier79_telescope_lean.py"]),
@@ -116,6 +118,7 @@ def main() -> int:
             ("Lean priors tier 90", [py, "scripts/gen_tier90_consciousness_expansion_lean.py"]),
             ("Lean priors tier 91", [py, "scripts/gen_tier91_foundational_ontology_lean.py"]),
             ("Lean priors tier 92", [py, "scripts/gen_tier92_alternate_base_mathematics_lean.py"]),
+            ("Lean priors tier 93", [py, "scripts/gen_tier93_dual_wave_lean.py"]),
             ("Core formula fractal sync", [py, "scripts/sync_core_formula_fractal_branches.py"]),
             ("C_thin panel upgrade", [py, "scripts/upgrade_c_thin_panels.py"]),
         ]

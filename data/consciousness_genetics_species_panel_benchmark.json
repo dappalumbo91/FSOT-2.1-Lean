@@ -1,0 +1,387 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T17:46:11.741709+00:00",
+  "domain": "Consciousness_Genetics_Species_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "https://eutils.ncbi.nlm.nih.gov/",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\consciousness_reference_observables.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\consciousness_genetics\\tier93_consciousness_genetics_cache.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "biological"
+  ],
+  "D_eff": 18,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 27,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.022236,
+  "pooled_median_error_pct": 0.022236,
+  "headline_median_error_pct": 0.022236,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "species_genome": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "Brain metabolic panels without genome crosswalk"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_consciousness_genetics_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 27
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "consciousness_genetics",
+      "name": "species_genome",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 27
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Homo_sapiens",
+      "computed": 9608.136014,
+      "measured": 9606.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Homo_sapiens",
+      "computed": 3100689323.7619,
+      "measured": 3100000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9606
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Mus_musculus",
+      "computed": 10092.243638,
+      "measured": 10090.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Mus_musculus",
+      "computed": 2720604826.0105,
+      "measured": 2720000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 10090
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Mus_musculus",
+      "computed": 0.100032,
+      "measured": 0.1,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Rattus_norvegicus",
+      "computed": 10118.249419,
+      "measured": 10116.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Rattus_norvegicus",
+      "computed": 2870638180.3861,
+      "measured": 2870000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 10116
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Rattus_norvegicus",
+      "computed": 0.110035,
+      "measured": 0.11,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Elephas_maximus",
+      "computed": 9785.175372,
+      "measured": 9783.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Elephas_maximus",
+      "computed": 3200711560.0123,
+      "measured": 3200000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9783
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Elephas_maximus",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Bos_taurus",
+      "computed": 9915.20428,
+      "measured": 9913.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Bos_taurus",
+      "computed": 2710602602.3854,
+      "measured": 2710000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9913
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Bos_taurus",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Sarcophilus_harrisii",
+      "computed": 9307.069083,
+      "measured": 9305.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Sarcophilus_harrisii",
+      "computed": 3270727125.3876,
+      "measured": 3270000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9305
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Sarcophilus_harrisii",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Monodelphis_domestica",
+      "computed": 13619.027688,
+      "measured": 13616.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Monodelphis_domestica",
+      "computed": 3490776045.1384,
+      "measured": 3490000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 13616
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Monodelphis_domestica",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Didelphis_virginiana",
+      "computed": 9269.060633,
+      "measured": 9267.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Didelphis_virginiana",
+      "computed": 3300733796.2627,
+      "measured": 3300000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9267
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Didelphis_virginiana",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "ncbi_taxid",
+      "name": "Ornithorhynchus_anatinus",
+      "computed": 9260.058632,
+      "measured": 9258.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor"
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "genome_bp",
+      "name": "Ornithorhynchus_anatinus",
+      "computed": 2270504762.8837,
+      "measured": 2270000000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "genome_assembly",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "taxid": 9258
+    },
+    {
+      "lab": "consciousness_genetics_species_lab",
+      "property": "brain_energy_fraction",
+      "name": "Ornithorhynchus_anatinus",
+      "computed": 0.120038,
+      "measured": 0.12,
+      "error_pct": 0.031506,
+      "eval_kind": "consciousness_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.022236,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "species_with_genome": 13
+}

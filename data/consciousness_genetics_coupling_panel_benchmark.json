@@ -1,0 +1,357 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T17:46:13.852412+00:00",
+  "domain": "Consciousness_Genetics_Coupling_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier93_consciousness_genetics_cache.json",
+    "tier90_observer_effect",
+    "c_thin_depth_pass"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "biological"
+  ],
+  "D_eff": 17,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 24,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.031506,
+  "pooled_median_error_pct": 0.031506,
+  "headline_median_error_pct": 0.031506,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Consciousness_Genetics_Coupling_Panel_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Consciousness_Genetics_Coupling_Panel_depth",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Homo_sapiens",
+      "computed": 0.30287908,
+      "measured": 0.30278369,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.2416,
+      "genome_bp": 3100000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Homo_sapiens",
+      "computed": -0.63996636,
+      "measured": -0.6397648,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 1.15,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Mus_musculus",
+      "computed": 0.09436032,
+      "measured": 0.0943306,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.1,
+      "genome_bp": 2720000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Mus_musculus",
+      "computed": -0.15751534,
+      "measured": -0.15746573,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.73986,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Rattus_norvegicus",
+      "computed": 0.11177629,
+      "measured": 0.11174108,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.11,
+      "genome_bp": 2870000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Rattus_norvegicus",
+      "computed": -0.20243058,
+      "measured": -0.20236683,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.775971,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Elephas_maximus",
+      "computed": 0.18593027,
+      "measured": 0.18587171,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 3200000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Elephas_maximus",
+      "computed": -0.24595366,
+      "measured": -0.2458762,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Bos_taurus",
+      "computed": 0.16301287,
+      "measured": 0.16296152,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 2710000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Bos_taurus",
+      "computed": -0.24408593,
+      "measured": -0.24400905,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Sarcophilus_harrisii",
+      "computed": 0.13316173,
+      "measured": 0.13311979,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 3270000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Sarcophilus_harrisii",
+      "computed": -0.24619684,
+      "measured": -0.24611929,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Monodelphis_domestica",
+      "computed": 0.11434667,
+      "measured": 0.11431065,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 3490000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Monodelphis_domestica",
+      "computed": -0.24692855,
+      "measured": -0.24685077,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Didelphis_virginiana",
+      "computed": 0.12992267,
+      "measured": 0.12988175,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 3300000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Didelphis_virginiana",
+      "computed": -0.24629947,
+      "measured": -0.24622189,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "consciousness_genetic_coupling",
+      "name": "Ornithorhynchus_anatinus",
+      "computed": 0.12381992,
+      "measured": 0.12378092,
+      "error_pct": 0.031506,
+      "brain_energy_fraction": 0.12,
+      "genome_bp": 2270000000.0,
+      "eval_kind": "genotype_phenotype_coupling"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_lab",
+      "property": "quirk_genome_coupling",
+      "name": "Ornithorhynchus_anatinus",
+      "computed": -0.24209495,
+      "measured": -0.2420187,
+      "error_pct": 0.031506,
+      "delta_psi_proxy": 0.810476,
+      "eval_kind": "observer_genetic_bridge"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "brain_energy_fraction",
+      "name": "Homo_sapiens",
+      "computed": 0.241676,
+      "measured": 0.2416,
+      "error_pct": 0.031506,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "order": null,
+      "reference": "Clarke_Sokoloff_1999_brain_20W",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "brain_power_w",
+      "name": "Homo_sapiens",
+      "computed": 20.003601,
+      "measured": 20.0,
+      "error_pct": 0.018003,
+      "eval_kind": "cross_species_metabolic",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "brain_energy_fraction": 0.2416,
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "total_metabolic_w",
+      "name": "Homo_sapiens",
+      "computed": 82.798407,
+      "measured": 82.78,
+      "error_pct": 0.022236,
+      "eval_kind": "anage_live",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "anage_hagrid": "02789",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "E_con_resting",
+      "name": "Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "brain_energy_fraction": 0.2416,
+      "eval_kind": "consciousness_information_floor",
+      "source_panel": "Consciousness_Species_Multi_Panel",
+      "depth_relay_from": "Consciousness_Species_Multi_Panel"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
+    },
+    {
+      "lab": "consciousness_genetics_coupling_panel_depth_lab",
+      "property": "ncbi_taxid",
+      "name": "Homo_sapiens",
+      "computed": 9608.136014,
+      "measured": 9606.0,
+      "error_pct": 0.022236,
+      "eval_kind": "ncbi_taxonomy",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "genome_source": "literature_anchor",
+      "source_panel": "Consciousness_Genetics_Species_Panel",
+      "depth_relay_from": "Consciousness_Genetics_Species_Panel"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.031506,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

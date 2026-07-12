@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-07-12T17:36:39.292844+00:00",
+  "generated_at": "2026-07-12T17:46:24.592083+00:00",
   "c_thin_before": 3,
   "c_thin_after": 0,
   "promoted_to_B": 3,
   "promoted_to_A": 0,
   "c_thin_panels": [
     {
-      "panel": "Nothing_Perfection_Friction_Origin_Panel",
-      "records": 6,
-      "median_error_pct": 0.0,
-      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
-      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
-      "records_after": 24,
-      "median_after": 0.008488,
+      "panel": "Consciousness_Genetics_Species_Panel",
+      "records": 15,
+      "median_error_pct": 0.022236,
+      "ingest_script": "scripts/ingest_tier93_dual_wave.py",
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
+      "records_after": 27,
+      "median_after": 0.022236,
       "tier_after": "B_verified"
     },
     {
-      "panel": "Zero_Boundary_Not_Entity_Panel",
-      "records": 6,
-      "median_error_pct": 0.009504,
-      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
-      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "panel": "Consciousness_Genetics_Coupling_Panel",
+      "records": 10,
+      "median_error_pct": 0.031506,
+      "ingest_script": "scripts/ingest_tier93_dual_wave.py",
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.020055,
+      "median_after": 0.031506,
       "tier_after": "B_verified"
     },
     {
-      "panel": "Alternate_Base_Mathematics_Spine",
-      "records": 8,
+      "panel": "Tier_93_Dual_Wave_Spine",
+      "records": 17,
       "median_error_pct": 0.0,
       "ingest_script": null,
-      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
       "records_after": 24,
-      "median_after": 0.004184779870129773,
+      "median_after": 0.011093889935064888,
       "tier_after": "B_verified"
     }
   ],
@@ -2279,19 +2279,10 @@
     },
     {
       "panel": "Nothing_Perfection_Friction_Origin_Panel",
-      "skipped": false,
-      "records_before": 6,
-      "records_after": 24,
-      "median_after": 0.008488,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Time_Domain_Crosswalk",
-        "UAP_War_Gov_Release_Panel",
-        "Pure_Mathematics",
-        "Math_Generator_Rules_Eval",
-        "Domain_Coupling_Simulation",
-        "Foundational_Ontology_Spine"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Overflow_Carry_Emergence_Panel",
@@ -2302,19 +2293,10 @@
     },
     {
       "panel": "Zero_Boundary_Not_Entity_Panel",
-      "skipped": false,
-      "records_before": 6,
-      "records_after": 24,
-      "median_after": 0.020055,
-      "tier_after": "B_verified",
-      "bridges_used": [
-        "Pure_Mathematics",
-        "Math_Generator_Rules_Eval",
-        "Formula_Branching_Fractal",
-        "Time_Domain_Crosswalk",
-        "UAP_War_Gov_Release_Panel",
-        "Domain_Coupling_Simulation"
-      ]
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
     },
     {
       "panel": "Alternate_Base_Mathematics_Explorer_Panel",
@@ -2325,36 +2307,69 @@
     },
     {
       "panel": "Alternate_Base_Mathematics_Spine",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 24,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Consciousness_Genetics_Coupling_Panel",
       "skipped": false,
-      "records_before": 8,
+      "records_before": 18,
       "records_after": 24,
-      "median_after": 0.004184779870129773,
+      "median_after": 0.031506,
       "tier_after": "B_verified",
       "bridges_used": [
+        "Consciousness_Species_Multi_Panel",
+        "Computational_Reasoning",
+        "Consciousness_Genetics_Species_Panel",
+        "Consciousness_Expansion_Spine",
+        "Observer_Effect_Cross_Species_Panel",
+        "Observer_Channel_Derivation"
+      ]
+    },
+    {
+      "panel": "Consciousness_Genetics_Species_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 27,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Experimental_Base_Mathematics_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 36,
+      "tier": "B_verified"
+    },
+    {
+      "panel": "Tier_93_Dual_Wave_Spine",
+      "skipped": false,
+      "records_before": 17,
+      "records_after": 24,
+      "median_after": 0.011093889935064888,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Consciousness_Species_Multi_Panel",
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Programming_Language_Laws",
-        "Desktop_Application_Wiring_Spine",
-        "Certified_Agent_Formal_Panel"
+        "Overflow_Carry_Emergence_Panel",
+        "Consciousness_Genetics_Species_Panel"
       ]
     }
   ],
   "actions": [
     {
-      "ingest_script": "scripts/ingest_tier91_foundational_ontology.py",
+      "ingest_script": "scripts/ingest_tier93_dual_wave.py",
       "exit_code": 0
     },
     {
-      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
       "exit_code": 0
     },
     {
-      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
-      "exit_code": 0
-    },
-    {
-      "depth_pass_panels": 325
+      "depth_pass_panels": 329
     }
   ],
   "still_thin": []
