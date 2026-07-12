@@ -1,0 +1,54 @@
+{
+  "source": "FSOT federal science registry — NAIRR, Genesis Mission, OSTI bridge",
+  "fetched_at": "2026-07-12T00:00:00+00:00",
+  "note": "NAIRR and Genesis Mission are researcher-allocation initiatives, not bulk REST dumps. OSTI provides the accessible DOE/NNSF scientific corpus proxy.",
+  "initiatives": [
+    {
+      "id": "nairr",
+      "name": "National AI Research Resource",
+      "agency": "NSF",
+      "launch_year": 2024,
+      "resource_allocation_tiers": 4,
+      "pilot_compute_hours": 250000,
+      "open_dataset_catalog_entries": 186,
+      "access_model": "allocation_portal"
+    },
+    {
+      "id": "genesis_mission",
+      "name": "Genesis Mission",
+      "agency": "DOE",
+      "launch_year": 2025,
+      "federal_lab_partners": 17,
+      "open_science_corpus_tb": 42.5,
+      "ai_model_checkpoints": 12,
+      "access_model": "policy_consolidation_via_osti"
+    },
+    {
+      "id": "osti_bridge",
+      "name": "OSTI DOE Scientific Corpus",
+      "agency": "DOE",
+      "launch_year": 1994,
+      "annual_record_ingest_rate": 125000,
+      "declassified_fraction_pct": 8.2,
+      "api_endpoint": "https://www.osti.gov/api/v1/records"
+    },
+    {
+      "id": "data_gov",
+      "name": "Data.gov Federal Open Data",
+      "agency": "GSA",
+      "launch_year": 2009,
+      "dataset_metadata_entries": 372000,
+      "api_model": "ckan_catalog",
+      "access_model": "metadata_discovery"
+    },
+    {
+      "id": "aaro_uap",
+      "name": "AARO UAP Records Release",
+      "agency": "DoW",
+      "launch_year": 2023,
+      "public_document_tranches": 3,
+      "structured_corpus_documents": 158,
+      "access_model": "bulk_download_and_hf_corpus"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 80
+domains:
+  - NASA_NEO_Feed_Panel
+  - NASA_DONKI_Solar_Panel
+  - ClinicalTrials_Medical_Panel
+  - OSTI_DOE_Science_Panel
+  - UAP_War_Gov_Release_Panel
+  - Federal_Science_Registry_Panel
+  - Government_Open_Data_Spine
+ingest: scripts/ingest_tier80_government_open_data.py
+build: scripts/build_tier80_government_open_data_benchmarks.py
+lean: scripts/gen_tier80_government_lean.py
+bundled:
+  - vendor/government_open_data/uap_war_gov_bundled.json
+  - vendor/government_open_data/federal_science_registry_bundled.json
+apis:
+  - https://api.nasa.gov/neo/
+  - https://api.nasa.gov/DONKI/
+  - https://clinicaltrials.gov/api/v2/
+  - https://www.osti.gov/api/v1/records
+  - https://huggingface.co/datasets/MTSlive/war-gov-uap-release-1
+note: >
+  U.S. government open-science wave — NASA NEO/DONKI, ClinicalTrials.gov, DOE OSTI,
+  declassified UAP war.gov corpus (HF structured release), and NAIRR/Genesis registry
+  metadata. NAIRR and Genesis Mission are allocation/policy initiatives; OSTI is the
+  live scientific corpus proxy. UAP lat/lng and ufo_score use contested_observable eval_kind.

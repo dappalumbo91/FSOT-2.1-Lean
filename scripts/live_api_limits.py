@@ -33,6 +33,10 @@ def tier79_deep() -> bool:
     return _flag("FSOT_TIER79_DEEP") or mega_deep()
 
 
+def tier80_deep() -> bool:
+    return _flag("FSOT_TIER80_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -127,3 +131,64 @@ def cern_query_sizes() -> tuple[int, int, int]:
     if tier38_deep():
         return (60, 50, 40)
     return (40, 30, 20)
+
+
+def nasa_neo_day_span() -> int:
+    # NASA NeoWs feed hard-limits queries to 7 calendar days.
+    return 7
+
+
+def nasa_neo_limit() -> int:
+    if mega_deep():
+        return 200
+    if tier80_deep():
+        return 120
+    return 40
+
+
+def nasa_donki_day_span() -> int:
+    if mega_deep():
+        return 365
+    if tier80_deep():
+        return 180
+    return 90
+
+
+def nasa_donki_limit() -> int:
+    if mega_deep():
+        return 200
+    if tier80_deep():
+        return 100
+    return 40
+
+
+def clinicaltrials_limit() -> int:
+    if mega_deep():
+        return 200
+    if tier80_deep():
+        return 100
+    return 30
+
+
+def osti_record_limit() -> int:
+    if mega_deep():
+        return 100
+    if tier80_deep():
+        return 50
+    return 20
+
+
+def uap_document_limit() -> int:
+    if mega_deep():
+        return 158
+    if tier80_deep():
+        return 100
+    return 40
+
+
+def uap_figure_limit() -> int:
+    if mega_deep():
+        return 500
+    if tier80_deep():
+        return 250
+    return 80

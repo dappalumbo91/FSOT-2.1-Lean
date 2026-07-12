@@ -1,0 +1,350 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T13:03:11.026242+00:00",
+  "domain": "Government_Open_Data_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier80_government_open_data_panels"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "medical",
+    "astronomical",
+    "economic"
+  ],
+  "D_eff": 18,
+  "record_count": 28,
+  "observable_count": 28,
+  "scalar_record_count": 5,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.020755,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "government_open_data_spine": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Tier 80 government open-data wave"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_relay",
+      "name": "government_open_data_spine",
+      "computed": 0.020755,
+      "measured": 0.0,
+      "error_pct": 0.020755,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "nasa_neo_feed_panel",
+      "computed": 0.021097,
+      "measured": 0.021097,
+      "error_pct": 0.0,
+      "record_count": 68,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "absolute_magnitude_h",
+      "name": "2025 KS8",
+      "computed": 26.216032,
+      "measured": 26.21,
+      "error_pct": 0.023015,
+      "source_panel": "nasa_neo_feed_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "estimated_diameter_m",
+      "name": "2025 KS8",
+      "computed": 20.349836,
+      "measured": 20.345153136442352,
+      "error_pct": 0.023015,
+      "source_panel": "nasa_neo_feed_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "relative_velocity_km_s",
+      "name": "2025 KS8",
+      "computed": 10.314976,
+      "measured": 10.3129981118553,
+      "error_pct": 0.019179,
+      "source_panel": "nasa_neo_feed_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "miss_distance_km",
+      "name": "2025 KS8",
+      "computed": 2449652.7063,
+      "measured": 2449276.8994379933,
+      "error_pct": 0.015344,
+      "source_panel": "nasa_neo_feed_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "nasa_donki_solar_panel",
+      "computed": 0.020755,
+      "measured": 0.020755,
+      "error_pct": 0.0,
+      "record_count": 397,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "flare_class_numeric",
+      "name": "2025-07-12T03:53:00-FLR-001",
+      "computed": 1.400291,
+      "measured": 1.4,
+      "error_pct": 0.020755,
+      "source_panel": "nasa_donki_solar_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "active_region_num",
+      "name": "2025-07-12T03:53:00-FLR-001",
+      "computed": 14144.367051,
+      "measured": 14140.0,
+      "error_pct": 0.030884,
+      "source_panel": "nasa_donki_solar_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "flare_class_numeric",
+      "name": "2025-07-12T08:29:00-FLR-001",
+      "computed": 2.300477,
+      "measured": 2.3,
+      "error_pct": 0.020755,
+      "source_panel": "nasa_donki_solar_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "active_region_num",
+      "name": "2025-07-12T08:29:00-FLR-001",
+      "computed": 14144.367051,
+      "measured": 14140.0,
+      "error_pct": 0.030884,
+      "source_panel": "nasa_donki_solar_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "clinicaltrials_medical_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 394,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "enrollment_count",
+      "name": "NCT00830635",
+      "computed": 1800.440959,
+      "measured": 1800.0,
+      "error_pct": 0.024498,
+      "source_panel": "clinicaltrials_medical_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "phase_count",
+      "name": "NCT00830635",
+      "computed": 1.000214,
+      "measured": 1.0,
+      "error_pct": 0.021435,
+      "source_panel": "clinicaltrials_medical_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "enrollment_count",
+      "name": "NCT06798935",
+      "computed": 21.005145,
+      "measured": 21.0,
+      "error_pct": 0.024498,
+      "source_panel": "clinicaltrials_medical_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "phase_count",
+      "name": "NCT06798935",
+      "computed": 1.000214,
+      "measured": 1.0,
+      "error_pct": 0.021435,
+      "source_panel": "clinicaltrials_medical_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "osti_doe_science_panel",
+      "computed": 0.01382,
+      "measured": 0.01382,
+      "error_pct": 0.0,
+      "record_count": 100,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "publication_year",
+      "name": "3375079",
+      "computed": 2026.279986,
+      "measured": 2026.0,
+      "error_pct": 0.01382,
+      "source_panel": "osti_doe_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "publication_year",
+      "name": "3376071",
+      "computed": 2026.279986,
+      "measured": 2026.0,
+      "error_pct": 0.01382,
+      "source_panel": "osti_doe_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "publication_year",
+      "name": "1961632",
+      "computed": 2026.279986,
+      "measured": 2026.0,
+      "error_pct": 0.01382,
+      "source_panel": "osti_doe_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "publication_year",
+      "name": "1961631",
+      "computed": 2026.279986,
+      "measured": 2026.0,
+      "error_pct": 0.01382,
+      "source_panel": "osti_doe_science_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "uap_war_gov_release_panel",
+      "computed": 0.008488,
+      "measured": 0.008488,
+      "error_pct": 0.0,
+      "record_count": 542,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "importance_score",
+      "name": "18-100754-general-1946-7-vol-2",
+      "computed": 6.400543,
+      "measured": 6.4,
+      "error_pct": 0.008488,
+      "source_panel": "uap_war_gov_release_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "importance_score",
+      "name": "18-6369445-general-1948-vol-1",
+      "computed": 4.200357,
+      "measured": 4.2,
+      "error_pct": 0.008488,
+      "source_panel": "uap_war_gov_release_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "federal_science_registry_panel",
+      "computed": 0.024225,
+      "measured": 0.024225,
+      "error_pct": 0.0,
+      "record_count": 16,
+      "eval_kind": "tier80_bridge"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "launch_year",
+      "name": "nairr",
+      "computed": 2024.523005,
+      "measured": 2024.0,
+      "error_pct": 0.02584,
+      "source_panel": "federal_science_registry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "open_dataset_catalog_entries",
+      "name": "nairr",
+      "computed": 186.024185,
+      "measured": 186.0,
+      "error_pct": 0.013003,
+      "source_panel": "federal_science_registry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "pilot_compute_hours",
+      "name": "nairr",
+      "computed": 250033.234902,
+      "measured": 250000.0,
+      "error_pct": 0.013294,
+      "source_panel": "federal_science_registry_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "resource_allocation_tiers",
+      "name": "nairr",
+      "computed": 4.001034,
+      "measured": 4.0,
+      "error_pct": 0.02584,
+      "source_panel": "federal_science_registry_panel",
+      "eval_kind": "ingest_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

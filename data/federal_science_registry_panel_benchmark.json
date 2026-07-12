@@ -1,0 +1,278 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T13:03:11.022062+00:00",
+  "domain": "Federal_Science_Registry_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\government_open_data\\live_cache\\federal_science_registry_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\government_open_data\\federal_science_registry_bundled.json"
+  ],
+  "maps_to_lean": [
+    "economic",
+    "particle",
+    "energy"
+  ],
+  "D_eff": 17,
+  "record_count": 16,
+  "observable_count": 16,
+  "scalar_record_count": 16,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.024225,
+  "pooled_median_error_pct": 0.024225,
+  "headline_median_error_pct": 0.02584,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "federal_science_registry": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "Federal open-science initiative metadata (NAIRR/Genesis/OSTI)"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.024225,
+      "measured": 0.0,
+      "error_pct": 0.024225,
+      "observable_count": 16
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "federal_science_registry",
+      "computed": 0.02584,
+      "measured": 0.0,
+      "error_pct": 0.02584,
+      "observable_count": 16
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "launch_year",
+      "name": "nairr",
+      "computed": 2024.523005,
+      "measured": 2024.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "National AI Research Resource",
+      "agency": "NSF"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "open_dataset_catalog_entries",
+      "name": "nairr",
+      "computed": 186.024185,
+      "measured": 186.0,
+      "error_pct": 0.013003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Sociology",
+      "fsot_scalar": 0.650147,
+      "initiative": "National AI Research Resource",
+      "agency": "NSF"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "pilot_compute_hours",
+      "name": "nairr",
+      "computed": 250033.234902,
+      "measured": 250000.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "initiative": "National AI Research Resource",
+      "agency": "NSF"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "resource_allocation_tiers",
+      "name": "nairr",
+      "computed": 4.001034,
+      "measured": 4.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "National AI Research Resource",
+      "agency": "NSF"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "launch_year",
+      "name": "genesis_mission",
+      "computed": 2025.523264,
+      "measured": 2025.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "Genesis Mission",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "federal_lab_partners",
+      "name": "genesis_mission",
+      "computed": 17.002763,
+      "measured": 17.0,
+      "error_pct": 0.016254,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Sociology",
+      "fsot_scalar": 0.650147,
+      "initiative": "Genesis Mission",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "open_science_corpus_tb",
+      "name": "genesis_mission",
+      "computed": 42.505699,
+      "measured": 42.5,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "initiative": "Genesis Mission",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "ai_model_checkpoints",
+      "name": "genesis_mission",
+      "computed": 12.001595,
+      "measured": 12.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "initiative": "Genesis Mission",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "launch_year",
+      "name": "osti_bridge",
+      "computed": 1994.515253,
+      "measured": 1994.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "OSTI DOE Scientific Corpus",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "annual_record_ingest_rate",
+      "name": "osti_bridge",
+      "computed": 125013.819641,
+      "measured": 125000.0,
+      "error_pct": 0.011056,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Nuclear_Physics",
+      "fsot_scalar": 0.921309,
+      "initiative": "OSTI DOE Scientific Corpus",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "declassified_fraction_pct",
+      "name": "osti_bridge",
+      "computed": 8.200779,
+      "measured": 8.2,
+      "error_pct": 0.009504,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Physics",
+      "fsot_scalar": 0.950413,
+      "initiative": "OSTI DOE Scientific Corpus",
+      "agency": "DOE"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "launch_year",
+      "name": "data_gov",
+      "computed": 2009.519129,
+      "measured": 2009.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "Data.gov Federal Open Data",
+      "agency": "GSA"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "dataset_metadata_entries",
+      "name": "data_gov",
+      "computed": 372084.109789,
+      "measured": 372000.0,
+      "error_pct": 0.02261,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "Data.gov Federal Open Data",
+      "agency": "GSA"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "launch_year",
+      "name": "aaro_uap",
+      "computed": 2023.522747,
+      "measured": 2023.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "initiative": "AARO UAP Records Release",
+      "agency": "DoW"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "structured_corpus_documents",
+      "name": "aaro_uap",
+      "computed": 158.04978,
+      "measured": 158.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "initiative": "AARO UAP Records Release",
+      "agency": "DoW"
+    },
+    {
+      "lab": "federal_science_registry_lab",
+      "property": "public_document_tranches",
+      "name": "aaro_uap",
+      "computed": 3.000945,
+      "measured": 3.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "initiative": "AARO UAP Records Release",
+      "agency": "DoW"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.024225,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

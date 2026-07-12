@@ -7,6 +7,7 @@ import json
 import os
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -112,6 +113,47 @@ def main() -> int:
         data = fetch_json(url, timeout=30)
         return "cid=2244 ok"
 
+    def nasa_neo():
+        key = os.environ.get("NASA_API_KEY", "DEMO_KEY").strip() or "DEMO_KEY"
+        url = (
+            "https://api.nasa.gov/neo/rest/v1/feed?"
+            "start_date=2025-06-01&end_date=2025-06-03&"
+            f"api_key={urllib.parse.quote(key)}"
+        )
+        data = fetch_json(url, timeout=30)
+        return f"element_count={data.get('element_count')}"
+
+    def nasa_donki():
+        key = os.environ.get("NASA_API_KEY", "DEMO_KEY").strip() or "DEMO_KEY"
+        url = (
+            "https://api.nasa.gov/DONKI/FLR?startDate=2025-01-01&endDate=2025-01-15&"
+            f"api_key={urllib.parse.quote(key)}"
+        )
+        data = fetch_json(url, timeout=30)
+        return f"flares={len(data) if isinstance(data, list) else 0}"
+
+    def clinicaltrials():
+        data = fetch_json(
+            "https://clinicaltrials.gov/api/v2/studies?format=json&pageSize=3",
+            timeout=30,
+        )
+        return f"studies={len(data.get('studies') or [])}"
+
+    def osti():
+        data = fetch_json("https://www.osti.gov/api/v1/records?rows=3", timeout=30)
+        rows = data if isinstance(data, list) else (data.get("records") or [])
+        return f"records={len(rows)}"
+
+    def uap_war_gov():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "https://huggingface.co/datasets/MTSlive/war-gov-uap-release-1/resolve/main/documents.jsonl",
+            timeout=45,
+        ).decode("utf-8")
+        n = sum(1 for line in raw.splitlines() if line.strip())
+        return f"documents_jsonl_lines={n}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -121,6 +163,11 @@ def main() -> int:
         ("materials_project", materials),
         ("openneuro_graphql", openneuro),
         ("pubchem_pug", pubchem),
+        ("nasa_neo_feed", nasa_neo),
+        ("nasa_donki_flr", nasa_donki),
+        ("clinicaltrials_v2", clinicaltrials),
+        ("osti_doe_records", osti),
+        ("uap_war_gov_hf", uap_war_gov),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

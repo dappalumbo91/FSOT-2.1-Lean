@@ -3248,6 +3248,103 @@ extension_domains:
     lean_module: FSOT.Formal.StsciMastTelescopePriors
     note: "STScI MAST CAOM — HST/JWST/TESS archive metadata cross-verification"
 
+  NASA_NEO_Feed_Panel:
+    tier: 80
+    D_eff: 18
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, planetary, particle]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/nasa_neo_feed_panel_benchmark.json
+    lean_module: FSOT.Formal.NasaNeoFeedPriors
+    note: "NASA NeoWs feed — asteroid magnitude, diameter, velocity, miss distance"
+
+  NASA_DONKI_Solar_Panel:
+    tier: 80
+    D_eff: 14
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [fusion, energy, plasma]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/nasa_donki_solar_panel_benchmark.json
+    lean_module: FSOT.Formal.NasaDonkiSolarPriors
+    note: "NASA DONKI solar flare catalog — class numeric + active region"
+
+  ClinicalTrials_Medical_Panel:
+    tier: 80
+    D_eff: 13
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/clinicaltrials_medical_panel_benchmark.json
+    lean_module: FSOT.Formal.ClinicaltrialsMedicalPriors
+    note: "NIH ClinicalTrials.gov v2 API — enrollment and phase counts"
+
+  OSTI_DOE_Science_Panel:
+    tier: 80
+    D_eff: 18
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, nuclear, energy]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/osti_doe_science_panel_benchmark.json
+    lean_module: FSOT.Formal.OstiDoeSciencePriors
+    note: "DOE OSTI open scientific corpus — publication year anchors"
+
+  UAP_War_Gov_Release_Panel:
+    tier: 80
+    D_eff: 20
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, astronomical, consciousness]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/uap_war_gov_release_panel_benchmark.json
+    lean_module: FSOT.Formal.UapWarGovReleasePriors
+    note: "Declassified UAP war.gov / AARO release — HF structured corpus; contested geospatial observables"
+
+  Federal_Science_Registry_Panel:
+    tier: 80
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [economic, particle, energy]
+    ingest_script: scripts/ingest_tier80_government_open_data.py
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/federal_science_registry_panel_benchmark.json
+    lean_module: FSOT.Formal.FederalScienceRegistryPriors
+    note: "NAIRR + Genesis Mission + Data.gov + OSTI bridge registry metadata (allocation portals documented)"
+
+  Government_Open_Data_Spine:
+    tier: 80
+    D_eff: 18
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, medical, astronomical, economic]
+    build_script: scripts/build_tier80_government_open_data_benchmarks.py
+    manifest: data/tier80_government_open_data_manifest.yaml
+    benchmark_data: data/government_open_data_spine_benchmark.json
+    lean_module: FSOT.Formal.GovernmentOpenDataSpinePriors
+    note: "Tier 80 cross-panel spine — government open-data validation relay"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

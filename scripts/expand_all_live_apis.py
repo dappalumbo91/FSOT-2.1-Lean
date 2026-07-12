@@ -30,6 +30,7 @@ def _env() -> dict[str, str]:
         "FSOT_TIER62_DEEP",
         "FSOT_TIER68_DEEP",
         "FSOT_TIER79_DEEP",
+        "FSOT_TIER80_DEEP",
     ):
         env[key] = "1"
     return env
@@ -67,15 +68,18 @@ def main() -> int:
             ("Tier 62 Gaia DR3", [py, "scripts/ingest_tier62_live_astrometry.py", "--deep"]),
             ("Tier 68 live ingest", [py, "scripts/ingest_tier68_live_ingest.py", "--deep"]),
             ("Tier 79 STScI MAST", [py, "scripts/ingest_stsci_mast.py", "--deep"]),
+            ("Tier 80 government open data", [py, "scripts/ingest_tier80_government_open_data.py", "--deep"]),
             ("Tier 38 benchmarks", [py, "scripts/build_tier38_public_data_benchmarks.py"]),
             ("Tier 58 benchmarks", [py, "scripts/build_tier58_live_catalog_benchmarks.py"]),
             ("Tier 60 benchmarks", [py, "scripts/build_tier60_astrometry_benchmarks.py"]),
             ("Tier 62 benchmarks", [py, "scripts/build_tier62_astrometry_benchmarks.py"]),
             ("Tier 68 benchmarks", [py, "scripts/build_tier68_live_ingest_benchmarks.py"]),
             ("Tier 79 benchmarks", [py, "scripts/build_tier79_telescope_benchmarks.py"]),
+            ("Tier 80 benchmarks", [py, "scripts/build_tier80_government_open_data_benchmarks.py", "--skip-ingest"]),
             ("Lean priors tier 38", [py, "scripts/gen_tier38_public_data_lean.py"]),
             ("Lean priors tier 68-70", [py, "scripts/gen_tiers_68_70_lean.py"]),
             ("Lean priors tier 79", [py, "scripts/gen_tier79_telescope_lean.py"]),
+            ("Lean priors tier 80", [py, "scripts/gen_tier80_government_lean.py"]),
         ]
     )
 
