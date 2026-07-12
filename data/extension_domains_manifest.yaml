@@ -3990,6 +3990,160 @@ extension_domains:
     lean_module: FSOT.Formal.ScientificExpansionDepthSpinePriors
     note: "Tier 86 depth wave spine — Pure Math closure + audit depth panels"
 
+  Quantum_Computing_Math_Depth_Panel:
+    tier: 87
+    D_eff: 19
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, particle, mathematical]
+    formula_branch_override: term1.quirkMod
+    routes_to_core: Quantum_Computing
+    ingest_script: scripts/ingest_tier87_scientific_expansion.py
+    build_script: scripts/build_tier87_scientific_expansion_benchmarks.py
+    manifest: data/tier87_scientific_expansion_manifest.yaml
+    benchmark_data: data/quantum_computing_math_depth_panel_benchmark.json
+    lean_module: FSOT.Formal.QuantumComputingMathDepthPanelPriors
+    note: "Math-first QC depth — rules, gate fidelity, error correction; physical QC verifies"
+
+  Neuroscience_Connectomics_Depth_Panel:
+    tier: 87
+    D_eff: 18
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [neural, consciousness, biophysics]
+    formula_branch_override: term3.chaos_factor
+    routes_to_core: Neuroscience
+    ingest_script: scripts/ingest_tier87_scientific_expansion.py
+    build_script: scripts/build_tier87_scientific_expansion_benchmarks.py
+    manifest: data/tier87_scientific_expansion_manifest.yaml
+    benchmark_data: data/neuroscience_connectomics_depth_panel_benchmark.json
+    lean_module: FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors
+    note: "Neuroscience connectomics depth — neuron cohort strata + catalog coverage"
+
+  Condensed_Matter_Superconductivity_Depth_Panel:
+    tier: 87
+    D_eff: 16
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, particle, energy]
+    formula_branch_override: term2.amplitude
+    routes_to_core: Condensed_Matter
+    ingest_script: scripts/ingest_tier87_scientific_expansion.py
+    build_script: scripts/build_tier87_scientific_expansion_benchmarks.py
+    manifest: data/tier87_scientific_expansion_manifest.yaml
+    benchmark_data: data/condensed_matter_superconductivity_depth_panel_benchmark.json
+    lean_module: FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors
+    note: "Superconductivity Tc depth — literature + breakthrough + quantum materials"
+
+  Optics_Interferometry_Depth_Panel:
+    tier: 87
+    D_eff: 17
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, particle, galactic]
+    formula_branch_override: term1.perceived_adjust
+    routes_to_core: Optics
+    ingest_script: scripts/ingest_tier87_scientific_expansion.py
+    build_script: scripts/build_tier87_scientific_expansion_benchmarks.py
+    manifest: data/tier87_scientific_expansion_manifest.yaml
+    benchmark_data: data/optics_interferometry_depth_panel_benchmark.json
+    lean_module: FSOT.Formal.OpticsInterferometryDepthPanelPriors
+    note: "Optics interferometry depth — LIGO/JWST reference + MAST em wavelengths"
+
+  Scientific_Expansion_Depth_Wave2_Spine:
+    tier: 87
+    D_eff: 18
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, neural, material, astronomical]
+    build_script: scripts/build_tier87_scientific_expansion_benchmarks.py
+    manifest: data/tier87_scientific_expansion_manifest.yaml
+    benchmark_data: data/scientific_expansion_depth_wave2_spine_benchmark.json
+    lean_module: FSOT.Formal.ScientificExpansionDepthWave2SpinePriors
+    note: "Tier 87 depth wave spine — QC math-first + core domain depth panels"
+
+  Trinary_Hardware_Live_Panel:
+    tier: 88
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, neural]
+    formula_branch_override: term1.quirkMod
+    desktop_theme: trinary_hardware
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/trinary_hardware_live_panel_benchmark.json
+    lean_module: FSOT.Formal.TrinaryHardwareLivePanelPriors
+    note: "Desktop ESP32 cube motif profiles — unwired trinary_hardware wired live"
+
+  Tokenization_Live_Panel:
+    tier: 88
+    D_eff: 13
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    formula_branch_override: term1.quirkMod
+    desktop_theme: tokenization
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/tokenization_live_panel_benchmark.json
+    lean_module: FSOT.Formal.TokenizationLivePanelPriors
+    note: "Desktop Dictionary tokenization smoke + vocab registry live panel"
+
+  Living_FSOT_Hardware_Panel:
+    tier: 88
+    D_eff: 15
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [neural, ai, consciousness]
+    formula_branch_override: term3.chaos_factor
+    desktop_theme: living_fsot_hardware
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/living_fsot_hardware_panel_benchmark.json
+    lean_module: FSOT.Formal.LivingFsotHardwarePanelPriors
+    note: "Desktop living FSOT habitat-rust organ accuracy audit live panel"
+
+  Certified_Agent_Formal_Panel:
+    tier: 88
+    D_eff: 14
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, mathematical]
+    formula_branch_override: term1.term1_base
+    desktop_theme: certified_agent
+    ingest_script: scripts/ingest_tier88_application_wiring.py
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/certified_agent_formal_panel_benchmark.json
+    lean_module: FSOT.Formal.CertifiedAgentFormalPanelPriors
+    note: "Desktop Qwen formal certified agent workspace protocol live panel"
+
+  Desktop_Application_Wiring_Spine:
+    tier: 88
+    D_eff: 16
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, neural, mathematical]
+    build_script: scripts/build_tier88_application_wiring_benchmarks.py
+    manifest: data/tier88_application_wiring_manifest.yaml
+    benchmark_data: data/desktop_application_wiring_spine_benchmark.json
+    lean_module: FSOT.Formal.DesktopApplicationWiringSpinePriors
+    note: "Tier 88 application spine — desktop unwired projects wired to Lean"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

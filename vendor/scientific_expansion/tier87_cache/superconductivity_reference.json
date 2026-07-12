@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "literature_superconductor_Tc_K",
+  "credential_free": true,
+  "superconductors": [
+    {"name": "Nb", "Tc_K": 9.25, "type": "elemental"},
+    {"name": "Pb", "Tc_K": 7.2, "type": "elemental"},
+    {"name": "Hg", "Tc_K": 4.15, "type": "elemental"},
+    {"name": "Sn", "Tc_K": 3.72, "type": "elemental"},
+    {"name": "Al", "Tc_K": 1.18, "type": "elemental"},
+    {"name": "MgB2", "Tc_K": 39.0, "type": "conventional"},
+    {"name": "YBCO", "Tc_K": 92.0, "type": "cuprate"},
+    {"name": "Bi2212", "Tc_K": 95.0, "type": "cuprate"},
+    {"name": "FeSe", "Tc_K": 8.0, "type": "iron_based"},
+    {"name": "BaKFe2As2", "Tc_K": 38.0, "type": "iron_based"},
+    {"name": "Nb3Sn", "Tc_K": 18.3, "type": "A15"},
+    {"name": "NbTi", "Tc_K": 9.8, "type": "alloy"},
+    {"name": "LaH10_ambient_claim", "Tc_K": 250.0, "type": "hydrides_claim"},
+    {"name": "H3S_high_P", "Tc_K": 203.0, "type": "hydrides"},
+    {"name": "EuO", "Tc_K": 69.3, "type": "magnetic"}
+  ]
+}

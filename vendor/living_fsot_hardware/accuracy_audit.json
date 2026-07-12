@@ -1,0 +1,1094 @@
+{
+  "tick": 35,
+  "generation": 90,
+  "pack_mean": 0.535282682851862,
+  "pack_weak_organs": 85,
+  "orgs": [
+    {
+      "id": "elite-g90-0",
+      "mean_acc": 0.7041716475070237,
+      "fitness": 22.81765133295752,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9677061561155675,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.685910801691846,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "code",
+          "value": 0.9999999999987396,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "vision",
+          "value": 0.9984496296656936,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "knowledge",
+          "value": 0.9992953381324372,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.1,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.46984000000000004,
+          "thr": 0.25,
+          "weak": false
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.75681998848,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.6172,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 5,
+      "boosted": [
+        "collective:0%→stim1.84",
+        "composition:10%→stim1.64",
+        "self_model:0%→stim2.14",
+        "bench:62%→stim1.10",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-1",
+      "mean_acc": 0.5188752875178669,
+      "fitness": 14.691467059466556,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.8111360042144037,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.19,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8888735999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.11639999999999999,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.6172,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:19%→stim1.60",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:12%→stim1.00",
+        "self_model:0%→stim2.14",
+        "bench:62%→stim1.10",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-2",
+      "mean_acc": 0.5298507751482622,
+      "fitness": 15.049398033527664,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9428418557791465,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.19,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8888735999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.11639999999999999,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.6172,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:19%→stim1.60",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:12%→stim1.00",
+        "self_model:0%→stim2.14",
+        "bench:62%→stim1.10",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-3",
+      "mean_acc": 0.5116532033225781,
+      "fitness": 15.002288505034908,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9388645938709373,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-4",
+      "mean_acc": 0.5140239960005816,
+      "fitness": 15.116494509820553,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9673141060069786,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-5",
+      "mean_acc": 0.5140427480260741,
+      "fitness": 15.108169899653838,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9675391303128894,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-6",
+      "mean_acc": 0.5140134707291656,
+      "fitness": 15.00253802820695,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9671878027499876,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-7",
+      "mean_acc": 0.5104588883473484,
+      "fitness": 14.973171951316857,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9245328141681813,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-8",
+      "mean_acc": 0.524060128988313,
+      "fitness": 15.397514729919315,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9284408858597569,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.626752,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.8124636159999999,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 8,
+      "boosted": [
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    },
+    {
+      "id": "org-g0-9",
+      "mean_acc": 0.5116766829314058,
+      "fitness": 15.014907668560054,
+      "organs": [
+        {
+          "name": "cognitive",
+          "value": 0.9391463491768703,
+          "thr": 0.62,
+          "weak": false
+        },
+        {
+          "name": "language",
+          "value": 0.48160000000000003,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "code",
+          "value": 0.0,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "vision",
+          "value": 0.11470718999999999,
+          "thr": 0.62,
+          "weak": true
+        },
+        {
+          "name": "knowledge",
+          "value": 0.8644799999999999,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "collective",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "audio",
+          "value": 0.817048,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "video",
+          "value": 0.812692,
+          "thr": 0.72,
+          "weak": false
+        },
+        {
+          "name": "js",
+          "value": 0.892137856,
+          "thr": 0.85,
+          "weak": false
+        },
+        {
+          "name": "composition",
+          "value": 0.0,
+          "thr": 0.55,
+          "weak": true
+        },
+        {
+          "name": "code_l2",
+          "value": 0.0,
+          "thr": 0.25,
+          "weak": true
+        },
+        {
+          "name": "gen_acc",
+          "value": 0.7833088,
+          "thr": 0.7,
+          "weak": false
+        },
+        {
+          "name": "self_model",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        },
+        {
+          "name": "bench",
+          "value": 0.0,
+          "thr": 0.8,
+          "weak": true
+        },
+        {
+          "name": "bench_zs",
+          "value": 0.0,
+          "thr": 0.7,
+          "weak": true
+        }
+      ],
+      "weak_count": 9,
+      "boosted": [
+        "language:48%→stim1.01",
+        "code:0%→stim1.98",
+        "vision:11%→stim1.75",
+        "collective:0%→stim1.84",
+        "composition:0%→stim1.84",
+        "code_l2:0%→stim1.24",
+        "self_model:0%→stim2.14",
+        "bench:0%→stim2.34",
+        "bench_zs:0%→stim2.14"
+      ]
+    }
+  ],
+  "note": "Weak organs get teach+skill stimulus. Accuracy still earned in exams — this is feed, not free grades."
+}

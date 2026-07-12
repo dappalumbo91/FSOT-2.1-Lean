@@ -1,52 +1,28 @@
 {
-  "generated_at": "2026-07-12T16:04:01.585908+00:00",
+  "generated_at": "2026-07-12T16:21:08.051775+00:00",
   "summary": {
     "fsot_formula_core_domains": 35,
     "core_domains_with_empirical_data": 35,
     "core_total_empirical_records": 306680,
-    "extension_panels_verified": 301,
-    "total_scientific_surface": 332,
-    "tier_A_strong": 105,
-    "tier_B_verified": 222,
-    "tier_C_thin": 5,
-    "lean_formal_modules": 429,
+    "extension_panels_verified": 311,
+    "total_scientific_surface": 347,
+    "tier_A_strong": 110,
+    "tier_B_verified": 237,
+    "tier_C_thin": 0,
+    "lean_formal_modules": 444,
     "credential_free_policy": "scripts/public_api_policy.py"
   },
   "core_35_depth_audit": [
     {
-      "fsot_core_domain": "Optics",
-      "empirical_records": 1470,
-      "median_error_pct": 0.058,
-      "extension_panels_routing_here": 0,
-      "fsot_prediction_records_in_extensions": 0,
-      "field_subfields_studied_in_discipline": 9,
-      "subfields_touched_by_fsot": 2,
-      "coverage_vs_field_pct": 22.2,
-      "depth_note": "MAST wavelengths; thin on interferometry, nonlinear optics",
-      "coverage_tier": "A_strong"
-    },
-    {
       "fsot_core_domain": "Psychology",
       "empirical_records": 10,
       "median_error_pct": 0.0013504254899468224,
-      "extension_panels_routing_here": 6,
-      "fsot_prediction_records_in_extensions": 339,
+      "extension_panels_routing_here": 10,
+      "fsot_prediction_records_in_extensions": 437,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 3,
       "coverage_vs_field_pct": 25.0,
       "depth_note": "OpenAlex/citations; thin on psychometrics, RCT outcomes",
-      "coverage_tier": "A_strong"
-    },
-    {
-      "fsot_core_domain": "Quantum_Computing",
-      "empirical_records": 3,
-      "median_error_pct": null,
-      "extension_panels_routing_here": 0,
-      "fsot_prediction_records_in_extensions": 0,
-      "field_subfields_studied_in_discipline": 8,
-      "subfields_touched_by_fsot": 2,
-      "coverage_vs_field_pct": 25.0,
-      "depth_note": "Classifier/scaffold; thin on gate fidelity, error correction",
       "coverage_tier": "A_strong"
     },
     {
@@ -62,23 +38,11 @@
       "coverage_tier": "A_strong"
     },
     {
-      "fsot_core_domain": "Condensed_Matter",
-      "empirical_records": 2154,
-      "median_error_pct": 0.2350703412848426,
-      "extension_panels_routing_here": 1,
-      "fsot_prediction_records_in_extensions": 50,
-      "field_subfields_studied_in_discipline": 14,
-      "subfields_touched_by_fsot": 4,
-      "coverage_vs_field_pct": 28.6,
-      "depth_note": "Materials/quantum materials; thin on superconductivity Tc",
-      "coverage_tier": "A_strong"
-    },
-    {
       "fsot_core_domain": "Quantum_Optics",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 0,
-      "fsot_prediction_records_in_extensions": 0,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 5,
       "field_subfields_studied_in_discipline": 7,
       "subfields_touched_by_fsot": 2,
       "coverage_vs_field_pct": 28.6,
@@ -89,8 +53,8 @@
       "fsot_core_domain": "Biology",
       "empirical_records": 234498,
       "median_error_pct": null,
-      "extension_panels_routing_here": 8,
-      "fsot_prediction_records_in_extensions": 245,
+      "extension_panels_routing_here": 10,
+      "fsot_prediction_records_in_extensions": 274,
       "field_subfields_studied_in_discipline": 20,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 30.0,
@@ -101,8 +65,8 @@
       "fsot_core_domain": "Quantum_Mechanics",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 1,
-      "fsot_prediction_records_in_extensions": 18,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 37,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 3,
       "coverage_vs_field_pct": 30.0,
@@ -120,18 +84,6 @@
       "coverage_vs_field_pct": 30.0,
       "depth_note": "UAP years/registry; thin on survey panels, networks",
       "coverage_tier": "A_strong"
-    },
-    {
-      "fsot_core_domain": "Neuroscience",
-      "empirical_records": 3636,
-      "median_error_pct": 24.522634418835963,
-      "extension_panels_routing_here": 5,
-      "fsot_prediction_records_in_extensions": 143,
-      "field_subfields_studied_in_discipline": 15,
-      "subfields_touched_by_fsot": 5,
-      "coverage_vs_field_pct": 33.3,
-      "depth_note": "OpenNeuro/neuron cohort; thin on connectomics, fMRI meta",
-      "coverage_tier": "B_verified"
     },
     {
       "fsot_core_domain": "Particle_Physics",
@@ -158,11 +110,23 @@
       "coverage_tier": "A_strong"
     },
     {
+      "fsot_core_domain": "Condensed_Matter",
+      "empirical_records": 2154,
+      "median_error_pct": 0.2350703412848426,
+      "extension_panels_routing_here": 2,
+      "fsot_prediction_records_in_extensions": 65,
+      "field_subfields_studied_in_discipline": 14,
+      "subfields_touched_by_fsot": 5,
+      "coverage_vs_field_pct": 35.7,
+      "depth_note": "Superconductivity Tc depth \u2014 literature + breakthrough + quantum materials",
+      "coverage_tier": "A_strong"
+    },
+    {
       "fsot_core_domain": "Materials_Science",
       "empirical_records": 2154,
       "median_error_pct": 0.2350703412848426,
-      "extension_panels_routing_here": 7,
-      "fsot_prediction_records_in_extensions": 305,
+      "extension_panels_routing_here": 8,
+      "fsot_prediction_records_in_extensions": 306,
       "field_subfields_studied_in_discipline": 14,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 35.7,
@@ -197,8 +161,8 @@
       "fsot_core_domain": "Chemistry",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 22,
-      "fsot_prediction_records_in_extensions": 5436,
+      "extension_panels_routing_here": 27,
+      "fsot_prediction_records_in_extensions": 5459,
       "field_subfields_studied_in_discipline": 15,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 40.0,
@@ -210,7 +174,7 @@
       "empirical_records": 10,
       "median_error_pct": 0.0013504254899468224,
       "extension_panels_routing_here": 7,
-      "fsot_prediction_records_in_extensions": 555,
+      "fsot_prediction_records_in_extensions": 587,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 4,
       "coverage_vs_field_pct": 40.0,
@@ -234,7 +198,7 @@
       "empirical_records": 1498,
       "median_error_pct": 0.718,
       "extension_panels_routing_here": 4,
-      "fsot_prediction_records_in_extensions": 213,
+      "fsot_prediction_records_in_extensions": 221,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 4,
       "coverage_vs_field_pct": 40.0,
@@ -245,8 +209,8 @@
       "fsot_core_domain": "Physical_Chemistry",
       "empirical_records": 1470,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 2,
-      "fsot_prediction_records_in_extensions": 27,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 28,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 4,
       "coverage_vs_field_pct": 40.0,
@@ -257,8 +221,8 @@
       "fsot_core_domain": "Biochemistry",
       "empirical_records": 1508,
       "median_error_pct": 0.058,
-      "extension_panels_routing_here": 8,
-      "fsot_prediction_records_in_extensions": 547,
+      "extension_panels_routing_here": 10,
+      "fsot_prediction_records_in_extensions": 560,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 41.7,
@@ -270,7 +234,7 @@
       "empirical_records": 13,
       "median_error_pct": null,
       "extension_panels_routing_here": 10,
-      "fsot_prediction_records_in_extensions": 2630,
+      "fsot_prediction_records_in_extensions": 2710,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 41.7,
@@ -282,7 +246,7 @@
       "empirical_records": 274,
       "median_error_pct": 0.03162247159570792,
       "extension_panels_routing_here": 5,
-      "fsot_prediction_records_in_extensions": 86,
+      "fsot_prediction_records_in_extensions": 102,
       "field_subfields_studied_in_discipline": 14,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 42.9,
@@ -302,11 +266,23 @@
       "coverage_tier": "A_strong"
     },
     {
+      "fsot_core_domain": "Optics",
+      "empirical_records": 1470,
+      "median_error_pct": 0.058,
+      "extension_panels_routing_here": 1,
+      "fsot_prediction_records_in_extensions": 17,
+      "field_subfields_studied_in_discipline": 9,
+      "subfields_touched_by_fsot": 4,
+      "coverage_vs_field_pct": 44.4,
+      "depth_note": "Interferometry depth \u2014 LIGO/JWST reference + MAST em wavelengths",
+      "coverage_tier": "A_strong"
+    },
+    {
       "fsot_core_domain": "Geophysics",
       "empirical_records": 1049,
       "median_error_pct": 0.0,
       "extension_panels_routing_here": 24,
-      "fsot_prediction_records_in_extensions": 408,
+      "fsot_prediction_records_in_extensions": 436,
       "field_subfields_studied_in_discipline": 11,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 45.5,
@@ -317,8 +293,8 @@
       "fsot_core_domain": "Oceanography",
       "empirical_records": 24,
       "median_error_pct": null,
-      "extension_panels_routing_here": 5,
-      "fsot_prediction_records_in_extensions": 2392,
+      "extension_panels_routing_here": 7,
+      "fsot_prediction_records_in_extensions": 2406,
       "field_subfields_studied_in_discipline": 11,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 45.5,
@@ -329,8 +305,8 @@
       "fsot_core_domain": "Astronomy",
       "empirical_records": 162,
       "median_error_pct": 0.022,
-      "extension_panels_routing_here": 13,
-      "fsot_prediction_records_in_extensions": 3328,
+      "extension_panels_routing_here": 14,
+      "fsot_prediction_records_in_extensions": 3433,
       "field_subfields_studied_in_discipline": 15,
       "subfields_touched_by_fsot": 7,
       "coverage_vs_field_pct": 46.7,
@@ -338,11 +314,23 @@
       "coverage_tier": "A_strong"
     },
     {
+      "fsot_core_domain": "Neuroscience",
+      "empirical_records": 3636,
+      "median_error_pct": 24.522634418835963,
+      "extension_panels_routing_here": 8,
+      "fsot_prediction_records_in_extensions": 161,
+      "field_subfields_studied_in_discipline": 15,
+      "subfields_touched_by_fsot": 7,
+      "coverage_vs_field_pct": 46.7,
+      "depth_note": "Connectomics depth panel \u2014 neuron cohort strata + catalog coverage + OpenNeuro",
+      "coverage_tier": "B_verified"
+    },
+    {
       "fsot_core_domain": "Meteorology",
       "empirical_records": 24,
       "median_error_pct": null,
-      "extension_panels_routing_here": 2,
-      "fsot_prediction_records_in_extensions": 419,
+      "extension_panels_routing_here": 3,
+      "fsot_prediction_records_in_extensions": 421,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 50.0,
@@ -366,7 +354,7 @@
       "empirical_records": 216,
       "median_error_pct": 0.03162247159570792,
       "extension_panels_routing_here": 23,
-      "fsot_prediction_records_in_extensions": 427,
+      "fsot_prediction_records_in_extensions": 443,
       "field_subfields_studied_in_discipline": 10,
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 50.0,
@@ -378,7 +366,7 @@
       "empirical_records": 74,
       "median_error_pct": 0.03162247159570792,
       "extension_panels_routing_here": 5,
-      "fsot_prediction_records_in_extensions": 1076,
+      "fsot_prediction_records_in_extensions": 1092,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 6,
       "coverage_vs_field_pct": 50.0,
@@ -414,7 +402,7 @@
       "empirical_records": 288,
       "median_error_pct": 0.022,
       "extension_panels_routing_here": 1,
-      "fsot_prediction_records_in_extensions": 12,
+      "fsot_prediction_records_in_extensions": 20,
       "field_subfields_studied_in_discipline": 12,
       "subfields_touched_by_fsot": 7,
       "coverage_vs_field_pct": 58.3,
@@ -431,6 +419,18 @@
       "subfields_touched_by_fsot": 5,
       "coverage_vs_field_pct": 62.5,
       "depth_note": "USGS deep catalog; thin on full moment-tensor relay",
+      "coverage_tier": "A_strong"
+    },
+    {
+      "fsot_core_domain": "Quantum_Computing",
+      "empirical_records": 3,
+      "median_error_pct": null,
+      "extension_panels_routing_here": 5,
+      "fsot_prediction_records_in_extensions": 121,
+      "field_subfields_studied_in_discipline": 8,
+      "subfields_touched_by_fsot": 6,
+      "coverage_vs_field_pct": 75.0,
+      "depth_note": "Math-first QC depth \u2014 gate fidelity, error correction, formal rules; physical QC verifies",
       "coverage_tier": "A_strong"
     }
   ],
@@ -990,7 +990,7 @@
     {
       "panel": "Rust_Lean_Bridge",
       "tier": 37,
-      "records": 9,
+      "records": 24,
       "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": null
@@ -2630,7 +2630,7 @@
     {
       "panel": "Epidemiology_Panel",
       "tier": 84,
-      "records": 15,
+      "records": 24,
       "pooled_median_error_pct": 0.015311,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2638,7 +2638,7 @@
     {
       "panel": "Virology_Panel",
       "tier": 84,
-      "records": 6,
+      "records": 24,
       "pooled_median_error_pct": 0.022236,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2646,7 +2646,7 @@
     {
       "panel": "Paleontology_Panel",
       "tier": 84,
-      "records": 80,
+      "records": 120,
       "pooled_median_error_pct": 0.0167305,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2654,7 +2654,7 @@
     {
       "panel": "Arxiv_Gravitational_Waves_Panel",
       "tier": 84,
-      "records": 36,
+      "records": 60,
       "pooled_median_error_pct": 0.01748,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2662,7 +2662,7 @@
     {
       "panel": "Entomology_Panel",
       "tier": 84,
-      "records": 60,
+      "records": 90,
       "pooled_median_error_pct": 0.006006,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2670,7 +2670,7 @@
     {
       "panel": "Mycology_Panel",
       "tier": 84,
-      "records": 60,
+      "records": 90,
       "pooled_median_error_pct": 0.006006,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2678,7 +2678,7 @@
     {
       "panel": "Marine_Biology_Panel",
       "tier": 84,
-      "records": 60,
+      "records": 90,
       "pooled_median_error_pct": 0.006006,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2686,7 +2686,7 @@
     {
       "panel": "Immunology_Panel",
       "tier": 84,
-      "records": 18,
+      "records": 24,
       "pooled_median_error_pct": 0.040788,
       "observed": true,
       "ingest": "scripts/ingest_tier84_scientific_expansion.py"
@@ -2750,7 +2750,7 @@
     {
       "panel": "Speleology_Panel",
       "tier": 85,
-      "records": 10,
+      "records": 24,
       "pooled_median_error_pct": 0.04459,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
@@ -2758,7 +2758,7 @@
     {
       "panel": "Exogeology_Panel",
       "tier": 85,
-      "records": 60,
+      "records": 100,
       "pooled_median_error_pct": 0.026472,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
@@ -2766,7 +2766,7 @@
     {
       "panel": "History_Panel",
       "tier": 85,
-      "records": 36,
+      "records": 60,
       "pooled_median_error_pct": 0.01382,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
@@ -2782,7 +2782,7 @@
     {
       "panel": "Finance_Markets_Panel",
       "tier": 85,
-      "records": 25,
+      "records": 36,
       "pooled_median_error_pct": 0.02584,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
@@ -2790,7 +2790,7 @@
     {
       "panel": "Supply_Chain_Logistics_Panel",
       "tier": 85,
-      "records": 27,
+      "records": 40,
       "pooled_median_error_pct": 0.02584,
       "observed": true,
       "ingest": "scripts/ingest_tier85_scientific_expansion.py"
@@ -2814,7 +2814,7 @@
     {
       "panel": "Hybrid_FI_Sim_Stratum_Deep_Panel",
       "tier": 86,
-      "records": 19,
+      "records": 24,
       "pooled_median_error_pct": 0.018003,
       "observed": true,
       "ingest": "scripts/ingest_tier86_scientific_expansion.py"
@@ -2839,6 +2839,86 @@
       "panel": "Scientific_Expansion_Depth_Spine",
       "tier": 86,
       "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Quantum_Computing_Math_Depth_Panel",
+      "tier": 87,
+      "records": 83,
+      "pooled_median_error_pct": 0.014767,
+      "observed": true,
+      "ingest": "scripts/ingest_tier87_scientific_expansion.py"
+    },
+    {
+      "panel": "Neuroscience_Connectomics_Depth_Panel",
+      "tier": 87,
+      "records": 27,
+      "pooled_median_error_pct": 0.0201195,
+      "observed": true,
+      "ingest": "scripts/ingest_tier87_scientific_expansion.py"
+    },
+    {
+      "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+      "tier": 87,
+      "records": 24,
+      "pooled_median_error_pct": 0.033841,
+      "observed": true,
+      "ingest": "scripts/ingest_tier87_scientific_expansion.py"
+    },
+    {
+      "panel": "Optics_Interferometry_Depth_Panel",
+      "tier": 87,
+      "records": 127,
+      "pooled_median_error_pct": 0.026954,
+      "observed": true,
+      "ingest": "scripts/ingest_tier87_scientific_expansion.py"
+    },
+    {
+      "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+      "tier": 87,
+      "records": 20,
+      "pooled_median_error_pct": 0.0,
+      "observed": true,
+      "ingest": null
+    },
+    {
+      "panel": "Trinary_Hardware_Live_Panel",
+      "tier": 88,
+      "records": 37,
+      "pooled_median_error_pct": 0.014767,
+      "observed": true,
+      "ingest": "scripts/ingest_tier88_application_wiring.py"
+    },
+    {
+      "panel": "Tokenization_Live_Panel",
+      "tier": 88,
+      "records": 24,
+      "pooled_median_error_pct": 0.015099000000000001,
+      "observed": true,
+      "ingest": "scripts/ingest_tier88_application_wiring.py"
+    },
+    {
+      "panel": "Living_FSOT_Hardware_Panel",
+      "tier": 88,
+      "records": 77,
+      "pooled_median_error_pct": 0.031506,
+      "observed": true,
+      "ingest": "scripts/ingest_tier88_application_wiring.py"
+    },
+    {
+      "panel": "Certified_Agent_Formal_Panel",
+      "tier": 88,
+      "records": 24,
+      "pooled_median_error_pct": 0.014767,
+      "observed": true,
+      "ingest": "scripts/ingest_tier88_application_wiring.py"
+    },
+    {
+      "panel": "Desktop_Application_Wiring_Spine",
+      "tier": 88,
+      "records": 24,
       "pooled_median_error_pct": 0.0,
       "observed": true,
       "ingest": null

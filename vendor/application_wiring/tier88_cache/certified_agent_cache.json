@@ -1,0 +1,24 @@
+{
+  "source": "desktop_certified_agent_qwen_formal",
+  "desktop_folder": "fsot QWEN 3VL_Formal_Env",
+  "wire_status": "tier88_live_panel",
+  "promotion_threshold_percent": 2.0,
+  "max_tool_iterations": 10,
+  "max_rag_results": 8,
+  "configured_path_count": 9,
+  "requires_lean_bridge": true,
+  "no_probabilistic_math": true,
+  "workspace_paths": [
+    "fsot_compute",
+    "fsot_3_5_solver",
+    "fsot_lean",
+    "math_generator_domains",
+    "derivations_root",
+    "derivations_index",
+    "mathematical_key",
+    "agents_directive",
+    "cot_tools"
+  ],
+  "fetched_at": "2026-07-12T16:20:14.078632+00:00",
+  "credential_free": true
+}

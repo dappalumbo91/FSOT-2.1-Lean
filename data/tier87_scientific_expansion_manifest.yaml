@@ -1,0 +1,21 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 87
+policy: credential_free_only
+domains:
+  - Quantum_Computing_Math_Depth_Panel
+  - Neuroscience_Connectomics_Depth_Panel
+  - Condensed_Matter_Superconductivity_Depth_Panel
+  - Optics_Interferometry_Depth_Panel
+  - Scientific_Expansion_Depth_Wave2_Spine
+ingest: scripts/ingest_tier87_scientific_expansion.py
+build: scripts/build_tier87_scientific_expansion_benchmarks.py
+lean: scripts/gen_tier87_scientific_expansion_lean.py
+field_breadth_target_pct: 25.0
+apis:
+  - https://export.arxiv.org/
+  - vendor/scientific_expansion/tier87_cache/
+note: >
+  Tier 87 fills core domain depth: math-first quantum computing (formal layer without
+  physical hardware requirement), neuroscience connectomics, superconductivity Tc,
+  and optics interferometry. Physical QC verifies mathematics; FSOT operates on math.

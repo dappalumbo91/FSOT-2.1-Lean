@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T16:03:52.883584+00:00",
+  "generated_at": "2026-07-12T16:20:28.631014+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 301,
+  "extension_panels": 311,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -3908,6 +3908,138 @@
       ],
       "D_eff": 17,
       "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
+    },
+    {
+      "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Neuroscience_Connectomics_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Optics_Interferometry_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Quantum_Computing_Math_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "ai",
+        "particle",
+        "mathematical"
+      ],
+      "D_eff": 19,
+      "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+      "tier": 87,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.15,
+      "maps_to_lean": [
+        "ai",
+        "neural",
+        "material",
+        "astronomical"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+    },
+    {
+      "panel": "Certified_Agent_Formal_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "mathematical"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/certified_agent_formal_panel_benchmark.json"
+    },
+    {
+      "panel": "Desktop_Application_Wiring_Spine",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.4,
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+    },
+    {
+      "panel": "Living_FSOT_Hardware_Panel",
+      "tier": 88,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "neural",
+        "ai",
+        "consciousness"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+    },
+    {
+      "panel": "Tokenization_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "D_eff": 13,
+      "benchmark_data": "data/tokenization_live_panel_benchmark.json"
+    },
+    {
+      "panel": "Trinary_Hardware_Live_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -4571,6 +4703,99 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/unified_db_crosswalk_spine_benchmark.json"
+      },
+      {
+        "panel": "Quantum_Computing_Math_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "ai",
+          "particle",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.15,
+        "maps_to_lean": [
+          "ai",
+          "neural",
+          "material",
+          "astronomical"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Certified_Agent_Formal_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/certified_agent_formal_panel_benchmark.json"
+      },
+      {
+        "panel": "Desktop_Application_Wiring_Spine",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.4,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+      },
+      {
+        "panel": "Living_FSOT_Hardware_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+      },
+      {
+        "panel": "Tokenization_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "ai",
+          "neural"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/tokenization_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Trinary_Hardware_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
       }
     ],
     "astronomical": [
@@ -5016,6 +5241,33 @@
         ],
         "D_eff": 20,
         "benchmark_data": "data/exogeology_panel_benchmark.json"
+      },
+      {
+        "panel": "Optics_Interferometry_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "astronomical",
+          "particle",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.15,
+        "maps_to_lean": [
+          "ai",
+          "neural",
+          "material",
+          "astronomical"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
       }
     ],
     "atomic": [
@@ -5998,6 +6250,19 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
+      },
+      {
+        "panel": "Neuroscience_Connectomics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
       }
     ],
     "blackhole": [
@@ -7777,6 +8042,85 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
+      },
+      {
+        "panel": "Neuroscience_Connectomics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Certified_Agent_Formal_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/certified_agent_formal_panel_benchmark.json"
+      },
+      {
+        "panel": "Desktop_Application_Wiring_Spine",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.4,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+      },
+      {
+        "panel": "Living_FSOT_Hardware_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+      },
+      {
+        "panel": "Tokenization_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "ai",
+          "neural"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/tokenization_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Trinary_Hardware_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
       }
     ],
     "cosmological": [
@@ -9855,6 +10199,19 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
       }
     ],
     "fluid_dynamics": [
@@ -11043,6 +11400,19 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/speleology_panel_benchmark.json"
+      },
+      {
+        "panel": "Optics_Interferometry_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "astronomical",
+          "particle",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
       }
     ],
     "higgs": [
@@ -11875,6 +12245,33 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
+      },
+      {
+        "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.15,
+        "maps_to_lean": [
+          "ai",
+          "neural",
+          "material",
+          "astronomical"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
       }
     ],
     "mathematical": [
@@ -12594,6 +12991,46 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
+      },
+      {
+        "panel": "Quantum_Computing_Math_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "ai",
+          "particle",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Certified_Agent_Formal_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/certified_agent_formal_panel_benchmark.json"
+      },
+      {
+        "panel": "Desktop_Application_Wiring_Spine",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.4,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
       }
     ],
     "medical": [
@@ -13843,6 +14280,86 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
+      },
+      {
+        "panel": "Neuroscience_Connectomics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Depth_Wave2_Spine",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.15,
+        "maps_to_lean": [
+          "ai",
+          "neural",
+          "material",
+          "astronomical"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Desktop_Application_Wiring_Spine",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.4,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+      },
+      {
+        "panel": "Living_FSOT_Hardware_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+      },
+      {
+        "panel": "Tokenization_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "ai",
+          "neural"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/tokenization_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Trinary_Hardware_Live_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
       }
     ],
     "nuclear": [
@@ -15666,6 +16183,45 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
+      },
+      {
+        "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Optics_Interferometry_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "astronomical",
+          "particle",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Quantum_Computing_Math_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "ai",
+          "particle",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
       }
     ],
     "perceived": [

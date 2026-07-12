@@ -1,0 +1,307 @@
+{
+  "source": "desktop_trinary_hardware_motif",
+  "desktop_folder": "FSOT, Cube Block Trinary Design",
+  "wire_status": "tier88_live_panel",
+  "primary_motif_fields": [
+    {
+      "name": "tier_mild_intensity",
+      "property": "tier_mild_intensity",
+      "value": 1.05
+    },
+    {
+      "name": "tier_moderate_intensity",
+      "property": "tier_moderate_intensity",
+      "value": 1.15
+    },
+    {
+      "name": "tier_severe_intensity",
+      "property": "tier_severe_intensity",
+      "value": 1.3
+    },
+    {
+      "name": "interaction_pressure_weight",
+      "property": "interaction_pressure_weight",
+      "value": 0.6
+    },
+    {
+      "name": "interaction_migration_weight",
+      "property": "interaction_migration_weight",
+      "value": 0.4
+    },
+    {
+      "name": "interaction_claim_relief_weight",
+      "property": "interaction_claim_relief_weight",
+      "value": 0.15
+    },
+    {
+      "name": "interaction_stress_strength",
+      "property": "interaction_stress_strength",
+      "value": 0.2
+    },
+    {
+      "name": "conversion_gate_min_threshold",
+      "property": "conversion_gate_min_threshold",
+      "value": 0.3
+    },
+    {
+      "name": "conversion_gate_tier_intensity_strength",
+      "property": "conversion_gate_tier_intensity_strength",
+      "value": 0.08
+    },
+    {
+      "name": "conversion_gate_interaction_strength",
+      "property": "conversion_gate_interaction_strength",
+      "value": 0.05
+    },
+    {
+      "name": "abstraction_enter_pressure_weight",
+      "property": "abstraction_enter_pressure_weight",
+      "value": 0.08
+    },
+    {
+      "name": "abstraction_enter_migration_weight",
+      "property": "abstraction_enter_migration_weight",
+      "value": 0.04
+    },
+    {
+      "name": "abstraction_exit_pressure_weight",
+      "property": "abstraction_exit_pressure_weight",
+      "value": 0.05
+    },
+    {
+      "name": "abstraction_exit_migration_weight",
+      "property": "abstraction_exit_migration_weight",
+      "value": 0.02
+    },
+    {
+      "name": "abstraction_min_enter",
+      "property": "abstraction_min_enter",
+      "value": 0.25
+    },
+    {
+      "name": "abstraction_min_exit",
+      "property": "abstraction_min_exit",
+      "value": 0.2
+    },
+    {
+      "name": "abstraction_hysteresis_gap",
+      "property": "abstraction_hysteresis_gap",
+      "value": 0.05
+    },
+    {
+      "name": "deposit_skip_pressure_threshold",
+      "property": "deposit_skip_pressure_threshold",
+      "value": 0.7
+    },
+    {
+      "name": "claim_conservative_strength",
+      "property": "claim_conservative_strength",
+      "value": 0.25
+    },
+    {
+      "name": "claim_conservative_floor",
+      "property": "claim_conservative_floor",
+      "value": 0.75
+    },
+    {
+      "name": "conversion_gate_pressure_threshold",
+      "property": "conversion_gate_pressure_threshold",
+      "value": 0.65
+    },
+    {
+      "name": "conversion_conservative_strength",
+      "property": "conversion_conservative_strength",
+      "value": 0.3
+    },
+    {
+      "name": "conversion_conservative_floor",
+      "property": "conversion_conservative_floor",
+      "value": 0.7
+    },
+    {
+      "name": "repro_trend_pressure_strength",
+      "property": "repro_trend_pressure_strength",
+      "value": 0.08
+    },
+    {
+      "name": "repro_trend_migration_strength",
+      "property": "repro_trend_migration_strength",
+      "value": 0.04
+    },
+    {
+      "name": "repro_trend_interaction_strength",
+      "property": "repro_trend_interaction_strength",
+      "value": 0.035
+    },
+    {
+      "name": "repro_energy_pressure_strength",
+      "property": "repro_energy_pressure_strength",
+      "value": 0.18
+    },
+    {
+      "name": "repro_energy_claim_relief",
+      "property": "repro_energy_claim_relief",
+      "value": 0.08
+    },
+    {
+      "name": "repro_energy_interaction_strength",
+      "property": "repro_energy_interaction_strength",
+      "value": 0.12
+    }
+  ],
+  "profiles": [
+    {
+      "profile": "motif_influence_profile_stable",
+      "fields": [
+        {
+          "name": "tier_mild_intensity",
+          "property": "tier_mild_intensity",
+          "value": 1.05
+        },
+        {
+          "name": "tier_moderate_intensity",
+          "property": "tier_moderate_intensity",
+          "value": 1.15
+        },
+        {
+          "name": "tier_severe_intensity",
+          "property": "tier_severe_intensity",
+          "value": 1.3
+        },
+        {
+          "name": "interaction_pressure_weight",
+          "property": "interaction_pressure_weight",
+          "value": 0.6
+        },
+        {
+          "name": "interaction_migration_weight",
+          "property": "interaction_migration_weight",
+          "value": 0.4
+        },
+        {
+          "name": "interaction_claim_relief_weight",
+          "property": "interaction_claim_relief_weight",
+          "value": 0.15
+        },
+        {
+          "name": "interaction_stress_strength",
+          "property": "interaction_stress_strength",
+          "value": 0.2
+        },
+        {
+          "name": "conversion_gate_min_threshold",
+          "property": "conversion_gate_min_threshold",
+          "value": 0.3
+        },
+        {
+          "name": "conversion_gate_tier_intensity_strength",
+          "property": "conversion_gate_tier_intensity_strength",
+          "value": 0.08
+        },
+        {
+          "name": "conversion_gate_interaction_strength",
+          "property": "conversion_gate_interaction_strength",
+          "value": 0.05
+        },
+        {
+          "name": "abstraction_enter_pressure_weight",
+          "property": "abstraction_enter_pressure_weight",
+          "value": 0.08
+        },
+        {
+          "name": "abstraction_enter_migration_weight",
+          "property": "abstraction_enter_migration_weight",
+          "value": 0.04
+        },
+        {
+          "name": "abstraction_exit_pressure_weight",
+          "property": "abstraction_exit_pressure_weight",
+          "value": 0.05
+        },
+        {
+          "name": "abstraction_exit_migration_weight",
+          "property": "abstraction_exit_migration_weight",
+          "value": 0.02
+        },
+        {
+          "name": "abstraction_min_enter",
+          "property": "abstraction_min_enter",
+          "value": 0.25
+        },
+        {
+          "name": "abstraction_min_exit",
+          "property": "abstraction_min_exit",
+          "value": 0.2
+        },
+        {
+          "name": "abstraction_hysteresis_gap",
+          "property": "abstraction_hysteresis_gap",
+          "value": 0.05
+        },
+        {
+          "name": "deposit_skip_pressure_threshold",
+          "property": "deposit_skip_pressure_threshold",
+          "value": 0.7
+        },
+        {
+          "name": "claim_conservative_strength",
+          "property": "claim_conservative_strength",
+          "value": 0.25
+        },
+        {
+          "name": "claim_conservative_floor",
+          "property": "claim_conservative_floor",
+          "value": 0.75
+        },
+        {
+          "name": "conversion_gate_pressure_threshold",
+          "property": "conversion_gate_pressure_threshold",
+          "value": 0.65
+        },
+        {
+          "name": "conversion_conservative_strength",
+          "property": "conversion_conservative_strength",
+          "value": 0.3
+        },
+        {
+          "name": "conversion_conservative_floor",
+          "property": "conversion_conservative_floor",
+          "value": 0.7
+        },
+        {
+          "name": "repro_trend_pressure_strength",
+          "property": "repro_trend_pressure_strength",
+          "value": 0.08
+        },
+        {
+          "name": "repro_trend_migration_strength",
+          "property": "repro_trend_migration_strength",
+          "value": 0.04
+        },
+        {
+          "name": "repro_trend_interaction_strength",
+          "property": "repro_trend_interaction_strength",
+          "value": 0.035
+        },
+        {
+          "name": "repro_energy_pressure_strength",
+          "property": "repro_energy_pressure_strength",
+          "value": 0.18
+        },
+        {
+          "name": "repro_energy_claim_relief",
+          "property": "repro_energy_claim_relief",
+          "value": 0.08
+        },
+        {
+          "name": "repro_energy_interaction_strength",
+          "property": "repro_energy_interaction_strength",
+          "value": 0.12
+        }
+      ]
+    }
+  ],
+  "profile_count": 1,
+  "fetched_at": "2026-07-12T16:20:14.078632+00:00",
+  "credential_free": true
+}

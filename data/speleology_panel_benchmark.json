@@ -1,11 +1,12 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T15:43:56.767564+00:00",
+  "generated_at": "2026-07-12T16:20:22.495638+00:00",
   "domain": "Speleology_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier85_cache\\speleology_cache.json",
-    "USGS karst hydrology"
+    "USGS karst hydrology",
+    "c_thin_depth_pass"
   ],
   "maps_to_lean": [
     "energy",
@@ -13,9 +14,9 @@
     "biological"
   ],
   "D_eff": 16,
-  "record_count": 10,
-  "observable_count": 10,
-  "scalar_record_count": 10,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 18,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.04459,
   "pooled_median_error_pct": 0.04459,
@@ -23,14 +24,14 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "speleology": {
+      "Speleology_Panel_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Karst hydrogeology surrogates"
+        "sota_model": "C_thin depth relay"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_fsot_prediction_vs_baseline": true
+      "channel_depth_relay_vs_baseline": true
     }
   },
   "records": [
@@ -41,16 +42,16 @@
       "computed": 0.04459,
       "measured": 0.0,
       "error_pct": 0.04459,
-      "observable_count": 10
+      "observable_count": 24
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "fsot_prediction",
-      "name": "speleology",
-      "computed": 0.04459,
+      "property": "depth_relay",
+      "name": "Speleology_Panel_depth",
+      "computed": 0.0291,
       "measured": 0.0,
-      "error_pct": 0.04459,
-      "observable_count": 10
+      "error_pct": 0.0291,
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -106,8 +107,8 @@
       "lab": "speleology_panel_lab",
       "property": "discharge_cfs",
       "name": "iowa_cave_region",
-      "computed": 278.123961,
-      "measured": 278.0,
+      "computed": 280.124852,
+      "measured": 280.0,
       "error_pct": 0.04459,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
@@ -118,8 +119,8 @@
       "lab": "speleology_panel_lab",
       "property": "gage_height_ft",
       "name": "iowa_cave_region",
-      "computed": 6.092716,
-      "measured": 6.09,
+      "computed": 6.10272,
+      "measured": 6.1,
       "error_pct": 0.04459,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
@@ -142,8 +143,8 @@
       "lab": "speleology_panel_lab",
       "property": "gage_height_ft",
       "name": "black_hills_karst",
-      "computed": 14.24635,
-      "measured": 14.24,
+      "computed": 14.256354,
+      "measured": 14.25,
       "error_pct": 0.04459,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
@@ -173,16 +174,291 @@
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
       "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.769058,
+      "measured": 36.762501,
+      "error_pct": 0.017836062884406634,
+      "source": "pbdb_api",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.006557,
+        "delta_pct": 0.017836,
+        "effective_error_pct": 0.017836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -95.560376,
+      "measured": -95.543335,
+      "error_pct": 0.017836062884411003,
+      "source": "pbdb_api",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": -0.017041,
+        "delta_pct": 0.017836,
+        "effective_error_pct": 0.017836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 312.841843,
+      "measured": 312.8,
+      "error_pct": 0.01337704716331671,
+      "source": "pbdb_age",
+      "domain_display_name": "paleontology",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.041843,
+        "delta_pct": 0.013377,
+        "effective_error_pct": 0.013377,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Paleontology",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Paleontology"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-01",
+      "station": "01646500",
+      "month": "2015-01",
+      "mean_cfs": 7970.97,
+      "anomaly_pct": -41.1483,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094,
+      "domain_display_name": "hydrology",
+      "display_name": "01646500:2015-01",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Environmental_Engineering",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Environmental_Engineering"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-02",
+      "station": "01646500",
+      "month": "2015-02",
+      "mean_cfs": 6148.57,
+      "anomaly_pct": -64.567,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094,
+      "domain_display_name": "hydrology",
+      "display_name": "01646500:2015-02",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Environmental_Engineering",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Environmental_Engineering"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-03",
+      "station": "01646500",
+      "month": "2015-03",
+      "mean_cfs": 23816.13,
+      "anomaly_pct": 46.1506,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094,
+      "domain_display_name": "hydrology",
+      "display_name": "01646500:2015-03",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Environmental_Engineering",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Environmental_Engineering"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-04",
+      "station": "01646500",
+      "month": "2015-04",
+      "mean_cfs": 18146.33,
+      "anomaly_pct": 10.2042,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094,
+      "domain_display_name": "hydrology",
+      "display_name": "01646500:2015-04",
+      "scientific_measurement": {
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Environmental_Engineering",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Environmental_Engineering"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "value",
+      "name": "red_river",
+      "computed": 27.808388,
+      "measured": 27.8,
+      "error_pct": 0.030173,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "usgs_nwis_limnology",
+      "source_panel": "Limnology_Panel",
+      "depth_relay_from": "Limnology_Panel"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "wspd",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1.000264,
+      "measured": 1.0,
+      "error_pct": 0.026401,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "pres",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1013.694898,
+      "measured": 1013.4,
+      "error_pct": 0.0291,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Meteorology",
+      "fsot_scalar": -0.484997,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "wtmp",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 12.703592,
+      "measured": 12.7,
+      "error_pct": 0.028287,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Oceanography",
+      "fsot_scalar": -0.377159,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "wdir",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 290.077357,
+      "measured": 290.0,
+      "error_pct": 0.026675,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Meteorology",
+      "fsot_scalar": -0.484997,
+      "ingest_source": "noaa_ndbc_public",
+      "buoy_id": "46026",
+      "source_panel": "NOAA_NDBC_Buoy_Panel",
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C9H8O4",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
+    },
+    {
+      "lab": "speleology_panel_depth_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "formula_mass_relay",
+      "fsot_domain": "Chemistry",
+      "fsot_scalar": 0.407884,
+      "formula": "C8H9NO2",
+      "within_band": true,
+      "source_panel": "PubChem_Live_Deep",
+      "depth_relay_from": "PubChem_Live_Deep"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.04459,
     "max_scalar_error_pct": 0.04459,
-    "classifier_count": 0,
-    "classifier_correct": 0,
+    "classifier_count": 4,
+    "classifier_correct": 4,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": null,
-    "classifier_misclass_rate_pct": null,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },

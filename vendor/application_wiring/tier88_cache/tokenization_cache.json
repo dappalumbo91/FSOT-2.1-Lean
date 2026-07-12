@@ -1,0 +1,29 @@
+{
+  "source": "desktop_dictionary_tokenization",
+  "desktop_folder": "Dictionary",
+  "wire_status": "tier88_live_panel",
+  "smoke_cases": [
+    {
+      "name": "llm phrase and contraction",
+      "text_len": 44,
+      "expected_id_count": 5,
+      "expected_gate_count": 2
+    },
+    {
+      "name": "basic morphology",
+      "text_len": 37,
+      "expected_id_count": 5,
+      "expected_gate_count": 4
+    },
+    {
+      "name": "proper phrase spans",
+      "text_len": 33,
+      "expected_id_count": 5,
+      "expected_gate_count": 3
+    }
+  ],
+  "case_count": 3,
+  "vocab_size": 0,
+  "fetched_at": "2026-07-12T16:20:14.078632+00:00",
+  "credential_free": true
+}

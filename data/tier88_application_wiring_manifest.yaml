@@ -1,0 +1,22 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 88
+policy: credential_free_only
+domains:
+  - Trinary_Hardware_Live_Panel
+  - Tokenization_Live_Panel
+  - Living_FSOT_Hardware_Panel
+  - Certified_Agent_Formal_Panel
+  - Desktop_Application_Wiring_Spine
+ingest: scripts/ingest_tier88_application_wiring.py
+build: scripts/build_tier88_application_wiring_benchmarks.py
+lean: scripts/gen_tier88_application_wiring_lean.py
+desktop_themes_wired:
+  - trinary_hardware
+  - tokenization
+  - living_fsot_hardware
+  - certified_agent
+note: >
+  Tier 88 wires unwired desktop projects into live extension panels with bundled
+  metrics from motif profiles, tokenization smoke, living FSOT habitat, and
+  Qwen formal certified agent workspace.

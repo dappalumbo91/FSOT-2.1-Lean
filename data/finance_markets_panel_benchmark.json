@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T15:43:56.807407+00:00",
+  "generated_at": "2026-07-12T16:20:15.338600+00:00",
   "domain": "Finance_Markets_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "mathematical"
   ],
   "D_eff": 19,
-  "record_count": 25,
-  "observable_count": 25,
-  "scalar_record_count": 25,
+  "record_count": 36,
+  "observable_count": 36,
+  "scalar_record_count": 36,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.02584,
   "pooled_median_error_pct": 0.02584,
@@ -41,7 +41,7 @@
       "computed": 0.02584,
       "measured": 0.0,
       "error_pct": 0.02584,
-      "observable_count": 25
+      "observable_count": 36
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +50,7 @@
       "computed": 0.02584,
       "measured": 0.0,
       "error_pct": 0.02584,
-      "observable_count": 25
+      "observable_count": 36
     }
   ],
   "material_records": [
@@ -144,6 +144,54 @@
       "name": "ZI_NY.GDP.MKTP.CD",
       "computed": 1064023121608.8191,
       "measured": 1063748247138.21,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_current_usd",
+      "name": "ZI_NY.GDP.MKTP.CD",
+      "computed": 1026935474317.2122,
+      "measured": 1026670180885.97,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_current_usd",
+      "name": "ZI_NY.GDP.MKTP.CD",
+      "computed": 963937216714.7349,
+      "measured": 963688197941.774,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_current_usd",
+      "name": "ZI_NY.GDP.MKTP.CD",
+      "computed": 1026793025307.7097,
+      "measured": 1026527768676.04,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_current_usd",
+      "name": "ZI_NY.GDP.MKTP.CD",
+      "computed": 778006830701.5084,
+      "measured": 777805844264.864,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
@@ -248,6 +296,54 @@
     },
     {
       "lab": "finance_markets_panel_lab",
+      "property": "inflation_pct",
+      "name": "ZI_FP.CPI.TOTL.ZG",
+      "computed": 3.746536,
+      "measured": 3.74556782333009,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "inflation_pct",
+      "name": "ZI_FP.CPI.TOTL.ZG",
+      "computed": 2.491021,
+      "measured": 2.49037783931949,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "inflation_pct",
+      "name": "ZI_FP.CPI.TOTL.ZG",
+      "computed": 1.983605,
+      "measured": 1.98309228487232,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "inflation_pct",
+      "name": "ZI_FP.CPI.TOTL.ZG",
+      "computed": 1.784511,
+      "measured": 1.78404994832044,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
       "property": "gdp_per_capita",
       "name": "ZH_NY.GDP.PCAP.CD",
       "computed": 1571.538688,
@@ -344,10 +440,46 @@
     },
     {
       "lab": "finance_markets_panel_lab",
-      "property": "market_cap_pct_gdp",
-      "name": "ZI_CM.MKT.LCAP.GD.ZS",
-      "computed": 9.552656,
-      "measured": 9.5501880500186,
+      "property": "gdp_per_capita",
+      "name": "ZI_NY.GDP.PCAP.CD",
+      "computed": 2117.485315,
+      "measured": 2116.9382941844,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_per_capita",
+      "name": "ZI_NY.GDP.PCAP.CD",
+      "computed": 2034.963642,
+      "measured": 2034.43793971923,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_per_capita",
+      "name": "ZI_NY.GDP.PCAP.CD",
+      "computed": 2219.986056,
+      "measured": 2219.41255534667,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_finance_indicators"
+    },
+    {
+      "lab": "finance_markets_panel_lab",
+      "property": "gdp_per_capita",
+      "name": "ZI_NY.GDP.PCAP.CD",
+      "computed": 1723.559719,
+      "measured": 1723.11446346681,
       "error_pct": 0.02584,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",

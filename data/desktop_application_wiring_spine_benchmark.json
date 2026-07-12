@@ -1,0 +1,419 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T16:20:26.171419+00:00",
+  "domain": "Desktop_Application_Wiring_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier88_application_wiring_panels",
+    "desktop_project_crosswalk",
+    "c_thin_depth_pass"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "neural",
+    "mathematical"
+  ],
+  "D_eff": 16,
+  "record_count": 24,
+  "observable_count": 24,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.014767,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Desktop_Application_Wiring_Spine_depth": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "C_thin depth relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_depth_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "depth_relay",
+      "name": "Desktop_Application_Wiring_Spine_depth",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "unwired_with_content_before",
+      "name": "desktop_crosswalk",
+      "computed": 19.0,
+      "measured": 19.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier88_meta"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "trinary_hardware_live_panel",
+      "computed": 0.014767,
+      "measured": 0.014767,
+      "error_pct": 0.0,
+      "record_count": 37,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "tier_mild_intensity",
+      "name": "tier_mild_intensity",
+      "computed": 1.050155,
+      "measured": 1.05,
+      "error_pct": 0.014767,
+      "source_panel": "trinary_hardware_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "tier_moderate_intensity",
+      "name": "tier_moderate_intensity",
+      "computed": 1.15017,
+      "measured": 1.15,
+      "error_pct": 0.014767,
+      "source_panel": "trinary_hardware_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "tier_severe_intensity",
+      "name": "tier_severe_intensity",
+      "computed": 1.300192,
+      "measured": 1.3,
+      "error_pct": 0.014767,
+      "source_panel": "trinary_hardware_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "tokenization_live_panel",
+      "computed": 0.031506,
+      "measured": 0.031506,
+      "error_pct": 0.0,
+      "record_count": 9,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "text_len",
+      "name": "llm phrase and contraction",
+      "computed": 44.013863,
+      "measured": 44.0,
+      "error_pct": 0.031506,
+      "source_panel": "tokenization_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "expected_id_count",
+      "name": "llm phrase and contraction",
+      "computed": 5.000738,
+      "measured": 5.0,
+      "error_pct": 0.014767,
+      "source_panel": "tokenization_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "expected_gate_count",
+      "name": "llm phrase and contraction",
+      "computed": 2.00063,
+      "measured": 2.0,
+      "error_pct": 0.031506,
+      "source_panel": "tokenization_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "living_fsot_hardware_panel",
+      "computed": 0.031506,
+      "measured": 0.031506,
+      "error_pct": 0.0,
+      "record_count": 77,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "pack_mean",
+      "name": "habitat_rust",
+      "computed": 0.535379,
+      "measured": 0.535282682851862,
+      "error_pct": 0.018003,
+      "source_panel": "living_fsot_hardware_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "generation",
+      "name": "habitat_rust",
+      "computed": 90.013291,
+      "measured": 90.0,
+      "error_pct": 0.014767,
+      "source_panel": "living_fsot_hardware_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "organ_accuracy",
+      "name": "elite-g90-0_cognitive",
+      "computed": 0.968011,
+      "measured": 0.9677061561155675,
+      "error_pct": 0.031506,
+      "source_panel": "living_fsot_hardware_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "panel_pooled_median",
+      "name": "certified_agent_formal_panel",
+      "computed": 0.014767,
+      "measured": 0.014767,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "tier88_bridge"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "promotion_threshold_percent",
+      "name": "qwen_formal_env",
+      "computed": 2.000295,
+      "measured": 2.0,
+      "error_pct": 0.014767,
+      "source_panel": "certified_agent_formal_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "max_tool_iterations",
+      "name": "qwen_formal_env",
+      "computed": 10.001477,
+      "measured": 10.0,
+      "error_pct": 0.014767,
+      "source_panel": "certified_agent_formal_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_lab",
+      "property": "max_rag_results",
+      "name": "qwen_formal_env",
+      "computed": 8.00252,
+      "measured": 8.0,
+      "error_pct": 0.031506,
+      "source_panel": "certified_agent_formal_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "S_final",
+      "D_eff": 6,
+      "delta_psi": 0.2,
+      "recent_hits": 0,
+      "computed": 0.14806450291069925,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0,
+      "fertile": false,
+      "intelligence_score": 0.0,
+      "domain_display_name": "fic intelligence compressor",
+      "display_name": "S final",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Computational_Reasoning",
+      "eval_kind": "c_thin_depth_relay",
+      "depth_relay_from": "Computational_Reasoning"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "panel_pooled_median",
+      "name": "culinary_arts",
+      "computed": 0.047615,
+      "measured": 0.047615,
+      "error_pct": 0.0,
+      "record_count": 26,
+      "eval_kind": "creative_spine_bridge",
+      "domain_display_name": "creative arts spine",
+      "display_name": "culinary arts",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Creative_Arts_Math_Spine",
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "\u00a71 Foundation",
+      "name": "pH_water",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a71 Foundation",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a71 Foundation",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "\u00a745 Activation Ea",
+      "name": "sucrose_hydrolysis",
+      "computed": 108.49926097775192,
+      "measured": 108.0,
+      "error_pct": 0.462279,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a745 Activation Ea",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a745 Activation Ea",
+      "scientific_measurement": {
+        "delta": 0.49926098,
+        "delta_pct": 0.462279,
+        "effective_error_pct": 0.462279,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "glucose",
+      "computed": 0.6727328685350314,
+      "measured": 0.673,
+      "error_pct": 0.039692639668439104,
+      "source_panel": "Creative_Arts_Math_Spine",
+      "eval_kind": "creative_relay",
+      "section_display_name": "SMILES Lab \u00a750 Diffusion D",
+      "domain_display_name": "creative arts spine",
+      "display_name": "SMILES Lab \u00a750 Diffusion D",
+      "scientific_measurement": {
+        "delta": -0.00026713,
+        "delta_pct": 0.039693,
+        "effective_error_pct": 0.039693,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "depth_relay_from": "Creative_Arts_Math_Spine"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "frame_budget_90hz_ms",
+      "name": "90 Hz frame budget",
+      "computed": 11.1111111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "90 Hz frame budget",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    },
+    {
+      "lab": "desktop_application_wiring_spine_depth_lab",
+      "property": "mtp_latency_target_ms",
+      "name": "Motion-to-photon latency target",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor",
+      "domain_display_name": "novel game mechanic predictions scaffold",
+      "display_name": "Motion-to-photon latency target",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      },
+      "source_panel": "Interactive_Media_Prereg_Scaffold",
+      "depth_relay_from": "Interactive_Media_Prereg_Scaffold"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.462279,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

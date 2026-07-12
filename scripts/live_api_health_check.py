@@ -264,6 +264,15 @@ def main() -> int:
         raw = fetch_bytes("https://physics.nist.gov/cuu/Constants/Table/allascii.txt", timeout=30)
         return f"bytes={len(raw)}"
 
+    def tier87_arxiv_quantph():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "https://export.arxiv.org/api/query?search_query=cat:quant-ph&max_results=2",
+            timeout=30,
+        )
+        return f"bytes={len(raw)}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -294,6 +303,7 @@ def main() -> int:
         ("tier85_open_meteo_archive", tier85_open_meteo_archive),
         ("tier85_crossref_history", tier85_crossref_history),
         ("tier86_nist_codata", tier86_nist_codata),
+        ("tier87_arxiv_quantph", tier87_arxiv_quantph),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

@@ -1,0 +1,281 @@
+{
+  "source": "interferometry_reference+MAST_em_wavelengths",
+  "interferometers": [
+    {
+      "name": "LIGO_Hanford",
+      "wavelength_nm": 1064.0,
+      "arm_length_km": 4.0,
+      "strain_sensitivity": 1e-21
+    },
+    {
+      "name": "LIGO_Livingston",
+      "wavelength_nm": 1064.0,
+      "arm_length_km": 4.0,
+      "strain_sensitivity": 1e-21
+    },
+    {
+      "name": "Virgo",
+      "wavelength_nm": 1064.0,
+      "arm_length_km": 3.0,
+      "strain_sensitivity": 1e-21
+    },
+    {
+      "name": "GEO600",
+      "wavelength_nm": 1064.0,
+      "arm_length_km": 0.6,
+      "strain_sensitivity": 1e-20
+    },
+    {
+      "name": "Michelson_classic",
+      "wavelength_nm": 589.0,
+      "arm_length_m": 1.2,
+      "fringe_shift": 0.04
+    },
+    {
+      "name": "LISA_pathfinder",
+      "wavelength_nm": 1064.0,
+      "arm_length_km": 0.0002,
+      "strain_sensitivity": 1e-14
+    },
+    {
+      "name": "JWST_NIRCam_F200W",
+      "wavelength_nm": 2000.0,
+      "bandwidth_nm": 460.0,
+      "resolution": 0.031
+    },
+    {
+      "name": "HST_WFC3_F160W",
+      "wavelength_nm": 1600.0,
+      "bandwidth_nm": 290.0,
+      "resolution": 0.05
+    },
+    {
+      "name": "ALMA_Band6",
+      "wavelength_nm": 1300000.0,
+      "bandwidth_nm": 50000.0,
+      "resolution": 0.003
+    },
+    {
+      "name": "VLTI_GRAVITY",
+      "wavelength_nm": 2100.0,
+      "baseline_m": 130.0,
+      "resolution_mas": 0.5
+    }
+  ],
+  "mast_em_targets": [
+    {
+      "name": "Andromeda",
+      "median_em_min_nm": 457400000000.00006,
+      "instrument_diversity": 12.0,
+      "hst_fraction": 0.494852
+    },
+    {
+      "name": "Orion Nebula",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.301099
+    },
+    {
+      "name": "Hubble Deep Field North",
+      "median_em_min_nm": 708000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.308453
+    },
+    {
+      "name": "JWST Deep Field",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 8.0,
+      "hst_fraction": 0.13311
+    },
+    {
+      "name": "Large Magellanic Cloud",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.004281
+    },
+    {
+      "name": "Crab Nebula",
+      "median_em_min_nm": 522620000000.0,
+      "instrument_diversity": 11.0,
+      "hst_fraction": 0.524202
+    },
+    {
+      "name": "Cygnus X-1",
+      "median_em_min_nm": 212750000000.0,
+      "instrument_diversity": 6.0,
+      "hst_fraction": 0.407407
+    },
+    {
+      "name": "Pleiades",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 4.0,
+      "hst_fraction": 0.0
+    },
+    {
+      "name": "Omega Centauri",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 11.0,
+      "hst_fraction": 0.323956
+    },
+    {
+      "name": "Perseus A",
+      "median_em_min_nm": 531000000000.0,
+      "instrument_diversity": 13.0,
+      "hst_fraction": 0.327096
+    },
+    {
+      "name": "WASP-12 field",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 3.0,
+      "hst_fraction": 0.0
+    },
+    {
+      "name": "TRAPPIST-1",
+      "median_em_min_nm": 810000000000.0,
+      "instrument_diversity": 11.0,
+      "hst_fraction": 0.634677
+    },
+    {
+      "name": "Orion Trapezium",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.312161
+    },
+    {
+      "name": "Virgo A",
+      "median_em_min_nm": 470000000000.0,
+      "instrument_diversity": 14.0,
+      "hst_fraction": 0.697226
+    },
+    {
+      "name": "Whirlpool Galaxy",
+      "median_em_min_nm": 470000000000.0,
+      "instrument_diversity": 13.0,
+      "hst_fraction": 0.417997
+    },
+    {
+      "name": "Sombrero Galaxy",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 12.0,
+      "hst_fraction": 0.349823
+    },
+    {
+      "name": "Cigar Galaxy",
+      "median_em_min_nm": 493000000000.0,
+      "instrument_diversity": 13.0,
+      "hst_fraction": 0.503433
+    },
+    {
+      "name": "Pinwheel Galaxy",
+      "median_em_min_nm": 435650000000.00006,
+      "instrument_diversity": 14.0,
+      "hst_fraction": 0.370743
+    },
+    {
+      "name": "NGC 1300",
+      "median_em_min_nm": 2870000000000.0,
+      "instrument_diversity": 8.0,
+      "hst_fraction": 0.283626
+    },
+    {
+      "name": "Great Barred Spiral",
+      "median_em_min_nm": 472260000000.00006,
+      "instrument_diversity": 10.0,
+      "hst_fraction": 0.362423
+    },
+    {
+      "name": "Sculptor Galaxy",
+      "median_em_min_nm": 713510000000.0,
+      "instrument_diversity": 13.0,
+      "hst_fraction": 0.37422
+    },
+    {
+      "name": "Antennae Galaxies",
+      "median_em_min_nm": 472260000000.00006,
+      "instrument_diversity": 11.0,
+      "hst_fraction": 0.443449
+    },
+    {
+      "name": "Starfish Galaxy",
+      "median_em_min_nm": 493000000000.0,
+      "instrument_diversity": 10.0,
+      "hst_fraction": 0.363441
+    },
+    {
+      "name": "Galactic Center",
+      "median_em_min_nm": 1408399999999.9998,
+      "instrument_diversity": 10.0,
+      "hst_fraction": 0.247289
+    },
+    {
+      "name": "Carina Nebula",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 5.0,
+      "hst_fraction": 0.152495
+    },
+    {
+      "name": "Eagle Nebula",
+      "median_em_min_nm": 842250000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.374857
+    },
+    {
+      "name": "Helix Nebula",
+      "median_em_min_nm": 460000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.644491
+    },
+    {
+      "name": "Ring Nebula",
+      "median_em_min_nm": 700000000000.0,
+      "instrument_diversity": 10.0,
+      "hst_fraction": 0.177201
+    },
+    {
+      "name": "Kepler Supernova Remnant",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 3.0,
+      "hst_fraction": 0.0
+    },
+    {
+      "name": "Tycho Supernova Remnant",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 5.0,
+      "hst_fraction": 0.0
+    },
+    {
+      "name": "Vega field",
+      "median_em_min_nm": 470000000000.0,
+      "instrument_diversity": 9.0,
+      "hst_fraction": 0.48296
+    },
+    {
+      "name": "Betelgeuse",
+      "median_em_min_nm": 168000000000.0,
+      "instrument_diversity": 10.0,
+      "hst_fraction": 0.459561
+    },
+    {
+      "name": "Proxima Centauri",
+      "median_em_min_nm": 460000000000.0,
+      "instrument_diversity": 12.0,
+      "hst_fraction": 0.744418
+    },
+    {
+      "name": "55 Cancri system",
+      "median_em_min_nm": 460000000000.0,
+      "instrument_diversity": 11.0,
+      "hst_fraction": 0.570435
+    },
+    {
+      "name": "HD 189733",
+      "median_em_min_nm": 600000000000.0,
+      "instrument_diversity": 4.0,
+      "hst_fraction": 0.0
+    }
+  ],
+  "interferometer_count": 10,
+  "mast_target_count": 35,
+  "fetched_at": "2026-07-12T16:20:13.588178+00:00",
+  "credential_free": true
+}

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T16:04:02.996068+00:00",
+  "generated_at": "2026-07-12T16:20:30.081598+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 301,
-    "total_scientific_domains_covered": 337,
+    "extension_domains": 311,
+    "total_scientific_domains_covered": 347,
     "total_empirical_records": 306680,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -15,13 +15,13 @@
       "unverified": 0
     },
     "tier_distribution": {
-      "A_strong": 107,
-      "B_verified": 224,
-      "C_thin": 6,
+      "A_strong": 110,
+      "B_verified": 237,
+      "C_thin": 0,
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 434
+    "lean_formal_modules": 444
   },
   "neurolab_domains": [
     {
@@ -1063,9 +1063,9 @@
     {
       "domain": "Rust_Lean_Bridge",
       "tier": 37,
-      "record_count": 9,
+      "record_count": 24,
       "median_error_pct": 0.0,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.RustLeanBridgePriors"
     },
     {
@@ -2703,31 +2703,31 @@
     {
       "domain": "Epidemiology_Panel",
       "tier": 84,
-      "record_count": 15,
+      "record_count": 24,
       "median_error_pct": 0.015311,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.EpidemiologyPanelPriors"
     },
     {
       "domain": "Virology_Panel",
       "tier": 84,
-      "record_count": 6,
+      "record_count": 24,
       "median_error_pct": 0.022236,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.VirologyPanelPriors"
     },
     {
       "domain": "Paleontology_Panel",
       "tier": 84,
-      "record_count": 80,
+      "record_count": 120,
       "median_error_pct": 0.0167305,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.PaleontologyPanelPriors"
     },
     {
       "domain": "Arxiv_Gravitational_Waves_Panel",
       "tier": 84,
-      "record_count": 36,
+      "record_count": 60,
       "median_error_pct": 0.01748,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ArxivGravitationalWavesPanelPriors"
@@ -2735,7 +2735,7 @@
     {
       "domain": "Entomology_Panel",
       "tier": 84,
-      "record_count": 60,
+      "record_count": 90,
       "median_error_pct": 0.006006,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.EntomologyPanelPriors"
@@ -2743,7 +2743,7 @@
     {
       "domain": "Mycology_Panel",
       "tier": 84,
-      "record_count": 60,
+      "record_count": 90,
       "median_error_pct": 0.006006,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MycologyPanelPriors"
@@ -2751,7 +2751,7 @@
     {
       "domain": "Marine_Biology_Panel",
       "tier": 84,
-      "record_count": 60,
+      "record_count": 90,
       "median_error_pct": 0.006006,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.MarineBiologyPanelPriors"
@@ -2759,9 +2759,9 @@
     {
       "domain": "Immunology_Panel",
       "tier": 84,
-      "record_count": 18,
+      "record_count": 24,
       "median_error_pct": 0.040788,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ImmunologyPanelPriors"
     },
     {
@@ -2823,23 +2823,23 @@
     {
       "domain": "Speleology_Panel",
       "tier": 85,
-      "record_count": 10,
+      "record_count": 24,
       "median_error_pct": 0.04459,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.SpeleologyPanelPriors"
     },
     {
       "domain": "Exogeology_Panel",
       "tier": 85,
-      "record_count": 60,
+      "record_count": 100,
       "median_error_pct": 0.026472,
-      "coverage_tier": "B_verified",
+      "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.ExogeologyPanelPriors"
     },
     {
       "domain": "History_Panel",
       "tier": 85,
-      "record_count": 36,
+      "record_count": 60,
       "median_error_pct": 0.01382,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.HistoryPanelPriors"
@@ -2855,7 +2855,7 @@
     {
       "domain": "Finance_Markets_Panel",
       "tier": 85,
-      "record_count": 25,
+      "record_count": 36,
       "median_error_pct": 0.02584,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.FinanceMarketsPanelPriors"
@@ -2863,7 +2863,7 @@
     {
       "domain": "Supply_Chain_Logistics_Panel",
       "tier": 85,
-      "record_count": 27,
+      "record_count": 40,
       "median_error_pct": 0.02584,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.SupplyChainLogisticsPanelPriors"
@@ -2887,9 +2887,9 @@
     {
       "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
       "tier": 86,
-      "record_count": 19,
+      "record_count": 24,
       "median_error_pct": 0.018003,
-      "coverage_tier": "C_thin",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.HybridFiSimStratumDeepPanelPriors"
     },
     {
@@ -2915,6 +2915,86 @@
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ScientificExpansionDepthSpinePriors"
+    },
+    {
+      "domain": "Quantum_Computing_Math_Depth_Panel",
+      "tier": 87,
+      "record_count": 83,
+      "median_error_pct": 0.014767,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.QuantumComputingMathDepthPanelPriors"
+    },
+    {
+      "domain": "Neuroscience_Connectomics_Depth_Panel",
+      "tier": 87,
+      "record_count": 27,
+      "median_error_pct": 0.0201195,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors"
+    },
+    {
+      "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
+      "tier": 87,
+      "record_count": 24,
+      "median_error_pct": 0.033841,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors"
+    },
+    {
+      "domain": "Optics_Interferometry_Depth_Panel",
+      "tier": 87,
+      "record_count": 127,
+      "median_error_pct": 0.026954,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.OpticsInterferometryDepthPanelPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Depth_Wave2_Spine",
+      "tier": 87,
+      "record_count": 20,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ScientificExpansionDepthWave2SpinePriors"
+    },
+    {
+      "domain": "Trinary_Hardware_Live_Panel",
+      "tier": 88,
+      "record_count": 37,
+      "median_error_pct": 0.014767,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.TrinaryHardwareLivePanelPriors"
+    },
+    {
+      "domain": "Tokenization_Live_Panel",
+      "tier": 88,
+      "record_count": 24,
+      "median_error_pct": 0.015099000000000001,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.TokenizationLivePanelPriors"
+    },
+    {
+      "domain": "Living_FSOT_Hardware_Panel",
+      "tier": 88,
+      "record_count": 77,
+      "median_error_pct": 0.031506,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.LivingFsotHardwarePanelPriors"
+    },
+    {
+      "domain": "Certified_Agent_Formal_Panel",
+      "tier": 88,
+      "record_count": 24,
+      "median_error_pct": 0.014767,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.CertifiedAgentFormalPanelPriors"
+    },
+    {
+      "domain": "Desktop_Application_Wiring_Spine",
+      "tier": 88,
+      "record_count": 24,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.DesktopApplicationWiringSpinePriors"
     }
   ],
   "intelligence_compression": {

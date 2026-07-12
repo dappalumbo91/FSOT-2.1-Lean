@@ -1,0 +1,280 @@
+{
+  "source": "math_first_qc_rules+reference+arxiv",
+  "math_first_note": "Formal QC layer operates on mathematics; physical devices verify benchmarks.",
+  "rules": [
+    {
+      "rule_id": "QC-001",
+      "name": "Qubit state normalization",
+      "category": "states",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-002",
+      "name": "Hadamard gate action",
+      "category": "gates",
+      "property_count": 2,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-003",
+      "name": "CNOT entangler",
+      "category": "gates",
+      "property_count": 2,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-004",
+      "name": "Born rule",
+      "category": "measurement",
+      "property_count": 2,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-005",
+      "name": "No-cloning theorem",
+      "category": "fundamental",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-006",
+      "name": "Quantum Fourier transform",
+      "category": "algorithms",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-007",
+      "name": "Grover iteration amplitude",
+      "category": "algorithms",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-008",
+      "name": "Shor period finding",
+      "category": "algorithms",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-009",
+      "name": "Bell inequality (CHSH)",
+      "category": "foundations",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-010",
+      "name": "Surface code threshold",
+      "category": "error_correction",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-011",
+      "name": "Quantum teleportation",
+      "category": "protocols",
+      "property_count": 1,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "QC-012",
+      "name": "Variational quantum eigensolver",
+      "category": "algorithms",
+      "property_count": 1,
+      "schema_valid": true
+    }
+  ],
+  "rule_count": 12,
+  "devices": [
+    {
+      "name": "IBM_Eagle_r3",
+      "single_qubit_fidelity": 0.99986,
+      "two_qubit_fidelity": 0.993,
+      "T1_us": 120.0,
+      "T2_us": 95.0,
+      "readout_error": 0.015,
+      "max_circuit_depth": 100,
+      "qubit_count": 127
+    },
+    {
+      "name": "Google_Sycamore",
+      "single_qubit_fidelity": 0.998,
+      "two_qubit_fidelity": 0.996,
+      "T1_us": 20.0,
+      "T2_us": 15.0,
+      "readout_error": 0.038,
+      "max_circuit_depth": 53,
+      "qubit_count": 53
+    },
+    {
+      "name": "IonQ_Forte",
+      "single_qubit_fidelity": 0.9995,
+      "two_qubit_fidelity": 0.995,
+      "T1_us": 10000.0,
+      "T2_us": 1.0,
+      "readout_error": 0.005,
+      "max_circuit_depth": 200,
+      "qubit_count": 36
+    },
+    {
+      "name": "Rigetti_Aspen_M3",
+      "single_qubit_fidelity": 0.999,
+      "two_qubit_fidelity": 0.97,
+      "T1_us": 30.0,
+      "T2_us": 25.0,
+      "readout_error": 0.04,
+      "max_circuit_depth": 80,
+      "qubit_count": 80
+    },
+    {
+      "name": "Quantinuum_H2",
+      "single_qubit_fidelity": 0.99975,
+      "two_qubit_fidelity": 0.998,
+      "T1_us": 50000.0,
+      "T2_us": 2.0,
+      "readout_error": 0.003,
+      "max_circuit_depth": 150,
+      "qubit_count": 32
+    },
+    {
+      "name": "Sim_Math_Only_Surface",
+      "single_qubit_fidelity": 0.9999,
+      "two_qubit_fidelity": 0.999,
+      "T1_us": 1000.0,
+      "T2_us": 800.0,
+      "readout_error": 0.001,
+      "max_circuit_depth": 1000,
+      "qubit_count": 1000
+    }
+  ],
+  "error_correction": [
+    {
+      "name": "surface_code_d5",
+      "physical_error_rate": 0.001,
+      "code_distance": 5,
+      "threshold_rate": 0.01,
+      "logical_error_rate": 1e-06
+    },
+    {
+      "name": "surface_code_d11",
+      "physical_error_rate": 0.001,
+      "code_distance": 11,
+      "threshold_rate": 0.01,
+      "logical_error_rate": 1e-09
+    },
+    {
+      "name": "surface_code_d7",
+      "physical_error_rate": 0.005,
+      "code_distance": 7,
+      "threshold_rate": 0.01,
+      "logical_error_rate": 1e-05
+    },
+    {
+      "name": "repetition_code_n9",
+      "physical_error_rate": 0.01,
+      "code_distance": 9,
+      "threshold_rate": 0.1,
+      "logical_error_rate": 0.0001
+    }
+  ],
+  "algorithm_benchmarks": [
+    {
+      "name": "grover_N1024_M1",
+      "marked_fraction": 0.001,
+      "iteration_count": 25,
+      "success_probability": 0.95
+    },
+    {
+      "name": "grover_N256_M4",
+      "marked_fraction": 0.015625,
+      "iteration_count": 6,
+      "success_probability": 0.92
+    },
+    {
+      "name": "chsh_tsirelson",
+      "classical_bound": 2.0,
+      "quantum_bound": 2.828427,
+      "singlet_achieves": 2.828427
+    },
+    {
+      "name": "qft_n10",
+      "qubit_count": 10,
+      "gate_count": 100,
+      "depth": 100
+    },
+    {
+      "name": "vqe_H2_4q",
+      "qubit_count": 4,
+      "energy_hartree": -1.137,
+      "chemical_accuracy_hartree": 0.0016
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "title": "Continuous-time quantum error correction",
+      "category": "quant-ph",
+      "published": "2013-11-11"
+    },
+    {
+      "title": "Entanglement-Assisted Quantum Error-Correcting Codes",
+      "category": "quant-ph",
+      "published": "2016-10-13"
+    },
+    {
+      "title": "Quantum error correction beyond qubits",
+      "category": "quant-ph",
+      "published": "2008-11-24"
+    },
+    {
+      "title": "Fidelity of a t-error correcting quantum code with more than t errors",
+      "category": "quant-ph",
+      "published": "2000-11-13"
+    },
+    {
+      "title": "Architecture for fast implementation of qLDPC codes with optimized Rydberg gates",
+      "category": "quant-ph",
+      "published": "2024-04-29"
+    },
+    {
+      "title": "Quantum Computing and Error Correction",
+      "category": "quant-ph",
+      "published": "2003-04-02"
+    },
+    {
+      "title": "An Introduction to Error-Correcting Codes: From Classical to Quantum",
+      "category": "quant-ph",
+      "published": "2006-02-18"
+    },
+    {
+      "title": "Error suppression and error correction in adiabatic quantum computation I: techniques and challenges",
+      "category": "quant-ph",
+      "published": "2013-07-22"
+    },
+    {
+      "title": "Quantum Error Correction in Quaternionic Hilbert Spaces",
+      "category": "quant-ph",
+      "published": "2025-04-28"
+    },
+    {
+      "title": "Quantum Error Correction During 50 Gates",
+      "category": "quant-ph",
+      "published": "2013-12-04"
+    },
+    {
+      "title": "Quantum Error Correction",
+      "category": "quant-ph",
+      "published": "2019-10-08"
+    },
+    {
+      "title": "Error suppression and error correction in adiabatic quantum computation II: non-equilibrium dynamics",
+      "category": "quant-ph",
+      "published": "2013-07-22"
+    }
+  ],
+  "gap_fill_relay_count": 177,
+  "fetched_at": "2026-07-12T16:20:13.746278+00:00",
+  "credential_free": true
+}
