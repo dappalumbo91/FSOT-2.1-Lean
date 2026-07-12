@@ -892,3 +892,85 @@ def authority_path_for_export(path: Path) -> str:
     if rel.startswith("vendor/") or rel.startswith("data/"):
         return rel
     return rel_repo_path(path) if path.is_relative_to(REPO_ROOT) else str(path)
+
+
+def observable_verification_pipeline_path(*, require: bool = False) -> Path | None:
+    """Author-only numeric pipeline; optional for portable clone-and-verify."""
+    candidates: list[Path] = [
+        VENDOR_ROOT / "formula_corpus" / "fsot_observable_verification_pipeline.py",
+    ]
+    if not portable_mode():
+        candidates.append(
+            _DESKTOP / "fsot code language" / "audits" / "fsot_observable_verification_pipeline.py"
+        )
+    path = _resolve("FSOT_OBSERVABLE_PIPELINE_PATH", *candidates)
+    if path is None and require:
+        raise FileNotFoundError(
+            "fsot_observable_verification_pipeline.py not found. Set FSOT_OBSERVABLE_PIPELINE_PATH."
+        )
+    return path
+
+
+def lab_compute_sync_targets() -> list[Path]:
+    """Optional lab mirrors for fsot_compute sync (author dev only)."""
+    raw = os.environ.get("FSOT_LAB_COMPUTE_TARGETS", "").strip()
+    if raw:
+        return [Path(p.strip()).expanduser() for p in raw.split(os.pathsep) if p.strip()]
+    targets: list[Path] = []
+    for root in (smiles_lab_root(require=False), neurolab_root(require=False)):
+        if root is None:
+            continue
+        candidate = root / "fsot_compute.py"
+        if candidate.exists():
+            targets.append(candidate)
+    return targets
+
+
+def isabelle_install_roots() -> list[Path]:
+    """Discover Isabelle installations without hardcoded author paths."""
+    home = Path(os.environ.get("USERPROFILE", os.environ.get("HOME", "")))
+    roots: list[Path] = [
+        Path(r"C:\Isabelle"),
+        Path(r"C:\Program Files\Isabelle"),
+        home / "Isabelle",
+    ]
+    isa_home = os.environ.get("ISABELLE_HOME", "").strip()
+    if isa_home:
+        roots.insert(0, Path(isa_home).expanduser())
+    for pattern in ("Isabelle*", "Isabelle202*"):
+        for base in (home / "Desktop", Path(r"C:\Program Files")):
+            if base.exists():
+                roots.extend(sorted(base.glob(pattern), reverse=True))
+    seen: set[str] = set()
+    out: list[Path] = []
+    for root in roots:
+        key = str(root)
+        if key in seen or not root.exists():
+            continue
+        seen.add(key)
+        out.append(root)
+    return out
+
+
+def fstar_install_root(*, require: bool = False) -> Path | None:
+    """Resolve F* install root from FSTAR_HOME or common install locations."""
+    raw = os.environ.get("FSTAR_HOME", "").strip()
+    if raw:
+        root = Path(raw).expanduser()
+        if root.exists():
+            return root.resolve()
+    home = Path(os.environ.get("USERPROFILE", os.environ.get("HOME", "")))
+    candidates: list[Path] = [
+        Path(r"C:\Program Files\fstar"),
+        Path(r"C:\fstar"),
+        Path(os.environ.get("LOCALAPPDATA", "")) / "fstar",
+    ]
+    tools = home / "tools"
+    if tools.exists():
+        candidates.extend(sorted(tools.glob("fstar*"), reverse=True))
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate.resolve()
+    if require:
+        raise FileNotFoundError("F* install not found. Set FSTAR_HOME.")
+    return None

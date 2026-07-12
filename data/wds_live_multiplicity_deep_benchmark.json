@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:04.644266+00:00",
+  "generated_at": "2026-07-12T00:08:33.869507+00:00",
   "domain": "WDS_Live_Multiplicity_Deep",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,6 +14,8 @@
   "D_eff": 19,
   "record_count": 57,
   "observable_count": 57,
+  "scalar_record_count": 57,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -38,20 +40,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 57,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 57
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -60,20 +49,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "multiplicity deep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 24
     }
   ],
   "material_records": [
@@ -84,21 +60,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -107,21 +70,8 @@
       "computed": 7500.0,
       "measured": 7500.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -130,21 +80,8 @@
       "computed": 300.0,
       "measured": 300.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -153,21 +90,8 @@
       "computed": 3.5,
       "measured": 3.5,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -176,20 +100,7 @@
       "computed": 7500.0,
       "measured": 7500.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -198,20 +109,7 @@
       "computed": 300.0,
       "measured": 300.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -220,20 +118,7 @@
       "computed": 3.5,
       "measured": 3.5,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Beta Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -242,21 +127,8 @@
       "computed": 4.0,
       "measured": 4.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -265,21 +137,8 @@
       "computed": 1200.0,
       "measured": 1200.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -288,21 +147,8 @@
       "computed": 50.0,
       "measured": 50.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -311,21 +157,8 @@
       "computed": 8.0,
       "measured": 8.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -334,20 +167,7 @@
       "computed": 1200.0,
       "measured": 1200.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -356,20 +176,7 @@
       "computed": 50.0,
       "measured": 50.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -378,20 +185,7 @@
       "computed": 8.0,
       "measured": 8.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Delta Ori",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -400,21 +194,8 @@
       "computed": 5.0,
       "measured": 5.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -423,21 +204,8 @@
       "computed": 2300.0,
       "measured": 2300.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -446,21 +214,8 @@
       "computed": 230.0,
       "measured": 230.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -469,21 +224,8 @@
       "computed": 4.5,
       "measured": 4.5,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -492,20 +234,7 @@
       "computed": 2300.0,
       "measured": 2300.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -514,20 +243,7 @@
       "computed": 230.0,
       "measured": 230.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -536,20 +252,7 @@
       "computed": 4.5,
       "measured": 4.5,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Epsilon Lyr",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -558,21 +261,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -581,21 +271,8 @@
       "computed": 169.0,
       "measured": 169.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -604,21 +281,8 @@
       "computed": 9.5,
       "measured": 9.5,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -627,21 +291,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -650,20 +301,7 @@
       "computed": 169.0,
       "measured": 169.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -672,20 +310,7 @@
       "computed": 9.5,
       "measured": 9.5,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -694,20 +319,7 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Gamma Vir",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -716,21 +328,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -739,21 +338,8 @@
       "computed": 59.2,
       "measured": 59.2,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -762,21 +348,8 @@
       "computed": 12.0,
       "measured": 12.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -785,21 +358,8 @@
       "computed": 1.6,
       "measured": 1.6,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -808,20 +368,7 @@
       "computed": 59.2,
       "measured": 59.2,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -830,20 +377,7 @@
       "computed": 12.0,
       "measured": 12.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -852,20 +386,7 @@
       "computed": 1.6,
       "measured": 1.6,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "HR 2896",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -874,21 +395,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -897,21 +405,8 @@
       "computed": 12.5,
       "measured": 12.5,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -920,21 +415,8 @@
       "computed": 0.8,
       "measured": 0.8,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -943,21 +425,8 @@
       "computed": 1.8,
       "measured": 1.8,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -966,20 +435,7 @@
       "computed": 12.5,
       "measured": 12.5,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -988,20 +444,7 @@
       "computed": 0.8,
       "measured": 0.8,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1010,20 +453,7 @@
       "computed": 1.8,
       "measured": 1.8,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Lambda Cyg",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1032,21 +462,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1055,21 +472,8 @@
       "computed": 360.0,
       "measured": 360.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1078,21 +482,8 @@
       "computed": 18.0,
       "measured": 18.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1101,21 +492,8 @@
       "computed": 2.8,
       "measured": 2.8,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1124,20 +502,7 @@
       "computed": 360.0,
       "measured": 360.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1146,20 +511,7 @@
       "computed": 18.0,
       "measured": 18.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1168,20 +520,7 @@
       "computed": 2.8,
       "measured": 2.8,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Xi Cep",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1190,21 +529,8 @@
       "computed": 2.0,
       "measured": 2.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1213,21 +539,8 @@
       "computed": 830.0,
       "measured": 830.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1236,21 +549,8 @@
       "computed": 27.0,
       "measured": 27.0,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1259,21 +559,8 @@
       "computed": 2.2,
       "measured": 2.2,
       "error_pct": 0.0,
-      "ingest_source": "bundled",
-      "eval_kind": "wds_anchor",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "WDS_bundled_vizier_roadmap",
+      "eval_kind": "wds_anchor"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1282,20 +569,7 @@
       "computed": 830.0,
       "measured": 830.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1304,20 +578,7 @@
       "computed": 27.0,
       "measured": 27.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1326,20 +587,7 @@
       "computed": 2.2,
       "measured": 2.2,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "Zeta Cas",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_consistency"
     },
     {
       "lab": "wds_live_multiplicity_lab",
@@ -1348,20 +596,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "tier53_bridge",
-      "domain_display_name": "wds live multiplicity",
-      "display_name": "stellar multiplicity catalog",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier53_bridge"
     }
   ],
   "margin_summary": {
@@ -1375,19 +610,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "WDS Live Multiplicity Deep",
-  "tier_label": "Tier 62 \u2014 WDS Live Multiplicity Deep + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.878330+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 57,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 57
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

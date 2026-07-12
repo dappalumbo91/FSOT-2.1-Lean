@@ -111,7 +111,7 @@ def build_pubchem_live_deep() -> dict:
         relay_errs.append(err)
         records.append({**row, "lab": "pubchem_live_deep_lab", "eval_kind": "formula_mass_relay"})
 
-    for comp in (live.get("compounds") or [])[:20]:
+    for comp in (live.get("compounds") or [])[:35]:
         mw = comp.get("molecular_weight")
         if mw is None:
             continue

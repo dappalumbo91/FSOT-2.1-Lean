@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import ssl
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -17,12 +18,12 @@ BUNDLED = VENDOR / "simbad_stellar_identity_sample.json"
 CACHE_NAME = "simbad_live_cache.json"
 
 SIMBAD_TAP = "https://simbad.cds.unistra.fr/simbad/sim-tap/sync"
-def _simbad_limit() -> int:
-    import os
+def _deep_mode() -> bool:
+    return os.environ.get("FSOT_TIER60_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
 
-    if os.environ.get("FSOT_TIER60_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}:
-        return 40
-    return 25
+
+def _simbad_limit() -> int:
+    return 60 if _deep_mode() else 35
 
 
 def _simbad_adql() -> str:
@@ -44,14 +45,27 @@ def external_cache_root() -> Path:
     return root
 
 
+def _urlopen_bytes(req: urllib.request.Request, *, timeout: int = 120) -> bytes:
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read()
+    except Exception as exc:
+        if "CERTIFICATE_VERIFY_FAILED" not in str(exc):
+            raise
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
+            return resp.read()
+
+
 def fetch_simbad() -> list[dict]:
     params = urllib.parse.urlencode(
         {"request": "doQuery", "lang": "adql", "format": "json", "query": _simbad_adql()}
     )
     url = f"{SIMBAD_TAP}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier60"})
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
+    payload = json.loads(_urlopen_bytes(req).decode("utf-8"))
     rows = payload.get("data") or []
     out: list[dict] = []
     for row in rows:
@@ -80,7 +94,10 @@ def load_bundled() -> list[dict]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--deep", action="store_true", help="Larger SIMBAD TAP sample (TOP 60)")
     args = parser.parse_args()
+    if args.deep:
+        os.environ["FSOT_TIER60_DEEP"] = "1"
     if args.offline:
         objects = load_bundled()
         source = "bundled"

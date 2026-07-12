@@ -17,11 +17,21 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PIPELINE = Path(r"C:\Users\damia\Desktop\fsot code language\audits\fsot_observable_verification_pipeline.py")
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import observable_verification_pipeline_path, unified_db_path  # noqa: E402
+
 BACKFILL = ROOT / "scripts" / "backfill_numeric_from_outcomes.py"
 GAP_RESOLVER = ROOT / "scripts" / "resolve_strict_empirical_gap.py"
-DEFAULT_DB = Path(r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\FSOT_UNIFIED.db")
 OUT_REPORT = ROOT / "data" / "numeric_eval_queue_report.json"
+
+
+def _resolve_db(cli_db: Path | None) -> Path:
+    path = cli_db or unified_db_path(require=False)
+    if path is None:
+        raise FileNotFoundError(
+            "FSOT_UNIFIED.db not found in vendor/fsot_aggregate. Set FSOT_UNIFIED_DB."
+        )
+    return path
 
 
 BIOLOGY_FILTER = (
@@ -98,7 +108,7 @@ def summarize_db(db_path: Path, *, biology_only: bool = False) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run FSOT numeric-only eval queue")
-    parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--db", type=Path, default=None, help="Unified DB (default: vendor/fsot_aggregate via fsot_paths)")
     parser.add_argument("--max-candidates", type=int, default=0, help="0 = all candidates")
     parser.add_argument(
         "--biology-subset",
@@ -110,7 +120,13 @@ def main() -> int:
     parser.add_argument("--skip-backfill", action="store_true", help="Only run observable pipeline")
     args = parser.parse_args()
 
-    before = summarize_db(args.db, biology_only=args.biology_subset)
+    try:
+        db_path = _resolve_db(args.db)
+    except FileNotFoundError as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        return 1
+
+    before = summarize_db(db_path, biology_only=args.biology_subset)
     label = "biology subset" if args.biology_subset else "all"
     print(f"=== Numeric eval queue ({label}, before) ===")
     for k, v in before.items():
@@ -120,33 +136,37 @@ def main() -> int:
         return 0
 
     if not args.skip_pipeline:
-        if not PIPELINE.exists():
-            print(f"FAIL: pipeline not found: {PIPELINE}", file=sys.stderr)
-            return 1
+        pipeline = observable_verification_pipeline_path(require=False)
+        if pipeline is None or not pipeline.exists():
+            print(
+                "SKIP: observable pipeline not bundled (use --skip-pipeline or set FSOT_OBSERVABLE_PIPELINE_PATH).",
+                file=sys.stderr,
+            )
+            args.skip_pipeline = True
+        else:
+            cmd = [
+                sys.executable,
+                str(pipeline),
+                "--mode",
+                "numeric-only",
+                "--db",
+                str(db_path),
+                "--checkpoint-every",
+                "100",
+            ]
+            if args.max_candidates > 0:
+                cmd.extend(["--max-candidates", str(args.max_candidates)])
 
-        cmd = [
-            sys.executable,
-            str(PIPELINE),
-            "--mode",
-            "numeric-only",
-            "--db",
-            str(args.db),
-            "--checkpoint-every",
-            "100",
-        ]
-        if args.max_candidates > 0:
-            cmd.extend(["--max-candidates", str(args.max_candidates)])
-
-        print("\n=== Running numeric-only pipeline ===")
-        proc = subprocess.run(cmd, check=False)
-        if proc.returncode != 0:
-            print(f"FAIL: pipeline exit {proc.returncode}", file=sys.stderr)
-            return proc.returncode
+            print("\n=== Running numeric-only pipeline ===")
+            proc = subprocess.run(cmd, check=False)
+            if proc.returncode != 0:
+                print(f"FAIL: pipeline exit {proc.returncode}", file=sys.stderr)
+                return proc.returncode
 
     if not args.skip_backfill and GAP_RESOLVER.exists():
         print("\n=== Resolving strict-empirical CNC gap ===")
         proc_gap = subprocess.run(
-            [sys.executable, str(GAP_RESOLVER), "--db", str(args.db)],
+            [sys.executable, str(GAP_RESOLVER), "--db", str(db_path)],
             check=False,
         )
         if proc_gap.returncode != 0:
@@ -156,18 +176,18 @@ def main() -> int:
     if not args.skip_backfill and BACKFILL.exists():
         print("\n=== Backfilling verification_numeric from outcome_json ===")
         proc_bf = subprocess.run(
-            [sys.executable, str(BACKFILL), "--db", str(args.db)],
+            [sys.executable, str(BACKFILL), "--db", str(db_path)],
             check=False,
         )
         if proc_bf.returncode != 0:
             print(f"FAIL: backfill exit {proc_bf.returncode}", file=sys.stderr)
             return proc_bf.returncode
 
-    after = summarize_db(args.db, biology_only=args.biology_subset)
+    after = summarize_db(db_path, biology_only=args.biology_subset)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "evaluator_version": "fsot_numeric_eval_v4",
-        "db_path": str(args.db),
+        "db_path": str(db_path),
         "biology_subset": args.biology_subset,
         "before": before,
         "after": after,

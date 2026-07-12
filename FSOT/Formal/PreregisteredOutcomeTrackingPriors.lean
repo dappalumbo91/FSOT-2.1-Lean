@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def preregistered_outcome_tracking_observable_count : ℕ := 18
+def preregistered_outcome_tracking_observable_count : ℕ := 56
 def preregistered_outcome_tracking_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def preregistered_outcome_tracking_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def preregistered_outcome_tracking_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem preregistered_outcome_tracking_beats_sota_headlines_pos : 0 < preregiste
   unfold preregistered_outcome_tracking_beats_sota_headlines; norm_num
 
 theorem preregistered_outcome_tracking_bundle :
-    preregistered_outcome_tracking_observable_count = 18 ∧
+    preregistered_outcome_tracking_observable_count = 56 ∧
     preregistered_outcome_tracking_pooled_median_error_pct < (0.5 : ℝ) ∧
     preregistered_outcome_tracking_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

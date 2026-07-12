@@ -19,9 +19,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import unified_db_path  # noqa: E402
 
-DEFAULT_DB = unified_db_path(require=False) or (
-    Path.home() / "Desktop" / "fsot code language" / "audits" / "reports" / "FSOT_UNIFIED_DATABASE" / "FSOT_UNIFIED.db"
-)
+def _resolve_db(cli_db: Path | None) -> Path:
+    path = cli_db or unified_db_path(require=False)
+    if path is None:
+        raise FileNotFoundError(
+            "FSOT_UNIFIED.db not found in vendor/fsot_aggregate. Set FSOT_UNIFIED_DB."
+        )
+    return path
 EVALUATOR_VERSION = "fsot_numeric_eval_v4"
 NUMERIC_TABLE = "verification_numeric"
 
@@ -217,16 +221,21 @@ def write_rows(db_path: Path, rows: list[dict]) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Backfill verification_numeric from outcome_json")
-    parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--db", type=Path, default=None, help="Unified DB (default: vendor/fsot_aggregate via fsot_paths)")
     parser.add_argument("--all", action="store_true", help="Upsert all outcome_json rows, not only missing")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    if not args.db.exists():
-        print(f"FAIL: db not found: {args.db}", file=sys.stderr)
+    try:
+        db_path = _resolve_db(args.db)
+    except FileNotFoundError as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        return 1
+    if not db_path.exists():
+        print(f"FAIL: db not found: {db_path}", file=sys.stderr)
         return 1
 
-    con = sqlite3.connect(str(args.db))
+    con = sqlite3.connect(str(db_path))
     candidates = fetch_backfill_candidates(con, only_missing=not args.all)
     con.close()
 
@@ -243,7 +252,7 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    written = write_rows(args.db, rows)
+    written = write_rows(db_path, rows)
     print(f"Wrote {written} rows to {NUMERIC_TABLE}")
     return 0
 

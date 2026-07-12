@@ -25,9 +25,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import unified_db_path  # noqa: E402
 
 CELLULAR_MANIFEST = ROOT / "data" / "cellular_manifest.yaml"
-DEFAULT_DB = unified_db_path(require=False) or (
-    Path.home() / "Desktop" / "fsot code language" / "audits" / "reports" / "FSOT_UNIFIED_DATABASE" / "FSOT_UNIFIED.db"
-)
+def _resolve_db(cli_db: Path | None) -> Path | None:
+    return cli_db or unified_db_path(require=False)
 OUTPUT = ROOT / "data" / "biology_numeric_report.json"
 
 BIOLOGY_SUBJECTS = {
@@ -184,11 +183,11 @@ def build_report(*, sample_size: int, db_path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Biology numeric depth eval (Soul + DB)")
-    parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--db", type=Path, default=None, help="Unified DB (default: vendor/fsot_aggregate if bundled)")
     parser.add_argument("--sample-size", type=int, default=5000)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
-    report = build_report(sample_size=args.sample_size, db_path=args.db)
+    report = build_report(sample_size=args.sample_size, db_path=_resolve_db(args.db))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")

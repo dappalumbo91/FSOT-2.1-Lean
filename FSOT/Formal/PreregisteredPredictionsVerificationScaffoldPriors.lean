@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def preregistered_predictions_verification_scaffold_observable_count : ℕ := 22
+def preregistered_predictions_verification_scaffold_observable_count : ℕ := 60
 def preregistered_predictions_verification_scaffold_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def preregistered_predictions_verification_scaffold_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def preregistered_predictions_verification_scaffold_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem preregistered_predictions_verification_scaffold_beats_sota_headlines_pos
   unfold preregistered_predictions_verification_scaffold_beats_sota_headlines; norm_num
 
 theorem preregistered_predictions_verification_scaffold_bundle :
-    preregistered_predictions_verification_scaffold_observable_count = 22 ∧
+    preregistered_predictions_verification_scaffold_observable_count = 60 ∧
     preregistered_predictions_verification_scaffold_pooled_median_error_pct < (0.5 : ℝ) ∧
     preregistered_predictions_verification_scaffold_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

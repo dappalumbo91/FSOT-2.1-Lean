@@ -12,12 +12,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from fsot_paths import knowledge_base_root, knowledge_base_validation_path  # noqa: E402
-
-KB_WORKSPACE = knowledge_base_root(require=False) or (Path.home() / "Desktop" / "Knowledge base")
-KB_VALIDATOR = KB_WORKSPACE / "scripts" / "run_fsot_full_corpus_validation.py"
-KB_VALIDATION_JSON = knowledge_base_validation_path(require=False) or (
-    KB_WORKSPACE / "export" / "full_corpus_math_validation.json"
+from fsot_paths import (  # noqa: E402
+    knowledge_base_root,
+    knowledge_base_validation_path,
+    strict_empirical_jsonl_path,
 )
 OUT_JSONL = ROOT / "data" / "knowledge_base_formula_verification.jsonl"
 OUT_SUMMARY = ROOT / "data" / "knowledge_base_formula_verification_summary.json"
@@ -71,39 +69,47 @@ def main() -> int:
     parser.add_argument("--skip-validator", action="store_true", help="Use existing full_corpus_math_validation.json")
     args = parser.parse_args()
 
-    if not args.skip_validator:
-        if not KB_VALIDATOR.exists():
-            print(f"FAIL: validator not found: {KB_VALIDATOR}", file=sys.stderr)
-            return 1
-        print("=== Running KB full corpus validation ===")
-        proc = subprocess.run([sys.executable, str(KB_VALIDATOR)], check=False)
-        if proc.returncode != 0:
-            print(f"FAIL: validator exit {proc.returncode}", file=sys.stderr)
-            return proc.returncode
+    kb_root = knowledge_base_root(require=False)
+    kb_validator = (kb_root / "scripts" / "run_fsot_full_corpus_validation.py") if kb_root else None
+    kb_validation_json = knowledge_base_validation_path(require=False)
 
-    if not KB_VALIDATION_JSON.exists():
-        print(f"FAIL: missing {KB_VALIDATION_JSON}", file=sys.stderr)
+    if not args.skip_validator:
+        if kb_validator is None or not kb_validator.exists():
+            print(
+                "SKIP: KB validator not bundled (set FSOT_KNOWLEDGE_BASE_ROOT for full re-validation).",
+                file=sys.stderr,
+            )
+            if kb_validation_json is None or not kb_validation_json.exists():
+                print("FAIL: no bundled full_corpus_math_validation.json", file=sys.stderr)
+                return 1
+        else:
+            print("=== Running KB full corpus validation ===")
+            proc = subprocess.run([sys.executable, str(kb_validator)], check=False)
+            if proc.returncode != 0:
+                print(f"FAIL: validator exit {proc.returncode}", file=sys.stderr)
+                return proc.returncode
+
+    if kb_validation_json is None or not kb_validation_json.exists():
+        print("FAIL: missing bundled knowledge base validation JSON", file=sys.stderr)
         return 1
 
-    data = json.loads(KB_VALIDATION_JSON.read_text(encoding="utf-8"))
+    data = json.loads(kb_validation_json.read_text(encoding="utf-8"))
     kb_summary = summarize_kb_validation(data)
     rows = data.get("rows") or []
     write_jsonl(rows, OUT_JSONL)
 
-    strict_path = Path(
-        r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\by_domain\strict_empirical.jsonl"
-    )
+    strict_path = strict_empirical_jsonl_path(require=False)
     strict_summary = (
         summarize_formula_corpus(load_strict_empirical_jsonl(strict_path))
-        if strict_path.exists()
+        if strict_path is not None and strict_path.exists()
         else {}
     )
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "verification_tier": "numeric_formula",
-        "kb_corpus_validation_path": str(KB_VALIDATION_JSON),
-        "strict_empirical_corpus_path": str(strict_path),
+        "kb_corpus_validation_path": str(kb_validation_json),
+        "strict_empirical_corpus_path": str(strict_path) if strict_path else None,
         "per_formula_jsonl": str(OUT_JSONL),
         "kb_catalog": kb_summary,
         "strict_empirical_bridge": strict_summary,

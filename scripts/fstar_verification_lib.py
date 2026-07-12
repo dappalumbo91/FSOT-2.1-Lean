@@ -10,9 +10,13 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import fstar_install_root  # noqa: E402
+
 FSTAR_DIR = ROOT / "verification" / "fstar"
 BOOT_MODULE = FSTAR_DIR / "FSOTScalarBoot.fst"
-DEFAULT_FSTAR_ROOT = Path(os.environ.get("FSTAR_HOME", r"C:\Users\damia\tools\fstar-v2026.07.05"))
 
 
 def resolve_fstar_exe() -> str | None:
@@ -20,8 +24,12 @@ def resolve_fstar_exe() -> str | None:
         found = shutil.which(name)
         if found:
             return found
-    candidate = DEFAULT_FSTAR_ROOT / "bin" / "fstar.exe"
-    return str(candidate) if candidate.exists() else None
+    root = fstar_install_root(require=False)
+    if root is not None:
+        candidate = root / "bin" / "fstar.exe"
+        if candidate.exists():
+            return str(candidate)
+    return None
 
 
 def run_fstar_verify() -> dict:

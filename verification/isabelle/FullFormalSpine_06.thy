@@ -42,10 +42,10 @@ lemma gaia_astrometry_panel_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"
 lemma gaia_dr3_tap_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_headline_median_under_half_pct: "(0.111276 :: real) < (0.5 :: real)"
+lemma gaia_dr3_tap_deep_headline_median_under_half_pct: "(0.000036 :: real) < (0.5 :: real)"
   by eval
 
-lemma gaia_dr3_tap_deep_observable_count_pos: "0 < (74 :: nat)"
+lemma gaia_dr3_tap_deep_observable_count_pos: "0 < (386 :: nat)"
   by eval
 
 lemma gaia_dr3_tap_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"

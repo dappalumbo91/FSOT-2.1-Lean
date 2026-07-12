@@ -2277,7 +2277,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma gaia_dr3_tap_deep_bundle_conj_0 : (74 = 74)%nat.
+Lemma gaia_dr3_tap_deep_bundle_conj_0 : (386 = 386)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -2289,7 +2289,7 @@ Lemma gaia_dr3_tap_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma gaia_dr3_tap_deep_bundle : (74 = 74)%nat /\ True /\ True.
+Lemma gaia_dr3_tap_deep_bundle : (386 = 386)%nat /\ True /\ True.
 Proof.
   split.
     split.
@@ -4579,7 +4579,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma preregistered_outcome_tracking_bundle_conj_0 : (18 = 18)%nat.
+Lemma preregistered_outcome_tracking_bundle_conj_0 : (56 = 56)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4591,7 +4591,7 @@ Lemma preregistered_outcome_tracking_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma preregistered_outcome_tracking_bundle : (18 = 18)%nat /\ True /\ True.
+Lemma preregistered_outcome_tracking_bundle : (56 = 56)%nat /\ True /\ True.
 Proof.
   split.
     split.
@@ -4621,7 +4621,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma preregistered_predictions_verification_scaffold_bundle_conj_0 : (22 = 22)%nat.
+Lemma preregistered_predictions_verification_scaffold_bundle_conj_0 : (60 = 60)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4633,7 +4633,7 @@ Lemma preregistered_predictions_verification_scaffold_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma preregistered_predictions_verification_scaffold_bundle : (22 = 22)%nat /\ True /\ True.
+Lemma preregistered_predictions_verification_scaffold_bundle : (60 = 60)%nat /\ True /\ True.
 Proof.
   split.
     split.
@@ -4757,7 +4757,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma pubchem_live_deep_bundle_conj_0 : (36 = 36)%nat.
+Lemma pubchem_live_deep_bundle_conj_0 : (47 = 47)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4769,7 +4769,7 @@ Lemma pubchem_live_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma pubchem_live_deep_bundle : (36 = 36)%nat /\ True /\ True.
+Lemma pubchem_live_deep_bundle : (47 = 47)%nat /\ True /\ True.
 Proof.
   split.
     split.
@@ -5248,7 +5248,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma simbad_stellar_identity_deep_bundle_conj_0 : (40 = 40)%nat.
+Lemma simbad_stellar_identity_deep_bundle_conj_0 : (140 = 140)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -5260,7 +5260,7 @@ Lemma simbad_stellar_identity_deep_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma simbad_stellar_identity_deep_bundle : (40 = 40)%nat /\ True /\ True.
+Lemma simbad_stellar_identity_deep_bundle : (140 = 140)%nat /\ True /\ True.
 Proof.
   split.
     split.

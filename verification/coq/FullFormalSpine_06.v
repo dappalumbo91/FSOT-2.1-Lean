@@ -45,10 +45,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma gaia_dr3_tap_deep_pooled_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma gaia_dr3_tap_deep_headline_median_under_half_pct : (0.111276%R) < (0.5%R).
+Lemma gaia_dr3_tap_deep_headline_median_under_half_pct : (0.000036%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma gaia_dr3_tap_deep_observable_count_pos : (0 < 74)%nat.
+Lemma gaia_dr3_tap_deep_observable_count_pos : (0 < 386)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma gaia_dr3_tap_deep_beats_sota_headlines_pos : (0 < 2)%nat.

@@ -70,14 +70,26 @@ def ingest_materials_project() -> dict:
     return doc
 
 
+def _pubchem_deep_mode() -> bool:
+    return os.environ.get("FSOT_TIER68_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _pubchem_fetch_cids(bundled: dict) -> list[int]:
+    bundled_cids = [int(c["cid"]) for c in bundled.get("compounds") or [] if c.get("cid") is not None]
+    if _pubchem_deep_mode():
+        return bundled_cids
+    # Normal mode: refresh a broader live slice (15 compounds).
+    return bundled_cids[:15]
+
+
 def ingest_pubchem_live() -> dict:
     out_path = cache_root() / "pubchem_live_cache.json"
     bundled = json.loads(PUBCHEM_BUNDLED.read_text(encoding="utf-8")) if PUBCHEM_BUNDLED.exists() else {"compounds": []}
     compounds = list(bundled.get("compounds") or [])
     source = "pubchem_bundled"
-    extra_cids = [962, 241, 3386, 5284373, 5462311]
+    fetch_cids = _pubchem_fetch_cids(bundled)
     live: list[dict] = []
-    for cid in extra_cids:
+    for cid in fetch_cids:
         try:
             url = (
                 f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/"
@@ -167,7 +179,10 @@ INGESTERS = {
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", choices=sorted(INGESTERS.keys()), action="append")
+    parser.add_argument("--deep", action="store_true", help="PubChem: live-refresh all bundled CIDs")
     args = parser.parse_args()
+    if args.deep:
+        os.environ["FSOT_TIER68_DEEP"] = "1"
     for name in args.only or sorted(INGESTERS.keys()):
         doc = INGESTERS[name]()
         count = len(doc.get("materials") or doc.get("compounds") or doc.get("datasets") or doc.get("systems") or [])

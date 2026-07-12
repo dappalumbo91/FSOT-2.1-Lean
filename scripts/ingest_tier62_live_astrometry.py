@@ -20,11 +20,23 @@ GAIA_CACHE = "gaia_dr3_live_cache.json"
 WDS_CACHE = "wds_live_cache.json"
 
 GAIA_TAP = "https://gea.esac.esa.int/tap-server/tap/sync"
-GAIA_ADQL = (
-    "SELECT TOP 30 source_id, ra, dec, parallax, pmra, pmdec, phot_g_mean_mag, bp_rp "
-    "FROM gaiadr3.gaia_source WHERE parallax > 8 AND parallax/parallax_error > 5 "
-    "ORDER BY phot_g_mean_mag"
-)
+
+
+def _deep_mode() -> bool:
+    return os.environ.get("FSOT_TIER62_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _gaia_limit() -> int:
+    return 60 if _deep_mode() else 40
+
+
+def _gaia_adql() -> str:
+    limit = _gaia_limit()
+    return (
+        f"SELECT TOP {limit} source_id, ra, dec, parallax, pmra, pmdec, phot_g_mean_mag, bp_rp "
+        "FROM gaiadr3.gaia_source WHERE parallax > 8 AND parallax/parallax_error > 5 "
+        "ORDER BY phot_g_mean_mag"
+    )
 
 
 def external_cache_root() -> Path:
@@ -39,7 +51,7 @@ def external_cache_root() -> Path:
 
 def fetch_gaia() -> list[dict]:
     params = urllib.parse.urlencode(
-        {"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "json", "QUERY": GAIA_ADQL}
+        {"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "json", "QUERY": _gaia_adql()}
     )
     url = f"{GAIA_TAP}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "FSOT-2.1-Lean/tier62"})
@@ -110,7 +122,10 @@ def write_cache(name: str, source: str, objects: list[dict]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--deep", action="store_true", help="Larger Gaia DR3 TAP sample (TOP 60)")
     args = parser.parse_args()
+    if args.deep:
+        os.environ["FSOT_TIER62_DEEP"] = "1"
     if args.offline:
         gaia = load_gaia_bundled()
         gaia_source = "bundled"

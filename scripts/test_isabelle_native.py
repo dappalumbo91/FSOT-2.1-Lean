@@ -8,9 +8,17 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import isabelle_install_roots  # noqa: E402
+
 THY_DIR = ROOT / "verification" / "isabelle"
-ISA_HOME = Path(r"C:\Users\damia\Desktop\Isabelle2025-2")
-BASH = ISA_HOME / "contrib" / "cygwin" / "bin" / "bash.exe"
+
+
+def _resolve_isabelle_home() -> Path:
+    roots = isabelle_install_roots()
+    if not roots:
+        raise SystemExit("Isabelle not found. Set ISABELLE_HOME.")
+    return roots[0]
 
 
 def cygpath(win_path: Path) -> str:
@@ -21,8 +29,12 @@ def cygpath(win_path: Path) -> str:
 
 
 def main() -> int:
+    isa_home = _resolve_isabelle_home()
+    bash = isa_home / "contrib" / "cygwin" / "bin" / "bash.exe"
+    if not bash.exists():
+        raise SystemExit(f"Isabelle cygwin bash not found under {isa_home}")
+
     root = THY_DIR / "ROOT"
-    backup = THY_DIR / "ROOT.bak_native_test"
     original = root.read_text(encoding="utf-8") if root.exists() else ""
     root.write_text(
         "session FSOT_NativeTest = HOL +\n"
@@ -33,12 +45,12 @@ def main() -> int:
         encoding="utf-8",
     )
     cmd = (
-        f"cd '{cygpath(ISA_HOME)}' && "
+        f"cd '{cygpath(isa_home)}' && "
         f"bin/isabelle build -D '{cygpath(THY_DIR)}' -v FSOT_NativeTest"
     )
     try:
         r = subprocess.run(
-            [str(BASH), "--login", "-c", cmd],
+            [str(bash), "--login", "-c", cmd],
             capture_output=True,
             timeout=900,
         )

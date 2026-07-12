@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T15:13:03.996717+00:00",
+  "generated_at": "2026-07-12T00:08:33.485792+00:00",
   "domain": "Gaia_Astrometry_Panel_Deep",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,6 +14,8 @@
   "D_eff": 20,
   "record_count": 62,
   "observable_count": 62,
+  "scalar_record_count": 61,
+  "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.111276,
@@ -38,20 +40,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 62,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 62
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -60,20 +49,7 @@
       "computed": 0.111276,
       "measured": 0.0,
       "error_pct": 0.111276,
-      "observable_count": 12,
-      "domain_display_name": "tier gap fill",
-      "display_name": "gaia astrometry",
-      "scientific_measurement": {
-        "delta": 0.111276,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 12
     }
   ],
   "material_records": [
@@ -84,20 +60,7 @@
       "computed": 379.21,
       "measured": 379.21,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Sirius",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -106,20 +69,7 @@
       "computed": 1318.7,
       "measured": 1318.7,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Sirius",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -128,20 +78,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Sirius",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -150,20 +87,7 @@
       "computed": 2.64,
       "measured": 2.64,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Sirius",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -172,20 +96,7 @@
       "computed": 2.6371,
       "measured": 2.64,
       "error_pct": 0.111316,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Sirius",
-      "scientific_measurement": {
-        "delta": -0.0029,
-        "delta_pct": 0.109848,
-        "effective_error_pct": 0.109848,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -194,20 +105,7 @@
       "computed": 747.1,
       "measured": 747.1,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Alpha Cen",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -216,20 +114,7 @@
       "computed": 3688.0,
       "measured": 3688.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Alpha Cen",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -238,20 +123,7 @@
       "computed": 0.24,
       "measured": 0.24,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Alpha Cen",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -260,20 +132,7 @@
       "computed": 1.34,
       "measured": 1.34,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Alpha Cen",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -282,20 +141,7 @@
       "computed": 1.3385,
       "measured": 1.34,
       "error_pct": 0.111276,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Alpha Cen",
-      "scientific_measurement": {
-        "delta": -0.0015,
-        "delta_pct": 0.11194,
-        "effective_error_pct": 0.11194,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -304,20 +150,7 @@
       "computed": 130.23,
       "measured": 130.23,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Vega",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -326,20 +159,7 @@
       "computed": 327.8,
       "measured": 327.8,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Vega",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -348,20 +168,7 @@
       "computed": -0.5,
       "measured": -0.5,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Vega",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -370,20 +177,7 @@
       "computed": 7.68,
       "measured": 7.68,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Vega",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -392,20 +186,7 @@
       "computed": 7.6787,
       "measured": 7.68,
       "error_pct": 0.016637,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Vega",
-      "scientific_measurement": {
-        "delta": -0.0013,
-        "delta_pct": 0.016927,
-        "effective_error_pct": 0.016927,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -414,20 +195,7 @@
       "computed": 4.51,
       "measured": 4.51,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Betelgeuse",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -436,20 +204,7 @@
       "computed": 27.5,
       "measured": 27.5,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Betelgeuse",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -458,20 +213,7 @@
       "computed": 0.05,
       "measured": 0.05,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Betelgeuse",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -480,20 +222,7 @@
       "computed": 222.0,
       "measured": 222.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Betelgeuse",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -502,20 +231,7 @@
       "computed": 221.7295,
       "measured": 222.0,
       "error_pct": 0.121851,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Betelgeuse",
-      "scientific_measurement": {
-        "delta": -0.2705,
-        "delta_pct": 0.121847,
-        "effective_error_pct": 0.121847,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -524,20 +240,7 @@
       "computed": 2.78,
       "measured": 2.78,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Rigel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -546,20 +249,7 @@
       "computed": 1.87,
       "measured": 1.87,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Rigel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -568,20 +258,7 @@
       "computed": -0.06,
       "measured": -0.06,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Rigel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -590,20 +267,7 @@
       "computed": 360.0,
       "measured": 360.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Rigel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -612,20 +276,7 @@
       "computed": 359.7122,
       "measured": 360.0,
       "error_pct": 0.079936,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Rigel",
-      "scientific_measurement": {
-        "delta": -0.2878,
-        "delta_pct": 0.079944,
-        "effective_error_pct": 0.079944,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -634,20 +285,7 @@
       "computed": 286.05,
       "measured": 286.05,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Procyon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -656,20 +294,7 @@
       "computed": 3230.0,
       "measured": 3230.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Procyon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -678,20 +303,7 @@
       "computed": -0.05,
       "measured": -0.05,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Procyon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -700,20 +312,7 @@
       "computed": 3.5,
       "measured": 3.5,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Procyon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -722,20 +321,7 @@
       "computed": 3.4959,
       "measured": 3.5,
       "error_pct": 0.117362,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Procyon",
-      "scientific_measurement": {
-        "delta": -0.0041,
-        "delta_pct": 0.117143,
-        "effective_error_pct": 0.117143,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -744,20 +330,7 @@
       "computed": 53.95,
       "measured": 53.95,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Altair",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -766,20 +339,7 @@
       "computed": 536.8,
       "measured": 536.8,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Altair",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -788,20 +348,7 @@
       "computed": -0.2,
       "measured": -0.2,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Altair",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -810,20 +357,7 @@
       "computed": 18.5,
       "measured": 18.5,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Altair",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -832,20 +366,7 @@
       "computed": 18.5357,
       "measured": 18.5,
       "error_pct": 0.192871,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Altair",
-      "scientific_measurement": {
-        "delta": 0.0357,
-        "delta_pct": 0.192973,
-        "effective_error_pct": 0.192973,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -854,20 +375,7 @@
       "computed": 96.54,
       "measured": 96.54,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Pollux",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -876,20 +384,7 @@
       "computed": 622.0,
       "measured": 622.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Pollux",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -898,20 +393,7 @@
       "computed": 0.08,
       "measured": 0.08,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Pollux",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -920,20 +402,7 @@
       "computed": 10.36,
       "measured": 10.36,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Pollux",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -942,20 +411,7 @@
       "computed": 10.3584,
       "measured": 10.36,
       "error_pct": 0.015438,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Pollux",
-      "scientific_measurement": {
-        "delta": -0.0016,
-        "delta_pct": 0.015444,
-        "effective_error_pct": 0.015444,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -964,20 +420,7 @@
       "computed": 129.81,
       "measured": 129.81,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Fomalhaut",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -986,20 +429,7 @@
       "computed": 374.2,
       "measured": 374.2,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Fomalhaut",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1008,20 +438,7 @@
       "computed": -0.03,
       "measured": -0.03,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Fomalhaut",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1030,20 +447,7 @@
       "computed": 7.7,
       "measured": 7.7,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Fomalhaut",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1052,20 +456,7 @@
       "computed": 7.7036,
       "measured": 7.7,
       "error_pct": 0.046321,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Fomalhaut",
-      "scientific_measurement": {
-        "delta": 0.0036,
-        "delta_pct": 0.046753,
-        "effective_error_pct": 0.046753,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1074,20 +465,7 @@
       "computed": 273.96,
       "measured": 273.96,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Tau Ceti",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1096,20 +474,7 @@
       "computed": 1709.0,
       "measured": 1709.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Tau Ceti",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1118,20 +483,7 @@
       "computed": -0.52,
       "measured": -0.52,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Tau Ceti",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1140,20 +492,7 @@
       "computed": 3.65,
       "measured": 3.65,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Tau Ceti",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1162,20 +501,7 @@
       "computed": 3.6502,
       "measured": 3.65,
       "error_pct": 0.0046,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Tau Ceti",
-      "scientific_measurement": {
-        "delta": 0.0002,
-        "delta_pct": 0.005479,
-        "effective_error_pct": 0.005479,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1184,20 +510,7 @@
       "computed": 310.94,
       "measured": 310.94,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Epsilon Eri",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1206,20 +519,7 @@
       "computed": 4650.0,
       "measured": 4650.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Epsilon Eri",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1228,20 +528,7 @@
       "computed": -0.06,
       "measured": -0.06,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Epsilon Eri",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1250,20 +537,7 @@
       "computed": 3.22,
       "measured": 3.22,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Epsilon Eri",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1272,20 +546,7 @@
       "computed": 3.2161,
       "measured": 3.22,
       "error_pct": 0.12253,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "Epsilon Eri",
-      "scientific_measurement": {
-        "delta": -0.0039,
-        "delta_pct": 0.121118,
-        "effective_error_pct": 0.121118,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1294,20 +555,7 @@
       "computed": 287.18,
       "measured": 287.18,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1316,20 +564,7 @@
       "computed": 5293.0,
       "measured": 5293.0,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1338,20 +573,7 @@
       "computed": -0.26,
       "measured": -0.26,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1360,20 +582,7 @@
       "computed": 3.48,
       "measured": 3.48,
       "error_pct": 0.0,
-      "eval_kind": "gaia_literature_anchor",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "gaia_literature_anchor"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1382,20 +591,7 @@
       "computed": 3.4821,
       "measured": 3.48,
       "error_pct": 0.061398,
-      "eval_kind": "astrometry_consistency",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "61 Cyg A",
-      "scientific_measurement": {
-        "delta": 0.0021,
-        "delta_pct": 0.060345,
-        "effective_error_pct": 0.060345,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "astrometry_consistency"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1404,20 +600,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "eval_kind": "tier53_bridge",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "galactic structure sample",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier53_bridge"
     },
     {
       "lab": "gaia_astrometry_panel_lab",
@@ -1426,20 +609,7 @@
       "computed": 0.89846,
       "measured": 0.89846,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge",
-      "domain_display_name": "gaia astrometry panel",
-      "display_name": "fsot Astronomy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "scalar_bridge"
     }
   ],
   "margin_summary": {
@@ -1453,19 +623,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Gaia Astrometry Panel Deep",
-  "tier_label": "Tier 60 \u2014 SIMBAD Stellar Identity Deep + cluster",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.869290+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 61,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.192973,
-    "mean_abs_delta": 0.010085245901639346,
-    "precision_tier_counts": {
-      "green": 61
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  "fsot_precision_gate_pct": 0.5
 }

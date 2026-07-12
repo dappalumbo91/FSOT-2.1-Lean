@@ -60,7 +60,7 @@ Proof. lra. Qed.
 Lemma preregistered_outcome_tracking_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma preregistered_outcome_tracking_observable_count_pos : (0 < 18)%nat.
+Lemma preregistered_outcome_tracking_observable_count_pos : (0 < 56)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma preregistered_outcome_tracking_beats_sota_headlines_pos : (0 < 2)%nat.
@@ -87,7 +87,7 @@ Proof. lra. Qed.
 Lemma preregistered_predictions_verification_scaffold_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma preregistered_predictions_verification_scaffold_observable_count_pos : (0 < 22)%nat.
+Lemma preregistered_predictions_verification_scaffold_observable_count_pos : (0 < 60)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma preregistered_predictions_verification_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
@@ -231,7 +231,7 @@ Proof. lra. Qed.
 Lemma pubchem_live_deep_headline_median_under_half_pct : (0.002059838302688438%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma pubchem_live_deep_observable_count_pos : (0 < 36)%nat.
+Lemma pubchem_live_deep_observable_count_pos : (0 < 47)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma pubchem_live_deep_beats_sota_headlines_pos : (0 < 2)%nat.

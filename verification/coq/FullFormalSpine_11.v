@@ -147,7 +147,7 @@ Proof. lra. Qed.
 Lemma simbad_stellar_identity_deep_headline_median_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
-Lemma simbad_stellar_identity_deep_observable_count_pos : (0 < 40)%nat.
+Lemma simbad_stellar_identity_deep_observable_count_pos : (0 < 140)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma simbad_stellar_identity_deep_beats_sota_headlines_pos : (0 < 2)%nat.

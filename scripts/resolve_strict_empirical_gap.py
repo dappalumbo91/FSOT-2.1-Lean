@@ -20,9 +20,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_paths import unified_db_path  # noqa: E402
 
-DEFAULT_DB = unified_db_path(require=False) or (
-    Path.home() / "Desktop" / "fsot code language" / "audits" / "reports" / "FSOT_UNIFIED_DATABASE" / "FSOT_UNIFIED.db"
-)
+def _resolve_db(cli_db: Path | None) -> Path:
+    path = cli_db or unified_db_path(require=False)
+    if path is None:
+        raise FileNotFoundError(
+            "FSOT_UNIFIED.db not found in vendor/fsot_aggregate. Set FSOT_UNIFIED_DB."
+        )
+    return path
 DEFAULT_CSV = Path(r"D:\training data\cnc_data\Exp1.csv")
 EVALUATOR_VERSION = "fsot_numeric_eval_v4"
 NUMERIC_TABLE = "verification_numeric"
@@ -185,20 +189,25 @@ def write_numeric(db_path: Path, rows: list[dict]) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Resolve strict-empirical numeric gap")
-    parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--db", type=Path, default=None, help="Unified DB (default: vendor/fsot_aggregate via fsot_paths)")
     parser.add_argument("--csv", type=Path, default=DEFAULT_CSV)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    if not args.db.exists():
-        print(f"FAIL: db not found: {args.db}", file=sys.stderr)
+    try:
+        db_path = _resolve_db(args.db)
+    except FileNotFoundError as exc:
+        print(f"FAIL: {exc}", file=sys.stderr)
+        return 1
+    if not db_path.exists():
+        print(f"FAIL: db not found: {db_path}", file=sys.stderr)
         return 1
     if not args.csv.exists():
         print(f"FAIL: CNC csv not found: {args.csv}", file=sys.stderr)
         return 1
 
     cnc_runs = load_cnc_runs(args.csv)
-    con = sqlite3.connect(str(args.db))
+    con = sqlite3.connect(str(db_path))
     pending = fetch_pending_mrr(con)
     con.close()
 
@@ -211,8 +220,8 @@ def main() -> int:
     if args.dry_run:
         return 0 if not issues else 1
 
-    write_outcomes(args.db, outcome_updates)
-    written = write_numeric(args.db, numeric_rows)
+    write_outcomes(db_path, outcome_updates)
+    written = write_numeric(db_path, numeric_rows)
     print(f"Updated outcome_json: {len(outcome_updates)}")
     print(f"Wrote verification_numeric: {written}")
     return 0 if len(issues) == 0 and written == len(pending) else 1

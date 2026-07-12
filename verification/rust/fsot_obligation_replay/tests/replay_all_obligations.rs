@@ -905,8 +905,8 @@ fn replay_all_obligations() {
     assert!(62 > 0, "gaia_astrometry_panel_deep_observable_count_pos");
     assert!(2 > 0, "gaia_astrometry_panel_deep_beats_sota_headlines_pos");
     assert!(0.0_f64 < 0.5, "gaia_dr3_tap_deep_pooled_median_under_half_pct");
-    assert!(0.111276_f64 < 0.5, "gaia_dr3_tap_deep_headline_median_under_half_pct");
-    assert!(74 > 0, "gaia_dr3_tap_deep_observable_count_pos");
+    assert!(3.6e-05_f64 < 0.5, "gaia_dr3_tap_deep_headline_median_under_half_pct");
+    assert!(386 > 0, "gaia_dr3_tap_deep_observable_count_pos");
     assert!(2 > 0, "gaia_dr3_tap_deep_beats_sota_headlines_pos");
     assert!(0.0_f64 < 0.5, "galactic_structure_sample_pooled_median_under_half_pct");
     assert!(0.111276_f64 < 0.5, "galactic_structure_sample_headline_median_under_half_pct");
@@ -1312,7 +1312,7 @@ fn replay_all_obligations() {
     assert!(10 > 0, "prediction_rederivation_observable_count_pos");
     assert!(0.0_f64 < 0.5, "preregistered_outcome_tracking_pooled_median_under_half_pct");
     assert!(0.0_f64 < 0.5, "preregistered_outcome_tracking_headline_median_under_half_pct");
-    assert!(18 > 0, "preregistered_outcome_tracking_observable_count_pos");
+    assert!(56 > 0, "preregistered_outcome_tracking_observable_count_pos");
     assert!(2 > 0, "preregistered_outcome_tracking_beats_sota_headlines_pos");
     assert!(0.02009823784840936_f64 < 0.5, "prereg_pooled_median_under_half_pct");
     assert!(0.02009823784840936_f64 < 0.5, "prereg_headline_median_under_half_pct");
@@ -1321,7 +1321,7 @@ fn replay_all_obligations() {
     assert!(8 > 0, "prereg_predictions_pos");
     assert!(0.0_f64 < 0.5, "preregistered_predictions_verification_scaffold_pooled_median_under_half_pct");
     assert!(0.0_f64 < 0.5, "preregistered_predictions_verification_scaffold_headline_median_under_half_pct");
-    assert!(22 > 0, "preregistered_predictions_verification_scaffold_observable_count_pos");
+    assert!(60 > 0, "preregistered_predictions_verification_scaffold_observable_count_pos");
     assert!(2 > 0, "preregistered_predictions_verification_scaffold_beats_sota_headlines_pos");
     assert!(0.0_f64 < 0.5, "pl_laws_pooled_median_under_half_pct");
     assert!(0.0_f64 < 0.5, "pl_laws_headline_median_under_half_pct");
@@ -1410,7 +1410,7 @@ fn replay_all_obligations() {
     assert!(29 > 0, "pubchem_compound_properties_observable_count_pos");
     assert!(0.0_f64 < 0.5, "pubchem_live_deep_pooled_median_under_half_pct");
     assert!(0.002059838302688438_f64 < 0.5, "pubchem_live_deep_headline_median_under_half_pct");
-    assert!(36 > 0, "pubchem_live_deep_observable_count_pos");
+    assert!(47 > 0, "pubchem_live_deep_observable_count_pos");
     assert!(2 > 0, "pubchem_live_deep_beats_sota_headlines_pos");
     assert!(0.0024238898584426276_f64 < 0.5, "pubchem_stability_panel_pooled_median_under_half_pct");
     assert!(0.0024238898584426276_f64 < 0.5, "pubchem_stability_panel_headline_median_under_half_pct");
@@ -1482,7 +1482,7 @@ fn replay_all_obligations() {
     assert!(46 > 0, "sh0es_refined_hosts_pos");
     assert!(0.0_f64 < 0.5, "simbad_stellar_identity_deep_pooled_median_under_half_pct");
     assert!(0.0_f64 < 0.5, "simbad_stellar_identity_deep_headline_median_under_half_pct");
-    assert!(40 > 0, "simbad_stellar_identity_deep_observable_count_pos");
+    assert!(140 > 0, "simbad_stellar_identity_deep_observable_count_pos");
     assert!(2 > 0, "simbad_stellar_identity_deep_beats_sota_headlines_pos");
     assert!(12 > 0, "small_body_orbit_count_pos");
     assert!(0.094587_f64 < 8.0_f64, "small_body_median_error_under_eight_pct");

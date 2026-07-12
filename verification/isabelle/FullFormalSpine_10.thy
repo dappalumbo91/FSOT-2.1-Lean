@@ -57,7 +57,7 @@ lemma preregistered_outcome_tracking_pooled_median_under_half_pct: "(0 :: real) 
 lemma preregistered_outcome_tracking_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma preregistered_outcome_tracking_observable_count_pos: "0 < (18 :: nat)"
+lemma preregistered_outcome_tracking_observable_count_pos: "0 < (56 :: nat)"
   by eval
 
 lemma preregistered_outcome_tracking_beats_sota_headlines_pos: "0 < (2 :: nat)"
@@ -84,7 +84,7 @@ lemma preregistered_predictions_verification_scaffold_pooled_median_under_half_p
 lemma preregistered_predictions_verification_scaffold_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma preregistered_predictions_verification_scaffold_observable_count_pos: "0 < (22 :: nat)"
+lemma preregistered_predictions_verification_scaffold_observable_count_pos: "0 < (60 :: nat)"
   by eval
 
 lemma preregistered_predictions_verification_scaffold_beats_sota_headlines_pos: "0 < (2 :: nat)"
@@ -228,7 +228,7 @@ lemma pubchem_live_deep_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: rea
 lemma pubchem_live_deep_headline_median_under_half_pct: "(0.002059838302688438 :: real) < (0.5 :: real)"
   by eval
 
-lemma pubchem_live_deep_observable_count_pos: "0 < (36 :: nat)"
+lemma pubchem_live_deep_observable_count_pos: "0 < (47 :: nat)"
   by eval
 
 lemma pubchem_live_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"

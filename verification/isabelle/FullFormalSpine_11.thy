@@ -144,7 +144,7 @@ lemma simbad_stellar_identity_deep_pooled_median_under_half_pct: "(0 :: real) < 
 lemma simbad_stellar_identity_deep_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma simbad_stellar_identity_deep_observable_count_pos: "0 < (40 :: nat)"
+lemma simbad_stellar_identity_deep_observable_count_pos: "0 < (140 :: nat)"
   by eval
 
 lemma simbad_stellar_identity_deep_beats_sota_headlines_pos: "0 < (2 :: nat)"

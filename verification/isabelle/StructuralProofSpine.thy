@@ -276,7 +276,7 @@ lemma fusion_physics_public_panel_bundle: "(19 :: nat) = 19 \<and> True \<and> T
 lemma gaia_astrometry_panel_deep_bundle: "(62 :: nat) = 62 \<and> True \<and> True"
   by auto
 
-lemma gaia_dr3_tap_deep_bundle: "(74 :: nat) = 74 \<and> True \<and> True"
+lemma gaia_dr3_tap_deep_bundle: "(386 :: nat) = 386 \<and> True \<and> True"
   by auto
 
 lemma galactic_structure_sample_bundle: "(101 :: nat) = 101 \<and> True \<and> True"
@@ -558,13 +558,13 @@ lemma clone_vf_bundle: "(166 :: nat) = 166 \<and> True \<and> True"
 lemma prediction_rederivation_bundle: "(10 :: nat) = 10 \<and> (14 :: nat) = 14 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma preregistered_outcome_tracking_bundle: "(18 :: nat) = 18 \<and> True \<and> True"
+lemma preregistered_outcome_tracking_bundle: "(56 :: nat) = 56 \<and> True \<and> True"
   by auto
 
 lemma prereg_bundle: "(8 :: nat) = 8 \<and> True \<and> True"
   by auto
 
-lemma preregistered_predictions_verification_scaffold_bundle: "(22 :: nat) = 22 \<and> True \<and> True"
+lemma preregistered_predictions_verification_scaffold_bundle: "(60 :: nat) = 60 \<and> True \<and> True"
   by auto
 
 lemma pl_laws_bundle: "(77 :: nat) = 77 \<and> True \<and> True"
@@ -582,7 +582,7 @@ lemma psychology_gap_fill_bundle: "(160 :: nat) = 160 \<and> True \<and> True \<
 lemma pubchem_compound_properties_bundle: "(29 :: nat) = 29 \<and> (8 :: nat) = 8 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma pubchem_live_deep_bundle: "(36 :: nat) = 36 \<and> True \<and> True"
+lemma pubchem_live_deep_bundle: "(47 :: nat) = 47 \<and> True \<and> True"
   by auto
 
 lemma pubchem_stability_panel_bundle: "(59 :: nat) = 59 \<and> True \<and> True"
@@ -639,7 +639,7 @@ lemma semiconductor_physics_public_panel_bundle: "(11 :: nat) = 11 \<and> True \
 lemma sh0es_refined_bundle: "(7 :: nat) = 7 \<and> True \<and> True"
   by auto
 
-lemma simbad_stellar_identity_deep_bundle: "(40 :: nat) = 40 \<and> True \<and> True"
+lemma simbad_stellar_identity_deep_bundle: "(140 :: nat) = 140 \<and> True \<and> True"
   by auto
 
 lemma small_body_orbits_bundle: "(12 :: nat) = 12 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
