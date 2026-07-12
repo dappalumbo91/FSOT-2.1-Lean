@@ -3260,7 +3260,7 @@ extension_domains:
     manifest: data/tier80_government_open_data_manifest.yaml
     benchmark_data: data/nasa_neo_feed_panel_benchmark.json
     lean_module: FSOT.Formal.NasaNeoFeedPriors
-    note: "NASA NeoWs feed — asteroid magnitude, diameter, velocity, miss distance"
+    note: "JPL SSD CAD public API — asteroid magnitude, diameter, velocity, miss distance (no api_key)"
 
   NASA_DONKI_Solar_Panel:
     tier: 80
@@ -3274,7 +3274,7 @@ extension_domains:
     manifest: data/tier80_government_open_data_manifest.yaml
     benchmark_data: data/nasa_donki_solar_panel_benchmark.json
     lean_module: FSOT.Formal.NasaDonkiSolarPriors
-    note: "NASA DONKI solar flare catalog — class numeric + active region"
+    note: "NOAA GOES x-ray public JSON — solar flux observables (credential-free; panel id retained)"
 
   ClinicalTrials_Medical_Panel:
     tier: 80
@@ -3344,6 +3344,89 @@ extension_domains:
     benchmark_data: data/government_open_data_spine_benchmark.json
     lean_module: FSOT.Formal.GovernmentOpenDataSpinePriors
     note: "Tier 80 cross-panel spine — government open-data validation relay"
+
+  NCBI_Gene_Public_Panel:
+    tier: 81
+    D_eff: 12
+    delta_psi: 0.45
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    ingest_script: scripts/ingest_tier81_public_verifiable.py
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/ncbi_gene_public_panel_benchmark.json
+    lean_module: FSOT.Formal.NcbiGenePublicPriors
+    note: "NCBI E-utilities Gene — credential-free public esummary"
+
+  Crossref_Scholarly_Panel:
+    tier: 81
+    D_eff: 18
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, economic]
+    ingest_script: scripts/ingest_tier81_public_verifiable.py
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/crossref_scholarly_panel_benchmark.json
+    lean_module: FSOT.Formal.CrossrefScholarlyPriors
+    note: "Crossref public works API — citation counts and publication years"
+
+  iNaturalist_Observation_Panel:
+    tier: 81
+    D_eff: 15
+    delta_psi: 0.4
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, ecological]
+    ingest_script: scripts/ingest_tier81_public_verifiable.py
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/inaturalist_observation_panel_benchmark.json
+    lean_module: FSOT.Formal.InaturalistObservationPriors
+    note: "iNaturalist public observations — geo ecology cross-check vs GBIF"
+
+  NOAA_NDBC_Buoy_Panel:
+    tier: 81
+    D_eff: 17
+    delta_psi: 0.78
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic]
+    ingest_script: scripts/ingest_tier81_public_verifiable.py
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/noaa_ndbc_buoy_panel_benchmark.json
+    lean_module: FSOT.Formal.NoaaNdbcBuoyPriors
+    note: "NOAA NDBC buoy realtime — wave height, wind, pressure (no key)"
+
+  Open_Meteo_Live_Panel:
+    tier: 81
+    D_eff: 16
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic]
+    ingest_script: scripts/ingest_tier81_public_verifiable.py
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/open_meteo_live_panel_benchmark.json
+    lean_module: FSOT.Formal.OpenMeteoLivePriors
+    note: "Open-Meteo public forecast — live complement to archived weather bench"
+
+  Public_Verifiable_Spine:
+    tier: 81
+    D_eff: 16
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, ecological, economic]
+    build_script: scripts/build_tier81_public_verifiable_benchmarks.py
+    manifest: data/tier81_public_verifiable_manifest.yaml
+    benchmark_data: data/public_verifiable_spine_benchmark.json
+    lean_module: FSOT.Formal.PublicVerifiableSpinePriors
+    note: "Tier 81 credential-free spine — reproducible without API keys"
 
 verification:
   min_records_per_domain: 5

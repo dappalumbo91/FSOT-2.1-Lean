@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def nasa_donki_solar_observable_count : ℕ := 397
+def nasa_donki_solar_observable_count : ℕ := 1200
 def nasa_donki_solar_median_error_pct : ℝ := (0.020755 : ℝ)
 def nasa_donki_solar_D_eff : ℕ := 14
 
@@ -23,7 +23,7 @@ theorem nasa_donki_solar_median_error_under_five_pct :
   unfold nasa_donki_solar_median_error_pct; norm_num
 
 theorem nasa_donki_solar_bundle :
-    nasa_donki_solar_observable_count = 397 ∧
+    nasa_donki_solar_observable_count = 1200 ∧
     nasa_donki_solar_D_eff = 14 ∧
     nasa_donki_solar_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "fusion") > 0 := by

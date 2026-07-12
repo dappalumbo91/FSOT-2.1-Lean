@@ -27,10 +27,6 @@ def _deep_mode() -> bool:
     return tier80_deep()
 
 
-def _nasa_api_key() -> str:
-    return os.environ.get("NASA_API_KEY", "DEMO_KEY").strip() or "DEMO_KEY"
-
-
 def cache_root() -> Path:
     raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
     root = Path(raw).expanduser() / "tier80_government_open_data" if raw else VENDOR / "live_cache"
@@ -159,68 +155,40 @@ def ingest_nasa_neo_feed() -> dict:
 
     limit = nasa_neo_limit()
     span = nasa_neo_day_span()
-    key = _nasa_api_key()
-    source = "nasa_neows_live"
+    source = "jpl_ssd_cad_public"
     neos: list[dict] = []
-    # NeoWs allows <=7 days; try recent windows then a fixed historical anchor.
     end_candidates = [
         datetime.now(timezone.utc).date(),
         datetime(2025, 6, 7, tzinfo=timezone.utc).date(),
     ]
     for end in end_candidates:
         start = end - timedelta(days=span - 1)
-        url = (
-            f"https://api.nasa.gov/neo/rest/v1/feed?"
-            f"start_date={start.isoformat()}&end_date={end.isoformat()}"
-            f"&api_key={urllib.parse.quote(key)}"
-        )
-        try:
-            payload = _fetch_json(url, timeout=60)
-            for day_rows in (payload.get("near_earth_objects") or {}).values():
-                for row in day_rows:
-                    neos.append(_neo_row_from_api(row))
-                    if len(neos) >= limit:
-                        break
-                if len(neos) >= limit:
-                    break
-            if neos:
-                break
-        except Exception:
-            continue
-    if not neos:
-        jpl_end = end_candidates[-1]
-        jpl_start = jpl_end - timedelta(days=span - 1)
         jpl_url = (
             "https://ssd-api.jpl.nasa.gov/cad.api?"
-            f"date-min={jpl_start.isoformat()}&date-max={jpl_end.isoformat()}&limit={limit}"
+            f"date-min={start.isoformat()}&date-max={end.isoformat()}&limit={limit}"
         )
         try:
             payload = _fetch_json(jpl_url, timeout=60)
             neos = _neo_rows_from_jpl_cad(payload, limit=limit)
             if neos:
-                source = "jpl_ssd_cad_live"
+                break
         except Exception:
-            pass
+            continue
     if not neos and NEO_BUNDLED.exists():
         bundled = _load_json(NEO_BUNDLED)
         neos = list(bundled.get("neos") or [])[:limit]
-        source = "nasa_neows_bundled_fallback"
-    doc = {"source": source, "neo_count": len(neos), "neos": neos}
+        source = "jpl_ssd_cad_bundled_fallback"
+    doc = {"source": source, "neo_count": len(neos), "neos": neos, "credential_free": True}
     _write_cache("nasa_neo_feed_cache.json", doc)
     return doc
 
 
 def ingest_nasa_donki_flares() -> dict:
-    from live_api_limits import nasa_donki_day_span, nasa_donki_limit  # noqa: WPS433
+    """Credential-free NOAA GOES x-ray proxy (replaces NASA DONKI api_key feed)."""
+    from live_api_limits import noaa_goes_xray_limit  # noqa: WPS433
 
-    end = datetime.now(timezone.utc).date()
-    start = end - timedelta(days=nasa_donki_day_span())
-    key = _nasa_api_key()
-    url = (
-        f"https://api.nasa.gov/DONKI/FLR?startDate={start.isoformat()}"
-        f"&endDate={end.isoformat()}&api_key={urllib.parse.quote(key)}"
-    )
-    source = "nasa_donki_live"
+    url = "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"
+    source = "noaa_goes_xray_public"
     flares: list[dict] = []
     try:
         payload = _fetch_json(url, timeout=60)
@@ -228,19 +196,23 @@ def ingest_nasa_donki_flares() -> dict:
             for row in payload:
                 flares.append(
                     {
-                        "flr_id": row.get("flrID"),
-                        "class_type": row.get("classType"),
-                        "flare_class_numeric": _parse_flare_class(str(row.get("classType") or "")),
-                        "active_region_num": row.get("activeRegionNum"),
-                        "begin_time": row.get("beginTime"),
-                        "peak_time": row.get("peakTime"),
+                        "flr_id": row.get("time_tag"),
+                        "goes_flux": row.get("flux"),
+                        "goes_observed_flux": row.get("observed_flux"),
+                        "satellite_id": row.get("satellite"),
+                        "energy_band": row.get("energy"),
                     }
                 )
-                if len(flares) >= nasa_donki_limit():
+                if len(flares) >= noaa_goes_xray_limit():
                     break
     except Exception as exc:
-        source = f"nasa_donki_error:{type(exc).__name__}"
-    doc = {"source": source, "flare_count": len(flares), "flares": flares}
+        source = f"noaa_goes_xray_error:{type(exc).__name__}"
+    doc = {
+        "source": source,
+        "flare_count": len(flares),
+        "flares": flares,
+        "credential_free": True,
+    }
     _write_cache("nasa_donki_flares_cache.json", doc)
     return doc
 
@@ -395,7 +367,7 @@ def build_nasa_neo_feed_panel() -> dict:
         maps_to_lean=["astronomical", "planetary", "particle"],
         d_eff=18,
         authority_path=authority,
-        source=[str(cache_root() / "nasa_neo_feed_cache.json"), "https://api.nasa.gov/neo/"],
+        source=[str(cache_root() / "nasa_neo_feed_cache.json"), "https://ssd-api.jpl.nasa.gov/cad.api"],
         channel_stats=[("fsot_prediction", "nasa_neo_feed", relay_errs or [0.0])],
         sota_baselines={"nasa_neo_feed": {"sota_typical_error_pct": 8.0, "sota_model": "JPL Horizons ephemeris class"}},
     )
@@ -409,8 +381,9 @@ def build_nasa_donki_solar_panel() -> dict:
     for row in live.get("flares") or []:
         name = str(row.get("flr_id") or "")
         for prop, domain in (
-            ("flare_class_numeric", "Electromagnetism"),
-            ("active_region_num", "Astrophysics"),
+            ("goes_flux", "Electromagnetism"),
+            ("goes_observed_flux", "Electromagnetism"),
+            ("satellite_id", "Astrophysics"),
         ):
             val = row.get(prop)
             if val is None:
@@ -421,7 +394,7 @@ def build_nasa_donki_solar_panel() -> dict:
                 name=name,
                 measured=float(val),
                 domain=domain,
-                extra={"ingest_source": live.get("source"), "class_type": row.get("class_type")},
+                extra={"ingest_source": live.get("source"), "energy_band": row.get("energy_band")},
             )
             records.append(rec)
             relay_errs.append(float(rec["error_pct"]))
@@ -431,9 +404,9 @@ def build_nasa_donki_solar_panel() -> dict:
         maps_to_lean=["fusion", "energy", "plasma"],
         d_eff=14,
         authority_path=authority,
-        source=[str(cache_root() / "nasa_donki_flares_cache.json"), "https://api.nasa.gov/DONKI/"],
-        channel_stats=[("fsot_prediction", "nasa_donki", relay_errs or [0.0])],
-        sota_baselines={"nasa_donki": {"sota_typical_error_pct": 6.0, "sota_model": "NOAA SWPC flare tables"}},
+        source=[str(cache_root() / "nasa_donki_flares_cache.json"), "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json"],
+        channel_stats=[("fsot_prediction", "noaa_goes_xray", relay_errs or [0.0])],
+        sota_baselines={"noaa_goes_xray": {"sota_typical_error_pct": 6.0, "sota_model": "NOAA GOES x-ray public JSON"}},
     )
 
 

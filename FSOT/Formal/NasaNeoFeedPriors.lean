@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def nasa_neo_feed_observable_count : ℕ := 68
+def nasa_neo_feed_observable_count : ℕ := 56
 def nasa_neo_feed_median_error_pct : ℝ := (0.021097 : ℝ)
 def nasa_neo_feed_D_eff : ℕ := 18
 
@@ -23,7 +23,7 @@ theorem nasa_neo_feed_median_error_under_five_pct :
   unfold nasa_neo_feed_median_error_pct; norm_num
 
 theorem nasa_neo_feed_bundle :
-    nasa_neo_feed_observable_count = 68 ∧
+    nasa_neo_feed_observable_count = 56 ∧
     nasa_neo_feed_D_eff = 18 ∧
     nasa_neo_feed_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by

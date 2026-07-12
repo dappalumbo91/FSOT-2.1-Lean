@@ -133,6 +133,23 @@ PROPERTY_ROUTING: dict[str, tuple[str, float]] = {
     "ai_model_checkpoints": ("High_Energy_Physics", 0.00015),
     "resource_allocation_tiers": ("Economics", 0.0004),
     "declassified_fraction_pct": ("Particle_Physics", 0.0001),
+    "goes_flux": ("Electromagnetism", 0.0004),
+    "goes_observed_flux": ("Electromagnetism", 0.0004),
+    "satellite_id": ("Astronomy", 0.00025),
+    "chrstart": ("Biology", 0.0006),
+    "chromosome_index": ("Biology", 0.00055),
+    "citation_count": ("Psychology", 0.0003),
+    "latitude": ("Ecology", 0.0002),
+    "longitude": ("Ecology", 0.0002),
+    "positional_accuracy": ("Ecology", 0.00025),
+    "wvht": ("Oceanography", 0.0008),
+    "wspd": ("Oceanography", 0.0007),
+    "pres": ("Meteorology", 0.0006),
+    "wtmp": ("Oceanography", 0.00075),
+    "wdir": ("Meteorology", 0.00055),
+    "temperature_c": ("Meteorology", 0.0006),
+    "wind_speed_ms": ("Atmospheric_Physics", 0.00055),
+    "pressure_hpa": ("Atmospheric_Physics", 0.0005),
 }
 
 

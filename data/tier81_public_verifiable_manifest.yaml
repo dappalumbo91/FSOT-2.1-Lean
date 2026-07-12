@@ -1,0 +1,23 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 81
+policy: credential_free_only
+domains:
+  - NCBI_Gene_Public_Panel
+  - Crossref_Scholarly_Panel
+  - iNaturalist_Observation_Panel
+  - NOAA_NDBC_Buoy_Panel
+  - Open_Meteo_Live_Panel
+  - Public_Verifiable_Spine
+ingest: scripts/ingest_tier81_public_verifiable.py
+build: scripts/build_tier81_public_verifiable_benchmarks.py
+lean: scripts/gen_tier81_public_verifiable_lean.py
+apis:
+  - https://eutils.ncbi.nlm.nih.gov/
+  - https://api.crossref.org/
+  - https://api.inaturalist.org/
+  - https://www.ndbc.noaa.gov/
+  - https://api.open-meteo.com/
+note: >
+  Credential-free public verification wave. No API keys, no signup, no DEMO_KEY.
+  Anyone can reproduce every ingest URL from this manifest without credentials.

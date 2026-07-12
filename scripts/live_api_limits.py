@@ -37,6 +37,10 @@ def tier80_deep() -> bool:
     return _flag("FSOT_TIER80_DEEP") or mega_deep()
 
 
+def tier81_deep() -> bool:
+    return _flag("FSOT_TIER81_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -192,3 +196,59 @@ def uap_figure_limit() -> int:
     if tier80_deep():
         return 250
     return 80
+
+
+def noaa_goes_xray_limit() -> int:
+    if mega_deep():
+        return 716
+    if tier80_deep():
+        return 400
+    return 120
+
+
+def ncbi_gene_limit() -> int:
+    if mega_deep():
+        return 30
+    if tier81_deep():
+        return 24
+    return 10
+
+
+def crossref_limit() -> int:
+    if mega_deep():
+        return 200
+    if tier81_deep():
+        return 100
+    return 30
+
+
+def inaturalist_limit() -> int:
+    if mega_deep():
+        return 200
+    if tier81_deep():
+        return 100
+    return 30
+
+
+def ndbc_buoy_count() -> int:
+    if mega_deep():
+        return 8
+    if tier81_deep():
+        return 6
+    return 3
+
+
+def ndbc_rows_per_buoy() -> int:
+    if mega_deep():
+        return 40
+    if tier81_deep():
+        return 25
+    return 10
+
+
+def open_meteo_site_count() -> int:
+    if mega_deep():
+        return 8
+    if tier81_deep():
+        return 6
+    return 3

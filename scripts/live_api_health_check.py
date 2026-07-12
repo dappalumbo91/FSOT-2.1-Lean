@@ -113,24 +113,14 @@ def main() -> int:
         data = fetch_json(url, timeout=30)
         return "cid=2244 ok"
 
-    def nasa_neo():
-        key = os.environ.get("NASA_API_KEY", "DEMO_KEY").strip() or "DEMO_KEY"
-        url = (
-            "https://api.nasa.gov/neo/rest/v1/feed?"
-            "start_date=2025-06-01&end_date=2025-06-03&"
-            f"api_key={urllib.parse.quote(key)}"
-        )
+    def jpl_ssd_cad():
+        url = "https://ssd-api.jpl.nasa.gov/cad.api?date-min=2025-06-01&date-max=2025-06-07&limit=5"
         data = fetch_json(url, timeout=30)
-        return f"element_count={data.get('element_count')}"
+        return f"count={data.get('count')}"
 
-    def nasa_donki():
-        key = os.environ.get("NASA_API_KEY", "DEMO_KEY").strip() or "DEMO_KEY"
-        url = (
-            "https://api.nasa.gov/DONKI/FLR?startDate=2025-01-01&endDate=2025-01-15&"
-            f"api_key={urllib.parse.quote(key)}"
-        )
-        data = fetch_json(url, timeout=30)
-        return f"flares={len(data) if isinstance(data, list) else 0}"
+    def noaa_goes_xray():
+        data = fetch_json("https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json", timeout=30)
+        return f"rows={len(data) if isinstance(data, list) else 0}"
 
     def clinicaltrials():
         data = fetch_json(
@@ -154,6 +144,40 @@ def main() -> int:
         n = sum(1 for line in raw.splitlines() if line.strip())
         return f"documents_jsonl_lines={n}"
 
+    def ncbi_gene():
+        data = fetch_json(
+            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=672&retmode=json",
+            timeout=30,
+        )
+        name = ((data.get("result") or {}).get("672") or {}).get("name")
+        return f"gene={name}"
+
+    def crossref_works():
+        data = fetch_json("https://api.crossref.org/works?rows=3", timeout=30)
+        return f"items={len((data.get('message') or {}).get('items') or [])}"
+
+    def inaturalist_obs():
+        data = fetch_json(
+            "https://api.inaturalist.org/v1/observations?per_page=3&has_geo=true",
+            timeout=30,
+        )
+        return f"results={len(data.get('results') or [])}"
+
+    def noaa_ndbc_buoy():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes("https://www.ndbc.noaa.gov/data/realtime2/46026.txt", timeout=30)
+        return f"bytes={len(raw)}"
+
+    def open_meteo_forecast():
+        data = fetch_json(
+            "https://api.open-meteo.com/v1/forecast?"
+            "latitude=38.9&longitude=-77.0&hourly=temperature_2m&forecast_days=1",
+            timeout=30,
+        )
+        hours = (data.get("hourly") or {}).get("temperature_2m") or []
+        return f"hours={len(hours)}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -163,11 +187,16 @@ def main() -> int:
         ("materials_project", materials),
         ("openneuro_graphql", openneuro),
         ("pubchem_pug", pubchem),
-        ("nasa_neo_feed", nasa_neo),
-        ("nasa_donki_flr", nasa_donki),
+        ("jpl_ssd_cad", jpl_ssd_cad),
+        ("noaa_goes_xray", noaa_goes_xray),
         ("clinicaltrials_v2", clinicaltrials),
         ("osti_doe_records", osti),
         ("uap_war_gov_hf", uap_war_gov),
+        ("ncbi_gene_eutils", ncbi_gene),
+        ("crossref_works", crossref_works),
+        ("inaturalist_obs", inaturalist_obs),
+        ("noaa_ndbc_buoy", noaa_ndbc_buoy),
+        ("open_meteo_forecast", open_meteo_forecast),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

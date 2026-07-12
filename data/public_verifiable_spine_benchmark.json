@@ -1,0 +1,269 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T13:58:18.167482+00:00",
+  "domain": "Public_Verifiable_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier81_public_verifiable_panels"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "ecological",
+    "economic"
+  ],
+  "D_eff": 16,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 5,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.026204,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "public_verifiable_spine": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Tier 81 credential-free wave"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_relay",
+      "name": "public_verifiable_spine",
+      "computed": 0.026204,
+      "measured": 0.0,
+      "error_pct": 0.026204,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "ncbi_gene_public_panel",
+      "computed": 0.025571999999999998,
+      "measured": 0.025571999999999998,
+      "error_pct": 0.0,
+      "record_count": 48,
+      "eval_kind": "tier81_bridge"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "chrstart",
+      "name": "BRCA1",
+      "computed": 43055779.7244,
+      "measured": 43044294.0,
+      "error_pct": 0.026684,
+      "source_panel": "ncbi_gene_public_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "chromosome_index",
+      "name": "BRCA1",
+      "computed": 17.004158,
+      "measured": 17.0,
+      "error_pct": 0.02446,
+      "source_panel": "ncbi_gene_public_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "chrstart",
+      "name": "TP53",
+      "computed": 7670466.2029,
+      "measured": 7668420.0,
+      "error_pct": 0.026684,
+      "source_panel": "ncbi_gene_public_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "crossref_scholarly_panel",
+      "computed": 0.01382,
+      "measured": 0.01382,
+      "error_pct": 0.0,
+      "record_count": 200,
+      "eval_kind": "tier81_bridge"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "citation_count",
+      "name": "10.1007/978-3-658-17671-6_18-1",
+      "computed": 2.00063,
+      "measured": 2.0,
+      "error_pct": 0.031506,
+      "source_panel": "crossref_scholarly_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "publication_year",
+      "name": "10.1007/978-3-658-17671-6_18-1",
+      "computed": 2018.27888,
+      "measured": 2018.0,
+      "error_pct": 0.01382,
+      "source_panel": "crossref_scholarly_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "citation_count",
+      "name": "10.1007/978-3-031-23161-2_300726",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "crossref_scholarly_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "inaturalist_observation_panel",
+      "computed": 0.006006,
+      "measured": 0.006006,
+      "error_pct": 0.0,
+      "record_count": 288,
+      "eval_kind": "tier81_bridge"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "latitude",
+      "name": "380617064",
+      "computed": 47.708634,
+      "measured": 47.7057682205,
+      "error_pct": 0.006006,
+      "source_panel": "inaturalist_observation_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "longitude",
+      "name": "380617064",
+      "computed": -3.383725,
+      "measured": -3.3835221827,
+      "error_pct": 0.006006,
+      "source_panel": "inaturalist_observation_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "positional_accuracy",
+      "name": "380617064",
+      "computed": 3102.232896,
+      "measured": 3102.0,
+      "error_pct": 0.007508,
+      "source_panel": "inaturalist_observation_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "noaa_ndbc_buoy_panel",
+      "computed": 0.028287,
+      "measured": 0.028287,
+      "error_pct": 0.0,
+      "record_count": 596,
+      "eval_kind": "tier81_bridge"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "wspd",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1.000264,
+      "measured": 1.0,
+      "error_pct": 0.026401,
+      "source_panel": "noaa_ndbc_buoy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "pres",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 1013.694898,
+      "measured": 1013.4,
+      "error_pct": 0.0291,
+      "source_panel": "noaa_ndbc_buoy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "wtmp",
+      "name": "46026_2026-07-12 13:30",
+      "computed": 12.703592,
+      "measured": 12.7,
+      "error_pct": 0.028287,
+      "source_panel": "noaa_ndbc_buoy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "open_meteo_live_panel",
+      "computed": 0.026204,
+      "measured": 0.026204,
+      "error_pct": 0.0,
+      "record_count": 432,
+      "eval_kind": "tier81_bridge"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "temperature_c",
+      "name": "washington_dc_2026-07-12T00:00",
+      "computed": 29.508584,
+      "measured": 29.5,
+      "error_pct": 0.0291,
+      "source_panel": "open_meteo_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "wind_speed_ms",
+      "name": "washington_dc_2026-07-12T00:00",
+      "computed": 8.602254,
+      "measured": 8.6,
+      "error_pct": 0.026204,
+      "source_panel": "open_meteo_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "public_verifiable_spine_lab",
+      "property": "pressure_hpa",
+      "name": "washington_dc_2026-07-12T00:00",
+      "computed": 1014.341575,
+      "measured": 1014.1,
+      "error_pct": 0.023822,
+      "source_panel": "open_meteo_live_panel",
+      "eval_kind": "ingest_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

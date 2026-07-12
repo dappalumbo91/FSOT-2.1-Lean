@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T13:03:11.026242+00:00",
+  "generated_at": "2026-07-12T13:58:17.477402+00:00",
   "domain": "Government_Open_Data_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -61,15 +61,15 @@
       "computed": 0.021097,
       "measured": 0.021097,
       "error_pct": 0.0,
-      "record_count": 68,
+      "record_count": 56,
       "eval_kind": "tier80_bridge"
     },
     {
       "lab": "government_open_data_spine_lab",
       "property": "absolute_magnitude_h",
-      "name": "2025 KS8",
-      "computed": 26.216032,
-      "measured": 26.21,
+      "name": "2026 NX",
+      "computed": 28.129473,
+      "measured": 28.123,
       "error_pct": 0.023015,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay"
@@ -77,9 +77,9 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "estimated_diameter_m",
-      "name": "2025 KS8",
-      "computed": 20.349836,
-      "measured": 20.345153136442352,
+      "name": "2026 NX",
+      "computed": 8.432588,
+      "measured": 8.430648121743106,
       "error_pct": 0.023015,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay"
@@ -87,9 +87,9 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "relative_velocity_km_s",
-      "name": "2025 KS8",
-      "computed": 10.314976,
-      "measured": 10.3129981118553,
+      "name": "2026 NX",
+      "computed": 7.896861,
+      "measured": 7.89534648356676,
       "error_pct": 0.019179,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay"
@@ -97,9 +97,9 @@
     {
       "lab": "government_open_data_spine_lab",
       "property": "miss_distance_km",
-      "name": "2025 KS8",
-      "computed": 2449652.7063,
-      "measured": 2449276.8994379933,
+      "name": "2026 NX",
+      "computed": 262519.416092,
+      "measured": 262479.14238710236,
       "error_pct": 0.015344,
       "source_panel": "nasa_neo_feed_panel",
       "eval_kind": "ingest_relay"
@@ -111,46 +111,46 @@
       "computed": 0.020755,
       "measured": 0.020755,
       "error_pct": 0.0,
-      "record_count": 397,
+      "record_count": 1200,
       "eval_kind": "tier80_bridge"
     },
     {
       "lab": "government_open_data_spine_lab",
-      "property": "flare_class_numeric",
-      "name": "2025-07-12T03:53:00-FLR-001",
-      "computed": 1.400291,
-      "measured": 1.4,
+      "property": "goes_flux",
+      "name": "2026-07-12T07:58:00Z",
+      "computed": 1e-06,
+      "measured": 9.82062147159013e-07,
       "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"
     },
     {
       "lab": "government_open_data_spine_lab",
-      "property": "active_region_num",
-      "name": "2025-07-12T03:53:00-FLR-001",
-      "computed": 14144.367051,
-      "measured": 14140.0,
-      "error_pct": 0.030884,
-      "source_panel": "nasa_donki_solar_panel",
-      "eval_kind": "ingest_relay"
-    },
-    {
-      "lab": "government_open_data_spine_lab",
-      "property": "flare_class_numeric",
-      "name": "2025-07-12T08:29:00-FLR-001",
-      "computed": 2.300477,
-      "measured": 2.3,
+      "property": "goes_observed_flux",
+      "name": "2026-07-12T07:58:00Z",
+      "computed": 1e-06,
+      "measured": 1.002397880256467e-06,
       "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"
     },
     {
       "lab": "government_open_data_spine_lab",
-      "property": "active_region_num",
-      "name": "2025-07-12T08:29:00-FLR-001",
-      "computed": 14144.367051,
-      "measured": 14140.0,
-      "error_pct": 0.030884,
+      "property": "satellite_id",
+      "name": "2026-07-12T07:58:00Z",
+      "computed": 18.004043,
+      "measured": 18.0,
+      "error_pct": 0.022461,
+      "source_panel": "nasa_donki_solar_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "government_open_data_spine_lab",
+      "property": "goes_flux",
+      "name": "2026-07-12T07:58:00Z",
+      "computed": 8e-06,
+      "measured": 7.976876986504067e-06,
+      "error_pct": 0.020755,
       "source_panel": "nasa_donki_solar_panel",
       "eval_kind": "ingest_relay"
     },
