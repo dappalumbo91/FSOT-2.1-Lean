@@ -1,8 +1,8 @@
-generated_at: '2026-07-12T14:25:41.149656+00:00'
+generated_at: '2026-07-12T15:44:31.659088+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 274
-  total_scientific_domains_covered: 310
+  extension_domains: 296
+  total_scientific_domains_covered: 332
   total_empirical_records: 306680
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -14,11 +14,11 @@ summary:
     unverified: 0
   tier_distribution:
     A_strong: 105
-    B_verified: 205
-    C_thin: 0
+    B_verified: 222
+    C_thin: 5
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 407
+  lean_formal_modules: 429
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -814,9 +814,9 @@ extension_domains:
   lean_module: FSOT.Formal.VlDistillAtlasPriors
 - domain: Rust_Lean_Bridge
   tier: 37
-  record_count: 24
+  record_count: 9
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.RustLeanBridgePriors
 - domain: Bibliography_Lean_Corpus
   tier: 37
@@ -2042,6 +2042,138 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.ScientificExpansionSpinePriors
+- domain: Epidemiology_Panel
+  tier: 84
+  record_count: 15
+  median_error_pct: 0.015311
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.EpidemiologyPanelPriors
+- domain: Virology_Panel
+  tier: 84
+  record_count: 6
+  median_error_pct: 0.022236
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.VirologyPanelPriors
+- domain: Paleontology_Panel
+  tier: 84
+  record_count: 80
+  median_error_pct: 0.0167305
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.PaleontologyPanelPriors
+- domain: Arxiv_Gravitational_Waves_Panel
+  tier: 84
+  record_count: 36
+  median_error_pct: 0.01748
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ArxivGravitationalWavesPanelPriors
+- domain: Entomology_Panel
+  tier: 84
+  record_count: 60
+  median_error_pct: 0.006006
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.EntomologyPanelPriors
+- domain: Mycology_Panel
+  tier: 84
+  record_count: 60
+  median_error_pct: 0.006006
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MycologyPanelPriors
+- domain: Marine_Biology_Panel
+  tier: 84
+  record_count: 60
+  median_error_pct: 0.006006
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MarineBiologyPanelPriors
+- domain: Immunology_Panel
+  tier: 84
+  record_count: 18
+  median_error_pct: 0.040788
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ImmunologyPanelPriors
+- domain: Cardiology_Panel
+  tier: 84
+  record_count: 20
+  median_error_pct: 0.015311
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CardiologyPanelPriors
+- domain: Robotics_Control_Systems_Panel
+  tier: 84
+  record_count: 20
+  median_error_pct: 0.01341
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.RoboticsControlSystemsPanelPriors
+- domain: Scientific_Expansion_Wave2_Spine
+  tier: 84
+  record_count: 40
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ScientificExpansionWave2SpinePriors
+- domain: Civil_Engineering_Panel
+  tier: 85
+  record_count: 20
+  median_error_pct: 0.01341
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CivilEngineeringPanelPriors
+- domain: Mechanical_Engineering_Panel
+  tier: 85
+  record_count: 20
+  median_error_pct: 0.078697
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MechanicalEngineeringPanelPriors
+- domain: Neuroeconomics_Panel
+  tier: 85
+  record_count: 20
+  median_error_pct: 0.031506
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NeuroeconomicsPanelPriors
+- domain: Paleoclimate_Panel
+  tier: 85
+  record_count: 20
+  median_error_pct: 0.006006
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.PaleoclimatePanelPriors
+- domain: Speleology_Panel
+  tier: 85
+  record_count: 10
+  median_error_pct: 0.04459
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.SpeleologyPanelPriors
+- domain: Exogeology_Panel
+  tier: 85
+  record_count: 60
+  median_error_pct: 0.026472
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ExogeologyPanelPriors
+- domain: History_Panel
+  tier: 85
+  record_count: 36
+  median_error_pct: 0.01382
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.HistoryPanelPriors
+- domain: Law_Policy_Panel
+  tier: 85
+  record_count: 20
+  median_error_pct: 0.013003
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.LawPolicyPanelPriors
+- domain: Finance_Markets_Panel
+  tier: 85
+  record_count: 25
+  median_error_pct: 0.02584
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FinanceMarketsPanelPriors
+- domain: Supply_Chain_Logistics_Panel
+  tier: 85
+  record_count: 27
+  median_error_pct: 0.02584
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SupplyChainLogisticsPanelPriors
+- domain: Scientific_Expansion_Wave3_Spine
+  tier: 85
+  record_count: 40
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ScientificExpansionWave3SpinePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

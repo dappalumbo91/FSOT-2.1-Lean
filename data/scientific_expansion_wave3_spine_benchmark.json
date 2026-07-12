@@ -1,0 +1,469 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:43:56.819168+00:00",
+  "domain": "Scientific_Expansion_Wave3_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier85_scientific_expansion_panels"
+  ],
+  "maps_to_lean": [
+    "material",
+    "consciousness",
+    "galactic"
+  ],
+  "D_eff": 17,
+  "record_count": 40,
+  "observable_count": 40,
+  "scalar_record_count": 10,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.02584,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "scientific_expansion_wave3": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Tier 85 domain expansion"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 40
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_relay",
+      "name": "scientific_expansion_wave3",
+      "computed": 0.02584,
+      "measured": 0.0,
+      "error_pct": 0.02584,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "civil_engineering_panel",
+      "computed": 0.01341,
+      "measured": 0.01341,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "bridge_span_m",
+      "name": "golden_gate_span",
+      "computed": 1280.171653,
+      "measured": 1280.0,
+      "error_pct": 0.01341,
+      "source_panel": "civil_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "bridge_span_m",
+      "name": "akashi_kaikyo_span",
+      "computed": 1991.267001,
+      "measured": 1991.0,
+      "error_pct": 0.01341,
+      "source_panel": "civil_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "compressive_strength_mpa",
+      "name": "concrete_fc_28d",
+      "computed": 30.004023,
+      "measured": 30.0,
+      "error_pct": 0.01341,
+      "source_panel": "civil_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "mechanical_engineering_panel",
+      "computed": 0.078697,
+      "measured": 0.078697,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "thermal_efficiency_pct",
+      "name": "steam_turbine_efficiency",
+      "computed": 45.035414,
+      "measured": 45.0,
+      "error_pct": 0.078697,
+      "source_panel": "mechanical_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "thermal_efficiency_pct",
+      "name": "gas_turbine_efficiency",
+      "computed": 40.031479,
+      "measured": 40.0,
+      "error_pct": 0.078697,
+      "source_panel": "mechanical_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "carnot_efficiency_pct",
+      "name": "carnot_limit_steam",
+      "computed": 55.043284,
+      "measured": 55.0,
+      "error_pct": 0.078697,
+      "source_panel": "mechanical_engineering_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "neuroeconomics_panel",
+      "computed": 0.031506,
+      "measured": 0.031506,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "loss_aversion_coefficient",
+      "name": "loss_aversion_lambda",
+      "computed": 2.250709,
+      "measured": 2.25,
+      "error_pct": 0.031506,
+      "source_panel": "neuroeconomics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "hyperbolic_discount_rate",
+      "name": "discount_rate_annual",
+      "computed": 0.100032,
+      "measured": 0.1,
+      "error_pct": 0.031506,
+      "source_panel": "neuroeconomics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "risk_aversion_coefficient",
+      "name": "risk_aversion_crra",
+      "computed": 2.00063,
+      "measured": 2.0,
+      "error_pct": 0.031506,
+      "source_panel": "neuroeconomics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "paleoclimate_panel",
+      "computed": 0.006006,
+      "measured": 0.006006,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "measured",
+      "name": "vostok_co2_lgm",
+      "computed": 180.010811,
+      "measured": 180.0,
+      "error_pct": 0.006006,
+      "source_panel": "paleoclimate_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "measured",
+      "name": "vostok_co2_preindustrial",
+      "computed": 280.016818,
+      "measured": 280.0,
+      "error_pct": 0.006006,
+      "source_panel": "paleoclimate_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "measured",
+      "name": "epica_dome_c_co2_holocene",
+      "computed": 260.015616,
+      "measured": 260.0,
+      "error_pct": 0.006006,
+      "source_panel": "paleoclimate_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "speleology_panel",
+      "computed": 0.04459,
+      "measured": 0.04459,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "discharge_cfs",
+      "name": "potomac_karst",
+      "computed": 5432.421246,
+      "measured": 5430.0,
+      "error_pct": 0.04459,
+      "source_panel": "speleology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "gage_height_ft",
+      "name": "potomac_karst",
+      "computed": 3.421525,
+      "measured": 3.42,
+      "error_pct": 0.04459,
+      "source_panel": "speleology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "discharge_cfs",
+      "name": "floridan_aquifer",
+      "computed": 227.10122,
+      "measured": 227.0,
+      "error_pct": 0.04459,
+      "source_panel": "speleology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "exogeology_panel",
+      "computed": 0.026472,
+      "measured": 0.026472,
+      "error_pct": 0.0,
+      "record_count": 60,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1597 b",
+      "computed": 1.060244,
+      "measured": 1.06,
+      "error_pct": 0.023015,
+      "source_panel": "exogeology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1597 b",
+      "computed": 1.200276,
+      "measured": 1.2,
+      "error_pct": 0.023015,
+      "source_panel": "exogeology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "pl_orbper",
+      "name": "Kepler-1597 b",
+      "computed": 2.947351,
+      "measured": 2.94654179,
+      "error_pct": 0.027455,
+      "source_panel": "exogeology_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "history_panel",
+      "computed": 0.01382,
+      "measured": 0.01382,
+      "error_pct": 0.0,
+      "record_count": 36,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "citation_count",
+      "name": "History &amp; Archaeology",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "history_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "publication_year",
+      "name": "History &amp; Archaeology",
+      "computed": 2000.276393,
+      "measured": 2000.0,
+      "error_pct": 0.01382,
+      "source_panel": "history_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "title_length",
+      "name": "History &amp; Archaeology",
+      "computed": 25.00646,
+      "measured": 25.0,
+      "error_pct": 0.02584,
+      "source_panel": "history_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "law_policy_panel",
+      "computed": 0.013003,
+      "measured": 0.013003,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "governance_index",
+      "name": "rule_of_law_global_mean",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "law_policy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "governance_index",
+      "name": "regulatory_quality_mean",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "law_policy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "governance_index",
+      "name": "government_effectiveness",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "law_policy_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "finance_markets_panel",
+      "computed": 0.02584,
+      "measured": 0.02584,
+      "error_pct": 0.0,
+      "record_count": 25,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "gdp_current_usd",
+      "name": "ZH_NY.GDP.MKTP.CD",
+      "computed": 1179426222672.3674,
+      "measured": 1179121535535.41,
+      "error_pct": 0.02584,
+      "source_panel": "finance_markets_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "gdp_current_usd",
+      "name": "ZH_NY.GDP.MKTP.CD",
+      "computed": 1226778239304.7827,
+      "measured": 1226461319482.05,
+      "error_pct": 0.02584,
+      "source_panel": "finance_markets_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "gdp_current_usd",
+      "name": "ZH_NY.GDP.MKTP.CD",
+      "computed": 1113347413888.22,
+      "measured": 1113059797223.9,
+      "error_pct": 0.02584,
+      "source_panel": "finance_markets_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "panel_pooled_median",
+      "name": "supply_chain_logistics_panel",
+      "computed": 0.02584,
+      "measured": 0.02584,
+      "error_pct": 0.0,
+      "record_count": 27,
+      "eval_kind": "tier85_bridge"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 56.298265,
+      "measured": 56.2837209179998,
+      "error_pct": 0.02584,
+      "source_panel": "supply_chain_logistics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 57.132136,
+      "measured": 57.1173763714306,
+      "error_pct": 0.02584,
+      "source_panel": "supply_chain_logistics_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_wave3_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 54.565429,
+      "measured": 54.5513323505808,
+      "error_pct": 0.02584,
+      "source_panel": "supply_chain_logistics_panel",
+      "eval_kind": "ingest_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

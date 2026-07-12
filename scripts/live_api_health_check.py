@@ -232,6 +232,32 @@ def main() -> int:
         data = fetch_json("https://api.obis.org/v3/occurrence?limit=3", timeout=30)
         return f"results={len(data.get('results') or [])}"
 
+    def tier85_exoplanet_tap():
+        from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+        raw = fetch_bytes(
+            "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?"
+            "query=select+top+1+pl_name+from+pscomppars&format=csv",
+            timeout=45,
+        )
+        return f"bytes={len(raw)}"
+
+    def tier85_open_meteo_archive():
+        data = fetch_json(
+            "https://archive-api.open-meteo.com/v1/archive?"
+            "latitude=52.5&longitude=13.4&start_date=1900-01-01&end_date=1900-01-07"
+            "&daily=temperature_2m_mean",
+            timeout=45,
+        )
+        return f"daily={len((data.get('daily') or {}).get('time') or [])}"
+
+    def tier85_crossref_history():
+        data = fetch_json(
+            "https://api.crossref.org/works?query=history&rows=2&select=DOI,title",
+            timeout=30,
+        )
+        return f"items={len((data.get('message') or {}).get('items') or [])}"
+
     for name, fn in (
         ("gbif", gbif),
         ("gwosc", gwosc),
@@ -258,6 +284,9 @@ def main() -> int:
         ("tier84_arxiv_grqc", tier84_arxiv_grqc),
         ("tier84_pbdb", tier84_pbdb),
         ("tier84_obis", tier84_obis),
+        ("tier85_exoplanet_tap", tier85_exoplanet_tap),
+        ("tier85_open_meteo_archive", tier85_open_meteo_archive),
+        ("tier85_crossref_history", tier85_crossref_history),
     ):
         row = _probe(name, fn)
         report["channels"].append(row)

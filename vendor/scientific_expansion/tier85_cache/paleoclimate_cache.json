@@ -1,0 +1,109 @@
+{
+  "source": "paleoclimate_reference_bundled",
+  "proxies": [
+    {
+      "name": "vostok_co2_lgm",
+      "property": "co2_ppm",
+      "measured": 180.0
+    },
+    {
+      "name": "vostok_co2_preindustrial",
+      "property": "co2_ppm",
+      "measured": 280.0
+    },
+    {
+      "name": "epica_dome_c_co2_holocene",
+      "property": "co2_ppm",
+      "measured": 260.0
+    },
+    {
+      "name": "eemian_temp_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": 1.5
+    },
+    {
+      "name": "lgm_temp_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": -5.0
+    },
+    {
+      "name": "holocene_optimum_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": 0.5
+    },
+    {
+      "name": "younger_dryas_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": -3.0
+    },
+    {
+      "name": "petm_co2_spike",
+      "property": "co2_ppm",
+      "measured": 1000.0
+    },
+    {
+      "name": "petm_temp_spike",
+      "property": "temp_anomaly_c",
+      "measured": 5.0
+    },
+    {
+      "name": "mwp_temp_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": 0.3
+    },
+    {
+      "name": "littl_age_anomaly",
+      "property": "temp_anomaly_c",
+      "measured": -0.5
+    },
+    {
+      "name": "greenland_ice_core_d18o",
+      "property": "delta_o18_permil",
+      "measured": -35.0
+    },
+    {
+      "name": "antarctic_ice_core_d18o",
+      "property": "delta_o18_permil",
+      "measured": -40.0
+    },
+    {
+      "name": "sea_level_lgm",
+      "property": "sea_level_m",
+      "measured": -120.0
+    },
+    {
+      "name": "sea_level_eemian",
+      "property": "sea_level_m",
+      "measured": 6.0
+    },
+    {
+      "name": "methane_lgm_ppb",
+      "property": "ch4_ppb",
+      "measured": 350.0
+    },
+    {
+      "name": "methane_preindustrial_ppb",
+      "property": "ch4_ppb",
+      "measured": 700.0
+    },
+    {
+      "name": "dust_lgm_factor",
+      "property": "dust_flux_factor",
+      "measured": 25.0
+    },
+    {
+      "name": "ocean_sst_lgm_anomaly",
+      "property": "sst_anomaly_c",
+      "measured": -2.5
+    },
+    {
+      "name": "orbital_forcing_insolation",
+      "property": "insolation_w_m2",
+      "measured": 450.0
+    }
+  ],
+  "live_fetch_failed": true,
+  "proxy_count": 20,
+  "fetched_at": "2026-07-12T15:42:34.143094+00:00",
+  "credential_free": true
+}

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T15:23:37.689525+00:00",
+  "generated_at": "2026-07-12T15:44:06.374497+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 285,
+  "extension_panels": 296,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -3704,6 +3704,146 @@
       ],
       "D_eff": 14,
       "benchmark_data": "data/virology_panel_benchmark.json"
+    },
+    {
+      "panel": "Civil_Engineering_Panel",
+      "tier": 85,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 23.95,
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/civil_engineering_panel_benchmark.json"
+    },
+    {
+      "panel": "Exogeology_Panel",
+      "tier": 85,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "energy"
+      ],
+      "D_eff": 20,
+      "benchmark_data": "data/exogeology_panel_benchmark.json"
+    },
+    {
+      "panel": "Finance_Markets_Panel",
+      "tier": 85,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "mathematical"
+      ],
+      "D_eff": 19,
+      "benchmark_data": "data/finance_markets_panel_benchmark.json"
+    },
+    {
+      "panel": "History_Panel",
+      "tier": 85,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 23.95,
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/history_panel_benchmark.json"
+    },
+    {
+      "panel": "Law_Policy_Panel",
+      "tier": 85,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 23.95,
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/law_policy_panel_benchmark.json"
+    },
+    {
+      "panel": "Mechanical_Engineering_Panel",
+      "tier": 85,
+      "primary_branch": "term2.scale",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "electron"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/mechanical_engineering_panel_benchmark.json"
+    },
+    {
+      "panel": "Neuroeconomics_Panel",
+      "tier": 85,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
+    },
+    {
+      "panel": "Paleoclimate_Panel",
+      "tier": 85,
+      "primary_branch": "term2.trend_bias",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "ecological"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/paleoclimate_panel_benchmark.json"
+    },
+    {
+      "panel": "Scientific_Expansion_Wave3_Spine",
+      "tier": 85,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "material",
+        "consciousness",
+        "galactic"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
+    },
+    {
+      "panel": "Speleology_Panel",
+      "tier": 85,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/speleology_panel_benchmark.json"
+    },
+    {
+      "panel": "Supply_Chain_Logistics_Panel",
+      "tier": 85,
+      "primary_branch": "term2.trend_bias",
+      "divergence_depth": 24.3,
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "biological"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -4799,6 +4939,19 @@
         ],
         "D_eff": 21,
         "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json"
+      },
+      {
+        "panel": "Exogeology_Panel",
+        "tier": 85,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic",
+          "energy"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/exogeology_panel_benchmark.json"
       }
     ],
     "atomic": [
@@ -5727,6 +5880,32 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/virology_panel_benchmark.json"
+      },
+      {
+        "panel": "Speleology_Panel",
+        "tier": 85,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "biological"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/speleology_panel_benchmark.json"
+      },
+      {
+        "panel": "Supply_Chain_Logistics_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "biological"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
       }
     ],
     "biophysics": [
@@ -7419,6 +7598,82 @@
         ],
         "D_eff": 20,
         "benchmark_data": "data/actuarial_science_panel_benchmark.json"
+      },
+      {
+        "panel": "Finance_Markets_Panel",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/finance_markets_panel_benchmark.json"
+      },
+      {
+        "panel": "History_Panel",
+        "tier": 85,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "consciousness",
+          "linguistic"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/history_panel_benchmark.json"
+      },
+      {
+        "panel": "Law_Policy_Panel",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "consciousness",
+          "economic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/law_policy_panel_benchmark.json"
+      },
+      {
+        "panel": "Neuroeconomics_Panel",
+        "tier": 85,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave3_Spine",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "consciousness",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
+      },
+      {
+        "panel": "Supply_Chain_Logistics_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "biological"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
       }
     ],
     "cosmological": [
@@ -8011,6 +8266,19 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/entomology_panel_benchmark.json"
+      },
+      {
+        "panel": "Paleoclimate_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "ecological"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/paleoclimate_panel_benchmark.json"
       }
     ],
     "economic": [
@@ -8153,6 +8421,44 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/scientific_expansion_spine_benchmark.json"
+      },
+      {
+        "panel": "Finance_Markets_Panel",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/finance_markets_panel_benchmark.json"
+      },
+      {
+        "panel": "Law_Policy_Panel",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "consciousness",
+          "economic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/law_policy_panel_benchmark.json"
+      },
+      {
+        "panel": "Supply_Chain_Logistics_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "biological"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
       }
     ],
     "electromagnetism": [
@@ -8372,6 +8678,19 @@
         ],
         "D_eff": 20,
         "benchmark_data": "data/pubchem_live_deep_benchmark.json"
+      },
+      {
+        "panel": "Mechanical_Engineering_Panel",
+        "tier": 85,
+        "primary_branch": "term2.scale",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "electron"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/mechanical_engineering_panel_benchmark.json"
       }
     ],
     "energy": [
@@ -9344,6 +9663,70 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/robotics_control_systems_panel_benchmark.json"
+      },
+      {
+        "panel": "Civil_Engineering_Panel",
+        "tier": 85,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/civil_engineering_panel_benchmark.json"
+      },
+      {
+        "panel": "Exogeology_Panel",
+        "tier": 85,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic",
+          "energy"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/exogeology_panel_benchmark.json"
+      },
+      {
+        "panel": "Mechanical_Engineering_Panel",
+        "tier": 85,
+        "primary_branch": "term2.scale",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "electron"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/mechanical_engineering_panel_benchmark.json"
+      },
+      {
+        "panel": "Paleoclimate_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "ecological"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/paleoclimate_panel_benchmark.json"
+      },
+      {
+        "panel": "Speleology_Panel",
+        "tier": 85,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "biological"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/speleology_panel_benchmark.json"
       }
     ],
     "fluid_dynamics": [
@@ -10480,6 +10863,58 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/open_meteo_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Exogeology_Panel",
+        "tier": 85,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic",
+          "energy"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/exogeology_panel_benchmark.json"
+      },
+      {
+        "panel": "Paleoclimate_Panel",
+        "tier": 85,
+        "primary_branch": "term2.trend_bias",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "ecological"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/paleoclimate_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave3_Spine",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "consciousness",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
+      },
+      {
+        "panel": "Speleology_Panel",
+        "tier": 85,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "energy",
+          "galactic",
+          "biological"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/speleology_panel_benchmark.json"
       }
     ],
     "higgs": [
@@ -10598,6 +11033,18 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/initiation_transformation_archetype_benchmark.json"
+      },
+      {
+        "panel": "History_Panel",
+        "tier": 85,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "consciousness",
+          "linguistic"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/history_panel_benchmark.json"
       }
     ],
     "material": [
@@ -11224,6 +11671,44 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Civil_Engineering_Panel",
+        "tier": 85,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 23.95,
+        "maps_to_lean": [
+          "material",
+          "energy"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/civil_engineering_panel_benchmark.json"
+      },
+      {
+        "panel": "Mechanical_Engineering_Panel",
+        "tier": 85,
+        "primary_branch": "term2.scale",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "electron"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/mechanical_engineering_panel_benchmark.json"
+      },
+      {
+        "panel": "Scientific_Expansion_Wave3_Spine",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "material",
+          "consciousness",
+          "galactic"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
       }
     ],
     "mathematical": [
@@ -11891,6 +12376,32 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/nist_dlmf_special_functions_benchmark.json"
+      },
+      {
+        "panel": "Finance_Markets_Panel",
+        "tier": 85,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "economic",
+          "mathematical"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/finance_markets_panel_benchmark.json"
+      },
+      {
+        "panel": "Neuroeconomics_Panel",
+        "tier": 85,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
       }
     ],
     "medical": [
@@ -13088,6 +13599,19 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json"
+      },
+      {
+        "panel": "Neuroeconomics_Panel",
+        "tier": 85,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 24.3,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
       }
     ],
     "nuclear": [

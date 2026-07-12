@@ -49,6 +49,10 @@ def tier84_deep() -> bool:
     return _flag("FSOT_TIER84_DEEP") or mega_deep()
 
 
+def tier85_deep() -> bool:
+    return _flag("FSOT_TIER85_DEEP") or mega_deep()
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000
@@ -372,3 +376,43 @@ def immunology_cid_limit() -> int:
     if tier84_deep():
         return 6
     return 4
+
+
+def tier85_world_bank_limit() -> int:
+    if mega_deep():
+        return 12
+    if tier85_deep():
+        return 8
+    return 5
+
+
+def tier85_paleoclimate_limit() -> int:
+    if mega_deep():
+        return 5
+    if tier85_deep():
+        return 5
+    return 3
+
+
+def tier85_usgs_limit() -> int:
+    if mega_deep():
+        return 5
+    if tier85_deep():
+        return 5
+    return 3
+
+
+def tier85_exoplanet_limit() -> int:
+    if mega_deep():
+        return 20
+    if tier85_deep():
+        return 12
+    return 8
+
+
+def tier85_crossref_limit() -> int:
+    if mega_deep():
+        return 20
+    if tier85_deep():
+        return 12
+    return 8

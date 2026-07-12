@@ -3754,6 +3754,169 @@ extension_domains:
     lean_module: FSOT.Formal.ScientificExpansionWave2SpinePriors
     note: "Tier 84 cross-panel spine — remaining unentered scientific domains"
 
+  Civil_Engineering_Panel:
+    tier: 85
+    D_eff: 16
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/civil_engineering_panel_benchmark.json
+    lean_module: FSOT.Formal.CivilEngineeringPanelPriors
+    note: "Civil engineering — ASCE/structural reference anchors"
+
+  Mechanical_Engineering_Panel:
+    tier: 85
+    D_eff: 16
+    delta_psi: 0.55
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy, electron]
+    formula_branch_override: term2.scale
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/mechanical_engineering_panel_benchmark.json
+    lean_module: FSOT.Formal.MechanicalEngineeringPanelPriors
+    note: "Mechanical engineering — ASME thermo/mechanics reference"
+
+  Neuroeconomics_Panel:
+    tier: 85
+    D_eff: 16
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, neural, mathematical]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/neuroeconomics_panel_benchmark.json
+    lean_module: FSOT.Formal.NeuroeconomicsPanelPriors
+    note: "Neuroeconomics — behavioral decision reference anchors"
+
+  Paleoclimate_Panel:
+    tier: 85
+    D_eff: 17
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic, ecological]
+    formula_branch_override: term2.trend_bias
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/paleoclimate_panel_benchmark.json
+    lean_module: FSOT.Formal.PaleoclimatePanelPriors
+    note: "Paleoclimate — Open-Meteo historical archive + ice-core reference"
+
+  Speleology_Panel:
+    tier: 85
+    D_eff: 16
+    delta_psi: 0.45
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic, biological]
+    formula_branch_override: term2.amplitude
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/speleology_panel_benchmark.json
+    lean_module: FSOT.Formal.SpeleologyPanelPriors
+    note: "Speleology — USGS karst hydrology + cave reference"
+
+  Exogeology_Panel:
+    tier: 85
+    D_eff: 20
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic, energy]
+    formula_branch_override: term1.term1_base
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/exogeology_panel_benchmark.json
+    lean_module: FSOT.Formal.ExogeologyPanelPriors
+    note: "Exogeology — NASA Exoplanet Archive planetary properties"
+
+  History_Panel:
+    tier: 85
+    D_eff: 15
+    delta_psi: 0.4
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, linguistic]
+    formula_branch_override: term1.growth_term
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/history_panel_benchmark.json
+    lean_module: FSOT.Formal.HistoryPanelPriors
+    note: "History — Crossref scholarly history corpus metadata"
+
+  Law_Policy_Panel:
+    tier: 85
+    D_eff: 17
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, economic]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/law_policy_panel_benchmark.json
+    lean_module: FSOT.Formal.LawPolicyPanelPriors
+    note: "Law and policy — World Bank WGI governance indicators"
+
+  Finance_Markets_Panel:
+    tier: 85
+    D_eff: 19
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, economic, mathematical]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/finance_markets_panel_benchmark.json
+    lean_module: FSOT.Formal.FinanceMarketsPanelPriors
+    note: "Finance markets — World Bank macro/finance indicators"
+
+  Supply_Chain_Logistics_Panel:
+    tier: 85
+    D_eff: 18
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, economic, biological]
+    formula_branch_override: term2.trend_bias
+    ingest_script: scripts/ingest_tier85_scientific_expansion.py
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/supply_chain_logistics_panel_benchmark.json
+    lean_module: FSOT.Formal.SupplyChainLogisticsPanelPriors
+    note: "Supply chain logistics — World Bank trade/logistics indicators"
+
+  Scientific_Expansion_Wave3_Spine:
+    tier: 85
+    D_eff: 17
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, consciousness, galactic]
+    build_script: scripts/build_tier85_scientific_expansion_benchmarks.py
+    manifest: data/tier85_scientific_expansion_manifest.yaml
+    benchmark_data: data/scientific_expansion_wave3_spine_benchmark.json
+    lean_module: FSOT.Formal.ScientificExpansionWave3SpinePriors
+    note: "Tier 85 cross-panel spine — Tier-41 gap domain live panels"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

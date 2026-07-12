@@ -1,0 +1,394 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:43:56.817165+00:00",
+  "domain": "Supply_Chain_Logistics_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier85_cache\\supply_chain_cache.json",
+    "World Bank trade/logistics"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "economic",
+    "biological"
+  ],
+  "D_eff": 18,
+  "record_count": 27,
+  "observable_count": 27,
+  "scalar_record_count": 27,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.02584,
+  "pooled_median_error_pct": 0.02584,
+  "headline_median_error_pct": 0.02584,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "supply_chain": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "SCOR model baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.02584,
+      "measured": 0.0,
+      "error_pct": 0.02584,
+      "observable_count": 27
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "supply_chain",
+      "computed": 0.02584,
+      "measured": 0.0,
+      "error_pct": 0.02584,
+      "observable_count": 27
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 56.298265,
+      "measured": 56.2837209179998,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 57.132136,
+      "measured": 57.1173763714306,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 54.565429,
+      "measured": 54.5513323505808,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 49.356335,
+      "measured": 49.343584646059,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 53.228061,
+      "measured": 53.2143102862768,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "trade_pct_gdp",
+      "name": "ZH_NE.TRD.GNFS.ZS",
+      "computed": 54.882268,
+      "measured": 54.8680901684044,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 23.579336,
+      "measured": 23.5732442654315,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 19.736991,
+      "measured": 19.7318918635732,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 22.352734,
+      "measured": 22.3469597691309,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 22.305858,
+      "measured": 22.3000958454058,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 22.80925,
+      "measured": 22.80335739357,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZH_TX.VAL.MRCH.R1.ZS",
+      "computed": 23.966181,
+      "measured": 23.9599898497199,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZI_TX.VAL.MRCH.R1.ZS",
+      "computed": 16.922405,
+      "measured": 16.9180333537285,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_exports_pct_gdp",
+      "name": "ZI_TX.VAL.MRCH.R1.ZS",
+      "computed": 13.961211,
+      "measured": 13.9576045371076,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 24.679973,
+      "measured": 24.6735970000255,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 23.264457,
+      "measured": 23.2584474095805,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 23.905116,
+      "measured": 23.8989407406889,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 23.815584,
+      "measured": 23.809431228108,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 21.99868,
+      "measured": 21.9929973016073,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZH_TM.VAL.MRCH.R1.ZS",
+      "computed": 21.694401,
+      "measured": 21.6887969683023,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZI_TM.VAL.MRCH.R1.ZS",
+      "computed": 19.745671,
+      "measured": 19.7405698834857,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "merchandise_imports_pct_gdp",
+      "name": "ZI_TM.VAL.MRCH.R1.ZS",
+      "computed": 21.200238,
+      "measured": 21.1947614562029,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "container_port_traffic_teus",
+      "name": "ZI_IS.SHP.GOOD.TU",
+      "computed": 8919821.3025,
+      "measured": 8917517.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "container_port_traffic_teus",
+      "name": "ZI_IS.SHP.GOOD.TU",
+      "computed": 8189114.5353,
+      "measured": 8186999.0,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "logistics_performance_index",
+      "name": "ZH_LP.LPI.OVRL.XQ",
+      "computed": 2.618858,
+      "measured": 2.61818181818182,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "logistics_performance_index",
+      "name": "ZH_LP.LPI.OVRL.XQ",
+      "computed": 2.492866,
+      "measured": 2.49222222222222,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    },
+    {
+      "lab": "supply_chain_panel_lab",
+      "property": "logistics_performance_index",
+      "name": "ZI_LP.LPI.OVRL.XQ",
+      "computed": 2.473972,
+      "measured": 2.47333333333333,
+      "error_pct": 0.02584,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Economics",
+      "fsot_scalar": 0.646005,
+      "ingest_source": "World_Bank_trade_logistics"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.02584,
+    "max_scalar_error_pct": 0.02584,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

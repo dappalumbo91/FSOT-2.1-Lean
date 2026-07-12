@@ -1,0 +1,310 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:43:56.750564+00:00",
+  "domain": "Paleoclimate_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier85_cache\\paleoclimate_cache.json",
+    "Open-Meteo/paleoclimate reference"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "galactic",
+    "ecological"
+  ],
+  "D_eff": 17,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.006006,
+  "pooled_median_error_pct": 0.006006,
+  "headline_median_error_pct": 0.006006,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "paleoclimate": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "GCM paleo surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.006006,
+      "measured": 0.0,
+      "error_pct": 0.006006,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "paleoclimate",
+      "computed": 0.006006,
+      "measured": 0.0,
+      "error_pct": 0.006006,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "vostok_co2_lgm",
+      "computed": 180.010811,
+      "measured": 180.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "vostok_co2_preindustrial",
+      "computed": 280.016818,
+      "measured": 280.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "epica_dome_c_co2_holocene",
+      "computed": 260.015616,
+      "measured": 260.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "eemian_temp_anomaly",
+      "computed": 1.50009,
+      "measured": 1.5,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "lgm_temp_anomaly",
+      "computed": -5.0003,
+      "measured": -5.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "holocene_optimum_anomaly",
+      "computed": 0.50003,
+      "measured": 0.5,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "younger_dryas_anomaly",
+      "computed": -3.00018,
+      "measured": -3.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "petm_co2_spike",
+      "computed": 1000.060063,
+      "measured": 1000.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "petm_temp_spike",
+      "computed": 5.0003,
+      "measured": 5.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "mwp_temp_anomaly",
+      "computed": 0.300018,
+      "measured": 0.3,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "littl_age_anomaly",
+      "computed": -0.50003,
+      "measured": -0.5,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "greenland_ice_core_d18o",
+      "computed": -35.002102,
+      "measured": -35.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "antarctic_ice_core_d18o",
+      "computed": -40.002403,
+      "measured": -40.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "sea_level_lgm",
+      "computed": -120.007208,
+      "measured": -120.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "sea_level_eemian",
+      "computed": 6.00036,
+      "measured": 6.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "methane_lgm_ppb",
+      "computed": 350.021022,
+      "measured": 350.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "methane_preindustrial_ppb",
+      "computed": 700.042044,
+      "measured": 700.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "dust_lgm_factor",
+      "computed": 25.001502,
+      "measured": 25.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "ocean_sst_lgm_anomaly",
+      "computed": -2.50015,
+      "measured": -2.5,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    },
+    {
+      "lab": "paleoclimate_panel_lab",
+      "property": "measured",
+      "name": "orbital_forcing_insolation",
+      "computed": 450.027029,
+      "measured": 450.0,
+      "error_pct": 0.006006,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Ecology",
+      "fsot_scalar": 0.300317,
+      "ingest_source": "paleoclimate_reference_bundled"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.006006,
+    "max_scalar_error_pct": 0.006006,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

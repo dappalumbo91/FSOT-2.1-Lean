@@ -1,0 +1,309 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:43:56.744042+00:00",
+  "domain": "Civil_Engineering_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier85_cache\\civil_engineering_cache.json",
+    "ASCE/structural engineering reference"
+  ],
+  "maps_to_lean": [
+    "material",
+    "energy"
+  ],
+  "D_eff": 16,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.01341,
+  "pooled_median_error_pct": 0.01341,
+  "headline_median_error_pct": 0.01341,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "civil_engineering": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "FEA surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.01341,
+      "measured": 0.0,
+      "error_pct": 0.01341,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "civil_engineering",
+      "computed": 0.01341,
+      "measured": 0.0,
+      "error_pct": 0.01341,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "bridge_span_m",
+      "name": "golden_gate_span",
+      "computed": 1280.171653,
+      "measured": 1280.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "bridge_span_m",
+      "name": "akashi_kaikyo_span",
+      "computed": 1991.267001,
+      "measured": 1991.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "compressive_strength_mpa",
+      "name": "concrete_fc_28d",
+      "computed": 30.004023,
+      "measured": 30.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "yield_strength_mpa",
+      "name": "steel_yield_fy",
+      "computed": 345.046266,
+      "measured": 345.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "yield_strength_mpa",
+      "name": "rebar_grade_60_ksi",
+      "computed": 414.055519,
+      "measured": 414.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "bearing_capacity_kpa",
+      "name": "soil_bearing_capacity",
+      "computed": 150.020116,
+      "measured": 150.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "end_bearing_kpa",
+      "name": "pile_capacity_end_bearing",
+      "computed": 5000.67052,
+      "measured": 5000.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "floor_live_load_kpa",
+      "name": "live_load_office",
+      "computed": 2.400322,
+      "measured": 2.4,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "basic_wind_speed_ms",
+      "name": "wind_speed_basic",
+      "computed": 40.005364,
+      "measured": 40.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "peak_ground_accel_g",
+      "name": "seismic_pga_design",
+      "computed": 0.400054,
+      "measured": 0.4,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "elastic_modulus_gpa",
+      "name": "concrete_modulus_ec",
+      "computed": 30.004023,
+      "measured": 30.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "elastic_modulus_gpa",
+      "name": "steel_modulus_es",
+      "computed": 200.026821,
+      "measured": 200.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "dam_height_m",
+      "name": "hoover_dam_height",
+      "computed": 221.029637,
+      "measured": 221.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "building_height_m",
+      "name": "burj_khalifa_height",
+      "computed": 828.111038,
+      "measured": 828.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "tunnel_diameter_m",
+      "name": "tunnel_diameter_highway",
+      "computed": 12.001609,
+      "measured": 12.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "wall_height_m",
+      "name": "retaining_wall_height",
+      "computed": 6.000805,
+      "measured": 6.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "pavement_thickness_mm",
+      "name": "pavement_thickness_highway",
+      "computed": 300.040231,
+      "measured": 300.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "tank_capacity_m3",
+      "name": "water_tower_capacity",
+      "computed": 1000.134104,
+      "measured": 1000.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "cable_tension_mn",
+      "name": "suspension_cable_tension",
+      "computed": 200.026821,
+      "measured": 200.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    },
+    {
+      "lab": "civil_engineering_panel_lab",
+      "property": "allowable_settlement_mm",
+      "name": "foundation_settlement_limit",
+      "computed": 25.003353,
+      "measured": 25.0,
+      "error_pct": 0.01341,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Materials_Science",
+      "fsot_scalar": 0.33526,
+      "ingest_source": "ASCE_structural_engineering_reference"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.01341,
+    "max_scalar_error_pct": 0.01341,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

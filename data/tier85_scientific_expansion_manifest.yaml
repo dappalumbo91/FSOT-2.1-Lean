@@ -1,0 +1,31 @@
+version: "1.0"
+updated: "2026-07-12"
+tier: 85
+policy: credential_free_only
+domains:
+  - Civil_Engineering_Panel
+  - Mechanical_Engineering_Panel
+  - Neuroeconomics_Panel
+  - Paleoclimate_Panel
+  - Speleology_Panel
+  - Exogeology_Panel
+  - History_Panel
+  - Law_Policy_Panel
+  - Finance_Markets_Panel
+  - Supply_Chain_Logistics_Panel
+  - Scientific_Expansion_Wave3_Spine
+ingest: scripts/ingest_tier85_scientific_expansion.py
+build: scripts/build_tier85_scientific_expansion_benchmarks.py
+lean: scripts/gen_tier85_scientific_expansion_lean.py
+field_breadth_target_pct: 22.2
+apis:
+  - https://api.worldbank.org/
+  - https://api.crossref.org/
+  - https://exoplanetarchive.ipac.caltech.edu/
+  - https://archive-api.open-meteo.com/
+  - https://waterservices.usgs.gov/
+note: >
+  Tier 85 adds live FSOT prediction panels for remaining Tier-41 extension domains
+  (engineering, social sciences, paleoclimate, speleology, exogeology). World Bank,
+  Crossref, NASA Exoplanet Archive, Open-Meteo archive, and USGS NWIS are primary
+  live channels with published-reference bundled fallbacks.

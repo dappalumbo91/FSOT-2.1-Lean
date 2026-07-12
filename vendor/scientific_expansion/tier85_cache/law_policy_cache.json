@@ -1,0 +1,109 @@
+{
+  "source": "law_policy_reference_bundled",
+  "metrics": [
+    {
+      "name": "rule_of_law_global_mean",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "regulatory_quality_mean",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "government_effectiveness",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "voice_accountability",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "political_stability",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "control_corruption",
+      "property": "governance_index",
+      "measured": 0.0
+    },
+    {
+      "name": "tax_revenue_pct_gdp",
+      "property": "tax_revenue_pct_gdp",
+      "measured": 25.0
+    },
+    {
+      "name": "public_debt_pct_gdp",
+      "property": "public_debt_pct_gdp",
+      "measured": 90.0
+    },
+    {
+      "name": "health_spend_pct_gdp",
+      "property": "health_expenditure_pct_gdp",
+      "measured": 10.0
+    },
+    {
+      "name": "education_spend_pct_gdp",
+      "property": "education_expenditure_pct_gdp",
+      "measured": 5.0
+    },
+    {
+      "name": "gini_coefficient_oecd",
+      "property": "gini_coefficient",
+      "measured": 0.32
+    },
+    {
+      "name": "poverty_headcount_215",
+      "property": "poverty_rate_pct",
+      "measured": 10.0
+    },
+    {
+      "name": "life_expectancy_global",
+      "property": "life_expectancy_years",
+      "measured": 73.0
+    },
+    {
+      "name": "internet_penetration_pct",
+      "property": "internet_users_pct",
+      "measured": 65.0
+    },
+    {
+      "name": "renewable_energy_pct",
+      "property": "renewable_energy_pct",
+      "measured": 30.0
+    },
+    {
+      "name": "carbon_price_eu_ets",
+      "property": "carbon_price_eur_t",
+      "measured": 60.0
+    },
+    {
+      "name": "minimum_wage_usd_h",
+      "property": "minimum_wage_usd_h",
+      "measured": 7.25
+    },
+    {
+      "name": "corporate_tax_rate_oecd",
+      "property": "corporate_tax_rate_pct",
+      "measured": 23.0
+    },
+    {
+      "name": "trade_openness_pct_gdp",
+      "property": "trade_pct_gdp",
+      "measured": 60.0
+    },
+    {
+      "name": "judicial_independence_index",
+      "property": "judicial_independence",
+      "measured": 6.5
+    }
+  ],
+  "live_fetch_failed": true,
+  "metric_count": 20,
+  "fetched_at": "2026-07-12T15:42:28.008780+00:00",
+  "credential_free": true
+}

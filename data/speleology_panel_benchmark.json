@@ -1,0 +1,190 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-12T15:43:56.767564+00:00",
+  "domain": "Speleology_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\scientific_expansion\\tier85_cache\\speleology_cache.json",
+    "USGS karst hydrology"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "galactic",
+    "biological"
+  ],
+  "D_eff": 16,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 10,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.04459,
+  "pooled_median_error_pct": 0.04459,
+  "headline_median_error_pct": 0.04459,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "speleology": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Karst hydrogeology surrogates"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.04459,
+      "measured": 0.0,
+      "error_pct": 0.04459,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "speleology",
+      "computed": 0.04459,
+      "measured": 0.0,
+      "error_pct": 0.04459,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "speleology_panel_lab",
+      "property": "discharge_cfs",
+      "name": "potomac_karst",
+      "computed": 5432.421246,
+      "measured": 5430.0,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "gage_height_ft",
+      "name": "potomac_karst",
+      "computed": 3.421525,
+      "measured": 3.42,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "discharge_cfs",
+      "name": "floridan_aquifer",
+      "computed": 227.10122,
+      "measured": 227.0,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "gage_height_ft",
+      "name": "floridan_aquifer",
+      "computed": 51.322875,
+      "measured": 51.3,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "discharge_cfs",
+      "name": "iowa_cave_region",
+      "computed": 278.123961,
+      "measured": 278.0,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "gage_height_ft",
+      "name": "iowa_cave_region",
+      "computed": 6.092716,
+      "measured": 6.09,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "discharge_cfs",
+      "name": "black_hills_karst",
+      "computed": 30213.466227,
+      "measured": 30200.0,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "gage_height_ft",
+      "name": "black_hills_karst",
+      "computed": 14.24635,
+      "measured": 14.24,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "discharge_cfs",
+      "name": "tennessee_cave",
+      "computed": 421.187725,
+      "measured": 421.0,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    },
+    {
+      "lab": "speleology_panel_lab",
+      "property": "gage_height_ft",
+      "name": "tennessee_cave",
+      "computed": 3.761677,
+      "measured": 3.76,
+      "error_pct": 0.04459,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Seismology",
+      "fsot_scalar": -0.445902,
+      "ingest_source": "usgs_nwis_karst_hydrology"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.04459,
+    "max_scalar_error_pct": 0.04459,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
