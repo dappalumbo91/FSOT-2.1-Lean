@@ -2593,7 +2593,7 @@ extension_domains:
 
   PubChem_Live_Deep:
     tier: 68
-    D_eff: 18
+    D_eff: 20
     delta_psi: 0.5
     recent_hits: 3
     observed: true
@@ -2603,7 +2603,8 @@ extension_domains:
     manifest: data/tier68_live_ingest_manifest.yaml
     benchmark_data: data/pubchem_live_deep_benchmark.json
     lean_module: FSOT.Formal.PubChemLiveDeepPriors
-    note: "PubChem preregistered + culinary/Maillard panel — multi-property PUG REST + ChEMBL/UniProt/culinary bridges"
+    expand_script: scripts/expand_pubchem_panel.py
+    note: "PubChem auto-expanded panel — PUG REST name discovery + culinary/pharmacology bridges"
 
   OpenNeuro_Full_Panel:
     tier: 68

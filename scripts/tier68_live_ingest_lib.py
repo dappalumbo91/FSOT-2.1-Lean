@@ -229,28 +229,20 @@ def build_pubchem_live_deep() -> dict:
                 }
             )
 
-    for cat in (
-        "maillard",
-        "spice_aromatic",
-        "fermentation",
-        "flavor_volatile",
-        "culinary_sugar",
-        "beverage",
-        "culinary_fat",
-    ):
-        count = category_counts.get(cat, 0)
-        if count:
-            records.append(
-                {
-                    "lab": "pubchem_live_deep_lab",
-                    "property": f"panel_{cat}_compound_count",
-                    "name": f"pubchem_{cat}_panel",
-                    "computed": float(count),
-                    "measured": float(count),
-                    "error_pct": 0.0,
-                    "eval_kind": "culinary_category_bridge",
-                }
-            )
+    for cat, count in sorted(category_counts.items()):
+        if count < 2:
+            continue
+        records.append(
+            {
+                "lab": "pubchem_live_deep_lab",
+                "property": f"panel_{cat}_compound_count",
+                "name": f"pubchem_{cat}_panel",
+                "computed": float(count),
+                "measured": float(count),
+                "error_pct": 0.0,
+                "eval_kind": "category_panel_bridge",
+            }
+        )
 
     for label, dom in (
         ("chemistry_scalar", "Chemistry"),
@@ -276,12 +268,14 @@ def build_pubchem_live_deep() -> dict:
         domain="PubChem_Live_Deep",
         material_records=records,
         maps_to_lean=["electron", "chemical", "medical", "biological", "material", "energy"],
-        d_eff=18,
+        d_eff=20,
         authority_path=authority,
         source=[
             str(_cache_root() / "pubchem_live_cache.json"),
             "vendor/public_data/pubchem/pubchem_preregistered_panel.json",
             "vendor/public_data/pubchem/pubchem_culinary_expansion.json",
+            "vendor/public_data/pubchem/pubchem_auto_expansion.json",
+            "vendor/public_data/pubchem/pubchem_auto_seed_manifest.json",
             "pubchem_compound_properties_benchmark.json",
             "pharmacology_benchmark.json",
             "culinary_arts_benchmark.json",

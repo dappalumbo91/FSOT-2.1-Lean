@@ -1,0 +1,1989 @@
+{
+  "panel_version": "1.0",
+  "generated_at": "2026-07-12T03:59:46.109144+00:00",
+  "description": "Automated PubChem panel expansion via PUG REST name resolution",
+  "discovery_stats": {
+    "queries_total": 395,
+    "resolved": 329,
+    "skipped_existing": 24,
+    "failed_resolve": 42,
+    "failed_validate": 0
+  },
+  "compound_count": 329,
+  "compounds": [
+    {
+      "cid": 4973,
+      "name": "heme",
+      "category": "cofactor",
+      "domain": "biological"
+    },
+    {
+      "cid": 5892,
+      "name": "nad",
+      "category": "cofactor",
+      "domain": "biological"
+    },
+    {
+      "cid": 87642,
+      "name": "coa",
+      "category": "cofactor",
+      "domain": "biological"
+    },
+    {
+      "cid": 643975,
+      "name": "fad",
+      "category": "cofactor",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280360,
+      "name": "pge2",
+      "category": "eicosanoid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280492,
+      "name": "ltb4",
+      "category": "eicosanoid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280497,
+      "name": "txa2",
+      "category": "eicosanoid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280335,
+      "name": "sphingosine",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5327011,
+      "name": "pe",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 5460048,
+      "name": "tristearin",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 9547096,
+      "name": "ps",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 139583739,
+      "name": "ceramide",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 166177218,
+      "name": "cardiolipin",
+      "category": "lipid",
+      "domain": "biological"
+    },
+    {
+      "cid": 446512,
+      "name": "okadaic_acid",
+      "category": "marine_toxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5282253,
+      "name": "domoic_acid",
+      "category": "marine_toxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 46881333,
+      "name": "brevetoxin",
+      "category": "marine_toxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 36511,
+      "name": "substance_p",
+      "category": "mediator",
+      "domain": "biological"
+    },
+    {
+      "cid": 145068,
+      "name": "nitric_oxide",
+      "category": "mediator",
+      "domain": "biological"
+    },
+    {
+      "cid": 439201,
+      "name": "bradykinin",
+      "category": "mediator",
+      "domain": "biological"
+    },
+    {
+      "cid": 16212950,
+      "name": "endothelin_1",
+      "category": "mediator",
+      "domain": "biological"
+    },
+    {
+      "cid": 186907,
+      "name": "aflatoxin_b1",
+      "category": "mycotoxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 442530,
+      "name": "ochratoxin_a",
+      "category": "mycotoxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5281576,
+      "name": "zearalenone",
+      "category": "mycotoxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 6030,
+      "name": "ump",
+      "category": "nucleotide",
+      "domain": "biological"
+    },
+    {
+      "cid": 6131,
+      "name": "cmp",
+      "category": "nucleotide",
+      "domain": "biological"
+    },
+    {
+      "cid": 9828112,
+      "name": "deoxyribose",
+      "category": "nucleotide_sugar",
+      "domain": "biological"
+    },
+    {
+      "cid": 10975657,
+      "name": "ribose",
+      "category": "nucleotide_sugar",
+      "domain": "biological"
+    },
+    {
+      "cid": 288,
+      "name": "carnitine",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 586,
+      "name": "creatine",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 864,
+      "name": "lipoic_acid",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 24766,
+      "name": "chondroitin",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 439213,
+      "name": "glucosamine",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 5281915,
+      "name": "coq10",
+      "category": "nutraceutical",
+      "domain": "biological"
+    },
+    {
+      "cid": 12085802,
+      "name": "chlorophyll_a",
+      "category": "photosynthetic",
+      "domain": "biological"
+    },
+    {
+      "cid": 3830,
+      "name": "zeatin",
+      "category": "plant_hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 522636,
+      "name": "gibberellic_acid",
+      "category": "plant_hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280896,
+      "name": "abscisic_acid",
+      "category": "plant_hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 5281166,
+      "name": "jasmonic_acid",
+      "category": "plant_hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 13039058,
+      "name": "brassinolide",
+      "category": "plant_hormone",
+      "domain": "biological"
+    },
+    {
+      "cid": 6076,
+      "name": "camp",
+      "category": "second_messenger",
+      "domain": "biological"
+    },
+    {
+      "cid": 439456,
+      "name": "ip3",
+      "category": "second_messenger",
+      "domain": "biological"
+    },
+    {
+      "cid": 6026790,
+      "name": "dag",
+      "category": "second_messenger",
+      "domain": "biological"
+    },
+    {
+      "cid": 135398570,
+      "name": "cgmp",
+      "category": "second_messenger",
+      "domain": "biological"
+    },
+    {
+      "cid": 11174599,
+      "name": "tetrodotoxin",
+      "category": "toxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 56947150,
+      "name": "saxitoxin",
+      "category": "toxin",
+      "domain": "biological"
+    },
+    {
+      "cid": 892,
+      "name": "myo_inositol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 6613,
+      "name": "pantothenic_acid",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 14986,
+      "name": "alpha_tocopherol",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5280795,
+      "name": "vitamin_d3",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 5284607,
+      "name": "vitamin_k1",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 73415824,
+      "name": "cyanocobalamin",
+      "category": "vitamin",
+      "domain": "biological"
+    },
+    {
+      "cid": 7187,
+      "name": "benzoyl_peroxide",
+      "category": "cosmetic",
+      "domain": "chemical"
+    },
+    {
+      "cid": 51040,
+      "name": "avobenzone",
+      "category": "cosmetic",
+      "domain": "chemical"
+    },
+    {
+      "cid": 5355130,
+      "name": "octinoxate",
+      "category": "cosmetic",
+      "domain": "chemical"
+    },
+    {
+      "cid": 4510,
+      "name": "nitroglycerin",
+      "category": "explosive",
+      "domain": "chemical"
+    },
+    {
+      "cid": 6518,
+      "name": "petn",
+      "category": "explosive",
+      "domain": "chemical"
+    },
+    {
+      "cid": 8376,
+      "name": "tnt",
+      "category": "explosive",
+      "domain": "chemical"
+    },
+    {
+      "cid": 8490,
+      "name": "rdx",
+      "category": "explosive",
+      "domain": "chemical"
+    },
+    {
+      "cid": 222,
+      "name": "ammonia",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 280,
+      "name": "carbon_dioxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 281,
+      "name": "carbon_monoxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 297,
+      "name": "methane",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 313,
+      "name": "hydrochloric_acid",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 784,
+      "name": "hydrogen_peroxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 944,
+      "name": "nitric_acid",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 1118,
+      "name": "sulfuric_acid",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 14797,
+      "name": "potassium_hydroxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 14798,
+      "name": "sodium_hydroxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24823,
+      "name": "ozone",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 6093208,
+      "name": "calcium_hydroxide",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 23665760,
+      "name": "bleach",
+      "category": "industrial",
+      "domain": "chemical"
+    },
+    {
+      "cid": 174,
+      "name": "ethylene_glycol",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 180,
+      "name": "acetone",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 679,
+      "name": "dmso",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 887,
+      "name": "methanol",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 3776,
+      "name": "isopropanol",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 6212,
+      "name": "chloroform",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 6344,
+      "name": "dichloromethane",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 8028,
+      "name": "thf",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 8058,
+      "name": "hexane",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 8078,
+      "name": "cyclohexane",
+      "category": "industrial_solvent",
+      "domain": "chemical"
+    },
+    {
+      "cid": 5235,
+      "name": "sodium_fluoride",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 10112,
+      "name": "calcium_carbonate",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24083,
+      "name": "epsom_salt",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24393,
+      "name": "ferrous_sulfate",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24424,
+      "name": "zinc_sulfate",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24434,
+      "name": "saltpeter",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 24462,
+      "name": "copper_sulfate",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 21225609,
+      "name": "sodium_phosphate",
+      "category": "mineral",
+      "domain": "chemical"
+    },
+    {
+      "cid": 5974,
+      "name": "ctab",
+      "category": "surfactant",
+      "domain": "chemical"
+    },
+    {
+      "cid": 3423265,
+      "name": "sds",
+      "category": "surfactant",
+      "domain": "chemical"
+    },
+    {
+      "cid": 93090,
+      "name": "isohumulone",
+      "category": "brewing",
+      "domain": "culinary"
+    },
+    {
+      "cid": 16213884,
+      "name": "phosphatidylcholine",
+      "category": "emulsifier",
+      "domain": "culinary"
+    },
+    {
+      "cid": 119,
+      "name": "gaba",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 273,
+      "name": "cadaverine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1102,
+      "name": "spermidine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 1103,
+      "name": "spermine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 8083,
+      "name": "morpholine",
+      "category": "fermentation",
+      "domain": "culinary"
+    },
+    {
+      "cid": 7762,
+      "name": "ethyl_butyrate",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 8438,
+      "name": "heliotropin",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 12813,
+      "name": "gamma_decalactone",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 31276,
+      "name": "isoamyl_acetate",
+      "category": "flavor_volatile",
+      "domain": "culinary"
+    },
+    {
+      "cid": 14749,
+      "name": "carmine",
+      "category": "food_dye",
+      "domain": "culinary"
+    },
+    {
+      "cid": 33258,
+      "name": "allura_red",
+      "category": "food_dye",
+      "domain": "culinary"
+    },
+    {
+      "cid": 164825,
+      "name": "tartrazine",
+      "category": "food_dye",
+      "domain": "culinary"
+    },
+    {
+      "cid": 441476,
+      "name": "pectin",
+      "category": "food_hydrocolloid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 71571511,
+      "name": "agarose",
+      "category": "food_hydrocolloid",
+      "domain": "culinary"
+    },
+    {
+      "cid": 753,
+      "name": "glycerol",
+      "category": "humectant",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5780,
+      "name": "sorbitol",
+      "category": "humectant",
+      "domain": "culinary"
+    },
+    {
+      "cid": 7284,
+      "name": "2_methylbutanal",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 11552,
+      "name": "3_methylbutanal",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 18635,
+      "name": "methional",
+      "category": "maillard",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5144,
+      "name": "safrole",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 637563,
+      "name": "anethole",
+      "category": "spice_aromatic",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6251,
+      "name": "mannitol",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6912,
+      "name": "xylitol",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 222285,
+      "name": "erythritol",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 439312,
+      "name": "tagatose",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 441036,
+      "name": "allulose",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6918840,
+      "name": "steviol",
+      "category": "sweetener",
+      "domain": "culinary"
+    },
+    {
+      "cid": 2537,
+      "name": "camphor",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 6654,
+      "name": "alpha_pinene",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 14896,
+      "name": "beta_pinene",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 31253,
+      "name": "myrcene",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 64685,
+      "name": "borneol",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 92234,
+      "name": "terpinene",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 5281515,
+      "name": "caryophyllene",
+      "category": "terpene",
+      "domain": "culinary"
+    },
+    {
+      "cid": 145858,
+      "name": "malvidin",
+      "category": "wine",
+      "domain": "culinary"
+    },
+    {
+      "cid": 356,
+      "name": "octane",
+      "category": "fuel",
+      "domain": "energy"
+    },
+    {
+      "cid": 6334,
+      "name": "propane",
+      "category": "fuel",
+      "domain": "energy"
+    },
+    {
+      "cid": 7843,
+      "name": "butane",
+      "category": "fuel",
+      "domain": "energy"
+    },
+    {
+      "cid": 6372,
+      "name": "hcfc_22",
+      "category": "refrigerant",
+      "domain": "energy"
+    },
+    {
+      "cid": 13129,
+      "name": "hfc_134a",
+      "category": "refrigerant",
+      "domain": "energy"
+    },
+    {
+      "cid": 6623,
+      "name": "bisphenol_a",
+      "category": "endocrine_disruptor",
+      "domain": "environmental"
+    },
+    {
+      "cid": 14888,
+      "name": "arsenic_trioxide",
+      "category": "heavy_metal",
+      "domain": "environmental"
+    },
+    {
+      "cid": 24947,
+      "name": "cadmium_chloride",
+      "category": "heavy_metal",
+      "domain": "environmental"
+    },
+    {
+      "cid": 170452945,
+      "name": "mercuric_chloride",
+      "category": "heavy_metal",
+      "domain": "environmental"
+    },
+    {
+      "cid": 1486,
+      "name": "2_4_d",
+      "category": "herbicide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 991,
+      "name": "parathion",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 2256,
+      "name": "atrazine",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 2730,
+      "name": "chlorpyrifos",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 3036,
+      "name": "ddt",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 3496,
+      "name": "glyphosate",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 4004,
+      "name": "malathion",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 40326,
+      "name": "permethrin",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 86287518,
+      "name": "imidacloprid",
+      "category": "pesticide",
+      "domain": "environmental"
+    },
+    {
+      "cid": 9554,
+      "name": "pfoa",
+      "category": "pfas",
+      "domain": "environmental"
+    },
+    {
+      "cid": 74483,
+      "name": "pfos",
+      "category": "pfas",
+      "domain": "environmental"
+    },
+    {
+      "cid": 181977,
+      "name": "dibutyl_phthalate",
+      "category": "plasticizer",
+      "domain": "environmental"
+    },
+    {
+      "cid": 15625,
+      "name": "tcd_dioxin",
+      "category": "pollutant",
+      "domain": "environmental"
+    },
+    {
+      "cid": 6575,
+      "name": "trichloroethylene",
+      "category": "solvent",
+      "domain": "environmental"
+    },
+    {
+      "cid": 31373,
+      "name": "tetrachloroethylene",
+      "category": "solvent",
+      "domain": "environmental"
+    },
+    {
+      "cid": 241,
+      "name": "benzene",
+      "category": "voc",
+      "domain": "environmental"
+    },
+    {
+      "cid": 712,
+      "name": "formaldehyde",
+      "category": "voc",
+      "domain": "environmental"
+    },
+    {
+      "cid": 1140,
+      "name": "toluene",
+      "category": "voc",
+      "domain": "environmental"
+    },
+    {
+      "cid": 14781,
+      "name": "hydroxyapatite",
+      "category": "mineral",
+      "domain": "material"
+    },
+    {
+      "cid": 24261,
+      "name": "silicon_dioxide",
+      "category": "mineral",
+      "domain": "material"
+    },
+    {
+      "cid": 26042,
+      "name": "titanium_dioxide",
+      "category": "mineral",
+      "domain": "material"
+    },
+    {
+      "cid": 9989226,
+      "name": "aluminum_oxide",
+      "category": "mineral",
+      "domain": "material"
+    },
+    {
+      "cid": 196,
+      "name": "adipic_acid",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 6338,
+      "name": "vinyl_chloride",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 6354,
+      "name": "ethylene_oxide",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 6658,
+      "name": "mma",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 7489,
+      "name": "terephthalic_acid",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 7501,
+      "name": "styrene",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 7768,
+      "name": "caprolactam",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 7855,
+      "name": "acrylonitrile",
+      "category": "polymer_monomer",
+      "domain": "material"
+    },
+    {
+      "cid": 62705,
+      "name": "urea_formaldehyde",
+      "category": "polymer_resin",
+      "domain": "material"
+    },
+    {
+      "cid": 2353,
+      "name": "berberine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 5978,
+      "name": "vincristine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 6167,
+      "name": "colchicine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 174174,
+      "name": "atropine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 446220,
+      "name": "cocaine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 3000322,
+      "name": "scopolamine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 3034034,
+      "name": "quinine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 5284371,
+      "name": "codeine",
+      "category": "alkaloid",
+      "domain": "medical"
+    },
+    {
+      "cid": 3730,
+      "name": "iohexol",
+      "category": "contrast_agent",
+      "domain": "medical"
+    },
+    {
+      "cid": 23982,
+      "name": "gadolinium_chelate",
+      "category": "contrast_agent",
+      "domain": "medical"
+    },
+    {
+      "cid": 4201,
+      "name": "minoxidil",
+      "category": "cosmetic",
+      "domain": "medical"
+    },
+    {
+      "cid": 3763,
+      "name": "isoflurane",
+      "category": "drug_anesthetic",
+      "domain": "medical"
+    },
+    {
+      "cid": 4943,
+      "name": "propofol",
+      "category": "drug_anesthetic",
+      "domain": "medical"
+    },
+    {
+      "cid": 5206,
+      "name": "sevoflurane",
+      "category": "drug_anesthetic",
+      "domain": "medical"
+    },
+    {
+      "cid": 3365,
+      "name": "fluconazole",
+      "category": "drug_antifungal",
+      "domain": "medical"
+    },
+    {
+      "cid": 47576,
+      "name": "ketoconazole",
+      "category": "drug_antifungal",
+      "domain": "medical"
+    },
+    {
+      "cid": 5280965,
+      "name": "amphotericin_b",
+      "category": "drug_antifungal",
+      "domain": "medical"
+    },
+    {
+      "cid": 65028,
+      "name": "oseltamivir",
+      "category": "drug_antiviral",
+      "domain": "medical"
+    },
+    {
+      "cid": 392622,
+      "name": "ritonavir",
+      "category": "drug_antiviral",
+      "domain": "medical"
+    },
+    {
+      "cid": 121304016,
+      "name": "remdesivir",
+      "category": "drug_antiviral",
+      "domain": "medical"
+    },
+    {
+      "cid": 135398513,
+      "name": "acyclovir",
+      "category": "drug_antiviral",
+      "domain": "medical"
+    },
+    {
+      "cid": 3958,
+      "name": "lorazepam",
+      "category": "drug_anxiolytic",
+      "domain": "medical"
+    },
+    {
+      "cid": 5732,
+      "name": "zolpidem",
+      "category": "drug_anxiolytic",
+      "domain": "medical"
+    },
+    {
+      "cid": 2162,
+      "name": "amlodipine",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 3961,
+      "name": "losartan",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 5833,
+      "name": "spironolactone",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 54454,
+      "name": "simvastatin",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 60606,
+      "name": "clopidogrel",
+      "category": "drug_cardiovascular",
+      "domain": "medical"
+    },
+    {
+      "cid": 439302,
+      "name": "oxytocin",
+      "category": "drug_hormone",
+      "domain": "medical"
+    },
+    {
+      "cid": 16132283,
+      "name": "glucagon",
+      "category": "drug_hormone",
+      "domain": "medical"
+    },
+    {
+      "cid": 70678557,
+      "name": "insulin",
+      "category": "drug_hormone",
+      "domain": "medical"
+    },
+    {
+      "cid": 5865,
+      "name": "prednisone",
+      "category": "drug_immunosuppressant",
+      "domain": "medical"
+    },
+    {
+      "cid": 126941,
+      "name": "methotrexate",
+      "category": "drug_immunosuppressant",
+      "domain": "medical"
+    },
+    {
+      "cid": 3152,
+      "name": "donepezil",
+      "category": "drug_neurology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3446,
+      "name": "gabapentin",
+      "category": "drug_neurology",
+      "domain": "medical"
+    },
+    {
+      "cid": 6047,
+      "name": "levodopa",
+      "category": "drug_neurology",
+      "domain": "medical"
+    },
+    {
+      "cid": 34359,
+      "name": "carbidopa",
+      "category": "drug_neurology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5486971,
+      "name": "pregabalin",
+      "category": "drug_neurology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5291,
+      "name": "imatinib",
+      "category": "drug_oncology",
+      "domain": "medical"
+    },
+    {
+      "cid": 36314,
+      "name": "paclitaxel",
+      "category": "drug_oncology",
+      "domain": "medical"
+    },
+    {
+      "cid": 426756,
+      "name": "carboplatin",
+      "category": "drug_oncology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2733526,
+      "name": "tamoxifen",
+      "category": "drug_oncology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5702198,
+      "name": "cisplatin",
+      "category": "drug_oncology",
+      "domain": "medical"
+    },
+    {
+      "cid": 237,
+      "name": "quinacrine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 323,
+      "name": "coumarin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 338,
+      "name": "salicylic_acid",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 896,
+      "name": "melatonin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 1775,
+      "name": "phenytoin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 1986,
+      "name": "acetazolamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2148,
+      "name": "aminohippuric_acid",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2164,
+      "name": "amobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2179,
+      "name": "amsacrine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2294,
+      "name": "barbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2369,
+      "name": "betaxolol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2375,
+      "name": "bicalutamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2477,
+      "name": "buspirone",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2479,
+      "name": "butabarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2481,
+      "name": "butalbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2520,
+      "name": "verapamil",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2712,
+      "name": "chlordiazepoxide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2756,
+      "name": "cimetidine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2764,
+      "name": "ciprofloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2801,
+      "name": "clomipramine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 2802,
+      "name": "clonazepam",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3007,
+      "name": "amphetamine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3016,
+      "name": "diazepam",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3038,
+      "name": "dichlorphenamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3278,
+      "name": "ethacrynic_acid",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3295,
+      "name": "ethoxzolamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3373,
+      "name": "flumazenil",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3440,
+      "name": "furosemide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3463,
+      "name": "gemfibrozil",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3559,
+      "name": "haloperidol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3608,
+      "name": "hexobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3639,
+      "name": "hydrochlorothiazide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3657,
+      "name": "hydroxyurea",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3696,
+      "name": "imipramine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3702,
+      "name": "indapamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3715,
+      "name": "indomethacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3767,
+      "name": "isoniazid",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3779,
+      "name": "isoproterenol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3822,
+      "name": "ketanserin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3826,
+      "name": "ketorolac",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3869,
+      "name": "labetalol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3998,
+      "name": "mafenide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4032,
+      "name": "mecamylamine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4033,
+      "name": "mechlorethamine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4099,
+      "name": "metharbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4100,
+      "name": "methazolamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4114,
+      "name": "methoxsalen",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4171,
+      "name": "metoprolol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4184,
+      "name": "mianserin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4212,
+      "name": "mitoxantrone",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4421,
+      "name": "nalidixic_acid",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4463,
+      "name": "nevirapine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4539,
+      "name": "norfloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4543,
+      "name": "nortriptyline",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4583,
+      "name": "ofloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4595,
+      "name": "ondansetron",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4735,
+      "name": "pentamidine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4737,
+      "name": "pentobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4763,
+      "name": "phenobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4883,
+      "name": "practolol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4893,
+      "name": "prazosin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4946,
+      "name": "propranolol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 4993,
+      "name": "pyrimethamine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5193,
+      "name": "secobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5215,
+      "name": "sulfadiazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5320,
+      "name": "sulfacetamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5325,
+      "name": "sulfamerazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5327,
+      "name": "sulfamethazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5329,
+      "name": "sulfamethoxazole",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5330,
+      "name": "sulfamethoxypyridazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5333,
+      "name": "sulfanilamide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5339,
+      "name": "sulfasalazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5340,
+      "name": "sulfathiazole",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5344,
+      "name": "sulfisoxazole",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5355,
+      "name": "sulpiride",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5379,
+      "name": "gatifloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5426,
+      "name": "thalidomide",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5566,
+      "name": "trifluoperazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5578,
+      "name": "trimethoprim",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5591,
+      "name": "troglitazone",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5831,
+      "name": "carbachol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5838,
+      "name": "cyclobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 6005,
+      "name": "apomorphine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 6464,
+      "name": "aprobarbital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 6883,
+      "name": "isosorbide_dinitrate",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 8223,
+      "name": "ergotamine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 9034,
+      "name": "methohexital",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 10607,
+      "name": "podofilox",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 22419,
+      "name": "olsalazine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 23897,
+      "name": "molindone",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 38409,
+      "name": "ticrynafen",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 38853,
+      "name": "methyldopa",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 39186,
+      "name": "diltiazem",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 41867,
+      "name": "epirubicin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 53359,
+      "name": "tolrestat",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 62959,
+      "name": "trovafloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 123630,
+      "name": "tazobactam",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 130313,
+      "name": "sulbactam",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 149096,
+      "name": "levofloxacin_anhydrous",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 152946,
+      "name": "moxifloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 183797,
+      "name": "melagatran",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 444795,
+      "name": "tretinoin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 445643,
+      "name": "tacrolimus_anhydrous",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 448537,
+      "name": "diethylstilbestrol",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3000715,
+      "name": "thiopental",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 3032285,
+      "name": "thiamylal",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5282375,
+      "name": "etretinate",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5311447,
+      "name": "spirapril",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 5702063,
+      "name": "guanabenz",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 9571107,
+      "name": "gemifloxacin",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 16760703,
+      "name": "valproate_sodium",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 135398737,
+      "name": "clozapine",
+      "category": "drug_pharmacology",
+      "domain": "medical"
+    },
+    {
+      "cid": 444,
+      "name": "bupropion",
+      "category": "drug_psychiatric",
+      "domain": "medical"
+    },
+    {
+      "cid": 5002,
+      "name": "quetiapine",
+      "category": "drug_psychiatric",
+      "domain": "medical"
+    },
+    {
+      "cid": 11125,
+      "name": "lithium_carbonate",
+      "category": "drug_psychiatric",
+      "domain": "medical"
+    },
+    {
+      "cid": 43815,
+      "name": "paroxetine",
+      "category": "drug_psychiatric",
+      "domain": "medical"
+    },
+    {
+      "cid": 2083,
+      "name": "albuterol",
+      "category": "drug_respiratory",
+      "domain": "medical"
+    },
+    {
+      "cid": 5281040,
+      "name": "montelukast",
+      "category": "drug_respiratory",
+      "domain": "medical"
+    }
+  ]
+}

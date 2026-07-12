@@ -14,7 +14,7 @@ DATA = ROOT / "data"
 
 DOMAIN_CONFIG: dict[str, tuple[str, str, int, str]] = {
     "Materials_Project_Live_Panel": ("materials_project_live_panel", "MaterialsProjectLivePanelPriors", 16, "materials_project_live_panel_benchmark.json"),
-    "PubChem_Live_Deep": ("pubchem_live_deep", "PubChemLiveDeepPriors", 18, "pubchem_live_deep_benchmark.json"),
+    "PubChem_Live_Deep": ("pubchem_live_deep", "PubChemLiveDeepPriors", 20, "pubchem_live_deep_benchmark.json"),
     "OpenNeuro_Full_Panel": ("openneuro_full_panel", "OpenNeuroFullPanelPriors", 14, "openneuro_full_panel_benchmark.json"),
     "VizieR_WDS_TAP_Live_Deep": ("vizier_wds_tap_live_deep", "VizieRWdsTapLiveDeepPriors", 21, "vizier_wds_tap_live_deep_benchmark.json"),
     "Live_Ingest_Spine": ("live_ingest_spine", "LiveIngestSpinePriors", 17, "live_ingest_spine_benchmark.json"),

@@ -14,7 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 VENDOR_PUBCHEM = ROOT / "vendor" / "public_data" / "pubchem"
 PANEL_PATH = VENDOR_PUBCHEM / "pubchem_preregistered_panel.json"
-CULINARY_PANEL_PATH = VENDOR_PUBCHEM / "pubchem_culinary_expansion.json"
+AUTO_EXPANSION_PATH = VENDOR_PUBCHEM / "pubchem_auto_expansion.json"
 BUNDLED_SUMMARY = VENDOR_PUBCHEM / "pubchem_summary.json"
 
 PUG_PROPERTIES = (
@@ -54,10 +54,21 @@ def _merge_panel_rows(*docs: dict) -> list[dict]:
     return out
 
 
+def expansion_panel_paths() -> list[Path]:
+    paths = [PANEL_PATH]
+    for path in sorted(VENDOR_PUBCHEM.glob("pubchem_*expansion*.json")):
+        if path not in paths:
+            paths.append(path)
+    if AUTO_EXPANSION_PATH.exists() and AUTO_EXPANSION_PATH not in paths:
+        paths.append(AUTO_EXPANSION_PATH)
+    return paths
+
+
 def load_panel() -> list[dict]:
-    docs = [json.loads(PANEL_PATH.read_text(encoding="utf-8"))]
-    if CULINARY_PANEL_PATH.exists():
-        docs.append(json.loads(CULINARY_PANEL_PATH.read_text(encoding="utf-8")))
+    docs: list[dict] = []
+    for path in expansion_panel_paths():
+        if path.exists():
+            docs.append(json.loads(path.read_text(encoding="utf-8")))
     return _merge_panel_rows(*docs)
 
 
@@ -65,7 +76,7 @@ def panel_cids(*, deep: bool | None = None) -> list[int]:
     panel = load_panel()
     if deep is None:
         deep = _deep_mode()
-    limit = len(panel) if deep else min(150, len(panel))
+    limit = len(panel) if deep else min(500, len(panel))
     return [int(r["cid"]) for r in panel[:limit]]
 
 
