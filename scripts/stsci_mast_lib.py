@@ -23,7 +23,9 @@ MAST_INVOKE = "https://mast.stsci.edu/api/v0/invoke"
 
 
 def _deep_mode() -> bool:
-    return os.environ.get("FSOT_TIER79_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
+    from live_api_limits import tier79_deep  # noqa: WPS433
+
+    return tier79_deep()
 
 
 def external_cache_root() -> Path:
@@ -109,7 +111,9 @@ def ingest_mast(*, offline: bool = False) -> dict:
         source = "bundled_offline"
     else:
         objects: list[dict] = []
-        pagesize = 400 if _deep_mode() else 200
+        from live_api_limits import mast_pagesize  # noqa: WPS433
+
+        pagesize = mast_pagesize()
         for target in targets:
             try:
                 objects.append(aggregate_target_stats(target, pagesize=pagesize))

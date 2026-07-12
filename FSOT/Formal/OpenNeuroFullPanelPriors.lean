@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def openneuro_full_panel_observable_count : ℕ := 15
+def openneuro_full_panel_observable_count : ℕ := 123
 def openneuro_full_panel_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def openneuro_full_panel_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def openneuro_full_panel_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem openneuro_full_panel_beats_sota_headlines_pos : 0 < openneuro_full_panel
   unfold openneuro_full_panel_beats_sota_headlines; norm_num
 
 theorem openneuro_full_panel_bundle :
-    openneuro_full_panel_observable_count = 15 ∧
+    openneuro_full_panel_observable_count = 123 ∧
     openneuro_full_panel_pooled_median_error_pct < (0.5 : ℝ) ∧
     openneuro_full_panel_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

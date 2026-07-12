@@ -1,37 +1,24 @@
 {
-  "generated_at": "2026-07-11T15:13:01.005177+00:00",
+  "generated_at": "2026-07-12T11:33:24.112302+00:00",
   "domain": "OpenAlex_Citation_Graph",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
-  "source": "https://api.openalex.org/works?search=fluid+dynamics&per-page=150&mailto=fsot-verification%40example.com",
+  "source": "https://api.openalex.org/works?search=fluid+dynamics&per-page=200&mailto=fsot-verification%40example.com",
   "maps_to_lean": [
     "consciousness",
     "linguistic"
   ],
   "D_eff": 18,
-  "record_count": 150,
-  "observable_count": 150,
+  "record_count": 200,
+  "observable_count": 200,
   "median_error_pct": 0.0,
   "records": [
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "An Introduction to Fluid Dynamics",
-      "computed": 12366.0,
-      "measured": 12366.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "An Introduction to Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 12369.0,
+      "measured": 12369.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -39,20 +26,7 @@
       "name": "An introduction to fluid dynamics",
       "computed": 6208.0,
       "measured": 6208.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "An introduction to fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -60,20 +34,7 @@
       "name": "Geophysical Fluid Dynamics",
       "computed": 4702.0,
       "measured": 4702.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -81,62 +42,23 @@
       "name": "<i>Computational Methods for Fluid Dynamics</i>",
       "computed": 6038.0,
       "measured": 6038.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "<i>Computational Methods for Fluid Dynamics</i>",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Geophysical Fluid Dynamics",
-      "computed": 3364.0,
-      "measured": 3364.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 3365.0,
+      "measured": 3365.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Computational Methods for Fluid Dynamics",
-      "computed": 3655.0,
-      "measured": 3655.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 3656.0,
+      "measured": 3656.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -144,41 +66,15 @@
       "name": "Spectral Methods in Fluid Dynamics",
       "computed": 3876.0,
       "measured": 3876.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral Methods in Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
-      "computed": 4138.0,
-      "measured": 4138.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 4141.0,
+      "measured": 4141.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -186,20 +82,7 @@
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
       "computed": 3297.0,
       "measured": 3297.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -207,20 +90,7 @@
       "name": "An Introduction to Computational Fluid Dynamics: The Finite ",
       "computed": 4480.0,
       "measured": 4480.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "An Introduction to Computational Fluid Dynamics: The Finite",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -228,41 +98,15 @@
       "name": "Spectral Methods in Fluid Dynamics.",
       "computed": 3100.0,
       "measured": 3100.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral Methods in Fluid Dynamics.",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
-      "computed": 2254.0,
-      "measured": 2254.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 2256.0,
+      "measured": 2256.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -270,20 +114,7 @@
       "name": "Geophysical Fluid Dynamics",
       "computed": 1714.0,
       "measured": 1714.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -291,41 +122,15 @@
       "name": "Spectral Methods In Fluid Dynamics",
       "computed": 2375.0,
       "measured": 2375.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral Methods In Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Volume of fluid (VOF) method for the dynamics of free bounda",
-      "computed": 15703.0,
-      "measured": 15703.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Volume of fluid (VOF) method for the dynamics of free bounda",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 15720.0,
+      "measured": 15720.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -333,20 +138,7 @@
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A ",
       "computed": 2953.0,
       "measured": 2953.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -354,41 +146,15 @@
       "name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
       "computed": 2701.0,
       "measured": 2701.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Atmospheric and Oceanic Fluid Dynamics",
-      "computed": 1880.0,
-      "measured": 1880.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Atmospheric and Oceanic Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1885.0,
+      "measured": 1885.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -396,20 +162,7 @@
       "name": "Computational fluid dynamics : the basics with applications",
       "computed": 1893.0,
       "measured": 1893.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics : the basics with applications",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -417,20 +170,7 @@
       "name": "Atmospheric and Oceanic Fluid Dynamics",
       "computed": 1603.0,
       "measured": 1603.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Atmospheric and Oceanic Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -438,20 +178,7 @@
       "name": "Dynamics of Fluids in Porous Media",
       "computed": 9832.0,
       "measured": 9832.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Dynamics of Fluids in Porous Media",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -459,20 +186,7 @@
       "name": "Physical Fluid Dynamics",
       "computed": 1681.0,
       "measured": 1681.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Physical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -480,41 +194,15 @@
       "name": "Spectral Methods in Fluid Dynamics",
       "computed": 1345.0,
       "measured": 1345.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral Methods in Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "computed": 2127.0,
-      "measured": 2127.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 2131.0,
+      "measured": 2131.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -522,20 +210,7 @@
       "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
       "computed": 1610.0,
       "measured": 1610.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Thermo-Fluid Dynamics of Two-Phase Flow",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -543,20 +218,7 @@
       "name": "Modern Developments in Fluid Dynamics",
       "computed": 1649.0,
       "measured": 1649.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Modern Developments in Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -564,20 +226,7 @@
       "name": "Computational Techniques for Fluid Dynamics 1",
       "computed": 1721.0,
       "measured": 1721.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Techniques for Fluid Dynamics 1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -585,20 +234,7 @@
       "name": "Computational Methods for Fluid Dynamics",
       "computed": 1148.0,
       "measured": 1148.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -606,41 +242,15 @@
       "name": "Nonlinear fluid dynamics from gravity",
       "computed": 1203.0,
       "measured": 1203.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Nonlinear fluid dynamics from gravity",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "A spectral element method for fluid dynamics: Laminar flow i",
-      "computed": 2299.0,
-      "measured": 2299.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "A spectral element method for fluid dynamics: Laminar flow i",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 2301.0,
+      "measured": 2301.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -648,20 +258,7 @@
       "name": "Computational methods for fluid dynamics",
       "computed": 1147.0,
       "measured": 1147.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational methods for fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -669,20 +266,7 @@
       "name": "Dynamics of fluids in Porous Media",
       "computed": 6245.0,
       "measured": 6245.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Dynamics of fluids in Porous Media",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -690,20 +274,7 @@
       "name": "An Introduction to Fluid Dynamics",
       "computed": 1073.0,
       "measured": 1073.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "An Introduction to Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -711,20 +282,7 @@
       "name": "Applied Fluid Dynamics Handbook",
       "computed": 899.0,
       "measured": 899.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Applied Fluid Dynamics Handbook",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -732,20 +290,7 @@
       "name": "Elementary Fluid Dynamics",
       "computed": 819.0,
       "measured": 819.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Elementary Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -753,83 +298,31 @@
       "name": "An Introduction to Fluid Dynamics.",
       "computed": 1030.0,
       "measured": 1030.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "An Introduction to Fluid Dynamics.",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Elementary Fluid Dynamics",
-      "computed": 819.0,
-      "measured": 819.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Elementary Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 821.0,
+      "measured": 821.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Correlation-Based Transition Modeling for Unstructured Paral",
-      "computed": 1471.0,
-      "measured": 1471.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Correlation-Based Transition Modeling for Unstructured Paral",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1472.0,
+      "measured": 1472.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Verification and validation in computational fluid dynamics",
-      "computed": 1095.0,
-      "measured": 1095.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Verification and validation in computational fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1098.0,
+      "measured": 1098.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -837,20 +330,7 @@
       "name": "Fluid dynamics of relativistic blast waves",
       "computed": 1214.0,
       "measured": 1214.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid dynamics of relativistic blast waves",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -858,20 +338,7 @@
       "name": "Computational Methods for Fluid Dynamics",
       "computed": 1071.0,
       "measured": 1071.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -879,41 +346,15 @@
       "name": "Lectures on Geophysical Fluid Dynamics",
       "computed": 806.0,
       "measured": 806.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Lectures on Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Spectral/hp Element Methods for Computational Fluid Dynamics",
-      "computed": 1469.0,
-      "measured": 1469.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral/hp Element Methods for Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1471.0,
+      "measured": 1471.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -921,20 +362,7 @@
       "name": "Physical Fluid Dynamics",
       "computed": 918.0,
       "measured": 918.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Physical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -942,20 +370,7 @@
       "name": "Navier-stokes, fluid dynamics, and image and video inpaintin",
       "computed": 1044.0,
       "measured": 1044.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Navier-stokes, fluid dynamics, and image and video inpaintin",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -963,20 +378,7 @@
       "name": "Principles of Computational Fluid Dynamics",
       "computed": 867.0,
       "measured": 867.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Principles of Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -984,20 +386,7 @@
       "name": "Finite difference method for numerical computation of discon",
       "computed": 1840.0,
       "measured": 1840.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Finite difference method for numerical computation of discon",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1005,20 +394,7 @@
       "name": "Fluid dynamics of multiphase systems",
       "computed": 983.0,
       "measured": 983.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid dynamics of multiphase systems",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1026,20 +402,7 @@
       "name": "Computational fluid dynamics",
       "computed": 681.0,
       "measured": 681.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1047,20 +410,7 @@
       "name": "The Finite Volume Method in Computational Fluid Dynamics",
       "computed": 945.0,
       "measured": 945.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Finite Volume Method in Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1068,20 +418,7 @@
       "name": "Numerical Methods in Fluid Dynamics",
       "computed": 968.0,
       "measured": 968.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical Methods in Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1089,20 +426,7 @@
       "name": "Essentials of fluid dynamics",
       "computed": 817.0,
       "measured": 817.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Essentials of fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1110,41 +434,15 @@
       "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
       "computed": 1008.0,
       "measured": 1008.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Compressible-Fluid Dynamics",
-      "computed": 811.0,
-      "measured": 811.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Compressible-Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 812.0,
+      "measured": 812.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1152,20 +450,7 @@
       "name": "Finite difference methods for numerical computation of disco",
       "computed": 1694.0,
       "measured": 1694.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Finite difference methods for numerical computation of disco",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1173,20 +458,7 @@
       "name": "Computational fluid dynamics a practical approach",
       "computed": 784.0,
       "measured": 784.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics a practical approach",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1194,41 +466,15 @@
       "name": "Introduction to Geophysical Fluid Dynamics",
       "computed": 814.0,
       "measured": 814.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Introduction to Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Deep learning in fluid dynamics",
-      "computed": 840.0,
-      "measured": 840.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Deep learning in fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 842.0,
+      "measured": 842.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1236,41 +482,7 @@
       "name": "Finite Elements and Fast Iterative Solvers: with Application",
       "computed": 1196.0,
       "measured": 1196.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Finite Elements and Fast Iterative Solvers: with Application",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Geophysical Fluid Dynamics",
-      "computed": 622.0,
-      "measured": 622.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1278,20 +490,15 @@
       "name": "The Finite Element Method for Fluid Dynamics",
       "computed": 720.0,
       "measured": 720.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Finite Element Method for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 622.0,
+      "measured": 622.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1299,41 +506,7 @@
       "name": "Handbook of Fluid Dynamics",
       "computed": 558.0,
       "measured": 558.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Handbook of Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Introduction to computational fluid dynamics",
-      "computed": 807.0,
-      "measured": 807.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Introduction to computational fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1341,20 +514,15 @@
       "name": "The Finite Element Method in Heat Transfer and Fluid Dynamic",
       "computed": 1133.0,
       "measured": 1133.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Finite Element Method in Heat Transfer and Fluid Dynamic",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Introduction to computational fluid dynamics",
+      "computed": 807.0,
+      "measured": 807.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1362,41 +530,7 @@
       "name": "Computational Fluid Dynamics",
       "computed": 706.0,
       "measured": 706.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Dynamics and thermodynamics of compressible fluid flow",
-      "computed": 2838.0,
-      "measured": 2838.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Dynamics and thermodynamics of compressible fluid flow",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1404,20 +538,15 @@
       "name": "Fluid Dynamics of Viscoelastic Liquids",
       "computed": 797.0,
       "measured": 797.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid Dynamics of Viscoelastic Liquids",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Dynamics and thermodynamics of compressible fluid flow",
+      "computed": 2838.0,
+      "measured": 2838.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1425,20 +554,7 @@
       "name": "Investigating Non-Newtonian Fluid Behavior in Hydrocyclones ",
       "computed": 958.0,
       "measured": 958.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Investigating Non-Newtonian Fluid Behavior in Hydrocyclones",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1446,41 +562,15 @@
       "name": "Computational Techniques for Fluid Dynamics 2",
       "computed": 848.0,
       "measured": 848.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Techniques for Fluid Dynamics 2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Computational Methods for Fluid Dynamics",
-      "computed": 744.0,
-      "measured": 744.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 745.0,
+      "measured": 745.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1488,41 +578,7 @@
       "name": "Computational Fluid Dynamics: Principles and Applications Ed",
       "computed": 829.0,
       "measured": 829.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics: Principles and Applications Ed",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
-      "computed": 813.0,
-      "measured": 813.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid Dynamics and Transport of Droplets and Sprays",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1530,20 +586,15 @@
       "name": "Computational Fluid Dynamics",
       "computed": 632.0,
       "measured": 632.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
+      "computed": 813.0,
+      "measured": 813.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1551,20 +602,7 @@
       "name": "Dynamics of Fluids in Porous Media",
       "computed": 3472.0,
       "measured": 3472.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Dynamics of Fluids in Porous Media",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1572,20 +610,7 @@
       "name": "Computational Fluid Dynamics: Principles and Applications",
       "computed": 799.0,
       "measured": 799.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics: Principles and Applications",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1593,20 +618,7 @@
       "name": "Computational Fluid Dynamics",
       "computed": 500.0,
       "measured": 500.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1614,62 +626,23 @@
       "name": "Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Lar",
       "computed": 868.0,
       "measured": 868.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Lar",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Multiquadrics\u2014A scattered data approximation scheme with app",
-      "computed": 1944.0,
-      "measured": 1944.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Multiquadrics\u2014A scattered data approximation scheme with app",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1946.0,
+      "measured": 1946.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Fundamental Fluid Dynamics Challenges in Inkjet Printing",
-      "computed": 664.0,
-      "measured": 664.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fundamental Fluid Dynamics Challenges in Inkjet Printing",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 665.0,
+      "measured": 665.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1677,41 +650,15 @@
       "name": "Introduction to Computational Fluid Dynamics",
       "computed": 494.0,
       "measured": 494.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Introduction to Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Computational Fluid Dynamics Applied to Cardiac Computed Tom",
-      "computed": 1200.0,
-      "measured": 1200.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics Applied to Cardiac Computed Tom",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 1202.0,
+      "measured": 1202.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1719,62 +666,23 @@
       "name": "Computational methods for fluid dynamics",
       "computed": 563.0,
       "measured": 563.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational methods for fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Fluid Dynamics of Bacterial Turbulence",
-      "computed": 568.0,
-      "measured": 568.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid Dynamics of Bacterial Turbulence",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 570.0,
+      "measured": 570.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Multiquadrics\u2014A scattered data approximation scheme with app",
-      "computed": 2031.0,
-      "measured": 2031.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Multiquadrics\u2014A scattered data approximation scheme with app",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 2033.0,
+      "measured": 2033.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1782,20 +690,7 @@
       "name": "Numerical Methods for Wave Equations in Geophysical Fluid Dy",
       "computed": 873.0,
       "measured": 873.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical Methods for Wave Equations in Geophysical Fluid Dy",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1803,62 +698,23 @@
       "name": "Computational Fluid Dynamics for Engineers",
       "computed": 614.0,
       "measured": 614.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics for Engineers",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Uncertainty Quantification and Polynomial Chaos Techniques i",
-      "computed": 772.0,
-      "measured": 772.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Uncertainty Quantification and Polynomial Chaos Techniques i",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 773.0,
+      "measured": 773.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Enhancing computational fluid dynamics with machine learning",
-      "computed": 551.0,
-      "measured": 551.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Enhancing computational fluid dynamics with machine learning",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 555.0,
+      "measured": 555.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1866,20 +722,7 @@
       "name": "Turbulence and predictability in geophysical fluid dynamics ",
       "computed": 727.0,
       "measured": 727.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Turbulence and predictability in geophysical fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1887,20 +730,7 @@
       "name": "A new finite element formulation for computational fluid dyn",
       "computed": 1112.0,
       "measured": 1112.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "A new finite element formulation for computational fluid dyn",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1908,41 +738,15 @@
       "name": "The Fluid Dynamics of Taylor Cones",
       "computed": 588.0,
       "measured": 588.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Fluid Dynamics of Taylor Cones",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Fluid dynamics and noise in bacterial cell\u2013cell and cell\u2013sur",
-      "computed": 770.0,
-      "measured": 770.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid dynamics and noise in bacterial cell\u2013cell and cell\u2013sur",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 772.0,
+      "measured": 772.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1950,20 +754,7 @@
       "name": "Numerical Heat Transfer and Fluid Flow",
       "computed": 15204.0,
       "measured": 15204.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical Heat Transfer and Fluid Flow",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1971,21 +762,7 @@
       "name": "Galerkin Proper Orthogonal Decomposition Methods for a Gener",
       "computed": 745.0,
       "measured": 745.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Galerkin Proper Orthogonal Decomposition Methods for a Gener",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -1993,41 +770,15 @@
       "name": "Computational Fluid Dynamics for Engineers",
       "computed": 474.0,
       "measured": 474.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics for Engineers",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Numerical simulation of the gas-solid flow in a fluidized be",
-      "computed": 947.0,
-      "measured": 947.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical simulation of the gas-solid flow in a fluidized be",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 949.0,
+      "measured": 949.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2035,20 +786,7 @@
       "name": "Numerical Methods for Fluid Dynamics",
       "computed": 548.0,
       "measured": 548.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical Methods for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2056,21 +794,7 @@
       "name": "Kinetic Theory and Fluid Dynamics",
       "computed": 449.0,
       "measured": 449.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Kinetic Theory and Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2078,20 +802,7 @@
       "name": "Computational fluid dynamics of dispersed two-phase flows at",
       "computed": 1027.0,
       "measured": 1027.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics of dispersed two-phase flows at",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2099,41 +810,15 @@
       "name": "Effect of Corticosteroids on Intraocular Pressure and Fluid ",
       "computed": 560.0,
       "measured": 560.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Effect of Corticosteroids on Intraocular Pressure and Fluid",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Computational Fluid Dynamics Modeling of Proton Exchange Mem",
-      "computed": 749.0,
-      "measured": 749.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics Modeling of Proton Exchange Mem",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 750.0,
+      "measured": 750.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2141,20 +826,7 @@
       "name": "Introduction to Geophysical Fluid Dynamics - Physical and Nu",
       "computed": 560.0,
       "measured": 560.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Introduction to Geophysical Fluid Dynamics - Physical and Nu",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2162,62 +834,23 @@
       "name": "A new finite element formulation for computational fluid dyn",
       "computed": 1450.0,
       "measured": 1450.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "A new finite element formulation for computational fluid dyn",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Review of computational fluid dynamics for wind turbine wake",
-      "computed": 592.0,
-      "measured": 592.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Review of computational fluid dynamics for wind turbine wake",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 593.0,
+      "measured": 593.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Derivation of transient relativistic fluid dynamics from the",
-      "computed": 639.0,
-      "measured": 639.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Derivation of transient relativistic fluid dynamics from the",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 641.0,
+      "measured": 641.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2225,41 +858,23 @@
       "name": "Fluid Dynamics for Physicists",
       "computed": 348.0,
       "measured": 348.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid Dynamics for Physicists",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Relativistic Fluid Dynamics in and out of Equilibrium",
-      "computed": 415.0,
-      "measured": 415.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Relativistic Fluid Dynamics in and out of Equilibrium",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 418.0,
+      "measured": 418.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for urban physics: Importance, ",
+      "computed": 1103.0,
+      "measured": 1103.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2267,41 +882,7 @@
       "name": "Modeling of glow discharge-induced fluid dynamics",
       "computed": 497.0,
       "measured": 497.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Modeling of glow discharge-induced fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Computational Fluid Dynamics for urban physics: Importance, ",
-      "computed": 1096.0,
-      "measured": 1096.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics for urban physics: Importance,",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2309,20 +890,7 @@
       "name": "COMPUTATIONAL FLUID DYNAMICS",
       "computed": 407.0,
       "measured": 407.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "COMPUTATIONAL FLUID DYNAMICS",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2330,20 +898,7 @@
       "name": "Cardiovascular Fluid Dynamics",
       "computed": 406.0,
       "measured": 406.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Cardiovascular Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2351,20 +906,7 @@
       "name": "Computational fluid dynamics modelling in cardiovascular med",
       "computed": 481.0,
       "measured": 481.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics modelling in cardiovascular med",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2372,20 +914,7 @@
       "name": "Fluid dynamics of R-charged black holes",
       "computed": 557.0,
       "measured": 557.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid dynamics of R-charged black holes",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2393,20 +922,7 @@
       "name": "A numerical fluid dynamics calculation method for all flow s",
       "computed": 546.0,
       "measured": 546.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "A numerical fluid dynamics calculation method for all flow s",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2414,20 +930,7 @@
       "name": "Collective fluid dynamics of a polariton condensate in a sem",
       "computed": 596.0,
       "measured": 596.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Collective fluid dynamics of a polariton condensate in a sem",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2435,20 +938,7 @@
       "name": "The handbook of fluid dynamics",
       "computed": 398.0,
       "measured": 398.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The handbook of fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2456,20 +946,7 @@
       "name": "The Fluid Dynamics of Disease Transmission",
       "computed": 375.0,
       "measured": 375.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Fluid Dynamics of Disease Transmission",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2477,20 +954,7 @@
       "name": "<i>Fluid Dynamics and Heat Transfer</i>",
       "computed": 555.0,
       "measured": 555.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "<i>Fluid Dynamics and Heat Transfer</i>",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2498,20 +962,7 @@
       "name": "Introduction to fluid dynamics",
       "computed": 374.0,
       "measured": 374.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Introduction to fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2519,20 +970,7 @@
       "name": "Dynamics of Fluids in Porous Media",
       "computed": 2065.0,
       "measured": 2065.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Dynamics of Fluids in Porous Media",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2540,20 +978,7 @@
       "name": "Computational vascular fluid dynamics: problems, models and ",
       "computed": 477.0,
       "measured": 477.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational vascular fluid dynamics: problems, models and",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2561,41 +986,15 @@
       "name": "Blood circulation and fluid dynamics in the eye",
       "computed": 464.0,
       "measured": 464.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Blood circulation and fluid dynamics in the eye",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Numerical Calculation of the Fluid Dynamics of Drop-on-Deman",
-      "computed": 575.0,
-      "measured": 575.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Numerical Calculation of the Fluid Dynamics of Drop-on-Deman",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 576.0,
+      "measured": 576.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2603,41 +1002,15 @@
       "name": "The Mechanical Foundations of Elasticity and Fluid Dynamics",
       "computed": 451.0,
       "measured": 451.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The Mechanical Foundations of Elasticity and Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "Fluid Dynamics and Transport of Droplets and Sprays",
-      "computed": 373.0,
-      "measured": 373.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid Dynamics and Transport of Droplets and Sprays",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 374.0,
+      "measured": 374.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2645,20 +1018,7 @@
       "name": "<i>Introduction to Theoretical and Computational Fluid Dynam",
       "computed": 552.0,
       "measured": 552.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "<i>Introduction to Theoretical and Computational Fluid Dynam",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2666,20 +1026,7 @@
       "name": "<i>Fluid Dynamics for Physicists</i>",
       "computed": 342.0,
       "measured": 342.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "<i>Fluid Dynamics for Physicists</i>",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2687,20 +1034,7 @@
       "name": "The fluid dynamics and thermodynamics of eruption columns",
       "computed": 434.0,
       "measured": 434.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The fluid dynamics and thermodynamics of eruption columns",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2708,20 +1042,7 @@
       "name": "Fluid dynamics and heat transfer of turbomachinery",
       "computed": 434.0,
       "measured": 434.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fluid dynamics and heat transfer of turbomachinery",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2729,20 +1050,7 @@
       "name": "PRECONDITIONING TECHNIQUES IN COMPUTATIONAL FLUID DYNAMICS",
       "computed": 432.0,
       "measured": 432.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "PRECONDITIONING TECHNIQUES IN COMPUTATIONAL FLUID DYNAMICS",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2750,20 +1058,7 @@
       "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
       "computed": 371.0,
       "measured": 371.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Thermo-Fluid Dynamics of Two-Phase Flow",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2771,20 +1066,7 @@
       "name": "Geophysical Fluid Dynamics",
       "computed": 263.0,
       "measured": 263.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2792,41 +1074,7 @@
       "name": "Spectral methods for uncertainty quantification : with appli",
       "computed": 594.0,
       "measured": 594.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Spectral methods for uncertainty quantification : with appli",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Computational Techniques for Fluid Dynamics",
-      "computed": 377.0,
-      "measured": 377.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Techniques for Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2834,20 +1082,15 @@
       "name": "The fluid dynamics of river dunes: A review and some future ",
       "computed": 546.0,
       "measured": 546.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The fluid dynamics of river dunes: A review and some future",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics",
+      "computed": 377.0,
+      "measured": 377.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2855,41 +1098,7 @@
       "name": "Computational fluid dynamics",
       "computed": 264.0,
       "measured": 264.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Computational Fluid Dynamics",
-      "computed": 324.0,
-      "measured": 324.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2897,41 +1106,15 @@
       "name": "Computational Fluid Dynamics",
       "computed": 325.0,
       "measured": 325.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
-      "name": "Relativistic Fluid Dynamics",
-      "computed": 256.0,
-      "measured": 256.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Relativistic Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "name": "Computational Fluid Dynamics",
+      "computed": 324.0,
+      "measured": 324.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2939,20 +1122,7 @@
       "name": "The particle-in-cell computing method for fluid dynamics",
       "computed": 463.0,
       "measured": 463.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The particle-in-cell computing method for fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2960,20 +1130,15 @@
       "name": "Computational fluid dynamics",
       "computed": 319.0,
       "measured": 319.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -2981,20 +1146,7 @@
       "name": "Geophysical Fluid Dynamics",
       "computed": 310.0,
       "measured": 310.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Geophysical Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3002,20 +1154,7 @@
       "name": "Fundamentals of Computational Fluid Dynamics",
       "computed": 351.0,
       "measured": 351.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Fundamentals of Computational Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3023,20 +1162,7 @@
       "name": "Handbook of mathematical fluid dynamics",
       "computed": 272.0,
       "measured": 272.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Handbook of mathematical fluid dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3044,20 +1170,7 @@
       "name": "Computational Fluid Dynamics: Principles and Applications",
       "computed": 393.0,
       "measured": 393.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Computational Fluid Dynamics: Principles and Applications",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3065,20 +1178,7 @@
       "name": "Lagrangian Fluid Dynamics",
       "computed": 235.0,
       "measured": 235.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Lagrangian Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3086,62 +1186,15 @@
       "name": "The GNAT method for nonlinear model reduction: Effective imp",
       "computed": 662.0,
       "measured": 662.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "The GNAT method for nonlinear model reduction: Effective imp",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "openalex",
-      "property": "cited_by_count",
-      "name": "Topics in Geophysical Fluid Dynamics: Atmospheric Dynamics, ",
-      "computed": 493.0,
-      "measured": 493.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Topics in Geophysical Fluid Dynamics: Atmospheric Dynamics,",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
       "property": "cited_by_count",
       "name": "A review on fluid dynamics of flapping foils",
-      "computed": 284.0,
-      "measured": 284.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "A review on fluid dynamics of flapping foils",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "computed": 285.0,
+      "measured": 285.0,
+      "error_pct": 0.0
     },
     {
       "lab": "openalex",
@@ -3149,26 +1202,415 @@
       "name": "Green Algae as Model Organisms for Biological Fluid Dynamics",
       "computed": 351.0,
       "measured": 351.0,
-      "error_pct": 0.0,
-      "domain_display_name": "openalex",
-      "display_name": "Green Algae as Model Organisms for Biological Fluid Dynamics",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Topics in Geophysical Fluid Dynamics: Atmospheric Dynamics, ",
+      "computed": 493.0,
+      "measured": 493.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Methods in Fluid Dynamics",
+      "computed": 272.0,
+      "measured": 272.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Spectral Methods: Evolution to Complex Geometries and Applic",
+      "computed": 512.0,
+      "measured": 512.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The lattice Boltzmann equation: A new tool for computational",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fundamentals of Computational Fluid Dynamics",
+      "computed": 239.0,
+      "measured": 239.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Effective adjoint approaches for computational fluid dynamic",
+      "computed": 319.0,
+      "measured": 319.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Theoretical and Practical Aspects of Some Initial Boundary V",
+      "computed": 460.0,
+      "measured": 460.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Introduction to Fluid Dynamics",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Physical Fluid Dynamics",
+      "computed": 275.0,
+      "measured": 275.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A new finite element formulation for computational fluid dyn",
+      "computed": 1433.0,
+      "measured": 1433.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A generalized approach to the fluid dynamics of particulate ",
+      "computed": 398.0,
+      "measured": 398.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Variational principles for stochastic fluid dynamics",
+      "computed": 277.0,
+      "measured": 277.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Multigrid Techniques: 1984 Guide with Applications to Fluid ",
+      "computed": 322.0,
+      "measured": 322.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "THE PLUTO CODE FOR ADAPTIVE MESH COMPUTATIONS IN ASTROPHYSIC",
+      "computed": 479.0,
+      "measured": 479.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics: An Introduction for Engineers",
+      "computed": 267.0,
+      "measured": 267.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fundamentals of Two-Fluid Dynamics",
+      "computed": 298.0,
+      "measured": 298.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 214.0,
+      "measured": 214.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Symmetry and Symmetry-Breaking Bifurcations in Fluid Dynamic",
+      "computed": 373.0,
+      "measured": 373.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fractional Differential Equations",
+      "computed": 20501.0,
+      "measured": 20501.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Theoretical and Computational Fluid Dynamics",
+      "computed": 288.0,
+      "measured": 288.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics: Physics for Many Different Scal",
+      "computed": 361.0,
+      "measured": 361.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
+      "computed": 325.0,
+      "measured": 325.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fundamentals of Geophysical Fluid Dynamics",
+      "computed": 227.0,
+      "measured": 227.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Body Fluid Dynamics",
+      "computed": 205.0,
+      "measured": 205.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Review of Output-Based Error Estimation and Mesh Adaptation ",
+      "computed": 410.0,
+      "measured": 410.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Handbook of Fluid Dynamics",
+      "computed": 185.0,
+      "measured": 185.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
+      "computed": 357.0,
+      "measured": 357.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Applications of computational fluid dynamics (cfd) in the fo",
+      "computed": 342.0,
+      "measured": 342.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Image-Based Computational Fluid Dynamics Modeling in Realist",
+      "computed": 372.0,
+      "measured": 372.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Wetting: statics and dynamics",
+      "computed": 7121.0,
+      "measured": 7121.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Heat Transfer of Turbomachinery",
+      "computed": 316.0,
+      "measured": 316.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "DualSPHysics: from fluid dynamics to multiphysics problems",
+      "computed": 354.0,
+      "measured": 354.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Three-Dimensional Environmental Fluid Dynamics Computer Code",
+      "computed": 530.0,
+      "measured": 530.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Incompressible Fluid Dynamics: Some Fundamental Formulation ",
+      "computed": 394.0,
+      "measured": 394.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Methods for multiphase computational fluid dynamics",
+      "computed": 313.0,
+      "measured": 313.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Lacrimal and Instilled Fluid Dynamics in Rabbit Eyes",
+      "computed": 350.0,
+      "measured": 350.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The fluid dynamics of evolving magma chambers",
+      "computed": 309.0,
+      "measured": 309.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "8. Introduction to Fluid Dynamics",
+      "computed": 273.0,
+      "measured": 273.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Causal theories of dissipative relativistic fluid dynamics f",
+      "computed": 321.0,
+      "measured": 321.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Rapid, stable fluid dynamics for computer graphics",
+      "computed": 335.0,
+      "measured": 335.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Perspectives in Fluid Dynamics",
+      "computed": 238.0,
+      "measured": 238.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Cerebrospinal fluid dynamics and intracranial pressure eleva",
+      "computed": 313.0,
+      "measured": 313.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics: theoretical and computational approaches",
+      "computed": 298.0,
+      "measured": 298.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Fluid Dynamics of Cell Motility",
+      "computed": 206.0,
+      "measured": 206.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Simulation in Fluid Dynamics: A Practical Introduc",
+      "computed": 323.0,
+      "measured": 323.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Finite Volume Method in Computational Fluid Dynamics: An",
+      "computed": 410.0,
+      "measured": 410.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Wavelet Methods in Computational Fluid Dynamics",
+      "computed": 284.0,
+      "measured": 284.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics (CFD) \u2013 an effective and effici",
+      "computed": 439.0,
+      "measured": 439.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Relativistic fluid dynamics with spin",
+      "computed": 243.0,
+      "measured": 243.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Review of preconditioning methods for fluid dynamics",
+      "computed": 280.0,
+      "measured": 280.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics of Urban Atmospheres in Complex Terrain",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0
     }
-  ],
-  "display_name": "OpenAlex Citation Graph",
-  "tier_label": "Tier 38",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.739162+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 0
-  }
+  ]
 }

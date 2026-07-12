@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def materials_project_live_panel_observable_count : ℕ := 51
+def materials_project_live_panel_observable_count : ℕ := 141
 def materials_project_live_panel_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def materials_project_live_panel_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def materials_project_live_panel_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem materials_project_live_panel_beats_sota_headlines_pos : 0 < materials_pr
   unfold materials_project_live_panel_beats_sota_headlines; norm_num
 
 theorem materials_project_live_panel_bundle :
-    materials_project_live_panel_observable_count = 51 ∧
+    materials_project_live_panel_observable_count = 141 ∧
     materials_project_live_panel_pooled_median_error_pct < (0.5 : ℝ) ∧
     materials_project_live_panel_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

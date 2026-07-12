@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:13:01.007177+00:00",
+  "generated_at": "2026-07-12T11:33:24.131925+00:00",
   "domain": "CERN_Open_Data_LHC",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "CERN_Open_Data_API",
@@ -8,8 +8,8 @@
     "high_energy"
   ],
   "D_eff": 19,
-  "record_count": 83,
-  "observable_count": 83,
+  "record_count": 200,
+  "observable_count": 200,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -18,20 +18,7 @@
       "name": "LHC2010h_PbPb_VSD_139036",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "LHC2010h PbPb VSD 139036",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -39,20 +26,7 @@
       "name": "Data sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Data sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -60,20 +34,7 @@
       "name": "MC: TTbar sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: TTbar sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -81,20 +42,7 @@
       "name": "MC: W+jets sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: W+jets sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -102,20 +50,7 @@
       "name": "MC: Drell Yan sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: Drell Yan sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -123,20 +58,7 @@
       "name": "MC: WW sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: WW sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -144,20 +66,7 @@
       "name": "MC: WZ sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: WZ sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -165,20 +74,7 @@
       "name": "MC: ZZ sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: ZZ sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -186,20 +82,7 @@
       "name": "MC: single top sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: single top sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -207,20 +90,7 @@
       "name": "MC: QCD sample from the CMS HEP Tutorial",
       "computed": 2012.0,
       "measured": 2012.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "MC: QCD sample from the CMS HEP Tutorial",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -228,20 +98,7 @@
       "name": "/BTau/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/BTau/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -249,20 +106,7 @@
       "name": "/MuOnia/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/MuOnia/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -270,20 +114,7 @@
       "name": "/MultiJet/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/MultiJet/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -291,20 +122,7 @@
       "name": "/Photon/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/Photon/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -312,20 +130,7 @@
       "name": "/ZeroBias/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/ZeroBias/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -333,20 +138,7 @@
       "name": "/Mu/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/Mu/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -354,20 +146,7 @@
       "name": "/Commissioning/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/Commissioning/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -375,20 +154,7 @@
       "name": "Muons and electrons in PAT candidate format derived from /Mu/Run2010B-Apr21ReRec",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Muons and electrons in PAT candidate format derived from /Mu/Run2010B-Apr21ReRec",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -396,20 +162,7 @@
       "name": "Muons and electrons in PAT candidate format derived from /Electron/Run2010B-Apr2",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Muons and electrons in PAT candidate format derived from /Electron/Run2010B-Apr2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -417,20 +170,7 @@
       "name": "/EGMonitor/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/EGMonitor/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -438,20 +178,7 @@
       "name": "Higgs candidate events for use in education and outreach",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Higgs candidate events for use in education and outreach",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -459,20 +186,7 @@
       "name": "J/psi to two muons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "J/psi to two muons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -480,20 +194,7 @@
       "name": "J/psi to two electrons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "J/psi to two electrons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -501,20 +202,7 @@
       "name": "Events with two muons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Events with two muons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -522,20 +210,7 @@
       "name": "Events with two electrons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Events with two electrons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -543,20 +218,7 @@
       "name": "Y to two electrons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Y to two electrons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -564,20 +226,7 @@
       "name": "Z to two electrons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Z to two electrons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -585,20 +234,7 @@
       "name": "Z to two muons from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Z to two muons from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -606,20 +242,7 @@
       "name": "W to electron and neutrino from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "W to electron and neutrino from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -627,20 +250,7 @@
       "name": "W to muon and neutrino from 2010",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "W to muon and neutrino from 2010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -648,20 +258,7 @@
       "name": "Event files for CMS masterclass exercise 2014",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Event files for CMS masterclass exercise 2014",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -669,20 +266,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 1",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -690,20 +274,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 2",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -711,20 +282,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 3",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 3",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -732,20 +290,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 4",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 4",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -753,20 +298,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 5",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 5",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -774,20 +306,7 @@
       "name": "ATLAS WPath 2014 Masterclass dataset 6",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS WPath 2014 Masterclass dataset 6",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -795,20 +314,7 @@
       "name": "Dataset from the ATLAS Higgs Boson Machine Learning Challenge 2014",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "Dataset from the ATLAS Higgs Boson Machine Learning Challenge 2014",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -816,20 +322,7 @@
       "name": "/Electron/Run2010B-Apr21ReReco-v1/AOD",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/Electron/Run2010B-Apr21ReReco-v1/AOD",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -837,20 +330,487 @@
       "name": "LHCb masterclass event files for the event display",
       "computed": 2014.0,
       "measured": 2014.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "LHCb masterclass event files for the event display",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHCb event file for real measurement",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/Jet/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/JetMETTauMonitor/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /BTau/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /EGMonitor/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /Electron/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /Jet/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /JetMETTauMonitor/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /METFwd/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /Mu/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /MuMonitor/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /MuOnia/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /MultiJet/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /Photon/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /Commissioning/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /MinimumBias/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Event display file derived from /ZeroBias/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/METFwd/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Dimuon event information derived from the Run2010B public Mu dataset",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/MinimumBias/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/MuMonitor/Run2010B-Apr21ReReco-v1/AOD",
+      "computed": 2014.0,
+      "measured": 2014.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "Example CSV output file for SUSYBSMAnalysis-RazorFilter",
+      "computed": 2015.0,
+      "measured": 2015.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC2010b_pp_ESD_117222",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC2010h_PbPb_ESD_138275",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10h_PbPb_ESD_139038",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10h_PbPb_ESD_139173",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10h_PbPb_ESD_139437",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10h_PbPb_ESD_139438",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10h_PbPb_ESD_139465",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120076",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120244",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120505",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120616",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120822",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120824",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "LHC10c_pp_ESD_120829",
+      "computed": 2016.0,
+      "measured": 2016.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-550_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-550_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/VBFToHToZZTo2L2Nu_M-300_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/VBFToHToZZTo2L2Nu_M-350_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/VBFToHToZZTo2L2Nu_M-225_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-600_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-600_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/VBFToHToZZTo2L2Nu_M-400_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/ZZJetsTo2L2Q_TuneZ2_7TeV-madgraph-tauola/Summer11LegDR-PU_S13_START53_LV6-v2/AO",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/ZZJetsTo2L2Nu_TuneZ2_7TeV-madgraph-tauola/Summer11LegDR-PU_S13_START53_LV6-v1/A",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-650_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-650_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-700_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-700_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-750_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-800_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-800_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-850_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-900_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-900_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/GluGluToHToZZTo4L_M-950_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/Graviton2PH6ToZZTo4L_M-125p6_7TeV-JHUGenV3-pythia6/Summer11LegDR-PU_S13_START53",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/Higgs0MToGGTo4L_M-125p6_7TeV-powheg15-JHUgenV4/Summer11LegDR-PU_S13_START53_LV6",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/Higgs0MToZGTo4L_M-125p6_7TeV-powheg15-JHUgenV4/Summer11LegDR-PU_S13_START53_LV6",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -858,20 +818,7 @@
       "name": "ATLAS HEPMC format Specialised SM Z-boson 13 TeV",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS HEPMC format Specialised SM Z-boson 13 TeV",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -879,20 +826,7 @@
       "name": "ATLAS 13 TeV samples collection Gamma-Gamma, for 2020 Open Data release",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection Gamma-Gamma, for 2020 Open Data release",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -900,20 +834,7 @@
       "name": "HEPMC format 13 TeV proton-proton Open Data from the ATLAS experiment",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "HEPMC format 13 TeV proton-proton Open Data from the ATLAS experiment",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -921,20 +842,7 @@
       "name": "/QCD_Pt-170to300_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-170to300 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -942,20 +850,7 @@
       "name": "/QCD_Pt-20to30_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU2",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-20to30 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -963,20 +858,7 @@
       "name": "/QCD_Pt-20toInf_MuEnrichedPt15_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-20toInf MuEnrichedPt15 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -984,20 +866,7 @@
       "name": "/QCD_Pt-300to470_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-300to470 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1005,20 +874,7 @@
       "name": "/QCD_Pt-30to50_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU2",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-30to50 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1026,20 +882,7 @@
       "name": "/QCD_Pt-470to600_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-470to600 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1047,20 +890,7 @@
       "name": "/QCD_Pt-600to800_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-600to800 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1068,20 +898,7 @@
       "name": "/QCD_Pt-80to120_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-80to120 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1089,20 +906,7 @@
       "name": "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-800to1000 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1110,20 +914,7 @@
       "name": "/QCD_Pt-50to80_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU2",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-50to80 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1131,20 +922,7 @@
       "name": "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-1000toInf MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1152,20 +930,7 @@
       "name": "/QCD_Pt-120to170_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-120to170 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-P",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1173,20 +938,7 @@
       "name": "/QCD_Pt-15to20_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU2",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt-15to20 MuEnrichedPt5 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1194,20 +946,7 @@
       "name": "ATLAS 13 TeV samples collection exactly three leptons (electron or muon), for 20",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection exactly three leptons (electron or muon), for 20",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1215,20 +954,7 @@
       "name": "ATLAS 13 TeV samples collection exactly two leptons (electron or muon), for 2020",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection exactly two leptons (electron or muon), for 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1236,20 +962,7 @@
       "name": "ATLAS 13 TeV samples collection exactly one lepton (electron or muon), for 2020 ",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection exactly one lepton (electron or muon), for 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1257,20 +970,7 @@
       "name": "/DYToLL_M_1_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/DYToLL M 1 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1 76X",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1278,20 +978,7 @@
       "name": "ATLAS 13 TeV samples collection one large-R jet and one lepton, for 2020 Open Da",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection one large-R jet and one lepton, for 2020 Open Da",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1299,20 +986,7 @@
       "name": "ATLAS 13 TeV samples collection at least four leptons (electron or muon), for 20",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection at least four leptons (electron or muon), for 20",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1320,20 +994,7 @@
       "name": "ATLAS 13 TeV samples collection with at least two leptons (electron or muon), fo",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "ATLAS 13 TeV samples collection with at least two leptons (electron or muon), fo",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1341,20 +1002,7 @@
       "name": "/ZZ_TuneCUETP8M1_13TeV-pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/ZZ TuneCUETP8M1 13TeV-pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1 76X mcRun2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1362,20 +1010,7 @@
       "name": "/QCD_Pt_170to300_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 170to300 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1383,20 +1018,7 @@
       "name": "/QCD_Pt_1800to2400_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData201",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 1800to2400 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData201",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1404,20 +1026,7 @@
       "name": "/QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData201",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 2400to3200 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData201",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1425,20 +1034,7 @@
       "name": "/QCD_Pt_300to470_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 300to470 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1446,20 +1042,7 @@
       "name": "/QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 30to50 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1467,209 +1050,7 @@
       "name": "/QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 3200toInf TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/TTbar_8TeV-Madspin_aMCatNLO-herwig/Summer12_DR53X-PU_S10_START53_V19-v2/AODSIM",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/TTbar 8TeV-Madspin aMCatNLO-herwig/Summer12 DR53X-PU S10 START53 V19-v2/AODSIM",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/TBarToLeptons_t-channel_8TeV-herwig-tauola/Summer12_DR53X-PU_S10_START53_V19-v1",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/TBarToLeptons t-channel 8TeV-herwig-tauola/Summer12 DR53X-PU S10 START53 V19-v1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/TToLeptons_t-channel_8TeV-herwig-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AO",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/TToLeptons t-channel 8TeV-herwig-tauola/Summer12 DR53X-PU S10 START53 V19-v1/AO",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/TBarToLeptons_t-channel_herwig6_8TeV-aMCatNLO-tauola/Summer12_DR53X-PU_S10_STAR",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/TBarToLeptons t-channel herwig6 8TeV-aMCatNLO-tauola/Summer12 DR53X-PU S10 STAR",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/TToLeptons_t-channel_herwig6_8TeV-aMCatNLO-tauola/Summer12_DR53X-PU_S10_START53",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/TToLeptons t-channel herwig6 8TeV-aMCatNLO-tauola/Summer12 DR53X-PU S10 START53",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/QCD_Pt_170_250_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 170 250 EMEnriched TuneZ2star 8TeV pythia6/Summer12 DR53X-PU RD1 START53",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/QCD_Pt_250_350_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 250 350 EMEnriched TuneZ2star 8TeV pythia6/Summer12 DR53X-PU RD1 START53",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53_V",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 30 80 EMEnriched TuneZ2star 8TeV pythia6/Summer12 DR53X-PU RD1 START53 V",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "cern_opendata",
-      "property": "collision_energy_tev",
-      "name": "/QCD_Pt_80_170_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53_",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 80 170 EMEnriched TuneZ2star 8TeV pythia6/Summer12 DR53X-PU RD1 START53",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1677,20 +1058,7 @@
       "name": "/QCD_Pt_5to10_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_7",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 5to10 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1 7",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1698,20 +1066,7 @@
       "name": "/QCD_Pt_600to800_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 600to800 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1719,20 +1074,7 @@
       "name": "/QCD_Pt_800to1000_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 800to1000 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "cern_opendata",
@@ -1740,34 +1082,535 @@
       "name": "/QCD_Pt_50to80_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_",
       "computed": 13.0,
       "measured": 13.0,
-      "error_pct": 0.0,
-      "domain_display_name": "cern opendata",
-      "display_name": "/QCD Pt 50to80 TuneCUETP8M1 13TeV pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    }
-  ],
-  "display_name": "CERN Open Data LHC",
-  "tier_label": "Tier 38",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.749202+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 83,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 83
+      "error_pct": 0.0
     },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_470to600_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_1000to1400_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData201",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_10to15_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_1400to1800_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData201",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/WW_TuneCUETP8M1_13TeV-pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/WZ_TuneCUETP8M1_13TeV-pythia8/RunIIFall15MiniAODv2-PU25nsData2015v1_76X_mcRun2_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "ATLAS 13 TeV samples collection exactly one lepton and exactly one hadronic-reco",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QGToWQToLNu_TuneCP5_13TeV-pythia8-photos/RunIISummer20UL16NanoAODv9-106X_mcRun2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-1",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-106X",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QGToWQToLNu_TuneCP5_13TeV-pythia8-photos/RunIISummer20UL16MiniAODv2-106X_mcRun2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-1",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-106X",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16MiniAODv2-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-20_MuEnrichedPt15_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-106X_",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-10",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8/RunIISummer20UL16NanoAODv9-",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_170to250_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsDat",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-170to300_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_20to30_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-20to30_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25ns",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_250toInf_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsDat",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_300to470_PionKaonDecay_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-300toInf_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-30to50_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25ns",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/TTbar_8TeV-Madspin_aMCatNLO-herwig/Summer12_DR53X-PU_S10_START53_V19-v2/AODSIM",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/TBarToLeptons_t-channel_8TeV-herwig-tauola/Summer12_DR53X-PU_S10_START53_V19-v1",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/TToLeptons_t-channel_8TeV-herwig-tauola/Summer12_DR53X-PU_S10_START53_V19-v1/AO",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/TBarToLeptons_t-channel_herwig6_8TeV-aMCatNLO-tauola/Summer12_DR53X-PU_S10_STAR",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/TToLeptons_t-channel_herwig6_8TeV-aMCatNLO-tauola/Summer12_DR53X-PU_S10_START53",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_170_250_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_250_350_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_30_80_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53_V",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_80_170_EMEnriched_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53_",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/Pyquen_WToENu_TuneZ2_5023GeV_pythia6/HiWinter13-pa_STARTHI53_V27_ext1-v1/GEN-SI",
+      "computed": 2023.0,
+      "measured": 2023.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "dataset_publication_year",
+      "name": "/Pyquen_WToMuNu_TuneZ2_5023GeV_pythia6/HiWinter13-pa_STARTHI53_V27_ext1-v1/GEN-S",
+      "computed": 2023.0,
+      "measured": 2023.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/Pyquen_DYtoEE_M_30_TuneZ2_5TeV02_pythia6/HiWinter13-pa_STARTHI53_V27_ext1-v1/GE",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/Pyquen_DYtoMuMu_M_30_TuneZ2_5TeV02_pythia6/HiWinter13-pa_STARTHI53_V27_ext1-v1/",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_30to80_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-50to80_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25ns",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-80to120_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25n",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_80to170_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-120to170_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt_15to20_bcToE_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25nsData2",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "cern_opendata",
+      "property": "collision_energy_tev",
+      "name": "/QCD_Pt-15to20_EMEnriched_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU25ns",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    }
+  ]
 }

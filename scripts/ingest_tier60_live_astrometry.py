@@ -18,20 +18,14 @@ BUNDLED = VENDOR / "simbad_stellar_identity_sample.json"
 CACHE_NAME = "simbad_live_cache.json"
 
 SIMBAD_TAP = "https://simbad.cds.unistra.fr/simbad/sim-tap/sync"
-def _deep_mode() -> bool:
-    return os.environ.get("FSOT_TIER60_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
-
-
-def _simbad_limit() -> int:
-    return 60 if _deep_mode() else 35
-
-
 def _simbad_adql() -> str:
-    limit = _simbad_limit()
+    from live_api_limits import simbad_top_limit  # noqa: WPS433
+
+    limit = simbad_top_limit()
     return (
         f"SELECT TOP {limit} main_id, otype, sp_type, plx_value, "
         "SQRT(pmra*pmra + pmdec*pmdec) AS pm_total "
-        "FROM basic WHERE otype IN ('SB*','**') AND plx_value > 5"
+        "FROM basic WHERE otype IN ('SB*','**','V*','Mi*','CV*') AND plx_value > 2"
     )
 
 

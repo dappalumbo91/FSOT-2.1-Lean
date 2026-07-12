@@ -35,10 +35,9 @@ ANCHOR_PROPERTIES = (
 
 
 def _deep_mode() -> bool:
-    for key in ("FSOT_TIER68_DEEP", "FSOT_TIER38_DEEP"):
-        if os.environ.get(key, "").strip().lower() in {"1", "true", "yes", "on"}:
-            return True
-    return False
+    from live_api_limits import mega_deep, tier38_deep, tier68_deep  # noqa: WPS433
+
+    return mega_deep() or tier68_deep() or tier38_deep()
 
 
 def _merge_panel_rows(*docs: dict) -> list[dict]:

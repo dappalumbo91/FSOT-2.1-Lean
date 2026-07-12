@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:13:01.001177+00:00",
+  "generated_at": "2026-07-12T11:33:24.112302+00:00",
   "domain": "World_Bank_Development",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "World_Bank_Open_Data",
@@ -8,8 +8,8 @@
     "economic"
   ],
   "D_eff": 20,
-  "record_count": 160,
-  "observable_count": 160,
+  "record_count": 420,
+  "observable_count": 420,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -18,20 +18,7 @@
       "name": "US_2023",
       "computed": 27811517000000.0,
       "measured": 27811517000000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -39,20 +26,7 @@
       "name": "US_2022",
       "computed": 26054614000000.0,
       "measured": 26054614000000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -60,20 +34,7 @@
       "name": "US_2021",
       "computed": 23725645000000.0,
       "measured": 23725645000000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -81,20 +42,7 @@
       "name": "US_2020",
       "computed": 21375281000000.0,
       "measured": 21375281000000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -102,20 +50,47 @@
       "name": "US_2019",
       "computed": 21539982000000.0,
       "measured": 21539982000000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "US_2023",
+      "computed": 336755052.0,
+      "measured": 336755052.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "US_2022",
+      "computed": 333996304.0,
+      "measured": 333996304.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "US_2021",
+      "computed": 332100166.0,
+      "measured": 332100166.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "US_2020",
+      "computed": 331578104.0,
+      "measured": 331578104.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "US_2019",
+      "computed": 330226227.0,
+      "measured": 330226227.0,
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -123,20 +98,7 @@
       "name": "US_2023",
       "computed": 82586.7847707894,
       "measured": 82586.7847707894,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -144,20 +106,7 @@
       "name": "US_2022",
       "computed": 78008.6895811877,
       "measured": 78008.6895811877,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -165,20 +114,7 @@
       "name": "US_2021",
       "computed": 71441.2319805947,
       "measured": 71441.2319805947,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -186,20 +122,7 @@
       "name": "US_2020",
       "computed": 64465.2971415748,
       "measured": 64465.2971415748,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -207,20 +130,7 @@
       "name": "US_2019",
       "computed": 65227.9565911038,
       "measured": 65227.9565911038,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "US 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -228,20 +138,7 @@
       "name": "GB_2023",
       "computed": 3420796653789.08,
       "measured": 3420796653789.08,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -249,20 +146,7 @@
       "name": "GB_2022",
       "computed": 3181244350465.41,
       "measured": 3181244350465.41,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -270,20 +154,7 @@
       "name": "GB_2021",
       "computed": 3194559188925.93,
       "measured": 3194559188925.93,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -291,20 +162,7 @@
       "name": "GB_2020",
       "computed": 2724001478304.59,
       "measured": 2724001478304.59,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -312,20 +170,7 @@
       "name": "GB_2019",
       "computed": 2875710080015.3,
       "measured": 2875710080015.3,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -333,20 +178,7 @@
       "name": "GB_2023",
       "computed": 68526000.0,
       "measured": 68526000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -354,20 +186,7 @@
       "name": "GB_2022",
       "computed": 67636000.0,
       "measured": 67636000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -375,20 +194,7 @@
       "name": "GB_2021",
       "computed": 66978000.0,
       "measured": 66978000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -396,20 +202,7 @@
       "name": "GB_2020",
       "computed": 66740000.0,
       "measured": 66740000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -417,20 +210,7 @@
       "name": "GB_2019",
       "computed": 66628000.0,
       "measured": 66628000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -438,20 +218,7 @@
       "name": "GB_2023",
       "computed": 49919.6896621586,
       "measured": 49919.6896621586,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -459,20 +226,7 @@
       "name": "GB_2022",
       "computed": 47034.7795621476,
       "measured": 47034.7795621476,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -480,20 +234,7 @@
       "name": "GB_2021",
       "computed": 47695.6491523474,
       "measured": 47695.6491523474,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -501,20 +242,7 @@
       "name": "GB_2020",
       "computed": 40815.1255364787,
       "measured": 40815.1255364787,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -522,20 +250,7 @@
       "name": "GB_2019",
       "computed": 43160.6843971799,
       "measured": 43160.6843971799,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "GB 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -543,20 +258,7 @@
       "name": "JP_2023",
       "computed": 4384854269961.93,
       "measured": 4384854269961.93,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -564,20 +266,7 @@
       "name": "JP_2022",
       "computed": 4447976207314.78,
       "measured": 4447976207314.78,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -585,20 +274,7 @@
       "name": "JP_2021",
       "computed": 5225933520753.1,
       "measured": 5225933520753.1,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -606,20 +282,7 @@
       "name": "JP_2020",
       "computed": 5189197543645.38,
       "measured": 5189197543645.38,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -627,20 +290,7 @@
       "name": "JP_2019",
       "computed": 5245755000479.03,
       "measured": 5245755000479.03,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -648,20 +298,7 @@
       "name": "JP_2023",
       "computed": 124516650.0,
       "measured": 124516650.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -669,20 +306,7 @@
       "name": "JP_2022",
       "computed": 125124989.0,
       "measured": 125124989.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -690,20 +314,7 @@
       "name": "JP_2021",
       "computed": 125681593.0,
       "measured": 125681593.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -711,20 +322,7 @@
       "name": "JP_2020",
       "computed": 126261000.0,
       "measured": 126261000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -732,20 +330,7 @@
       "name": "JP_2019",
       "computed": 126633000.0,
       "measured": 126633000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -753,20 +338,7 @@
       "name": "JP_2023",
       "computed": 35215.003535366,
       "measured": 35215.003535366,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -774,20 +346,7 @@
       "name": "JP_2022",
       "computed": 35548.2645222433,
       "measured": 35548.2645222433,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -795,20 +354,7 @@
       "name": "JP_2021",
       "computed": 41580.739040705,
       "measured": 41580.739040705,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -816,20 +362,7 @@
       "name": "JP_2020",
       "computed": 41098.9739004553,
       "measured": 41098.9739004553,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -837,20 +370,7 @@
       "name": "JP_2019",
       "computed": 41424.8655601543,
       "measured": 41424.8655601543,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "JP 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -858,20 +378,7 @@
       "name": "DE_2023",
       "computed": 4562207532490.28,
       "measured": 4562207532490.28,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -879,20 +386,7 @@
       "name": "DE_2022",
       "computed": 4201021706478.62,
       "measured": 4201021706478.62,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -900,20 +394,7 @@
       "name": "DE_2021",
       "computed": 4355251953410.78,
       "measured": 4355251953410.78,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -921,20 +402,7 @@
       "name": "DE_2020",
       "computed": 3941398957073.94,
       "measured": 3941398957073.94,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -942,20 +410,7 @@
       "name": "DE_2019",
       "computed": 3959894794039.21,
       "measured": 3959894794039.21,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -963,20 +418,7 @@
       "name": "DE_2023",
       "computed": 83287273.0,
       "measured": 83287273.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -984,20 +426,7 @@
       "name": "DE_2022",
       "computed": 83177813.0,
       "measured": 83177813.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1005,20 +434,7 @@
       "name": "DE_2021",
       "computed": 83196078.0,
       "measured": 83196078.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1026,20 +442,7 @@
       "name": "DE_2020",
       "computed": 83160871.0,
       "measured": 83160871.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1047,20 +450,7 @@
       "name": "DE_2019",
       "computed": 83092962.0,
       "measured": 83092962.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1068,20 +458,7 @@
       "name": "DE_2023",
       "computed": 54776.7668235491,
       "measured": 54776.7668235491,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1089,20 +466,7 @@
       "name": "DE_2022",
       "computed": 50506.5179638543,
       "measured": 50506.5179638543,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1110,20 +474,7 @@
       "name": "DE_2021",
       "computed": 52349.2459994422,
       "measured": 52349.2459994422,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1131,20 +482,7 @@
       "name": "DE_2020",
       "computed": 47394.8734504469,
       "measured": 47394.8734504469,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1152,20 +490,7 @@
       "name": "DE_2019",
       "computed": 47656.199739747,
       "measured": 47656.199739747,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "DE 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1173,20 +498,7 @@
       "name": "IN_2023",
       "computed": 3500906030644.76,
       "measured": 3500906030644.76,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1194,20 +506,7 @@
       "name": "IN_2022",
       "computed": 3249938492013.47,
       "measured": 3249938492013.47,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1215,20 +514,7 @@
       "name": "IN_2021",
       "computed": 3167270623260.47,
       "measured": 3167270623260.47,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1236,20 +522,7 @@
       "name": "IN_2020",
       "computed": 2674851578587.27,
       "measured": 2674851578587.27,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1257,20 +530,7 @@
       "name": "IN_2019",
       "computed": 2835606256558.19,
       "measured": 2835606256558.19,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1278,20 +538,7 @@
       "name": "IN_2023",
       "computed": 1438069596.0,
       "measured": 1438069596.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1299,20 +546,7 @@
       "name": "IN_2022",
       "computed": 1425423212.0,
       "measured": 1425423212.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1320,20 +554,7 @@
       "name": "IN_2021",
       "computed": 1414203896.0,
       "measured": 1414203896.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1341,20 +562,7 @@
       "name": "IN_2020",
       "computed": 1402617695.0,
       "measured": 1402617695.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1362,20 +570,7 @@
       "name": "IN_2019",
       "computed": 1389030312.0,
       "measured": 1389030312.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1383,20 +578,7 @@
       "name": "IN_2023",
       "computed": 2434.44826340989,
       "measured": 2434.44826340989,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1404,20 +586,7 @@
       "name": "IN_2022",
       "computed": 2279.98145719369,
       "measured": 2279.98145719369,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1425,20 +594,7 @@
       "name": "IN_2021",
       "computed": 2239.61384367482,
       "measured": 2239.61384367482,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1446,20 +602,7 @@
       "name": "IN_2020",
       "computed": 1907.04251637669,
       "measured": 1907.04251637669,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1467,20 +610,7 @@
       "name": "IN_2019",
       "computed": 2041.42863698585,
       "measured": 2041.42863698585,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1488,20 +618,7 @@
       "name": "BR_2023",
       "computed": 2191131765684.63,
       "measured": 2191131765684.63,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1509,20 +626,7 @@
       "name": "BR_2022",
       "computed": 1951923942083.32,
       "measured": 1951923942083.32,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1530,20 +634,7 @@
       "name": "BR_2021",
       "computed": 1670647398904.9,
       "measured": 1670647398904.9,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1551,20 +642,7 @@
       "name": "BR_2020",
       "computed": 1476107231310.49,
       "measured": 1476107231310.49,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1572,20 +650,7 @@
       "name": "BR_2019",
       "computed": 1873288205059.69,
       "measured": 1873288205059.69,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1593,20 +658,7 @@
       "name": "BR_2023",
       "computed": 211140729.0,
       "measured": 211140729.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1614,20 +666,7 @@
       "name": "BR_2022",
       "computed": 210306415.0,
       "measured": 210306415.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1635,20 +674,7 @@
       "name": "BR_2021",
       "computed": 209550294.0,
       "measured": 209550294.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1656,20 +682,7 @@
       "name": "BR_2020",
       "computed": 208660842.0,
       "measured": 208660842.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1677,20 +690,7 @@
       "name": "BR_2019",
       "computed": 207455459.0,
       "measured": 207455459.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1698,20 +698,7 @@
       "name": "BR_2023",
       "computed": 10377.5892792557,
       "measured": 10377.5892792557,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1719,20 +706,7 @@
       "name": "BR_2022",
       "computed": 9281.33334441234,
       "measured": 9281.33334441234,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1740,20 +714,7 @@
       "name": "BR_2021",
       "computed": 7972.5366498646,
       "measured": 7972.5366498646,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1761,20 +722,7 @@
       "name": "BR_2020",
       "computed": 7074.19378337644,
       "measured": 7074.19378337644,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1782,20 +730,7 @@
       "name": "BR_2019",
       "computed": 9029.83326681073,
       "measured": 9029.83326681073,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "BR 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1803,20 +738,7 @@
       "name": "CN_2023",
       "computed": 18270356654533.2,
       "measured": 18270356654533.2,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1824,20 +746,7 @@
       "name": "CN_2022",
       "computed": 18316765021690.2,
       "measured": 18316765021690.2,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1845,20 +754,7 @@
       "name": "CN_2021",
       "computed": 18201698719564.0,
       "measured": 18201698719564.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1866,20 +762,7 @@
       "name": "CN_2020",
       "computed": 14996414166715.1,
       "measured": 14996414166715.1,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1887,20 +770,7 @@
       "name": "CN_2019",
       "computed": 14560167101283.4,
       "measured": 14560167101283.4,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1908,20 +778,7 @@
       "name": "CN_2023",
       "computed": 1410710000.0,
       "measured": 1410710000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1929,20 +786,7 @@
       "name": "CN_2022",
       "computed": 1412175000.0,
       "measured": 1412175000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1950,20 +794,7 @@
       "name": "CN_2021",
       "computed": 1412360000.0,
       "measured": 1412360000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1971,20 +802,7 @@
       "name": "CN_2020",
       "computed": 1411100000.0,
       "measured": 1411100000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -1992,20 +810,7 @@
       "name": "CN_2019",
       "computed": 1407745000.0,
       "measured": 1407745000.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2013,20 +818,7 @@
       "name": "CN_2023",
       "computed": 12951.1782397043,
       "measured": 12951.1782397043,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2034,20 +826,7 @@
       "name": "CN_2022",
       "computed": 12970.6056414327,
       "measured": 12970.6056414327,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2055,20 +834,7 @@
       "name": "CN_2021",
       "computed": 12887.4357242941,
       "measured": 12887.4357242941,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2076,20 +842,7 @@
       "name": "CN_2020",
       "computed": 10627.4637989619,
       "measured": 10627.4637989619,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2097,20 +850,7 @@
       "name": "CN_2019",
       "computed": 10342.9009524335,
       "measured": 10342.9009524335,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CN 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2118,20 +858,7 @@
       "name": "CA_2023",
       "computed": 2196593836347.42,
       "measured": 2196593836347.42,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2139,20 +866,7 @@
       "name": "CA_2022",
       "computed": 2200562785046.32,
       "measured": 2200562785046.32,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2160,20 +874,7 @@
       "name": "CA_2021",
       "computed": 2022377950896.78,
       "measured": 2022377950896.78,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2181,20 +882,7 @@
       "name": "CA_2020",
       "computed": 1655686966881.99,
       "measured": 1655686966881.99,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2202,20 +890,7 @@
       "name": "CA_2019",
       "computed": 1743728952156.85,
       "measured": 1743728952156.85,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2223,20 +898,7 @@
       "name": "CA_2023",
       "computed": 40049088.0,
       "measured": 40049088.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2244,20 +906,7 @@
       "name": "CA_2022",
       "computed": 38950132.0,
       "measured": 38950132.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2265,20 +914,7 @@
       "name": "CA_2021",
       "computed": 38239864.0,
       "measured": 38239864.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2286,20 +922,7 @@
       "name": "CA_2020",
       "computed": 38028638.0,
       "measured": 38028638.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2307,20 +930,7 @@
       "name": "CA_2019",
       "computed": 37618495.0,
       "measured": 37618495.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2328,20 +938,7 @@
       "name": "CA_2023",
       "computed": 54847.5370112652,
       "measured": 54847.5370112652,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2349,20 +946,7 @@
       "name": "CA_2022",
       "computed": 56496.9275340663,
       "measured": 56496.9275340663,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2370,20 +954,7 @@
       "name": "CA_2021",
       "computed": 52886.6407813788,
       "measured": 52886.6407813788,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2391,20 +962,7 @@
       "name": "CA_2020",
       "computed": 43537.8981198851,
       "measured": 43537.8981198851,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2412,20 +970,7 @@
       "name": "CA_2019",
       "computed": 46352.9695208927,
       "measured": 46352.9695208927,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "CA 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2433,20 +978,7 @@
       "name": "AU_2023",
       "computed": 1734451264655.6,
       "measured": 1734451264655.6,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2454,20 +986,7 @@
       "name": "AU_2022",
       "computed": 1695627535475.8,
       "measured": 1695627535475.8,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2475,20 +994,7 @@
       "name": "AU_2021",
       "computed": 1560617493202.69,
       "measured": 1560617493202.69,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2496,20 +1002,7 @@
       "name": "AU_2020",
       "computed": 1333336461648.09,
       "measured": 1333336461648.09,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2517,20 +1010,7 @@
       "name": "AU_2019",
       "computed": 1398349602956.35,
       "measured": 1398349602956.35,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2538,20 +1018,7 @@
       "name": "AU_2023",
       "computed": 26659922.0,
       "measured": 26659922.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2559,20 +1026,7 @@
       "name": "AU_2022",
       "computed": 26018721.0,
       "measured": 26018721.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2580,20 +1034,7 @@
       "name": "AU_2021",
       "computed": 25685412.0,
       "measured": 25685412.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2601,20 +1042,7 @@
       "name": "AU_2020",
       "computed": 25649248.0,
       "measured": 25649248.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2622,20 +1050,7 @@
       "name": "AU_2019",
       "computed": 25334826.0,
       "measured": 25334826.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2643,20 +1058,7 @@
       "name": "AU_2023",
       "computed": 65058.3773146674,
       "measured": 65058.3773146674,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2664,20 +1066,7 @@
       "name": "AU_2022",
       "computed": 65169.5191118657,
       "measured": 65169.5191118657,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2685,20 +1074,7 @@
       "name": "AU_2021",
       "computed": 60758.9044397144,
       "measured": 60758.9044397144,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2706,20 +1082,7 @@
       "name": "AU_2020",
       "computed": 51983.4523666382,
       "measured": 51983.4523666382,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2727,20 +1090,7 @@
       "name": "AU_2019",
       "computed": 55194.7585097428,
       "measured": 55194.7585097428,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "AU 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2748,20 +1098,7 @@
       "name": "IT_2023",
       "computed": 2316882296366.32,
       "measured": 2316882296366.32,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2769,20 +1106,7 @@
       "name": "IT_2022",
       "computed": 2104067630319.46,
       "measured": 2104067630319.46,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2790,20 +1114,7 @@
       "name": "IT_2021",
       "computed": 2179207773596.09,
       "measured": 2179207773596.09,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2811,20 +1122,7 @@
       "name": "IT_2020",
       "computed": 1907481094079.23,
       "measured": 1907481094079.23,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2832,20 +1130,7 @@
       "name": "IT_2019",
       "computed": 2019606796583.53,
       "measured": 2019606796583.53,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2853,20 +1138,7 @@
       "name": "IT_2023",
       "computed": 58984216.0,
       "measured": 58984216.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2874,20 +1146,7 @@
       "name": "IT_2022",
       "computed": 59013667.0,
       "measured": 59013667.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2895,20 +1154,7 @@
       "name": "IT_2021",
       "computed": 59133173.0,
       "measured": 59133173.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2916,20 +1162,7 @@
       "name": "IT_2020",
       "computed": 59438851.0,
       "measured": 59438851.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2937,20 +1170,7 @@
       "name": "IT_2019",
       "computed": 59729081.0,
       "measured": 59729081.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2958,20 +1178,7 @@
       "name": "IT_2023",
       "computed": 39279.699782164,
       "measured": 39279.699782164,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -2979,20 +1186,7 @@
       "name": "IT_2022",
       "computed": 35653.9042103495,
       "measured": 35653.9042103495,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3000,20 +1194,7 @@
       "name": "IT_2021",
       "computed": 36852.5425414951,
       "measured": 36852.5425414951,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3021,20 +1202,7 @@
       "name": "IT_2020",
       "computed": 32091.4866621366,
       "measured": 32091.4866621366,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3042,20 +1210,7 @@
       "name": "IT_2019",
       "computed": 33812.788724868,
       "measured": 33812.788724868,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "IT 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3063,20 +1218,7 @@
       "name": "MX_2023",
       "computed": 1794410347718.25,
       "measured": 1794410347718.25,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3084,20 +1226,7 @@
       "name": "MX_2022",
       "computed": 1466934724243.38,
       "measured": 1466934724243.38,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3105,20 +1234,7 @@
       "name": "MX_2021",
       "computed": 1316569466833.94,
       "measured": 1316569466833.94,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3126,20 +1242,7 @@
       "name": "MX_2020",
       "computed": 1121064767168.8,
       "measured": 1121064767168.8,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3147,20 +1250,7 @@
       "name": "MX_2019",
       "computed": 1304106204006.27,
       "measured": 1304106204006.27,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3168,20 +1258,7 @@
       "name": "MX_2023",
       "computed": 129739759.0,
       "measured": 129739759.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3189,20 +1266,7 @@
       "name": "MX_2022",
       "computed": 128613117.0,
       "measured": 128613117.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3210,20 +1274,7 @@
       "name": "MX_2021",
       "computed": 127648148.0,
       "measured": 127648148.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3231,20 +1282,7 @@
       "name": "MX_2020",
       "computed": 126799054.0,
       "measured": 126799054.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3252,20 +1290,7 @@
       "name": "MX_2019",
       "computed": 125762982.0,
       "measured": 125762982.0,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3273,20 +1298,7 @@
       "name": "MX_2023",
       "computed": 13830.843848864,
       "measured": 13830.843848864,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2023",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3294,20 +1306,7 @@
       "name": "MX_2022",
       "computed": 11405.7940469896,
       "measured": 11405.7940469896,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2022",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3315,20 +1314,7 @@
       "name": "MX_2021",
       "computed": 10314.0506733708,
       "measured": 10314.0506733708,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2021",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3336,20 +1322,7 @@
       "name": "MX_2020",
       "computed": 8841.27074929751,
       "measured": 8841.27074929751,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2020",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "world_bank",
@@ -3357,34 +1330,2047 @@
       "name": "MX_2019",
       "computed": 10369.5553593527,
       "measured": 10369.5553593527,
-      "error_pct": 0.0,
-      "domain_display_name": "world bank",
-      "display_name": "MX 2019",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    }
-  ],
-  "display_name": "World Bank Development",
-  "tier_label": "Tier 38",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.724547+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 160,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 160
+      "error_pct": 0.0
     },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "FR_2023",
+      "computed": 3056250648138.29,
+      "measured": 3056250648138.29,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "FR_2022",
+      "computed": 2794788137066.94,
+      "measured": 2794788137066.94,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "FR_2021",
+      "computed": 2966433692008.09,
+      "measured": 2966433692008.09,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "FR_2020",
+      "computed": 2647926055110.05,
+      "measured": 2647926055110.05,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "FR_2019",
+      "computed": 2722793515171.76,
+      "measured": 2722793515171.76,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "FR_2023",
+      "computed": 68372286.0,
+      "measured": 68372286.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "FR_2022",
+      "computed": 68184457.0,
+      "measured": 68184457.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "FR_2021",
+      "computed": 67842811.0,
+      "measured": 67842811.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "FR_2020",
+      "computed": 67601110.0,
+      "measured": 67601110.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "FR_2019",
+      "computed": 67382061.0,
+      "measured": 67382061.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "FR_2023",
+      "computed": 44700.1384177544,
+      "measured": 44700.1384177544,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "FR_2022",
+      "computed": 40988.6396406579,
+      "measured": 40988.6396406579,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "FR_2021",
+      "computed": 43725.0999521245,
+      "measured": 43725.0999521245,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "FR_2020",
+      "computed": 39169.8606000707,
+      "measured": 39169.8606000707,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "FR_2019",
+      "computed": 40408.2848574751,
+      "measured": 40408.2848574751,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "KR_2023",
+      "computed": 1844800934391.54,
+      "measured": 1844800934391.54,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "KR_2022",
+      "computed": 1799363116866.52,
+      "measured": 1799363116866.52,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "KR_2021",
+      "computed": 1942313560965.9,
+      "measured": 1942313560965.9,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "KR_2020",
+      "computed": 1744070276373.34,
+      "measured": 1744070276373.34,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "KR_2019",
+      "computed": 1751045752054.63,
+      "measured": 1751045752054.63,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "KR_2023",
+      "computed": 51712619.0,
+      "measured": 51712619.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "KR_2022",
+      "computed": 51672569.0,
+      "measured": 51672569.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "KR_2021",
+      "computed": 51769539.0,
+      "measured": 51769539.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "KR_2020",
+      "computed": 51836239.0,
+      "measured": 51836239.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "KR_2019",
+      "computed": 51764822.0,
+      "measured": 51764822.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "KR_2023",
+      "computed": 35674.095995632,
+      "measured": 35674.095995632,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "KR_2022",
+      "computed": 34822.4048404971,
+      "measured": 34822.4048404971,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "KR_2021",
+      "computed": 37518.4635305697,
+      "measured": 37518.4635305697,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "KR_2020",
+      "computed": 33645.7719545073,
+      "measured": 33645.7719545073,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "KR_2019",
+      "computed": 33826.9443301597,
+      "measured": 33826.9443301597,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ES_2023",
+      "computed": 1619481980719.64,
+      "measured": 1619481980719.64,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ES_2022",
+      "computed": 1448850658406.62,
+      "measured": 1448850658406.62,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ES_2021",
+      "computed": 1461244901852.69,
+      "measured": 1461244901852.69,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ES_2020",
+      "computed": 1289783836971.21,
+      "measured": 1289783836971.21,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ES_2019",
+      "computed": 1403496387686.27,
+      "measured": 1403496387686.27,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ES_2023",
+      "computed": 48352528.0,
+      "measured": 48352528.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ES_2022",
+      "computed": 47786102.0,
+      "measured": 47786102.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ES_2021",
+      "computed": 47443821.0,
+      "measured": 47443821.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ES_2020",
+      "computed": 47359424.0,
+      "measured": 47359424.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ES_2019",
+      "computed": 47118501.0,
+      "measured": 47118501.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ES_2023",
+      "computed": 33493.2225409111,
+      "measured": 33493.2225409111,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ES_2022",
+      "computed": 30319.4987196616,
+      "measured": 30319.4987196616,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ES_2021",
+      "computed": 30799.4775937775,
+      "measured": 30799.4775937775,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ES_2020",
+      "computed": 27233.9426461608,
+      "measured": 27233.9426461608,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ES_2019",
+      "computed": 29786.5245689007,
+      "measured": 29786.5245689007,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NL_2023",
+      "computed": 1135475867551.0,
+      "measured": 1135475867551.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NL_2022",
+      "computed": 1046540797548.64,
+      "measured": 1046540797548.64,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NL_2021",
+      "computed": 1054472123449.6,
+      "measured": 1054472123449.6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NL_2020",
+      "computed": 932560861701.17,
+      "measured": 932560861701.17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NL_2019",
+      "computed": 928903005576.469,
+      "measured": 928903005576.469,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NL_2023",
+      "computed": 17877117.0,
+      "measured": 17877117.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NL_2022",
+      "computed": 17700982.0,
+      "measured": 17700982.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NL_2021",
+      "computed": 17533044.0,
+      "measured": 17533044.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NL_2020",
+      "computed": 17441500.0,
+      "measured": 17441500.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NL_2019",
+      "computed": 17344874.0,
+      "measured": 17344874.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NL_2023",
+      "computed": 63515.6030780019,
+      "measured": 63515.6030780019,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NL_2022",
+      "computed": 59123.318556487,
+      "measured": 59123.318556487,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NL_2021",
+      "computed": 60141.9880911492,
+      "measured": 60141.9880911492,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NL_2020",
+      "computed": 53467.9277413737,
+      "measured": 53467.9277413737,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NL_2019",
+      "computed": 53554.9007491475,
+      "measured": 53554.9007491475,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SE_2023",
+      "computed": 578990915246.07,
+      "measured": 578990915246.07,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SE_2022",
+      "computed": 575071237640.921,
+      "measured": 575071237640.921,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SE_2021",
+      "computed": 631693331300.776,
+      "measured": 631693331300.776,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SE_2020",
+      "computed": 544265668451.678,
+      "measured": 544265668451.678,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SE_2019",
+      "computed": 530894124494.418,
+      "measured": 530894124494.418,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SE_2023",
+      "computed": 10536632.0,
+      "measured": 10536632.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SE_2022",
+      "computed": 10486941.0,
+      "measured": 10486941.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SE_2021",
+      "computed": 10415811.0,
+      "measured": 10415811.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SE_2020",
+      "computed": 10353442.0,
+      "measured": 10353442.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SE_2019",
+      "computed": 10278887.0,
+      "measured": 10278887.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SE_2023",
+      "computed": 54950.2834725622,
+      "measured": 54950.2834725622,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SE_2022",
+      "computed": 54836.8907235124,
+      "measured": 54836.8907235124,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SE_2021",
+      "computed": 60647.5416365347,
+      "measured": 60647.5416365347,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SE_2020",
+      "computed": 52568.5726980146,
+      "measured": 52568.5726980146,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SE_2019",
+      "computed": 51648.9892820514,
+      "measured": 51648.9892820514,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CH_2023",
+      "computed": 928435275851.707,
+      "measured": 928435275851.707,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CH_2022",
+      "computed": 858479038993.75,
+      "measured": 858479038993.75,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CH_2021",
+      "computed": 840710023481.35,
+      "measured": 840710023481.35,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CH_2020",
+      "computed": 756096180222.082,
+      "measured": 756096180222.082,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CH_2019",
+      "computed": 736384764156.877,
+      "measured": 736384764156.877,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CH_2023",
+      "computed": 8888822.0,
+      "measured": 8888822.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CH_2022",
+      "computed": 8777088.0,
+      "measured": 8777088.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CH_2021",
+      "computed": 8704546.0,
+      "measured": 8704546.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CH_2020",
+      "computed": 8638167.0,
+      "measured": 8638167.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CH_2019",
+      "computed": 8575280.0,
+      "measured": 8575280.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CH_2023",
+      "computed": 104449.75451772,
+      "measured": 104449.75451772,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CH_2022",
+      "computed": 97809.095567203,
+      "measured": 97809.095567203,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CH_2021",
+      "computed": 96582.8687080693,
+      "measured": 96582.8687080693,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CH_2020",
+      "computed": 87529.7016394892,
+      "measured": 87529.7016394892,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CH_2019",
+      "computed": 85872.9702303454,
+      "measured": 85872.9702303454,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NO_2023",
+      "computed": 502197633322.816,
+      "measured": 502197633322.816,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NO_2022",
+      "computed": 617321834098.986,
+      "measured": 617321834098.986,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NO_2021",
+      "computed": 521592200232.829,
+      "measured": 521592200232.829,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NO_2020",
+      "computed": 382252517921.94,
+      "measured": 382252517921.94,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NO_2019",
+      "computed": 424244886363.636,
+      "measured": 424244886363.636,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NO_2023",
+      "computed": 5519601.0,
+      "measured": 5519601.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NO_2022",
+      "computed": 5457127.0,
+      "measured": 5457127.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NO_2021",
+      "computed": 5408320.0,
+      "measured": 5408320.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NO_2020",
+      "computed": 5379475.0,
+      "measured": 5379475.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NO_2019",
+      "computed": 5347896.0,
+      "measured": 5347896.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NO_2023",
+      "computed": 90984.4087141111,
+      "measured": 90984.4087141111,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NO_2022",
+      "computed": 113122.130765691,
+      "measured": 113122.130765691,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NO_2021",
+      "computed": 96442.5552173002,
+      "measured": 96442.5552173002,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NO_2020",
+      "computed": 71057.5879471399,
+      "measured": 71057.5879471399,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NO_2019",
+      "computed": 79329.3075190012,
+      "measured": 79329.3075190012,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ZA_2023",
+      "computed": 381440724491.232,
+      "measured": 381440724491.232,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ZA_2022",
+      "computed": 407596043067.885,
+      "measured": 407596043067.885,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ZA_2021",
+      "computed": 419986284375.368,
+      "measured": 419986284375.368,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ZA_2020",
+      "computed": 337974655408.055,
+      "measured": 337974655408.055,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ZA_2019",
+      "computed": 389330032224.269,
+      "measured": 389330032224.269,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ZA_2023",
+      "computed": 63212384.0,
+      "measured": 63212384.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ZA_2022",
+      "computed": 62378410.0,
+      "measured": 62378410.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ZA_2021",
+      "computed": 61502603.0,
+      "measured": 61502603.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ZA_2020",
+      "computed": 60562381.0,
+      "measured": 60562381.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ZA_2019",
+      "computed": 59587885.0,
+      "measured": 59587885.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ZA_2023",
+      "computed": 6034.27208964673,
+      "measured": 6034.27208964673,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ZA_2022",
+      "computed": 6534.24867783397,
+      "measured": 6534.24867783397,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ZA_2021",
+      "computed": 6828.75624590017,
+      "measured": 6828.75624590017,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ZA_2020",
+      "computed": 5580.60383075189,
+      "measured": 5580.60383075189,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ZA_2019",
+      "computed": 6533.71121032856,
+      "measured": 6533.71121032856,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NG_2023",
+      "computed": 487387801877.803,
+      "measured": 487387801877.803,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NG_2022",
+      "computed": 646950257575.455,
+      "measured": 646950257575.455,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NG_2021",
+      "computed": 609147716965.348,
+      "measured": 609147716965.348,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NG_2020",
+      "computed": 598586817817.392,
+      "measured": 598586817817.392,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "NG_2019",
+      "computed": 668219992686.575,
+      "measured": 668219992686.575,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NG_2023",
+      "computed": 227882945.0,
+      "measured": 227882945.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NG_2022",
+      "computed": 223150896.0,
+      "measured": 223150896.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NG_2021",
+      "computed": 218529286.0,
+      "measured": 218529286.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NG_2020",
+      "computed": 213996181.0,
+      "measured": 213996181.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "NG_2019",
+      "computed": 209485641.0,
+      "measured": 209485641.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NG_2023",
+      "computed": 2138.76383718757,
+      "measured": 2138.76383718757,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NG_2022",
+      "computed": 2899.16047469267,
+      "measured": 2899.16047469267,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NG_2021",
+      "computed": 2787.48779220991,
+      "measured": 2787.48779220991,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NG_2020",
+      "computed": 2797.184580679,
+      "measured": 2797.184580679,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "NG_2019",
+      "computed": 3189.81286496183,
+      "measured": 3189.81286496183,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "EG_2023",
+      "computed": 395926071447.591,
+      "measured": 395926071447.591,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "EG_2022",
+      "computed": 476747720364.742,
+      "measured": 476747720364.742,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "EG_2021",
+      "computed": 424671765455.704,
+      "measured": 424671765455.704,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "EG_2020",
+      "computed": 383817841547.099,
+      "measured": 383817841547.099,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "EG_2019",
+      "computed": 318678815489.749,
+      "measured": 318678815489.749,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "EG_2023",
+      "computed": 114535772.0,
+      "measured": 114535772.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "EG_2022",
+      "computed": 112618250.0,
+      "measured": 112618250.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "EG_2021",
+      "computed": 110957008.0,
+      "measured": 110957008.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "EG_2020",
+      "computed": 109315124.0,
+      "measured": 109315124.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "EG_2019",
+      "computed": 107553158.0,
+      "measured": 107553158.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "EG_2023",
+      "computed": 3456.78965212363,
+      "measured": 3456.78965212363,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "EG_2022",
+      "computed": 4233.30783744856,
+      "measured": 4233.30783744856,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "EG_2021",
+      "computed": 3827.35415374308,
+      "measured": 3827.35415374308,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "EG_2020",
+      "computed": 3511.11381026379,
+      "measured": 3511.11381026379,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "EG_2019",
+      "computed": 2962.98892023003,
+      "measured": 2962.98892023003,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "AR_2023",
+      "computed": 649461687959.174,
+      "measured": 649461687959.174,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "AR_2022",
+      "computed": 633993756301.08,
+      "measured": 633993756301.08,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "AR_2021",
+      "computed": 486564085480.036,
+      "measured": 486564085480.036,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "AR_2020",
+      "computed": 385740508436.965,
+      "measured": 385740508436.965,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "AR_2019",
+      "computed": 447754683615.225,
+      "measured": 447754683615.225,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "AR_2023",
+      "computed": 45538401.0,
+      "measured": 45538401.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "AR_2022",
+      "computed": 45407904.0,
+      "measured": 45407904.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "AR_2021",
+      "computed": 45312281.0,
+      "measured": 45312281.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "AR_2020",
+      "computed": 45191965.0,
+      "measured": 45191965.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "AR_2019",
+      "computed": 44973465.0,
+      "measured": 44973465.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "AR_2023",
+      "computed": 14261.8465667948,
+      "measured": 14261.8465667948,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "AR_2022",
+      "computed": 13962.1894087223,
+      "measured": 13962.1894087223,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "AR_2021",
+      "computed": 10738.0179223384,
+      "measured": 10738.0179223384,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "AR_2020",
+      "computed": 8535.59938004389,
+      "measured": 8535.59938004389,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "AR_2019",
+      "computed": 9955.97478680428,
+      "measured": 9955.97478680428,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CL_2023",
+      "computed": 335802745366.38,
+      "measured": 335802745366.38,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CL_2022",
+      "computed": 301099244104.003,
+      "measured": 301099244104.003,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CL_2021",
+      "computed": 315507493783.262,
+      "measured": 315507493783.262,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CL_2020",
+      "computed": 254103710483.324,
+      "measured": 254103710483.324,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CL_2019",
+      "computed": 278308438545.118,
+      "measured": 278308438545.118,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CL_2023",
+      "computed": 19658835.0,
+      "measured": 19658835.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CL_2022",
+      "computed": 19553036.0,
+      "measured": 19553036.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CL_2021",
+      "computed": 19456334.0,
+      "measured": 19456334.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CL_2020",
+      "computed": 19370624.0,
+      "measured": 19370624.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CL_2019",
+      "computed": 19197744.0,
+      "measured": 19197744.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CL_2023",
+      "computed": 17081.5180740049,
+      "measured": 17081.5180740049,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CL_2022",
+      "computed": 15399.1044717559,
+      "measured": 15399.1044717559,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CL_2021",
+      "computed": 16216.1840860289,
+      "measured": 16216.1840860289,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CL_2020",
+      "computed": 13117.9930230086,
+      "measured": 13117.9930230086,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CL_2019",
+      "computed": 14496.9345640362,
+      "measured": 14496.9345640362,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CO_2023",
+      "computed": 366901643683.302,
+      "measured": 366901643683.302,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CO_2022",
+      "computed": 345632492851.448,
+      "measured": 345632492851.448,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CO_2021",
+      "computed": 318524633225.395,
+      "measured": 318524633225.395,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CO_2020",
+      "computed": 270348342541.465,
+      "measured": 270348342541.465,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "CO_2019",
+      "computed": 323031701192.84,
+      "measured": 323031701192.84,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CO_2023",
+      "computed": 52321152.0,
+      "measured": 52321152.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CO_2022",
+      "computed": 51737944.0,
+      "measured": 51737944.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CO_2021",
+      "computed": 51188173.0,
+      "measured": 51188173.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CO_2020",
+      "computed": 50629997.0,
+      "measured": 50629997.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "CO_2019",
+      "computed": 49907985.0,
+      "measured": 49907985.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CO_2023",
+      "computed": 7012.49169137756,
+      "measured": 7012.49169137756,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CO_2022",
+      "computed": 6680.44506854481,
+      "measured": 6680.44506854481,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CO_2021",
+      "computed": 6222.62164397614,
+      "measured": 6222.62164397614,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CO_2020",
+      "computed": 5339.68711357943,
+      "measured": 5339.68711357943,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "CO_2019",
+      "computed": 6472.54544924705,
+      "measured": 6472.54544924705,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "PL_2023",
+      "computed": 812451193396.143,
+      "measured": 812451193396.143,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "PL_2022",
+      "computed": 695607470875.276,
+      "measured": 695607470875.276,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "PL_2021",
+      "computed": 689170230665.35,
+      "measured": 689170230665.35,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "PL_2020",
+      "computed": 605914237903.742,
+      "measured": 605914237903.742,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "PL_2019",
+      "computed": 602683770144.88,
+      "measured": 602683770144.88,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "PL_2023",
+      "computed": 36687353.0,
+      "measured": 36687353.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "PL_2022",
+      "computed": 36821749.0,
+      "measured": 36821749.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "PL_2021",
+      "computed": 36981559.0,
+      "measured": 36981559.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "PL_2020",
+      "computed": 37515748.0,
+      "measured": 37515748.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "PL_2019",
+      "computed": 37965475.0,
+      "measured": 37965475.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "PL_2023",
+      "computed": 22145.2660647429,
+      "measured": 22145.2660647429,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "PL_2022",
+      "computed": 18891.2121169279,
+      "measured": 18891.2121169279,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "PL_2021",
+      "computed": 18635.5104895754,
+      "measured": 18635.5104895754,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "PL_2020",
+      "computed": 16150.9304813473,
+      "measured": 16150.9304813473,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "PL_2019",
+      "computed": 15874.5220531254,
+      "measured": 15874.5220531254,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "TR_2023",
+      "computed": 1141242864657.45,
+      "measured": 1141242864657.45,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "TR_2022",
+      "computed": 926097476913.818,
+      "measured": 926097476913.818,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "TR_2021",
+      "computed": 839938668172.134,
+      "measured": 839938668172.134,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "TR_2020",
+      "computed": 733628247119.077,
+      "measured": 733628247119.077,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "TR_2019",
+      "computed": 775853144222.613,
+      "measured": 775853144222.613,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "TR_2023",
+      "computed": 85325965.0,
+      "measured": 85325965.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "TR_2022",
+      "computed": 84979913.0,
+      "measured": 84979913.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "TR_2021",
+      "computed": 84147318.0,
+      "measured": 84147318.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "TR_2020",
+      "computed": 83384680.0,
+      "measured": 83384680.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "TR_2019",
+      "computed": 82579440.0,
+      "measured": 82579440.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "TR_2023",
+      "computed": 13375.0947282864,
+      "measured": 13375.0947282864,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "TR_2022",
+      "computed": 10897.8397861365,
+      "measured": 10897.8397861365,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "TR_2021",
+      "computed": 9981.76398411336,
+      "measured": 9981.76398411336,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "TR_2020",
+      "computed": 8798.11791709313,
+      "measured": 8798.11791709313,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "TR_2019",
+      "computed": 9395.23378001368,
+      "measured": 9395.23378001368,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SA_2023",
+      "computed": 1218584800000.0,
+      "measured": 1218584800000.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SA_2022",
+      "computed": 1239075200000.0,
+      "measured": 1239075200000.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SA_2021",
+      "computed": 982661066666.667,
+      "measured": 982661066666.667,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SA_2020",
+      "computed": 767951200000.0,
+      "measured": 767951200000.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "SA_2019",
+      "computed": 888890133333.333,
+      "measured": 888890133333.333,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SA_2023",
+      "computed": 33702731.0,
+      "measured": 33702731.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SA_2022",
+      "computed": 32175224.0,
+      "measured": 32175224.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SA_2021",
+      "computed": 30784383.0,
+      "measured": 30784383.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SA_2020",
+      "computed": 31552510.0,
+      "measured": 31552510.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "SA_2019",
+      "computed": 30063799.0,
+      "measured": 30063799.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SA_2023",
+      "computed": 36156.8562500172,
+      "measured": 36156.8562500172,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SA_2022",
+      "computed": 38510.2276211037,
+      "measured": 38510.2276211037,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SA_2021",
+      "computed": 31920.7653655643,
+      "measured": 31920.7653655643,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SA_2020",
+      "computed": 24338.8307301067,
+      "measured": 24338.8307301067,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "SA_2019",
+      "computed": 29566.7933827436,
+      "measured": 29566.7933827436,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ID_2023",
+      "computed": 1371166925749.88,
+      "measured": 1371166925749.88,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ID_2022",
+      "computed": 1319101183380.15,
+      "measured": 1319101183380.15,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ID_2021",
+      "computed": 1186509691086.73,
+      "measured": 1186509691086.73,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ID_2020",
+      "computed": 1059054842698.48,
+      "measured": 1059054842698.48,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_current_USD",
+      "name": "ID_2019",
+      "computed": 1119099871350.2,
+      "measured": 1119099871350.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ID_2023",
+      "computed": 281190067.0,
+      "measured": 281190067.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ID_2022",
+      "computed": 278830529.0,
+      "measured": 278830529.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ID_2021",
+      "computed": 276758053.0,
+      "measured": 276758053.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ID_2020",
+      "computed": 274814866.0,
+      "measured": 274814866.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "population_total",
+      "name": "ID_2019",
+      "computed": 272489381.0,
+      "measured": 272489381.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ID_2023",
+      "computed": 4876.2992959843,
+      "measured": 4876.2992959843,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ID_2022",
+      "computed": 4730.83484836107,
+      "measured": 4730.83484836107,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ID_2021",
+      "computed": 4287.17313995098,
+      "measured": 4287.17313995098,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ID_2020",
+      "computed": 3853.70288774146,
+      "measured": 3853.70288774146,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "world_bank",
+      "property": "GDP_per_capita",
+      "name": "ID_2019",
+      "computed": 4106.94856160358,
+      "measured": 4106.94856160358,
+      "error_pct": 0.0
+    }
+  ]
 }

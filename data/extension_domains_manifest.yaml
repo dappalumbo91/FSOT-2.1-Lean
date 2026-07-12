@@ -2606,6 +2606,8 @@ extension_domains:
     expand_script: scripts/expand_pubchem_panel.py
     note: "PubChem auto-expanded panel — PUG REST name discovery + culinary/pharmacology bridges"
 
+  # Mega-deep orchestrator: scripts/expand_all_live_apis.py (all live API tiers)
+
   OpenNeuro_Full_Panel:
     tier: 68
     D_eff: 14

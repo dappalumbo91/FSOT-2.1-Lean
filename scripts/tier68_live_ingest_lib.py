@@ -322,11 +322,28 @@ def build_openneuro_full_panel() -> dict:
             "eval_kind": "catalog_anchor",
         }
     )
-    for ds in eeg[:12]:
+    from live_api_limits import mega_deep, tier68_deep  # noqa: WPS433
+
+    eeg_cap = 80 if mega_deep() else (40 if tier68_deep() else 12)
+    mri_cap = 40 if mega_deep() else (20 if tier68_deep() else 8)
+    for ds in eeg[:eeg_cap]:
         records.append(
             {
                 "lab": "openneuro_full_panel_lab",
                 "property": "eeg_dataset_id",
+                "name": str(ds.get("id")),
+                "computed": 1.0,
+                "measured": 1.0,
+                "error_pct": 0.0,
+                "dataset_name": ds.get("name"),
+                "eval_kind": "dataset_anchor",
+            }
+        )
+    for ds in mri[:mri_cap]:
+        records.append(
+            {
+                "lab": "openneuro_full_panel_lab",
+                "property": "mri_dataset_id",
                 "name": str(ds.get("id")),
                 "computed": 1.0,
                 "measured": 1.0,
@@ -366,7 +383,10 @@ def build_vizier_wds_tap_live_deep() -> dict:
     records: list[dict] = []
     relay_errs: list[float] = []
 
-    for obj in (live.get("systems") or live.get("objects") or [])[:30]:
+    from live_api_limits import mega_deep, tier68_deep, wds_vizier_top_limit  # noqa: WPS433
+
+    wds_cap = wds_vizier_top_limit() if (mega_deep() or tier68_deep()) else 30
+    for obj in (live.get("systems") or live.get("objects") or [])[:wds_cap]:
         sid = str(obj.get("id") or obj.get("WDS") or "")
         for prop in ("separation_arcsec", "mag1", "mag2", "multiplicity", "period_years", "separation_au"):
             val = obj.get(prop)

@@ -18,7 +18,9 @@ DEFAULT_EXTERNAL_ROOT = Path(r"G:\FSOT-PublicData")
 
 
 def _deep_mode() -> bool:
-    return os.environ.get("FSOT_TIER38_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
+    from live_api_limits import tier38_deep  # noqa: WPS433
+
+    return tier38_deep()
 
 ATOMIC_MASS = {
     "H": 1.008,
@@ -181,22 +183,36 @@ def ingest_nist_codata() -> dict:
 
 
 def ingest_gbif() -> dict:
-    url = (
-        "https://api.gbif.org/v1/occurrence/search?"
-        + urllib.parse.urlencode(
-            {
-                "decimalLatitude": "40,45",
-                "decimalLongitude": "-75,-70",
-                "year": "2020,2024",
-                "hasCoordinate": "true",
-                "limit": 300 if _deep_mode() else 120,
-            }
+    from live_api_limits import gbif_occurrence_limit  # noqa: WPS433
+
+    target = gbif_occurrence_limit()
+    rows: list[dict] = []
+    offset = 0
+    while len(rows) < target:
+        page_limit = min(300, target - len(rows))
+        url = (
+            "https://api.gbif.org/v1/occurrence/search?"
+            + urllib.parse.urlencode(
+                {
+                    "decimalLatitude": "40,45",
+                    "decimalLongitude": "-75,-70",
+                    "year": "2020,2024",
+                    "hasCoordinate": "true",
+                    "limit": page_limit,
+                    "offset": offset,
+                }
+            )
         )
-    )
-    raw = _fetch_json(url)
-    rows = raw.get("results") or []
+        raw = _fetch_json(url)
+        batch = raw.get("results") or []
+        if not batch:
+            break
+        rows.extend(batch)
+        offset += len(batch)
+        if len(batch) < page_limit:
+            break
     occurrences = []
-    for row in rows:
+    for row in rows[:target]:
         lat = row.get("decimalLatitude")
         lon = row.get("decimalLongitude")
         if lat is None or lon is None:
@@ -281,7 +297,10 @@ def ingest_world_bank() -> dict:
         ("SP.POP.TOTL", "population_total"),
         ("NY.GDP.PCAP.CD", "GDP_per_capita"),
     ]
-    countries = ["US", "GB", "JP", "DE", "IN", "BR", "CN", "CA", "AU", "IT", "MX"]
+    countries = [
+        "US", "GB", "JP", "DE", "IN", "BR", "CN", "CA", "AU", "IT", "MX", "FR", "KR", "ES",
+        "NL", "SE", "CH", "NO", "ZA", "NG", "EG", "AR", "CL", "CO", "PL", "TR", "SA", "ID",
+    ]
     rows: list[dict] = []
     for iso in countries:
         for ind_id, ind_name in indicators:
@@ -317,7 +336,9 @@ def ingest_nasa_exoplanet() -> dict:
     import csv
     import io
 
-    limit = 150 if _deep_mode() else 80
+    from live_api_limits import nasa_exoplanet_limit  # noqa: WPS433
+
+    limit = nasa_exoplanet_limit()
     query = f"select top {limit} pl_name,hostname,pl_rade,pl_bmasse,pl_orbper,disc_year,sy_dist from pscomppars"
     url = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?" + urllib.parse.urlencode(
         {"query": query, "format": "csv"}
@@ -355,8 +376,12 @@ def ingest_rcsb_pdb() -> dict:
     ]
     if _deep_mode():
         pdb_ids.extend(
-            ["1HTM", "2DHB", "1CGD", "1HHO", "1INS", "1RNT", "2CBA", "1A2Z", "1CBS", "1FDH",
-             "1G6X", "1HIV", "1JNX", "1KTH", "1L2Y"]
+            [
+                "1HTM", "2DHB", "1CGD", "1HHO", "1INS", "1RNT", "2CBA", "1A2Z", "1CBS", "1FDH",
+                "1G6X", "1HIV", "1JNX", "1KTH", "1L2Y", "1A3N", "1BKV", "1C8A", "1D4T", "1E9H",
+                "1F88", "1GZX", "1H6R", "1I6C", "1J8G", "1K4C", "1L9L", "1MBO", "1N5O", "1OCC",
+                "1PYP", "1QYS", "1R6J", "1S3P", "1TEN", "1U19", "1V4P", "1W6Y", "1XDN", "1YCC",
+            ]
         )
     structures: list[dict] = []
     for pdb_id in pdb_ids:
@@ -382,12 +407,14 @@ def ingest_rcsb_pdb() -> dict:
 
 
 def ingest_openalex() -> dict:
+    from live_api_limits import openalex_per_page  # noqa: WPS433
+
     url = (
         "https://api.openalex.org/works?"
         + urllib.parse.urlencode(
             {
                 "search": "fluid dynamics",
-                "per-page": 150 if _deep_mode() else 80,
+                "per-page": openalex_per_page(),
                 "mailto": "fsot-verification@example.com",
             }
         )
@@ -424,10 +451,13 @@ def ingest_pubchem() -> dict:
 
 def ingest_cern_opendata() -> dict:
     datasets = []
+    from live_api_limits import cern_query_sizes  # noqa: WPS433
+
+    recent_n, tev13_n, tev8_n = cern_query_sizes()
     queries = [
-        ("https://opendata.cern.ch/api/records/?size=40&sort=mostrecent&q=&type=Dataset", "recent"),
-        ("https://opendata.cern.ch/api/records/?size=30&q=13%20TeV&type=Dataset", "13tev"),
-        ("https://opendata.cern.ch/api/records/?size=20&q=8%20TeV&type=Dataset", "8tev"),
+        (f"https://opendata.cern.ch/api/records/?size={recent_n}&sort=mostrecent&q=&type=Dataset", "recent"),
+        (f"https://opendata.cern.ch/api/records/?size={tev13_n}&q=13%20TeV&type=Dataset", "13tev"),
+        (f"https://opendata.cern.ch/api/records/?size={tev8_n}&q=8%20TeV&type=Dataset", "8tev"),
     ]
     seen_titles: set[str] = set()
     for url, _tag in queries:
@@ -471,9 +501,13 @@ def ingest_uniprot() -> dict:
     ]
     if _deep_mode():
         accessions.extend(
-            ["P00520", "P69905", "P68871", "P02787", "P00338", "P00488", "P00915", "P01024",
-             "P01112", "P01375", "P01579", "P04075", "P05067", "P05362", "P07355", "P07954",
-             "P09486", "P10636", "P12268", "P12345"]
+            [
+                "P00520", "P02787", "P00338", "P00488", "P00915", "P01024", "P01112", "P01375",
+                "P01579", "P04075", "P05067", "P05362", "P07355", "P07954", "P09486", "P10636",
+                "P12268", "P12345", "P00441", "P00750", "P01019", "P01344", "P01857", "P02100",
+                "P02766", "P02788", "P04114", "P04217", "P05121", "P05412", "P06737", "P07339",
+                "P08123", "P08519", "P09429", "P10275", "P11142", "P12004", "P12821", "P15056",
+            ]
         )
     proteins: list[dict] = []
     for acc in accessions:

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T04:00:37.408124+00:00",
+  "generated_at": "2026-07-12T11:34:41.855491+00:00",
   "domain": "Live_Ingest_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -61,15 +61,15 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 51,
+      "record_count": 141,
       "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "band_gap_eV",
-      "name": "mp-1265",
-      "computed": 3.44,
-      "measured": 3.44,
+      "name": "mp-1023922",
+      "computed": 1.9,
+      "measured": 1.9,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
       "eval_kind": "ingest_relay"
@@ -77,9 +77,9 @@
     {
       "lab": "live_ingest_spine_lab",
       "property": "formation_energy_eV_per_atom",
-      "name": "mp-1265",
-      "computed": -0.73,
-      "measured": -0.73,
+      "name": "mp-1023922",
+      "computed": -1.05,
+      "measured": -1.05,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
       "eval_kind": "ingest_relay"
@@ -87,29 +87,9 @@
     {
       "lab": "live_ingest_spine_lab",
       "property": "bulk_modulus_GPa",
-      "name": "mp-1265",
-      "computed": 142.0,
-      "measured": 142.0,
-      "error_pct": 0.0,
-      "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
-    },
-    {
-      "lab": "live_ingest_spine_lab",
-      "property": "live_vs_bundled_band_gap_eV",
-      "name": "mp-1265",
-      "computed": 3.44,
-      "measured": 3.44,
-      "error_pct": 0.0,
-      "source_panel": "materials_project_live_panel",
-      "eval_kind": "ingest_relay"
-    },
-    {
-      "lab": "live_ingest_spine_lab",
-      "property": "live_vs_bundled_formation_energy_eV_per_atom",
-      "name": "mp-1265",
-      "computed": -0.73,
-      "measured": -0.73,
+      "name": "mp-1023922",
+      "computed": 54.0,
+      "measured": 54.0,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
       "eval_kind": "ingest_relay"
@@ -117,9 +97,29 @@
     {
       "lab": "live_ingest_spine_lab",
       "property": "band_gap_eV",
-      "name": "mp-13",
+      "name": "mp-106",
       "computed": 0.0,
       "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "materials_project_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "live_ingest_spine_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-106",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "materials_project_live_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "live_ingest_spine_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-106",
+      "computed": 180.0,
+      "measured": 180.0,
       "error_pct": 0.0,
       "source_panel": "materials_project_live_panel",
       "eval_kind": "ingest_relay"
@@ -201,15 +201,15 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 15,
+      "record_count": 123,
       "eval_kind": "tier68_bridge"
     },
     {
       "lab": "live_ingest_spine_lab",
       "property": "eeg_dataset_count",
       "name": "openneuro_eeg_index",
-      "computed": 55.0,
-      "measured": 55.0,
+      "computed": 444.0,
+      "measured": 444.0,
       "error_pct": 0.0,
       "source_panel": "openneuro_full_panel",
       "eval_kind": "ingest_relay"
@@ -218,8 +218,8 @@
       "lab": "live_ingest_spine_lab",
       "property": "mri_dataset_count",
       "name": "openneuro_mri_index",
-      "computed": 5.0,
-      "measured": 5.0,
+      "computed": 56.0,
+      "measured": 56.0,
       "error_pct": 0.0,
       "source_panel": "openneuro_full_panel",
       "eval_kind": "ingest_relay"

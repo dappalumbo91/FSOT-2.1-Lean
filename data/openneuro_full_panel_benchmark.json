@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T00:30:17.196251+00:00",
+  "generated_at": "2026-07-12T11:34:41.833497+00:00",
   "domain": "OpenNeuro_Full_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,9 +13,9 @@
     "ai"
   ],
   "D_eff": 14,
-  "record_count": 15,
-  "observable_count": 15,
-  "scalar_record_count": 12,
+  "record_count": 123,
+  "observable_count": 123,
+  "scalar_record_count": 120,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -41,7 +41,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 15
+      "observable_count": 123
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -58,8 +58,8 @@
       "lab": "openneuro_full_panel_lab",
       "property": "eeg_dataset_count",
       "name": "openneuro_eeg_index",
-      "computed": 55.0,
-      "measured": 55.0,
+      "computed": 444.0,
+      "measured": 444.0,
       "error_pct": 0.0,
       "eval_kind": "catalog_anchor"
     },
@@ -67,8 +67,8 @@
       "lab": "openneuro_full_panel_lab",
       "property": "mri_dataset_count",
       "name": "openneuro_mri_index",
-      "computed": 5.0,
-      "measured": 5.0,
+      "computed": 56.0,
+      "measured": 56.0,
       "error_pct": 0.0,
       "eval_kind": "catalog_anchor"
     },
@@ -190,6 +190,1086 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002578",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "P3 study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002680",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Go-nogo categorization and detection task",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002691",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Internal attention study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002718",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Face processing EEG dataset for EEGLAB",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002720",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "BCItempo",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002721",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "filmClips",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002722",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "phBCMIcalibration",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002723",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "phBCMItesting",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002724",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "phBCMItraining",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002725",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "A dataset recording joint EEG-fMRI during affective music listening ",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002778",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "UC San Diego Resting State EEG Data from Patients with Parkinson's Disease",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002791",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "DataSet1",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002814",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "TODO: name of the dataset",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002833",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "DataSet2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002893",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Auditory-Visual Shift Study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Emotion Study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003039",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "free walking study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003061",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "P300 sound task",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003190",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Assesment of the visual stimuli properties in P300 paradigm",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003194",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Neuroepo multisession",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003195",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Placebo Neuroepo multisession",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003343",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Disentangling the percepts of illusory movement and sensory stimulation during tendon vibration in the EEG",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003380",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Corticothalamic communication under analgesia, sedation and gradual ischemia: a multimodal model of controlled gradual cerebral ischemia in pig",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003420",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Dataset 1",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003421",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Dataset 2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003458",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ThreeArmedBandit",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003474",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ProbabilisticSelection",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003478",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Rest",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003490",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Rest",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003505",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003506",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ReinforcementLearning",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003509",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "SimonConflict",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003516",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Attended speaker paradigm (own name in ignored)",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003517",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ContinuousVideoGamePlay",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003518",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "SimonConflict",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003519",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "VisualWorkingMemory",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003522",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ThreeStimAuditoryOddball",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003523",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "VisualWorkingMemory",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003555",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system ",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003570",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG: Improvisation and Musical Structures",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003574",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Reward biases spontaneous neural reactivation during sleep",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003602",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Childhood Sexual Abuse and problem drinking in women: Neurobehavioral mechanisms",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003620",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003626",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Inner Speech",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003638",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG: Electrophysiological biomarkers of behavioral dimensions \nfrom cross-species paradigms",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003645",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Face processing MEEG dataset with HED annotation",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003655",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "VerbalWorkingMemory",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003670",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of transcranial Electrical Stimulation - BIDS",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003690",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG, ECG and pupil data from young and older adults: rest and auditory cued reaction time tasks",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003702",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Social Memory cuing",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003710",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "APPLESEED Example Dataset",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003739",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Perturbed beam-walking task",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003751",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Dataset on Emotion with Naturalistic Stimuli",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003753",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003766",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "HD-EEG task with mouse tracking",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003768",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Simultaneous EEG and fMRI signals during sleep from humans",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003774",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Music Listening- Genre EEG dataset (MUSIN-G)",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003775",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "SRM Resting-state EEG",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003800",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Auditory Gamma Entrainment",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003801",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Neural Tracking to go",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003805",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Multisensory Gamma Entrainment",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003810",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Motor Imagery vs Rest - Low-Cost EEG System",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003822",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #1",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003825",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Human electroencephalography recordings from 50 subjects for 22,248 images from 1,854 object concepts",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003838",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG, pupillometry, ECG and photoplethysmography, and behavioral data in the digit span task",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003846",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Prediction Error",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003885",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds003887",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 3 ",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000001",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds001",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000002",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Classification learning",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000005",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000005",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000006",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000008",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000008",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000011",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Classification learning and tone-counting",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000051",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Cross-language repetition priming",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000052",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000052",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000101",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000101",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000105",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Visual object recognition",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000107",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Word and object processing",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000109",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Social cognitive tasks (animate movement task, moral judgment task, false belief task)",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000017",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000017",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001021",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "NKI-sample",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001037",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "The brain of Chris",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001105",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Social predictive coding",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001110",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Sherlock_Merlin",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001132",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "sherlock",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001145",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Twilight Zone Movie Watching Dataset",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001178",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Example MR artifacts",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001218",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "State representation pictures",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001226",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "BTC_preop",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001228",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Decoding intentions of self and others",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001232",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Competition between items in working memory leads to forgetting",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001233",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "singleFingerRSA",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001235",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Human-Object Interaction",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001241",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Unnamed Dataset",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001246",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Generic Object Decoding",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001247",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "sports_betting_study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001297",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Personally familiar faces",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds001302",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Inverse Base Rate",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000208",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000208_R1.0.0",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000133",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Modafinil alters intrinsic functional connectivity of the right posterior insula: a pharmacological resting state fMRI study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000217",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000217_R1.0.1",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000248",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000248",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000138",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000138_R2.0.0",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000232",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Adjudicating between face-coding models with individual-face fMRI responses",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000256",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000256_R1.0.0",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000236",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "ds000236",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_id",
+      "name": "ds000116",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Auditory and Visual Oddball EEG-fMRI",
       "eval_kind": "dataset_anchor"
     },
     {

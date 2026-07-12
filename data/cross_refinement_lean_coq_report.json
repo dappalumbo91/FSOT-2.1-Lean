@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:36:59.112805+00:00",
+  "generated_at": "2026-07-12T11:28:27.128901+00:00",
   "tier": "79b_cross_refinement",
   "obligation_count_total": 2158,
   "obligation_count_provable": 2102,
@@ -19,9 +19,9 @@
   },
   "margin_summary_by_kind": {
     "lt_half": {
-      "count": 457,
+      "count": 447,
       "min_margin": "0.007472",
-      "median_margin": "0.499999",
+      "median_margin": "0.499966",
       "max_margin": "0.5"
     },
     "nat_pos": {
@@ -37,9 +37,9 @@
       "max_margin": "1446257063881.475"
     },
     "lt_lit": {
-      "count": 161,
+      "count": 171,
       "min_margin": "0E-15",
-      "median_margin": "0.00999999999999997379133088666758",
+      "median_margin": "0.0162552524847247",
       "max_margin": "3269016.3724721107"
     },
     "nat_le_sym": {
@@ -133,7 +133,7 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.499999",
+  "lt_half_pooled_median_margin_to_bound": "0.499966",
   "margin_violations": [
     {
       "id": "aether_prime_priors_bundle",

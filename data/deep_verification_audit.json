@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:38:59.454924+00:00",
+  "generated_at": "2026-07-12T11:30:39.201429+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -20,12 +20,12 @@
     "rust_replay_expected": 1920,
     "rust_replay_formula": "connective + atomic_provable + transcendental (bundles/margins excluded)",
     "by_kind": {
-      "lt_half": 457,
+      "lt_half": 447,
       "nat_pos": 578,
       "bundle_conj": 330,
       "eq_nat": 30,
       "gt_lit": 135,
-      "lt_lit": 161,
+      "lt_lit": 171,
       "nat_le_sym": 31,
       "eq_nat_arith": 32,
       "r_eq_sym": 12,
@@ -91,7 +91,7 @@
     "false_margin_violations": 0,
     "conjunct_atomic_coverage_pct": 100.0,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
-    "lt_half_pooled_median_margin": "0.499999",
+    "lt_half_pooled_median_margin": "0.499966",
     "atomic_triangulated": "1828/1828",
     "bundle_conj_triangulated": "274/274",
     "margin_violations_confirmed_in_lean": 0,
@@ -133,7 +133,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-12T00:25:14.684908+00:00",
+    "generated_at": "2026-07-12T04:09:54.643978+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -195,7 +195,7 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-07-12T00:25:14.944794+00:00",
+    "generated_at": "2026-07-12T04:09:55.062930+00:00",
     "version": "1.0",
     "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
@@ -237,7 +237,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-07-12T00:25:15.201252+00:00",
+    "generated_at": "2026-07-12T04:09:55.465659+00:00",
     "version": "1.0",
     "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
     "headline_claim": "zero free parameters",
@@ -322,12 +322,12 @@
         "bounds": 277
       },
       "by_kind": {
-        "lt_half": 457,
+        "lt_half": 447,
         "nat_pos": 578,
         "bundle_conj": 330,
         "eq_nat": 30,
         "gt_lit": 135,
-        "lt_lit": 161,
+        "lt_lit": 171,
         "nat_le_sym": 31,
         "eq_nat_arith": 32,
         "r_eq_sym": 12,
@@ -364,7 +364,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-12T00:38:53.008987+00:00",
+    "generated_at": "2026-07-12T11:30:30.778544+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
@@ -1507,12 +1507,12 @@
       "body_online": true,
       "body_transport": "file",
       "body_tick": 37905,
-      "habitat_tick": 500,
-      "generation": 78,
+      "habitat_tick": 50,
+      "generation": 90,
       "genome_fp_match": true,
-      "hero_raw_s": 0.5528230939642265,
-      "hero_d_eff": 12.26406477694666,
-      "hero_delta_psi": 0.21392200065445935,
+      "hero_raw_s": 1.0639080756579966,
+      "hero_d_eff": 12.088973926663334,
+      "hero_delta_psi": 0.2162703959593405,
       "benchmark_pass_rate": 1.0,
       "benchmark_n_pass": 37,
       "benchmark_n_total": 37,

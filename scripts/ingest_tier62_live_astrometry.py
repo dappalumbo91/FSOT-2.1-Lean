@@ -22,19 +22,13 @@ WDS_CACHE = "wds_live_cache.json"
 GAIA_TAP = "https://gea.esac.esa.int/tap-server/tap/sync"
 
 
-def _deep_mode() -> bool:
-    return os.environ.get("FSOT_TIER62_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
-
-
-def _gaia_limit() -> int:
-    return 60 if _deep_mode() else 40
-
-
 def _gaia_adql() -> str:
-    limit = _gaia_limit()
+    from live_api_limits import gaia_top_limit  # noqa: WPS433
+
+    limit = gaia_top_limit()
     return (
         f"SELECT TOP {limit} source_id, ra, dec, parallax, pmra, pmdec, phot_g_mean_mag, bp_rp "
-        "FROM gaiadr3.gaia_source WHERE parallax > 8 AND parallax/parallax_error > 5 "
+        "FROM gaiadr3.gaia_source WHERE parallax > 5 AND parallax/parallax_error > 4 "
         "ORDER BY phot_g_mean_mag"
     )
 

@@ -101,10 +101,11 @@ def validate_cids(cids: list[int]) -> set[int]:
 
 
 def manifest_seeds() -> list[dict]:
-    if not SEED_MANIFEST.exists():
-        return []
-    doc = json.loads(SEED_MANIFEST.read_text(encoding="utf-8"))
-    return list(doc.get("seeds") or [])
+    seeds: list[dict] = []
+    for path in sorted(VENDOR_PUBCHEM.glob("pubchem_*seed*manifest*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        seeds.extend(doc.get("seeds") or [])
+    return seeds
 
 
 def pharmacology_seeds() -> list[dict]:
@@ -189,6 +190,10 @@ def discover_compounds(*, include_pharmacology: bool = True) -> tuple[list[dict]
 
 
 def write_expansion(compounds: list[dict], stats: dict) -> None:
+    if not compounds and AUTO_EXPANSION_PATH.exists():
+        existing = json.loads(AUTO_EXPANSION_PATH.read_text(encoding="utf-8"))
+        print(f"Keeping existing expansion ({existing.get('compound_count', 0)} compounds)")
+        return
     doc = {
         "panel_version": "1.0",
         "generated_at": datetime.now(timezone.utc).isoformat(),

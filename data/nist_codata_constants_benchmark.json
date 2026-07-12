@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:13:00.994667+00:00",
+  "generated_at": "2026-07-12T11:33:24.094690+00:00",
   "domain": "NIST_CODATA_Constants",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
@@ -18,20 +18,7 @@
       "computed": 299792458.0,
       "measured": 299792458.0,
       "error_pct": 0.0,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "speed of light in vacuum",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     },
     {
       "lab": "nist_codata",
@@ -39,20 +26,7 @@
       "computed": 6.62607015e-34,
       "measured": 6.62607015e-34,
       "error_pct": 0.0,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "Planck constant",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     },
     {
       "lab": "nist_codata",
@@ -60,20 +34,7 @@
       "computed": 1.66053906892e-27,
       "measured": 1.6605390666e-27,
       "error_pct": 1.3971366335632365e-07,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "atomic mass constant",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     },
     {
       "lab": "nist_codata",
@@ -81,20 +42,7 @@
       "computed": 9.1093837139e-31,
       "measured": 9.1093837015e-31,
       "error_pct": 1.361233584261938e-07,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "electron mass",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     },
     {
       "lab": "nist_codata",
@@ -102,20 +50,7 @@
       "computed": 0.0072973525643,
       "measured": 0.0072973525643,
       "error_pct": 0.0,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "fine-structure constant",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     },
     {
       "lab": "nist_codata",
@@ -123,34 +58,7 @@
       "computed": 1.67262192595e-27,
       "measured": 1.67262192595e-27,
       "error_pct": 0.0,
-      "within_band": true,
-      "domain_display_name": "nist codata",
-      "display_name": "proton mass",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "within_band": true
     }
-  ],
-  "display_name": "NIST CODATA Constants",
-  "tier_label": "Tier 38",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.689532+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 6,
-    "median_error_pct": 0.0,
-    "max_error_pct": 1.3971366335632365e-07,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 6
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }
