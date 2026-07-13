@@ -1,104 +1,74 @@
-# FSOT Biohub Kaggle v50 — competitive U-Net + FSOT vision
+# FSOT Biohub Kaggle v50 — competitive U-Net + FSOT + Living
 
 Competition: [biohub-cell-tracking-during-development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development)
 
 ## Architecture
 
 ```
-zarr → U-Net detect (+ FSOT vision + FSOT-Living emergence) → ranked centroids → FSOT fsot_gate linking → submission.csv
+zarr → U-Net FT detect (conf-ranked) → FSOT fsot_gate linking → submission.csv
+         ↑ optional FSOT-Living emergence when proxy accuracy drops
 ```
 
-### FSOT-Living bridge (`fsot_living_emergence.py`)
+## Competitive defaults (tuned 2026-07-13)
 
-Ports [FSOT-Living](https://github.com/dappalumbo91/FSOT-Living) mechanisms:
+| Parameter | Value | Why |
+|-----------|-------|-----|
+| `CELLMOT_UNET_WEIGHTS` | **FT biohub** | `cellmot-ft-detector-biohub` |
+| `CELLMOT_DET_THRESHOLD` | **0.45** | Recall/recall balance (0.55 → 0.50 score) |
+| `CELLMOT_NMS_UM` | **6.0** | Tighter than 8.0; 0.857 train proxy |
+| `FSOT_LINK_MODE` | `fsot_gate` | FSOT scalar + ML edge fusion |
+| `FSOT_LIVING_EMERGENCE` | `0` | Enable for deficit tuning experiments |
 
-| Living mechanism | Kaggle use |
-|------------------|------------|
-| `accuracy_homeo` (vision thr 0.62) | Proxy score 0.54 → deficit boost / damping |
-| Vision regime (emergence/damping) | Over-detect → damping + rank prune; under-detect → emergence |
-| Closed-set ranking (73.7% raw_zs strength) | Rank U-Net candidates by FSOT scalar; cap per frame |
+## Local benchmark (`44b6_0113de3b`, CPU, train proxy)
 
-Env: `FSOT_LIVING_EMERGENCE=1` (experimental), `FSOT_LIVING_PROXY_ACCURACY=0.54`
+| Config | Score |
+|--------|-------|
+| v49 peaks + FSOT | 0.6764 |
+| FT + det 0.55 + NMS 8 | 0.505 |
+| **FT + det 0.45 + NMS 6 + fsot_gate** | **0.8570** |
+| FT + det 0.45 + NMS 6 + Living | 0.8422 |
 
-**Status:** Bridge implemented; default **off** until U-Net detection confidences feed the
-Living ranker (scalar-only proxy over-prunes with baseline weights). Next step: wire
-`predict_unet_transformer` heatmap scores into `detection_coherence_score`.
+Download FT weights locally:
 
-| Stage | v49 (peaks) | v50 (competitive) |
-|-------|-------------|-------------------|
-| Detection | peaks/threshold | **U-Net** + FSOT-derived `det_threshold` |
-| Linking | FSOT gate | FSOT gate (same) |
-| Score (train proxy) | ~0.676 | **0.90+** with FT weights on Kaggle GPU |
+```powershell
+python download_ft_weights.py --out D:\Kaggle_Biohub_Data\cellmot
+```
 
-## Local benchmark (2026-07-13, `44b6_0113de3b`, CPU)
+## FSOT-Living bridge (`fsot_living_emergence.py`)
 
-| Config | Nodes | Train proxy score |
-|--------|-------|-------------------|
-| v49 peaks + FSOT | 25,767 | **0.6764** |
-| v50 U-Net baseline weights + FSOT vision | 30,062 | 0.5463 |
-| v50 U-Net baseline, det_thr=0.65 | 29,199 | 0.5481 |
-
-Baseline U-Net weights **over-detect** vs peaks on this dataset. Competitive scores require
-**fine-tuned** weights (`aashishnegi23/cellmot-ft-detector-biohub`) attached on Kaggle.
-
-## v50 vs v49
-
-| Item | v49 | v50 |
-|------|-----|-----|
-| Default engine | `fsot` + peaks | **`fsot_unet`** (auto-fallback to peaks) |
-| FSOT on vision | — | `fsot_vision_calibrate.py` per-dataset threshold |
-| GPU | disabled | **auto** (cuda if assigned, else CPU) |
-| ILP | off | off |
-| det threshold | fixed | FSOT-calibrated (base 0.55) |
+Ports [FSOT-Living](https://github.com/dappalumbo91/FSOT-Living) `accuracy_homeo` + closed-set
+ranking with **U-Net sigmoid confidences** fused to FSOT scalar. Set `FSOT_LIVING_EMERGENCE=1`
+when train-proxy drops below 0.62 to stimulate emergence regions.
 
 ## Required Kaggle datasets
 
-1. Competition data (test mount)
-2. `aashishnegi23/cellmot-ft-detector-biohub` — fine-tuned detector weights
-3. `thibautgoldsborough/cellmot-baseline-artifacts` — cellmot wheels + baseline weights
+1. Competition test mount
+2. `aashishnegi23/cellmot-ft-detector-biohub`
+3. `thibautgoldsborough/cellmot-baseline-artifacts`
 
 ## Upload steps
 
-1. Create Kaggle dataset **`fsot-v50-competitive-bundle`** from this `v50/` folder.
-2. New notebook from `fsot-biohub-v50.ipynb`.
-3. Add inputs: competition + ft-detector + baseline-artifacts + v50 bundle.
-4. Settings → Accelerator → **GPU T4 x2** if available; CPU works but slower.
-5. Run All → Submit `submission.csv`.
-
-## Environment (defaults in `kaggle_main_runner.py`)
-
-```text
-BIOHUB_ENGINE=auto
-FSOT_VISION_CALIBRATE=1
-FSOT_LINK_MODE=fsot_gate
-FSOT_GATE_FRAC=0.42
-FSOT_GATE_ADAPTIVE=1
-FSOT_GATE_RESCUE=1
-CELLMOT_DET_THRESHOLD=0.55   # overridden per-dataset when vision calibrate on
-CELLMOT_USE_ILP=0
-CELLMOT_DET_TTA=0
-```
+1. Dataset **`fsot-v50-competitive-bundle`** from this folder
+2. Notebook `fsot-biohub-v50.ipynb`
+3. Inputs: competition + FT detector + baseline artifacts + bundle
+4. GPU T4 x2 recommended
+5. Run All → Submit
 
 ## Local verification
 
 ```powershell
 cd vendor\kaggle_biohub_review\v50
-python -m venv .venv
-.\.venv\Scripts\pip install -r requirements-v50.txt
+pip install -r requirements-v50.txt
+python download_ft_weights.py --out D:\Kaggle_Biohub_Data\cellmot
 $env:KAGGLE_TEST_DIR = "D:\Kaggle_Biohub_Data\test"
-$env:CELLMOT_UNET_WEIGHTS = "D:\Kaggle_Biohub_Data\cellmot\cellmot-baseline-artifacts\weights\unet_transformer\split_0\edge_predictor_best.pth"
+$env:CELLMOT_UNET_WEIGHTS = "D:\Kaggle_Biohub_Data\cellmot\cellmot-ft-detector-biohub\edge_predictor_best.pth"
 $env:CELLMOT_DEVICE = "cpu"
-$env:BIOHUB_ENGINE = "fsot_unet"
-.\.venv\Scripts\python kaggle_main_runner.py
-.\.venv\Scripts\python kaggle_submission_score.py submission_v50.csv --gt-dir D:\Kaggle_Biohub_Data\train
+python kaggle_main_runner.py
+python kaggle_submission_score.py submission_v50.csv --gt-dir D:\Kaggle_Biohub_Data\train
 ```
 
-Download all four test zarrs + train GT:
-
-```powershell
-.\.venv\Scripts\python download_kaggle_assets.py --out D:\Kaggle_Biohub_Data
-```
+Download all four test zarrs: `python download_kaggle_assets.py --out D:\Kaggle_Biohub_Data`
 
 ## Fast fallback
 
-Set `BIOHUB_ENGINE=fsot` and `BIOHUB_DETECTOR=peaks` for CPU-only peaks pipeline (~0.67 train proxy).
+`BIOHUB_ENGINE=fsot` + `BIOHUB_DETECTOR=peaks` (~0.67 train proxy, no torch U-Net).

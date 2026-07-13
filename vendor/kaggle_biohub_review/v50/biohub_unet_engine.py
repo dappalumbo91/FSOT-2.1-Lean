@@ -68,7 +68,45 @@ def _living_proxy_accuracy() -> float:
         return 0.54
 
 
-def _prune_keep_mask(coords: np.ndarray, scale: tuple[float, ...] = SCALE) -> np.ndarray:
+def _nms_scores_for_frame(
+    frame: np.ndarray,
+    frame_idx: np.ndarray,
+    det_conf: np.ndarray | None,
+) -> np.ndarray:
+    """Per-detection NMS ranking scores: fuse U-Net conf + FSOT when available."""
+    living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    if not living_on:
+        return np.ones(len(frame), dtype=np.float64)
+    target_pf = float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "258"))
+    density = len(frame_idx) / max(target_pf, 1.0)
+    try:
+        from fsot_living_emergence import detection_coherence_score, fuse_detection_score
+
+        if det_conf is not None and len(det_conf) == len(frame_idx):
+            return np.array([
+                fuse_detection_score(
+                    float(det_conf[i]),
+                    detection_coherence_score(
+                        int(c[0]), c[1], c[2], c[3], frame_density=min(density, 2.0),
+                    ),
+                )
+                for i, c in enumerate(frame)
+            ], dtype=np.float64)
+        return np.array([
+            detection_coherence_score(
+                int(c[0]), c[1], c[2], c[3], frame_density=min(density, 2.0),
+            )
+            for c in frame
+        ], dtype=np.float64)
+    except Exception:
+        return np.ones(len(frame), dtype=np.float64)
+
+
+def _prune_keep_mask(
+    coords: np.ndarray,
+    scale: tuple[float, ...] = SCALE,
+    det_conf: np.ndarray | None = None,
+) -> np.ndarray:
     """Boolean mask of detections to keep after per-frame NMS + optional top-k cap."""
     if len(coords) == 0:
         return np.zeros(0, dtype=bool)
@@ -94,18 +132,8 @@ def _prune_keep_mask(coords: np.ndarray, scale: tuple[float, ...] = SCALE) -> np
             frame_idx = np.where(coords[:, 0] == t)[0]
             frame = coords[frame_idx]
             spatial = frame[:, 1:4].astype(np.float64)
-            scores = np.ones(len(spatial), dtype=np.float64)
-            if living_on:
-                try:
-                    from fsot_living_emergence import detection_coherence_score
-
-                    density = len(frame_idx) / float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "260"))
-                    scores = np.array([
-                        detection_coherence_score(int(c[0]), c[1], c[2], c[3], frame_density=min(density, 2.0))
-                        for c in frame
-                    ], dtype=np.float64)
-                except Exception:
-                    pass
+            conf_slice = det_conf[frame_idx] if det_conf is not None and len(det_conf) == len(coords) else None
+            scores = _nms_scores_for_frame(frame, frame_idx, conf_slice)
             local = nms_3d(spatial, scores, nms_um, scale)
             keep[frame_idx[local]] = True
     else:
@@ -114,7 +142,11 @@ def _prune_keep_mask(coords: np.ndarray, scale: tuple[float, ...] = SCALE) -> np
         try:
             from fsot_living_emergence import rank_detection_mask
 
-            living_keep = rank_detection_mask(coords, proxy_accuracy=_living_proxy_accuracy())
+            living_keep = rank_detection_mask(
+                coords,
+                det_conf=det_conf,
+                proxy_accuracy=_living_proxy_accuracy(),
+            )
             keep &= living_keep
         except Exception as exc:  # noqa: BLE001
             print(f"[WARN] FSOT-Living rank prune skipped: {exc}")
@@ -133,20 +165,24 @@ def _prune_keep_mask(coords: np.ndarray, scale: tuple[float, ...] = SCALE) -> np
     return keep
 
 
-def _postprocess_coords(coords: np.ndarray) -> np.ndarray:
+def _postprocess_coords(
+    coords: np.ndarray,
+    det_conf: np.ndarray | None = None,
+) -> np.ndarray:
     if len(coords) == 0:
         return coords
-    keep = _prune_keep_mask(coords)
+    keep = _prune_keep_mask(coords, det_conf=det_conf)
     return coords[keep]
 
 
 def _postprocess_coords_edges(
     coords: np.ndarray,
     edges: list[tuple[int, int, float, float]],
+    det_conf: np.ndarray | None = None,
 ) -> tuple[np.ndarray, list[tuple[int, int, float, float]]]:
     if len(coords) == 0:
         return coords, []
-    keep = _prune_keep_mask(coords)
+    keep = _prune_keep_mask(coords, det_conf=det_conf)
     if keep.all():
         return coords, edges
     old_to_new = {}
@@ -560,14 +596,19 @@ def predict_dataset(
 
     cfg = _build_config(wpath, ds_path=ds_path)
 
+    use_conf = os.environ.get("FSOT_LIVING_EMERGENCE", "1") == "1"
+    conf_parts: list[np.ndarray] = [] if use_conf else []
+
     mode = (link_mode or _link_mode()).lower()
     if mode == "transformer":
         coords, edges = predict_video(
             model, ds_path, device, cfg,
             window_size=window_size, max_frames=max_frames, downsample=downsample,
+            det_conf_parts=conf_parts if use_conf else None,
         )
+        det_conf = np.concatenate(conf_parts) if conf_parts else None
         before = len(coords)
-        coords, edges = _postprocess_coords_edges(coords, edges)
+        coords, edges = _postprocess_coords_edges(coords, edges, det_conf=det_conf)
         if before != len(coords):
             print(f"[DETECT] NMS/topk: {before} -> {len(coords)} nodes (nms_um={_nms_min_um()})")
         print(f"[ML-EDGE] {len(edges)} transformer edges from {len(coords)} nodes")
@@ -575,9 +616,16 @@ def predict_dataset(
         coords, ml_edges = predict_video(
             model, ds_path, device, cfg,
             window_size=window_size, max_frames=max_frames, downsample=downsample,
+            det_conf_parts=conf_parts if use_conf else None,
         )
+        det_conf = np.concatenate(conf_parts) if conf_parts else None
+        if det_conf is not None and len(det_conf) == len(coords):
+            print(
+                f"[DET-CONF] mean={det_conf.mean():.3f} "
+                f"p50={np.median(det_conf):.3f} max={det_conf.max():.3f}"
+            )
         before = len(coords)
-        coords, ml_edges = _postprocess_coords_edges(coords, ml_edges)
+        coords, ml_edges = _postprocess_coords_edges(coords, ml_edges, det_conf=det_conf)
         if before != len(coords):
             print(f"[DETECT] NMS/topk: {before} -> {len(coords)} nodes (nms_um={_nms_min_um()})")
         edges = _fsot_fuse_edges(coords, ml_edges, mode)

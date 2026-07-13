@@ -59,6 +59,19 @@ def boost_strength(acc: float, thr: float, teach_gain: float = 1.0) -> float:
     return (0.55 + deficit * 1.5) * min(max(teach_gain, 0.4), 1.4)
 
 
+def fuse_detection_score(
+    unet_conf: float,
+    fsot_scalar: float,
+    *,
+    ml_weight: float | None = None,
+    fsot_weight: float | None = None,
+) -> float:
+    """Living closed-set rank: U-Net proposal × FSOT fertile alignment."""
+    ml_w = ml_weight if ml_weight is not None else float(os.environ.get("FSOT_LIVING_ML_WEIGHT", "0.72"))
+    fsot_w = fsot_weight if fsot_weight is not None else float(os.environ.get("FSOT_LIVING_FSOT_WEIGHT", "0.28"))
+    return (max(unet_conf, 1e-6) ** ml_w) * (max(fsot_scalar, 1e-6) ** fsot_w)
+
+
 def detection_coherence_score(
     t: int,
     z: float,
@@ -158,51 +171,62 @@ def living_vision_state(
 def rank_detection_mask(
     coords: np.ndarray,
     *,
+    det_conf: np.ndarray | None = None,
     proxy_accuracy: float = 0.54,
     target_per_frame: float | None = None,
     brightness: float = 0.5,
 ) -> np.ndarray:
     """
-    Living closed-set ranker: score each detection, cap per-frame count under damping.
+    Living closed-set ranker: fuse U-Net confidence + FSOT scalar per detection.
+    Only hard-caps when severely over-dense (precision rescue, not recall kill).
     """
     if len(coords) == 0:
         return np.zeros(0, dtype=bool)
 
-    target_pf = target_per_frame or float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "260"))
+    target_pf = target_per_frame or float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "258"))
+    n_frames = max(len(np.unique(coords[:, 0])), 1)
+    nodes_pf = len(coords) / n_frames
     state = living_vision_state(
         proxy_accuracy=proxy_accuracy,
         mean_brightness=brightness,
-        nodes_per_frame=len(coords) / max(len(np.unique(coords[:, 0])), 1),
+        nodes_per_frame=nodes_pf,
         target_nodes_per_frame=target_pf,
     )
 
-    keep = np.zeros(len(coords), dtype=bool)
-    for t in np.unique(coords[:, 0]):
-        frame_idx = np.where(coords[:, 0] == t)[0]
-        frame = coords[frame_idx]
-        density = len(frame_idx) / max(target_pf, 1.0)
-        scores = np.array([
-            detection_coherence_score(
-                int(c[0]), c[1], c[2], c[3],
-                frame_density=min(density, 2.0),
-                brightness=brightness,
-            )
-            for c in frame
-        ], dtype=np.float64)
+    min_conf = float(os.environ.get("FSOT_LIVING_MIN_UNET_CONF", "0.0"))
+    keep = np.ones(len(coords), dtype=bool)
+    if det_conf is not None and len(det_conf) == len(coords) and min_conf > 0:
+        keep &= det_conf >= min_conf
 
-        cap = int(max(target_pf * state.per_frame_cap_scale, 80))
-        if state.regime == "damping" and state.per_frame_cap_scale < 1.0 and len(frame_idx) > cap:
+    severe_over = nodes_pf > target_pf * 1.22
+    if severe_over and det_conf is not None and len(det_conf) == len(coords):
+        cap = int(max(target_pf * 1.02, 200))
+        for t in np.unique(coords[:, 0]):
+            frame_idx = np.where(coords[:, 0] == t)[0]
+            if len(frame_idx) <= cap:
+                continue
+            frame = coords[frame_idx]
+            confs = det_conf[frame_idx]
+            density = len(frame_idx) / max(target_pf, 1.0)
+            scores = np.array([
+                fuse_detection_score(
+                    float(confs[i]),
+                    detection_coherence_score(
+                        int(c[0]), c[1], c[2], c[3],
+                        frame_density=min(density, 2.0),
+                        brightness=brightness,
+                    ),
+                )
+                for i, c in enumerate(frame)
+            ], dtype=np.float64)
             order = np.argsort(-scores)[:cap]
-            local_keep = np.zeros(len(frame_idx), dtype=bool)
-            local_keep[order] = True
-        else:
-            local_keep = np.ones(len(frame_idx), dtype=bool)
-
-        keep[frame_idx] = local_keep
+            local = np.zeros(len(frame_idx), dtype=bool)
+            local[order] = True
+            keep[frame_idx] = keep[frame_idx] & local
 
     print(
         f"[FSOT-LIVING] regime={state.regime} proxy_acc={proxy_accuracy:.2f} "
-        f"deficit={state.deficit:.2f} boost={state.boost_strength:.2f} "
+        f"nodes/frame={nodes_pf:.0f} unet_conf={'yes' if det_conf is not None else 'no'} "
         f"kept={keep.sum()}/{len(coords)}"
     )
     return keep

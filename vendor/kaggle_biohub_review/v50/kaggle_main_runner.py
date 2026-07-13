@@ -68,18 +68,20 @@ def _setup_kaggle_env() -> tuple[str, str]:
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "0")
-    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.54")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.86")
+    os.environ.setdefault("FSOT_LIVING_MIN_UNET_CONF", "0.0")
+    os.environ.setdefault("FSOT_LIVING_TARGET_PER_FRAME", "258")
     os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_GATE_RESCUE", "1")
     os.environ.setdefault("CELLMOT_USE_FT", "1")
-    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.55")
+    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.45")
     os.environ.setdefault("CELLMOT_EDGE_THRESHOLD", "0.25")
     os.environ.setdefault("CELLMOT_USE_ILP", "0")
     os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "12000")
     os.environ.setdefault("CELLMOT_DET_TTA", "0")
-    os.environ.setdefault("CELLMOT_NMS_UM", "8.0")
+    os.environ.setdefault("CELLMOT_NMS_UM", "6.0")
     os.environ.setdefault("CELLMOT_POOL_UM", "8.0")
     os.environ.setdefault("FSOT_GAP_LINK", "1")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")
@@ -113,8 +115,8 @@ def _setup_local_env() -> tuple[str, str]:
     # Local weight discovery
     if not os.environ.get("CELLMOT_UNET_WEIGHTS"):
         for candidate in (
-            PROGRAM_ROOT / "cellmot_weights/cellmot-ft-detector-biohub/edge_predictor_best.pth",
             Path(r"D:\Kaggle_Biohub_Data\cellmot\cellmot-ft-detector-biohub\edge_predictor_best.pth"),
+            PROGRAM_ROOT / "cellmot_weights/cellmot-ft-detector-biohub/edge_predictor_best.pth",
             Path(r"D:\Kaggle_Biohub_Data\cellmot\cellmot-baseline-artifacts\weights\unet_transformer\split_0\edge_predictor_best.pth"),
         ):
             if candidate.exists():
@@ -125,13 +127,16 @@ def _setup_local_env() -> tuple[str, str]:
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "0")
-    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.54")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.86")
+    os.environ.setdefault("FSOT_LIVING_MIN_UNET_CONF", "0.0")
+    os.environ.setdefault("FSOT_LIVING_TARGET_PER_FRAME", "258")
     os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_GATE_RESCUE", "1")
     os.environ.setdefault("CELLMOT_USE_ILP", "0")
-    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.55")
+    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.45")
+    os.environ.setdefault("CELLMOT_NMS_UM", "6.0")
     os.environ.setdefault("CELLMOT_DEVICE", "cuda" if _gpu_available() else "cpu")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")
     return data_dir, out_csv
