@@ -60,22 +60,64 @@ def _det_topk() -> int:
     return int(os.environ.get("CELLMOT_DET_TOPK", "0"))
 
 
+def _living_proxy_accuracy() -> float:
+    raw = os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.54")
+    try:
+        return float(raw)
+    except ValueError:
+        return 0.54
+
+
 def _prune_keep_mask(coords: np.ndarray, scale: tuple[float, ...] = SCALE) -> np.ndarray:
     """Boolean mask of detections to keep after per-frame NMS + optional top-k cap."""
     if len(coords) == 0:
         return np.zeros(0, dtype=bool)
-    keep = np.ones(len(coords), dtype=bool)
+    keep = np.zeros(len(coords), dtype=bool)
     nms_um = _nms_min_um()
+    living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    if living_on:
+        try:
+            from fsot_living_emergence import living_vision_state
+
+            proxy = _living_proxy_accuracy()
+            n_frames = max(len(np.unique(coords[:, 0])), 1)
+            state = living_vision_state(
+                proxy_accuracy=proxy,
+                nodes_per_frame=len(coords) / n_frames,
+            )
+            nms_um = max(nms_um + state.nms_um_delta, 4.0)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[WARN] FSOT-Living NMS adjust skipped: {exc}")
     topk = _det_topk()
     if nms_3d is not None and nms_um > 0:
-        keep[:] = False
         for t in np.unique(coords[:, 0]):
             frame_idx = np.where(coords[:, 0] == t)[0]
             frame = coords[frame_idx]
             spatial = frame[:, 1:4].astype(np.float64)
             scores = np.ones(len(spatial), dtype=np.float64)
+            if living_on:
+                try:
+                    from fsot_living_emergence import detection_coherence_score
+
+                    density = len(frame_idx) / float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "260"))
+                    scores = np.array([
+                        detection_coherence_score(int(c[0]), c[1], c[2], c[3], frame_density=min(density, 2.0))
+                        for c in frame
+                    ], dtype=np.float64)
+                except Exception:
+                    pass
             local = nms_3d(spatial, scores, nms_um, scale)
             keep[frame_idx[local]] = True
+    else:
+        keep[:] = True
+    if living_on:
+        try:
+            from fsot_living_emergence import rank_detection_mask
+
+            living_keep = rank_detection_mask(coords, proxy_accuracy=_living_proxy_accuracy())
+            keep &= living_keep
+        except Exception as exc:  # noqa: BLE001
+            print(f"[WARN] FSOT-Living rank prune skipped: {exc}")
     if topk > 0:
         capped = np.zeros(len(coords), dtype=bool)
         for t in np.unique(coords[:, 0]):

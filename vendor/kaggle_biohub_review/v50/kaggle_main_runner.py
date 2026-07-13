@@ -67,6 +67,8 @@ def _setup_kaggle_env() -> tuple[str, str]:
     # v50 defaults: competitive U-Net + FSOT vision calibrate + FSOT gate linking
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
+    os.environ.setdefault("FSOT_LIVING_EMERGENCE", "0")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.54")
     os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")
@@ -122,6 +124,8 @@ def _setup_local_env() -> tuple[str, str]:
 
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
+    os.environ.setdefault("FSOT_LIVING_EMERGENCE", "0")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.54")
     os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")

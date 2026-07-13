@@ -130,6 +130,22 @@ def apply_fsot_vision_calibrate(ds_path: str | Path) -> float:
     lo = float(os.environ.get("FSOT_VISION_THRESHOLD_LO", "0.45"))
     hi = float(os.environ.get("FSOT_VISION_THRESHOLD_HI", "0.68"))
     thr, diag = fsot_detection_threshold(ds_path, base=base, lo=lo, hi=hi)
+    if os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1":
+        try:
+            from fsot_living_emergence import apply_living_det_adjustments, living_vision_state
+
+            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.54"))
+            state = living_vision_state(
+                proxy_accuracy=proxy,
+                mean_brightness=min(max(diag["density_proxy"] * 4.0, 0.2), 0.8),
+            )
+            thr = apply_living_det_adjustments(thr, state)
+            print(
+                f"[FSOT-LIVING] regime={state.regime} det_adj={state.det_threshold_delta:+.3f} "
+                f"→ det_thr={thr:.3f}"
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(f"[WARN] FSOT-Living det adjust skipped: {exc}")
     print(
         f"[FSOT-VISION] {diag['dataset']} S={diag['scalar_s']:.4f} "
         f"Δψ={diag['delta_psi']:.3f} det_thr={thr:.3f}"

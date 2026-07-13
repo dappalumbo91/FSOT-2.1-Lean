@@ -5,8 +5,24 @@ Competition: [biohub-cell-tracking-during-development](https://www.kaggle.com/co
 ## Architecture
 
 ```
-zarr → U-Net detect (+ FSOT vision calibrate) → centroids → FSOT fsot_gate linking → submission.csv
+zarr → U-Net detect (+ FSOT vision + FSOT-Living emergence) → ranked centroids → FSOT fsot_gate linking → submission.csv
 ```
+
+### FSOT-Living bridge (`fsot_living_emergence.py`)
+
+Ports [FSOT-Living](https://github.com/dappalumbo91/FSOT-Living) mechanisms:
+
+| Living mechanism | Kaggle use |
+|------------------|------------|
+| `accuracy_homeo` (vision thr 0.62) | Proxy score 0.54 → deficit boost / damping |
+| Vision regime (emergence/damping) | Over-detect → damping + rank prune; under-detect → emergence |
+| Closed-set ranking (73.7% raw_zs strength) | Rank U-Net candidates by FSOT scalar; cap per frame |
+
+Env: `FSOT_LIVING_EMERGENCE=1` (experimental), `FSOT_LIVING_PROXY_ACCURACY=0.54`
+
+**Status:** Bridge implemented; default **off** until U-Net detection confidences feed the
+Living ranker (scalar-only proxy over-prunes with baseline weights). Next step: wire
+`predict_unet_transformer` heatmap scores into `detection_coherence_score`.
 
 | Stage | v49 (peaks) | v50 (competitive) |
 |-------|-------------|-------------------|
