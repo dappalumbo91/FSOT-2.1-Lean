@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-07-13T14:46:50.822118+00:00",
+  "species": "Danio rerio",
+  "credential_free": true,
+  "genome_bp_anchor": {
+    "measured": 1370000000.0,
+    "unit": "base_pairs",
+    "reference": "GRCz11 reference assembly (Ensembl/NCBI consensus ~1.37 Gbp)",
+    "source": "ensembl_grcz11_consensus",
+    "reference_uncertainty_pct": 0.5
+  },
+  "longevity_anchor": {
+    "source": "anage_hagr_tier94",
+    "scientific_name": "Danio rerio",
+    "maximum_longevity_yrs": 5.5,
+    "metabolic_rate_w": 0.35,
+    "body_mass_g": null,
+    "reference": "AnAge / HAGR longevity catalog (Tier 94 ingest)"
+  },
+  "mechanistic_property_anchors": {
+    "division_rate": {
+      "literature_cv_pct": 15.0,
+      "reference_uncertainty_pct": 15.0,
+      "unit": "dimensionless",
+      "reference": "Ultrack/Zebrahub lineage assignment; CTC-style division-link uncertainty (~10\u201320% CV)",
+      "source": "zebrahub_czbiohub + cell_tracking_challenge_literature"
+    },
+    "mean_track_duration_steps": {
+      "literature_cv_pct": 12.0,
+      "reference_uncertainty_pct": 12.0,
+      "unit": "imaging_frames",
+      "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
+      "source": "keller_2008_scanned_light_sheet + ultrack_methods"
+    },
+    "mean_displacement_um": {
+      "literature_cv_pct": 8.0,
+      "reference_uncertainty_pct": 8.0,
+      "unit": "micrometers",
+      "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility",
+      "source": "zebrahub_ome_zarr_metadata + developmental_imaging_metrology"
+    },
+    "developmental_stability_proxy": {
+      "literature_cv_pct": 18.0,
+      "reference_uncertainty_pct": 18.0,
+      "unit": "dimensionless",
+      "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
+      "source": "fsot_developmental_stability_definition"
+    }
+  },
+  "live_resources": {
+    "ensembl": {
+      "source": "ensembl_rest",
+      "url": "https://rest.ensembl.org/info/genomes/danio_rerio",
+      "scientific_name": "Danio rerio",
+      "assembly_name": "GRCz11",
+      "assembly_id": 102912,
+      "genebuild": "ENS01",
+      "division": "EnsemblVertebrates"
+    },
+    "gbif": {
+      "source": "gbif_species_match",
+      "url": "https://api.gbif.org/v1/species/match?name=Danio%20rerio",
+      "usage_key": 9797255,
+      "scientific_name": "Danio rerio (Hamilton, 1822)",
+      "rank": "SPECIES",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": null,
+      "order": "Cypriniformes",
+      "family": "Cyprinidae"
+    },
+    "uniprot_taxonomy": {
+      "source": "uniprot_taxonomy",
+      "url": "https://rest.uniprot.org/taxonomy/7955",
+      "taxon_id": 7955,
+      "scientific_name": "Danio rerio",
+      "rank": "species",
+      "lineage": [
+        {
+          "scientificName": "cellular organisms",
+          "taxonId": 131567,
+          "rank": "no rank",
+          "hidden": true
+        },
+        {
+          "scientificName": "Eukaryota",
+          "commonName": "eukaryotes",
+          "taxonId": 2759,
+          "rank": "domain",
+          "hidden": false
+        },
+        {
+          "scientificName": "Opisthokonta",
+          "taxonId": 33154,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Metazoa",
+          "commonName": "animals",
+          "taxonId": 33208,
+          "rank": "kingdom",
+          "hidden": false
+        },
+        {
+          "scientificName": "Eumetazoa",
+          "taxonId": 6072,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Bilateria",
+          "taxonId": 33213,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Deuterostomia",
+          "taxonId": 33511,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Chordata",
+          "commonName": "chordates",
+          "taxonId": 7711,
+          "rank": "phylum",
+          "hidden": false
+        },
+        {
+          "scientificName": "Craniata",
+          "taxonId": 89593,
+          "rank": "subphylum",
+          "hidden": false
+        },
+        {
+          "scientificName": "Vertebrata",
+          "commonName": "vertebrates",
+          "taxonId": 7742,
+          "rank": "clade",
+          "hidden": false
+        },
+        {
+          "scientificName": "Gnathostomata",
+          "commonName": "jawed vertebrates",
+          "taxonId": 7776,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Teleostomi",
+          "taxonId": 117570,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Euteleostomi",
+          "commonName": "bony vertebrates",
+          "taxonId": 117571,
+          "rank": "clade",
+          "hidden": false
+        },
+        {
+          "scientificName": "Actinopterygii",
+          "commonName": "ray-finned fishes",
+          "taxonId": 7898,
+          "rank": "superclass",
+          "hidden": false
+        },
+        {
+          "scientificName": "Actinopteri",
+          "taxonId": 186623,
+          "rank": "class",
+          "hidden": true
+        },
+        {
+          "scientificName": "Neopterygii",
+          "taxonId": 41665,
+          "rank": "subclass",
+          "hidden": false
+        },
+        {
+          "scientificName": "Teleostei",
+          "commonName": "teleost fishes",
+          "taxonId": 32443,
+          "rank": "infraclass",
+          "hidden": false
+        },
+        {
+          "scientificName": "Osteoglossocephalai",
+          "taxonId": 1489341,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Clupeocephala",
+          "taxonId": 186625,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Otomorpha",
+          "taxonId": 186634,
+          "rank": "cohort",
+          "hidden": true
+        },
+        {
+          "scientificName": "Ostariophysi",
+          "taxonId": 32519,
+          "rank": "subcohort",
+          "hidden": false
+        },
+        {
+          "scientificName": "Otophysi",
+          "taxonId": 186626,
+          "rank": "clade",
+          "hidden": true
+        },
+        {
+          "scientificName": "Cypriniphysae",
+          "taxonId": 186627,
+          "rank": "superorder",
+          "hidden": true
+        },
+        {
+          "scientificName": "Cypriniformes",
+          "commonName": "carps and others",
+          "taxonId": 7952,
+          "rank": "order",
+          "hidden": false
+        },
+        {
+          "scientificName": "Cyprinoidei",
+          "taxonId": 30727,
+          "rank": "suborder",
+          "hidden": true
+        },
+        {
+          "scientificName": "Danionidae",
+          "taxonId": 2743709,
+          "rank": "family",
+          "hidden": false
+        },
+        {
+          "scientificName": "Danioninae",
+          "taxonId": 2743711,
+          "rank": "subfamily",
+          "hidden": false
+        },
+        {
+          "scientificName": "Danio",
+          "taxonId": 7954,
+          "rank": "genus",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "ingest_errors": []
+}

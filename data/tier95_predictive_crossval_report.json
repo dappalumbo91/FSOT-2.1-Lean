@@ -1,0 +1,1533 @@
+{
+  "source": "tier95_zebrahub_intrinsic_fsot_prediction",
+  "dataset_count": 5,
+  "longevity_anchor": {
+    "maximum_longevity_yrs": 5.5,
+    "longevity_quotient": 1.0,
+    "metabolic_rate_w": 0.35
+  },
+  "mechanistic_properties": [
+    "developmental_stability_proxy",
+    "division_rate",
+    "mean_displacement_um",
+    "mean_track_duration_steps"
+  ],
+  "formal_oracle": {
+    "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+    "biology_domain_scalar": 0.44472501,
+    "mpmath_float64_equiv_ok": true,
+    "mpmath_max_rel_err": 1.7820287762108697e-15
+  },
+  "strict_tier": {
+    "tier": "strict",
+    "fold_count": 5,
+    "record_count": 35,
+    "median_error_pct": 15.446883,
+    "max_error_pct": 94.51347,
+    "mean_error_pct": 44.46225622857143,
+    "mechanistic_median_error_pct": 8.661409,
+    "fold_summaries": [
+      {
+        "held_out": "ZSNS003",
+        "median_error_pct": 81.059935,
+        "max_error_pct": 90.209264,
+        "properties": 7
+      },
+      {
+        "held_out": "ZSNS005",
+        "median_error_pct": 13.136927,
+        "max_error_pct": 87.889254,
+        "properties": 7
+      },
+      {
+        "held_out": "ZSNS004",
+        "median_error_pct": 11.77296,
+        "max_error_pct": 89.060695,
+        "properties": 7
+      },
+      {
+        "held_out": "ZSNS001_tail",
+        "median_error_pct": 9.511696,
+        "max_error_pct": 82.734987,
+        "properties": 7
+      },
+      {
+        "held_out": "ZSNS001",
+        "median_error_pct": 8.712705,
+        "max_error_pct": 94.51347,
+        "properties": 7
+      }
+    ],
+    "records": [
+      {
+        "dataset_id": "ZSNS003",
+        "property": "division_rate",
+        "measured": 0.18766705,
+        "computed": 0.118554,
+        "abs_residual": 0.06911305,
+        "margin_of_error_pct": 36.8275,
+        "error_pct": 36.827482,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "mean_track_duration_steps",
+        "measured": 23.994199,
+        "computed": 27.70055491,
+        "abs_residual": 3.70635591,
+        "margin_of_error_pct": 15.4469,
+        "error_pct": 15.446883,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "mean_displacement_um",
+        "measured": 78.142244,
+        "computed": 72.1898361,
+        "abs_residual": 5.9524079,
+        "margin_of_error_pct": 7.6174,
+        "error_pct": 7.617401,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "developmental_stability_proxy",
+        "measured": 0.2482611,
+        "computed": 0.44950139,
+        "abs_residual": 0.20124029,
+        "margin_of_error_pct": 81.0599,
+        "error_pct": 81.059935,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "n_tracks",
+        "measured": 169108.0,
+        "computed": 26209.05064538,
+        "abs_residual": 142898.94935462,
+        "margin_of_error_pct": 84.5016,
+        "error_pct": 84.50159,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "row_count",
+        "measured": 4057611.0,
+        "computed": 726005.24658574,
+        "abs_residual": 3331605.75341426,
+        "margin_of_error_pct": 82.1076,
+        "error_pct": 82.107569,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "n_division_events",
+        "measured": 31736.0,
+        "computed": 3107.18782474,
+        "abs_residual": 28628.81217526,
+        "margin_of_error_pct": 90.2093,
+        "error_pct": 90.209264,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "division_rate",
+        "measured": 0.28928612,
+        "computed": 0.26422986,
+        "abs_residual": 0.02505626,
+        "margin_of_error_pct": 8.6614,
+        "error_pct": 8.661409,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "mean_track_duration_steps",
+        "measured": 20.303899,
+        "computed": 21.14861708,
+        "abs_residual": 0.84471808,
+        "margin_of_error_pct": 4.1604,
+        "error_pct": 4.160374,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "mean_displacement_um",
+        "measured": 74.472807,
+        "computed": 71.52022693,
+        "abs_residual": 2.95258007,
+        "margin_of_error_pct": 3.9646,
+        "error_pct": 3.964642,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "developmental_stability_proxy",
+        "measured": 0.11697663,
+        "computed": 0.13234376,
+        "abs_residual": 0.01536713,
+        "margin_of_error_pct": 13.1369,
+        "error_pct": 13.136927,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "n_tracks",
+        "measured": 318204.0,
+        "computed": 42191.23268913,
+        "abs_residual": 276012.76731087,
+        "margin_of_error_pct": 86.7408,
+        "error_pct": 86.740823,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "row_count",
+        "measured": 6460782.0,
+        "computed": 892286.2241012,
+        "abs_residual": 5568495.7758988,
+        "margin_of_error_pct": 86.1892,
+        "error_pct": 86.189192,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "n_division_events",
+        "measured": 92052.0,
+        "computed": 11148.18371736,
+        "abs_residual": 80903.81628264,
+        "margin_of_error_pct": 87.8893,
+        "error_pct": 87.889254,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "division_rate",
+        "measured": 0.15233946,
+        "computed": 0.13875789,
+        "abs_residual": 0.01358157,
+        "margin_of_error_pct": 8.9153,
+        "error_pct": 8.915335,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "mean_track_duration_steps",
+        "measured": 18.213312,
+        "computed": 18.69024262,
+        "abs_residual": 0.47693062,
+        "margin_of_error_pct": 2.6186,
+        "error_pct": 2.618583,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "mean_displacement_um",
+        "measured": 82.378883,
+        "computed": 75.20811958,
+        "abs_residual": 7.17076342,
+        "margin_of_error_pct": 8.7046,
+        "error_pct": 8.704614,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "developmental_stability_proxy",
+        "measured": 0.19926106,
+        "computed": 0.22271998,
+        "abs_residual": 0.02345892,
+        "margin_of_error_pct": 11.773,
+        "error_pct": 11.77296,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "n_tracks",
+        "measured": 397507.0,
+        "computed": 47740.75126317,
+        "abs_residual": 349766.24873683,
+        "margin_of_error_pct": 87.99,
+        "error_pct": 87.98996,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "row_count",
+        "measured": 7239919.0,
+        "computed": 892286.2241012,
+        "abs_residual": 6347632.7758988,
+        "margin_of_error_pct": 87.6755,
+        "error_pct": 87.675467,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "n_division_events",
+        "measured": 60556.0,
+        "computed": 6624.40577986,
+        "abs_residual": 53931.59422014,
+        "margin_of_error_pct": 89.0607,
+        "error_pct": 89.060695,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "division_rate",
+        "measured": 0.72540226,
+        "computed": 0.73693153,
+        "abs_residual": 0.01152927,
+        "margin_of_error_pct": 1.5894,
+        "error_pct": 1.589362,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "mean_track_duration_steps",
+        "measured": 73.816407,
+        "computed": 71.61365735,
+        "abs_residual": 2.20274965,
+        "margin_of_error_pct": 2.9841,
+        "error_pct": 2.984092,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "mean_displacement_um",
+        "measured": 129.985113,
+        "computed": 117.62132455,
+        "abs_residual": 12.36378845,
+        "margin_of_error_pct": 9.5117,
+        "error_pct": 9.511696,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "developmental_stability_proxy",
+        "measured": 0.12864619,
+        "computed": 0.12269954,
+        "abs_residual": 0.00594665,
+        "margin_of_error_pct": 4.6225,
+        "error_pct": 4.622482,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "n_tracks",
+        "measured": 101676.0,
+        "computed": 18094.32550568,
+        "abs_residual": 83581.67449432,
+        "margin_of_error_pct": 82.2039,
+        "error_pct": 82.203937,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "row_count",
+        "measured": 7505357.0,
+        "computed": 1295800.82681816,
+        "abs_residual": 6209556.17318184,
+        "margin_of_error_pct": 82.735,
+        "error_pct": 82.734987,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "n_division_events",
+        "measured": 73756.0,
+        "computed": 13334.27893446,
+        "abs_residual": 60421.72106554,
+        "margin_of_error_pct": 81.9211,
+        "error_pct": 81.921093,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "division_rate",
+        "measured": 0.7911642,
+        "computed": 0.76097775,
+        "abs_residual": 0.03018645,
+        "margin_of_error_pct": 3.8154,
+        "error_pct": 3.815447,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "mean_track_duration_steps",
+        "measured": 13.515944,
+        "computed": 14.15079008,
+        "abs_residual": 0.63484608,
+        "margin_of_error_pct": 4.697,
+        "error_pct": 4.697016,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "mean_displacement_um",
+        "measured": 85.79819,
+        "computed": 81.25209842,
+        "abs_residual": 4.54609158,
+        "margin_of_error_pct": 5.2986,
+        "error_pct": 5.298587,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "developmental_stability_proxy",
+        "measured": 0.02159746,
+        "computed": 0.02347918,
+        "abs_residual": 0.00188172,
+        "margin_of_error_pct": 8.7127,
+        "error_pct": 8.712705,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "n_tracks",
+        "measured": 1605333.0,
+        "computed": 91570.9172247,
+        "abs_residual": 1513762.0827753,
+        "margin_of_error_pct": 94.2958,
+        "error_pct": 94.29583,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "row_count",
+        "measured": 21697591.0,
+        "computed": 1295800.82681816,
+        "abs_residual": 20401790.17318184,
+        "margin_of_error_pct": 94.0279,
+        "error_pct": 94.027905,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "n_division_events",
+        "measured": 1270082.0,
+        "computed": 69683.4301784,
+        "abs_residual": 1200398.5698216,
+        "margin_of_error_pct": 94.5135,
+        "error_pct": 94.51347,
+        "tier": "strict",
+        "eval_kind": "fsot_intrinsic_prediction"
+      }
+    ],
+    "mpmath_equivalence": {
+      "max_rel_err": 1.7820287762108697e-15,
+      "n": 144,
+      "ok": true
+    }
+  },
+  "operational_tier": {
+    "tier": "operational",
+    "fold_count": 5,
+    "record_count": 20,
+    "median_error_pct": 0.445461,
+    "max_error_pct": 0.68487,
+    "mean_error_pct": 0.3945632499999999,
+    "mechanistic_median_error_pct": 0.445461,
+    "fold_summaries": [
+      {
+        "held_out": "ZSNS003",
+        "median_error_pct": 0.627151,
+        "max_error_pct": 0.656496,
+        "properties": 4
+      },
+      {
+        "held_out": "ZSNS005",
+        "median_error_pct": 0.445461,
+        "max_error_pct": 0.556065,
+        "properties": 4
+      },
+      {
+        "held_out": "ZSNS004",
+        "median_error_pct": 0.387736,
+        "max_error_pct": 0.658243,
+        "properties": 4
+      },
+      {
+        "held_out": "ZSNS001_tail",
+        "median_error_pct": 0.683432,
+        "max_error_pct": 0.68487,
+        "properties": 4
+      },
+      {
+        "held_out": "ZSNS001",
+        "median_error_pct": 0.359112,
+        "max_error_pct": 0.552682,
+        "properties": 4
+      }
+    ],
+    "records": [
+      {
+        "dataset_id": "ZSNS003",
+        "property": "division_rate",
+        "measured": 0.18766705,
+        "computed": 0.18807365,
+        "abs_residual": 0.0004066,
+        "margin_of_error_pct": 0.2167,
+        "error_pct": 0.21666,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "mean_track_duration_steps",
+        "measured": 23.994199,
+        "computed": 24.15171992,
+        "abs_residual": 0.15752092,
+        "margin_of_error_pct": 0.6565,
+        "error_pct": 0.656496,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "mean_displacement_um",
+        "measured": 78.142244,
+        "computed": 77.652174,
+        "abs_residual": 0.49007,
+        "margin_of_error_pct": 0.6272,
+        "error_pct": 0.627151,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "developmental_stability_proxy",
+        "measured": 0.2482611,
+        "computed": 0.24704738,
+        "abs_residual": 0.00121372,
+        "margin_of_error_pct": 0.4889,
+        "error_pct": 0.488889,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "division_rate",
+        "measured": 0.28928612,
+        "computed": 0.28799746,
+        "abs_residual": 0.00128866,
+        "margin_of_error_pct": 0.4455,
+        "error_pct": 0.445461,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "mean_track_duration_steps",
+        "measured": 20.303899,
+        "computed": 20.26107659,
+        "abs_residual": 0.04282241,
+        "margin_of_error_pct": 0.2109,
+        "error_pct": 0.210907,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "mean_displacement_um",
+        "measured": 74.472807,
+        "computed": 74.5742285,
+        "abs_residual": 0.1014215,
+        "margin_of_error_pct": 0.1362,
+        "error_pct": 0.136186,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS005",
+        "property": "developmental_stability_proxy",
+        "measured": 0.11697663,
+        "computed": 0.11632616,
+        "abs_residual": 0.00065047,
+        "margin_of_error_pct": 0.5561,
+        "error_pct": 0.556065,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "division_rate",
+        "measured": 0.15233946,
+        "computed": 0.15174879,
+        "abs_residual": 0.00059067,
+        "margin_of_error_pct": 0.3877,
+        "error_pct": 0.387736,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "mean_track_duration_steps",
+        "measured": 18.213312,
+        "computed": 18.22689224,
+        "abs_residual": 0.01358024,
+        "margin_of_error_pct": 0.0746,
+        "error_pct": 0.074562,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "mean_displacement_um",
+        "measured": 82.378883,
+        "computed": 81.83663005,
+        "abs_residual": 0.54225295,
+        "margin_of_error_pct": 0.6582,
+        "error_pct": 0.658243,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS004",
+        "property": "developmental_stability_proxy",
+        "measured": 0.19926106,
+        "computed": 0.19860473,
+        "abs_residual": 0.00065633,
+        "margin_of_error_pct": 0.3294,
+        "error_pct": 0.329379,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "division_rate",
+        "measured": 0.72540226,
+        "computed": 0.72044463,
+        "abs_residual": 0.00495763,
+        "margin_of_error_pct": 0.6834,
+        "error_pct": 0.683432,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "mean_track_duration_steps",
+        "measured": 73.816407,
+        "computed": 73.75190827,
+        "abs_residual": 0.06449873,
+        "margin_of_error_pct": 0.0874,
+        "error_pct": 0.087377,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "mean_displacement_um",
+        "measured": 129.985113,
+        "computed": 130.87534228,
+        "abs_residual": 0.89022928,
+        "margin_of_error_pct": 0.6849,
+        "error_pct": 0.68487,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001_tail",
+        "property": "developmental_stability_proxy",
+        "measured": 0.12864619,
+        "computed": 0.12925486,
+        "abs_residual": 0.00060867,
+        "margin_of_error_pct": 0.4731,
+        "error_pct": 0.473132,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "division_rate",
+        "measured": 0.7911642,
+        "computed": 0.79168939,
+        "abs_residual": 0.00052519,
+        "margin_of_error_pct": 0.0664,
+        "error_pct": 0.066382,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "mean_track_duration_steps",
+        "measured": 13.515944,
+        "computed": 13.59064415,
+        "abs_residual": 0.07470015,
+        "margin_of_error_pct": 0.5527,
+        "error_pct": 0.552682,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "mean_displacement_um",
+        "measured": 85.79819,
+        "computed": 85.96682018,
+        "abs_residual": 0.16863018,
+        "margin_of_error_pct": 0.1965,
+        "error_pct": 0.196543,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      },
+      {
+        "dataset_id": "ZSNS001",
+        "property": "developmental_stability_proxy",
+        "measured": 0.02159746,
+        "computed": 0.02167502,
+        "abs_residual": 7.756e-05,
+        "margin_of_error_pct": 0.3591,
+        "error_pct": 0.359112,
+        "tier": "operational",
+        "eval_kind": "fsot_intrinsic_prediction"
+      }
+    ],
+    "mpmath_equivalence": {
+      "max_rel_err": 1.7820287762108697e-15,
+      "n": 144,
+      "ok": true
+    }
+  },
+  "mechanistic_median_error_pct": {
+    "strict": 8.661409,
+    "operational": 0.445461
+  },
+  "biological_science": {
+    "evaluation_standard": "developmental_cell_tracking_literature",
+    "primary_metrics": [
+      "pearson_r",
+      "spearman_rho",
+      "r_squared",
+      "rmse",
+      "mae",
+      "sigma_equivalent",
+      "within_literature_band_fraction"
+    ],
+    "reference_anchors": {
+      "generated_at": "2026-07-13T14:41:24.386523+00:00",
+      "species": "Danio rerio",
+      "credential_free": true,
+      "genome_bp_anchor": {
+        "measured": 1370000000.0,
+        "unit": "base_pairs",
+        "reference": "GRCz11 reference assembly (Ensembl/NCBI consensus ~1.37 Gbp)",
+        "source": "ensembl_grcz11_consensus",
+        "reference_uncertainty_pct": 0.5
+      },
+      "longevity_anchor": {
+        "source": "anage_hagr_tier94",
+        "scientific_name": "Danio rerio",
+        "maximum_longevity_yrs": 5.5,
+        "metabolic_rate_w": 0.35,
+        "body_mass_g": null,
+        "reference": "AnAge / HAGR longevity catalog (Tier 94 ingest)"
+      },
+      "mechanistic_property_anchors": {
+        "division_rate": {
+          "literature_cv_pct": 15.0,
+          "reference_uncertainty_pct": 15.0,
+          "unit": "dimensionless",
+          "reference": "Ultrack/Zebrahub lineage assignment; CTC-style division-link uncertainty (~10\u201320% CV)",
+          "source": "zebrahub_czbiohub + cell_tracking_challenge_literature"
+        },
+        "mean_track_duration_steps": {
+          "literature_cv_pct": 12.0,
+          "reference_uncertainty_pct": 12.0,
+          "unit": "imaging_frames",
+          "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
+          "source": "keller_2008_scanned_light_sheet + ultrack_methods"
+        },
+        "mean_displacement_um": {
+          "literature_cv_pct": 8.0,
+          "reference_uncertainty_pct": 8.0,
+          "unit": "micrometers",
+          "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility",
+          "source": "zebrahub_ome_zarr_metadata + developmental_imaging_metrology"
+        },
+        "developmental_stability_proxy": {
+          "literature_cv_pct": 18.0,
+          "reference_uncertainty_pct": 18.0,
+          "unit": "dimensionless",
+          "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
+          "source": "fsot_developmental_stability_definition"
+        }
+      },
+      "live_resources": {
+        "ensembl": {
+          "source": "ensembl_rest",
+          "url": "https://rest.ensembl.org/info/genomes/danio_rerio",
+          "scientific_name": "Danio rerio",
+          "assembly_name": "GRCz11",
+          "assembly_id": 102912,
+          "genebuild": "ENS01",
+          "division": "EnsemblVertebrates"
+        },
+        "gbif": {
+          "source": "gbif_species_match",
+          "url": "https://api.gbif.org/v1/species/match?name=Danio%20rerio",
+          "usage_key": 9797255,
+          "scientific_name": "Danio rerio (Hamilton, 1822)",
+          "rank": "SPECIES",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": null,
+          "order": "Cypriniformes",
+          "family": "Cyprinidae"
+        },
+        "uniprot_taxonomy": {
+          "source": "uniprot_taxonomy",
+          "url": "https://rest.uniprot.org/taxonomy/7955",
+          "taxon_id": 7955,
+          "scientific_name": "Danio rerio",
+          "rank": "species",
+          "lineage": [
+            {
+              "scientificName": "cellular organisms",
+              "taxonId": 131567,
+              "rank": "no rank",
+              "hidden": true
+            },
+            {
+              "scientificName": "Eukaryota",
+              "commonName": "eukaryotes",
+              "taxonId": 2759,
+              "rank": "domain",
+              "hidden": false
+            },
+            {
+              "scientificName": "Opisthokonta",
+              "taxonId": 33154,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Metazoa",
+              "commonName": "animals",
+              "taxonId": 33208,
+              "rank": "kingdom",
+              "hidden": false
+            },
+            {
+              "scientificName": "Eumetazoa",
+              "taxonId": 6072,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Bilateria",
+              "taxonId": 33213,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Deuterostomia",
+              "taxonId": 33511,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Chordata",
+              "commonName": "chordates",
+              "taxonId": 7711,
+              "rank": "phylum",
+              "hidden": false
+            },
+            {
+              "scientificName": "Craniata",
+              "taxonId": 89593,
+              "rank": "subphylum",
+              "hidden": false
+            },
+            {
+              "scientificName": "Vertebrata",
+              "commonName": "vertebrates",
+              "taxonId": 7742,
+              "rank": "clade",
+              "hidden": false
+            },
+            {
+              "scientificName": "Gnathostomata",
+              "commonName": "jawed vertebrates",
+              "taxonId": 7776,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Teleostomi",
+              "taxonId": 117570,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Euteleostomi",
+              "commonName": "bony vertebrates",
+              "taxonId": 117571,
+              "rank": "clade",
+              "hidden": false
+            },
+            {
+              "scientificName": "Actinopterygii",
+              "commonName": "ray-finned fishes",
+              "taxonId": 7898,
+              "rank": "superclass",
+              "hidden": false
+            },
+            {
+              "scientificName": "Actinopteri",
+              "taxonId": 186623,
+              "rank": "class",
+              "hidden": true
+            },
+            {
+              "scientificName": "Neopterygii",
+              "taxonId": 41665,
+              "rank": "subclass",
+              "hidden": false
+            },
+            {
+              "scientificName": "Teleostei",
+              "commonName": "teleost fishes",
+              "taxonId": 32443,
+              "rank": "infraclass",
+              "hidden": false
+            },
+            {
+              "scientificName": "Osteoglossocephalai",
+              "taxonId": 1489341,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Clupeocephala",
+              "taxonId": 186625,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Otomorpha",
+              "taxonId": 186634,
+              "rank": "cohort",
+              "hidden": true
+            },
+            {
+              "scientificName": "Ostariophysi",
+              "taxonId": 32519,
+              "rank": "subcohort",
+              "hidden": false
+            },
+            {
+              "scientificName": "Otophysi",
+              "taxonId": 186626,
+              "rank": "clade",
+              "hidden": true
+            },
+            {
+              "scientificName": "Cypriniphysae",
+              "taxonId": 186627,
+              "rank": "superorder",
+              "hidden": true
+            },
+            {
+              "scientificName": "Cypriniformes",
+              "commonName": "carps and others",
+              "taxonId": 7952,
+              "rank": "order",
+              "hidden": false
+            },
+            {
+              "scientificName": "Cyprinoidei",
+              "taxonId": 30727,
+              "rank": "suborder",
+              "hidden": true
+            },
+            {
+              "scientificName": "Danionidae",
+              "taxonId": 2743709,
+              "rank": "family",
+              "hidden": false
+            },
+            {
+              "scientificName": "Danioninae",
+              "taxonId": 2743711,
+              "rank": "subfamily",
+              "hidden": false
+            },
+            {
+              "scientificName": "Danio",
+              "taxonId": 7954,
+              "rank": "genus",
+              "hidden": false
+            }
+          ]
+        }
+      },
+      "ingest_errors": []
+    },
+    "strict_tier": {
+      "record_count": 20,
+      "pearson_r": 0.998903,
+      "spearman_rho": 0.986466,
+      "r_squared": 0.990805,
+      "pooled_rmse": 3.801842,
+      "pooled_mae": 2.06243,
+      "pooled_bias": -1.470797,
+      "median_margin_of_error_pct": 8.661411,
+      "mean_margin_of_error_pct": 12.2059,
+      "max_margin_of_error_pct": 81.0599,
+      "median_raw_error_pct": 8.661411,
+      "mean_sigma_equivalent": 0.8747,
+      "within_literature_band_fraction": 0.75,
+      "per_property": {
+        "developmental_stability_proxy": {
+          "n": 5,
+          "unit": "dimensionless",
+          "pearson_r": 0.930153,
+          "spearman_rho": 0.9,
+          "r_squared": -0.383567,
+          "rmse": 0.09091,
+          "mae": 0.049579,
+          "bias": 0.0472,
+          "nrmse_pct": 40.1078,
+          "median_margin_of_error_pct": 11.772958,
+          "mean_margin_of_error_pct": 23.861,
+          "max_margin_of_error_pct": 81.0599,
+          "median_raw_error_pct": 11.772958,
+          "mean_sigma_equivalent": 1.3256,
+          "within_literature_band_fraction": 0.8
+        },
+        "division_rate": {
+          "n": 5,
+          "unit": "dimensionless",
+          "pearson_r": 0.996683,
+          "spearman_rho": 0.9,
+          "r_squared": 0.982232,
+          "rmse": 0.036423,
+          "mae": 0.029893,
+          "bias": -0.025282,
+          "nrmse_pct": 5.7015,
+          "median_margin_of_error_pct": 8.661411,
+          "mean_margin_of_error_pct": 11.9618,
+          "max_margin_of_error_pct": 36.8275,
+          "median_raw_error_pct": 8.661411,
+          "mean_sigma_equivalent": 0.7975,
+          "within_literature_band_fraction": 0.8
+        },
+        "mean_displacement_um": {
+          "n": 5,
+          "unit": "micrometers",
+          "pearson_r": 0.99735,
+          "spearman_rho": 1.0,
+          "r_squared": 0.869123,
+          "rmse": 7.336197,
+          "mae": 6.597126,
+          "bias": -6.597126,
+          "nrmse_pct": 13.2154,
+          "median_margin_of_error_pct": 7.617401,
+          "mean_margin_of_error_pct": 7.0194,
+          "max_margin_of_error_pct": 9.5117,
+          "median_raw_error_pct": 7.617401,
+          "mean_sigma_equivalent": 0.8774,
+          "within_literature_band_fraction": 0.6
+        },
+        "mean_track_duration_steps": {
+          "n": 5,
+          "unit": "imaging_frames",
+          "pearson_r": 0.997892,
+          "spearman_rho": 1.0,
+          "r_squared": 0.991899,
+          "rmse": 1.996658,
+          "mae": 1.57312,
+          "bias": 0.69202,
+          "nrmse_pct": 3.3112,
+          "median_margin_of_error_pct": 4.160374,
+          "mean_margin_of_error_pct": 5.9814,
+          "max_margin_of_error_pct": 15.4469,
+          "median_raw_error_pct": 4.160374,
+          "mean_sigma_equivalent": 0.4984,
+          "within_literature_band_fraction": 0.8
+        }
+      },
+      "accuracy_scorecard": [
+        {
+          "dataset_id": "ZSNS003",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.2482611,
+          "computed": 0.44950139,
+          "margin_of_error_pct": 81.0599,
+          "delta": 0.20124029
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.18766705,
+          "computed": 0.118554,
+          "margin_of_error_pct": 36.8275,
+          "delta": -0.06911305
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 23.994199,
+          "computed": 27.70055491,
+          "margin_of_error_pct": 15.4469,
+          "delta": 3.70635591
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.11697663,
+          "computed": 0.13234376,
+          "margin_of_error_pct": 13.1369,
+          "delta": 0.01536713
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.19926106,
+          "computed": 0.22271998,
+          "margin_of_error_pct": 11.773,
+          "delta": 0.02345892
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 129.985113,
+          "computed": 117.62132455,
+          "margin_of_error_pct": 9.5117,
+          "delta": -12.36378845
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.15233946,
+          "computed": 0.13875789,
+          "margin_of_error_pct": 8.9153,
+          "delta": -0.01358157
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.02159746,
+          "computed": 0.02347918,
+          "margin_of_error_pct": 8.7127,
+          "delta": 0.00188172
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 82.378883,
+          "computed": 75.20811958,
+          "margin_of_error_pct": 8.7046,
+          "delta": -7.17076342
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.28928612,
+          "computed": 0.26422986,
+          "margin_of_error_pct": 8.6614,
+          "delta": -0.02505626
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 78.142244,
+          "computed": 72.1898361,
+          "margin_of_error_pct": 7.6174,
+          "delta": -5.9524079
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 85.79819,
+          "computed": 81.25209842,
+          "margin_of_error_pct": 5.2986,
+          "delta": -4.54609158
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 13.515944,
+          "computed": 14.15079008,
+          "margin_of_error_pct": 4.697,
+          "delta": 0.63484608
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.12864619,
+          "computed": 0.12269954,
+          "margin_of_error_pct": 4.6225,
+          "delta": -0.00594665
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 20.303899,
+          "computed": 21.14861708,
+          "margin_of_error_pct": 4.1604,
+          "delta": 0.84471808
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 74.472807,
+          "computed": 71.52022693,
+          "margin_of_error_pct": 3.9646,
+          "delta": -2.95258007
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.7911642,
+          "computed": 0.76097775,
+          "margin_of_error_pct": 3.8154,
+          "delta": -0.03018645
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 73.816407,
+          "computed": 71.61365735,
+          "margin_of_error_pct": 2.9841,
+          "delta": -2.20274965
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 18.213312,
+          "computed": 18.69024262,
+          "margin_of_error_pct": 2.6186,
+          "delta": 0.47693062
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.72540226,
+          "computed": 0.73693153,
+          "margin_of_error_pct": 1.5894,
+          "delta": 0.01152927
+        }
+      ]
+    },
+    "operational_tier": {
+      "record_count": 20,
+      "pearson_r": 0.999979,
+      "spearman_rho": 1.0,
+      "r_squared": 0.999955,
+      "pooled_rmse": 0.264768,
+      "pooled_mae": 0.127835,
+      "pooled_bias": 0.012935,
+      "median_margin_of_error_pct": 0.445462,
+      "mean_margin_of_error_pct": 0.3946,
+      "max_margin_of_error_pct": 0.6849,
+      "median_raw_error_pct": 0.445462,
+      "mean_sigma_equivalent": 0.0331,
+      "within_literature_band_fraction": 1.0,
+      "per_property": {
+        "developmental_stability_proxy": {
+          "n": 5,
+          "unit": "dimensionless",
+          "pearson_r": 0.999981,
+          "spearman_rho": 1.0,
+          "r_squared": 0.999909,
+          "rmse": 0.000735,
+          "mae": 0.000641,
+          "bias": -0.000367,
+          "nrmse_pct": 0.3244,
+          "median_margin_of_error_pct": 0.473135,
+          "mean_margin_of_error_pct": 0.4413,
+          "max_margin_of_error_pct": 0.5561,
+          "median_raw_error_pct": 0.473135,
+          "mean_sigma_equivalent": 0.0245,
+          "within_literature_band_fraction": 1.0
+        },
+        "division_rate": {
+          "n": 5,
+          "unit": "dimensionless",
+          "pearson_r": 0.999977,
+          "spearman_rho": 1.0,
+          "r_squared": 0.999928,
+          "rmse": 0.002325,
+          "mae": 0.001554,
+          "bias": -0.001181,
+          "nrmse_pct": 0.364,
+          "median_margin_of_error_pct": 0.387733,
+          "mean_margin_of_error_pct": 0.3599,
+          "max_margin_of_error_pct": 0.6834,
+          "median_raw_error_pct": 0.387733,
+          "mean_sigma_equivalent": 0.024,
+          "within_literature_band_fraction": 1.0
+        },
+        "mean_displacement_um": {
+          "n": 5,
+          "unit": "micrometers",
+          "pearson_r": 0.999894,
+          "spearman_rho": 1.0,
+          "r_squared": 0.999336,
+          "rmse": 0.522578,
+          "mae": 0.438521,
+          "bias": 0.025592,
+          "nrmse_pct": 0.9414,
+          "median_margin_of_error_pct": 0.627151,
+          "mean_margin_of_error_pct": 0.4606,
+          "max_margin_of_error_pct": 0.6849,
+          "median_raw_error_pct": 0.627151,
+          "mean_sigma_equivalent": 0.0576,
+          "within_literature_band_fraction": 1.0
+        },
+        "mean_track_duration_steps": {
+          "n": 5,
+          "unit": "imaging_frames",
+          "pearson_r": 0.999995,
+          "spearman_rho": 1.0,
+          "r_squared": 0.999985,
+          "rmse": 0.085523,
+          "mae": 0.070624,
+          "bias": 0.027696,
+          "nrmse_pct": 0.1418,
+          "median_margin_of_error_pct": 0.210907,
+          "mean_margin_of_error_pct": 0.3164,
+          "max_margin_of_error_pct": 0.6565,
+          "median_raw_error_pct": 0.210907,
+          "mean_sigma_equivalent": 0.0264,
+          "within_literature_band_fraction": 1.0
+        }
+      },
+      "accuracy_scorecard": [
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 129.985113,
+          "computed": 130.87534228,
+          "margin_of_error_pct": 0.6849,
+          "delta": 0.89022928
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.72540226,
+          "computed": 0.72044463,
+          "margin_of_error_pct": 0.6834,
+          "delta": -0.00495763
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 82.378883,
+          "computed": 81.83663005,
+          "margin_of_error_pct": 0.6582,
+          "delta": -0.54225295
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 23.994199,
+          "computed": 24.15171992,
+          "margin_of_error_pct": 0.6565,
+          "delta": 0.15752092
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 78.142244,
+          "computed": 77.652174,
+          "margin_of_error_pct": 0.6272,
+          "delta": -0.49007
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.11697663,
+          "computed": 0.11632616,
+          "margin_of_error_pct": 0.5561,
+          "delta": -0.00065047
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 13.515944,
+          "computed": 13.59064415,
+          "margin_of_error_pct": 0.5527,
+          "delta": 0.07470015
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.2482611,
+          "computed": 0.24704738,
+          "margin_of_error_pct": 0.4889,
+          "delta": -0.00121372
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.12864619,
+          "computed": 0.12925486,
+          "margin_of_error_pct": 0.4731,
+          "delta": 0.00060867
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.28928612,
+          "computed": 0.28799746,
+          "margin_of_error_pct": 0.4455,
+          "delta": -0.00128866
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.15233946,
+          "computed": 0.15174879,
+          "margin_of_error_pct": 0.3877,
+          "delta": -0.00059067
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.02159746,
+          "computed": 0.02167502,
+          "margin_of_error_pct": 0.3591,
+          "delta": 7.756e-05
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "developmental_stability_proxy",
+          "unit": "dimensionless",
+          "measured": 0.19926106,
+          "computed": 0.19860473,
+          "margin_of_error_pct": 0.3294,
+          "delta": -0.00065633
+        },
+        {
+          "dataset_id": "ZSNS003",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.18766705,
+          "computed": 0.18807365,
+          "margin_of_error_pct": 0.2167,
+          "delta": 0.0004066
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 20.303899,
+          "computed": 20.26107659,
+          "margin_of_error_pct": 0.2109,
+          "delta": -0.04282241
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 85.79819,
+          "computed": 85.96682018,
+          "margin_of_error_pct": 0.1965,
+          "delta": 0.16863018
+        },
+        {
+          "dataset_id": "ZSNS005",
+          "property": "mean_displacement_um",
+          "unit": "micrometers",
+          "measured": 74.472807,
+          "computed": 74.5742285,
+          "margin_of_error_pct": 0.1362,
+          "delta": 0.1014215
+        },
+        {
+          "dataset_id": "ZSNS001_tail",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 73.816407,
+          "computed": 73.75190827,
+          "margin_of_error_pct": 0.0874,
+          "delta": -0.06449873
+        },
+        {
+          "dataset_id": "ZSNS004",
+          "property": "mean_track_duration_steps",
+          "unit": "imaging_frames",
+          "measured": 18.213312,
+          "computed": 18.22689224,
+          "margin_of_error_pct": 0.0746,
+          "delta": 0.01358024
+        },
+        {
+          "dataset_id": "ZSNS001",
+          "property": "division_rate",
+          "unit": "dimensionless",
+          "measured": 0.7911642,
+          "computed": 0.79168939,
+          "margin_of_error_pct": 0.0664,
+          "delta": 0.00052519
+        }
+      ]
+    }
+  },
+  "interpretation": "strict tier uses only n_timesteps + species longevity; operational tier adds detection census (not lineage outcomes) as population N; fsot_connective_registry_lib composes certified domain scalars, adjacent-rung fold steps, longevity spine, and photonic environment stack (~0.02% gate) across proliferation, motility, stability, and imaging interactive systems."
+}
