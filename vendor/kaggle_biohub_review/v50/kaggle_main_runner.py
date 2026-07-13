@@ -3,8 +3,8 @@
 FSOT Kaggle v50 — competitive U-Net detection + FSOT vision/linking.
 
 Pipeline:
-  zarr → [U-Net detect + FSOT vision calibrate] → centroids
-       → [FSOT fsot_gate linking] → submission.csv
+  zarr → [U-Net detect + conf-ranked NMS] → centroids
+       → [FSOT SequenceTracker linking] → submission.csv
 
 Engines (BIOHUB_ENGINE):
   fsot_unet  — U-Net + FSOT gate linking (DEFAULT when weights available)
@@ -64,24 +64,24 @@ def _setup_kaggle_env() -> tuple[str, str]:
 
     _extract_cellmot_bundle()
 
-    # v50 defaults: competitive U-Net + FSOT vision calibrate + FSOT gate linking
+    # v50 defaults: U-Net FT detect + FSOT pure link + ILP consistency
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "1")
     os.environ.setdefault("FSOT_LIVING_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_DET_CONF_RANK", "1")
-    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.86")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.90")
     os.environ.setdefault("FSOT_LIVING_MIN_UNET_CONF", "0.0")
     os.environ.setdefault("FSOT_LIVING_TARGET_PER_FRAME", "258")
-    os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
+    os.environ.setdefault("FSOT_LINK_MODE", "fsot")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_GATE_RESCUE", "1")
     os.environ.setdefault("CELLMOT_USE_FT", "1")
-    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.45")
+    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.48")
     os.environ.setdefault("CELLMOT_EDGE_THRESHOLD", "0.25")
-    os.environ.setdefault("CELLMOT_USE_ILP", "0")
-    os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "12000")
+    os.environ.setdefault("CELLMOT_USE_ILP", "1")
+    os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "80000")
     os.environ.setdefault("CELLMOT_DET_TTA", "0")
     os.environ.setdefault("CELLMOT_NMS_UM", "6.0")
     os.environ.setdefault("CELLMOT_POOL_UM", "8.0")
@@ -131,15 +131,16 @@ def _setup_local_env() -> tuple[str, str]:
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "1")
     os.environ.setdefault("FSOT_LIVING_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_DET_CONF_RANK", "1")
-    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.86")
+    os.environ.setdefault("FSOT_LIVING_PROXY_ACCURACY", "0.90")
     os.environ.setdefault("FSOT_LIVING_MIN_UNET_CONF", "0.0")
     os.environ.setdefault("FSOT_LIVING_TARGET_PER_FRAME", "258")
-    os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
+    os.environ.setdefault("FSOT_LINK_MODE", "fsot")
     os.environ.setdefault("FSOT_GATE_FRAC", "0.42")
     os.environ.setdefault("FSOT_GATE_ADAPTIVE", "1")
     os.environ.setdefault("FSOT_GATE_RESCUE", "1")
-    os.environ.setdefault("CELLMOT_USE_ILP", "0")
-    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.45")
+    os.environ.setdefault("CELLMOT_USE_ILP", "1")
+    os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "80000")
+    os.environ.setdefault("CELLMOT_DET_THRESHOLD", "0.48")
     os.environ.setdefault("CELLMOT_NMS_UM", "6.0")
     os.environ.setdefault("CELLMOT_DEVICE", "cuda" if _gpu_available() else "cpu")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")

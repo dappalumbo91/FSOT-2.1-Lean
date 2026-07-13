@@ -36,8 +36,11 @@ def _run_once(
         Path(r"D:\Kaggle_Biohub_Data\cellmot\cellmot-ft-detector-biohub\edge_predictor_best.pth")
     ))
     os.environ.setdefault("CELLMOT_DEVICE", "cpu")
-    os.environ.setdefault("FSOT_LINK_MODE", "fsot_gate")
+    os.environ.setdefault("FSOT_LINK_MODE", "fsot")
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "0")
+    os.environ.setdefault("FSOT_DET_CONF_RANK", "1")
+    os.environ.setdefault("CELLMOT_USE_ILP", "1")
+    os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "80000")
 
     graph = predict_graph(ds_path)
     rows, _, _ = graph_to_submission_rows_from_graph(graph, ds_path.name.replace(".zarr", ""))
@@ -57,19 +60,12 @@ def main() -> int:
         os.environ["CELLMOT_MAX_FRAMES"] = str(args.max_frames)
 
     grid = []
-    for det in ("0.43", "0.44", "0.45", "0.46", "0.47"):
+    for det in ("0.44", "0.45", "0.46", "0.47", "0.48", "0.49"):
         for nms in ("5", "6", "7"):
             grid.append({
                 "CELLMOT_DET_THRESHOLD": det,
                 "CELLMOT_NMS_UM": nms,
-                "FSOT_GATE_FRAC": "0.42",
             })
-    for gate in ("0.38", "0.46", "0.50"):
-        grid.append({
-            "CELLMOT_DET_THRESHOLD": "0.45",
-            "CELLMOT_NMS_UM": "6",
-            "FSOT_GATE_FRAC": gate,
-        })
 
     best = {"score": -1.0, "params": {}}
     print(f"sweep {len(grid)} configs on {ds.name}")

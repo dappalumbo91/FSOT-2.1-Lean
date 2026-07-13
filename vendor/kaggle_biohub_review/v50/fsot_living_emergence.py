@@ -250,9 +250,9 @@ def living_should_activate(proxy_accuracy: float | None = None) -> bool:
     proxy = proxy_accuracy
     if proxy is None:
         try:
-            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.86"))
+            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.90"))
         except ValueError:
-            proxy = 0.86
+            proxy = 0.90
     return proxy < VISION_CORE_THR
 
 

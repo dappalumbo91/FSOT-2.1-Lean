@@ -5,19 +5,25 @@
     "v49_peaks_fsot": 0.6764,
     "v50_ft_baseline_det055_nms8": 0.505,
     "v50_ft_tuned_det045_nms6_fsot_gate": 0.857,
-    "v50_ft_det044_nms6_adaptive_living_full": 0.842,
-    "sweep_50f_best_det047_nms6": 0.867
+    "v50_ft_det047_nms6_fsot_gate": 0.867,
+    "v50_ft_det048_nms6_fsot_pure_link_ilp": 0.9044,
+    "v50_ft_det048_nms6_fsot_pure_link_no_ilp": 0.8572,
+    "v50_ft_det047_nms6_fsot_pure_link": 0.9043,
+    "v50_ft_det044_nms6_adaptive_living_full": 0.842
   },
   "competitive_defaults": {
     "CELLMOT_UNET_WEIGHTS": "cellmot-ft-detector-biohub/edge_predictor_best.pth",
-    "CELLMOT_DET_THRESHOLD": "0.45",
+    "CELLMOT_DET_THRESHOLD": "0.48",
     "CELLMOT_NMS_UM": "6.0",
-    "FSOT_LINK_MODE": "fsot_gate",
+    "FSOT_LINK_MODE": "fsot",
     "FSOT_LIVING_EMERGENCE": "1",
     "FSOT_LIVING_ADAPTIVE": "1",
     "FSOT_DET_CONF_RANK": "1",
-    "FSOT_LIVING_PROXY_ACCURACY": "0.86"
+    "FSOT_LIVING_PROXY_ACCURACY": "0.90",
+    "CELLMOT_USE_ILP": "1",
+    "CELLMOT_ILP_MAX_EDGES": "80000"
   },
+  "breakthrough_note": "Pure FSOT SequenceTracker linking beats fsot_gate by +0.037 on train proxy. Math wins; ML transformer edges were over-filtered.",
   "all_four_test_datasets": {
     "44b6_0113de3b": 26561,
     "44b6_0b24845f": 58603,
@@ -25,5 +31,5 @@
     "6bba_05db0fb1": 75716,
     "submission_rows": 332525
   },
-  "living_adaptive_note": "FSOT-Living activates only when proxy_accuracy < 0.62 (accuracy_homeo vision band). At 0.86 proxy, U-Net conf rank only — no over-prune."
+  "living_adaptive_note": "FSOT-Living dormant when proxy >= 0.62 (accuracy_homeo). At 0.90 proxy only U-Net conf-ranked NMS runs — no over-prune."
 }

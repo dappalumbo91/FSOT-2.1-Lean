@@ -5,8 +5,8 @@ Competition: [biohub-cell-tracking-during-development](https://www.kaggle.com/co
 ## Architecture
 
 ```
-zarr → U-Net FT detect (conf-ranked) → FSOT fsot_gate linking → submission.csv
-         ↑ optional FSOT-Living emergence when proxy accuracy drops
+zarr → U-Net FT detect (conf-ranked NMS) → FSOT SequenceTracker linking → submission.csv
+         ↑ FSOT-Living adaptive only when proxy < 0.62 (dormant at 0.90)
 ```
 
 ## Competitive defaults (tuned 2026-07-13)
@@ -14,10 +14,13 @@ zarr → U-Net FT detect (conf-ranked) → FSOT fsot_gate linking → submission
 | Parameter | Value | Why |
 |-----------|-------|-----|
 | `CELLMOT_UNET_WEIGHTS` | **FT biohub** | `cellmot-ft-detector-biohub` |
-| `CELLMOT_DET_THRESHOLD` | **0.45** | Recall/recall balance (0.55 → 0.50 score) |
-| `CELLMOT_NMS_UM` | **6.0** | Tighter than 8.0; 0.857 train proxy |
-| `FSOT_LINK_MODE` | `fsot_gate` | FSOT scalar + ML edge fusion |
-| `FSOT_LIVING_EMERGENCE` | `0` | Enable for deficit tuning experiments |
+| `CELLMOT_DET_THRESHOLD` | **0.48** | Best on FSOT pure link sweep |
+| `CELLMOT_NMS_UM` | **6.0** | Tighter than 8.0 |
+| `FSOT_LINK_MODE` | **`fsot`** | Pure FSOT math linking beats fsot_gate (+0.037) |
+| `FSOT_LIVING_PROXY_ACCURACY` | **0.90** | Keeps Living dormant; conf-rank NMS only |
+| `FSOT_LIVING_EMERGENCE` | `1` | Adaptive — only activates below 0.62 band |
+| `CELLMOT_USE_ILP` | **1** | Global consistency; +0.047 vs no ILP on proxy |
+| `CELLMOT_ILP_MAX_EDGES` | **40000** | FSOT graphs ~26k edges/dataset |
 
 ## Refinement ladder (train proxy `44b6_0113de3b`)
 
@@ -25,9 +28,10 @@ zarr → U-Net FT detect (conf-ranked) → FSOT fsot_gate linking → submission
 |-------|-------|-------|
 | v49 peaks + FSOT math | 0.676 | Linking only |
 | FT U-Net wrong tuning | 0.505 | det 0.55, NMS 8 |
-| **FT + det 0.45 + NMS 6 + fsot_gate** | **0.857** | **Competitive ML** |
-| 50-frame sweep best | 0.867 | det 0.47, NMS 6 |
-| All 4 test zarrs submission | 332k rows | Ready for Kaggle |
+| FT + det 0.45 + NMS 6 + fsot_gate | 0.857 | ML gate over-filtered |
+| det 0.47 + fsot_gate | 0.867 | Gate still drops FSOT edges |
+| **FT + det 0.48 + NMS 6 + FSOT pure link** | **0.904** | **Math + ML aligned** |
+| All 4 test zarrs submission | 332k rows | Re-run with new defaults |
 
 ## FSOT-Living adaptive mode
 

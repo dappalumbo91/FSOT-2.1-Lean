@@ -134,7 +134,7 @@ def apply_fsot_vision_calibrate(ds_path: str | Path) -> float:
         try:
             from fsot_living_emergence import apply_living_det_adjustments, living_vision_state
 
-            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.54"))
+            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.90"))
             state = living_vision_state(
                 proxy_accuracy=proxy,
                 mean_brightness=min(max(diag["density_proxy"] * 4.0, 0.2), 0.8),

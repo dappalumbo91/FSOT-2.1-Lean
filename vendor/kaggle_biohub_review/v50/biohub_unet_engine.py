@@ -6,7 +6,7 @@ Architecture (matches FSOT-2.1-Lean cellular lab + kaggle_prototype_fsot_tracker
   1. U-Net local-max detection  — ML vision gateway (coords only)
   2. FSOT SequenceTracker       — phase-scalar link_cost + mitosis gates (edges)
 
-Set FSOT_LINK_MODE=fsot_gate (default) | fsot | hybrid | transformer
+Set FSOT_LINK_MODE=fsot (default) | fsot_gate | hybrid | transformer
 """
 
 from __future__ import annotations
@@ -31,6 +31,7 @@ if str(_REPO / "src") not in sys.path:
 from predict_unet_transformer import (  # noqa: E402
     PredictConfig,
     _detect_cells_pooled,
+    _detect_cells_pooled_scored,
     _load_frame,
     build_graph,
     load_model,
@@ -61,11 +62,23 @@ def _det_topk() -> int:
 
 
 def _living_proxy_accuracy() -> float:
-    raw = os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.54")
+    raw = os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.90")
     try:
         return float(raw)
     except ValueError:
-        return 0.54
+        return 0.90
+
+
+def _want_det_conf() -> bool:
+    """U-Net sigmoid confidences for NMS ranking (Living dormant at high proxy)."""
+    try:
+        from fsot_living_emergence import living_should_activate
+
+        if living_should_activate(_living_proxy_accuracy()):
+            return True
+    except Exception:
+        pass
+    return os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
 
 
 def _nms_scores_for_frame(
@@ -405,7 +418,7 @@ def predict_coords_only(
     max_frames: int | None = None,
     downsample: tuple[int, ...] = (1, 4, 4),
 ) -> np.ndarray:
-    """U-Net detection only — skips transformer edge inference (faster CPU path)."""
+    """U-Net detection only — skips transformer edge inference (faster fsot link path)."""
     import torch.nn.functional as F
     import zarr
     from tqdm import tqdm
@@ -426,8 +439,10 @@ def predict_coords_only(
     voxel_size = tuple(s * d for s, d in zip(ds.scale, downsample))
     pool_k = pool_kernel_from_um(cfg.pool_kernel_um, voxel_size)
 
+    collect_conf = _want_det_conf()
     seen_frames: set[int] = set()
     coord_lists: list[np.ndarray] = []
+    conf_lists: list[np.ndarray] = []
     stride = max(W - 1, 1)
     window_starts = list(range(0, T - W + 1, stride))
     if not window_starts or window_starts[-1] + W < T:
@@ -455,18 +470,31 @@ def predict_coords_only(
 
         for f_idx, t in enumerate(frame_indices):
             if t not in seen_frames:
-                coord_lists.append(
-                    _detect_cells_pooled(det_logits[f_idx][0], t, cfg.det_threshold, pool_k)
-                )
+                if collect_conf:
+                    arr, conf = _detect_cells_pooled_scored(
+                        det_logits[f_idx][0], t, cfg.det_threshold, pool_k,
+                    )
+                    conf_lists.append(conf)
+                else:
+                    arr = _detect_cells_pooled(
+                        det_logits[f_idx][0], t, cfg.det_threshold, pool_k,
+                    )
+                coord_lists.append(arr)
                 seen_frames.add(t)
         del imgs, _unet_out, det_logits
 
     coords = np.concatenate(coord_lists) if coord_lists else np.empty((0, 4), dtype=np.int16)
+    det_conf = np.concatenate(conf_lists) if conf_lists else None
     coords = coords.astype(np.float32)
     coords[:, 1:] *= ds_arr
     coords = coords.astype(np.int16)
+    if det_conf is not None and len(det_conf) > 0:
+        print(
+            f"[DET-CONF] mean={det_conf.mean():.3f} "
+            f"p50={np.median(det_conf):.3f} max={det_conf.max():.3f}"
+        )
     before = len(coords)
-    coords = _postprocess_coords(coords)
+    coords = _postprocess_coords(coords, det_conf=det_conf)
     if before != len(coords):
         print(f"[DETECT] NMS/topk: {before} -> {len(coords)} nodes (nms_um={_nms_min_um()})")
     return coords
@@ -610,17 +638,7 @@ def predict_dataset(
 
     cfg = _build_config(wpath, ds_path=ds_path)
 
-    try:
-        from fsot_living_emergence import living_should_activate
-
-        use_conf = (
-            os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
-            or os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
-        )
-        if use_conf and not living_should_activate(_living_proxy_accuracy()):
-            use_conf = os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
-    except Exception:
-        use_conf = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    use_conf = _want_det_conf()
     conf_parts: list[np.ndarray] = [] if use_conf else []
 
     mode = (link_mode or _link_mode()).lower()
