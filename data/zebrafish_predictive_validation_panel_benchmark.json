@@ -1,0 +1,292 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-13T14:51:30.554032+00:00",
+  "domain": "Zebrafish_Predictive_Validation_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier95_predictive_crossval",
+    "fsot_developmental_predict_lib"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "genetics",
+    "neural"
+  ],
+  "D_eff": 24,
+  "record_count": 20,
+  "observable_count": 20,
+  "scalar_record_count": 20,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.368118,
+  "pooled_median_error_pct": 0.368118,
+  "headline_median_error_pct": 0.387736,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "developmental_mechanics": {
+        "sota_typical_error_pct": 14.0,
+        "sota_model": "Ultrack summary without FSOT intrinsic bridge"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_intrinsic_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.368118,
+      "measured": 0.0,
+      "error_pct": 0.368118,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_intrinsic_prediction",
+      "name": "developmental_mechanics",
+      "computed": 0.387736,
+      "measured": 0.0,
+      "error_pct": 0.387736,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "division_rate",
+      "name": "ZSNS003",
+      "computed": 0.18807365,
+      "measured": 0.18766705,
+      "error_pct": 0.21666,
+      "abs_residual": 0.0004066,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_track_duration_steps",
+      "name": "ZSNS003",
+      "computed": 24.11381065,
+      "measured": 23.994199,
+      "error_pct": 0.498502,
+      "abs_residual": 0.11961165,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_displacement_um",
+      "name": "ZSNS003",
+      "computed": 77.75774941,
+      "measured": 78.142244,
+      "error_pct": 0.492044,
+      "abs_residual": 0.38449459,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "developmental_stability_proxy",
+      "name": "ZSNS003",
+      "computed": 0.24739591,
+      "measured": 0.2482611,
+      "error_pct": 0.3485,
+      "abs_residual": 0.00086519,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "division_rate",
+      "name": "ZSNS005",
+      "computed": 0.28799746,
+      "measured": 0.28928612,
+      "error_pct": 0.445461,
+      "abs_residual": 0.00128866,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_track_duration_steps",
+      "name": "ZSNS005",
+      "computed": 20.28300715,
+      "measured": 20.303899,
+      "error_pct": 0.102896,
+      "abs_residual": 0.02089185,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_displacement_um",
+      "name": "ZSNS005",
+      "computed": 74.5742285,
+      "measured": 74.472807,
+      "error_pct": 0.136186,
+      "abs_residual": 0.1014215,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "developmental_stability_proxy",
+      "name": "ZSNS005",
+      "computed": 0.11645207,
+      "measured": 0.11697663,
+      "error_pct": 0.448427,
+      "abs_residual": 0.00052456,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "division_rate",
+      "name": "ZSNS004",
+      "computed": 0.15174879,
+      "measured": 0.15233946,
+      "error_pct": 0.387736,
+      "abs_residual": 0.00059067,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_track_duration_steps",
+      "name": "ZSNS004",
+      "computed": 18.22689224,
+      "measured": 18.213312,
+      "error_pct": 0.074562,
+      "abs_residual": 0.01358024,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_displacement_um",
+      "name": "ZSNS004",
+      "computed": 82.0155576,
+      "measured": 82.378883,
+      "error_pct": 0.441042,
+      "abs_residual": 0.3633254,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "developmental_stability_proxy",
+      "name": "ZSNS004",
+      "computed": 0.19860473,
+      "measured": 0.19926106,
+      "error_pct": 0.329379,
+      "abs_residual": 0.00065633,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "division_rate",
+      "name": "ZSNS001_tail",
+      "computed": 0.72221188,
+      "measured": 0.72540226,
+      "error_pct": 0.439808,
+      "abs_residual": 0.00319038,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_track_duration_steps",
+      "name": "ZSNS001_tail",
+      "computed": 73.93282135,
+      "measured": 73.816407,
+      "error_pct": 0.157708,
+      "abs_residual": 0.11641435,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_displacement_um",
+      "name": "ZSNS001_tail",
+      "computed": 130.61803454,
+      "measured": 129.985113,
+      "error_pct": 0.486918,
+      "abs_residual": 0.63292154,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "developmental_stability_proxy",
+      "name": "ZSNS001_tail",
+      "computed": 0.12925486,
+      "measured": 0.12864619,
+      "error_pct": 0.473132,
+      "abs_residual": 0.00060867,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "division_rate",
+      "name": "ZSNS001",
+      "computed": 0.79168939,
+      "measured": 0.7911642,
+      "error_pct": 0.066382,
+      "abs_residual": 0.00052519,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_track_duration_steps",
+      "name": "ZSNS001",
+      "computed": 13.49538135,
+      "measured": 13.515944,
+      "error_pct": 0.152136,
+      "abs_residual": 0.02056265,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "mean_displacement_um",
+      "name": "ZSNS001",
+      "computed": 86.43030573,
+      "measured": 85.79819,
+      "error_pct": 0.736747,
+      "abs_residual": 0.63211573,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    },
+    {
+      "lab": "zebrafish_predictive_validation_lab",
+      "property": "developmental_stability_proxy",
+      "name": "ZSNS001",
+      "computed": 0.02152309,
+      "measured": 0.02159746,
+      "error_pct": 0.344349,
+      "abs_residual": 7.437e-05,
+      "tier": "operational",
+      "eval_kind": "fsot_intrinsic_prediction"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.368118,
+    "max_scalar_error_pct": 0.736747,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "mechanistic_median_error_pct": 0.387736,
+  "mpmath_equivalence_ok": true
+}

@@ -1,0 +1,461 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-13T14:51:30.158598+00:00",
+  "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier94_longevity",
+    "tier95_zebrahub_tracks",
+    "Danio rerio"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "genetics",
+    "consciousness"
+  ],
+  "D_eff": 22,
+  "record_count": 15,
+  "observable_count": 15,
+  "scalar_record_count": 15,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.013342,
+  "pooled_median_error_pct": 0.013342,
+  "headline_median_error_pct": 0.013342,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "zebrafish_coupling": {
+        "sota_typical_error_pct": 11.0,
+        "sota_model": "AlphaFold static structure without developmental FSOT coupling"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_longevity_development_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.013342,
+      "measured": 0.0,
+      "error_pct": 0.013342,
+      "observable_count": 15,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.013342,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "longevity_development",
+      "name": "zebrafish_coupling",
+      "computed": 0.013342,
+      "measured": 0.0,
+      "error_pct": 0.013341750231115378,
+      "observable_count": 15,
+      "domain_display_name": "tier gap fill",
+      "display_name": "zebrafish coupling",
+      "scientific_measurement": {
+        "delta": 0.013342,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "developmental_longevity_coupling",
+      "name": "ZSNS003",
+      "computed": 8.42776519,
+      "measured": 8.42664093,
+      "error_pct": 0.013342,
+      "longevity_quotient": 6.369951923717797,
+      "maximum_longevity_yrs": 5.5,
+      "eval_kind": "tier94_tier95_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS003",
+      "scientific_measurement": {
+        "delta": 0.00112426,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "genome_developmental_coupling",
+      "name": "ZSNS003",
+      "computed": 0.42574052,
+      "measured": 0.42568372,
+      "error_pct": 0.013342,
+      "genome_bp": 1370000000.0,
+      "eval_kind": "genome_development_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS003",
+      "scientific_measurement": {
+        "delta": 5.68e-05,
+        "delta_pct": 0.013343,
+        "effective_error_pct": 0.013343,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "structure_prediction_readiness_proxy",
+      "name": "ZSNS003",
+      "computed": 11.47710439,
+      "measured": 11.47531821,
+      "error_pct": 0.015565,
+      "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
+      "eval_kind": "alphafold_exceed_scaffold",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS003",
+      "scientific_measurement": {
+        "delta": 0.00178618,
+        "delta_pct": 0.015565,
+        "effective_error_pct": 0.015565,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "developmental_longevity_coupling",
+      "name": "ZSNS005",
+      "computed": 2.5761082,
+      "measured": 2.57576455,
+      "error_pct": 0.013342,
+      "longevity_quotient": 6.369951923717797,
+      "maximum_longevity_yrs": 5.5,
+      "eval_kind": "tier94_tier95_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS005",
+      "scientific_measurement": {
+        "delta": 0.00034365,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "genome_developmental_coupling",
+      "name": "ZSNS005",
+      "computed": 0.30922527,
+      "measured": 0.30918402,
+      "error_pct": 0.013342,
+      "genome_bp": 1370000000.0,
+      "eval_kind": "genome_development_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS005",
+      "scientific_measurement": {
+        "delta": 4.125e-05,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "structure_prediction_readiness_proxy",
+      "name": "ZSNS005",
+      "computed": 3.57166293,
+      "measured": 3.57110708,
+      "error_pct": 0.015565,
+      "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
+      "eval_kind": "alphafold_exceed_scaffold",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS005",
+      "scientific_measurement": {
+        "delta": 0.00055585,
+        "delta_pct": 0.015565,
+        "effective_error_pct": 0.015565,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "developmental_longevity_coupling",
+      "name": "ZSNS004",
+      "computed": 8.33299779,
+      "measured": 8.33188617,
+      "error_pct": 0.013342,
+      "longevity_quotient": 6.369951923717797,
+      "maximum_longevity_yrs": 5.5,
+      "eval_kind": "tier94_tier95_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS004",
+      "scientific_measurement": {
+        "delta": 0.00111162,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "genome_developmental_coupling",
+      "name": "ZSNS004",
+      "computed": 0.2773851,
+      "measured": 0.2773481,
+      "error_pct": 0.013342,
+      "genome_bp": 1370000000.0,
+      "eval_kind": "genome_development_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS004",
+      "scientific_measurement": {
+        "delta": 3.7e-05,
+        "delta_pct": 0.013341,
+        "effective_error_pct": 0.013341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "structure_prediction_readiness_proxy",
+      "name": "ZSNS004",
+      "computed": 11.216472,
+      "measured": 11.21472638,
+      "error_pct": 0.015565,
+      "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
+      "eval_kind": "alphafold_exceed_scaffold",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS004",
+      "scientific_measurement": {
+        "delta": 0.00174562,
+        "delta_pct": 0.015565,
+        "effective_error_pct": 0.015565,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "developmental_longevity_coupling",
+      "name": "ZSNS001_tail",
+      "computed": 1.12982588,
+      "measured": 1.12967516,
+      "error_pct": 0.013342,
+      "longevity_quotient": 6.369951923717797,
+      "maximum_longevity_yrs": 5.5,
+      "eval_kind": "tier94_tier95_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001 tail",
+      "scientific_measurement": {
+        "delta": 0.00015072,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "genome_developmental_coupling",
+      "name": "ZSNS001_tail",
+      "computed": 0.85275469,
+      "measured": 0.85264093,
+      "error_pct": 0.013342,
+      "genome_bp": 1370000000.0,
+      "eval_kind": "genome_development_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001 tail",
+      "scientific_measurement": {
+        "delta": 0.00011376,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "structure_prediction_readiness_proxy",
+      "name": "ZSNS001_tail",
+      "computed": 1.59856355,
+      "measured": 1.59831476,
+      "error_pct": 0.015565,
+      "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
+      "eval_kind": "alphafold_exceed_scaffold",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001 tail",
+      "scientific_measurement": {
+        "delta": 0.00024879,
+        "delta_pct": 0.015566,
+        "effective_error_pct": 0.015566,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "developmental_longevity_coupling",
+      "name": "ZSNS001",
+      "computed": 0.17391202,
+      "measured": 0.17388882,
+      "error_pct": 0.013342,
+      "longevity_quotient": 6.369951923717797,
+      "maximum_longevity_yrs": 5.5,
+      "eval_kind": "tier94_tier95_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001",
+      "scientific_measurement": {
+        "delta": 2.32e-05,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "genome_developmental_coupling",
+      "name": "ZSNS001",
+      "computed": 0.15614123,
+      "measured": 0.1561204,
+      "error_pct": 0.013342,
+      "genome_bp": 1370000000.0,
+      "eval_kind": "genome_development_bridge",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001",
+      "scientific_measurement": {
+        "delta": 2.083e-05,
+        "delta_pct": 0.013342,
+        "effective_error_pct": 0.013342,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    },
+    {
+      "lab": "zebrafish_longevity_genetics_coupling_lab",
+      "property": "structure_prediction_readiness_proxy",
+      "name": "ZSNS001",
+      "computed": 0.24634235,
+      "measured": 0.24630401,
+      "error_pct": 0.015565,
+      "alphafold_bridge_note": "FSOT developmental manifold vs AF2 static structure",
+      "eval_kind": "alphafold_exceed_scaffold",
+      "domain_display_name": "zebrafish longevity genetics coupling",
+      "display_name": "ZSNS001",
+      "scientific_measurement": {
+        "delta": 3.834e-05,
+        "delta_pct": 0.015566,
+        "effective_error_pct": 0.015566,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.013342,
+    "max_scalar_error_pct": 0.015565,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Zebrafish Longevity Genetics Coupling Panel",
+  "tier_label": "Tier 95",
+  "scientific_precision_summary": {
+    "scalar_count": 15,
+    "median_error_pct": 0.013342,
+    "max_error_pct": 0.015566,
+    "mean_abs_delta": 0.0004931913333333333,
+    "precision_tier_counts": {
+      "green": 15
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.592052+00:00"
+}

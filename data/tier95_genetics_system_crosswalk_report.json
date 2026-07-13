@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-07-13T15:20:40.288100+00:00",
+  "source": "tier95_genetics_system_crosswalk",
+  "species": "Danio rerio",
+  "overall_ok": true,
+  "issue_count": 0,
+  "issues": [],
+  "checks": [
+    {
+      "check": "genome_bp_anchor",
+      "ok": true,
+      "measured_bp": 1370000000.0,
+      "tier94_present": false
+    },
+    {
+      "check": "tier94_longevity_spine_coupling",
+      "ok": true,
+      "longevity_genome_pressure": 1.4308001650783608,
+      "metabolic_rate_w": 0.35,
+      "maximum_longevity_yrs": 5.5
+    },
+    {
+      "check": "connective_registry_adjacent_folds",
+      "ok": true,
+      "fold_count": 9
+    },
+    {
+      "check": "tier95_mechanistic_push_target",
+      "ok": true,
+      "under_push_target_count": 20,
+      "total_mechanistic_count": 20,
+      "median_margin_pct": 0.3485,
+      "pearson_r": 0.999989
+    },
+    {
+      "check": "longevity_genetics_coupling_panel",
+      "ok": true,
+      "pooled_median_error_pct": 0.013342,
+      "record_count": 15
+    },
+    {
+      "check": "formal_oracle_mpmath_equivalence",
+      "ok": true,
+      "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+      "biology_domain_scalar": 0.4447250077038459,
+      "max_rel": 1.7820287762108697e-15
+    },
+    {
+      "check": "tier95_spine_benchmark",
+      "ok": true,
+      "pooled_median_error_pct": 0.0,
+      "record_count": 18
+    }
+  ],
+  "cross_proof_overall_ok": true,
+  "genetics_application_note": "Tier 95 developmental prediction composes Tier 94 longevity spine, adjacent-rung certified folds, and fsot_compute formal oracle \u2014 not isolated curve-fit on Zebrahub outcomes."
+}
