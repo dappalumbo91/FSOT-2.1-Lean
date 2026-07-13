@@ -74,8 +74,16 @@ def _nms_scores_for_frame(
     det_conf: np.ndarray | None,
 ) -> np.ndarray:
     """Per-detection NMS ranking scores: fuse U-Net conf + FSOT when available."""
-    living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    try:
+        from fsot_living_emergence import living_should_activate
+
+        living_on = living_should_activate(_living_proxy_accuracy())
+    except Exception:
+        living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
     if not living_on:
+        conf_rank = os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
+        if conf_rank and det_conf is not None and len(det_conf) == len(frame_idx):
+            return det_conf.astype(np.float64)
         return np.ones(len(frame), dtype=np.float64)
     target_pf = float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "258"))
     density = len(frame_idx) / max(target_pf, 1.0)
@@ -112,7 +120,13 @@ def _prune_keep_mask(
         return np.zeros(0, dtype=bool)
     keep = np.zeros(len(coords), dtype=bool)
     nms_um = _nms_min_um()
-    living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    living_on = False
+    try:
+        from fsot_living_emergence import living_should_activate
+
+        living_on = living_should_activate(_living_proxy_accuracy())
+    except Exception:
+        living_on = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
     if living_on:
         try:
             from fsot_living_emergence import living_vision_state
@@ -596,7 +610,17 @@ def predict_dataset(
 
     cfg = _build_config(wpath, ds_path=ds_path)
 
-    use_conf = os.environ.get("FSOT_LIVING_EMERGENCE", "1") == "1"
+    try:
+        from fsot_living_emergence import living_should_activate
+
+        use_conf = (
+            os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+            or os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
+        )
+        if use_conf and not living_should_activate(_living_proxy_accuracy()):
+            use_conf = os.environ.get("FSOT_DET_CONF_RANK", "1") == "1"
+    except Exception:
+        use_conf = os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
     conf_parts: list[np.ndarray] = [] if use_conf else []
 
     mode = (link_mode or _link_mode()).lower()

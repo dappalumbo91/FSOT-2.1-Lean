@@ -183,6 +183,9 @@ def rank_detection_mask(
     if len(coords) == 0:
         return np.zeros(0, dtype=bool)
 
+    if not living_should_activate(proxy_accuracy):
+        return np.ones(len(coords), dtype=bool)
+
     target_pf = target_per_frame or float(os.environ.get("FSOT_LIVING_TARGET_PER_FRAME", "258"))
     n_frames = max(len(np.unique(coords[:, 0])), 1)
     nodes_pf = len(coords) / n_frames
@@ -238,5 +241,20 @@ def apply_living_det_adjustments(base_det: float, state: LivingVisionState) -> f
     return min(max(base_det + state.det_threshold_delta, lo), hi)
 
 
+def living_should_activate(proxy_accuracy: float | None = None) -> bool:
+    """accuracy_homeo: only stimulate weak vision organ (proxy < 0.62)."""
+    if os.environ.get("FSOT_LIVING_EMERGENCE", "0") != "1":
+        return False
+    if os.environ.get("FSOT_LIVING_ADAPTIVE", "1") != "1":
+        return True
+    proxy = proxy_accuracy
+    if proxy is None:
+        try:
+            proxy = float(os.environ.get("FSOT_LIVING_PROXY_ACCURACY", "0.86"))
+        except ValueError:
+            proxy = 0.86
+    return proxy < VISION_CORE_THR
+
+
 def living_enabled() -> bool:
-    return os.environ.get("FSOT_LIVING_EMERGENCE", "0") == "1"
+    return living_should_activate()

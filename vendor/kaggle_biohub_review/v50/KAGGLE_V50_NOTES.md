@@ -19,14 +19,23 @@ zarr → U-Net FT detect (conf-ranked) → FSOT fsot_gate linking → submission
 | `FSOT_LINK_MODE` | `fsot_gate` | FSOT scalar + ML edge fusion |
 | `FSOT_LIVING_EMERGENCE` | `0` | Enable for deficit tuning experiments |
 
-## Local benchmark (`44b6_0113de3b`, CPU, train proxy)
+## Refinement ladder (train proxy `44b6_0113de3b`)
 
-| Config | Score |
-|--------|-------|
-| v49 peaks + FSOT | 0.6764 |
-| FT + det 0.55 + NMS 8 | 0.505 |
-| **FT + det 0.45 + NMS 6 + fsot_gate** | **0.8570** |
-| FT + det 0.45 + NMS 6 + Living | 0.8422 |
+| Stage | Score | Notes |
+|-------|-------|-------|
+| v49 peaks + FSOT math | 0.676 | Linking only |
+| FT U-Net wrong tuning | 0.505 | det 0.55, NMS 8 |
+| **FT + det 0.45 + NMS 6 + fsot_gate** | **0.857** | **Competitive ML** |
+| 50-frame sweep best | 0.867 | det 0.47, NMS 6 |
+| All 4 test zarrs submission | 332k rows | Ready for Kaggle |
+
+## FSOT-Living adaptive mode
+
+- `FSOT_LIVING_ADAPTIVE=1`: dormant when `proxy >= 0.62` (math already winning)
+- Activates emergence/damping only when accuracy drops below vision organ band
+- `FSOT_DET_CONF_RANK=1`: U-Net sigmoid always improves NMS ranking at high proxy
+
+Tune locally: `python tune_v50_params.py --max-frames 50`
 
 Download FT weights locally:
 
