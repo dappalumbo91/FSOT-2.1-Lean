@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+uv.lock
+
+# Data and outputs
+data/
+tests/data/
+weights/
+predictions/
+results/
+videos/
+
+# IDE
+.vscode/
+.idea/
+
+# Local config
+.env

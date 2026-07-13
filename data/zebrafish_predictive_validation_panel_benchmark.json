@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-13T14:51:30.554032+00:00",
+  "generated_at": "2026-07-13T15:38:46.605418+00:00",
   "domain": "Zebrafish_Predictive_Validation_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -17,8 +17,8 @@
   "observable_count": 20,
   "scalar_record_count": 20,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.368118,
-  "pooled_median_error_pct": 0.368118,
+  "median_error_pct": 0.379663,
+  "pooled_median_error_pct": 0.379663,
   "headline_median_error_pct": 0.387736,
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -38,9 +38,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.368118,
+      "computed": 0.379663,
       "measured": 0.0,
-      "error_pct": 0.368118,
+      "error_pct": 0.379663,
       "observable_count": 20
     },
     {
@@ -69,10 +69,10 @@
       "lab": "zebrafish_predictive_validation_lab",
       "property": "mean_track_duration_steps",
       "name": "ZSNS003",
-      "computed": 24.11381065,
+      "computed": 24.08335907,
       "measured": 23.994199,
-      "error_pct": 0.498502,
-      "abs_residual": 0.11961165,
+      "error_pct": 0.37159,
+      "abs_residual": 0.08916007,
       "tier": "operational",
       "eval_kind": "fsot_intrinsic_prediction"
     },
@@ -91,10 +91,10 @@
       "lab": "zebrafish_predictive_validation_lab",
       "property": "developmental_stability_proxy",
       "name": "ZSNS003",
-      "computed": 0.24739591,
+      "computed": 0.24708349,
       "measured": 0.2482611,
-      "error_pct": 0.3485,
-      "abs_residual": 0.00086519,
+      "error_pct": 0.474343,
+      "abs_residual": 0.00117761,
       "tier": "operational",
       "eval_kind": "fsot_intrinsic_prediction"
     },
@@ -276,7 +276,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.368118,
+    "scalar_pooled_median_error_pct": 0.379663,
     "max_scalar_error_pct": 0.736747,
     "classifier_count": 0,
     "classifier_correct": 0,

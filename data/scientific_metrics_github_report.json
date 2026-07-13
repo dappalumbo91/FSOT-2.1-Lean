@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T15:15:28.446740+00:00",
+  "generated_at": "2026-07-13T15:59:02.116576+00:00",
   "source": "fsot_repo_scientific_metrics_export",
   "reporting_standard": {
     "margin_of_error_pct": "|computed - measured| / |measured| * 100",
@@ -17,7 +17,7 @@
   "repo_headline": {
     "benchmark_file_count": 368,
     "domain_summaries_count": 367,
-    "pooled_domain_median_margin_pct": 0.3485,
+    "pooled_domain_median_margin_pct": 0.37159,
     "genetics_panel_under_push_target": "20/20"
   },
   "genetics_developmental_panel": {
@@ -28,32 +28,32 @@
     "dataset_count": 5,
     "property_count": 4,
     "mechanistic_record_count": 20,
-    "median_margin_of_error_pct": 0.3485,
-    "mean_margin_of_error_pct": 0.3117,
-    "max_margin_of_error_pct": 0.4985,
+    "median_margin_of_error_pct": 0.37159,
+    "mean_margin_of_error_pct": 0.3116,
+    "max_margin_of_error_pct": 0.492,
     "under_push_target_count": 20,
     "total_mechanistic_count": 20,
     "push_target_pct": 0.5,
     "pearson_r": 0.999989,
-    "r_squared": 0.999976,
-    "mean_sigma_equivalent": 0.0256,
+    "r_squared": 0.999977,
+    "mean_sigma_equivalent": 0.0254,
     "within_literature_band_fraction": 1.0,
     "per_property": {
       "developmental_stability_proxy": {
         "n": 5,
         "unit": "dimensionless",
-        "pearson_r": 0.999984,
+        "pearson_r": 0.999982,
         "spearman_rho": 1.0,
-        "r_squared": 0.999939,
-        "rmse": 0.000605,
-        "mae": 0.000546,
-        "bias": -0.000302,
-        "nrmse_pct": 0.2669,
-        "median_margin_of_error_pct": 0.3485,
-        "mean_margin_of_error_pct": 0.3888,
-        "max_margin_of_error_pct": 0.4731,
-        "median_raw_error_pct": 0.3485,
-        "mean_sigma_equivalent": 0.0216,
+        "r_squared": 0.999917,
+        "rmse": 0.000703,
+        "mae": 0.000608,
+        "bias": -0.000365,
+        "nrmse_pct": 0.31,
+        "median_margin_of_error_pct": 0.448431,
+        "mean_margin_of_error_pct": 0.4139,
+        "max_margin_of_error_pct": 0.4743,
+        "median_raw_error_pct": 0.448431,
+        "mean_sigma_equivalent": 0.023,
         "within_literature_band_fraction": 1.0
       },
       "division_rate": {
@@ -93,37 +93,22 @@
       "mean_track_duration_steps": {
         "n": 5,
         "unit": "imaging_frames",
-        "pearson_r": 0.999998,
+        "pearson_r": 0.999999,
         "spearman_rho": 1.0,
-        "r_squared": 0.999988,
-        "rmse": 0.07603,
-        "mae": 0.058212,
-        "bias": 0.04163,
-        "nrmse_pct": 0.1261,
+        "r_squared": 0.999991,
+        "rmse": 0.06715,
+        "mae": 0.052122,
+        "bias": 0.03554,
+        "nrmse_pct": 0.1114,
         "median_margin_of_error_pct": 0.152136,
-        "mean_margin_of_error_pct": 0.1972,
-        "max_margin_of_error_pct": 0.4985,
+        "mean_margin_of_error_pct": 0.1718,
+        "max_margin_of_error_pct": 0.3716,
         "median_raw_error_pct": 0.152136,
-        "mean_sigma_equivalent": 0.0164,
+        "mean_sigma_equivalent": 0.0143,
         "within_literature_band_fraction": 1.0
       }
     },
     "accuracy_scorecard": [
-      {
-        "dataset_id": "ZSNS003",
-        "property": "mean_track_duration_steps",
-        "unit": "imaging_frames",
-        "measured": 23.994199,
-        "computed": 24.11381065,
-        "margin_of_error_pct": 0.4985,
-        "delta": 0.11961165,
-        "abs_delta": 0.11961165,
-        "sigma_equivalent": 0.0415,
-        "reference_uncertainty_pct": 12.0,
-        "within_literature_band": true,
-        "comparison_kind": "uncertainty_band",
-        "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging"
-      },
       {
         "dataset_id": "ZSNS003",
         "property": "mean_displacement_um",
@@ -153,6 +138,21 @@
         "within_literature_band": true,
         "comparison_kind": "uncertainty_band",
         "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility"
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "developmental_stability_proxy",
+        "unit": "dimensionless",
+        "measured": 0.2482611,
+        "computed": 0.24708349,
+        "margin_of_error_pct": 0.4743,
+        "delta": -0.00117761,
+        "abs_delta": 0.00117761,
+        "sigma_equivalent": 0.0264,
+        "reference_uncertainty_pct": 18.0,
+        "within_literature_band": true,
+        "comparison_kind": "uncertainty_band",
+        "reference": "Derived stability index \u2014 propagates division + duration uncertainties"
       },
       {
         "dataset_id": "ZSNS001_tail",
@@ -246,18 +246,18 @@
       },
       {
         "dataset_id": "ZSNS003",
-        "property": "developmental_stability_proxy",
-        "unit": "dimensionless",
-        "measured": 0.2482611,
-        "computed": 0.24739591,
-        "margin_of_error_pct": 0.3485,
-        "delta": -0.00086519,
-        "abs_delta": 0.00086519,
-        "sigma_equivalent": 0.0194,
-        "reference_uncertainty_pct": 18.0,
+        "property": "mean_track_duration_steps",
+        "unit": "imaging_frames",
+        "measured": 23.994199,
+        "computed": 24.08335907,
+        "margin_of_error_pct": 0.3716,
+        "delta": 0.08916007,
+        "abs_delta": 0.08916007,
+        "sigma_equivalent": 0.031,
+        "reference_uncertainty_pct": 12.0,
         "within_literature_band": true,
         "comparison_kind": "uncertainty_band",
-        "reference": "Derived stability index \u2014 propagates division + duration uncertainties"
+        "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging"
       },
       {
         "dataset_id": "ZSNS001",
@@ -413,36 +413,6 @@
     "scientific_records": [
       {
         "dataset_id": "ZSNS003",
-        "property": "mean_track_duration_steps",
-        "unit": "imaging_frames",
-        "measured": 23.994199,
-        "computed": 24.11381065,
-        "delta": 0.11961165,
-        "abs_delta": 0.11961165,
-        "margin_of_error_pct": 0.4985,
-        "sigma_equivalent": 0.0415,
-        "reference_uncertainty_pct": 12.0,
-        "within_literature_band": true,
-        "comparison_kind": "uncertainty_band",
-        "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
-        "reference_source": "keller_2008_scanned_light_sheet + ultrack_methods",
-        "scientific_measurement": {
-          "delta": 0.11961165,
-          "delta_pct": 0.498502,
-          "effective_error_pct": 0.498502,
-          "comparison_kind": "uncertainty_band",
-          "within_literature_band": true,
-          "sigma_equivalent": 0.0415,
-          "precision_tier": "green",
-          "within_green_gate": true,
-          "within_aspiration_gate": true,
-          "reference_uncertainty_pct": 12.0,
-          "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
-          "unit": "imaging_frames"
-        }
-      },
-      {
-        "dataset_id": "ZSNS003",
         "property": "mean_displacement_um",
         "unit": "micrometers",
         "measured": 78.142244,
@@ -499,6 +469,36 @@
           "reference_uncertainty_pct": 8.0,
           "reference": "Voxel calibration (\u00b12\u20135%) + segmentation boundary variability in mesoscale motility",
           "unit": "micrometers"
+        }
+      },
+      {
+        "dataset_id": "ZSNS003",
+        "property": "developmental_stability_proxy",
+        "unit": "dimensionless",
+        "measured": 0.2482611,
+        "computed": 0.24708349,
+        "delta": -0.00117761,
+        "abs_delta": 0.00117761,
+        "margin_of_error_pct": 0.4743,
+        "sigma_equivalent": 0.0264,
+        "reference_uncertainty_pct": 18.0,
+        "within_literature_band": true,
+        "comparison_kind": "uncertainty_band",
+        "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
+        "reference_source": "fsot_developmental_stability_definition",
+        "scientific_measurement": {
+          "delta": -0.00117761,
+          "delta_pct": 0.474343,
+          "effective_error_pct": 0.474343,
+          "comparison_kind": "uncertainty_band",
+          "within_literature_band": true,
+          "sigma_equivalent": 0.0264,
+          "precision_tier": "green",
+          "within_green_gate": true,
+          "within_aspiration_gate": true,
+          "reference_uncertainty_pct": 18.0,
+          "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
+          "unit": "dimensionless"
         }
       },
       {
@@ -683,32 +683,32 @@
       },
       {
         "dataset_id": "ZSNS003",
-        "property": "developmental_stability_proxy",
-        "unit": "dimensionless",
-        "measured": 0.2482611,
-        "computed": 0.24739591,
-        "delta": -0.00086519,
-        "abs_delta": 0.00086519,
-        "margin_of_error_pct": 0.3485,
-        "sigma_equivalent": 0.0194,
-        "reference_uncertainty_pct": 18.0,
+        "property": "mean_track_duration_steps",
+        "unit": "imaging_frames",
+        "measured": 23.994199,
+        "computed": 24.08335907,
+        "delta": 0.08916007,
+        "abs_delta": 0.08916007,
+        "margin_of_error_pct": 0.3716,
+        "sigma_equivalent": 0.031,
+        "reference_uncertainty_pct": 12.0,
         "within_literature_band": true,
         "comparison_kind": "uncertainty_band",
-        "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
-        "reference_source": "fsot_developmental_stability_definition",
+        "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
+        "reference_source": "keller_2008_scanned_light_sheet + ultrack_methods",
         "scientific_measurement": {
-          "delta": -0.00086519,
-          "delta_pct": 0.3485,
-          "effective_error_pct": 0.3485,
+          "delta": 0.08916007,
+          "delta_pct": 0.37159,
+          "effective_error_pct": 0.37159,
           "comparison_kind": "uncertainty_band",
           "within_literature_band": true,
-          "sigma_equivalent": 0.0194,
+          "sigma_equivalent": 0.031,
           "precision_tier": "green",
           "within_green_gate": true,
           "within_aspiration_gate": true,
-          "reference_uncertainty_pct": 18.0,
-          "reference": "Derived stability index \u2014 propagates division + duration uncertainties",
-          "unit": "dimensionless"
+          "reference_uncertainty_pct": 12.0,
+          "reference": "3D track fragmentation / gap-closing uncertainty in developmental light-sheet imaging",
+          "unit": "imaging_frames"
         }
       },
       {
@@ -3407,25 +3407,25 @@
     {
       "benchmark_file": "cern_open_data_lhc_benchmark.json",
       "benchmark_stem": "cern_open_data_lhc_benchmark",
-      "scalar_count": 200,
-      "scientific_record_count": 200,
+      "scalar_count": 83,
+      "scientific_record_count": 83,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.07054248999999989,
+      "mean_abs_delta": 0.0868229879518072,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 200
+        "green": 83
       },
       "top_offenders": [
         {
-          "name": "/GluGluToHToZZTo4L_M-550_7TeV-minloHJJ-pythia6-tauola/Summer11LegDR-PU_S13_START",
+          "name": "ATLAS HEPMC format Specialised SM Z-boson 13 TeV",
           "property": "collision_energy_tev",
-          "measured": 7.0,
-          "computed": 7.000931,
+          "measured": 13.0,
+          "computed": 13.001728,
           "unit": null,
-          "delta": 0.000931,
-          "abs_delta": 0.000931,
+          "delta": 0.001728,
+          "abs_delta": 0.001728,
           "margin_of_error_pct": 0.0133,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -3436,13 +3436,13 @@
           "reference_source": null
         },
         {
-          "name": "/GluGluToHToZZTo4L_M-550_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+          "name": "ATLAS 13 TeV samples collection Gamma-Gamma, for 2020 Open Data release",
           "property": "collision_energy_tev",
-          "measured": 7.0,
-          "computed": 7.000931,
+          "measured": 13.0,
+          "computed": 13.001728,
           "unit": null,
-          "delta": 0.000931,
-          "abs_delta": 0.000931,
+          "delta": 0.001728,
+          "abs_delta": 0.001728,
           "margin_of_error_pct": 0.0133,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -3453,13 +3453,13 @@
           "reference_source": null
         },
         {
-          "name": "/VBFToHToZZTo2L2Nu_M-300_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+          "name": "HEPMC format 13 TeV proton-proton Open Data from the ATLAS experiment",
           "property": "collision_energy_tev",
-          "measured": 7.0,
-          "computed": 7.000931,
+          "measured": 13.0,
+          "computed": 13.001728,
           "unit": null,
-          "delta": 0.000931,
-          "abs_delta": 0.000931,
+          "delta": 0.001728,
+          "abs_delta": 0.001728,
           "margin_of_error_pct": 0.0133,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -3470,13 +3470,13 @@
           "reference_source": null
         },
         {
-          "name": "/VBFToHToZZTo2L2Nu_M-350_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+          "name": "/QCD_Pt-170to300_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-P",
           "property": "collision_energy_tev",
-          "measured": 7.0,
-          "computed": 7.000931,
+          "measured": 13.0,
+          "computed": 13.001728,
           "unit": null,
-          "delta": 0.000931,
-          "abs_delta": 0.000931,
+          "delta": 0.001728,
+          "abs_delta": 0.001728,
           "margin_of_error_pct": 0.0133,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -3487,13 +3487,13 @@
           "reference_source": null
         },
         {
-          "name": "/VBFToHToZZTo2L2Nu_M-225_7TeV-powheg15-pythia6/Summer11LegDR-PU_S13_START53_LV6-",
+          "name": "/QCD_Pt-20to30_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/RunIIFall15MiniAODv2-PU2",
           "property": "collision_energy_tev",
-          "measured": 7.0,
-          "computed": 7.000931,
+          "measured": 13.0,
+          "computed": 13.001728,
           "unit": null,
-          "delta": 0.000931,
-          "abs_delta": 0.000931,
+          "delta": 0.001728,
+          "abs_delta": 0.001728,
           "margin_of_error_pct": 0.0133,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -12266,15 +12266,15 @@
     {
       "benchmark_file": "gbif_species_occurrence_benchmark.json",
       "benchmark_stem": "gbif_species_occurrence_benchmark",
-      "scalar_count": 2000,
-      "scientific_record_count": 2000,
+      "scalar_count": 240,
+      "scientific_record_count": 240,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.0034379514999999983,
+      "mean_abs_delta": 0.0034436124999999962,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 2000
+        "green": 240
       },
       "top_offenders": [
         {
@@ -12582,15 +12582,15 @@
     {
       "benchmark_file": "geomagnetism_benchmark.json",
       "benchmark_stem": "geomagnetism_benchmark",
-      "scalar_count": 526,
+      "scalar_count": 524,
       "scientific_record_count": 0,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
       "mean_abs_delta": null,
-      "green_gate_fraction": 0.7889733840304183,
+      "green_gate_fraction": 0.7881679389312977,
       "matches_domain_spine": false,
       "precision_tier_counts": {
-        "green": 415,
+        "green": 413,
         "red": 111
       },
       "top_offenders": []
@@ -16581,7 +16581,7 @@
     {
       "benchmark_file": "magnetosphere_benchmark.json",
       "benchmark_stem": "magnetosphere_benchmark",
-      "scalar_count": 168,
+      "scalar_count": 167,
       "scientific_record_count": 0,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
@@ -16589,7 +16589,7 @@
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 168
+        "green": 167
       },
       "top_offenders": []
     },
@@ -19056,34 +19056,17 @@
     {
       "benchmark_file": "nasa_exoplanet_archive_benchmark.json",
       "benchmark_stem": "nasa_exoplanet_archive_benchmark",
-      "scalar_count": 988,
-      "scientific_record_count": 988,
+      "scalar_count": 158,
+      "scientific_record_count": 158,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.0210987690890688,
+      "mean_abs_delta": 0.005070808924050633,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 988
+        "green": 158
       },
       "top_offenders": [
-        {
-          "name": "Kepler-158 d",
-          "property": "pl_bmasse",
-          "measured": 0.0472,
-          "computed": 0.047211,
-          "unit": null,
-          "delta": 1.1e-05,
-          "abs_delta": 1.1e-05,
-          "margin_of_error_pct": 0.0233,
-          "sigma_equivalent": null,
-          "reference_uncertainty_pct": null,
-          "within_literature_band": false,
-          "comparison_kind": "display_precision",
-          "precision_tier": "green",
-          "reference": null,
-          "reference_source": null
-        },
         {
           "name": "Kepler-342 e",
           "property": "pl_rade",
@@ -19136,14 +19119,31 @@
           "reference_source": null
         },
         {
-          "name": "Kepler-80 g",
-          "property": "pl_bmasse",
-          "measured": 0.065,
-          "computed": 0.065015,
+          "name": "Kepler-1597 b",
+          "property": "pl_rade",
+          "measured": 1.06,
+          "computed": 1.060244,
           "unit": null,
-          "delta": 1.5e-05,
-          "abs_delta": 1.5e-05,
-          "margin_of_error_pct": 0.0231,
+          "delta": 0.000244,
+          "abs_delta": 0.000244,
+          "margin_of_error_pct": 0.023,
+          "sigma_equivalent": null,
+          "reference_uncertainty_pct": null,
+          "within_literature_band": false,
+          "comparison_kind": "display_precision",
+          "precision_tier": "green",
+          "reference": null,
+          "reference_source": null
+        },
+        {
+          "name": "Kepler-1597 b",
+          "property": "pl_bmasse",
+          "measured": 1.2,
+          "computed": 1.200276,
+          "unit": null,
+          "delta": 0.000276,
+          "abs_delta": 0.000276,
+          "margin_of_error_pct": 0.023,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
           "within_literature_band": false,
@@ -20685,15 +20685,15 @@
     {
       "benchmark_file": "noaa_coastal_tides_benchmark.json",
       "benchmark_stem": "noaa_coastal_tides_benchmark",
-      "scalar_count": 30,
-      "scientific_record_count": 30,
+      "scalar_count": 15,
+      "scientific_record_count": 15,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.00022549599999999997,
+      "mean_abs_delta": 0.0002939626666666666,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 30
+        "green": 15
       },
       "top_offenders": [
         {
@@ -20705,23 +20705,6 @@
           "delta": 4e-06,
           "abs_delta": 4e-06,
           "margin_of_error_pct": 0.0333,
-          "sigma_equivalent": null,
-          "reference_uncertainty_pct": null,
-          "within_literature_band": false,
-          "comparison_kind": "display_precision",
-          "precision_tier": "green",
-          "reference": null,
-          "reference_source": null
-        },
-        {
-          "name": "The Battery NY",
-          "property": "min_height_m",
-          "measured": 0.108,
-          "computed": 0.108033,
-          "unit": null,
-          "delta": 3.3e-05,
-          "abs_delta": 3.3e-05,
-          "margin_of_error_pct": 0.0306,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
           "within_literature_band": false,
@@ -20748,14 +20731,14 @@
           "reference_source": null
         },
         {
-          "name": "Los Angeles",
-          "property": "min_height_m",
-          "measured": 0.089,
-          "computed": 0.089027,
+          "name": "San Francisco",
+          "property": "max_height_m",
+          "measured": 1.541,
+          "computed": 1.541465,
           "unit": null,
-          "delta": 2.7e-05,
-          "abs_delta": 2.7e-05,
-          "margin_of_error_pct": 0.0303,
+          "delta": 0.000465,
+          "abs_delta": 0.000465,
+          "margin_of_error_pct": 0.0302,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
           "within_literature_band": false,
@@ -20765,13 +20748,30 @@
           "reference_source": null
         },
         {
-          "name": "San Francisco",
+          "name": "Boston",
           "property": "max_height_m",
-          "measured": 1.541,
-          "computed": 1.541465,
+          "measured": 2.76,
+          "computed": 2.760833,
           "unit": null,
-          "delta": 0.000465,
-          "abs_delta": 0.000465,
+          "delta": 0.000833,
+          "abs_delta": 0.000833,
+          "margin_of_error_pct": 0.0302,
+          "sigma_equivalent": null,
+          "reference_uncertainty_pct": null,
+          "within_literature_band": false,
+          "comparison_kind": "display_precision",
+          "precision_tier": "green",
+          "reference": null,
+          "reference_source": null
+        },
+        {
+          "name": "Key West",
+          "property": "mean_height_m",
+          "measured": 0.24254166666666668,
+          "computed": 0.242615,
+          "unit": null,
+          "delta": 7.333e-05,
+          "abs_delta": 7.333e-05,
           "margin_of_error_pct": 0.0302,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
@@ -24677,15 +24677,15 @@
     {
       "benchmark_file": "pubchem_compound_properties_benchmark.json",
       "benchmark_stem": "pubchem_compound_properties_benchmark",
-      "scalar_count": 521,
-      "scientific_record_count": 521,
+      "scalar_count": 500,
+      "scientific_record_count": 500,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.015523476199616084,
+      "mean_abs_delta": 0.01581146219999996,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 521
+        "green": 500
       },
       "top_offenders": [
         {
@@ -26094,15 +26094,15 @@
     {
       "benchmark_file": "rcsb_pdb_structures_benchmark.json",
       "benchmark_stem": "rcsb_pdb_structures_benchmark",
-      "scalar_count": 105,
-      "scientific_record_count": 105,
+      "scalar_count": 30,
+      "scientific_record_count": 30,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.00961560952380952,
+      "mean_abs_delta": 0.010014933333333332,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 105
+        "green": 30
       },
       "top_offenders": [
         {
@@ -32087,15 +32087,15 @@
     {
       "benchmark_file": "uniprot_protein_annotations_benchmark.json",
       "benchmark_stem": "uniprot_protein_annotations_benchmark",
-      "scalar_count": 102,
-      "scientific_record_count": 102,
+      "scalar_count": 22,
+      "scientific_record_count": 22,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 5.168222460784311,
+      "mean_abs_delta": 2.7005395909090906,
       "green_gate_fraction": 1.0,
       "matches_domain_spine": true,
       "precision_tier_counts": {
-        "green": 102
+        "green": 22
       },
       "top_offenders": [
         {
@@ -33720,7 +33720,7 @@
       "scientific_record_count": 20,
       "median_margin_of_error_pct": null,
       "max_margin_of_error_pct": null,
-      "mean_abs_delta": 0.12070350600000002,
+      "mean_abs_delta": 0.11919654800000001,
       "green_gate_fraction": 0.95,
       "matches_domain_spine": false,
       "precision_tier_counts": {
@@ -33742,23 +33742,6 @@
           "within_literature_band": false,
           "comparison_kind": "display_precision",
           "precision_tier": "red",
-          "reference": null,
-          "reference_source": null
-        },
-        {
-          "name": "ZSNS003",
-          "property": "mean_track_duration_steps",
-          "measured": 23.994199,
-          "computed": 24.11381065,
-          "unit": null,
-          "delta": 0.11961165,
-          "abs_delta": 0.11961165,
-          "margin_of_error_pct": 0.4985,
-          "sigma_equivalent": null,
-          "reference_uncertainty_pct": null,
-          "within_literature_band": false,
-          "comparison_kind": "display_precision",
-          "precision_tier": "green",
           "reference": null,
           "reference_source": null
         },
@@ -33788,6 +33771,23 @@
           "delta": 0.63292154,
           "abs_delta": 0.63292154,
           "margin_of_error_pct": 0.4869,
+          "sigma_equivalent": null,
+          "reference_uncertainty_pct": null,
+          "within_literature_band": false,
+          "comparison_kind": "display_precision",
+          "precision_tier": "green",
+          "reference": null,
+          "reference_source": null
+        },
+        {
+          "name": "ZSNS003",
+          "property": "developmental_stability_proxy",
+          "measured": 0.2482611,
+          "computed": 0.24708349,
+          "unit": null,
+          "delta": -0.00117761,
+          "abs_delta": 0.00117761,
+          "margin_of_error_pct": 0.4743,
           "sigma_equivalent": null,
           "reference_uncertainty_pct": null,
           "within_literature_band": false,

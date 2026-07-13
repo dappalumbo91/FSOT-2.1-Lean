@@ -62,7 +62,11 @@ def _validate_submission_rows(rows: list[dict]) -> None:
     import tempfile
 
     import pandas as pd
-    from biohub_unet_engine import write_submission_csv
+
+    try:
+        from submission_io import write_submission_csv
+    except ImportError:
+        from biohub_unet_engine import write_submission_csv
 
     with tempfile.TemporaryDirectory(prefix="biohub_validate_") as tmp:
         csv_path = Path(tmp) / "submission.csv"
@@ -127,7 +131,10 @@ def main() -> None:
         rows = track_all_datasets(DATA_DIR, detector_mode=detector)
 
     _validate_submission_rows(rows)
-    from biohub_unet_engine import write_submission_csv
+    try:
+        from submission_io import write_submission_csv
+    except ImportError:
+        from biohub_unet_engine import write_submission_csv
 
     write_submission_csv(rows, Path(OUT_CSV))
     print(f"\n[COMPLETE] {len(rows)} rows -> {OUT_CSV}")

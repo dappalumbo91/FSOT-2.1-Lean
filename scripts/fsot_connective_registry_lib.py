@@ -290,7 +290,7 @@ def connective_early_duration_transport(
     crowd_gate = _smoothstep(math.log10(max(det, 1.0) / crowd_ref), 1.0, 2.5)
     low_div_gate = _smoothstep(0.32 - division_rate, 0.0, 0.10)
     shorten = early_gate * crowd_gate * low_div_gate * fold * reg.molecular_gate
-    return 1.0 / (1.0 + shorten * ((PHI - 1.0) / (PHI * 0.50)))
+    return 1.0 / (1.0 + shorten * ((PHI - 1.0) / (PHI * 0.45)))
 
 
 def connective_late_body_duration_transport(
