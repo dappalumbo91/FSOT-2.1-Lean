@@ -1,0 +1,39 @@
+{
+  "purpose": "Low-budget biofield / Nen-style coherence experiment shopping list (side research)",
+  "budget_tier_usd": "under_200_total",
+  "priority_observables": ["HRV", "EEG_alpha_theta_coherence", "breath_rate"],
+  "not_home_feasible": ["MCG_pT_scale", "clinical_fMRI"],
+  "tiers": [
+    {
+      "tier": "starter_under_50",
+      "items": [
+        {"name": "Polar H10 (used)", "role": "HRV / RR-interval gold standard", "approx_usd": 35, "notes": "Best cost/quality for FSOT delta_psi proxy via HRV coherence"},
+        {"name": "AD8232 + Arduino Uno clone", "role": "1-channel ECG/HRV", "approx_usd": 15, "notes": "Not clinical EEG; useful for breath+HRV coupling experiments"},
+        {"name": "Phone camera PPG app", "role": "Free HRV sanity check", "approx_usd": 0}
+      ]
+    },
+    {
+      "tier": "EEG_under_150",
+      "items": [
+        {"name": "Muse 2 (used)", "role": "4-channel consumer EEG", "approx_usd": 80, "notes": "Alpha/theta band power maps to gamma-lock proxy in biofield_coherence_simulation.json"},
+        {"name": "OpenBCI Ganglion (used kit)", "role": "4-channel research EEG", "approx_usd": 120, "notes": "More hackable; steeper setup"},
+        {"name": "ESP32 + ADS1299 breakout (DIY)", "role": "Custom 2-4ch EEG", "approx_usd": 60, "notes": "Requires soldering; pair with scripts/bootstrap_fsot_hardware.py audio/CUDA checks"}
+      ]
+    },
+    {
+      "tier": "integration",
+      "items": [
+        {"name": "ESP32-S3 dev board", "role": "Edge logger for HRV/EEG serial stream", "approx_usd": 12},
+        {"name": "MicroSD module", "role": "Session logging without cloud", "approx_usd": 5}
+      ]
+    }
+  ],
+  "fsot_mapping": {
+    "waking_baseline_scalar_s": 0.316,
+    "gamma_phase_lock_scalar_s": 0.582,
+    "coherence_ratio": 1.84,
+    "source": "data/biofield_coherence_simulation.json"
+  },
+  "recommended_first_purchase": "Polar H10 used + ESP32 for timestamped HRV logging",
+  "nen_protocol_status": "deferred — run after Kaggle v50 submission is competitive"
+}
