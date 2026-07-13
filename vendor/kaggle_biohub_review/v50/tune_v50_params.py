@@ -42,7 +42,8 @@ def _run_once(
     os.environ.setdefault("CELLMOT_USE_ILP", "1")
     os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "80000")
 
-    graph = predict_graph(ds_path)
+    max_frames = int(os.environ["CELLMOT_MAX_FRAMES"]) if os.environ.get("CELLMOT_MAX_FRAMES") else None
+    graph = predict_graph(ds_path, max_frames=max_frames)
     rows, _, _ = graph_to_submission_rows_from_graph(graph, ds_path.name.replace(".zarr", ""))
     write_submission_csv(rows, out_csv)
     return score_csv(out_csv, gt_dir)

@@ -64,7 +64,16 @@ def _setup_kaggle_env() -> tuple[str, str]:
 
     _extract_cellmot_bundle()
 
-    # v50 defaults: U-Net FT detect + FSOT pure link + ILP consistency
+    # Kaggle competition is CPU-only — train/tune on GPU locally, submit on CPU.
+    os.environ.setdefault("KAGGLE_CPU_ONLY", "1")
+    os.environ.setdefault("CELLMOT_DEVICE", "cpu")
+    os.environ.setdefault("OMP_NUM_THREADS", "4")
+    os.environ.setdefault("MKL_NUM_THREADS", "4")
+    os.environ.setdefault("OPENBLAS_NUM_THREADS", "4")
+    os.environ.setdefault("TORCH_NUM_THREADS", "4")
+    os.environ.setdefault("CELLMOT_DET_TTA", "0")
+
+    # v50 defaults: U-Net FT detect + FSOT pure link + ILP/lite consistency
     os.environ.setdefault("BIOHUB_ENGINE", "auto")
     os.environ.setdefault("FSOT_VISION_CALIBRATE", "1")
     os.environ.setdefault("FSOT_LIVING_EMERGENCE", "1")
@@ -82,17 +91,11 @@ def _setup_kaggle_env() -> tuple[str, str]:
     os.environ.setdefault("CELLMOT_EDGE_THRESHOLD", "0.25")
     os.environ.setdefault("CELLMOT_USE_ILP", "1")
     os.environ.setdefault("CELLMOT_ILP_MAX_EDGES", "80000")
-    os.environ.setdefault("CELLMOT_DET_TTA", "0")
     os.environ.setdefault("CELLMOT_NMS_UM", "6.0")
     os.environ.setdefault("CELLMOT_POOL_UM", "8.0")
+    os.environ.setdefault("CELLMOT_GRAPH_CONSISTENCY", "auto")
     os.environ.setdefault("FSOT_GAP_LINK", "1")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")
-
-    # Use GPU when Kaggle assigns one; CPU fallback is automatic in biohub_unet_engine
-    if os.environ.get("CUDA_VISIBLE_DEVICES", "") != "":
-        os.environ.setdefault("CELLMOT_DEVICE", "cuda")
-    else:
-        os.environ.setdefault("CELLMOT_DEVICE", "cuda" if _gpu_available() else "cpu")
 
     return data_dir, out_csv
 
@@ -250,9 +253,11 @@ def main() -> None:
     print("FSOT KAGGLE v50 — U-Net + FSOT vision/linking")
     print(f"Lean ref : {LEAN_VERIFICATION_REPO}")
     print(f"Engine   : {engine}")
-    print(f"Link     : {os.environ.get('FSOT_LINK_MODE', 'fsot_gate')}")
+    print(f"Link     : {os.environ.get('FSOT_LINK_MODE', 'fsot')}")
     print(f"Vision   : FSOT_VISION_CALIBRATE={os.environ.get('FSOT_VISION_CALIBRATE', '1')}")
     print(f"Device   : {os.environ.get('CELLMOT_DEVICE', 'cpu')}")
+    print(f"ILP      : CELLMOT_USE_ILP={os.environ.get('CELLMOT_USE_ILP', '1')} "
+          f"cap={os.environ.get('CELLMOT_ILP_MAX_EDGES', '80000')}")
     print(f"Data dir : {DATA_DIR}")
     print("=" * 70)
 

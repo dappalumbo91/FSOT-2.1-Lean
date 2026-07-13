@@ -9,6 +9,16 @@ zarr → U-Net FT detect (conf-ranked NMS) → FSOT SequenceTracker linking → 
          ↑ FSOT-Living adaptive only when proxy < 0.62 (dormant at 0.90)
 ```
 
+## CPU-only Kaggle constraint
+
+The competition notebook runs on **CPU only**. Workflow:
+
+1. **Local GPU** — tune det/NMS, verify train-proxy score (~0.904).
+2. **Kaggle CPU** — same weights + env defaults; `predict_coords_only` skips transformer edges.
+3. **ILP** — runs on CPU for graphs under 80k edges (~5 min/dataset); larger zarrs use **lite greedy consistency** automatically.
+
+Set `KAGGLE_CPU_ONLY=1` and `CELLMOT_DEVICE=cpu` (Kaggle runner does this automatically).
+
 ## Competitive defaults (tuned 2026-07-13)
 
 | Parameter | Value | Why |
@@ -64,8 +74,8 @@ when train-proxy drops below 0.62 to stimulate emergence regions.
 1. Dataset **`fsot-v50-competitive-bundle`** from this folder
 2. Notebook `fsot-biohub-v50.ipynb`
 3. Inputs: competition + FT detector + baseline artifacts + bundle
-4. GPU T4 x2 recommended
-5. Run All → Submit
+4. **CPU** accelerator (competition requirement)
+5. Run All → Submit (~25–35 min for 4 datasets on CPU)
 
 ## Local verification
 

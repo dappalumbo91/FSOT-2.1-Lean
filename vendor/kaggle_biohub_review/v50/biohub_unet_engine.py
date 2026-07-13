@@ -562,8 +562,100 @@ def _suppress_output():
 
 
 def _ilp_edge_cap() -> int:
-    """Skip ILP above this edge count — prevents 12h Notebook Timeout on Kaggle re-run."""
+    """Skip full ILP above this edge count — use CPU lite consistency instead."""
     return int(os.environ.get("CELLMOT_ILP_MAX_EDGES", "35000"))
+
+
+def _lite_consistency_enabled() -> bool:
+    mode = os.environ.get("CELLMOT_GRAPH_CONSISTENCY", "auto").lower()
+    if mode in ("0", "off", "none"):
+        return False
+    if mode in ("lite", "greedy", "1", "on"):
+        return True
+    # auto: lite fallback whenever ILP is off or skipped (Kaggle CPU default path)
+    return True
+
+
+def _greedy_track_consistency(graph: td.graph.InMemoryGraph) -> td.graph.InMemoryGraph:
+    """
+    CPU-fast track consistency: one parent per child, max two daughters per parent.
+    Mimics the main benefit of tracksdata ILP without SCIP solve time.
+    """
+    from collections import defaultdict
+
+    if graph.num_edges() == 0:
+        return graph
+
+    k = td.DEFAULT_ATTR_KEYS
+    attr_keys = [k.EDGE_SOURCE, k.EDGE_TARGET]
+    has_prob = "edge_prob" in graph.edge_attr_keys()
+    has_dist = "edge_dist" in graph.edge_attr_keys()
+    if has_prob:
+        attr_keys.append("edge_prob")
+    if has_dist:
+        attr_keys.append("edge_dist")
+    edges_tbl = graph.edge_attrs(attr_keys=attr_keys)
+    srcs = edges_tbl[k.EDGE_SOURCE].to_list()
+    tgts = edges_tbl[k.EDGE_TARGET].to_list()
+    probs = (
+        edges_tbl["edge_prob"].to_list()
+        if has_prob
+        else [1.0] * len(srcs)
+    )
+    dists = (
+        edges_tbl["edge_dist"].to_list()
+        if has_dist
+        else [0.0] * len(srcs)
+    )
+
+    ranked = sorted(
+        zip(srcs, tgts, probs, dists, strict=True),
+        key=lambda row: -float(row[2]),
+    )
+    parent_of: dict[int, int] = {}
+    child_count: dict[int, int] = defaultdict(int)
+    kept: list[tuple[int, int, float, float]] = []
+    for src, tgt, prob, dist in ranked:
+        src_i, tgt_i = int(src), int(tgt)
+        if tgt_i in parent_of or child_count[src_i] >= 2:
+            continue
+        parent_of[tgt_i] = src_i
+        child_count[src_i] += 1
+        kept.append((src_i, tgt_i, float(prob), float(dist)))
+
+    if not kept:
+        return graph
+
+    used_nodes = {nid for edge in kept for nid in edge[:2]}
+    nodes_tbl = graph.node_attrs(attr_keys=[k.NODE_ID, k.T, "z", "y", "x"]).sort(
+        [k.T, "z", "y", "x", k.NODE_ID],
+    )
+    import polars as pl
+
+    node_rows = nodes_tbl.filter(pl.col(k.NODE_ID).is_in(list(used_nodes)))
+    old_to_new = {
+        int(nid): idx
+        for idx, nid in enumerate(node_rows[k.NODE_ID].to_list())
+    }
+    coords = np.array(
+        [
+            [int(row[k.T]), int(round(row["z"])), int(round(row["y"])), int(round(row["x"]))]
+            for row in node_rows.iter_rows(named=True)
+        ],
+        dtype=np.int16,
+    )
+    remapped = [
+        (old_to_new[s], old_to_new[t], p, d)
+        for s, t, p, d in kept
+        if s in old_to_new and t in old_to_new
+    ]
+    before_n, before_e = graph.num_nodes(), graph.num_edges()
+    out = build_graph(coords, remapped)
+    print(
+        f"[LITE-CONSISTENCY] {before_n} nodes/{before_e} edges -> "
+        f"{out.num_nodes()} nodes/{out.num_edges()} edges"
+    )
+    return out
 
 
 def _apply_ilp(graph: td.graph.InMemoryGraph, cfg: PredictConfig) -> td.graph.InMemoryGraph:
@@ -591,12 +683,49 @@ def _apply_ilp(graph: td.graph.InMemoryGraph, cfg: PredictConfig) -> td.graph.In
         return graph
 
 
+def _apply_graph_postprocess(
+    graph: td.graph.InMemoryGraph,
+    cfg: PredictConfig,
+) -> td.graph.InMemoryGraph:
+    """ILP when affordable; otherwise CPU lite greedy consistency (Kaggle-safe)."""
+    before_n, before_e = graph.num_nodes(), graph.num_edges()
+    if cfg.use_ilp and graph.num_edges() <= _ilp_edge_cap():
+        graph = _apply_ilp(graph, cfg)
+        if graph.num_nodes() < before_n or graph.num_edges() < before_e:
+            print(
+                f"[ILP] {before_n} nodes/{before_e} edges -> "
+                f"{graph.num_nodes()} nodes/{graph.num_edges()} edges"
+            )
+        return graph
+    if cfg.use_ilp and graph.num_edges() > _ilp_edge_cap():
+        print(
+            f"[ILP] skipped: {graph.num_edges()} edges > cap {_ilp_edge_cap()} "
+            "— using lite consistency"
+        )
+    if _lite_consistency_enabled():
+        return _greedy_track_consistency(graph)
+    return graph
+
+
+def _configure_cpu_threads() -> None:
+    """Respect Kaggle CPU thread caps (set OMP_NUM_THREADS in notebook)."""
+    n = os.environ.get("OMP_NUM_THREADS") or os.environ.get("TORCH_NUM_THREADS")
+    if n:
+        try:
+            torch.set_num_threads(int(n))
+        except Exception:
+            pass
+
+
 def _pick_device(requested: str | None = None) -> torch.device:
+    _configure_cpu_threads()
     if requested:
         return torch.device(requested)
     env = os.environ.get("CELLMOT_DEVICE")
     if env:
         return torch.device(env)
+    if os.environ.get("KAGGLE_CPU_ONLY", "0") == "1" or os.path.exists("/kaggle/input"):
+        return torch.device("cpu")
     if not torch.cuda.is_available():
         return torch.device("cpu")
     try:
@@ -680,7 +809,7 @@ def predict_dataset(
         print(f"[FSOT] {len(edges)} edges from {len(coords)} U-Net detections")
 
     if return_graph:
-        return _apply_ilp(build_graph(coords, edges), cfg)
+        return _apply_graph_postprocess(build_graph(coords, edges), cfg)
     return coords, edges
 
 
