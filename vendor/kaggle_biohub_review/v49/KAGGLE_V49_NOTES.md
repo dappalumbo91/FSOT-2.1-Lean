@@ -45,7 +45,23 @@ $env:KAGGLE_TEST_DIR = "D:\Kaggle_Biohub_Data\test"
 .\.venv\Scripts\python kaggle_main_runner_cpu.py
 ```
 
-Runner validates schema inline (no torch). Full `csv_to_geffs` check needs Kaggle `tracksdata` wheels.
+Runner validates schema inline (no torch). Local Windows verification (2026-07-13):
+
+```text
+44b6_0113de3b  frames=100  nodes=25767  edges=25535  rows=51302
+csv_to_geffs: OK
+train proxy score: 0.6764 (adj_edge_jaccard=0.6764)
+```
+
+**Local data layout** (`D:\Kaggle_Biohub_Data`):
+
+| Path | Source |
+|------|--------|
+| `test/` | `python download_kaggle_assets.py` or competition mount |
+| `train/` | train `.geff` + `.zarr` for `44b6_0113de3b` (scoring) |
+| `cellmot/cellmot-baseline-artifacts/wheels/` | Kaggle dataset (Linux wheels for notebook) |
+
+Windows local deps: `pip install -r requirements-cpu-smoke.txt` plus optional `torch` (CPU) for `--score`.
 
 ## Grading alignment
 

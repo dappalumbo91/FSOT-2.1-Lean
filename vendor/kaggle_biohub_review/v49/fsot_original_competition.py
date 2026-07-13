@@ -47,14 +47,15 @@ def _open_video(zarr_path: str | Path) -> tuple[da.Array, DatasetContext]:
     """Load lazy video array + quantile context (zarr_ingestion_pipeline pattern)."""
     zarr_path = Path(zarr_path)
     store = zarr_path if zarr_path.suffix == ".zarr" else zarr_path.parent / f"{zarr_path.name}.zarr"
+    root = zarr.open(str(store), mode="r")
     try:
-        attrs = dict(zarr.open_group(str(store), mode="r").attrs)
+        attrs = dict(root.attrs)
         ctx = DatasetContext(
             quantiles=attrs.get("image_statistics", {}).get("quantiles", {}),
         )
     except Exception:  # noqa: BLE001
         ctx = DatasetContext()
-    video = da.from_zarr(zarr.open(str(store), mode="r")["0"])
+    video = da.from_zarr(root["0"])
     if video.ndim == 5:
         video = video[:, 0, :, :, :]
     return video, ctx
