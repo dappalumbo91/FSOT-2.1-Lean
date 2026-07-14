@@ -374,6 +374,24 @@ SCALAR_KERNEL_DIR = ROOT / "verification" / "rust" / "fsot_scalar_kernel"
 FSTAR_DIR = ROOT / "verification" / "fstar"
 
 
+def _rust_cargo_env() -> dict[str, str]:
+    """Avoid LNK1104 when linking test binaries on removable drives (Windows)."""
+    env = os.environ.copy()
+    if not env.get("CARGO_TARGET_DIR"):
+        from fsot_paths import archive_root  # noqa: WPS433
+
+        ar = archive_root()
+        if ar is not None:
+            cache = ar / "07_Portable-Toolchain" / "rust-target-cache"
+            cache.mkdir(parents=True, exist_ok=True)
+            env["CARGO_TARGET_DIR"] = str(cache)
+        else:
+            import tempfile
+
+            env["CARGO_TARGET_DIR"] = str(Path(tempfile.gettempdir()) / "fsot_rust_target")
+    return env
+
+
 def run_rust_replay(*, max_attempts: int = 5) -> dict:
     cargo = shutil.which("cargo")
     if not cargo:
@@ -385,6 +403,7 @@ def run_rust_replay(*, max_attempts: int = 5) -> dict:
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
         last: dict = {"status": "failed", "reason": "no attempts"}
         cargo_args = ["-j", "1"]
+        cargo_env = _rust_cargo_env()
         for attempt in range(1, max_attempts + 1):
             if attempt > 2:
                 subprocess.run(
@@ -393,6 +412,7 @@ def run_rust_replay(*, max_attempts: int = 5) -> dict:
                     capture_output=True,
                     text=True,
                     timeout=600,
+                    env=cargo_env,
                 )
             r = subprocess.run(
                 [
@@ -408,6 +428,7 @@ def run_rust_replay(*, max_attempts: int = 5) -> dict:
                 capture_output=True,
                 text=True,
                 timeout=900,
+                env=cargo_env,
             )
             out = (r.stdout or "") + (r.stderr or "")
             passed = r.returncode == 0

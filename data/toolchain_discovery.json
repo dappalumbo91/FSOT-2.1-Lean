@@ -1,0 +1,30 @@
+{
+  "discovered_at": "2026-07-14T16:49:48.856881+00:00",
+  "archive_root": "I:\\FSOT-Physical-Archive",
+  "bundled_toolchain_root": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain",
+  "bundled_items": [
+    "cargo",
+    "elan",
+    "fstar",
+    "isabelle",
+    "rocq",
+    "rust-target-cache",
+    "rustup"
+  ],
+  "tools": {
+    "python": "C:\\Users\\damia\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+    "lake": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\elan\\bin\\lake.exe",
+    "elan": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\elan\\bin\\elan.exe",
+    "coqc": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\rocq\\bin\\coqc.exe",
+    "isabelle": {
+      "home": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle",
+      "mode": "cygwin",
+      "bash": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle\\contrib\\cygwin\\bin\\bash.exe",
+      "tool": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle\\bin\\isabelle"
+    },
+    "fstar": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\fstar\\bin\\fstar.exe",
+    "rustc": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\cargo\\bin\\rustc.exe",
+    "cargo": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\cargo\\bin\\cargo.exe"
+  },
+  "all_seven_way_present": true
+}

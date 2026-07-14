@@ -28,7 +28,7 @@ DESKTOP_MIRROR = Path(
 )
 GITHUB_REMOTE = "https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
 REQUIRED_PYTHON = ("numpy", "mpmath", "sympy", "yaml", "pypdf", "pytest")
-HOST_TOOLS = ("python", "lake", "elan", "rustc", "cargo", "coqc", "isabelle")
+HOST_TOOLS = ("python", "lake", "elan", "rustc", "cargo", "coqc")
 ARCHIVE_SECTIONS = (
     "01_SR-ITE-USB-Original",
     "02_FSOT-2.1-Lean-Full",
@@ -117,12 +117,18 @@ def _check_python_packages() -> dict[str, bool]:
     return out
 
 
-def _check_host_tools() -> dict[str, str | None]:
-    out: dict[str, str | None] = {}
-    for tool in HOST_TOOLS:
-        found = shutil.which(tool)
-        out[tool] = found
-    return out
+def _check_host_tools() -> dict:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    try:
+        from discover_toolchain import discover  # noqa: WPS433
+
+        doc = discover()
+        return doc.get("tools") or {}
+    except Exception:
+        out: dict[str, str | None] = {}
+        for tool in HOST_TOOLS:
+            out[tool] = shutil.which(tool)
+        return out
 
 
 def _run_sub_audit(script: str) -> dict:
@@ -188,11 +194,16 @@ def audit(*, skip_fetch: bool = False, quick: bool = False) -> dict:
     if tools.get("python") is None:
         blockers.append("Python interpreter not on PATH (not bundled on drive)")
     if not tools.get("lake"):
-        warnings.append("Lean lake not on PATH — use --skip-lean for portable verify")
+        warnings.append("Lean lake not found — use --skip-lean or bundle elan to 07_Portable-Toolchain")
     if not tools.get("coqc"):
-        warnings.append("Coq not on PATH — cross-proof Coq tier skipped on fresh laptop")
+        blockers.append("Coq/Rocq not found — bundle rocq to 07_Portable-Toolchain")
     if not tools.get("isabelle"):
-        warnings.append("Isabelle not on PATH — cross-proof Isabelle tier skipped on fresh laptop")
+        blockers.append("Isabelle not found — bundle isabelle to 07_Portable-Toolchain")
+    if not tools.get("fstar"):
+        blockers.append("F* not found — bundle fstar to 07_Portable-Toolchain")
+    bundled_tc = ar / "07_Portable-Toolchain" if ar else None
+    if bundled_tc is None or not bundled_tc.exists():
+        warnings.append("07_Portable-Toolchain not bundled yet — run bundle_toolchain.ps1")
 
     if vendor_cov.get("missing_bundled_assets"):
         blockers.append(f"Missing bundled vendor assets: {vendor_cov['missing_bundled_assets']}")
