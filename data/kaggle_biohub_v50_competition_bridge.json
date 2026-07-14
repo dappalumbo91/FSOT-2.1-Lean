@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-13",
+  "domain": "Zebrafish_Cell_Tracking_Panel",
+  "competition": "biohub-cell-tracking-during-development",
+  "lean_ref": "https://github.com/dappalumbo91/FSOT-2.1-Lean.git",
+  "living_ref": "https://github.com/dappalumbo91/FSOT-Living.git",
+  "kaggle_constraint": "cpu_only",
+  "train_proxy_dataset": "44b6_0113de3b",
+  "score_ladder": {
+    "v49_peaks_fsot": 0.6764,
+    "v50_fsot_gate_det045": 0.857,
+    "v50_fsot_pure_link_no_ilp_cpu": 0.857,
+    "v50_fsot_pure_link_ilp_cpu": 0.9044,
+    "leaderboard_p1_approx": 0.97
+  },
+  "competitive_defaults": {
+    "CELLMOT_UNET_WEIGHTS": "cellmot-ft-detector-biohub/edge_predictor_best.pth",
+    "CELLMOT_DET_THRESHOLD": "0.48",
+    "CELLMOT_NMS_UM": "6.0",
+    "FSOT_LINK_MODE": "fsot",
+    "CELLMOT_USE_ILP": "1",
+    "CELLMOT_ILP_MAX_EDGES": "80000",
+    "CELLMOT_DEVICE": "cpu",
+    "KAGGLE_CPU_ONLY": "1",
+    "FSOT_DET_CONF_RANK": "1",
+    "FSOT_LIVING_PROXY_ACCURACY": "0.90",
+    "FSOT_LIVING_ADAPTIVE": "1"
+  },
+  "findings": [
+    "Pure FSOT SequenceTracker linking beats fsot_gate by +0.037 on train proxy.",
+    "ILP on CPU adds +0.047 vs no ILP (~13s overhead at 26k edges).",
+    "FSOT-Living adaptive dormant at proxy 0.90; conf-ranked NMS only when math wins.",
+    "GPU local tuning; CPU Kaggle submit with identical weights and env defaults."
+  ],
+  "bundle_path": "vendor/kaggle_biohub_review/v50",
+  "submission_rows_four_datasets": 331216
+}

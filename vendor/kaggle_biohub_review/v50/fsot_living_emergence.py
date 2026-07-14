@@ -2,6 +2,8 @@
 """
 FSOT-Living bridge for Kaggle cell-tracking vision.
 
+Canonical Rust source: FSOT-Living fsot-living-rust/src/cell_tracking.rs
+
 Ports two mechanisms from github.com/dappalumbo91/FSOT-Living:
 
 1. accuracy_homeo — when vision organ accuracy sits below healthy band (0.62),
