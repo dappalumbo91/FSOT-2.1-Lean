@@ -1111,6 +1111,147 @@ def _prune_multi_daughter_edges(
     return graph
 
 
+def _snapshot_pre_ilp_parents(
+    graph: td.graph.InMemoryGraph,
+    frames: set[int],
+) -> set[int]:
+    """Parents on ``frames`` with a t->t+1 edge in the pre-ILP graph."""
+    if not frames:
+        return set()
+    k = td.DEFAULT_ATTR_KEYS
+    nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T])
+    gid_t = {int(row[k.NODE_ID]): int(row[k.T]) for row in nodes.iter_rows(named=True)}
+    parents: set[int] = set()
+    edge_tbl = graph.edge_attrs(attr_keys=[k.EDGE_SOURCE, k.EDGE_TARGET])
+    for row in edge_tbl.iter_rows(named=True):
+        src = int(row[k.EDGE_SOURCE])
+        tgt = int(row[k.EDGE_TARGET])
+        t_src = gid_t.get(src, -9)
+        t_tgt = gid_t.get(tgt, -9)
+        if t_src in frames and t_tgt == t_src + 1:
+            parents.add(src)
+    return parents
+
+
+def _patch_division_gap_post_ilp(
+    graph: td.graph.InMemoryGraph,
+    preserve_frames: set[int],
+    refine_frames: set[int],
+    *,
+    pre_ilp_parents: set[int] | None = None,
+) -> td.graph.InMemoryGraph:
+    """Surgical division fixes after ILP: 2nd-daughter prune + pre-ILP orphan relink."""
+    if os.environ.get("FSOT_ML_DIVISION_GAP_PATCH", "1") != "1":
+        return graph
+    from fsot_cellular_bridge import MITOSIS_DAUGHTER_MAX_UM, phys_coords
+
+    k = td.DEFAULT_ATTR_KEYS
+    nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T, "z", "y", "x"])
+    gid_t: dict[int, int] = {}
+    gid_pos: dict[int, np.ndarray] = {}
+    for row in nodes.iter_rows(named=True):
+        gid = int(row[k.NODE_ID])
+        gid_t[gid] = int(row[k.T])
+        gid_pos[gid] = np.array([float(row["z"]), float(row["y"]), float(row["x"])])
+
+    edge_keys = [k.EDGE_ID, k.EDGE_SOURCE, k.EDGE_TARGET]
+    edge_tbl = graph.edge_attrs(attr_keys=edge_keys)
+    by_parent: dict[int, list[tuple[int, int]]] = {}
+    for row in edge_tbl.iter_rows(named=True):
+        src = int(row[k.EDGE_SOURCE])
+        tgt = int(row[k.EDGE_TARGET])
+        t_src = gid_t.get(src, -9)
+        t_tgt = gid_t.get(tgt, -9)
+        if t_tgt != t_src + 1:
+            continue
+        by_parent.setdefault(src, []).append((int(row[k.EDGE_ID]), tgt))
+
+    removed = 0
+    for src, outs in by_parent.items():
+        if len(outs) != 2 or gid_t.get(src, -9) not in preserve_frames:
+            continue
+        if src not in gid_pos:
+            continue
+        p_pos = gid_pos[src]
+
+        def _dy(tgt_gid: int) -> float:
+            return float(gid_pos[tgt_gid][1] - p_pos[1])
+
+        keep_tgt = max((tgt for _, tgt in outs), key=_dy)
+        for eid, tgt in outs:
+            if tgt != keep_tgt:
+                graph.remove_edge(edge_id=eid)
+                removed += 1
+
+    # Refresh after removals
+    edge_tbl = graph.edge_attrs(attr_keys=edge_keys)
+    by_parent = {}
+    for row in edge_tbl.iter_rows(named=True):
+        src = int(row[k.EDGE_SOURCE])
+        tgt = int(row[k.EDGE_TARGET])
+        t_src = gid_t.get(src, -9)
+        t_tgt = gid_t.get(tgt, -9)
+        if t_tgt != t_src + 1:
+            continue
+        by_parent.setdefault(src, []).append((int(row[k.EDGE_ID]), tgt))
+
+    tgt_by_frame: dict[int, list[int]] = {}
+    for gid, t in gid_t.items():
+        tgt_by_frame.setdefault(t, []).append(gid)
+
+    relink_parents = pre_ilp_parents or set()
+    to_add: list[dict] = []
+    linked = 0
+    for t_src in sorted(refine_frames):
+        t_tgt = t_src + 1
+        for src in sorted(relink_parents):
+            if gid_t.get(src, -9) != t_src:
+                continue
+            if src in by_parent and by_parent[src]:
+                continue
+            if src not in gid_pos:
+                continue
+            p_phys = phys_coords([{
+                "z": gid_pos[src][0], "y": gid_pos[src][1], "x": gid_pos[src][2],
+            }])[0]
+            best_gid = None
+            best_d = float("inf")
+            for cand in tgt_by_frame.get(t_tgt, []):
+                if cand not in gid_pos:
+                    continue
+                c_phys = phys_coords([{
+                    "z": gid_pos[cand][0], "y": gid_pos[cand][1], "x": gid_pos[cand][2],
+                }])[0]
+                d_um = float(np.linalg.norm(p_phys - c_phys))
+                if d_um <= MITOSIS_DAUGHTER_MAX_UM and d_um < best_d:
+                    best_d = d_um
+                    best_gid = cand
+            if best_gid is None:
+                continue
+            dist = float(np.linalg.norm(gid_pos[src] - gid_pos[best_gid]))
+            to_add.append({
+                "source_id": src,
+                "target_id": best_gid,
+                "edge_prob": 0.92,
+                "edge_dist": dist,
+            })
+            linked += 1
+
+    if to_add:
+        import polars as pl
+
+        if "edge_prob" not in graph.edge_attr_keys():
+            graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
+            graph.add_edge_attr_key("edge_dist", pl.Float64, 0.0)
+        graph.bulk_add_edges(to_add)
+    if removed or linked:
+        print(
+            f"[ML-REFINE] division-gap removed={removed} orphan-linked={linked} "
+            f"frames preserve={sorted(preserve_frames)} refine={sorted(refine_frames)}"
+        )
+    return graph
+
+
 def _apply_graph_postprocess(
     graph: td.graph.InMemoryGraph,
     cfg: PredictConfig,
@@ -1121,6 +1262,13 @@ def _apply_graph_postprocess(
 ) -> td.graph.InMemoryGraph:
     """ILP when affordable; otherwise CPU lite greedy consistency (Kaggle-safe)."""
     before_n, before_e = graph.num_nodes(), graph.num_edges()
+    pre_ilp_parents: set[int] | None = None
+    if coords is not None:
+        from fsot_division_ml_refine import _parse_frame_list
+
+        refine_frames_for_snap = _parse_frame_list("FSOT_ML_REFINE_FRAMES")
+        if refine_frames_for_snap:
+            pre_ilp_parents = _snapshot_pre_ilp_parents(graph, refine_frames_for_snap)
     if cfg.use_ilp and graph.num_edges() <= _ilp_edge_cap():
         graph = _apply_ilp(graph, cfg)
         if graph.num_nodes() < before_n or graph.num_edges() < before_e:
@@ -1128,15 +1276,27 @@ def _apply_graph_postprocess(
                 f"[ILP] {before_n} nodes/{before_e} edges -> "
                 f"{graph.num_nodes()} nodes/{graph.num_edges()} edges"
             )
-        if coords is not None and preserve_fsot_edges:
-            graph = _patch_preserved_fsot_edges(graph, coords, preserve_fsot_edges)
+        if coords is not None:
             from fsot_division_ml_refine import _parse_frame_list
-            if os.environ.get("FSOT_ML_RECONCILE_DAUGHTERS", "0") == "1":
-                preserve_frames = _parse_frame_list("FSOT_ML_PRESERVE_FSOT_FRAMES")
-                if preserve_frames:
-                    graph = _reconcile_preserve_daughters(
-                        graph, coords, preserve_fsot_edges, preserve_frames,
-                    )
+            preserve_frames = _parse_frame_list("FSOT_ML_PRESERVE_FSOT_FRAMES")
+            refine_frames = _parse_frame_list("FSOT_ML_REFINE_FRAMES")
+            if preserve_fsot_edges:
+                graph = _patch_preserved_fsot_edges(graph, coords, preserve_fsot_edges)
+            if preserve_frames or refine_frames:
+                graph = _patch_division_gap_post_ilp(
+                    graph,
+                    preserve_frames,
+                    refine_frames,
+                    pre_ilp_parents=pre_ilp_parents,
+                )
+            if (
+                preserve_fsot_edges
+                and os.environ.get("FSOT_ML_RECONCILE_DAUGHTERS", "0") == "1"
+                and preserve_frames
+            ):
+                graph = _reconcile_preserve_daughters(
+                    graph, coords, preserve_fsot_edges, preserve_frames,
+                )
         if coords is not None and ml_patch_ctx is not None:
             if os.environ.get("FSOT_ML_POST_ILP_CORRECT", "0") == "1":
                 model, device, ds_path, downsample = ml_patch_ctx
