@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent
 EXTRACTED = ROOT.parent / "extracted"
 OUT_DIR = ROOT / "fsot-v50-competitive-bundle"
 ZIP_PATH = ROOT / "fsot-v50-competitive-bundle.zip"
+PATCHED_PREDICT = ROOT / "kaggle-cell-tracking-competition" / "scripts" / "predict_unet_transformer.py"
 
 BUNDLE_FILES = [
     "kaggle_main_runner.py",
@@ -48,11 +49,27 @@ def main() -> int:
         raise SystemExit(f"Missing bundle files: {missing}")
 
     cellmot_zip = EXTRACTED / "cellmot_code_bundle.zip"
-    if cellmot_zip.exists():
-        shutil.copy2(cellmot_zip, OUT_DIR / "cellmot_code_bundle.zip")
-        print("  cellmot_code_bundle.zip")
-    else:
+    if not cellmot_zip.exists():
         raise SystemExit(f"Missing {cellmot_zip}")
+    if not PATCHED_PREDICT.exists():
+        raise SystemExit(f"Missing patched predict script: {PATCHED_PREDICT}")
+
+    staging = ROOT / "_cellmot_bundle_staging"
+    if staging.exists():
+        shutil.rmtree(staging)
+    with zipfile.ZipFile(cellmot_zip, "r") as zf:
+        zf.extractall(staging)
+    bundle_predict = staging / "cellmot_bundle" / "scripts" / "predict_unet_transformer.py"
+    if not bundle_predict.parent.exists():
+        raise SystemExit(f"Unexpected cellmot zip layout (no {bundle_predict.parent})")
+    shutil.copy2(PATCHED_PREDICT, bundle_predict)
+    out_cellmot_zip = OUT_DIR / "cellmot_code_bundle.zip"
+    with zipfile.ZipFile(out_cellmot_zip, "w", zipfile.ZIP_DEFLATED) as zf:
+        for path in sorted(staging.rglob("*")):
+            if path.is_file():
+                zf.write(path, arcname=path.relative_to(staging).as_posix())
+    shutil.rmtree(staging)
+    print("  cellmot_code_bundle.zip (patched predict_unet_transformer)")
 
     if ZIP_PATH.exists():
         ZIP_PATH.unlink()
