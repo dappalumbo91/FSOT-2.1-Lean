@@ -385,16 +385,23 @@ FSTAR_DIR = ROOT / "verification" / "fstar"
 
 
 def _rust_cargo_env() -> dict[str, str]:
-    """Avoid LNK1104 when linking test binaries on removable/USB drives (Windows)."""
+    """Host temp for link.exe; bundled toolchain bins bypass rustup sync on I:."""
     import tempfile
 
+    from fsot_paths import archive_root  # noqa: WPS433
+
     env = os.environ.copy()
-    if env.get("CARGO_TARGET_DIR"):
-        return env
-    # link.exe cannot reliably write executables on exFAT/removable I: — use host temp
     host_cache = Path(tempfile.gettempdir()) / "fsot_rust_target"
     host_cache.mkdir(parents=True, exist_ok=True)
     env["CARGO_TARGET_DIR"] = str(host_cache)
+    ar = archive_root()
+    if ar is not None:
+        tc_bin = ar / "07_Portable-Toolchain" / "rustup" / "toolchains" / "stable-x86_64-pc-windows-msvc" / "bin"
+        if tc_bin.is_dir():
+            env["RUSTUP_OFFLINE"] = "1"
+            prefix = str(tc_bin)
+            if prefix not in (env.get("PATH") or ""):
+                env["PATH"] = prefix + os.pathsep + env.get("PATH", "")
     return env
 
 

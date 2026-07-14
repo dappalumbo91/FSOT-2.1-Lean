@@ -92,6 +92,27 @@ def refresh_summary_boot_scalar() -> dict:
     return summary
 
 
+def _rust_cargo_env() -> dict[str, str]:
+    import os
+    import tempfile
+
+    from fsot_paths import archive_root  # noqa: WPS433
+
+    env = os.environ.copy()
+    host_cache = Path(tempfile.gettempdir()) / "fsot_rust_target"
+    host_cache.mkdir(parents=True, exist_ok=True)
+    env["CARGO_TARGET_DIR"] = str(host_cache)
+    ar = archive_root()
+    if ar is not None:
+        tc_bin = ar / "07_Portable-Toolchain" / "rustup" / "toolchains" / "stable-x86_64-pc-windows-msvc" / "bin"
+        if tc_bin.is_dir():
+            env["RUSTUP_OFFLINE"] = "1"
+            prefix = str(tc_bin)
+            if prefix not in (env.get("PATH") or ""):
+                env["PATH"] = prefix + os.pathsep + env.get("PATH", "")
+    return env
+
+
 def run_cargo_runtime_parity() -> dict:
     cargo = shutil.which("cargo")
     if not cargo:
@@ -105,6 +126,7 @@ def run_cargo_runtime_parity() -> dict:
             capture_output=True,
             text=True,
             timeout=300,
+            env=_rust_cargo_env(),
         )
         out = (r.stdout or "") + (r.stderr or "")
         return {
