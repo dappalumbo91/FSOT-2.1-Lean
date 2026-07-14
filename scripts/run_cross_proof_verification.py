@@ -385,20 +385,16 @@ FSTAR_DIR = ROOT / "verification" / "fstar"
 
 
 def _rust_cargo_env() -> dict[str, str]:
-    """Avoid LNK1104 when linking test binaries on removable drives (Windows)."""
+    """Avoid LNK1104 when linking test binaries on removable/USB drives (Windows)."""
+    import tempfile
+
     env = os.environ.copy()
-    if not env.get("CARGO_TARGET_DIR"):
-        from fsot_paths import archive_root  # noqa: WPS433
-
-        ar = archive_root()
-        if ar is not None:
-            cache = ar / "07_Portable-Toolchain" / "rust-target-cache"
-            cache.mkdir(parents=True, exist_ok=True)
-            env["CARGO_TARGET_DIR"] = str(cache)
-        else:
-            import tempfile
-
-            env["CARGO_TARGET_DIR"] = str(Path(tempfile.gettempdir()) / "fsot_rust_target")
+    if env.get("CARGO_TARGET_DIR"):
+        return env
+    # link.exe cannot reliably write executables on exFAT/removable I: — use host temp
+    host_cache = Path(tempfile.gettempdir()) / "fsot_rust_target"
+    host_cache.mkdir(parents=True, exist_ok=True)
+    env["CARGO_TARGET_DIR"] = str(host_cache)
     return env
 
 
