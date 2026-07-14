@@ -11,7 +11,13 @@ from pathlib import Path
 
 def install_cellmot_wheels() -> str | None:
     """Install cellmot offline wheels except numpy/scipy (Kaggle base image keeps those)."""
-    hits = glob.glob("/kaggle/input/**/cellmot-baseline-artifacts/**/wheels", recursive=True)
+    known = [
+        "/kaggle/input/datasets/thibautgoldsborough/cellmot-baseline-artifacts/cellmot-baseline-artifacts/wheels",
+        "/kaggle/input/cellmot-baseline-artifacts/wheels",
+    ]
+    hits = [p for p in known if os.path.isdir(p)]
+    if not hits:
+        hits = glob.glob("/kaggle/input/**/cellmot-baseline-artifacts/**/wheels", recursive=True)
     if not hits:
         hits = glob.glob("/kaggle/input/**/wheels", recursive=True)
     if not hits:
@@ -42,18 +48,52 @@ def install_cellmot_wheels() -> str | None:
 
 
 def extract_cellmot_bundle(work: Path = Path("/kaggle/working")) -> bool:
-    """Extract cellmot_code_bundle.zip from bundle copy or Kaggle inputs."""
-    candidates = [
+    """Materialize cellmot_bundle under ``work`` for predict_unet_transformer imports."""
+    import shutil
+
+    dst = work / "cellmot_bundle"
+    if (dst / "scripts" / "predict_unet_transformer.py").exists():
+        import sys
+        for sub in ("scripts", "src"):
+            p = str(dst / sub)
+            if p not in sys.path:
+                sys.path.insert(0, p)
+        print(f"[CELLMOT] bundle ready at {dst}")
+        return True
+
+    zip_candidates = [
         work / "cellmot_code_bundle.zip",
         *glob.glob("/kaggle/input/**/cellmot_code_bundle.zip", recursive=True),
     ]
-    for bundle_path in candidates:
+    for bundle_path in zip_candidates:
         p = Path(bundle_path)
         if not p.exists():
             continue
         with zipfile.ZipFile(p, "r") as zf:
             zf.extractall(work)
-        print(f"[CELLMOT] extracted {p}")
+        if (work / "cellmot_bundle").exists():
+            import sys
+            for sub in ("scripts", "src"):
+                sp = str(work / "cellmot_bundle" / sub)
+                if sp not in sys.path:
+                    sys.path.insert(0, sp)
+            print(f"[CELLMOT] extracted zip {p}")
+            return True
+
+    script_hits = glob.glob(
+        "/kaggle/input/**/cellmot_bundle/scripts/predict_unet_transformer.py",
+        recursive=True,
+    )
+    if script_hits:
+        src_root = Path(script_hits[0]).parent.parent
+        shutil.copytree(src_root, dst, dirs_exist_ok=True)
+        import sys
+        for sub in ("scripts", "src"):
+            p = str(dst / sub)
+            if p not in sys.path:
+                sys.path.insert(0, p)
+        print(f"[CELLMOT] copied tree from {src_root}")
         return True
-    print("[WARN] cellmot_code_bundle.zip not found")
+
+    print("[WARN] cellmot_bundle not found (zip or pre-extracted tree)")
     return False

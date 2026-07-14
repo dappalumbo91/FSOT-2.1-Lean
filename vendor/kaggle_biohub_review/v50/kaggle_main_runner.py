@@ -49,18 +49,42 @@ def _setup_kaggle_env() -> tuple[str, str]:
         os.environ.setdefault("CELLMOT_UNET_WEIGHTS", _wt[0])
         print(f"[UNET] weights: {_wt[0]}")
 
+    def _wire_cellmot_paths(bundle_root: str) -> bool:
+        scripts = os.path.join(bundle_root, "scripts")
+        src = os.path.join(bundle_root, "src")
+        if not os.path.isfile(os.path.join(scripts, "predict_unet_transformer.py")):
+            return False
+        for p in (src, scripts):
+            if p not in sys.path:
+                sys.path.insert(0, p)
+        print(f"[CELLMOT] wired {bundle_root}")
+        return True
+
     def _extract_cellmot_bundle() -> None:
+        if _wire_cellmot_paths("/kaggle/working/cellmot_bundle"):
+            return
+
         candidates = glob.glob("/kaggle/input/**/cellmot_code_bundle.zip", recursive=True)
         if os.path.exists("/kaggle/working/cellmot_code_bundle.zip"):
             candidates.insert(0, "/kaggle/working/cellmot_code_bundle.zip")
         for bundle_path in candidates:
             with zipfile.ZipFile(bundle_path, "r") as zf:
                 zf.extractall("/kaggle/working")
-            sys.path.insert(0, "/kaggle/working/cellmot_bundle/src")
-            sys.path.insert(0, "/kaggle/working/cellmot_bundle/scripts")
-            print(f"[CELLMOT] bundle extracted from {bundle_path}")
-            return
-        print("[WARN] cellmot_code_bundle.zip not found — pip install tracksdata/cellmot from wheels")
+            if _wire_cellmot_paths("/kaggle/working/cellmot_bundle"):
+                print(f"[CELLMOT] bundle extracted from {bundle_path}")
+                return
+
+        script_hits = glob.glob(
+            "/kaggle/input/**/cellmot_bundle/scripts/predict_unet_transformer.py",
+            recursive=True,
+        )
+        if script_hits:
+            root = os.path.dirname(os.path.dirname(script_hits[0]))
+            if _wire_cellmot_paths(root):
+                print(f"[CELLMOT] wired tree from {root}")
+                return
+
+        print("[WARN] cellmot_bundle not found — fsot_unet engine will be unavailable")
 
     _extract_cellmot_bundle()
 
