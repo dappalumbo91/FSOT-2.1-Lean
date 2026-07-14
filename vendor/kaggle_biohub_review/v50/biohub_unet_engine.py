@@ -683,7 +683,7 @@ def _apply_ilp(graph: td.graph.InMemoryGraph, cfg: PredictConfig) -> td.graph.In
         return graph
 
 
-def _patch_ml_argmax_post_ilp(
+def _patch_ml_division_post_ilp(
     graph: td.graph.InMemoryGraph,
     coords: np.ndarray,
     model,
@@ -692,14 +692,15 @@ def _patch_ml_argmax_post_ilp(
     ds_path: Path,
     downsample: tuple[int, ...],
 ) -> td.graph.InMemoryGraph:
-    """Add missing transformer argmax daughters on ML-refine frames after ILP."""
-    if os.environ.get("FSOT_ML_POST_ILP_ARGMAX", "1") != "1":
+    """Fix mislinked parents on ML-refine frames using transformer argmax after ILP."""
+    if os.environ.get("FSOT_ML_POST_ILP_CORRECT", "1") != "1":
         return graph
+    from fsot_cellular_bridge import MITOSIS_DAUGHTER_MAX_UM, phys_coords
     from fsot_division_ml_refine import (
         _idx_by_time,
         _ml_edge_probs,
         _parse_frame_list,
-        _supplement_argmax_edges,
+        _refine_edge_threshold,
     )
 
     refine_frames = _parse_frame_list("FSOT_ML_REFINE_FRAMES")
@@ -708,21 +709,36 @@ def _patch_ml_argmax_post_ilp(
 
     k = td.DEFAULT_ATTR_KEYS
     nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T, "z", "y", "x"])
-    pos_to_idx: dict[tuple[int, int, int, int], int] = {}
-    for i in range(len(coords)):
+    pos_to_gid: dict[tuple[int, int, int, int], int] = {}
+    gid_to_t: dict[int, int] = {}
+    for row in nodes.iter_rows(named=True):
+        gid = int(row[k.NODE_ID])
+        gid_to_t[gid] = int(row[k.T])
         key = (
-            int(coords[i, 0]),
-            int(coords[i, 1]),
-            int(coords[i, 2]),
-            int(coords[i, 3]),
+            int(row[k.T]),
+            int(round(row["z"])),
+            int(round(row["y"])),
+            int(round(row["x"])),
         )
-        pos_to_idx[key] = i
+        pos_to_gid[key] = gid
 
-    existing = {
-        (int(row[k.EDGE_SOURCE]), int(row[k.EDGE_TARGET]))
-        for row in graph.edge_attrs(attr_keys=[k.EDGE_SOURCE, k.EDGE_TARGET]).iter_rows(named=True)
+    coord_to_gid = {
+        i: pos_to_gid.get((
+            int(coords[i, 0]), int(coords[i, 1]),
+            int(coords[i, 2]), int(coords[i, 3]),
+        ))
+        for i in range(len(coords))
     }
+    gid_to_coord = {gid: i for i, gid in coord_to_gid.items() if gid is not None}
+
+    edge_keys = [k.EDGE_ID, k.EDGE_SOURCE, k.EDGE_TARGET]
+    if "edge_prob" in graph.edge_attr_keys():
+        edge_keys.append("edge_prob")
+    edge_tbl = graph.edge_attrs(attr_keys=edge_keys)
     by_t = _idx_by_time(coords)
+    min_prob = float(os.environ.get("FSOT_ML_CORRECT_MIN_PROB", "0.25"))
+    margin = float(os.environ.get("FSOT_ML_CORRECT_MARGIN", "0.06"))
+    removed = 0
     to_add: list[dict] = []
 
     for t_src in sorted(refine_frames):
@@ -737,43 +753,87 @@ def _patch_ml_argmax_post_ilp(
         )
         if probs is None:
             continue
-        extras = _supplement_argmax_edges(probs, idx_src, idx_tgt, coords, [], min_prob=0.12)
-        for src_i, tgt_i, prob, dist in extras:
-            s_key = (
-                int(coords[src_i, 0]), int(coords[src_i, 1]),
-                int(coords[src_i, 2]), int(coords[src_i, 3]),
-            )
-            t_key = (
-                int(coords[tgt_i, 0]), int(coords[tgt_i, 1]),
-                int(coords[tgt_i, 2]), int(coords[tgt_i, 3]),
-            )
-            src_id = None
-            tgt_id = None
-            for row in nodes.iter_rows(named=True):
-                key = (int(row[k.T]), int(round(row["z"])), int(round(row["y"])), int(round(row["x"])))
-                if key == s_key:
-                    src_id = int(row[k.NODE_ID])
-                if key == t_key:
-                    tgt_id = int(row[k.NODE_ID])
-            if src_id is None or tgt_id is None or (src_id, tgt_id) in existing:
-                continue
-            to_add.append({
-                "source_id": src_id,
-                "target_id": tgt_id,
-                "edge_prob": float(prob),
-                "edge_dist": float(dist),
-            })
-            existing.add((src_id, tgt_id))
+        gid_to_i = {coord_to_gid[idx_src[i]]: i for i in range(len(idx_src))
+                    if coord_to_gid.get(idx_src[i]) is not None}
+        c_src = coords[idx_src]
+        c_tgt = coords[idx_tgt]
+        pc_src = phys_coords([
+            {"z": float(c[1]), "y": float(c[2]), "x": float(c[3])} for c in c_src
+        ])
+        pc_tgt = phys_coords([
+            {"z": float(c[1]), "y": float(c[2]), "x": float(c[3])} for c in c_tgt
+        ])
 
-    if not to_add:
+        for src_gid, i in gid_to_i.items():
+            row = probs[i]
+            j_best = int(np.argmax(row))
+            best_prob = float(row[j_best])
+            lowconf_thr = float(os.environ.get("FSOT_ML_CORRECT_LOWCONF", "0.0"))
+            if best_prob < max(min_prob, _refine_edge_threshold(cfg)) and lowconf_thr <= 0:
+                continue
+            best_gid = coord_to_gid.get(idx_tgt[j_best])
+            if best_gid is None:
+                continue
+            if float(np.linalg.norm(pc_src[i] - pc_tgt[j_best])) > MITOSIS_DAUGHTER_MAX_UM * 1.2:
+                continue
+
+            out_rows = edge_tbl.filter(edge_tbl[k.EDGE_SOURCE] == src_gid)
+            cur_tgts: list[tuple[int, int]] = []
+            for row in out_rows.iter_rows(named=True):
+                tgt_gid = int(row[k.EDGE_TARGET])
+                if gid_to_t.get(tgt_gid, -9) != t_tgt:
+                    continue
+                cur_tgts.append((int(row[k.EDGE_ID]), tgt_gid))
+
+            if not cur_tgts:
+                continue
+
+            if any(tgt == best_gid for _, tgt in cur_tgts):
+                continue
+
+            cur_prob = 0.0
+            for _, tgt in cur_tgts:
+                ci = gid_to_coord.get(tgt)
+                if ci is not None and ci in idx_tgt:
+                    jj = idx_tgt.index(ci)
+                    cur_prob = max(cur_prob, float(probs[i, jj]))
+            if best_prob < lowconf_thr and lowconf_thr > 0:
+                dists = [float(np.linalg.norm(pc_src[i] - pc_tgt[j])) for j in range(len(idx_tgt))]
+                j_near = int(np.argmin(dists))
+                if float(np.min(dists)) <= MITOSIS_DAUGHTER_MAX_UM:
+                    j_best = j_near
+                    best_prob = float(row[j_best])
+                    best_gid = coord_to_gid.get(idx_tgt[j_best])
+                    if best_gid is None or any(tgt == best_gid for _, tgt in cur_tgts):
+                        continue
+            elif best_prob < cur_prob + margin:
+                continue
+
+            for eid, _ in cur_tgts:
+                graph.remove_edge(edge_id=eid)
+                removed += 1
+            dist = float(np.linalg.norm(
+                c_src[i, 1:].astype(np.float32) - c_tgt[j_best, 1:].astype(np.float32)
+            ))
+            to_add.append({
+                "source_id": src_gid,
+                "target_id": best_gid,
+                "edge_prob": best_prob,
+                "edge_dist": dist,
+            })
+
+    if not to_add and removed == 0:
         return graph
     import polars as pl
 
-    if "edge_prob" not in graph.edge_attr_keys():
-        graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
-        graph.add_edge_attr_key("edge_dist", pl.Float64, 0.0)
-    graph.bulk_add_edges(to_add)
-    print(f"[ML-REFINE] post-ILP argmax added {len(to_add)} edges")
+    if to_add:
+        if "edge_prob" not in graph.edge_attr_keys():
+            graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
+            graph.add_edge_attr_key("edge_dist", pl.Float64, 0.0)
+        graph.bulk_add_edges(to_add)
+    print(
+        f"[ML-REFINE] post-ILP correct removed={removed} added={len(to_add)}"
+    )
     return graph
 
 
@@ -844,6 +904,45 @@ def _patch_preserved_fsot_edges(
     return graph
 
 
+def _prune_multi_daughter_edges(
+    graph: td.graph.InMemoryGraph,
+    frames: set[int],
+) -> td.graph.InMemoryGraph:
+    """Drop weaker second daughters on preserved frames (reduces spurious FP links)."""
+    if not frames:
+        return graph
+    k = td.DEFAULT_ATTR_KEYS
+    edge_keys = [k.EDGE_ID, k.EDGE_SOURCE, k.EDGE_TARGET]
+    if "edge_prob" in graph.edge_attr_keys():
+        edge_keys.append("edge_prob")
+    edge_tbl = graph.edge_attrs(attr_keys=edge_keys)
+    nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T])
+    node_t = {int(row[k.NODE_ID]): int(row[k.T]) for row in nodes.iter_rows(named=True)}
+
+    by_parent: dict[int, list[tuple[int, int, float]]] = {}
+    for row in edge_tbl.iter_rows(named=True):
+        src = int(row[k.EDGE_SOURCE])
+        tgt = int(row[k.EDGE_TARGET])
+        t_src = node_t.get(src, -9)
+        t_tgt = node_t.get(tgt, -9)
+        if t_src not in frames or t_tgt != t_src + 1:
+            continue
+        prob = float(row["edge_prob"]) if "edge_prob" in row else 1.0
+        by_parent.setdefault(src, []).append((int(row[k.EDGE_ID]), tgt, prob))
+
+    removed = 0
+    for src, outs in by_parent.items():
+        if len(outs) <= 1:
+            continue
+        outs.sort(key=lambda x: -x[2])
+        for eid, _, _ in outs[1:]:
+            graph.remove_edge(edge_id=eid)
+            removed += 1
+    if removed:
+        print(f"[ML-REFINE] pruned {removed} secondary daughter edges on frames {sorted(frames)}")
+    return graph
+
+
 def _apply_graph_postprocess(
     graph: td.graph.InMemoryGraph,
     cfg: PredictConfig,
@@ -863,9 +962,14 @@ def _apply_graph_postprocess(
             )
         if coords is not None and preserve_fsot_edges:
             graph = _patch_preserved_fsot_edges(graph, coords, preserve_fsot_edges)
+            if os.environ.get("FSOT_ML_PRUNE_SECOND_DAUGHTERS", "0") == "1":
+                from fsot_division_ml_refine import _parse_frame_list
+                prune_frames = _parse_frame_list("FSOT_ML_PRESERVE_FSOT_FRAMES")
+                if prune_frames:
+                    graph = _prune_multi_daughter_edges(graph, prune_frames)
         if coords is not None and ml_patch_ctx is not None:
             model, device, ds_path, downsample = ml_patch_ctx
-            graph = _patch_ml_argmax_post_ilp(
+            graph = _patch_ml_division_post_ilp(
                 graph, coords, model, device, cfg, ds_path, downsample,
             )
         return graph

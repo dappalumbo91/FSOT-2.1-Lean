@@ -103,6 +103,7 @@ def _setup_kaggle_env() -> tuple[str, str]:
     os.environ.setdefault("FSOT_ML_REFINE_FRAMES", "47")
     os.environ.setdefault("FSOT_ML_REFINE_REPLACE_FRAMES", "47")
     os.environ.setdefault("FSOT_ML_PRESERVE_FSOT_FRAMES", "29")
+    os.environ.setdefault("FSOT_ML_POST_ILP_CORRECT", "0")
     os.environ.setdefault("FSOT_MITOSIS_VELOCITY", "1")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")
 
@@ -161,6 +162,7 @@ def _setup_local_env() -> tuple[str, str]:
     os.environ.setdefault("FSOT_ML_REFINE_MODE", "replace")
     os.environ.setdefault("FSOT_ML_REFINE_REPLACE_FRAMES", "47")
     os.environ.setdefault("FSOT_ML_PRESERVE_FSOT_FRAMES", "29")
+    os.environ.setdefault("FSOT_ML_POST_ILP_CORRECT", "0")
     os.environ.setdefault("FSOT_MITOSIS_VELOCITY", "1")
     os.environ.setdefault("CELLMOT_DEVICE", "cuda" if _gpu_available() else "cpu")
     os.environ.setdefault("KAGGLE_SUBMISSION_FAST_VALIDATE", "0")
