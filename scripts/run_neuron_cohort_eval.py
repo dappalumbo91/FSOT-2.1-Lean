@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "neuron_cohort_manifest.yaml"
 REPORT_PATH = ROOT / "data" / "neuron_cohort_report.json"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
+ALLEN_SDK_VERIFY_PATH = ROOT / "data" / "allen_sdk_verification.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_canonical_adapter import canonical_domain_scalar  # noqa: E402
@@ -387,7 +388,18 @@ def main() -> int:
 
     certified_err = float((hero_certified or {}).get("mean_rel_err") or 1.0)
     canon_err = float((hero_canon or {}).get("mean_rel_err") or 1.0)
+    if hero_canon is None and ALLEN_SDK_VERIFY_PATH.exists():
+        allen_verify = json.loads(ALLEN_SDK_VERIFY_PATH.read_text(encoding="utf-8"))
+        canon_err = float(allen_verify.get("canonical_bridge_mean_rel_err") or canon_err)
+        if hero_certified is None:
+            certified_err = float(allen_verify.get("certified_mean_rel_err") or certified_err)
     canon_delta = abs(canon_err - certified_err)
+    if hero_canon is None and ALLEN_SDK_VERIFY_PATH.exists():
+        canon_delta = float(
+            json.loads(ALLEN_SDK_VERIFY_PATH.read_text(encoding="utf-8")).get(
+                "canonical_vs_certified_delta", canon_delta
+            )
+        )
 
     report = {
         "generated_from": str(cells_path),

@@ -1,0 +1,56 @@
+{
+  "specimen_id": 324257146,
+  "cell_class": "Sst_interneuron",
+  "region": "VISam",
+  "data_source": "allen_sdk",
+  "constants": {
+    "soma_gain_base": 2.64,
+    "soma_gain_scalar": 0.5,
+    "ahp_scale": 0.79,
+    "onset_boost_amp": 1.2,
+    "onset_boost_center_ratio": 0.55,
+    "onset_boost_width_ratio": 0.3,
+    "onset_gate_center_ratio": 1.05,
+    "onset_gate_slope": 10.0,
+    "high_drive_boost_amp": 0.14,
+    "high_drive_center_ratio": 1.14,
+    "high_drive_slope": 10.0,
+    "high_drive_off_center_ratio": 1.42,
+    "high_drive_off_slope": 14.0
+  },
+  "sustained_fi": [
+    {
+      "current_nA": 0.05,
+      "measured_Hz": 6.0000150000375,
+      "model_Hz": 6.0,
+      "rel_err": 2.50000000000127e-06
+    },
+    {
+      "current_nA": 0.09,
+      "measured_Hz": 20.500051250128127,
+      "model_Hz": 19.0,
+      "rel_err": 0.07317304878048789
+    },
+    {
+      "current_nA": 0.13,
+      "measured_Hz": 40.62512406292266,
+      "model_Hz": 37.142857142857146,
+      "rel_err": 0.08571707780318323
+    },
+    {
+      "current_nA": 0.17,
+      "measured_Hz": 66.00033000165001,
+      "model_Hz": 58.0,
+      "rel_err": 0.12121651515151521
+    }
+  ],
+  "mean_rel_err": 0.07002728543379658,
+  "verifier": {
+    "stimulus_current_nA": 0.195,
+    "expected_Hz": 66.00033000165001,
+    "expected_source": "allen_measured_capped_to_0.170nA",
+    "observed_Hz": 74.0,
+    "firing_rate_error": 0.12120651515151507,
+    "confidence": 0.9598886696481669
+  }
+}

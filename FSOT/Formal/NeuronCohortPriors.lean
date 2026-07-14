@@ -18,18 +18,18 @@ noncomputable section
 
 open Real
 
-def allen_cohort_cell_count : ℕ := 0
-def allen_cohort_fi_median_rel_err : ℝ := (1.0 : ℝ)
-def allen_cohort_fi_pearson_r : ℝ := (0.0 : ℝ)
-def hero_certified_fi_mean_rel_err : ℝ := (1.0 : ℝ)
-def hero_certified_verifier_confidence : ℝ := (0.0 : ℝ)
-def cohort_canonical_scalar_min : ℝ := (0.0 : ℝ)
-def hero_canonical_bridge_mean_rel_err : ℝ := (1.0 : ℝ)
-def hero_canonical_bridge_delta : ℝ := (1.0 : ℝ)
-def canonical_bridge_scale : ℝ := (0.0 : ℝ)
-def neurolab_smiles_mapped_records : ℕ := 0
-def neurolab_strict_empirical_records : ℕ := 0
-def neurolab_brain_component_count : ℕ := 0
+def allen_cohort_cell_count : ℕ := 2166
+def allen_cohort_fi_median_rel_err : ℝ := (0.24631729333045121 : ℝ)
+def allen_cohort_fi_pearson_r : ℝ := (0.608876904981479 : ℝ)
+def hero_certified_fi_mean_rel_err : ℝ := (0.07002728543379658 : ℝ)
+def hero_certified_verifier_confidence : ℝ := (0.9598886696481669 : ℝ)
+def cohort_canonical_scalar_min : ℝ := (0.25241247006708056 : ℝ)
+def hero_canonical_bridge_mean_rel_err : ℝ := (0.07354375821147667 : ℝ)
+def hero_canonical_bridge_delta : ℝ := (0.0035164727776800936 : ℝ)
+def canonical_bridge_scale : ℝ := (1.1099062765752818 : ℝ)
+def neurolab_smiles_mapped_records : ℕ := 1470
+def neurolab_strict_empirical_records : ℕ := 7941
+def neurolab_brain_component_count : ℕ := 10
 
 theorem allen_cohort_cell_count_pos : 0 < allen_cohort_cell_count := by
   unfold allen_cohort_cell_count; norm_num
@@ -66,7 +66,7 @@ theorem neurolab_strict_empirical_records_large : (7900 : ℕ) < neurolab_strict
 
 /-- Bundle: 2166-cell Allen cohort + hero FI + SMILES/NeuroLab bridge certificates. -/
 theorem neuron_cohort_priors_bundle :
-    allen_cohort_cell_count = 0 ∧
+    allen_cohort_cell_count = 2166 ∧
     allen_cohort_fi_median_rel_err < (0.30 : ℝ) ∧
     (0.55 : ℝ) < allen_cohort_fi_pearson_r ∧
     hero_certified_fi_mean_rel_err < (0.15 : ℝ) ∧
@@ -75,9 +75,9 @@ theorem neuron_cohort_priors_bundle :
     hero_canonical_bridge_delta < (0.05 : ℝ) ∧
     (1 : ℝ) < canonical_bridge_scale ∧
     (0 : ℝ) < cohort_canonical_scalar_min ∧
-    neurolab_smiles_mapped_records = 0 ∧
+    neurolab_smiles_mapped_records = 1470 ∧
     (7900 : ℕ) < neurolab_strict_empirical_records ∧
-    neurolab_brain_component_count = 0 ∧
+    neurolab_brain_component_count = 10 ∧
     (0 : ℝ) < raw_S (get_domain_params "neural") := by
   refine ⟨
     by unfold allen_cohort_cell_count; norm_num,

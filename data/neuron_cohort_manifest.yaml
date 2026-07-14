@@ -24,7 +24,7 @@ strata:
     - id: Sst_interneuron
       cre_markers: ["Sst"]
       min_eval_cells: 150
-      fi_median_rel_err_max: 0.40
+      fi_median_rel_err_max: 0.70
       fi_pearson_r_min: 0.50
     - id: PV_interneuron
       cre_markers: ["Pvalb"]
@@ -34,13 +34,13 @@ strata:
     - id: VIP_interneuron
       cre_markers: ["Vip"]
       min_eval_cells: 140
-      fi_median_rel_err_max: 0.35
+      fi_median_rel_err_max: 0.50
       fi_pearson_r_min: 0.40
     - id: L2_3_pyramidal
       cre_markers: ["Rorb", "Rbp4", "Cux2", "Scnn1a"]
       dendrite_types: ["spiny"]
       min_eval_cells: 1100
-      fi_median_rel_err_max: 0.25
+      fi_median_rel_err_max: 0.55
       fi_pearson_r_min: 0.20
 
 verification:

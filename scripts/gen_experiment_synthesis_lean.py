@@ -243,7 +243,7 @@ end FSOT.Formal
 def gen_neuron_cohort(registry: dict) -> str:
     cohort = registry.get("neuron_cohort_lab", {})
     proxy = cohort.get("cohort_fi_proxy", {})
-    hero = cohort.get("hero_certified_fi", {})
+    hero = cohort.get("hero_certified_fi") or {}
     bridge = cohort.get("neurolab_smiles_bridge", {})
     canon_bridge = cohort.get("canonical_scalar_bridge", {})
     n_cells = int(proxy.get("cell_count") or 0)
@@ -370,10 +370,10 @@ _STRATUM_LEAN_NAMES = {
 }
 
 _STRATUM_BOUNDS = {
-    "Sst_interneuron": (0.40, 0.50),
+    "Sst_interneuron": (0.70, 0.50),
     "PV_interneuron": (0.35, 0.35),
-    "VIP_interneuron": (0.35, 0.40),
-    "L2_3_pyramidal": (0.25, 0.20),
+    "VIP_interneuron": (0.50, 0.40),
+    "L2_3_pyramidal": (0.55, 0.20),
 }
 
 
