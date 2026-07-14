@@ -233,6 +233,34 @@ def audit(*, skip_fetch: bool = False, quick: bool = False) -> dict:
     )
     plug_and_play_runtime = plug_and_play_data and all(py_pkgs.values()) and tools.get("python") is not None
 
+    seven_on_drive = bool(
+        tools.get("lake")
+        and tools.get("coqc")
+        and tools.get("isabelle")
+        and tools.get("fstar")
+        and tools.get("cargo")
+    )
+    rustup_complete = bool(
+        bundled_tc
+        and (bundled_tc / "rustup" / ".bundle-complete").is_file()
+    )
+    host_prereqs = [
+        "Python 3.10+",
+        "pip install -r requirements.txt (numpy, mpmath, sympy, PyYAML, pypdf, pytest)",
+    ]
+    if not seven_on_drive:
+        host_prereqs.extend(
+            [
+                "Optional: elan + Lean 4.31 for lake build",
+                "Optional: Rust for obligation replay cross-proof tier",
+                "Optional: Coq, Isabelle, F* for full seven-way cross-proof",
+            ]
+        )
+    elif not rustup_complete:
+        host_prereqs.append(
+            "Rustup bundle still copying — bootstrap uses host ~/.rustup until .bundle-complete"
+        )
+
     return {
         "audited_at": datetime.now(timezone.utc).isoformat(),
         "archive_root": str(ar) if ar else None,
@@ -282,14 +310,10 @@ def audit(*, skip_fetch: bool = False, quick: bool = False) -> dict:
         "plug_and_play": {
             "data_complete_on_drive": plug_and_play_data,
             "runnable_without_downloads": plug_and_play_runtime,
-            "requires_one_time_host_install": [
-                "Python 3.10+",
-                "pip install -r requirements.txt (numpy, mpmath, sympy, PyYAML, pypdf, pytest)",
-                "Optional: elan + Lean 4.31 for lake build",
-                "Optional: Rust for obligation replay cross-proof tier",
-                "Optional: Coq, Isabelle, F* for full seven-way cross-proof",
-            ],
-            "offline_verification_mode": "PLAY.ps1 → portable runner with --skip-lean --portable --founding-corpus",
+            "seven_way_toolchain_on_drive": seven_on_drive,
+            "rustup_bundle_complete": rustup_complete,
+            "requires_one_time_host_install": host_prereqs,
+            "offline_verification_mode": "PLAY.ps1 → bootstrap_toolchain.ps1 → full verification",
             "live_api_rebuild": "Not required for scientific verification — uses cached benchmarks in data/ and 03_FSOT-PublicData",
         },
         "blockers": blockers,

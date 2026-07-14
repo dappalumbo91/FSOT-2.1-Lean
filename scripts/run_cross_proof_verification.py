@@ -135,6 +135,16 @@ def python_verify(obligations: list[dict], label: str) -> tuple[list[dict], bool
     return records, ok
 
 
+def _coqchk_timeout() -> int:
+    """Removable-drive I/O can make coqchk much slower than on local SSD."""
+    from fsot_paths import archive_root  # noqa: WPS433
+
+    ar = archive_root()
+    if ar is not None and str(ar).startswith("I:"):
+        return 600
+    return 120
+
+
 def _compile_coq_file(coqc: str, coq_file: Path, timeout: int = 600) -> dict:
     work = coq_file.parent
     try:
@@ -155,7 +165,7 @@ def _compile_coq_file(coqc: str, coq_file: Path, timeout: int = 600) -> dict:
                 cwd=str(work),
                 capture_output=True,
                 text=True,
-                timeout=120,
+                timeout=_coqchk_timeout(),
             )
             chk = {
                 "tool": coqchk,
