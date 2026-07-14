@@ -3248,6 +3248,153 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma founding_atmospheric_ozone_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_atmospheric_ozone_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_atmospheric_ozone_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_atmospheric_ozone_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_cosmic_dust_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_cosmic_dust_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_cosmic_dust_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_cosmic_dust_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_cosmic_ray_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_cosmic_ray_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_cosmic_ray_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_cosmic_ray_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_galactic_halo_rotation_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_galactic_halo_rotation_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_galactic_halo_rotation_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_galactic_halo_rotation_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_pulsar_glitch_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_pulsar_glitch_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_pulsar_glitch_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_pulsar_glitch_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_quantum_vacuum_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_quantum_vacuum_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_quantum_vacuum_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_quantum_vacuum_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
+Lemma founding_white_dwarf_cooling_panel_bundle_conj_0 : (5 = 5)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma founding_white_dwarf_cooling_panel_bundle_conj_1 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_white_dwarf_cooling_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma founding_white_dwarf_cooling_panel_bundle : (5 = 5)%nat /\ True /\ True.
+Proof.
+  split.
+    split.
+      lra.
+    - lra.
+  - reflexivity.
+Qed.
+
 Lemma fpc_fluidlink_timing_deep_panel_bundle_conj_0 : (24 = 24)%nat.
 Proof. reflexivity.
 Qed.

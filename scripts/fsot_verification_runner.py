@@ -285,6 +285,11 @@ def main() -> int:
         action="store_true",
         help="Rebuild founding corpus pipeline before verification (implies --founding-corpus)",
     )
+    parser.add_argument(
+        "--founding-cross-proof",
+        action="store_true",
+        help="With --rebuild-founding, also export founding-law bundles to cross-proof spine",
+    )
     args = parser.parse_args()
 
     if args.portable:
@@ -1058,8 +1063,11 @@ def main() -> int:
             if args.rebuild_founding:
                 founding_pipeline = ROOT / "scripts" / "build_founding_pipeline.py"
                 if founding_pipeline.exists():
+                    fp_cmd = [sys.executable, str(founding_pipeline)]
+                    if args.founding_cross_proof:
+                        fp_cmd.append("--cross-proof")
                     proc_fp = subprocess.run(
-                        [sys.executable, str(founding_pipeline)],
+                        fp_cmd,
                         cwd=ROOT,
                         capture_output=True,
                         text=True,
@@ -1098,6 +1106,18 @@ def main() -> int:
                 print(proc_fc.stdout.strip() or proc_fc.stderr.strip())
                 if proc_fc.returncode != 0:
                     issues.append("founding corpus verification failed")
+            founding_xproof = ROOT / "scripts" / "verify_founding_laws_cross_proof.py"
+            if args.founding_cross_proof and founding_xproof.exists():
+                proc_fx = subprocess.run(
+                    [sys.executable, str(founding_xproof)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_fx.stdout.strip() or proc_fx.stderr.strip())
+                if proc_fx.returncode != 0:
+                    issues.append("founding-law cross-proof spine verification failed")
 
         bio_eval = ROOT / "scripts" / "run_biology_numeric_eval.py"
         if bio_eval.exists():
