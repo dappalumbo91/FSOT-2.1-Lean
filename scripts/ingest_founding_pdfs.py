@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,6 +19,9 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "vendor" / "founding_corpus" / "pdf_extracted"
 MANIFEST_PATH = ROOT / "vendor" / "founding_corpus" / "pdf_ingest_manifest.json"
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import rel_repo_path  # noqa: E402
 
 FOUNDING_ROOTS = [
     Path(r"I:\fsuft aasb"),
@@ -165,7 +169,7 @@ def ingest_pdfs(
                 "source_pdf": str(pdf),
                 "fallback_source": fallback_source,
                 "founding_root": rel_root,
-                "output_txt": str(out_txt) if status == "ok" else None,
+                "output_txt": rel_repo_path(out_txt) if status == "ok" else None,
                 "page_count": page_count,
                 "char_count": len(text),
                 "status": status,

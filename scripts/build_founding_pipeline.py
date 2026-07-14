@@ -29,6 +29,12 @@ CROSS_PROOF_EXPORT = [
 def main() -> int:
     import argparse
 
+    archive_check = ROOT / "scripts" / "assert_canonical_archive.py"
+    if archive_check.exists():
+        rc = subprocess.call([PY, str(archive_check)])
+        if rc != 0:
+            return rc
+
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--cross-proof",

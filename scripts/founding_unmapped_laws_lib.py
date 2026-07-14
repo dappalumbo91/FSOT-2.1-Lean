@@ -9,6 +9,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "data" / "founding_unmapped_laws_reference.json"
 
+from fsot_paths import authority_path_for_export, rel_repo_path  # noqa: E402
 from tier_gap_fill_lib import _bench_v11, _fsot_scaled, _load_fsot  # noqa: E402
 
 DOMAIN_SLUG = {
@@ -79,8 +80,8 @@ def build_panel(law_id: str) -> dict:
         material_records=records,
         maps_to_lean=panel_spec["maps_to_lean"],
         d_eff=int(panel_spec["d_eff"]),
-        authority_path=authority,
-        source=[str(REFERENCE), f"founding_law:{law_id}"],
+        authority_path=authority_path_for_export(Path(authority)),
+        source=[rel_repo_path(REFERENCE), f"founding_law:{law_id}"],
         channel_stats=[(law_id, panel_spec["name"], errs)],
         sota_baselines={
             panel_spec["name"]: {
