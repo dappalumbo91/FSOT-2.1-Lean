@@ -6,7 +6,7 @@ Architecture (matches FSOT-2.1-Lean cellular lab + kaggle_prototype_fsot_tracker
   1. U-Net local-max detection  — ML vision gateway (coords only)
   2. FSOT SequenceTracker       — phase-scalar link_cost + mitosis gates (edges)
 
-Set FSOT_LINK_MODE=fsot (default) | fsot_gate | hybrid | transformer
+Set FSOT_LINK_MODE=fsot (default) | fsot_union | fsot_gate | hybrid | transformer
 """
 
 from __future__ import annotations
@@ -683,9 +683,174 @@ def _apply_ilp(graph: td.graph.InMemoryGraph, cfg: PredictConfig) -> td.graph.In
         return graph
 
 
+def _patch_ml_argmax_post_ilp(
+    graph: td.graph.InMemoryGraph,
+    coords: np.ndarray,
+    model,
+    device: torch.device,
+    cfg: PredictConfig,
+    ds_path: Path,
+    downsample: tuple[int, ...],
+) -> td.graph.InMemoryGraph:
+    """Add missing transformer argmax daughters on ML-refine frames after ILP."""
+    if os.environ.get("FSOT_ML_POST_ILP_ARGMAX", "1") != "1":
+        return graph
+    from fsot_division_ml_refine import (
+        _idx_by_time,
+        _ml_edge_probs,
+        _parse_frame_list,
+        _supplement_argmax_edges,
+    )
+
+    refine_frames = _parse_frame_list("FSOT_ML_REFINE_FRAMES")
+    if not refine_frames:
+        return graph
+
+    k = td.DEFAULT_ATTR_KEYS
+    nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T, "z", "y", "x"])
+    pos_to_idx: dict[tuple[int, int, int, int], int] = {}
+    for i in range(len(coords)):
+        key = (
+            int(coords[i, 0]),
+            int(coords[i, 1]),
+            int(coords[i, 2]),
+            int(coords[i, 3]),
+        )
+        pos_to_idx[key] = i
+
+    existing = {
+        (int(row[k.EDGE_SOURCE]), int(row[k.EDGE_TARGET]))
+        for row in graph.edge_attrs(attr_keys=[k.EDGE_SOURCE, k.EDGE_TARGET]).iter_rows(named=True)
+    }
+    by_t = _idx_by_time(coords)
+    to_add: list[dict] = []
+
+    for t_src in sorted(refine_frames):
+        t_tgt = t_src + 1
+        idx_src = by_t.get(t_src, [])
+        idx_tgt = by_t.get(t_tgt, [])
+        if not idx_src or not idx_tgt:
+            continue
+        probs = _ml_edge_probs(
+            model, device, cfg, Path(ds_path), coords,
+            idx_src, idx_tgt, t_src, t_tgt, downsample,
+        )
+        if probs is None:
+            continue
+        extras = _supplement_argmax_edges(probs, idx_src, idx_tgt, coords, [], min_prob=0.12)
+        for src_i, tgt_i, prob, dist in extras:
+            s_key = (
+                int(coords[src_i, 0]), int(coords[src_i, 1]),
+                int(coords[src_i, 2]), int(coords[src_i, 3]),
+            )
+            t_key = (
+                int(coords[tgt_i, 0]), int(coords[tgt_i, 1]),
+                int(coords[tgt_i, 2]), int(coords[tgt_i, 3]),
+            )
+            src_id = None
+            tgt_id = None
+            for row in nodes.iter_rows(named=True):
+                key = (int(row[k.T]), int(round(row["z"])), int(round(row["y"])), int(round(row["x"])))
+                if key == s_key:
+                    src_id = int(row[k.NODE_ID])
+                if key == t_key:
+                    tgt_id = int(row[k.NODE_ID])
+            if src_id is None or tgt_id is None or (src_id, tgt_id) in existing:
+                continue
+            to_add.append({
+                "source_id": src_id,
+                "target_id": tgt_id,
+                "edge_prob": float(prob),
+                "edge_dist": float(dist),
+            })
+            existing.add((src_id, tgt_id))
+
+    if not to_add:
+        return graph
+    import polars as pl
+
+    if "edge_prob" not in graph.edge_attr_keys():
+        graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
+        graph.add_edge_attr_key("edge_dist", pl.Float64, 0.0)
+    graph.bulk_add_edges(to_add)
+    print(f"[ML-REFINE] post-ILP argmax added {len(to_add)} edges")
+    return graph
+
+
+def _patch_preserved_fsot_edges(
+    graph: td.graph.InMemoryGraph,
+    coords: np.ndarray,
+    preserve_edges: list[tuple[int, int, float, float]],
+) -> td.graph.InMemoryGraph:
+    """Re-attach pre-ILP FSOT edges on frames that ML replace must not disturb."""
+    if not preserve_edges:
+        return graph
+    k = td.DEFAULT_ATTR_KEYS
+    nodes = graph.node_attrs(attr_keys=[k.NODE_ID, k.T, "z", "y", "x"])
+    pos_to_id: dict[tuple[int, int, int, int], int] = {}
+    for row in nodes.iter_rows(named=True):
+        key = (
+            int(row[k.T]),
+            int(round(row["z"])),
+            int(round(row["y"])),
+            int(round(row["x"])),
+        )
+        pos_to_id[key] = int(row[k.NODE_ID])
+
+    edge_tbl = graph.edge_attrs(attr_keys=[k.EDGE_SOURCE, k.EDGE_TARGET])
+    existing = {
+        (int(row[k.EDGE_SOURCE]), int(row[k.EDGE_TARGET]))
+        for row in edge_tbl.iter_rows(named=True)
+    }
+    to_add: list[dict] = []
+    for src_i, tgt_i, prob, dist in preserve_edges:
+        if src_i >= len(coords) or tgt_i >= len(coords):
+            continue
+        s_key = (
+            int(coords[src_i, 0]),
+            int(coords[src_i, 1]),
+            int(coords[src_i, 2]),
+            int(coords[src_i, 3]),
+        )
+        t_key = (
+            int(coords[tgt_i, 0]),
+            int(coords[tgt_i, 1]),
+            int(coords[tgt_i, 2]),
+            int(coords[tgt_i, 3]),
+        )
+        src_id = pos_to_id.get(s_key)
+        tgt_id = pos_to_id.get(t_key)
+        if src_id is None or tgt_id is None:
+            continue
+        if (src_id, tgt_id) in existing:
+            continue
+        to_add.append({
+            "source_id": src_id,
+            "target_id": tgt_id,
+            "edge_prob": float(prob),
+            "edge_dist": float(dist),
+        })
+        existing.add((src_id, tgt_id))
+
+    if not to_add:
+        return graph
+    import polars as pl
+
+    if "edge_prob" not in graph.edge_attr_keys():
+        graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
+        graph.add_edge_attr_key("edge_dist", pl.Float64, 0.0)
+    graph.bulk_add_edges(to_add)
+    print(f"[ML-REFINE] post-ILP restored {len(to_add)} preserved FSOT edges")
+    return graph
+
+
 def _apply_graph_postprocess(
     graph: td.graph.InMemoryGraph,
     cfg: PredictConfig,
+    *,
+    coords: np.ndarray | None = None,
+    preserve_fsot_edges: list[tuple[int, int, float, float]] | None = None,
+    ml_patch_ctx: tuple | None = None,
 ) -> td.graph.InMemoryGraph:
     """ILP when affordable; otherwise CPU lite greedy consistency (Kaggle-safe)."""
     before_n, before_e = graph.num_nodes(), graph.num_edges()
@@ -695,6 +860,13 @@ def _apply_graph_postprocess(
             print(
                 f"[ILP] {before_n} nodes/{before_e} edges -> "
                 f"{graph.num_nodes()} nodes/{graph.num_edges()} edges"
+            )
+        if coords is not None and preserve_fsot_edges:
+            graph = _patch_preserved_fsot_edges(graph, coords, preserve_fsot_edges)
+        if coords is not None and ml_patch_ctx is not None:
+            model, device, ds_path, downsample = ml_patch_ctx
+            graph = _patch_ml_argmax_post_ilp(
+                graph, coords, model, device, cfg, ds_path, downsample,
             )
         return graph
     if cfg.use_ilp and graph.num_edges() > _ilp_edge_cap():
@@ -769,6 +941,7 @@ def predict_dataset(
 
     use_conf = _want_det_conf()
     conf_parts: list[np.ndarray] = [] if use_conf else []
+    preserve_fsot_edges: list[tuple[int, int, float, float]] = []
 
     mode = (link_mode or _link_mode()).lower()
     if mode == "transformer":
@@ -783,6 +956,23 @@ def predict_dataset(
         if before != len(coords):
             print(f"[DETECT] NMS/topk: {before} -> {len(coords)} nodes (nms_um={_nms_min_um()})")
         print(f"[ML-EDGE] {len(edges)} transformer edges from {len(coords)} nodes")
+    elif mode == "fsot_union":
+        coords, ml_edges = predict_video(
+            model, ds_path, device, cfg,
+            window_size=window_size, max_frames=max_frames, downsample=downsample,
+            det_conf_parts=conf_parts if use_conf else None,
+        )
+        det_conf = np.concatenate(conf_parts) if conf_parts else None
+        before = len(coords)
+        coords, ml_edges = _postprocess_coords_edges(coords, ml_edges, det_conf=det_conf)
+        if before != len(coords):
+            print(f"[DETECT] NMS/topk: {before} -> {len(coords)} nodes (nms_um={_nms_min_um()})")
+        fsot_edges = link_coords_with_fsot(coords)
+        edges = _merge_edge_lists(fsot_edges, ml_edges)
+        print(
+            f"[FSOT-UNION] fsot={len(fsot_edges)} ml={len(ml_edges)} "
+            f"union={len(edges)} nodes={len(coords)}"
+        )
     elif mode in ("hybrid", "fsot_gate"):
         coords, ml_edges = predict_video(
             model, ds_path, device, cfg,
@@ -806,10 +996,30 @@ def predict_dataset(
             window_size=window_size, max_frames=max_frames, downsample=downsample,
         )
         edges = link_coords_with_fsot(coords)
+        if os.environ.get("FSOT_DIVISION_ML_REFINE", "0") == "1":
+            from fsot_division_ml_refine import (
+                _edges_on_frames,
+                _parse_frame_list,
+                refine_fsot_edges_ml,
+            )
+
+            preserve_frames = _parse_frame_list("FSOT_ML_PRESERVE_FSOT_FRAMES")
+            if preserve_frames:
+                preserve_fsot_edges = _edges_on_frames(coords, edges, preserve_frames)
+            edges = refine_fsot_edges_ml(
+                coords, edges, model, device, cfg, Path(ds_path),
+                downsample=downsample, window_size=window_size,
+            )
         print(f"[FSOT] {len(edges)} edges from {len(coords)} U-Net detections")
 
     if return_graph:
-        return _apply_graph_postprocess(build_graph(coords, edges), cfg)
+        return _apply_graph_postprocess(
+            build_graph(coords, edges),
+            cfg,
+            coords=coords,
+            preserve_fsot_edges=preserve_fsot_edges or None,
+            ml_patch_ctx=(model, device, Path(ds_path), downsample),
+        )
     return coords, edges
 
 
