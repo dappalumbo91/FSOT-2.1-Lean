@@ -6,6 +6,8 @@ This is the Lean 4 formalization of **Fluid Spacetime Omni-Theory (FSOT) 2.0**, 
 
 It was developed in close collaboration with the Python reference implementation.
 
+**Philosophy & consciousness (LLM training spine):** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md` — narrative ontology, consciousness stance, epistemic tiers. Harvest training rows: `python scripts/build_philosophy_training_corpus.py` → `vendor/philosophy_corpus/fsot_philosophy_training.jsonl`.
+
 ## Structure
 
 - `FSOT/Scalar.lean` — Executable `Float`-based core (for the Python verification runner and quick checks). Includes extracted internal terms (`growth_term`, `quirk_mod`, `perceived_adjust`, `term3` + sub-components).

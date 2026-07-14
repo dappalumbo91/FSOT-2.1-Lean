@@ -1,0 +1,117 @@
+version: "1.0"
+updated: "2026-07-14"
+purpose: >
+  Registry of FSOT philosophy, ontology, and consciousness narrative sources
+  for LLM distillation. Run scripts/build_philosophy_training_corpus.py to emit jsonl.
+
+output:
+  path: vendor/philosophy_corpus/fsot_philosophy_training.jsonl
+  format: instruction_tuning  # fields: id, category, tier, source, title, content, lean_module, epistemic_tier
+
+epistemic_tiers:
+  proved: Lean sign/interval theorem or cross-proof obligation
+  measured: benchmark JSON with error_pct and green gate
+  scaffold: formal panel with contested external interpretation
+  interpretive: humanities/Genesis/archetype reading
+  conjectured: stated but not fully formalized
+
+categories:
+  - philosophy_core
+  - epistemology
+  - consciousness
+  - ontology
+  - soul_substrate
+  - axioms
+  - cross_domain_argument
+
+sources:
+  - id: spine_master
+    path: docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md
+    category: philosophy_core
+    epistemic_tier: interpretive
+    priority: 1
+
+  - id: cosmic_thesis_v3
+    path: "C:/Users/damia/Desktop/FSOT Cosmology Lab/FSOT 3.0 Cosmic Skeleton Key Thesis.md"
+    category: consciousness
+    epistemic_tier: measured
+    priority: 2
+    section_markers: ["Part V", "Consciousness", "25D", "IIT"]
+
+  - id: sr_ite_axioms
+    path: "I:/FSOT-Physical-Archive/01_SR-ITE-USB-Original/3_driver_zig/fsot_axiomatic_laws.txt"
+    category: axioms
+    epistemic_tier: interpretive
+    priority: 2
+
+  - id: soul_bridge_ref
+    path: data/consciousness_soul_bridge_reference.json
+    category: soul_substrate
+    epistemic_tier: scaffold
+    lean_module: FSOT.Formal.ConsciousnessSoulBridgePriors
+    priority: 2
+
+  - id: tier90_manifest
+    path: data/tier90_consciousness_expansion_manifest.yaml
+    category: consciousness
+    epistemic_tier: scaffold
+    priority: 3
+
+  - id: scalar_lean
+    path: FSOT/Scalar.lean
+    category: consciousness
+    epistemic_tier: proved
+    lean_module: FSOT.Scalar
+    priority: 1
+
+  - id: certified_protocol
+    path: vendor/certified_agent/CERTIFIED_PROTOCOL.md
+    category: epistemology
+    epistemic_tier: proved
+    priority: 1
+
+  - id: thesis_ch5_6
+    path: docs/thesis_chapters_5_6.md
+    category: epistemology
+    epistemic_tier: proved
+    priority: 3
+
+  - id: arxiv_outline
+    path: docs/arxiv_outline.md
+    category: philosophy_core
+    epistemic_tier: conjectured
+    priority: 4
+
+  - id: desktop_crosswalk
+    path: data/desktop_project_crosswalk.yaml
+    category: cross_domain_argument
+    epistemic_tier: measured
+    priority: 4
+    note: Run build_desktop_project_crosswalk.py if missing
+
+  - id: consciousness_expansion_benchmark
+    path: data/consciousness_expansion_spine_benchmark.json
+    category: consciousness
+    epistemic_tier: measured
+    lean_module: FSOT.Formal.ConsciousnessExpansionSpinePriors
+    priority: 2
+
+  - id: foundational_ontology_benchmark
+    path: data/foundational_ontology_spine_benchmark.json
+    category: ontology
+    epistemic_tier: measured
+    lean_module: FSOT.Formal.FoundationalOntologySpinePriors
+    priority: 2
+
+  - id: omni_genesis_lean
+    path: FSOT/Formal/OmniTheoryGenesisPriors.lean
+    category: ontology
+    epistemic_tier: measured
+    lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+    priority: 3
+
+  - id: verification_report
+    path: "I:/FSOT-Physical-Archive/VERIFICATION_REPORT.json"
+    category: epistemology
+    epistemic_tier: proved
+    priority: 2
