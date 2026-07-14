@@ -292,12 +292,22 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if args.portable:
-        import os
+    import os
 
+    archive_check = ROOT / "scripts" / "assert_canonical_archive.py"
+    if archive_check.exists() and not os.environ.get("FSOT_ALLOW_NON_ARCHIVE"):
+        proc_arch = subprocess.run(
+            [sys.executable, str(archive_check)],
+            cwd=ROOT,
+            check=False,
+        )
+        if proc_arch.returncode != 0:
+            return proc_arch.returncode
+
+    if args.portable or os.environ.get("FSOT_CANONICAL_ARCHIVE"):
         os.environ["FSOT_PORTABLE"] = "1"
 
-    portable = args.portable or env_portable_mode()
+    portable = args.portable or env_portable_mode() or os.environ.get("FSOT_CANONICAL_ARCHIVE")
 
     if args.scan_mirrors:
         print_mirror_scan()

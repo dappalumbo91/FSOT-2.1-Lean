@@ -1,12 +1,12 @@
 generated_at: '2026-07-13T15:21:59.079092+00:00'
 fsot_20_repo: C:\Users\damia\Desktop\FSOT-2.0-code
 fsot_20_remote: https://github.com/dappalumbo91/FSOT-2.0-code.git
-authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+authority_path: vendor/fsot_compute.py
 domain_count_fsot20_doc: 35
 domain_count_matched_neurolab: 35
 param_drift_count: 0
 param_drift_resolved_count: 11
-drift_resolution_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\data\param_drift_resolution.yaml
+drift_resolution_path: vendor/fsot_compute.py\data\param_drift_resolution.yaml
 extra_domains:
   Intelligence_Compression:
     source: C:\Users\damia\Desktop\FSOT-2.0-code\IntelligenceCompressor
@@ -4107,7 +4107,7 @@ domains:
 - fsot20_name: Acoustics
   neurolab_domain: Acoustics
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -4131,7 +4131,7 @@ domains:
 - fsot20_name: Astronomy
   neurolab_domain: Astronomy
   lean_domain: astronomical
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 20
     hits: 1
@@ -4155,7 +4155,7 @@ domains:
 - fsot20_name: Astrophysics
   neurolab_domain: Astrophysics
   lean_domain: astronomical
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 24
     hits: 1
@@ -4179,7 +4179,7 @@ domains:
 - fsot20_name: Atmospheric Physics
   neurolab_domain: Atmospheric_Physics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 17
     hits: 2
@@ -4203,7 +4203,7 @@ domains:
 - fsot20_name: Atomic Physics
   neurolab_domain: Atomic_Physics
   lean_domain: particle
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 7
     hits: 0
@@ -4228,7 +4228,7 @@ domains:
 - fsot20_name: Biochemistry
   neurolab_domain: Biochemistry
   lean_domain: medical
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 13
     hits: 1
@@ -4255,7 +4255,7 @@ domains:
 - fsot20_name: Biology
   neurolab_domain: Biology
   lean_domain: biological
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 12
     hits: 0
@@ -4279,7 +4279,7 @@ domains:
 - fsot20_name: Chemistry
   neurolab_domain: Chemistry
   lean_domain: electron
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 8
     hits: 0
@@ -4304,7 +4304,7 @@ domains:
 - fsot20_name: Condensed Matter Physics
   neurolab_domain: Condensed_Matter
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 14
     hits: 0
@@ -4328,7 +4328,7 @@ domains:
 - fsot20_name: Cosmology
   neurolab_domain: Cosmology
   lean_domain: cosmological
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 25
     hits: 0
@@ -4352,7 +4352,7 @@ domains:
 - fsot20_name: Ecology
   neurolab_domain: Ecology
   lean_domain: biological
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -4376,7 +4376,7 @@ domains:
 - fsot20_name: Economics
   neurolab_domain: Economics
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 20
     hits: 3
@@ -4400,7 +4400,7 @@ domains:
 - fsot20_name: Electromagnetism
   neurolab_domain: Electromagnetism
   lean_domain: electron
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 9
     hits: 0
@@ -4424,7 +4424,7 @@ domains:
 - fsot20_name: Fluid Dynamics
   neurolab_domain: Fluid_Dynamics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -4448,7 +4448,7 @@ domains:
 - fsot20_name: Geophysics
   neurolab_domain: Geophysics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 19
     hits: 2
@@ -4472,7 +4472,7 @@ domains:
 - fsot20_name: High-Energy Physics
   neurolab_domain: High_Energy_Physics
   lean_domain: higgs
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 7
     hits: 1
@@ -4499,7 +4499,7 @@ domains:
 - fsot20_name: Materials Science
   neurolab_domain: Materials_Science
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -4524,7 +4524,7 @@ domains:
 - fsot20_name: Meteorology
   neurolab_domain: Meteorology
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 16
     hits: 2
@@ -4548,7 +4548,7 @@ domains:
 - fsot20_name: Molecular Chemistry
   neurolab_domain: Molecular_Chemistry
   lean_domain: chemical
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 9
     hits: 0
@@ -4572,7 +4572,7 @@ domains:
 - fsot20_name: Neuroscience
   neurolab_domain: Neuroscience
   lean_domain: neural
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 14
     hits: 1
@@ -4597,7 +4597,7 @@ domains:
 - fsot20_name: Nuclear Physics
   neurolab_domain: Nuclear_Physics
   lean_domain: nuclear
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -4621,7 +4621,7 @@ domains:
 - fsot20_name: Oceanography
   neurolab_domain: Oceanography
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 17
     hits: 1
@@ -4645,7 +4645,7 @@ domains:
 - fsot20_name: Optics
   neurolab_domain: Optics
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -4669,7 +4669,7 @@ domains:
 - fsot20_name: Particle Astrophysics
   neurolab_domain: Particle_Astrophysics
   lean_domain: cmb
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 24
     hits: 0
@@ -4697,7 +4697,7 @@ domains:
 - fsot20_name: Particle Physics
   neurolab_domain: Particle_Physics
   lean_domain: particle
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 5
     hits: 0
@@ -4721,7 +4721,7 @@ domains:
 - fsot20_name: Physical Chemistry
   neurolab_domain: Physical_Chemistry
   lean_domain: chemical
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 8
     hits: 0
@@ -4745,7 +4745,7 @@ domains:
 - fsot20_name: Planetary Science
   neurolab_domain: Planetary_Science
   lean_domain: galactic
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 21
     hits: 1
@@ -4770,7 +4770,7 @@ domains:
 - fsot20_name: Psychology
   neurolab_domain: Psychology
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 16
     hits: 1
@@ -4795,7 +4795,7 @@ domains:
 - fsot20_name: Quantum Computing
   neurolab_domain: Quantum_Computing
   lean_domain: ai
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 11
     hits: 0
@@ -4821,7 +4821,7 @@ domains:
 - fsot20_name: Quantum Gravity
   neurolab_domain: Quantum_Gravity
   lean_domain: blackhole
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 22
     hits: 0
@@ -4845,7 +4845,7 @@ domains:
 - fsot20_name: Quantum Mechanics
   neurolab_domain: Quantum_Mechanics
   lean_domain: quantum
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 6
     hits: 0
@@ -4869,7 +4869,7 @@ domains:
 - fsot20_name: Quantum Optics
   neurolab_domain: Quantum_Optics
   lean_domain: quantum
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 11
     hits: 0
@@ -4893,7 +4893,7 @@ domains:
 - fsot20_name: Seismology
   neurolab_domain: Seismology
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 18
     hits: 2
@@ -4917,7 +4917,7 @@ domains:
 - fsot20_name: Sociology
   neurolab_domain: Sociology
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 18
     hits: 3
@@ -4941,7 +4941,7 @@ domains:
 - fsot20_name: Thermodynamics
   neurolab_domain: Thermodynamics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
+  authority_path: vendor/fsot_compute.py
   authority:
     D_eff: 15
     hits: 1

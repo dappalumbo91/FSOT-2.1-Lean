@@ -1,5 +1,5 @@
 generated_at: '2026-07-13T04:15:39.839045+00:00'
-repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
+repo: vendor/fsot_compute.py
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
   lean_formal_modules: 462
@@ -734,7 +734,7 @@ tiers:
     magnetosphere_observables: 167
     magnetosphere_match_rate: 1.0
     magnetosphere_kp_resolution: rolling_6h_max
-    magnetosphere_resolution_comparison: &id001
+    magnetosphere_resolution_comparison:
       slot_3h:
         match_rate: 1.0
         match_count: 167
@@ -751,7 +751,7 @@ tiers:
         match_rate: 1.0
         match_count: 167
         record_count: 167
-    magnetosphere_channel_decomposition: &id002
+    magnetosphere_channel_decomposition:
       dst_channel:
         match_rate: 1.0
         match_count: 167
@@ -797,8 +797,40 @@ tiers:
   metrics:
     magnetosphere_primary_resolution: rolling_6h_max
     magnetosphere_match_rate: 1.0
-    resolution_comparison: *id001
-    channel_decomposition: *id002
+    resolution_comparison:
+      slot_3h:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      interpolated_1h:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      rolling_3h_max:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      rolling_6h_max:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+    channel_decomposition:
+      dst_channel:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      kp_channel:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      coupled_fsot:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      coupled_physical:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
     overlap_dst_hours: 167
   artifacts:
   - data/magnetosphere_manifest.yaml

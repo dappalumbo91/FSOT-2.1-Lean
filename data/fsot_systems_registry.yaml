@@ -1,6 +1,6 @@
 meta:
   generated_at: '2026-07-01T18:26:42.570880+00:00'
-  repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
+  repo: vendor/fsot_compute.py
   remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
   lean_build_ok: true
   proved_claims: 65
@@ -56,7 +56,7 @@ tier7_synthesis:
     scalar_canon: raw_S
   neuron_cohort:
     present: true
-    report_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\data\neuron_cohort_report.json
+    report_path: vendor/fsot_compute.py\data\neuron_cohort_report.json
     generated_from: C:\Users\damia\Desktop\nuron\cell data\allen_cell_types\cells.json
     total_cells_in_catalog: 2333
     cohort_fi_proxy:

@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-13T15:23:12.631510+00:00",
   "domain": "NASA_Exoplanet_Archive",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+80+pl_name%2Chostname%2Cpl_rade%2Cpl_bmasse%2Cpl_orbper%2Cdisc_year%2Csy_dist+from+pscomppars&format=csv",
   "maps_to_lean": [
     "astronomical",

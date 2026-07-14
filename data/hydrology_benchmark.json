@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.0",
   "generated_at": "2026-07-13T15:22:14.479515+00:00",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "authority_path": "vendor/fsot_compute.py",
   "source": "USGS_NWIS_DV_chunked",
   "climatology_method": "per_station_per_calendar_month",
   "station_count": 8,
@@ -12510,7 +12510,7 @@
       "S_energy": -0.549094
     }
   ],
-  "ingest_state": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\hydrology_cache\\ingest_state.json",
+  "ingest_state": "vendor/fsot_compute.py\\data\\hydrology_cache\\ingest_state.json",
   "cohort": {
     "train": {
       "stations": [

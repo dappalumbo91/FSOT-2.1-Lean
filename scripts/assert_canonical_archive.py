@@ -21,9 +21,11 @@ def check() -> int:
     except ValueError:
         pass
     print(
-        f"ERROR: FSOT work must run from {CANONICAL_LEAN_HUB}\n"
+        f"ERROR: FSOT canonical hub is {CANONICAL_LEAN_HUB}\n"
         f"  current repo: {root}\n"
-        f"  Set FSOT_ALLOW_NON_ARCHIVE=1 to override (e.g. CI/portable clone).",
+        f"  C: Desktop copies are legacy mirrors — do not verify or git push from there.\n"
+        f"  Run: . I:\\FSOT-Physical-Archive\\set_fsot_archive_env.ps1\n"
+        f"  Override only for CI: FSOT_ALLOW_NON_ARCHIVE=1",
         file=sys.stderr,
     )
     return 1

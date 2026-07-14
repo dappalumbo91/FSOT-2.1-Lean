@@ -9,6 +9,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VENDOR_ROOT = REPO_ROOT / "vendor"
 DATA_ROOT = REPO_ROOT / "data"
+CANONICAL_ARCHIVE_ROOT = Path(r"I:\FSOT-Physical-Archive")
+CANONICAL_LEAN_HUB = CANONICAL_ARCHIVE_ROOT / "02_FSOT-2.1-Lean-Full"
 
 # Author-only desktop fallbacks (optional when developing on the original machine).
 _DESKTOP = Path.home() / "Desktop"
@@ -36,6 +38,30 @@ def portable_mode() -> bool:
     return _truthy_env("FSOT_PORTABLE")
 
 
+def canonical_archive_mode() -> bool:
+    """True on I:\\FSOT-Physical-Archive canonical hub (dedicated drive master)."""
+    if _truthy_env("FSOT_CANONICAL_ARCHIVE"):
+        return True
+    try:
+        REPO_ROOT.resolve().relative_to(CANONICAL_LEAN_HUB.resolve())
+        return True
+    except ValueError:
+        return False
+
+
+def archive_independent_mode() -> bool:
+    """Canonical archive or explicit portable — never fall back to C: Desktop."""
+    return portable_mode() or canonical_archive_mode()
+
+
+def _is_legacy_desktop_path(path: Path) -> bool:
+    lowered = str(path).replace("/", "\\").lower()
+    if "c:\\users\\damia\\desktop" in lowered:
+        return True
+    parts = {p.lower() for p in path.parts}
+    return "desktop" in parts and path.drive.lower() == "c:"
+
+
 def _resolve(env_var: str, *candidates: Path) -> Path | None:
     override = os.environ.get(env_var, "").strip()
     if override:
@@ -43,6 +69,8 @@ def _resolve(env_var: str, *candidates: Path) -> Path | None:
         if path.exists():
             return path.resolve()
     for candidate in candidates:
+        if archive_independent_mode() and _is_legacy_desktop_path(candidate):
+            continue
         if candidate.exists():
             return candidate.resolve()
     return None

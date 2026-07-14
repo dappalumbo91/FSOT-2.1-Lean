@@ -4,13 +4,13 @@
   "fstar": {
     "status": "passed",
     "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
-    "entry": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarBoot.fst",
+    "entry": "vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarBoot.fst",
     "modules": [
       "FSOTScalarKernel",
       "FSOTScalarBoot"
     ],
     "returncode": 0,
-    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
   },
   "overall_ok": true
 }

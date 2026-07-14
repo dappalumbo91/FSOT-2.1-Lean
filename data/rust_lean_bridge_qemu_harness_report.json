@@ -15,7 +15,7 @@
   "disk_boot": {
     "status": "passed",
     "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
-    "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\qemu\\fsot-kernel-bios.bin",
+    "image": "vendor/fsot_compute.py\\verification\\qemu\\fsot-kernel-bios.bin",
     "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
     "boot_scalar": 0.0992889562686172,
     "canonical": 0.0992889562686172,
@@ -45,7 +45,7 @@
     "disk_boot": {
       "status": "passed",
       "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
-      "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\qemu\\fsot-kernel-bios.bin",
+      "image": "vendor/fsot_compute.py\\verification\\qemu\\fsot-kernel-bios.bin",
       "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
       "boot_scalar": 0.0992889562686172,
       "canonical": 0.0992889562686172,

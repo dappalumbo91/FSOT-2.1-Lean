@@ -3,7 +3,7 @@
   "generated_at": "2026-07-13T15:21:02.965650+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
-    "source_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
+    "source_path": "vendor/fsot_compute.py\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
     "sha256": "768A07133D97ED2311C7119D4DBE5AE17FEC90DD2433F545CCC877EA3C4F327A",
     "metadata": {
       "title": "FSOT SMILES Lab Dataset",
@@ -1138,9 +1138,9 @@
   },
   "codon_trinary_map": {
     "present": true,
-    "map_path": "C:\\Users\\damia\\Desktop\\Genetics\\64_codon_trinary_map.txt",
+    "map_path": "I:/FSOT-Physical-Archive/04_Genetics-Longevity\\64_codon_trinary_map.txt",
     "map_sha256": "D4267FA8909F85E82A29D80D48A11E31018FF2A144682412F822A5AFFB493DED",
-    "codon_core_path": "C:\\Users\\damia\\Desktop\\Genetics\\codon_core\\src\\lib.rs",
+    "codon_core_path": "I:/FSOT-Physical-Archive/04_Genetics-Longevity\\codon_core\\src\\lib.rs",
     "codon_core_sha256": "36A4148E9891912BCD932D359894EFCC90916FF1D59270AC1B9B6A5F1F4507B6",
     "build_script_path": "C:\\Users\\damia\\Desktop\\FSOT_Trinary_Codon_Project\\build_64_codon_map.py",
     "build_script_sha256": "C360F75C9036474769ED5ACC44ECF9821C4A9D288309188CC787AA191EDCD8A1",
@@ -2314,7 +2314,7 @@
   },
   "protein_formulas": {
     "present": true,
-    "path": "C:\\Users\\damia\\Desktop\\Genetics\\fsot_protein\\formulas\\fsot_protein_formulas.json",
+    "path": "I:/FSOT-Physical-Archive/04_Genetics-Longevity\\fsot_protein\\formulas\\fsot_protein_formulas.json",
     "sha256": "5D8C270DB32B54AD44B73474557E1B38F54C9E5C370109A08DD1148632E60002",
     "formula_count": 15,
     "proposed_formula_count": 3,
@@ -10162,8 +10162,8 @@
   },
   "cameo_lab": {
     "present": true,
-    "genetics_root": "C:\\Users\\damia\\Desktop\\Genetics",
-    "results_path": "C:\\Users\\damia\\Desktop\\Genetics\\fsot_cameo_results.csv",
+    "genetics_root": "I:/FSOT-Physical-Archive/04_Genetics-Longevity",
+    "results_path": "I:/FSOT-Physical-Archive/04_Genetics-Longevity\\fsot_cameo_results.csv",
     "symbolic_formula": {
       "mae_angstrom": 8.85,
       "constants": [
@@ -11231,8 +11231,8 @@
   },
   "linguistics_lab": {
     "present": true,
-    "targets_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\data\\LINGUISTIC_TARGETS.csv",
-    "db_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\db\\linguistics.db",
+    "targets_path": "vendor/fsot_compute.py\\vendor\\linguistics\\data\\LINGUISTIC_TARGETS.csv",
+    "db_path": "vendor/fsot_compute.py\\vendor\\linguistics\\db\\linguistics.db",
     "rows": [
       {
         "name": "Zipf_exponent_English",
@@ -11373,7 +11373,7 @@
     "processed_total": 30984,
     "done_total": 30984,
     "evaluator_version": "fsot_numeric_eval_v4",
-    "index_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\unified_db_domain_index.json",
+    "index_path": "vendor/fsot_compute.py\\data\\unified_db_domain_index.json",
     "generated_from": "C:\\Users\\damia\\Desktop\\FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03\\database\\FSOT_UNIFIED_INDEX.json",
     "records_total": 30984,
     "records_science": 13936,
@@ -46642,7 +46642,7 @@
     "per_formula_within_target_2pct": 50,
     "per_formula_within_tolerable_5pct": 82,
     "per_formula_unparseable": 89,
-    "per_formula_validation_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\knowledge_base\\export\\full_corpus_math_validation.json"
+    "per_formula_validation_path": "vendor/fsot_compute.py\\vendor\\knowledge_base\\export\\full_corpus_math_validation.json"
   },
   "math_generator_lab": {
     "present": true,
@@ -47115,10 +47115,10 @@
         "fsot_fluid_reasoner"
       ]
     },
-    "manifest_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\experiment_synthesis_manifest.yaml",
+    "manifest_path": "vendor/fsot_compute.py\\data\\experiment_synthesis_manifest.yaml",
     "neuron_cohort_lab": {
       "present": false,
-      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\run_neuron_cohort_eval.py\", line 427, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\run_neuron_cohort_eval.py\", line 370, in main\n    cells = json.loads(cells_path.read_text(encoding=\"utf-8\"))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\vendor\\\\neuron_cohort\\\\cells.json'"
+      "error": "Traceback (most recent call last):\n  File \"vendor/fsot_compute.py\\scripts\\run_neuron_cohort_eval.py\", line 427, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"vendor/fsot_compute.py\\scripts\\run_neuron_cohort_eval.py\", line 370, in main\n    cells = json.loads(cells_path.read_text(encoding=\"utf-8\"))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\vendor\\\\neuron_cohort\\\\cells.json'"
     }
   },
   "intelligence_compression": {
