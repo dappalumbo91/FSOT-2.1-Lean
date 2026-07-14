@@ -4,13 +4,14 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BENCH = ROOT / "data" / "kaggle_biohub_v50_competition_bridge.json"
-LIVING_STATE = Path(
-    r"C:\Users\damia\Desktop\living fsot\files-e5887462\state\habitat-rust\KAGGLE_CELL_TRACKING_PROXY.json"
-)
+_DEFAULT_LIVING = Path(r"C:\Users\damia\Desktop\living fsot\files-e5887462")
+LIVING_ROOT = Path(os.environ.get("FSOT_LIVING_ROOT", _DEFAULT_LIVING))
+LIVING_STATE = LIVING_ROOT / "state" / "habitat-rust" / "KAGGLE_CELL_TRACKING_PROXY.json"
 
 
 def main() -> int:

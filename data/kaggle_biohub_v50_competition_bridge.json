@@ -30,7 +30,16 @@
     "Pure FSOT SequenceTracker linking beats fsot_gate by +0.037 on train proxy.",
     "ILP on CPU adds +0.047 vs no ILP (~13s overhead at 26k edges).",
     "FSOT-Living adaptive dormant at proxy 0.90; conf-ranked NMS only when math wins.",
-    "GPU local tuning; CPU Kaggle submit with identical weights and env defaults."
+    "GPU local tuning; CPU Kaggle submit with identical weights and env defaults.",
+    "Blind post-ILP mitosis reinjection hurts proxy (0.856); ILP pruning is net positive.",
+    "Train proxy 44b6 has no GT divisions; gap to ~0.97 is adj_edge_jaccard on linking.",
+    "Next levers: per-dataset vision calibrate, soft fsot_gate+rescue, GPU det fine-tune."
+  ],
+  "accuracy_next_steps": [
+    "tune_ilp_accuracy.py sweep on train proxy",
+    "fsot_vision_calibrate per zarr (4 test datasets)",
+    "6bba_05db0fb1 needs ILP cap 80k or lite consistency fallback",
+    "Kaggle submit: fsot-biohub-v50.ipynb + FT weights dataset"
   ],
   "bundle_path": "vendor/kaggle_biohub_review/v50",
   "submission_rows_four_datasets": 331216
