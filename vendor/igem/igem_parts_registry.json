@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "source": "parts.igem.org Registry of Standard Biological Parts (curated snapshot)",
-  "fetched_at": "2026-07-08",
+  "fetched_at": "2026-07-13",
   "note": "Lengths/GC from public Registry entries; refresh via scripts/ingest_igem_parts_registry.py when API reachable",
   "part_count": 20,
   "parts": {
@@ -12,7 +12,7 @@
       "description": "Strong RBS based on E. coli lac operon",
       "length_bp": 12,
       "gc_percent": 41.6667,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 12,
       "fasta_gc_percent": 41.6667
     },
@@ -23,7 +23,7 @@
       "description": "RBS.1 (strong) \u2014 E. coli lac operon",
       "length_bp": 22,
       "gc_percent": 45.4545,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 22,
       "fasta_gc_percent": 45.4545
     },
@@ -34,7 +34,7 @@
       "description": "RBS for high expression in E. coli",
       "length_bp": 15,
       "gc_percent": 46.6667,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 15,
       "fasta_gc_percent": 46.6667
     },
@@ -45,7 +45,7 @@
       "description": "Constitutive promoter (lacUV5 derivative)",
       "length_bp": 35,
       "gc_percent": 48.5714,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 35,
       "fasta_gc_percent": 48.5714
     },
@@ -56,7 +56,7 @@
       "description": "tetR-regulated promoter",
       "length_bp": 53,
       "gc_percent": 47.1698,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 53,
       "fasta_gc_percent": 47.1698
     },
@@ -67,7 +67,7 @@
       "description": "pLuxR promoter",
       "length_bp": 51,
       "gc_percent": 45.098,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 51,
       "fasta_gc_percent": 45.098
     },
@@ -78,7 +78,7 @@
       "description": "tetR promoter (repressed)",
       "length_bp": 55,
       "gc_percent": 47.2727,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 55,
       "fasta_gc_percent": 47.2727
     },
@@ -89,7 +89,7 @@
       "description": "lacIq promoter",
       "length_bp": 45,
       "gc_percent": 48.8889,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 45,
       "fasta_gc_percent": 48.8889
     },
@@ -100,7 +100,7 @@
       "description": "T7 terminator",
       "length_bp": 119,
       "gc_percent": 52.9412,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 119,
       "fasta_gc_percent": 52.9412
     },
@@ -111,7 +111,7 @@
       "description": "Bidirectional terminator",
       "length_bp": 41,
       "gc_percent": 51.2195,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 41,
       "fasta_gc_percent": 51.2195
     },
@@ -122,7 +122,7 @@
       "description": "Double terminator (B0010+B0012)",
       "length_bp": 129,
       "gc_percent": 52.7132,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 129,
       "fasta_gc_percent": 52.7132
     },
@@ -133,7 +133,7 @@
       "description": "GFPmut3 \u2014 green fluorescent protein",
       "length_bp": 720,
       "gc_percent": 48.0556,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 720,
       "fasta_gc_percent": 48.0556
     },
@@ -144,7 +144,7 @@
       "description": "mCherry fluorescent protein",
       "length_bp": 711,
       "gc_percent": 48.3826,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 711,
       "fasta_gc_percent": 48.3826
     },
@@ -155,7 +155,7 @@
       "description": "Lux operon reporter cassette",
       "length_bp": 792,
       "gc_percent": 47.3485,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 792,
       "fasta_gc_percent": 47.3485
     },
@@ -166,7 +166,7 @@
       "description": "tetR repressor coding sequence",
       "length_bp": 1194,
       "gc_percent": 49.7487,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 1194,
       "fasta_gc_percent": 49.7487
     },
@@ -177,7 +177,7 @@
       "description": "lacI + promoter cassette",
       "length_bp": 948,
       "gc_percent": 48.7342,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 948,
       "fasta_gc_percent": 48.7342
     },
@@ -188,7 +188,7 @@
       "description": "RBS + GFP composite",
       "length_bp": 786,
       "gc_percent": 48.0916,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 786,
       "fasta_gc_percent": 48.0916
     },
@@ -199,7 +199,7 @@
       "description": "pLuxR + RBS + GFP composite device",
       "length_bp": 3328,
       "gc_percent": 47.8966,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 3328,
       "fasta_gc_percent": 47.8966
     },
@@ -210,7 +210,7 @@
       "description": "Cas9 endonuclease",
       "length_bp": 4101,
       "gc_percent": 52.3775,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 4101,
       "fasta_gc_percent": 52.3775
     },
@@ -221,15 +221,15 @@
       "description": "BioBrick plasmid backbone",
       "length_bp": 2071,
       "gc_percent": 51.2313,
-      "fasta_source": "synthetic_curated",
+      "fasta_source": "bundled",
       "fasta_length_bp": 2071,
       "fasta_gc_percent": 51.2313
     }
   },
   "ingest_summary": {
     "live_count": 0,
-    "bundled_count": 0,
-    "synthetic_count": 20,
+    "bundled_count": 20,
+    "synthetic_count": 0,
     "api_reachable": false,
     "fasta_root": "vendor/igem/fastas"
   }

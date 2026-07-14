@@ -40,7 +40,20 @@
       "computed": 0.006006,
       "measured": 0.0,
       "error_pct": 0.006006,
-      "observable_count": 90
+      "observable_count": 90,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.006006,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.006006,
       "measured": 0.0,
       "error_pct": 0.006006,
-      "observable_count": 90
+      "observable_count": 90,
+      "domain_display_name": "tier gap fill",
+      "display_name": "marine biology",
+      "scientific_measurement": {
+        "delta": 0.006006,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": -0.001922,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": 0.006932,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": 0.006035,
+        "delta_pct": 0.030175,
+        "effective_error_pct": 0.030175,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pelecanus conspicillatus",
+      "scientific_measurement": {
+        "delta": -0.002307,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pelecanus conspicillatus",
+      "scientific_measurement": {
+        "delta": 0.008714,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pelecanus conspicillatus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thaleichthys pacificus",
+      "scientific_measurement": {
+        "delta": 0.00296,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thaleichthys pacificus",
+      "scientific_measurement": {
+        "delta": -0.007625,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thaleichthys pacificus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Plectropomus leopardus",
+      "scientific_measurement": {
+        "delta": -0.001117,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Plectropomus leopardus",
+      "scientific_measurement": {
+        "delta": 0.008799,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Plectropomus leopardus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.003497,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": -3.2e-05,
+        "delta_pct": 0.00597,
+        "effective_error_pct": 0.00597,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.032888,
+        "delta_pct": 0.030172,
+        "effective_error_pct": 0.030172,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": -0.001922,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": -0.01021,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": 0.001147,
+        "delta_pct": 0.030184,
+        "effective_error_pct": 0.030184,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Myoxocephalus octodecemspinosus",
+      "scientific_measurement": {
+        "delta": 0.002629,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Myoxocephalus octodecemspinosus",
+      "scientific_measurement": {
+        "delta": -0.003554,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Myoxocephalus octodecemspinosus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Larus argentatus",
+      "scientific_measurement": {
+        "delta": 0.0030978,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Larus argentatus",
+      "scientific_measurement": {
+        "delta": 0.00020862,
+        "delta_pct": 0.00601,
+        "effective_error_pct": 0.00601,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Larus argentatus",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.003239,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.000402,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.007241,
+        "delta_pct": 0.030171,
+        "effective_error_pct": 0.030171,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Eurytemora affinis",
+      "scientific_measurement": {
+        "delta": 0.00324333,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Eurytemora affinis",
+      "scientific_measurement": {
+        "delta": 0.00085467,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Eurytemora affinis",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Rissa tridactyla",
+      "scientific_measurement": {
+        "delta": 0.003394,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Rissa tridactyla",
+      "scientific_measurement": {
+        "delta": -9.8e-05,
+        "delta_pct": 0.005988,
+        "effective_error_pct": 0.005988,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Rissa tridactyla",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Erythrobacteraceae",
+      "scientific_measurement": {
+        "delta": -0.002047,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Erythrobacteraceae",
+      "scientific_measurement": {
+        "delta": 0.009079,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Erythrobacteraceae",
+      "scientific_measurement": {
+        "delta": 0.001056,
+        "delta_pct": 0.030171,
+        "effective_error_pct": 0.030171,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thermoplasmata",
+      "scientific_measurement": {
+        "delta": -0.00194,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thermoplasmata",
+      "scientific_measurement": {
+        "delta": 0.009273,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thermoplasmata",
+      "scientific_measurement": {
+        "delta": 0.016595,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.003357,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.000935,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Clupea harengus",
+      "scientific_measurement": {
+        "delta": 0.015086,
+        "delta_pct": 0.030172,
+        "effective_error_pct": 0.030172,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thyrsites atun",
+      "scientific_measurement": {
+        "delta": -0.00200786,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thyrsites atun",
+      "scientific_measurement": {
+        "delta": 0.00108684,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thyrsites atun",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thalassospira",
+      "scientific_measurement": {
+        "delta": -0.002047,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thalassospira",
+      "scientific_measurement": {
+        "delta": 0.009079,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Thalassospira",
+      "scientific_measurement": {
+        "delta": 0.000905,
+        "delta_pct": 0.030167,
+        "effective_error_pct": 0.030167,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -639,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gari",
+      "scientific_measurement": {
+        "delta": 0.002181,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -651,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gari",
+      "scientific_measurement": {
+        "delta": 0.008442,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -663,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gari",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -675,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": -0.00115,
+        "delta_pct": 0.006004,
+        "effective_error_pct": 0.006004,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -687,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": 0.008808,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -699,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Bacteria",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -711,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Leucosolenia",
+      "scientific_measurement": {
+        "delta": 0.00198286,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -723,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Leucosolenia",
+      "scientific_measurement": {
+        "delta": -0.00457199,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -735,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Leucosolenia",
+      "scientific_measurement": {
+        "delta": 0.604661,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -747,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Phalacrocorax sulcirostris",
+      "scientific_measurement": {
+        "delta": -0.002299,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -759,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Phalacrocorax sulcirostris",
+      "scientific_measurement": {
+        "delta": 0.008687,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -771,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Phalacrocorax sulcirostris",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -783,7 +1589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Metridia longa",
+      "scientific_measurement": {
+        "delta": 0.00292575,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -795,7 +1614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Metridia longa",
+      "scientific_measurement": {
+        "delta": -0.00412225,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -807,7 +1639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Metridia longa",
+      "scientific_measurement": {
+        "delta": 0.101239,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -819,7 +1664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Fregata magnificens",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -831,7 +1689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Fregata magnificens",
+      "scientific_measurement": {
+        "delta": -0.003798,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -843,7 +1714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Fregata magnificens",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -855,7 +1739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Chelonia mydas",
+      "scientific_measurement": {
+        "delta": 0.001618,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -867,7 +1764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Chelonia mydas",
+      "scientific_measurement": {
+        "delta": -0.00481,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -879,7 +1789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Chelonia mydas",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -891,7 +1814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gyrosigma",
+      "scientific_measurement": {
+        "delta": 0.00361933,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -903,7 +1839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gyrosigma",
+      "scientific_measurement": {
+        "delta": -0.00881633,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -915,7 +1864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Gyrosigma",
+      "scientific_measurement": {
+        "delta": 0.003017,
+        "delta_pct": 0.03017,
+        "effective_error_pct": 0.03017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -927,7 +1889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pirellula",
+      "scientific_measurement": {
+        "delta": 0.003367,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -939,7 +1914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pirellula",
+      "scientific_measurement": {
+        "delta": 0.000617,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -951,7 +1939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pirellula",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -963,7 +1964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Hippoglossoides platessoides",
+      "scientific_measurement": {
+        "delta": 0.002789,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -975,7 +1989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Hippoglossoides platessoides",
+      "scientific_measurement": {
+        "delta": -0.00357,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -987,7 +2014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Hippoglossoides platessoides",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -999,7 +2039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Porifera",
+      "scientific_measurement": {
+        "delta": 0.002681,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1011,7 +2064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Porifera",
+      "scientific_measurement": {
+        "delta": -0.007493,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1023,7 +2089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Porifera",
+      "scientific_measurement": {
+        "delta": 0.047371,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1035,7 +2114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Aratus pisonii",
+      "scientific_measurement": {
+        "delta": -0.000502,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1047,7 +2139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Aratus pisonii",
+      "scientific_measurement": {
+        "delta": -0.0021,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1059,7 +2164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Aratus pisonii",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1071,7 +2189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Copepoda",
+      "scientific_measurement": {
+        "delta": 0.001187,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1083,7 +2214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Copepoda",
+      "scientific_measurement": {
+        "delta": 0.004184,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1095,7 +2239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Copepoda",
+      "scientific_measurement": {
+        "delta": 0.031983,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1107,7 +2264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pandalus dispar",
+      "scientific_measurement": {
+        "delta": 0.002978,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1119,7 +2289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pandalus dispar",
+      "scientific_measurement": {
+        "delta": -0.007487,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "marine_biology_panel_lab",
@@ -1131,7 +2314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Oceanography",
       "fsot_scalar": -0.377159,
-      "ingest_source": "obis_marine_occurrence"
+      "ingest_source": "obis_marine_occurrence",
+      "domain_display_name": "marine biology panel",
+      "display_name": "Pandalus dispar",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1145,5 +2341,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Marine Biology Panel",
+  "tier_label": "Rust f64 obligation replay",
+  "scientific_precision_summary": {
+    "scalar_count": 90,
+    "median_error_pct": 0.006006,
+    "max_error_pct": 0.030184,
+    "mean_abs_delta": 0.012163529222222223,
+    "precision_tier_counts": {
+      "green": 90
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.239612+00:00"
 }

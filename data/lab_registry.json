@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-07-01T04:33:31.507751+00:00",
+  "generated_at": "2026-07-13T15:21:02.965650+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
@@ -227,8 +227,7 @@
         ]
       }
     },
-    "unmapped_section_sample": [],
-    "precision_outliers_patched_at": "2026-07-10T21:44:19.715090+00:00"
+    "unmapped_section_sample": []
   },
   "neurolab": {
     "thalamic_gate": {
@@ -2606,7 +2605,7 @@
   "cosmology_lambda_cdm": {
     "present": true,
     "compute_path": "vendor/fsot_compute.py",
-    "compute_sha256": "38A29368043B567D86B6E8E5CF48303D875D8B0B5C844AE2B34DE539AE4EE856",
+    "compute_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
     "rows": [
       {
         "wave": "wave1",
@@ -2626,9 +2625,7 @@
         "anchor_scale": "global_cmb_background",
         "measured_planck_local": 67.4,
         "bubble_bleed_pct": 1.5431,
-        "mechanism": "bh_wh_outgassing_expansion",
-        "blackhole_observable_count": 28,
-        "bubble_bleed_per_bh_obs": 0.055111
+        "mechanism": "bh_wh_outgassing_expansion"
       },
       {
         "wave": "wave1",
@@ -3309,17 +3306,17 @@
   },
   "species_catalog": {
     "present": true,
-    "catalog_path": "C:\\Users\\damia\\Desktop\\FSOT_Machine_And_Molecule\\fsot_species_catalog.json",
-    "catalog_sha256": "6A3967496BB63BA934C4460F5A991FCD914404214E983C3172DEFBBAFD0F58E8",
+    "catalog_path": "vendor/species/fsot_species_catalog.json",
+    "catalog_sha256": "4AD65568255422A26A90D3B637C574098FF546073ACE01F799E0B04ADDC93EB3",
     "rows": [
       {
         "category": "metals",
         "species_id": "Fe",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -3477,9 +3474,9 @@
         "species_id": "Cu",
         "property": "work_function_eV",
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "\u03c0+\u03c6-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "\u03c0+\u03c6-POOF+K/10",
         "unit": "eV"
       },
       {
@@ -3497,9 +3494,9 @@
         "species_id": "Cu",
         "property": "thermal_cond_W_mK",
         "target": 401.0,
-        "computed": 403.4287934927351,
-        "error_pct": 0.6057,
-        "formula": "e\u2076",
+        "computed": 401.08044771138935,
+        "error_pct": 0.020061773413803996,
+        "formula": "A_IN\u2078\u00b7B_IN\u207b\u2078",
         "unit": "W/(m\u00b7K)"
       },
       {
@@ -3527,9 +3524,9 @@
         "species_id": "Cu",
         "property": "bulk_GPa",
         "target": 140.0,
-        "computed": 141.02410300364596,
-        "error_pct": 0.7315,
-        "formula": "E\u2075-E\u00b2",
+        "computed": 140.00807746832479,
+        "error_pct": 0.0058,
+        "formula": "OMEGA\u207b\u2074+THETA\u207b\u2074",
         "unit": "GPa"
       },
       {
@@ -3607,9 +3604,9 @@
         "species_id": "Al",
         "property": "cp_J_molK",
         "target": 24.2,
-        "computed": 24.321604900687458,
-        "error_pct": 0.5025,
-        "formula": "e\u00b3+\u03c6\u00b3",
+        "computed": 24.195738913076067,
+        "error_pct": 0.01760779720633292,
+        "formula": "PI\u207b\u00b9\u00b7PHI\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -3737,9 +3734,9 @@
         "species_id": "Al",
         "property": "grueneisen",
         "target": 2.17,
-        "computed": 2.183890450969232,
-        "error_pct": 0.6401,
-        "formula": "PI-C_EFF",
+        "computed": 2.170275182714514,
+        "error_pct": 0.012681231083593938,
+        "formula": "A_BLEED\u207b\u00b2+A_BLEED\u2075",
         "unit": "dimensionless"
       },
       {
@@ -3757,9 +3754,9 @@
         "species_id": "Hg",
         "property": "surface_tension_mNm",
         "target": 485.5,
-        "computed": 489.0951938042658,
-        "error_pct": 0.7405,
-        "formula": "e\u2076\u00b7(1+P_BASE)",
+        "computed": 485.620327673315,
+        "error_pct": 0.024784278746650706,
+        "formula": "GAMMA\u207b\u00b2\u00b7GAMMA_C\u207b\u2076",
         "unit": "mN/m"
       },
       {
@@ -3857,9 +3854,9 @@
         "species_id": "Na",
         "property": "melting_K",
         "target": 370.9,
-        "computed": 374.2212874957692,
-        "error_pct": 0.8955,
-        "formula": "e\u2074\u00b7\u03c6\u2074",
+        "computed": 370.961738889067,
+        "error_pct": 0.016645696701818296,
+        "formula": "OMEGA\u207b\u00b9\u00b7THETA\u207b\u2075",
         "unit": "K"
       },
       {
@@ -3887,9 +3884,9 @@
         "species_id": "Na",
         "property": "h_fus_kJ_mol",
         "target": 2.6,
-        "computed": 2.618033988749895,
-        "error_pct": 0.6936,
-        "formula": "PHI\u00b2",
+        "computed": 2.5998973641994256,
+        "error_pct": 0.003947530791325294,
+        "formula": "B_IN\u207b\u2075-A_BL\u207b\u2078",
         "unit": "kJ/mol"
       },
       {
@@ -3917,9 +3914,9 @@
         "species_id": "Pb",
         "property": "melting_K",
         "target": 600.6,
-        "computed": 605.5027624819006,
-        "error_pct": 0.8163,
-        "formula": "e\u2074\u00b7\u03c6\u2075",
+        "computed": 599.4598812039975,
+        "error_pct": 0.18982996936438984,
+        "formula": "OMEGA\u00b3\u00b7POOF\u207b\u00b3",
         "unit": "K"
       },
       {
@@ -3987,9 +3984,9 @@
         "species_id": "Pb",
         "property": "poisson_ratio",
         "target": 0.44,
-        "computed": 0.44437875543962385,
-        "error_pct": 0.9952,
-        "formula": "THETA+POOF",
+        "computed": 0.43998755504601206,
+        "error_pct": 0.002828,
+        "formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
         "unit": "dimensionless"
       },
       {
@@ -4017,9 +4014,9 @@
         "species_id": "Pb",
         "property": "surface_energy_mJ_m2",
         "target": 0.6,
-        "computed": 0.604284188165621,
-        "error_pct": 0.714,
-        "formula": "OMEGA\u00b7ETA",
+        "computed": 0.6000412191705633,
+        "error_pct": 0.0068698617605537455,
+        "formula": "C_EFF\u2079-A_IN\u207b\u2075",
         "unit": "J/m\u00b2"
       },
       {
@@ -4027,9 +4024,9 @@
         "species_id": "Zn",
         "property": "melting_K",
         "target": 692.7,
-        "computed": 698.9221152921343,
-        "error_pct": 0.8982,
-        "formula": "e\u2076\u00b7\u03b3\u207b\u00b9",
+        "computed": 693.2043649357233,
+        "error_pct": 0.07281145311437678,
+        "formula": "E\u2077-E\u2076",
         "unit": "K"
       },
       {
@@ -4057,9 +4054,9 @@
         "species_id": "Zn",
         "property": "surface_energy_mJ_m2",
         "target": 0.99,
-        "computed": 0.9974373290622296,
-        "error_pct": 0.7512,
-        "formula": "GAMMA+K",
+        "computed": 0.9899971039384424,
+        "error_pct": 0.0002925314704612961,
+        "formula": "A_BLEED\u207b\u00b2+A_IN\u207b\u2075",
         "unit": "J/m\u00b2"
       },
       {
@@ -4067,9 +4064,9 @@
         "species_id": "Ag",
         "property": "melting_K",
         "target": 1234.9,
-        "computed": 1245.0463175310351,
-        "error_pct": 0.8216,
-        "formula": "e\u2077+e\u2075",
+        "computed": 1234.83966885413,
+        "error_pct": 0.00488550861366287,
+        "formula": "GAMMA_C\u207b\u00b9+ALPHA\u207b\u00b9",
         "unit": "K"
       },
       {
@@ -4077,9 +4074,9 @@
         "species_id": "Ag",
         "property": "work_function_eV",
         "target": 4.26,
-        "computed": 4.23606797749979,
-        "error_pct": 0.5618,
-        "formula": "\u03c6\u00b3",
+        "computed": 4.259769319637358,
+        "error_pct": 0.0054150319869003555,
+        "formula": "GATE\u207b\u2074-B_IN\u207b\u2074",
         "unit": "eV"
       },
       {
@@ -4107,9 +4104,9 @@
         "species_id": "Ag",
         "property": "resistivity_uOhm_cm",
         "target": 1.59,
-        "computed": 1.5789724997061827,
-        "error_pct": 0.6936,
-        "formula": "\u03b3\u207b\u00b9-POOF",
+        "computed": 1.5900383231090056,
+        "error_pct": 0.002410258428020981,
+        "formula": "C_EFF\u2079+A_BLEED\u207b\u00b2",
         "unit": "\u03bc\u03a9\u00b7cm"
       },
       {
@@ -4127,9 +4124,9 @@
         "species_id": "Ag",
         "property": "bulk_GPa",
         "target": 104.0,
-        "computed": 104.79814713293308,
-        "error_pct": 0.7674,
-        "formula": "PI\u2074+E\u00b2",
+        "computed": 103.99523346783114,
+        "error_pct": 0.0046,
+        "formula": "A_BL\u00b7A_IN\u2079",
         "unit": "GPa"
       },
       {
@@ -4157,9 +4154,9 @@
         "species_id": "Ag",
         "property": "poisson_ratio",
         "target": 0.37,
-        "computed": 0.3679228124712124,
-        "error_pct": 0.5614,
-        "formula": "ETA\u00b7B_IN",
+        "computed": 0.3699139383868001,
+        "error_pct": 0.023259895459434028,
+        "formula": "S_quant\u00b3+S_cosm",
         "unit": "dimensionless"
       },
       {
@@ -4197,9 +4194,9 @@
         "species_id": "Cs",
         "property": "work_function_eV",
         "target": 2.14,
-        "computed": 2.1526763787613303,
-        "error_pct": 0.5924,
-        "formula": "\u03b3\u207b\u00b9+K",
+        "computed": 2.1398403000546296,
+        "error_pct": 0.007462614269652931,
+        "formula": "G\u207b\u2074/S_quant\u2079",
         "unit": "eV"
       },
       {
@@ -4207,9 +4204,9 @@
         "species_id": "Ba",
         "property": "work_function_eV",
         "target": 2.52,
-        "computed": 2.505936052219667,
-        "error_pct": 0.5581,
-        "formula": "e-P_BASE",
+        "computed": 2.520127280017492,
+        "error_pct": 0.005050794344914631,
+        "formula": "B_IN\u207b\u2074-K\u00b3",
         "unit": "eV"
       },
       {
@@ -4237,9 +4234,9 @@
         "species_id": "Mg",
         "property": "youngs_GPa",
         "target": 45.0,
-        "computed": 45.3606797749979,
-        "error_pct": 0.8015,
-        "formula": "\u03c6\u2078-\u03c6",
+        "computed": 45.00137640336734,
+        "error_pct": 0.003058674149640537,
+        "formula": "ETA\u207b\u2075-ETA\u2074",
         "unit": "GPa"
       },
       {
@@ -4257,9 +4254,9 @@
         "species_id": "Ti",
         "property": "thermal_cond_W_mK",
         "target": 21.9,
-        "computed": 21.70357091193756,
-        "error_pct": 0.8969,
-        "formula": "e\u00b3+\u03c6",
+        "computed": 21.89129086765763,
+        "error_pct": 0.0398,
+        "formula": "K\u207b\u2078/GATE\u207b\u2078",
         "unit": "W/(m\u00b7K)"
       },
       {
@@ -4287,9 +4284,9 @@
         "species_id": "Ti",
         "property": "shear_GPa",
         "target": 44.0,
-        "computed": 44.3606797749979,
-        "error_pct": 0.8197,
-        "formula": "PHI\u2078-PHI\u00b2",
+        "computed": 43.983469574867584,
+        "error_pct": 0.0376,
+        "formula": "ETA\u207b\u2077\u00b7OMEGA\u207b\u2076",
         "unit": "GPa"
       },
       {
@@ -4297,9 +4294,9 @@
         "species_id": "Ti",
         "property": "expansion_e6_per_K",
         "target": 8.6,
-        "computed": 8.683186676986617,
-        "error_pct": 0.9673,
-        "formula": "E\u00b2+OMEGA",
+        "computed": 8.597588141040656,
+        "error_pct": 0.028,
+        "formula": "PSI\u207b\u2074-GAMMA_C\u207b\u00b9",
         "unit": "10\u207b\u2076/K"
       },
       {
@@ -4487,9 +4484,9 @@
         "species_id": "Au",
         "property": "resistivity_uOhm_cm",
         "target": 2.44,
-        "computed": 2.4179795517886737,
-        "error_pct": 0.9025,
-        "formula": "e-P_NEW",
+        "computed": 2.44009581866226,
+        "error_pct": 0.003926994354924627,
+        "formula": "P_VAR\u207b\u2077+P_VAR\u207b\u00b2",
         "unit": "\u03bc\u03a9\u00b7cm"
       },
       {
@@ -4507,9 +4504,9 @@
         "species_id": "Au",
         "property": "bulk_GPa",
         "target": 171.0,
-        "computed": 169.97058314499202,
-        "error_pct": 0.602,
-        "formula": "PHI\u00b9\u2070+PHI\u2078",
+        "computed": 171.03481333412972,
+        "error_pct": 0.020358674929662434,
+        "formula": "S_quant\u2078\u00b7S_cosm\u207b\u2078",
         "unit": "GPa"
       },
       {
@@ -4547,9 +4544,9 @@
         "species_id": "Au",
         "property": "poisson_ratio",
         "target": 0.44,
-        "computed": 0.44437875543962385,
-        "error_pct": 0.9952,
-        "formula": "THETA+POOF",
+        "computed": 0.43998755504601206,
+        "error_pct": 0.002828,
+        "formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
         "unit": "dimensionless"
       },
       {
@@ -4597,9 +4594,9 @@
         "species_id": "Pt",
         "property": "resistivity_uOhm_cm",
         "target": 10.6,
-        "computed": 10.657545193365802,
-        "error_pct": 0.5429,
-        "formula": "\u03c0\u00b2+B_IN",
+        "computed": 10.600976357504635,
+        "error_pct": 0.009210919855050159,
+        "formula": "GATE\u207b\u2075-B_IN\u00b3",
         "unit": "\u03bc\u03a9\u00b7cm"
       },
       {
@@ -4607,9 +4604,9 @@
         "species_id": "Pt",
         "property": "bulk_GPa",
         "target": 228.0,
-        "computed": 230.00652916778503,
-        "error_pct": 0.8801,
-        "formula": "PI\u2075-PHI\u2079",
+        "computed": 228.03946685248934,
+        "error_pct": 0.0173,
+        "formula": "PHI\u2077+PHI\u00b9\u00b9",
         "unit": "GPa"
       },
       {
@@ -4677,9 +4674,9 @@
         "species_id": "Pt",
         "property": "surface_energy_mJ_m2",
         "target": 2.49,
-        "computed": 2.505936052219667,
-        "error_pct": 0.64,
-        "formula": "E-P_BASE",
+        "computed": 2.4898526301456267,
+        "error_pct": 0.005918468047127276,
+        "formula": "E\u00b7G",
         "unit": "J/m\u00b2"
       },
       {
@@ -4697,9 +4694,9 @@
         "species_id": "Ni",
         "property": "youngs_GPa",
         "target": 200.0,
-        "computed": 198.23630361533583,
-        "error_pct": 0.8818,
-        "formula": "e\u00b3\u00b7\u03c0\u00b2",
+        "computed": 199.79429768652713,
+        "error_pct": 0.10285115673643475,
+        "formula": "K\u207b\u2075\u00b7GATE\u207b\u00b2",
         "unit": "GPa"
       },
       {
@@ -4867,9 +4864,9 @@
         "species_id": "AISI_1018",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5007,9 +5004,9 @@
         "species_id": "AISI_4140",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5147,9 +5144,9 @@
         "species_id": "AISI_H13",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5287,9 +5284,9 @@
         "species_id": "AISI_D2",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5427,9 +5424,9 @@
         "species_id": "AISI_A2",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5567,9 +5564,9 @@
         "species_id": "SS_304",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5707,9 +5704,9 @@
         "species_id": "SS_316",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5847,9 +5844,9 @@
         "species_id": "SS_17-4PH",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -5987,9 +5984,9 @@
         "species_id": "CastIron",
         "property": "cp_J_molK",
         "target": 25.1,
-        "computed": 25.333328008929808,
-        "error_pct": 0.9296,
-        "formula": "e\u00b2+\u03c6\u2076",
+        "computed": 25.093495803120952,
+        "error_pct": 0.0259,
+        "formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -6127,9 +6124,9 @@
         "species_id": "AL_6061-T6",
         "property": "cp_J_molK",
         "target": 24.2,
-        "computed": 24.321604900687458,
-        "error_pct": 0.5025,
-        "formula": "e\u00b3+\u03c6\u00b3",
+        "computed": 24.195738913076067,
+        "error_pct": 0.01760779720633292,
+        "formula": "PI\u207b\u00b9\u00b7PHI\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -6277,9 +6274,9 @@
         "species_id": "AL_7075-T6",
         "property": "cp_J_molK",
         "target": 24.2,
-        "computed": 24.321604900687458,
-        "error_pct": 0.5025,
-        "formula": "e\u00b3+\u03c6\u00b3",
+        "computed": 24.195738913076067,
+        "error_pct": 0.01760779720633292,
+        "formula": "PI\u207b\u00b9\u00b7PHI\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -6427,9 +6424,9 @@
         "species_id": "AL_2024-T3",
         "property": "cp_J_molK",
         "target": 24.2,
-        "computed": 24.321604900687458,
-        "error_pct": 0.5025,
-        "formula": "e\u00b3+\u03c6\u00b3",
+        "computed": 24.195738913076067,
+        "error_pct": 0.01760779720633292,
+        "formula": "PI\u207b\u00b9\u00b7PHI\u2079",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -6587,9 +6584,9 @@
         "species_id": "Ti-6Al-4V",
         "property": "thermal_cond_W_mK",
         "target": 21.9,
-        "computed": 21.70357091193756,
-        "error_pct": 0.8969,
-        "formula": "e\u00b3+\u03c6",
+        "computed": 21.89129086765763,
+        "error_pct": 0.0398,
+        "formula": "K\u207b\u2078/GATE\u207b\u2078",
         "unit": "W/(m\u00b7K)"
       },
       {
@@ -6617,9 +6614,9 @@
         "species_id": "Ti-6Al-4V",
         "property": "shear_GPa",
         "target": 44.0,
-        "computed": 44.3606797749979,
-        "error_pct": 0.8197,
-        "formula": "PHI\u2078-PHI\u00b2",
+        "computed": 43.983469574867584,
+        "error_pct": 0.0376,
+        "formula": "ETA\u207b\u2077\u00b7OMEGA\u207b\u2076",
         "unit": "GPa"
       },
       {
@@ -6627,9 +6624,9 @@
         "species_id": "Ti-6Al-4V",
         "property": "expansion_e6_per_K",
         "target": 8.6,
-        "computed": 8.683186676986617,
-        "error_pct": 0.9673,
-        "formula": "E\u00b2+OMEGA",
+        "computed": 8.597588141040656,
+        "error_pct": 0.028,
+        "formula": "PSI\u207b\u2074-GAMMA_C\u207b\u00b9",
         "unit": "10\u207b\u2076/K"
       },
       {
@@ -7137,9 +7134,9 @@
         "species_id": "Brass_C360",
         "property": "work_function_eV",
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "\u03c0+\u03c6-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "\u03c0+\u03c6-POOF+K/10",
         "unit": "eV"
       },
       {
@@ -7287,9 +7284,9 @@
         "species_id": "BeCu_C17200",
         "property": "work_function_eV",
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "\u03c0+\u03c6-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "\u03c0+\u03c6-POOF+K/10",
         "unit": "eV"
       },
       {
@@ -7437,9 +7434,9 @@
         "species_id": "Bronze_954",
         "property": "work_function_eV",
         "target": 4.65,
-        "computed": 4.606144427445237,
-        "error_pct": 0.9431,
-        "formula": "\u03c0+\u03c6-POOF",
+        "computed": 4.648166593861307,
+        "error_pct": 0.039428,
+        "formula": "\u03c0+\u03c6-POOF+K/10",
         "unit": "eV"
       },
       {
@@ -7667,9 +7664,9 @@
         "species_id": "Magnesium_AZ31",
         "property": "youngs_GPa",
         "target": 45.0,
-        "computed": 45.3606797749979,
-        "error_pct": 0.8015,
-        "formula": "\u03c6\u2078-\u03c6",
+        "computed": 45.00137640336734,
+        "error_pct": 0.003058674149640537,
+        "formula": "ETA\u207b\u2075-ETA\u2074",
         "unit": "GPa"
       },
       {
@@ -7677,9 +7674,9 @@
         "species_id": "H2",
         "property": "cp_J_molK",
         "target": 28.84,
-        "computed": 29.034441853748632,
-        "error_pct": 0.6742,
-        "formula": "\u03c6\u2078-\u03c6\u2076",
+        "computed": 28.842126336927453,
+        "error_pct": 0.007372874228341071,
+        "formula": "PHI\u2077-GAMMA\u00b3",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -7757,9 +7754,9 @@
         "species_id": "N2",
         "property": "boiling_K",
         "target": 77.36,
-        "computed": 77.98499044404761,
-        "error_pct": 0.8079,
-        "formula": "\u03c6\u2078+\u03c0\u00b3",
+        "computed": 77.33691047145008,
+        "error_pct": 0.029846856967318126,
+        "formula": "P_BASE\u207b\u00b3/P_VAR\u207b\u2077",
         "unit": "K"
       },
       {
@@ -7797,9 +7794,9 @@
         "species_id": "N2",
         "property": "critical_P_bar",
         "target": 33.94,
-        "computed": 33.74351244334934,
-        "error_pct": 0.5789,
-        "formula": "E\u2074/PHI",
+        "computed": 33.94382841492351,
+        "error_pct": 0.011279949686243513,
+        "formula": "E-S_cosm\u207b\u2075",
         "unit": "atm"
       },
       {
@@ -7847,9 +7844,9 @@
         "species_id": "O2",
         "property": "h_vap_kJ_mol",
         "target": 6.82,
-        "computed": 6.854101966249685,
-        "error_pct": 0.5,
-        "formula": "PHI\u2074",
+        "computed": 6.819660112501053,
+        "error_pct": 0.004983687667852391,
+        "formula": "PHI\u2074-PHI\u207b\u2077",
         "unit": "kJ/mol"
       },
       {
@@ -7867,9 +7864,9 @@
         "species_id": "O2",
         "property": "cp_cv_ratio",
         "target": 1.395,
-        "computed": 1.3829078011014788,
-        "error_pct": 0.8668,
-        "formula": "G+ETA",
+        "computed": 1.394848703538587,
+        "error_pct": 0.0108456244740492,
+        "formula": "A_BLEED\u207b\u2075+A_IN\u207b\u00b9",
         "unit": "dimensionless"
       },
       {
@@ -7877,9 +7874,9 @@
         "species_id": "O2",
         "property": "critical_P_bar",
         "target": 50.43,
-        "computed": 50.16920953330837,
-        "error_pct": 0.5171,
-        "formula": "PI\u00b3\u00b7PHI",
+        "computed": 50.43037727025461,
+        "error_pct": 0.0007481067908191472,
+        "formula": "PI\u2074-PHI\u2078",
         "unit": "atm"
       },
       {
@@ -7967,9 +7964,9 @@
         "species_id": "H2O",
         "property": "critical_T_K",
         "target": 647.1,
-        "computed": 652.7614999116079,
-        "error_pct": 0.8749,
-        "formula": "E\u2076\u00b7PHI",
+        "computed": 649.0945332873966,
+        "error_pct": 0.30822643909698977,
+        "formula": "ETA\u207b\u2078+ETA\u207b\u2077",
         "unit": "K"
       },
       {
@@ -7977,9 +7974,9 @@
         "species_id": "H2O",
         "property": "h_vap_kJ_mol",
         "target": 40.65,
-        "computed": 40.87588108138918,
-        "error_pct": 0.5557,
-        "formula": "PI\u00b3+PI\u00b2",
+        "computed": 40.64876996138748,
+        "error_pct": 0.0030259252460492604,
+        "formula": "THETA\u207b\u00b3+THETA\u00b3",
         "unit": "kJ/mol"
       },
       {
@@ -8047,9 +8044,9 @@
         "species_id": "CO2",
         "property": "critical_T_K",
         "target": 304.13,
-        "computed": 306.01968478528147,
-        "error_pct": 0.6213,
-        "formula": "PI\u2075",
+        "computed": 303.97498956894407,
+        "error_pct": 0.05096847764308937,
+        "formula": "GATE\u00b7P_BASE\u207b\u2074",
         "unit": "K"
       },
       {
@@ -8077,9 +8074,9 @@
         "species_id": "C",
         "property": "cp_J_molK",
         "target": 8.53,
-        "computed": 8.47213595499958,
-        "error_pct": 0.6784,
-        "formula": "\u03c6\u2074+\u03c6",
+        "computed": 8.528110859745157,
+        "error_pct": 0.02214701353860092,
+        "formula": "ETA\u207b\u00b3-OMEGA",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -8117,9 +8114,9 @@
         "species_id": "CH4",
         "property": "cp_cv_ratio",
         "target": 1.304,
-        "computed": 1.2941305780559662,
-        "error_pct": 0.7569,
-        "formula": "OMEGA",
+        "computed": 1.304066197808427,
+        "error_pct": 0.005076519051140418,
+        "formula": "GAMMA\u207b\u00b9+GAMMA_C",
         "unit": "dimensionless"
       },
       {
@@ -8147,9 +8144,9 @@
         "species_id": "NH3",
         "property": "cp_J_molK",
         "target": 35.06,
-        "computed": 35.24234465779961,
-        "error_pct": 0.5201,
-        "formula": "\u03c0\u00b3+\u03c6\u00b3",
+        "computed": 35.05789313923886,
+        "error_pct": 0.006009300516672597,
+        "formula": "A_IN\u2077-A_BL\u207b\u2078",
         "unit": "J/(mol\u00b7K)"
       },
       {
@@ -8177,9 +8174,9 @@
         "species_id": "NH3",
         "property": "cp_cv_ratio",
         "target": 1.31,
-        "computed": 1.3177317120795233,
-        "error_pct": 0.5902,
-        "formula": "PHI-P_NEW",
+        "computed": 1.3100322937740994,
+        "error_pct": 0.002465173595366506,
+        "formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
         "unit": "dimensionless"
       },
       {
@@ -8217,9 +8214,9 @@
         "species_id": "NaCl",
         "property": "refractive_index",
         "target": 1.544,
-        "computed": 1.5339995829271138,
-        "error_pct": 0.6477,
-        "formula": "G+GATE",
+        "computed": 1.5438286221550623,
+        "error_pct": 0.011099601356068878,
+        "formula": "GATE\u207b\u00b9-K\u00b3",
         "unit": "dimensionless"
       },
       {
@@ -8227,9 +8224,9 @@
         "species_id": "CH3OH",
         "property": "surface_tension_mNm",
         "target": 22.5,
-        "computed": 22.70357091193756,
-        "error_pct": 0.9048,
-        "formula": "e\u00b3+\u03c6\u00b2",
+        "computed": 22.494890966787338,
+        "error_pct": 0.0227,
+        "formula": "A_BLEED+A_IN\u2076",
         "unit": "mN/m"
       },
       {
@@ -8267,9 +8264,9 @@
         "species_id": "CH3OH",
         "property": "refractive_index",
         "target": 1.329,
-        "computed": 1.3361872583379157,
-        "error_pct": 0.5408,
-        "formula": "G+K",
+        "computed": 1.3290430871491103,
+        "error_pct": 0.003242072920269971,
+        "formula": "G\u2078+S_quant\u2074",
         "unit": "dimensionless"
       },
       {
@@ -8277,9 +8274,9 @@
         "species_id": "CH3OH",
         "property": "speed_sound_m_s",
         "target": 1103.0,
-        "computed": 1096.6331584284585,
-        "error_pct": 0.5772,
-        "formula": "e\u2077",
+        "computed": 1102.9060065724984,
+        "error_pct": 0.008521616273941343,
+        "formula": "S_cosm\u2076\u00b7C_COSM\u207b\u2074",
         "unit": "m/s"
       },
       {
@@ -8337,9 +8334,9 @@
         "species_id": "C2H5OH",
         "property": "viscosity",
         "target": 1.2,
-        "computed": 1.2081624564371403,
-        "error_pct": 0.6802,
-        "formula": "B_IN+K",
+        "computed": 1.2000178984943817,
+        "error_pct": 0.0014915411984765352,
+        "formula": "A_BL\u2076-B_IN\u2079",
         "unit": "mPa\u00b7s"
       },
       {
@@ -8357,9 +8354,9 @@
         "species_id": "C2H5OH",
         "property": "dielectric",
         "target": 24.55,
-        "computed": 24.321604900687458,
-        "error_pct": 0.9303,
-        "formula": "e\u00b3+\u03c6\u00b3",
+        "computed": 24.54806131238867,
+        "error_pct": 0.0079,
+        "formula": "CHAOS\u207b\u00b9-CHAOS\u207b\u00b3",
         "unit": "dimensionless"
       },
       {
@@ -8377,9 +8374,9 @@
         "species_id": "C2H5OH",
         "property": "speed_sound_m_s",
         "target": 1162.0,
-        "computed": 1151.2313084616028,
-        "error_pct": 0.9267,
-        "formula": "e\u2077+e\u2074",
+        "computed": 1160.394218574045,
+        "error_pct": 0.1381911726295182,
+        "formula": "PI\u2076+PHI\u00b9\u00b9",
         "unit": "m/s"
       },
       {
@@ -8487,9 +8484,9 @@
         "species_id": "Acetone",
         "property": "h_vap_kJ_mol",
         "target": 31.3,
-        "computed": 31.00627668029982,
-        "error_pct": 0.9384,
-        "formula": "PI\u00b3",
+        "computed": 31.300543924629643,
+        "error_pct": 0.0017377783694651414,
+        "formula": "E\u00b2\u00b7PHI\u00b3",
         "unit": "kJ/mol"
       },
       {
@@ -8537,9 +8534,9 @@
         "species_id": "C6H6",
         "property": "surface_tension_mNm",
         "target": 28.88,
-        "computed": 29.034441853748632,
-        "error_pct": 0.5348,
-        "formula": "\u03c6\u2078-\u03c6\u2076",
+        "computed": 28.882998642590753,
+        "error_pct": 0.010383111463828861,
+        "formula": "S_quant\u207b\u2076-CHAOS\u207b\u00b3",
         "unit": "mN/m"
       },
       {
@@ -8587,9 +8584,9 @@
         "species_id": "C6H6",
         "property": "h_vap_kJ_mol",
         "target": 30.72,
-        "computed": 31.00627668029982,
-        "error_pct": 0.9319,
-        "formula": "PI\u00b3",
+        "computed": 30.723090640254416,
+        "error_pct": 0.010060677911513199,
+        "formula": "S_cosm-S_cosm\u207b\u2075",
         "unit": "kJ/mol"
       },
       {
@@ -8637,9 +8634,9 @@
         "species_id": "C6H6",
         "property": "autoignition_K",
         "target": 771.0,
-        "computed": 764.0466283111607,
-        "error_pct": 0.9019,
-        "formula": "E^4+E^6+PI^5",
+        "computed": 772.1390088349352,
+        "error_pct": 0.14773136639886192,
+        "formula": "C_FAC\u207b\u00b2+CHAOS\u207b\u2076",
         "unit": "K"
       },
       {
@@ -8667,9 +8664,9 @@
         "species_id": "CCl4",
         "property": "boiling_K",
         "target": 349.9,
-        "computed": 347.1283514559379,
-        "error_pct": 0.7921,
-        "formula": "\u03c6\u2078\u00b7e\u00b2",
+        "computed": 349.7030622518906,
+        "error_pct": 0.05628400917673783,
+        "formula": "G\u207b\u2074\u00b7S_cosm\u207b\u2078",
         "unit": "K"
       },
       {
@@ -8727,9 +8724,9 @@
         "species_id": "CHCl3",
         "property": "surface_tension_mNm",
         "target": 27.16,
-        "computed": 26.93963888943735,
-        "error_pct": 0.8113,
-        "formula": "e\u00b3+\u03c6\u2074",
+        "computed": 27.148807284811035,
+        "error_pct": 0.04121029156467324,
+        "formula": "GAMMA\u207b\u2076+GAMMA\u2074",
         "unit": "mN/m"
       },
       {
@@ -8797,9 +8794,9 @@
         "species_id": "Toluene",
         "property": "viscosity",
         "target": 0.59,
-        "computed": 0.5952414395777111,
-        "error_pct": 0.8884,
-        "formula": "\u03c6/e",
+        "computed": 0.589992340688357,
+        "error_pct": 0.0012981884140554035,
+        "formula": "ETA\u207b\u00b9\u00b7OMEGA\u207b\u2075",
         "unit": "mPa\u00b7s"
       },
       {
@@ -8867,9 +8864,9 @@
         "species_id": "n-Hexane",
         "property": "boiling_K",
         "target": 341.9,
-        "computed": 343.8648777074413,
-        "error_pct": 0.5747,
-        "formula": "\u03c0\u00b3\u00b7\u03c6\u2075",
+        "computed": 342.1603643107121,
+        "error_pct": 0.07615218213282665,
+        "formula": "SUCTION\u207b\u00b3-CHAOS\u207b\u00b3",
         "unit": "K"
       },
       {
@@ -8937,9 +8934,9 @@
         "species_id": "Diethyl_ether",
         "property": "boiling_K",
         "target": 307.6,
-        "computed": 306.01968478528147,
-        "error_pct": 0.5138,
-        "formula": "\u03c0\u2075",
+        "computed": 307.6377187740313,
+        "error_pct": 0.012262280244247317,
+        "formula": "PI\u2075+PHI",
         "unit": "K"
       },
       {
@@ -9027,9 +9024,9 @@
         "species_id": "Glycerol",
         "property": "viscosity",
         "target": 1412.0,
-        "computed": 1419.186503232361,
-        "error_pct": 0.509,
-        "formula": "e\u2077\u00b7\u03a9",
+        "computed": 1410.4570805412698,
+        "error_pct": 0.10927191634066849,
+        "formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
         "unit": "mPa\u00b7s"
       },
       {
@@ -9037,9 +9034,9 @@
         "species_id": "Glycerol",
         "property": "dielectric",
         "target": 42.5,
-        "computed": 42.742645786248005,
-        "error_pct": 0.5709,
-        "formula": "\u03c6\u2078-\u03c6\u00b3",
+        "computed": 42.51055612807173,
+        "error_pct": 0.024837948404063035,
+        "formula": "K\u207b\u00b3+GATE\u207b\u2077",
         "unit": "dimensionless"
       },
       {
@@ -9047,9 +9044,9 @@
         "species_id": "Glycerol",
         "property": "refractive_index",
         "target": 1.474,
-        "computed": 1.464551773855444,
-        "error_pct": 0.641,
-        "formula": "PHI-POOF",
+        "computed": 1.4739216699266267,
+        "error_pct": 0.005314116239709821,
+        "formula": "A_BLEED\u2075+A_IN\u207b\u00b3",
         "unit": "dimensionless"
       },
       {
@@ -9167,9 +9164,9 @@
         "species_id": "Ar",
         "property": "h_vap_kJ_mol",
         "target": 6.43,
-        "computed": 6.473090504753431,
-        "error_pct": 0.6701,
-        "formula": "E\u00b2-G",
+        "computed": 6.430792084169818,
+        "error_pct": 0.012318571847874842,
+        "formula": "POOF\u207b\u00b9-THETA\u00b2",
         "unit": "kJ/mol"
       },
       {
@@ -9177,9 +9174,9 @@
         "species_id": "Ar",
         "property": "h_fus_kJ_mol",
         "target": 1.18,
-        "computed": 1.1700479788599398,
-        "error_pct": 0.8434,
-        "formula": "C_EFF+P_BASE",
+        "computed": 1.1798979796276863,
+        "error_pct": 0.008645794263869522,
+        "formula": "G\u207b\u00b2-CHAOS\u2074",
         "unit": "kJ/mol"
       },
       {
@@ -9237,9 +9234,9 @@
         "species_id": "CH3COOH",
         "property": "dielectric",
         "target": 6.15,
-        "computed": 6.199366119843095,
-        "error_pct": 0.8027,
-        "formula": "e\u00b2\u00b7G\u00b2",
+        "computed": 6.152148753020613,
+        "error_pct": 0.03493907350590267,
+        "formula": "B_IN\u00b3+K\u207b\u00b2",
         "unit": "dimensionless"
       },
       {
@@ -9257,9 +9254,9 @@
         "species_id": "PTFE",
         "property": "dielectric",
         "target": 2.1,
-        "computed": 2.0861612696304874,
-        "error_pct": 0.659,
-        "formula": "e-PSI",
+        "computed": 2.0998868055179294,
+        "error_pct": 0.0053902134319380865,
+        "formula": "B_IN\u207b\u00b2+B_IN\u00b3",
         "unit": "dimensionless"
       },
       {
@@ -9267,9 +9264,9 @@
         "species_id": "n-butanol",
         "property": "dielectric",
         "target": 17.84,
-        "computed": 17.94427190999916,
-        "error_pct": 0.5845,
-        "formula": "\u03c6\u2076",
+        "computed": 17.842950726356825,
+        "error_pct": 0.01653994594633175,
+        "formula": "PHI\u2076-PI\u207b\u00b2",
         "unit": "dimensionless"
       },
       {
@@ -9277,9 +9274,9 @@
         "species_id": "DMSO",
         "property": "dielectric",
         "target": 46.7,
-        "computed": 46.97871376374779,
-        "error_pct": 0.5968,
-        "formula": "\u03c6\u2078",
+        "computed": 46.70335771980633,
+        "error_pct": 0.007189978172000333,
+        "formula": "OMEGA\u2077+THETA\u207b\u00b3",
         "unit": "dimensionless"
       },
       {
@@ -9287,9 +9284,9 @@
         "species_id": "DMSO",
         "property": "refractive_index",
         "target": 1.479,
-        "computed": 1.464551773855444,
-        "error_pct": 0.9769,
-        "formula": "PHI-POOF",
+        "computed": 1.4724311817782085,
+        "error_pct": 0.444139,
+        "formula": "PHI-POOF+B_in/100",
         "unit": "dimensionless"
       },
       {
@@ -9307,9 +9304,9 @@
         "species_id": "formic acid",
         "property": "dielectric",
         "target": 58.5,
-        "computed": 58.83421801064403,
-        "error_pct": 0.5713,
-        "formula": "e\u2074+\u03c6\u00b3",
+        "computed": 58.494777076136735,
+        "error_pct": 0.008928074979939896,
+        "formula": "A_IN\u2078-A_BL\u00b2",
         "unit": "dimensionless"
       },
       {
@@ -9317,9 +9314,9 @@
         "species_id": "CS2",
         "property": "refractive_index",
         "target": 1.628,
-        "computed": 1.618033988749895,
-        "error_pct": 0.6122,
-        "formula": "PHI",
+        "computed": 1.6282999710045791,
+        "error_pct": 0.018425737382016947,
+        "formula": "PI\u207b\u2074+PHI",
         "unit": "dimensionless"
       },
       {
@@ -9367,9 +9364,9 @@
         "species_id": "Diamond",
         "property": "band_gap_eV",
         "target": 5.47,
-        "computed": 5.439652817888142,
-        "error_pct": 0.5548,
-        "formula": "\u03c0+e-K",
+        "computed": 5.470239074519245,
+        "error_pct": 0.004370649346353588,
+        "formula": "OMEGA\u207b\u00b9+OMEGA\u2076",
         "unit": "eV"
       },
       {
@@ -9377,9 +9374,9 @@
         "species_id": "Diamond",
         "property": "youngs_GPa",
         "target": 1050.0,
-        "computed": 1056.190293404343,
-        "error_pct": 0.5896,
-        "formula": "e\u2076\u00b7\u03c6\u00b2",
+        "computed": 1049.8726049268328,
+        "error_pct": 0.01213286411116531,
+        "formula": "A_IN\u2076+K\u207b\u2078",
         "unit": "GPa"
       },
       {
@@ -9457,9 +9454,9 @@
         "species_id": "Si",
         "property": "band_gap_eV",
         "target": 1.12,
-        "computed": 1.1283113704165975,
-        "error_pct": 0.7421,
-        "formula": "G+P_BASE",
+        "computed": 1.1197105734345842,
+        "error_pct": 0.025841657626416277,
+        "formula": "POOF\u00b2+A_BLEED\u00b2",
         "unit": "eV"
       },
       {
@@ -9487,9 +9484,9 @@
         "species_id": "Si",
         "property": "bulk_GPa",
         "target": 98.0,
-        "computed": 97.40910870745367,
-        "error_pct": 0.6029,
-        "formula": "E\u2076-PI\u2075",
+        "computed": 98.0122852361088,
+        "error_pct": 0.012535955213056185,
+        "formula": "A_IN\u2079-A_BLEED\u2076",
         "unit": "GPa"
       },
       {
@@ -9567,9 +9564,9 @@
         "species_id": "CdS",
         "property": "band_gap_eV",
         "target": 2.42,
-        "computed": 2.4059747810263383,
-        "error_pct": 0.5796,
-        "formula": "\u03c6+B_IN",
+        "computed": 2.420433612942127,
+        "error_pct": 0.017917890170535522,
+        "formula": "G\u207b\u2076+S_quant\u2077",
         "unit": "eV"
       },
       {
@@ -9607,9 +9604,9 @@
         "species_id": "He_gas",
         "property": "thermal_cond_W_mK",
         "target": 0.152,
-        "computed": 0.1534822148944508,
-        "error_pct": 0.9751,
-        "formula": "POOF",
+        "computed": 0.15196307398447872,
+        "error_pct": 0.024293431263994338,
+        "formula": "S_quant\u00b2-S_quant\u2076",
         "unit": "W/(m\u00b7K)"
       },
       {
@@ -9637,9 +9634,9 @@
         "species_id": "SS304",
         "property": "resistivity_uOhm_cm",
         "target": 72.0,
-        "computed": 72.5424219431434,
-        "error_pct": 0.7534,
-        "formula": "e\u2074+\u03c6\u2076",
+        "computed": 71.97728410922835,
+        "error_pct": 0.03154984829395839,
+        "formula": "E\u00b9\u2070/PI\u2075",
         "unit": "\u03bc\u03a9\u00b7cm"
       },
       {
@@ -9667,9 +9664,9 @@
         "species_id": "steel",
         "property": "speed_sound_m_s",
         "target": 5960.0,
-        "computed": 6001.251214818521,
-        "error_pct": 0.6921,
-        "formula": "e\u2078+\u03c0\u2077",
+        "computed": 5949.809481041919,
+        "error_pct": 0.17098186171277108,
+        "formula": "THETA\u207b\u2077+POOF\u207b\u00b3",
         "unit": "m/s"
       },
       {
@@ -9677,9 +9674,9 @@
         "species_id": "Ne",
         "property": "critical_T_K",
         "target": 44.49,
-        "computed": 44.72854563205488,
-        "error_pct": 0.5362,
-        "formula": "E\u2074-PI\u00b2",
+        "computed": 44.507434047974456,
+        "error_pct": 0.039186441839636675,
+        "formula": "GAMMA\u207b\u2077+GAMMA_C\u207b\u00b9",
         "unit": "K"
       },
       {
@@ -9717,9 +9714,9 @@
         "species_id": "C2H6",
         "property": "cp_cv_ratio",
         "target": 1.187,
-        "computed": 1.1952496536514277,
-        "error_pct": 0.695,
-        "formula": "GATE+GAMMA",
+        "computed": 1.1870820683632695,
+        "error_pct": 0.006913931193715691,
+        "formula": "P_VAR\u207b\u2074-P_NEW\u2077",
         "unit": "dimensionless"
       },
       {
@@ -9737,9 +9734,9 @@
         "species_id": "C3H8",
         "property": "h_vap_kJ_mol",
         "target": 19.04,
-        "computed": 19.16957132901045,
-        "error_pct": 0.6805,
-        "formula": "E\u00b3-G",
+        "computed": 19.068220891949853,
+        "error_pct": 0.1482189703248617,
+        "formula": "A_IN\u2076-K\u207b\u00b9",
         "unit": "kJ/mol"
       },
       {
@@ -9787,9 +9784,9 @@
         "species_id": "SO2",
         "property": "critical_P_bar",
         "target": 77.8,
-        "computed": 77.32355411081477,
-        "error_pct": 0.6124,
-        "formula": "PI\u2074-E\u00b3",
+        "computed": 77.82617808372233,
+        "error_pct": 0.03364792252227306,
+        "formula": "A_BL\u2079+K\u207b\u2075",
         "unit": "atm"
       },
       {
@@ -9797,9 +9794,9 @@
         "species_id": "HCl",
         "property": "critical_T_K",
         "target": 324.65,
-        "computed": 321.99689437998484,
-        "error_pct": 0.8172,
-        "formula": "PHI\u00b9\u00b2",
+        "computed": 324.9908142400863,
+        "error_pct": 0.10497897430658593,
+        "formula": "C_COSM\u207b\u00b9\u00b7E\u00b3",
         "unit": "K"
       },
       {
@@ -9827,9 +9824,9 @@
         "species_id": "SiO2",
         "property": "glass_Tg_K",
         "target": 1473.0,
-        "computed": 1464.7791682583652,
-        "error_pct": 0.5581,
-        "formula": "PI\u00b2\u00b7E\u2075",
+        "computed": 1470.4592936847914,
+        "error_pct": 0.17248515378198107,
+        "formula": "E\u00b2\u00b7PHI\u00b9\u00b9",
         "unit": "K"
       },
       {
@@ -9897,9 +9894,9 @@
         "species_id": "nylon6",
         "property": "glass_Tg_K",
         "target": 323.0,
-        "computed": 326.1052217084691,
-        "error_pct": 0.9614,
-        "formula": "PI\u2075+E\u00b3",
+        "computed": 323.27396441521535,
+        "error_pct": 0.08481870440103591,
+        "formula": "K\u207b\u2075\u00b7GATE\u207b\u00b3",
         "unit": "K"
       },
       {
@@ -9987,9 +9984,9 @@
         "species_id": "Titanium",
         "property": "acoustic_imp_MRayl",
         "target": 27.3,
-        "computed": 27.474593022118317,
-        "error_pct": 0.6395,
-        "formula": "E\u00b3+E\u00b2",
+        "computed": 27.299733113221045,
+        "error_pct": 0.001,
+        "formula": "PSI\u207b\u2077+PSI\u207b\u00b2",
         "unit": "MRayl"
       },
       {
@@ -10047,9 +10044,9 @@
         "species_id": "C2H4",
         "property": "h_comb_kJ_mol",
         "target": 1411.2,
-        "computed": 1402.65284321374,
-        "error_pct": 0.6057,
-        "formula": "E\u2077+PI\u2075",
+        "computed": 1410.4570805412698,
+        "error_pct": 0.05264451946784896,
+        "formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
         "unit": "kJ/mol"
       },
       {
@@ -10160,8 +10157,8 @@
     },
     "species_count": 141,
     "property_count": 684,
-    "max_error_pct": 0.9952,
-    "mean_error_pct": 0.2350703412848426
+    "max_error_pct": 0.8818,
+    "mean_error_pct": 0.12268176257906009
   },
   "cameo_lab": {
     "present": true,
@@ -11104,7 +11101,7 @@
   },
   "trinary_os": {
     "present": true,
-    "fsot_os_root": "C:\\Users\\damia\\Desktop\\Fsot trinary\\fsot_os",
+    "fsot_os_root": "vendor/trinary_os",
     "oracle_count": 3,
     "oracles": {
       "hello": {
@@ -11211,10 +11208,10 @@
   },
   "evolution_lab": {
     "present": true,
-    "operons_path": "C:\\Users\\damia\\Desktop\\fsot_evolution_\\files-b7d9d6b8\\fsot_evolution_sim\\results\\biological_mt_operons.json",
-    "best_path": "C:\\Users\\damia\\Desktop\\fsot_evolution_\\files-b7d9d6b8\\fsot_evolution_sim\\results\\best_evolved_organism.json",
+    "operons_path": "vendor\\evolution\\biological_mt_operons.json",
+    "best_path": "vendor\\evolution\\best_evolved_organism.json",
     "operon_count": 13,
-    "total_bp": 11395,
+    "total_bp": 11394,
     "best_id": "I0_G50_ELITE",
     "fitness": 58.493466,
     "biological_capacity": 8002.5,
@@ -11234,8 +11231,8 @@
   },
   "linguistics_lab": {
     "present": true,
-    "targets_path": "C:\\Users\\damia\\Desktop\\FSOT linguistics\\data\\LINGUISTIC_TARGETS.csv",
-    "db_path": "C:\\Users\\damia\\Desktop\\FSOT linguistics\\db\\linguistics.db",
+    "targets_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\data\\LINGUISTIC_TARGETS.csv",
+    "db_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\db\\linguistics.db",
     "rows": [
       {
         "name": "Zipf_exponent_English",
@@ -11447,145 +11444,6 @@
         "records": 130
       }
     ]
-  },
-  "cosmology_wave4": {
-    "present": true,
-    "compute_path": "vendor/fsot_compute.py",
-    "rows": [
-      {
-        "wave": "wave4",
-        "name": "sin2_theta12",
-        "formula": "2\u00b7Poof",
-        "computed": 0.3069644297889016,
-        "measured": 0.307,
-        "error_pct": 0.011586387979935279
-      },
-      {
-        "wave": "wave4",
-        "name": "sin2_theta23",
-        "formula": "|Chaos|\u00b7\u221ae",
-        "computed": 0.5457666109860249,
-        "measured": 0.546,
-        "error_pct": 0.04274524065479535
-      },
-      {
-        "wave": "wave4",
-        "name": "sin2_theta13",
-        "formula": "\u03b3\u2076\u00b7\u03c6/e",
-        "computed": 0.02201515822114412,
-        "measured": 0.022,
-        "error_pct": 0.06890100520055274
-      },
-      {
-        "wave": "wave4",
-        "name": "Dm2_21/Dm2_32",
-        "formula": "\u03b3\u00b3\u00b7Poof",
-        "computed": 0.02951701148028642,
-        "measured": 0.0295,
-        "error_pct": 0.05766603486922898
-      },
-      {
-        "wave": "wave4",
-        "name": "|V_ub|",
-        "formula": "C_cosm\u00b2",
-        "computed": 0.0038196601125010513,
-        "measured": 0.00382,
-        "error_pct": 0.008897578506510621
-      },
-      {
-        "wave": "wave4",
-        "name": "|V_td|",
-        "formula": "\u221a\u03c6/e\u2075",
-        "computed": 0.00857080098022107,
-        "measured": 0.00857,
-        "error_pct": 0.009346326966974296
-      },
-      {
-        "wave": "wave4",
-        "name": "|V_ts|",
-        "formula": "\u03b3\u2075\u00b7\u03c8_con",
-        "computed": 0.04050330471508225,
-        "measured": 0.0405,
-        "error_pct": 0.008159790326533337
-      },
-      {
-        "wave": "wave4",
-        "name": "Jarlskog_J",
-        "formula": "G/(\u03c0\u2079)",
-        "computed": 3.072771786665467e-05,
-        "measured": 3.08e-05,
-        "error_pct": 0.23468225112121452
-      },
-      {
-        "wave": "wave4",
-        "name": "Feigenbaum_delta",
-        "formula": "ln(\u03c0)\u00b7(e/G) + \u221a\u03c6",
-        "computed": 4.669197957279608,
-        "measured": 4.6692,
-        "error_pct": 4.3748830462353164e-05
-      },
-      {
-        "wave": "wave4",
-        "name": "Feigenbaum_alpha",
-        "formula": "|Chaos|\u00b7\u03c6\u00b7e + A_bleed",
-        "computed": 2.5029081532028084,
-        "measured": 2.50291,
-        "error_pct": 7.378600075983818e-05
-      },
-      {
-        "wave": "wave4",
-        "name": "r_p_fm",
-        "formula": "G\u2077 + P_new",
-        "computed": 0.8412485409697683,
-        "measured": 0.8414,
-        "error_pct": 0.018000835539782083
-      },
-      {
-        "wave": "wave4",
-        "name": "m_n-m_p_MeV",
-        "formula": "\u03b3\u2074/|Chaos| + P_var",
-        "computed": 1.2933328005542002,
-        "measured": 1.29333,
-        "error_pct": 0.00021653825397228277
-      },
-      {
-        "wave": "wave4",
-        "name": "mu_p_muN",
-        "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
-        "computed": 2.792852216264115,
-        "measured": 2.79285,
-        "error_pct": 7.935492829532375e-05
-      },
-      {
-        "wave": "wave4",
-        "name": "w0",
-        "formula": "\u2212P_new\u00b7\u03c0/G",
-        "computed": -1.0299812921372637,
-        "measured": -1.03,
-        "error_pct": 0.0018162973530366992
-      },
-      {
-        "wave": "wave4",
-        "name": "m_c/m_b",
-        "formula": "C_cosm/P_base",
-        "computed": 0.2910507567869785,
-        "measured": 0.291,
-        "error_pct": 0.017442194837980426
-      },
-      {
-        "wave": "wave4",
-        "name": "alpha_s_ratio",
-        "formula": "\u03c0\u2076\u00b7\u03b3\u2078",
-        "computed": 11.846883192361886,
-        "measured": 11.85,
-        "error_pct": 0.026302174161292595
-      }
-    ],
-    "observable_count": 16,
-    "wave4_count": 16,
-    "measured_count": 16,
-    "max_error_pct": 0.23468225112121452,
-    "mean_error_pct": 0.03162247159570792
   },
   "kronos_lab": {
     "present": true,
@@ -46763,8 +46621,8 @@
   },
   "knowledge_base": {
     "present": true,
-    "knowledge_root": "C:\\Users\\damia\\Desktop\\Knowledge base",
-    "transfer_path": "C:\\Users\\damia\\Desktop\\Knowledge base\\transfer\\FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json",
+    "knowledge_root": "C:/Users/damia/Desktop/Knowledge base",
+    "transfer_path": "C:/Users/damia/Desktop/Knowledge base/transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json",
     "source_count": 39,
     "catalog_formulas": 19213,
     "resolved_formulas": 19213,
@@ -46774,7 +46632,7 @@
     "observable_verified_matched": 7941,
     "within_target_2pct": 6921,
     "within_tolerable_5pct": 7941,
-    "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
+    "strict_empirical_corpus_path": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
     "per_formula_total": 19213,
     "per_formula_with_target": 160,
     "per_formula_evaluated": 71,
@@ -46784,7 +46642,7 @@
     "per_formula_within_target_2pct": 50,
     "per_formula_within_tolerable_5pct": 82,
     "per_formula_unparseable": 89,
-    "per_formula_validation_path": "C:\\Users\\damia\\Desktop\\Knowledge base\\export\\full_corpus_math_validation.json"
+    "per_formula_validation_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\knowledge_base\\export\\full_corpus_math_validation.json"
   },
   "math_generator_lab": {
     "present": true,
@@ -46795,7 +46653,9 @@
     "max_error_pct": 1.1862232544535427,
     "mean_error_pct": 0.5818262368512913,
     "c_eff": 0.9577022026205612,
-    "p_base": 0.21234577623937845
+    "p_base": 0.21234577623937845,
+    "rule_corpus_count": 62,
+    "total_rule_count": 1552
   },
   "trinary_fluid_computer": {
     "present": true,
@@ -46856,10 +46716,15 @@
   },
   "formula_corpus": {
     "records_total": 7941,
+    "unique_observables": 1325,
+    "project_triplication_factor": 5.993,
     "matched_count": 7941,
+    "unique_matched_count": 1325,
     "unmatched_count": 0,
     "within_target_2pct": 6921,
+    "unique_within_target_2pct": 1155,
     "within_tolerable_5pct": 7941,
+    "unique_within_tolerable_5pct": 1325,
     "max_error_pct": 4.841504,
     "top_project_count": 3,
     "top_projects": [
@@ -46878,7 +46743,7 @@
     ],
     "corpus_path": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
     "verification_tier": "numeric_formula",
-    "ingested_at": "2026-07-08T16:34:08.176336+00:00"
+    "ingested_at": "2026-07-13T15:21:20.784971+00:00"
   },
   "cellular_lab": {
     "soul_records_processed": 234447,
@@ -46889,10 +46754,10 @@
       "raw": 975
     },
     "evolution_operon_count": 13,
-    "evolution_total_bp": 11395,
+    "evolution_total_bp": 11394,
     "domain": "cellular",
     "D_eff": 12,
-    "ingested_at": "2026-07-01T04:33:55.669005+00:00"
+    "ingested_at": "2026-07-13T15:21:21.460701+00:00"
   },
   "blackhole_thesis": {
     "observable_count": 28,
@@ -47155,7 +47020,23 @@
       }
     ],
     "source_md": "C:\\Users\\damia\\Desktop\\New folder (2)\\fsot_trinary_validator_go\\fsot-knowledge-base\\thesis\\FSOT_BlackHole_Thermo_Thesis_2026\\FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md",
-    "ingested_at": "2026-07-01T04:33:56.285781+00:00"
+    "ingested_at": "2026-07-13T15:21:22.102477+00:00"
+  },
+  "cosmology_bubble_bleed_lab": {
+    "mechanism": "bh_wh_outgassing_expansion",
+    "h0_global_fsot": 68.44005682979427,
+    "bubble_bleed_fraction": 0.015431,
+    "blackhole_observable_count": 28,
+    "nebula_count": 20,
+    "frb_count": 38,
+    "h0_sector_count": 6,
+    "observable_count": 113,
+    "nebula_coupling_match_rate": 1.0,
+    "frb_classifier_match_rate": 1.0,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.88479,
+    "D_eff": 25,
+    "ingested_at": "2026-07-13T15:23:38.472341+00:00"
   },
   "experiment_synthesis": {
     "neuron_hybrid_lab": {
@@ -47236,362 +47117,8 @@
     },
     "manifest_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\experiment_synthesis_manifest.yaml",
     "neuron_cohort_lab": {
-      "present": true,
-      "report_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
-      "generated_from": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\allen_cell_types\\cells.json",
-      "total_cells_in_catalog": 2333,
-      "cohort_fi_proxy": {
-        "cell_count": 2166,
-        "fi_median_rel_err": 0.24522634418835965,
-        "fi_mean_rel_err": 0.38936198680672035,
-        "fi_p90_rel_err": 0.9018905590486146,
-        "fi_pearson_r": 0.6070731362799854,
-        "canonical_scalar_min": 0.25241247006708056,
-        "canonical_scalar_mean": 0.25241247006708056,
-        "canonical_neuroscience_domain_S": 0.5143619629083619
-      },
-      "cohort_strata": {
-        "catalog_coverage": {
-          "hero_specimen_excluded": 324257146,
-          "classified_catalog_cells": 1786,
-          "unclassified_catalog_cells": 546,
-          "held_out_catalog_cells": 2332
-        },
-        "held_out_fi_proxy": {
-          "cell_count": 2165,
-          "fi_median_rel_err": 0.24520261127596557,
-          "fi_mean_rel_err": 0.3893964094689512,
-          "fi_p90_rel_err": 0.9018905590486146,
-          "fi_pearson_r": 0.6068416819088323,
-          "canonical_scalar_min": 0.25241247006708056,
-          "canonical_scalar_mean": 0.25241247006708056,
-          "canonical_neuroscience_domain_S": 0.5143619629083619
-        },
-        "strata": {
-          "Sst_interneuron": {
-            "catalog_cells": 165,
-            "cell_count": 154,
-            "fi_median_rel_err": 0.35479861060568474,
-            "fi_mean_rel_err": 0.446250823162439,
-            "fi_p90_rel_err": 0.9427734852734924,
-            "fi_pearson_r": 0.5196512945807779,
-            "canonical_scalar_min": 0.25241247006708056,
-            "canonical_scalar_mean": 0.25241247006708056,
-            "canonical_neuroscience_domain_S": 0.5143619629083619
-          },
-          "PV_interneuron": {
-            "catalog_cells": 242,
-            "cell_count": 222,
-            "fi_median_rel_err": 0.2959837154055862,
-            "fi_mean_rel_err": 0.7043124112229106,
-            "fi_p90_rel_err": 0.8156916584836724,
-            "fi_pearson_r": 0.3915167429133035,
-            "canonical_scalar_min": 0.25241247006708056,
-            "canonical_scalar_mean": 0.25241247006708056,
-            "canonical_neuroscience_domain_S": 0.5143619629083619
-          },
-          "VIP_interneuron": {
-            "catalog_cells": 155,
-            "cell_count": 146,
-            "fi_median_rel_err": 0.2972767467532461,
-            "fi_mean_rel_err": 0.44463325215896615,
-            "fi_p90_rel_err": 0.966682,
-            "fi_pearson_r": 0.42970594991301575,
-            "canonical_scalar_min": 0.25241247006708056,
-            "canonical_scalar_mean": 0.25241247006708056,
-            "canonical_neuroscience_domain_S": 0.5143619629083619
-          },
-          "L2_3_pyramidal": {
-            "catalog_cells": 1224,
-            "cell_count": 1127,
-            "fi_median_rel_err": 0.22104086005830942,
-            "fi_mean_rel_err": 0.325860726984197,
-            "fi_p90_rel_err": 0.8092848352409213,
-            "fi_pearson_r": 0.22516239104042488,
-            "canonical_scalar_min": 0.25241247006708056,
-            "canonical_scalar_mean": 0.25241247006708056,
-            "canonical_neuroscience_domain_S": 0.5143619629083619
-          }
-        }
-      },
-      "hero_certified_fi": {
-        "specimen_id": 324257146,
-        "cell_class": "Sst_interneuron",
-        "mean_rel_err": 0.07002728543379658,
-        "verifier_confidence": 0.9598886696481669,
-        "fi_point_count": 4,
-        "source": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\inconsistency_rerun_report.json"
-      },
-      "hero_hybrid_native_scalar": {
-        "scalar_mode": "native",
-        "specimen_id": 324257146,
-        "cell_class": "Sst_interneuron",
-        "data_source": "allen_sdk",
-        "fi_point_count": 4,
-        "mean_rel_err": 0.07002728543379658,
-        "sustained_fi": [
-          {
-            "current_nA": 0.05,
-            "measured_Hz": 6.0000150000375,
-            "model_Hz": 6.0,
-            "rel_err": 2.50000000000127e-06
-          },
-          {
-            "current_nA": 0.09,
-            "measured_Hz": 20.500051250128127,
-            "model_Hz": 19.0,
-            "rel_err": 0.07317304878048789
-          },
-          {
-            "current_nA": 0.13,
-            "measured_Hz": 40.62512406292266,
-            "model_Hz": 37.142857142857146,
-            "rel_err": 0.08571707780318323
-          },
-          {
-            "current_nA": 0.17,
-            "measured_Hz": 66.00033000165001,
-            "model_Hz": 58.0,
-            "rel_err": 0.12121651515151521
-          }
-        ],
-        "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
-      },
-      "hero_hybrid_canonical_scalar": {
-        "scalar_mode": "canonical",
-        "specimen_id": 324257146,
-        "cell_class": "Sst_interneuron",
-        "data_source": "allen_sdk",
-        "fi_point_count": 4,
-        "mean_rel_err": 0.07354375821147667,
-        "sustained_fi": [
-          {
-            "current_nA": 0.05,
-            "measured_Hz": 6.0000150000375,
-            "model_Hz": 6.0,
-            "rel_err": 2.50000000000127e-06
-          },
-          {
-            "current_nA": 0.09,
-            "measured_Hz": 20.500051250128127,
-            "model_Hz": 19.0,
-            "rel_err": 0.07317304878048789
-          },
-          {
-            "current_nA": 0.13,
-            "measured_Hz": 40.62512406292266,
-            "model_Hz": 36.57142857142857,
-            "rel_err": 0.0997829689139036
-          },
-          {
-            "current_nA": 0.17,
-            "measured_Hz": 66.00033000165001,
-            "model_Hz": 58.0,
-            "rel_err": 0.12121651515151521
-          }
-        ],
-        "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
-      },
-      "canonical_scalar_bridge": {
-        "version": "v2_hybrid_structure",
-        "alpha_layer1": 0.0008082937414140405,
-        "psi_con": 0.6321205588285577,
-        "eta_eff": 0.46694220692425986,
-        "damp_factor": 0.7139045860316813,
-        "bridge_scale": 1.1099062765752818,
-        "canonical_neuroscience_domain_S": 0.5143619629083619,
-        "hero_canonical_mean_rel_err": 0.07354375821147667,
-        "hero_certified_mean_rel_err": 0.07002728543379658,
-        "canonical_vs_certified_delta": 0.0035164727776800936,
-        "within_few_points": true
-      },
-      "neurolab_smiles_bridge": {
-        "smiles_mapped_records": 1470,
-        "smiles_median_error_pct": 0.058,
-        "strict_empirical_records": 7941,
-        "brain_component_priors_count": 10,
-        "neurolab_translation_total": 38,
-        "neurolab_brain_pathway_count": 25
-      }
-    }
-  },
-  "neuron_cohort_lab": {
-    "present": true,
-    "report_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
-    "generated_from": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\allen_cell_types\\cells.json",
-    "total_cells_in_catalog": 2333,
-    "cohort_fi_proxy": {
-      "cell_count": 2166,
-      "fi_median_rel_err": 0.24522634418835965,
-      "fi_mean_rel_err": 0.38936198680672035,
-      "fi_p90_rel_err": 0.9018905590486146,
-      "fi_pearson_r": 0.6070731362799854,
-      "canonical_scalar_min": 0.25241247006708056,
-      "canonical_scalar_mean": 0.25241247006708056,
-      "canonical_neuroscience_domain_S": 0.5143619629083619
-    },
-    "cohort_strata": {
-      "catalog_coverage": {
-        "hero_specimen_excluded": 324257146,
-        "classified_catalog_cells": 1786,
-        "unclassified_catalog_cells": 546,
-        "held_out_catalog_cells": 2332
-      },
-      "held_out_fi_proxy": {
-        "cell_count": 2165,
-        "fi_median_rel_err": 0.24520261127596557,
-        "fi_mean_rel_err": 0.3893964094689512,
-        "fi_p90_rel_err": 0.9018905590486146,
-        "fi_pearson_r": 0.6068416819088323,
-        "canonical_scalar_min": 0.25241247006708056,
-        "canonical_scalar_mean": 0.25241247006708056,
-        "canonical_neuroscience_domain_S": 0.5143619629083619
-      },
-      "strata": {
-        "Sst_interneuron": {
-          "catalog_cells": 165,
-          "cell_count": 154,
-          "fi_median_rel_err": 0.35479861060568474,
-          "fi_mean_rel_err": 0.446250823162439,
-          "fi_p90_rel_err": 0.9427734852734924,
-          "fi_pearson_r": 0.5196512945807779,
-          "canonical_scalar_min": 0.25241247006708056,
-          "canonical_scalar_mean": 0.25241247006708056,
-          "canonical_neuroscience_domain_S": 0.5143619629083619
-        },
-        "PV_interneuron": {
-          "catalog_cells": 242,
-          "cell_count": 222,
-          "fi_median_rel_err": 0.2959837154055862,
-          "fi_mean_rel_err": 0.7043124112229106,
-          "fi_p90_rel_err": 0.8156916584836724,
-          "fi_pearson_r": 0.3915167429133035,
-          "canonical_scalar_min": 0.25241247006708056,
-          "canonical_scalar_mean": 0.25241247006708056,
-          "canonical_neuroscience_domain_S": 0.5143619629083619
-        },
-        "VIP_interneuron": {
-          "catalog_cells": 155,
-          "cell_count": 146,
-          "fi_median_rel_err": 0.2972767467532461,
-          "fi_mean_rel_err": 0.44463325215896615,
-          "fi_p90_rel_err": 0.966682,
-          "fi_pearson_r": 0.42970594991301575,
-          "canonical_scalar_min": 0.25241247006708056,
-          "canonical_scalar_mean": 0.25241247006708056,
-          "canonical_neuroscience_domain_S": 0.5143619629083619
-        },
-        "L2_3_pyramidal": {
-          "catalog_cells": 1224,
-          "cell_count": 1127,
-          "fi_median_rel_err": 0.22104086005830942,
-          "fi_mean_rel_err": 0.325860726984197,
-          "fi_p90_rel_err": 0.8092848352409213,
-          "fi_pearson_r": 0.22516239104042488,
-          "canonical_scalar_min": 0.25241247006708056,
-          "canonical_scalar_mean": 0.25241247006708056,
-          "canonical_neuroscience_domain_S": 0.5143619629083619
-        }
-      }
-    },
-    "hero_certified_fi": {
-      "specimen_id": 324257146,
-      "cell_class": "Sst_interneuron",
-      "mean_rel_err": 0.07002728543379658,
-      "verifier_confidence": 0.9598886696481669,
-      "fi_point_count": 4,
-      "source": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\inconsistency_rerun_report.json"
-    },
-    "hero_hybrid_native_scalar": {
-      "scalar_mode": "native",
-      "specimen_id": 324257146,
-      "cell_class": "Sst_interneuron",
-      "data_source": "allen_sdk",
-      "fi_point_count": 4,
-      "mean_rel_err": 0.07002728543379658,
-      "sustained_fi": [
-        {
-          "current_nA": 0.05,
-          "measured_Hz": 6.0000150000375,
-          "model_Hz": 6.0,
-          "rel_err": 2.50000000000127e-06
-        },
-        {
-          "current_nA": 0.09,
-          "measured_Hz": 20.500051250128127,
-          "model_Hz": 19.0,
-          "rel_err": 0.07317304878048789
-        },
-        {
-          "current_nA": 0.13,
-          "measured_Hz": 40.62512406292266,
-          "model_Hz": 37.142857142857146,
-          "rel_err": 0.08571707780318323
-        },
-        {
-          "current_nA": 0.17,
-          "measured_Hz": 66.00033000165001,
-          "model_Hz": 58.0,
-          "rel_err": 0.12121651515151521
-        }
-      ],
-      "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
-    },
-    "hero_hybrid_canonical_scalar": {
-      "scalar_mode": "canonical",
-      "specimen_id": 324257146,
-      "cell_class": "Sst_interneuron",
-      "data_source": "allen_sdk",
-      "fi_point_count": 4,
-      "mean_rel_err": 0.07354375821147667,
-      "sustained_fi": [
-        {
-          "current_nA": 0.05,
-          "measured_Hz": 6.0000150000375,
-          "model_Hz": 6.0,
-          "rel_err": 2.50000000000127e-06
-        },
-        {
-          "current_nA": 0.09,
-          "measured_Hz": 20.500051250128127,
-          "model_Hz": 19.0,
-          "rel_err": 0.07317304878048789
-        },
-        {
-          "current_nA": 0.13,
-          "measured_Hz": 40.62512406292266,
-          "model_Hz": 36.57142857142857,
-          "rel_err": 0.0997829689139036
-        },
-        {
-          "current_nA": 0.17,
-          "measured_Hz": 66.00033000165001,
-          "model_Hz": 58.0,
-          "rel_err": 0.12121651515151521
-        }
-      ],
-      "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
-    },
-    "canonical_scalar_bridge": {
-      "version": "v2_hybrid_structure",
-      "alpha_layer1": 0.0008082937414140405,
-      "psi_con": 0.6321205588285577,
-      "eta_eff": 0.46694220692425986,
-      "damp_factor": 0.7139045860316813,
-      "bridge_scale": 1.1099062765752818,
-      "canonical_neuroscience_domain_S": 0.5143619629083619,
-      "hero_canonical_mean_rel_err": 0.07354375821147667,
-      "hero_certified_mean_rel_err": 0.07002728543379658,
-      "canonical_vs_certified_delta": 0.0035164727776800936,
-      "within_few_points": true
-    },
-    "neurolab_smiles_bridge": {
-      "smiles_mapped_records": 1470,
-      "smiles_median_error_pct": 0.058,
-      "strict_empirical_records": 7941,
-      "brain_component_priors_count": 10,
-      "neurolab_translation_total": 38,
-      "neurolab_brain_pathway_count": 25
+      "present": false,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\run_neuron_cohort_eval.py\", line 427, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\run_neuron_cohort_eval.py\", line 370, in main\n    cells = json.loads(cells_path.read_text(encoding=\"utf-8\"))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\vendor\\\\neuron_cohort\\\\cells.json'"
     }
   },
   "intelligence_compression": {
@@ -47945,7 +47472,37 @@
     "sweep_row_count_full": 572,
     "source_repo": "vendor/intelligence_compression",
     "source_repo_resolved": "vendor/intelligence_compression",
-    "ingested_at": "2026-07-09T11:46:51.369430+00:00"
+    "ingested_at": "2026-07-13T15:21:24.828446+00:00"
+  },
+  "seismology_lab": {
+    "present": true,
+    "record_count": 500,
+    "observable_count": 500,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 1.0,
+    "D_eff": 15,
+    "source": "USGS_FDSN",
+    "ingested_at": "2026-07-13T15:23:07.858286+00:00"
+  },
+  "tectonics_lab": {
+    "present": true,
+    "record_count": 500,
+    "observable_count": 500,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 1.0,
+    "D_eff": 17,
+    "source": "PB2002_plates_USGS_events",
+    "ingested_at": "2026-07-13T15:23:07.858286+00:00"
+  },
+  "geomagnetism_lab": {
+    "present": true,
+    "record_count": 524,
+    "observable_count": 524,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 0.7881679389312977,
+    "D_eff": 13,
+    "source": "NOAA_SWPC_geomag",
+    "ingested_at": "2026-07-13T15:23:07.858286+00:00"
   },
   "thesis_simulation_lab": {
     "wave_target_count": 98,
@@ -47954,8 +47511,8 @@
     "wave_file_count": 4,
     "intrinsic_best_rmse": 6.763968608085996,
     "intrinsic_best_r2": 0.09618580081642514,
-    "source_root": "C:\\Users\\damia\\Desktop\\New folder",
-    "ingested_at": "2026-07-01T19:01:25.656402+00:00"
+    "source_root": "vendor/thesis",
+    "ingested_at": "2026-07-13T15:23:36.198399+00:00"
   },
   "emergent_domains_lab": {
     "emergent_domain_count": 29,
@@ -47964,13 +47521,13 @@
     "final_meta_S": 0.32988227338082093,
     "refined_robust_count": 6,
     "source_root": "C:\\Users\\damia\\Desktop\\autonomous_monte_carlo_fsot_refiner",
-    "ingested_at": "2026-07-01T19:01:25.975130+00:00"
+    "ingested_at": "2026-07-13T15:23:36.850256+00:00"
   },
   "math_generator_rules": {
-    "rule_corpus_count": 61,
-    "total_rule_count": 1520,
-    "observable_count": 1520,
-    "source_root": "C:\\Users\\damia\\Desktop\\Math generator",
+    "rule_corpus_count": 62,
+    "total_rule_count": 1552,
+    "observable_count": 1552,
+    "source_root": "vendor/math_generator/rules",
     "corpus_names": [
       "ABSTRACT_ALGEBRA",
       "ADVANCED_ALGEBRA",
@@ -48021,6 +47578,7 @@
       "OPTIMIZATION",
       "PROBABILITY_APPLICATIONS",
       "PROBABILITY",
+      "PROGRAMMING_LANGUAGE",
       "QUANTUM_COMPUTING",
       "REAL_ANALYSIS",
       "ROBOTICS",
@@ -48034,17 +47592,17 @@
       "TOPOLOGY",
       "WOODWORKING_MATH"
     ],
-    "ingested_at": "2026-07-01T19:01:26.310619+00:00"
+    "ingested_at": "2026-07-13T15:23:37.501702+00:00"
   },
   "cosmology_extended_lab": {
     "skeleton_derivation_count": 24,
     "lambda_cdm_count": 30,
     "thesis_cosmology_wave_count": 4,
     "observable_count": 58,
-    "median_error_pct": 0.022,
+    "median_error_pct": 0.021954848848277954,
     "within_five_pct_count": 50,
-    "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
-    "ingested_at": "2026-07-08T19:29:23.031038+00:00"
+    "source_root": "vendor/cosmology/database",
+    "ingested_at": "2026-07-13T15:23:37.829449+00:00"
   },
   "particle_physics_lab": {
     "smiles_particle_count": 36,
@@ -48055,7 +47613,7 @@
     "median_error_pct": 0.014415233331492876,
     "max_error_pct": 0.492528,
     "within_two_pct_count": 52,
-    "ingested_at": "2026-07-10T21:44:20.272956+00:00"
+    "ingested_at": "2026-07-13T15:23:39.113002+00:00"
   },
   "cosmology_higher_waves_lab": {
     "observable_count": 142,
@@ -49215,93 +48773,31 @@
       }
     ],
     "compute_path": "vendor/fsot_compute.py",
-    "ingested_at": "2026-07-10T21:44:20.577276+00:00"
+    "ingested_at": "2026-07-13T15:23:39.816869+00:00"
   },
   "higgs_branching_lab": {
     "compute_higgs_count": 9,
     "thesis_higgs_count": 5,
     "observable_count": 14,
-    "median_error_pct": 0.014721632079759569,
-    "max_error_pct": 0.27079952979037436,
-    "ingested_at": "2026-07-09T03:56:37.654130+00:00"
+    "median_error_pct": 0.08808351263334355,
+    "max_error_pct": 4.232801452006084,
+    "ingested_at": "2026-07-13T15:23:40.798073+00:00"
+  },
+  "higgs_mass_lab": {
+    "rule_id": "FO-213",
+    "observable_count": 9,
+    "median_error_pct": 0.03990518384182655,
+    "computed_gev": 125.20001875723811,
+    "measured_gev": 125.25,
+    "ingested_at": "2026-07-13T15:23:41.458003+00:00"
   },
   "space_weather_lab": {
-    "kp_record_count": 43893,
-    "ap_record_count": 43893,
-    "observable_count": 43893,
-    "stability_match_rate": 0.9999316519718406,
+    "kp_record_count": 271813,
+    "ap_record_count": 271813,
+    "observable_count": 271813,
+    "stability_match_rate": 1.0,
     "fusion_scalar_S": 0.7869745016115727,
-    "ingested_at": "2026-07-03T15:59:39.586909+00:00"
-  },
-  "cosmology_wave5_lab": {
-    "wave": 5,
-    "observable_count": 22,
-    "measured_count": 22,
-    "max_error_pct": 0.09098602506082563,
-    "mean_error_pct": 0.018367234034056677,
-    "median_error_pct": 0.0020773615251059676,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave6_lab": {
-    "wave": 6,
-    "observable_count": 22,
-    "measured_count": 22,
-    "max_error_pct": 0.031298130508454446,
-    "mean_error_pct": 0.0030742870216562625,
-    "median_error_pct": 0.0003441841587202251,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave7_lab": {
-    "wave": 7,
-    "observable_count": 29,
-    "measured_count": 29,
-    "max_error_pct": 0.2980550885153489,
-    "mean_error_pct": 0.026245344277916752,
-    "median_error_pct": 0.003988029700396626,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave8_lab": {
-    "wave": 8,
-    "observable_count": 52,
-    "measured_count": 52,
-    "max_error_pct": 0.35683948712437213,
-    "mean_error_pct": 0.05710104664849845,
-    "median_error_pct": 0.014145689288404753,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave9_lab": {
-    "wave": 9,
-    "observable_count": 7,
-    "measured_count": 7,
-    "max_error_pct": 0.19375824846825943,
-    "mean_error_pct": 0.06422582634391334,
-    "median_error_pct": 0.014278509753575246,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave10_lab": {
-    "wave": 10,
-    "observable_count": 10,
-    "measured_count": 10,
-    "max_error_pct": 0.004079227596853056,
-    "mean_error_pct": 0.0008099828122291297,
-    "median_error_pct": 0.0006556117321513212,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_higher_waves_lab"
-  },
-  "cosmology_wave4_lab": {
-    "wave": 4,
-    "observable_count": 16,
-    "measured_count": 16,
-    "max_error_pct": 0.23468225112121452,
-    "mean_error_pct": 0.03162247159570792,
-    "median_error_pct": 0.011586387979935279,
-    "ingested_at": "2026-07-10T21:44:20.861510+00:00",
-    "parent_lab": "cosmology_wave4"
+    "ingested_at": "2026-07-13T15:23:44.695395+00:00"
   },
   "hydrology_lab": {
     "station_count": 8,
@@ -49309,60 +48805,6 @@
     "observable_count": 960,
     "stability_match_rate": 0.996875,
     "median_error_pct": 0.0,
-    "ingested_at": "2026-07-03T15:59:31.702750+00:00"
-  },
-  "seismology_lab": {
-    "present": true,
-    "record_count": 500,
-    "observable_count": 500,
-    "median_error_pct": 0.0,
-    "stability_match_rate": 0.986,
-    "D_eff": 18,
-    "source": "USGS_FDSN",
-    "ingested_at": "2026-07-08T13:47:01.519062+00:00"
-  },
-  "tectonics_lab": {
-    "present": true,
-    "record_count": 500,
-    "observable_count": 500,
-    "median_error_pct": 0.0,
-    "stability_match_rate": 0.988,
-    "D_eff": 17,
-    "source": "PB2002_plates_USGS_events",
-    "ingested_at": "2026-07-08T13:47:01.520063+00:00"
-  },
-  "geomagnetism_lab": {
-    "present": true,
-    "record_count": 525,
-    "observable_count": 525,
-    "median_error_pct": 0.0,
-    "stability_match_rate": 1.0,
-    "D_eff": 13,
-    "source": "NOAA_SWPC_geomag",
-    "ingested_at": "2026-07-08T13:47:01.521063+00:00"
-  },
-  "cosmology_bubble_bleed_lab": {
-    "mechanism": "bh_wh_outgassing_expansion",
-    "h0_global_fsot": 68.44005682979427,
-    "bubble_bleed_fraction": 0.015431,
-    "blackhole_observable_count": 28,
-    "nebula_count": 20,
-    "frb_count": 32,
-    "h0_sector_count": 6,
-    "observable_count": 58,
-    "nebula_coupling_match_rate": 0.7,
-    "frb_classifier_match_rate": 0.78125,
-    "median_error_pct": 0.0,
-    "max_error_pct": 100.0,
-    "D_eff": 25,
-    "ingested_at": "2026-07-08T20:15:38.854951+00:00"
-  },
-  "higgs_mass_lab": {
-    "rule_id": "FO-213",
-    "observable_count": 2,
-    "median_error_pct": 0.03990518384182655,
-    "computed_gev": 125.20001875723811,
-    "measured_gev": 125.25,
-    "ingested_at": "2026-07-09T03:56:37.890021+00:00"
+    "ingested_at": "2026-07-13T15:23:46.173141+00:00"
   }
 }

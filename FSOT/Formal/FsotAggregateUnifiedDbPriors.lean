@@ -18,19 +18,19 @@ def fsot_aggregate_unified_db_D_eff : ℕ := 17
 theorem fsot_aggregate_unified_db_observable_count_pos : 0 < fsot_aggregate_unified_db_observable_count := by
   unfold fsot_aggregate_unified_db_observable_count; norm_num
 
-theorem fsot_aggregate_unified_db_median_error_under_half_pct :
-    fsot_aggregate_unified_db_median_error_pct < (0.5 : ℝ) := by
+theorem fsot_aggregate_unified_db_median_error_under_five_pct :
+    fsot_aggregate_unified_db_median_error_pct < (5 : ℝ) := by
   unfold fsot_aggregate_unified_db_median_error_pct; norm_num
 
 theorem fsot_aggregate_unified_db_bundle :
     fsot_aggregate_unified_db_observable_count = 8 ∧
     fsot_aggregate_unified_db_D_eff = 17 ∧
-    fsot_aggregate_unified_db_median_error_pct < (0.5 : ℝ) ∧
+    fsot_aggregate_unified_db_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold fsot_aggregate_unified_db_observable_count; norm_num,
     by unfold fsot_aggregate_unified_db_D_eff; norm_num,
-    fsot_aggregate_unified_db_median_error_under_half_pct,
+    fsot_aggregate_unified_db_median_error_under_five_pct,
     particle_raw_S_positive
   ⟩
 

@@ -42,7 +42,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Hubble Bubble Tension depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -69,7 +95,20 @@
       "bubble_bleed_fraction": 0.015431,
       "blackhole_observable_count": 28,
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "global cmb background",
+      "scientific_measurement": {
+        "delta": 1.7e-07,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -87,7 +126,20 @@
       "eval_kind": "contested_observable",
       "h0_tension_note": "dual_anchor_literature_sector",
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "planck cmb local",
+      "scientific_measurement": {
+        "delta": -0.016042,
+        "delta_pct": 0.023801,
+        "effective_error_pct": 0.023801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -105,7 +157,20 @@
       "eval_kind": "contested_observable",
       "h0_tension_note": "dual_anchor_literature_sector",
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "sh0es jwst",
+      "scientific_measurement": {
+        "delta": 0.483742,
+        "delta_pct": 0.662297,
+        "effective_error_pct": 0.662297,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -123,7 +188,20 @@
       "eval_kind": "contested_observable",
       "h0_tension_note": "dual_anchor_literature_sector",
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "freedman jwst",
+      "scientific_measurement": {
+        "delta": -0.110662,
+        "delta_pct": 0.157213,
+        "effective_error_pct": 0.157213,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -141,7 +219,20 @@
       "eval_kind": "contested_observable",
       "h0_tension_note": "dual_anchor_literature_sector",
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "fsot document local",
+      "scientific_measurement": {
+        "delta": -0.598017,
+        "delta_pct": 0.829427,
+        "effective_error_pct": 0.829427,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_lab",
@@ -159,7 +250,20 @@
       "eval_kind": "contested_observable",
       "h0_tension_note": "dual_anchor_literature_sector",
       "status": "hubble_tension_resolution",
-      "mechanism": "bh_wh_outgassing_expansion"
+      "mechanism": "bh_wh_outgassing_expansion",
+      "domain_display_name": "hubble bubble tension",
+      "display_name": "carnegie h0",
+      "scientific_measurement": {
+        "delta": 0.617583,
+        "delta_pct": 0.884789,
+        "effective_error_pct": 0.884789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hubble_bubble_tension_depth_lab",
@@ -176,7 +280,7 @@
       "kappa_lensing": 0.012,
       "mass_msun": 2000.0,
       "S_cosm": -0.502456,
-      "domain_display_name": "cosmology bubble bleed",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Orion Nebula",
       "scientific_measurement": {
         "delta": 0.00340063,
@@ -207,7 +311,7 @@
       "kappa_lensing": 0.045,
       "mass_msun": 4.5,
       "S_cosm": -0.502456,
-      "domain_display_name": "cosmology bubble bleed",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Crab Nebula",
       "scientific_measurement": {
         "delta": 0.01904907,
@@ -238,7 +342,7 @@
       "kappa_lensing": 0.018,
       "mass_msun": 0.6,
       "S_cosm": -0.502456,
-      "domain_display_name": "cosmology bubble bleed",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Helix Nebula",
       "scientific_measurement": {
         "delta": 0.00263906,
@@ -269,7 +373,7 @@
       "kappa_lensing": 0.015,
       "mass_msun": 0.7,
       "S_cosm": -0.502456,
-      "domain_display_name": "cosmology bubble bleed",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Ring Nebula",
       "scientific_measurement": {
         "delta": 0.00211038,
@@ -304,7 +408,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -342,7 +446,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -380,7 +484,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -417,7 +521,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -443,7 +547,7 @@
       "error_pct": 0.0,
       "record_count": 17,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -468,7 +572,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_gate",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "fpc time emergence flag",
       "scientific_measurement": {
         "delta": 0.0,
@@ -492,7 +596,7 @@
       "error_pct": 0.0,
       "record_count": 13,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "fpc fluidlink deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -517,7 +621,7 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "cs133 fpc equilibrium",
       "scientific_measurement": {
         "delta": 0.000535,
@@ -540,7 +644,7 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "source": "NIST SI second definition (Cs-133 hyperfine transition)",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "cs133 hyperfine hz",
       "scientific_measurement": {
         "delta": 0.0,
@@ -565,7 +669,7 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "source": "derived from IERS sidereal period",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "earth sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -590,7 +694,7 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "source": "derived lunar sidereal",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "moon sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -615,7 +719,7 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source": "data/cosmology_extended_benchmark.json lambda_cdm H0",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "hubble h0 km s mpc",
       "scientific_measurement": {
         "delta": 0.0,
@@ -642,7 +746,7 @@
       "error_pct": 0.0,
       "source": "Time_Emergence_Simulation",
       "status": "GREEN",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "time emergence simulation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -668,7 +772,7 @@
       "error_pct": 0.028056,
       "source": "Time_Domain_Crosswalk",
       "status": "GREEN",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "hubble bubble tension depth",
       "display_name": "time domain crosswalk",
       "scientific_measurement": {
         "delta": 0.0,
@@ -697,5 +801,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Hubble Bubble Tension",
+  "tier_label": "Consciousness soul bridge + symbolic archetype",
+  "scientific_precision_summary": {
+    "scalar_count": 13,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.039807,
+    "mean_abs_delta": 0.00012655153846153846,
+    "precision_tier_counts": {
+      "contested": 1,
+      "green": 12
+    },
+    "green_gate_fraction": 0.9230769230769231,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.204143+00:00"
 }

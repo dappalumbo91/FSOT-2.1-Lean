@@ -42,7 +42,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Certified Agent Formal Panel depth",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.01475,
+        "effective_error_pct": 0.01475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "effective_error_pct": 0.01477,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.00252,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.001329,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "fsot compute",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "fsot 3 5 solver",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.01475,
+        "effective_error_pct": 0.01475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "fsot lean",
+      "scientific_measurement": {
+        "delta": 0.000443,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "math generator domains",
+      "scientific_measurement": {
+        "delta": 0.000591,
+        "delta_pct": 0.014775,
+        "effective_error_pct": 0.014775,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "derivations root",
+      "scientific_measurement": {
+        "delta": 0.000738,
+        "delta_pct": 0.01476,
+        "effective_error_pct": 0.01476,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "derivations index",
+      "scientific_measurement": {
+        "delta": 0.000886,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -185,7 +341,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "mathematical key",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.014771,
+        "effective_error_pct": 0.014771,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -197,7 +366,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "agents directive",
+      "scientific_measurement": {
+        "delta": 0.001181,
+        "delta_pct": 0.014763,
+        "effective_error_pct": 0.014763,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_lab",
@@ -209,7 +391,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_certified_agent_qwen_formal"
+      "ingest_source": "desktop_certified_agent_qwen_formal",
+      "domain_display_name": "certified agent formal",
+      "display_name": "cot tools",
+      "scientific_measurement": {
+        "delta": 0.001329,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "certified_agent_formal_panel_depth_lab",
@@ -220,7 +415,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -248,7 +443,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -275,7 +470,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -303,7 +498,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -336,7 +531,8 @@
       },
       "lab": "certified_agent_formal_panel_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "certified agent formal panel depth"
     },
     {
       "lab": "certified_agent_formal_panel_depth_lab",
@@ -349,7 +545,7 @@
       "error_pct": 0.0,
       "fertile": false,
       "intelligence_score": 0.0,
-      "domain_display_name": "fic intelligence compressor",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "S final",
       "scientific_measurement": {
         "delta": 0.0,
@@ -376,7 +572,7 @@
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "functional_core",
       "rule_display_name": "Referential transparency",
-      "domain_display_name": "programming language laws",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "Referential transparency",
       "scientific_measurement": {
         "delta": 0.000148,
@@ -403,7 +599,7 @@
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "memory_safety",
       "rule_display_name": "Rust ownership move semantics",
-      "domain_display_name": "programming language laws",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "Rust ownership move semantics",
       "scientific_measurement": {
         "delta": 0.000148,
@@ -430,7 +626,7 @@
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "scoping",
       "rule_display_name": "Python LEGB name resolution",
-      "domain_display_name": "programming language laws",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "Python LEGB name resolution",
       "scientific_measurement": {
         "delta": 0.000148,
@@ -457,7 +653,7 @@
       "source": "PROGRAMMING_LANGUAGE_RULES.json",
       "category": "object_model",
       "rule_display_name": "JavaScript prototype chain lookup",
-      "domain_display_name": "programming language laws",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "JavaScript prototype chain lookup",
       "scientific_measurement": {
         "delta": 0.000148,
@@ -483,7 +679,7 @@
       "error_pct": 0.0,
       "record_count": 26,
       "eval_kind": "creative_spine_bridge",
-      "domain_display_name": "creative arts spine",
+      "domain_display_name": "certified agent formal panel depth",
       "display_name": "culinary arts",
       "scientific_measurement": {
         "delta": 0.0,
@@ -511,5 +707,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Certified Agent Formal Panel",
+  "tier_label": "Tier 88",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.014767,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.008948655000000002,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.319292+00:00"
 }

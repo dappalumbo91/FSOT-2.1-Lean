@@ -1,0 +1,186 @@
+{
+  "engine": "vendor/fsot_compute.py compute_scalar",
+  "K": 0.4202216641606967,
+  "C_FACTOR_consciousness": 0.28760015181918397,
+  "anchors": {
+    "BMR_W": 100.0,
+    "brain_W": 20.0,
+    "heart_MCG_pT_reference": 50.0,
+    "stargate_program": "CIA/DIA remote viewing (1970s\u20131995); small contested effect sizes",
+    "synesthesia": "documented cross-modal sensory coupling (neuroscience)"
+  },
+  "domain_baselines": {
+    "electromagnetism_D9_S": 0.518866,
+    "biology_D13_S": 0.306113,
+    "neural_waking_D14_S": 0.315713
+  },
+  "mind_states": [
+    {
+      "state": "waking_scattered",
+      "notes": "Ordinary attention; high phase variance proxy",
+      "S": 0.315713,
+      "AC_ratio": 1.0,
+      "CP_proxy": 0.2013,
+      "MDR_proxy": 1.15,
+      "EM_field_scale_vs_rest_pT": 50.0,
+      "max_sustainable_BMR_fraction_est": 0.08
+    },
+    {
+      "state": "alpha_relaxed",
+      "notes": "~8\u201312 Hz relaxed awareness; HRV may begin to cohere",
+      "S": 0.416086,
+      "AC_ratio": 1.3179,
+      "CP_proxy": 0.2445,
+      "MDR_proxy": 0.375,
+      "EM_field_scale_vs_rest_pT": 65.9,
+      "max_sustainable_BMR_fraction_est": 0.1054
+    },
+    {
+      "state": "theta_meditative",
+      "notes": "~4\u20138 Hz deep meditative access",
+      "S": 0.47753,
+      "AC_ratio": 1.5125,
+      "CP_proxy": 0.2588,
+      "MDR_proxy": 0.15,
+      "EM_field_scale_vs_rest_pT": 75.63,
+      "max_sustainable_BMR_fraction_est": 0.121
+    },
+    {
+      "state": "gamma_phase_lock",
+      "notes": "High synchrony / low \u0394\u03c8; long-term meditator gamma reports",
+      "S": 0.581687,
+      "AC_ratio": 1.8425,
+      "CP_proxy": 0.2818,
+      "MDR_proxy": 0.01,
+      "EM_field_scale_vs_rest_pT": 92.12,
+      "max_sustainable_BMR_fraction_est": 0.1474
+    },
+    {
+      "state": "synesthesia_bleed",
+      "notes": "Elevated cross-domain acoustic_bleed (synesthesia analog)",
+      "S": 0.449753,
+      "AC_ratio": 1.4246,
+      "CP_proxy": 0.2531,
+      "MDR_proxy": 0.26,
+      "EM_field_scale_vs_rest_pT": 71.23,
+      "max_sustainable_BMR_fraction_est": 0.114
+    },
+    {
+      "state": "remote_viewing_proxy",
+      "notes": "High coherence + constructive T3 coupling (Stargate-scale claim proxy)",
+      "S": 0.580854,
+      "AC_ratio": 1.8398,
+      "CP_proxy": 0.2732,
+      "MDR_proxy": 0.025,
+      "EM_field_scale_vs_rest_pT": 91.99,
+      "max_sustainable_BMR_fraction_est": 0.1472
+    }
+  ],
+  "debt_simulation_gamma_lock": [
+    {
+      "t": 0,
+      "recent_hits": 0.0,
+      "S": 0.581687
+    },
+    {
+      "t": 1,
+      "recent_hits": 0.028,
+      "S": 0.581686
+    },
+    {
+      "t": 2,
+      "recent_hits": 0.056,
+      "S": 0.581684
+    },
+    {
+      "t": 3,
+      "recent_hits": 0.084,
+      "S": 0.581682
+    },
+    {
+      "t": 4,
+      "recent_hits": 0.112,
+      "S": 0.58168
+    },
+    {
+      "t": 5,
+      "recent_hits": 0.14,
+      "S": 0.581679
+    },
+    {
+      "t": 6,
+      "recent_hits": 0.168,
+      "S": 0.581677
+    },
+    {
+      "t": 7,
+      "recent_hits": 0.196,
+      "S": 0.581675
+    },
+    {
+      "t": 8,
+      "recent_hits": 0.224,
+      "S": 0.581674
+    },
+    {
+      "t": 9,
+      "recent_hits": 0.252,
+      "S": 0.581672
+    },
+    {
+      "t": 10,
+      "recent_hits": 0.28,
+      "S": 0.58167
+    },
+    {
+      "t": 11,
+      "recent_hits": 0.308,
+      "S": 0.581669
+    },
+    {
+      "t": 12,
+      "recent_hits": 0.336,
+      "S": 0.581667
+    },
+    {
+      "t": 13,
+      "recent_hits": 0.364,
+      "S": 0.581665
+    },
+    {
+      "t": 14,
+      "recent_hits": 0.392,
+      "S": 0.581663
+    },
+    {
+      "t": 15,
+      "recent_hits": 0.42,
+      "S": 0.581662
+    },
+    {
+      "t": 16,
+      "recent_hits": 0.448,
+      "S": 0.58166
+    },
+    {
+      "t": 17,
+      "recent_hits": 0.476,
+      "S": 0.581658
+    },
+    {
+      "t": 18,
+      "recent_hits": 0.504,
+      "S": 0.581657
+    },
+    {
+      "t": 19,
+      "recent_hits": 0.532,
+      "S": 0.581655
+    },
+    {
+      "t": 20,
+      "recent_hits": 0.56,
+      "S": 0.581653
+    }
+  ]
+}

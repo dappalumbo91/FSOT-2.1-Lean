@@ -40,7 +40,20 @@
       "computed": 0.01748,
       "measured": 0.0,
       "error_pct": 0.01748,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01748,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.008488,
       "measured": 0.0,
       "error_pct": 0.008488,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "arxiv gw",
+      "scientific_measurement": {
+        "delta": 0.008488,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.021178,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08743v1",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08743v1",
+      "scientific_measurement": {
+        "delta": 0.018266,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08743v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08738v1",
+      "scientific_measurement": {
+        "delta": 8.5e-05,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08738v1",
+      "scientific_measurement": {
+        "delta": 0.021443,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08738v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08737v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08737v1",
+      "scientific_measurement": {
+        "delta": 0.008471,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08737v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08728v1",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08728v1",
+      "scientific_measurement": {
+        "delta": 0.020384,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08728v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08661v1",
+      "scientific_measurement": {
+        "delta": 8.5e-05,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08661v1",
+      "scientific_measurement": {
+        "delta": 0.031767,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08661v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08650v1",
+      "scientific_measurement": {
+        "delta": 0.000509,
+        "delta_pct": 0.008483,
+        "effective_error_pct": 0.008483,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08650v1",
+      "scientific_measurement": {
+        "delta": 0.023031,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08650v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08619v1",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08619v1",
+      "scientific_measurement": {
+        "delta": 0.021707,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08619v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08570v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08570v1",
+      "scientific_measurement": {
+        "delta": 0.015619,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08570v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08482v1",
+      "scientific_measurement": {
+        "delta": 0.00034,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08482v1",
+      "scientific_measurement": {
+        "delta": 0.021972,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08482v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08481v1",
+      "scientific_measurement": {
+        "delta": 8.5e-05,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08481v1",
+      "scientific_measurement": {
+        "delta": 0.020648,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08481v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08466v1",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08466v1",
+      "scientific_measurement": {
+        "delta": 0.024355,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08466v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08445v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08445v1",
+      "scientific_measurement": {
+        "delta": 0.010324,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08445v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08412v1",
+      "scientific_measurement": {
+        "delta": 0.000594,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08412v1",
+      "scientific_measurement": {
+        "delta": 0.03362,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08412v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08343v1",
+      "scientific_measurement": {
+        "delta": 8.5e-05,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08343v1",
+      "scientific_measurement": {
+        "delta": 0.021707,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08343v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08333v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08333v1",
+      "scientific_measurement": {
+        "delta": 0.023825,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08333v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -639,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08280v1",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -651,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08280v1",
+      "scientific_measurement": {
+        "delta": 0.025413,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -663,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08280v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -675,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08258v1",
+      "scientific_measurement": {
+        "delta": 0.000424,
+        "delta_pct": 0.00848,
+        "effective_error_pct": 0.00848,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -687,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08258v1",
+      "scientific_measurement": {
+        "delta": 0.027002,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -699,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08258v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -711,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08228v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -723,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08228v1",
+      "scientific_measurement": {
+        "delta": 0.024619,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -735,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08228v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -747,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08148v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -759,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astrophysics",
       "fsot_scalar": 0.882411,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08148v1",
+      "scientific_measurement": {
+        "delta": 0.033355,
+        "delta_pct": 0.026472,
+        "effective_error_pct": 0.026472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "arxiv_gw_panel_lab",
@@ -771,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "arxiv_grqc_api"
+      "ingest_source": "arxiv_grqc_api",
+      "domain_display_name": "arxiv gw panel",
+      "display_name": "2607.08148v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -785,5 +1591,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Arxiv Gravitational Waves Panel",
+  "tier_label": "Rust f64 obligation replay",
+  "scientific_precision_summary": {
+    "scalar_count": 40,
+    "median_error_pct": 0.026472,
+    "max_error_pct": 0.026473,
+    "mean_abs_delta": 0.09720365,
+    "precision_tier_counts": {
+      "green": 40
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.224464+00:00"
 }

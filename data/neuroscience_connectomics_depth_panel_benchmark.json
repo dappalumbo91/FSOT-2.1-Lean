@@ -42,7 +42,20 @@
       "computed": 0.020119,
       "measured": 0.0,
       "error_pct": 0.0201195,
-      "observable_count": 27
+      "observable_count": 27,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.020119,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.018003,
       "measured": 0.0,
       "error_pct": 0.018003,
-      "observable_count": 27
+      "observable_count": 27,
+      "domain_display_name": "tier gap fill",
+      "display_name": "neuron cohort strata",
+      "scientific_measurement": {
+        "delta": 0.018003,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.027724,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.03669,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00543194,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00016371,
+        "delta_pct": 0.031503,
+        "effective_error_pct": 0.031503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.01697247,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.039966,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.053812,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.00453146,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.00012326,
+        "delta_pct": 0.031482,
+        "effective_error_pct": 0.031482,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.01468415,
+        "delta_pct": 0.018002,
+        "effective_error_pct": 0.018002,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -185,7 +341,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.026284,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -197,7 +366,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.034466,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -209,7 +391,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.00455132,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -221,7 +416,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.00013505,
+        "delta_pct": 0.031428,
+        "effective_error_pct": 0.031428,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -233,7 +441,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.017403,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -245,7 +466,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.20289,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -257,7 +491,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.272172,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -269,7 +516,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.00338399,
+        "delta_pct": 0.015309,
+        "effective_error_pct": 0.015309,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -281,7 +541,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 7.061e-05,
+        "delta_pct": 0.031359,
+        "effective_error_pct": 0.031359,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -293,7 +566,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.01456948,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -305,7 +591,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "held out cohort",
+      "scientific_measurement": {
+        "delta": 0.389758,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -317,7 +616,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "held out cohort",
+      "scientific_measurement": {
+        "delta": 0.00375387,
+        "delta_pct": 0.015309,
+        "effective_error_pct": 0.015309,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -329,7 +641,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "held out cohort",
+      "scientific_measurement": {
+        "delta": 0.00019132,
+        "delta_pct": 0.031527,
+        "effective_error_pct": 0.031527,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -341,7 +666,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "catalog coverage",
+      "scientific_measurement": {
+        "delta": 0.397139,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -353,7 +691,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "catalog coverage",
+      "scientific_measurement": {
+        "delta": 0.12141,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -365,7 +716,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "catalog coverage",
+      "scientific_measurement": {
+        "delta": 0.419822,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neuroscience_connectomics_depth_lab",
@@ -377,7 +741,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_connectomics_depth"
+      "ingest_source": "neuron_cohort_connectomics_depth",
+      "domain_display_name": "neuroscience connectomics depth",
+      "display_name": "324257146",
+      "scientific_measurement": {
+        "delta": 0.00126046,
+        "delta_pct": 0.018,
+        "effective_error_pct": 0.018,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -391,5 +768,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Neuroscience Connectomics Depth Panel",
+  "tier_label": "Tier 87",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.022236,
+    "max_error_pct": 0.031527,
+    "mean_abs_delta": 0.06466986772727272,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.287446+00:00"
 }

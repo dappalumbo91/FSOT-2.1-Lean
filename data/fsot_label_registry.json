@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T14:56:00.912925+00:00",
+  "generated_at": "2026-07-13T17:26:45.554384+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -1963,6 +1963,468 @@
       "tier_label": "Tier 82",
       "lean_module": "FSOT.Formal.ScientificExpansionSpinePriors",
       "D_eff": 18
+    },
+    "Epidemiology_Panel": {
+      "display_name": "Epidemiology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.EpidemiologyPanelPriors",
+      "D_eff": 15
+    },
+    "Virology_Panel": {
+      "display_name": "Virology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.VirologyPanelPriors",
+      "D_eff": 14
+    },
+    "Paleontology_Panel": {
+      "display_name": "Paleontology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.PaleontologyPanelPriors",
+      "D_eff": 18
+    },
+    "Arxiv_Gravitational_Waves_Panel": {
+      "display_name": "Arxiv Gravitational Waves Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.ArxivGravitationalWavesPanelPriors",
+      "D_eff": 21
+    },
+    "Entomology_Panel": {
+      "display_name": "Entomology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.EntomologyPanelPriors",
+      "D_eff": 16
+    },
+    "Mycology_Panel": {
+      "display_name": "Mycology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.MycologyPanelPriors",
+      "D_eff": 15
+    },
+    "Marine_Biology_Panel": {
+      "display_name": "Marine Biology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.MarineBiologyPanelPriors",
+      "D_eff": 17
+    },
+    "Immunology_Panel": {
+      "display_name": "Immunology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.ImmunologyPanelPriors",
+      "D_eff": 13
+    },
+    "Cardiology_Panel": {
+      "display_name": "Cardiology Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.CardiologyPanelPriors",
+      "D_eff": 14
+    },
+    "Robotics_Control_Systems_Panel": {
+      "display_name": "Robotics Control Systems Panel",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.RoboticsControlSystemsPanelPriors",
+      "D_eff": 15
+    },
+    "Scientific_Expansion_Wave2_Spine": {
+      "display_name": "Scientific Expansion Wave2 Spine",
+      "tier": 84,
+      "tier_label": "Rust f64 obligation replay",
+      "lean_module": "FSOT.Formal.ScientificExpansionWave2SpinePriors",
+      "D_eff": 17
+    },
+    "Civil_Engineering_Panel": {
+      "display_name": "Civil Engineering Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.CivilEngineeringPanelPriors",
+      "D_eff": 16
+    },
+    "Mechanical_Engineering_Panel": {
+      "display_name": "Mechanical Engineering Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.MechanicalEngineeringPanelPriors",
+      "D_eff": 16
+    },
+    "Neuroeconomics_Panel": {
+      "display_name": "Neuroeconomics Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.NeuroeconomicsPanelPriors",
+      "D_eff": 16
+    },
+    "Paleoclimate_Panel": {
+      "display_name": "Paleoclimate Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.PaleoclimatePanelPriors",
+      "D_eff": 17
+    },
+    "Speleology_Panel": {
+      "display_name": "Speleology Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.SpeleologyPanelPriors",
+      "D_eff": 16
+    },
+    "Exogeology_Panel": {
+      "display_name": "Exogeology Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.ExogeologyPanelPriors",
+      "D_eff": 20
+    },
+    "History_Panel": {
+      "display_name": "History Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.HistoryPanelPriors",
+      "D_eff": 15
+    },
+    "Law_Policy_Panel": {
+      "display_name": "Law Policy Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.LawPolicyPanelPriors",
+      "D_eff": 17
+    },
+    "Finance_Markets_Panel": {
+      "display_name": "Finance Markets Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.FinanceMarketsPanelPriors",
+      "D_eff": 19
+    },
+    "Supply_Chain_Logistics_Panel": {
+      "display_name": "Supply Chain Logistics Panel",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.SupplyChainLogisticsPanelPriors",
+      "D_eff": 18
+    },
+    "Scientific_Expansion_Wave3_Spine": {
+      "display_name": "Scientific Expansion Wave3 Spine",
+      "tier": 85,
+      "tier_label": "Tier 85",
+      "lean_module": "FSOT.Formal.ScientificExpansionWave3SpinePriors",
+      "D_eff": 17
+    },
+    "Pure_Mathematics_Panel": {
+      "display_name": "Pure Mathematics Panel",
+      "tier": 86,
+      "tier_label": "Tier 86",
+      "lean_module": "FSOT.Formal.PureMathematicsPanelPriors",
+      "D_eff": 18
+    },
+    "Hybrid_FI_Sim_Stratum_Deep_Panel": {
+      "display_name": "Hybrid FI Sim Stratum Deep Panel",
+      "tier": 86,
+      "tier_label": "Tier 86",
+      "lean_module": "FSOT.Formal.HybridFiSimStratumDeepPanelPriors",
+      "D_eff": 18
+    },
+    "Culinary_Fermentation_Maillard_Panel": {
+      "display_name": "Culinary Fermentation Maillard Panel",
+      "tier": 86,
+      "tier_label": "Tier 86",
+      "lean_module": "FSOT.Formal.CulinaryFermentationMaillardPanelPriors",
+      "D_eff": 15
+    },
+    "Materials_Species_Bridge_Live_Panel": {
+      "display_name": "Materials Species Bridge Live Panel",
+      "tier": 86,
+      "tier_label": "Tier 86",
+      "lean_module": "FSOT.Formal.MaterialsSpeciesBridgeLivePanelPriors",
+      "D_eff": 14
+    },
+    "Scientific_Expansion_Depth_Spine": {
+      "display_name": "Scientific Expansion Depth Spine",
+      "tier": 86,
+      "tier_label": "Tier 86",
+      "lean_module": "FSOT.Formal.ScientificExpansionDepthSpinePriors",
+      "D_eff": 17
+    },
+    "Quantum_Computing_Math_Depth_Panel": {
+      "display_name": "Quantum Computing Math Depth Panel",
+      "tier": 87,
+      "tier_label": "Tier 87",
+      "lean_module": "FSOT.Formal.QuantumComputingMathDepthPanelPriors",
+      "D_eff": 19
+    },
+    "Neuroscience_Connectomics_Depth_Panel": {
+      "display_name": "Neuroscience Connectomics Depth Panel",
+      "tier": 87,
+      "tier_label": "Tier 87",
+      "lean_module": "FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors",
+      "D_eff": 18
+    },
+    "Condensed_Matter_Superconductivity_Depth_Panel": {
+      "display_name": "Condensed Matter Superconductivity Depth Panel",
+      "tier": 87,
+      "tier_label": "Tier 87",
+      "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors",
+      "D_eff": 16
+    },
+    "Optics_Interferometry_Depth_Panel": {
+      "display_name": "Optics Interferometry Depth Panel",
+      "tier": 87,
+      "tier_label": "Tier 87",
+      "lean_module": "FSOT.Formal.OpticsInterferometryDepthPanelPriors",
+      "D_eff": 17
+    },
+    "Scientific_Expansion_Depth_Wave2_Spine": {
+      "display_name": "Scientific Expansion Depth Wave2 Spine",
+      "tier": 87,
+      "tier_label": "Tier 87",
+      "lean_module": "FSOT.Formal.ScientificExpansionDepthWave2SpinePriors",
+      "D_eff": 18
+    },
+    "Trinary_Hardware_Live_Panel": {
+      "display_name": "Trinary Hardware Live Panel",
+      "tier": 88,
+      "tier_label": "Tier 88",
+      "lean_module": "FSOT.Formal.TrinaryHardwareLivePanelPriors",
+      "D_eff": 14
+    },
+    "Tokenization_Live_Panel": {
+      "display_name": "Tokenization Live Panel",
+      "tier": 88,
+      "tier_label": "Tier 88",
+      "lean_module": "FSOT.Formal.TokenizationLivePanelPriors",
+      "D_eff": 13
+    },
+    "Living_FSOT_Hardware_Panel": {
+      "display_name": "Living FSOT Hardware Panel",
+      "tier": 88,
+      "tier_label": "Tier 88",
+      "lean_module": "FSOT.Formal.LivingFsotHardwarePanelPriors",
+      "D_eff": 15
+    },
+    "Certified_Agent_Formal_Panel": {
+      "display_name": "Certified Agent Formal Panel",
+      "tier": 88,
+      "tier_label": "Tier 88",
+      "lean_module": "FSOT.Formal.CertifiedAgentFormalPanelPriors",
+      "D_eff": 14
+    },
+    "Desktop_Application_Wiring_Spine": {
+      "display_name": "Desktop Application Wiring Spine",
+      "tier": 88,
+      "tier_label": "Tier 88",
+      "lean_module": "FSOT.Formal.DesktopApplicationWiringSpinePriors",
+      "D_eff": 16
+    },
+    "The_Well_Outcomes_Verification_Panel": {
+      "display_name": "The Well Outcomes Verification Panel",
+      "tier": 89,
+      "tier_label": "Tier 89",
+      "lean_module": "FSOT.Formal.TheWellOutcomesVerificationPanelPriors",
+      "D_eff": 20
+    },
+    "The_Well_Spot_Check_Panel": {
+      "display_name": "The Well Spot Check Panel",
+      "tier": 89,
+      "tier_label": "Tier 89",
+      "lean_module": "FSOT.Formal.TheWellSpotCheckPanelPriors",
+      "D_eff": 18
+    },
+    "The_Well_Verification_Spine": {
+      "display_name": "The Well Verification Spine",
+      "tier": 89,
+      "tier_label": "Tier 89",
+      "lean_module": "FSOT.Formal.TheWellVerificationSpinePriors",
+      "D_eff": 19
+    },
+    "Microtubule_Quantum_Consciousness_Panel": {
+      "display_name": "Microtubule Quantum Consciousness Panel",
+      "tier": 90,
+      "tier_label": "Tier 90",
+      "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors",
+      "D_eff": 17
+    },
+    "Consciousness_Species_Multi_Panel": {
+      "display_name": "Consciousness Species Multi Panel",
+      "tier": 90,
+      "tier_label": "Tier 90",
+      "lean_module": "FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors",
+      "D_eff": 18
+    },
+    "Observer_Effect_Cross_Species_Panel": {
+      "display_name": "Observer Effect Cross Species Panel",
+      "tier": 90,
+      "tier_label": "Tier 90",
+      "lean_module": "FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors",
+      "D_eff": 16
+    },
+    "Consciousness_Expansion_Spine": {
+      "display_name": "Consciousness Expansion Spine",
+      "tier": 90,
+      "tier_label": "Tier 90",
+      "lean_module": "FSOT.Formal.ConsciousnessExpansionSpinePriors",
+      "D_eff": 19
+    },
+    "Nothing_Perfection_Friction_Origin_Panel": {
+      "display_name": "Nothing Perfection Friction Origin Panel",
+      "tier": 91,
+      "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+      "lean_module": "FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors",
+      "D_eff": 22
+    },
+    "Zero_Boundary_Not_Entity_Panel": {
+      "display_name": "Zero Boundary Not Entity Panel",
+      "tier": 91,
+      "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+      "lean_module": "FSOT.Formal.ZeroBoundaryNotEntityPanelPriors",
+      "D_eff": 18
+    },
+    "Overflow_Carry_Emergence_Panel": {
+      "display_name": "Overflow Carry Emergence Panel",
+      "tier": 91,
+      "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+      "lean_module": "FSOT.Formal.OverflowCarryEmergencePanelPriors",
+      "D_eff": 19
+    },
+    "Complexity_Folding_Emergence_Panel": {
+      "display_name": "Complexity Folding Emergence Panel",
+      "tier": 91,
+      "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+      "lean_module": "FSOT.Formal.ComplexityFoldingEmergencePanelPriors",
+      "D_eff": 21
+    },
+    "Foundational_Ontology_Spine": {
+      "display_name": "Foundational Ontology Spine",
+      "tier": 91,
+      "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+      "lean_module": "FSOT.Formal.FoundationalOntologySpinePriors",
+      "D_eff": 22
+    },
+    "Alternate_Base_Mathematics_Explorer_Panel": {
+      "display_name": "Alternate Base Mathematics Explorer Panel",
+      "tier": 92,
+      "tier_label": "Tier 92",
+      "lean_module": "FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors",
+      "D_eff": 17
+    },
+    "Alternate_Base_Mathematics_Spine": {
+      "display_name": "Alternate Base Mathematics Spine",
+      "tier": 92,
+      "tier_label": "Tier 92",
+      "lean_module": "FSOT.Formal.AlternateBaseMathematicsSpinePriors",
+      "D_eff": 18
+    },
+    "Consciousness_Genetics_Species_Panel": {
+      "display_name": "Consciousness Genetics Species Panel",
+      "tier": 93,
+      "tier_label": "Tier 93",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors",
+      "D_eff": 18
+    },
+    "Consciousness_Genetics_Coupling_Panel": {
+      "display_name": "Consciousness Genetics Coupling Panel",
+      "tier": 93,
+      "tier_label": "Tier 93",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors",
+      "D_eff": 17
+    },
+    "Experimental_Base_Mathematics_Panel": {
+      "display_name": "Experimental Base Mathematics Panel",
+      "tier": 93,
+      "tier_label": "Tier 93",
+      "lean_module": "FSOT.Formal.ExperimentalBaseMathematicsPanelPriors",
+      "D_eff": 17
+    },
+    "Tier_93_Dual_Wave_Spine": {
+      "display_name": "Tier 93 Dual Wave Spine",
+      "tier": 93,
+      "tier_label": "Tier 93",
+      "lean_module": "FSOT.Formal.Tier93DualWaveSpinePriors",
+      "D_eff": 19
+    },
+    "Longevity_AnAge_Catalog_Panel": {
+      "display_name": "Longevity AnAge Catalog Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityAnAgeCatalogPanelPriors",
+      "D_eff": 20
+    },
+    "Longevity_Genetic_Mechanics_Panel": {
+      "display_name": "Longevity Genetic Mechanics Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityGeneticMechanicsPanelPriors",
+      "D_eff": 19
+    },
+    "Longevity_Extreme_Species_Panel": {
+      "display_name": "Longevity Extreme Species Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityExtremeSpeciesPanelPriors",
+      "D_eff": 21
+    },
+    "Longevity_MegaDeep_NCBI_Panel": {
+      "display_name": "Longevity MegaDeep NCBI Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityMegaDeepNcbiPanelPriors",
+      "D_eff": 23
+    },
+    "Longevity_Telomere_Repair_Panel": {
+      "display_name": "Longevity Telomere Repair Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityTelomereRepairPanelPriors",
+      "D_eff": 20
+    },
+    "Longevity_Consciousness_Coupling_Panel": {
+      "display_name": "Longevity Consciousness Coupling Panel",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.LongevityConsciousnessCouplingPanelPriors",
+      "D_eff": 24
+    },
+    "Tier_94_Longevity_Spine": {
+      "display_name": "Tier 94 Longevity Spine",
+      "tier": 94,
+      "tier_label": "Tier 94",
+      "lean_module": "FSOT.Formal.Tier94LongevitySpinePriors",
+      "D_eff": 25
+    },
+    "Zebrafish_Cell_Tracking_Panel": {
+      "display_name": "Zebrafish Cell Tracking Panel",
+      "tier": 95,
+      "tier_label": "Tier 95",
+      "lean_module": "FSOT.Formal.ZebrafishCellTrackingPanelPriors",
+      "D_eff": 20
+    },
+    "Zebrafish_Developmental_Mechanics_Panel": {
+      "display_name": "Zebrafish Developmental Mechanics Panel",
+      "tier": 95,
+      "tier_label": "Tier 95",
+      "lean_module": "FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors",
+      "D_eff": 21
+    },
+    "Zebrafish_Longevity_Genetics_Coupling_Panel": {
+      "display_name": "Zebrafish Longevity Genetics Coupling Panel",
+      "tier": 95,
+      "tier_label": "Tier 95",
+      "lean_module": "FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors",
+      "D_eff": 22
+    },
+    "Tier_95_Zebrafish_Spine": {
+      "display_name": "Tier 95 Zebrafish Spine",
+      "tier": 95,
+      "tier_label": "Tier 95",
+      "lean_module": "FSOT.Formal.Tier95ZebrafishSpinePriors",
+      "D_eff": 23
     }
   },
   "math_generator_rules": {

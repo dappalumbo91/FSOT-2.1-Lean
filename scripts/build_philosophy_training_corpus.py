@@ -190,12 +190,38 @@ def build_corpus(manifest_path: Path = MANIFEST, out_path: Path = DEFAULT_OUT) -
     return len(rows)
 
 
+def _merge_founding(out_path: Path) -> int:
+    founding = ROOT / "vendor" / "philosophy_corpus" / "fsot_founding_reconciled.jsonl"
+    if not founding.exists():
+        try:
+            from reconcile_founding_corpus import build_founding_corpus
+            build_founding_corpus()
+        except Exception as exc:
+            print(f"[WARN] founding corpus not built: {exc}")
+            return 0
+    merged = out_path.with_name("fsot_philosophy_full_training.jsonl")
+    count = 0
+    with merged.open("w", encoding="utf-8") as out:
+        for src in (out_path, founding):
+            if not src.exists():
+                continue
+            for line in src.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    out.write(line + "\n")
+                    count += 1
+    print(f"Merged {count} rows -> {merged}")
+    return count
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", type=Path, default=MANIFEST)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--include-founding", action="store_true")
     args = ap.parse_args()
     n = build_corpus(args.manifest, args.out)
+    if args.include_founding:
+        _merge_founding(args.out)
     return 0 if n > 0 else 1
 
 

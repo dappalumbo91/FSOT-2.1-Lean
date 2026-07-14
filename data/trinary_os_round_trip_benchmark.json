@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:14:56.457165+00:00",
+  "generated_at": "2026-07-13T15:23:07.557144+00:00",
   "source": [
     "vendor/trinary_os/isa/fsotb_opcode_registry.json",
     "vendor/trinary_os"
@@ -22,20 +22,7 @@
       "abi_tier": "v1_0",
       "computed": 264,
       "measured": 264,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -43,20 +30,7 @@
       "abi_tier": "v1_0",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -64,20 +38,7 @@
       "abi_tier": "v1_0",
       "computed": 264,
       "measured": 264,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello blob size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -85,20 +46,7 @@
       "abi_tier": "v1_0",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello round trip byte identical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -106,35 +54,14 @@
       "abi_tier": "v1_0",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello mnemonic registry coverage",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "hello_panel_S_hex",
       "computed": "0x3fee69c97260701a",
       "measured": "0x3fee69c97260701a",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "hello panel S hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -142,20 +69,7 @@
       "abi_tier": "v1_1",
       "computed": 312,
       "measured": 312,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -163,20 +77,7 @@
       "abi_tier": "v1_1",
       "computed": 10,
       "measured": 10,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -184,20 +85,7 @@
       "abi_tier": "v1_1",
       "computed": 312,
       "measured": 312,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret blob size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -205,20 +93,7 @@
       "abi_tier": "v1_1",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret round trip byte identical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -226,35 +101,14 @@
       "abi_tier": "v1_1",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret mnemonic registry coverage",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "call_ret_panel_S_hex",
       "computed": "0x3fee69c97260701a",
       "measured": "0x3fee69c97260701a",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "call ret panel S hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -262,20 +116,7 @@
       "abi_tier": "v1_2",
       "computed": 440,
       "measured": 440,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -283,20 +124,7 @@
       "abi_tier": "v1_2",
       "computed": 31,
       "measured": 31,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -304,20 +132,7 @@
       "abi_tier": "v1_2",
       "computed": 440,
       "measured": 440,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join blob size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -325,20 +140,7 @@
       "abi_tier": "v1_2",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join round trip byte identical",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
@@ -346,124 +148,42 @@
       "abi_tier": "v1_2",
       "computed": 1,
       "measured": 1,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join mnemonic registry coverage",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "spawn_join_panel_S_hex",
       "computed": "0x3fee69c97260701a",
       "measured": "0x3fee69c97260701a",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "spawn join panel S hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "seeds_hash_hex",
       "computed": "0xc627292ec4eb3b90",
       "measured": "0xc627292ec4eb3b90",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "seeds hash hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "word_width_trits",
       "computed": 27,
       "measured": 27,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "word width trits",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "num_task_slots",
       "computed": 8,
       "measured": 8,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "num task slots",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_round_trip",
       "property": "opcode_count",
       "computed": 27,
       "measured": 27,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os round trip",
-      "display_name": "opcode count",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     }
-  ],
-  "display_name": "Trinary OS Round Trip",
-  "tier_label": "Airfoil RMSE gas-medium readout (FO-212)",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.679708+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 21,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 21
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }

@@ -40,7 +40,20 @@
       "computed": 0.025572,
       "measured": 0.0,
       "error_pct": 0.025571999999999998,
-      "observable_count": 48
+      "observable_count": 48,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.025572,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.026684,
       "measured": 0.0,
       "error_pct": 0.026684,
-      "observable_count": 48
+      "observable_count": 48,
+      "domain_display_name": "tier gap fill",
+      "display_name": "ncbi gene",
+      "scientific_measurement": {
+        "delta": 0.026684,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "672"
+      "gene_id": "672",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BRCA1",
+      "scientific_measurement": {
+        "delta": 11485.7244,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -77,7 +116,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "672"
+      "gene_id": "672",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BRCA1",
+      "scientific_measurement": {
+        "delta": 0.004158,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -90,7 +142,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "7157"
+      "gene_id": "7157",
+      "domain_display_name": "ncbi gene",
+      "display_name": "TP53",
+      "scientific_measurement": {
+        "delta": 2046.2029,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -103,7 +168,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "7157"
+      "gene_id": "7157",
+      "domain_display_name": "ncbi gene",
+      "display_name": "TP53",
+      "scientific_measurement": {
+        "delta": 0.004158,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -116,7 +194,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5290"
+      "gene_id": "5290",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PIK3CA",
+      "scientific_measurement": {
+        "delta": 47802.99079999,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -129,7 +220,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5290"
+      "gene_id": "5290",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PIK3CA",
+      "scientific_measurement": {
+        "delta": 0.000734,
+        "delta_pct": 0.024467,
+        "effective_error_pct": 0.024467,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -142,7 +246,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "348"
+      "gene_id": "348",
+      "domain_display_name": "ncbi gene",
+      "display_name": "APOE",
+      "scientific_measurement": {
+        "delta": 11982.438,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -155,7 +272,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "348"
+      "gene_id": "348",
+      "domain_display_name": "ncbi gene",
+      "display_name": "APOE",
+      "scientific_measurement": {
+        "delta": 0.004647,
+        "delta_pct": 0.024458,
+        "effective_error_pct": 0.024458,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -168,7 +298,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1956"
+      "gene_id": "1956",
+      "domain_display_name": "ncbi gene",
+      "display_name": "EGFR",
+      "scientific_measurement": {
+        "delta": 14680.9994,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -181,7 +324,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1956"
+      "gene_id": "1956",
+      "domain_display_name": "ncbi gene",
+      "display_name": "EGFR",
+      "scientific_measurement": {
+        "delta": 0.001712,
+        "delta_pct": 0.024457,
+        "effective_error_pct": 0.024457,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -194,7 +350,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "3845"
+      "gene_id": "3845",
+      "domain_display_name": "ncbi gene",
+      "display_name": "KRAS",
+      "scientific_measurement": {
+        "delta": 6725.6417,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -207,7 +376,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "3845"
+      "gene_id": "3845",
+      "domain_display_name": "ncbi gene",
+      "display_name": "KRAS",
+      "scientific_measurement": {
+        "delta": 0.002935,
+        "delta_pct": 0.024458,
+        "effective_error_pct": 0.024458,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -220,7 +402,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2261"
+      "gene_id": "2261",
+      "domain_display_name": "ncbi gene",
+      "display_name": "FGFR3",
+      "scientific_measurement": {
+        "delta": 478.5131,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -233,7 +428,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2261"
+      "gene_id": "2261",
+      "domain_display_name": "ncbi gene",
+      "display_name": "FGFR3",
+      "scientific_measurement": {
+        "delta": 0.000978,
+        "delta_pct": 0.02445,
+        "effective_error_pct": 0.02445,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -246,7 +454,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2064"
+      "gene_id": "2064",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ERBB2",
+      "scientific_measurement": {
+        "delta": 10590.1725,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -259,7 +480,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2064"
+      "gene_id": "2064",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ERBB2",
+      "scientific_measurement": {
+        "delta": 0.004158,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -272,7 +506,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2475"
+      "gene_id": "2475",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MTOR",
+      "scientific_measurement": {
+        "delta": 2963.6121,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -285,7 +532,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2475"
+      "gene_id": "2475",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MTOR",
+      "scientific_measurement": {
+        "delta": 0.000245,
+        "delta_pct": 0.0245,
+        "effective_error_pct": 0.0245,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -298,7 +558,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5594"
+      "gene_id": "5594",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MAPK1",
+      "scientific_measurement": {
+        "delta": 5806.2379,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -311,7 +584,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5594"
+      "gene_id": "5594",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MAPK1",
+      "scientific_measurement": {
+        "delta": 0.005381,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -324,7 +610,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "4609"
+      "gene_id": "4609",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MYC",
+      "scientific_measurement": {
+        "delta": 34084.28489999,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -337,7 +636,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "4609"
+      "gene_id": "4609",
+      "domain_display_name": "ncbi gene",
+      "display_name": "MYC",
+      "scientific_measurement": {
+        "delta": 0.001957,
+        "delta_pct": 0.024463,
+        "effective_error_pct": 0.024463,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -350,7 +662,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "572"
+      "gene_id": "572",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BAD",
+      "scientific_measurement": {
+        "delta": 17149.4396,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -363,7 +688,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "572"
+      "gene_id": "572",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BAD",
+      "scientific_measurement": {
+        "delta": 0.002691,
+        "delta_pct": 0.024464,
+        "effective_error_pct": 0.024464,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -376,7 +714,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "596"
+      "gene_id": "596",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BCL2",
+      "scientific_measurement": {
+        "delta": 16843.5181,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -389,7 +740,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "596"
+      "gene_id": "596",
+      "domain_display_name": "ncbi gene",
+      "display_name": "BCL2",
+      "scientific_measurement": {
+        "delta": 0.004403,
+        "delta_pct": 0.024461,
+        "effective_error_pct": 0.024461,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -402,7 +766,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1499"
+      "gene_id": "1499",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CTNNB1",
+      "scientific_measurement": {
+        "delta": 10993.4698,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -415,7 +792,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1499"
+      "gene_id": "1499",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CTNNB1",
+      "scientific_measurement": {
+        "delta": 0.000734,
+        "delta_pct": 0.024467,
+        "effective_error_pct": 0.024467,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -428,7 +818,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2185"
+      "gene_id": "2185",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PTK2B",
+      "scientific_measurement": {
+        "delta": 7287.3987,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -441,7 +844,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "2185"
+      "gene_id": "2185",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PTK2B",
+      "scientific_measurement": {
+        "delta": 0.001957,
+        "delta_pct": 0.024463,
+        "effective_error_pct": 0.024463,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -454,7 +870,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5243"
+      "gene_id": "5243",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ABCB1",
+      "scientific_measurement": {
+        "delta": 23348.8677,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -467,7 +896,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5243"
+      "gene_id": "5243",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ABCB1",
+      "scientific_measurement": {
+        "delta": 0.001712,
+        "delta_pct": 0.024457,
+        "effective_error_pct": 0.024457,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -480,7 +922,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5727"
+      "gene_id": "5727",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PTCH1",
+      "scientific_measurement": {
+        "delta": 25467.52770001,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -493,7 +948,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "5727"
+      "gene_id": "5727",
+      "domain_display_name": "ncbi gene",
+      "display_name": "PTCH1",
+      "scientific_measurement": {
+        "delta": 0.002201,
+        "delta_pct": 0.024456,
+        "effective_error_pct": 0.024456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -506,7 +974,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1636"
+      "gene_id": "1636",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ACE",
+      "scientific_measurement": {
+        "delta": 16937.9016,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -519,7 +1000,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1636"
+      "gene_id": "1636",
+      "domain_display_name": "ncbi gene",
+      "display_name": "ACE",
+      "scientific_measurement": {
+        "delta": 0.004158,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -532,7 +1026,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1029"
+      "gene_id": "1029",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2A",
+      "scientific_measurement": {
+        "delta": 5861.7649,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -545,7 +1052,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1029"
+      "gene_id": "1029",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2A",
+      "scientific_measurement": {
+        "delta": 0.002201,
+        "delta_pct": 0.024456,
+        "effective_error_pct": 0.024456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -558,7 +1078,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1030"
+      "gene_id": "1030",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2B",
+      "scientific_measurement": {
+        "delta": 5871.1445,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -571,7 +1104,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1030"
+      "gene_id": "1030",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2B",
+      "scientific_measurement": {
+        "delta": 0.002201,
+        "delta_pct": 0.024456,
+        "effective_error_pct": 0.024456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -584,7 +1130,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1031"
+      "gene_id": "1031",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2C",
+      "scientific_measurement": {
+        "delta": 13598.1104,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -597,7 +1156,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1031"
+      "gene_id": "1031",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2C",
+      "scientific_measurement": {
+        "delta": 0.000245,
+        "delta_pct": 0.0245,
+        "effective_error_pct": 0.0245,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -610,7 +1182,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1032"
+      "gene_id": "1032",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2D",
+      "scientific_measurement": {
+        "delta": 2819.5011,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -623,7 +1208,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1032"
+      "gene_id": "1032",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN2D",
+      "scientific_measurement": {
+        "delta": 0.004647,
+        "delta_pct": 0.024458,
+        "effective_error_pct": 0.024458,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -636,7 +1234,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1033"
+      "gene_id": "1033",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN3",
+      "scientific_measurement": {
+        "delta": 14515.0253,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -649,7 +1260,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1033"
+      "gene_id": "1033",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDKN3",
+      "scientific_measurement": {
+        "delta": 0.003424,
+        "delta_pct": 0.024457,
+        "effective_error_pct": 0.024457,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -662,7 +1286,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1034"
+      "gene_id": "1034",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDL1",
+      "scientific_measurement": {
+        "delta": 266835.00440001,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ncbi_gene_lab",
@@ -675,7 +1312,20 @@
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
       "ingest_source": "ncbi_eutils_gene_public",
-      "gene_id": "1034"
+      "gene_id": "1034",
+      "domain_display_name": "ncbi gene",
+      "display_name": "CDL1",
+      "scientific_measurement": {
+        "delta": 0.000734,
+        "delta_pct": 0.024467,
+        "effective_error_pct": 0.024467,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -689,5 +1339,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "NCBI Gene Public Panel",
+  "tier_label": "Tier 81",
+  "scientific_precision_summary": {
+    "scalar_count": 48,
+    "median_error_pct": 0.026684,
+    "max_error_pct": 0.026684,
+    "mean_abs_delta": 12003.657372312498,
+    "precision_tier_counts": {
+      "green": 48
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.019122+00:00"
 }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-08T18:14:48.818514+00:00",
+  "generated_at": "2026-07-13T15:21:15.672150+00:00",
   "verification_tier": "numeric_formula",
-  "kb_corpus_validation_path": "C:\\Users\\damia\\Desktop\\Knowledge base\\export\\full_corpus_math_validation.json",
-  "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
+  "kb_corpus_validation_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\knowledge_base\\export\\full_corpus_math_validation.json",
+  "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\formula_corpus\\by_domain\\strict_empirical.jsonl",
   "per_formula_jsonl": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\knowledge_base_formula_verification.jsonl",
   "kb_catalog": {
     "catalog_formulas_total": 19213,
@@ -20,10 +20,15 @@
   },
   "strict_empirical_bridge": {
     "records_total": 7941,
+    "unique_observables": 1325,
+    "project_triplication_factor": 5.993,
     "matched_count": 7941,
+    "unique_matched_count": 1325,
     "unmatched_count": 0,
     "within_target_2pct": 6921,
+    "unique_within_target_2pct": 1155,
     "within_tolerable_5pct": 7941,
+    "unique_within_tolerable_5pct": 1325,
     "max_error_pct": 4.841504,
     "top_project_count": 3,
     "top_projects": [

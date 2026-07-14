@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-07-12T14:56:20.496941+00:00",
+  "generated_at": "2026-07-13T17:27:16.266333+00:00",
   "version": "1.0",
   "summary": {
-    "extension_domain_count": 274,
-    "green_gate_pass_count": 274,
-    "green_gate_fail_count": 0,
-    "aspiration_scalar_debt_count": 0,
+    "extension_domain_count": 340,
+    "green_gate_pass_count": 339,
+    "green_gate_fail_count": 1,
+    "aspiration_scalar_debt_count": 1,
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
     "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 0
+    "domains_raw_eff_divergence": 1
   },
-  "aspiration_debt": [],
+  "aspiration_debt": [
+    {
+      "domain": "Geomagnetism",
+      "max_scalar_error_pct": 100.0,
+      "max_effective_scalar_error_pct": 100.0,
+      "property": "hp_storm_classifier",
+      "effective_property": "hp_storm_classifier",
+      "pooled_median_error_pct": 0.0,
+      "rounding_ghost_scalar_count": 0,
+      "catalog_crosswalk_scalar_count": 0,
+      "debt_kind": "formula_gap"
+    }
+  ],
   "hubble_headline_channel_gap": null,
   "pushback_avenues": [
     {
@@ -243,10 +255,53 @@
       "pushback_risk": "unconfirmed_prediction"
     }
   ],
-  "high_pushback_domains": [],
+  "high_pushback_domains": [
+    {
+      "domain": "Geomagnetism",
+      "scalar_count": 524,
+      "missing_scientific_measurement": 524,
+      "stumped_missing_uncertainty": 0,
+      "stumped_untagged_contested": 0,
+      "max_scalar_error_pct": 100.0,
+      "max_effective_scalar_error_pct": 100.0,
+      "pooled_median_error_pct": 0.0,
+      "green_gate_pass": false,
+      "raw_eff_divergence_count": 0,
+      "top_raw_eff_divergence": [],
+      "max_pushback_scalar": null
+    }
+  ],
   "missing_uncertainty_domains": [],
-  "raw_eff_divergence_domains": [],
-  "failing_green_gate_domains": [],
+  "raw_eff_divergence_domains": [
+    {
+      "domain": "The_Well_Outcomes_Verification_Panel",
+      "count": 1,
+      "top": {
+        "property": "mean_delta_density",
+        "name": "supernova_explosion_64",
+        "raw_pct": 0.026472,
+        "effective_pct": 0.7710512252843875,
+        "comparison_kind": "display_precision"
+      },
+      "green_gate_pass": true
+    }
+  ],
+  "failing_green_gate_domains": [
+    {
+      "domain": "Geomagnetism",
+      "scalar_count": 524,
+      "missing_scientific_measurement": 524,
+      "stumped_missing_uncertainty": 0,
+      "stumped_untagged_contested": 0,
+      "max_scalar_error_pct": 100.0,
+      "max_effective_scalar_error_pct": 100.0,
+      "pooled_median_error_pct": 0.0,
+      "green_gate_pass": false,
+      "raw_eff_divergence_count": 0,
+      "top_raw_eff_divergence": [],
+      "max_pushback_scalar": null
+    }
+  ],
   "remediation_priority": [
     "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",
     "Tag H0 / dark-sector rows with contested_observable where literature spans >5%",

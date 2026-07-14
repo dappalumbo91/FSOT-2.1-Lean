@@ -43,7 +43,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +65,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Desktop Application Wiring Spine depth",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "computed": 19.0,
       "measured": 19.0,
       "error_pct": 0.0,
-      "eval_kind": "tier88_meta"
+      "eval_kind": "tier88_meta",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "desktop crosswalk",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -73,7 +112,20 @@
       "measured": 0.014767,
       "error_pct": 0.0,
       "record_count": 37,
-      "eval_kind": "tier88_bridge"
+      "eval_kind": "tier88_bridge",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "trinary hardware live panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -83,7 +135,20 @@
       "measured": 1.05,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "tier mild intensity",
+      "scientific_measurement": {
+        "delta": 0.000155,
+        "delta_pct": 0.014762,
+        "effective_error_pct": 0.014762,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -93,7 +158,20 @@
       "measured": 1.15,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "tier moderate intensity",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.014783,
+        "effective_error_pct": 0.014783,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -103,7 +181,20 @@
       "measured": 1.3,
       "error_pct": 0.014767,
       "source_panel": "trinary_hardware_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "tier severe intensity",
+      "scientific_measurement": {
+        "delta": 0.000192,
+        "delta_pct": 0.014769,
+        "effective_error_pct": 0.014769,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -113,7 +204,20 @@
       "measured": 0.031506,
       "error_pct": 0.0,
       "record_count": 9,
-      "eval_kind": "tier88_bridge"
+      "eval_kind": "tier88_bridge",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "tokenization live panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -123,7 +227,20 @@
       "measured": 44.0,
       "error_pct": 0.031506,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "llm phrase and contraction",
+      "scientific_measurement": {
+        "delta": 0.013863,
+        "delta_pct": 0.031507,
+        "effective_error_pct": 0.031507,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -133,7 +250,20 @@
       "measured": 5.0,
       "error_pct": 0.014767,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "llm phrase and contraction",
+      "scientific_measurement": {
+        "delta": 0.000738,
+        "delta_pct": 0.01476,
+        "effective_error_pct": 0.01476,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -143,7 +273,20 @@
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "tokenization_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "llm phrase and contraction",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -153,7 +296,20 @@
       "measured": 0.031506,
       "error_pct": 0.0,
       "record_count": 77,
-      "eval_kind": "tier88_bridge"
+      "eval_kind": "tier88_bridge",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "living fsot hardware panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -163,7 +319,20 @@
       "measured": 0.535282682851862,
       "error_pct": 0.018003,
       "source_panel": "living_fsot_hardware_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "habitat rust",
+      "scientific_measurement": {
+        "delta": 9.632e-05,
+        "delta_pct": 0.017994,
+        "effective_error_pct": 0.017994,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -173,7 +342,20 @@
       "measured": 90.0,
       "error_pct": 0.014767,
       "source_panel": "living_fsot_hardware_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "habitat rust",
+      "scientific_measurement": {
+        "delta": 0.013291,
+        "delta_pct": 0.014768,
+        "effective_error_pct": 0.014768,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -183,7 +365,20 @@
       "measured": 0.9677061561155675,
       "error_pct": 0.031506,
       "source_panel": "living_fsot_hardware_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "elite-g90-0 cognitive",
+      "scientific_measurement": {
+        "delta": 0.00030484,
+        "delta_pct": 0.031502,
+        "effective_error_pct": 0.031502,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -193,7 +388,20 @@
       "measured": 0.014767,
       "error_pct": 0.0,
       "record_count": 13,
-      "eval_kind": "tier88_bridge"
+      "eval_kind": "tier88_bridge",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "certified agent formal panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -203,7 +411,20 @@
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.01475,
+        "effective_error_pct": 0.01475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -213,7 +434,20 @@
       "measured": 10.0,
       "error_pct": 0.014767,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.001477,
+        "delta_pct": 0.01477,
+        "effective_error_pct": 0.01477,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_lab",
@@ -223,7 +457,20 @@
       "measured": 8.0,
       "error_pct": 0.031506,
       "source_panel": "certified_agent_formal_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "desktop application wiring",
+      "display_name": "qwen formal env",
+      "scientific_measurement": {
+        "delta": 0.00252,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "desktop_application_wiring_spine_depth_lab",
@@ -236,7 +483,7 @@
       "error_pct": 0.0,
       "fertile": false,
       "intelligence_score": 0.0,
-      "domain_display_name": "fic intelligence compressor",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "S final",
       "scientific_measurement": {
         "delta": 0.0,
@@ -262,7 +509,7 @@
       "error_pct": 0.0,
       "record_count": 26,
       "eval_kind": "creative_spine_bridge",
-      "domain_display_name": "creative arts spine",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "culinary arts",
       "scientific_measurement": {
         "delta": 0.0,
@@ -288,7 +535,7 @@
       "source_panel": "Creative_Arts_Math_Spine",
       "eval_kind": "creative_relay",
       "section_display_name": "SMILES Lab \u00a71 Foundation",
-      "domain_display_name": "creative arts spine",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "SMILES Lab \u00a71 Foundation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -313,7 +560,7 @@
       "source_panel": "Creative_Arts_Math_Spine",
       "eval_kind": "creative_relay",
       "section_display_name": "SMILES Lab \u00a745 Activation Ea",
-      "domain_display_name": "creative arts spine",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "SMILES Lab \u00a745 Activation Ea",
       "scientific_measurement": {
         "delta": 0.49926098,
@@ -338,7 +585,7 @@
       "source_panel": "Creative_Arts_Math_Spine",
       "eval_kind": "creative_relay",
       "section_display_name": "SMILES Lab \u00a750 Diffusion D",
-      "domain_display_name": "creative arts spine",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "SMILES Lab \u00a750 Diffusion D",
       "scientific_measurement": {
         "delta": -0.00026713,
@@ -362,7 +609,7 @@
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
       "eval_kind": "methodology_anchor",
-      "domain_display_name": "novel game mechanic predictions scaffold",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "90 Hz frame budget",
       "scientific_measurement": {
         "delta": 0.0,
@@ -387,7 +634,7 @@
       "error_pct": 0.0,
       "formula_branch": "term1.coherence_efficiency",
       "eval_kind": "methodology_anchor",
-      "domain_display_name": "novel game mechanic predictions scaffold",
+      "domain_display_name": "desktop application wiring spine depth",
       "display_name": "Motion-to-photon latency target",
       "scientific_measurement": {
         "delta": 0.0,
@@ -415,5 +662,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Desktop Application Wiring Spine",
+  "tier_label": "Tier 88",
+  "scientific_precision_summary": {
+    "scalar_count": 12,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.462279,
+    "mean_abs_delta": 0.041627342500000004,
+    "precision_tier_counts": {
+      "green": 12
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.319292+00:00"
 }

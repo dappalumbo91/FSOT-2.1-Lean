@@ -42,7 +42,20 @@
       "computed": 0.031159,
       "measured": 0.0,
       "error_pct": 0.031159,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.031159,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.031159,
       "measured": 0.0,
       "error_pct": 0.031159,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "The Well Spot Check Panel depth",
+      "scientific_measurement": {
+        "delta": 0.031159,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.001233,
+        "delta_pct": 0.031147,
+        "effective_error_pct": 0.031147,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.030823,
+        "effective_error_pct": 0.030823,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.000338,
+        "delta_pct": 0.031172,
+        "effective_error_pct": 0.031172,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 1.1e-06,
+        "delta_pct": 0.023222,
+        "effective_error_pct": 0.023222,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering inclusions",
+      "scientific_measurement": {
+        "delta": 0.081805,
+        "delta_pct": 0.031159,
+        "effective_error_pct": 0.031159,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering inclusions",
+      "scientific_measurement": {
+        "delta": 3.1e-05,
+        "delta_pct": 0.031255,
+        "effective_error_pct": 0.031255,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering inclusions",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.031157,
+        "effective_error_pct": 0.031157,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering inclusions",
+      "scientific_measurement": {
+        "delta": 9e-07,
+        "delta_pct": 0.026284,
+        "effective_error_pct": 0.026284,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering maze",
+      "scientific_measurement": {
+        "delta": 179.286229,
+        "delta_pct": 0.031159,
+        "effective_error_pct": 0.031159,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering maze",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.034355,
+        "effective_error_pct": 0.034355,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -185,7 +341,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering maze",
+      "scientific_measurement": {
+        "delta": 0.000153,
+        "delta_pct": 0.031132,
+        "effective_error_pct": 0.031132,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_lab",
@@ -197,7 +366,20 @@
       "eval_kind": "spot_fallback",
       "fsot_domain": "Acoustics",
       "fsot_scalar": 0.311591,
-      "ingest_source": "stats_relay"
+      "ingest_source": "stats_relay",
+      "domain_display_name": "the well spot check",
+      "display_name": "acoustic scattering maze",
+      "scientific_measurement": {
+        "delta": -1.2e-07,
+        "delta_pct": 0.15361,
+        "effective_error_pct": 0.15361,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -213,7 +395,20 @@
       "verification_mode": "stats_yaml_aggregate",
       "hf_storage_gb": 162.24,
       "source_panel": "The_Well_Outcomes_Verification_Panel",
-      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.001233,
+        "delta_pct": 0.031147,
+        "effective_error_pct": 0.031147,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -229,7 +424,20 @@
       "verification_mode": "stats_yaml_aggregate",
       "hf_storage_gb": 162.24,
       "source_panel": "The_Well_Outcomes_Verification_Panel",
-      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.030823,
+        "effective_error_pct": 0.030823,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -245,7 +453,20 @@
       "verification_mode": "stats_yaml_aggregate",
       "hf_storage_gb": 162.24,
       "source_panel": "The_Well_Outcomes_Verification_Panel",
-      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 0.000338,
+        "delta_pct": 0.031172,
+        "effective_error_pct": 0.031172,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -261,7 +482,20 @@
       "verification_mode": "stats_yaml_aggregate",
       "hf_storage_gb": 162.24,
       "source_panel": "The_Well_Outcomes_Verification_Panel",
-      "depth_relay_from": "The_Well_Outcomes_Verification_Panel"
+      "depth_relay_from": "The_Well_Outcomes_Verification_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "acoustic scattering discontinuous",
+      "scientific_measurement": {
+        "delta": 1.1e-06,
+        "delta_pct": 0.023222,
+        "effective_error_pct": 0.023222,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -276,7 +510,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.000264,
+        "delta_pct": 0.0264,
+        "effective_error_pct": 0.0264,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -291,7 +538,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.294898,
+        "delta_pct": 0.0291,
+        "effective_error_pct": 0.0291,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -306,7 +566,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.003592,
+        "delta_pct": 0.028283,
+        "effective_error_pct": 0.028283,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -321,7 +594,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "the well spot check panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.077357,
+        "delta_pct": 0.026675,
+        "effective_error_pct": 0.026675,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "the_well_spot_check_panel_depth_lab",
@@ -331,7 +617,7 @@
       "measured": 36.762501,
       "error_pct": 0.017836062884406634,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "the well spot check panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.006557,
@@ -356,7 +642,7 @@
       "measured": -95.543335,
       "error_pct": 0.017836062884411003,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "the well spot check panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": -0.017041,
@@ -381,7 +667,7 @@
       "measured": 312.8,
       "error_pct": 0.01337704716331671,
       "source": "pbdb_age",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "the well spot check panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.041843,
@@ -410,7 +696,7 @@
       "measured_quiet": 0.0,
       "error_pct": 0.0,
       "S_energy": -0.549094,
-      "domain_display_name": "hydrology",
+      "domain_display_name": "the well spot check panel depth",
       "display_name": "01646500:2015-01",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -434,5 +720,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "The Well Spot Check Panel",
+  "tier_label": "Tier 89",
+  "scientific_precision_summary": {
+    "scalar_count": 23,
+    "median_error_pct": 0.030823,
+    "max_error_pct": 0.15361,
+    "mean_abs_delta": 7.817969487826086,
+    "precision_tier_counts": {
+      "green": 23
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.335227+00:00"
 }

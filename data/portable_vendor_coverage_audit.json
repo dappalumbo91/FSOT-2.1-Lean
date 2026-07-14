@@ -1,14 +1,16 @@
 {
-  "generated_at": "2026-07-09T05:01:56.546539+00:00",
-  "extension_domain_count": 70,
-  "bundled_asset_count": 37,
+  "generated_at": "2026-07-13T04:15:38.717365+00:00",
+  "extension_domain_count": 329,
+  "bundled_asset_count": 44,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
-  "missing_bundled_assets": [],
+  "missing_bundled_assets": [
+    "reference_anchors"
+  ],
   "precision_tightening_candidates": [],
   "all_extension_benchmarks_present": true,
-  "all_bundled_assets_present": true,
+  "all_bundled_assets_present": false,
   "domains": [
     {
       "domain": "Plasma_Physics",
@@ -307,6 +309,126 @@
       "lean_module": "FSOT.Formal.IGEMSyntheticBiologyPriors"
     },
     {
+      "domain": "Culinary_Arts",
+      "tier": 33,
+      "benchmark_data": "data/culinary_arts_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_culinary_arts_benchmark.py",
+      "lean_module": "FSOT.Formal.CulinaryArtsPriors"
+    },
+    {
+      "domain": "Pharmacokinetics",
+      "tier": 34,
+      "benchmark_data": "data/pharmacokinetics_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.PharmacokineticsGapFillPriors"
+    },
+    {
+      "domain": "Food_Microbiology",
+      "tier": 34,
+      "benchmark_data": "data/food_microbiology_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.FoodMicrobiologyGapFillPriors"
+    },
+    {
+      "domain": "Agriculture_Agroecology",
+      "tier": 34,
+      "benchmark_data": "data/agriculture_agroecology_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.AgricultureAgroecologyGapFillPriors"
+    },
+    {
+      "domain": "Maillard_Chemistry",
+      "tier": 34,
+      "benchmark_data": "data/maillard_chemistry_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaillardChemistryGapFillPriors"
+    },
+    {
+      "domain": "Econometrics",
+      "tier": 34,
+      "benchmark_data": "data/econometrics_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.EconometricsGapFillPriors"
+    },
+    {
+      "domain": "Sports_Biomechanics",
+      "tier": 34,
+      "benchmark_data": "data/sports_biomechanics_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.SportsBiomechanicsGapFillPriors"
+    },
+    {
+      "domain": "Architecture_Building_Science",
+      "tier": 34,
+      "benchmark_data": "data/architecture_building_science_gap_fill_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.ArchitectureBuildingScienceGapFillPriors"
+    },
+    {
+      "domain": "Geology_Stratigraphy",
+      "tier": 35,
+      "benchmark_data": "data/geology_stratigraphy_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.GeologyStratigraphyExtensionPriors"
+    },
+    {
+      "domain": "Botany",
+      "tier": 35,
+      "benchmark_data": "data/botany_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.BotanyExtensionPriors"
+    },
+    {
+      "domain": "Zoology",
+      "tier": 35,
+      "benchmark_data": "data/zoology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZoologyExtensionPriors"
+    },
+    {
+      "domain": "Clinical_Medicine",
+      "tier": 35,
+      "benchmark_data": "data/clinical_medicine_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.ClinicalMedicineExtensionPriors"
+    },
+    {
+      "domain": "Chemical_Engineering",
+      "tier": 35,
+      "benchmark_data": "data/chemical_engineering_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.ChemicalEngineeringExtensionPriors"
+    },
+    {
+      "domain": "Environmental_Engineering",
+      "tier": 35,
+      "benchmark_data": "data/environmental_engineering_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.EnvironmentalEngineeringExtensionPriors"
+    },
+    {
+      "domain": "Anthropology",
+      "tier": 35,
+      "benchmark_data": "data/anthropology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_d_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.AnthropologyExtensionPriors"
+    },
+    {
       "domain": "Math_Generator_Benchmark_Formula_Eval",
       "tier": 31,
       "benchmark_data": "data/math_generator_benchmark_formula_eval_benchmark.json",
@@ -563,12 +685,1964 @@
       "lean_module": "FSOT.Formal.HvacThermalSystemsPriors"
     },
     {
+      "domain": "Trinary_OS_Tier_E",
+      "tier": 40,
+      "benchmark_data": "data/trinary_os_tier_e_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_trinary_os_tier_e_benchmark.py",
+      "lean_module": "FSOT.Formal.TrinaryOSTierEPriors"
+    },
+    {
       "domain": "Breakthrough_Discoveries_2024_2026",
       "tier": 39,
       "benchmark_data": "data/breakthrough_discoveries_2024_2026_benchmark.json",
       "benchmark_present": true,
       "build_script": "scripts/build_tier39_propulsion_electrical_benchmarks.py",
       "lean_module": "FSOT.Formal.BreakthroughDiscoveries20242026Priors"
+    },
+    {
+      "domain": "Paleontology",
+      "tier": 41,
+      "benchmark_data": "data/paleontology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.PaleontologyExtensionPriors"
+    },
+    {
+      "domain": "Marine_Biology",
+      "tier": 41,
+      "benchmark_data": "data/marine_biology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.MarineBiologyExtensionPriors"
+    },
+    {
+      "domain": "Mycology",
+      "tier": 41,
+      "benchmark_data": "data/mycology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.MycologyExtensionPriors"
+    },
+    {
+      "domain": "Entomology",
+      "tier": 41,
+      "benchmark_data": "data/entomology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.EntomologyExtensionPriors"
+    },
+    {
+      "domain": "Virology",
+      "tier": 41,
+      "benchmark_data": "data/virology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.VirologyExtensionPriors"
+    },
+    {
+      "domain": "Epidemiology",
+      "tier": 41,
+      "benchmark_data": "data/epidemiology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.EpidemiologyExtensionPriors"
+    },
+    {
+      "domain": "Cardiology",
+      "tier": 41,
+      "benchmark_data": "data/cardiology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.CardiologyExtensionPriors"
+    },
+    {
+      "domain": "Civil_Engineering",
+      "tier": 41,
+      "benchmark_data": "data/civil_engineering_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.CivilEngineeringExtensionPriors"
+    },
+    {
+      "domain": "Mechanical_Engineering",
+      "tier": 41,
+      "benchmark_data": "data/mechanical_engineering_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.MechanicalEngineeringExtensionPriors"
+    },
+    {
+      "domain": "Robotics_Control_Systems",
+      "tier": 41,
+      "benchmark_data": "data/robotics_control_systems_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.RoboticsControlSystemsExtensionPriors"
+    },
+    {
+      "domain": "Neuroeconomics",
+      "tier": 41,
+      "benchmark_data": "data/neuroeconomics_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeuroeconomicsExtensionPriors"
+    },
+    {
+      "domain": "Paleoclimate",
+      "tier": 41,
+      "benchmark_data": "data/paleoclimate_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.PaleoclimateExtensionPriors"
+    },
+    {
+      "domain": "Speleology",
+      "tier": 41,
+      "benchmark_data": "data/speleology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.SpeleologyExtensionPriors"
+    },
+    {
+      "domain": "Exogeology",
+      "tier": 41,
+      "benchmark_data": "data/exogeology_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.ExogeologyExtensionPriors"
+    },
+    {
+      "domain": "Pure_Mathematics",
+      "tier": 41,
+      "benchmark_data": "data/pure_mathematics_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.PureMathematicsExtensionPriors"
+    },
+    {
+      "domain": "History",
+      "tier": 41,
+      "benchmark_data": "data/history_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.HistoryExtensionPriors"
+    },
+    {
+      "domain": "Law_Policy",
+      "tier": 41,
+      "benchmark_data": "data/law_policy_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.LawPolicyExtensionPriors"
+    },
+    {
+      "domain": "Finance_Markets",
+      "tier": 41,
+      "benchmark_data": "data/finance_markets_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.FinanceMarketsExtensionPriors"
+    },
+    {
+      "domain": "Supply_Chain_Logistics",
+      "tier": 41,
+      "benchmark_data": "data/supply_chain_logistics_extension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_f_extension_benchmarks.py",
+      "lean_module": "FSOT.Formal.SupplyChainLogisticsExtensionPriors"
+    },
+    {
+      "domain": "Domain_Coupling_Simulation",
+      "tier": 42,
+      "benchmark_data": "data/domain_coupling_simulation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_domain_coupling_simulation.py",
+      "lean_module": "FSOT.Formal.DomainCouplingSimulationPriors"
+    },
+    {
+      "domain": "Formula_Corpus_Closure",
+      "tier": 42,
+      "benchmark_data": "data/formula_corpus_closure_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_formula_corpus_closure_benchmark.py",
+      "lean_module": "FSOT.Formal.FormulaCorpusClosurePriors"
+    },
+    {
+      "domain": "Cryptography_Technology",
+      "tier": 43,
+      "benchmark_data": "data/cryptography_technology_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.CryptographyTechnologyPriors"
+    },
+    {
+      "domain": "Network_Internet_Protocols",
+      "tier": 43,
+      "benchmark_data": "data/network_internet_protocols_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.NetworkInternetProtocolsPriors"
+    },
+    {
+      "domain": "Malware_Threat_Intelligence",
+      "tier": 43,
+      "benchmark_data": "data/malware_threat_intelligence_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.MalwareThreatIntelligencePriors"
+    },
+    {
+      "domain": "Secure_Software_Engineering",
+      "tier": 43,
+      "benchmark_data": "data/secure_software_engineering_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.SecureSoftwareEngineeringPriors"
+    },
+    {
+      "domain": "Code_Genome_Structure",
+      "tier": 43,
+      "benchmark_data": "data/code_genome_structure_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.CodeGenomeStructurePriors"
+    },
+    {
+      "domain": "Zero_Day_Risk_Evaluator",
+      "tier": 43,
+      "benchmark_data": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_h_cybersecurity_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZeroDayRiskEvaluatorPriors"
+    },
+    {
+      "domain": "External_OSS_Code_Genome",
+      "tier": 44,
+      "benchmark_data": "data/external_oss_code_genome_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_i_programming_benchmarks.py",
+      "lean_module": "FSOT.Formal.ExternalOSSCodeGenomePriors"
+    },
+    {
+      "domain": "Programming_Language_Laws",
+      "tier": 44,
+      "benchmark_data": "data/programming_language_laws_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_i_programming_benchmarks.py",
+      "lean_module": "FSOT.Formal.ProgrammingLanguageLawsPriors"
+    },
+    {
+      "domain": "Formula_Branching_Fractal",
+      "tier": 45,
+      "benchmark_data": "data/formula_branching_fractal_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_j_toe_completeness_benchmarks.py",
+      "lean_module": "FSOT.Formal.FormulaBranchingFractalPriors"
+    },
+    {
+      "domain": "Mechanistic_Coupling",
+      "tier": 45,
+      "benchmark_data": "data/mechanistic_coupling_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_j_toe_completeness_benchmarks.py",
+      "lean_module": "FSOT.Formal.MechanisticCouplingPriors"
+    },
+    {
+      "domain": "CVE_Codon_Hole_Falsification",
+      "tier": 45,
+      "benchmark_data": "data/cve_codon_hole_falsification_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_j_toe_completeness_benchmarks.py",
+      "lean_module": "FSOT.Formal.CVECodonHoleFalsificationPriors"
+    },
+    {
+      "domain": "Theory_Completeness_Spine",
+      "tier": 45,
+      "benchmark_data": "data/theory_completeness_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_j_toe_completeness_benchmarks.py",
+      "lean_module": "FSOT.Formal.TheoryCompletenessSpinePriors"
+    },
+    {
+      "domain": "Fractal_Constant_Recursion",
+      "tier": 46,
+      "benchmark_data": "data/fractal_constant_recursion_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.FractalConstantRecursionPriors"
+    },
+    {
+      "domain": "Preregistered_Predictions",
+      "tier": 46,
+      "benchmark_data": "data/preregistered_predictions_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.PreregisteredPredictionsPriors"
+    },
+    {
+      "domain": "Portable_Clone_Verify",
+      "tier": 46,
+      "benchmark_data": "data/portable_clone_verify_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.PortableCloneVerifyPriors"
+    },
+    {
+      "domain": "Observer_Channel_Derivation",
+      "tier": 46,
+      "benchmark_data": "data/observer_channel_derivation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.ObserverChannelDerivationPriors"
+    },
+    {
+      "domain": "Adversarial_Fractal_Break_Tests",
+      "tier": 46,
+      "benchmark_data": "data/adversarial_fractal_break_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.AdversarialFractalBreakPriors"
+    },
+    {
+      "domain": "ToE_Gap_Closure_Spine",
+      "tier": 46,
+      "benchmark_data": "data/toe_gap_closure_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.ToEGapClosureSpinePriors"
+    },
+    {
+      "domain": "Acoustic_Resonance_Materials",
+      "tier": 47,
+      "benchmark_data": "data/acoustic_resonance_materials_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.AcousticResonanceMaterialsPriors"
+    },
+    {
+      "domain": "Chaos_Mediated_Phase_Transitions",
+      "tier": 47,
+      "benchmark_data": "data/chaos_mediated_phase_transitions_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.ChaosMediatedPhaseTransitionsPriors"
+    },
+    {
+      "domain": "Phi_Morphogenetic_Scaling",
+      "tier": 47,
+      "benchmark_data": "data/phi_morphogenetic_scaling_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.PhiMorphogeneticScalingPriors"
+    },
+    {
+      "domain": "Ionospheric_Chemistry_Coupling",
+      "tier": 47,
+      "benchmark_data": "data/ionospheric_chemistry_coupling_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.IonosphericChemistryCouplingPriors"
+    },
+    {
+      "domain": "Energy_AI_Orbital_Bridge",
+      "tier": 47,
+      "benchmark_data": "data/energy_ai_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.EnergyAIOrbitalBridgePriors"
+    },
+    {
+      "domain": "Consciousness_Galactic_Orbital_Bridge",
+      "tier": 47,
+      "benchmark_data": "data/consciousness_galactic_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors"
+    },
+    {
+      "domain": "Energy_Neural_Orbital_Bridge",
+      "tier": 47,
+      "benchmark_data": "data/energy_neural_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.EnergyNeuralOrbitalBridgePriors"
+    },
+    {
+      "domain": "Particle_Neural_Orbital_Bridge",
+      "tier": 47,
+      "benchmark_data": "data/particle_neural_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.ParticleNeuralOrbitalBridgePriors"
+    },
+    {
+      "domain": "Proof_Carrying_Code_Genome",
+      "tier": 47,
+      "benchmark_data": "data/proof_carrying_code_genome_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+      "lean_module": "FSOT.Formal.ProofCarryingCodeGenomePriors"
+    },
+    {
+      "domain": "Domain_Orbital_Predictions",
+      "tier": 48,
+      "benchmark_data": "data/domain_orbital_predictions_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_m_toe_unity_benchmarks.py",
+      "lean_module": "FSOT.Formal.DomainOrbitalPredictionsPriors"
+    },
+    {
+      "domain": "Medical_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "benchmark_data": "data/medical_galactic_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_m_toe_unity_benchmarks.py",
+      "lean_module": "FSOT.Formal.MedicalGalacticOrbitalBridgePriors"
+    },
+    {
+      "domain": "AI_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_m_toe_unity_benchmarks.py",
+      "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors"
+    },
+    {
+      "domain": "Neural_Galactic_Orbital_Bridge",
+      "tier": 48,
+      "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_m_toe_unity_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors"
+    },
+    {
+      "domain": "ToE_Unification_Spine",
+      "tier": 48,
+      "benchmark_data": "data/toe_unification_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_m_toe_unity_benchmarks.py",
+      "lean_module": "FSOT.Formal.ToEUnificationSpinePriors"
+    },
+    {
+      "domain": "Compactification_Ladder",
+      "tier": 49,
+      "benchmark_data": "data/compactification_ladder_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_n_compactification_ladder_benchmarks.py",
+      "lean_module": "FSOT.Formal.CompactificationLadderPriors"
+    },
+    {
+      "domain": "Adjacent_Rung_Coupling",
+      "tier": 49,
+      "benchmark_data": "data/adjacent_rung_coupling_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_n_compactification_ladder_benchmarks.py",
+      "lean_module": "FSOT.Formal.AdjacentRungCouplingPriors"
+    },
+    {
+      "domain": "Fold_Depth_Metrics",
+      "tier": 49,
+      "benchmark_data": "data/fold_depth_metrics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_n_compactification_ladder_benchmarks.py",
+      "lean_module": "FSOT.Formal.FoldDepthMetricsPriors"
+    },
+    {
+      "domain": "Reality_Folding_Spine",
+      "tier": 49,
+      "benchmark_data": "data/reality_folding_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_n_compactification_ladder_benchmarks.py",
+      "lean_module": "FSOT.Formal.RealityFoldingSpinePriors"
+    },
+    {
+      "domain": "Time_Emergence_Simulation",
+      "tier": 50,
+      "benchmark_data": "data/time_emergence_simulation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_o_time_emergence_benchmarks.py",
+      "lean_module": "FSOT.Formal.TimeEmergenceSimulationPriors"
+    },
+    {
+      "domain": "Time_Domain_Crosswalk",
+      "tier": 50,
+      "benchmark_data": "data/time_domain_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_o_time_emergence_benchmarks.py",
+      "lean_module": "FSOT.Formal.TimeDomainCrosswalkPriors"
+    },
+    {
+      "domain": "FPC_Temporal_Coupling",
+      "tier": 50,
+      "benchmark_data": "data/fpc_temporal_coupling_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_o_time_emergence_benchmarks.py",
+      "lean_module": "FSOT.Formal.FPCTemporalCouplingPriors"
+    },
+    {
+      "domain": "Fluid_Phase_Current_Spine",
+      "tier": 50,
+      "benchmark_data": "data/fluid_phase_current_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_o_time_emergence_benchmarks.py",
+      "lean_module": "FSOT.Formal.FluidPhaseCurrentSpinePriors"
+    },
+    {
+      "domain": "Stumped_Observables_Panel",
+      "tier": 51,
+      "benchmark_data": "data/stumped_observables_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_p_stumped_observables_benchmark.py",
+      "lean_module": "FSOT.Formal.StumpedObservablesPanelPriors"
+    },
+    {
+      "domain": "Hubble_Bubble_Tension",
+      "tier": 51,
+      "benchmark_data": "data/hubble_bubble_tension_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_p_stumped_observables_benchmark.py",
+      "lean_module": "FSOT.Formal.HubbleBubbleTensionPriors"
+    },
+    {
+      "domain": "Dark_Sector_Open_Problems",
+      "tier": 51,
+      "benchmark_data": "data/dark_sector_open_problems_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_p_stumped_observables_benchmark.py",
+      "lean_module": "FSOT.Formal.DarkSectorOpenProblemsPriors"
+    },
+    {
+      "domain": "Stumped_Observables_Spine",
+      "tier": 51,
+      "benchmark_data": "data/stumped_observables_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier_p_stumped_observables_benchmark.py",
+      "lean_module": "FSOT.Formal.StumpedObservablesSpinePriors"
+    },
+    {
+      "domain": "Consciousness_Econ",
+      "tier": 51,
+      "benchmark_data": "data/consciousness_econ_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_consciousness_econ_benchmark.py",
+      "lean_module": "FSOT.Formal.ConsciousnessEconPriors"
+    },
+    {
+      "domain": "Dark_Energy_CPL",
+      "tier": 51,
+      "benchmark_data": "data/dark_energy_cpl_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_dark_energy_cpl_benchmark.py",
+      "lean_module": "FSOT.Formal.DarkEnergyCPLPriors"
+    },
+    {
+      "domain": "SH0ES_Refined",
+      "tier": 51,
+      "benchmark_data": "data/sh0es_refined_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_sh0es_refined_benchmark.py",
+      "lean_module": "FSOT.Formal.SH0ESRefinedPriors"
+    },
+    {
+      "domain": "Consciousness_Soul_Bridge",
+      "tier": 51,
+      "benchmark_data": "data/consciousness_soul_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_consciousness_soul_bridge_benchmark.py",
+      "lean_module": "FSOT.Formal.ConsciousnessSoulBridgePriors"
+    },
+    {
+      "domain": "Symbolic_Archetype_Panel",
+      "tier": 51,
+      "benchmark_data": "data/symbolic_archetype_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_symbolic_archetype_panel_benchmark.py",
+      "lean_module": "FSOT.Formal.SymbolicArchetypePanelPriors"
+    },
+    {
+      "domain": "Astrophysical_Structure_Crosswalk",
+      "tier": 52,
+      "benchmark_data": "data/astrophysical_structure_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_astrophysical_structure_crosswalk_benchmark.py",
+      "lean_module": "FSOT.Formal.AstrophysicalStructureCrosswalkPriors"
+    },
+    {
+      "domain": "Stellar_Multiplicity_Catalog",
+      "tier": 53,
+      "benchmark_data": "data/stellar_multiplicity_catalog_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier53_stellar_galactic_benchmarks.py",
+      "lean_module": "FSOT.Formal.StellarMultiplicityCatalogPriors"
+    },
+    {
+      "domain": "Compact_Object_Binary_Events",
+      "tier": 53,
+      "benchmark_data": "data/compact_object_binary_events_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier53_stellar_galactic_benchmarks.py",
+      "lean_module": "FSOT.Formal.CompactObjectBinaryEventsPriors"
+    },
+    {
+      "domain": "Galactic_Structure_Sample",
+      "tier": 53,
+      "benchmark_data": "data/galactic_structure_sample_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier53_stellar_galactic_benchmarks.py",
+      "lean_module": "FSOT.Formal.GalacticStructureSamplePriors"
+    },
+    {
+      "domain": "Solar_System_Structure_Deep",
+      "tier": 54,
+      "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier54_planetary_solar_benchmarks.py",
+      "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors"
+    },
+    {
+      "domain": "Exoplanet_System_Architecture",
+      "tier": 54,
+      "benchmark_data": "data/exoplanet_system_architecture_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier54_planetary_solar_benchmarks.py",
+      "lean_module": "FSOT.Formal.ExoplanetSystemArchitecturePriors"
+    },
+    {
+      "domain": "PubChem_Stability_Panel",
+      "tier": 55,
+      "benchmark_data": "data/pubchem_stability_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier55_chemistry_materials_benchmarks.py",
+      "lean_module": "FSOT.Formal.PubChemStabilityPanelPriors"
+    },
+    {
+      "domain": "Materials_Genome_Crosswalk",
+      "tier": 55,
+      "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier55_chemistry_materials_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors"
+    },
+    {
+      "domain": "UniProt_Structure_Annotations_Deep",
+      "tier": 56,
+      "benchmark_data": "data/uniprot_structure_annotations_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier56_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.UniProtStructureAnnotationsDeepPriors"
+    },
+    {
+      "domain": "IGEM_Parts_Expanded",
+      "tier": 56,
+      "benchmark_data": "data/igem_parts_expanded_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier56_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.IGEMPartsExpandedPriors"
+    },
+    {
+      "domain": "Interdisciplinary_Spine_Crosswalk",
+      "tier": 57,
+      "benchmark_data": "data/interdisciplinary_spine_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier57_interdisciplinary_benchmarks.py",
+      "lean_module": "FSOT.Formal.InterdisciplinarySpineCrosswalkPriors"
+    },
+    {
+      "domain": "Chemical_Structure_Stability_Panel",
+      "tier": 57,
+      "benchmark_data": "data/chemical_structure_stability_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier57_interdisciplinary_benchmarks.py",
+      "lean_module": "FSOT.Formal.ChemicalStructureStabilityPanelPriors"
+    },
+    {
+      "domain": "Published_Fuel_Property_Panel",
+      "tier": 57,
+      "benchmark_data": "data/published_fuel_property_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier57_interdisciplinary_benchmarks.py",
+      "lean_module": "FSOT.Formal.PublishedFuelPropertyPanelPriors"
+    },
+    {
+      "domain": "GWOSC_Live_Event_Deep",
+      "tier": 58,
+      "benchmark_data": "data/gwosc_live_event_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier58_live_catalog_benchmarks.py",
+      "lean_module": "FSOT.Formal.GWOSCLiveEventDeepPriors"
+    },
+    {
+      "domain": "Stellar_Multiplicity_Live_Deep",
+      "tier": 58,
+      "benchmark_data": "data/stellar_multiplicity_live_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier58_live_catalog_benchmarks.py",
+      "lean_module": "FSOT.Formal.StellarMultiplicityLiveDeepPriors"
+    },
+    {
+      "domain": "Material_Property_Verification_Scaffold",
+      "tier": 59,
+      "benchmark_data": "data/material_property_verification_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier59_material_fuel_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialPropertyVerificationScaffoldPriors"
+    },
+    {
+      "domain": "Fuel_Thermochemistry_Public_Anchors",
+      "tier": 59,
+      "benchmark_data": "data/fuel_thermochemistry_public_anchors_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier59_material_fuel_benchmarks.py",
+      "lean_module": "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors"
+    },
+    {
+      "domain": "SIMBAD_Stellar_Identity_Deep",
+      "tier": 60,
+      "benchmark_data": "data/simbad_stellar_identity_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier60_astrometry_benchmarks.py",
+      "lean_module": "FSOT.Formal.SIMBADStellarIdentityDeepPriors"
+    },
+    {
+      "domain": "Gaia_Astrometry_Panel_Deep",
+      "tier": 60,
+      "benchmark_data": "data/gaia_astrometry_panel_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier60_astrometry_benchmarks.py",
+      "lean_module": "FSOT.Formal.GaiaAstrometryPanelDeepPriors"
+    },
+    {
+      "domain": "Music_Harmonics_Public_Panel",
+      "tier": 61,
+      "benchmark_data": "data/music_harmonics_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier61_creative_media_benchmarks.py",
+      "lean_module": "FSOT.Formal.MusicHarmonicsPublicPanelPriors"
+    },
+    {
+      "domain": "XR_Interactive_Media_Math_Scaffold",
+      "tier": 61,
+      "benchmark_data": "data/xr_interactive_media_math_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier61_creative_media_benchmarks.py",
+      "lean_module": "FSOT.Formal.XRInteractiveMediaMathScaffoldPriors"
+    },
+    {
+      "domain": "Creative_Arts_Math_Spine",
+      "tier": 61,
+      "benchmark_data": "data/creative_arts_math_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier61_creative_media_benchmarks.py",
+      "lean_module": "FSOT.Formal.CreativeArtsMathSpinePriors"
+    },
+    {
+      "domain": "WDS_Live_Multiplicity_Deep",
+      "tier": 62,
+      "benchmark_data": "data/wds_live_multiplicity_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier62_astrometry_benchmarks.py",
+      "lean_module": "FSOT.Formal.WDSLiveMultiplicityDeepPriors"
+    },
+    {
+      "domain": "Gaia_DR3_TAP_Deep",
+      "tier": 62,
+      "benchmark_data": "data/gaia_dr3_tap_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier62_astrometry_benchmarks.py",
+      "lean_module": "FSOT.Formal.GaiaDR3TAPDeepPriors"
+    },
+    {
+      "domain": "Preregistered_Predictions_Verification_Scaffold",
+      "tier": 63,
+      "benchmark_data": "data/preregistered_predictions_verification_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier63_prereg_scaffold_benchmarks.py",
+      "lean_module": "FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors"
+    },
+    {
+      "domain": "Information_Theory_Public_Panel",
+      "tier": 64,
+      "benchmark_data": "data/information_theory_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.InformationTheoryPublicPanelPriors"
+    },
+    {
+      "domain": "Network_Science_Public_Panel",
+      "tier": 64,
+      "benchmark_data": "data/network_science_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.NetworkSciencePublicPanelPriors"
+    },
+    {
+      "domain": "Semiconductor_Physics_Public_Panel",
+      "tier": 64,
+      "benchmark_data": "data/semiconductor_physics_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.SemiconductorPhysicsPublicPanelPriors"
+    },
+    {
+      "domain": "Statistical_Mechanics_Public_Panel",
+      "tier": 64,
+      "benchmark_data": "data/statistical_mechanics_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.StatisticalMechanicsPublicPanelPriors"
+    },
+    {
+      "domain": "Biophysics_Public_Panel",
+      "tier": 64,
+      "benchmark_data": "data/biophysics_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.BiophysicsPublicPanelPriors"
+    },
+    {
+      "domain": "Neurolab_Gaps_Math_Spine",
+      "tier": 64,
+      "benchmark_data": "data/neurolab_gaps_math_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier64_neurolab_gaps_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeurolabGapsMathSpinePriors"
+    },
+    {
+      "domain": "Material_In_Silico_Screening_Scaffold",
+      "tier": 65,
+      "benchmark_data": "data/material_in_silico_screening_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier65_prereg_screens_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors"
+    },
+    {
+      "domain": "Fuel_Candidate_Prereg_Scaffold",
+      "tier": 65,
+      "benchmark_data": "data/fuel_candidate_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier65_prereg_screens_benchmarks.py",
+      "lean_module": "FSOT.Formal.FuelCandidatePreregScaffoldPriors"
+    },
+    {
+      "domain": "Interactive_Media_Prereg_Scaffold",
+      "tier": 65,
+      "benchmark_data": "data/interactive_media_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier65_prereg_screens_benchmarks.py",
+      "lean_module": "FSOT.Formal.InteractiveMediaPreregScaffoldPriors"
+    },
+    {
+      "domain": "Quantum_Information",
+      "tier": 66,
+      "benchmark_data": "data/quantum_information_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier66_neurolab_residual_benchmarks.py",
+      "lean_module": "FSOT.Formal.QuantumInformationPriors"
+    },
+    {
+      "domain": "Econophysics",
+      "tier": 66,
+      "benchmark_data": "data/econophysics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier66_neurolab_residual_benchmarks.py",
+      "lean_module": "FSOT.Formal.EconophysicsPriors"
+    },
+    {
+      "domain": "Ecology",
+      "tier": 66,
+      "benchmark_data": "data/ecology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier66_neurolab_residual_benchmarks.py",
+      "lean_module": "FSOT.Formal.EcologyPublicPanelPriors"
+    },
+    {
+      "domain": "Genomic_Sciences",
+      "tier": 66,
+      "benchmark_data": "data/genomic_sciences_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier66_neurolab_residual_benchmarks.py",
+      "lean_module": "FSOT.Formal.GenomicSciencesPriors"
+    },
+    {
+      "domain": "Neurolab_Residual_Math_Spine",
+      "tier": 66,
+      "benchmark_data": "data/neurolab_residual_math_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier66_neurolab_residual_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeurolabResidualMathSpinePriors"
+    },
+    {
+      "domain": "Term3_Acoustic_Bleed_Depth",
+      "tier": 67,
+      "benchmark_data": "data/term3_acoustic_bleed_depth_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier67_formula_precision_benchmarks.py",
+      "lean_module": "FSOT.Formal.Term3AcousticBleedDepthPriors"
+    },
+    {
+      "domain": "Initiation_Transformation_Archetype",
+      "tier": 67,
+      "benchmark_data": "data/initiation_transformation_archetype_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier67_formula_precision_benchmarks.py",
+      "lean_module": "FSOT.Formal.InitiationTransformationArchetypePriors"
+    },
+    {
+      "domain": "Boundary_Partition_Tightening",
+      "tier": 67,
+      "benchmark_data": "data/boundary_partition_tightening_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier67_formula_precision_benchmarks.py",
+      "lean_module": "FSOT.Formal.BoundaryPartitionTighteningPriors"
+    },
+    {
+      "domain": "Formula_Precision_Spine",
+      "tier": 67,
+      "benchmark_data": "data/formula_precision_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier67_formula_precision_benchmarks.py",
+      "lean_module": "FSOT.Formal.FormulaPrecisionSpinePriors"
+    },
+    {
+      "domain": "Materials_Project_Live_Panel",
+      "tier": 68,
+      "benchmark_data": "data/materials_project_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier68_live_ingest_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialsProjectLivePanelPriors"
+    },
+    {
+      "domain": "PubChem_Live_Deep",
+      "tier": 68,
+      "benchmark_data": "data/pubchem_live_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier68_live_ingest_benchmarks.py",
+      "lean_module": "FSOT.Formal.PubChemLiveDeepPriors"
+    },
+    {
+      "domain": "OpenNeuro_Full_Panel",
+      "tier": 68,
+      "benchmark_data": "data/openneuro_full_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier68_live_ingest_benchmarks.py",
+      "lean_module": "FSOT.Formal.OpenNeuroFullPanelPriors"
+    },
+    {
+      "domain": "VizieR_WDS_TAP_Live_Deep",
+      "tier": 68,
+      "benchmark_data": "data/vizier_wds_tap_live_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier68_live_ingest_benchmarks.py",
+      "lean_module": "FSOT.Formal.VizieRWdsTapLiveDeepPriors"
+    },
+    {
+      "domain": "Live_Ingest_Spine",
+      "tier": 68,
+      "benchmark_data": "data/live_ingest_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier68_live_ingest_benchmarks.py",
+      "lean_module": "FSOT.Formal.LiveIngestSpinePriors"
+    },
+    {
+      "domain": "Unified_DB_Candidate_Crosswalk",
+      "tier": 69,
+      "benchmark_data": "data/unified_db_candidate_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier69_unified_db_crosswalk_benchmarks.py",
+      "lean_module": "FSOT.Formal.UnifiedDBCandidateCrosswalkPriors"
+    },
+    {
+      "domain": "FSOT_Aggregate_Organized_Panel",
+      "tier": 69,
+      "benchmark_data": "data/fsot_aggregate_organized_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier69_unified_db_crosswalk_benchmarks.py",
+      "lean_module": "FSOT.Formal.FsotAggregateOrganizedPanelPriors"
+    },
+    {
+      "domain": "Unified_DB_Crosswalk_Spine",
+      "tier": 69,
+      "benchmark_data": "data/unified_db_crosswalk_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier69_unified_db_crosswalk_benchmarks.py",
+      "lean_module": "FSOT.Formal.UnifiedDBCrosswalkSpinePriors"
+    },
+    {
+      "domain": "Proof_Ledger_Closure_Spine",
+      "tier": 70,
+      "benchmark_data": "data/proof_ledger_closure_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier70_toe_claim_hardening_benchmarks.py",
+      "lean_module": "FSOT.Formal.ProofLedgerClosureSpinePriors"
+    },
+    {
+      "domain": "Preregistered_Outcome_Tracking",
+      "tier": 70,
+      "benchmark_data": "data/preregistered_outcome_tracking_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier70_toe_claim_hardening_benchmarks.py",
+      "lean_module": "FSOT.Formal.PreregisteredOutcomeTrackingPriors"
+    },
+    {
+      "domain": "ToE_Claim_Certificate_Bundle",
+      "tier": 70,
+      "benchmark_data": "data/toe_claim_certificate_bundle_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier70_toe_claim_hardening_benchmarks.py",
+      "lean_module": "FSOT.Formal.ToEClaimCertificateBundlePriors"
+    },
+    {
+      "domain": "Fusion_Physics_Public_Panel",
+      "tier": 71,
+      "benchmark_data": "data/fusion_physics_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier71_fusion_lab_benchmarks.py",
+      "lean_module": "FSOT.Formal.FusionPhysicsPublicPanelPriors"
+    },
+    {
+      "domain": "Magnetic_Confinement_Fusion_Panel",
+      "tier": 71,
+      "benchmark_data": "data/magnetic_confinement_fusion_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier71_fusion_lab_benchmarks.py",
+      "lean_module": "FSOT.Formal.MagneticConfinementFusionPanelPriors"
+    },
+    {
+      "domain": "Inertial_Confinement_Fusion_Panel",
+      "tier": 71,
+      "benchmark_data": "data/inertial_confinement_fusion_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier71_fusion_lab_benchmarks.py",
+      "lean_module": "FSOT.Formal.InertialConfinementFusionPanelPriors"
+    },
+    {
+      "domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "tier": 71,
+      "benchmark_data": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier71_fusion_lab_benchmarks.py",
+      "lean_module": "FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors"
+    },
+    {
+      "domain": "Fusion_Lab_Certificate_Spine",
+      "tier": 71,
+      "benchmark_data": "data/fusion_lab_certificate_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier71_fusion_lab_benchmarks.py",
+      "lean_module": "FSOT.Formal.FusionLabCertificateSpinePriors"
+    },
+    {
+      "domain": "Periodic_Table_Public_Panel",
+      "tier": 72,
+      "benchmark_data": "data/periodic_table_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier72_periodic_table_benchmarks.py",
+      "lean_module": "FSOT.Formal.PeriodicTablePublicPanelPriors"
+    },
+    {
+      "domain": "Superheavy_Element_Stability_Panel",
+      "tier": 72,
+      "benchmark_data": "data/superheavy_element_stability_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier72_periodic_table_benchmarks.py",
+      "lean_module": "FSOT.Formal.SuperheavyElementStabilityPanelPriors"
+    },
+    {
+      "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "tier": 72,
+      "benchmark_data": "data/undiscovered_element_candidate_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier72_periodic_table_benchmarks.py",
+      "lean_module": "FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors"
+    },
+    {
+      "domain": "Natural_Formation_Element_Simulation",
+      "tier": 72,
+      "benchmark_data": "data/natural_formation_element_simulation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier72_periodic_table_benchmarks.py",
+      "lean_module": "FSOT.Formal.NaturalFormationElementSimulationPriors"
+    },
+    {
+      "domain": "Periodic_Table_Completion_Spine",
+      "tier": 72,
+      "benchmark_data": "data/periodic_table_completion_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier72_periodic_table_benchmarks.py",
+      "lean_module": "FSOT.Formal.PeriodicTableCompletionSpinePriors"
+    },
+    {
+      "domain": "Heavy_Ion_Lab_Synthesis_Panel",
+      "tier": 73,
+      "benchmark_data": "data/heavy_ion_lab_synthesis_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier73_lab_synthesis_benchmarks.py",
+      "lean_module": "FSOT.Formal.HeavyIonLabSynthesisPanelPriors"
+    },
+    {
+      "domain": "Element_Synthesis_Condition_Scaffold",
+      "tier": 73,
+      "benchmark_data": "data/element_synthesis_condition_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier73_lab_synthesis_benchmarks.py",
+      "lean_module": "FSOT.Formal.ElementSynthesisConditionScaffoldPriors"
+    },
+    {
+      "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "tier": 73,
+      "benchmark_data": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier73_lab_synthesis_benchmarks.py",
+      "lean_module": "FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors"
+    },
+    {
+      "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "tier": 73,
+      "benchmark_data": "data/metamaterial_fluid_design_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier73_lab_synthesis_benchmarks.py",
+      "lean_module": "FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors"
+    },
+    {
+      "domain": "Lab_Synthesis_Metamaterial_Spine",
+      "tier": 73,
+      "benchmark_data": "data/lab_synthesis_metamaterial_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier73_lab_synthesis_benchmarks.py",
+      "lean_module": "FSOT.Formal.LabSynthesisMetamaterialSpinePriors"
+    },
+    {
+      "domain": "Island_Of_Stability_Deep_Panel",
+      "tier": 74,
+      "benchmark_data": "data/island_of_stability_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier74_superheavy_island_benchmarks.py",
+      "lean_module": "FSOT.Formal.IslandOfStabilityDeepPanelPriors"
+    },
+    {
+      "domain": "Z120_Z126_Beam_Synthesis_Panel",
+      "tier": 74,
+      "benchmark_data": "data/z120_z126_beam_synthesis_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier74_superheavy_island_benchmarks.py",
+      "lean_module": "FSOT.Formal.Z120Z126BeamSynthesisPanelPriors"
+    },
+    {
+      "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "tier": 74,
+      "benchmark_data": "data/fusion_decay_chain_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier74_superheavy_island_benchmarks.py",
+      "lean_module": "FSOT.Formal.FusionDecayChainPreregScaffoldPriors"
+    },
+    {
+      "domain": "Superheavy_Island_Emergence_Simulation",
+      "tier": 74,
+      "benchmark_data": "data/superheavy_island_emergence_simulation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier74_superheavy_island_benchmarks.py",
+      "lean_module": "FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors"
+    },
+    {
+      "domain": "Superheavy_Island_Completion_Spine",
+      "tier": 74,
+      "benchmark_data": "data/superheavy_island_completion_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier74_superheavy_island_benchmarks.py",
+      "lean_module": "FSOT.Formal.SuperheavyIslandCompletionSpinePriors"
+    },
+    {
+      "domain": "Distant_Island_Z128_Z132_Deep_Panel",
+      "tier": 75,
+      "benchmark_data": "data/distant_island_z128_z132_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier75_periodic_extension_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors"
+    },
+    {
+      "domain": "Z164_Distant_Island_Prereg_Scaffold",
+      "tier": 75,
+      "benchmark_data": "data/z164_distant_island_prereg_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier75_periodic_extension_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.Z164DistantIslandPreregScaffoldPriors"
+    },
+    {
+      "domain": "Periodic_Extension_Decay_Topology_Scaffold",
+      "tier": 75,
+      "benchmark_data": "data/periodic_extension_decay_topology_scaffold_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier75_periodic_extension_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors"
+    },
+    {
+      "domain": "Distant_Island_Emergence_Simulation",
+      "tier": 75,
+      "benchmark_data": "data/distant_island_emergence_simulation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier75_periodic_extension_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.DistantIslandEmergenceSimulationPriors"
+    },
+    {
+      "domain": "Periodic_Table_Extension_Closure_Spine",
+      "tier": 75,
+      "benchmark_data": "data/periodic_table_extension_closure_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier75_periodic_extension_closure_benchmarks.py",
+      "lean_module": "FSOT.Formal.PeriodicTableExtensionClosureSpinePriors"
+    },
+    {
+      "domain": "Time_Emergence_Deep_Panel",
+      "tier": 76,
+      "benchmark_data": "data/time_emergence_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py",
+      "lean_module": "FSOT.Formal.TimeEmergenceDeepPanelPriors"
+    },
+    {
+      "domain": "FPC_Fluidlink_Timing_Deep_Panel",
+      "tier": 76,
+      "benchmark_data": "data/fpc_fluidlink_timing_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py",
+      "lean_module": "FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors"
+    },
+    {
+      "domain": "Cosmology_Anomaly_Deep_Panel",
+      "tier": 76,
+      "benchmark_data": "data/cosmology_anomaly_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py",
+      "lean_module": "FSOT.Formal.CosmologyAnomalyDeepPanelPriors"
+    },
+    {
+      "domain": "Hubble_Dark_Sector_Crosswalk",
+      "tier": 76,
+      "benchmark_data": "data/hubble_dark_sector_crosswalk_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py",
+      "lean_module": "FSOT.Formal.HubbleDarkSectorCrosswalkPriors"
+    },
+    {
+      "domain": "Fluid_Spacetime_Observable_Spine",
+      "tier": 76,
+      "benchmark_data": "data/fluid_spacetime_observable_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py",
+      "lean_module": "FSOT.Formal.FluidSpacetimeObservableSpinePriors"
+    },
+    {
+      "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "tier": 77,
+      "benchmark_data": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier77_post_tier76_maintenance_benchmarks.py",
+      "lean_module": "FSOT.Formal.HybridFiSimMultiHeroPanelPriors"
+    },
+    {
+      "domain": "Knowledge_Base_Portable_Bundle_Panel",
+      "tier": 77,
+      "benchmark_data": "data/knowledge_base_portable_bundle_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier77_post_tier76_maintenance_benchmarks.py",
+      "lean_module": "FSOT.Formal.KnowledgeBasePortableBundlePanelPriors"
+    },
+    {
+      "domain": "RD_Interval_Tightening_Panel",
+      "tier": 77,
+      "benchmark_data": "data/rd_interval_tightening_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier77_post_tier76_maintenance_benchmarks.py",
+      "lean_module": "FSOT.Formal.RdIntervalTighteningPanelPriors"
+    },
+    {
+      "domain": "Domain_Coupling_Simulation_Refresh_Panel",
+      "tier": 77,
+      "benchmark_data": "data/domain_coupling_simulation_refresh_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier77_post_tier76_maintenance_benchmarks.py",
+      "lean_module": "FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors"
+    },
+    {
+      "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "tier": 77,
+      "benchmark_data": "data/fluid_spacetime_prereg_validation_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier77_post_tier76_maintenance_benchmarks.py",
+      "lean_module": "FSOT.Formal.FluidSpacetimePreregValidationPanelPriors"
+    },
+    {
+      "domain": "Warp_BH_WH_Portal_Panel",
+      "tier": 78,
+      "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_warp_bh_wh_portal_benchmark.py",
+      "lean_module": "FSOT.Formal.WarpBhWhPortalPriors"
+    },
+    {
+      "domain": "PDG_Particle_Properties",
+      "tier": 78,
+      "benchmark_data": "data/pdg_particle_properties_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_reference_anchors_benchmarks.py",
+      "lean_module": "FSOT.Formal.PdgParticlePropertiesPriors"
+    },
+    {
+      "domain": "CRC_Handbook_Properties",
+      "tier": 78,
+      "benchmark_data": "data/crc_handbook_properties_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_reference_anchors_benchmarks.py",
+      "lean_module": "FSOT.Formal.CrcHandbookPropertiesPriors"
+    },
+    {
+      "domain": "NIST_DLMF_Special_Functions",
+      "tier": 78,
+      "benchmark_data": "data/nist_dlmf_special_functions_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_reference_anchors_benchmarks.py",
+      "lean_module": "FSOT.Formal.NistDlmfSpecialFunctionsPriors"
+    },
+    {
+      "domain": "STScI_MAST_Telescope_Panel",
+      "tier": 79,
+      "benchmark_data": "data/stsci_mast_telescope_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier79_telescope_benchmarks.py",
+      "lean_module": "FSOT.Formal.StsciMastTelescopePriors"
+    },
+    {
+      "domain": "NASA_NEO_Feed_Panel",
+      "tier": 80,
+      "benchmark_data": "data/nasa_neo_feed_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.NasaNeoFeedPriors"
+    },
+    {
+      "domain": "NASA_DONKI_Solar_Panel",
+      "tier": 80,
+      "benchmark_data": "data/nasa_donki_solar_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.NasaDonkiSolarPriors"
+    },
+    {
+      "domain": "ClinicalTrials_Medical_Panel",
+      "tier": 80,
+      "benchmark_data": "data/clinicaltrials_medical_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.ClinicaltrialsMedicalPriors"
+    },
+    {
+      "domain": "OSTI_DOE_Science_Panel",
+      "tier": 80,
+      "benchmark_data": "data/osti_doe_science_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.OstiDoeSciencePriors"
+    },
+    {
+      "domain": "UAP_War_Gov_Release_Panel",
+      "tier": 80,
+      "benchmark_data": "data/uap_war_gov_release_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.UapWarGovReleasePriors"
+    },
+    {
+      "domain": "Federal_Science_Registry_Panel",
+      "tier": 80,
+      "benchmark_data": "data/federal_science_registry_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.FederalScienceRegistryPriors"
+    },
+    {
+      "domain": "Government_Open_Data_Spine",
+      "tier": 80,
+      "benchmark_data": "data/government_open_data_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier80_government_open_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.GovernmentOpenDataSpinePriors"
+    },
+    {
+      "domain": "NCBI_Gene_Public_Panel",
+      "tier": 81,
+      "benchmark_data": "data/ncbi_gene_public_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.NcbiGenePublicPriors"
+    },
+    {
+      "domain": "Crossref_Scholarly_Panel",
+      "tier": 81,
+      "benchmark_data": "data/crossref_scholarly_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.CrossrefScholarlyPriors"
+    },
+    {
+      "domain": "iNaturalist_Observation_Panel",
+      "tier": 81,
+      "benchmark_data": "data/inaturalist_observation_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.InaturalistObservationPriors"
+    },
+    {
+      "domain": "NOAA_NDBC_Buoy_Panel",
+      "tier": 81,
+      "benchmark_data": "data/noaa_ndbc_buoy_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.NoaaNdbcBuoyPriors"
+    },
+    {
+      "domain": "Open_Meteo_Live_Panel",
+      "tier": 81,
+      "benchmark_data": "data/open_meteo_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.OpenMeteoLivePriors"
+    },
+    {
+      "domain": "Public_Verifiable_Spine",
+      "tier": 81,
+      "benchmark_data": "data/public_verifiable_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier81_public_verifiable_benchmarks.py",
+      "lean_module": "FSOT.Formal.PublicVerifiableSpinePriors"
+    },
+    {
+      "domain": "Volcanology_Panel",
+      "tier": 82,
+      "benchmark_data": "data/volcanology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.VolcanologyPriors"
+    },
+    {
+      "domain": "Limnology_Panel",
+      "tier": 82,
+      "benchmark_data": "data/limnology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.LimnologyPriors"
+    },
+    {
+      "domain": "Radio_Astronomy_Panel",
+      "tier": 82,
+      "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.RadioAstronomyPriors"
+    },
+    {
+      "domain": "Petrology_Geochemistry_Panel",
+      "tier": 82,
+      "benchmark_data": "data/petrology_geochemistry_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.PetrologyGeochemistryPriors"
+    },
+    {
+      "domain": "Actuarial_Science_Panel",
+      "tier": 82,
+      "benchmark_data": "data/actuarial_science_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ActuarialSciencePriors"
+    },
+    {
+      "domain": "Ethology_Panel",
+      "tier": 82,
+      "benchmark_data": "data/ethology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.EthologyPriors"
+    },
+    {
+      "domain": "Toxicology_Panel",
+      "tier": 82,
+      "benchmark_data": "data/toxicology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ToxicologyPriors"
+    },
+    {
+      "domain": "Soil_Science_Panel",
+      "tier": 82,
+      "benchmark_data": "data/soil_science_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.SoilSciencePriors"
+    },
+    {
+      "domain": "Neutrino_Physics_Panel",
+      "tier": 82,
+      "benchmark_data": "data/neutrino_physics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeutrinoPhysicsPriors"
+    },
+    {
+      "domain": "Cartography_GIS_Panel",
+      "tier": 82,
+      "benchmark_data": "data/cartography_gis_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.CartographyGisPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Spine",
+      "tier": 82,
+      "benchmark_data": "data/scientific_expansion_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier82_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScientificExpansionSpinePriors"
+    },
+    {
+      "domain": "Epidemiology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/epidemiology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.EpidemiologyPanelPriors"
+    },
+    {
+      "domain": "Virology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/virology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.VirologyPanelPriors"
+    },
+    {
+      "domain": "Paleontology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/paleontology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.PaleontologyPanelPriors"
+    },
+    {
+      "domain": "Arxiv_Gravitational_Waves_Panel",
+      "tier": 84,
+      "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ArxivGravitationalWavesPanelPriors"
+    },
+    {
+      "domain": "Entomology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/entomology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.EntomologyPanelPriors"
+    },
+    {
+      "domain": "Mycology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/mycology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MycologyPanelPriors"
+    },
+    {
+      "domain": "Marine_Biology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/marine_biology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MarineBiologyPanelPriors"
+    },
+    {
+      "domain": "Immunology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/immunology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ImmunologyPanelPriors"
+    },
+    {
+      "domain": "Cardiology_Panel",
+      "tier": 84,
+      "benchmark_data": "data/cardiology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.CardiologyPanelPriors"
+    },
+    {
+      "domain": "Robotics_Control_Systems_Panel",
+      "tier": 84,
+      "benchmark_data": "data/robotics_control_systems_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.RoboticsControlSystemsPanelPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Wave2_Spine",
+      "tier": 84,
+      "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier84_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScientificExpansionWave2SpinePriors"
+    },
+    {
+      "domain": "Civil_Engineering_Panel",
+      "tier": 85,
+      "benchmark_data": "data/civil_engineering_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.CivilEngineeringPanelPriors"
+    },
+    {
+      "domain": "Mechanical_Engineering_Panel",
+      "tier": 85,
+      "benchmark_data": "data/mechanical_engineering_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MechanicalEngineeringPanelPriors"
+    },
+    {
+      "domain": "Neuroeconomics_Panel",
+      "tier": 85,
+      "benchmark_data": "data/neuroeconomics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeuroeconomicsPanelPriors"
+    },
+    {
+      "domain": "Paleoclimate_Panel",
+      "tier": 85,
+      "benchmark_data": "data/paleoclimate_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.PaleoclimatePanelPriors"
+    },
+    {
+      "domain": "Speleology_Panel",
+      "tier": 85,
+      "benchmark_data": "data/speleology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.SpeleologyPanelPriors"
+    },
+    {
+      "domain": "Exogeology_Panel",
+      "tier": 85,
+      "benchmark_data": "data/exogeology_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ExogeologyPanelPriors"
+    },
+    {
+      "domain": "History_Panel",
+      "tier": 85,
+      "benchmark_data": "data/history_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.HistoryPanelPriors"
+    },
+    {
+      "domain": "Law_Policy_Panel",
+      "tier": 85,
+      "benchmark_data": "data/law_policy_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.LawPolicyPanelPriors"
+    },
+    {
+      "domain": "Finance_Markets_Panel",
+      "tier": 85,
+      "benchmark_data": "data/finance_markets_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.FinanceMarketsPanelPriors"
+    },
+    {
+      "domain": "Supply_Chain_Logistics_Panel",
+      "tier": 85,
+      "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.SupplyChainLogisticsPanelPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Wave3_Spine",
+      "tier": 85,
+      "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier85_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScientificExpansionWave3SpinePriors"
+    },
+    {
+      "domain": "Pure_Mathematics_Panel",
+      "tier": 86,
+      "benchmark_data": "data/pure_mathematics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.PureMathematicsPanelPriors"
+    },
+    {
+      "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+      "tier": 86,
+      "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.HybridFiSimStratumDeepPanelPriors"
+    },
+    {
+      "domain": "Culinary_Fermentation_Maillard_Panel",
+      "tier": 86,
+      "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.CulinaryFermentationMaillardPanelPriors"
+    },
+    {
+      "domain": "Materials_Species_Bridge_Live_Panel",
+      "tier": 86,
+      "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialsSpeciesBridgeLivePanelPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Depth_Spine",
+      "tier": 86,
+      "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier86_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScientificExpansionDepthSpinePriors"
+    },
+    {
+      "domain": "Quantum_Computing_Math_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.QuantumComputingMathDepthPanelPriors"
+    },
+    {
+      "domain": "Neuroscience_Connectomics_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors"
+    },
+    {
+      "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors"
+    },
+    {
+      "domain": "Optics_Interferometry_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.OpticsInterferometryDepthPanelPriors"
+    },
+    {
+      "domain": "Scientific_Expansion_Depth_Wave2_Spine",
+      "tier": 87,
+      "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScientificExpansionDepthWave2SpinePriors"
+    },
+    {
+      "domain": "Trinary_Hardware_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.TrinaryHardwareLivePanelPriors"
+    },
+    {
+      "domain": "Tokenization_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/tokenization_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.TokenizationLivePanelPriors"
+    },
+    {
+      "domain": "Living_FSOT_Hardware_Panel",
+      "tier": 88,
+      "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.LivingFsotHardwarePanelPriors"
+    },
+    {
+      "domain": "Certified_Agent_Formal_Panel",
+      "tier": 88,
+      "benchmark_data": "data/certified_agent_formal_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.CertifiedAgentFormalPanelPriors"
+    },
+    {
+      "domain": "Desktop_Application_Wiring_Spine",
+      "tier": 88,
+      "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.DesktopApplicationWiringSpinePriors"
+    },
+    {
+      "domain": "The_Well_Outcomes_Verification_Panel",
+      "tier": 89,
+      "benchmark_data": "data/the_well_outcomes_verification_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
+      "lean_module": "FSOT.Formal.TheWellOutcomesVerificationPanelPriors"
+    },
+    {
+      "domain": "The_Well_Spot_Check_Panel",
+      "tier": 89,
+      "benchmark_data": "data/the_well_spot_check_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
+      "lean_module": "FSOT.Formal.TheWellSpotCheckPanelPriors"
+    },
+    {
+      "domain": "The_Well_Verification_Spine",
+      "tier": 89,
+      "benchmark_data": "data/the_well_verification_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier89_the_well_benchmarks.py",
+      "lean_module": "FSOT.Formal.TheWellVerificationSpinePriors"
+    },
+    {
+      "domain": "Microtubule_Quantum_Consciousness_Panel",
+      "tier": 90,
+      "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors"
+    },
+    {
+      "domain": "Consciousness_Species_Multi_Panel",
+      "tier": 90,
+      "benchmark_data": "data/consciousness_species_multi_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors"
+    },
+    {
+      "domain": "Observer_Effect_Cross_Species_Panel",
+      "tier": 90,
+      "benchmark_data": "data/observer_effect_cross_species_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ObserverEffectCrossSpeciesPanelPriors"
+    },
+    {
+      "domain": "Consciousness_Expansion_Spine",
+      "tier": 90,
+      "benchmark_data": "data/consciousness_expansion_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier90_consciousness_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.ConsciousnessExpansionSpinePriors"
+    },
+    {
+      "domain": "Nothing_Perfection_Friction_Origin_Panel",
+      "tier": 91,
+      "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "lean_module": "FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors"
+    },
+    {
+      "domain": "Zero_Boundary_Not_Entity_Panel",
+      "tier": 91,
+      "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZeroBoundaryNotEntityPanelPriors"
+    },
+    {
+      "domain": "Overflow_Carry_Emergence_Panel",
+      "tier": 91,
+      "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "lean_module": "FSOT.Formal.OverflowCarryEmergencePanelPriors"
+    },
+    {
+      "domain": "Complexity_Folding_Emergence_Panel",
+      "tier": 91,
+      "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "lean_module": "FSOT.Formal.ComplexityFoldingEmergencePanelPriors"
+    },
+    {
+      "domain": "Foundational_Ontology_Spine",
+      "tier": 91,
+      "benchmark_data": "data/foundational_ontology_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier91_foundational_ontology_benchmarks.py",
+      "lean_module": "FSOT.Formal.FoundationalOntologySpinePriors"
+    },
+    {
+      "domain": "Alternate_Base_Mathematics_Explorer_Panel",
+      "tier": 92,
+      "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
+      "lean_module": "FSOT.Formal.AlternateBaseMathematicsExplorerPanelPriors"
+    },
+    {
+      "domain": "Alternate_Base_Mathematics_Spine",
+      "tier": 92,
+      "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier92_alternate_base_mathematics_benchmarks.py",
+      "lean_module": "FSOT.Formal.AlternateBaseMathematicsSpinePriors"
+    },
+    {
+      "domain": "Consciousness_Genetics_Species_Panel",
+      "tier": 93,
+      "benchmark_data": "data/consciousness_genetics_species_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors"
+    },
+    {
+      "domain": "Consciousness_Genetics_Coupling_Panel",
+      "tier": 93,
+      "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
+      "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors"
+    },
+    {
+      "domain": "Experimental_Base_Mathematics_Panel",
+      "tier": 93,
+      "benchmark_data": "data/experimental_base_mathematics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
+      "lean_module": "FSOT.Formal.ExperimentalBaseMathematicsPanelPriors"
+    },
+    {
+      "domain": "Tier_93_Dual_Wave_Spine",
+      "tier": 93,
+      "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
+      "lean_module": "FSOT.Formal.Tier93DualWaveSpinePriors"
     }
   ],
   "bundled_assets": [
@@ -620,6 +2694,16 @@
     {
       "asset": "igem_parts_registry",
       "path": "vendor/igem/igem_parts_registry.json",
+      "present": true
+    },
+    {
+      "asset": "reference_anchors",
+      "path": "vendor/reference_anchors",
+      "present": false
+    },
+    {
+      "asset": "knowledge_base_portable",
+      "path": "vendor/knowledge_base/kb_portable_summary.json",
       "present": true
     },
     {
@@ -753,8 +2837,33 @@
       "present": true
     },
     {
+      "asset": "cybersecurity_public_data",
+      "path": "vendor/cybersecurity",
+      "present": true
+    },
+    {
+      "asset": "space_weather_full_arc",
+      "path": "data/space_weather_summary_benchmark.json",
+      "present": true
+    },
+    {
+      "asset": "cross_scale_bridges",
+      "path": "data/orbital_bridge_scientific_framing.yaml",
+      "present": true
+    },
+    {
+      "asset": "compactification_ladder",
+      "path": "data/compactification_ladder_manifest.yaml",
+      "present": true
+    },
+    {
       "asset": "evolution_best_organism",
       "path": "vendor/evolution/best_evolved_organism.json",
+      "present": true
+    },
+    {
+      "asset": "stellar_structures_catalog",
+      "path": "vendor/stellar_structures/public_multiplicity_catalog.json",
       "present": true
     }
   ]

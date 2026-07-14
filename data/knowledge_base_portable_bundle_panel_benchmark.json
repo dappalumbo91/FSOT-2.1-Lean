@@ -43,7 +43,20 @@
       "computed": 0.002092,
       "measured": 0.0,
       "error_pct": 0.0020923899350648867,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002092,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +65,20 @@
       "computed": 0.008381,
       "measured": 0.0,
       "error_pct": 0.008381497018412922,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Knowledge Base Portable Bundle Panel depth",
+      "scientific_measurement": {
+        "delta": 0.008381,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -351,7 +377,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -379,7 +405,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -406,7 +432,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -434,7 +460,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -467,7 +493,8 @@
       },
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "knowledge base portable bundle panel depth"
     },
     {
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
@@ -482,7 +509,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "knowledge base portable bundle panel depth",
+      "display_name": "18-100754-general-1946-7-vol-2",
+      "scientific_measurement": {
+        "delta": 0.000543,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
@@ -497,7 +537,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "knowledge base portable bundle panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
@@ -512,7 +565,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "knowledge base portable bundle panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.0107048,
+        "delta_pct": 0.027454,
+        "effective_error_pct": 0.027454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
@@ -527,7 +593,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "knowledge base portable bundle panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": -0.022534,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "knowledge_base_portable_bundle_panel_depth_lab",
@@ -538,7 +617,7 @@
       "error_pct": 0.03801653760497784,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.00249,
@@ -564,7 +643,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "knowledge base portable bundle panel depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -593,5 +672,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Knowledge Base Portable Bundle Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 16,
+    "median_error_pct": 0.004185,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.010392386,
+    "precision_tier_counts": {
+      "green": 16
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.808063+00:00"
 }

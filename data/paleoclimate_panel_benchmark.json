@@ -41,7 +41,20 @@
       "computed": 0.006006,
       "measured": 0.0,
       "error_pct": 0.006006,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.006006,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.006006,
       "measured": 0.0,
       "error_pct": 0.006006,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "paleoclimate",
+      "scientific_measurement": {
+        "delta": 0.006006,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "vostok co2 lgm",
+      "scientific_measurement": {
+        "delta": 0.010811,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -76,7 +115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "vostok co2 preindustrial",
+      "scientific_measurement": {
+        "delta": 0.016818,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -88,7 +140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "epica dome c co2 holocene",
+      "scientific_measurement": {
+        "delta": 0.015616,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -100,7 +165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "eemian temp anomaly",
+      "scientific_measurement": {
+        "delta": 9e-05,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -112,7 +190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "lgm temp anomaly",
+      "scientific_measurement": {
+        "delta": -0.0003,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -124,7 +215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "holocene optimum anomaly",
+      "scientific_measurement": {
+        "delta": 3e-05,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -136,7 +240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "younger dryas anomaly",
+      "scientific_measurement": {
+        "delta": -0.00018,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -148,7 +265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "petm co2 spike",
+      "scientific_measurement": {
+        "delta": 0.060063,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -160,7 +290,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "petm temp spike",
+      "scientific_measurement": {
+        "delta": 0.0003,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -172,7 +315,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "mwp temp anomaly",
+      "scientific_measurement": {
+        "delta": 1.8e-05,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -184,7 +340,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "littl age anomaly",
+      "scientific_measurement": {
+        "delta": -3e-05,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -196,7 +365,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "greenland ice core d18o",
+      "scientific_measurement": {
+        "delta": -0.002102,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -208,7 +390,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "antarctic ice core d18o",
+      "scientific_measurement": {
+        "delta": -0.002403,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -220,7 +415,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "sea level lgm",
+      "scientific_measurement": {
+        "delta": -0.007208,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -232,7 +440,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "sea level eemian",
+      "scientific_measurement": {
+        "delta": 0.00036,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -244,7 +465,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "methane lgm ppb",
+      "scientific_measurement": {
+        "delta": 0.021022,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -256,7 +490,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "methane preindustrial ppb",
+      "scientific_measurement": {
+        "delta": 0.042044,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -268,7 +515,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "dust lgm factor",
+      "scientific_measurement": {
+        "delta": 0.001502,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -280,7 +540,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "ocean sst lgm anomaly",
+      "scientific_measurement": {
+        "delta": -0.00015,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "paleoclimate_panel_lab",
@@ -292,7 +565,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "paleoclimate_reference_bundled"
+      "ingest_source": "paleoclimate_reference_bundled",
+      "domain_display_name": "paleoclimate panel",
+      "display_name": "orbital forcing insolation",
+      "scientific_measurement": {
+        "delta": 0.027029,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -306,5 +592,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Paleoclimate Panel",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.006006,
+    "max_error_pct": 0.006008,
+    "mean_abs_delta": 0.010403800000000001,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.249972+00:00"
 }

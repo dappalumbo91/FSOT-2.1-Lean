@@ -44,7 +44,20 @@
       "computed": 0.021118,
       "measured": 0.0,
       "error_pct": 0.021117999999999998,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.021118,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +66,20 @@
       "computed": 5e-05,
       "measured": 0.0,
       "error_pct": 5e-05,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "FPC Fluidlink Timing Deep Panel depth",
+      "scientific_measurement": {
+        "delta": 5e-05,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -362,7 +388,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -400,7 +426,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -438,7 +464,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -475,7 +501,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -501,7 +527,7 @@
       "error_pct": 0.0,
       "record_count": 17,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -526,7 +552,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_gate",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "fpc time emergence flag",
       "scientific_measurement": {
         "delta": 0.0,
@@ -550,7 +576,7 @@
       "error_pct": 0.0,
       "record_count": 13,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "fpc fluidlink deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -575,7 +601,7 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "cs133 fpc equilibrium",
       "scientific_measurement": {
         "delta": 0.000535,
@@ -598,7 +624,7 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "source": "NIST SI second definition (Cs-133 hyperfine transition)",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "cs133 hyperfine hz",
       "scientific_measurement": {
         "delta": 0.0,
@@ -623,7 +649,7 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "source": "derived from IERS sidereal period",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "earth sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -648,7 +674,7 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "source": "derived lunar sidereal",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc fluidlink timing deep panel depth",
       "display_name": "moon sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -677,5 +703,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "FPC Fluidlink Timing Deep Panel",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 16,
+    "median_error_pct": 0.0222,
+    "max_error_pct": 0.039807,
+    "mean_abs_delta": 0.00021774999999999998,
+    "precision_tier_counts": {
+      "green": 16
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.794853+00:00"
 }

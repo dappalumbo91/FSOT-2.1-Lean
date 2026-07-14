@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def openalex_citation_graph_observable_count : ℕ := 200
+def openalex_citation_graph_observable_count : ℕ := 80
 def openalex_citation_graph_median_error_pct : ℝ := (0.031506 : ℝ)
 def openalex_citation_graph_D_eff : ℕ := 18
 
@@ -23,7 +23,7 @@ theorem openalex_citation_graph_median_error_under_five_pct :
   unfold openalex_citation_graph_median_error_pct; norm_num
 
 theorem openalex_citation_graph_bundle :
-    openalex_citation_graph_observable_count = 200 ∧
+    openalex_citation_graph_observable_count = 80 ∧
     openalex_citation_graph_D_eff = 18 ∧
     openalex_citation_graph_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "consciousness") > 0 := by

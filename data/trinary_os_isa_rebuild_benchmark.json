@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:14:55.843988+00:00",
+  "generated_at": "2026-07-13T15:23:04.749503+00:00",
   "source": [
     "vendor/trinary_os/isa/fsotb_opcode_registry.json",
     "vendor/trinary_os"
@@ -23,20 +23,7 @@
       "abi_tier": "v1_0",
       "computed": 264,
       "measured": 264,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "hello file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -44,20 +31,7 @@
       "abi_tier": "v1_0",
       "computed": 2,
       "measured": 2,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "hello instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -65,20 +39,7 @@
       "abi_tier": "v1_1",
       "computed": 312,
       "measured": 312,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "call ret file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -86,20 +47,7 @@
       "abi_tier": "v1_1",
       "computed": 10,
       "measured": 10,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "call ret instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -107,20 +55,7 @@
       "abi_tier": "v1_2",
       "computed": 440,
       "measured": 440,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "spawn join file size",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -128,20 +63,7 @@
       "abi_tier": "v1_2",
       "computed": 31,
       "measured": 31,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "spawn join instructions",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -150,20 +72,7 @@
       "computed": 0,
       "measured": 0,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "HALT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -172,20 +81,7 @@
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "IMM",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -194,20 +90,7 @@
       "computed": 2,
       "measured": 2,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "MOVT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -216,20 +99,7 @@
       "computed": 3,
       "measured": 3,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "LOADT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -238,20 +108,7 @@
       "computed": 4,
       "measured": 4,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "STORET",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -260,20 +117,7 @@
       "computed": 5,
       "measured": 5,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "ADDT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -282,20 +126,7 @@
       "computed": 6,
       "measured": 6,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "SUBT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -304,20 +135,7 @@
       "computed": 7,
       "measured": 7,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "MULT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -326,20 +144,7 @@
       "computed": 8,
       "measured": 8,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "NEGT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -348,20 +153,7 @@
       "computed": 9,
       "measured": 9,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "MIN3",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -370,20 +162,7 @@
       "computed": 10,
       "measured": 10,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "MAX3",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -392,20 +171,7 @@
       "computed": 11,
       "measured": 11,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "COLLAPSE",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -414,20 +180,7 @@
       "computed": 12,
       "measured": 12,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "EVAL PANEL",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -436,20 +189,7 @@
       "computed": 13,
       "measured": 13,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "CONSENSUS",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -458,20 +198,7 @@
       "computed": 14,
       "measured": 14,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "PHASE ROT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -480,20 +207,7 @@
       "computed": 15,
       "measured": 15,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "BRANCHT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -502,20 +216,7 @@
       "computed": 16,
       "measured": 16,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "EMIT",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -524,20 +225,7 @@
       "computed": 17,
       "measured": 17,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "LOAD RULE",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -546,20 +234,7 @@
       "computed": 18,
       "measured": 18,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "APPLY OVR",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -568,20 +243,7 @@
       "computed": 19,
       "measured": 19,
       "error_pct": 0.0,
-      "abi_tier": "v1_0",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "MEASURE",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_0"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -590,20 +252,7 @@
       "computed": 20,
       "measured": 20,
       "error_pct": 0.0,
-      "abi_tier": "v1_1",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "CALL",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_1"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -612,20 +261,7 @@
       "computed": 21,
       "measured": 21,
       "error_pct": 0.0,
-      "abi_tier": "v1_1",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "RET",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_1"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -634,20 +270,7 @@
       "computed": 22,
       "measured": 22,
       "error_pct": 0.0,
-      "abi_tier": "v1_1",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "PUSH T",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_1"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -656,20 +279,7 @@
       "computed": 23,
       "measured": 23,
       "error_pct": 0.0,
-      "abi_tier": "v1_1",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "POP T",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_1"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -678,20 +288,7 @@
       "computed": 24,
       "measured": 24,
       "error_pct": 0.0,
-      "abi_tier": "v1_1",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "SYSCALL",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_1"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -700,20 +297,7 @@
       "computed": 25,
       "measured": 25,
       "error_pct": 0.0,
-      "abi_tier": "v1_2",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "SPAWN",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_2"
     },
     {
       "lab": "trinary_os_isa_rebuild",
@@ -722,129 +306,42 @@
       "computed": 26,
       "measured": 26,
       "error_pct": 0.0,
-      "abi_tier": "v1_2",
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "JOIN",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "abi_tier": "v1_2"
     },
     {
       "lab": "trinary_os_isa_rebuild",
       "property": "word_width_trits",
       "computed": 27,
       "measured": 27,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "word width trits",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
       "property": "num_task_slots",
       "computed": 8,
       "measured": 8,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "num task slots",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
       "property": "register_count",
       "computed": 25,
       "measured": 25,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "register count",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
       "property": "cortical_layers",
       "computed": 6,
       "measured": 6,
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "cortical layers",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     },
     {
       "lab": "trinary_os_isa_rebuild",
       "property": "seeds_hash_hex",
       "computed": "0xc627292ec4eb3b90",
       "measured": "0xc627292ec4eb3b90",
-      "error_pct": 0.0,
-      "domain_display_name": "trinary os isa rebuild",
-      "display_name": "seeds hash hex",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     }
-  ],
-  "display_name": "Trinary OS ISA Rebuild",
-  "tier_label": "Math generator benchmark formula eval (FO-200/210/220)",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.669337+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 37,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 37
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }

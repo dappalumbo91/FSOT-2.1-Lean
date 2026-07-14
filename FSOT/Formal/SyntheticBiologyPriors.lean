@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def synthetic_biology_observable_count : ℕ := 21
+def synthetic_biology_observable_count : ℕ := 20
 def synthetic_biology_median_error_pct : ℝ := (0.0 : ℝ)
 def synthetic_biology_D_eff : ℕ := 14
 
@@ -23,7 +23,7 @@ theorem synthetic_biology_median_error_under_half_pct :
   unfold synthetic_biology_median_error_pct; norm_num
 
 theorem synthetic_biology_bundle :
-    synthetic_biology_observable_count = 21 ∧
+    synthetic_biology_observable_count = 20 ∧
     synthetic_biology_D_eff = 14 ∧
     synthetic_biology_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by

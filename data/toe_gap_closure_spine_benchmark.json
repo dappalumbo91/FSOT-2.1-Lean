@@ -42,7 +42,20 @@
       "computed": 0.021928,
       "measured": 0.0,
       "error_pct": 0.021927861384483893,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.021928,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.020055,
       "measured": 0.0,
       "error_pct": 0.020055,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "ToE Gap Closure Spine depth",
+      "scientific_measurement": {
+        "delta": 0.020055,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -218,7 +244,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -246,7 +272,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -273,7 +299,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -301,7 +327,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -334,7 +360,8 @@
       },
       "lab": "toe_gap_closure_spine_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "toe gap closure spine depth"
     },
     {
       "lab": "toe_gap_closure_spine_depth_lab",
@@ -345,7 +372,7 @@
       "error_pct": 0.03801653760497784,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.00249,
@@ -371,7 +398,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -397,7 +424,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Climate Science",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -423,7 +450,7 @@
       "error_pct": 0.03801653760498396,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.002737,
@@ -459,7 +486,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -497,7 +524,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -535,7 +562,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -572,7 +599,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -600,11 +627,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -625,11 +655,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -650,11 +683,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Astronomy Orbital Mechanics astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -675,11 +711,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "toe gap closure spine depth",
       "display_name": "Astronomy Small Body Orbits astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -701,5 +740,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "ToE Gap Closure Spine",
+  "tier_label": "Tier 46",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.023801,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.009481752352941176,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.126187+00:00"
 }

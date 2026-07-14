@@ -40,7 +40,20 @@
       "computed": 0.02261,
       "measured": 0.0,
       "error_pct": 0.02261,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.02261,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.02261,
       "measured": 0.0,
       "error_pct": 0.02261,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "actuarial",
+      "scientific_measurement": {
+        "delta": 0.02261,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.034364,
+        "effective_error_pct": 0.034364,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 0.010012,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 22.610158,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "10",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "10",
+      "scientific_measurement": {
+        "delta": 0.008868,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "10",
+      "scientific_measurement": {
+        "delta": 22.479019,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "20",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "20",
+      "scientific_measurement": {
+        "delta": 0.007607,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "20",
+      "scientific_measurement": {
+        "delta": 22.438321,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "30",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "30",
+      "scientific_measurement": {
+        "delta": 0.006384,
+        "delta_pct": 0.013002,
+        "effective_error_pct": 0.013002,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "30",
+      "scientific_measurement": {
+        "delta": 22.329792,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "40",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.045872,
+        "effective_error_pct": 0.045872,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "40",
+      "scientific_measurement": {
+        "delta": 0.005175,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "40",
+      "scientific_measurement": {
+        "delta": 22.153433,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "50",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.020202,
+        "effective_error_pct": 0.020202,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "50",
+      "scientific_measurement": {
+        "delta": 0.003979,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "50",
+      "scientific_measurement": {
+        "delta": 21.827847,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "60",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.026786,
+        "effective_error_pct": 0.026786,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "60",
+      "scientific_measurement": {
+        "delta": 0.002874,
+        "delta_pct": 0.013005,
+        "effective_error_pct": 0.013005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "60",
+      "scientific_measurement": {
+        "delta": 21.181196,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "70",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.02521,
+        "effective_error_pct": 0.02521,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "70",
+      "scientific_measurement": {
+        "delta": 0.001924,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "70",
+      "scientific_measurement": {
+        "delta": 19.716058,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "80",
+      "scientific_measurement": {
+        "delta": 1.5e-05,
+        "delta_pct": 0.025685,
+        "effective_error_pct": 0.025685,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "80",
+      "scientific_measurement": {
+        "delta": 0.001157,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "80",
+      "scientific_measurement": {
+        "delta": 16.460195,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "90",
+      "scientific_measurement": {
+        "delta": 3.7e-05,
+        "delta_pct": 0.026056,
+        "effective_error_pct": 0.026056,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "90",
+      "scientific_measurement": {
+        "delta": 0.000611,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "90",
+      "scientific_measurement": {
+        "delta": 9.315385,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "15",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "15",
+      "scientific_measurement": {
+        "delta": 0.008205,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "15",
+      "scientific_measurement": {
+        "delta": 22.469975,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "25",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "25",
+      "scientific_measurement": {
+        "delta": 0.006996,
+        "delta_pct": 0.013004,
+        "effective_error_pct": 0.013004,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "25",
+      "scientific_measurement": {
+        "delta": 22.402145,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "35",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "35",
+      "scientific_measurement": {
+        "delta": 0.005786,
+        "delta_pct": 0.013002,
+        "effective_error_pct": 0.013002,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "35",
+      "scientific_measurement": {
+        "delta": 22.266484,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "45",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.032258,
+        "effective_error_pct": 0.032258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "45",
+      "scientific_measurement": {
+        "delta": 0.004577,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "45",
+      "scientific_measurement": {
+        "delta": 22.004206,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "55",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.027778,
+        "effective_error_pct": 0.027778,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "55",
+      "scientific_measurement": {
+        "delta": 0.003381,
+        "delta_pct": 0.013004,
+        "effective_error_pct": 0.013004,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "55",
+      "scientific_measurement": {
+        "delta": 21.50226,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "65",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.02381,
+        "effective_error_pct": 0.02381,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "65",
+      "scientific_measurement": {
+        "delta": 0.002341,
+        "delta_pct": 0.013006,
+        "effective_error_pct": 0.013006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "65",
+      "scientific_measurement": {
+        "delta": 20.530024,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -639,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "75",
+      "scientific_measurement": {
+        "delta": 1e-05,
+        "delta_pct": 0.025974,
+        "effective_error_pct": 0.025974,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -651,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "75",
+      "scientific_measurement": {
+        "delta": 0.001495,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -663,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "75",
+      "scientific_measurement": {
+        "delta": 18.178567,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -675,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "85",
+      "scientific_measurement": {
+        "delta": 2.3e-05,
+        "delta_pct": 0.025843,
+        "effective_error_pct": 0.025843,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -687,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "85",
+      "scientific_measurement": {
+        "delta": 0.000806,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -699,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "85",
+      "scientific_measurement": {
+        "delta": 12.706909,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -711,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "95",
+      "scientific_measurement": {
+        "delta": 5.4e-05,
+        "delta_pct": 0.025714,
+        "effective_error_pct": 0.025714,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -723,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "95",
+      "scientific_measurement": {
+        "delta": 0.000403,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -735,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "95",
+      "scientific_measurement": {
+        "delta": 4.024608,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -747,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -759,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Sociology",
       "fsot_scalar": 0.650147,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "5",
+      "scientific_measurement": {
+        "delta": 0.009427,
+        "delta_pct": 0.013003,
+        "effective_error_pct": 0.013003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "actuarial_lab",
@@ -771,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "ssa_oact_life_table_2020_subset"
+      "ingest_source": "ssa_oact_life_table_2020_subset",
+      "domain_display_name": "actuarial",
+      "display_name": "5",
+      "scientific_measurement": {
+        "delta": 22.537806,
+        "delta_pct": 0.02261,
+        "effective_error_pct": 0.02261,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -785,5 +1591,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Actuarial Science Panel",
+  "tier_label": "Tier 82",
+  "scientific_precision_summary": {
+    "scalar_count": 60,
+    "median_error_pct": 0.02261,
+    "max_error_pct": 0.045872,
+    "mean_abs_delta": 6.487109249999998,
+    "precision_tier_counts": {
+      "green": 60
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.192824+00:00"
 }

@@ -1,29 +1,29 @@
-generated_at: '2026-07-12T17:46:18.042320+00:00'
+generated_at: '2026-07-13T15:23:35.501144+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 329
-  total_scientific_domains_covered: 365
-  total_empirical_records: 306680
+  extension_domains: 340
+  total_scientific_domains_covered: 376
+  total_empirical_records: 257255
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
   neurolab_tier_distribution:
-    A_strong: 25
-    B_verified: 10
-    C_thin: 0
+    A_strong: 23
+    B_verified: 11
+    C_thin: 1
     D_needs_work: 0
     unverified: 0
   tier_distribution:
-    A_strong: 113
-    B_verified: 252
-    C_thin: 0
+    A_strong: 110
+    B_verified: 240
+    C_thin: 26
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 462
+  lean_formal_modules: 474
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
   empirical_records: 485
-  median_error_pct: 0.085305
+  median_error_pct: 0.032277
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -32,7 +32,7 @@ neurolab_domains:
   - smiles_lab
 - domain: Astronomy
   lean_domain: astronomical
-  empirical_records: 209
+  empirical_records: 193
   median_error_pct: 0.0
   precision_status: target_band
   sign_mismatch: false
@@ -40,25 +40,20 @@ neurolab_domains:
   coverage_tier: A_strong
   labs:
   - cosmology_lambda_cdm
-  - cosmology_wave4
-  - cosmology_extended_lab
   - cosmology_bubble_bleed_lab
 - domain: Astrophysics
   lean_domain: astronomical
-  empirical_records: 321
-  median_error_pct: 0.0007352339307450013
+  empirical_records: 163
+  median_error_pct: 0.0
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
   coverage_tier: A_strong
   labs:
-  - cosmology_wave4
-  - cosmology_extended_lab
-  - cosmology_higher_waves_lab
   - cosmology_bubble_bleed_lab
 - domain: Atmospheric_Physics
   lean_domain: energy
-  empirical_records: 17450
+  empirical_records: 17414
   median_error_pct: 0.0
   precision_status: target_band
   sign_mismatch: false
@@ -79,7 +74,7 @@ neurolab_domains:
 - domain: Biochemistry
   lean_domain: medical
   empirical_records: 166
-  median_error_pct: 0.028657
+  median_error_pct: 0.01920113857308633
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -102,7 +97,7 @@ neurolab_domains:
 - domain: Chemistry
   lean_domain: electron
   empirical_records: 99
-  median_error_pct: 0.021463659506869095
+  median_error_pct: 0.005707
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -112,7 +107,7 @@ neurolab_domains:
 - domain: Condensed_Matter
   lean_domain: material
   empirical_records: 1169
-  median_error_pct: 0.0863
+  median_error_pct: 0.030603154577296784
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -122,21 +117,19 @@ neurolab_domains:
   - species_catalog
 - domain: Cosmology
   lean_domain: cosmological
-  empirical_records: 347
-  median_error_pct: 0.0008593004744053731
+  empirical_records: 205
+  median_error_pct: 0.0
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: true
   coverage_tier: A_strong
   labs:
   - cosmology_lambda_cdm
-  - cosmology_extended_lab
-  - cosmology_higher_waves_lab
   - cosmology_bubble_bleed_lab
 - domain: Ecology
   lean_domain: biological
   empirical_records: 654
-  median_error_pct: 0.01778900030816399
+  median_error_pct: 0.017789000308163706
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -163,8 +156,6 @@ neurolab_domains:
   coverage_tier: A_strong
   labs:
   - smiles_lab
-  - geomagnetism_lab
-  - space_weather_lab
 - domain: Fluid_Dynamics
   lean_domain: energy
   empirical_records: 56
@@ -185,24 +176,19 @@ neurolab_domains:
   coverage_tier: A_strong
   labs:
   - weather_lab
-  - tectonics_lab
-  - geomagnetism_lab
 - domain: High_Energy_Physics
   lean_domain: higgs
-  empirical_records: 151
-  median_error_pct: 0.003531579785510005
+  empirical_records: 9
+  median_error_pct: 0.08808351263334355
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
-  coverage_tier: A_strong
-  labs:
-  - higgs_branching_lab
-  - higgs_mass_lab
-  - cosmology_higher_waves_lab
+  coverage_tier: C_thin
+  labs: []
 - domain: Materials_Science
   lean_domain: material
   empirical_records: 1169
-  median_error_pct: 0.0863
+  median_error_pct: 0.030603154577296784
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -212,7 +198,7 @@ neurolab_domains:
   - species_catalog
 - domain: Meteorology
   lean_domain: energy
-  empirical_records: 17450
+  empirical_records: 17414
   median_error_pct: 0.0
   precision_status: target_band
   sign_mismatch: false
@@ -223,7 +209,7 @@ neurolab_domains:
 - domain: Molecular_Chemistry
   lean_domain: chemical
   empirical_records: 608
-  median_error_pct: 0.05267069916954621
+  median_error_pct: 0.028389499999999998
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -232,19 +218,18 @@ neurolab_domains:
   - smiles_lab
 - domain: Neuroscience
   lean_domain: neural
-  empirical_records: 55
-  median_error_pct: 0.059472
+  empirical_records: 41
+  median_error_pct: 0.013382765569350981
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
   coverage_tier: B_verified
   labs:
   - smiles_lab
-  - neuron_cohort_lab
 - domain: Nuclear_Physics
   lean_domain: nuclear
   empirical_records: 79
-  median_error_pct: 0.010786065632051698
+  median_error_pct: 0.0073571309514874035
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -265,7 +250,7 @@ neurolab_domains:
 - domain: Optics
   lean_domain: material
   empirical_records: 485
-  median_error_pct: 0.085305
+  median_error_pct: 0.032277
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -274,30 +259,26 @@ neurolab_domains:
   - smiles_lab
 - domain: Particle_Astrophysics
   lean_domain: cmb
-  empirical_records: 208
-  median_error_pct: 0.005577753040363415
+  empirical_records: 50
+  median_error_pct: 0.021477424424138976
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: true
-  coverage_tier: A_strong
-  labs:
-  - cosmology_wave4
-  - cosmology_extended_lab
-  - cosmology_higher_waves_lab
+  coverage_tier: B_verified
+  labs: []
 - domain: Particle_Physics
   lean_domain: particle
   empirical_records: 98
-  median_error_pct: 0.0025887499285903873
+  median_error_pct: 0.0023222644988432507
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
   coverage_tier: B_verified
-  labs:
-  - particle_physics_lab
+  labs: []
 - domain: Physical_Chemistry
   lean_domain: chemical
   empirical_records: 608
-  median_error_pct: 0.05267069916954621
+  median_error_pct: 0.028389499999999998
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -306,15 +287,13 @@ neurolab_domains:
   - smiles_lab
 - domain: Planetary_Science
   lean_domain: galactic
-  empirical_records: 66
-  median_error_pct: 0.017721515188881255
+  empirical_records: 50
+  median_error_pct: 0.021477424424138976
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
   coverage_tier: B_verified
-  labs:
-  - cosmology_wave4
-  - cosmology_extended_lab
+  labs: []
 - domain: Psychology
   lean_domain: consciousness
   empirical_records: 170
@@ -374,9 +353,7 @@ neurolab_domains:
   sign_mismatch: false
   authority_scalar_negative: true
   coverage_tier: A_strong
-  labs:
-  - seismology_lab
-  - tectonics_lab
+  labs: []
 - domain: Sociology
   lean_domain: consciousness
   empirical_records: 410
@@ -390,7 +367,7 @@ neurolab_domains:
 - domain: Thermodynamics
   lean_domain: energy
   empirical_records: 89
-  median_error_pct: 0.075499
+  median_error_pct: 0.02214701353860092
   precision_status: target_band
   sign_mismatch: false
   authority_scalar_negative: false
@@ -400,9 +377,9 @@ neurolab_domains:
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
-  record_count: 43913
+  record_count: 20
   median_error_pct: 0.0
-  coverage_tier: A_strong
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PlasmaPhysicsPriors
 - domain: Immunology
   tier: 12
@@ -412,7 +389,7 @@ extension_domains:
   lean_module: FSOT.Formal.ImmunologyPriors
 - domain: Climate_Science
   tier: 12
-  record_count: 17296
+  record_count: 17320
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ClimateSciencePriors
@@ -430,9 +407,9 @@ extension_domains:
   lean_module: FSOT.Formal.BubbleBleedPriors
 - domain: Cosmology_Anomalies
   tier: 25
-  record_count: 24
-  median_error_pct: 0.0100275
-  coverage_tier: B_verified
+  record_count: 12
+  median_error_pct: 0.140126
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.CosmologyAnomaliesPriors
 - domain: Particle_Physics
   tier: 16
@@ -442,9 +419,9 @@ extension_domains:
   lean_module: FSOT.Formal.ParticlePhysicsPriors
 - domain: Higgs_Mass
   tier: 17
-  record_count: 24
-  median_error_pct: 0.012112816039879785
-  coverage_tier: B_verified
+  record_count: 9
+  median_error_pct: 0.03990518384182655
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.HiggsMassPriors
 - domain: Space_Weather
   tier: 17
@@ -484,7 +461,7 @@ extension_domains:
   lean_module: FSOT.Formal.TectonicsPriors
 - domain: Geomagnetism
   tier: 21
-  record_count: 525
+  record_count: 524
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.GeomagnetismPriors
@@ -496,15 +473,15 @@ extension_domains:
   lean_module: FSOT.Formal.PlanetaryStructurePriors
 - domain: Orbital_Mechanics
   tier: 21
-  record_count: 22
-  median_error_pct: 0.022461
-  coverage_tier: B_verified
+  record_count: 9
+  median_error_pct: 0.106141
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.OrbitalMechanicsPriors
 - domain: Small_Body_Orbits
   tier: 22
-  record_count: 22
-  median_error_pct: 0.022461
-  coverage_tier: B_verified
+  record_count: 12
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.SmallBodyOrbitsPriors
 - domain: Magnetosphere
   tier: 22
@@ -532,7 +509,7 @@ extension_domains:
   lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
 - domain: Magnetosphere_Extended
   tier: 25
-  record_count: 122295
+  record_count: 122315
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.MagnetosphereExtendedPriors
@@ -574,9 +551,9 @@ extension_domains:
   lean_module: FSOT.Formal.NeuronMultiHeroPriors
 - domain: Linguistics_Formal
   tier: 29
-  record_count: 24
-  median_error_pct: 0.004344768046673306
-  coverage_tier: B_verified
+  record_count: 10
+  median_error_pct: 0.0013504254899468224
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.LinguisticsFormalPriors
 - domain: Mathematics_Computational
   tier: 29
@@ -604,9 +581,9 @@ extension_domains:
   lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
 - domain: Trinary_OS_Portable
   tier: 30
-  record_count: 24
+  record_count: 8
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.TrinaryOSPortablePriors
 - domain: Materials_Species_Bridge
   tier: 30
@@ -712,9 +689,9 @@ extension_domains:
   lean_module: FSOT.Formal.AnthropologyExtensionPriors
 - domain: Math_Generator_Benchmark_Formula_Eval
   tier: 31
-  record_count: 21
-  median_error_pct: 0.020055
-  coverage_tier: B_verified
+  record_count: 13
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
 - domain: Trinary_OS_ISA_Rebuild
   tier: 31
@@ -730,9 +707,9 @@ extension_domains:
   lean_module: FSOT.Formal.IGEMLiveFastaPriors
 - domain: Math_Generator_Airfoil_RMSE
   tier: 32
-  record_count: 21
-  median_error_pct: 0.020055
-  coverage_tier: B_verified
+  record_count: 5
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
 - domain: Trinary_OS_Round_Trip
   tier: 32
@@ -742,21 +719,21 @@ extension_domains:
   lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
 - domain: Tokenization_Smoke
   tier: 33
-  record_count: 24
+  record_count: 9
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.TokenizationSmokePriors
 - domain: Trinary_Hardware_Motif
   tier: 33
-  record_count: 24
+  record_count: 8
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
 - domain: Intrinsic_LLM_Validators
   tier: 33
-  record_count: 24
+  record_count: 10
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
 - domain: Biological_CUDA_Physarum
   tier: 34
@@ -766,27 +743,27 @@ extension_domains:
   lean_module: FSOT.Formal.BiologicalCudaPhysarumPriors
 - domain: Arxiv_Primitives_V14
   tier: 34
-  record_count: 24
+  record_count: 14
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.ArxivPrimitivesV14Priors
 - domain: Formula_Corpus_CNC
   tier: 34
-  record_count: 21
-  median_error_pct: 0.020055
-  coverage_tier: B_verified
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.FormulaCorpusCncPriors
 - domain: Binary_Decoder_Rendlesham
   tier: 35
-  record_count: 24
+  record_count: 10
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.BinaryDecoderRendleshamPriors
 - domain: Certified_Agent_Qwen
   tier: 35
-  record_count: 24
+  record_count: 8
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.CertifiedAgentQwenPriors
 - domain: Omni_Theory_Genesis
   tier: 35
@@ -796,49 +773,49 @@ extension_domains:
   lean_module: FSOT.Formal.OmniTheoryGenesisPriors
 - domain: FSOT_Aggregate_Unified_DB
   tier: 36
-  record_count: 24
-  median_error_pct: 0.009737564919735653
-  coverage_tier: B_verified
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
 - domain: Prediction_Rederivation
   tier: 36
-  record_count: 24
-  median_error_pct: 0.029733
-  coverage_tier: B_verified
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.PredictionRederivationPriors
 - domain: VL_Distill_Atlas
   tier: 37
-  record_count: 24
+  record_count: 10
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.VlDistillAtlasPriors
 - domain: Rust_Lean_Bridge
   tier: 37
-  record_count: 24
+  record_count: 9
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.RustLeanBridgePriors
 - domain: Bibliography_Lean_Corpus
   tier: 37
-  record_count: 21
-  median_error_pct: 0.020055
-  coverage_tier: B_verified
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
 - domain: NIST_CODATA_Constants
   tier: 38
-  record_count: 21
-  median_error_pct: 9.5e-05
-  coverage_tier: B_verified
+  record_count: 6
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.NistCodataConstantsPriors
 - domain: GBIF_Species_Occurrence
   tier: 38
-  record_count: 2000
+  record_count: 240
   median_error_pct: 0.006006
   coverage_tier: A_strong
   lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
 - domain: NOAA_Coastal_Tides
   tier: 38
-  record_count: 40
+  record_count: 20
   median_error_pct: 0.030173
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NoaaCoastalTidesPriors
@@ -850,39 +827,39 @@ extension_domains:
   lean_module: FSOT.Formal.WorldBankDevelopmentPriors
 - domain: NASA_Exoplanet_Archive
   tier: 38
-  record_count: 988
+  record_count: 158
   median_error_pct: 0.023015
   coverage_tier: A_strong
   lean_module: FSOT.Formal.NasaExoplanetArchivePriors
 - domain: RCSB_PDB_Structures
   tier: 38
-  record_count: 159
+  record_count: 45
   median_error_pct: 0.022236
-  coverage_tier: A_strong
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.RcsbPdbStructuresPriors
 - domain: OpenAlex_Citation_Graph
   tier: 38
-  record_count: 200
+  record_count: 80
   median_error_pct: 0.031506
-  coverage_tier: A_strong
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.OpenalexCitationGraphPriors
 - domain: PubChem_Compound_Properties
   tier: 38
-  record_count: 521
-  median_error_pct: 0.002629
+  record_count: 500
+  median_error_pct: 0.002637
   coverage_tier: A_strong
   lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
 - domain: CERN_Open_Data_LHC
   tier: 38
-  record_count: 200
+  record_count: 83
   median_error_pct: 0.013294
-  coverage_tier: A_strong
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.CernOpenDataLhcPriors
 - domain: UniProt_Protein_Annotations
   tier: 38
-  record_count: 102
+  record_count: 22
   median_error_pct: 0.026684
-  coverage_tier: A_strong
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
 - domain: Space_Propulsion_Systems
   tier: 39
@@ -892,15 +869,15 @@ extension_domains:
   lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
 - domain: Electrical_Power_Systems
   tier: 39
-  record_count: 24
-  median_error_pct: 0.015583023735736914
-  coverage_tier: B_verified
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
 - domain: HVAC_Thermal_Systems
   tier: 39
-  record_count: 23
-  median_error_pct: 0.017789000308157117
-  coverage_tier: B_verified
+  record_count: 7
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.HvacThermalSystemsPriors
 - domain: Trinary_OS_Tier_E
   tier: 40
@@ -2372,6 +2349,72 @@ extension_domains:
   median_error_pct: 0.011093889935064888
   coverage_tier: B_verified
   lean_module: FSOT.Formal.Tier93DualWaveSpinePriors
+- domain: Longevity_AnAge_Catalog_Panel
+  tier: 94
+  record_count: 966
+  median_error_pct: 0.022236
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.LongevityAnAgeCatalogPanelPriors
+- domain: Longevity_Genetic_Mechanics_Panel
+  tier: 94
+  record_count: 35
+  median_error_pct: 0.022236
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.LongevityGeneticMechanicsPanelPriors
+- domain: Longevity_Extreme_Species_Panel
+  tier: 94
+  record_count: 164
+  median_error_pct: 0.017789
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.LongevityExtremeSpeciesPanelPriors
+- domain: Longevity_MegaDeep_NCBI_Panel
+  tier: 94
+  record_count: 1746
+  median_error_pct: 0.017789
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.LongevityMegaDeepNcbiPanelPriors
+- domain: Longevity_Telomere_Repair_Panel
+  tier: 94
+  record_count: 60
+  median_error_pct: 0.022236
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.LongevityTelomereRepairPanelPriors
+- domain: Longevity_Consciousness_Coupling_Panel
+  tier: 94
+  record_count: 890
+  median_error_pct: 0.022424
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.LongevityConsciousnessCouplingPanelPriors
+- domain: Tier_94_Longevity_Spine
+  tier: 94
+  record_count: 34
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.Tier94LongevitySpinePriors
+- domain: Zebrafish_Cell_Tracking_Panel
+  tier: 95
+  record_count: 20
+  median_error_pct: 0.022236
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ZebrafishCellTrackingPanelPriors
+- domain: Zebrafish_Developmental_Mechanics_Panel
+  tier: 95
+  record_count: 31
+  median_error_pct: 0.017789
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors
+- domain: Zebrafish_Longevity_Genetics_Coupling_Panel
+  tier: 95
+  record_count: 15
+  median_error_pct: 0.013342
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors
+- domain: Tier_95_Zebrafish_Spine
+  tier: 95
+  record_count: 18
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.Tier95ZebrafishSpinePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -2410,7 +2453,7 @@ specialized_bridges:
       - USW00024193
       - USW00093721
       station_count: 24
-      record_count: 13700
+      record_count: 13724
       median_error_pct: 0.0
       classifier_accuracy_pct: 0.0
       classifier_misclass_rate_pct: 100.0
@@ -2466,8 +2509,11 @@ specialized_bridges:
     train_cells: 1745
     holdout_cells: 420
     gates_pass: true
-accuracy_weak_spots: []
-thin_empirical_coverage: []
+accuracy_weak_spots:
+- High_Energy_Physics
+thin_empirical_coverage:
+- High_Energy_Physics
+- Neuroscience
 authority_dispersal_domains: []
 expansion_candidates: []
 recommended_next_waves:

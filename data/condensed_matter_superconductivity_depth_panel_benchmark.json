@@ -42,7 +42,20 @@
       "computed": 0.033841,
       "measured": 0.0,
       "error_pct": 0.033841,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.033841,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.033841,
       "measured": 0.0,
       "error_pct": 0.033841,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Condensed Matter Superconductivity Depth Panel depth",
+      "scientific_measurement": {
+        "delta": 0.033841,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Nb",
+      "scientific_measurement": {
+        "delta": 0.00313,
+        "delta_pct": 0.033838,
+        "effective_error_pct": 0.033838,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.002437,
+        "delta_pct": 0.033847,
+        "effective_error_pct": 0.033847,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Hg",
+      "scientific_measurement": {
+        "delta": 0.001404,
+        "delta_pct": 0.033831,
+        "effective_error_pct": 0.033831,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Sn",
+      "scientific_measurement": {
+        "delta": 0.001259,
+        "delta_pct": 0.033844,
+        "effective_error_pct": 0.033844,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.000399,
+        "delta_pct": 0.033814,
+        "effective_error_pct": 0.033814,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "MgB2",
+      "scientific_measurement": {
+        "delta": 0.013198,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "YBCO",
+      "scientific_measurement": {
+        "delta": 0.031133,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Bi2212",
+      "scientific_measurement": {
+        "delta": 0.032149,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "FeSe",
+      "scientific_measurement": {
+        "delta": 0.002707,
+        "delta_pct": 0.033837,
+        "effective_error_pct": 0.033837,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "BaKFe2As2",
+      "scientific_measurement": {
+        "delta": 0.012859,
+        "delta_pct": 0.033839,
+        "effective_error_pct": 0.033839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -185,7 +341,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "Nb3Sn",
+      "scientific_measurement": {
+        "delta": 0.006193,
+        "delta_pct": 0.033842,
+        "effective_error_pct": 0.033842,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -197,7 +366,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "NbTi",
+      "scientific_measurement": {
+        "delta": 0.003316,
+        "delta_pct": 0.033837,
+        "effective_error_pct": 0.033837,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -209,7 +391,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "LaH10 ambient claim",
+      "scientific_measurement": {
+        "delta": 0.084601,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -221,7 +416,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "H3S high P",
+      "scientific_measurement": {
+        "delta": 0.068696,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_lab",
@@ -233,7 +441,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
-      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials"
+      "ingest_source": "literature_superconductor_Tc+breakthrough+quantum_materials",
+      "domain_display_name": "condensed matter superconductivity depth",
+      "display_name": "EuO",
+      "scientific_measurement": {
+        "delta": 0.023452,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
@@ -248,7 +469,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
@@ -263,7 +497,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
@@ -278,7 +525,20 @@
       "formula": "C13H18O2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "effective_error_pct": 0.002424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
@@ -293,7 +553,20 @@
       "formula": "C14H11Cl2NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "effective_error_pct": 0.015873,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "condensed_matter_superconductivity_depth_panel_depth_lab",
@@ -306,11 +579,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -331,11 +607,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -356,11 +635,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
       "display_name": "Astronomy Orbital Mechanics astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -381,11 +663,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
       "display_name": "Astronomy Small Body Orbits astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -408,7 +693,20 @@
       "formula": "WS2",
       "ingest_source": "materials_project_bundled",
       "source_panel": "Materials_Project_Live_Panel",
-      "depth_relay_from": "Materials_Project_Live_Panel"
+      "depth_relay_from": "Materials_Project_Live_Panel",
+      "domain_display_name": "condensed matter superconductivity depth panel depth",
+      "display_name": "mp-1023922",
+      "scientific_measurement": {
+        "delta": 0.000255,
+        "delta_pct": 0.013421,
+        "effective_error_pct": 0.013421,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -422,5 +720,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Condensed Matter Superconductivity Depth Panel",
+  "tier_label": "Tier 87",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.033839,
+    "max_error_pct": 0.033847,
+    "mean_abs_delta": 0.0143594,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.287446+00:00"
 }

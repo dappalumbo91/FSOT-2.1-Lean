@@ -41,7 +41,20 @@
       "computed": 0.01341,
       "measured": 0.0,
       "error_pct": 0.01341,
-      "observable_count": 150
+      "observable_count": 150,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01341,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.01341,
       "measured": 0.0,
       "error_pct": 0.01341,
-      "observable_count": 150
+      "observable_count": 150,
+      "domain_display_name": "tier gap fill",
+      "display_name": "materials species bridge",
+      "scientific_measurement": {
+        "delta": 0.01341,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.010782,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -78,7 +117,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.02720944,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -91,7 +143,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 3.9e-07,
+        "delta_pct": 0.006632,
+        "effective_error_pct": 0.006632,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -104,7 +169,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.022798,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -117,7 +195,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.05751886,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -130,7 +221,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.011561,
+        "effective_error_pct": 0.011561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -143,7 +247,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.010997,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -156,7 +273,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.027749,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -169,7 +299,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -182,7 +325,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.242862,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -195,7 +351,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.61185254,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -208,7 +377,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 2.171e-05,
+        "delta_pct": 0.013294,
+        "effective_error_pct": 0.013294,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -221,7 +403,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.000603,
+        "delta_pct": 0.0134,
+        "effective_error_pct": 0.0134,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -234,7 +429,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.00151897,
+        "delta_pct": 0.033832,
+        "effective_error_pct": 0.033832,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -247,7 +455,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 3e-05,
+        "delta_pct": 0.013233,
+        "effective_error_pct": 0.013233,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -260,7 +481,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.053776,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -273,7 +507,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.13572829,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -286,7 +533,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 2.23e-06,
+        "delta_pct": 0.011099,
+        "effective_error_pct": 0.011099,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -299,7 +559,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.018775,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -312,7 +585,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.04737953,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -325,7 +611,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.017241,
+        "effective_error_pct": 0.017241,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -338,7 +637,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.006437,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -351,7 +663,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.016243,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -364,7 +689,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -377,7 +715,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.182113,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -390,7 +741,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.45863356,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -403,7 +767,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 2.721e-05,
+        "delta_pct": 0.013564,
+        "effective_error_pct": 0.013564,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -416,7 +793,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.000624,
+        "delta_pct": 0.013419,
+        "effective_error_pct": 0.013419,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -429,7 +819,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 0.00157341,
+        "delta_pct": 0.03385,
+        "effective_error_pct": 0.03385,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -442,7 +845,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cu",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.012681,
+        "effective_error_pct": 0.012681,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -455,7 +871,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.031783,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -468,7 +897,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.080202,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -481,7 +923,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -494,7 +949,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.010192,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -507,7 +975,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.02572338,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -520,7 +1001,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.011561,
+        "effective_error_pct": 0.011561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -533,7 +1027,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.003487,
+        "delta_pct": 0.013412,
+        "effective_error_pct": 0.013412,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -546,7 +1053,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.0087618,
+        "delta_pct": 0.033839,
+        "effective_error_pct": 0.033839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -559,7 +1079,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 5.5e-05,
+        "delta_pct": 0.013346,
+        "effective_error_pct": 0.013346,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -572,7 +1105,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.125186,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -585,7 +1131,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.31592082,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -598,7 +1157,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 6.6e-07,
+        "delta_pct": 0.011376,
+        "effective_error_pct": 0.011376,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -611,7 +1183,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.000574,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -624,7 +1209,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 0.00144837,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -637,7 +1235,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Al",
+      "scientific_measurement": {
+        "delta": 4.6e-07,
+        "delta_pct": 0.051509,
+        "effective_error_pct": 0.051509,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -650,7 +1261,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Hg",
+      "scientific_measurement": {
+        "delta": 0.031421,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -663,7 +1287,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Hg",
+      "scientific_measurement": {
+        "delta": 0.07928138,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -676,7 +1313,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Hg",
+      "scientific_measurement": {
+        "delta": 1.5e-06,
+        "delta_pct": 0.01656,
+        "effective_error_pct": 0.01656,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -689,7 +1339,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ga",
+      "scientific_measurement": {
+        "delta": 0.04062,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -702,7 +1365,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ga",
+      "scientific_measurement": {
+        "delta": 0.10249587,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -715,7 +1391,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ga",
+      "scientific_measurement": {
+        "delta": 1.29e-06,
+        "delta_pct": 0.017883,
+        "effective_error_pct": 0.017883,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -728,7 +1417,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 0.045126,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -741,7 +1443,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 0.11388453,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -754,7 +1469,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 1.22e-06,
+        "delta_pct": 0.012932,
+        "effective_error_pct": 0.012932,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -767,7 +1495,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 0.000308,
+        "delta_pct": 0.013391,
+        "effective_error_pct": 0.013391,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -780,7 +1521,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 0.00077784,
+        "delta_pct": 0.033847,
+        "effective_error_pct": 0.033847,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -793,7 +1547,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "K",
+      "scientific_measurement": {
+        "delta": 1.1e-05,
+        "delta_pct": 0.013049,
+        "effective_error_pct": 0.013049,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -806,7 +1573,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 0.049739,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -819,7 +1599,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 0.12553611,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -832,7 +1625,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 2.3e-06,
+        "delta_pct": 0.013837,
+        "effective_error_pct": 0.013837,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -845,7 +1651,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 0.000369,
+        "delta_pct": 0.013418,
+        "effective_error_pct": 0.013418,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -858,7 +1677,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 0.000931,
+        "delta_pct": 0.033855,
+        "effective_error_pct": 0.033855,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -871,7 +1703,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Na",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -884,7 +1729,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.004734,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -897,7 +1755,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.01192634,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -910,7 +1781,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 2.2e-05,
+        "delta_pct": 0.013472,
+        "effective_error_pct": 0.013472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -923,7 +1807,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.006169,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -936,7 +1833,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.015567,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -949,7 +1859,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -962,7 +1885,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.080543,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -975,7 +1911,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 0.2028608,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -988,7 +1937,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pb",
+      "scientific_measurement": {
+        "delta": 2.503e-05,
+        "delta_pct": 0.013186,
+        "effective_error_pct": 0.013186,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1001,7 +1963,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 0.092894,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1014,7 +1989,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 0.23458406,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1027,7 +2015,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 9.55e-06,
+        "delta_pct": 0.013112,
+        "effective_error_pct": 0.013112,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1040,7 +2041,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 0.000581,
+        "delta_pct": 0.013418,
+        "effective_error_pct": 0.013418,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1053,7 +2067,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 0.00146718,
+        "delta_pct": 0.033835,
+        "effective_error_pct": 0.033835,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1066,7 +2093,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Zn",
+      "scientific_measurement": {
+        "delta": 2e-05,
+        "delta_pct": 0.013708,
+        "effective_error_pct": 0.013708,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1079,7 +2119,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.057531,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1092,7 +2145,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.14563962,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1105,7 +2171,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 4.3e-05,
+        "delta_pct": 0.01348,
+        "effective_error_pct": 0.01348,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1118,7 +2197,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.013947,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1131,7 +2223,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.03519253,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1144,7 +2249,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.021739,
+        "effective_error_pct": 0.021739,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1157,7 +2275,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.165605,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1170,7 +2301,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.41787715,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1183,7 +2327,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 4.9e-07,
+        "delta_pct": 0.010058,
+        "effective_error_pct": 0.010058,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1196,7 +2353,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.000571,
+        "delta_pct": 0.013404,
+        "effective_error_pct": 0.013404,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1209,7 +2379,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 0.00144168,
+        "delta_pct": 0.033844,
+        "effective_error_pct": 0.033844,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1222,7 +2405,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ag",
+      "scientific_measurement": {
+        "delta": 9.7e-07,
+        "delta_pct": 0.017876,
+        "effective_error_pct": 0.017876,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1235,7 +2431,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cs",
+      "scientific_measurement": {
+        "delta": 0.000287,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1248,7 +2457,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cs",
+      "scientific_measurement": {
+        "delta": 0.0007237,
+        "delta_pct": 0.03382,
+        "effective_error_pct": 0.03382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1261,7 +2483,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Cs",
+      "scientific_measurement": {
+        "delta": 1.39e-06,
+        "delta_pct": 0.018569,
+        "effective_error_pct": 0.018569,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1274,7 +2509,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ba",
+      "scientific_measurement": {
+        "delta": 0.000338,
+        "delta_pct": 0.013413,
+        "effective_error_pct": 0.013413,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1287,7 +2535,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ba",
+      "scientific_measurement": {
+        "delta": 0.00085272,
+        "delta_pct": 0.033836,
+        "effective_error_pct": 0.033836,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1300,7 +2561,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ba",
+      "scientific_measurement": {
+        "delta": 2.1e-07,
+        "delta_pct": 0.004072,
+        "effective_error_pct": 0.004072,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1313,7 +2587,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ca",
+      "scientific_measurement": {
+        "delta": 0.000385,
+        "delta_pct": 0.013415,
+        "effective_error_pct": 0.013415,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1326,7 +2613,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ca",
+      "scientific_measurement": {
+        "delta": 0.00097087,
+        "delta_pct": 0.033828,
+        "effective_error_pct": 0.033828,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1339,7 +2639,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ca",
+      "scientific_measurement": {
+        "delta": 2.8e-07,
+        "delta_pct": 0.132228,
+        "effective_error_pct": 0.132228,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1352,7 +2665,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Mg",
+      "scientific_measurement": {
+        "delta": 0.000491,
+        "delta_pct": 0.013415,
+        "effective_error_pct": 0.013415,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1365,7 +2691,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Mg",
+      "scientific_measurement": {
+        "delta": 0.00123866,
+        "delta_pct": 0.033844,
+        "effective_error_pct": 0.033844,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1378,7 +2717,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Mg",
+      "scientific_measurement": {
+        "delta": -2.7e-07,
+        "delta_pct": 0.022533,
+        "effective_error_pct": 0.022533,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1391,7 +2743,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.002937,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1404,7 +2769,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.00740813,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1417,7 +2795,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.012563,
+        "effective_error_pct": 0.012563,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1430,7 +2821,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.014751,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1443,7 +2847,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.037221,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1456,7 +2873,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 1.27e-06,
+        "delta_pct": 0.014787,
+        "effective_error_pct": 0.014787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1469,7 +2899,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.005901,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1482,7 +2925,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.01488443,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1495,7 +2951,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.013298,
+        "effective_error_pct": 0.013298,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1508,7 +2977,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.260296,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1521,7 +3003,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.656846,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1534,7 +3029,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1547,7 +3055,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.000581,
+        "delta_pct": 0.013418,
+        "effective_error_pct": 0.013418,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1560,7 +3081,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 0.00146718,
+        "delta_pct": 0.033835,
+        "effective_error_pct": 0.033835,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1573,7 +3107,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Ti",
+      "scientific_measurement": {
+        "delta": 2e-05,
+        "delta_pct": 0.013708,
+        "effective_error_pct": 0.013708,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1586,7 +3133,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.0232,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1599,7 +3159,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.058454,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1612,7 +3185,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 2.1e-05,
+        "delta_pct": 0.013699,
+        "effective_error_pct": 0.013699,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1625,7 +3211,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.041572,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1638,7 +3237,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.10462156,
+        "delta_pct": 0.03384,
+        "effective_error_pct": 0.03384,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1651,7 +3263,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 3.6e-05,
+        "delta_pct": 0.013304,
+        "effective_error_pct": 0.013304,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1664,7 +3289,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.495514,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1677,7 +3315,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 1.25041,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1690,7 +3341,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1703,7 +3367,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.00061,
+        "delta_pct": 0.013407,
+        "effective_error_pct": 0.013407,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1716,7 +3393,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 0.00153941,
+        "delta_pct": 0.033843,
+        "effective_error_pct": 0.033843,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1729,7 +3419,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "W",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.013605,
+        "effective_error_pct": 0.013605,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1742,7 +3445,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.042511,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1755,7 +3471,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.10731227,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1768,7 +3497,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "thermal_cond_W_mK"
+      "bridge_property": "thermal_cond_W_mK",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.014409,
+        "effective_error_pct": 0.014409,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1781,7 +3523,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.022932,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1794,7 +3549,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.05787967,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1807,7 +3575,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 2.33e-06,
+        "delta_pct": 0.011421,
+        "effective_error_pct": 0.011421,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1820,7 +3601,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.003621,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1833,7 +3627,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.009137,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1846,7 +3653,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1859,7 +3679,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.000684,
+        "delta_pct": 0.013412,
+        "effective_error_pct": 0.013412,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1872,7 +3705,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 0.00172031,
+        "delta_pct": 0.033843,
+        "effective_error_pct": 0.033843,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1885,7 +3731,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "work_function_eV"
+      "bridge_property": "work_function_eV",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Au",
+      "scientific_measurement": {
+        "delta": 4.4e-05,
+        "delta_pct": 0.013362,
+        "effective_error_pct": 0.013362,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1898,7 +3757,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.030576,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1911,7 +3783,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.07717015,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1924,7 +3809,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "bulk_GPa"
+      "bridge_property": "bulk_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.011561,
+        "effective_error_pct": 0.011561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1937,7 +3835,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.00818,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1950,7 +3861,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.020643,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1963,7 +3887,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "shear_GPa"
+      "bridge_property": "shear_GPa",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1976,7 +3913,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.273706,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -1989,7 +3939,20 @@
       "fsot_domain": "Condensed_Matter",
       "fsot_scalar": 0.338406,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.690687,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "materials_species_bridge_live_lab",
@@ -2002,7 +3965,20 @@
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
       "ingest_source": "species_catalog_literature_targets",
-      "bridge_property": "melting_K"
+      "bridge_property": "melting_K",
+      "domain_display_name": "materials species bridge live",
+      "display_name": "Pt",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -2016,5 +3992,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Materials Species Bridge Live Panel",
+  "tier_label": "Tier 86",
+  "scientific_precision_summary": {
+    "scalar_count": 150,
+    "median_error_pct": 0.013415,
+    "max_error_pct": 0.132228,
+    "mean_abs_delta": 0.059658452533333343,
+    "precision_tier_counts": {
+      "green": 150
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.275433+00:00"
 }

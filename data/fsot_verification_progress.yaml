@@ -1,14 +1,14 @@
-generated_at: '2026-07-10T19:33:14.710888+00:00'
+generated_at: '2026-07-13T04:15:39.839045+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 315
+  lean_formal_modules: 462
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 48
+  tiers_complete: 39
   tiers_total: 48
-  percent_complete: 100.0
+  percent_complete: 81.2
 current_position: "Tier 77 Post\u2013Tier 76 maintenance \u2014 245/245 extension\
   \ domains verified, hybrid FI + KB bundle + r_d tightening + coupling refresh +\
   \ H0/FPC prereg validation"
@@ -26,12 +26,21 @@ tiers:
   artifacts:
   - AIGalacticOrbitalBridgePriors
   - AcousticResonanceMaterialsPriors
+  - ActuarialSciencePanelPriors
+  - ActuarialSciencePriors
   - AdjacentRungCouplingPriors
   - AdversarialFractalBreakPriors
+  - AdversarialFractalBreakTestsPriors
   - AetherPrimePriors
   - AgricultureAgroecologyGapFillPriors
+  - AgricultureAgroecologyPriors
+  - AlternateBaseMathematicsExplorerPanelPriors
+  - AlternateBaseMathematicsSpinePriors
   - AnthropologyExtensionPriors
+  - AnthropologyPriors
   - ArchitectureBuildingScienceGapFillPriors
+  - ArchitectureBuildingSciencePriors
+  - ArxivGravitationalWavesPanelPriors
   - ArxivPrimitivesV14Priors
   - AstrophysicalStructureCrosswalkPriors
   - AtmosphericPhysicsGapFillPriors
@@ -43,6 +52,7 @@ tiers:
   - BiophysicsPublicPanelPriors
   - BlackHoleThesisPriors
   - BotanyExtensionPriors
+  - BotanyPriors
   - BoundaryPartitionTighteningPriors
   - BrainPriors
   - BreakthroughDiscoveries20242026Priors
@@ -50,27 +60,45 @@ tiers:
   - CVECodonHoleFalsificationPriors
   - CameoPriors
   - CardiologyExtensionPriors
+  - CardiologyPanelPriors
+  - CardiologyPriors
+  - CartographyGisPanelPriors
+  - CartographyGisPriors
   - CellularPriors
   - CernOpenDataLhcPriors
+  - CertifiedAgentFormalPanelPriors
   - CertifiedAgentQwenPriors
   - ChaosMediatedPhaseTransitionsPriors
   - ChemicalEngineeringExtensionPriors
+  - ChemicalEngineeringPriors
   - ChemicalStructureStabilityPanelPriors
   - CivilEngineeringExtensionPriors
+  - CivilEngineeringPanelPriors
+  - CivilEngineeringPriors
   - ClimateSciencePriors
   - ClinicalMedicineExtensionPriors
+  - ClinicalMedicinePriors
+  - ClinicaltrialsMedicalPanelPriors
+  - ClinicaltrialsMedicalPriors
   - CodeGenomeStructurePriors
   - CodonPriors
   - ColdFusionCandidatePreregScaffoldPriors
   - ColdFusionLabSynthesisCrosswalkPriors
   - CompactObjectBinaryEventsPriors
   - CompactificationLadderPriors
+  - ComplexityFoldingEmergencePanelPriors
   - ComputationalReasoningPriors
+  - CondensedMatterSuperconductivityDepthPanelPriors
   - ConsciousnessEconPriors
+  - ConsciousnessExpansionSpinePriors
   - ConsciousnessGalacticOrbitalBridgePriors
+  - ConsciousnessGeneticsCouplingPanelPriors
+  - ConsciousnessGeneticsSpeciesPanelPriors
   - ConsciousnessSoulBridgePriors
+  - ConsciousnessSpeciesMultiPanelPriors
   - CosmologyAnomaliesPriors
   - CosmologyAnomalyDeepPanelPriors
+  - CosmologyBubbleBleedPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
   - CosmologyLab
@@ -81,12 +109,18 @@ tiers:
   - CosmologyWave7Priors
   - CosmologyWave8Priors
   - CosmologyWave9Priors
+  - CrcHandbookPropertiesPriors
   - CreativeArtsMathSpinePriors
+  - CrossProofConnectivePriors
+  - CrossrefScholarlyPanelPriors
+  - CrossrefScholarlyPriors
   - CryospherePriors
   - CryptographyTechnologyPriors
   - CulinaryArtsPriors
+  - CulinaryFermentationMaillardPanelPriors
   - DarkEnergyCPLPriors
   - DarkSectorOpenProblemsPriors
+  - DesktopApplicationWiringSpinePriors
   - DistantIslandEmergenceSimulationPriors
   - DistantIslandZ128Z132DeepPanelPriors
   - DomainCouplingSimulationPriors
@@ -94,9 +128,12 @@ tiers:
   - DomainCoveragePriors
   - DomainOrbitalPredictionsPriors
   - DomainPrecisionPriors
+  - E10dWdConnectivePriors
   - EcologyGapFillPriors
+  - EcologyPriors
   - EcologyPublicPanelPriors
   - EconometricsGapFillPriors
+  - EconometricsPriors
   - EconomicsGapFillPriors
   - EconophysicsPriors
   - ElectricalPowerSystemsPriors
@@ -105,26 +142,42 @@ tiers:
   - EnergyAIOrbitalBridgePriors
   - EnergyNeuralOrbitalBridgePriors
   - EntomologyExtensionPriors
+  - EntomologyPanelPriors
+  - EntomologyPriors
   - EnvironmentalEngineeringExtensionPriors
+  - EnvironmentalEngineeringPriors
   - EpidemiologyExtensionPriors
+  - EpidemiologyPanelPriors
+  - EpidemiologyPriors
+  - EthologyPanelPriors
+  - EthologyPriors
   - EvolutionPriors
   - ExogeologyExtensionPriors
+  - ExogeologyPanelPriors
+  - ExogeologyPriors
   - ExoplanetSystemArchitecturePriors
   - ExperimentSynthesisPriors
+  - ExperimentalBaseMathematicsPanelPriors
   - ExternalOSSCodeGenomePriors
   - FPCTemporalCouplingPriors
+  - FederalScienceRegistryPanelPriors
+  - FederalScienceRegistryPriors
   - FinanceMarketsExtensionPriors
+  - FinanceMarketsPanelPriors
+  - FinanceMarketsPriors
   - FluidDynamicsGapFillPriors
   - FluidPhaseCurrentSpinePriors
   - FluidSpacetimeObservableSpinePriors
   - FluidSpacetimePreregValidationPanelPriors
   - FoldDepthMetricsPriors
   - FoodMicrobiologyGapFillPriors
+  - FoodMicrobiologyPriors
   - FormulaBranchingFractalPriors
   - FormulaCorpusClosurePriors
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
   - FormulaPrecisionSpinePriors
+  - FoundationalOntologySpinePriors
   - FpcFluidlinkTimingDeepPanelPriors
   - FractalConstantRecursionPriors
   - FsotAggregateOrganizedPanelPriors
@@ -133,6 +186,7 @@ tiers:
   - FuelPriors
   - FuelThermochemistryPublicAnchorsPriors
   - FusionDecayChainPreregScaffoldPriors
+  - FusionGridConnectivePriors
   - FusionLabCertificateSpinePriors
   - FusionPhysicsPublicPanelPriors
   - GWOSCLiveEventDeepPriors
@@ -143,21 +197,29 @@ tiers:
   - GenomicSciencesPriors
   - GeochemistryPriors
   - GeologyStratigraphyExtensionPriors
+  - GeologyStratigraphyPriors
   - GeomagnetismPriors
+  - GovernmentOpenDataSpinePriors
   - GraceCryospherePriors
   - HeavyIonLabSynthesisPanelPriors
   - HiggsBranchingPriors
   - HiggsMassPriors
   - HistoryExtensionPriors
+  - HistoryPanelPriors
+  - HistoryPriors
   - HubbleBubbleTensionPriors
   - HubbleDarkSectorCrosswalkPriors
   - HvacThermalSystemsPriors
   - HybridFiSimMultiHeroPanelPriors
+  - HybridFiSimStratumDeepPanelPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
   - IGEMPartsExpandedPriors
   - IGEMSyntheticBiologyPriors
+  - ImmunologyPanelPriors
   - ImmunologyPriors
+  - InaturalistObservationPanelPriors
+  - InaturalistObservationPriors
   - InertialConfinementFusionPanelPriors
   - InformationTheoryPublicPanelPriors
   - InitiationTransformationArchetypePriors
@@ -172,22 +234,31 @@ tiers:
   - KronosPriors
   - LabSynthesisMetamaterialSpinePriors
   - LawPolicyExtensionPriors
+  - LawPolicyPanelPriors
+  - LawPolicyPriors
+  - LimnologyPanelPriors
+  - LimnologyPriors
   - LinguisticsFormalPriors
   - LinguisticsPriors
   - LiveIngestSpinePriors
+  - LivingFsotHardwarePanelPriors
   - MagicCirclePriors
   - MagneticConfinementFusionPanelPriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MaillardChemistryGapFillPriors
+  - MaillardChemistryPriors
   - MalwareThreatIntelligencePriors
   - MarineBiologyExtensionPriors
+  - MarineBiologyPanelPriors
+  - MarineBiologyPriors
   - MaterialInSilicoScreeningScaffoldPriors
   - MaterialPropertyVerificationScaffoldPriors
   - MaterialsEngineeringPriors
   - MaterialsGenomeCrosswalkPriors
   - MaterialsProjectLivePanelPriors
+  - MaterialsSpeciesBridgeLivePanelPriors
   - MaterialsSpeciesBridgePriors
   - MathGeneratorAirfoilRmsePriors
   - MathGeneratorBenchmarkFormulaEvalPriors
@@ -195,18 +266,31 @@ tiers:
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
   - MechanicalEngineeringExtensionPriors
+  - MechanicalEngineeringPanelPriors
+  - MechanicalEngineeringPriors
   - MechanisticCouplingPriors
   - MedicalGalacticOrbitalBridgePriors
   - MetamaterialFluidDesignPreregScaffoldPriors
   - MeteorologyGapFillPriors
+  - MicrotubuleQuantumConsciousnessPanelPriors
   - MusicHarmonicsPublicPanelPriors
   - MycologyExtensionPriors
+  - MycologyPanelPriors
+  - MycologyPriors
+  - NasaDonkiSolarPanelPriors
+  - NasaDonkiSolarPriors
   - NasaExoplanetArchivePriors
+  - NasaNeoFeedPanelPriors
+  - NasaNeoFeedPriors
   - NaturalFormationElementSimulationPriors
+  - NcbiGenePublicPanelPriors
+  - NcbiGenePublicPriors
   - NetworkInternetProtocolsPriors
   - NetworkSciencePublicPanelPriors
   - NeuralGalacticOrbitalBridgePriors
   - NeuroeconomicsExtensionPriors
+  - NeuroeconomicsPanelPriors
+  - NeuroeconomicsPriors
   - NeuroimmunologyPriors
   - NeurolabGapsMathSpinePriors
   - NeurolabResidualMathSpinePriors
@@ -215,25 +299,47 @@ tiers:
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - NeuronMultiHeroPriors
+  - NeuroscienceConnectomicsDepthPanelPriors
+  - NeutrinoPhysicsPanelPriors
+  - NeutrinoPhysicsPriors
   - NistCodataConstantsPriors
+  - NistDlmfSpecialFunctionsPriors
   - NoaaCoastalTidesPriors
+  - NoaaNdbcBuoyPanelPriors
+  - NoaaNdbcBuoyPriors
+  - NothingPerfectionFrictionOriginPanelPriors
   - ObserverChannelDerivationPriors
+  - ObserverEffectCrossSpeciesPanelPriors
   - OceanographyGapFillPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
+  - OpenMeteoLivePanelPriors
+  - OpenMeteoLivePriors
   - OpenNeuroFullPanelPriors
   - OpenalexCitationGraphPriors
+  - OpticsInterferometryDepthPanelPriors
   - OrbitalMechanicsPriors
+  - OstiDoeSciencePanelPriors
+  - OstiDoeSciencePriors
+  - OverflowCarryEmergencePanelPriors
   - PaleoclimateExtensionPriors
+  - PaleoclimatePanelPriors
+  - PaleoclimatePriors
   - PaleontologyExtensionPriors
+  - PaleontologyPanelPriors
+  - PaleontologyPriors
   - ParticleNeuralOrbitalBridgePriors
   - ParticlePhysicsGapFillPriors
   - ParticlePhysicsPriors
+  - PdgParticlePropertiesPriors
   - PeriodicExtensionDecayTopologyScaffoldPriors
   - PeriodicTableCompletionSpinePriors
   - PeriodicTableExtensionClosureSpinePriors
   - PeriodicTablePublicPanelPriors
+  - PetrologyGeochemistryPanelPriors
+  - PetrologyGeochemistryPriors
   - PharmacokineticsGapFillPriors
+  - PharmacokineticsPriors
   - PharmacologyPriors
   - PhiMorphogeneticScalingPriors
   - PhotonicForge
@@ -253,26 +359,41 @@ tiers:
   - PubChemLiveDeepPriors
   - PubChemStabilityPanelPriors
   - PubchemCompoundPropertiesPriors
+  - PublicVerifiableSpinePriors
   - PublishedFuelPropertyPanelPriors
   - PureMathematicsExtensionPriors
+  - PureMathematicsPanelPriors
+  - PureMathematicsPriors
   - QuantumComputingGapFillPriors
+  - QuantumComputingMathDepthPanelPriors
   - QuantumInformationPriors
   - QuantumMaterialsPriors
   - QuantumMechanicsGapFillPriors
   - QuantumOpticsGapFillPriors
+  - RadioAstronomyPanelPriors
+  - RadioAstronomyPriors
   - RcsbPdbStructuresPriors
   - RdIntervalTighteningPanelPriors
   - RealityFoldingSpinePriors
   - RoboticsControlSystemsExtensionPriors
+  - RoboticsControlSystemsPanelPriors
+  - RoboticsControlSystemsPriors
   - RustLeanBridgePriors
   - SH0ESRefinedPriors
   - SIMBADStellarIdentityDeepPriors
+  - ScientificExpansionDepthSpinePriors
+  - ScientificExpansionDepthWave2SpinePriors
+  - ScientificExpansionSpinePriors
+  - ScientificExpansionWave2SpinePriors
+  - ScientificExpansionWave3SpinePriors
   - SecureSoftwareEngineeringPriors
   - SeismologyDeepPriors
   - SeismologyPriors
   - SemiconductorPhysicsPublicPanelPriors
   - SmallBodyOrbitsPriors
   - SociologyGapFillPriors
+  - SoilSciencePanelPriors
+  - SoilSciencePriors
   - SolarSystemStructureDeepPriors
   - SotaCompetitivenessPriors
   - SoulSiblingPriors
@@ -280,37 +401,54 @@ tiers:
   - SpaceWeatherPriors
   - SpeciesPriors
   - SpeleologyExtensionPriors
+  - SpeleologyPanelPriors
+  - SpeleologyPriors
   - SportsBiomechanicsGapFillPriors
+  - SportsBiomechanicsPriors
   - StatisticalMechanicsPublicPanelPriors
   - StellarMultiplicityCatalogPriors
   - StellarMultiplicityLiveDeepPriors
   - StructureCalibrationPriors
+  - StsciMastTelescopePanelPriors
+  - StsciMastTelescopePriors
   - StumpedObservablesPanelPriors
   - StumpedObservablesSpinePriors
   - SuperheavyElementStabilityPanelPriors
   - SuperheavyIslandCompletionSpinePriors
   - SuperheavyIslandEmergenceSimulationPriors
   - SupplyChainLogisticsExtensionPriors
+  - SupplyChainLogisticsPanelPriors
+  - SupplyChainLogisticsPriors
   - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
   - Term3AcousticBleedDepthPriors
+  - TheWellOutcomesVerificationPanelPriors
+  - TheWellSpotCheckPanelPriors
+  - TheWellVerificationSpinePriors
   - TheoryCompletenessSpinePriors
   - ThesisSimulationPriors
+  - Tier93DualWaveSpinePriors
   - TimeDomainCrosswalkPriors
   - TimeEmergenceDeepPanelPriors
   - TimeEmergenceSimulationPriors
   - ToEClaimCertificateBundlePriors
   - ToEGapClosureSpinePriors
   - ToEUnificationSpinePriors
+  - TokenizationLivePanelPriors
   - TokenizationSmokePriors
+  - ToxicologyPanelPriors
+  - ToxicologyPriors
   - TrinaryFluidPriors
+  - TrinaryHardwareLivePanelPriors
   - TrinaryHardwareMotifPriors
   - TrinaryOSISARebuildPriors
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
   - TrinaryOSTierEPriors
+  - UapWarGovReleasePanelPriors
+  - UapWarGovReleasePriors
   - UndiscoveredElementCandidatePreregScaffoldPriors
   - UniProtStructureAnnotationsDeepPriors
   - UnifiedDBCandidateCrosswalkPriors
@@ -319,16 +457,25 @@ tiers:
   - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
   - VirologyExtensionPriors
+  - VirologyPanelPriors
+  - VirologyPriors
   - VizieRWdsTapLiveDeepPriors
   - VlDistillAtlasPriors
+  - VolcanologyPanelPriors
+  - VolcanologyPriors
   - WDSLiveMultiplicityDeepPriors
+  - WarpActuationDevelopmentPriors
+  - WarpBhWhPortalPanelPriors
+  - WarpBhWhPortalPriors
   - WeatherPriors
   - WorldBankDevelopmentPriors
   - XRInteractiveMediaMathScaffoldPriors
   - Z120Z126BeamSynthesisPanelPriors
   - Z164DistantIslandPreregScaffoldPriors
+  - ZeroBoundaryNotEntityPanelPriors
   - ZeroDayRiskEvaluatorPriors
   - ZoologyExtensionPriors
+  - ZoologyPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
   status: complete
@@ -435,7 +582,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 256
+    scientific_domains_covered: 365
     expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -472,7 +619,7 @@ tiers:
     particle_wave4_observables: 16
     particle_math_physics_rules: 25
     particle_extended_observables: 98
-    particle_median_error_pct: 0.018000835539782083
+    particle_median_error_pct: 0.014415233331492876
   artifacts:
   - data/cosmology_extended_manifest.yaml
   - data/particle_physics_manifest.yaml
@@ -535,8 +682,8 @@ tiers:
   metrics:
     space_weather_kp_records: 271813
     pharmacology_observables: 120
-    cryosphere_month_records: 1919
-    cryosphere_match_rate: 0.9927045336112559
+    cryosphere_month_records: 2399
+    cryosphere_match_rate: 1.0
     gfz_year_range:
     - 1932
     - 2024
@@ -560,13 +707,13 @@ tiers:
   status: complete
   metrics:
     seismology_events: 500
-    seismology_match_rate: 0.962
+    seismology_match_rate: 1.0
     tectonics_events: 500
     tectonics_boundary_features: 241
     geomagnetism_observables: 525
     planetary_structure_bodies: 20
-    orbital_mechanics_bodies: 9
-    orbital_median_error_pct: 0.106141
+    orbital_mechanics_bodies: 22
+    orbital_median_error_pct: 0.022461
   artifacts:
   - data/seismology_usgs_manifest.yaml
   - data/tectonics_manifest.yaml
@@ -582,8 +729,8 @@ tiers:
   name: "Small-body orbits + magnetosphere coupling (Dst\xD7Kp\xD7magnetic-string)"
   status: complete
   metrics:
-    small_body_orbit_count: 12
-    small_body_median_error_pct: 0.094587
+    small_body_orbit_count: 22
+    small_body_median_error_pct: 0.022461
     magnetosphere_observables: 167
     magnetosphere_match_rate: 1.0
     magnetosphere_kp_resolution: rolling_6h_max
@@ -631,9 +778,9 @@ tiers:
   status: complete
   metrics:
     grace_cryosphere_months: 253
-    grace_cryosphere_match_rate: 0.9367588932806324
+    grace_cryosphere_match_rate: 1.0
     seismology_deep_observables: 1000
-    seismology_deep_match_rate: 0.81
+    seismology_deep_match_rate: 1.0
     seismology_deep_holdout_match_rate: 1.0
     planetary_atmospheres_observables: 21
     planetary_atmospheres_median_error_pct: 0.0
@@ -682,15 +829,15 @@ tiers:
   status: complete
   metrics:
     planetary_structure_bodies: 20
-    orbital_mechanics_bodies: 9
-    small_body_orbits_bodies: 12
+    orbital_mechanics_bodies: 22
+    small_body_orbits_bodies: 22
     plasma_physics_cases: 20
     geochemistry_records: 153
-    geochemistry_median_error_pct: 0.186623
+    geochemistry_median_error_pct: 0.006625234573930708
     oncology_records: 67
-    oncology_median_error_pct: 0.078779
+    oncology_median_error_pct: 0.05041956982053305
     neuroimmunology_records: 92
-    neuroimmunology_median_error_pct: 0.07247823276673726
+    neuroimmunology_median_error_pct: 0.05041956982053305
   artifacts:
   - data/geochemistry_manifest.yaml
   - data/oncology_manifest.yaml
@@ -702,10 +849,10 @@ tiers:
   name: Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
   status: complete
   metrics:
-    synthetic_biology_records: 21
+    synthetic_biology_records: 20
     quantum_materials_records: 168
-    multi_hero_records: 16
-    multi_hero_median_fi_proxy_pct: 0.22565
+    multi_hero_records: 24
+    multi_hero_median_fi_proxy_pct: null
     climate_station_count: 30
     climate_record_count: 17296
     climate_holdout_records: 3596
@@ -731,8 +878,8 @@ tiers:
     \ reasoning"
   status: complete
   metrics:
-    linguistics_formal_records: 10
-    mathematics_computational_records: 21
+    linguistics_formal_records: 24
+    mathematics_computational_records: 20
     materials_engineering_records: 87
     computational_reasoning_records: 577
     computational_reasoning_median_error_pct: 0.0
@@ -747,13 +894,13 @@ tiers:
   - FSOT.Formal.ComputationalReasoningPriors
 - tier: 30
   name: "Portable bridges \u2014 math rules eval, trinary OS, materials\u2194species"
-  status: complete
+  status: pending
   metrics:
-    math_generator_rules_eval_records: 1522
+    math_generator_rules_eval_records: 1552
     math_generator_rules_eval_median_error_pct: 0.0
     math_generator_rules_schema_fail_count: 0
-    trinary_os_portable_records: 8
-    trinary_os_portable_oracle_count: 3
+    trinary_os_portable_records: 24
+    trinary_os_portable_oracle_count: null
     materials_species_bridge_records: 45
     materials_species_bridge_metals: 10
     materials_species_bridge_median_error_pct: 0.0
@@ -772,8 +919,8 @@ tiers:
   metrics:
     igem_synthetic_biology_records: 54
     igem_synthetic_biology_parts: 20
-    math_generator_benchmark_formula_records: 9
-    math_generator_benchmark_formula_median_error_pct: 0.0
+    math_generator_benchmark_formula_records: 21
+    math_generator_benchmark_formula_median_error_pct: 0.020055
     trinary_os_isa_rebuild_records: 38
     trinary_os_isa_opcode_count: 27
   artifacts:
@@ -792,8 +939,8 @@ tiers:
   metrics:
     igem_live_fasta_records: 42
     igem_live_fasta_parts: 20
-    math_generator_airfoil_rmse_records: 5
-    math_generator_airfoil_rmse_median_error_pct: 0.0
+    math_generator_airfoil_rmse_records: 21
+    math_generator_airfoil_rmse_median_error_pct: 0.020055
     trinary_os_round_trip_records: 22
     trinary_os_round_trip_program_count: 3
   artifacts:
@@ -812,9 +959,9 @@ tiers:
   status: complete
   metrics:
     domain_coverage_empirical_domains: 35
-    tokenization_smoke_records: 9
-    trinary_hardware_motif_records: 8
-    intrinsic_llm_validators_records: 10
+    tokenization_smoke_records: 24
+    trinary_hardware_motif_records: 24
+    intrinsic_llm_validators_records: 24
   artifacts:
   - scripts/ingest_geophysical_labs.py
   - vendor/linguistics/linguistics_derivations.json
@@ -830,8 +977,8 @@ tiers:
   status: complete
   metrics:
     biological_cuda_physarum_records: 35
-    arxiv_primitives_v14_records: 14
-    formula_corpus_cnc_records: 10
+    arxiv_primitives_v14_records: 24
+    formula_corpus_cnc_records: 21
   artifacts:
   - data/biological_cuda_physarum_manifest.yaml
   - data/arxiv_primitives_v14_manifest.yaml
@@ -846,8 +993,8 @@ tiers:
   name: "Crosswalk wave \u2014 Rendlesham decoder, Qwen certified agent, Genesis omni-theory"
   status: complete
   metrics:
-    binary_decoder_rendlesham_records: 10
-    certified_agent_qwen_records: 8
+    binary_decoder_rendlesham_records: 24
+    certified_agent_qwen_records: 24
     omni_theory_genesis_records: 27
   artifacts:
   - data/binary_decoder_rendlesham_manifest.yaml
@@ -866,9 +1013,9 @@ tiers:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 70
-    fsot_aggregate_unified_db_records: 8
-    prediction_rederivation_records: 10
+    extension_domain_count: 329
+    fsot_aggregate_unified_db_records: 24
+    prediction_rederivation_records: 24
     precision_candidates_over_1pct: 0
   artifacts:
   - vendor/formula_corpus/by_domain/strict_empirical.jsonl
@@ -883,10 +1030,10 @@ tiers:
     \ corpus"
   status: complete
   metrics:
-    vl_distill_atlas_records: 10
-    rust_lean_bridge_records: 9
-    bibliography_lean_corpus_records: 9
-    extension_domain_count: 70
+    vl_distill_atlas_records: 24
+    rust_lean_bridge_records: 24
+    bibliography_lean_corpus_records: 21
+    extension_domain_count: 329
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -902,16 +1049,16 @@ tiers:
     \ PubChem, CERN, UniProt"
   status: complete
   metrics:
-    nist_codata_records: 6
-    gbif_records: 600
+    nist_codata_records: 21
+    gbif_records: 2000
     noaa_tides_records: 40
-    world_bank_records: 160
-    nasa_exoplanet_records: 296
-    rcsb_pdb_records: 86
-    openalex_records: 150
-    pubchem_records: 29
-    cern_opendata_records: 83
-    uniprot_records: 62
+    world_bank_records: 420
+    nasa_exoplanet_records: 988
+    rcsb_pdb_records: 159
+    openalex_records: 200
+    pubchem_records: 521
+    cern_opendata_records: 200
+    uniprot_records: 102
     external_data_root: D:/FSOT-2.1-Lean-PublicData
   artifacts:
   - data/tier38_public_apis_manifest.yaml
@@ -933,8 +1080,8 @@ tiers:
   status: complete
   metrics:
     space_propulsion_records: 21
-    electrical_power_records: 9
-    hvac_thermal_records: 7
+    electrical_power_records: 24
+    hvac_thermal_records: 23
     breakthroughs_records: 21
     external_data_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
   artifacts:
@@ -967,7 +1114,7 @@ tiers:
   status: complete
   metrics:
     tier_f_domain_count: 19
-    tier_f_total_records: 5868
+    tier_f_total_records: 4871
     expansion_candidates_remaining: 0
     external_cache_root: G:/FSOT-PublicData/tier_f_gaps
   artifacts:
@@ -997,15 +1144,15 @@ tiers:
 - tier: 42
   name: "Tier 42 \u2014 coupling simulation + Tier G depth + formula corpus closure\
     \ + space weather split"
-  status: complete
+  status: pending
   metrics:
-    coupling_node_count: 246
-    coupling_edge_count: 12840
+    coupling_node_count: 282
+    coupling_edge_count: 18691
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
     tier_g_domain_count: 8
-    tier_g_total_records: 1498
+    tier_g_total_records: 472
     space_weather_full_record_count: 271813
     space_weather_external_full: G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json
   artifacts:
@@ -1023,15 +1170,15 @@ tiers:
 - tier: 43
   name: "Tier 43 \u2014 cybersecurity engineering + code-genome zero-day evaluator\
     \ depth"
-  status: complete
+  status: pending
   metrics:
     tier_h_domain_count: 6
-    tier_h_total_records: 657
-    tier_h_depth_malware_records: 301
+    tier_h_total_records: 441
+    tier_h_depth_malware_records: 85
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 246
+    coupling_node_count: 282
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -1055,11 +1202,11 @@ tiers:
     external_oss_high_affinity_pairs: 34
     external_oss_pooled_median_error_pct: 0.0
     programming_language_law_count: 30
-    programming_language_laws_records: 77
+    programming_language_laws_records: 107
     linguistics_bridge_count: 25
     code_genome_bridge_count: 13
     oss_refresh_cadence_days: 7
-    coupling_node_count: 246
+    coupling_node_count: 282
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
@@ -1078,16 +1225,16 @@ tiers:
 - tier: 45
   name: "Tier 45 \u2014 ToE completeness spine (formula branching fractal + mechanistic\
     \ coupling + CVE falsification)"
-  status: complete
+  status: pending
   metrics:
-    formula_spine_domain_attachments: 143
+    formula_spine_domain_attachments: 246
     corpus_strict_empirical_count: 7941
     mechanistic_channel_count: 39
     validated_mechanism_pairs: 37
     kev_falsification_records: 1635
     cwe_codon_overlap_rate: 0.5
-    theory_completeness_status: GREEN
-    coupling_node_count: 246
+    theory_completeness_status: null
+    coupling_node_count: 282
   artifacts:
   - data/fsot_formula_spine.yaml
   - data/mechanistic_coupling_manifest.yaml
@@ -1100,16 +1247,16 @@ tiers:
 - tier: 46
   name: "Tier 46 \u2014 ToE gap closure (fractal recursion, prereg predictions, portable\
     \ clone, observer derive, adversarial)"
-  status: complete
+  status: pending
   metrics:
     constant_family_count: 5
-    preregistered_prediction_count: 8
-    discriminant_pass_count: 8
+    preregistered_prediction_count: 27
+    discriminant_pass_count: 24
     clone_verify_pass: true
-    quirkmod_derived_count: 67
-    adversarial_detection_rate: 1.0
-    gap_closure_status: GREEN
-    coupling_node_count: 246
+    quirkmod_derived_count: 162
+    adversarial_detection_rate: null
+    gap_closure_status: null
+    coupling_node_count: 282
   artifacts:
   - data/fractal_constant_recursion.yaml
   - data/preregistered_predictions_manifest.yaml
@@ -1125,17 +1272,17 @@ tiers:
 - tier: 47
   name: "Tier 47 \u2014 Orbital gap fill (physics frontiers, tag-pair bridges, prediction\
     \ rollup)"
-  status: complete
+  status: pending
   metrics:
     acoustic_resonance_records: 29
     chaos_phase_records: 21
-    phi_morphogen_records: 327
+    phi_morphogen_records: 289
     ionospheric_chemistry_records: 85
     orbital_bridge_pair_count: 36
-    filled_orbital_predictions: 12
-    orbital_gap_fill_status: GREEN
+    filled_orbital_predictions: null
+    orbital_gap_fill_status: null
     mechanistic_channel_count: 39
-    coupling_node_count: 246
+    coupling_node_count: 282
   artifacts:
   - data/orbital_gap_fill_manifest.yaml
   - data/domain_orbital_prediction_report.json
@@ -1147,14 +1294,14 @@ tiers:
 - tier: 48
   name: "Tier 48 \u2014 ToE unity (cross-scale bridges complete, 12/12 orbital, unification\
     \ spine)"
-  status: complete
+  status: pending
   metrics:
-    medical_galactic_bridge_records: 49
-    filled_orbital_predictions: 12
-    orbital_prediction_total: 12
-    orbital_gap_fill_status: GREEN
-    toe_unification_status: GREEN
-    coupling_node_count: 246
+    medical_galactic_bridge_records: 48
+    filled_orbital_predictions: null
+    orbital_prediction_total: null
+    orbital_gap_fill_status: null
+    toe_unification_status: null
+    coupling_node_count: 282
     mechanistic_channel_count: 39
     external_cache_root: G:/FSOT-PublicData/cross_scale_bridges
   artifacts:
@@ -1170,7 +1317,7 @@ tiers:
 - tier: 49
   name: "Tier 49 \u2014 Compactification/folding ladder (10 rungs, adjacent couplings,\
     \ fold-depth spine)"
-  status: complete
+  status: pending
   metrics:
     ladder_rung_count: 10
     ladder_status: GREEN
@@ -1178,9 +1325,9 @@ tiers:
     adjacent_coupling_status: GREEN
     fold_depth_span: 2.7194
     fold_metrics_status: GREEN
-    folding_spine_status: GREEN
+    folding_spine_status: null
     mechanistic_channel_count: 39
-    coupling_node_count: 246
+    coupling_node_count: 282
     external_cache_root: G:/FSOT-PublicData/compactification_ladder
   artifacts:
   - data/compactification_ladder_manifest.yaml
@@ -1192,19 +1339,19 @@ tiers:
   - FSOT.Formal.CompactificationLadderPriors
 - tier: 50
   name: "Tier 50 \u2014 Time emergence / FPC (simulation, crosswalk, FluidLink, spine)"
-  status: complete
+  status: pending
   metrics:
     time_simulation_status: GREEN
     time_pooled_median_error_pct: 0.0
     bh_dilation_error_pct: 0.007851
     crosswalk_status: GREEN
-    crosswalk_domain_count: 156
-    fluidlink_edge_count: 6
-    coupling_status: GREEN
-    fpc_spine_status: GREEN
-    fold_spine_link_status: GREEN
+    crosswalk_domain_count: 246
+    fluidlink_edge_count: null
+    coupling_status: null
+    fpc_spine_status: null
+    fold_spine_link_status: null
     mechanistic_channel_count: 39
-    coupling_node_count: 246
+    coupling_node_count: 282
   artifacts:
   - data/time_emergence_manifest.yaml
   - scripts/time_emergence_lib.py

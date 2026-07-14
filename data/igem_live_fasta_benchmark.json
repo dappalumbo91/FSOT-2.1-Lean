@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:12:40.336911+00:00",
+  "generated_at": "2026-07-13T15:23:06.599902+00:00",
   "source": [
     "vendor/igem/igem_parts_registry.json",
     "vendor/igem/fastas"
@@ -11,7 +11,7 @@
   "D_eff": 14,
   "part_count": 20,
   "live_fasta_count": 0,
-  "bundled_fasta_count": 0,
+  "bundled_fasta_count": 20,
   "record_count": 42,
   "observable_count": 42,
   "median_error_pct": 0.0,
@@ -24,20 +24,7 @@
       "computed": 12,
       "measured": 12,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0034",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -47,20 +34,7 @@
       "computed": 41.6667,
       "measured": 41.6667,
       "error_pct": 7.999993600270692e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0034",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -70,20 +44,7 @@
       "computed": 22,
       "measured": 22,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0032",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -93,20 +54,7 @@
       "computed": 45.4545,
       "measured": 45.4545,
       "error_pct": 0.00010000009999062986,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0032",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -116,20 +64,7 @@
       "computed": 15,
       "measured": 15,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B1002",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -139,20 +74,7 @@
       "computed": 46.6667,
       "measured": 46.6667,
       "error_pct": 7.14285204105709e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B1002",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -162,20 +84,7 @@
       "computed": 35,
       "measured": 35,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa J23100",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -185,20 +94,7 @@
       "computed": 48.5714,
       "measured": 48.5714,
       "error_pct": 5.882356401581393e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa J23100",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -208,20 +104,7 @@
       "computed": 53,
       "measured": 53,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -231,20 +114,7 @@
       "computed": 47.1698,
       "measured": 47.1698,
       "error_pct": 2.400000575767171e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -254,20 +124,7 @@
       "computed": 51,
       "measured": 51,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0051",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -277,20 +134,7 @@
       "computed": 45.098,
       "measured": 45.098,
       "error_pct": 8.695659736293715e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0051",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -300,20 +144,7 @@
       "computed": 55,
       "measured": 55,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -323,20 +154,7 @@
       "computed": 47.2727,
       "measured": 47.2727,
       "error_pct": 5.769234097689932e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa R0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -346,20 +164,7 @@
       "computed": 45,
       "measured": 45,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa I52002",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -369,20 +174,7 @@
       "computed": 48.8889,
       "measured": 48.8889,
       "error_pct": 2.2727267567583718e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa I52002",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -392,20 +184,7 @@
       "computed": 119,
       "measured": 119,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -415,20 +194,7 @@
       "computed": 52.9412,
       "measured": 52.9412,
       "error_pct": 4.444442470152661e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0010",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -438,20 +204,7 @@
       "computed": 41,
       "measured": 41,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0012",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -461,20 +214,7 @@
       "computed": 51.2195,
       "measured": 51.2195,
       "error_pct": 2.380952948398675e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0012",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -484,20 +224,7 @@
       "computed": 129,
       "measured": 129,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0015",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -507,20 +234,7 @@
       "computed": 52.7132,
       "measured": 52.7132,
       "error_pct": 4.117645363177062e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa B0015",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -530,20 +244,7 @@
       "computed": 720,
       "measured": 720,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -553,20 +254,7 @@
       "computed": 48.0556,
       "measured": 48.0556,
       "error_pct": 9.248546359047207e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -576,20 +264,7 @@
       "computed": 711,
       "measured": 711,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0062",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -599,20 +274,7 @@
       "computed": 48.3826,
       "measured": 48.3826,
       "error_pct": 8.313946575213666e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0062",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -622,20 +284,7 @@
       "computed": 792,
       "measured": 792,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0012",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -645,20 +294,7 @@
       "computed": 47.3485,
       "measured": 47.3485,
       "error_pct": 3.199998975697284e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0012",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -668,20 +304,7 @@
       "computed": 1194,
       "measured": 1194,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0261",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -691,20 +314,7 @@
       "computed": 49.7487,
       "measured": 49.7487,
       "error_pct": 8.78788651014094e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0261",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -714,20 +324,7 @@
       "computed": 948,
       "measured": 948,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa E0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -737,20 +334,7 @@
       "computed": 48.7342,
       "measured": 48.7342,
       "error_pct": 4.675322489651731e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa E0040",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -760,20 +344,7 @@
       "computed": 786,
       "measured": 786,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0051",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -783,20 +354,7 @@
       "computed": 48.0916,
       "measured": 48.0916,
       "error_pct": 6.349206754233128e-06,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa C0051",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -806,20 +364,7 @@
       "computed": 3328,
       "measured": 3328,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa I13504",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -829,20 +374,7 @@
       "computed": 47.8966,
       "measured": 47.8966,
       "error_pct": 7.227106853889602e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa I13504",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -852,20 +384,7 @@
       "computed": 4101,
       "measured": 4101,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa K608000",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -875,20 +394,7 @@
       "computed": 52.3775,
       "measured": 52.3775,
       "error_pct": 5.9357506661387664e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa K608000",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -898,20 +404,7 @@
       "computed": 2071,
       "measured": 2071,
       "error_pct": 0.0,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa P10001",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -921,20 +414,7 @@
       "computed": 51.2313,
       "measured": 51.2313,
       "error_pct": 2.1017903207268704e-05,
-      "fasta_source": "synthetic_curated",
-      "domain_display_name": "igem live fasta",
-      "display_name": "BBa P10001",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "fasta_source": "bundled"
     },
     {
       "lab": "igem_live_fasta",
@@ -942,54 +422,14 @@
       "computed": 0,
       "measured": 0,
       "error_pct": 0.0,
-      "note": "live API optional; bundled FASTA fallback accepted",
-      "domain_display_name": "igem live fasta",
-      "display_name": "api reachable flag",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "note": "live API optional; bundled FASTA fallback accepted"
     },
     {
       "lab": "igem_live_fasta",
       "property": "fasta_cache_count",
       "computed": 20,
       "measured": 20,
-      "error_pct": 0.0,
-      "domain_display_name": "igem live fasta",
-      "display_name": "fasta cache count",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.0
     }
-  ],
-  "display_name": "IGEM Live FASTA Ingest",
-  "tier_label": "Airfoil RMSE gas-medium readout (FO-212)",
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.669337+00:00",
-  "scientific_precision_summary": {
-    "scalar_count": 41,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.00010000009999062986,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 41
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  }
+  ]
 }

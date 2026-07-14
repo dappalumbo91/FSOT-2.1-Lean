@@ -40,7 +40,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.026204,
       "measured": 0.0,
       "error_pct": 0.026204,
-      "observable_count": 15
+      "observable_count": 15,
+      "domain_display_name": "tier gap fill",
+      "display_name": "public verifiable spine",
+      "scientific_measurement": {
+        "delta": 0.026204,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +87,20 @@
       "measured": 0.025571999999999998,
       "error_pct": 0.0,
       "record_count": 48,
-      "eval_kind": "tier81_bridge"
+      "eval_kind": "tier81_bridge",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "ncbi gene public panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -71,7 +110,20 @@
       "measured": 43044294.0,
       "error_pct": 0.026684,
       "source_panel": "ncbi_gene_public_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "BRCA1",
+      "scientific_measurement": {
+        "delta": 11485.7244,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -81,7 +133,20 @@
       "measured": 17.0,
       "error_pct": 0.02446,
       "source_panel": "ncbi_gene_public_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "BRCA1",
+      "scientific_measurement": {
+        "delta": 0.004158,
+        "delta_pct": 0.024459,
+        "effective_error_pct": 0.024459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -91,7 +156,20 @@
       "measured": 7668420.0,
       "error_pct": 0.026684,
       "source_panel": "ncbi_gene_public_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "TP53",
+      "scientific_measurement": {
+        "delta": 2046.2029,
+        "delta_pct": 0.026684,
+        "effective_error_pct": 0.026684,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -101,7 +179,20 @@
       "measured": 0.01382,
       "error_pct": 0.0,
       "record_count": 200,
-      "eval_kind": "tier81_bridge"
+      "eval_kind": "tier81_bridge",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "crossref scholarly panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -111,7 +202,20 @@
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "crossref_scholarly_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "10.1007/978-3-658-17671-6 18-1",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -121,7 +225,20 @@
       "measured": 2018.0,
       "error_pct": 0.01382,
       "source_panel": "crossref_scholarly_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "10.1007/978-3-658-17671-6 18-1",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -131,7 +248,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "crossref_scholarly_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "10.1007/978-3-031-23161-2 300726",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -141,7 +271,20 @@
       "measured": 0.006006,
       "error_pct": 0.0,
       "record_count": 288,
-      "eval_kind": "tier81_bridge"
+      "eval_kind": "tier81_bridge",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "inaturalist observation panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -151,7 +294,20 @@
       "measured": 47.7057682205,
       "error_pct": 0.006006,
       "source_panel": "inaturalist_observation_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "380617064",
+      "scientific_measurement": {
+        "delta": 0.00286578,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -161,7 +317,20 @@
       "measured": -3.3835221827,
       "error_pct": 0.006006,
       "source_panel": "inaturalist_observation_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "380617064",
+      "scientific_measurement": {
+        "delta": -0.00020282,
+        "delta_pct": 0.005994,
+        "effective_error_pct": 0.005994,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -171,7 +340,20 @@
       "measured": 3102.0,
       "error_pct": 0.007508,
       "source_panel": "inaturalist_observation_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "380617064",
+      "scientific_measurement": {
+        "delta": 0.232896,
+        "delta_pct": 0.007508,
+        "effective_error_pct": 0.007508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -181,7 +363,20 @@
       "measured": 0.028287,
       "error_pct": 0.0,
       "record_count": 596,
-      "eval_kind": "tier81_bridge"
+      "eval_kind": "tier81_bridge",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "noaa ndbc buoy panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -191,7 +386,20 @@
       "measured": 1.0,
       "error_pct": 0.026401,
       "source_panel": "noaa_ndbc_buoy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.000264,
+        "delta_pct": 0.0264,
+        "effective_error_pct": 0.0264,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -201,7 +409,20 @@
       "measured": 1013.4,
       "error_pct": 0.0291,
       "source_panel": "noaa_ndbc_buoy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.294898,
+        "delta_pct": 0.0291,
+        "effective_error_pct": 0.0291,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -211,7 +432,20 @@
       "measured": 12.7,
       "error_pct": 0.028287,
       "source_panel": "noaa_ndbc_buoy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.003592,
+        "delta_pct": 0.028283,
+        "effective_error_pct": 0.028283,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -221,7 +455,20 @@
       "measured": 0.026204,
       "error_pct": 0.0,
       "record_count": 432,
-      "eval_kind": "tier81_bridge"
+      "eval_kind": "tier81_bridge",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "open meteo live panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -231,7 +478,20 @@
       "measured": 29.5,
       "error_pct": 0.0291,
       "source_panel": "open_meteo_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "washington dc 2026-07-12T00:00",
+      "scientific_measurement": {
+        "delta": 0.008584,
+        "delta_pct": 0.029098,
+        "effective_error_pct": 0.029098,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -241,7 +501,20 @@
       "measured": 8.6,
       "error_pct": 0.026204,
       "source_panel": "open_meteo_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "washington dc 2026-07-12T00:00",
+      "scientific_measurement": {
+        "delta": 0.002254,
+        "delta_pct": 0.026209,
+        "effective_error_pct": 0.026209,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "public_verifiable_spine_lab",
@@ -251,7 +524,20 @@
       "measured": 1014.1,
       "error_pct": 0.023822,
       "source_panel": "open_meteo_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "public verifiable spine",
+      "display_name": "washington dc 2026-07-12T00:00",
+      "scientific_measurement": {
+        "delta": 0.241575,
+        "delta_pct": 0.023822,
+        "effective_error_pct": 0.023822,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -265,5 +551,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Public Verifiable Spine",
+  "tier_label": "Tier 81",
+  "scientific_precision_summary": {
+    "scalar_count": 5,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 5
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.090034+00:00"
 }

@@ -44,7 +44,20 @@
       "computed": 0.029733,
       "measured": 0.0,
       "error_pct": 0.029733,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.029733,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +66,20 @@
       "computed": 0.020055,
       "measured": 0.0,
       "error_pct": 0.020055,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "FPC Temporal Coupling depth",
+      "scientific_measurement": {
+        "delta": 0.020055,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -256,7 +282,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -294,7 +320,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -332,7 +358,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -369,7 +395,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -394,7 +420,7 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "source": "NIST SI second definition (Cs-133 hyperfine transition)",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "cs133 hyperfine hz",
       "scientific_measurement": {
         "delta": 0.0,
@@ -419,7 +445,7 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "source": "derived from IERS sidereal period",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "earth sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -444,7 +470,7 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "source": "derived lunar sidereal",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "moon sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -469,7 +495,7 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source": "data/cosmology_extended_benchmark.json lambda_cdm H0",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "hubble h0 km s mpc",
       "scientific_measurement": {
         "delta": 0.0,
@@ -496,7 +522,7 @@
       "error_pct": 0.0,
       "record_count": 17,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -521,7 +547,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_gate",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "fpc time emergence flag",
       "scientific_measurement": {
         "delta": 0.0,
@@ -545,7 +571,7 @@
       "error_pct": 0.0,
       "record_count": 13,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "fpc fluidlink deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -570,7 +596,7 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "cs133 fpc equilibrium",
       "scientific_measurement": {
         "delta": 0.000535,
@@ -593,7 +619,7 @@
       "measured": 282.0,
       "error_pct": 0.0,
       "eval_kind": "graph_anchor",
-      "domain_display_name": "domain coupling refresh",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "domain coupling simulation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -617,7 +643,7 @@
       "measured": 18691.0,
       "error_pct": 0.0,
       "eval_kind": "graph_anchor",
-      "domain_display_name": "domain coupling refresh",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "domain coupling simulation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -641,7 +667,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "panel_bridge",
-      "domain_display_name": "domain coupling refresh",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "domain coupling simulation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -666,7 +692,7 @@
       "error_pct": 0.085305,
       "kind": "neurolab",
       "eval_kind": "node_relay",
-      "domain_display_name": "domain coupling refresh",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Acoustics",
       "scientific_measurement": {
         "delta": 0.0,
@@ -693,11 +719,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -718,11 +747,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "fpc temporal coupling depth",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -744,5 +776,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "FPC Temporal Coupling",
+  "tier_label": "Tier 50",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0297,
+    "max_error_pct": 0.085305,
+    "mean_abs_delta": 0.0001831578947368421,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.200134+00:00"
 }

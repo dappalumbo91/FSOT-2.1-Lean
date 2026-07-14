@@ -93,6 +93,48 @@ def tier93_ncbi_species_cap() -> int:
     return 20
 
 
+def tier94_deep() -> bool:
+    return _flag("FSOT_TIER94_DEEP") or mega_deep()
+
+
+def tier94_anage_species_cap() -> int:
+    if mega_deep():
+        return 0  # 0 = full catalog
+    if tier94_deep():
+        return 800
+    return 200
+
+
+def tier94_ncbi_species_cap() -> int:
+    if mega_deep():
+        return 120
+    if tier94_deep():
+        return 60
+    return 25
+
+
+def tier94_megadeep_ncbi_cap() -> int:
+    """0 = all AnAge extreme long-livers (mega-deep longevity wave)."""
+    if mega_deep():
+        return 0
+    if tier94_deep():
+        return 200
+    return 80
+
+
+def tier95_deep() -> bool:
+    return _flag("FSOT_TIER95_DEEP") or mega_deep()
+
+
+def tier95_tracks_dataset_cap() -> int:
+    """0 = all Zebrahub track CSVs in zebrahub_datasets.yaml."""
+    if mega_deep():
+        return 0
+    if tier95_deep():
+        return 5
+    return 2
+
+
 def gbif_occurrence_limit() -> int:
     if mega_deep():
         return 1000

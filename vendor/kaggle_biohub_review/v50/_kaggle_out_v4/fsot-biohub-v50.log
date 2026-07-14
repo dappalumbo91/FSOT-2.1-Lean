@@ -1,0 +1,91 @@
+[{"stream_name":"stderr","time":7.716813861,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.716942095,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.830090134,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.830128581,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.830135284,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.830140242,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.600365551,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.600416078,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.600423874,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.600428488,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.088788025,"data":"Kaggle input: ['datasets', 'competitions']\n"}
+,{"stream_name":"stdout","time":427.670056422,"data":"Copied v50 bundle from /kaggle/input/datasets/damianpalumbo/fsot-v50-competitive-bundle\n"}
+,{"stream_name":"stdout","time":749.071922726,"data":"[UNET] weights: /kaggle/input/datasets/aashishnegi23/cellmot-ft-detector-biohub/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":1086.99603324,"data":"numpy=2.0.2 polars=1.42.0 tracksdata OK\n"}
+,{"stream_name":"stdout","time":1086.996121517,"data":"Cellmot wheels: /kaggle/input/datasets/thibautgoldsborough/cellmot-baseline-artifacts/cellmot-baseline-artifacts/wheels\n"}
+,{"stream_name":"stdout","time":1338.13208497,"data":"[CELLMOT] copied tree from /kaggle/input/datasets/damianpalumbo/fsot-v50-competitive-bundle/cellmot_code_bundle/cellmot_bundle\n"}
+,{"stream_name":"stdout","time":1338.132144901,"data":"[ENV] BIOHUB_ENGINE= auto\n"}
+,{"stream_name":"stdout","time":1338.132159754,"data":"[ENV] FSOT_DIVISION_ML_REFINE= 1\n"}
+,{"stream_name":"stdout","time":1338.132165165,"data":"[ENV] FSOT_ML_DIVISION_GAP_PATCH= 1\n"}
+,{"stream_name":"stdout","time":1338.331850027,"data":"[ENV] Kaggle\n"}
+,{"stream_name":"stdout","time":1584.26955367,"data":"[UNET] weights: /kaggle/input/datasets/aashishnegi23/cellmot-ft-detector-biohub/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":1681.297907598,"data":"[WARN] cellmot_code_bundle.zip not found — pip install tracksdata/cellmot from wheels\n"}
+,{"stream_name":"stdout","time":1684.254048267,"data":"[WARN] fsot_unet unavailable: No module named 'predict_unet_transformer'\n"}
+,{"stream_name":"stdout","time":1684.254097961,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":1684.254105259,"data":"FSOT KAGGLE v50 — U-Net + FSOT vision/linking\n"}
+,{"stream_name":"stdout","time":1684.25411149,"data":"Lean ref : https://github.com/dappalumbo91/FSOT-2.1-Lean.git\n"}
+,{"stream_name":"stdout","time":1684.25411667,"data":"Engine   : fsot\n"}
+,{"stream_name":"stdout","time":1684.254121601,"data":"Link     : fsot\n"}
+,{"stream_name":"stdout","time":1684.254126434,"data":"Vision   : FSOT_VISION_CALIBRATE=1\n"}
+,{"stream_name":"stdout","time":1684.254150321,"data":"Device   : cpu\n"}
+,{"stream_name":"stdout","time":1684.254153575,"data":"ILP      : CELLMOT_USE_ILP=1 cap=80000\n"}
+,{"stream_name":"stdout","time":1684.254156347,"data":"Data dir : /kaggle/input/competitions/biohub-cell-tracking-during-development/test\n"}
+,{"stream_name":"stdout","time":1684.254159159,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":1684.254161944,"data":"[FSOT-CORE] biological scalar S=0.305006  collapse_threshold=0.9175\n"}
+,{"stream_name":"stdout","time":1684.254164629,"data":"[FSOT-CORE] Lean ref: github.com/dappalumbo91/FSOT-2.1-Lean\n"}
+,{"stream_name":"stdout","time":1684.254167309,"data":"[FSOT-CORE] origin: fsot_rna_trinary_evolution_sim/files-7ed1e62c\n"}
+,{"stream_name":"stdout","time":1684.254170081,"data":"[FSOT-NATIVE] 44b6_0113de3b detector=peaks frames=100\n"}
+,{"stream_name":"stdout","time":1765.261700184,"data":"[FSOT-NATIVE] 44b6_0113de3b nodes=25767 edges=25535\n"}
+,{"stream_name":"stdout","time":1765.261775635,"data":"[DETECTION:CRITICAL] cellpose=0 (0.0%) threshold_fallback=100 (100.0%)\n"}
+,{"stream_name":"stdout","time":1765.261786042,"data":"[FSOT-NATIVE] 44b6_0b24845f detector=peaks frames=100\n"}
+,{"stream_name":"stdout","time":4476.721558463,"data":"[FSOT-NATIVE] 44b6_0b24845f nodes=203241 edges=202764\n"}
+,{"stream_name":"stdout","time":4476.721792003,"data":"[DETECTION:CRITICAL] cellpose=0 (0.0%) threshold_fallback=100 (100.0%)\n"}
+,{"stream_name":"stdout","time":4476.721805506,"data":"[FSOT-NATIVE] 6bba_05b6850b detector=peaks frames=100\n"}
+,{"stream_name":"stdout","time":4516.908869632,"data":"[FSOT-NATIVE] 6bba_05b6850b nodes=6403 edges=6304\n"}
+,{"stream_name":"stdout","time":4516.908916091,"data":"[DETECTION:CRITICAL] cellpose=0 (0.0%) threshold_fallback=100 (100.0%)\n"}
+,{"stream_name":"stdout","time":4516.908923345,"data":"[FSOT-NATIVE] 6bba_05db0fb1 detector=peaks frames=100\n"}
+,{"stream_name":"stdout","time":4661.052807853,"data":"[FSOT-NATIVE] 6bba_05db0fb1 nodes=41817 edges=41362\n"}
+,{"stream_name":"stdout","time":4661.052858241,"data":"[DETECTION:CRITICAL] cellpose=0 (0.0%) threshold_fallback=100 (100.0%)\n"}
+,{"stream_name":"stdout","time":4664.410033917,"data":"\n"}
+,{"stream_name":"stdout","time":4664.410110374,"data":"[COMPLETE] 553193 rows -\u003e /kaggle/working/submission.csv\n"}
+,{"stream_name":"stdout","time":4664.41012015,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":4664.807939819,"data":"dataset        row_type\n"}
+,{"stream_name":"stdout","time":4664.808004609,"data":"44b6_0113de3b  edge         25535\n"}
+,{"stream_name":"stdout","time":4664.808012941,"data":"               node         25767\n"}
+,{"stream_name":"stdout","time":4664.808018422,"data":"44b6_0b24845f  edge        202764\n"}
+,{"stream_name":"stdout","time":4664.808024902,"data":"               node        203241\n"}
+,{"stream_name":"stdout","time":4664.808029688,"data":"6bba_05b6850b  edge          6304\n"}
+,{"stream_name":"stdout","time":4664.808034333,"data":"               node          6403\n"}
+,{"stream_name":"stdout","time":4664.808038988,"data":"6bba_05db0fb1  edge         41362\n"}
+,{"stream_name":"stdout","time":4664.808043558,"data":"               node         41817\n"}
+,{"stream_name":"stdout","time":4664.808048579,"data":"dtype: int64\n"}
+,{"stream_name":"stdout","time":4664.808054504,"data":"submission rows: 553193\n"}
+,{"stream_name":"stderr","time":4667.266869149,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":4667.266930764,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":4667.266952857,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":4667.26719174,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":4667.267459425,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":4667.267594755,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":4667.267834122,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":4667.267945872,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":4667.267952003,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":4667.267984169,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":4667.268008285,"data":"AssertionError                            Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":4667.268013439,"data":"/tmp/ipykernel_16/153595838.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":4667.268018212,"data":"     20 }\n"}
+,{"stream_name":"stderr","time":4667.268023378,"data":"     21 tol = 50  # allow tiny CPU/thread variance\n"}
+,{"stream_name":"stderr","time":4667.268042491,"data":"---\u003e 22 assert abs(len(sub) - EXPECTED_TOTAL) \u003c= tol, f\"row count {len(sub)} != {EXPECTED_TOTAL}\"\n"}
+,{"stream_name":"stderr","time":4667.268047483,"data":"     23 for ds, parts in EXPECTED_BY_DS.items():\n"}
+,{"stream_name":"stderr","time":4667.268051835,"data":"     24     ds_sub = sub[sub[\"dataset\"] == ds]\n"}
+,{"stream_name":"stderr","time":4667.268055942,"data":"\n"}
+,{"stream_name":"stderr","time":4667.268068257,"data":"AssertionError: row count 553193 != 312387\n"}
+,{"stream_name":"stderr","time":4667.268072917,"data":"\n"}
+,{"stream_name":"stderr","time":4670.501679334,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4670.501730436,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4670.700606104,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4670.700635482,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4671.718122017,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4672.104311502,"data":"[NbConvertApp] Writing 16119 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4675.449595866,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4676.451619323,"data":"[NbConvertApp] Writing 310518 bytes to __results__.html\n"}
+]

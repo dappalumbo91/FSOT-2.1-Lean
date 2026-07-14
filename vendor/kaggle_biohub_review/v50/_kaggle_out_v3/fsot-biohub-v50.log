@@ -1,0 +1,41 @@
+[{"stream_name":"stderr","time":7.489640349,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.489748234,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.565384024,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.56542179,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.565431672,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.565435057,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.382683342,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.382726905,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.382733229,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.382738041,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.080199708,"data":"Kaggle input: ['datasets', 'competitions']\n"}
+,{"stream_name":"stdout","time":324.988101156,"data":"Copied v50 bundle from /kaggle/input/datasets/damianpalumbo/fsot-v50-competitive-bundle\n"}
+,{"stream_name":"stderr","time":325.416485807,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":325.416566977,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":325.416577936,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":325.416749693,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":325.416776969,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":325.417023984,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":325.417203909,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":325.417222957,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":325.417230154,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":325.417236156,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":325.417242389,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":325.417247897,"data":"/tmp/ipykernel_16/803731581.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":325.417254291,"data":"     93 missing = [n for n in required if not (WORK / n).exists()]\n"}
+,{"stream_name":"stderr","time":325.417259282,"data":"     94 if missing:\n"}
+,{"stream_name":"stderr","time":325.417264161,"data":"---\u003e 95     raise FileNotFoundError(f\"Bundle incomplete after copy: {missing}\")\n"}
+,{"stream_name":"stderr","time":325.41727192,"data":"     96 \n"}
+,{"stream_name":"stderr","time":325.41729008,"data":"     97 _ft = glob.glob(\"/kaggle/input/**/cellmot-ft-detector-biohub/**/edge_predictor_best.pth\", recursive=True)\n"}
+,{"stream_name":"stderr","time":325.417318443,"data":"\n"}
+,{"stream_name":"stderr","time":325.417323805,"data":"FileNotFoundError: Bundle incomplete after copy: ['cellmot_code_bundle.zip']\n"}
+,{"stream_name":"stderr","time":325.417328137,"data":"\n"}
+,{"stream_name":"stderr","time":328.162117548,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":328.162169251,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":328.347951394,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":328.347996165,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":329.212289145,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":329.585772982,"data":"[NbConvertApp] Writing 12428 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":332.777368781,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":333.796409202,"data":"[NbConvertApp] Writing 306608 bytes to __results__.html\n"}
+]

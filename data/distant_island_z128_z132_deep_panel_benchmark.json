@@ -43,7 +43,20 @@
       "computed": 1e-06,
       "measured": 0.0,
       "error_pct": 1e-06,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +65,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Distant Island Z128 Z132 Deep Panel depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -384,7 +410,7 @@
       "measured": 938.272,
       "error_pct": 0.323111,
       "eval_kind": "particle_relay",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "proton",
       "scientific_measurement": {
         "delta": 3.03165665,
@@ -408,7 +434,7 @@
       "measured": 939.565,
       "error_pct": 0.185049,
       "eval_kind": "particle_relay",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "neutron",
       "scientific_measurement": {
         "delta": 1.73865665,
@@ -433,7 +459,7 @@
       "measured": 8100.0,
       "error_pct": 1e-06,
       "eval_kind": "half_life_anchor",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "Rf",
       "scientific_measurement": {
         "delta": 7.698e-05,
@@ -458,7 +484,7 @@
       "measured": 7.154302,
       "error_pct": 9.5e-05,
       "eval_kind": "liquid_drop_proxy",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "Rf",
       "scientific_measurement": {
         "delta": 7e-06,
@@ -483,7 +509,7 @@
       "error_pct": 0.0,
       "record_count": 23,
       "eval_kind": "island_panel_bridge",
-      "domain_display_name": "superheavy island completion",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "island deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -508,7 +534,7 @@
       "error_pct": 1e-06,
       "source_panel": "Superheavy_Island_Completion_Spine",
       "eval_kind": "island_relay",
-      "domain_display_name": "superheavy island completion",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "Rf",
       "scientific_measurement": {
         "delta": 7.698e-05,
@@ -532,7 +558,7 @@
       "error_pct": 0.0,
       "source_panel": "Superheavy_Island_Completion_Spine",
       "eval_kind": "island_relay",
-      "domain_display_name": "superheavy island completion",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "Z119 N177",
       "scientific_measurement": {
         "delta": 0.0,
@@ -556,7 +582,7 @@
       "error_pct": 9.5e-05,
       "source_panel": "Superheavy_Island_Completion_Spine",
       "eval_kind": "island_relay",
-      "domain_display_name": "superheavy island completion",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "Z119 N177",
       "scientific_measurement": {
         "delta": 7e-06,
@@ -580,7 +606,7 @@
       "error_pct": 0.0,
       "record_count": 50,
       "eval_kind": "periodic_extension_bridge",
-      "domain_display_name": "periodic extension closure",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "fusion lab",
       "scientific_measurement": {
         "delta": 0.0,
@@ -605,7 +631,7 @@
       "error_pct": 0.0,
       "source_panel": "Periodic_Table_Extension_Closure_Spine",
       "eval_kind": "closure_relay",
-      "domain_display_name": "periodic extension closure",
+      "domain_display_name": "distant island z128 z132 deep panel depth",
       "display_name": "fusion physics public",
       "scientific_measurement": {
         "delta": 0.0,
@@ -632,5 +658,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Distant Island Z128 Z132 Deep Panel",
+  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 17,
+    "median_error_pct": 1e-06,
+    "max_error_pct": 0.323111,
+    "mean_abs_delta": 0.2808349976470589,
+    "precision_tier_counts": {
+      "green": 17
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.782841+00:00"
 }

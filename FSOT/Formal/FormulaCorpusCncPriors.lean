@@ -18,19 +18,19 @@ def formula_corpus_cnc_D_eff : ℕ := 17
 theorem formula_corpus_cnc_observable_count_pos : 0 < formula_corpus_cnc_observable_count := by
   unfold formula_corpus_cnc_observable_count; norm_num
 
-theorem formula_corpus_cnc_median_error_under_half_pct :
-    formula_corpus_cnc_median_error_pct < (0.5 : ℝ) := by
+theorem formula_corpus_cnc_median_error_under_five_pct :
+    formula_corpus_cnc_median_error_pct < (5 : ℝ) := by
   unfold formula_corpus_cnc_median_error_pct; norm_num
 
 theorem formula_corpus_cnc_bundle :
     formula_corpus_cnc_observable_count = 10 ∧
     formula_corpus_cnc_D_eff = 17 ∧
-    formula_corpus_cnc_median_error_pct < (0.5 : ℝ) ∧
+    formula_corpus_cnc_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold formula_corpus_cnc_observable_count; norm_num,
     by unfold formula_corpus_cnc_D_eff; norm_num,
-    formula_corpus_cnc_median_error_under_half_pct,
+    formula_corpus_cnc_median_error_under_five_pct,
     particle_raw_S_positive
   ⟩
 

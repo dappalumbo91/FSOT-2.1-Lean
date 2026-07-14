@@ -40,7 +40,20 @@
       "computed": 0.023502,
       "measured": 0.0,
       "error_pct": 0.023502,
-      "observable_count": 90
+      "observable_count": 90,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.023502,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.024709,
       "measured": 0.0,
       "error_pct": 0.024709,
-      "observable_count": 90
+      "observable_count": 90,
+      "domain_display_name": "tier gap fill",
+      "display_name": "volcanology",
+      "scientific_measurement": {
+        "delta": 0.024709,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -75,7 +115,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.95744,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -87,7 +141,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": -0.000581,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -99,7 +167,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.007166,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -111,7 +193,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.002274,
+        "delta_pct": 0.044588,
+        "effective_error_pct": 0.044588,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -123,7 +219,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSE of Tambolaka, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.010611,
+        "delta_pct": 0.024709,
+        "effective_error_pct": 0.024709,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -135,7 +245,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -147,7 +271,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": 2.122848,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -159,7 +297,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": 0.003222,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -171,7 +323,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": -0.010014,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -183,7 +349,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": 0.002007,
+        "delta_pct": 0.0446,
+        "effective_error_pct": 0.0446,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -195,7 +375,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "27 km SSW of Unalaska, Alaska",
+      "scientific_measurement": {
+        "delta": 0.023527,
+        "delta_pct": 0.024709,
+        "effective_error_pct": 0.024709,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -207,7 +401,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -219,7 +427,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -231,7 +453,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": -0.001358,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -243,7 +479,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": -0.010506,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -255,7 +505,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": 0.00223,
+        "delta_pct": 0.0446,
+        "effective_error_pct": 0.0446,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -267,7 +531,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "139 km S of \u2018Ohonua, Tonga",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -279,7 +557,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -291,7 +583,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 3.39505,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -303,7 +609,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 0.005914,
+        "effective_error_pct": 0.005914,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -315,7 +635,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.007352,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -327,7 +661,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.002096,
+        "delta_pct": 0.044596,
+        "effective_error_pct": 0.044596,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -339,7 +687,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "80 km WSW of Gorontalo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.037627,
+        "delta_pct": 0.024709,
+        "effective_error_pct": 0.024709,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -351,7 +713,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -363,7 +738,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -375,7 +763,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": -0.00328,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -387,7 +788,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": -0.007146,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -399,7 +813,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": 0.002452,
+        "delta_pct": 0.044582,
+        "effective_error_pct": 0.044582,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -411,7 +838,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "southern East Pacific Rise",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -423,7 +864,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -435,7 +890,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": 2.811164,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -447,7 +916,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": -0.000906,
+        "delta_pct": 0.006004,
+        "effective_error_pct": 0.006004,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -459,7 +942,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.010051,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -471,7 +968,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.002051,
+        "delta_pct": 0.044587,
+        "effective_error_pct": 0.044587,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -483,7 +994,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "28 km E of Port-Olry, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.031156,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -495,7 +1020,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -507,7 +1046,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.931934,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -519,7 +1072,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.000221,
+        "delta_pct": 0.00601,
+        "effective_error_pct": 0.00601,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -531,7 +1098,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.00763,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -543,7 +1124,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.002185,
+        "delta_pct": 0.044592,
+        "effective_error_pct": 0.044592,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -555,7 +1150,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "241 km NNW of Tobelo, Indonesia",
+      "scientific_measurement": {
+        "delta": 0.010328,
+        "delta_pct": 0.024708,
+        "effective_error_pct": 0.024708,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -567,7 +1176,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -579,7 +1202,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -591,7 +1228,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.000991,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -603,7 +1254,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.005077,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -615,7 +1280,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.002007,
+        "delta_pct": 0.0446,
+        "effective_error_pct": 0.0446,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -627,7 +1306,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "184 km SE of Y\u0101r\u0101da, India",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -639,7 +1332,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -651,7 +1357,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -663,7 +1382,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": 0.001961,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -675,7 +1407,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": -0.002396,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -687,7 +1432,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": 0.002096,
+        "delta_pct": 0.044596,
+        "effective_error_pct": 0.044596,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -699,7 +1457,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "northern Mid-Atlantic Ridge",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -711,7 +1483,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -723,7 +1509,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 1.375205,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -735,7 +1535,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.000297,
+        "delta_pct": 0.006011,
+        "effective_error_pct": 0.006011,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -747,7 +1561,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.007523,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -759,7 +1587,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.002319,
+        "delta_pct": 0.044596,
+        "effective_error_pct": 0.044596,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -771,7 +1613,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "56 km SSW of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.015241,
+        "delta_pct": 0.024709,
+        "effective_error_pct": 0.024709,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -783,7 +1639,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -795,7 +1665,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -807,7 +1691,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": -0.00092,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -819,7 +1717,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": -0.010409,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -831,7 +1743,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": 0.002274,
+        "delta_pct": 0.044588,
+        "effective_error_pct": 0.044588,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -843,7 +1769,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "89 km NE of Hihifo, Tonga",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -855,7 +1795,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -867,7 +1820,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 9.511281,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -879,7 +1845,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 0.003071,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -891,7 +1870,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 0.009093,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -903,7 +1895,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 0.002051,
+        "delta_pct": 0.044587,
+        "effective_error_pct": 0.044587,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -915,7 +1920,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "Sea of Okhotsk",
+      "scientific_measurement": {
+        "delta": 0.105412,
+        "delta_pct": 0.024709,
+        "effective_error_pct": 0.024709,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -927,7 +1946,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.001098,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -939,7 +1972,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.222951,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -951,7 +1998,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": -0.00104,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -963,7 +2024,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.010014,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -975,7 +2050,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.002051,
+        "delta_pct": 0.044587,
+        "effective_error_pct": 0.044587,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -987,7 +2076,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "152 km SSW of Lakatoro, Vanuatu",
+      "scientific_measurement": {
+        "delta": 0.002471,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -999,7 +2102,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.001373,
+        "delta_pct": 0.02746,
+        "effective_error_pct": 0.02746,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1011,7 +2128,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 1.273027,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1115,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1023,7 +2154,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.000302,
+        "delta_pct": 0.006,
+        "effective_error_pct": 0.006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1035,7 +2180,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.007537,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1047,7 +2206,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.002408,
+        "delta_pct": 0.044593,
+        "effective_error_pct": 0.044593,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2229,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1059,7 +2232,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "41 km S of Sarangani, Philippines",
+      "scientific_measurement": {
+        "delta": 0.014109,
+        "delta_pct": 0.02471,
+        "effective_error_pct": 0.02471,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1071,7 +2258,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": 0.001647,
+        "delta_pct": 0.02745,
+        "effective_error_pct": 0.02745,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1083,7 +2283,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": 0.579672,
+        "delta_pct": 0.022295,
+        "effective_error_pct": 0.022295,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1095,7 +2308,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": -0.003336,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1107,7 +2333,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": -0.001733,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1119,7 +2358,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": 0.002854,
+        "delta_pct": 0.044594,
+        "effective_error_pct": 0.044594,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "volcanology_lab",
@@ -1131,7 +2383,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "usgs_geojson_gvp_bundled"
+      "ingest_source": "usgs_geojson_gvp_bundled",
+      "domain_display_name": "volcanology",
+      "display_name": "South Sandwich Islands region",
+      "scientific_measurement": {
+        "delta": 0.006424,
+        "delta_pct": 0.024708,
+        "effective_error_pct": 0.024708,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1235,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     }
   ],
   "margin_summary": {
@@ -1145,5 +2411,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Volcanology Panel",
+  "tier_label": "Tier 82",
+  "scientific_precision_summary": {
+    "scalar_count": 90,
+    "median_error_pct": 0.024708,
+    "max_error_pct": 0.0446,
+    "mean_abs_delta": 0.27501953333333334,
+    "precision_tier_counts": {
+      "green": 90
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.096982+00:00"
 }

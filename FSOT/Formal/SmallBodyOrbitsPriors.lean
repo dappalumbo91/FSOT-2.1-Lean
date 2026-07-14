@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def small_body_orbit_count : ℕ := 12
-def small_body_median_error_pct : ℝ := (0.094587 : ℝ)
+def small_body_median_error_pct : ℝ := (0.0 : ℝ)
 def small_body_D_eff : ℕ := 18
 
 theorem small_body_orbit_count_pos : 0 < small_body_orbit_count := by

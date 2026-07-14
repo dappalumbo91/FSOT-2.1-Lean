@@ -44,7 +44,20 @@
       "computed": 0.019898,
       "measured": 0.0,
       "error_pct": 0.0198985,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.019898,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +66,20 @@
       "computed": 0.000502,
       "measured": 0.0,
       "error_pct": 0.000502,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Hubble Dark Sector Crosswalk depth",
+      "scientific_measurement": {
+        "delta": 0.000502,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -493,7 +519,7 @@
       "error_pct": 0.0,
       "record_count": 17,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -518,7 +544,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_gate",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "fpc time emergence flag",
       "scientific_measurement": {
         "delta": 0.0,
@@ -542,7 +568,7 @@
       "error_pct": 0.0,
       "record_count": 13,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "fpc fluidlink deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -567,7 +593,7 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "cs133 fpc equilibrium",
       "scientific_measurement": {
         "delta": 0.000535,
@@ -591,7 +617,7 @@
       "error_pct": 0.0,
       "eval_kind": "panel_bridge",
       "comparison_class": "literature_monitor",
-      "domain_display_name": "cosmology anomaly deep",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "stumped observables panel",
       "scientific_measurement": {
         "delta": 0.0,
@@ -621,7 +647,7 @@
       "eval_kind": "preregistered_falsifiable",
       "comparison_class": "preregistered_falsifiable",
       "status": "unconfirmed_prediction",
-      "domain_display_name": "cosmology anomaly deep",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "wa fsot prereg desi dr2",
       "scientific_measurement": {
         "delta": -0.002856,
@@ -651,7 +677,7 @@
       "eval_kind": "literature_monitor",
       "comparison_class": "literature_monitor",
       "monitor_only": false,
-      "domain_display_name": "cosmology anomaly deep",
+      "domain_display_name": "hubble dark sector crosswalk depth",
       "display_name": "h0 planck 2018",
       "scientific_measurement": {
         "delta": 0.000339,
@@ -682,5 +708,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Hubble Dark Sector Crosswalk",
+  "tier_label": "Tier 76 \u2014 Time Emergence Deep Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 2,
+    "median_error_pct": 0.039807,
+    "max_error_pct": 0.039807,
+    "mean_abs_delta": 0.0002675,
+    "precision_tier_counts": {
+      "green": 2
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.794853+00:00"
 }

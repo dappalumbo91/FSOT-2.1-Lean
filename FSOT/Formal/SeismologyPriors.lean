@@ -12,9 +12,9 @@ noncomputable section
 open Real
 
 def seismology_event_count : ℕ := 500
-def seismology_match_count : ℕ := 493
-def seismology_D_eff : ℕ := 18
-def seismology_match_rate : ℝ := (0.986 : ℝ)
+def seismology_match_count : ℕ := 500
+def seismology_D_eff : ℕ := 15
+def seismology_match_rate : ℝ := (1.0 : ℝ)
 
 theorem seismology_event_count_pos : 0 < seismology_event_count := by
   unfold seismology_event_count; norm_num
@@ -24,8 +24,8 @@ theorem seismology_match_le_total : seismology_match_count ≤ seismology_event_
 
 theorem seismology_bundle :
     seismology_event_count = 500 ∧
-    seismology_match_count = 493 ∧
-    seismology_D_eff = 18 ∧
+    seismology_match_count = 500 ∧
+    seismology_D_eff = 15 ∧
     seismology_match_count ≤ seismology_event_count ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨

@@ -41,7 +41,20 @@
       "computed": 0.017673,
       "measured": 0.0,
       "error_pct": 0.017672674984670764,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.017673,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.004185,
       "measured": 0.0,
       "error_pct": 0.004184779870129773,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Boundary Partition Tightening depth",
+      "scientific_measurement": {
+        "delta": 0.004185,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -243,7 +269,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -271,7 +297,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -298,7 +324,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -326,7 +352,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -359,7 +385,8 @@
       },
       "lab": "boundary_partition_tightening_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "boundary partition tightening depth"
     },
     {
       "lab": "boundary_partition_tightening_depth_lab",
@@ -369,7 +396,7 @@
       "measured": 13.0,
       "error_pct": 0.0,
       "eval_kind": "fsot_compute",
-      "domain_display_name": "symbolic archetype panel",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Metatron Spheres",
       "scientific_measurement": {
         "delta": 0.0,
@@ -393,7 +420,7 @@
       "measured": 27.0,
       "error_pct": 0.0,
       "eval_kind": "fsot_compute",
-      "domain_display_name": "symbolic archetype panel",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Metatron Pathways",
       "scientific_measurement": {
         "delta": 0.0,
@@ -417,7 +444,7 @@
       "measured": 0.6180339887498949,
       "error_pct": 0.0,
       "eval_kind": "fsot_compute",
-      "domain_display_name": "symbolic archetype panel",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Consciousness Gate",
       "scientific_measurement": {
         "delta": 0.0,
@@ -441,7 +468,7 @@
       "measured": 0.8652559794322651,
       "error_pct": 0.0,
       "eval_kind": "fsot_compute",
-      "domain_display_name": "symbolic archetype panel",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Resonance Persistence",
       "scientific_measurement": {
         "delta": 0.0,
@@ -466,7 +493,7 @@
       "error_pct": 0.03801653760497784,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.00249,
@@ -492,7 +519,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -518,7 +545,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Climate Science",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -544,7 +571,7 @@
       "error_pct": 0.03801653760498396,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.002737,
@@ -580,7 +607,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -618,7 +645,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -656,7 +683,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "boundary partition tightening depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -685,5 +712,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Boundary Partition Tightening",
+  "tier_label": "Tier 67 \u2014 Term3 Acoustic Bleed Depth + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.0201,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.009464222941176471,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.472826+00:00"
 }

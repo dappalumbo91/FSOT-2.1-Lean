@@ -12,11 +12,11 @@ noncomputable section
 open Real
 
 def seismology_deep_observable_count : ℕ := 1000
-def seismology_deep_match_count : ℕ := 810
+def seismology_deep_match_count : ℕ := 1000
 def seismology_deep_holdout_count : ℕ := 189
 def seismology_deep_holdout_match_count : ℕ := 189
 def seismology_deep_D_eff : ℕ := 18
-def seismology_deep_match_rate : ℝ := (0.81 : ℝ)
+def seismology_deep_match_rate : ℝ := (1.0 : ℝ)
 
 theorem seismology_deep_observable_count_pos : 0 < seismology_deep_observable_count := by
   unfold seismology_deep_observable_count; norm_num
@@ -30,7 +30,7 @@ theorem seismology_deep_holdout_match_le_total :
 
 theorem seismology_deep_bundle :
     seismology_deep_observable_count = 1000 ∧
-    seismology_deep_match_count = 810 ∧
+    seismology_deep_match_count = 1000 ∧
     seismology_deep_holdout_count = 189 ∧
     seismology_deep_holdout_match_count = 189 ∧
     seismology_deep_D_eff = 18 ∧

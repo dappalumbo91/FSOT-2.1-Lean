@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T16:11:02.361279+00:00",
+  "generated_at": "2026-07-13T15:23:04.122887+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "vendor/igem/igem_parts_registry.json",
@@ -93,20 +93,7 @@
       "measured": 0.0,
       "error_pct": 0.022236250385203583,
       "observable_count": 54,
-      "part_count": 20,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "part_count": 20
     },
     {
       "lab": "igem_synthetic_biology_lab",
@@ -115,20 +102,7 @@
       "computed": 0.044473,
       "measured": 0.0,
       "error_pct": 0.04447250077037545,
-      "observable_count": 20,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "length bp",
-      "scientific_measurement": {
-        "delta": 0.044473,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 20
     },
     {
       "lab": "igem_synthetic_biology_lab",
@@ -137,20 +111,7 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236250385199694,
-      "observable_count": 20,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "gc percent",
-      "scientific_measurement": {
-        "delta": 0.022236,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 20
     },
     {
       "lab": "igem_synthetic_biology_lab",
@@ -159,20 +120,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 13,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "biology strict operon replication",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 13
     },
     {
       "lab": "igem_synthetic_biology_lab",
@@ -181,20 +129,7 @@
       "computed": 0.044473,
       "measured": 0.0,
       "error_pct": 0.044472500770382666,
-      "observable_count": 1,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "coding bp sum bridge",
-      "scientific_measurement": {
-        "delta": 0.044473,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 1
     },
     {
       "lab": "igem_synthetic_biology_lab",
@@ -203,20 +138,7 @@
       "computed": 100.0,
       "measured": 100.0,
       "error_pct": 0.0,
-      "observable_count": 13,
-      "domain_display_name": "igem synthetic biology",
-      "display_name": "ncbi mt operon replication",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 13
     }
   ],
   "material_records": [
@@ -228,20 +150,7 @@
       "computed": 12.005337,
       "measured": 12,
       "error_pct": 0.04447250077038352,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0034",
-      "scientific_measurement": {
-        "delta": 0.005337,
-        "delta_pct": 0.044475,
-        "effective_error_pct": 0.044475,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -251,20 +160,7 @@
       "computed": 41.675965,
       "measured": 41.6667,
       "error_pct": 0.022236250385191003,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0034",
-      "scientific_measurement": {
-        "delta": 0.009265,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -274,20 +170,7 @@
       "computed": 22.009784,
       "measured": 22,
       "error_pct": 0.044472500770370064,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0032",
-      "scientific_measurement": {
-        "delta": 0.009784,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -297,20 +180,7 @@
       "computed": 45.464607,
       "measured": 45.4545,
       "error_pct": 0.02223625038520417,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0032",
-      "scientific_measurement": {
-        "delta": 0.010107,
-        "delta_pct": 0.022235,
-        "effective_error_pct": 0.022235,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -320,20 +190,7 @@
       "computed": 15.006671,
       "measured": 15,
       "error_pct": 0.0444725007703776,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B1002",
-      "scientific_measurement": {
-        "delta": 0.006671,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -343,20 +200,7 @@
       "computed": 46.677077,
       "measured": 46.6667,
       "error_pct": 0.022236250385197113,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B1002",
-      "scientific_measurement": {
-        "delta": 0.010377,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -366,20 +210,7 @@
       "computed": 35.015565,
       "measured": 35,
       "error_pct": 0.04447250077037422,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa J23100",
-      "scientific_measurement": {
-        "delta": 0.015565,
-        "delta_pct": 0.044471,
-        "effective_error_pct": 0.044471,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -389,20 +220,7 @@
       "computed": 48.5822,
       "measured": 48.5714,
       "error_pct": 0.022236250385200072,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa J23100",
-      "scientific_measurement": {
-        "delta": 0.0108,
-        "delta_pct": 0.022235,
-        "effective_error_pct": 0.022235,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -412,20 +230,7 @@
       "computed": 53.02357,
       "measured": 53,
       "error_pct": 0.04447250077038073,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0010",
-      "scientific_measurement": {
-        "delta": 0.02357,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -435,20 +240,7 @@
       "computed": 47.180289,
       "measured": 47.1698,
       "error_pct": 0.022236250385194348,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0010",
-      "scientific_measurement": {
-        "delta": 0.010489,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -458,20 +250,7 @@
       "computed": 51.022681,
       "measured": 51,
       "error_pct": 0.044472500770381784,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0051",
-      "scientific_measurement": {
-        "delta": 0.022681,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -481,20 +260,7 @@
       "computed": 45.108028,
       "measured": 45.098,
       "error_pct": 0.022236250385199694,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0051",
-      "scientific_measurement": {
-        "delta": 0.010028,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -504,20 +270,7 @@
       "computed": 55.02446,
       "measured": 55,
       "error_pct": 0.04447250077037975,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0040",
-      "scientific_measurement": {
-        "delta": 0.02446,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -527,20 +280,7 @@
       "computed": 47.283212,
       "measured": 47.2727,
       "error_pct": 0.022236250385201675,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa R0040",
-      "scientific_measurement": {
-        "delta": 0.010512,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -550,20 +290,7 @@
       "computed": 45.020013,
       "measured": 45,
       "error_pct": 0.04447250077036971,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa I52002",
-      "scientific_measurement": {
-        "delta": 0.020013,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -573,20 +300,7 @@
       "computed": 48.899771,
       "measured": 48.8889,
       "error_pct": 0.022236250385197907,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa I52002",
-      "scientific_measurement": {
-        "delta": 0.010871,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -596,20 +310,7 @@
       "computed": 119.052922,
       "measured": 119,
       "error_pct": 0.04447250077037183,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0010",
-      "scientific_measurement": {
-        "delta": 0.052922,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -619,20 +320,7 @@
       "computed": 52.952972,
       "measured": 52.9412,
       "error_pct": 0.022236250385202917,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0010",
-      "scientific_measurement": {
-        "delta": 0.011772,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -642,20 +330,7 @@
       "computed": 41.018234,
       "measured": 41,
       "error_pct": 0.04447250077037125,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0012",
-      "scientific_measurement": {
-        "delta": 0.018234,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -665,20 +340,7 @@
       "computed": 51.230889,
       "measured": 51.2195,
       "error_pct": 0.022236250385196634,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0012",
-      "scientific_measurement": {
-        "delta": 0.011389,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -688,20 +350,7 @@
       "computed": 129.05737,
       "measured": 129,
       "error_pct": 0.04447250077037044,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0015",
-      "scientific_measurement": {
-        "delta": 0.05737,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -711,20 +360,7 @@
       "computed": 52.724921,
       "measured": 52.7132,
       "error_pct": 0.022236250385197665,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa B0015",
-      "scientific_measurement": {
-        "delta": 0.011721,
-        "delta_pct": 0.022235,
-        "effective_error_pct": 0.022235,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -734,20 +370,7 @@
       "computed": 720.320202,
       "measured": 720,
       "error_pct": 0.04447250077036971,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0040",
-      "scientific_measurement": {
-        "delta": 0.320202,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -757,20 +380,7 @@
       "computed": 48.066286,
       "measured": 48.0556,
       "error_pct": 0.022236250385199354,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0040",
-      "scientific_measurement": {
-        "delta": 0.010686,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -780,20 +390,7 @@
       "computed": 711.316199,
       "measured": 711,
       "error_pct": 0.044472500770378905,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0062",
-      "scientific_measurement": {
-        "delta": 0.316199,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -803,20 +400,7 @@
       "computed": 48.393358,
       "measured": 48.3826,
       "error_pct": 0.022236250385199857,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0062",
-      "scientific_measurement": {
-        "delta": 0.010758,
-        "delta_pct": 0.022235,
-        "effective_error_pct": 0.022235,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -826,20 +410,7 @@
       "computed": 792.352222,
       "measured": 792,
       "error_pct": 0.04447250077037545,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0012",
-      "scientific_measurement": {
-        "delta": 0.352222,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -849,20 +420,7 @@
       "computed": 47.359029,
       "measured": 47.3485,
       "error_pct": 0.02223625038519451,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0012",
-      "scientific_measurement": {
-        "delta": 0.010529,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -872,20 +430,7 @@
       "computed": 1194.531002,
       "measured": 1194,
       "error_pct": 0.04447250077036701,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0261",
-      "scientific_measurement": {
-        "delta": 0.531002,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -895,20 +440,7 @@
       "computed": 49.759762,
       "measured": 49.7487,
       "error_pct": 0.022236250385198532,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0261",
-      "scientific_measurement": {
-        "delta": 0.011062,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -918,20 +450,7 @@
       "computed": 948.421599,
       "measured": 948,
       "error_pct": 0.0444725007703749,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa E0040",
-      "scientific_measurement": {
-        "delta": 0.421599,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -941,20 +460,7 @@
       "computed": 48.745037,
       "measured": 48.7342,
       "error_pct": 0.022236250385196055,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa E0040",
-      "scientific_measurement": {
-        "delta": 0.010837,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -964,20 +470,7 @@
       "computed": 786.349554,
       "measured": 786,
       "error_pct": 0.04447250077038104,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0051",
-      "scientific_measurement": {
-        "delta": 0.349554,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -987,20 +480,7 @@
       "computed": 48.102294,
       "measured": 48.0916,
       "error_pct": 0.022236250385204152,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa C0051",
-      "scientific_measurement": {
-        "delta": 0.010694,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1010,20 +490,7 @@
       "computed": 3329.480045,
       "measured": 3328,
       "error_pct": 0.04447250077038124,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa I13504",
-      "scientific_measurement": {
-        "delta": 1.480045,
-        "delta_pct": 0.044473,
-        "effective_error_pct": 0.044473,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1033,20 +500,7 @@
       "computed": 47.90725,
       "measured": 47.8966,
       "error_pct": 0.022236250385201557,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa I13504",
-      "scientific_measurement": {
-        "delta": 0.01065,
-        "delta_pct": 0.022235,
-        "effective_error_pct": 0.022235,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1056,20 +510,7 @@
       "computed": 4102.823817,
       "measured": 4101,
       "error_pct": 0.04447250077038355,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa K608000",
-      "scientific_measurement": {
-        "delta": 1.823817,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1079,20 +520,7 @@
       "computed": 52.389147,
       "measured": 52.3775,
       "error_pct": 0.022236250385205058,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa K608000",
-      "scientific_measurement": {
-        "delta": 0.011647,
-        "delta_pct": 0.022237,
-        "effective_error_pct": 0.022237,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1102,20 +530,7 @@
       "computed": 2071.921025,
       "measured": 2071,
       "error_pct": 0.04447250077037347,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa P10001",
-      "scientific_measurement": {
-        "delta": 0.921025,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_parts_registry",
@@ -1125,20 +540,7 @@
       "computed": 51.242692,
       "measured": 51.2313,
       "error_pct": 0.022236250385203583,
-      "strict": true,
-      "domain_display_name": "igem parts registry",
-      "display_name": "BBa P10001",
-      "scientific_measurement": {
-        "delta": 0.011392,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "strict": true
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1148,20 +550,7 @@
       "measured": 956,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1171,20 +560,7 @@
       "measured": 1044,
       "error_pct": 0.19157088122605362,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND2",
-      "scientific_measurement": {
-        "delta": -2.0,
-        "delta_pct": 0.191571,
-        "effective_error_pct": 0.191571,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1194,20 +570,7 @@
       "measured": 1542,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-CO1",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1217,20 +580,7 @@
       "measured": 684,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-CO2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1240,20 +590,7 @@
       "measured": 207,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ATP8",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1263,20 +600,7 @@
       "measured": 681,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ATP6",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1286,20 +610,7 @@
       "measured": 780,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-CO3",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1309,20 +620,7 @@
       "measured": 349,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND3",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1332,20 +630,7 @@
       "measured": 297,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND4L",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1355,20 +640,7 @@
       "measured": 1378,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND4",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1378,20 +650,7 @@
       "measured": 1812,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND5",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1401,20 +660,7 @@
       "measured": 525,
       "error_pct": 0.0,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-ND6",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1424,20 +670,7 @@
       "measured": 1140,
       "error_pct": 0.08771929824561403,
       "strict": true,
-      "source": "evolution_sim+NCBI_NC_012920.1",
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "MT-CYTB",
-      "scientific_measurement": {
-        "delta": 1.0,
-        "delta_pct": 0.087719,
-        "effective_error_pct": 0.087719,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "source": "evolution_sim+NCBI_NC_012920.1"
     },
     {
       "lab": "igem_biology_strict_bridge",
@@ -1448,37 +681,10 @@
       "error_pct": 0.044472500770382666,
       "strict": true,
       "operon_count": 13,
-      "operon_length_sum": 11395,
-      "domain_display_name": "igem biology strict bridge",
-      "display_name": "human mt coding bp",
-      "scientific_measurement": {
-        "delta": 5.067641,
-        "delta_pct": 0.044472,
-        "effective_error_pct": 0.044472,
-        "comparison_kind": "catalog_crosswalk",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "operon_length_sum": 11395
     }
   ],
   "crosswalk_modules": [
     "FSOT.Formal.IGEMSyntheticBiologyPriors"
-  ],
-  "display_name": "IGEM Synthetic Biology",
-  "tier_label": "Math generator benchmark formula eval (FO-200/210/220)",
-  "scientific_precision_summary": {
-    "scalar_count": 54,
-    "median_error_pct": 0.022237,
-    "max_error_pct": 0.191571,
-    "mean_abs_delta": 0.27880553703703703,
-    "precision_tier_counts": {
-      "green": 54
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:00.446768+00:00"
+  ]
 }

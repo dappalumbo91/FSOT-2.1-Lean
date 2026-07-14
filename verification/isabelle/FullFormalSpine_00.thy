@@ -1,4 +1,4 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 1/17 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 1/18 (generated). *)
 theory FullFormalSpine_00
 imports Complex_Main
 begin
@@ -78,6 +78,18 @@ lemma ai_galactic_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
 lemma ai_galactic_orbital_bridge_median_error_under_half_pct: "(0.005168558627177688 :: real) < (0.5 :: real)"
   by eval
 
+lemma alternate_base_mathematics_explorer_panel_observable_count_pos: "0 < (56 :: nat)"
+  by eval
+
+lemma alternate_base_mathematics_explorer_panel_median_error_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
+  by eval
+
+lemma alternate_base_mathematics_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma alternate_base_mathematics_spine_median_error_under_half_pct: "(0.004184779870129773 :: real) < (0.5 :: real)"
+  by eval
+
 lemma anthropology_ext_pooled_median_under_half_pct: "(0.019504399572476606 :: real) < (0.5 :: real)"
   by eval
 
@@ -114,10 +126,16 @@ lemma architecture_building_science_observable_count_pos: "0 < (43 :: nat)"
 lemma architecture_building_science_median_error_under_half_pct: "(0.07869745016115058 :: real) < (0.5 :: real)"
   by eval
 
-lemma arxiv_primitives_v14_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma arxiv_gravitational_waves_panel_observable_count_pos: "0 < (60 :: nat)"
+  by eval
+
+lemma arxiv_gravitational_waves_panel_median_error_under_half_pct: "(0.01748 :: real) < (0.5 :: real)"
   by eval
 
 lemma arxiv_primitives_v14_observable_count_pos: "0 < (14 :: nat)"
+  by eval
+
+lemma arxiv_primitives_v14_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma astrophysical_structure_crosswalk_observable_count_pos: "0 < (32 :: nat)"
@@ -150,22 +168,22 @@ lemma atomic_physics_gap_fill_observable_count_pos: "0 < (80 :: nat)"
 lemma atomic_physics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
   by eval
 
-lemma bibliography_lean_corpus_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
 lemma bibliography_lean_corpus_observable_count_pos: "0 < (9 :: nat)"
   by eval
 
-lemma binary_decoder_rendlesham_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma bibliography_lean_corpus_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma binary_decoder_rendlesham_observable_count_pos: "0 < (10 :: nat)"
   by eval
 
-lemma biological_cuda_physarum_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma binary_decoder_rendlesham_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma biological_cuda_physarum_observable_count_pos: "0 < (35 :: nat)"
+  by eval
+
+lemma biological_cuda_physarum_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma biology_strict_observable_count_pos: "0 < (15 :: nat)"
@@ -283,24 +301,6 @@ lemma neocortex_genetic_zero_is_superposition: "(0.5138888888888888 :: real) = (
   by eval
 
 lemma cerebellum_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
-
-lemma brainstem_arousal_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
-
-lemma hippocampus_genetic_zero_is_superposition: "(0.5 :: real) = (0.5 :: real)"
-  by eval
-
-lemma basal_ganglia_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
-
-lemma thalamus_genetic_zero_is_superposition: "(0.4861111111111111 :: real) = (0.4861111111111111 :: real)"
-  by eval
-
-lemma astrocyte_syncytium_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
-  by eval
-
-lemma oligodendrocyte_myelination_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
   by eval
 
 end

@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def planetary_structure_body_count : ℕ := 20
-def planetary_structure_median_error_pct : ℝ := (0.032274 : ℝ)
+def planetary_structure_median_error_pct : ℝ := (0.0 : ℝ)
 def planetary_structure_D_eff : ℕ := 16
 
 theorem planetary_structure_body_count_pos : 0 < planetary_structure_body_count := by

@@ -104,7 +104,20 @@
       "computed": 0.002252,
       "measured": 0.0,
       "error_pct": 0.00225237811160842,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002252,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -113,7 +126,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Neuron Multi Hero depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -128,7 +154,7 @@
       "error_pct": 0.0,
       "fertile": false,
       "intelligence_score": 0.0,
-      "domain_display_name": "fic intelligence compressor",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "S final",
       "scientific_measurement": {
         "delta": 0.0,
@@ -161,7 +187,8 @@
       },
       "lab": "neuron_multi_hero_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "neuron multi hero depth"
     },
     {
       "lab": "neuron_multi_hero_depth_lab",
@@ -172,7 +199,7 @@
       "error_pct": 0.0,
       "unit": "misclassification_pct",
       "observable_count": 120879,
-      "domain_display_name": "magnetosphere extended",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "historical coupled dst kp storm classifier",
       "scientific_measurement": {
         "delta": 0.0,
@@ -199,7 +226,7 @@
       "error_pct": 0.0,
       "unit": "misclassification_pct",
       "observable_count": 91421,
-      "domain_display_name": "magnetosphere extended",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "storm holdout g scale classifier",
       "scientific_measurement": {
         "delta": 0.0,
@@ -226,7 +253,7 @@
       "error_pct": 0.0,
       "unit": "misclassification_pct",
       "observable_count": 1416,
-      "domain_display_name": "magnetosphere extended",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "solar wind bz southward classifier",
       "scientific_measurement": {
         "delta": 0.0,
@@ -253,7 +280,7 @@
       "error_pct": 0.0,
       "unit": "misclassification_pct",
       "observable_count": 122295,
-      "domain_display_name": "magnetosphere extended",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "pooled magnetosphere extended classifier",
       "scientific_measurement": {
         "delta": 0.0,
@@ -285,7 +312,7 @@
         "fusion",
         "plasma"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.000332,
@@ -317,7 +344,7 @@
         "medical",
         "biological"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.000291,
@@ -349,7 +376,7 @@
         "energy",
         "galactic"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Climate Science",
       "scientific_measurement": {
         "delta": 0.000333,
@@ -381,7 +408,7 @@
         "cosmological",
         "astronomical"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.000396,
@@ -408,7 +435,7 @@
       "measured": 50.5289,
       "error_pct": 0.02223625038519357,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": 0.011236,
@@ -433,7 +460,7 @@
       "measured": -3.6084,
       "error_pct": 0.017789000308148954,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": -0.000642,
@@ -463,7 +490,7 @@
       "environmental_pressure": 0.471921,
       "crustal_cutoff_km": 70.0,
       "fsot_transition_band_km": 1.2998,
-      "domain_display_name": "tectonics",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "us6000pgkh",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -488,7 +515,7 @@
       "environmental_pressure": 0.471921,
       "crustal_cutoff_km": 70.0,
       "fsot_transition_band_km": 1.2998,
-      "domain_display_name": "tectonics",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "us6000pgkd",
       "scientific_measurement": {
         "sigma_equivalent": 0.0,
@@ -514,7 +541,7 @@
       "environmental_pressure": 0.471921,
       "crustal_cutoff_km": 70.0,
       "fsot_transition_band_km": 1.2998,
-      "domain_display_name": "tectonics",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "us6000pgkb",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -539,7 +566,7 @@
       "environmental_pressure": 0.471921,
       "crustal_cutoff_km": 70.0,
       "fsot_transition_band_km": 1.2998,
-      "domain_display_name": "tectonics",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "us6000pj77",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -562,11 +589,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -587,11 +617,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -612,11 +645,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Astronomy Orbital Mechanics astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -637,11 +673,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "Astronomy Small Body Orbits astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -660,11 +699,14 @@
       "error_pct": 0.004504756223219096,
       "source": "paleoclimate_reference_observables",
       "physics_frame": "post_glacial_recovery",
-      "domain_display_name": "climate paleo recovery",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "vostok co2 lgm",
       "scientific_measurement": {
         "delta": 0.008109,
         "delta_pct": 0.004505,
+        "effective_error_pct": 0.004505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -683,11 +725,14 @@
       "error_pct": 0.00450475622321684,
       "source": "paleoclimate_reference_observables",
       "physics_frame": "post_glacial_recovery",
-      "domain_display_name": "climate paleo recovery",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "vostok co2 preindustrial",
       "scientific_measurement": {
         "delta": 0.012613,
         "delta_pct": 0.004505,
+        "effective_error_pct": 0.004505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -706,11 +751,14 @@
       "error_pct": 0.004504756223232457,
       "source": "paleoclimate_reference_observables",
       "physics_frame": "post_glacial_recovery",
-      "domain_display_name": "climate paleo recovery",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "epica dome c co2 holocene",
       "scientific_measurement": {
         "delta": 0.011712,
         "delta_pct": 0.004505,
+        "effective_error_pct": 0.004505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -729,11 +777,14 @@
       "error_pct": 0.012012683261956408,
       "source": "paleoclimate_reference_observables",
       "physics_frame": "post_glacial_recovery",
-      "domain_display_name": "climate paleo recovery",
+      "domain_display_name": "neuron multi hero depth",
       "display_name": "eemian temp anomaly",
       "scientific_measurement": {
         "delta": 0.00018,
         "delta_pct": 0.012,
+        "effective_error_pct": 0.012,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -755,5 +806,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Neuron Multi Hero",
+  "tier_label": "Tier 27",
+  "scientific_precision_summary": {
+    "scalar_count": 12,
+    "median_error_pct": 0.004505,
+    "max_error_pct": 0.022237,
+    "mean_abs_delta": 0.004044727272727273,
+    "precision_tier_counts": {
+      "green": 12
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:44.668118+00:00"
 }

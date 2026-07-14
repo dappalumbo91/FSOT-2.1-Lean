@@ -41,7 +41,20 @@
       "computed": 0.021097,
       "measured": 0.0,
       "error_pct": 0.021097,
-      "observable_count": 56
+      "observable_count": 56,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.021097,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.023015,
       "measured": 0.0,
       "error_pct": 0.023015,
-      "observable_count": 56
+      "observable_count": 56,
+      "domain_display_name": "tier gap fill",
+      "display_name": "nasa neo feed",
+      "scientific_measurement": {
+        "delta": 0.023015,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NX",
+      "scientific_measurement": {
+        "delta": 0.006473,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -76,7 +115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NX",
+      "scientific_measurement": {
+        "delta": 0.00193988,
+        "delta_pct": 0.02301,
+        "effective_error_pct": 0.02301,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -88,7 +140,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NX",
+      "scientific_measurement": {
+        "delta": 0.00151452,
+        "delta_pct": 0.019182,
+        "effective_error_pct": 0.019182,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -100,7 +166,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NX",
+      "scientific_measurement": {
+        "delta": 40.2737049,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -112,7 +192,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NP",
+      "scientific_measurement": {
+        "delta": 0.006259,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -124,7 +217,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NP",
+      "scientific_measurement": {
+        "delta": 0.0029749,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -136,7 +242,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NP",
+      "scientific_measurement": {
+        "delta": 0.00250161,
+        "delta_pct": 0.019178,
+        "effective_error_pct": 0.019178,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -148,7 +268,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NP",
+      "scientific_measurement": {
+        "delta": 12.54532339,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -160,7 +294,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NS",
+      "scientific_measurement": {
+        "delta": 0.006114,
+        "delta_pct": 0.023014,
+        "effective_error_pct": 0.023014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -172,7 +319,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NS",
+      "scientific_measurement": {
+        "delta": 0.00397458,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -184,7 +344,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NS",
+      "scientific_measurement": {
+        "delta": 0.00183474,
+        "delta_pct": 0.019181,
+        "effective_error_pct": 0.019181,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -196,7 +370,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NS",
+      "scientific_measurement": {
+        "delta": 152.17079478,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -208,7 +396,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NA",
+      "scientific_measurement": {
+        "delta": 0.005654,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -220,7 +421,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NA",
+      "scientific_measurement": {
+        "delta": 0.00997842,
+        "delta_pct": 0.023014,
+        "effective_error_pct": 0.023014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -232,7 +446,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NA",
+      "scientific_measurement": {
+        "delta": 0.00187063,
+        "delta_pct": 0.019181,
+        "effective_error_pct": 0.019181,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -244,7 +472,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NA",
+      "scientific_measurement": {
+        "delta": 578.92041074,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -256,7 +498,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NC",
+      "scientific_measurement": {
+        "delta": 0.005963,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -268,7 +523,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NC",
+      "scientific_measurement": {
+        "delta": 0.00537889,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -280,7 +548,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NC",
+      "scientific_measurement": {
+        "delta": 0.00274187,
+        "delta_pct": 0.019178,
+        "effective_error_pct": 0.019178,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -292,7 +574,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NC",
+      "scientific_measurement": {
+        "delta": 231.06421844,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -304,7 +600,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN1",
+      "scientific_measurement": {
+        "delta": 0.005926,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -316,7 +625,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN1",
+      "scientific_measurement": {
+        "delta": 0.00579534,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -328,7 +650,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN1",
+      "scientific_measurement": {
+        "delta": 0.00137777,
+        "delta_pct": 0.019177,
+        "effective_error_pct": 0.019177,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -340,7 +676,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN1",
+      "scientific_measurement": {
+        "delta": 392.49136551,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -352,7 +702,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NZ",
+      "scientific_measurement": {
+        "delta": 0.006148,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -364,7 +727,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NZ",
+      "scientific_measurement": {
+        "delta": 0.003718,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -376,7 +752,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NZ",
+      "scientific_measurement": {
+        "delta": 0.00302219,
+        "delta_pct": 0.01918,
+        "effective_error_pct": 0.01918,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -388,7 +778,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NZ",
+      "scientific_measurement": {
+        "delta": 188.95934002,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -400,7 +804,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN",
+      "scientific_measurement": {
+        "delta": 0.006123,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -412,7 +829,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN",
+      "scientific_measurement": {
+        "delta": 0.00390944,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -424,7 +854,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN",
+      "scientific_measurement": {
+        "delta": 0.00246294,
+        "delta_pct": 0.019178,
+        "effective_error_pct": 0.019178,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -436,7 +880,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NN",
+      "scientific_measurement": {
+        "delta": 380.37342424,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -448,7 +906,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MO1",
+      "scientific_measurement": {
+        "delta": 0.00584,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -460,7 +931,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MO1",
+      "scientific_measurement": {
+        "delta": 0.00688466,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -472,7 +956,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MO1",
+      "scientific_measurement": {
+        "delta": 0.00179582,
+        "delta_pct": 0.019178,
+        "effective_error_pct": 0.019178,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -484,7 +982,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MO1",
+      "scientific_measurement": {
+        "delta": 347.51222269,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -496,7 +1008,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NT",
+      "scientific_measurement": {
+        "delta": 0.006146,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -508,7 +1033,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NT",
+      "scientific_measurement": {
+        "delta": 0.00372993,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -520,7 +1058,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NT",
+      "scientific_measurement": {
+        "delta": 0.00142432,
+        "delta_pct": 0.019174,
+        "effective_error_pct": 0.019174,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -532,7 +1084,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NT",
+      "scientific_measurement": {
+        "delta": 552.01079264,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -544,7 +1110,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MQ1",
+      "scientific_measurement": {
+        "delta": 0.005592,
+        "delta_pct": 0.023014,
+        "effective_error_pct": 0.023014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -556,7 +1135,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MQ1",
+      "scientific_measurement": {
+        "delta": 0.011295,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -568,7 +1160,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MQ1",
+      "scientific_measurement": {
+        "delta": 0.00198708,
+        "delta_pct": 0.019179,
+        "effective_error_pct": 0.019179,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -580,7 +1186,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 MQ1",
+      "scientific_measurement": {
+        "delta": 696.40342557,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -592,7 +1212,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NJ1",
+      "scientific_measurement": {
+        "delta": 0.005895,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -604,7 +1237,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NJ1",
+      "scientific_measurement": {
+        "delta": 0.00616667,
+        "delta_pct": 0.023014,
+        "effective_error_pct": 0.023014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -616,7 +1262,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NJ1",
+      "scientific_measurement": {
+        "delta": 0.00154187,
+        "delta_pct": 0.019185,
+        "effective_error_pct": 0.019185,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -628,7 +1288,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NJ1",
+      "scientific_measurement": {
+        "delta": 397.733454,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -640,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NH",
+      "scientific_measurement": {
+        "delta": 0.005936,
+        "delta_pct": 0.023015,
+        "effective_error_pct": 0.023015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -652,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NH",
+      "scientific_measurement": {
+        "delta": 0.00567674,
+        "delta_pct": 0.023016,
+        "effective_error_pct": 0.023016,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -664,7 +1364,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NH",
+      "scientific_measurement": {
+        "delta": 0.00255323,
+        "delta_pct": 0.019182,
+        "effective_error_pct": 0.019182,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -676,7 +1390,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 NH",
+      "scientific_measurement": {
+        "delta": 316.83988559,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -688,7 +1416,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 ND1",
+      "scientific_measurement": {
+        "delta": 0.005982,
+        "delta_pct": 0.023014,
+        "effective_error_pct": 0.023014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -700,7 +1441,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 ND1",
+      "scientific_measurement": {
+        "delta": 0.00517501,
+        "delta_pct": 0.023017,
+        "effective_error_pct": 0.023017,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -712,7 +1466,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 ND1",
+      "scientific_measurement": {
+        "delta": 0.00133704,
+        "delta_pct": 0.019186,
+        "effective_error_pct": 0.019186,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0959,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "nasa_neo_feed_lab",
@@ -724,7 +1492,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Planetary_Science",
       "fsot_scalar": 0.767179,
-      "ingest_source": "jpl_ssd_cad_public"
+      "ingest_source": "jpl_ssd_cad_public",
+      "domain_display_name": "nasa neo feed",
+      "display_name": "2026 ND1",
+      "scientific_measurement": {
+        "delta": 545.50943563,
+        "delta_pct": 0.015344,
+        "effective_error_pct": 0.015344,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0767,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     }
   ],
   "margin_summary": {
@@ -738,5 +1520,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "NASA NEO Feed Panel",
+  "tier_label": "Full formal spine (1,241 numeric obligations)",
+  "scientific_precision_summary": {
+    "scalar_count": 56,
+    "median_error_pct": 0.02301,
+    "max_error_pct": 0.023017,
+    "mean_abs_delta": 86.30350736125,
+    "precision_tier_counts": {
+      "green": 56
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.858846+00:00"
 }

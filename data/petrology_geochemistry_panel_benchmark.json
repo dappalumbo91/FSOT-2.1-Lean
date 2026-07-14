@@ -40,7 +40,20 @@
       "computed": 0.030428,
       "measured": 0.0,
       "error_pct": 0.030428,
-      "observable_count": 80
+      "observable_count": 80,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.030428,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.033401,
       "measured": 0.0,
       "error_pct": 0.033401,
-      "observable_count": 80
+      "observable_count": 80,
+      "domain_display_name": "tier gap fill",
+      "display_name": "petrology",
+      "scientific_measurement": {
+        "delta": 0.033401,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB ATL 1",
+      "scientific_measurement": {
+        "delta": 0.006598,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB ATL 1",
+      "scientific_measurement": {
+        "delta": 0.002224,
+        "delta_pct": 0.027457,
+        "effective_error_pct": 0.027457,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB ATL 1",
+      "scientific_measurement": {
+        "delta": 0.00416,
+        "delta_pct": 0.040784,
+        "effective_error_pct": 0.040784,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB ATL 1",
+      "scientific_measurement": {
+        "delta": 0.005044,
+        "delta_pct": 0.033404,
+        "effective_error_pct": 0.033404,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB PAC 2",
+      "scientific_measurement": {
+        "delta": 0.006544,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB PAC 2",
+      "scientific_measurement": {
+        "delta": 0.002169,
+        "delta_pct": 0.027456,
+        "effective_error_pct": 0.027456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB PAC 2",
+      "scientific_measurement": {
+        "delta": 0.004283,
+        "delta_pct": 0.04079,
+        "effective_error_pct": 0.04079,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "MORB PAC 2",
+      "scientific_measurement": {
+        "delta": 0.004943,
+        "delta_pct": 0.033399,
+        "effective_error_pct": 0.033399,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "OIB HAW 1",
+      "scientific_measurement": {
+        "delta": 0.006316,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "OIB HAW 1",
+      "scientific_measurement": {
+        "delta": 0.001702,
+        "delta_pct": 0.027452,
+        "effective_error_pct": 0.027452,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "OIB HAW 1",
+      "scientific_measurement": {
+        "delta": 0.004813,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "OIB HAW 1",
+      "scientific_measurement": {
+        "delta": 0.004643,
+        "delta_pct": 0.033403,
+        "effective_error_pct": 0.033403,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GRANITE 1",
+      "scientific_measurement": {
+        "delta": 0.009709,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GRANITE 1",
+      "scientific_measurement": {
+        "delta": 0.00011,
+        "delta_pct": 0.0275,
+        "effective_error_pct": 0.0275,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GRANITE 1",
+      "scientific_measurement": {
+        "delta": 0.000734,
+        "delta_pct": 0.040778,
+        "effective_error_pct": 0.040778,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GRANITE 1",
+      "scientific_measurement": {
+        "delta": 0.004743,
+        "delta_pct": 0.033401,
+        "effective_error_pct": 0.033401,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "BASALT ICEL",
+      "scientific_measurement": {
+        "delta": 0.006719,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "BASALT ICEL",
+      "scientific_measurement": {
+        "delta": 0.001592,
+        "delta_pct": 0.027448,
+        "effective_error_pct": 0.027448,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "BASALT ICEL",
+      "scientific_measurement": {
+        "delta": 0.004935,
+        "delta_pct": 0.040785,
+        "effective_error_pct": 0.040785,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "BASALT ICEL",
+      "scientific_measurement": {
+        "delta": 0.004509,
+        "delta_pct": 0.0334,
+        "effective_error_pct": 0.0334,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PERIDOTITE",
+      "scientific_measurement": {
+        "delta": 0.005525,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PERIDOTITE",
+      "scientific_measurement": {
+        "delta": 0.013316,
+        "delta_pct": 0.027456,
+        "effective_error_pct": 0.027456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PERIDOTITE",
+      "scientific_measurement": {
+        "delta": 0.003345,
+        "delta_pct": 0.040793,
+        "effective_error_pct": 0.040793,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PERIDOTITE",
+      "scientific_measurement": {
+        "delta": 0.000301,
+        "delta_pct": 0.033444,
+        "effective_error_pct": 0.033444,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "ANDESITE 1",
+      "scientific_measurement": {
+        "delta": 0.008019,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "ANDESITE 1",
+      "scientific_measurement": {
+        "delta": 0.000879,
+        "delta_pct": 0.027469,
+        "effective_error_pct": 0.027469,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "ANDESITE 1",
+      "scientific_measurement": {
+        "delta": 0.002651,
+        "delta_pct": 0.040785,
+        "effective_error_pct": 0.040785,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "ANDESITE 1",
+      "scientific_measurement": {
+        "delta": 0.005611,
+        "delta_pct": 0.033399,
+        "effective_error_pct": 0.033399,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "RHYOLITE 1",
+      "scientific_measurement": {
+        "delta": 0.009951,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "RHYOLITE 1",
+      "scientific_measurement": {
+        "delta": 5.5e-05,
+        "delta_pct": 0.0275,
+        "effective_error_pct": 0.0275,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "RHYOLITE 1",
+      "scientific_measurement": {
+        "delta": 0.000489,
+        "delta_pct": 0.04075,
+        "effective_error_pct": 0.04075,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "RHYOLITE 1",
+      "scientific_measurement": {
+        "delta": 0.004275,
+        "delta_pct": 0.033398,
+        "effective_error_pct": 0.033398,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KOMATIITE",
+      "scientific_measurement": {
+        "delta": 0.006102,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KOMATIITE",
+      "scientific_measurement": {
+        "delta": 0.007687,
+        "delta_pct": 0.027454,
+        "effective_error_pct": 0.027454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KOMATIITE",
+      "scientific_measurement": {
+        "delta": 0.003997,
+        "delta_pct": 0.040786,
+        "effective_error_pct": 0.040786,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KOMATIITE",
+      "scientific_measurement": {
+        "delta": 0.002739,
+        "delta_pct": 0.033402,
+        "effective_error_pct": 0.033402,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GABBRO 1",
+      "scientific_measurement": {
+        "delta": 0.006558,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GABBRO 1",
+      "scientific_measurement": {
+        "delta": 0.002059,
+        "delta_pct": 0.027453,
+        "effective_error_pct": 0.027453,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GABBRO 1",
+      "scientific_measurement": {
+        "delta": 0.004487,
+        "delta_pct": 0.040791,
+        "effective_error_pct": 0.040791,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "GABBRO 1",
+      "scientific_measurement": {
+        "delta": 0.005177,
+        "delta_pct": 0.0334,
+        "effective_error_pct": 0.0334,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DIORITE 1",
+      "scientific_measurement": {
+        "delta": 0.007671,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DIORITE 1",
+      "scientific_measurement": {
+        "delta": 0.001043,
+        "delta_pct": 0.027447,
+        "effective_error_pct": 0.027447,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DIORITE 1",
+      "scientific_measurement": {
+        "delta": 0.002896,
+        "delta_pct": 0.040789,
+        "effective_error_pct": 0.040789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DIORITE 1",
+      "scientific_measurement": {
+        "delta": 0.005411,
+        "delta_pct": 0.033401,
+        "effective_error_pct": 0.033401,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PUMICE 1",
+      "scientific_measurement": {
+        "delta": 0.009897,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PUMICE 1",
+      "scientific_measurement": {
+        "delta": 8.2e-05,
+        "delta_pct": 0.027333,
+        "effective_error_pct": 0.027333,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PUMICE 1",
+      "scientific_measurement": {
+        "delta": 0.000612,
+        "delta_pct": 0.0408,
+        "effective_error_pct": 0.0408,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "PUMICE 1",
+      "scientific_measurement": {
+        "delta": 0.004376,
+        "delta_pct": 0.033405,
+        "effective_error_pct": 0.033405,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -639,7 +1289,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KIMBERLITE",
+      "scientific_measurement": {
+        "delta": 0.004801,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.067,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "petrology_lab",
@@ -651,7 +1315,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KIMBERLITE",
+      "scientific_measurement": {
+        "delta": 0.006919,
+        "delta_pct": 0.027456,
+        "effective_error_pct": 0.027456,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1373,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "petrology_lab",
@@ -663,7 +1341,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KIMBERLITE",
+      "scientific_measurement": {
+        "delta": 0.003059,
+        "delta_pct": 0.040787,
+        "effective_error_pct": 0.040787,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.2039,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "petrology_lab",
@@ -675,7 +1367,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "KIMBERLITE",
+      "scientific_measurement": {
+        "delta": 0.001269,
+        "delta_pct": 0.033395,
+        "effective_error_pct": 0.033395,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.167,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "petrology_lab",
@@ -687,7 +1393,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "CARBONATITE",
+      "scientific_measurement": {
+        "delta": 0.000107,
+        "delta_pct": 0.013375,
+        "effective_error_pct": 0.013375,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -699,7 +1418,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "CARBONATITE",
+      "scientific_measurement": {
+        "delta": 0.003432,
+        "delta_pct": 0.027456,
+        "effective_error_pct": 0.027456,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -711,7 +1443,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "CARBONATITE",
+      "scientific_measurement": {
+        "delta": 0.000857,
+        "delta_pct": 0.04081,
+        "effective_error_pct": 0.04081,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -723,7 +1468,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "CARBONATITE",
+      "scientific_measurement": {
+        "delta": 0.000134,
+        "delta_pct": 0.0335,
+        "effective_error_pct": 0.0335,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -735,7 +1493,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SERPENTINITE",
+      "scientific_measurement": {
+        "delta": 0.005163,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -747,7 +1518,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SERPENTINITE",
+      "scientific_measurement": {
+        "delta": 0.011531,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -759,7 +1543,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SERPENTINITE",
+      "scientific_measurement": {
+        "delta": 0.002366,
+        "delta_pct": 0.040793,
+        "effective_error_pct": 0.040793,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -771,7 +1568,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SERPENTINITE",
+      "scientific_measurement": {
+        "delta": 0.000401,
+        "delta_pct": 0.033417,
+        "effective_error_pct": 0.033417,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -783,7 +1593,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SHALE 1",
+      "scientific_measurement": {
+        "delta": 0.007805,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -795,7 +1618,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SHALE 1",
+      "scientific_measurement": {
+        "delta": 0.000769,
+        "delta_pct": 0.027464,
+        "effective_error_pct": 0.027464,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -807,7 +1643,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SHALE 1",
+      "scientific_measurement": {
+        "delta": 0.002121,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -819,7 +1668,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SHALE 1",
+      "scientific_measurement": {
+        "delta": 0.004843,
+        "delta_pct": 0.0334,
+        "effective_error_pct": 0.0334,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -831,7 +1693,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SANDSTONE 1",
+      "scientific_measurement": {
+        "delta": 0.010527,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -843,7 +1718,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SANDSTONE 1",
+      "scientific_measurement": {
+        "delta": 0.000302,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -855,7 +1743,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SANDSTONE 1",
+      "scientific_measurement": {
+        "delta": 0.001142,
+        "delta_pct": 0.040786,
+        "effective_error_pct": 0.040786,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -867,7 +1768,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "SANDSTONE 1",
+      "scientific_measurement": {
+        "delta": 0.003073,
+        "delta_pct": 0.033402,
+        "effective_error_pct": 0.033402,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -879,7 +1793,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "LIMESTONE 1",
+      "scientific_measurement": {
+        "delta": 0.000697,
+        "delta_pct": 0.013404,
+        "effective_error_pct": 0.013404,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -891,7 +1818,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "LIMESTONE 1",
+      "scientific_measurement": {
+        "delta": 0.000494,
+        "delta_pct": 0.027444,
+        "effective_error_pct": 0.027444,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -903,7 +1843,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "LIMESTONE 1",
+      "scientific_measurement": {
+        "delta": 0.000245,
+        "delta_pct": 0.040833,
+        "effective_error_pct": 0.040833,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -915,7 +1868,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "LIMESTONE 1",
+      "scientific_measurement": {
+        "delta": 0.000267,
+        "delta_pct": 0.033375,
+        "effective_error_pct": 0.033375,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -927,7 +1893,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DACITE 1",
+      "scientific_measurement": {
+        "delta": 0.00865,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -939,7 +1918,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DACITE 1",
+      "scientific_measurement": {
+        "delta": 0.000686,
+        "delta_pct": 0.02744,
+        "effective_error_pct": 0.02744,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -951,7 +1943,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DACITE 1",
+      "scientific_measurement": {
+        "delta": 0.002366,
+        "delta_pct": 0.040793,
+        "effective_error_pct": 0.040793,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -963,7 +1968,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "DACITE 1",
+      "scientific_measurement": {
+        "delta": 0.005378,
+        "delta_pct": 0.033404,
+        "effective_error_pct": 0.033404,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -975,7 +1993,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Materials_Science",
       "fsot_scalar": 0.33526,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "TRACHYTE 1",
+      "scientific_measurement": {
+        "delta": 0.008288,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -987,7 +2018,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Geophysics",
       "fsot_scalar": -0.549094,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "TRACHYTE 1",
+      "scientific_measurement": {
+        "delta": 0.000494,
+        "delta_pct": 0.027444,
+        "effective_error_pct": 0.027444,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -999,7 +2043,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Chemistry",
       "fsot_scalar": 0.407884,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "TRACHYTE 1",
+      "scientific_measurement": {
+        "delta": 0.001999,
+        "delta_pct": 0.040796,
+        "effective_error_pct": 0.040796,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "petrology_lab",
@@ -1011,7 +2068,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "earthchem_public_sample_subset"
+      "ingest_source": "earthchem_public_sample_subset",
+      "domain_display_name": "petrology",
+      "display_name": "TRACHYTE 1",
+      "scientific_measurement": {
+        "delta": 0.005745,
+        "delta_pct": 0.033401,
+        "effective_error_pct": 0.033401,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1025,5 +2095,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Petrology Geochemistry Panel",
+  "tier_label": "Tier 82",
+  "scientific_precision_summary": {
+    "scalar_count": 80,
+    "median_error_pct": 0.033375,
+    "max_error_pct": 0.040833,
+    "mean_abs_delta": 0.003970387499999999,
+    "precision_tier_counts": {
+      "green": 80
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.192824+00:00"
 }

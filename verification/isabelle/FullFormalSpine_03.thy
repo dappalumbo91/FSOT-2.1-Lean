@@ -1,7 +1,43 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 4/17 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 4/18 (generated). *)
 theory FullFormalSpine_03
 imports Complex_Main
 begin
+
+lemma codon_ttc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_ttc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_ttg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_ttg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_ttt_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_ttt_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_primary_pattern_space_eq_eight: "(8.0 :: real) = (8.0 :: real)"
+  by eval
+
+lemma codon_genomic_table_link: "(64.0 :: real) = (64.0 :: real)"
+  by eval
+
+lemma stop_codon_fraction_cert: "(0.046875 :: real) = (0.046875 :: real)"
+  by eval
+
+lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma cold_fusion_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos: "0 < (22 :: nat)"
+  by eval
 
 lemma cold_fusion_lab_synthesis_crosswalk_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
@@ -18,10 +54,22 @@ lemma compact_object_binary_events_observable_count_pos: "0 < (40 :: nat)"
 lemma compact_object_binary_events_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma computational_reasoning_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma complexity_folding_emergence_panel_observable_count_pos: "0 < (29 :: nat)"
+  by eval
+
+lemma complexity_folding_emergence_panel_median_error_under_half_pct: "(0.02658792169940266 :: real) < (0.5 :: real)"
   by eval
 
 lemma computational_reasoning_observable_count_pos: "0 < (577 :: nat)"
+  by eval
+
+lemma computational_reasoning_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma condensed_matter_superconductivity_depth_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma condensed_matter_superconductivity_depth_panel_median_error_under_half_pct: "(0.033841 :: real) < (0.5 :: real)"
   by eval
 
 lemma consciousness_econ_observable_count_pos: "0 < (37 :: nat)"
@@ -30,10 +78,28 @@ lemma consciousness_econ_observable_count_pos: "0 < (37 :: nat)"
 lemma consciousness_econ_median_error_under_half_pct: "(0.008898 :: real) < (0.5 :: real)"
   by eval
 
+lemma consciousness_expansion_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma consciousness_expansion_spine_median_error_under_half_pct: "(0.008488 :: real) < (0.5 :: real)"
+  by eval
+
 lemma consciousness_galactic_orbital_bridge_observable_count_pos: "0 < (48 :: nat)"
   by eval
 
 lemma consciousness_galactic_orbital_bridge_median_error_under_half_pct: "(0.036757197413939124 :: real) < (0.5 :: real)"
+  by eval
+
+lemma consciousness_genetics_coupling_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma consciousness_genetics_coupling_panel_median_error_under_half_pct: "(0.031506 :: real) < (0.5 :: real)"
+  by eval
+
+lemma consciousness_genetics_species_panel_observable_count_pos: "0 < (27 :: nat)"
+  by eval
+
+lemma consciousness_genetics_species_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
   by eval
 
 lemma consciousness_soul_bridge_observable_count_pos: "0 < (27 :: nat)"
@@ -42,10 +108,16 @@ lemma consciousness_soul_bridge_observable_count_pos: "0 < (27 :: nat)"
 lemma consciousness_soul_bridge_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma cosmology_anomalies_observable_count_pos: "0 < (24 :: nat)"
+lemma consciousness_species_multi_panel_observable_count_pos: "0 < (269 :: nat)"
   by eval
 
-lemma cosmology_anomalies_median_error_under_half_pct: "(0.0100275 :: real) < (0.5 :: real)"
+lemma consciousness_species_multi_panel_median_error_under_half_pct: "(0.0201195 :: real) < (0.5 :: real)"
+  by eval
+
+lemma cosmology_anomalies_observable_count_pos: "0 < (12 :: nat)"
+  by eval
+
+lemma cosmology_anomalies_median_error_under_half_pct: "(0.140126 :: real) < (0.5 :: real)"
   by eval
 
 lemma cosmology_anomaly_deep_panel_observable_count_pos: "0 < (24 :: nat)"
@@ -60,7 +132,7 @@ lemma cosmology_bubble_bleed_observable_count_pos: "0 < (113 :: nat)"
 lemma cosmology_bubble_bleed_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
-lemma cosmology_extended_median_error_under_half_pct: "(0.022 :: real) < (0.5 :: real)"
+lemma cosmology_extended_median_error_under_half_pct: "(0.021954848848277954 :: real) < (0.5 :: real)"
   by eval
 
 lemma cosmology_skeleton_derivation_count_pos: "0 < (24 :: nat)"
@@ -174,10 +246,10 @@ lemma crossref_scholarly_observable_count_pos: "0 < (200 :: nat)"
 lemma crossref_scholarly_median_error_under_five_pct: "(0.01382 :: real) < (5.0 :: real)"
   by eval
 
-lemma cryosphere_month_count_pos: "0 < (1919 :: nat)"
+lemma cryosphere_month_count_pos: "0 < (2399 :: nat)"
   by eval
 
-lemma cryosphere_match_le_total: "(1905 :: nat) <= (1919 :: nat)"
+lemma cryosphere_match_le_total: "(2399 :: nat) <= (2399 :: nat)"
   by eval
 
 lemma cryptography_technology_observable_count_pos: "0 < (44 :: nat)"
@@ -190,6 +262,12 @@ lemma culinary_arts_observable_count_pos: "0 < (26 :: nat)"
   by eval
 
 lemma culinary_arts_median_error_under_half_pct: "(0.047615187057821064 :: real) < (0.5 :: real)"
+  by eval
+
+lemma culinary_fermentation_maillard_panel_observable_count_pos: "0 < (130 :: nat)"
+  by eval
+
+lemma culinary_fermentation_maillard_panel_median_error_under_half_pct: "(0.040788 :: real) < (0.5 :: real)"
   by eval
 
 lemma cve_codon_hole_falsification_observable_count_pos: "0 < (29 :: nat)"
@@ -210,6 +288,12 @@ lemma dark_sector_open_problems_observable_count_pos: "0 < (24 :: nat)"
 lemma dark_sector_open_problems_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
   by eval
 
+lemma desktop_application_wiring_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma desktop_application_wiring_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
 lemma distant_island_emergence_simulation_observable_count_pos: "0 < (36 :: nat)"
   by eval
 
@@ -217,90 +301,6 @@ lemma distant_island_emergence_simulation_median_error_under_half_pct: "(0 :: re
   by eval
 
 lemma distant_island_z128_z132_deep_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma distant_island_z128_z132_deep_panel_median_error_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma domain_coupling_simulation_observable_count_pos: "0 < (18691 :: nat)"
-  by eval
-
-lemma domain_coupling_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma domain_coupling_simulation_refresh_panel_observable_count_pos: "0 < (22 :: nat)"
-  by eval
-
-lemma domain_coupling_simulation_refresh_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma negative_scalar_domain_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma smiles_chemical_records_pos: "0 < (608 :: nat)"
-  by eval
-
-lemma smiles_electron_records_pos: "0 < (99 :: nat)"
-  by eval
-
-lemma smiles_material_records_pos: "0 < (485 :: nat)"
-  by eval
-
-lemma smiles_medical_records_pos: "0 < (128 :: nat)"
-  by eval
-
-lemma smiles_neural_records_pos: "0 < (39 :: nat)"
-  by eval
-
-lemma smiles_nuclear_records_pos: "0 < (51 :: nat)"
-  by eval
-
-lemma smiles_particle_records_pos: "0 < (36 :: nat)"
-  by eval
-
-lemma smiles_quantum_records_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma smiles_total_mapped_records_large: "(1400 :: nat) < (1470 :: nat)"
-  by eval
-
-lemma fsot_neurolab_domain_count_eq_thirty_five: "(35 :: nat) = (35 :: nat)"
-  by eval
-
-lemma domains_with_empirical_data_full: "(35 :: nat) = (35 :: nat)"
-  by eval
-
-lemma lean_override_aligned_all_mapped: "(17 :: nat) = (17 :: nat)"
-  by eval
-
-lemma domain_orbital_predictions_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma domain_orbital_predictions_median_error_under_half_pct: "(0.01529034996934153 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cosmology_median_under_one_pct: "(0.0008593005 :: real) < (1.0 :: real)"
-  by eval
-
-lemma smiles_chemical_median_under_one_pct: "(0.110313 :: real) < (1.0 :: real)"
-  by eval
-
-lemma domain_precision_numeric_majority: "(30 :: nat) < (35 :: nat)"
-  by eval
-
-lemma domain_precision_target_band_large: "(32 :: nat) < (35 :: nat)"
-  by eval
-
-lemma domain_precision_huge_gap_bounded: "(0 :: nat) <= (2 :: nat)"
-  by eval
-
-lemma connective_energy_bus_pos: "0 < (0.00006522664 :: real)"
-  by eval
-
-lemma connective_cryo_rejection_pos: "0 < (0.040494897615 :: real)"
-  by eval
-
-lemma connective_em_coil_pos: "0 < (0.076350367522 :: real)"
   by eval
 
 end

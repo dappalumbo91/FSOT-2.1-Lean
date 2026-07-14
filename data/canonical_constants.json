@@ -46,7 +46,7 @@
     "authority_path": "vendor/fsot_compute.py",
     "authority_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
     "expected_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-    "synced_at": "2026-07-04T17:19:07.231947+00:00",
+    "synced_at": "2026-07-13T04:13:47.873409+00:00",
     "known_hashes": {
       "canonical": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
       "pre_ledger_align": "EE4E02C4CD658541C019AB6F1B0649926D9319F969231E17F4987389235A83B7",
@@ -85,10 +85,10 @@
         "label": "cosmology_lab",
         "path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
         "present": true,
-        "sha256": "DB1FAA8A40B4BDFEC98DF14869E85A891C817AD549E341090A1889399868C493",
-        "class": "extended_fork",
+        "sha256": "2C93E773BAAEE6E809BE89A88B86A0D849F64CA86F784474F72D81DFA49C6B4A",
+        "class": "unknown",
         "expected_role": "extended_fork",
-        "matches_expected": true
+        "matches_expected": false
       },
       {
         "label": "smiles_lab",
@@ -103,10 +103,10 @@
         "label": "neurolab",
         "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py",
         "present": true,
-        "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-        "class": "canonical",
+        "sha256": "A6ABB338981D5FF74AA3A754797C87A127EA5B32D9B6C243C4E97C1395AA1955",
+        "class": "unknown",
         "expected_role": "canonical",
-        "matches_expected": true
+        "matches_expected": false
       }
     ]
   }

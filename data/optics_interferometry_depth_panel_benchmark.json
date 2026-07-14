@@ -42,7 +42,20 @@
       "computed": 0.026954,
       "measured": 0.0,
       "error_pct": 0.026954,
-      "observable_count": 127
+      "observable_count": 127,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.026954,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.026954,
       "measured": 0.0,
       "error_pct": 0.026954,
-      "observable_count": 127
+      "observable_count": 127,
+      "domain_display_name": "tier gap fill",
+      "display_name": "optics interferometry",
+      "scientific_measurement": {
+        "delta": 0.026954,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Hanford",
+      "scientific_measurement": {
+        "delta": 0.434178,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -77,7 +116,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Hanford",
+      "scientific_measurement": {
+        "delta": 0.001632,
+        "delta_pct": 0.0408,
+        "effective_error_pct": 0.0408,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.204,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -89,7 +142,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Hanford",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -101,7 +167,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Livingston",
+      "scientific_measurement": {
+        "delta": 0.434178,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -113,7 +192,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Livingston",
+      "scientific_measurement": {
+        "delta": 0.001632,
+        "delta_pct": 0.0408,
+        "effective_error_pct": 0.0408,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.204,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -125,7 +218,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LIGO Livingston",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -137,7 +243,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo",
+      "scientific_measurement": {
+        "delta": 0.434178,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -149,7 +268,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo",
+      "scientific_measurement": {
+        "delta": 0.001224,
+        "delta_pct": 0.0408,
+        "effective_error_pct": 0.0408,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.204,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -161,7 +294,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -173,7 +319,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "GEO600",
+      "scientific_measurement": {
+        "delta": 0.434178,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -185,7 +344,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "GEO600",
+      "scientific_measurement": {
+        "delta": 0.000245,
+        "delta_pct": 0.040833,
+        "effective_error_pct": 0.040833,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.204,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -197,7 +370,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "GEO600",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -209,7 +395,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Michelson classic",
+      "scientific_measurement": {
+        "delta": 0.240349,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -221,7 +420,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LISA pathfinder",
+      "scientific_measurement": {
+        "delta": 0.434178,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -233,7 +445,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LISA pathfinder",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.204,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -245,7 +471,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Optics",
       "fsot_scalar": 0.408171,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "LISA pathfinder",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -257,7 +496,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "JWST NIRCam F200W",
+      "scientific_measurement": {
+        "delta": 0.816125,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -269,7 +521,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "HST WFC3 F160W",
+      "scientific_measurement": {
+        "delta": 0.6529,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -281,7 +546,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "ALMA Band6",
+      "scientific_measurement": {
+        "delta": 530.4812,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -293,7 +571,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "VLTI GRAVITY",
+      "scientific_measurement": {
+        "delta": 0.856931,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -305,7 +596,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "VLTI GRAVITY",
+      "scientific_measurement": {
+        "delta": 0.053048,
+        "delta_pct": 0.040806,
+        "effective_error_pct": 0.040806,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -317,7 +621,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Optics",
       "fsot_scalar": 0.408062,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "VLTI GRAVITY",
+      "scientific_measurement": {
+        "delta": 0.000204,
+        "delta_pct": 0.0408,
+        "effective_error_pct": 0.0408,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -329,7 +646,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Andromeda",
+      "scientific_measurement": {
+        "delta": 123286621.94372559,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -341,7 +671,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Andromeda",
+      "scientific_measurement": {
+        "delta": 0.003234,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -353,7 +696,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Andromeda",
+      "scientific_measurement": {
+        "delta": 0.000111,
+        "delta_pct": 0.022431,
+        "effective_error_pct": 0.022431,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -365,7 +721,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Nebula",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -377,7 +746,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Nebula",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -389,7 +771,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Nebula",
+      "scientific_measurement": {
+        "delta": 6.8e-05,
+        "delta_pct": 0.022584,
+        "effective_error_pct": 0.022584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -401,7 +796,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Hubble Deep Field North",
+      "scientific_measurement": {
+        "delta": 190832812.27844238,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -413,7 +821,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Hubble Deep Field North",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -425,7 +846,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Hubble Deep Field North",
+      "scientific_measurement": {
+        "delta": 6.9e-05,
+        "delta_pct": 0.02237,
+        "effective_error_pct": 0.02237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -437,7 +871,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "JWST Deep Field",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -449,7 +896,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "JWST Deep Field",
+      "scientific_measurement": {
+        "delta": 0.002156,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -461,7 +921,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "JWST Deep Field",
+      "scientific_measurement": {
+        "delta": 3e-05,
+        "delta_pct": 0.022538,
+        "effective_error_pct": 0.022538,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -473,7 +946,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Large Magellanic Cloud",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -485,7 +971,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Large Magellanic Cloud",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -497,7 +996,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Large Magellanic Cloud",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.023359,
+        "effective_error_pct": 0.023359,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -509,7 +1021,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Crab Nebula",
+      "scientific_measurement": {
+        "delta": 140865881.8544922,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -521,7 +1046,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Crab Nebula",
+      "scientific_measurement": {
+        "delta": 0.002965,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -533,7 +1071,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Crab Nebula",
+      "scientific_measurement": {
+        "delta": 0.000118,
+        "delta_pct": 0.02251,
+        "effective_error_pct": 0.02251,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -545,7 +1096,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cygnus X-1",
+      "scientific_measurement": {
+        "delta": 57344181.9382019,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -557,7 +1121,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cygnus X-1",
+      "scientific_measurement": {
+        "delta": 0.001617,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -569,7 +1146,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cygnus X-1",
+      "scientific_measurement": {
+        "delta": 9.2e-05,
+        "delta_pct": 0.022582,
+        "effective_error_pct": 0.022582,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -581,7 +1171,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pleiades",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -593,7 +1196,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pleiades",
+      "scientific_measurement": {
+        "delta": 0.001078,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -605,7 +1221,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pleiades",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -617,7 +1246,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Omega Centauri",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -629,7 +1271,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Omega Centauri",
+      "scientific_measurement": {
+        "delta": 0.002965,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -641,7 +1296,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Omega Centauri",
+      "scientific_measurement": {
+        "delta": 7.3e-05,
+        "delta_pct": 0.022534,
+        "effective_error_pct": 0.022534,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -653,7 +1321,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Perseus A",
+      "scientific_measurement": {
+        "delta": 143124609.20892334,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -665,7 +1346,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Perseus A",
+      "scientific_measurement": {
+        "delta": 0.003504,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -677,7 +1371,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Perseus A",
+      "scientific_measurement": {
+        "delta": 7.3e-05,
+        "delta_pct": 0.022318,
+        "effective_error_pct": 0.022318,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -689,7 +1396,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "WASP-12 field",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -701,7 +1421,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "WASP-12 field",
+      "scientific_measurement": {
+        "delta": 0.000809,
+        "delta_pct": 0.026967,
+        "effective_error_pct": 0.026967,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -713,7 +1446,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "WASP-12 field",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -725,7 +1471,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "TRAPPIST-1",
+      "scientific_measurement": {
+        "delta": 218325675.06433105,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -737,7 +1496,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "TRAPPIST-1",
+      "scientific_measurement": {
+        "delta": 0.002965,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -749,7 +1521,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "TRAPPIST-1",
+      "scientific_measurement": {
+        "delta": 0.000143,
+        "delta_pct": 0.022531,
+        "effective_error_pct": 0.022531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -761,7 +1546,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Trapezium",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -773,7 +1571,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Trapezium",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -785,7 +1596,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Orion Trapezium",
+      "scientific_measurement": {
+        "delta": 7e-05,
+        "delta_pct": 0.022424,
+        "effective_error_pct": 0.022424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -797,7 +1621,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo A",
+      "scientific_measurement": {
+        "delta": 126682799.11138916,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -809,7 +1646,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo A",
+      "scientific_measurement": {
+        "delta": 0.003774,
+        "delta_pct": 0.026957,
+        "effective_error_pct": 0.026957,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -821,7 +1671,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Virgo A",
+      "scientific_measurement": {
+        "delta": 0.000157,
+        "delta_pct": 0.022518,
+        "effective_error_pct": 0.022518,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -833,7 +1696,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Whirlpool Galaxy",
+      "scientific_measurement": {
+        "delta": 126682799.11138916,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -845,7 +1721,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Whirlpool Galaxy",
+      "scientific_measurement": {
+        "delta": 0.003504,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -857,7 +1746,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Whirlpool Galaxy",
+      "scientific_measurement": {
+        "delta": 9.4e-05,
+        "delta_pct": 0.022488,
+        "effective_error_pct": 0.022488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -869,7 +1771,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sombrero Galaxy",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -881,7 +1796,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sombrero Galaxy",
+      "scientific_measurement": {
+        "delta": 0.003234,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -893,7 +1821,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sombrero Galaxy",
+      "scientific_measurement": {
+        "delta": 7.9e-05,
+        "delta_pct": 0.022583,
+        "effective_error_pct": 0.022583,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -905,7 +1846,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cigar Galaxy",
+      "scientific_measurement": {
+        "delta": 132882170.1317749,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -917,7 +1871,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cigar Galaxy",
+      "scientific_measurement": {
+        "delta": 0.003504,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -929,7 +1896,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Cigar Galaxy",
+      "scientific_measurement": {
+        "delta": 0.000113,
+        "delta_pct": 0.022446,
+        "effective_error_pct": 0.022446,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -941,7 +1921,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pinwheel Galaxy",
+      "scientific_measurement": {
+        "delta": 117424173.26141357,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -953,7 +1946,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pinwheel Galaxy",
+      "scientific_measurement": {
+        "delta": 0.003774,
+        "delta_pct": 0.026957,
+        "effective_error_pct": 0.026957,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -965,7 +1971,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Pinwheel Galaxy",
+      "scientific_measurement": {
+        "delta": 8.3e-05,
+        "delta_pct": 0.022387,
+        "effective_error_pct": 0.022387,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -977,7 +1996,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "NGC 1300",
+      "scientific_measurement": {
+        "delta": 773573688.190918,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -989,7 +2021,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "NGC 1300",
+      "scientific_measurement": {
+        "delta": 0.002156,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1001,7 +2046,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "NGC 1300",
+      "scientific_measurement": {
+        "delta": 6.4e-05,
+        "delta_pct": 0.022565,
+        "effective_error_pct": 0.022565,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1013,7 +2071,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Great Barred Spiral",
+      "scientific_measurement": {
+        "delta": 127291954.69866943,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1025,7 +2096,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Great Barred Spiral",
+      "scientific_measurement": {
+        "delta": 0.002695,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1037,7 +2121,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Great Barred Spiral",
+      "scientific_measurement": {
+        "delta": 8.1e-05,
+        "delta_pct": 0.02235,
+        "effective_error_pct": 0.02235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1049,7 +2146,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sculptor Galaxy",
+      "scientific_measurement": {
+        "delta": 192317965.94470215,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1061,7 +2171,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sculptor Galaxy",
+      "scientific_measurement": {
+        "delta": 0.003504,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1073,7 +2196,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Sculptor Galaxy",
+      "scientific_measurement": {
+        "delta": 8.4e-05,
+        "delta_pct": 0.022447,
+        "effective_error_pct": 0.022447,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1085,7 +2221,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Antennae Galaxies",
+      "scientific_measurement": {
+        "delta": 127291954.69866943,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1097,7 +2246,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Antennae Galaxies",
+      "scientific_measurement": {
+        "delta": 0.002965,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1109,7 +2271,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Antennae Galaxies",
+      "scientific_measurement": {
+        "delta": 0.0001,
+        "delta_pct": 0.022551,
+        "effective_error_pct": 0.022551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1121,7 +2296,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Starfish Galaxy",
+      "scientific_measurement": {
+        "delta": 132882170.1317749,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1133,7 +2321,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Starfish Galaxy",
+      "scientific_measurement": {
+        "delta": 0.002695,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1145,7 +2346,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Starfish Galaxy",
+      "scientific_measurement": {
+        "delta": 8.2e-05,
+        "delta_pct": 0.022562,
+        "effective_error_pct": 0.022562,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1157,7 +2371,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Galactic Center",
+      "scientific_measurement": {
+        "delta": 379617136.7414551,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1169,7 +2396,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Galactic Center",
+      "scientific_measurement": {
+        "delta": 0.002695,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1181,7 +2421,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Galactic Center",
+      "scientific_measurement": {
+        "delta": 5.6e-05,
+        "delta_pct": 0.022646,
+        "effective_error_pct": 0.022646,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1193,7 +2446,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Carina Nebula",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1205,7 +2471,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Carina Nebula",
+      "scientific_measurement": {
+        "delta": 0.001348,
+        "delta_pct": 0.02696,
+        "effective_error_pct": 0.02696,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1217,7 +2496,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Carina Nebula",
+      "scientific_measurement": {
+        "delta": 3.4e-05,
+        "delta_pct": 0.022296,
+        "effective_error_pct": 0.022296,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1229,7 +2521,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Eagle Nebula",
+      "scientific_measurement": {
+        "delta": 227018271.38635254,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1241,7 +2546,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Eagle Nebula",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1253,7 +2571,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Eagle Nebula",
+      "scientific_measurement": {
+        "delta": 8.4e-05,
+        "delta_pct": 0.022409,
+        "effective_error_pct": 0.022409,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1265,7 +2596,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Helix Nebula",
+      "scientific_measurement": {
+        "delta": 123987420.40692139,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1277,7 +2621,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Helix Nebula",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1289,7 +2646,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Helix Nebula",
+      "scientific_measurement": {
+        "delta": 0.000145,
+        "delta_pct": 0.022498,
+        "effective_error_pct": 0.022498,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1301,7 +2671,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Ring Nebula",
+      "scientific_measurement": {
+        "delta": 188676509.31481934,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1313,7 +2696,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Ring Nebula",
+      "scientific_measurement": {
+        "delta": 0.002695,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1325,7 +2721,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Ring Nebula",
+      "scientific_measurement": {
+        "delta": 4e-05,
+        "delta_pct": 0.022573,
+        "effective_error_pct": 0.022573,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1337,7 +2746,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Kepler Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1349,7 +2771,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Kepler Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 0.000809,
+        "delta_pct": 0.026967,
+        "effective_error_pct": 0.026967,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1361,7 +2796,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Kepler Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1373,7 +2821,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Tycho Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1385,7 +2846,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Tycho Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 0.001348,
+        "delta_pct": 0.02696,
+        "effective_error_pct": 0.02696,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1397,7 +2871,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Tycho Supernova Remnant",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1409,7 +2896,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Vega field",
+      "scientific_measurement": {
+        "delta": 126682799.11138916,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1421,7 +2921,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Vega field",
+      "scientific_measurement": {
+        "delta": 0.002426,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1433,7 +2946,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Vega field",
+      "scientific_measurement": {
+        "delta": 0.000108,
+        "delta_pct": 0.022362,
+        "effective_error_pct": 0.022362,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1445,7 +2971,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Betelgeuse",
+      "scientific_measurement": {
+        "delta": 45282362.2355957,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1457,7 +2996,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Betelgeuse",
+      "scientific_measurement": {
+        "delta": 0.002695,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1469,7 +3021,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Betelgeuse",
+      "scientific_measurement": {
+        "delta": 0.000103,
+        "delta_pct": 0.022413,
+        "effective_error_pct": 0.022413,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1481,7 +3046,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Proxima Centauri",
+      "scientific_measurement": {
+        "delta": 123987420.40692139,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1493,7 +3071,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Proxima Centauri",
+      "scientific_measurement": {
+        "delta": 0.003234,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1505,7 +3096,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "Proxima Centauri",
+      "scientific_measurement": {
+        "delta": 0.000167,
+        "delta_pct": 0.022434,
+        "effective_error_pct": 0.022434,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1517,7 +3121,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "55 Cancri system",
+      "scientific_measurement": {
+        "delta": 123987420.40692139,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1529,7 +3146,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "55 Cancri system",
+      "scientific_measurement": {
+        "delta": 0.002965,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1541,7 +3171,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "55 Cancri system",
+      "scientific_measurement": {
+        "delta": 0.000128,
+        "delta_pct": 0.022439,
+        "effective_error_pct": 0.022439,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1553,7 +3196,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "HD 189733",
+      "scientific_measurement": {
+        "delta": 161722722.26989746,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1565,7 +3221,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "HD 189733",
+      "scientific_measurement": {
+        "delta": 0.001078,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "optics_interferometry_depth_lab",
@@ -1577,7 +3246,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "interferometry_reference+MAST_em_wavelengths"
+      "ingest_source": "interferometry_reference+MAST_em_wavelengths",
+      "domain_display_name": "optics interferometry depth",
+      "display_name": "HD 189733",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1591,5 +3273,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Optics Interferometry Depth Panel",
+  "tier_label": "Tier 87",
+  "scientific_precision_summary": {
+    "scalar_count": 127,
+    "median_error_pct": 0.026954,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 47328519.68650345,
+    "precision_tier_counts": {
+      "green": 127
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.303462+00:00"
 }

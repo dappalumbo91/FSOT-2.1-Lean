@@ -40,7 +40,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "neutrino physics",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "delta m21 sq eV2",
+      "scientific_measurement": {
+        "delta": -3e-07,
+        "delta_pct": 0.398406,
+        "effective_error_pct": 0.398406,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "delta m31 sq eV2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "sin2 theta12",
+      "scientific_measurement": {
+        "delta": 2.9e-05,
+        "delta_pct": 0.009446,
+        "effective_error_pct": 0.009446,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "sin2 theta23",
+      "scientific_measurement": {
+        "delta": 5.2e-05,
+        "delta_pct": 0.009524,
+        "effective_error_pct": 0.009524,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "sin2 theta13",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.009091,
+        "effective_error_pct": 0.009091,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "delta cp deg",
+      "scientific_measurement": {
+        "delta": 0.018533,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "sum mass eV",
+      "scientific_measurement": {
+        "delta": 1.1e-05,
+        "delta_pct": 0.009167,
+        "effective_error_pct": 0.009167,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "effective majorana mass eV",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.011111,
+        "effective_error_pct": 0.011111,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "reactor theta13 deg",
+      "scientific_measurement": {
+        "delta": 0.000812,
+        "delta_pct": 0.009508,
+        "effective_error_pct": 0.009508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "atmospheric theta23 deg",
+      "scientific_measurement": {
+        "delta": 0.004676,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "solar theta12 deg",
+      "scientific_measurement": {
+        "delta": 0.003178,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "delta m32 sq eV2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "neutrino flux solar cm2s",
+      "scientific_measurement": {
+        "delta": 6177687.3608017,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "atmospheric nu energy GeV",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "reactor nu energy MeV",
+      "scientific_measurement": {
+        "delta": 0.00038,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -243,7 +464,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "oscillation length km",
+      "scientific_measurement": {
+        "delta": 0.028037,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0475,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -255,7 +490,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "matter potential eV2",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -267,7 +515,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "tau neutrino mass bound eV",
+      "scientific_measurement": {
+        "delta": 4.3e-05,
+        "delta_pct": 0.009556,
+        "effective_error_pct": 0.009556,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -279,7 +540,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "sterile mixing bound",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.01,
+        "effective_error_pct": 0.01,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "neutrino_physics_lab",
@@ -291,7 +565,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
-      "ingest_source": "pdg_2024_neutrino_properties"
+      "ingest_source": "pdg_2024_neutrino_properties",
+      "domain_display_name": "neutrino physics",
+      "display_name": "neutrino temperature K",
+      "scientific_measurement": {
+        "delta": 0.000185,
+        "delta_pct": 0.009487,
+        "effective_error_pct": 0.009487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -305,5 +592,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Neutrino Physics Panel",
+  "tier_label": "Tier 82",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.009504,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 308884.3708419,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.208227+00:00"
 }

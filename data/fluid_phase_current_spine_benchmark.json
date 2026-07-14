@@ -47,7 +47,20 @@
       "computed": 0.022997,
       "measured": 0.0,
       "error_pct": 0.022997,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.022997,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -56,7 +69,20 @@
       "computed": 0.020055,
       "measured": 0.0,
       "error_pct": 0.020055,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Fluid Phase Current Spine depth",
+      "scientific_measurement": {
+        "delta": 0.020055,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -236,7 +262,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -274,7 +300,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -312,7 +338,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -349,7 +375,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -374,7 +400,7 @@
       "measured": 9192631770.0,
       "error_pct": 0.0,
       "source": "NIST SI second definition (Cs-133 hyperfine transition)",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "cs133 hyperfine hz",
       "scientific_measurement": {
         "delta": 0.0,
@@ -399,7 +425,7 @@
       "measured": 7.292115857915991e-05,
       "error_pct": 0.0,
       "source": "derived from IERS sidereal period",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "earth sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -424,7 +450,7 @@
       "measured": 2.6616995272150692e-06,
       "error_pct": 0.0,
       "source": "derived lunar sidereal",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "moon sidereal omega rad s",
       "scientific_measurement": {
         "delta": 0.0,
@@ -449,7 +475,7 @@
       "measured": 68.44005682979427,
       "error_pct": 0.0,
       "source": "data/cosmology_extended_benchmark.json lambda_cdm H0",
-      "domain_display_name": "real data anchors",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "hubble h0 km s mpc",
       "scientific_measurement": {
         "delta": 0.0,
@@ -483,7 +509,7 @@
       "omega_blend_rad_s": 9.563520290074371e-05,
       "time_median_error_pct": 0.0,
       "target_median_error_pct": 0.0220747159758794,
-      "domain_display_name": "fpc temporal coupling",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Time Emergence Simulation Compactification Ladder",
       "scientific_measurement": {
         "delta": 0.00031,
@@ -516,7 +542,7 @@
       "omega_blend_rad_s": 9.891507204713373e-05,
       "time_median_error_pct": 0.0,
       "target_median_error_pct": 0.019008268802510223,
-      "domain_display_name": "fpc temporal coupling",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Time Emergence Simulation Reality Folding Spine",
       "scientific_measurement": {
         "delta": 0.000324,
@@ -549,7 +575,7 @@
       "omega_blend_rad_s": 0.00010312609144660711,
       "time_median_error_pct": 0.0,
       "target_median_error_pct": 0.021954848848277954,
-      "domain_display_name": "fpc temporal coupling",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Time Emergence Simulation Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.000306,
@@ -582,7 +608,7 @@
       "omega_blend_rad_s": 9.107849787354916e-05,
       "time_median_error_pct": 0.0,
       "target_median_error_pct": 0.0,
-      "domain_display_name": "fpc temporal coupling",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "Time Emergence Simulation Magnetosphere Extended",
       "scientific_measurement": {
         "delta": 0.000259,
@@ -608,7 +634,7 @@
       "error_pct": 0.0,
       "record_count": 17,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "time emergence deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -633,7 +659,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_gate",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "fpc time emergence flag",
       "scientific_measurement": {
         "delta": 0.0,
@@ -657,7 +683,7 @@
       "error_pct": 0.0,
       "record_count": 13,
       "eval_kind": "fluid_spacetime_bridge",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "fpc fluidlink deep",
       "scientific_measurement": {
         "delta": 0.0,
@@ -682,7 +708,7 @@
       "measured": 1.344,
       "error_pct": 0.039797,
       "eval_kind": "fpc_anchor",
-      "domain_display_name": "fluid spacetime observable",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "cs133 fpc equilibrium",
       "scientific_measurement": {
         "delta": 0.000535,
@@ -706,7 +732,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "fluid phase current spine depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -736,5 +762,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Fluid Phase Current Spine",
+  "tier_label": "Tier 50",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.0259,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.007126014545454546,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.200134+00:00"
 }

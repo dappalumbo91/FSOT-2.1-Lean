@@ -42,7 +42,20 @@
       "computed": 0.04459,
       "measured": 0.0,
       "error_pct": 0.04459,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.04459,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.0291,
       "measured": 0.0,
       "error_pct": 0.0291,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Speleology Panel depth",
+      "scientific_measurement": {
+        "delta": 0.0291,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "potomac karst",
+      "scientific_measurement": {
+        "delta": 2.421246,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "potomac karst",
+      "scientific_measurement": {
+        "delta": 0.001525,
+        "delta_pct": 0.044591,
+        "effective_error_pct": 0.044591,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "floridan aquifer",
+      "scientific_measurement": {
+        "delta": 0.10122,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "floridan aquifer",
+      "scientific_measurement": {
+        "delta": 0.022875,
+        "delta_pct": 0.044591,
+        "effective_error_pct": 0.044591,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "iowa cave region",
+      "scientific_measurement": {
+        "delta": 0.124852,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "iowa cave region",
+      "scientific_measurement": {
+        "delta": 0.00272,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "black hills karst",
+      "scientific_measurement": {
+        "delta": 13.466227,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "black hills karst",
+      "scientific_measurement": {
+        "delta": 0.006354,
+        "delta_pct": 0.044589,
+        "effective_error_pct": 0.044589,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "tennessee cave",
+      "scientific_measurement": {
+        "delta": 0.187725,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Seismology",
       "fsot_scalar": -0.445902,
-      "ingest_source": "usgs_nwis_karst_hydrology"
+      "ingest_source": "usgs_nwis_karst_hydrology",
+      "domain_display_name": "speleology panel",
+      "display_name": "tennessee cave",
+      "scientific_measurement": {
+        "delta": 0.001677,
+        "delta_pct": 0.044601,
+        "effective_error_pct": 0.044601,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -183,7 +339,7 @@
       "measured": 36.762501,
       "error_pct": 0.017836062884406634,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.006557,
@@ -208,7 +364,7 @@
       "measured": -95.543335,
       "error_pct": 0.017836062884411003,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": -0.017041,
@@ -233,7 +389,7 @@
       "measured": 312.8,
       "error_pct": 0.01337704716331671,
       "source": "pbdb_age",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.041843,
@@ -262,7 +418,7 @@
       "measured_quiet": 0.0,
       "error_pct": 0.0,
       "S_energy": -0.549094,
-      "domain_display_name": "hydrology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "01646500:2015-01",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -286,7 +442,7 @@
       "measured_quiet": 0.0,
       "error_pct": 0.0,
       "S_energy": -0.549094,
-      "domain_display_name": "hydrology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "01646500:2015-02",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -310,7 +466,7 @@
       "measured_quiet": 0.0,
       "error_pct": 0.0,
       "S_energy": -0.549094,
-      "domain_display_name": "hydrology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "01646500:2015-03",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -334,7 +490,7 @@
       "measured_quiet": 1.0,
       "error_pct": 0.0,
       "S_energy": -0.549094,
-      "domain_display_name": "hydrology",
+      "domain_display_name": "speleology panel depth",
       "display_name": "01646500:2015-04",
       "scientific_measurement": {
         "sigma_equivalent": null,
@@ -358,7 +514,20 @@
       "fsot_scalar": -0.377159,
       "ingest_source": "usgs_nwis_limnology",
       "source_panel": "Limnology_Panel",
-      "depth_relay_from": "Limnology_Panel"
+      "depth_relay_from": "Limnology_Panel",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "red river",
+      "scientific_measurement": {
+        "delta": 0.008388,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -373,7 +542,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.000264,
+        "delta_pct": 0.0264,
+        "effective_error_pct": 0.0264,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -388,7 +570,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.294898,
+        "delta_pct": 0.0291,
+        "effective_error_pct": 0.0291,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -403,7 +598,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.003592,
+        "delta_pct": 0.028283,
+        "effective_error_pct": 0.028283,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -418,7 +626,20 @@
       "ingest_source": "noaa_ndbc_public",
       "buoy_id": "46026",
       "source_panel": "NOAA_NDBC_Buoy_Panel",
-      "depth_relay_from": "NOAA_NDBC_Buoy_Panel"
+      "depth_relay_from": "NOAA_NDBC_Buoy_Panel",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "46026 2026-07-12 13:30",
+      "scientific_measurement": {
+        "delta": 0.077357,
+        "delta_pct": 0.026675,
+        "effective_error_pct": 0.026675,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -433,7 +654,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "speleology_panel_depth_lab",
@@ -448,7 +682,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "speleology panel depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -462,5 +709,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Speleology Panel",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.04459,
+    "max_error_pct": 0.044601,
+    "mean_abs_delta": 0.9325756111111113,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.249972+00:00"
 }

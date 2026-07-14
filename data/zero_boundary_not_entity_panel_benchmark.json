@@ -43,7 +43,20 @@
       "computed": 0.020055,
       "measured": 0.0,
       "error_pct": 0.020055,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.020055,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +65,20 @@
       "computed": 0.023801,
       "measured": 0.0,
       "error_pct": 0.023800722768967785,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Zero Boundary Not Entity Panel depth",
+      "scientific_measurement": {
+        "delta": 0.023801,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "error_pct": 0.019008,
       "eval_kind": "zero_as_infinity_boundary",
       "axiom_id": "A4_zero_not_entity",
-      "note": "Zero is notation for absence limit \u2014 not a divisor"
+      "note": "Zero is notation for absence limit \u2014 not a divisor",
+      "domain_display_name": "zero boundary",
+      "display_name": "absence decay times boundary",
+      "scientific_measurement": {
+        "delta": 0.029174,
+        "delta_pct": 0.019008,
+        "effective_error_pct": 0.019008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_lab",
@@ -82,7 +121,20 @@
         "phi",
         "gamma",
         "catalan_G"
-      ]
+      ],
+      "domain_display_name": "zero boundary",
+      "display_name": "no zero fundamental seed",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_lab",
@@ -92,7 +144,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "zero_not_ontological",
-      "axiom_id": "A4_zero_not_entity"
+      "axiom_id": "A4_zero_not_entity",
+      "domain_display_name": "zero boundary",
+      "display_name": "fundamental seeds",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_lab",
@@ -108,7 +173,20 @@
       "operands": [
         9.0,
         1.0
-      ]
+      ],
+      "domain_display_name": "zero boundary",
+      "display_name": "decimal carry",
+      "scientific_measurement": {
+        "delta": 0.00095,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_lab",
@@ -124,7 +202,20 @@
       "operands": [
         10.0,
         10.0
-      ]
+      ],
+      "domain_display_name": "zero boundary",
+      "display_name": "first overflow place",
+      "scientific_measurement": {
+        "delta": 0.00095,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_lab",
@@ -134,7 +225,20 @@
       "measured": 0.1534822148944508,
       "error_pct": 0.028512,
       "eval_kind": "absence_not_zero_entity",
-      "axiom_id": "A4_zero_not_entity"
+      "axiom_id": "A4_zero_not_entity",
+      "domain_display_name": "zero boundary",
+      "display_name": "absence decay scale",
+      "scientific_measurement": {
+        "delta": 4.377e-05,
+        "delta_pct": 0.028515,
+        "effective_error_pct": 0.028515,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -145,7 +249,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -173,7 +277,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -200,7 +304,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -228,7 +332,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -261,7 +365,8 @@
       },
       "lab": "zero_boundary_not_entity_panel_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "zero boundary not entity panel depth"
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -272,7 +377,7 @@
       "error_pct": 0.03801653760497784,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.00249,
@@ -298,7 +403,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -324,7 +429,7 @@
       "error_pct": 0.03801653760497401,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Climate Science",
       "scientific_measurement": {
         "delta": 0.002357,
@@ -350,7 +455,7 @@
       "error_pct": 0.03801653760498396,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod",
-      "domain_display_name": "formula branching fractal",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.002737,
@@ -386,7 +491,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -424,7 +529,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -462,7 +567,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -499,7 +604,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -529,7 +634,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "zero boundary not entity panel depth",
+      "display_name": "18-100754-general-1946-7-vol-2",
+      "scientific_measurement": {
+        "delta": 0.000543,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -544,7 +662,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "zero boundary not entity panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -559,7 +690,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "zero boundary not entity panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.0107048,
+        "delta_pct": 0.027454,
+        "effective_error_pct": 0.027454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -574,7 +718,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "zero boundary not entity panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": -0.022534,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "zero_boundary_not_entity_panel_depth_lab",
@@ -587,11 +744,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "zero boundary not entity panel depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -613,5 +773,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Zero Boundary Not Entity Panel",
+  "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+  "scientific_precision_summary": {
+    "scalar_count": 21,
+    "median_error_pct": 0.0201,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.009660377999999999,
+    "precision_tier_counts": {
+      "green": 21
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.368568+00:00"
 }

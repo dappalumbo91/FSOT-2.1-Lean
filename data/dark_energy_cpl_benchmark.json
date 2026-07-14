@@ -42,7 +42,20 @@
       "computed": 0.029733,
       "measured": 0.0,
       "error_pct": 0.029733,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.029733,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.027455,
       "measured": 0.0,
       "error_pct": 0.027455,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Dark Energy CPL depth",
+      "scientific_measurement": {
+        "delta": 0.027455,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -498,7 +524,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -536,7 +562,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -574,7 +600,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -611,7 +637,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -641,7 +667,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "dark energy cpl depth",
+      "display_name": "18-100754-general-1946-7-vol-2",
+      "scientific_measurement": {
+        "delta": 0.000543,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_energy_cpl_depth_lab",
@@ -656,7 +695,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "dark energy cpl depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_energy_cpl_depth_lab",
@@ -671,7 +723,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "dark energy cpl depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.0107048,
+        "delta_pct": 0.027454,
+        "effective_error_pct": 0.027454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_energy_cpl_depth_lab",
@@ -686,7 +751,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "dark energy cpl depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": -0.022534,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "dark_energy_cpl_depth_lab",
@@ -697,7 +775,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -725,7 +803,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "dark energy cpl depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -754,5 +832,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Dark Energy CPL",
+  "tier_label": "Consciousness soul bridge + symbolic archetype",
+  "scientific_precision_summary": {
+    "scalar_count": 11,
+    "median_error_pct": 0.0297,
+    "max_error_pct": 0.368501,
+    "mean_abs_delta": 0.012867009090909091,
+    "precision_tier_counts": {
+      "contested": 3,
+      "green": 8
+    },
+    "green_gate_fraction": 0.7272727272727273,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.208663+00:00"
 }

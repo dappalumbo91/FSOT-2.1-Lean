@@ -44,7 +44,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 83
+      "observable_count": 83,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +66,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 83
+      "observable_count": 83,
+      "domain_display_name": "tier gap fill",
+      "display_name": "quantum math depth",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -62,7 +88,20 @@
       "computed": 0.014767,
       "measured": 0.0,
       "error_pct": 0.014767,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "quantum rules corpus",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -77,7 +116,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "states"
+      "category": "states",
+      "rule_display_name": "Qubit state normalization",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Qubit state normalization",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -90,7 +143,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "gates"
+      "category": "gates",
+      "rule_display_name": "Hadamard gate action",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Hadamard gate action",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.01475,
+        "effective_error_pct": 0.01475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -103,7 +170,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "gates"
+      "category": "gates",
+      "rule_display_name": "CNOT entangler",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "CNOT entangler",
+      "scientific_measurement": {
+        "delta": 0.000295,
+        "delta_pct": 0.01475,
+        "effective_error_pct": 0.01475,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -116,7 +197,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "measurement"
+      "category": "measurement",
+      "rule_display_name": "Born rule",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Born rule",
+      "scientific_measurement": {
+        "delta": 0.001911,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -129,7 +224,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "fundamental"
+      "category": "fundamental",
+      "rule_display_name": "No-cloning theorem",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "No-cloning theorem",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -142,7 +251,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "algorithms"
+      "category": "algorithms",
+      "rule_display_name": "Quantum Fourier transform",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantum Fourier transform",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -155,7 +278,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "algorithms"
+      "category": "algorithms",
+      "rule_display_name": "Grover iteration amplitude",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Grover iteration amplitude",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -168,7 +305,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "algorithms"
+      "category": "algorithms",
+      "rule_display_name": "Shor period finding",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Shor period finding",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -181,7 +332,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "foundations"
+      "category": "foundations",
+      "rule_display_name": "Bell inequality (CHSH)",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Bell inequality (CHSH)",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -194,7 +359,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "error_correction"
+      "category": "error_correction",
+      "rule_display_name": "Surface code threshold",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Surface code threshold",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -207,7 +386,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "protocols"
+      "category": "protocols",
+      "rule_display_name": "Quantum teleportation",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantum teleportation",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -220,7 +413,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "math_first_qc_rules+reference+arxiv",
-      "category": "algorithms"
+      "category": "algorithms",
+      "rule_display_name": "Variational quantum eigensolver",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Variational quantum eigensolver",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -232,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014802,
+        "effective_error_pct": 0.014802,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -244,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 0.000147,
+        "delta_pct": 0.014804,
+        "effective_error_pct": 0.014804,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -256,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 0.114661,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -268,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 0.090773,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -280,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.013333,
+        "effective_error_pct": 0.013333,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -292,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IBM Eagle r3",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -304,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 0.000147,
+        "delta_pct": 0.014729,
+        "effective_error_pct": 0.014729,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -316,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 0.000147,
+        "delta_pct": 0.014759,
+        "effective_error_pct": 0.014759,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -328,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 0.01911,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -340,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 0.014333,
+        "delta_pct": 0.095553,
+        "effective_error_pct": 0.095553,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -352,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.015789,
+        "effective_error_pct": 0.015789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -364,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Google Sycamore",
+      "scientific_measurement": {
+        "delta": 0.007827,
+        "delta_pct": 0.014768,
+        "effective_error_pct": 0.014768,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -376,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014807,
+        "effective_error_pct": 0.014807,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -388,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 0.000147,
+        "delta_pct": 0.014774,
+        "effective_error_pct": 0.014774,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -400,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 9.555063,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -412,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -424,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.02,
+        "effective_error_pct": 0.02,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -436,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "IonQ Forte",
+      "scientific_measurement": {
+        "delta": 0.029535,
+        "delta_pct": 0.014768,
+        "effective_error_pct": 0.014768,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -448,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014815,
+        "effective_error_pct": 0.014815,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -460,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 0.000143,
+        "delta_pct": 0.014742,
+        "effective_error_pct": 0.014742,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -472,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 0.028665,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -484,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 0.023888,
+        "delta_pct": 0.095552,
+        "effective_error_pct": 0.095552,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -496,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.015,
+        "effective_error_pct": 0.015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -508,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Rigetti Aspen M3",
+      "scientific_measurement": {
+        "delta": 0.011814,
+        "delta_pct": 0.014768,
+        "effective_error_pct": 0.014768,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -520,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014804,
+        "effective_error_pct": 0.014804,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -532,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 0.000147,
+        "delta_pct": 0.014729,
+        "effective_error_pct": 0.014729,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -544,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 47.775315,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -556,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 0.001911,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -568,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -580,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantinuum H2",
+      "scientific_measurement": {
+        "delta": 0.022151,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -592,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014801,
+        "effective_error_pct": 0.014801,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -604,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.014815,
+        "effective_error_pct": 0.014815,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -616,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.955506,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -628,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.764405,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -640,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -652,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Sim Math Only Surface",
+      "scientific_measurement": {
+        "delta": 0.147673,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -664,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -676,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d5",
+      "scientific_measurement": {
+        "delta": 0.000738,
+        "delta_pct": 0.01476,
+        "effective_error_pct": 0.01476,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -688,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d5",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.01,
+        "effective_error_pct": 0.01,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -700,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -712,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d11",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -724,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d11",
+      "scientific_measurement": {
+        "delta": 0.001624,
+        "delta_pct": 0.014764,
+        "effective_error_pct": 0.014764,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -736,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d11",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.01,
+        "effective_error_pct": 0.01,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -748,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d11",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -760,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d7",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.02,
+        "effective_error_pct": 0.02,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -772,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d7",
+      "scientific_measurement": {
+        "delta": 0.001034,
+        "delta_pct": 0.014771,
+        "effective_error_pct": 0.014771,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -784,7 +1589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d7",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.01,
+        "effective_error_pct": 0.01,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -796,7 +1614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "surface code d7",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -808,7 +1639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "repetition code n9",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.01,
+        "effective_error_pct": 0.01,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -820,7 +1664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "repetition code n9",
+      "scientific_measurement": {
+        "delta": 0.001329,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -832,7 +1689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "repetition code n9",
+      "scientific_measurement": {
+        "delta": 1.5e-05,
+        "delta_pct": 0.015,
+        "effective_error_pct": 0.015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -844,7 +1714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "repetition code n9",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -856,7 +1739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "grover N1024 M1",
+      "scientific_measurement": {
+        "delta": 0.00014,
+        "delta_pct": 0.014737,
+        "effective_error_pct": 0.014737,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -868,7 +1764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "grover N256 M4",
+      "scientific_measurement": {
+        "delta": 0.000136,
+        "delta_pct": 0.014783,
+        "effective_error_pct": 0.014783,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -880,7 +1789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "chsh tsirelson",
+      "scientific_measurement": {
+        "delta": 0.002703,
+        "delta_pct": 0.095565,
+        "effective_error_pct": 0.095565,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -892,7 +1814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "chsh tsirelson",
+      "scientific_measurement": {
+        "delta": 0.001911,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -904,7 +1839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "qft n10",
+      "scientific_measurement": {
+        "delta": 0.014767,
+        "delta_pct": 0.014767,
+        "effective_error_pct": 0.014767,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -916,7 +1864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Physical_Chemistry",
       "fsot_scalar": 0.334013,
-      "ingest_source": "math_first_qc_rules+reference+arxiv"
+      "ingest_source": "math_first_qc_rules+reference+arxiv",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "vqe H2 4q",
+      "scientific_measurement": {
+        "delta": -0.00038,
+        "delta_pct": 0.033421,
+        "effective_error_pct": 0.033421,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -929,7 +1890,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "RSA key generation correctness",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "RSA key generation correctness",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -942,7 +1917,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Discrete log problem hardness",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Discrete log problem hardness",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -955,7 +1944,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Elliptic curve point doubling",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Elliptic curve point doubling",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -968,7 +1971,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Diffie-Hellman shared secret",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Diffie-Hellman shared secret",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -981,7 +1998,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "AES round structure",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "AES round structure",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -994,7 +2025,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Cryptographic hash collision resistance",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Cryptographic hash collision resistance",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1007,7 +2052,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Learning with errors (LWE)",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Learning with errors (LWE)",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1020,7 +2079,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Shamir secret sharing",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Shamir secret sharing",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1033,7 +2106,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Schnorr signature",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Schnorr signature",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1046,7 +2133,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Zero-knowledge soundness/completeness",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Zero-knowledge soundness/completeness",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1059,7 +2160,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "GHZ-style commitment binding",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "GHZ-style commitment binding",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1072,7 +2187,21 @@
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
       "ingest_source": "quantum_computing_gap_fill",
-      "relay": true
+      "relay": true,
+      "rule_display_name": "Quantum-safe migration timeline",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "Quantum-safe migration timeline",
+      "scientific_measurement": {
+        "delta": 0.000148,
+        "delta_pct": 0.0148,
+        "effective_error_pct": 0.0148,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "quantum_computing_math_depth_lab",
@@ -1085,7 +2214,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "math_first_derived",
-      "rule_id": "QC-009"
+      "rule_id": "QC-009",
+      "domain_display_name": "quantum computing math depth",
+      "display_name": "QC-009 tsirelson",
+      "scientific_measurement": {
+        "delta": 0.00270288,
+        "delta_pct": 0.095561,
+        "effective_error_pct": 0.095561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1099,5 +2241,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Quantum Computing Math Depth Panel",
+  "tier_label": "Tier 87",
+  "scientific_precision_summary": {
+    "scalar_count": 70,
+    "median_error_pct": 0.0148,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.8513518268571431,
+    "precision_tier_counts": {
+      "green": 70
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": false
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.287446+00:00"
 }

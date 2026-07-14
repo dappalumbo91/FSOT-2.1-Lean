@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-07-12T14:54:09.014939+00:00",
+  "generated_at": "2026-07-13T17:24:21.148464+00:00",
   "tier": "79b_cross_refinement",
-  "obligation_count_total": 2073,
-  "obligation_count_provable": 2019,
-  "obligation_count_atomic_provable": 1660,
-  "obligation_count_bundle_conj": 359,
-  "obligation_count_margin_violations": 54,
-  "coq_chunks_found": 17,
-  "coq_lemmas_indexed": 1660,
+  "obligation_count_total": 2274,
+  "obligation_count_provable": 2207,
+  "obligation_count_atomic_provable": 1781,
+  "obligation_count_bundle_conj": 426,
+  "obligation_count_margin_violations": 67,
+  "coq_chunks_found": 18,
+  "coq_lemmas_indexed": 1781,
   "triangulation": {
-    "atomic_triangulated_ok": 1660,
+    "atomic_triangulated_ok": 1781,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 359,
+    "bundle_conj_triangulated_ok": 426,
     "bundle_conj_triangulated_fail": 0,
-    "margin_violations_confirmed_ok": 0,
-    "margin_violations_confirmed_fail": 54,
+    "margin_violations_confirmed_ok": 19,
+    "margin_violations_confirmed_fail": 48,
     "pct_atomic_triangulated": 100.0
   },
   "margin_summary_by_kind": {
     "nat_pos": {
-      "count": 481,
+      "count": 546,
       "min_margin": "2",
-      "median_margin": "39",
+      "median_margin": "36",
       "max_margin": "271813"
     },
     "r_lt_lit_pure": {
-      "count": 246,
+      "count": 312,
       "min_margin": "0.000192875570426",
-      "median_margin": "0.494831441372822312",
+      "median_margin": "0.489662882745644623",
       "max_margin": "19.102"
     },
     "lt_lit": {
-      "count": 180,
+      "count": 205,
       "min_margin": "0E-15",
-      "median_margin": "0.0442977973794388",
+      "median_margin": "0.0991917062585859598",
       "max_margin": "3269016.3724721107"
     },
     "lt_half": {
-      "count": 168,
+      "count": 139,
       "min_margin": "0.007472",
-      "median_margin": "0.488413612020064721",
+      "median_margin": "0.482163937115593848",
       "max_margin": "0.5"
     },
     "gt_lit": {
-      "count": 135,
+      "count": 133,
       "min_margin": "0E-15",
-      "median_margin": "0.0482032061315143",
+      "median_margin": "0.042994235377287",
       "max_margin": "1446257063881.475"
     },
     "nat_le_sym": {
@@ -58,16 +58,16 @@
       "count": 10,
       "min_margin": "0.0",
       "median_margin": "0.0",
-      "max_margin": "0.999988963000298"
+      "max_margin": "1.0"
     },
     "pos": {
-      "count": 94,
+      "count": 93,
       "min_margin": "5.5E-19",
       "median_margin": "0.7961830900509372",
       "max_margin": "58.493466"
     },
     "nat_gt_lit": {
-      "count": 13,
+      "count": 12,
       "min_margin": "1",
       "median_margin": "5",
       "max_margin": "70"
@@ -79,8 +79,8 @@
       "max_margin": "5"
     },
     "gt_one": {
-      "count": 6,
-      "min_margin": "0.1099062765752818",
+      "count": 5,
+      "min_margin": "0.618033988749895",
       "median_margin": "0.722776467449",
       "max_margin": "2.141592653589793"
     },
@@ -127,335 +127,471 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.488413612020064721",
+  "lt_half_pooled_median_margin_to_bound": "0.482163937115593848",
   "margin_violations": [
     {
       "id": "aether_prime_priors_bundle",
       "module": "AetherPrimePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "blackhole_thesis_bundle",
       "module": "BlackHoleThesisPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "bubble_bleed_bundle",
       "module": "BubbleBleedPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cameo_symbolic_bundle",
       "module": "CameoPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "codon_trinary_map_bundle",
       "module": "CodonPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_extended_bundle",
       "module": "CosmologyExtendedPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_higher_waves_bundle",
       "module": "CosmologyHigherWavesPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave10_bundle",
       "module": "CosmologyWave10Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave4_bundle",
       "module": "CosmologyWave4Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave5_bundle",
       "module": "CosmologyWave5Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave6_bundle",
       "module": "CosmologyWave6Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave7_bundle",
       "module": "CosmologyWave7Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave8_bundle",
       "module": "CosmologyWave8Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_wave9_bundle",
       "module": "CosmologyWave9Priors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
+    },
+    {
+      "id": "domains_with_empirical_data_full",
+      "module": "DomainCoveragePriors",
+      "violation": {
+        "violation_kind": "equality_false",
+        "left": "30",
+        "right": "35"
+      },
+      "lean_build_fails": true
     },
     {
       "id": "domain_coverage_priors_bundle",
       "module": "DomainCoveragePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "domain_precision_priors_bundle",
       "module": "DomainPrecisionPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "emergent_domain_priors_bundle",
       "module": "EmergentDomainPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "evolution_priors_bundle",
       "module": "EvolutionPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "experiment_synthesis_priors_bundle",
       "module": "ExperimentSynthesisPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "formula_corpus_strict_empirical_bundle",
       "module": "FormulaCorpusPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "fuel_lab_compound_bundle",
       "module": "FuelPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
+    },
+    {
+      "id": "higgs_branching_max_error_under_half_pct",
+      "module": "HiggsBranchingPriors",
+      "violation": {
+        "violation_kind": "exceeds_bound",
+        "bound": "0.5",
+        "actual": "4.232801452006084",
+        "overrun": "3.732801452006084",
+        "margin_to_bound": "-3.732801452006084"
+      },
+      "lean_build_fails": true
     },
     {
       "id": "higgs_branching_bundle",
       "module": "HiggsBranchingPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "hydrology_bundle",
       "module": "HydrologyPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "knowledge_base_corpus_bundle",
       "module": "KnowledgeBasePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "kronos_metrology_bundle",
       "module": "KronosPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "linguistics_priors_bundle",
       "module": "LinguisticsPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "magic_circle_priors_bundle",
       "module": "MagicCirclePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "magnetic_string_bundle",
       "module": "MagneticStringPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "math_generator_priors_bundle",
       "module": "MathGeneratorPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
+    },
+    {
+      "id": "cohort_canonical_scalar_min_positive",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "non_positive",
+        "actual": "0.0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "canonical_bridge_scale_gt_one",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "not_gt_one",
+        "actual": "0.0",
+        "shortfall": "1.0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "allen_cohort_cell_count_pos",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "non_positive_nat",
+        "actual": "0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "neurolab_smiles_mapped_records_pos",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "non_positive_nat",
+        "actual": "0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "allen_cohort_fi_median_rel_err_lt_thirty_pct",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "exceeds_bound",
+        "bound": "0.3",
+        "actual": "1.0",
+        "overrun": "0.7",
+        "margin_to_bound": "-0.7"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "hero_certified_fi_mean_rel_err_lt_fifteen_pct",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "exceeds_bound",
+        "bound": "0.15",
+        "actual": "1.0",
+        "overrun": "0.85",
+        "margin_to_bound": "-0.85"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "hero_canonical_bridge_mean_rel_err_lt_twelve_pct",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "exceeds_bound",
+        "bound": "0.12",
+        "actual": "1.0",
+        "overrun": "0.88",
+        "margin_to_bound": "-0.88"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "hero_canonical_bridge_delta_lt_five_pct",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "exceeds_bound",
+        "bound": "0.05",
+        "actual": "1.0",
+        "overrun": "0.95",
+        "margin_to_bound": "-0.95"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "allen_cohort_fi_pearson_r_gt_fifty_five",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "below_literal_bound",
+        "bound": "0.55",
+        "actual": "0.0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "hero_certified_verifier_confidence_gt_ninety_pct",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "below_literal_bound",
+        "bound": "0.9",
+        "actual": "0.0"
+      },
+      "lean_build_fails": true
+    },
+    {
+      "id": "neurolab_strict_empirical_records_large",
+      "module": "NeuronCohortPriors",
+      "violation": {
+        "violation_kind": "non_positive_nat",
+        "actual": "0"
+      },
+      "lean_build_fails": true
     },
     {
       "id": "neuron_cohort_priors_bundle",
       "module": "NeuronCohortPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "neuron_cohort_strata_bundle",
       "module": "NeuronCohortStrataPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "neuron_cohort_train_holdout_bundle",
       "module": "NeuronCohortTrainHoldoutPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "neuron_hybrid_priors_bundle",
       "module": "NeuronHybridPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "particle_physics_bundle",
       "module": "ParticlePhysicsPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "protein_amino_acid_trinary_bundle",
       "module": "ProteinPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "soul_sibling_priors_bundle",
       "module": "SoulSiblingPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "space_weather_bundle",
       "module": "SpaceWeatherPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "species_catalog_bundle",
       "module": "SpeciesPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "structure_calibration_bundle",
       "module": "StructureCalibrationPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "thesis_simulation_bundle",
       "module": "ThesisSimulationPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "trinary_fluid_priors_bundle",
       "module": "TrinaryFluidPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "trinary_os_fsotb_bundle",
       "module": "TrinaryOSPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "unified_db_meta_bundle",
       "module": "UnifiedDBPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "vibra_register_bundle",
       "module": "VibRegisterPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "warp_bh_wh_portal_bundle",
       "module": "WarpBhWhPortalPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "weather_priors_bundle",
       "module": "WeatherPriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cmb_term1_negative",
       "module": "Domains",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "quantum_raw_S_positive",
       "module": "Domains",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "proton_raw_S_positive",
       "module": "Domains",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": true
     },
     {
       "id": "lean_proofs_constant_bundle",
       "module": "LeanProofsBridge",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cosmology_lambda_cdm_bundle",
       "module": "CosmologyLab",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "photonic_forge_bundle",
       "module": "PhotonicForge",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cross_proof_connective_spine_bundle",
       "module": "CrossProofConnectivePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     },
     {
       "id": "cross_proof_full_formal_spine_bundle",
       "module": "CrossProofConnectivePriors",
       "violation": {},
-      "lean_build_fails": false
+      "lean_build_fails": null
     }
   ],
   "issue_counts": {
-    "lean_expected_build_failure_not_confirmed": 54
+    "lean_expected_build_failure_not_confirmed": 48
   },
   "failures_sample": [
     {
@@ -467,7 +603,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -483,7 +619,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -499,7 +635,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -515,7 +651,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -531,7 +667,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -547,7 +683,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -563,7 +699,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -579,7 +715,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -595,7 +731,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -611,7 +747,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -627,7 +763,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -643,7 +779,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -659,7 +795,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -675,23 +811,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
-      },
-      "issues": [
-        "lean_expected_build_failure_not_confirmed"
-      ],
-      "triangulated_ok": false
-    },
-    {
-      "obligation_id": "domain_coverage_priors_bundle",
-      "kind": "bundle_conj",
-      "lean_module": "DomainCoveragePriors",
-      "classification": "margin_violation",
-      "margin_violation": {},
-      "cross_framework_agreement": {
-        "python_decimal_refutes": true,
-        "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -707,7 +827,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -723,7 +843,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -739,7 +859,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -755,7 +875,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -771,7 +891,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -787,23 +907,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
-      },
-      "issues": [
-        "lean_expected_build_failure_not_confirmed"
-      ],
-      "triangulated_ok": false
-    },
-    {
-      "obligation_id": "higgs_branching_bundle",
-      "kind": "bundle_conj",
-      "lean_module": "HiggsBranchingPriors",
-      "classification": "margin_violation",
-      "margin_violation": {},
-      "cross_framework_agreement": {
-        "python_decimal_refutes": true,
-        "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -819,7 +923,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -835,7 +939,7 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"
@@ -851,7 +955,39 @@
       "cross_framework_agreement": {
         "python_decimal_refutes": true,
         "coq_excluded_from_proofs": true,
-        "lean_build_fails": false
+        "lean_build_fails": null
+      },
+      "issues": [
+        "lean_expected_build_failure_not_confirmed"
+      ],
+      "triangulated_ok": false
+    },
+    {
+      "obligation_id": "linguistics_priors_bundle",
+      "kind": "bundle_conj",
+      "lean_module": "LinguisticsPriors",
+      "classification": "margin_violation",
+      "margin_violation": {},
+      "cross_framework_agreement": {
+        "python_decimal_refutes": true,
+        "coq_excluded_from_proofs": true,
+        "lean_build_fails": null
+      },
+      "issues": [
+        "lean_expected_build_failure_not_confirmed"
+      ],
+      "triangulated_ok": false
+    },
+    {
+      "obligation_id": "magic_circle_priors_bundle",
+      "kind": "bundle_conj",
+      "lean_module": "MagicCirclePriors",
+      "classification": "margin_violation",
+      "margin_violation": {},
+      "cross_framework_agreement": {
+        "python_decimal_refutes": true,
+        "coq_excluded_from_proofs": true,
+        "lean_build_fails": null
       },
       "issues": [
         "lean_expected_build_failure_not_confirmed"

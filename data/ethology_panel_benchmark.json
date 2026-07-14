@@ -40,7 +40,20 @@
       "computed": 0.006607,
       "measured": 0.0,
       "error_pct": 0.006607,
-      "observable_count": 100
+      "observable_count": 100,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.006607,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.006607,
       "measured": 0.0,
       "error_pct": 0.006607,
-      "observable_count": 100
+      "observable_count": 100,
+      "domain_display_name": "tier gap fill",
+      "display_name": "ethology",
+      "scientific_measurement": {
+        "delta": 0.006607,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Tephrodornis pondicerianus",
+      "scientific_measurement": {
+        "delta": 0.003058,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -75,7 +115,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Tephrodornis pondicerianus",
+      "scientific_measurement": {
+        "delta": 0.842211,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -87,7 +141,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Tephrodornis pondicerianus",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -99,7 +167,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Tephrodornis pondicerianus",
+      "scientific_measurement": {
+        "delta": 0.001103,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -111,7 +192,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Tephrodornis pondicerianus",
+      "scientific_measurement": {
+        "delta": 0.0164,
+        "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -123,7 +217,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Cyanistes caeruleus",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -135,7 +243,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Cyanistes caeruleus",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -147,7 +269,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Cyanistes caeruleus",
+      "scientific_measurement": {
+        "delta": 0.00403,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -159,7 +295,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Cyanistes caeruleus",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -171,7 +320,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Cyanistes caeruleus",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -183,7 +345,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Parus major",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -195,7 +371,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Parus major",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -207,7 +397,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Parus major",
+      "scientific_measurement": {
+        "delta": 0.005616,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -219,7 +423,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Parus major",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -231,7 +448,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Parus major",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -243,7 +473,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Coloeus monedula",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -255,7 +499,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Coloeus monedula",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -267,7 +525,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Coloeus monedula",
+      "scientific_measurement": {
+        "delta": 0.00403,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -279,7 +551,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Coloeus monedula",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -291,7 +576,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Coloeus monedula",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -303,7 +601,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Dendrocopos major",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -315,7 +627,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Dendrocopos major",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -327,7 +653,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Dendrocopos major",
+      "scientific_measurement": {
+        "delta": 0.001387,
+        "delta_pct": 0.006605,
+        "effective_error_pct": 0.006605,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -339,7 +679,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Dendrocopos major",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -351,7 +704,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Dendrocopos major",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -363,7 +729,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Passer montanus",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -375,7 +755,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Passer montanus",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -387,7 +781,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Passer montanus",
+      "scientific_measurement": {
+        "delta": 0.002973,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -399,7 +807,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Passer montanus",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -411,7 +832,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Passer montanus",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -423,7 +857,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Pica pica",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -435,7 +883,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Pica pica",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -447,7 +909,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Pica pica",
+      "scientific_measurement": {
+        "delta": 0.001916,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -459,7 +935,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Pica pica",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -471,7 +960,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Pica pica",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -483,7 +985,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Sciurus vulgaris",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -495,7 +1011,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Sciurus vulgaris",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -507,7 +1037,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Sciurus vulgaris",
+      "scientific_measurement": {
+        "delta": 0.001387,
+        "delta_pct": 0.006605,
+        "effective_error_pct": 0.006605,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -519,7 +1063,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Sciurus vulgaris",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -531,7 +1088,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Sciurus vulgaris",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -543,7 +1113,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Columba livia",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -555,7 +1139,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Columba livia",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -567,7 +1165,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Columba livia",
+      "scientific_measurement": {
+        "delta": 0.002973,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -579,7 +1191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Columba livia",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -591,7 +1216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Columba livia",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -603,7 +1241,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Corvus corone",
+      "scientific_measurement": {
+        "delta": 0.0096095,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -615,7 +1267,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Corvus corone",
+      "scientific_measurement": {
+        "delta": 0.278145,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -627,7 +1293,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Corvus corone",
+      "scientific_measurement": {
+        "delta": 0.002973,
+        "delta_pct": 0.006607,
+        "effective_error_pct": 0.006607,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -639,7 +1319,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Corvus corone",
+      "scientific_measurement": {
+        "delta": 0.003724,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -651,7 +1344,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Corvus corone",
+      "scientific_measurement": {
+        "delta": 0.005118,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -663,7 +1369,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Aegolius funereus",
+      "scientific_measurement": {
+        "delta": 0.010109,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -675,7 +1395,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Aegolius funereus",
+      "scientific_measurement": {
+        "delta": 0.262755,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -687,7 +1421,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Aegolius funereus",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -699,7 +1447,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Aegolius funereus",
+      "scientific_measurement": {
+        "delta": 0.003924,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -711,7 +1472,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Aegolius funereus",
+      "scientific_measurement": {
+        "delta": 0.00481,
+        "delta_pct": 0.022235,
+        "effective_error_pct": 0.022235,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -723,7 +1497,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anas platyrhynchos",
+      "scientific_measurement": {
+        "delta": 0.004874,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -735,7 +1523,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anas platyrhynchos",
+      "scientific_measurement": {
+        "delta": 0.959906,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -747,7 +1549,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anas platyrhynchos",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -759,7 +1575,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anas platyrhynchos",
+      "scientific_measurement": {
+        "delta": 0.001829,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -771,7 +1600,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anas platyrhynchos",
+      "scientific_measurement": {
+        "delta": -0.018753,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -783,7 +1625,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Zenaida macroura",
+      "scientific_measurement": {
+        "delta": 0.004503,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -795,7 +1651,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Zenaida macroura",
+      "scientific_measurement": {
+        "delta": 0.93248,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -807,7 +1677,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Zenaida macroura",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -819,7 +1703,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Zenaida macroura",
+      "scientific_measurement": {
+        "delta": 0.001681,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -831,7 +1728,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Zenaida macroura",
+      "scientific_measurement": {
+        "delta": -0.018205,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -843,7 +1753,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Setophaga palmarum",
+      "scientific_measurement": {
+        "delta": 0.0045105,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -855,7 +1779,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Setophaga palmarum",
+      "scientific_measurement": {
+        "delta": 0.933412,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -867,7 +1805,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Setophaga palmarum",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -879,7 +1831,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Setophaga palmarum",
+      "scientific_measurement": {
+        "delta": 0.001684,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -891,7 +1856,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Setophaga palmarum",
+      "scientific_measurement": {
+        "delta": -0.018224,
+        "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -903,7 +1881,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Thryothorus ludovicianus",
+      "scientific_measurement": {
+        "delta": 0.0048745,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -915,7 +1907,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Thryothorus ludovicianus",
+      "scientific_measurement": {
+        "delta": 0.959739,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -927,7 +1933,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Thryothorus ludovicianus",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -939,7 +1959,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Thryothorus ludovicianus",
+      "scientific_measurement": {
+        "delta": 0.001829,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -951,7 +1984,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Thryothorus ludovicianus",
+      "scientific_measurement": {
+        "delta": -0.01875,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -963,7 +2009,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Phalacrocorax auritus",
+      "scientific_measurement": {
+        "delta": 0.0048735,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -975,7 +2035,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Phalacrocorax auritus",
+      "scientific_measurement": {
+        "delta": 0.95974,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -987,7 +2061,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Phalacrocorax auritus",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -999,7 +2087,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Phalacrocorax auritus",
+      "scientific_measurement": {
+        "delta": 0.001829,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1011,7 +2112,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Phalacrocorax auritus",
+      "scientific_measurement": {
+        "delta": -0.01875,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1023,7 +2137,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": 0.0045115,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1035,7 +2163,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": 0.933424,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1047,7 +2189,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1059,7 +2215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": 0.001684,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1071,7 +2240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Melanerpes carolinus",
+      "scientific_measurement": {
+        "delta": -0.018224,
+        "delta_pct": 0.022237,
+        "effective_error_pct": 0.022237,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1083,7 +2265,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Egretta thula",
+      "scientific_measurement": {
+        "delta": 0.0048735,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1095,7 +2291,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Egretta thula",
+      "scientific_measurement": {
+        "delta": 0.959741,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1107,7 +2317,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Egretta thula",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1119,7 +2343,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Egretta thula",
+      "scientific_measurement": {
+        "delta": 0.001829,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1131,7 +2368,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Egretta thula",
+      "scientific_measurement": {
+        "delta": -0.01875,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1143,7 +2393,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Mimus polyglottos",
+      "scientific_measurement": {
+        "delta": 0.0048735,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1155,7 +2419,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Mimus polyglottos",
+      "scientific_measurement": {
+        "delta": 0.959903,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1167,7 +2445,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Mimus polyglottos",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1179,7 +2471,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Mimus polyglottos",
+      "scientific_measurement": {
+        "delta": 0.001829,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1191,7 +2496,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Mimus polyglottos",
+      "scientific_measurement": {
+        "delta": -0.018753,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1203,7 +2521,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anhinga anhinga",
+      "scientific_measurement": {
+        "delta": 0.004516,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.03,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1215,7 +2547,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anhinga anhinga",
+      "scientific_measurement": {
+        "delta": 0.933289,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1112,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1227,7 +2573,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anhinga anhinga",
+      "scientific_measurement": {
+        "delta": 0.000859,
+        "delta_pct": 0.006608,
+        "effective_error_pct": 0.006608,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.033,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1239,7 +2599,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Ecology",
       "fsot_scalar": 0.300317,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anhinga anhinga",
+      "scientific_measurement": {
+        "delta": 0.001686,
+        "delta_pct": 0.006005,
+        "effective_error_pct": 0.006005,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ethology_lab",
@@ -1251,7 +2624,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "gbif_ethology_bundled"
+      "ingest_source": "gbif_ethology_bundled",
+      "domain_display_name": "ethology",
+      "display_name": "Anhinga anhinga",
+      "scientific_measurement": {
+        "delta": -0.018221,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1265,5 +2651,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Ethology Panel",
+  "tier_label": "Tier 82",
+  "scientific_precision_summary": {
+    "scalar_count": 100,
+    "median_error_pct": 0.006608,
+    "max_error_pct": 0.022237,
+    "mean_abs_delta": 0.12607026500000004,
+    "precision_tier_counts": {
+      "green": 100
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.198938+00:00"
 }

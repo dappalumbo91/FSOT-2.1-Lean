@@ -41,7 +41,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 29
+      "observable_count": 29,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 29
+      "observable_count": 29,
+      "domain_display_name": "tier gap fill",
+      "display_name": "emergence from saturation",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 2,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 2",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -78,7 +117,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 2,
-      "representation": "10_base_2"
+      "representation": "10_base_2",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 2 ten",
+      "scientific_measurement": {
+        "delta": 0.00019,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -91,7 +143,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 2
+      "base": 2,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 2 carry density",
+      "scientific_measurement": {
+        "delta": 0.047521,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -104,7 +169,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 3,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 3",
+      "scientific_measurement": {
+        "delta": 0.00019,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -117,7 +195,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 3,
-      "representation": "10_base_3"
+      "representation": "10_base_3",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 3 ten",
+      "scientific_measurement": {
+        "delta": 0.000285,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -130,7 +221,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 3
+      "base": 3,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 3 carry density",
+      "scientific_measurement": {
+        "delta": 0.031649,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -143,7 +247,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 5,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 5",
+      "scientific_measurement": {
+        "delta": 0.00038,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -156,7 +273,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 5,
-      "representation": "10_base_5"
+      "representation": "10_base_5",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 5 ten",
+      "scientific_measurement": {
+        "delta": 0.000475,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -169,7 +299,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 5
+      "base": 5,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 5 carry density",
+      "scientific_measurement": {
+        "delta": 0.019008,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -182,7 +325,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 8,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 8",
+      "scientific_measurement": {
+        "delta": 0.000665,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -195,7 +351,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 8,
-      "representation": "10_base_8"
+      "representation": "10_base_8",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 8 ten",
+      "scientific_measurement": {
+        "delta": 0.00076,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -208,7 +377,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 8
+      "base": 8,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 8 carry density",
+      "scientific_measurement": {
+        "delta": 0.01188,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -221,7 +403,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 10,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 10",
+      "scientific_measurement": {
+        "delta": 0.000855,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -234,7 +429,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 10,
-      "representation": "10_base_10"
+      "representation": "10_base_10",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 10 ten",
+      "scientific_measurement": {
+        "delta": 0.00095,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -247,7 +455,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 10
+      "base": 10,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 10 carry density",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -260,7 +481,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 12,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 12",
+      "scientific_measurement": {
+        "delta": 0.001045,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -273,7 +507,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 12,
-      "representation": "10_base_12"
+      "representation": "10_base_12",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 12 ten",
+      "scientific_measurement": {
+        "delta": 0.00114,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -286,7 +533,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 12
+      "base": 12,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 12 carry density",
+      "scientific_measurement": {
+        "delta": 0.007888,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -299,7 +559,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 16,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 16",
+      "scientific_measurement": {
+        "delta": 0.001426,
+        "delta_pct": 0.009507,
+        "effective_error_pct": 0.009507,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -312,7 +585,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 16,
-      "representation": "10_base_16"
+      "representation": "10_base_16",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 16 ten",
+      "scientific_measurement": {
+        "delta": 0.001521,
+        "delta_pct": 0.009506,
+        "effective_error_pct": 0.009506,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -325,7 +611,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 16
+      "base": 16,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 16 carry density",
+      "scientific_measurement": {
+        "delta": 0.005893,
+        "delta_pct": 0.009505,
+        "effective_error_pct": 0.009505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -338,7 +637,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 20,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 20",
+      "scientific_measurement": {
+        "delta": 0.001806,
+        "delta_pct": 0.009505,
+        "effective_error_pct": 0.009505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -351,7 +663,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 20,
-      "representation": "10_base_20"
+      "representation": "10_base_20",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 20 ten",
+      "scientific_measurement": {
+        "delta": 0.001901,
+        "delta_pct": 0.009505,
+        "effective_error_pct": 0.009505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -364,7 +689,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 20
+      "base": 20,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 20 carry density",
+      "scientific_measurement": {
+        "delta": 0.004752,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -377,7 +715,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 60,
-      "axiom_id": "A5_carry_emergence"
+      "axiom_id": "A5_carry_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 60",
+      "scientific_measurement": {
+        "delta": 0.005607,
+        "delta_pct": 0.009503,
+        "effective_error_pct": 0.009503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -390,7 +741,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "base": 60,
-      "representation": "10_base_60"
+      "representation": "10_base_60",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 60 ten",
+      "scientific_measurement": {
+        "delta": 0.005702,
+        "delta_pct": 0.009503,
+        "effective_error_pct": 0.009503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -403,7 +767,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "range": 1000,
-      "base": 60
+      "base": 60,
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "base 60 carry density",
+      "scientific_measurement": {
+        "delta": 0.001521,
+        "delta_pct": 0.009506,
+        "effective_error_pct": 0.009506,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -416,7 +793,20 @@
       "fsot_domain": "Particle_Physics",
       "fsot_scalar": 0.950413,
       "axiom_id": "A5_carry_emergence",
-      "formula": "9+1 carry -> 10"
+      "formula": "9+1 carry -> 10",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "emergence ten",
+      "scientific_measurement": {
+        "delta": 0.00095,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "overflow_carry_emergence_lab",
@@ -428,7 +818,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "axiom_id": "A6_fold_is_emergence"
+      "axiom_id": "A6_fold_is_emergence",
+      "domain_display_name": "overflow carry emergence",
+      "display_name": "quirk mod observed minus unobserved",
+      "scientific_measurement": {
+        "delta": -0.00052746,
+        "delta_pct": 0.031508,
+        "effective_error_pct": 0.031508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -442,5 +845,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Overflow Carry Emergence Panel",
+  "tier_label": "Seven-way bare-metal runtime (QEMU + ESP32 serial)",
+  "scientific_precision_summary": {
+    "scalar_count": 29,
+    "median_error_pct": 0.009503,
+    "max_error_pct": 0.031508,
+    "mean_abs_delta": 0.005727119310344829,
+    "precision_tier_counts": {
+      "green": 29
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.380877+00:00"
 }

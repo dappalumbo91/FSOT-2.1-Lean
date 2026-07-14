@@ -241,6 +241,52 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma alternate_base_mathematics_explorer_panel_bundle_conj_0 : (56 = 56)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma alternate_base_mathematics_explorer_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma alternate_base_mathematics_explorer_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma alternate_base_mathematics_explorer_panel_bundle : (56 = 56)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma alternate_base_mathematics_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma alternate_base_mathematics_spine_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma alternate_base_mathematics_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma alternate_base_mathematics_spine_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma anthropology_ext_bundle_conj_0 : (160 = 160)%nat.
 Proof. reflexivity.
 Qed.
@@ -335,6 +381,29 @@ Proof. trivial.
 Qed.
 
 Lemma architecture_building_science_bundle : (43 = 43)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma arxiv_gravitational_waves_panel_bundle_conj_0 : (60 = 60)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma arxiv_gravitational_waves_panel_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma arxiv_gravitational_waves_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma arxiv_gravitational_waves_panel_bundle : (60 = 60)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -844,6 +913,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma cardiology_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cardiology_panel_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma cardiology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma cardiology_panel_bundle : (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma cardiology_bundle_conj_0 : (45 = 45)%nat.
 Proof. reflexivity.
 Qed.
@@ -913,7 +1005,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma cern_open_data_lhc_bundle_conj_0 : (200 = 200)%nat.
+Lemma cern_open_data_lhc_bundle_conj_0 : (83 = 83)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -925,7 +1017,30 @@ Lemma cern_open_data_lhc_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma cern_open_data_lhc_bundle : (200 = 200)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Lemma cern_open_data_lhc_bundle : (83 = 83)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma certified_agent_formal_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma certified_agent_formal_panel_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma certified_agent_formal_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma certified_agent_formal_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1083,6 +1198,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma civil_engineering_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma civil_engineering_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma civil_engineering_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma civil_engineering_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -1369,6 +1507,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma complexity_folding_emergence_panel_bundle_conj_0 : (29 = 29)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma complexity_folding_emergence_panel_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma complexity_folding_emergence_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma complexity_folding_emergence_panel_bundle : (29 = 29)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma computational_reasoning_bundle_conj_0 : (577 = 577)%nat.
 Proof. reflexivity.
 Qed.
@@ -1382,6 +1543,29 @@ Proof. trivial.
 Qed.
 
 Lemma computational_reasoning_bundle : (577 = 577)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma condensed_matter_superconductivity_depth_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma condensed_matter_superconductivity_depth_panel_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1415,6 +1599,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma consciousness_expansion_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_expansion_spine_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_expansion_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma consciousness_expansion_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma consciousness_galactic_orbital_bridge_bundle_conj_0 : (48 = 48)%nat.
 Proof. reflexivity.
 Qed.
@@ -1428,6 +1635,52 @@ Proof. trivial.
 Qed.
 
 Lemma consciousness_galactic_orbital_bridge_bundle : (48 = 48)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma consciousness_genetics_coupling_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_genetics_coupling_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_genetics_coupling_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma consciousness_genetics_coupling_panel_bundle : (24 = 24)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma consciousness_genetics_species_panel_bundle_conj_0 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_genetics_species_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_genetics_species_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma consciousness_genetics_species_panel_bundle : (27 = 27)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1461,7 +1714,30 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma cosmology_anomalies_bundle_conj_0 : (24 = 24)%nat.
+Lemma consciousness_species_multi_panel_bundle_conj_0 : (269 = 269)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_species_multi_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma consciousness_species_multi_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma consciousness_species_multi_panel_bundle : (269 = 269)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma cosmology_anomalies_bundle_conj_0 : (12 = 12)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -1473,7 +1749,7 @@ Lemma cosmology_anomalies_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma cosmology_anomalies_bundle : (24 = 24)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
+Lemma cosmology_anomalies_bundle : (12 = 12)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1622,7 +1898,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma cryosphere_bundle_conj_0 : (1919 = 1919)%nat.
+Lemma cryosphere_bundle_conj_0 : (2399 = 2399)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -1630,7 +1906,7 @@ Lemma cryosphere_bundle_conj_1 : (4 = 4)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma cryosphere_bundle_conj_2 : (1905 = 1905)%nat.
+Lemma cryosphere_bundle_conj_2 : (2399 = 2399)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -1642,7 +1918,7 @@ Lemma cryosphere_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
-Lemma cryosphere_bundle : (1919 = 1919)%nat /\ (4 = 4)%nat /\ (1905 = 1905)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Lemma cryosphere_bundle : (2399 = 2399)%nat /\ (4 = 4)%nat /\ (2399 = 2399)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1693,6 +1969,29 @@ Proof. trivial.
 Qed.
 
 Lemma culinary_arts_bundle : (26 = 26)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma culinary_fermentation_maillard_panel_bundle_conj_0 : (130 = 130)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma culinary_fermentation_maillard_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma culinary_fermentation_maillard_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma culinary_fermentation_maillard_panel_bundle : (130 = 130)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -1762,6 +2061,29 @@ Proof. trivial.
 Qed.
 
 Lemma dark_sector_open_problems_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma desktop_application_wiring_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma desktop_application_wiring_spine_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma desktop_application_wiring_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma desktop_application_wiring_spine_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -2183,6 +2505,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma entomology_panel_bundle_conj_0 : (90 = 90)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma entomology_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma entomology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma entomology_panel_bundle : (90 = 90)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma entomology_bundle_conj_0 : (430 = 430)%nat.
 Proof. reflexivity.
 Qed.
@@ -2255,6 +2600,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma epidemiology_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma epidemiology_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma epidemiology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma epidemiology_panel_bundle : (24 = 24)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -2356,6 +2724,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma exogeology_panel_bundle_conj_0 : (100 = 100)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma exogeology_panel_bundle_conj_1 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma exogeology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma exogeology_panel_bundle : (100 = 100)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma exogeology_bundle_conj_0 : (316 = 316)%nat.
 Proof. reflexivity.
 Qed.
@@ -2392,6 +2783,29 @@ Proof. trivial.
 Qed.
 
 Lemma exoplanet_system_architecture_bundle : (882 = 882)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma experimental_base_mathematics_panel_bundle_conj_0 : (36 = 36)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma experimental_base_mathematics_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma experimental_base_mathematics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma experimental_base_mathematics_panel_bundle : (36 = 36)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -2497,6 +2911,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma finance_markets_panel_bundle_conj_0 : (36 = 36)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma finance_markets_panel_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma finance_markets_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma finance_markets_panel_bundle : (36 = 36)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -2778,6 +3215,29 @@ Proof. trivial.
 Qed.
 
 Lemma formula_precision_spine_bundle : (27 = 27)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma foundational_ontology_spine_bundle_conj_0 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma foundational_ontology_spine_bundle_conj_1 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma foundational_ontology_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma foundational_ontology_spine_bundle : (21 = 21)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -3108,7 +3568,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma gbif_species_occurrence_bundle_conj_0 : (2000 = 2000)%nat.
+Lemma gbif_species_occurrence_bundle_conj_0 : (240 = 240)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3120,7 +3580,7 @@ Lemma gbif_species_occurrence_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma gbif_species_occurrence_bundle : (2000 = 2000)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Lemma gbif_species_occurrence_bundle : (240 = 240)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -3229,11 +3689,11 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma geomagnetism_bundle_conj_0 : (525 = 525)%nat.
+Lemma geomagnetism_bundle_conj_0 : (524 = 524)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma geomagnetism_bundle_conj_1 : (525 = 525)%nat.
+Lemma geomagnetism_bundle_conj_1 : (413 = 413)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3245,7 +3705,7 @@ Lemma geomagnetism_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
-Lemma geomagnetism_bundle : (525 = 525)%nat /\ (525 = 525)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Lemma geomagnetism_bundle : (524 = 524)%nat /\ (413 = 413)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -3285,7 +3745,7 @@ Lemma grace_cryosphere_bundle_conj_0 : (253 = 253)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma grace_cryosphere_bundle_conj_1 : (237 = 237)%nat.
+Lemma grace_cryosphere_bundle_conj_1 : (253 = 253)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3297,7 +3757,7 @@ Lemma grace_cryosphere_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
-Lemma grace_cryosphere_bundle : (253 = 253)%nat /\ (237 = 237)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Lemma grace_cryosphere_bundle : (253 = 253)%nat /\ (253 = 253)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -3356,7 +3816,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma higgs_mass_bundle_conj_0 : (24 = 24)%nat.
+Lemma higgs_mass_bundle_conj_0 : (9 = 9)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -3368,7 +3828,7 @@ Lemma higgs_mass_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma higgs_mass_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Lemma higgs_mass_bundle : (9 = 9)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -3405,6 +3865,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma history_panel_bundle_conj_0 : (60 = 60)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma history_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma history_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma history_panel_bundle : (60 = 60)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -3523,6 +4006,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma hybrid_fi_sim_stratum_deep_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma hybrid_fi_sim_stratum_deep_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma igem_live_fasta_bundle_conj_0 : (42 = 42)%nat.
 Proof. reflexivity.
 Qed.
@@ -3606,6 +4112,29 @@ Proof.
           - lra.
         - lra.
       - reflexivity.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma immunology_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma immunology_panel_bundle_conj_1 : (13 = 13)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma immunology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma immunology_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
     - reflexivity.
   - reflexivity.
 Qed.
@@ -3981,6 +4510,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma law_policy_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma law_policy_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma law_policy_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma law_policy_panel_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma law_policy_bundle_conj_0 : (180 = 180)%nat.
 Proof. reflexivity.
 Qed.
@@ -4086,6 +4638,167 @@ Proof. trivial.
 Qed.
 
 Lemma live_ingest_spine_bundle : (28 = 28)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma living_fsot_hardware_panel_bundle_conj_0 : (77 = 77)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma living_fsot_hardware_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma living_fsot_hardware_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma living_fsot_hardware_panel_bundle : (77 = 77)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_anage_catalog_panel_bundle_conj_0 : (966 = 966)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_anage_catalog_panel_bundle_conj_1 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_anage_catalog_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_anage_catalog_panel_bundle : (966 = 966)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_consciousness_coupling_panel_bundle_conj_0 : (890 = 890)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_consciousness_coupling_panel_bundle_conj_1 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_consciousness_coupling_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_consciousness_coupling_panel_bundle : (890 = 890)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_extreme_species_panel_bundle_conj_0 : (164 = 164)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_extreme_species_panel_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_extreme_species_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_extreme_species_panel_bundle : (164 = 164)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_genetic_mechanics_panel_bundle_conj_0 : (35 = 35)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_genetic_mechanics_panel_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_genetic_mechanics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_genetic_mechanics_panel_bundle : (35 = 35)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_megadeep_ncbi_panel_bundle_conj_0 : (1746 = 1746)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_megadeep_ncbi_panel_bundle_conj_1 : (23 = 23)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_megadeep_ncbi_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_megadeep_ncbi_panel_bundle : (1746 = 1746)%nat /\ (23 = 23)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma longevity_telomere_repair_panel_bundle_conj_0 : (60 = 60)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_telomere_repair_panel_bundle_conj_1 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma longevity_telomere_repair_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma longevity_telomere_repair_panel_bundle : (60 = 60)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -4278,6 +4991,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma marine_biology_panel_bundle_conj_0 : (90 = 90)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma marine_biology_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma marine_biology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma marine_biology_panel_bundle : (90 = 90)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma marine_biology_bundle_conj_0 : (540 = 540)%nat.
 Proof. reflexivity.
 Qed.
@@ -4434,6 +5170,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma materials_species_bridge_live_panel_bundle_conj_0 : (150 = 150)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma materials_species_bridge_live_panel_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma materials_species_bridge_live_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma materials_species_bridge_live_panel_bundle : (150 = 150)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma materials_species_bridge_bundle_conj_0 : (45 = 45)%nat.
 Proof. reflexivity.
 Qed.
@@ -4457,7 +5216,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma mathematics_computational_bundle_conj_0 : (21 = 21)%nat.
+Lemma mathematics_computational_bundle_conj_0 : (20 = 20)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4469,7 +5228,7 @@ Lemma mathematics_computational_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma mathematics_computational_bundle : (21 = 21)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Lemma mathematics_computational_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -4503,7 +5262,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma math_generator_benchmark_formula_eval_bundle_conj_0 : (9 = 9)%nat.
+Lemma math_generator_benchmark_formula_eval_bundle_conj_0 : (13 = 13)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4515,7 +5274,7 @@ Lemma math_generator_benchmark_formula_eval_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma math_generator_benchmark_formula_eval_bundle : (9 = 9)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Lemma math_generator_benchmark_formula_eval_bundle : (13 = 13)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -4526,11 +5285,11 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma math_generator_rules_eval_bundle_conj_0 : (1522 = 1522)%nat.
+Lemma math_generator_rules_eval_bundle_conj_0 : (1552 = 1552)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma math_generator_rules_eval_bundle_conj_1 : (61 = 61)%nat.
+Lemma math_generator_rules_eval_bundle_conj_1 : (62 = 62)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4554,7 +5313,7 @@ Lemma math_generator_rules_eval_bundle_conj_6 : True.
 Proof. trivial.
 Qed.
 
-Lemma math_generator_rules_eval_bundle : (1522 = 1522)%nat /\ (61 = 61)%nat /\ (6 = 6)%nat /\ (17 = 17)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
+Lemma math_generator_rules_eval_bundle : (1552 = 1552)%nat /\ (62 = 62)%nat /\ (6 = 6)%nat /\ (17 = 17)%nat /\ True /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -4599,6 +5358,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma mechanical_engineering_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma mechanical_engineering_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma mechanical_engineering_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma mechanical_engineering_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -4723,6 +5505,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma microtubule_quantum_consciousness_panel_bundle_conj_0 : (63 = 63)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma microtubule_quantum_consciousness_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma microtubule_quantum_consciousness_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma microtubule_quantum_consciousness_panel_bundle : (63 = 63)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma music_harmonics_public_panel_bundle_conj_0 : (24 = 24)%nat.
 Proof. reflexivity.
 Qed.
@@ -4772,6 +5577,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma mycology_panel_bundle_conj_0 : (90 = 90)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma mycology_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma mycology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma mycology_panel_bundle : (90 = 90)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -4844,7 +5672,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma nasa_exoplanet_archive_bundle_conj_0 : (988 = 988)%nat.
+Lemma nasa_exoplanet_archive_bundle_conj_0 : (158 = 158)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -4856,7 +5684,7 @@ Lemma nasa_exoplanet_archive_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma nasa_exoplanet_archive_bundle : (988 = 988)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
+Lemma nasa_exoplanet_archive_bundle : (158 = 158)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -5080,6 +5908,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma neuroeconomics_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuroeconomics_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuroeconomics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuroeconomics_panel_bundle : (20 = 20)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma neuroeconomics_bundle_conj_0 : (65 = 65)%nat.
 Proof. reflexivity.
 Qed.
@@ -5190,11 +6041,11 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma neuron_multi_hero_bundle_conj_0 : (16 = 16)%nat.
+Lemma neuron_multi_hero_bundle_conj_0 : (24 = 24)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma neuron_multi_hero_bundle_conj_1 : (4 = 4)%nat.
+Lemma neuron_multi_hero_bundle_conj_1 : (0 = 0)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -5210,7 +6061,7 @@ Lemma neuron_multi_hero_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
-Lemma neuron_multi_hero_bundle : (16 = 16)%nat /\ (4 = 4)%nat /\ (14 = 14)%nat /\ True /\ True /\ 0 < (1.0%R).
+Lemma neuron_multi_hero_bundle : (24 = 24)%nat /\ (0 = 0)%nat /\ (14 = 14)%nat /\ True /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -5221,6 +6072,29 @@ Proof.
           - lra.
         - lra.
       - reflexivity.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma neuroscience_connectomics_depth_panel_bundle_conj_0 : (27 = 27)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuroscience_connectomics_depth_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma neuroscience_connectomics_depth_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma neuroscience_connectomics_depth_panel_bundle : (27 = 27)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
     - reflexivity.
   - reflexivity.
 Qed.
@@ -5317,7 +6191,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma noaa_coastal_tides_bundle_conj_0 : (40 = 40)%nat.
+Lemma noaa_coastal_tides_bundle_conj_0 : (20 = 20)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -5329,7 +6203,7 @@ Lemma noaa_coastal_tides_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma noaa_coastal_tides_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Lemma noaa_coastal_tides_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -5386,6 +6260,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma nothing_perfection_friction_origin_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma nothing_perfection_friction_origin_panel_bundle_conj_1 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma nothing_perfection_friction_origin_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma nothing_perfection_friction_origin_panel_bundle : (24 = 24)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma observer_channel_derivation_bundle_conj_0 : (247 = 247)%nat.
 Proof. reflexivity.
 Qed.
@@ -5399,6 +6296,29 @@ Proof. trivial.
 Qed.
 
 Lemma observer_channel_derivation_bundle : (247 = 247)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma observer_effect_cross_species_panel_bundle_conj_0 : (289 = 289)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma observer_effect_cross_species_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma observer_effect_cross_species_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma observer_effect_cross_species_panel_bundle : (289 = 289)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -5502,7 +6422,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma openalex_citation_graph_bundle_conj_0 : (200 = 200)%nat.
+Lemma openalex_citation_graph_bundle_conj_0 : (80 = 80)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -5514,7 +6434,7 @@ Lemma openalex_citation_graph_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma openalex_citation_graph_bundle : (200 = 200)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Lemma openalex_citation_graph_bundle : (80 = 80)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -5594,6 +6514,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma optics_interferometry_depth_panel_bundle_conj_0 : (127 = 127)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma optics_interferometry_depth_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma optics_interferometry_depth_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma optics_interferometry_depth_panel_bundle : (127 = 127)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma orbital_mechanics_bundle_conj_0 : (9 = 9)%nat.
 Proof. reflexivity.
 Qed.
@@ -5663,6 +6606,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma overflow_carry_emergence_panel_bundle_conj_0 : (29 = 29)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma overflow_carry_emergence_panel_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma overflow_carry_emergence_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma overflow_carry_emergence_panel_bundle : (29 = 29)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma paleoclimate_ext_bundle_conj_0 : (40 = 40)%nat.
 Proof. reflexivity.
 Qed.
@@ -5689,6 +6655,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma paleoclimate_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma paleoclimate_panel_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma paleoclimate_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma paleoclimate_panel_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -5741,6 +6730,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma paleontology_panel_bundle_conj_0 : (120 = 120)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma paleontology_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma paleontology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma paleontology_panel_bundle : (120 = 120)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -6378,7 +7390,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma pubchem_compound_properties_bundle_conj_0 : (521 = 521)%nat.
+Lemma pubchem_compound_properties_bundle_conj_0 : (500 = 500)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -6390,7 +7402,7 @@ Lemma pubchem_compound_properties_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma pubchem_compound_properties_bundle : (521 = 521)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
+Lemma pubchem_compound_properties_bundle : (500 = 500)%nat /\ (8 = 8)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -6522,6 +7534,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma pure_mathematics_panel_bundle_conj_0 : (44 = 44)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma pure_mathematics_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma pure_mathematics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma pure_mathematics_panel_bundle : (44 = 44)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma pure_mathematics_bundle_conj_0 : (1578 = 1578)%nat.
 Proof. reflexivity.
 Qed.
@@ -6571,6 +7606,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma quantum_computing_math_depth_panel_bundle_conj_0 : (83 = 83)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma quantum_computing_math_depth_panel_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma quantum_computing_math_depth_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma quantum_computing_math_depth_panel_bundle : (83 = 83)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -6742,7 +7800,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma rcsb_pdb_structures_bundle_conj_0 : (159 = 159)%nat.
+Lemma rcsb_pdb_structures_bundle_conj_0 : (45 = 45)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -6754,7 +7812,7 @@ Lemma rcsb_pdb_structures_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma rcsb_pdb_structures_bundle : (159 = 159)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Lemma rcsb_pdb_structures_bundle : (45 = 45)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -6840,6 +7898,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma robotics_control_systems_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma robotics_control_systems_panel_bundle_conj_1 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma robotics_control_systems_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma robotics_control_systems_panel_bundle : (20 = 20)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma robotics_control_systems_bundle_conj_0 : (45 = 45)%nat.
 Proof. reflexivity.
 Qed.
@@ -6886,6 +7967,52 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma scientific_expansion_depth_spine_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_depth_spine_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_depth_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma scientific_expansion_depth_spine_bundle : (20 = 20)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma scientific_expansion_depth_wave2_spine_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_depth_wave2_spine_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_depth_wave2_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma scientific_expansion_depth_wave2_spine_bundle : (20 = 20)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma scientific_expansion_spine_bundle_conj_0 : (40 = 40)%nat.
 Proof. reflexivity.
 Qed.
@@ -6899,6 +8026,52 @@ Proof. trivial.
 Qed.
 
 Lemma scientific_expansion_spine_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave2_spine_bundle_conj_0 : (40 = 40)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave2_spine_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave2_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma scientific_expansion_wave2_spine_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave3_spine_bundle_conj_0 : (40 = 40)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave3_spine_bundle_conj_1 : (17 = 17)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma scientific_expansion_wave3_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma scientific_expansion_wave3_spine_bundle : (40 = 40)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -6936,7 +8109,7 @@ Lemma seismology_deep_bundle_conj_0 : (1000 = 1000)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma seismology_deep_bundle_conj_1 : (810 = 810)%nat.
+Lemma seismology_deep_bundle_conj_1 : (1000 = 1000)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -6956,7 +8129,7 @@ Lemma seismology_deep_bundle_conj_5 : True.
 Proof. trivial.
 Qed.
 
-Lemma seismology_deep_bundle : (1000 = 1000)%nat /\ (810 = 810)%nat /\ (189 = 189)%nat /\ (189 = 189)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Lemma seismology_deep_bundle : (1000 = 1000)%nat /\ (1000 = 1000)%nat /\ (189 = 189)%nat /\ (189 = 189)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -6977,11 +8150,11 @@ Lemma seismology_bundle_conj_0 : (500 = 500)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma seismology_bundle_conj_1 : (493 = 493)%nat.
+Lemma seismology_bundle_conj_1 : (500 = 500)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma seismology_bundle_conj_2 : (18 = 18)%nat.
+Lemma seismology_bundle_conj_2 : (15 = 15)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -6989,7 +8162,7 @@ Lemma seismology_bundle_conj_3 : True.
 Proof. trivial.
 Qed.
 
-Lemma seismology_bundle : (500 = 500)%nat /\ (493 = 493)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Lemma seismology_bundle : (500 = 500)%nat /\ (500 = 500)%nat /\ (15 = 15)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -7241,6 +8414,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma speleology_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma speleology_panel_bundle_conj_1 : (16 = 16)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma speleology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma speleology_panel_bundle : (24 = 24)%nat /\ (16 = 16)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -7599,6 +8795,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma supply_chain_logistics_panel_bundle_conj_0 : (40 = 40)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma supply_chain_logistics_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma supply_chain_logistics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma supply_chain_logistics_panel_bundle : (40 = 40)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma supply_chain_logistics_bundle_conj_0 : (40 = 40)%nat.
 Proof. reflexivity.
 Qed.
@@ -7645,7 +8864,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma synthetic_biology_bundle_conj_0 : (21 = 21)%nat.
+Lemma synthetic_biology_bundle_conj_0 : (20 = 20)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -7657,7 +8876,7 @@ Lemma synthetic_biology_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma synthetic_biology_bundle : (21 = 21)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Lemma synthetic_biology_bundle : (20 = 20)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -7676,7 +8895,7 @@ Lemma tectonics_bundle_conj_1 : (241 = 241)%nat.
 Proof. reflexivity.
 Qed.
 
-Lemma tectonics_bundle_conj_2 : (494 = 494)%nat.
+Lemma tectonics_bundle_conj_2 : (500 = 500)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -7688,7 +8907,7 @@ Lemma tectonics_bundle_conj_4 : True.
 Proof. trivial.
 Qed.
 
-Lemma tectonics_bundle : (500 = 500)%nat /\ (241 = 241)%nat /\ (494 = 494)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Lemma tectonics_bundle : (500 = 500)%nat /\ (241 = 241)%nat /\ (500 = 500)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -7739,6 +8958,144 @@ Proof. trivial.
 Qed.
 
 Lemma theory_completeness_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma the_well_outcomes_verification_panel_bundle_conj_0 : (381 = 381)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_outcomes_verification_panel_bundle_conj_1 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_outcomes_verification_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma the_well_outcomes_verification_panel_bundle : (381 = 381)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma the_well_spot_check_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_spot_check_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_spot_check_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma the_well_spot_check_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma the_well_verification_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_verification_spine_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma the_well_verification_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma the_well_verification_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma tier_93_dual_wave_spine_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_93_dual_wave_spine_bundle_conj_1 : (19 = 19)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_93_dual_wave_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma tier_93_dual_wave_spine_bundle : (24 = 24)%nat /\ (19 = 19)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma tier_94_longevity_spine_bundle_conj_0 : (34 = 34)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_94_longevity_spine_bundle_conj_1 : (25 = 25)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_94_longevity_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma tier_94_longevity_spine_bundle : (34 = 34)%nat /\ (25 = 25)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma tier_95_zebrafish_spine_bundle_conj_0 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_95_zebrafish_spine_bundle_conj_1 : (23 = 23)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tier_95_zebrafish_spine_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma tier_95_zebrafish_spine_bundle : (18 = 18)%nat /\ (23 = 23)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -7887,6 +9244,29 @@ Proof.
   - reflexivity.
 Qed.
 
+Lemma tokenization_live_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tokenization_live_panel_bundle_conj_1 : (13 = 13)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma tokenization_live_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma tokenization_live_panel_bundle : (24 = 24)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
 Lemma tokenization_smoke_bundle_conj_0 : (9 = 9)%nat.
 Proof. reflexivity.
 Qed.
@@ -7946,6 +9326,29 @@ Proof. trivial.
 Qed.
 
 Lemma toxicology_bundle : (21 = 21)%nat /\ (13 = 13)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma trinary_hardware_live_panel_bundle_conj_0 : (37 = 37)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_hardware_live_panel_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma trinary_hardware_live_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma trinary_hardware_live_panel_bundle : (37 = 37)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -8186,7 +9589,7 @@ Proof.
   - reflexivity.
 Qed.
 
-Lemma uniprot_protein_annotations_bundle_conj_0 : (102 = 102)%nat.
+Lemma uniprot_protein_annotations_bundle_conj_0 : (22 = 22)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -8198,7 +9601,7 @@ Lemma uniprot_protein_annotations_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma uniprot_protein_annotations_bundle : (102 = 102)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
+Lemma uniprot_protein_annotations_bundle : (22 = 22)%nat /\ (12 = 12)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.
@@ -8258,6 +9661,29 @@ Proof.
         - lra.
       - lra.
     - lra.
+  - reflexivity.
+Qed.
+
+Lemma virology_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma virology_panel_bundle_conj_1 : (14 = 14)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma virology_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma virology_panel_bundle : (24 = 24)%nat /\ (14 = 14)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
   - reflexivity.
 Qed.
 
@@ -8555,6 +9981,121 @@ Proof. trivial.
 Qed.
 
 Lemma z164_distant_island_prereg_scaffold_bundle : (24 = 24)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma zebrafish_cell_tracking_panel_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_cell_tracking_panel_bundle_conj_1 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_cell_tracking_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma zebrafish_cell_tracking_panel_bundle : (20 = 20)%nat /\ (20 = 20)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma zebrafish_developmental_mechanics_panel_bundle_conj_0 : (31 = 31)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_developmental_mechanics_panel_bundle_conj_1 : (21 = 21)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_developmental_mechanics_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma zebrafish_developmental_mechanics_panel_bundle : (31 = 31)%nat /\ (21 = 21)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_panel_bundle_conj_0 : (15 = 15)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_panel_bundle_conj_1 : (22 = 22)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma zebrafish_longevity_genetics_coupling_panel_bundle : (15 = 15)%nat /\ (22 = 22)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma zebrafish_predictive_validation_bundle_conj_0 : (20 = 20)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_predictive_validation_bundle_conj_1 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zebrafish_predictive_validation_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma zebrafish_predictive_validation_bundle : (20 = 20)%nat /\ (24 = 24)%nat /\ True /\ 0 < (1.0%R).
+Proof.
+  split.
+    split.
+      split.
+        lra.
+      - lra.
+    - reflexivity.
+  - reflexivity.
+Qed.
+
+Lemma zero_boundary_not_entity_panel_bundle_conj_0 : (24 = 24)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zero_boundary_not_entity_panel_bundle_conj_1 : (18 = 18)%nat.
+Proof. reflexivity.
+Qed.
+
+Lemma zero_boundary_not_entity_panel_bundle_conj_2 : True.
+Proof. trivial.
+Qed.
+
+Lemma zero_boundary_not_entity_panel_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   split.
     split.

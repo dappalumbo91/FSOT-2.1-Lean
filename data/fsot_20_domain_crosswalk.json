@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T03:56:46.176800+00:00",
+  "generated_at": "2026-07-13T15:21:59.079092+00:00",
   "fsot_20_repo": "C:\\Users\\damia\\Desktop\\FSOT-2.0-code",
   "fsot_20_remote": "https://github.com/dappalumbo91/FSOT-2.0-code.git",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
@@ -546,6 +546,222 @@
       ],
       "benchmark_data": "data/igem_synthetic_biology_benchmark.json"
     },
+    "Culinary_Arts": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/culinary_arts_benchmark.json"
+    },
+    "Pharmacokinetics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/pharmacokinetics_gap_fill_benchmark.json"
+    },
+    "Food_Microbiology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/food_microbiology_gap_fill_benchmark.json"
+    },
+    "Agriculture_Agroecology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "benchmark_data": "data/agriculture_agroecology_gap_fill_benchmark.json"
+    },
+    "Maillard_Chemistry": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "medical",
+        "material"
+      ],
+      "benchmark_data": "data/maillard_chemistry_gap_fill_benchmark.json"
+    },
+    "Econometrics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical"
+      ],
+      "benchmark_data": "data/econometrics_gap_fill_benchmark.json"
+    },
+    "Sports_Biomechanics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "energy"
+      ],
+      "benchmark_data": "data/sports_biomechanics_gap_fill_benchmark.json"
+    },
+    "Architecture_Building_Science": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "material",
+        "acoustical"
+      ],
+      "benchmark_data": "data/architecture_building_science_gap_fill_benchmark.json"
+    },
+    "Geology_Stratigraphy": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ],
+      "benchmark_data": "data/geology_stratigraphy_extension_benchmark.json"
+    },
+    "Botany": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/botany_extension_benchmark.json"
+    },
+    "Zoology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/zoology_extension_benchmark.json"
+    },
+    "Clinical_Medicine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/clinical_medicine_extension_benchmark.json"
+    },
+    "Chemical_Engineering": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "chemical",
+        "electron",
+        "energy"
+      ],
+      "benchmark_data": "data/chemical_engineering_extension_benchmark.json"
+    },
+    "Environmental_Engineering": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.78,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "biological",
+        "galactic"
+      ],
+      "benchmark_data": "data/environmental_engineering_extension_benchmark.json"
+    },
+    "Anthropology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "biological"
+      ],
+      "benchmark_data": "data/anthropology_extension_benchmark.json"
+    },
     "Math_Generator_Benchmark_Formula_Eval": {
       "status": "fsot21_extension_domain",
       "params": {
@@ -1012,6 +1228,21 @@
       ],
       "benchmark_data": "data/hvac_thermal_systems_benchmark.json"
     },
+    "Trinary_OS_Tier_E": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "benchmark_data": "data/trinary_os_tier_e_benchmark.json"
+    },
     "Breakthrough_Discoveries_2024_2026": {
       "status": "fsot21_extension_domain",
       "params": {
@@ -1026,6 +1257,3875 @@
         "cosmological"
       ],
       "benchmark_data": "data/breakthrough_discoveries_2024_2026_benchmark.json"
+    },
+    "Paleontology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ],
+      "benchmark_data": "data/paleontology_extension_benchmark.json"
+    },
+    "Marine_Biology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological",
+        "energy"
+      ],
+      "benchmark_data": "data/marine_biology_extension_benchmark.json"
+    },
+    "Mycology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/mycology_extension_benchmark.json"
+    },
+    "Entomology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/entomology_extension_benchmark.json"
+    },
+    "Virology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.68,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/virology_extension_benchmark.json"
+    },
+    "Epidemiology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/epidemiology_extension_benchmark.json"
+    },
+    "Cardiology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/cardiology_extension_benchmark.json"
+    },
+    "Civil_Engineering": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/civil_engineering_extension_benchmark.json"
+    },
+    "Mechanical_Engineering": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "electron"
+      ],
+      "benchmark_data": "data/mechanical_engineering_extension_benchmark.json"
+    },
+    "Robotics_Control_Systems": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "benchmark_data": "data/robotics_control_systems_extension_benchmark.json"
+    },
+    "Neuroeconomics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "benchmark_data": "data/neuroeconomics_extension_benchmark.json"
+    },
+    "Paleoclimate": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.78,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "ecological"
+      ],
+      "benchmark_data": "data/paleoclimate_extension_benchmark.json"
+    },
+    "Speleology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ],
+      "benchmark_data": "data/speleology_extension_benchmark.json"
+    },
+    "Exogeology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "energy"
+      ],
+      "benchmark_data": "data/exogeology_extension_benchmark.json"
+    },
+    "Pure_Mathematics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/pure_mathematics_extension_benchmark.json"
+    },
+    "History": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic"
+      ],
+      "benchmark_data": "data/history_extension_benchmark.json"
+    },
+    "Law_Policy": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ],
+      "benchmark_data": "data/law_policy_extension_benchmark.json"
+    },
+    "Finance_Markets": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "mathematical"
+      ],
+      "benchmark_data": "data/finance_markets_extension_benchmark.json"
+    },
+    "Supply_Chain_Logistics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "biological"
+      ],
+      "benchmark_data": "data/supply_chain_logistics_extension_benchmark.json"
+    },
+    "Domain_Coupling_Simulation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "energy",
+        "electron",
+        "fusion"
+      ],
+      "benchmark_data": "data/domain_coupling_simulation_benchmark.json"
+    },
+    "Formula_Corpus_Closure": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "medical"
+      ],
+      "benchmark_data": "data/formula_corpus_closure_benchmark.json"
+    },
+    "Cryptography_Technology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "ai"
+      ],
+      "benchmark_data": "data/cryptography_technology_cybersecurity_benchmark.json"
+    },
+    "Network_Internet_Protocols": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.82,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "electron"
+      ],
+      "benchmark_data": "data/network_internet_protocols_cybersecurity_benchmark.json"
+    },
+    "Malware_Threat_Intelligence": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological",
+        "ai"
+      ],
+      "benchmark_data": "data/malware_threat_intelligence_cybersecurity_benchmark.json"
+    },
+    "Secure_Software_Engineering": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural"
+      ],
+      "benchmark_data": "data/secure_software_engineering_cybersecurity_benchmark.json"
+    },
+    "Code_Genome_Structure": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "ai"
+      ],
+      "benchmark_data": "data/code_genome_structure_cybersecurity_benchmark.json"
+    },
+    "Zero_Day_Risk_Evaluator": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "ai",
+        "medical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json"
+    },
+    "External_OSS_Code_Genome": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "consciousness"
+      ],
+      "benchmark_data": "data/external_oss_code_genome_benchmark.json"
+    },
+    "Programming_Language_Laws": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "mathematical"
+      ],
+      "benchmark_data": "data/programming_language_laws_benchmark.json"
+    },
+    "Formula_Branching_Fractal": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/formula_branching_fractal_benchmark.json"
+    },
+    "Mechanistic_Coupling": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "consciousness"
+      ],
+      "benchmark_data": "data/mechanistic_coupling_benchmark.json"
+    },
+    "CVE_Codon_Hole_Falsification": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "medical",
+        "ai",
+        "biological"
+      ],
+      "benchmark_data": "data/cve_codon_hole_falsification_benchmark.json"
+    },
+    "Theory_Completeness_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "medical"
+      ],
+      "benchmark_data": "data/theory_completeness_spine_benchmark.json"
+    },
+    "Fractal_Constant_Recursion": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle"
+      ],
+      "benchmark_data": "data/fractal_constant_recursion_benchmark.json"
+    },
+    "Preregistered_Predictions": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological"
+      ],
+      "benchmark_data": "data/preregistered_predictions_benchmark.json"
+    },
+    "Portable_Clone_Verify": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": false,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "mathematical"
+      ],
+      "benchmark_data": "data/portable_clone_verify_benchmark.json"
+    },
+    "Observer_Channel_Derivation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "perceived"
+      ],
+      "benchmark_data": "data/observer_channel_derivation_benchmark.json"
+    },
+    "Adversarial_Fractal_Break_Tests": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/adversarial_fractal_break_benchmark.json"
+    },
+    "ToE_Gap_Closure_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "ai"
+      ],
+      "benchmark_data": "data/toe_gap_closure_spine_benchmark.json"
+    },
+    "Acoustic_Resonance_Materials": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": false,
+        "delta_psi": 0.82,
+        "recent_hits": 0
+      },
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ],
+      "benchmark_data": "data/acoustic_resonance_materials_benchmark.json"
+    },
+    "Chaos_Mediated_Phase_Transitions": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": false,
+        "delta_psi": 0.9,
+        "recent_hits": 0
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "fusion",
+        "plasma"
+      ],
+      "benchmark_data": "data/chaos_mediated_phase_transitions_benchmark.json"
+    },
+    "Phi_Morphogenetic_Scaling": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": false,
+        "delta_psi": 0.78,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "mathematical",
+        "medical"
+      ],
+      "benchmark_data": "data/phi_morphogenetic_scaling_benchmark.json"
+    },
+    "Ionospheric_Chemistry_Coupling": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": false,
+        "delta_psi": 0.88,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "energy",
+        "plasma"
+      ],
+      "benchmark_data": "data/ionospheric_chemistry_coupling_benchmark.json"
+    },
+    "Energy_AI_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "ai"
+      ],
+      "benchmark_data": "data/energy_ai_orbital_bridge_benchmark.json"
+    },
+    "Consciousness_Galactic_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "galactic"
+      ],
+      "benchmark_data": "data/consciousness_galactic_orbital_bridge_benchmark.json"
+    },
+    "Energy_Neural_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.86,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "neural"
+      ],
+      "benchmark_data": "data/energy_neural_orbital_bridge_benchmark.json"
+    },
+    "Particle_Neural_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.84,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "neural"
+      ],
+      "benchmark_data": "data/particle_neural_orbital_bridge_benchmark.json"
+    },
+    "Proof_Carrying_Code_Genome": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "mathematical"
+      ],
+      "benchmark_data": "data/proof_carrying_code_genome_benchmark.json"
+    },
+    "Domain_Orbital_Predictions": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.96,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "energy",
+        "medical",
+        "galactic"
+      ],
+      "benchmark_data": "data/domain_orbital_predictions_benchmark.json"
+    },
+    "Medical_Galactic_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "galactic"
+      ],
+      "benchmark_data": "data/medical_galactic_orbital_bridge_benchmark.json"
+    },
+    "AI_Galactic_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ],
+      "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json"
+    },
+    "Neural_Galactic_Orbital_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.89,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "neural",
+        "galactic"
+      ],
+      "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json"
+    },
+    "ToE_Unification_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "energy",
+        "galactic",
+        "medical"
+      ],
+      "benchmark_data": "data/toe_unification_spine_benchmark.json"
+    },
+    "Compactification_Ladder": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological",
+        "mathematical"
+      ],
+      "benchmark_data": "data/compactification_ladder_benchmark.json"
+    },
+    "Adjacent_Rung_Coupling": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.91,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ],
+      "benchmark_data": "data/adjacent_rung_coupling_benchmark.json"
+    },
+    "Fold_Depth_Metrics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.96,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "cosmological"
+      ],
+      "benchmark_data": "data/fold_depth_metrics_benchmark.json"
+    },
+    "Reality_Folding_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "cosmological",
+        "medical",
+        "galactic"
+      ],
+      "benchmark_data": "data/reality_folding_spine_benchmark.json"
+    },
+    "Time_Emergence_Simulation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "benchmark_data": "data/time_emergence_simulation_benchmark.json"
+    },
+    "Time_Domain_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "mathematical"
+      ],
+      "benchmark_data": "data/time_domain_crosswalk_benchmark.json"
+    },
+    "FPC_Temporal_Coupling": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.93,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "benchmark_data": "data/fpc_temporal_coupling_benchmark.json"
+    },
+    "Fluid_Phase_Current_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "mathematical"
+      ],
+      "benchmark_data": "data/fluid_phase_current_spine_benchmark.json"
+    },
+    "Stumped_Observables_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole"
+      ],
+      "benchmark_data": "data/stumped_observables_panel_benchmark.json"
+    },
+    "Hubble_Bubble_Tension": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/hubble_bubble_tension_benchmark.json"
+    },
+    "Dark_Sector_Open_Problems": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle"
+      ],
+      "benchmark_data": "data/dark_sector_open_problems_benchmark.json"
+    },
+    "Stumped_Observables_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/stumped_observables_spine_benchmark.json"
+    },
+    "Consciousness_Econ": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "medical"
+      ],
+      "benchmark_data": "data/consciousness_econ_benchmark.json"
+    },
+    "Dark_Energy_CPL": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle"
+      ],
+      "benchmark_data": "data/dark_energy_cpl_benchmark.json"
+    },
+    "SH0ES_Refined": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/sh0es_refined_benchmark.json"
+    },
+    "Consciousness_Soul_Bridge": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "ai",
+        "medical"
+      ],
+      "benchmark_data": "data/consciousness_soul_bridge_benchmark.json"
+    },
+    "Symbolic_Archetype_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "benchmark_data": "data/symbolic_archetype_panel_benchmark.json"
+    },
+    "Astrophysical_Structure_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "particle"
+      ],
+      "benchmark_data": "data/astrophysical_structure_crosswalk_benchmark.json"
+    },
+    "Stellar_Multiplicity_Catalog": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/stellar_multiplicity_catalog_benchmark.json"
+    },
+    "Compact_Object_Binary_Events": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "benchmark_data": "data/compact_object_binary_events_benchmark.json"
+    },
+    "Galactic_Structure_Sample": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/galactic_structure_sample_benchmark.json"
+    },
+    "Solar_System_Structure_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/solar_system_structure_deep_benchmark.json"
+    },
+    "Exoplanet_System_Architecture": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/exoplanet_system_architecture_benchmark.json"
+    },
+    "PubChem_Stability_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "material"
+      ],
+      "benchmark_data": "data/pubchem_stability_panel_benchmark.json"
+    },
+    "Materials_Genome_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.82,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ],
+      "benchmark_data": "data/materials_genome_crosswalk_benchmark.json"
+    },
+    "UniProt_Structure_Annotations_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "material"
+      ],
+      "benchmark_data": "data/uniprot_structure_annotations_deep_benchmark.json"
+    },
+    "IGEM_Parts_Expanded": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.83,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/igem_parts_expanded_benchmark.json"
+    },
+    "Interdisciplinary_Spine_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "chemical",
+        "biological",
+        "material",
+        "particle"
+      ],
+      "benchmark_data": "data/interdisciplinary_spine_crosswalk_benchmark.json"
+    },
+    "Chemical_Structure_Stability_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.82,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "chemical",
+        "material",
+        "particle",
+        "electron"
+      ],
+      "benchmark_data": "data/chemical_structure_stability_panel_benchmark.json"
+    },
+    "Published_Fuel_Property_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "benchmark_data": "data/published_fuel_property_panel_benchmark.json"
+    },
+    "GWOSC_Live_Event_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "benchmark_data": "data/gwosc_live_event_deep_benchmark.json"
+    },
+    "Stellar_Multiplicity_Live_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/stellar_multiplicity_live_deep_benchmark.json"
+    },
+    "Material_Property_Verification_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "energy",
+        "particle"
+      ],
+      "benchmark_data": "data/material_property_verification_scaffold_benchmark.json"
+    },
+    "Fuel_Thermochemistry_Public_Anchors": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "benchmark_data": "data/fuel_thermochemistry_public_anchors_benchmark.json"
+    },
+    "SIMBAD_Stellar_Identity_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/simbad_stellar_identity_deep_benchmark.json"
+    },
+    "Gaia_Astrometry_Panel_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/gaia_astrometry_panel_deep_benchmark.json"
+    },
+    "Music_Harmonics_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 10,
+        "observed": true,
+        "delta_psi": 0.3,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "acoustical",
+        "mathematical",
+        "consciousness",
+        "neural"
+      ],
+      "benchmark_data": "data/music_harmonics_public_panel_benchmark.json"
+    },
+    "XR_Interactive_Media_Math_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical"
+      ],
+      "benchmark_data": "data/xr_interactive_media_math_scaffold_benchmark.json"
+    },
+    "Creative_Arts_Math_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical",
+        "ai"
+      ],
+      "benchmark_data": "data/creative_arts_math_spine_benchmark.json"
+    },
+    "WDS_Live_Multiplicity_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/wds_live_multiplicity_deep_benchmark.json"
+    },
+    "Gaia_DR3_TAP_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/gaia_dr3_tap_deep_benchmark.json"
+    },
+    "Preregistered_Predictions_Verification_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material",
+        "ai"
+      ],
+      "benchmark_data": "data/preregistered_predictions_verification_scaffold_benchmark.json"
+    },
+    "Information_Theory_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 8,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness",
+        "neural"
+      ],
+      "benchmark_data": "data/information_theory_public_panel_benchmark.json"
+    },
+    "Network_Science_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "galactic"
+      ],
+      "benchmark_data": "data/network_science_public_panel_benchmark.json"
+    },
+    "Semiconductor_Physics_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 11,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "electron",
+        "material",
+        "particle"
+      ],
+      "benchmark_data": "data/semiconductor_physics_public_panel_benchmark.json"
+    },
+    "Statistical_Mechanics_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "particle",
+        "thermodynamics"
+      ],
+      "benchmark_data": "data/statistical_mechanics_public_panel_benchmark.json"
+    },
+    "Biophysics_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "benchmark_data": "data/biophysics_public_panel_benchmark.json"
+    },
+    "Neurolab_Gaps_Math_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "energy",
+        "electron",
+        "ai"
+      ],
+      "benchmark_data": "data/neurolab_gaps_math_spine_benchmark.json"
+    },
+    "Material_In_Silico_Screening_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "particle",
+        "energy"
+      ],
+      "benchmark_data": "data/material_in_silico_screening_scaffold_benchmark.json"
+    },
+    "Fuel_Candidate_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "benchmark_data": "data/fuel_candidate_prereg_scaffold_benchmark.json"
+    },
+    "Interactive_Media_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "benchmark_data": "data/interactive_media_prereg_scaffold_benchmark.json"
+    },
+    "Quantum_Information": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 11,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "quantum",
+        "ai",
+        "mathematical"
+      ],
+      "benchmark_data": "data/quantum_information_benchmark.json"
+    },
+    "Econophysics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.5,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical",
+        "energy"
+      ],
+      "benchmark_data": "data/econophysics_benchmark.json"
+    },
+    "Ecology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.2,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "benchmark_data": "data/ecology_benchmark.json"
+    },
+    "Genomic_Sciences": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 0.05,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "benchmark_data": "data/genomic_sciences_benchmark.json"
+    },
+    "Neurolab_Residual_Math_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "quantum",
+        "ai",
+        "consciousness"
+      ],
+      "benchmark_data": "data/neurolab_residual_math_spine_benchmark.json"
+    },
+    "Term3_Acoustic_Bleed_Depth": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy",
+        "acoustical"
+      ],
+      "benchmark_data": "data/term3_acoustic_bleed_depth_benchmark.json"
+    },
+    "Initiation_Transformation_Archetype": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "benchmark_data": "data/initiation_transformation_archetype_benchmark.json"
+    },
+    "Boundary_Partition_Tightening": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "benchmark_data": "data/boundary_partition_tightening_benchmark.json"
+    },
+    "Formula_Precision_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "consciousness",
+        "material",
+        "particle"
+      ],
+      "benchmark_data": "data/formula_precision_spine_benchmark.json"
+    },
+    "Materials_Project_Live_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy"
+      ],
+      "benchmark_data": "data/materials_project_live_panel_benchmark.json"
+    },
+    "PubChem_Live_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "medical",
+        "biological",
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/pubchem_live_deep_benchmark.json"
+    },
+    "OpenNeuro_Full_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "ai"
+      ],
+      "benchmark_data": "data/openneuro_full_panel_benchmark.json"
+    },
+    "VizieR_WDS_TAP_Live_Deep": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "cmb"
+      ],
+      "benchmark_data": "data/vizier_wds_tap_live_deep_benchmark.json"
+    },
+    "Live_Ingest_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "neural",
+        "astronomical"
+      ],
+      "benchmark_data": "data/live_ingest_spine_benchmark.json"
+    },
+    "Unified_DB_Candidate_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ],
+      "benchmark_data": "data/unified_db_candidate_crosswalk_benchmark.json"
+    },
+    "FSOT_Aggregate_Organized_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical"
+      ],
+      "benchmark_data": "data/fsot_aggregate_organized_panel_benchmark.json"
+    },
+    "Unified_DB_Crosswalk_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ],
+      "benchmark_data": "data/unified_db_crosswalk_spine_benchmark.json"
+    },
+    "Proof_Ledger_Closure_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/proof_ledger_closure_spine_benchmark.json"
+    },
+    "Preregistered_Outcome_Tracking": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material"
+      ],
+      "benchmark_data": "data/preregistered_outcome_tracking_benchmark.json"
+    },
+    "ToE_Claim_Certificate_Bundle": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/toe_claim_certificate_bundle_benchmark.json"
+    },
+    "Fusion_Physics_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "plasma"
+      ],
+      "benchmark_data": "data/fusion_physics_public_panel_benchmark.json"
+    },
+    "Magnetic_Confinement_Fusion_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ],
+      "benchmark_data": "data/magnetic_confinement_fusion_panel_benchmark.json"
+    },
+    "Inertial_Confinement_Fusion_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ],
+      "benchmark_data": "data/inertial_confinement_fusion_panel_benchmark.json"
+    },
+    "Cold_Fusion_Candidate_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "material"
+      ],
+      "benchmark_data": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json"
+    },
+    "Fusion_Lab_Certificate_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle",
+        "material"
+      ],
+      "benchmark_data": "data/fusion_lab_certificate_spine_benchmark.json"
+    },
+    "Periodic_Table_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 9,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "atomic",
+        "nuclear",
+        "material"
+      ],
+      "benchmark_data": "data/periodic_table_public_panel_benchmark.json"
+    },
+    "Superheavy_Element_Stability_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 10,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ],
+      "benchmark_data": "data/superheavy_element_stability_panel_benchmark.json"
+    },
+    "Undiscovered_Element_Candidate_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 10,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ],
+      "benchmark_data": "data/undiscovered_element_candidate_prereg_scaffold_benchmark.json"
+    },
+    "Natural_Formation_Element_Simulation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 11,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "benchmark_data": "data/natural_formation_element_simulation_benchmark.json"
+    },
+    "Periodic_Table_Completion_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion",
+        "material"
+      ],
+      "benchmark_data": "data/periodic_table_completion_spine_benchmark.json"
+    },
+    "Heavy_Ion_Lab_Synthesis_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.93,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ],
+      "benchmark_data": "data/heavy_ion_lab_synthesis_panel_benchmark.json"
+    },
+    "Element_Synthesis_Condition_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "thermodynamics"
+      ],
+      "benchmark_data": "data/element_synthesis_condition_scaffold_benchmark.json"
+    },
+    "Cold_Fusion_Lab_Synthesis_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+    },
+    "Metamaterial_Fluid_Design_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "fusion",
+        "energy",
+        "particle"
+      ],
+      "benchmark_data": "data/metamaterial_fluid_design_prereg_scaffold_benchmark.json"
+    },
+    "Lab_Synthesis_Metamaterial_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/lab_synthesis_metamaterial_spine_benchmark.json"
+    },
+    "Island_Of_Stability_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ],
+      "benchmark_data": "data/island_of_stability_deep_panel_benchmark.json"
+    },
+    "Z120_Z126_Beam_Synthesis_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.91,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ],
+      "benchmark_data": "data/z120_z126_beam_synthesis_panel_benchmark.json"
+    },
+    "Fusion_Decay_Chain_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.93,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ],
+      "benchmark_data": "data/fusion_decay_chain_prereg_scaffold_benchmark.json"
+    },
+    "Superheavy_Island_Emergence_Simulation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "benchmark_data": "data/superheavy_island_emergence_simulation_benchmark.json"
+    },
+    "Superheavy_Island_Completion_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material"
+      ],
+      "benchmark_data": "data/superheavy_island_completion_spine_benchmark.json"
+    },
+    "Distant_Island_Z128_Z132_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 23,
+        "observed": true,
+        "delta_psi": 0.92,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ],
+      "benchmark_data": "data/distant_island_z128_z132_deep_panel_benchmark.json"
+    },
+    "Z164_Distant_Island_Prereg_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion"
+      ],
+      "benchmark_data": "data/z164_distant_island_prereg_scaffold_benchmark.json"
+    },
+    "Periodic_Extension_Decay_Topology_Scaffold": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ],
+      "benchmark_data": "data/periodic_extension_decay_topology_scaffold_benchmark.json"
+    },
+    "Distant_Island_Emergence_Simulation": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "benchmark_data": "data/distant_island_emergence_simulation_benchmark.json"
+    },
+    "Periodic_Table_Extension_Closure_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 26,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/periodic_table_extension_closure_spine_benchmark.json"
+    },
+    "Time_Emergence_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "benchmark_data": "data/time_emergence_deep_panel_benchmark.json"
+    },
+    "FPC_Fluidlink_Timing_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "benchmark_data": "data/fpc_fluidlink_timing_deep_panel_benchmark.json"
+    },
+    "Cosmology_Anomaly_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 0.96,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/cosmology_anomaly_deep_panel_benchmark.json"
+    },
+    "Hubble_Dark_Sector_Crosswalk": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 0.97,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/hubble_dark_sector_crosswalk_benchmark.json"
+    },
+    "Fluid_Spacetime_Observable_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 26,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/fluid_spacetime_observable_spine_benchmark.json"
+    },
+    "Hybrid_FI_Sim_Multi_Hero_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.93,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "benchmark_data": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json"
+    },
+    "Knowledge_Base_Portable_Bundle_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.94,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/knowledge_base_portable_bundle_panel_benchmark.json"
+    },
+    "RD_Interval_Tightening_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "cmb"
+      ],
+      "benchmark_data": "data/rd_interval_tightening_panel_benchmark.json"
+    },
+    "Domain_Coupling_Simulation_Refresh_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 0.96,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "energy"
+      ],
+      "benchmark_data": "data/domain_coupling_simulation_refresh_panel_benchmark.json"
+    },
+    "Fluid_Spacetime_Prereg_Validation_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 0.97,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "consciousness",
+        "particle",
+        "blackhole",
+        "cmb"
+      ],
+      "benchmark_data": "data/fluid_spacetime_prereg_validation_panel_benchmark.json"
+    },
+    "Warp_BH_WH_Portal_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 29,
+        "observed": true,
+        "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "blackhole",
+        "quantum",
+        "cosmological",
+        "fluid_dynamics",
+        "electromagnetism"
+      ],
+      "benchmark_data": "data/warp_bh_wh_portal_benchmark.json"
+    },
+    "PDG_Particle_Properties": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 9,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "atomic"
+      ],
+      "benchmark_data": "data/pdg_particle_properties_benchmark.json"
+    },
+    "CRC_Handbook_Properties": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 11,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "chemical",
+        "material"
+      ],
+      "benchmark_data": "data/crc_handbook_properties_benchmark.json"
+    },
+    "NIST_DLMF_Special_Functions": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle"
+      ],
+      "benchmark_data": "data/nist_dlmf_special_functions_benchmark.json"
+    },
+    "STScI_MAST_Telescope_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "benchmark_data": "data/stsci_mast_telescope_panel_benchmark.json"
+    },
+    "NASA_NEO_Feed_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "planetary",
+        "particle"
+      ],
+      "benchmark_data": "data/nasa_neo_feed_panel_benchmark.json"
+    },
+    "NASA_DONKI_Solar_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.82,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma"
+      ],
+      "benchmark_data": "data/nasa_donki_solar_panel_benchmark.json"
+    },
+    "ClinicalTrials_Medical_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/clinicaltrials_medical_panel_benchmark.json"
+    },
+    "OSTI_DOE_Science_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "energy"
+      ],
+      "benchmark_data": "data/osti_doe_science_panel_benchmark.json"
+    },
+    "UAP_War_Gov_Release_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "particle",
+        "astronomical",
+        "consciousness"
+      ],
+      "benchmark_data": "data/uap_war_gov_release_panel_benchmark.json"
+    },
+    "Federal_Science_Registry_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "economic",
+        "particle",
+        "energy"
+      ],
+      "benchmark_data": "data/federal_science_registry_panel_benchmark.json"
+    },
+    "Government_Open_Data_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "astronomical",
+        "economic"
+      ],
+      "benchmark_data": "data/government_open_data_spine_benchmark.json"
+    },
+    "NCBI_Gene_Public_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 12,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/ncbi_gene_public_panel_benchmark.json"
+    },
+    "Crossref_Scholarly_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ],
+      "benchmark_data": "data/crossref_scholarly_panel_benchmark.json"
+    },
+    "iNaturalist_Observation_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/inaturalist_observation_panel_benchmark.json"
+    },
+    "NOAA_NDBC_Buoy_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.78,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ],
+      "benchmark_data": "data/noaa_ndbc_buoy_panel_benchmark.json"
+    },
+    "Open_Meteo_Live_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ],
+      "benchmark_data": "data/open_meteo_live_panel_benchmark.json"
+    },
+    "Public_Verifiable_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological",
+        "economic"
+      ],
+      "benchmark_data": "data/public_verifiable_spine_benchmark.json"
+    },
+    "Volcanology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy"
+      ],
+      "benchmark_data": "data/volcanology_panel_benchmark.json"
+    },
+    "Limnology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "biological"
+      ],
+      "benchmark_data": "data/limnology_panel_benchmark.json"
+    },
+    "Radio_Astronomy_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "particle"
+      ],
+      "benchmark_data": "data/radio_astronomy_panel_benchmark.json"
+    },
+    "Petrology_Geochemistry_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "particle"
+      ],
+      "benchmark_data": "data/petrology_geochemistry_panel_benchmark.json"
+    },
+    "Actuarial_Science_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.5,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "economic",
+        "consciousness"
+      ],
+      "benchmark_data": "data/actuarial_science_panel_benchmark.json"
+    },
+    "Ethology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.35,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/ethology_panel_benchmark.json"
+    },
+    "Toxicology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "material"
+      ],
+      "benchmark_data": "data/toxicology_panel_benchmark.json"
+    },
+    "Soil_Science_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "material"
+      ],
+      "benchmark_data": "data/soil_science_panel_benchmark.json"
+    },
+    "Neutrino_Physics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 7,
+        "observed": true,
+        "delta_psi": 0.95,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "particle",
+        "higgs"
+      ],
+      "benchmark_data": "data/neutrino_physics_panel_benchmark.json"
+    },
+    "Cartography_GIS_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 1.2,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "economic",
+        "energy"
+      ],
+      "benchmark_data": "data/cartography_gis_panel_benchmark.json"
+    },
+    "Scientific_Expansion_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "biological",
+        "astronomical",
+        "economic"
+      ],
+      "benchmark_data": "data/scientific_expansion_spine_benchmark.json"
+    },
+    "Epidemiology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/epidemiology_panel_benchmark.json"
+    },
+    "Virology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/virology_panel_benchmark.json"
+    },
+    "Paleontology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "benchmark_data": "data/paleontology_panel_benchmark.json"
+    },
+    "Arxiv_Gravitational_Waves_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "astronomical"
+      ],
+      "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json"
+    },
+    "Entomology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ],
+      "benchmark_data": "data/entomology_panel_benchmark.json"
+    },
+    "Mycology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.35,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "benchmark_data": "data/mycology_panel_benchmark.json"
+    },
+    "Marine_Biology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "benchmark_data": "data/marine_biology_panel_benchmark.json"
+    },
+    "Immunology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/immunology_panel_benchmark.json"
+    },
+    "Cardiology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/cardiology_panel_benchmark.json"
+    },
+    "Robotics_Control_Systems_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/robotics_control_systems_panel_benchmark.json"
+    },
+    "Scientific_Expansion_Wave2_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological",
+        "particle",
+        "material"
+      ],
+      "benchmark_data": "data/scientific_expansion_wave2_spine_benchmark.json"
+    },
+    "Civil_Engineering_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/civil_engineering_panel_benchmark.json"
+    },
+    "Mechanical_Engineering_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "electron"
+      ],
+      "benchmark_data": "data/mechanical_engineering_panel_benchmark.json"
+    },
+    "Neuroeconomics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "benchmark_data": "data/neuroeconomics_panel_benchmark.json"
+    },
+    "Paleoclimate_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "ecological"
+      ],
+      "benchmark_data": "data/paleoclimate_panel_benchmark.json"
+    },
+    "Speleology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ],
+      "benchmark_data": "data/speleology_panel_benchmark.json"
+    },
+    "Exogeology_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "energy"
+      ],
+      "benchmark_data": "data/exogeology_panel_benchmark.json"
+    },
+    "History_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic"
+      ],
+      "benchmark_data": "data/history_panel_benchmark.json"
+    },
+    "Law_Policy_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ],
+      "benchmark_data": "data/law_policy_panel_benchmark.json"
+    },
+    "Finance_Markets_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "mathematical"
+      ],
+      "benchmark_data": "data/finance_markets_panel_benchmark.json"
+    },
+    "Supply_Chain_Logistics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "biological"
+      ],
+      "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
+    },
+    "Scientific_Expansion_Wave3_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "consciousness",
+        "galactic"
+      ],
+      "benchmark_data": "data/scientific_expansion_wave3_spine_benchmark.json"
+    },
+    "Pure_Mathematics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/pure_mathematics_panel_benchmark.json"
+    },
+    "Hybrid_FI_Sim_Stratum_Deep_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "benchmark_data": "data/hybrid_fi_sim_stratum_deep_panel_benchmark.json"
+    },
+    "Culinary_Fermentation_Maillard_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "medical",
+        "material"
+      ],
+      "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
+    },
+    "Materials_Species_Bridge_Live_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ],
+      "benchmark_data": "data/materials_species_bridge_live_panel_benchmark.json"
+    },
+    "Scientific_Expansion_Depth_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "neural",
+        "material"
+      ],
+      "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
+    },
+    "Quantum_Computing_Math_Depth_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "particle",
+        "mathematical"
+      ],
+      "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+    },
+    "Neuroscience_Connectomics_Depth_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
+    },
+    "Condensed_Matter_Superconductivity_Depth_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy"
+      ],
+      "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
+    },
+    "Optics_Interferometry_Depth_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
+    },
+    "Scientific_Expansion_Depth_Wave2_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "neural",
+        "material",
+        "astronomical"
+      ],
+      "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+    },
+    "Trinary_Hardware_Live_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.65,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural"
+      ],
+      "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
+    },
+    "Tokenization_Live_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ],
+      "benchmark_data": "data/tokenization_live_panel_benchmark.json"
+    },
+    "Living_FSOT_Hardware_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 15,
+        "observed": true,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "neural",
+        "ai",
+        "consciousness"
+      ],
+      "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+    },
+    "Certified_Agent_Formal_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "mathematical"
+      ],
+      "benchmark_data": "data/certified_agent_formal_panel_benchmark.json"
+    },
+    "Desktop_Application_Wiring_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+    },
+    "The_Well_Outcomes_Verification_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "galactic",
+        "material"
+      ],
+      "benchmark_data": "data/the_well_outcomes_verification_panel_benchmark.json"
+    },
+    "The_Well_Spot_Check_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "galactic"
+      ],
+      "benchmark_data": "data/the_well_spot_check_panel_benchmark.json"
+    },
+    "The_Well_Verification_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "galactic",
+        "material"
+      ],
+      "benchmark_data": "data/the_well_verification_spine_benchmark.json"
+    },
+    "Microtubule_Quantum_Consciousness_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "particle"
+      ],
+      "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json"
+    },
+    "Consciousness_Species_Multi_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "biological"
+      ],
+      "benchmark_data": "data/consciousness_species_multi_panel_benchmark.json"
+    },
+    "Observer_Effect_Cross_Species_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "perceived"
+      ],
+      "benchmark_data": "data/observer_effect_cross_species_panel_benchmark.json"
+    },
+    "Consciousness_Expansion_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "biological",
+        "particle"
+      ],
+      "benchmark_data": "data/consciousness_expansion_spine_benchmark.json"
+    },
+    "Nothing_Perfection_Friction_Origin_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
+    },
+    "Zero_Boundary_Not_Entity_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "benchmark_data": "data/zero_boundary_not_entity_panel_benchmark.json"
+    },
+    "Overflow_Carry_Emergence_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "consciousness",
+        "neural"
+      ],
+      "benchmark_data": "data/overflow_carry_emergence_panel_benchmark.json"
+    },
+    "Complexity_Folding_Emergence_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "particle"
+      ],
+      "benchmark_data": "data/complexity_folding_emergence_panel_benchmark.json"
+    },
+    "Foundational_Ontology_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "consciousness",
+        "particle"
+      ],
+      "benchmark_data": "data/foundational_ontology_spine_benchmark.json"
+    },
+    "Alternate_Base_Mathematics_Explorer_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": false,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "particle"
+      ],
+      "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
+    },
+    "Alternate_Base_Mathematics_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": false,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness"
+      ],
+      "benchmark_data": "data/alternate_base_mathematics_spine_benchmark.json"
+    },
+    "Consciousness_Genetics_Species_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 18,
+        "observed": true,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "biological"
+      ],
+      "benchmark_data": "data/consciousness_genetics_species_panel_benchmark.json"
+    },
+    "Consciousness_Genetics_Coupling_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "biological"
+      ],
+      "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json"
+    },
+    "Experimental_Base_Mathematics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 17,
+        "observed": false,
+        "delta_psi": 0.95,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness"
+      ],
+      "benchmark_data": "data/experimental_base_mathematics_panel_benchmark.json"
+    },
+    "Tier_93_Dual_Wave_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical",
+        "biological",
+        "neural"
+      ],
+      "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json"
+    },
+    "Longevity_AnAge_Catalog_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.05,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "neural",
+        "consciousness"
+      ],
+      "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json"
+    },
+    "Longevity_Genetic_Mechanics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 19,
+        "observed": true,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json"
+    },
+    "Longevity_Extreme_Species_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "consciousness",
+        "genetics"
+      ],
+      "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json"
+    },
+    "Longevity_MegaDeep_NCBI_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 23,
+        "observed": true,
+        "delta_psi": 1.2,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "consciousness"
+      ],
+      "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json"
+    },
+    "Longevity_Telomere_Repair_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.08,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json"
+    },
+    "Longevity_Consciousness_Coupling_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 24,
+        "observed": true,
+        "delta_psi": 1.18,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "consciousness",
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+    },
+    "Tier_94_Longevity_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 25,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "biological",
+        "consciousness",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+    },
+    "Zebrafish_Cell_Tracking_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 20,
+        "observed": true,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json"
+    },
+    "Zebrafish_Developmental_Mechanics_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 21,
+        "observed": true,
+        "delta_psi": 1.12,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json"
+    },
+    "Zebrafish_Longevity_Genetics_Coupling_Panel": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 22,
+        "observed": true,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "consciousness"
+      ],
+      "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json"
+    },
+    "Tier_95_Zebrafish_Spine": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 23,
+        "observed": true,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural",
+        "consciousness"
+      ],
+      "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
     }
   },
   "domains": [
@@ -1054,7 +5154,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.344711,
+      "median_error_pct": 0.032277,
       "sign_mismatch": false
     },
     {
@@ -1110,7 +5210,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.0007352339307450013,
+      "median_error_pct": 0.0,
       "sign_mismatch": false
     },
     {
@@ -1168,7 +5268,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Lean particle rollup aligned to authority D_eff=7 observed=true",
       "precision_status": "target_band",
-      "median_error_pct": 0.07716615321446607,
+      "median_error_pct": 0.0009504134401228516,
       "sign_mismatch": false
     },
     {
@@ -1200,7 +5300,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Medical rollup uses authority hits=1 observed=true",
       "precision_status": "target_band",
-      "median_error_pct": 0.238193,
+      "median_error_pct": 0.01920113857308633,
       "sign_mismatch": false
     },
     {
@@ -1258,7 +5358,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Electron rollup; authority delta_psi=0.6",
       "precision_status": "target_band",
-      "median_error_pct": 0.370628,
+      "median_error_pct": 0.005707,
       "sign_mismatch": false
     },
     {
@@ -1286,7 +5386,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.1834,
+      "median_error_pct": 0.030603154577296784,
       "sign_mismatch": false
     },
     {
@@ -1314,7 +5414,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.0008593004744053731,
+      "median_error_pct": 0.0,
       "sign_mismatch": false
     },
     {
@@ -1342,7 +5442,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.0,
+      "median_error_pct": 0.017789000308163706,
       "sign_mismatch": false
     },
     {
@@ -1370,7 +5470,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": -0.0007873774796219538,
+      "median_error_pct": 0.12920090413714938,
       "sign_mismatch": false
     },
     {
@@ -1426,7 +5526,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.7000000000000028,
+      "median_error_pct": 0.0,
       "sign_mismatch": false
     },
     {
@@ -1485,7 +5585,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Higgs\u2192particle SMILES fallback; authority D_eff=7 not fsot20 D_eff=19",
       "precision_status": "target_band",
-      "median_error_pct": 0.003531579785510005,
+      "median_error_pct": 0.014721632079759569,
       "sign_mismatch": false
     },
     {
@@ -1515,7 +5615,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Material rollup D_eff=10 per neurolab_ledger_alignment",
       "precision_status": "target_band",
-      "median_error_pct": 0.1834,
+      "median_error_pct": 0.030603154577296784,
       "sign_mismatch": false
     },
     {
@@ -1571,7 +5671,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.110313,
+      "median_error_pct": 0.028389499999999998,
       "sign_mismatch": false
     },
     {
@@ -1601,7 +5701,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Neural rollup uses authority delta_psi=0.7 hits=1",
       "precision_status": "target_band",
-      "median_error_pct": 0.237442,
+      "median_error_pct": 0.017304032357602035,
       "sign_mismatch": false
     },
     {
@@ -1629,7 +5729,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.106761,
+      "median_error_pct": 0.0073571309514874035,
       "sign_mismatch": false
     },
     {
@@ -1685,7 +5785,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.344711,
+      "median_error_pct": 0.032277,
       "sign_mismatch": false
     },
     {
@@ -1718,7 +5818,7 @@
       "canonical_source": "authority",
       "drift_rationale": "CMB rollup; authority observed=false matches dispersal class",
       "precision_status": "target_band",
-      "median_error_pct": 0.005577753040363415,
+      "median_error_pct": 0.021477424424138976,
       "sign_mismatch": false
     },
     {
@@ -1746,7 +5846,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.07716615321446607,
+      "median_error_pct": 0.0023222644988432507,
       "sign_mismatch": false
     },
     {
@@ -1774,7 +5874,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.110313,
+      "median_error_pct": 0.028389499999999998,
       "sign_mismatch": false
     },
     {
@@ -1804,7 +5904,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Galactic rollup uses authority D_eff=21",
       "precision_status": "target_band",
-      "median_error_pct": 0.017721515188881255,
+      "median_error_pct": 0.021477424424138976,
       "sign_mismatch": false
     },
     {
@@ -1834,7 +5934,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Consciousness rollup uses authority delta_psi=1.15",
       "precision_status": "target_band",
-      "median_error_pct": -0.0007873774796219538,
+      "median_error_pct": 0.03150616921194593,
       "sign_mismatch": false
     },
     {
@@ -1865,7 +5965,7 @@
       "canonical_source": "authority",
       "drift_rationale": "AI rollup; authority observed=false is dispersal mode",
       "precision_status": "target_band",
-      "median_error_pct": 0.0,
+      "median_error_pct": 0.0002953462072651492,
       "sign_mismatch": false
     },
     {
@@ -1921,7 +6021,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.963701,
+      "median_error_pct": 0.0009504134401252401,
       "sign_mismatch": false
     },
     {
@@ -1949,7 +6049,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": 0.963701,
+      "median_error_pct": 0.0009504134401252401,
       "sign_mismatch": false
     },
     {
@@ -2005,7 +6105,7 @@
       "canonical_source": "authority",
       "drift_rationale": null,
       "precision_status": "target_band",
-      "median_error_pct": -0.0007873774796219538,
+      "median_error_pct": 0.019504399572474972,
       "sign_mismatch": false
     },
     {
@@ -2037,7 +6137,7 @@
       "canonical_source": "authority",
       "drift_rationale": "Energy rollup D_eff=15 hits=1 per alignment override",
       "precision_status": "target_band",
-      "median_error_pct": 0.191604,
+      "median_error_pct": 0.02214701353860092,
       "sign_mismatch": false
     }
   ]

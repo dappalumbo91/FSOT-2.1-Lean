@@ -42,7 +42,20 @@
       "computed": 0.018003,
       "measured": 0.0,
       "error_pct": 0.018003,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.018003,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.018003,
       "measured": 0.0,
       "error_pct": 0.018003,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Hybrid FI Sim Stratum Deep Panel depth",
+      "scientific_measurement": {
+        "delta": 0.018003,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -65,7 +91,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.027724,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -77,7 +116,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00543194,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -89,7 +141,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00016371,
+        "delta_pct": 0.031503,
+        "effective_error_pct": 0.031503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -101,7 +166,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00803368,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -113,7 +191,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.039966,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -125,7 +216,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.00453146,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -137,7 +241,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.00012326,
+        "delta_pct": 0.031482,
+        "effective_error_pct": 0.031482,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -149,7 +266,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "PV interneuron",
+      "scientific_measurement": {
+        "delta": 0.01267988,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -161,7 +291,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.026284,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -173,7 +316,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.00455132,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -185,7 +341,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.00013505,
+        "delta_pct": 0.031428,
+        "effective_error_pct": 0.031428,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -197,7 +366,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "VIP interneuron",
+      "scientific_measurement": {
+        "delta": 0.00800478,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -209,7 +391,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.20289,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -221,7 +416,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.00338399,
+        "delta_pct": 0.015309,
+        "effective_error_pct": 0.015309,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -233,7 +441,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 7.061e-05,
+        "delta_pct": 0.031359,
+        "effective_error_pct": 0.031359,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -245,7 +466,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "L2 3 pyramidal",
+      "scientific_measurement": {
+        "delta": 0.0058663,
+        "delta_pct": 0.018002,
+        "effective_error_pct": 0.018002,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -257,7 +491,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "hero certified",
+      "scientific_measurement": {
+        "delta": 0.00072,
+        "delta_pct": 0.018,
+        "effective_error_pct": 0.018,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -269,7 +516,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "hero certified",
+      "scientific_measurement": {
+        "delta": 0.00107246,
+        "delta_pct": 0.015315,
+        "effective_error_pct": 0.015315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_stratum_lab",
@@ -281,7 +541,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuron_cohort_per_stratum_fi_sim"
+      "ingest_source": "neuron_cohort_per_stratum_fi_sim",
+      "domain_display_name": "hybrid fi stratum",
+      "display_name": "hero certified",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
@@ -294,7 +567,7 @@
       "error_pct": 0.0,
       "fertile": false,
       "intelligence_score": 0.0,
-      "domain_display_name": "fic intelligence compressor",
+      "domain_display_name": "hybrid fi sim stratum deep panel depth",
       "display_name": "S final",
       "scientific_measurement": {
         "delta": 0.0,
@@ -323,7 +596,20 @@
       "fsot_scalar": 0.514362,
       "ingest_source": "neuron_cohort_connectomics_depth",
       "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel"
+      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
+      "domain_display_name": "hybrid fi sim stratum deep panel depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.027724,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
@@ -337,7 +623,20 @@
       "fsot_scalar": 0.444725,
       "ingest_source": "neuron_cohort_connectomics_depth",
       "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel"
+      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
+      "domain_display_name": "hybrid fi sim stratum deep panel depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.03669,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
@@ -351,7 +650,20 @@
       "fsot_scalar": 0.306221,
       "ingest_source": "neuron_cohort_connectomics_depth",
       "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel"
+      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
+      "domain_display_name": "hybrid fi sim stratum deep panel depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00543194,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_stratum_deep_panel_depth_lab",
@@ -365,7 +677,20 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "neuron_cohort_connectomics_depth",
       "source_panel": "Neuroscience_Connectomics_Depth_Panel",
-      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel"
+      "depth_relay_from": "Neuroscience_Connectomics_Depth_Panel",
+      "domain_display_name": "hybrid fi sim stratum deep panel depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00016371,
+        "delta_pct": 0.031503,
+        "effective_error_pct": 0.031503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -379,5 +704,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Hybrid FI Sim Stratum Deep Panel",
+  "tier_label": "Tier 86",
+  "scientific_precision_summary": {
+    "scalar_count": 18,
+    "median_error_pct": 0.018003,
+    "max_error_pct": 0.031503,
+    "mean_abs_delta": 0.005369393888888889,
+    "precision_tier_counts": {
+      "green": 18
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.275433+00:00"
 }

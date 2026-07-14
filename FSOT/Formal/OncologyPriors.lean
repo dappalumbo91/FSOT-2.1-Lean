@@ -15,8 +15,8 @@ open Real
 def oncology_observable_count : ℕ := 67
 def oncology_section_count : ℕ := 5
 def oncology_D_eff : ℕ := 14
-def oncology_pooled_median_error_pct : ℝ := (0.078779 : ℝ)
-def oncology_headline_median_error_pct : ℝ := (0.078779 : ℝ)
+def oncology_pooled_median_error_pct : ℝ := (0.05041956982053305 : ℝ)
+def oncology_headline_median_error_pct : ℝ := (0.05041956982053305 : ℝ)
 def oncology_beats_sota_headlines : ℕ := 5
 
 theorem oncology_observable_count_pos : 0 < oncology_observable_count := by

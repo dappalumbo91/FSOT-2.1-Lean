@@ -42,7 +42,20 @@
       "computed": 0.008488,
       "measured": 0.0,
       "error_pct": 0.008488,
-      "observable_count": 191
+      "observable_count": 191,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.008488,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.008488,
       "measured": 0.0,
       "error_pct": 0.008488,
-      "observable_count": 180
+      "observable_count": 180,
+      "domain_display_name": "tier gap fill",
+      "display_name": "gwosc live",
+      "scientific_measurement": {
+        "delta": 0.008488,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -60,7 +86,20 @@
       "computed": 3.211009,
       "measured": 0.0,
       "error_pct": 3.211009,
-      "observable_count": 10
+      "observable_count": 10,
+      "domain_display_name": "tier gap fill",
+      "display_name": "gwosc live",
+      "scientific_measurement": {
+        "delta": 3.211009,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     }
   ],
   "material_records": [
@@ -74,7 +113,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW150914",
+      "scientific_measurement": {
+        "delta": 0.002368,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -83,7 +135,20 @@
       "computed": 27.9,
       "measured": 28.6,
       "error_pct": 2.447552,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW150914",
+      "scientific_measurement": {
+        "delta": -0.7,
+        "delta_pct": 2.447552,
+        "effective_error_pct": 2.447552,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -95,7 +160,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW151012",
+      "scientific_measurement": {
+        "delta": 0.001324,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -107,7 +185,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW151226",
+      "scientific_measurement": {
+        "delta": 0.000755,
+        "delta_pct": 0.008483,
+        "effective_error_pct": 0.008483,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -116,7 +207,20 @@
       "computed": 8.9,
       "measured": 8.9,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW151226",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -128,7 +232,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170104",
+      "scientific_measurement": {
+        "delta": 0.001791,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -137,7 +254,20 @@
       "computed": 21.1,
       "measured": 21.8,
       "error_pct": 3.211009,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170104",
+      "scientific_measurement": {
+        "delta": -0.7,
+        "delta_pct": 3.211009,
+        "effective_error_pct": 3.211009,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -149,7 +279,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170608",
+      "scientific_measurement": {
+        "delta": 0.000671,
+        "delta_pct": 0.008494,
+        "effective_error_pct": 0.008494,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -158,7 +301,20 @@
       "computed": 7.9,
       "measured": 7.9,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170608",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -170,7 +326,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170729",
+      "scientific_measurement": {
+        "delta": 0.002937,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -179,7 +348,20 @@
       "computed": 34.6,
       "measured": 24.1,
       "error_pct": 43.568465,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170729",
+      "scientific_measurement": {
+        "delta": 10.5,
+        "delta_pct": 43.568465,
+        "effective_error_pct": 43.568465,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -191,7 +373,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170809",
+      "scientific_measurement": {
+        "delta": 0.002105,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -200,7 +395,20 @@
       "computed": 24.8,
       "measured": 35.2,
       "error_pct": 29.545455,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170809",
+      "scientific_measurement": {
+        "delta": -10.4,
+        "delta_pct": 29.545455,
+        "effective_error_pct": 29.545455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -212,7 +420,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170814",
+      "scientific_measurement": {
+        "delta": 0.002046,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -221,7 +442,20 @@
       "computed": 24.1,
       "measured": 24.1,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170814",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -233,7 +467,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170817",
+      "scientific_measurement": {
+        "delta": 0.000101,
+        "delta_pct": 0.008516,
+        "effective_error_pct": 0.008516,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -242,7 +489,20 @@
       "computed": 1.186,
       "measured": 1.186,
       "error_pct": 0.0,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170817",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -254,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170818",
+      "scientific_measurement": {
+        "delta": 0.002275,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -266,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW170823",
+      "scientific_measurement": {
+        "delta": 0.002428,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -278,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190403 051519",
+      "scientific_measurement": {
+        "delta": 0.002886,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -290,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190408 181802",
+      "scientific_measurement": {
+        "delta": 0.00157,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -302,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190412",
+      "scientific_measurement": {
+        "delta": 0.001129,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -311,7 +636,20 @@
       "computed": 13.3,
       "measured": 19.0,
       "error_pct": 30.0,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190412",
+      "scientific_measurement": {
+        "delta": -5.7,
+        "delta_pct": 30.0,
+        "effective_error_pct": 30.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -323,7 +661,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190413 052954",
+      "scientific_measurement": {
+        "delta": 0.00208,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -335,7 +686,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190413 134308",
+      "scientific_measurement": {
+        "delta": 0.002827,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -347,7 +711,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190421 213856",
+      "scientific_measurement": {
+        "delta": 0.002665,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -359,7 +736,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190425",
+      "scientific_measurement": {
+        "delta": 0.000122,
+        "delta_pct": 0.008472,
+        "effective_error_pct": 0.008472,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -371,7 +761,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190426 190642",
+      "scientific_measurement": {
+        "delta": 0.006451,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -383,7 +786,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190503 185404",
+      "scientific_measurement": {
+        "delta": 0.002487,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -395,7 +811,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190512 180714",
+      "scientific_measurement": {
+        "delta": 0.001239,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -407,7 +836,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190513 205428",
+      "scientific_measurement": {
+        "delta": 0.00185,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -419,7 +861,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190514 065416",
+      "scientific_measurement": {
+        "delta": 0.00247,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -431,7 +886,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190517 055101",
+      "scientific_measurement": {
+        "delta": 0.002249,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -443,7 +911,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190519 153544",
+      "scientific_measurement": {
+        "delta": 0.00376,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -455,7 +936,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190521",
+      "scientific_measurement": {
+        "delta": 0.005373,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -464,7 +958,20 @@
       "computed": 63.3,
       "measured": 72.0,
       "error_pct": 12.083333,
-      "eval_kind": "ingest_consistency"
+      "eval_kind": "ingest_consistency",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190521",
+      "scientific_measurement": {
+        "delta": -8.7,
+        "delta_pct": 12.083333,
+        "effective_error_pct": 12.083333,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -476,7 +983,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190521 074359",
+      "scientific_measurement": {
+        "delta": 0.002784,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -488,7 +1008,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190527 092055",
+      "scientific_measurement": {
+        "delta": 0.002029,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -500,7 +1033,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190602 175927",
+      "scientific_measurement": {
+        "delta": 0.004074,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -512,7 +1058,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190620 030421",
+      "scientific_measurement": {
+        "delta": 0.003234,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -524,7 +1083,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190630 185205",
+      "scientific_measurement": {
+        "delta": 0.002131,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -536,7 +1108,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190701 203306",
+      "scientific_measurement": {
+        "delta": 0.003412,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -548,7 +1133,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190706 222641",
+      "scientific_measurement": {
+        "delta": 0.003871,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -560,7 +1158,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190707 093326",
+      "scientific_measurement": {
+        "delta": 0.000713,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -572,7 +1183,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190708 232457",
+      "scientific_measurement": {
+        "delta": 0.001112,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -584,7 +1208,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190719 215514",
+      "scientific_measurement": {
+        "delta": 0.001935,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -596,7 +1233,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190720 000836",
+      "scientific_measurement": {
+        "delta": 0.000764,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -608,7 +1258,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190725 174728",
+      "scientific_measurement": {
+        "delta": 0.000628,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -620,7 +1283,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190727 060333",
+      "scientific_measurement": {
+        "delta": 0.002496,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -632,7 +1308,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190728 064510",
+      "scientific_measurement": {
+        "delta": 0.00073,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -644,7 +1333,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190731 140936",
+      "scientific_measurement": {
+        "delta": 0.002521,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -656,7 +1358,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190803 022701",
+      "scientific_measurement": {
+        "delta": 0.002343,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -668,7 +1383,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190805 211137",
+      "scientific_measurement": {
+        "delta": 0.002708,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -680,7 +1408,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190814",
+      "scientific_measurement": {
+        "delta": 0.000519,
+        "delta_pct": 0.008494,
+        "effective_error_pct": 0.008494,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -692,7 +1433,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190828 063405",
+      "scientific_measurement": {
+        "delta": 0.002088,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -704,7 +1458,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190828 065509",
+      "scientific_measurement": {
+        "delta": 0.001137,
+        "delta_pct": 0.008485,
+        "effective_error_pct": 0.008485,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -716,7 +1483,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190910 112807",
+      "scientific_measurement": {
+        "delta": 0.002844,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -728,7 +1508,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190915 235702",
+      "scientific_measurement": {
+        "delta": 0.002071,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -740,7 +1533,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190916 200658",
+      "scientific_measurement": {
+        "delta": 0.002283,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -752,7 +1558,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190917 114630",
+      "scientific_measurement": {
+        "delta": 0.000314,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -764,7 +1583,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190924 021846",
+      "scientific_measurement": {
+        "delta": 0.000492,
+        "delta_pct": 0.008483,
+        "effective_error_pct": 0.008483,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -776,7 +1608,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190925 232845",
+      "scientific_measurement": {
+        "delta": 0.001324,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -788,7 +1633,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190926 050336",
+      "scientific_measurement": {
+        "delta": 0.002071,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -800,7 +1658,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190929 012149",
+      "scientific_measurement": {
+        "delta": 0.003022,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -812,7 +1683,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW190930 133541",
+      "scientific_measurement": {
+        "delta": 0.000721,
+        "delta_pct": 0.008482,
+        "effective_error_pct": 0.008482,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -824,7 +1708,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191103 012549",
+      "scientific_measurement": {
+        "delta": 0.000708,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -836,7 +1733,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191105 143521",
+      "scientific_measurement": {
+        "delta": 0.000664,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -848,7 +1758,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191109 010717",
+      "scientific_measurement": {
+        "delta": 0.004032,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -860,7 +1783,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191113 071753",
+      "scientific_measurement": {
+        "delta": 0.000908,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -872,7 +1808,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191126 115259",
+      "scientific_measurement": {
+        "delta": 0.000734,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -884,7 +1833,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191127 050227",
+      "scientific_measurement": {
+        "delta": 0.002538,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -896,7 +1858,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191129 134029",
+      "scientific_measurement": {
+        "delta": 0.00062,
+        "delta_pct": 0.008482,
+        "effective_error_pct": 0.008482,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -908,7 +1883,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191204 110529",
+      "scientific_measurement": {
+        "delta": 0.001681,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -920,7 +1908,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191204 171526",
+      "scientific_measurement": {
+        "delta": 0.000727,
+        "delta_pct": 0.008493,
+        "effective_error_pct": 0.008493,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -932,7 +1933,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191215 223052",
+      "scientific_measurement": {
+        "delta": 0.001562,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -944,7 +1958,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191216 213338",
+      "scientific_measurement": {
+        "delta": 0.000707,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -956,7 +1983,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191219 163120",
+      "scientific_measurement": {
+        "delta": 0.000366,
+        "delta_pct": 0.008492,
+        "effective_error_pct": 0.008492,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -968,7 +2008,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191222 033537",
+      "scientific_measurement": {
+        "delta": 0.002869,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -980,7 +2033,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW191230 180458",
+      "scientific_measurement": {
+        "delta": 0.003098,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -992,7 +2058,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200112 155838",
+      "scientific_measurement": {
+        "delta": 0.002326,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1004,7 +2083,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200115 042309",
+      "scientific_measurement": {
+        "delta": 0.000206,
+        "delta_pct": 0.008477,
+        "effective_error_pct": 0.008477,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1016,7 +2108,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200128 022011",
+      "scientific_measurement": {
+        "delta": 0.002716,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1028,7 +2133,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200129 065458",
+      "scientific_measurement": {
+        "delta": 0.002309,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1040,7 +2158,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200202 154313",
+      "scientific_measurement": {
+        "delta": 0.000636,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1052,7 +2183,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200208 130117",
+      "scientific_measurement": {
+        "delta": 0.002351,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1064,7 +2208,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200208 222617",
+      "scientific_measurement": {
+        "delta": 0.001681,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1076,7 +2233,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200209 085452",
+      "scientific_measurement": {
+        "delta": 0.002266,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1088,7 +2258,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200210 092254",
+      "scientific_measurement": {
+        "delta": 0.000557,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1100,7 +2283,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200216 220804",
+      "scientific_measurement": {
+        "delta": 0.002793,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1112,7 +2308,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200219 094415",
+      "scientific_measurement": {
+        "delta": 0.002343,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1124,7 +2333,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200220 061928",
+      "scientific_measurement": {
+        "delta": 0.005263,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1136,7 +2358,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200220 124850",
+      "scientific_measurement": {
+        "delta": 0.002394,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1148,7 +2383,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200224 222234",
+      "scientific_measurement": {
+        "delta": 0.00264,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1160,7 +2408,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200225 060421",
+      "scientific_measurement": {
+        "delta": 0.001205,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1172,7 +2433,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200302 015811",
+      "scientific_measurement": {
+        "delta": 0.001986,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1184,7 +2458,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200306 093714",
+      "scientific_measurement": {
+        "delta": 0.001485,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1196,7 +2483,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200308 173609",
+      "scientific_measurement": {
+        "delta": 0.002886,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1208,7 +2508,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200311 115853",
+      "scientific_measurement": {
+        "delta": 0.002258,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1220,7 +2533,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200316 215756",
+      "scientific_measurement": {
+        "delta": 0.000743,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1232,7 +2558,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200322 091133",
+      "scientific_measurement": {
+        "delta": 0.001273,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1244,7 +2583,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230518 125908",
+      "scientific_measurement": {
+        "delta": 0.000238,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1256,7 +2608,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230529 181500",
+      "scientific_measurement": {
+        "delta": 0.000165,
+        "delta_pct": 0.008505,
+        "effective_error_pct": 0.008505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1268,7 +2633,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230601 224134",
+      "scientific_measurement": {
+        "delta": 0.003828,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1280,7 +2658,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230605 065343",
+      "scientific_measurement": {
+        "delta": 0.001014,
+        "delta_pct": 0.008485,
+        "effective_error_pct": 0.008485,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1292,7 +2683,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230606 004305",
+      "scientific_measurement": {
+        "delta": 0.002249,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1304,7 +2708,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230608 205047",
+      "scientific_measurement": {
+        "delta": 0.002776,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1316,7 +2733,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230609 064958",
+      "scientific_measurement": {
+        "delta": 0.002173,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1328,7 +2758,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230624 113103",
+      "scientific_measurement": {
+        "delta": 0.001528,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1340,7 +2783,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230627 015337",
+      "scientific_measurement": {
+        "delta": 0.000511,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1352,7 +2808,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230628 231200",
+      "scientific_measurement": {
+        "delta": 0.002164,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1364,7 +2833,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230630 125806",
+      "scientific_measurement": {
+        "delta": 0.002971,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1376,7 +2858,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230630 234532",
+      "scientific_measurement": {
+        "delta": 0.000599,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1388,7 +2883,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230702 185453",
+      "scientific_measurement": {
+        "delta": 0.001944,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1400,7 +2908,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230704 021211",
+      "scientific_measurement": {
+        "delta": 0.001859,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1412,7 +2933,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230704 212616",
+      "scientific_measurement": {
+        "delta": 0.004753,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1424,7 +2958,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230706 104333",
+      "scientific_measurement": {
+        "delta": 0.001002,
+        "delta_pct": 0.008492,
+        "effective_error_pct": 0.008492,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1436,7 +2983,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230707 124047",
+      "scientific_measurement": {
+        "delta": 0.002979,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1448,7 +3008,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230708 053705",
+      "scientific_measurement": {
+        "delta": 0.001884,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1460,7 +3033,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230708 230935",
+      "scientific_measurement": {
+        "delta": 0.003616,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1472,7 +3058,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230709 122727",
+      "scientific_measurement": {
+        "delta": 0.002623,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1484,7 +3083,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230712 090405",
+      "scientific_measurement": {
+        "delta": 0.001375,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1496,7 +3108,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230723 101834",
+      "scientific_measurement": {
+        "delta": 0.000968,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1508,7 +3133,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230726 002940",
+      "scientific_measurement": {
+        "delta": 0.002309,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1520,7 +3158,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230729 082317",
+      "scientific_measurement": {
+        "delta": 0.000708,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1532,7 +3183,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230731 215307",
+      "scientific_measurement": {
+        "delta": 0.00066,
+        "delta_pct": 0.008483,
+        "effective_error_pct": 0.008483,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1544,7 +3208,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230803 033412",
+      "scientific_measurement": {
+        "delta": 0.002589,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1556,7 +3233,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230805 034249",
+      "scientific_measurement": {
+        "delta": 0.001961,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1568,7 +3258,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230806 204041",
+      "scientific_measurement": {
+        "delta": 0.003047,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1580,7 +3283,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230811 032116",
+      "scientific_measurement": {
+        "delta": 0.002046,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1592,7 +3308,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230814 061920",
+      "scientific_measurement": {
+        "delta": 0.003905,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1604,7 +3333,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230814 230901",
+      "scientific_measurement": {
+        "delta": 0.002273,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1616,7 +3358,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230819 171910",
+      "scientific_measurement": {
+        "delta": 0.003565,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1628,7 +3383,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230820 212515",
+      "scientific_measurement": {
+        "delta": 0.003268,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1640,7 +3408,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230824 033047",
+      "scientific_measurement": {
+        "delta": 0.003132,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1652,7 +3433,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230825 041334",
+      "scientific_measurement": {
+        "delta": 0.002504,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1664,7 +3458,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230831 015414",
+      "scientific_measurement": {
+        "delta": 0.002606,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1676,7 +3483,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230904 051013",
+      "scientific_measurement": {
+        "delta": 0.000639,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1688,7 +3508,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230911 195324",
+      "scientific_measurement": {
+        "delta": 0.001969,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1700,7 +3533,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230914 111401",
+      "scientific_measurement": {
+        "delta": 0.003378,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1712,7 +3558,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230919 215712",
+      "scientific_measurement": {
+        "delta": 0.001783,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1724,7 +3583,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230920 071124",
+      "scientific_measurement": {
+        "delta": 0.002029,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1736,7 +3608,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230922 020344",
+      "scientific_measurement": {
+        "delta": 0.002479,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1748,7 +3633,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230922 040658",
+      "scientific_measurement": {
+        "delta": 0.004414,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1760,7 +3658,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230924 124453",
+      "scientific_measurement": {
+        "delta": 0.001893,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1772,7 +3683,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230927 043729",
+      "scientific_measurement": {
+        "delta": 0.002249,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1784,7 +3708,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230927 153832",
+      "scientific_measurement": {
+        "delta": 0.00139,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1796,7 +3733,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230928 215827",
+      "scientific_measurement": {
+        "delta": 0.002852,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1808,7 +3758,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW230930 110730",
+      "scientific_measurement": {
+        "delta": 0.002105,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1820,7 +3783,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231001 140220",
+      "scientific_measurement": {
+        "delta": 0.003956,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1832,7 +3808,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231004 232346",
+      "scientific_measurement": {
+        "delta": 0.003395,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1844,7 +3833,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231005 021030",
+      "scientific_measurement": {
+        "delta": 0.004584,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1856,7 +3858,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231005 091549",
+      "scientific_measurement": {
+        "delta": 0.001808,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1868,7 +3883,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231008 142521",
+      "scientific_measurement": {
+        "delta": 0.002462,
+        "delta_pct": 0.00849,
+        "effective_error_pct": 0.00849,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1880,7 +3908,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231014 040532",
+      "scientific_measurement": {
+        "delta": 0.001273,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1892,7 +3933,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231018 233037",
+      "scientific_measurement": {
+        "delta": 0.000671,
+        "delta_pct": 0.008494,
+        "effective_error_pct": 0.008494,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1904,7 +3958,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231020 142947",
+      "scientific_measurement": {
+        "delta": 0.000685,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1916,7 +3983,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231026 130704",
+      "scientific_measurement": {
+        "delta": 0.001935,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1928,7 +4008,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231028 153006",
+      "scientific_measurement": {
+        "delta": 0.005348,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1940,7 +4033,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231029 111508",
+      "scientific_measurement": {
+        "delta": 0.003769,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1952,7 +4058,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231102 071736",
+      "scientific_measurement": {
+        "delta": 0.003675,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1964,7 +4083,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231104 133418",
+      "scientific_measurement": {
+        "delta": 0.00075,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1976,7 +4108,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231108 125142",
+      "scientific_measurement": {
+        "delta": 0.001468,
+        "delta_pct": 0.008486,
+        "effective_error_pct": 0.008486,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -1988,7 +4133,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231110 040320",
+      "scientific_measurement": {
+        "delta": 0.001137,
+        "delta_pct": 0.008485,
+        "effective_error_pct": 0.008485,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2000,7 +4158,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231113 122623",
+      "scientific_measurement": {
+        "delta": 0.002368,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2012,7 +4183,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231113 150041",
+      "scientific_measurement": {
+        "delta": 0.002886,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2024,7 +4208,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231113 200417",
+      "scientific_measurement": {
+        "delta": 0.000679,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2036,7 +4233,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231114 043211",
+      "scientific_measurement": {
+        "delta": 0.000985,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2048,7 +4258,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231118 005626",
+      "scientific_measurement": {
+        "delta": 0.00107,
+        "delta_pct": 0.008492,
+        "effective_error_pct": 0.008492,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2060,7 +4283,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231118 071402",
+      "scientific_measurement": {
+        "delta": 0.002572,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2072,7 +4308,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231118 090602",
+      "scientific_measurement": {
+        "delta": 0.00071,
+        "delta_pct": 0.008493,
+        "effective_error_pct": 0.008493,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2084,7 +4333,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231119 075248",
+      "scientific_measurement": {
+        "delta": 0.002928,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2096,7 +4358,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231123 135430",
+      "scientific_measurement": {
+        "delta": 0.008573,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2108,7 +4383,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231127 165300",
+      "scientific_measurement": {
+        "delta": 0.00258,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2120,7 +4408,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231129 081745",
+      "scientific_measurement": {
+        "delta": 0.00236,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2132,7 +4433,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231206 233134",
+      "scientific_measurement": {
+        "delta": 0.002309,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2144,7 +4458,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231206 233901",
+      "scientific_measurement": {
+        "delta": 0.002394,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2156,7 +4483,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231213 111417",
+      "scientific_measurement": {
+        "delta": 0.002266,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2168,7 +4508,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231221 135041",
+      "scientific_measurement": {
+        "delta": 0.002631,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2180,7 +4533,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231223 032836",
+      "scientific_measurement": {
+        "delta": 0.002708,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2192,7 +4558,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231223 075055",
+      "scientific_measurement": {
+        "delta": 0.000662,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2204,7 +4583,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231223 202619",
+      "scientific_measurement": {
+        "delta": 0.000709,
+        "delta_pct": 0.008491,
+        "effective_error_pct": 0.008491,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2216,7 +4608,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231224 024321",
+      "scientific_measurement": {
+        "delta": 0.000605,
+        "delta_pct": 0.008485,
+        "effective_error_pct": 0.008485,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2228,7 +4633,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231226 101520",
+      "scientific_measurement": {
+        "delta": 0.002759,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2240,7 +4658,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231230 170116",
+      "scientific_measurement": {
+        "delta": 0.003141,
+        "delta_pct": 0.008489,
+        "effective_error_pct": 0.008489,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2252,7 +4683,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW231231 154016",
+      "scientific_measurement": {
+        "delta": 0.001451,
+        "delta_pct": 0.008485,
+        "effective_error_pct": 0.008485,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2264,7 +4708,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW240104 164932",
+      "scientific_measurement": {
+        "delta": 0.002699,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2276,7 +4733,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW240107 013215",
+      "scientific_measurement": {
+        "delta": 0.003115,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2288,7 +4758,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
-      "ingest_source": "GWOSC_live"
+      "ingest_source": "GWOSC_live",
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW240109 050431",
+      "scientific_measurement": {
+        "delta": 0.001672,
+        "delta_pct": 0.008487,
+        "effective_error_pct": 0.008487,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2299,7 +4782,20 @@
       "error_pct": 0.008488,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
-      "fsot_scalar": -0.424412
+      "fsot_scalar": -0.424412,
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW200115",
+      "scientific_measurement": {
+        "delta": 0.000526,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2310,7 +4806,20 @@
       "error_pct": 0.008488,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Particle_Astrophysics",
-      "fsot_scalar": -0.424412
+      "fsot_scalar": -0.424412,
+      "domain_display_name": "gwosc live event",
+      "display_name": "GW240109",
+      "scientific_measurement": {
+        "delta": 0.007215,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "gwosc_live_event_lab",
@@ -2319,7 +4828,20 @@
       "computed": 230.0,
       "measured": 230.0,
       "error_pct": 0.0,
-      "eval_kind": "ingest_meta"
+      "eval_kind": "ingest_meta",
+      "domain_display_name": "gwosc live event",
+      "display_name": "gwosc cache",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -2333,5 +4855,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "GWOSC Live Event Deep",
+  "tier_label": "Tier 58 \u2014 GWOSC Live Event Deep + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 180,
+    "median_error_pct": 0.008488,
+    "max_error_pct": 0.008516,
+    "mean_abs_delta": 0.002135122222222222,
+    "precision_tier_counts": {
+      "green": 180
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.288119+00:00"
 }

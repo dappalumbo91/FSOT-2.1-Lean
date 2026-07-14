@@ -11,10 +11,10 @@ noncomputable section
 
 open Real
 
-def neuron_multi_hero_count : ℕ := 16
-def neuron_multi_hero_stratum_count : ℕ := 4
-def neuron_multi_hero_median_error_pct : ℝ := (0.0 : ℝ)
-def neuron_multi_hero_median_fi_proxy_rel_err_pct : ℝ := (0.22565 : ℝ)
+def neuron_multi_hero_count : ℕ := 24
+def neuron_multi_hero_stratum_count : ℕ := 0
+def neuron_multi_hero_median_error_pct : ℝ := (0.00225237811160842 : ℝ)
+def neuron_multi_hero_median_fi_proxy_rel_err_pct : ℝ := (0.0 : ℝ)
 def neuron_multi_hero_D_eff : ℕ := 14
 
 theorem neuron_multi_hero_count_pos : 0 < neuron_multi_hero_count := by
@@ -29,8 +29,8 @@ theorem neuron_multi_hero_median_fi_under_thirty_pct :
   unfold neuron_multi_hero_median_fi_proxy_rel_err_pct; norm_num
 
 theorem neuron_multi_hero_bundle :
-    neuron_multi_hero_count = 16 ∧
-    neuron_multi_hero_stratum_count = 4 ∧
+    neuron_multi_hero_count = 24 ∧
+    neuron_multi_hero_stratum_count = 0 ∧
     neuron_multi_hero_D_eff = 14 ∧
     neuron_multi_hero_median_error_pct < (0.5 : ℝ) ∧
     neuron_multi_hero_median_fi_proxy_rel_err_pct < (30 : ℝ) ∧

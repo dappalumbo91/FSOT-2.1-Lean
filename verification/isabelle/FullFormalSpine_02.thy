@@ -1,7 +1,43 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 3/17 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 3/18 (generated). *)
 theory FullFormalSpine_02
 imports Complex_Main
 begin
+
+lemma codon_agt_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_agt_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_ata_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_ata_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_atc_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_atc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_atg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_atg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
+  by eval
+
+lemma codon_att_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_att_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
+  by eval
+
+lemma codon_caa_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
+
+lemma codon_caa_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
+  by eval
 
 lemma codon_cac_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
   by eval
@@ -265,42 +301,6 @@ lemma codon_tta_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (
   by eval
 
 lemma codon_tta_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_ttc_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_ttc_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_ttg_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_ttg_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_ttt_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_ttt_secondary_phase: "(-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_primary_pattern_space_eq_eight: "(8.0 :: real) = (8.0 :: real)"
-  by eval
-
-lemma codon_genomic_table_link: "(64.0 :: real) = (64.0 :: real)"
-  by eval
-
-lemma stop_codon_fraction_cert: "(0.046875 :: real) = (0.046875 :: real)"
-  by eval
-
-lemma cold_fusion_candidate_prereg_scaffold_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cold_fusion_candidate_prereg_scaffold_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma cold_fusion_lab_synthesis_crosswalk_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
 end

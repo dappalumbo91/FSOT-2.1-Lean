@@ -1,0 +1,164 @@
+{
+  "source": "zebrahub_ome_zarr_gpu_sample",
+  "gpu_device": "NVIDIA GeForce RTX 5070",
+  "cuda_usable": true,
+  "torch": {
+    "torch_version": "2.11.0+cu128",
+    "cuda_available": true,
+    "arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "device_name": "NVIDIA GeForce RTX 5070",
+    "cuda_usable": true
+  },
+  "cuda_note": "RTX 5070 (sm_120) requires torch>=2.11+cu128; install: pip install torch --index-url https://download.pytorch.org/whl/cu128",
+  "sample_count": 6,
+  "external_cache": "I:\\FSOT-Physical-Archive\\05_Zebrahub-Development",
+  "samples": [
+    {
+      "dataset_id": "ZSNS001",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS001.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 0.021484,
+      "std_intensity": 0.169893,
+      "max_intensity": 2.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "1",
+      "z_index_used": 140,
+      "volume_shape": [
+        791,
+        1,
+        224,
+        1087,
+        1212
+      ]
+    },
+    {
+      "dataset_id": "ZSNS001_tail",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS001_tail.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 0.001953,
+      "std_intensity": 0.0625,
+      "max_intensity": 2.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "1",
+      "z_index_used": 105,
+      "volume_shape": [
+        791,
+        1,
+        210,
+        609,
+        546
+      ]
+    },
+    {
+      "dataset_id": "ZSNS002",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS002.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 50.46582,
+      "std_intensity": 57.395992,
+      "max_intensity": 277.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "4",
+      "z_index_used": 10,
+      "volume_shape": [
+        1100,
+        1,
+        21,
+        152,
+        329
+      ]
+    },
+    {
+      "dataset_id": "ZSNS003",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS003.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 153.203125,
+      "std_intensity": 7.978573,
+      "max_intensity": 169.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "3",
+      "z_index_used": 12,
+      "volume_shape": [
+        515,
+        1,
+        33,
+        242,
+        255
+      ]
+    },
+    {
+      "dataset_id": "ZSNS004",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS004.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 222.175781,
+      "std_intensity": 226.55545,
+      "max_intensity": 1571.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "3",
+      "z_index_used": 32,
+      "volume_shape": [
+        600,
+        1,
+        37,
+        241,
+        323
+      ]
+    },
+    {
+      "dataset_id": "ZSNS005",
+      "zarr_url": "https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS005.ome.zarr/",
+      "gpu_device": "NVIDIA GeForce RTX 5070",
+      "cuda_usable": true,
+      "mean_intensity": 9.414062,
+      "std_intensity": 33.128479,
+      "max_intensity": 303.0,
+      "tile_shape": [
+        32,
+        32
+      ],
+      "backend": "torch_cuda",
+      "zarr_scale_path": "3",
+      "z_index_used": 28,
+      "volume_shape": [
+        600,
+        1,
+        37,
+        239,
+        344
+      ]
+    }
+  ],
+  "fetched_at": "2026-07-13T13:21:29.264136+00:00",
+  "credential_free": true
+}

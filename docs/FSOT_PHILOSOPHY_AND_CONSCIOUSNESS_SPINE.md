@@ -165,7 +165,27 @@ The argument: a zero-parameter spine that simultaneously closes cosmology, chemi
 
 ---
 
-## 8. Source Map — Where Philosophy Lives Today
+## 8. Founding Archives (Reconciled)
+
+Your original research lives on **`I:\fsuft aasb`** and **`I:\fsot tech`** (FSUFT-U 6.0–9.6, Feb–Jul 2025). Those folders contain the ideas, literature search, and reasoning that led to FSOT — often co-written with early LLMs. Some numeric claims and fitting methods are **not** reliable.
+
+**Reconciliation rule:** retain philosophy; retire post-hoc multiplier fitting; re-verify every number through FSOT 2.1.
+
+| Founding | Verified replacement |
+|----------|---------------------|
+| `fsuft-aasb.py` multiplier/base tables | Seed-derived `raw_S` + domain ledger |
+| SCI + F fitting factors (9.2) | `D_eff`, `δψ`, `recent_hits`, `observed` |
+| ψ_con=0.7, η_eff=0.45 | ψ_con=(e−1)/e, η_eff=1/(π−1) |
+| "99.999999% accuracy" claims | 329/329 panels + strict_empirical gates |
+| Tech blueprints (`I:\fsot tech`) | Extension panels (interpretive until re-benchmarked) |
+
+Full lineage: `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`  
+Registry: `data/founding_concepts_registry.yaml`  
+Harvest: `python scripts/reconcile_founding_corpus.py`
+
+---
+
+## 9. Source Map — Where Philosophy Lives Today
 
 Philosophy and consciousness narrative is **distributed**. This spine consolidates; sources remain authoritative:
 
@@ -184,7 +204,7 @@ Run `python scripts/build_philosophy_training_corpus.py` to harvest these into `
 
 ---
 
-## 9. LLM Training Contract
+## 10. LLM Training Contract
 
 When fine-tuning Qwen/Gemma/Phi on FSOT philosophy:
 

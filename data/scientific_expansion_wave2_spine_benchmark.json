@@ -41,7 +41,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.015311,
       "measured": 0.0,
       "error_pct": 0.015311,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "scientific expansion wave2",
+      "scientific_measurement": {
+        "delta": 0.015311,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -62,7 +88,20 @@
       "measured": 0.015311,
       "error_pct": 0.0,
       "record_count": 15,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "epidemiology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -72,7 +111,20 @@
       "measured": 23.2419996225127,
       "error_pct": 0.015311,
       "source_panel": "epidemiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "ZH SH.DYN.NMRT",
+      "scientific_measurement": {
+        "delta": 0.00355838,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -82,7 +134,20 @@
       "measured": 23.6108556948861,
       "error_pct": 0.015311,
       "source_panel": "epidemiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "ZH SH.DYN.NMRT",
+      "scientific_measurement": {
+        "delta": 0.00361531,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -92,7 +157,20 @@
       "measured": 23.8743070730937,
       "error_pct": 0.015311,
       "source_panel": "epidemiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "ZH SH.DYN.NMRT",
+      "scientific_measurement": {
+        "delta": 0.00365493,
+        "delta_pct": 0.015309,
+        "effective_error_pct": 0.015309,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -102,7 +180,20 @@
       "measured": 0.022236,
       "error_pct": 0.0,
       "record_count": 8,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "virology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -112,7 +203,20 @@
       "measured": 29862.0,
       "error_pct": 0.022236,
       "source_panel": "virology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "SARS-CoV-2",
+      "scientific_measurement": {
+        "delta": 6.640189,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -122,7 +226,20 @@
       "measured": 1410.0,
       "error_pct": 0.022236,
       "source_panel": "virology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Influenza A virus",
+      "scientific_measurement": {
+        "delta": 0.313531,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -132,7 +249,20 @@
       "measured": 3185.0,
       "error_pct": 0.022236,
       "source_panel": "virology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Hepatitis B virus",
+      "scientific_measurement": {
+        "delta": 0.708225,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -142,7 +272,20 @@
       "measured": 0.0167305,
       "error_pct": 0.0,
       "record_count": 120,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "paleontology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -152,7 +295,20 @@
       "measured": 36.762501,
       "error_pct": 0.006006,
       "source_panel": "paleontology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.002208,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -162,7 +318,20 @@
       "measured": -95.543335,
       "error_pct": 0.027455,
       "source_panel": "paleontology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": -0.026231,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -172,7 +341,20 @@
       "measured": 312.8,
       "error_pct": 0.027455,
       "source_panel": "paleontology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Ammonoidea indet.",
+      "scientific_measurement": {
+        "delta": 0.085878,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -182,7 +364,20 @@
       "measured": 0.01748,
       "error_pct": 0.0,
       "record_count": 60,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "arxiv gravitational waves panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -192,7 +387,20 @@
       "measured": 2.0,
       "error_pct": 0.008488,
       "source_panel": "arxiv_gravitational_waves_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.00017,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -202,7 +410,20 @@
       "measured": 80.0,
       "error_pct": 0.026472,
       "source_panel": "arxiv_gravitational_waves_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.021178,
+        "delta_pct": 0.026473,
+        "effective_error_pct": 0.026473,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -212,7 +433,20 @@
       "measured": 2026.0,
       "error_pct": 0.008488,
       "source_panel": "arxiv_gravitational_waves_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "2607.08747v1",
+      "scientific_measurement": {
+        "delta": 0.171972,
+        "delta_pct": 0.008488,
+        "effective_error_pct": 0.008488,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -222,7 +456,20 @@
       "measured": 0.006006,
       "error_pct": 0.0,
       "record_count": 90,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "entomology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -232,7 +479,20 @@
       "measured": 50.5289,
       "error_pct": 0.006006,
       "source_panel": "entomology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Theria primaria",
+      "scientific_measurement": {
+        "delta": 0.003035,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -242,7 +502,20 @@
       "measured": -3.6084,
       "error_pct": 0.006006,
       "source_panel": "entomology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Theria primaria",
+      "scientific_measurement": {
+        "delta": -0.000217,
+        "delta_pct": 0.006014,
+        "effective_error_pct": 0.006014,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -252,7 +525,20 @@
       "measured": 1.0,
       "error_pct": 0.022236,
       "source_panel": "entomology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Theria primaria",
+      "scientific_measurement": {
+        "delta": 0.000222,
+        "delta_pct": 0.0222,
+        "effective_error_pct": 0.0222,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -262,7 +548,20 @@
       "measured": 0.006006,
       "error_pct": 0.0,
       "record_count": 90,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "mycology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -272,7 +571,20 @@
       "measured": 59.35094,
       "error_pct": 0.006006,
       "source_panel": "mycology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Tremella mesenterica",
+      "scientific_measurement": {
+        "delta": 0.003565,
+        "delta_pct": 0.006007,
+        "effective_error_pct": 0.006007,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -282,7 +594,20 @@
       "measured": 18.14128,
       "error_pct": 0.006006,
       "source_panel": "mycology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Tremella mesenterica",
+      "scientific_measurement": {
+        "delta": 0.00109,
+        "delta_pct": 0.006008,
+        "effective_error_pct": 0.006008,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -292,7 +617,20 @@
       "measured": 2024.0,
       "error_pct": 0.022236,
       "source_panel": "mycology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Tremella mesenterica",
+      "scientific_measurement": {
+        "delta": 0.450062,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -302,7 +640,20 @@
       "measured": 0.006006,
       "error_pct": 0.0,
       "record_count": 90,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "marine biology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -312,7 +663,20 @@
       "measured": -32.0,
       "error_pct": 0.006006,
       "source_panel": "marine_biology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": -0.001922,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -322,7 +686,20 @@
       "measured": 115.41667,
       "error_pct": 0.006006,
       "source_panel": "marine_biology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": 0.006932,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -332,7 +709,20 @@
       "measured": 20.0,
       "error_pct": 0.030173,
       "source_panel": "marine_biology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "Prymnesiales",
+      "scientific_measurement": {
+        "delta": 0.006035,
+        "delta_pct": 0.030175,
+        "effective_error_pct": 0.030175,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -342,7 +732,20 @@
       "measured": 0.040788,
       "error_pct": 0.0,
       "record_count": 24,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "immunology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -352,7 +755,20 @@
       "measured": 266.3,
       "error_pct": 0.040788,
       "source_panel": "immunology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "4463",
+      "scientific_measurement": {
+        "delta": 0.10862,
+        "delta_pct": 0.040789,
+        "effective_error_pct": 0.040789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -362,7 +778,20 @@
       "measured": 2.0,
       "error_pct": 0.048946,
       "source_panel": "immunology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "4463",
+      "scientific_measurement": {
+        "delta": 0.000979,
+        "delta_pct": 0.04895,
+        "effective_error_pct": 0.04895,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -372,7 +801,20 @@
       "measured": 58.1,
       "error_pct": 0.040788,
       "source_panel": "immunology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "4463",
+      "scientific_measurement": {
+        "delta": 0.023698,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -382,7 +824,20 @@
       "measured": 0.015311,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "cardiology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -392,7 +847,20 @@
       "measured": 72.0,
       "error_pct": 0.015311,
       "source_panel": "cardiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "resting hr adult",
+      "scientific_measurement": {
+        "delta": 0.011024,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -402,7 +870,20 @@
       "measured": 180.0,
       "error_pct": 0.015311,
       "source_panel": "cardiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "max hr 40yo",
+      "scientific_measurement": {
+        "delta": 0.02756,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -412,7 +893,20 @@
       "measured": 60.0,
       "error_pct": 0.015311,
       "source_panel": "cardiology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "normal ejection fraction",
+      "scientific_measurement": {
+        "delta": 0.009187,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -422,7 +916,20 @@
       "measured": 0.01341,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier84_bridge"
+      "eval_kind": "tier84_bridge",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "robotics control systems panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -432,7 +939,20 @@
       "measured": 1.0,
       "error_pct": 0.01341,
       "source_panel": "robotics_control_systems_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "pid kp default",
+      "scientific_measurement": {
+        "delta": 0.000134,
+        "delta_pct": 0.0134,
+        "effective_error_pct": 0.0134,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -442,7 +962,21 @@
       "measured": 0.1,
       "error_pct": 0.01341,
       "source_panel": "robotics_control_systems_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "pid ki default",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 0.013,
+        "effective_error_pct": 0.013,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.067,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "scientific_expansion_wave2_lab",
@@ -452,7 +986,21 @@
       "measured": 0.05,
       "error_pct": 0.01341,
       "source_panel": "robotics_control_systems_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave2",
+      "display_name": "pid kd default",
+      "scientific_measurement": {
+        "delta": 7e-06,
+        "delta_pct": 0.014,
+        "effective_error_pct": 0.014,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.067,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     }
   ],
   "margin_summary": {
@@ -466,5 +1014,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Scientific Expansion Wave2 Spine",
+  "tier_label": "Rust f64 obligation replay",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 10
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.243725+00:00"
 }

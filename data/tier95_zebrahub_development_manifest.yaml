@@ -1,0 +1,20 @@
+version: "1.0"
+updated: "2026-07-13"
+tier: 95
+policy: credential_free_zebrahub_czbiohub
+external_cache_default: I:/FSOT-Physical-Archive/05_Zebrahub-Development
+species: Danio rerio
+domains:
+  - Zebrafish_Cell_Tracking_Panel
+  - Zebrafish_Developmental_Mechanics_Panel
+  - Zebrafish_Longevity_Genetics_Coupling_Panel
+  - Tier_95_Zebrafish_Spine
+ingest: scripts/ingest_tier95_zebrahub_development.py
+build: scripts/build_tier95_zebrahub_development_benchmarks.py
+lean: scripts/gen_tier95_zebrahub_development_lean.py
+gpu_video: scripts/zebrahub_gpu_video.py
+datasets: data/zebrahub_datasets.yaml
+note: >
+  Tier 95 Zebrahub developmental genetics — 3D+time zebrafish cell tracking from CZ Biohub public
+  releases (Zebrahub / Biohub Kaggle lineage). Couples to Tier 94 longevity genetics (Danio rerio).
+  GPU imaging path targets RTX 5070; structure-prediction bridge scaffolds AlphaFold-exceed roadmap.

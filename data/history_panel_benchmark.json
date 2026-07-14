@@ -40,7 +40,20 @@
       "computed": 0.01382,
       "measured": 0.0,
       "error_pct": 0.01382,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01382,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.01382,
       "measured": 0.0,
       "error_pct": 0.01382,
-      "observable_count": 60
+      "observable_count": 60,
+      "domain_display_name": "tier gap fill",
+      "display_name": "history",
+      "scientific_measurement": {
+        "delta": 0.01382,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.276393,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.00646,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "obs",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "A History of Archaeology in Brazil (2001).",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "A History of Archaeology in Brazil (2001).",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "A History of Archaeology in Brazil (2001).",
+      "scientific_measurement": {
+        "delta": 0.010853,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The Role of Biography in Writing the History of Archaeology (1992)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The Role of Biography in Writing the History of Archaeology (1992)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The Role of Biography in Writing the History of Archaeology (1992)",
+      "scientific_measurement": {
+        "delta": 0.017055,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Excavating Women: Towards an Engendered History of Archaeology (1998)",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Excavating Women: Towards an Engendered History of Archaeology (1998)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Excavating Women: Towards an Engendered History of Archaeology (1998)",
+      "scientific_measurement": {
+        "delta": 0.01783,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.005986,
+        "delta_pct": 0.031505,
+        "effective_error_pct": 0.031505,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.006202,
+        "delta_pct": 0.025842,
+        "effective_error_pct": 0.025842,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The History, Philosophy, and Sociology of Archaeology: The Case of the Ancient Monuments Protection Act (1882) (1990)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The History, Philosophy, and Sociology of Archaeology: The Case of the Ancient Monuments Protection Act (1882) (1990)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "The History, Philosophy, and Sociology of Archaeology: The Case of the Ancient Monuments Protection Act (1882) (1990)",
+      "scientific_measurement": {
+        "delta": 0.030233,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction: Writing Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction: Writing Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction: Writing Histories of Archaeology",
+      "scientific_measurement": {
+        "delta": 0.011886,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "MICROHISTORY IN THE SYSTEM OF \u201cNEW HISTORY\u201d: HISTORY, THEORY AND HISTORIOGRAPHICAL PRACTICE",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "MICROHISTORY IN THE SYSTEM OF \u201cNEW HISTORY\u201d: HISTORY, THEORY AND HISTORIOGRAPHICAL PRACTICE",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "MICROHISTORY IN THE SYSTEM OF \u201cNEW HISTORY\u201d: HISTORY, THEORY AND HISTORIOGRAPHICAL PRACTICE",
+      "scientific_measurement": {
+        "delta": 0.023515,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.278604,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.008527,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Historiography (2001)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Historiography (2001)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Historiography (2001)",
+      "scientific_measurement": {
+        "delta": 0.005426,
+        "delta_pct": 0.025838,
+        "effective_error_pct": 0.025838,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Jinan in the First Millennium",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Jinan in the First Millennium",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Jinan in the First Millennium",
+      "scientific_measurement": {
+        "delta": 0.007494,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Archaeology against the State: Roots of Internationalism (1995)",
+      "scientific_measurement": {
+        "delta": 0.00189,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Archaeology against the State: Roots of Internationalism (1995)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Archaeology against the State: Roots of Internationalism (1995)",
+      "scientific_measurement": {
+        "delta": 0.016279,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Chronology of the History of Classical Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Chronology of the History of Classical Archaeology",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Chronology of the History of Classical Archaeology",
+      "scientific_measurement": {
+        "delta": 0.01292,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Legio XX Valeria Victrix: Prosopography, archaeology and history",
+      "scientific_measurement": {
+        "delta": 0.003781,
+        "delta_pct": 0.031508,
+        "effective_error_pct": 0.031508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Legio XX Valeria Victrix: Prosopography, archaeology and history",
+      "scientific_measurement": {
+        "delta": 0.277222,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Legio XX Valeria Victrix: Prosopography, archaeology and history",
+      "scientific_measurement": {
+        "delta": 0.016538,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.278604,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.008527,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -639,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Aberglasney House and Gardens: Archaeology, history and architecture",
+      "scientific_measurement": {
+        "delta": 0.000945,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -651,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Aberglasney House and Gardens: Archaeology, history and architecture",
+      "scientific_measurement": {
+        "delta": 0.276669,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -663,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Aberglasney House and Gardens: Archaeology, history and architecture",
+      "scientific_measurement": {
+        "delta": 0.017571,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -675,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -687,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.279848,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -699,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Film History as Media Archaeology",
+      "scientific_measurement": {
+        "delta": 0.008527,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -711,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction and Polemic (1968)",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -723,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction and Polemic (1968)",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -735,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "Introduction and Polemic (1968)",
+      "scientific_measurement": {
+        "delta": 0.00801,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -747,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "People\u2019s Archaeology and Archaeology for the People",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -759,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "People\u2019s Archaeology and Archaeology for the People",
+      "scientific_measurement": {
+        "delta": 0.279848,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "history_panel_lab",
@@ -771,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
-      "ingest_source": "crossref_history_query"
+      "ingest_source": "crossref_history_query",
+      "domain_display_name": "history panel",
+      "display_name": "People\u2019s Archaeology and Archaeology for the People",
+      "scientific_measurement": {
+        "delta": 0.013178,
+        "delta_pct": 0.025839,
+        "effective_error_pct": 0.025839,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -785,5 +1591,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "History Panel",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 40,
+    "median_error_pct": 0.01382,
+    "max_error_pct": 0.025842,
+    "mean_abs_delta": 0.1452255,
+    "precision_tier_counts": {
+      "green": 40
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.255647+00:00"
 }

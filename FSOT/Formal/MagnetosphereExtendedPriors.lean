@@ -13,10 +13,10 @@ open Real
 
 def magnetosphere_extended_historical_hours : ℕ := 120879
 def magnetosphere_extended_historical_match_count : ℕ := 120879
-def magnetosphere_extended_storm_holdout_hours : ℕ := 91421
-def magnetosphere_extended_storm_holdout_match_count : ℕ := 91421
-def magnetosphere_extended_bz_record_count : ℕ := 1416
-def magnetosphere_extended_bz_match_count : ℕ := 1416
+def magnetosphere_extended_storm_holdout_hours : ℕ := 91464
+def magnetosphere_extended_storm_holdout_match_count : ℕ := 91464
+def magnetosphere_extended_bz_record_count : ℕ := 1436
+def magnetosphere_extended_bz_match_count : ℕ := 1436
 def magnetosphere_extended_D_eff : ℕ := 14
 def magnetosphere_extended_historical_match_rate : ℝ := (1.0 : ℝ)
 def magnetosphere_extended_storm_holdout_match_rate : ℝ := (1.0 : ℝ)
@@ -45,10 +45,10 @@ theorem magnetosphere_extended_bz_match_le_total :
 theorem magnetosphere_extended_bundle :
     magnetosphere_extended_historical_hours = 120879 ∧
     magnetosphere_extended_historical_match_count = 120879 ∧
-    magnetosphere_extended_storm_holdout_hours = 91421 ∧
-    magnetosphere_extended_storm_holdout_match_count = 91421 ∧
-    magnetosphere_extended_bz_record_count = 1416 ∧
-    magnetosphere_extended_bz_match_count = 1416 ∧
+    magnetosphere_extended_storm_holdout_hours = 91464 ∧
+    magnetosphere_extended_storm_holdout_match_count = 91464 ∧
+    magnetosphere_extended_bz_record_count = 1436 ∧
+    magnetosphere_extended_bz_match_count = 1436 ∧
     magnetosphere_extended_D_eff = 14 ∧
     magnetosphere_extended_historical_match_count ≤ magnetosphere_extended_historical_hours ∧
     raw_S (get_domain_params "electron") > 0 := by

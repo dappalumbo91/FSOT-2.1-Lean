@@ -42,7 +42,20 @@
       "computed": 0.008488,
       "measured": 0.0,
       "error_pct": 0.008488,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.008488,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.051436,
       "measured": 0.0,
       "error_pct": 0.051436,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Hybrid FI Sim Multi Hero Panel depth",
+      "scientific_measurement": {
+        "delta": 0.051436,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -399,7 +425,7 @@
       "error_pct": 0.0,
       "fertile": false,
       "intelligence_score": 0.0,
-      "domain_display_name": "fic intelligence compressor",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "S final",
       "scientific_measurement": {
         "delta": 0.0,
@@ -429,7 +455,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
+      "display_name": "18-100754-general-1946-7-vol-2",
+      "scientific_measurement": {
+        "delta": 0.000543,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_multi_hero_panel_depth_lab",
@@ -444,7 +483,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_multi_hero_panel_depth_lab",
@@ -459,7 +511,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.0107048,
+        "delta_pct": 0.027454,
+        "effective_error_pct": 0.027454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_multi_hero_panel_depth_lab",
@@ -474,7 +539,20 @@
       "ingest_source": "war_gov_uap_hf_live",
       "agency": "Department of War",
       "source_panel": "UAP_War_Gov_Release_Panel",
-      "depth_relay_from": "UAP_War_Gov_Release_Panel"
+      "depth_relay_from": "UAP_War_Gov_Release_Panel",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": -0.022534,
+        "delta_pct": 0.027455,
+        "effective_error_pct": 0.027455,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "contested",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "hybrid_fi_sim_multi_hero_panel_depth_lab",
@@ -490,7 +568,7 @@
         "fusion",
         "plasma"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "Plasma Physics",
       "scientific_measurement": {
         "delta": 0.000332,
@@ -522,7 +600,7 @@
         "medical",
         "biological"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "Immunology",
       "scientific_measurement": {
         "delta": 0.000291,
@@ -554,7 +632,7 @@
         "energy",
         "galactic"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "Climate Science",
       "scientific_measurement": {
         "delta": 0.000333,
@@ -586,7 +664,7 @@
         "cosmological",
         "astronomical"
       ],
-      "domain_display_name": "observer channel derivation",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "Cosmology Extended",
       "scientific_measurement": {
         "delta": 0.000396,
@@ -614,7 +692,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "hybrid fi sim multi hero panel depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -644,5 +722,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Hybrid FI Sim Multi Hero Panel",
+  "tier_label": "Tier 77 \u2014 Hybrid FI Sim Multi Hero Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.0085,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.032672080000000006,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.794853+00:00"
 }

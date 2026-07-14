@@ -1,0 +1,238 @@
+[{"stream_name":"stderr","time":6.935933512,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.9360263920000005,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.977839857,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.977871687,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.9778764970000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.9778801569999995,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.601644207,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.601677707,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.601683178,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.601687038,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.948840701,"data":"Kaggle input: ['competitions', 'datasets']\n"}
+,{"stream_name":"stdout","time":286.694715718,"data":"Copied v50 bundle from /kaggle/input/datasets/damianpalumbo/fsot-v50-competitive-bundle\n"}
+,{"stream_name":"stdout","time":417.25915871,"data":"[UNET] weights: /kaggle/input/datasets/aashishnegi23/cellmot-ft-detector-biohub/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":673.058791304,"data":"Offline wheels: /kaggle/input/datasets/thibautgoldsborough/cellmot-baseline-artifacts/cellmot-baseline-artifacts/wheels\n"}
+,{"stream_name":"stdout","time":673.058831174,"data":"[ENV] FSOT_DIVISION_ML_REFINE= 1\n"}
+,{"stream_name":"stdout","time":673.058837494,"data":"[ENV] FSOT_ML_DIVISION_GAP_PATCH= 1\n"}
+,{"stream_name":"stdout","time":673.2581858,"data":"[ENV] Kaggle\n"}
+,{"stream_name":"stdout","time":891.969919723,"data":"[UNET] weights: /kaggle/input/datasets/aashishnegi23/cellmot-ft-detector-biohub/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":972.934699551,"data":"[WARN] cellmot_code_bundle.zip not found — pip install tracksdata/cellmot from wheels\n"}
+,{"stream_name":"stdout","time":977.921036479,"data":"[WARN] fsot_unet unavailable: module 'numpy._core._multiarray_umath' has no attribute '_blas_supports_fpe'\n"}
+,{"stream_name":"stdout","time":977.921069619,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":977.921075488,"data":"FSOT KAGGLE v50 — U-Net + FSOT vision/linking\n"}
+,{"stream_name":"stdout","time":977.921082179,"data":"Lean ref : https://github.com/dappalumbo91/FSOT-2.1-Lean.git\n"}
+,{"stream_name":"stdout","time":977.921087408,"data":"Engine   : fsot\n"}
+,{"stream_name":"stdout","time":977.921092479,"data":"Link     : fsot\n"}
+,{"stream_name":"stdout","time":977.921097608,"data":"Vision   : FSOT_VISION_CALIBRATE=1\n"}
+,{"stream_name":"stdout","time":977.921102788,"data":"Device   : cpu\n"}
+,{"stream_name":"stdout","time":977.921107448,"data":"ILP      : CELLMOT_USE_ILP=1 cap=80000\n"}
+,{"stream_name":"stdout","time":977.921112388,"data":"Data dir : /kaggle/input/competitions/biohub-cell-tracking-during-development/test\n"}
+,{"stream_name":"stdout","time":977.921131868,"data":"======================================================================\n"}
+,{"stream_name":"stderr","time":981.144067119,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":981.144108139,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14411507,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":981.144355739,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":981.14437121,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":981.14437707,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":981.145128999,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":981.14517485,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":981.14518137,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":981.145186599,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":981.14519135,"data":"AttributeError                            Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":981.145195839,"data":"/tmp/ipykernel_16/153595838.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":981.145200859,"data":"      3 \n"}
+,{"stream_name":"stderr","time":981.145205239,"data":"      4 sys.path.insert(0, \"/kaggle/working\")\n"}
+,{"stream_name":"stderr","time":981.14520941,"data":"----\u003e 5 runpy.run_path(\"/kaggle/working/kaggle_main_runner.py\", run_name=\"__main__\")\n"}
+,{"stream_name":"stderr","time":981.14521435,"data":"      6 \n"}
+,{"stream_name":"stderr","time":981.145218699,"data":"      7 import pandas as pd\n"}
+,{"stream_name":"stderr","time":981.145222979,"data":"\n"}
+,{"stream_name":"stderr","time":981.145227219,"data":"/usr/lib/python3.12/runpy.py in run_path(path_name, init_globals, run_name)\n"}
+,{"stream_name":"stderr","time":981.14523151,"data":"\n"}
+,{"stream_name":"stderr","time":981.145235819,"data":"/usr/lib/python3.12/runpy.py in _run_module_code(code, init_globals, mod_name, mod_spec, pkg_name, script_name)\n"}
+,{"stream_name":"stderr","time":981.145240459,"data":"\n"}
+,{"stream_name":"stderr","time":981.145244679,"data":"/usr/lib/python3.12/runpy.py in _run_code(code, run_globals, init_globals, mod_name, mod_spec, pkg_name, script_name)\n"}
+,{"stream_name":"stderr","time":981.14524943,"data":"\n"}
+,{"stream_name":"stderr","time":981.14525357,"data":"/kaggle/working/kaggle_main_runner.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14525869,"data":"    307 \n"}
+,{"stream_name":"stderr","time":981.145263679,"data":"    308 if __name__ == \"__main__\":\n"}
+,{"stream_name":"stderr","time":981.145268619,"data":"--\u003e 309     main()\n"}
+,{"stream_name":"stderr","time":981.145273239,"data":"\n"}
+,{"stream_name":"stderr","time":981.14527839,"data":"/kaggle/working/kaggle_main_runner.py in main()\n"}
+,{"stream_name":"stderr","time":981.14528333,"data":"    293     else:\n"}
+,{"stream_name":"stderr","time":981.145287979,"data":"    294         detector = os.environ.get(\"BIOHUB_DETECTOR\", \"peaks\")\n"}
+,{"stream_name":"stderr","time":981.145292879,"data":"--\u003e 295         rows = _run_original_fsot(DATA_DIR, detector)\n"}
+,{"stream_name":"stderr","time":981.145323199,"data":"    296 \n"}
+,{"stream_name":"stderr","time":981.145326679,"data":"    297     _validate_submission_rows(rows)\n"}
+,{"stream_name":"stderr","time":981.14532997,"data":"\n"}
+,{"stream_name":"stderr","time":981.14533319,"data":"/kaggle/working/kaggle_main_runner.py in _run_original_fsot(data_dir, detector)\n"}
+,{"stream_name":"stderr","time":981.145336799,"data":"    266 \n"}
+,{"stream_name":"stderr","time":981.14534009,"data":"    267 def _run_original_fsot(data_dir: str, detector: str) -\u003e list[dict]:\n"}
+,{"stream_name":"stderr","time":981.145468339,"data":"--\u003e 268     from fsot_original_competition import track_all_datasets\n"}
+,{"stream_name":"stderr","time":981.145479059,"data":"    269 \n"}
+,{"stream_name":"stderr","time":981.145482539,"data":"    270     return track_all_datasets(data_dir, detector_mode=detector)\n"}
+,{"stream_name":"stderr","time":981.145486059,"data":"\n"}
+,{"stream_name":"stderr","time":981.145489339,"data":"/kaggle/working/fsot_original_competition.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14549309,"data":"     25 from pathlib import Path\n"}
+,{"stream_name":"stderr","time":981.14549659,"data":"     26 \n"}
+,{"stream_name":"stderr","time":981.14549979,"data":"---\u003e 27 import dask.array as da\n"}
+,{"stream_name":"stderr","time":981.14550345,"data":"     28 import zarr\n"}
+,{"stream_name":"stderr","time":981.145506819,"data":"     29 \n"}
+,{"stream_name":"stderr","time":981.145510139,"data":"\n"}
+,{"stream_name":"stderr","time":981.145515479,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14551925,"data":"    361     )\n"}
+,{"stream_name":"stderr","time":981.14552273,"data":"    362 \n"}
+,{"stream_name":"stderr","time":981.14555837,"data":"--\u003e 363     from dask.array import backends, fft, lib, linalg, ma, overlap, random\n"}
+,{"stream_name":"stderr","time":981.145562519,"data":"    364     from dask.array._shuffle import shuffle\n"}
+,{"stream_name":"stderr","time":981.14556629,"data":"    365     from dask.array.blockwise import atop, blockwise\n"}
+,{"stream_name":"stderr","time":981.14556991,"data":"\n"}
+,{"stream_name":"stderr","time":981.145574799,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/backends.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145578479,"data":"      6 \n"}
+,{"stream_name":"stderr","time":981.145582319,"data":"      7 from dask.array import chunk\n"}
+,{"stream_name":"stderr","time":981.145586059,"data":"----\u003e 8 from dask.array.core import Array\n"}
+,{"stream_name":"stderr","time":981.145589519,"data":"      9 from dask.array.dispatch import (\n"}
+,{"stream_name":"stderr","time":981.14559381,"data":"     10     concatenate_lookup,\n"}
+,{"stream_name":"stderr","time":981.14559733,"data":"\n"}
+,{"stream_name":"stderr","time":981.14560061,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/core.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14560423,"data":"     31 from dask.core import flatten\n"}
+,{"stream_name":"stderr","time":981.14564321,"data":"     32 \n"}
+,{"stream_name":"stderr","time":981.14564733,"data":"---\u003e 33 xr = import_optional_dependency(\"xarray\", errors=\"ignore\")\n"}
+,{"stream_name":"stderr","time":981.14565153,"data":"     34 \n"}
+,{"stream_name":"stderr","time":981.145655119,"data":"     35 from dask import compute, config, core\n"}
+,{"stream_name":"stderr","time":981.145658099,"data":"\n"}
+,{"stream_name":"stderr","time":981.14566171,"data":"/usr/local/lib/python3.12/dist-packages/dask/_compatibility.py in import_optional_dependency(name, extra, min_version, errors)\n"}
+,{"stream_name":"stderr","time":981.145671039,"data":"    102         # and the library we want to check for (i.e. the `xarray`` library)\n"}
+,{"stream_name":"stderr","time":981.145674419,"data":"    103         importlib_metadata.distribution(name)\n"}
+,{"stream_name":"stderr","time":981.145677639,"data":"--\u003e 104         module = importlib.import_module(name)\n"}
+,{"stream_name":"stderr","time":981.14568079,"data":"    105     except (importlib_metadata.PackageNotFoundError, ImportError) as err:\n"}
+,{"stream_name":"stderr","time":981.145684079,"data":"    106         if errors == \"raise\":\n"}
+,{"stream_name":"stderr","time":981.14568715,"data":"\n"}
+,{"stream_name":"stderr","time":981.14569005,"data":"/usr/lib/python3.12/importlib/__init__.py in import_module(name, package)\n"}
+,{"stream_name":"stderr","time":981.145693139,"data":"     88                 break\n"}
+,{"stream_name":"stderr","time":981.145696099,"data":"     89             level += 1\n"}
+,{"stream_name":"stderr","time":981.14569941,"data":"---\u003e 90     return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":981.14570315,"data":"     91 \n"}
+,{"stream_name":"stderr","time":981.14570657,"data":"     92 \n"}
+,{"stream_name":"stderr","time":981.145729479,"data":"\n"}
+,{"stream_name":"stderr","time":981.14573269,"data":"/usr/local/lib/python3.12/dist-packages/xarray/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145735979,"data":"      1 from importlib.metadata import version as _version\n"}
+,{"stream_name":"stderr","time":981.145739019,"data":"      2 \n"}
+,{"stream_name":"stderr","time":981.145741899,"data":"----\u003e 3 from xarray import coders, groupers, indexes, testing, tutorial, ufuncs\n"}
+,{"stream_name":"stderr","time":981.145745039,"data":"      4 from xarray.backends.api import (\n"}
+,{"stream_name":"stderr","time":981.14574809,"data":"      5     load_dataarray,\n"}
+,{"stream_name":"stderr","time":981.14575103,"data":"\n"}
+,{"stream_name":"stderr","time":981.14575399,"data":"/usr/local/lib/python3.12/dist-packages/xarray/tutorial.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145757179,"data":"     16 import numpy as np\n"}
+,{"stream_name":"stderr","time":981.14576005,"data":"     17 \n"}
+,{"stream_name":"stderr","time":981.145762959,"data":"---\u003e 18 from xarray.backends.api import open_dataset as _open_dataset\n"}
+,{"stream_name":"stderr","time":981.145766199,"data":"     19 from xarray.backends.api import open_datatree as _open_datatree\n"}
+,{"stream_name":"stderr","time":981.145769339,"data":"     20 from xarray.core.dataarray import DataArray\n"}
+,{"stream_name":"stderr","time":981.14577289,"data":"\n"}
+,{"stream_name":"stderr","time":981.14577603,"data":"/usr/local/lib/python3.12/dist-packages/xarray/backends/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14577983,"data":"     16 from xarray.backends.plugins import list_engines, refresh_engines\n"}
+,{"stream_name":"stderr","time":981.145783159,"data":"     17 from xarray.backends.pydap_ import PydapBackendEntrypoint, PydapDataStore\n"}
+,{"stream_name":"stderr","time":981.14578673,"data":"---\u003e 18 from xarray.backends.scipy_ import ScipyBackendEntrypoint, ScipyDataStore\n"}
+,{"stream_name":"stderr","time":981.145790999,"data":"     19 from xarray.backends.store import StoreBackendEntrypoint\n"}
+,{"stream_name":"stderr","time":981.145811719,"data":"     20 from xarray.backends.zarr import ZarrBackendEntrypoint, ZarrStore\n"}
+,{"stream_name":"stderr","time":981.14582023,"data":"\n"}
+,{"stream_name":"stderr","time":981.145823519,"data":"/usr/local/lib/python3.12/dist-packages/xarray/backends/scipy_.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145827299,"data":"     37 \n"}
+,{"stream_name":"stderr","time":981.14583051,"data":"     38 try:\n"}
+,{"stream_name":"stderr","time":981.145833599,"data":"---\u003e 39     from scipy.io import netcdf_file as netcdf_file_base\n"}
+,{"stream_name":"stderr","time":981.145837099,"data":"     40 except ImportError:\n"}
+,{"stream_name":"stderr","time":981.14584025,"data":"     41     netcdf_file_base = object  # type: ignore[assignment,misc,unused-ignore]  # scipy is optional\n"}
+,{"stream_name":"stderr","time":981.145843839,"data":"\n"}
+,{"stream_name":"stderr","time":981.145846719,"data":"/usr/local/lib/python3.12/dist-packages/scipy/io/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145850339,"data":"     95 \"\"\"\n"}
+,{"stream_name":"stderr","time":981.145853359,"data":"     96 # matfile read and write\n"}
+,{"stream_name":"stderr","time":981.14585685,"data":"---\u003e 97 from .matlab import loadmat, savemat, whosmat\n"}
+,{"stream_name":"stderr","time":981.145860359,"data":"     98 \n"}
+,{"stream_name":"stderr","time":981.145863599,"data":"     99 # netCDF file support\n"}
+,{"stream_name":"stderr","time":981.14586659,"data":"\n"}
+,{"stream_name":"stderr","time":981.14586961,"data":"/usr/local/lib/python3.12/dist-packages/scipy/io/matlab/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145874239,"data":"     45 \"\"\"\n"}
+,{"stream_name":"stderr","time":981.14589649,"data":"     46 # Matlab file read and write utilities\n"}
+,{"stream_name":"stderr","time":981.14590043,"data":"---\u003e 47 from ._mio import loadmat, savemat, whosmat\n"}
+,{"stream_name":"stderr","time":981.145904079,"data":"     48 from ._mio5 import MatlabFunction, varmats_from_mat\n"}
+,{"stream_name":"stderr","time":981.145907559,"data":"     49 from ._mio5_params import MatlabObject, MatlabOpaque, mat_struct\n"}
+,{"stream_name":"stderr","time":981.14593193,"data":"\n"}
+,{"stream_name":"stderr","time":981.14593547,"data":"/usr/local/lib/python3.12/dist-packages/scipy/io/matlab/_mio.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145939059,"data":"      7 \n"}
+,{"stream_name":"stderr","time":981.145942479,"data":"      8 from ._miobase import _get_matfile_version, docfiller\n"}
+,{"stream_name":"stderr","time":981.14594593,"data":"----\u003e 9 from ._mio4 import MatFile4Reader, MatFile4Writer\n"}
+,{"stream_name":"stderr","time":981.145949419,"data":"     10 from ._mio5 import MatFile5Reader, MatFile5Writer\n"}
+,{"stream_name":"stderr","time":981.14595291,"data":"     11 \n"}
+,{"stream_name":"stderr","time":981.145956119,"data":"\n"}
+,{"stream_name":"stderr","time":981.145959219,"data":"/usr/local/lib/python3.12/dist-packages/scipy/io/matlab/_mio4.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.145981819,"data":"      8 import numpy as np\n"}
+,{"stream_name":"stderr","time":981.145985319,"data":"      9 \n"}
+,{"stream_name":"stderr","time":981.14598855,"data":"---\u003e 10 import scipy.sparse\n"}
+,{"stream_name":"stderr","time":981.14599181,"data":"     11 \n"}
+,{"stream_name":"stderr","time":981.145995359,"data":"     12 from ._miobase import (MatFileReader, docfiller, matdims, read_dtype,\n"}
+,{"stream_name":"stderr","time":981.145999099,"data":"\n"}
+,{"stream_name":"stderr","time":981.14600225,"data":"/usr/local/lib/python3.12/dist-packages/scipy/sparse/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.146010819,"data":"    302 import importlib as _importlib\n"}
+,{"stream_name":"stderr","time":981.14601443,"data":"    303 \n"}
+,{"stream_name":"stderr","time":981.14601779,"data":"--\u003e 304 from ._base import *\n"}
+,{"stream_name":"stderr","time":981.146021299,"data":"    305 from ._csr import *\n"}
+,{"stream_name":"stderr","time":981.146024559,"data":"    306 from ._csc import *\n"}
+,{"stream_name":"stderr","time":981.146027959,"data":"\n"}
+,{"stream_name":"stderr","time":981.14603145,"data":"/usr/local/lib/python3.12/dist-packages/scipy/sparse/_base.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14603489,"data":"      6 import operator\n"}
+,{"stream_name":"stderr","time":981.146037899,"data":"      7 \n"}
+,{"stream_name":"stderr","time":981.14604103,"data":"----\u003e 8 from ._sputils import (asmatrix, check_reshape_kwargs, check_shape,\n"}
+,{"stream_name":"stderr","time":981.14604433,"data":"      9                        get_sum_dtype, isdense, isscalarlike, _todata,\n"}
+,{"stream_name":"stderr","time":981.14606577,"data":"     10                        matrix, validateaxis, getdtype, is_pydata_spmatrix)\n"}
+,{"stream_name":"stderr","time":981.146069539,"data":"\n"}
+,{"stream_name":"stderr","time":981.14607331,"data":"/usr/local/lib/python3.12/dist-packages/scipy/sparse/_sputils.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.146077219,"data":"      8 from math import prod\n"}
+,{"stream_name":"stderr","time":981.14608071,"data":"      9 import scipy.sparse as sp\n"}
+,{"stream_name":"stderr","time":981.146084039,"data":"---\u003e 10 from scipy._lib._util import np_long, np_ulong\n"}
+,{"stream_name":"stderr","time":981.14608749,"data":"     11 \n"}
+,{"stream_name":"stderr","time":981.146091019,"data":"     12 \n"}
+,{"stream_name":"stderr","time":981.146094159,"data":"\n"}
+,{"stream_name":"stderr","time":981.14609733,"data":"/usr/local/lib/python3.12/dist-packages/scipy/_lib/_util.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14610065,"data":"     12 \n"}
+,{"stream_name":"stderr","time":981.146103879,"data":"     13 import numpy as np\n"}
+,{"stream_name":"stderr","time":981.146107199,"data":"---\u003e 14 from scipy._lib._array_api import (Array, array_namespace, is_lazy_array,\n"}
+,{"stream_name":"stderr","time":981.146110779,"data":"     15                                    is_numpy, is_marray, xp_result_device,\n"}
+,{"stream_name":"stderr","time":981.146114359,"data":"     16                                    xp_size, xp_result_type)\n"}
+,{"stream_name":"stderr","time":981.146117739,"data":"\n"}
+,{"stream_name":"stderr","time":981.14612103,"data":"/usr/local/lib/python3.12/dist-packages/scipy/_lib/_array_api.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14612453,"data":"     23 \n"}
+,{"stream_name":"stderr","time":981.146127719,"data":"     24 from scipy._lib import array_api_compat\n"}
+,{"stream_name":"stderr","time":981.14613117,"data":"---\u003e 25 from scipy._lib.array_api_compat import (\n"}
+,{"stream_name":"stderr","time":981.146152039,"data":"     26     is_array_api_obj,\n"}
+,{"stream_name":"stderr","time":981.146155499,"data":"     27     is_lazy_array,\n"}
+,{"stream_name":"stderr","time":981.146159019,"data":"\n"}
+,{"stream_name":"stderr","time":981.146162379,"data":"/usr/local/lib/python3.12/dist-packages/scipy/_lib/array_api_compat/numpy/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14616635,"data":"      2 from typing import Final\n"}
+,{"stream_name":"stderr","time":981.146169539,"data":"      3 \n"}
+,{"stream_name":"stderr","time":981.14617263,"data":"----\u003e 4 from numpy import *  # noqa: F403  # pyright: ignore[reportWildcardImportFromLibrary]\n"}
+,{"stream_name":"stderr","time":981.14618047,"data":"      5 \n"}
+,{"stream_name":"stderr","time":981.146183739,"data":"      6 # from numpy import * doesn't overwrite these builtin names\n"}
+,{"stream_name":"stderr","time":981.14618701,"data":"\n"}
+,{"stream_name":"stderr","time":981.14619019,"data":"/usr/local/lib/python3.12/dist-packages/numpy/testing/__init__.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.146193739,"data":"     10 from . import _private, overrides\n"}
+,{"stream_name":"stderr","time":981.14619697,"data":"     11 from ._private import extbuild\n"}
+,{"stream_name":"stderr","time":981.14620045,"data":"---\u003e 12 from ._private.utils import *\n"}
+,{"stream_name":"stderr","time":981.14620401,"data":"     13 from ._private.utils import _assert_valid_refcount, _gen_alignment_data\n"}
+,{"stream_name":"stderr","time":981.146207559,"data":"     14 \n"}
+,{"stream_name":"stderr","time":981.146210719,"data":"\n"}
+,{"stream_name":"stderr","time":981.146213699,"data":"/usr/local/lib/python3.12/dist-packages/numpy/testing/_private/utils.py in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":981.14623643,"data":"     91 IS_PYSTON = hasattr(sys, \"pyston_version_info\")\n"}
+,{"stream_name":"stderr","time":981.146240099,"data":"     92 HAS_REFCOUNT = getattr(sys, 'getrefcount', None) is not None and not IS_PYSTON\n"}
+,{"stream_name":"stderr","time":981.14624359,"data":"---\u003e 93 BLAS_SUPPORTS_FPE = np._core._multiarray_umath._blas_supports_fpe(None)\n"}
+,{"stream_name":"stderr","time":981.14624697,"data":"     94 \n"}
+,{"stream_name":"stderr","time":981.146250099,"data":"     95 HAS_LAPACK64 = numpy.linalg._umath_linalg._ilp64\n"}
+,{"stream_name":"stderr","time":981.146253639,"data":"\n"}
+,{"stream_name":"stderr","time":981.14625697,"data":"AttributeError: module 'numpy._core._multiarray_umath' has no attribute '_blas_supports_fpe'\n"}
+,{"stream_name":"stderr","time":981.146260439,"data":"\n"}
+,{"stream_name":"stderr","time":983.348522472,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":983.348560862,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":983.517884968,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":983.517917659,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":984.217358535,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":984.473172264,"data":"[NbConvertApp] Writing 41436 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":986.931342266,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":987.689772585,"data":"[NbConvertApp] Writing 334931 bytes to __results__.html\n"}
+]

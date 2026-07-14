@@ -1,0 +1,853 @@
+{
+  "panels": [
+    {
+      "domain": "Zebrafish_Cell_Tracking_Panel",
+      "record_count": 20,
+      "unique_reported_error_pct_values": 1,
+      "rel_error_median_pct": 0.02223625,
+      "rel_error_max_pct": 0.02223633,
+      "abs_residual_median": 14.354232,
+      "abs_residual_max": 4824.7307,
+      "worst_5_by_rel_error": [
+        {
+          "dataset": "ZSNS005",
+          "property": "development_timesteps",
+          "measured": 600.0,
+          "computed": 600.133418,
+          "abs_residual": 0.13341800000000603,
+          "rel_error_pct": 0.02223633,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "development_timesteps",
+          "measured": 600.0,
+          "computed": 600.133418,
+          "abs_residual": 0.13341800000000603,
+          "rel_error_pct": 0.02223633,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "development_timesteps",
+          "measured": 515.0,
+          "computed": 515.114517,
+          "abs_residual": 0.114516999999978,
+          "rel_error_pct": 0.02223631,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "development_timesteps",
+          "measured": 791.0,
+          "computed": 791.175889,
+          "abs_residual": 0.17588899999998375,
+          "rel_error_pct": 0.02223628,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "development_timesteps",
+          "measured": 791.0,
+          "computed": 791.175889,
+          "abs_residual": 0.17588899999998375,
+          "rel_error_pct": 0.02223628,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        }
+      ],
+      "records": [
+        {
+          "dataset": "ZSNS003",
+          "property": "cell_track_count",
+          "measured": 169108.0,
+          "computed": 169145.603278,
+          "abs_residual": 37.60327799999504,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "development_timesteps",
+          "measured": 515.0,
+          "computed": 515.114517,
+          "abs_residual": 0.114516999999978,
+          "rel_error_pct": 0.02223631,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "cell_detection_rows",
+          "measured": 4057611.0,
+          "computed": 4058513.2605,
+          "abs_residual": 902.2604999998584,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "mean_detections_per_frame",
+          "measured": 7878.856311,
+          "computed": 7880.608273,
+          "abs_residual": 1.751962000000276,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "cell_track_count",
+          "measured": 318204.0,
+          "computed": 318274.756638,
+          "abs_residual": 70.75663800002076,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "development_timesteps",
+          "measured": 600.0,
+          "computed": 600.133418,
+          "abs_residual": 0.13341800000000603,
+          "rel_error_pct": 0.02223633,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "cell_detection_rows",
+          "measured": 6460782.0,
+          "computed": 6462218.6357,
+          "abs_residual": 1436.63570000045,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "mean_detections_per_frame",
+          "measured": 10767.97,
+          "computed": 10770.364393,
+          "abs_residual": 2.394393000000491,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "cell_track_count",
+          "measured": 397507.0,
+          "computed": 397595.390652,
+          "abs_residual": 88.39065199997276,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "development_timesteps",
+          "measured": 600.0,
+          "computed": 600.133418,
+          "abs_residual": 0.13341800000000603,
+          "rel_error_pct": 0.02223633,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "cell_detection_rows",
+          "measured": 7239919.0,
+          "computed": 7241528.8865,
+          "abs_residual": 1609.8865000000224,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "mean_detections_per_frame",
+          "measured": 12066.531667,
+          "computed": 12069.214811,
+          "abs_residual": 2.6831440000005387,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "cell_track_count",
+          "measured": 101676.0,
+          "computed": 101698.60893,
+          "abs_residual": 22.608930000002147,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "development_timesteps",
+          "measured": 791.0,
+          "computed": 791.175889,
+          "abs_residual": 0.17588899999998375,
+          "rel_error_pct": 0.02223628,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "cell_detection_rows",
+          "measured": 7505357.0,
+          "computed": 7507025.91,
+          "abs_residual": 1668.910000000149,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "mean_detections_per_frame",
+          "measured": 9488.441214,
+          "computed": 9490.551088,
+          "abs_residual": 2.1098739999997633,
+          "rel_error_pct": 0.02223626,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "cell_track_count",
+          "measured": 1605333.0,
+          "computed": 1605689.9659,
+          "abs_residual": 356.96589999995194,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "development_timesteps",
+          "measured": 791.0,
+          "computed": 791.175889,
+          "abs_residual": 0.17588899999998375,
+          "rel_error_pct": 0.02223628,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "cell_detection_rows",
+          "measured": 21697591.0,
+          "computed": 21702415.7307,
+          "abs_residual": 4824.730700001121,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "mean_detections_per_frame",
+          "measured": 27430.582807,
+          "computed": 27436.68234,
+          "abs_residual": 6.09953300000052,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "zebrahub_tracking"
+        }
+      ]
+    },
+    {
+      "domain": "Zebrafish_Developmental_Mechanics_Panel",
+      "record_count": 31,
+      "unique_reported_error_pct_values": 2,
+      "rel_error_median_pct": 0.017789,
+      "rel_error_max_pct": 0.02224912,
+      "abs_residual_median": 0.003612,
+      "abs_residual_max": 225.934891,
+      "worst_5_by_rel_error": [
+        {
+          "dataset": "ZSNS001",
+          "property": "gpu_mean_intensity",
+          "measured": 0.021484,
+          "computed": 0.02148878,
+          "abs_residual": 4.779999999999368e-06,
+          "rel_error_pct": 0.02224912,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS002",
+          "property": "gpu_mean_intensity",
+          "measured": 50.46582,
+          "computed": 50.47704171,
+          "abs_residual": 0.01122171000000094,
+          "rel_error_pct": 0.02223626,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "gpu_mean_intensity",
+          "measured": 153.203125,
+          "computed": 153.23719163,
+          "abs_residual": 0.03406663000001231,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "gpu_mean_intensity",
+          "measured": 222.175781,
+          "computed": 222.22518456,
+          "abs_residual": 0.04940356000000179,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "gpu_mean_intensity",
+          "measured": 9.414062,
+          "computed": 9.41615533,
+          "abs_residual": 0.0020933300000010036,
+          "rel_error_pct": 0.0222362,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        }
+      ],
+      "records": [
+        {
+          "dataset": "ZSNS003",
+          "property": "division_rate",
+          "measured": 0.18766705,
+          "computed": 0.18770043,
+          "abs_residual": 3.337999999999952e-05,
+          "rel_error_pct": 0.01778682,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "division_event_count",
+          "measured": 31736.0,
+          "computed": 31741.64551714,
+          "abs_residual": 5.645517140001175,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "mean_track_duration_steps",
+          "measured": 23.994199,
+          "computed": 23.99846733,
+          "abs_residual": 0.004268330000002152,
+          "rel_error_pct": 0.01778901,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "mean_displacement_um",
+          "measured": 78.142244,
+          "computed": 78.15614472,
+          "abs_residual": 0.013900719999995204,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "developmental_stability_proxy",
+          "measured": 0.2482611,
+          "computed": 0.24830526,
+          "abs_residual": 4.415999999998754e-05,
+          "rel_error_pct": 0.01778772,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "division_rate",
+          "measured": 0.28928612,
+          "computed": 0.28933758,
+          "abs_residual": 5.146000000000317e-05,
+          "rel_error_pct": 0.01778862,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "division_event_count",
+          "measured": 92052.0,
+          "computed": 92068.37513056,
+          "abs_residual": 16.375130560001708,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "mean_track_duration_steps",
+          "measured": 20.303899,
+          "computed": 20.30751086,
+          "abs_residual": 0.003611859999999467,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "mean_displacement_um",
+          "measured": 74.472807,
+          "computed": 74.48605497,
+          "abs_residual": 0.01324796999999478,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "developmental_stability_proxy",
+          "measured": 0.11697663,
+          "computed": 0.11699744,
+          "abs_residual": 2.080999999999611e-05,
+          "rel_error_pct": 0.01778988,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "division_rate",
+          "measured": 0.15233946,
+          "computed": 0.15236656,
+          "abs_residual": 2.7100000000002122e-05,
+          "rel_error_pct": 0.01778922,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "division_event_count",
+          "measured": 60556.0,
+          "computed": 60566.77230703,
+          "abs_residual": 10.772307029998046,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "mean_track_duration_steps",
+          "measured": 18.213312,
+          "computed": 18.21655197,
+          "abs_residual": 0.0032399700000027565,
+          "rel_error_pct": 0.01778902,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "mean_displacement_um",
+          "measured": 82.378883,
+          "computed": 82.39353738,
+          "abs_residual": 0.014654379999996081,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "developmental_stability_proxy",
+          "measured": 0.19926106,
+          "computed": 0.19929651,
+          "abs_residual": 3.545000000002019e-05,
+          "rel_error_pct": 0.01779073,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "division_rate",
+          "measured": 0.72540226,
+          "computed": 0.7255313,
+          "abs_residual": 0.0001290400000000247,
+          "rel_error_pct": 0.01778875,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "division_event_count",
+          "measured": 73756.0,
+          "computed": 73769.12045507,
+          "abs_residual": 13.120455070005846,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "mean_track_duration_steps",
+          "measured": 73.816407,
+          "computed": 73.8295382,
+          "abs_residual": 0.013131200000003673,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "mean_displacement_um",
+          "measured": 129.985113,
+          "computed": 130.00823605,
+          "abs_residual": 0.02312304999998105,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "developmental_stability_proxy",
+          "measured": 0.12864619,
+          "computed": 0.12866907,
+          "abs_residual": 2.2880000000002898e-05,
+          "rel_error_pct": 0.01778521,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "division_rate",
+          "measured": 0.7911642,
+          "computed": 0.79130494,
+          "abs_residual": 0.00014073999999997255,
+          "rel_error_pct": 0.01778897,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "division_event_count",
+          "measured": 1270082.0,
+          "computed": 1270307.93489089,
+          "abs_residual": 225.93489089002833,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "mean_track_duration_steps",
+          "measured": 13.515944,
+          "computed": 13.51834835,
+          "abs_residual": 0.002404350000000832,
+          "rel_error_pct": 0.01778899,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "mean_displacement_um",
+          "measured": 85.79819,
+          "computed": 85.81345264,
+          "abs_residual": 0.015262639999988892,
+          "rel_error_pct": 0.017789,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "developmental_stability_proxy",
+          "measured": 0.02159746,
+          "computed": 0.0216013,
+          "abs_residual": 3.840000000001481e-06,
+          "rel_error_pct": 0.01777987,
+          "reported_error_pct": 0.017789,
+          "eval_kind": "developmental_mechanics"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "gpu_mean_intensity",
+          "measured": 0.021484,
+          "computed": 0.02148878,
+          "abs_residual": 4.779999999999368e-06,
+          "rel_error_pct": 0.02224912,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "gpu_mean_intensity",
+          "measured": 0.001953,
+          "computed": 0.00195343,
+          "abs_residual": 4.2999999999983156e-07,
+          "rel_error_pct": 0.02201741,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS002",
+          "property": "gpu_mean_intensity",
+          "measured": 50.46582,
+          "computed": 50.47704171,
+          "abs_residual": 0.01122171000000094,
+          "rel_error_pct": 0.02223626,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "gpu_mean_intensity",
+          "measured": 153.203125,
+          "computed": 153.23719163,
+          "abs_residual": 0.03406663000001231,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "gpu_mean_intensity",
+          "measured": 222.175781,
+          "computed": 222.22518456,
+          "abs_residual": 0.04940356000000179,
+          "rel_error_pct": 0.02223625,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "gpu_mean_intensity",
+          "measured": 9.414062,
+          "computed": 9.41615533,
+          "abs_residual": 0.0020933300000010036,
+          "rel_error_pct": 0.0222362,
+          "reported_error_pct": 0.022236,
+          "eval_kind": "gpu_imaging_sample"
+        }
+      ]
+    },
+    {
+      "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+      "record_count": 15,
+      "unique_reported_error_pct_values": 2,
+      "rel_error_median_pct": 0.01334208,
+      "rel_error_max_pct": 0.01556613,
+      "abs_residual_median": 0.000151,
+      "abs_residual_max": 0.001786,
+      "worst_5_by_rel_error": [
+        {
+          "dataset": "ZSNS001",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 0.24630401,
+          "computed": 0.24634235,
+          "abs_residual": 3.833999999999782e-05,
+          "rel_error_pct": 0.01556613,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 1.59831476,
+          "computed": 1.59856355,
+          "abs_residual": 0.0002487899999998877,
+          "rel_error_pct": 0.01556577,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 11.21472638,
+          "computed": 11.216472,
+          "abs_residual": 0.0017456199999994482,
+          "rel_error_pct": 0.01556543,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 11.47531821,
+          "computed": 11.47710439,
+          "abs_residual": 0.0017861799999998595,
+          "rel_error_pct": 0.01556541,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 3.57110708,
+          "computed": 3.57166293,
+          "abs_residual": 0.0005558500000000244,
+          "rel_error_pct": 0.0155652,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        }
+      ],
+      "records": [
+        {
+          "dataset": "ZSNS003",
+          "property": "developmental_longevity_coupling",
+          "measured": 8.42664093,
+          "computed": 8.42776519,
+          "abs_residual": 0.0011242600000009872,
+          "rel_error_pct": 0.01334173,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "tier94_tier95_bridge"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "genome_developmental_coupling",
+          "measured": 0.42568372,
+          "computed": 0.42574052,
+          "abs_residual": 5.68000000000235e-05,
+          "rel_error_pct": 0.01334324,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "genome_development_bridge"
+        },
+        {
+          "dataset": "ZSNS003",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 11.47531821,
+          "computed": 11.47710439,
+          "abs_residual": 0.0017861799999998595,
+          "rel_error_pct": 0.01556541,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "developmental_longevity_coupling",
+          "measured": 2.57576455,
+          "computed": 2.5761082,
+          "abs_residual": 0.00034365000000002865,
+          "rel_error_pct": 0.01334167,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "tier94_tier95_bridge"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "genome_developmental_coupling",
+          "measured": 0.30918402,
+          "computed": 0.30922527,
+          "abs_residual": 4.124999999999268e-05,
+          "rel_error_pct": 0.01334157,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "genome_development_bridge"
+        },
+        {
+          "dataset": "ZSNS005",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 3.57110708,
+          "computed": 3.57166293,
+          "abs_residual": 0.0005558500000000244,
+          "rel_error_pct": 0.0155652,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "developmental_longevity_coupling",
+          "measured": 8.33188617,
+          "computed": 8.33299779,
+          "abs_residual": 0.0011116199999996468,
+          "rel_error_pct": 0.01334176,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "tier94_tier95_bridge"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "genome_developmental_coupling",
+          "measured": 0.2773481,
+          "computed": 0.2773851,
+          "abs_residual": 3.700000000000925e-05,
+          "rel_error_pct": 0.01334064,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "genome_development_bridge"
+        },
+        {
+          "dataset": "ZSNS004",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 11.21472638,
+          "computed": 11.216472,
+          "abs_residual": 0.0017456199999994482,
+          "rel_error_pct": 0.01556543,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "developmental_longevity_coupling",
+          "measured": 1.12967516,
+          "computed": 1.12982588,
+          "abs_residual": 0.00015072000000015962,
+          "rel_error_pct": 0.01334189,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "tier94_tier95_bridge"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "genome_developmental_coupling",
+          "measured": 0.85264093,
+          "computed": 0.85275469,
+          "abs_residual": 0.0001137600000000738,
+          "rel_error_pct": 0.01334208,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "genome_development_bridge"
+        },
+        {
+          "dataset": "ZSNS001_tail",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 1.59831476,
+          "computed": 1.59856355,
+          "abs_residual": 0.0002487899999998877,
+          "rel_error_pct": 0.01556577,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "developmental_longevity_coupling",
+          "measured": 0.17388882,
+          "computed": 0.17391202,
+          "abs_residual": 2.3200000000000998e-05,
+          "rel_error_pct": 0.01334186,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "tier94_tier95_bridge"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "genome_developmental_coupling",
+          "measured": 0.1561204,
+          "computed": 0.15614123,
+          "abs_residual": 2.082999999999946e-05,
+          "rel_error_pct": 0.01334227,
+          "reported_error_pct": 0.013342,
+          "eval_kind": "genome_development_bridge"
+        },
+        {
+          "dataset": "ZSNS001",
+          "property": "structure_prediction_readiness_proxy",
+          "measured": 0.24630401,
+          "computed": 0.24634235,
+          "abs_residual": 3.833999999999782e-05,
+          "rel_error_pct": 0.01556613,
+          "reported_error_pct": 0.015565,
+          "eval_kind": "alphafold_exceed_scaffold"
+        }
+      ]
+    }
+  ]
+}

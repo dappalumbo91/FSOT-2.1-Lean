@@ -1,0 +1,42 @@
+version: "1.0"
+updated: "2026-07-13"
+source: CZ Biohub Zebrahub (credential-free public.czbiohub.org)
+citation: "Lange et al., Cell 2024; Ultrack; zebrahub.sf.czbiohub.org"
+species: Danio rerio
+base_url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective
+tracks:
+  - id: ZSNS003
+    file: ZSNS003_tracks.csv
+    priority: 1
+  - id: ZSNS005
+    file: ZSNS005_tracks.csv
+    priority: 2
+  - id: ZSNS004
+    file: ZSNS004_tracks.csv
+    priority: 3
+  - id: ZSNS001_tail
+    file: ZSNS001_tail_tracks.csv
+    priority: 4
+  - id: ZSNS001
+    file: ZSNS001_tracks.csv
+    priority: 5
+imaging_zarr:
+  - id: ZSNS001
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS001.ome.zarr/
+    json: ZSNS001.json
+  - id: ZSNS001_tail
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS001_tail.ome.zarr/
+    json: ZSNS001_tail.json
+  - id: ZSNS002
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS002.ome.zarr/
+    json: ZSNS002.json
+  - id: ZSNS003
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS003.ome.zarr/
+    json: ZSNS003.json
+  - id: ZSNS004
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS004.ome.zarr/
+    json: ZSNS004.json
+  - id: ZSNS005
+    url: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/ZSNS005.ome.zarr/
+    json: ZSNS005.json
+benchmark_zip: https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/tracks_benchmark/tracks_int8_20230719.zarr.zip

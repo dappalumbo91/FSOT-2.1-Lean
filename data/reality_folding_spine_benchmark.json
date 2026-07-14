@@ -46,7 +46,20 @@
       "computed": 0.023914,
       "measured": 0.0,
       "error_pct": 0.023914275640537417,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.023914,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -55,7 +68,20 @@
       "computed": 0.026588,
       "measured": 0.0,
       "error_pct": 0.02658792169939596,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Reality Folding Spine depth",
+      "scientific_measurement": {
+        "delta": 0.026588,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -248,7 +274,7 @@
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
-      "domain_display_name": "compactification ladder",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "string quantum",
       "scientific_measurement": {
         "delta": 1.1e-05,
@@ -278,7 +304,7 @@
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
-      "domain_display_name": "compactification ladder",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "string quantum",
       "scientific_measurement": {
         "delta": 4e-06,
@@ -308,7 +334,7 @@
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
-      "domain_display_name": "compactification ladder",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "string quantum",
       "scientific_measurement": {
         "delta": 0.002393,
@@ -338,7 +364,7 @@
       "anchor_domain": "Higgs_Mass",
       "formula_branch": "scaled_S",
       "D_eff_ladder": 3,
-      "domain_display_name": "compactification ladder",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "string quantum",
       "scientific_measurement": {
         "delta": 0.026056,
@@ -374,7 +400,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -412,7 +438,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -450,7 +476,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -487,7 +513,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -519,7 +545,7 @@
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
       "formula_branch": "term1.coherence_efficiency",
-      "domain_display_name": "adjacent rung coupling",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "AR01",
       "scientific_measurement": {
         "delta": 1.4e-05,
@@ -551,7 +577,7 @@
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
       "formula_branch": "term1.coherence_efficiency",
-      "domain_display_name": "adjacent rung coupling",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "AR01",
       "scientific_measurement": {
         "delta": 0.000415,
@@ -583,7 +609,7 @@
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
       "formula_branch": "term1.coherence_efficiency",
-      "domain_display_name": "adjacent rung coupling",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "AR01",
       "scientific_measurement": {
         "delta": 1.5e-05,
@@ -615,7 +641,7 @@
       "lower_rung": "string_quantum",
       "upper_rung": "nuclear",
       "formula_branch": "term1.coherence_efficiency",
-      "domain_display_name": "adjacent rung coupling",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "AR01",
       "scientific_measurement": {
         "delta": 0.0,
@@ -640,7 +666,7 @@
       "measured": 7.0,
       "error_pct": 0.0,
       "source": "ToE_Gap_Closure_Spine",
-      "domain_display_name": "toe unification spine",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "gap closure",
       "scientific_measurement": {
         "delta": 0.0,
@@ -665,7 +691,7 @@
       "measured": 6.0,
       "error_pct": 0.0,
       "source": "Theory_Completeness_Spine",
-      "domain_display_name": "toe unification spine",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "completeness",
       "scientific_measurement": {
         "delta": 0.0,
@@ -690,7 +716,7 @@
       "measured": 12.0,
       "error_pct": 0.027544107556407217,
       "source": "Domain_Orbital_Predictions",
-      "domain_display_name": "toe unification spine",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "orbital rollup",
       "scientific_measurement": {
         "delta": 0.0,
@@ -715,7 +741,7 @@
       "measured": 282.0,
       "error_pct": 0.019008268802510223,
       "source": "toe_unification_metrics",
-      "domain_display_name": "toe unification spine",
+      "domain_display_name": "reality folding spine depth",
       "display_name": "domain graph",
       "scientific_measurement": {
         "delta": 0.053603,
@@ -744,5 +770,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Reality Folding Spine",
+  "tier_label": "Tier 49",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.025753835305195434,
+    "max_error_pct": 0.038016537604979236,
+    "mean_abs_delta": 0.005140636363636363,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.182070+00:00"
 }

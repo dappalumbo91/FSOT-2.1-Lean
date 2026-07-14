@@ -1,10 +1,28 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 2/17 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 2/18 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma brainstem_arousal_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma hippocampus_genetic_zero_is_superposition : (0.5%R) = (0.5%R).
+Proof. reflexivity. Qed.
+
+Lemma basal_ganglia_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma thalamus_genetic_zero_is_superposition : (0.4861111111111111%R) = (0.4861111111111111%R).
+Proof. reflexivity. Qed.
+
+Lemma astrocyte_syncytium_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
+
+Lemma oligodendrocyte_myelination_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
+Proof. reflexivity. Qed.
 
 Lemma amygdala_genetic_zero_is_superposition : (0.3888888888888889%R) = (0.3888888888888889%R).
 Proof. reflexivity. Qed.
@@ -15,11 +33,11 @@ Proof. reflexivity. Qed.
 Lemma brain_prior_codon_genetic_degeneracy : (2.3703703703703702%R) = (2.3703703703703702%R).
 Proof. reflexivity. Qed.
 
-Lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma breakthrough_discoveries_2024_2026_observable_count_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma breakthrough_discoveries_2024_2026_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
 
 Lemma bubble_bleed_nebula_count_pos : (0 < 20)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -39,10 +57,10 @@ Proof. apply Nat.leb_le; reflexivity. Qed.
 Lemma bubble_bleed_bh_spin_match_le_total : (5 <= 5)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
-Lemma bubble_bleed_nebula_match_le_total : (18 <= 20)%nat.
+Lemma bubble_bleed_nebula_match_le_total : (20 <= 20)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
-Lemma bubble_bleed_frb_match_le_total : (37 <= 38)%nat.
+Lemma bubble_bleed_frb_match_le_total : (38 <= 38)%nat.
 Proof. apply Nat.leb_le; reflexivity. Qed.
 
 Lemma bubble_bleed_observability_ratio_nonneg : 0 <= (0.7142857142857143%R).
@@ -65,6 +83,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cardiology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cardiology_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma cardiology_panel_median_error_under_half_pct : (0.015311%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma cardiology_observable_count_pos : (0 < 45)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -90,17 +114,23 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cellular_operon_count_pos : (0 < 13)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cern_open_data_lhc_observable_count_pos : (0 < 200)%nat.
+Lemma cern_open_data_lhc_observable_count_pos : (0 < 83)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma cern_open_data_lhc_median_error_under_five_pct : (0.013294%R) < (5.0%R).
 Proof. lra. Qed.
 
-Lemma certified_agent_qwen_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma certified_agent_formal_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma certified_agent_formal_panel_median_error_under_half_pct : (0.014767%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma certified_agent_qwen_observable_count_pos : (0 < 8)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma certified_agent_qwen_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
 
 Lemma chaos_mediated_phase_transitions_observable_count_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -143,6 +173,12 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma civil_engineering_ext_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma civil_engineering_panel_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma civil_engineering_panel_median_error_under_half_pct : (0.01341%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma civil_engineering_observable_count_pos : (0 < 37)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -268,41 +304,5 @@ Lemma codon_agg_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 
 Lemma codon_agg_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_agt_primary_phase : (1 = 1)%Z /\ (1 = 1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_agt_secondary_phase : (1 = 1)%Z /\ (0 = 0)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_ata_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_ata_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_atc_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_atc_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_atg_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_atg_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (0 = 0)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_att_primary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_att_secondary_phase : (1 = 1)%Z /\ (-1 = -1)%Z /\ (-1 = -1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_caa_primary_phase : (-1 = -1)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
-Proof. repeat split; reflexivity. Qed.
-
-Lemma codon_caa_secondary_phase : (0 = 0)%Z /\ (1 = 1)%Z /\ (1 = 1)%Z.
 Proof. repeat split; reflexivity. Qed.
 

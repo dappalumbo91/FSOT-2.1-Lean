@@ -1,6 +1,6 @@
 {
   "report_version": "1.2",
-  "generated_at": "2026-07-11T22:21:17.209249+00:00",
+  "generated_at": "2026-07-13T15:21:32.904478+00:00",
   "observable_count": 65,
   "headline_eligible_count": 22,
   "internal_pipeline_metric_count": 38,
@@ -269,9 +269,9 @@
       "reference": "PDG 2024 Higgs review",
       "comparison_class": "external_observable",
       "exclude_from_headline_beats": false,
-      "fsot_computed": 0.014721632079759569,
-      "fsot_error_pct": 0.014721632079759569,
-      "margin_vs_sota_pct": 0.4852783679202404,
+      "fsot_computed": 0.08808351263334355,
+      "fsot_error_pct": 0.08808351263334355,
+      "margin_vs_sota_pct": 0.4119164873666564,
       "status": "beats_sota",
       "status_basis": "beats_sota_typical_error_pct",
       "parameter_advantage": 25
@@ -995,9 +995,9 @@
       "reference": "FO-200/210/213 live formula eval benches",
       "comparison_class": "internal_pipeline_metric",
       "exclude_from_headline_beats": true,
-      "fsot_computed": 0.0,
-      "fsot_error_pct": 0.0,
-      "margin_vs_sota_pct": 1.0,
+      "fsot_computed": 0.023982,
+      "fsot_error_pct": 0.02398238974044143,
+      "margin_vs_sota_pct": 0.9760176102595586,
       "status": "beats_sota",
       "status_basis": "beats_sota_typical_error_pct",
       "parameter_advantage": 0

@@ -40,7 +40,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.040788,
       "measured": 0.0,
       "error_pct": 0.040788,
-      "observable_count": 16
+      "observable_count": 16,
+      "domain_display_name": "tier gap fill",
+      "display_name": "scientific expansion depth",
+      "scientific_measurement": {
+        "delta": 0.040788,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +87,20 @@
       "measured": 0.02584,
       "error_pct": 0.0,
       "record_count": 44,
-      "eval_kind": "tier86_bridge"
+      "eval_kind": "tier86_bridge",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "pure mathematics panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -71,7 +110,20 @@
       "measured": 67.4,
       "error_pct": 0.095551,
       "source_panel": "pure_mathematics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.064401,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -81,7 +133,20 @@
       "measured": 100.0,
       "error_pct": 0.095551,
       "source_panel": "pure_mathematics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.095551,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -91,7 +156,21 @@
       "measured": 67.4,
       "error_pct": 0.095551,
       "source_panel": "pure_mathematics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.064401,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.4778,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -101,7 +180,20 @@
       "measured": 0.811,
       "error_pct": 0.095551,
       "source_panel": "pure_mathematics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.000775,
+        "delta_pct": 0.095561,
+        "effective_error_pct": 0.095561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -111,7 +203,20 @@
       "measured": 0.018003,
       "error_pct": 0.0,
       "record_count": 19,
-      "eval_kind": "tier86_bridge"
+      "eval_kind": "tier86_bridge",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "hybrid fi sim stratum deep panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -121,7 +226,20 @@
       "measured": 154.0,
       "error_pct": 0.018003,
       "source_panel": "hybrid_fi_sim_stratum_deep_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.027724,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -131,7 +249,20 @@
       "measured": 35.479861060568474,
       "error_pct": 0.015311,
       "source_panel": "hybrid_fi_sim_stratum_deep_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00543194,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -141,7 +272,20 @@
       "measured": 0.5196512945807779,
       "error_pct": 0.031506,
       "source_panel": "hybrid_fi_sim_stratum_deep_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00016371,
+        "delta_pct": 0.031503,
+        "effective_error_pct": 0.031503,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -151,7 +295,20 @@
       "measured": 44.625082316243905,
       "error_pct": 0.018003,
       "source_panel": "hybrid_fi_sim_stratum_deep_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Sst interneuron",
+      "scientific_measurement": {
+        "delta": 0.00803368,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -161,7 +318,20 @@
       "measured": 0.040788,
       "error_pct": 0.0,
       "record_count": 130,
-      "eval_kind": "tier86_bridge"
+      "eval_kind": "tier86_bridge",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "culinary fermentation maillard panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -171,7 +341,20 @@
       "measured": 58.44,
       "error_pct": 0.040788,
       "source_panel": "culinary_fermentation_maillard_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "sodium chloride",
+      "scientific_measurement": {
+        "delta": 0.023837,
+        "delta_pct": 0.040789,
+        "effective_error_pct": 0.040789,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -181,7 +364,20 @@
       "measured": 180.16,
       "error_pct": 0.040788,
       "source_panel": "culinary_fermentation_maillard_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "fructose",
+      "scientific_measurement": {
+        "delta": 0.073484,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -191,7 +387,20 @@
       "measured": 342.3,
       "error_pct": 0.040788,
       "source_panel": "culinary_fermentation_maillard_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "maltose",
+      "scientific_measurement": {
+        "delta": 0.139619,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -201,7 +410,20 @@
       "measured": 342.3,
       "error_pct": 0.040788,
       "source_panel": "culinary_fermentation_maillard_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "lactose",
+      "scientific_measurement": {
+        "delta": 0.139619,
+        "delta_pct": 0.040788,
+        "effective_error_pct": 0.040788,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -211,7 +433,20 @@
       "measured": 0.01341,
       "error_pct": 0.0,
       "record_count": 150,
-      "eval_kind": "tier86_bridge"
+      "eval_kind": "tier86_bridge",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "materials species bridge live panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -221,7 +456,20 @@
       "measured": 80.4,
       "error_pct": 0.01341,
       "source_panel": "materials_species_bridge_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.010782,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -231,7 +479,20 @@
       "measured": 80.4047585604223,
       "error_pct": 0.033841,
       "source_panel": "materials_species_bridge_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.02720944,
+        "delta_pct": 0.033841,
+        "effective_error_pct": 0.033841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -241,7 +502,20 @@
       "measured": 0.005918607490409002,
       "error_pct": 0.01341,
       "source_panel": "materials_species_bridge_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 3.9e-07,
+        "delta_pct": 0.006632,
+        "effective_error_pct": 0.006632,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_depth_lab",
@@ -251,7 +525,20 @@
       "measured": 170.0,
       "error_pct": 0.01341,
       "source_panel": "materials_species_bridge_live_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion depth",
+      "display_name": "Fe",
+      "scientific_measurement": {
+        "delta": 0.022798,
+        "delta_pct": 0.013411,
+        "effective_error_pct": 0.013411,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -265,5 +552,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Scientific Expansion Depth Spine",
+  "tier_label": "Tier 86",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.287446+00:00"
 }

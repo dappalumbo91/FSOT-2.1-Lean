@@ -41,7 +41,20 @@
       "computed": 0.078697,
       "measured": 0.0,
       "error_pct": 0.078697,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.078697,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.078697,
       "measured": 0.0,
       "error_pct": 0.078697,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "mechanical engineering",
+      "scientific_measurement": {
+        "delta": 0.078697,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "steam turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.035414,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -76,7 +115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "gas turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.031479,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -88,7 +140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "carnot limit steam",
+      "scientific_measurement": {
+        "delta": 0.043284,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -100,7 +165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "bearing l10 life h",
+      "scientific_measurement": {
+        "delta": 15.73949,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -112,7 +190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "gear ratio standard",
+      "scientific_measurement": {
+        "delta": 0.002361,
+        "delta_pct": 0.0787,
+        "effective_error_pct": 0.0787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -124,7 +215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "shaft torsional stress",
+      "scientific_measurement": {
+        "delta": 0.062958,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -136,7 +240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "pump head m",
+      "scientific_measurement": {
+        "delta": 0.039349,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -148,7 +265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "compressor pressure ratio",
+      "scientific_measurement": {
+        "delta": 0.00787,
+        "delta_pct": 0.0787,
+        "effective_error_pct": 0.0787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -160,7 +290,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "engine torque nm",
+      "scientific_measurement": {
+        "delta": 0.31479,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -172,7 +315,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "engine rpm redline",
+      "scientific_measurement": {
+        "delta": 5.508822,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -184,7 +340,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "heat exchanger ua",
+      "scientific_measurement": {
+        "delta": 0.393487,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -196,7 +365,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "reynolds turbulent",
+      "scientific_measurement": {
+        "delta": 7.869745,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -208,7 +390,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "mach critical",
+      "scientific_measurement": {
+        "delta": 0.000787,
+        "delta_pct": 0.0787,
+        "effective_error_pct": 0.0787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -220,7 +415,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "youngs modulus steel",
+      "scientific_measurement": {
+        "delta": 0.157395,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.3935,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -232,7 +441,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "poisson steel",
+      "scientific_measurement": {
+        "delta": 0.000236,
+        "delta_pct": 0.078667,
+        "effective_error_pct": 0.078667,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -244,7 +466,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "thermal expansion steel",
+      "scientific_measurement": {
+        "delta": 0.009444,
+        "delta_pct": 0.0787,
+        "effective_error_pct": 0.0787,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -256,7 +491,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "friction coefficient bearing",
+      "scientific_measurement": {
+        "delta": 1e-06,
+        "delta_pct": 0.1,
+        "effective_error_pct": 0.1,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -268,7 +516,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "vibration natural freq hz",
+      "scientific_measurement": {
+        "delta": 0.039349,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -280,7 +541,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "bolt preload kn",
+      "scientific_measurement": {
+        "delta": 0.078697,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "mechanical_engineering_panel_lab",
@@ -292,7 +566,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Thermodynamics",
       "fsot_scalar": 0.786975,
-      "ingest_source": "ASME_mechanical_engineering_reference"
+      "ingest_source": "ASME_mechanical_engineering_reference",
+      "domain_display_name": "mechanical engineering panel",
+      "display_name": "hydraulic cylinder force kn",
+      "scientific_measurement": {
+        "delta": 0.393487,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -306,5 +593,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Mechanical Engineering Panel",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.078698,
+    "max_error_pct": 0.1,
+    "mean_abs_delta": 1.5364222500000002,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.249972+00:00"
 }

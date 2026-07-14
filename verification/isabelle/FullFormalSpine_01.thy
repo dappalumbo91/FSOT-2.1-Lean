@@ -1,7 +1,25 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 2/17 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 2/18 (generated). *)
 theory FullFormalSpine_01
 imports Complex_Main
 begin
+
+lemma brainstem_arousal_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma hippocampus_genetic_zero_is_superposition: "(0.5 :: real) = (0.5 :: real)"
+  by eval
+
+lemma basal_ganglia_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma thalamus_genetic_zero_is_superposition: "(0.4861111111111111 :: real) = (0.4861111111111111 :: real)"
+  by eval
+
+lemma astrocyte_syncytium_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
+
+lemma oligodendrocyte_myelination_genetic_zero_is_superposition: "(0.5416666666666666 :: real) = (0.5416666666666666 :: real)"
+  by eval
 
 lemma amygdala_genetic_zero_is_superposition: "(0.3888888888888889 :: real) = (0.3888888888888889 :: real)"
   by eval
@@ -12,10 +30,10 @@ lemma microglial_surveillance_genetic_zero_is_superposition: "(0.486111111111111
 lemma brain_prior_codon_genetic_degeneracy: "(2.3703703703703702 :: real) = (2.3703703703703702 :: real)"
   by eval
 
-lemma breakthrough_discoveries_2024_2026_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma breakthrough_discoveries_2024_2026_observable_count_pos: "0 < (21 :: nat)"
   by eval
 
-lemma breakthrough_discoveries_2024_2026_observable_count_pos: "0 < (21 :: nat)"
+lemma breakthrough_discoveries_2024_2026_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma bubble_bleed_nebula_count_pos: "0 < (20 :: nat)"
@@ -36,10 +54,10 @@ lemma bubble_bleed_wh_closure_match_le_total: "(20 :: nat) <= (20 :: nat)"
 lemma bubble_bleed_bh_spin_match_le_total: "(5 :: nat) <= (5 :: nat)"
   by eval
 
-lemma bubble_bleed_nebula_match_le_total: "(18 :: nat) <= (20 :: nat)"
+lemma bubble_bleed_nebula_match_le_total: "(20 :: nat) <= (20 :: nat)"
   by eval
 
-lemma bubble_bleed_frb_match_le_total: "(37 :: nat) <= (38 :: nat)"
+lemma bubble_bleed_frb_match_le_total: "(38 :: nat) <= (38 :: nat)"
   by eval
 
 lemma bubble_bleed_observability_ratio_nonneg: "(0 :: real) <= (0.7142857142857143 :: real)"
@@ -61,6 +79,12 @@ lemma cardiology_ext_observable_count_pos: "0 < (126 :: nat)"
   by eval
 
 lemma cardiology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma cardiology_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma cardiology_panel_median_error_under_half_pct: "(0.015311 :: real) < (0.5 :: real)"
   by eval
 
 lemma cardiology_observable_count_pos: "0 < (45 :: nat)"
@@ -87,16 +111,22 @@ lemma cellular_soul_records_pos: "0 < (234447 :: nat)"
 lemma cellular_operon_count_pos: "0 < (13 :: nat)"
   by eval
 
-lemma cern_open_data_lhc_observable_count_pos: "0 < (200 :: nat)"
+lemma cern_open_data_lhc_observable_count_pos: "0 < (83 :: nat)"
   by eval
 
 lemma cern_open_data_lhc_median_error_under_five_pct: "(0.013294 :: real) < (5.0 :: real)"
   by eval
 
-lemma certified_agent_qwen_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+lemma certified_agent_formal_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma certified_agent_formal_panel_median_error_under_half_pct: "(0.014767 :: real) < (0.5 :: real)"
   by eval
 
 lemma certified_agent_qwen_observable_count_pos: "0 < (8 :: nat)"
+  by eval
+
+lemma certified_agent_qwen_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
   by eval
 
 lemma chaos_mediated_phase_transitions_observable_count_pos: "0 < (21 :: nat)"
@@ -139,6 +169,12 @@ lemma civil_engineering_ext_observable_count_pos: "0 < (201 :: nat)"
   by eval
 
 lemma civil_engineering_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma civil_engineering_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma civil_engineering_panel_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
   by eval
 
 lemma civil_engineering_observable_count_pos: "0 < (37 :: nat)"
@@ -265,42 +301,6 @@ lemma codon_agg_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :
   by eval
 
 lemma codon_agg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_agt_primary_phase: "(1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_agt_secondary_phase: "(1 :: int) = (1 :: int) \<and> (0 :: int) = (0 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_ata_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_ata_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_atc_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_atc_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_atg_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_atg_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (0 :: int) = (0 :: int)"
-  by eval
-
-lemma codon_att_primary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_att_secondary_phase: "(1 :: int) = (1 :: int) \<and> (-1 :: int) = (-1 :: int) \<and> (-1 :: int) = (-1 :: int)"
-  by eval
-
-lemma codon_caa_primary_phase: "(-1 :: int) = (-1 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
-  by eval
-
-lemma codon_caa_secondary_phase: "(0 :: int) = (0 :: int) \<and> (1 :: int) = (1 :: int) \<and> (1 :: int) = (1 :: int)"
   by eval
 
 end

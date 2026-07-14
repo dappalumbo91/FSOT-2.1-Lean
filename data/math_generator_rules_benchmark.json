@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-09T05:01:32.536854+00:00",
+  "generated_at": "2026-07-13T15:22:09.405854+00:00",
   "source_root": "vendor/math_generator/rules",
-  "rule_corpus_count": 61,
-  "total_rule_count": 1522,
-  "observable_count": 1522,
+  "rule_corpus_count": 62,
+  "total_rule_count": 1552,
+  "observable_count": 1552,
   "corpora": [
     {
       "corpus": "ABSTRACT_ALGEBRA",
@@ -739,6 +739,21 @@
         "PR-003",
         "PR-004",
         "PR-010"
+      ]
+    },
+    {
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "file": "PROGRAMMING_LANGUAGE_RULES.json",
+      "schema_version": "1.1",
+      "knowledge_base": "math-generator",
+      "document_source": "PROGRAMMING_LANGUAGE_LAWS.md",
+      "rule_count": 30,
+      "rule_ids_sample": [
+        "PL-001",
+        "PL-002",
+        "PL-003",
+        "PL-004",
+        "PL-005"
       ]
     },
     {

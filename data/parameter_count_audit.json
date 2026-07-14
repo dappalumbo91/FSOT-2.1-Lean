@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:00:31.026171+00:00",
+  "generated_at": "2026-07-13T04:15:37.280689+00:00",
   "headline_claim": "zero free parameters",
   "audit_verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
   "scalar_input_fields": 24,
@@ -292,9 +292,9 @@
     ]
   },
   "extension_domains": {
-    "extension_domain_count": 246,
+    "extension_domain_count": 329,
     "per_extension_tunable_fields": 3,
-    "total_extension_slots": 738,
+    "total_extension_slots": 987,
     "domains": [
       {
         "domain": "AI_Galactic_Orbital_Bridge",
@@ -307,6 +307,12 @@
         "D_eff": 15,
         "delta_psi": 0.82,
         "recent_hits": 0
+      },
+      {
+        "domain": "Actuarial_Science_Panel",
+        "D_eff": 20,
+        "delta_psi": 1.5,
+        "recent_hits": 3
       },
       {
         "domain": "Adjacent_Rung_Coupling",
@@ -327,6 +333,18 @@
         "recent_hits": 2
       },
       {
+        "domain": "Alternate_Base_Mathematics_Explorer_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      {
+        "domain": "Alternate_Base_Mathematics_Spine",
+        "D_eff": 18,
+        "delta_psi": 0.9,
+        "recent_hits": 1
+      },
+      {
         "domain": "Anthropology",
         "D_eff": 17,
         "delta_psi": 0.7,
@@ -336,6 +354,12 @@
         "domain": "Architecture_Building_Science",
         "D_eff": 16,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Arxiv_Gravitational_Waves_Panel",
+        "D_eff": 21,
+        "delta_psi": 1.0,
         "recent_hits": 2
       },
       {
@@ -399,6 +423,12 @@
         "recent_hits": 1
       },
       {
+        "domain": "CRC_Handbook_Properties",
+        "D_eff": 11,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      {
         "domain": "CVE_Codon_Hole_Falsification",
         "D_eff": 17,
         "delta_psi": 0.88,
@@ -407,6 +437,24 @@
       {
         "domain": "Cardiology",
         "D_eff": 15,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Cardiology_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Cartography_GIS_Panel",
+        "D_eff": 18,
+        "delta_psi": 1.2,
+        "recent_hits": 3
+      },
+      {
+        "domain": "Certified_Agent_Formal_Panel",
+        "D_eff": 14,
         "delta_psi": 0.72,
         "recent_hits": 2
       },
@@ -441,10 +489,22 @@
         "recent_hits": 2
       },
       {
+        "domain": "Civil_Engineering_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      {
         "domain": "Climate_Science",
         "D_eff": 16,
         "delta_psi": 0.75,
         "recent_hits": 3
+      },
+      {
+        "domain": "ClinicalTrials_Medical_Panel",
+        "D_eff": 13,
+        "delta_psi": 0.72,
+        "recent_hits": 2
       },
       {
         "domain": "Clinical_Medicine",
@@ -483,9 +543,21 @@
         "recent_hits": 3
       },
       {
+        "domain": "Complexity_Folding_Emergence_Panel",
+        "D_eff": 21,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      {
         "domain": "Computational_Reasoning",
         "D_eff": 12,
         "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Condensed_Matter_Superconductivity_Depth_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.55,
         "recent_hits": 2
       },
       {
@@ -495,9 +567,27 @@
         "recent_hits": 3
       },
       {
+        "domain": "Consciousness_Expansion_Spine",
+        "D_eff": 19,
+        "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      {
         "domain": "Consciousness_Galactic_Orbital_Bridge",
         "D_eff": 17,
         "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Consciousness_Genetics_Coupling_Panel",
+        "D_eff": 17,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Consciousness_Genetics_Species_Panel",
+        "D_eff": 18,
+        "delta_psi": 1.1,
         "recent_hits": 2
       },
       {
@@ -505,6 +595,12 @@
         "D_eff": 17,
         "delta_psi": 0.92,
         "recent_hits": 3
+      },
+      {
+        "domain": "Consciousness_Species_Multi_Panel",
+        "D_eff": 18,
+        "delta_psi": 1.1,
+        "recent_hits": 2
       },
       {
         "domain": "Cosmology_Anomalies",
@@ -537,6 +633,12 @@
         "recent_hits": 3
       },
       {
+        "domain": "Crossref_Scholarly_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      {
         "domain": "Cryosphere",
         "D_eff": 16,
         "delta_psi": 0.74,
@@ -555,6 +657,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Culinary_Fermentation_Maillard_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      {
         "domain": "Dark_Energy_CPL",
         "D_eff": 24,
         "delta_psi": 0.98,
@@ -565,6 +673,12 @@
         "D_eff": 24,
         "delta_psi": 0.98,
         "recent_hits": 3
+      },
+      {
+        "domain": "Desktop_Application_Wiring_Spine",
+        "D_eff": 16,
+        "delta_psi": 0.85,
+        "recent_hits": 2
       },
       {
         "domain": "Distant_Island_Emergence_Simulation",
@@ -645,6 +759,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Entomology_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      {
         "domain": "Environmental_Engineering",
         "D_eff": 17,
         "delta_psi": 0.78,
@@ -657,9 +777,27 @@
         "recent_hits": 2
       },
       {
+        "domain": "Epidemiology_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Ethology_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.35,
+        "recent_hits": 2
+      },
+      {
         "domain": "Exogeology",
         "D_eff": 20,
         "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Exogeology_Panel",
+        "D_eff": 20,
+        "delta_psi": 0.9,
         "recent_hits": 2
       },
       {
@@ -667,6 +805,12 @@
         "D_eff": 21,
         "delta_psi": 0.85,
         "recent_hits": 2
+      },
+      {
+        "domain": "Experimental_Base_Mathematics_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.95,
+        "recent_hits": 1
       },
       {
         "domain": "External_OSS_Code_Genome",
@@ -699,9 +843,21 @@
         "recent_hits": 2
       },
       {
+        "domain": "Federal_Science_Registry_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
         "domain": "Finance_Markets",
         "D_eff": 19,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Finance_Markets_Panel",
+        "D_eff": 19,
+        "delta_psi": 0.65,
         "recent_hits": 2
       },
       {
@@ -756,6 +912,12 @@
         "domain": "Formula_Precision_Spine",
         "D_eff": 17,
         "delta_psi": 0.88,
+        "recent_hits": 3
+      },
+      {
+        "domain": "Foundational_Ontology_Spine",
+        "D_eff": 22,
+        "delta_psi": 1.0,
         "recent_hits": 3
       },
       {
@@ -849,6 +1011,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Government_Open_Data_Spine",
+        "D_eff": 18,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      {
         "domain": "Grace_Cryosphere",
         "D_eff": 16,
         "delta_psi": 0.76,
@@ -879,6 +1047,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "History_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      {
         "domain": "Hubble_Bubble_Tension",
         "D_eff": 25,
         "delta_psi": 1.0,
@@ -895,6 +1069,12 @@
         "D_eff": 18,
         "delta_psi": 0.93,
         "recent_hits": 3
+      },
+      {
+        "domain": "Hybrid_FI_Sim_Stratum_Deep_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.75,
+        "recent_hits": 2
       },
       {
         "domain": "Hydrology",
@@ -925,6 +1105,12 @@
         "D_eff": 13,
         "delta_psi": 0.45,
         "recent_hits": 1
+      },
+      {
+        "domain": "Immunology_Panel",
+        "D_eff": 13,
+        "delta_psi": 0.45,
+        "recent_hits": 2
       },
       {
         "domain": "Inertial_Confinement_Fusion_Panel",
@@ -993,6 +1179,18 @@
         "recent_hits": 2
       },
       {
+        "domain": "Law_Policy_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Limnology_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      {
         "domain": "Linguistics_Formal",
         "D_eff": 12,
         "delta_psi": 0.55,
@@ -1003,6 +1201,12 @@
         "D_eff": 17,
         "delta_psi": 0.88,
         "recent_hits": 3
+      },
+      {
+        "domain": "Living_FSOT_Hardware_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.7,
+        "recent_hits": 2
       },
       {
         "domain": "Magnetic_Confinement_Fusion_Panel",
@@ -1038,6 +1242,12 @@
         "domain": "Marine_Biology",
         "D_eff": 15,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Marine_Biology_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.5,
         "recent_hits": 2
       },
       {
@@ -1077,6 +1287,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Materials_Species_Bridge_Live_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      {
         "domain": "Math_Generator_Airfoil_RMSE",
         "D_eff": 17,
         "delta_psi": 0.75,
@@ -1107,6 +1323,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Mechanical_Engineering_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      {
         "domain": "Mechanistic_Coupling",
         "D_eff": 17,
         "delta_psi": 0.9,
@@ -1125,6 +1347,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Microtubule_Quantum_Consciousness_Panel",
+        "D_eff": 17,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      {
         "domain": "Music_Harmonics_Public_Panel",
         "D_eff": 10,
         "delta_psi": 0.3,
@@ -1137,10 +1365,34 @@
         "recent_hits": 2
       },
       {
+        "domain": "Mycology_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.35,
+        "recent_hits": 2
+      },
+      {
+        "domain": "NASA_DONKI_Solar_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.82,
+        "recent_hits": 2
+      },
+      {
         "domain": "NASA_Exoplanet_Archive",
         "D_eff": 21,
         "delta_psi": 1.0,
         "recent_hits": 1
+      },
+      {
+        "domain": "NASA_NEO_Feed_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.88,
+        "recent_hits": 2
+      },
+      {
+        "domain": "NCBI_Gene_Public_Panel",
+        "D_eff": 12,
+        "delta_psi": 0.45,
+        "recent_hits": 2
       },
       {
         "domain": "NIST_CODATA_Constants",
@@ -1149,10 +1401,22 @@
         "recent_hits": 1
       },
       {
+        "domain": "NIST_DLMF_Special_Functions",
+        "D_eff": 14,
+        "delta_psi": 0.5,
+        "recent_hits": 1
+      },
+      {
         "domain": "NOAA_Coastal_Tides",
         "D_eff": 17,
         "delta_psi": 0.7,
         "recent_hits": 1
+      },
+      {
+        "domain": "NOAA_NDBC_Buoy_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.78,
+        "recent_hits": 2
       },
       {
         "domain": "Natural_Formation_Element_Simulation",
@@ -1185,6 +1449,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Neuroeconomics_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      {
         "domain": "Neuroimmunology",
         "D_eff": 14,
         "delta_psi": 0.7,
@@ -1209,9 +1479,39 @@
         "recent_hits": 2
       },
       {
+        "domain": "Neuroscience_Connectomics_Depth_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Neutrino_Physics_Panel",
+        "D_eff": 7,
+        "delta_psi": 0.95,
+        "recent_hits": 1
+      },
+      {
+        "domain": "Nothing_Perfection_Friction_Origin_Panel",
+        "D_eff": 22,
+        "delta_psi": 1.15,
+        "recent_hits": 2
+      },
+      {
+        "domain": "OSTI_DOE_Science_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      {
         "domain": "Observer_Channel_Derivation",
         "D_eff": 16,
         "delta_psi": 1.0,
+        "recent_hits": 3
+      },
+      {
+        "domain": "Observer_Effect_Cross_Species_Panel",
+        "D_eff": 16,
+        "delta_psi": 1.15,
         "recent_hits": 3
       },
       {
@@ -1239,9 +1539,33 @@
         "recent_hits": 2
       },
       {
+        "domain": "Open_Meteo_Live_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.72,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Optics_Interferometry_Depth_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.5,
+        "recent_hits": 2
+      },
+      {
         "domain": "Orbital_Mechanics",
         "D_eff": 18,
         "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Overflow_Carry_Emergence_Panel",
+        "D_eff": 19,
+        "delta_psi": 1.1,
+        "recent_hits": 2
+      },
+      {
+        "domain": "PDG_Particle_Properties",
+        "D_eff": 9,
+        "delta_psi": 0.8,
         "recent_hits": 2
       },
       {
@@ -1251,9 +1575,21 @@
         "recent_hits": 2
       },
       {
+        "domain": "Paleoclimate_Panel",
+        "D_eff": 17,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      {
         "domain": "Paleontology",
         "D_eff": 18,
         "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Paleontology_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.85,
         "recent_hits": 2
       },
       {
@@ -1291,6 +1627,12 @@
         "D_eff": 9,
         "delta_psi": 0.95,
         "recent_hits": 3
+      },
+      {
+        "domain": "Petrology_Geochemistry_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.55,
+        "recent_hits": 2
       },
       {
         "domain": "Pharmacokinetics",
@@ -1384,13 +1726,19 @@
       },
       {
         "domain": "PubChem_Live_Deep",
-        "D_eff": 8,
+        "D_eff": 20,
         "delta_psi": 0.5,
-        "recent_hits": 2
+        "recent_hits": 3
       },
       {
         "domain": "PubChem_Stability_Panel",
         "D_eff": 14,
+        "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Public_Verifiable_Spine",
+        "D_eff": 16,
         "delta_psi": 0.8,
         "recent_hits": 2
       },
@@ -1404,6 +1752,18 @@
         "domain": "Pure_Mathematics",
         "D_eff": 18,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Pure_Mathematics_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Quantum_Computing_Math_Depth_Panel",
+        "D_eff": 19,
+        "delta_psi": 0.8,
         "recent_hits": 2
       },
       {
@@ -1431,6 +1791,12 @@
         "recent_hits": 3
       },
       {
+        "domain": "Radio_Astronomy_Panel",
+        "D_eff": 20,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      {
         "domain": "Reality_Folding_Spine",
         "D_eff": 21,
         "delta_psi": 1.0,
@@ -1440,6 +1806,12 @@
         "domain": "Robotics_Control_Systems",
         "D_eff": 14,
         "delta_psi": 0.8,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Robotics_Control_Systems_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.7,
         "recent_hits": 2
       },
       {
@@ -1458,6 +1830,42 @@
         "domain": "SIMBAD_Stellar_Identity_Deep",
         "D_eff": 20,
         "delta_psi": 0.92,
+        "recent_hits": 2
+      },
+      {
+        "domain": "STScI_MAST_Telescope_Panel",
+        "D_eff": 21,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Scientific_Expansion_Depth_Spine",
+        "D_eff": 17,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Scientific_Expansion_Depth_Wave2_Spine",
+        "D_eff": 18,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Scientific_Expansion_Spine",
+        "D_eff": 18,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Scientific_Expansion_Wave2_Spine",
+        "D_eff": 17,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Scientific_Expansion_Wave3_Spine",
+        "D_eff": 17,
+        "delta_psi": 0.85,
         "recent_hits": 2
       },
       {
@@ -1491,6 +1899,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Soil_Science_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.4,
+        "recent_hits": 2
+      },
+      {
         "domain": "Solar_System_Structure_Deep",
         "D_eff": 18,
         "delta_psi": 0.9,
@@ -1512,6 +1926,12 @@
         "domain": "Speleology",
         "D_eff": 16,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Speleology_Panel",
+        "D_eff": 16,
+        "delta_psi": 0.45,
         "recent_hits": 2
       },
       {
@@ -1575,6 +1995,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Supply_Chain_Logistics_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      {
         "domain": "Symbolic_Archetype_Panel",
         "D_eff": 17,
         "delta_psi": 0.75,
@@ -1599,9 +2025,33 @@
         "recent_hits": 2
       },
       {
+        "domain": "The_Well_Outcomes_Verification_Panel",
+        "D_eff": 20,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
+        "domain": "The_Well_Spot_Check_Panel",
+        "D_eff": 18,
+        "delta_psi": 0.85,
+        "recent_hits": 2
+      },
+      {
+        "domain": "The_Well_Verification_Spine",
+        "D_eff": 19,
+        "delta_psi": 0.9,
+        "recent_hits": 2
+      },
+      {
         "domain": "Theory_Completeness_Spine",
         "D_eff": 19,
         "delta_psi": 0.98,
+        "recent_hits": 3
+      },
+      {
+        "domain": "Tier_93_Dual_Wave_Spine",
+        "D_eff": 19,
+        "delta_psi": 1.0,
         "recent_hits": 3
       },
       {
@@ -1641,9 +2091,27 @@
         "recent_hits": 3
       },
       {
+        "domain": "Tokenization_Live_Panel",
+        "D_eff": 13,
+        "delta_psi": 0.6,
+        "recent_hits": 2
+      },
+      {
         "domain": "Tokenization_Smoke",
         "D_eff": 12,
         "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Toxicology_Panel",
+        "D_eff": 13,
+        "delta_psi": 0.45,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Trinary_Hardware_Live_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.65,
         "recent_hits": 2
       },
       {
@@ -1675,6 +2143,12 @@
         "D_eff": 12,
         "delta_psi": 0.8,
         "recent_hits": 2
+      },
+      {
+        "domain": "UAP_War_Gov_Release_Panel",
+        "D_eff": 20,
+        "delta_psi": 0.9,
+        "recent_hits": 3
       },
       {
         "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
@@ -1719,8 +2193,20 @@
         "recent_hits": 2
       },
       {
+        "domain": "Virology_Panel",
+        "D_eff": 14,
+        "delta_psi": 0.55,
+        "recent_hits": 2
+      },
+      {
         "domain": "VizieR_WDS_TAP_Live_Deep",
         "D_eff": 21,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      {
+        "domain": "Volcanology_Panel",
+        "D_eff": 19,
         "delta_psi": 1.0,
         "recent_hits": 2
       },
@@ -1761,6 +2247,12 @@
         "recent_hits": 2
       },
       {
+        "domain": "Zero_Boundary_Not_Entity_Panel",
+        "D_eff": 18,
+        "delta_psi": 1.0,
+        "recent_hits": 2
+      },
+      {
         "domain": "Zero_Day_Risk_Evaluator",
         "D_eff": 18,
         "delta_psi": 0.95,
@@ -1770,6 +2262,12 @@
         "domain": "Zoology",
         "D_eff": 14,
         "delta_psi": 0.7,
+        "recent_hits": 2
+      },
+      {
+        "domain": "iNaturalist_Observation_Panel",
+        "D_eff": 15,
+        "delta_psi": 0.4,
         "recent_hits": 2
       }
     ]
@@ -1857,7 +2355,7 @@
     }
   ],
   "literal_coefficient_count": 16,
-  "empirical_tunable_slot_estimate": 953,
+  "empirical_tunable_slot_estimate": 1202,
   "honest_framing": "FSOT uses a fixed closed-form constant spine (\u03c6, e, \u03c0, \u03b3, \u2026) with deterministic per-domain D_eff / \u03b4\u03c8 / hits assignments \u2014 not a fit-to-data parameter vector, but not literally zero knobs.",
   "what_is_actually_zero_fit": [
     "No per-observable least-squares tuning in the verification pipeline",

@@ -41,7 +41,20 @@
       "computed": 0.015431,
       "measured": 0.0,
       "error_pct": 0.015431,
-      "observable_count": 123
+      "observable_count": 123,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.015431,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.015431,
       "measured": 0.0,
       "error_pct": 0.015431,
-      "observable_count": 122
+      "observable_count": 122,
+      "domain_display_name": "tier gap fill",
+      "display_name": "openneuro full",
+      "scientific_measurement": {
+        "delta": 0.015431,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "error_pct": 0.018003,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362
+      "fsot_scalar": 0.514362,
+      "domain_display_name": "openneuro full panel",
+      "display_name": "openneuro eeg dataset count",
+      "scientific_measurement": {
+        "delta": 0.079932,
+        "delta_pct": 0.018003,
+        "effective_error_pct": 0.018003,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -74,7 +113,20 @@
       "error_pct": 0.018003,
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362
+      "fsot_scalar": 0.514362,
+      "domain_display_name": "openneuro full panel",
+      "display_name": "openneuro mri dataset count",
+      "scientific_measurement": {
+        "delta": 0.010081,
+        "delta_pct": 0.018002,
+        "effective_error_pct": 0.018002,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -86,7 +138,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Perithreshold Tactile detection task with confidence"
+      "dataset_name": "Perithreshold Tactile detection task with confidence",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001785",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -98,7 +163,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG meditation study"
+      "dataset_name": "EEG meditation study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001787",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -110,7 +188,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)"
+      "dataset_name": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001810",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -122,7 +213,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "RS_TMSEEG_Data"
+      "dataset_name": "RS_TMSEEG_Data",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001849",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -134,7 +238,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Audiocue walking study"
+      "dataset_name": "Audiocue walking study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001971",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -146,7 +263,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Real-time EEG feedback on alpha power lateralization leads to behavioral improvements in a covert attention task"
+      "dataset_name": "Real-time EEG feedback on alpha power lateralization leads to behavioral improvements in a covert attention task",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002034",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -158,7 +288,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Single-pulse open-loop TMS-EEG dataset"
+      "dataset_name": "Single-pulse open-loop TMS-EEG dataset",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002094",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -170,7 +313,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Simultaneous eeg-fmri for a speeded discrimination task with confidence"
+      "dataset_name": "Simultaneous eeg-fmri for a speeded discrimination task with confidence",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002158",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -182,7 +338,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "CRYPTO and PROVIDE EEG Baseline Data"
+      "dataset_name": "CRYPTO and PROVIDE EEG Baseline Data",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002181",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -194,7 +363,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Auditory and Visual Rhythm Omission EEG"
+      "dataset_name": "Auditory and Visual Rhythm Omission EEG",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002218",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -206,7 +388,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP1"
+      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP1",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002336",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -218,7 +413,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP2"
+      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP2",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002338",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -230,7 +438,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "P3 study"
+      "dataset_name": "P3 study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002578",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -242,7 +463,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Go-nogo categorization and detection task"
+      "dataset_name": "Go-nogo categorization and detection task",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002680",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -254,7 +488,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Internal attention study"
+      "dataset_name": "Internal attention study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002691",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -266,7 +513,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Face processing EEG dataset for EEGLAB"
+      "dataset_name": "Face processing EEG dataset for EEGLAB",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002718",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -278,7 +538,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "BCItempo"
+      "dataset_name": "BCItempo",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002720",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -290,7 +563,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "filmClips"
+      "dataset_name": "filmClips",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002721",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -302,7 +588,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "phBCMIcalibration"
+      "dataset_name": "phBCMIcalibration",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002722",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -314,7 +613,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "phBCMItesting"
+      "dataset_name": "phBCMItesting",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002723",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -326,7 +638,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "phBCMItraining"
+      "dataset_name": "phBCMItraining",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002724",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -338,7 +663,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "A dataset recording joint EEG-fMRI during affective music listening "
+      "dataset_name": "A dataset recording joint EEG-fMRI during affective music listening ",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002725",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -350,7 +688,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "UC San Diego Resting State EEG Data from Patients with Parkinson's Disease"
+      "dataset_name": "UC San Diego Resting State EEG Data from Patients with Parkinson's Disease",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002778",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -362,7 +713,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "DataSet1"
+      "dataset_name": "DataSet1",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002791",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -374,7 +738,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "TODO: name of the dataset"
+      "dataset_name": "TODO: name of the dataset",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002814",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -386,7 +763,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "DataSet2"
+      "dataset_name": "DataSet2",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002833",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -398,7 +788,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Auditory-Visual Shift Study"
+      "dataset_name": "Auditory-Visual Shift Study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds002893",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -410,7 +813,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Emotion Study"
+      "dataset_name": "Emotion Study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003004",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -422,7 +838,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "free walking study"
+      "dataset_name": "free walking study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003039",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -434,7 +863,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "P300 sound task"
+      "dataset_name": "P300 sound task",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003061",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -446,7 +888,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Assesment of the visual stimuli properties in P300 paradigm"
+      "dataset_name": "Assesment of the visual stimuli properties in P300 paradigm",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003190",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -458,7 +913,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Neuroepo multisession"
+      "dataset_name": "Neuroepo multisession",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003194",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -470,7 +938,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Placebo Neuroepo multisession"
+      "dataset_name": "Placebo Neuroepo multisession",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003195",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -482,7 +963,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Disentangling the percepts of illusory movement and sensory stimulation during tendon vibration in the EEG"
+      "dataset_name": "Disentangling the percepts of illusory movement and sensory stimulation during tendon vibration in the EEG",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003343",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -494,7 +988,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Corticothalamic communication under analgesia, sedation and gradual ischemia: a multimodal model of controlled gradual cerebral ischemia in pig"
+      "dataset_name": "Corticothalamic communication under analgesia, sedation and gradual ischemia: a multimodal model of controlled gradual cerebral ischemia in pig",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003380",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -506,7 +1013,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Dataset 1"
+      "dataset_name": "Dataset 1",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003420",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -518,7 +1038,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Dataset 2"
+      "dataset_name": "Dataset 2",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003421",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -530,7 +1063,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ThreeArmedBandit"
+      "dataset_name": "ThreeArmedBandit",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003458",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -542,7 +1088,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ProbabilisticSelection"
+      "dataset_name": "ProbabilisticSelection",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003474",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -554,7 +1113,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Rest"
+      "dataset_name": "Rest",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003478",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -566,7 +1138,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Rest"
+      "dataset_name": "Rest",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003490",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -578,7 +1163,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes"
+      "dataset_name": "VEPCON: Source imaging of high-density visual evoked potentials with multi-scale brain parcellations and connectomes",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003505",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -590,7 +1188,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ReinforcementLearning"
+      "dataset_name": "ReinforcementLearning",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003506",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -602,7 +1213,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "SimonConflict"
+      "dataset_name": "SimonConflict",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003509",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -614,7 +1238,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Attended speaker paradigm (own name in ignored)"
+      "dataset_name": "Attended speaker paradigm (own name in ignored)",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003516",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -626,7 +1263,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ContinuousVideoGamePlay"
+      "dataset_name": "ContinuousVideoGamePlay",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003517",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -638,7 +1288,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "SimonConflict"
+      "dataset_name": "SimonConflict",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003518",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -650,7 +1313,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "VisualWorkingMemory"
+      "dataset_name": "VisualWorkingMemory",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003519",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -662,7 +1338,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ThreeStimAuditoryOddball"
+      "dataset_name": "ThreeStimAuditoryOddball",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003522",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -674,7 +1363,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "VisualWorkingMemory"
+      "dataset_name": "VisualWorkingMemory",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003523",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -686,7 +1388,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system "
+      "dataset_name": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system ",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003555",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -698,7 +1413,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG: Improvisation and Musical Structures"
+      "dataset_name": "EEG: Improvisation and Musical Structures",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003570",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -710,7 +1438,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Reward biases spontaneous neural reactivation during sleep"
+      "dataset_name": "Reward biases spontaneous neural reactivation during sleep",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003574",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -722,7 +1463,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Childhood Sexual Abuse and problem drinking in women: Neurobehavioral mechanisms"
+      "dataset_name": "Childhood Sexual Abuse and problem drinking in women: Neurobehavioral mechanisms",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003602",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -734,7 +1488,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions"
+      "dataset_name": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003620",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -746,7 +1513,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Inner Speech"
+      "dataset_name": "Inner Speech",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003626",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -758,7 +1538,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG: Electrophysiological biomarkers of behavioral dimensions \nfrom cross-species paradigms"
+      "dataset_name": "EEG: Electrophysiological biomarkers of behavioral dimensions \nfrom cross-species paradigms",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003638",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -770,7 +1563,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Face processing MEEG dataset with HED annotation"
+      "dataset_name": "Face processing MEEG dataset with HED annotation",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003645",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -782,7 +1588,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "VerbalWorkingMemory"
+      "dataset_name": "VerbalWorkingMemory",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003655",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -794,7 +1613,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of transcranial Electrical Stimulation - BIDS"
+      "dataset_name": "Dataset of Concurrent EEG, ECG, and Behavior with Multiple Doses of transcranial Electrical Stimulation - BIDS",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003670",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -806,7 +1638,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG, ECG and pupil data from young and older adults: rest and auditory cued reaction time tasks"
+      "dataset_name": "EEG, ECG and pupil data from young and older adults: rest and auditory cued reaction time tasks",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003690",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -818,7 +1663,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Social Memory cuing"
+      "dataset_name": "Social Memory cuing",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003702",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -830,7 +1688,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "APPLESEED Example Dataset"
+      "dataset_name": "APPLESEED Example Dataset",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003710",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -842,7 +1713,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Perturbed beam-walking task"
+      "dataset_name": "Perturbed beam-walking task",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003739",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -854,7 +1738,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Dataset on Emotion with Naturalistic Stimuli"
+      "dataset_name": "Dataset on Emotion with Naturalistic Stimuli",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003751",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -866,7 +1763,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #2"
+      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #2",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003753",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -878,7 +1788,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "HD-EEG task with mouse tracking"
+      "dataset_name": "HD-EEG task with mouse tracking",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003766",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -890,7 +1813,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Simultaneous EEG and fMRI signals during sleep from humans"
+      "dataset_name": "Simultaneous EEG and fMRI signals during sleep from humans",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003768",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -902,7 +1838,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Music Listening- Genre EEG dataset (MUSIN-G)"
+      "dataset_name": "Music Listening- Genre EEG dataset (MUSIN-G)",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003774",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -914,7 +1863,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "SRM Resting-state EEG"
+      "dataset_name": "SRM Resting-state EEG",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003775",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -926,7 +1888,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Auditory Gamma Entrainment"
+      "dataset_name": "Auditory Gamma Entrainment",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003800",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -938,7 +1913,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Neural Tracking to go"
+      "dataset_name": "Neural Tracking to go",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003801",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -950,7 +1938,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Multisensory Gamma Entrainment"
+      "dataset_name": "Multisensory Gamma Entrainment",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003805",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -962,7 +1963,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Motor Imagery vs Rest - Low-Cost EEG System"
+      "dataset_name": "Motor Imagery vs Rest - Low-Cost EEG System",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003810",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -974,7 +1988,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #1"
+      "dataset_name": "Probabilistic Learning with Affective Feedback: Exp #1",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003822",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -986,7 +2013,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Human electroencephalography recordings from 50 subjects for 22,248 images from 1,854 object concepts"
+      "dataset_name": "Human electroencephalography recordings from 50 subjects for 22,248 images from 1,854 object concepts",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003825",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -998,7 +2038,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "EEG, pupillometry, ECG and photoplethysmography, and behavioral data in the digit span task"
+      "dataset_name": "EEG, pupillometry, ECG and photoplethysmography, and behavioral data in the digit span task",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003838",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1010,7 +2063,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Prediction Error"
+      "dataset_name": "Prediction Error",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003846",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1022,7 +2088,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 2"
+      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 2",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003885",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1034,7 +2113,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 3 "
+      "dataset_name": "Capacity for movement is a major organisational principle in object representations: EEG data from Experiment 3 ",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds003887",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1046,7 +2138,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds001"
+      "dataset_name": "ds001",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000001",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1058,7 +2163,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Classification learning"
+      "dataset_name": "Classification learning",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000002",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1070,7 +2188,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000005"
+      "dataset_name": "ds000005",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000005",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1082,7 +2213,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000006"
+      "dataset_name": "ds000006",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000006",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1094,7 +2238,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000008"
+      "dataset_name": "ds000008",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000008",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1106,7 +2263,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Classification learning and tone-counting"
+      "dataset_name": "Classification learning and tone-counting",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000011",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1118,7 +2288,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Cross-language repetition priming"
+      "dataset_name": "Cross-language repetition priming",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000051",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1130,7 +2313,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000052"
+      "dataset_name": "ds000052",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000052",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1142,7 +2338,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000101"
+      "dataset_name": "ds000101",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000101",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1154,7 +2363,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Visual object recognition"
+      "dataset_name": "Visual object recognition",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000105",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1166,7 +2388,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Word and object processing"
+      "dataset_name": "Word and object processing",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000107",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1178,7 +2413,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Social cognitive tasks (animate movement task, moral judgment task, false belief task)"
+      "dataset_name": "Social cognitive tasks (animate movement task, moral judgment task, false belief task)",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000109",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1190,7 +2438,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000017"
+      "dataset_name": "ds000017",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000017",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1202,7 +2463,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "NKI-sample"
+      "dataset_name": "NKI-sample",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001021",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1214,7 +2488,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "The brain of Chris"
+      "dataset_name": "The brain of Chris",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001037",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1226,7 +2513,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Social predictive coding"
+      "dataset_name": "Social predictive coding",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001105",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1238,7 +2538,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Sherlock_Merlin"
+      "dataset_name": "Sherlock_Merlin",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001110",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1250,7 +2563,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "sherlock"
+      "dataset_name": "sherlock",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001132",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1262,7 +2588,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Twilight Zone Movie Watching Dataset"
+      "dataset_name": "Twilight Zone Movie Watching Dataset",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001145",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1274,7 +2613,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Example MR artifacts"
+      "dataset_name": "Example MR artifacts",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001178",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1286,7 +2638,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "State representation pictures"
+      "dataset_name": "State representation pictures",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001218",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1298,7 +2663,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "BTC_preop"
+      "dataset_name": "BTC_preop",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001226",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1310,7 +2688,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Decoding intentions of self and others"
+      "dataset_name": "Decoding intentions of self and others",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001228",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1322,7 +2713,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Competition between items in working memory leads to forgetting"
+      "dataset_name": "Competition between items in working memory leads to forgetting",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001232",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1334,7 +2738,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "singleFingerRSA"
+      "dataset_name": "singleFingerRSA",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001233",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1346,7 +2763,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Human-Object Interaction"
+      "dataset_name": "Human-Object Interaction",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001235",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1358,7 +2788,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Unnamed Dataset"
+      "dataset_name": "Unnamed Dataset",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001241",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1370,7 +2813,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Generic Object Decoding"
+      "dataset_name": "Generic Object Decoding",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001246",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1382,7 +2838,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "sports_betting_study"
+      "dataset_name": "sports_betting_study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001247",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1394,7 +2863,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Personally familiar faces"
+      "dataset_name": "Personally familiar faces",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001297",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1406,7 +2888,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Inverse Base Rate"
+      "dataset_name": "Inverse Base Rate",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds001302",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1418,7 +2913,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000208_R1.0.0"
+      "dataset_name": "ds000208_R1.0.0",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000208",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1430,7 +2938,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Modafinil alters intrinsic functional connectivity of the right posterior insula: a pharmacological resting state fMRI study"
+      "dataset_name": "Modafinil alters intrinsic functional connectivity of the right posterior insula: a pharmacological resting state fMRI study",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000133",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1442,7 +2963,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000217_R1.0.1"
+      "dataset_name": "ds000217_R1.0.1",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000217",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1454,7 +2988,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000248"
+      "dataset_name": "ds000248",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000248",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1466,7 +3013,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000138_R2.0.0"
+      "dataset_name": "ds000138_R2.0.0",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000138",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1478,7 +3038,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Adjudicating between face-coding models with individual-face fMRI responses"
+      "dataset_name": "Adjudicating between face-coding models with individual-face fMRI responses",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000232",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1490,7 +3063,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000256_R1.0.0"
+      "dataset_name": "ds000256_R1.0.0",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000256",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1502,7 +3088,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "ds000236"
+      "dataset_name": "ds000236",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000236",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1514,7 +3113,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "dataset_name": "Auditory and Visual Oddball EEG-fMRI"
+      "dataset_name": "Auditory and Visual Oddball EEG-fMRI",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "ds000116",
+      "scientific_measurement": {
+        "delta": 0.000154,
+        "delta_pct": 0.0154,
+        "effective_error_pct": 0.0154,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "openneuro_full_panel_lab",
@@ -1523,7 +3135,20 @@
       "computed": 0.514362,
       "measured": 0.514362,
       "error_pct": 0.0,
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "openneuro full panel",
+      "display_name": "fsot Neuroscience",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1537,5 +3162,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "OpenNeuro Full Panel",
+  "tier_label": "Tier 68 \u2014 Materials Project Live Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 120,
+    "median_error_pct": 0.0154,
+    "max_error_pct": 0.0154,
+    "mean_abs_delta": 0.00015399999999999998,
+    "precision_tier_counts": {
+      "green": 120
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.716022+00:00"
 }

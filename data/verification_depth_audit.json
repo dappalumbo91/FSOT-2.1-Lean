@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-07-12T14:56:09.988555+00:00",
+  "generated_at": "2026-07-13T17:27:00.477192+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
-    "extension_domains_all_green": true,
-    "aspiration_scalar_debt_cleared": true,
-    "core_benchmarks_all_green": true,
-    "core_benchmark_fail_count": 0,
+    "extension_domains_all_green": false,
+    "aspiration_scalar_debt_cleared": false,
+    "core_benchmarks_all_green": false,
+    "core_benchmark_fail_count": 2,
     "transcendental_certificates_ok": true,
     "export_gap_closed": true,
     "export_fraction_pct": 100.0,
     "no_proof_certificate_module_count": 0,
-    "undeniable_toe_claim": true,
-    "honest_assessment": "Strong numeric literal triangulation across Lean/Coq/Isabelle/Python/Rust for exported obligations. Literature-aware aspiration debt cleared at 0 domains. NOT full-depth independent proof of entire FSOT theory in all four provers. Stumped observables tracked in scientific_pushback_audit.json."
+    "undeniable_toe_claim": false,
+    "honest_assessment": "Strong numeric literal triangulation across Lean/Coq/Isabelle/Python/Rust for exported obligations. Literature-aware aspiration debt cleared at 1 domains. NOT full-depth independent proof of entire FSOT theory in all four provers. Stumped observables tracked in scientific_pushback_audit.json."
   },
   "prover_coverage": {
     "lean_4": {
       "role": "primary authority",
       "connective_obligations": 24,
-      "full_formal_obligations": 2073,
+      "full_formal_obligations": 2274,
       "transcendental_lemmas": 68,
-      "lean_theorem_count_estimate": 2073,
+      "lean_theorem_count_estimate": 2274,
       "export_fraction_pct": 100.0,
       "proof_style": "norm_num / decide / linarith certificates"
     },
     "coq": {
       "status": "passed",
-      "chunks_passed": 22,
+      "chunks_passed": 23,
       "coverage": "numeric literal replay of exported obligations",
       "axiom_debt": "coq_native_isabelle_native_intervals"
     },
     "isabelle": {
       "status": "passed",
-      "provable_obligations": 2019,
+      "provable_obligations": 2207,
       "coverage": "numeric literal replay of exported obligations"
     },
     "rust_f64_replay": {
       "status": "passed",
-      "obligation_count": 1752,
+      "obligation_count": 1873,
       "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
     },
     "fstar": {
@@ -116,28 +116,44 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "0 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "3 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
-      "closed": true,
+      "closed": false,
       "monitored": true
     }
   ],
   "extension_precision": {
-    "domain_count": 274,
-    "green_count": 274,
-    "failing_domains": [],
-    "aspiration_scalar_debt_count": 0
+    "domain_count": 340,
+    "green_count": 339,
+    "failing_domains": [
+      {
+        "domain": "Geomagnetism",
+        "display_name": "Geomagnetism",
+        "tier": 21,
+        "classifier_accuracy_pct": null,
+        "max_scalar_error_pct": 100.0,
+        "max_effective_scalar_error_pct": 100.0,
+        "median_error_pct": 0.0,
+        "green_gate_pass": false,
+        "matches_domain_spine": false,
+        "precision_tier_counts": {
+          "green": 413,
+          "red": 111
+        }
+      }
+    ],
+    "aspiration_scalar_debt_count": 1
   },
   "scientific_pushback_audit": {
-    "extension_domain_count": 274,
-    "green_gate_pass_count": 274,
-    "green_gate_fail_count": 0,
+    "extension_domain_count": 340,
+    "green_gate_pass_count": 339,
+    "green_gate_fail_count": 1,
     "aspiration_scalar_debt_count": 0,
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
     "domains_missing_uncertainty_metadata": 0,
-    "domains_raw_eff_divergence": 0
+    "domains_raw_eff_divergence": 1
   },
   "pushback_avenues": [
     {
@@ -261,5 +277,14 @@
     "Propagate display_label to all benchmark exports and obligation JSON",
     "Attach scientific_measurement envelope (\u03c3, \u0394) to every scalar record"
   ],
-  "open_gaps": []
+  "open_gaps": [
+    {
+      "id": "tier_scalar_aspiration",
+      "severity": "info",
+      "description": "3 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
+      "closed": false,
+      "monitored": true
+    }
+  ]
 }

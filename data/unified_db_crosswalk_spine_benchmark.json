@@ -42,7 +42,20 @@
       "computed": 0.002092,
       "measured": 0.0,
       "error_pct": 0.0020923899350648867,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002092,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Unified DB Crosswalk Spine depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -478,7 +504,7 @@
       "error_pct": 0.0,
       "record_count": 8,
       "eval_kind": "aggregate_bridge",
-      "domain_display_name": "unified db crosswalk",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "fsot aggregate unified db",
       "scientific_measurement": {
         "delta": 0.0,
@@ -503,7 +529,7 @@
       "error_pct": 0.0,
       "source_panel": "Unified_DB_Candidate_Crosswalk",
       "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "fsot aggregate unified db",
       "scientific_measurement": {
         "delta": 0.0,
@@ -527,7 +553,7 @@
       "error_pct": 0.0,
       "source_panel": "Unified_DB_Candidate_Crosswalk",
       "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "fsot aggregate unified db",
       "scientific_measurement": {
         "delta": 0.0,
@@ -551,7 +577,7 @@
       "error_pct": 0.0,
       "source_panel": "Unified_DB_Candidate_Crosswalk",
       "eval_kind": "candidate_relay",
-      "domain_display_name": "unified db crosswalk",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "fsot aggregate unified db",
       "scientific_measurement": {
         "delta": 0.0,
@@ -575,7 +601,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -603,7 +629,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "unified db crosswalk spine depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -632,5 +658,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Unified DB Crosswalk Spine",
+  "tier_label": "Tier 69 \u2014 Unified DB Candidate Crosswalk + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.004185,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.033493275,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.731806+00:00"
 }

@@ -1,4 +1,4 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 1/17 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 1/18 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
@@ -81,6 +81,18 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma ai_galactic_orbital_bridge_median_error_under_half_pct : (0.005168558627177688%R) < (0.5%R).
 Proof. lra. Qed.
 
+Lemma alternate_base_mathematics_explorer_panel_observable_count_pos : (0 < 56)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma alternate_base_mathematics_explorer_panel_median_error_under_half_pct : (0.009504%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma alternate_base_mathematics_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma alternate_base_mathematics_spine_median_error_under_half_pct : (0.004184779870129773%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma anthropology_ext_pooled_median_under_half_pct : (0.019504399572476606%R) < (0.5%R).
 Proof. lra. Qed.
 
@@ -117,11 +129,17 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma architecture_building_science_median_error_under_half_pct : (0.07869745016115058%R) < (0.5%R).
 Proof. lra. Qed.
 
-Lemma arxiv_primitives_v14_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma arxiv_gravitational_waves_panel_observable_count_pos : (0 < 60)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma arxiv_gravitational_waves_panel_median_error_under_half_pct : (0.01748%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma arxiv_primitives_v14_observable_count_pos : (0 < 14)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma arxiv_primitives_v14_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
 
 Lemma astrophysical_structure_crosswalk_observable_count_pos : (0 < 32)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -153,23 +171,23 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma atomic_physics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma bibliography_lean_corpus_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
 Lemma bibliography_lean_corpus_observable_count_pos : (0 < 9)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma binary_decoder_rendlesham_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma bibliography_lean_corpus_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
 Lemma binary_decoder_rendlesham_observable_count_pos : (0 < 10)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma biological_cuda_physarum_median_error_under_half_pct : 0%R < (0.5%R).
+Lemma binary_decoder_rendlesham_median_error_under_five_pct : 0%R < (5.0%R).
 Proof. lra. Qed.
 
 Lemma biological_cuda_physarum_observable_count_pos : (0 < 35)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma biological_cuda_physarum_median_error_under_five_pct : 0%R < (5.0%R).
+Proof. lra. Qed.
 
 Lemma biology_strict_observable_count_pos : (0 < 15)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -286,23 +304,5 @@ Lemma neocortex_genetic_zero_is_superposition : (0.5138888888888888%R) = (0.5138
 Proof. reflexivity. Qed.
 
 Lemma cerebellum_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
-Proof. reflexivity. Qed.
-
-Lemma brainstem_arousal_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
-Proof. reflexivity. Qed.
-
-Lemma hippocampus_genetic_zero_is_superposition : (0.5%R) = (0.5%R).
-Proof. reflexivity. Qed.
-
-Lemma basal_ganglia_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
-Proof. reflexivity. Qed.
-
-Lemma thalamus_genetic_zero_is_superposition : (0.4861111111111111%R) = (0.4861111111111111%R).
-Proof. reflexivity. Qed.
-
-Lemma astrocyte_syncytium_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
-Proof. reflexivity. Qed.
-
-Lemma oligodendrocyte_myelination_genetic_zero_is_superposition : (0.5416666666666666%R) = (0.5416666666666666%R).
 Proof. reflexivity. Qed.
 

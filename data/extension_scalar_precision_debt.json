@@ -1,11 +1,36 @@
 {
-  "generated_at": "2026-07-12T17:46:23.418182+00:00",
+  "generated_at": "2026-07-13T15:59:49.551156+00:00",
   "aspiration_max_scalar_error_pct": 0.5,
   "hard_max_scalar_error_pct": 2.0,
   "tolerable_max_scalar_error_pct": 5.0,
-  "aspiration_debt_count": 0,
-  "unacceptable_scalar_count": 0,
-  "aspiration_debt": [],
-  "unacceptable_scalar_debt": [],
+  "aspiration_debt_count": 1,
+  "unacceptable_scalar_count": 1,
+  "aspiration_debt": [
+    {
+      "domain": "Geomagnetism",
+      "max_scalar_error_pct": 100.0,
+      "max_effective_scalar_error_pct": 100.0,
+      "property": "hp_storm_classifier",
+      "effective_property": "hp_storm_classifier",
+      "pooled_median_error_pct": 0.0,
+      "rounding_ghost_scalar_count": 0,
+      "catalog_crosswalk_scalar_count": 0,
+      "debt_kind": "formula_gap"
+    }
+  ],
+  "unacceptable_scalar_debt": [
+    {
+      "domain": "Geomagnetism",
+      "max_scalar_error_pct": 100.0,
+      "max_effective_scalar_error_pct": 100.0,
+      "property": "hp_storm_classifier",
+      "effective_property": "hp_storm_classifier",
+      "pooled_median_error_pct": 0.0,
+      "rounding_ghost_scalar_count": 0,
+      "catalog_crosswalk_scalar_count": 0,
+      "debt_kind": "formula_gap",
+      "severity": "unacceptable"
+    }
+  ],
   "note": "Pooled median \u22640.5% is the hard pass gate. Aspiration debt uses literature-aware effective error (display-precision \u00b1\u00bd LSD or stated \u03c3 when known). max_scalar_error_pct is the raw float comparison; max_effective_scalar_error_pct is the scientifically fair gate."
 }

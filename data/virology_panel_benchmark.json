@@ -41,7 +41,20 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.022236,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.022236,
       "measured": 0.0,
       "error_pct": 0.022236,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Virology Panel depth",
+      "scientific_measurement": {
+        "delta": 0.022236,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "SARS-CoV-2",
+      "scientific_measurement": {
+        "delta": 6.640189,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -76,7 +115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Influenza A virus",
+      "scientific_measurement": {
+        "delta": 0.313531,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -88,7 +140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Hepatitis B virus",
+      "scientific_measurement": {
+        "delta": 0.708225,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -100,7 +165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Hepatitis C virus",
+      "scientific_measurement": {
+        "delta": 0.066709,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -112,7 +190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Human immunodeficiency virus 1",
+      "scientific_measurement": {
+        "delta": 0.128748,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -124,7 +215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Zika virus",
+      "scientific_measurement": {
+        "delta": 2.284108,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -136,7 +240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Ebola virus",
+      "scientific_measurement": {
+        "delta": 0.456065,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_lab",
@@ -148,7 +265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biology",
       "fsot_scalar": 0.444725,
-      "ingest_source": "ncbi_nuccore_virus"
+      "ingest_source": "ncbi_nuccore_virus",
+      "domain_display_name": "virology panel",
+      "display_name": "Respiratory syncytial virus",
+      "scientific_measurement": {
+        "delta": 0.135419,
+        "delta_pct": 0.022236,
+        "effective_error_pct": 0.022236,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -158,7 +288,7 @@
       "measured": 50.5289,
       "error_pct": 0.02223625038519357,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "virology panel depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": 0.011236,
@@ -183,7 +313,7 @@
       "measured": -3.6084,
       "error_pct": 0.017789000308148954,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "virology panel depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": -0.000642,
@@ -213,7 +343,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "virology panel depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -228,7 +371,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "virology panel depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -243,7 +399,20 @@
       "formula": "C13H18O2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "virology panel depth",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "effective_error_pct": 0.002424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -258,7 +427,20 @@
       "formula": "C14H11Cl2NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "virology panel depth",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "effective_error_pct": 0.015873,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -272,7 +454,20 @@
       "fsot_scalar": 0.306221,
       "ingest_source": "clinicaltrials_gov_live",
       "source_panel": "ClinicalTrials_Medical_Panel",
-      "depth_relay_from": "ClinicalTrials_Medical_Panel"
+      "depth_relay_from": "ClinicalTrials_Medical_Panel",
+      "domain_display_name": "virology panel depth",
+      "display_name": "NCT00830635",
+      "scientific_measurement": {
+        "delta": 0.440959,
+        "delta_pct": 0.024498,
+        "effective_error_pct": 0.024498,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -286,7 +481,20 @@
       "fsot_scalar": 0.306221,
       "ingest_source": "clinicaltrials_gov_live",
       "source_panel": "ClinicalTrials_Medical_Panel",
-      "depth_relay_from": "ClinicalTrials_Medical_Panel"
+      "depth_relay_from": "ClinicalTrials_Medical_Panel",
+      "domain_display_name": "virology panel depth",
+      "display_name": "NCT00830635",
+      "scientific_measurement": {
+        "delta": 0.000214,
+        "delta_pct": 0.0214,
+        "effective_error_pct": 0.0214,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -300,7 +508,20 @@
       "fsot_scalar": 0.306221,
       "ingest_source": "clinicaltrials_gov_live",
       "source_panel": "ClinicalTrials_Medical_Panel",
-      "depth_relay_from": "ClinicalTrials_Medical_Panel"
+      "depth_relay_from": "ClinicalTrials_Medical_Panel",
+      "domain_display_name": "virology panel depth",
+      "display_name": "NCT06798935",
+      "scientific_measurement": {
+        "delta": 0.005145,
+        "delta_pct": 0.0245,
+        "effective_error_pct": 0.0245,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -314,7 +535,20 @@
       "fsot_scalar": 0.306221,
       "ingest_source": "clinicaltrials_gov_live",
       "source_panel": "ClinicalTrials_Medical_Panel",
-      "depth_relay_from": "ClinicalTrials_Medical_Panel"
+      "depth_relay_from": "ClinicalTrials_Medical_Panel",
+      "domain_display_name": "virology panel depth",
+      "display_name": "NCT06798935",
+      "scientific_measurement": {
+        "delta": 0.000214,
+        "delta_pct": 0.0214,
+        "effective_error_pct": 0.0214,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -328,7 +562,20 @@
       "fsot_scalar": -0.377159,
       "ingest_source": "usgs_nwis_limnology",
       "source_panel": "Limnology_Panel",
-      "depth_relay_from": "Limnology_Panel"
+      "depth_relay_from": "Limnology_Panel",
+      "domain_display_name": "virology panel depth",
+      "display_name": "red river",
+      "scientific_measurement": {
+        "delta": 0.008388,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "virology_panel_depth_lab",
@@ -341,7 +588,7 @@
       "section": "metals",
       "formula": "e+\u03c6+POOF",
       "formula_branch": "term1.term1_base",
-      "domain_display_name": "phi morphogenetic",
+      "domain_display_name": "virology panel depth",
       "display_name": "Fe",
       "scientific_measurement": {
         "delta": -0.01020197,
@@ -369,7 +616,7 @@
       "section": "metals",
       "formula": "(((3)^2)^2-(\u03c6/e))",
       "formula_branch": "term1.term1_base",
-      "domain_display_name": "phi morphogenetic",
+      "domain_display_name": "virology panel depth",
       "display_name": "Fe",
       "scientific_measurement": {
         "delta": 0.00475856,
@@ -397,7 +644,7 @@
       "section": "metals",
       "formula": "PHI\u2075+E",
       "formula_branch": "term1.term1_base",
-      "domain_display_name": "phi morphogenetic",
+      "domain_display_name": "virology panel depth",
       "display_name": "Fe",
       "scientific_measurement": {
         "delta": -0.00154823,
@@ -425,7 +672,7 @@
       "section": "metals",
       "formula": "PHI\u00b9\u2070+PHI\u2078",
       "formula_branch": "term1.term1_base",
-      "domain_display_name": "phi morphogenetic",
+      "domain_display_name": "virology panel depth",
       "display_name": "Fe",
       "scientific_measurement": {
         "delta": -0.02941686,
@@ -450,7 +697,7 @@
       "measured": 5.0,
       "error_pct": 0.04593318440797134,
       "source": "pk_reference",
-      "domain_display_name": "pharmacokinetics",
+      "domain_display_name": "virology panel depth",
       "display_name": "caffeine",
       "scientific_measurement": {
         "delta": 0.002297,
@@ -479,5 +726,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Virology Panel",
+  "tier_label": "Rust f64 obligation replay",
+  "scientific_precision_summary": {
+    "scalar_count": 16,
+    "median_error_pct": 0.022236,
+    "max_error_pct": 0.22671,
+    "mean_abs_delta": 0.6750926637500001,
+    "precision_tier_counts": {
+      "green": 16
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.208227+00:00"
 }

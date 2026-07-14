@@ -1,0 +1,26 @@
+{
+  "id": "damianpalumbo/fsot-biohub-v47-fastsubmit",
+  "id_no": 126693304,
+  "title": "fsot-biohub-v47-fastsubmit",
+  "code_file": "fsot-biohub-v47-fastsubmit.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "thibautgoldsborough/cellmot-baseline-artifacts",
+    "aashishnegi23/cellmot-ft-detector-biohub",
+    "damianpalumbo/fsot-nn-cellpose-weights",
+    "damianpalumbo/fsot-offline-dependencies"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

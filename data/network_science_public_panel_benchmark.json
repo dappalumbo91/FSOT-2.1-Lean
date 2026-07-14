@@ -41,7 +41,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Network Science Public Panel depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -295,7 +321,20 @@
       "fsot_scalar": 0.89846,
       "ingest_source": "Gaia_DR3_TAP_live",
       "source_panel": "Gaia_DR3_TAP_Deep",
-      "depth_relay_from": "Gaia_DR3_TAP_Deep"
+      "depth_relay_from": "Gaia_DR3_TAP_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "1014058103758571520",
+      "scientific_measurement": {
+        "delta": 0.0152737,
+        "delta_pct": 0.022461,
+        "effective_error_pct": 0.022461,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_science_public_panel_depth_lab",
@@ -309,7 +348,20 @@
       "fsot_scalar": 0.89846,
       "ingest_source": "Gaia_DR3_TAP_live",
       "source_panel": "Gaia_DR3_TAP_Deep",
-      "depth_relay_from": "Gaia_DR3_TAP_Deep"
+      "depth_relay_from": "Gaia_DR3_TAP_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "1014058103758571520",
+      "scientific_measurement": {
+        "delta": 0.109874,
+        "delta_pct": 0.022462,
+        "effective_error_pct": 0.022462,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_science_public_panel_depth_lab",
@@ -323,7 +375,20 @@
       "fsot_scalar": 0.89846,
       "ingest_source": "Gaia_DR3_TAP_live",
       "source_panel": "Gaia_DR3_TAP_Deep",
-      "depth_relay_from": "Gaia_DR3_TAP_Deep"
+      "depth_relay_from": "Gaia_DR3_TAP_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "1014058103758571520",
+      "scientific_measurement": {
+        "delta": 0.000561,
+        "delta_pct": 0.017975,
+        "effective_error_pct": 0.017975,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_science_public_panel_depth_lab",
@@ -337,7 +402,20 @@
       "fsot_scalar": 0.89846,
       "ingest_source": "Gaia_DR3_TAP_live",
       "source_panel": "Gaia_DR3_TAP_Deep",
-      "depth_relay_from": "Gaia_DR3_TAP_Deep"
+      "depth_relay_from": "Gaia_DR3_TAP_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "1014058103758571520",
+      "scientific_measurement": {
+        "delta": 9.085e-05,
+        "delta_pct": 0.017898,
+        "effective_error_pct": 0.017898,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_science_public_panel_depth_lab",
@@ -347,7 +425,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "vendor/fsot_compute.py",
-      "domain_display_name": "portable clone verify",
+      "domain_display_name": "network science public panel depth",
       "display_name": "fsot compute",
       "scientific_measurement": {
         "delta": 0.0,
@@ -372,7 +450,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
-      "domain_display_name": "portable clone verify",
+      "domain_display_name": "network science public panel depth",
       "display_name": "smiles dataset",
       "scientific_measurement": {
         "delta": 0.0,
@@ -397,7 +475,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "vendor/evolution/biological_mt_operons.json",
-      "domain_display_name": "portable clone verify",
+      "domain_display_name": "network science public panel depth",
       "display_name": "evolution operons",
       "scientific_measurement": {
         "delta": 0.0,
@@ -422,7 +500,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv",
-      "domain_display_name": "portable clone verify",
+      "domain_display_name": "network science public panel depth",
       "display_name": "linguistics targets",
       "scientific_measurement": {
         "delta": 0.0,
@@ -458,7 +536,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "network science public panel depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -496,7 +574,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "network science public panel depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -534,7 +612,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "network science public panel depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -571,7 +649,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "network science public panel depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -601,7 +679,20 @@
       "otype": "**",
       "ingest_source": "SIMBAD_TAP_live",
       "source_panel": "SIMBAD_Stellar_Identity_Deep",
-      "depth_relay_from": "SIMBAD_Stellar_Identity_Deep"
+      "depth_relay_from": "SIMBAD_Stellar_Identity_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "* 24 Psc",
+      "scientific_measurement": {
+        "delta": 0.001379,
+        "delta_pct": 0.022454,
+        "effective_error_pct": 0.022454,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "network_science_public_panel_depth_lab",
@@ -616,7 +707,20 @@
       "otype": "**",
       "ingest_source": "SIMBAD_TAP_live",
       "source_panel": "SIMBAD_Stellar_Identity_Deep",
-      "depth_relay_from": "SIMBAD_Stellar_Identity_Deep"
+      "depth_relay_from": "SIMBAD_Stellar_Identity_Deep",
+      "domain_display_name": "network science public panel depth",
+      "display_name": "* 24 Psc",
+      "scientific_measurement": {
+        "delta": 0.01935529,
+        "delta_pct": 0.022461,
+        "effective_error_pct": 0.022461,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -630,5 +734,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Network Science Public Panel",
+  "tier_label": "Tier 64 \u2014 Information Theory Public Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 23,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0314,
+    "mean_abs_delta": 0.0064192973913043475,
+    "precision_tier_counts": {
+      "green": 23
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.446769+00:00"
 }

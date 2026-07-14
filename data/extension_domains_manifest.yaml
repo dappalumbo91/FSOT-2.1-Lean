@@ -4407,6 +4407,173 @@ extension_domains:
     lean_module: FSOT.Formal.Tier93DualWaveSpinePriors
     note: "Tier 93 dual wave spine — consciousness genetics + experimental base mathematics"
 
+  Longevity_AnAge_Catalog_Panel:
+    tier: 94
+    D_eff: 20
+    delta_psi: 1.05
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, neural, consciousness]
+    formula_branch_override: term1.growth_term
+    external_cache_root: I:/FSOT-Physical-Archive/04_Genetics-Longevity
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_anage_catalog_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityAnAgeCatalogPanelPriors
+    note: "Full AnAge HAGR catalog — maximum longevity, metabolic rate, longevity quotient"
+
+  Longevity_Genetic_Mechanics_Panel:
+    tier: 94
+    D_eff: 19
+    delta_psi: 1.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, neural]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_genetic_mechanics_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityGeneticMechanicsPanelPriors
+    note: "IMR/MRDT genetic repair proxies and lifespan mortality resistance"
+
+  Longevity_Extreme_Species_Panel:
+    tier: 94
+    D_eff: 21
+    delta_psi: 1.15
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, consciousness, genetics]
+    formula_branch_override: term1.perceived_adjust
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_extreme_species_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityExtremeSpeciesPanelPriors
+    note: "Extreme long-lived species — NCBI genome crosswalk + consciousness panel overlap"
+
+  Longevity_MegaDeep_NCBI_Panel:
+    tier: 94
+    D_eff: 23
+    delta_psi: 1.2
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, consciousness]
+    formula_branch_override: term1.growth_term
+    external_cache_root: I:/FSOT-Physical-Archive/04_Genetics-Longevity
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_megadeep_ncbi_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityMegaDeepNcbiPanelPriors
+    note: "Mega-deep NCBI crosswalk — all AnAge extreme long-livers with genome assemblies"
+
+  Longevity_Telomere_Repair_Panel:
+    tier: 94
+    D_eff: 20
+    delta_psi: 1.08
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, neural]
+    formula_branch_override: term1.quirkMod
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_telomere_repair_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityTelomereRepairPanelPriors
+    note: "Telomere length, telomerase, DNA repair, cancer resistance pathway proxies"
+
+  Longevity_Consciousness_Coupling_Panel:
+    tier: 94
+    D_eff: 24
+    delta_psi: 1.18
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, biological, genetics, neural]
+    formula_branch_override: term1.perceived_adjust
+    external_cache_root: I:/FSOT-Physical-Archive/04_Genetics-Longevity
+    ingest_script: scripts/ingest_tier94_longevity_genetics.py
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/longevity_consciousness_coupling_panel_benchmark.json
+    lean_module: FSOT.Formal.LongevityConsciousnessCouplingPanelPriors
+    note: "Longevity quotient × brain energy fraction × log10(genome) consciousness coupling"
+
+  Tier_94_Longevity_Spine:
+    tier: 94
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [biological, consciousness, genetics, neural]
+    build_script: scripts/build_tier94_longevity_genetics_benchmarks.py
+    manifest: data/tier94_longevity_genetics_manifest.yaml
+    benchmark_data: data/tier_94_longevity_spine_benchmark.json
+    lean_module: FSOT.Formal.Tier94LongevitySpinePriors
+    note: "Tier 94 longevity genetics spine — AnAge + mechanics + extreme + megadeep + telomere + coupling"
+
+  Zebrafish_Cell_Tracking_Panel:
+    tier: 95
+    D_eff: 20
+    delta_psi: 1.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, neural]
+    formula_branch_override: term1.growth_term
+    external_cache_root: I:/FSOT-Physical-Archive/05_Zebrahub-Development
+    ingest_script: scripts/ingest_tier95_zebrahub_development.py
+    build_script: scripts/build_tier95_zebrahub_development_benchmarks.py
+    manifest: data/tier95_zebrahub_development_manifest.yaml
+    benchmark_data: data/zebrafish_cell_tracking_panel_benchmark.json
+    lean_module: FSOT.Formal.ZebrafishCellTrackingPanelPriors
+    note: "Zebrahub 3D+time Ultrack cell lineage — CZ Biohub public zebrafish developmental atlas"
+
+  Zebrafish_Developmental_Mechanics_Panel:
+    tier: 95
+    D_eff: 21
+    delta_psi: 1.12
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, neural]
+    formula_branch_override: term1.quirkMod
+    external_cache_root: I:/FSOT-Physical-Archive/05_Zebrahub-Development
+    ingest_script: scripts/ingest_tier95_zebrahub_development.py
+    build_script: scripts/build_tier95_zebrahub_development_benchmarks.py
+    manifest: data/tier95_zebrahub_development_manifest.yaml
+    benchmark_data: data/zebrafish_developmental_mechanics_panel_benchmark.json
+    lean_module: FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors
+    note: "Division rate, lineage stability, displacement — GPU imaging samples when available"
+
+  Zebrafish_Longevity_Genetics_Coupling_Panel:
+    tier: 95
+    D_eff: 22
+    delta_psi: 1.15
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, genetics, consciousness]
+    formula_branch_override: term1.perceived_adjust
+    external_cache_root: I:/FSOT-Physical-Archive/05_Zebrahub-Development
+    ingest_script: scripts/ingest_tier95_zebrahub_development.py
+    build_script: scripts/build_tier95_zebrahub_development_benchmarks.py
+    manifest: data/tier95_zebrahub_development_manifest.yaml
+    benchmark_data: data/zebrafish_longevity_genetics_coupling_panel_benchmark.json
+    lean_module: FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors
+    note: "Danio rerio developmental × Tier 94 longevity; structure-prediction readiness vs AlphaFold"
+
+  Tier_95_Zebrafish_Spine:
+    tier: 95
+    D_eff: 23
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [biological, genetics, neural, consciousness]
+    build_script: scripts/build_tier95_zebrahub_development_benchmarks.py
+    manifest: data/tier95_zebrahub_development_manifest.yaml
+    benchmark_data: data/tier_95_zebrafish_spine_benchmark.json
+    lean_module: FSOT.Formal.Tier95ZebrafishSpinePriors
+    note: "Tier 95 Zebrahub spine — tracking + mechanics + longevity coupling + AlphaFold bridge"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

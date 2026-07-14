@@ -41,7 +41,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Genomic Sciences depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -480,7 +506,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "genomic sciences depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "genomic_sciences_depth_lab",
@@ -495,7 +534,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "genomic sciences depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "genomic_sciences_depth_lab",
@@ -510,7 +562,20 @@
       "formula": "C13H18O2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "genomic sciences depth",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "effective_error_pct": 0.002424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "genomic_sciences_depth_lab",
@@ -525,7 +590,20 @@
       "formula": "C14H11Cl2NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "genomic sciences depth",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "effective_error_pct": 0.015873,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "genomic_sciences_depth_lab",
@@ -535,7 +613,7 @@
       "measured": 50.5289,
       "error_pct": 0.02223625038519357,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "genomic sciences depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": 0.011236,
@@ -560,7 +638,7 @@
       "measured": -3.6084,
       "error_pct": 0.017789000308148954,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "genomic sciences depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": -0.000642,
@@ -589,5 +667,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Genomic Sciences",
+  "tier_label": "Tier 66 \u2014 Quantum Information + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.022237,
+    "mean_abs_delta": 0.0006251578947368421,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.466314+00:00"
 }

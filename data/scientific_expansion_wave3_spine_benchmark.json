@@ -40,7 +40,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 40
+      "observable_count": 40,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.02584,
       "measured": 0.0,
       "error_pct": 0.02584,
-      "observable_count": 30
+      "observable_count": 30,
+      "domain_display_name": "tier gap fill",
+      "display_name": "scientific expansion wave3",
+      "scientific_measurement": {
+        "delta": 0.02584,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -61,7 +87,20 @@
       "measured": 0.01341,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "civil engineering panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -71,7 +110,20 @@
       "measured": 1280.0,
       "error_pct": 0.01341,
       "source_panel": "civil_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "golden gate span",
+      "scientific_measurement": {
+        "delta": 0.171653,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -81,7 +133,20 @@
       "measured": 1991.0,
       "error_pct": 0.01341,
       "source_panel": "civil_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "akashi kaikyo span",
+      "scientific_measurement": {
+        "delta": 0.267001,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -91,7 +156,20 @@
       "measured": 30.0,
       "error_pct": 0.01341,
       "source_panel": "civil_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "concrete fc 28d",
+      "scientific_measurement": {
+        "delta": 0.004023,
+        "delta_pct": 0.01341,
+        "effective_error_pct": 0.01341,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -101,7 +179,20 @@
       "measured": 0.078697,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "mechanical engineering panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -111,7 +202,20 @@
       "measured": 45.0,
       "error_pct": 0.078697,
       "source_panel": "mechanical_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "steam turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.035414,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -121,7 +225,20 @@
       "measured": 40.0,
       "error_pct": 0.078697,
       "source_panel": "mechanical_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "gas turbine efficiency",
+      "scientific_measurement": {
+        "delta": 0.031479,
+        "delta_pct": 0.078697,
+        "effective_error_pct": 0.078697,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -131,7 +248,20 @@
       "measured": 55.0,
       "error_pct": 0.078697,
       "source_panel": "mechanical_engineering_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "carnot limit steam",
+      "scientific_measurement": {
+        "delta": 0.043284,
+        "delta_pct": 0.078698,
+        "effective_error_pct": 0.078698,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -141,7 +271,20 @@
       "measured": 0.031506,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "neuroeconomics panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -151,7 +294,20 @@
       "measured": 2.25,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "loss aversion lambda",
+      "scientific_measurement": {
+        "delta": 0.000709,
+        "delta_pct": 0.031511,
+        "effective_error_pct": 0.031511,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -161,7 +317,20 @@
       "measured": 0.1,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "discount rate annual",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.032,
+        "effective_error_pct": 0.032,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -171,7 +340,20 @@
       "measured": 2.0,
       "error_pct": 0.031506,
       "source_panel": "neuroeconomics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "risk aversion crra",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -181,7 +363,20 @@
       "measured": 0.006006,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "paleoclimate panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -191,7 +386,20 @@
       "measured": 180.0,
       "error_pct": 0.006006,
       "source_panel": "paleoclimate_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "vostok co2 lgm",
+      "scientific_measurement": {
+        "delta": 0.010811,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -201,7 +409,20 @@
       "measured": 280.0,
       "error_pct": 0.006006,
       "source_panel": "paleoclimate_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "vostok co2 preindustrial",
+      "scientific_measurement": {
+        "delta": 0.016818,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -211,7 +432,20 @@
       "measured": 260.0,
       "error_pct": 0.006006,
       "source_panel": "paleoclimate_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "epica dome c co2 holocene",
+      "scientific_measurement": {
+        "delta": 0.015616,
+        "delta_pct": 0.006006,
+        "effective_error_pct": 0.006006,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -221,7 +455,20 @@
       "measured": 0.04459,
       "error_pct": 0.0,
       "record_count": 10,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "speleology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -231,7 +478,20 @@
       "measured": 5430.0,
       "error_pct": 0.04459,
       "source_panel": "speleology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "potomac karst",
+      "scientific_measurement": {
+        "delta": 2.421246,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -241,7 +501,20 @@
       "measured": 3.42,
       "error_pct": 0.04459,
       "source_panel": "speleology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "potomac karst",
+      "scientific_measurement": {
+        "delta": 0.001525,
+        "delta_pct": 0.044591,
+        "effective_error_pct": 0.044591,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -251,7 +524,20 @@
       "measured": 227.0,
       "error_pct": 0.04459,
       "source_panel": "speleology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "floridan aquifer",
+      "scientific_measurement": {
+        "delta": 0.10122,
+        "delta_pct": 0.04459,
+        "effective_error_pct": 0.04459,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -261,7 +547,20 @@
       "measured": 0.026472,
       "error_pct": 0.0,
       "record_count": 100,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "exogeology panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -271,7 +570,20 @@
       "measured": 1.06,
       "error_pct": 0.023015,
       "source_panel": "exogeology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "Kepler-1597 b",
+      "scientific_measurement": {
+        "delta": 0.000244,
+        "delta_pct": 0.023019,
+        "effective_error_pct": 0.023019,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -281,7 +593,20 @@
       "measured": 1.2,
       "error_pct": 0.023015,
       "source_panel": "exogeology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "Kepler-1597 b",
+      "scientific_measurement": {
+        "delta": 0.000276,
+        "delta_pct": 0.023,
+        "effective_error_pct": 0.023,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -291,7 +616,20 @@
       "measured": 2.94654179,
       "error_pct": 0.027455,
       "source_panel": "exogeology_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "Kepler-1597 b",
+      "scientific_measurement": {
+        "delta": 0.00080921,
+        "delta_pct": 0.027463,
+        "effective_error_pct": 0.027463,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -301,7 +639,20 @@
       "measured": 0.01382,
       "error_pct": 0.0,
       "record_count": 60,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "history panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -311,7 +662,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "history_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -321,7 +685,20 @@
       "measured": 2000.0,
       "error_pct": 0.01382,
       "source_panel": "history_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.276393,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -331,7 +708,20 @@
       "measured": 25.0,
       "error_pct": 0.02584,
       "source_panel": "history_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "History &amp; Archaeology",
+      "scientific_measurement": {
+        "delta": 0.00646,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -341,7 +731,20 @@
       "measured": 0.013003,
       "error_pct": 0.0,
       "record_count": 20,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "law policy panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -351,7 +754,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "law_policy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "rule of law global mean",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -361,7 +777,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "law_policy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "regulatory quality mean",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -371,7 +800,20 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "source_panel": "law_policy_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "government effectiveness",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -381,7 +823,20 @@
       "measured": 0.02584,
       "error_pct": 0.0,
       "record_count": 36,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "finance markets panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -391,7 +846,20 @@
       "measured": 1179121535535.41,
       "error_pct": 0.02584,
       "source_panel": "finance_markets_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NY.GDP.MKTP.CD",
+      "scientific_measurement": {
+        "delta": 304687136.95751953,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -401,7 +869,20 @@
       "measured": 1226461319482.05,
       "error_pct": 0.02584,
       "source_panel": "finance_markets_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NY.GDP.MKTP.CD",
+      "scientific_measurement": {
+        "delta": 316919822.732666,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -411,7 +892,20 @@
       "measured": 1113059797223.9,
       "error_pct": 0.02584,
       "source_panel": "finance_markets_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NY.GDP.MKTP.CD",
+      "scientific_measurement": {
+        "delta": 287616664.32006836,
+        "delta_pct": 0.02584,
+        "effective_error_pct": 0.02584,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -421,7 +915,20 @@
       "measured": 0.02584,
       "error_pct": 0.0,
       "record_count": 40,
-      "eval_kind": "tier85_bridge"
+      "eval_kind": "tier85_bridge",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "supply chain logistics panel",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -431,7 +938,20 @@
       "measured": 56.2837209179998,
       "error_pct": 0.02584,
       "source_panel": "supply_chain_logistics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NE.TRD.GNFS.ZS",
+      "scientific_measurement": {
+        "delta": 0.01454408,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -441,7 +961,20 @@
       "measured": 57.1173763714306,
       "error_pct": 0.02584,
       "source_panel": "supply_chain_logistics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NE.TRD.GNFS.ZS",
+      "scientific_measurement": {
+        "delta": 0.01475963,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "scientific_expansion_wave3_lab",
@@ -451,7 +984,20 @@
       "measured": 54.5513323505808,
       "error_pct": 0.02584,
       "source_panel": "supply_chain_logistics_panel",
-      "eval_kind": "ingest_relay"
+      "eval_kind": "ingest_relay",
+      "domain_display_name": "scientific expansion wave3",
+      "display_name": "ZH NE.TRD.GNFS.ZS",
+      "scientific_measurement": {
+        "delta": 0.01409665,
+        "delta_pct": 0.025841,
+        "effective_error_pct": 0.025841,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -465,5 +1011,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Scientific Expansion Wave3 Spine",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 10,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.0,
+    "mean_abs_delta": 0.0,
+    "precision_tier_counts": {
+      "green": 10
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.271369+00:00"
 }

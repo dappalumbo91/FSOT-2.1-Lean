@@ -41,7 +41,20 @@
       "computed": 0.026954,
       "measured": 0.0,
       "error_pct": 0.026954,
-      "observable_count": 121
+      "observable_count": 121,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.026954,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.026954,
       "measured": 0.0,
       "error_pct": 0.026954,
-      "observable_count": 120
+      "observable_count": 120,
+      "domain_display_name": "tier gap fill",
+      "display_name": "vizier wds",
+      "scientific_measurement": {
+        "delta": 0.026954,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Epsilon Lyr",
+      "scientific_measurement": {
+        "delta": 0.001572,
+        "delta_pct": 0.03144,
+        "effective_error_pct": 0.03144,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -76,7 +115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Epsilon Lyr",
+      "scientific_measurement": {
+        "delta": 0.619937,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -88,7 +140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Epsilon Lyr",
+      "scientific_measurement": {
+        "delta": 0.061994,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -100,7 +165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Cas",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -112,7 +190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Cas",
+      "scientific_measurement": {
+        "delta": 0.223716,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -124,7 +215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Cas",
+      "scientific_measurement": {
+        "delta": 0.007278,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -136,7 +240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Cep",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -148,7 +265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Cep",
+      "scientific_measurement": {
+        "delta": 0.097034,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -160,7 +290,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Cep",
+      "scientific_measurement": {
+        "delta": 0.004852,
+        "delta_pct": 0.026956,
+        "effective_error_pct": 0.026956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -172,7 +315,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Delta Ori",
+      "scientific_measurement": {
+        "delta": 0.001258,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -184,7 +340,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Delta Ori",
+      "scientific_measurement": {
+        "delta": 0.323445,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -196,7 +365,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Delta Ori",
+      "scientific_measurement": {
+        "delta": 0.013477,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -208,7 +390,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Cyg",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -220,7 +415,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Cyg",
+      "scientific_measurement": {
+        "delta": 2.021534,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -232,7 +440,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Cyg",
+      "scientific_measurement": {
+        "delta": 0.080861,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -244,7 +465,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma Vir",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -256,7 +490,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma Vir",
+      "scientific_measurement": {
+        "delta": 0.045552,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -268,7 +515,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma Vir",
+      "scientific_measurement": {
+        "delta": 0.002561,
+        "delta_pct": 0.026958,
+        "effective_error_pct": 0.026958,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -280,7 +540,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Lambda Cyg",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -292,7 +565,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Lambda Cyg",
+      "scientific_measurement": {
+        "delta": 0.003369,
+        "delta_pct": 0.026952,
+        "effective_error_pct": 0.026952,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -304,7 +590,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Lambda Cyg",
+      "scientific_measurement": {
+        "delta": 0.000216,
+        "delta_pct": 0.027,
+        "effective_error_pct": 0.027,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -316,7 +615,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 2896",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -328,7 +640,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 2896",
+      "scientific_measurement": {
+        "delta": 0.015957,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -340,7 +665,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 2896",
+      "scientific_measurement": {
+        "delta": 0.003234,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -352,7 +690,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Alpha Cen",
+      "scientific_measurement": {
+        "delta": 0.000943,
+        "delta_pct": 0.031433,
+        "effective_error_pct": 0.031433,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -364,7 +715,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Alpha Cen",
+      "scientific_measurement": {
+        "delta": 0.021539,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -376,7 +740,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Alpha Cen",
+      "scientific_measurement": {
+        "delta": 0.006307,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -388,7 +765,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Sirius",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -400,7 +790,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Sirius",
+      "scientific_measurement": {
+        "delta": 0.013504,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -412,7 +815,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Sirius",
+      "scientific_measurement": {
+        "delta": 0.005391,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -424,7 +840,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Procyon",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -436,7 +865,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Procyon",
+      "scientific_measurement": {
+        "delta": 0.011008,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -448,7 +890,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Procyon",
+      "scientific_measurement": {
+        "delta": 0.004043,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -460,7 +915,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "61 Cyg",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -472,7 +940,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "61 Cyg",
+      "scientific_measurement": {
+        "delta": 0.194606,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -484,7 +965,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "61 Cyg",
+      "scientific_measurement": {
+        "delta": 0.02318,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -496,7 +990,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "70 Oph",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -508,7 +1015,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "70 Oph",
+      "scientific_measurement": {
+        "delta": 0.023827,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -520,7 +1040,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "70 Oph",
+      "scientific_measurement": {
+        "delta": 0.00593,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -532,7 +1065,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Eta Cas",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -544,7 +1090,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Eta Cas",
+      "scientific_measurement": {
+        "delta": 0.129378,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -556,7 +1115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Eta Cas",
+      "scientific_measurement": {
+        "delta": 0.010242,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -568,7 +1140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Boo",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -580,7 +1165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Boo",
+      "scientific_measurement": {
+        "delta": 0.0407,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -592,7 +1190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Xi Boo",
+      "scientific_measurement": {
+        "delta": 0.026145,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -604,7 +1215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma And",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -616,7 +1240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma And",
+      "scientific_measurement": {
+        "delta": 1.447418,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -628,7 +1265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Gamma And",
+      "scientific_measurement": {
+        "delta": 0.029649,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -640,7 +1290,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Her",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -652,7 +1315,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Her",
+      "scientific_measurement": {
+        "delta": 0.009286,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -664,7 +1340,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Zeta Her",
+      "scientific_measurement": {
+        "delta": 0.000404,
+        "delta_pct": 0.026933,
+        "effective_error_pct": 0.026933,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -676,7 +1365,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Lyr",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -688,7 +1390,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Lyr",
+      "scientific_measurement": {
+        "delta": 0.003488,
+        "delta_pct": 0.026955,
+        "effective_error_pct": 0.026955,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -700,7 +1415,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Beta Lyr",
+      "scientific_measurement": {
+        "delta": 0.013477,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -712,7 +1440,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algol",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -724,7 +1465,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algol",
+      "scientific_measurement": {
+        "delta": 0.000774,
+        "delta_pct": 0.026969,
+        "effective_error_pct": 0.026969,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -736,7 +1490,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algol",
+      "scientific_measurement": {
+        "delta": 1.7e-05,
+        "delta_pct": 0.027419,
+        "effective_error_pct": 0.027419,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -748,7 +1515,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Mizar",
+      "scientific_measurement": {
+        "delta": 0.001258,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -760,7 +1540,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Mizar",
+      "scientific_measurement": {
+        "delta": 1.347689,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -772,7 +1565,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Mizar",
+      "scientific_measurement": {
+        "delta": 0.102424,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -784,7 +1590,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Castor",
+      "scientific_measurement": {
+        "delta": 0.001887,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -796,7 +1615,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Castor",
+      "scientific_measurement": {
+        "delta": 0.119944,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -808,7 +1640,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Castor",
+      "scientific_measurement": {
+        "delta": 0.026954,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -820,7 +1665,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Pollux",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -832,7 +1690,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Pollux",
+      "scientific_measurement": {
+        "delta": 0.159027,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -844,7 +1715,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Pollux",
+      "scientific_measurement": {
+        "delta": 0.043126,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -856,7 +1740,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Regulus",
+      "scientific_measurement": {
+        "delta": 0.001258,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -868,7 +1765,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Regulus",
+      "scientific_measurement": {
+        "delta": 35.039923,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -880,7 +1790,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Regulus",
+      "scientific_measurement": {
+        "delta": 1.132059,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -892,7 +1815,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Capella",
+      "scientific_measurement": {
+        "delta": 0.001258,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -904,7 +1840,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Capella",
+      "scientific_measurement": {
+        "delta": 0.028032,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -916,7 +1865,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Capella",
+      "scientific_measurement": {
+        "delta": 0.012129,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -928,7 +1890,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algieba",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -940,7 +1915,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algieba",
+      "scientific_measurement": {
+        "delta": 0.137464,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -952,7 +1940,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Algieba",
+      "scientific_measurement": {
+        "delta": 0.045821,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -964,7 +1965,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Albireo",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -976,7 +1990,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Albireo",
+      "scientific_measurement": {
+        "delta": 26.953787,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -988,7 +2015,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Albireo",
+      "scientific_measurement": {
+        "delta": 1.185967,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1000,7 +2040,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Antares",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1012,7 +2065,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Antares",
+      "scientific_measurement": {
+        "delta": 0.236654,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1024,7 +2090,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Antares",
+      "scientific_measurement": {
+        "delta": 0.000701,
+        "delta_pct": 0.026962,
+        "effective_error_pct": 0.026962,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1036,7 +2115,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Spica",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1048,7 +2140,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Spica",
+      "scientific_measurement": {
+        "delta": 0.001078,
+        "delta_pct": 0.02695,
+        "effective_error_pct": 0.02695,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1060,7 +2165,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Spica",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.026667,
+        "effective_error_pct": 0.026667,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1072,7 +2190,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Polaris",
+      "scientific_measurement": {
+        "delta": 0.000943,
+        "delta_pct": 0.031433,
+        "effective_error_pct": 0.031433,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1084,7 +2215,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Polaris",
+      "scientific_measurement": {
+        "delta": 0.007978,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1096,7 +2240,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Polaris",
+      "scientific_measurement": {
+        "delta": 0.000836,
+        "delta_pct": 0.026968,
+        "effective_error_pct": 0.026968,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1108,7 +2265,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Vega",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1120,7 +2290,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Vega",
+      "scientific_measurement": {
+        "delta": 13.476894,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1132,7 +2315,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Vega",
+      "scientific_measurement": {
+        "delta": 0.673845,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1144,7 +2340,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Altair",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1156,7 +2365,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Altair",
+      "scientific_measurement": {
+        "delta": 3.369223,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1168,7 +2390,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Altair",
+      "scientific_measurement": {
+        "delta": 0.323445,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1180,7 +2415,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Fomalhaut",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1192,7 +2440,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Fomalhaut",
+      "scientific_measurement": {
+        "delta": 0.21563,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1204,7 +2465,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Fomalhaut",
+      "scientific_measurement": {
+        "delta": 0.013477,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1216,7 +2490,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Tau Boo",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1228,7 +2515,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Tau Boo",
+      "scientific_measurement": {
+        "delta": 0.359294,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1240,7 +2540,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Tau Boo",
+      "scientific_measurement": {
+        "delta": 5.4e-05,
+        "delta_pct": 0.027,
+        "effective_error_pct": 0.027,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1252,7 +2565,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Ups And",
+      "scientific_measurement": {
+        "delta": 0.001258,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1264,7 +2590,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Ups And",
+      "scientific_measurement": {
+        "delta": 0.00124,
+        "delta_pct": 0.026957,
+        "effective_error_pct": 0.026957,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1276,7 +2615,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "Ups And",
+      "scientific_measurement": {
+        "delta": 1.6e-05,
+        "delta_pct": 0.026667,
+        "effective_error_pct": 0.026667,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1288,7 +2640,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HD 188753",
+      "scientific_measurement": {
+        "delta": 0.000943,
+        "delta_pct": 0.031433,
+        "effective_error_pct": 0.031433,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1300,7 +2665,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HD 188753",
+      "scientific_measurement": {
+        "delta": 0.006873,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1312,7 +2690,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HD 188753",
+      "scientific_measurement": {
+        "delta": 4e-05,
+        "delta_pct": 0.026667,
+        "effective_error_pct": 0.026667,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1324,7 +2715,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 7672",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1336,7 +2740,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 7672",
+      "scientific_measurement": {
+        "delta": 0.005768,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1348,7 +2765,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "HR 7672",
+      "scientific_measurement": {
+        "delta": 0.000243,
+        "delta_pct": 0.027,
+        "effective_error_pct": 0.027,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1360,7 +2790,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 16459-3842",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1372,7 +2815,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 16459-3842",
+      "scientific_measurement": {
+        "delta": 0.002561,
+        "delta_pct": 0.026958,
+        "effective_error_pct": 0.026958,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1384,7 +2840,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 16459-3842",
+      "scientific_measurement": {
+        "delta": 0.000135,
+        "delta_pct": 0.027,
+        "effective_error_pct": 0.027,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1396,7 +2865,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 14284-6056",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1408,7 +2890,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 14284-6056",
+      "scientific_measurement": {
+        "delta": 0.009164,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1420,7 +2915,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 14284-6056",
+      "scientific_measurement": {
+        "delta": 0.000323,
+        "delta_pct": 0.026917,
+        "effective_error_pct": 0.026917,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1432,7 +2940,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 12084-3900",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1444,7 +2965,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 12084-3900",
+      "scientific_measurement": {
+        "delta": 0.011051,
+        "delta_pct": 0.026954,
+        "effective_error_pct": 0.026954,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1456,7 +2990,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 12084-3900",
+      "scientific_measurement": {
+        "delta": 0.000485,
+        "delta_pct": 0.026944,
+        "effective_error_pct": 0.026944,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1468,7 +3015,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 18411+3128",
+      "scientific_measurement": {
+        "delta": 0.000629,
+        "delta_pct": 0.03145,
+        "effective_error_pct": 0.03145,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1480,7 +3040,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 18411+3128",
+      "scientific_measurement": {
+        "delta": 0.023719,
+        "delta_pct": 0.026953,
+        "effective_error_pct": 0.026953,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1492,7 +3065,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Astronomy",
       "fsot_scalar": 0.89846,
-      "ingest_source": "wds_bundled"
+      "ingest_source": "wds_bundled",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "WDS 18411+3128",
+      "scientific_measurement": {
+        "delta": 0.000943,
+        "delta_pct": 0.026943,
+        "effective_error_pct": 0.026943,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "vizier_wds_tap_live_lab",
@@ -1502,7 +3088,20 @@
       "measured": 0.026954,
       "error_pct": 0.0,
       "record_count": 281,
-      "eval_kind": "tier62_bridge"
+      "eval_kind": "tier62_bridge",
+      "domain_display_name": "vizier wds tap live",
+      "display_name": "wds live multiplicity deep",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -1516,5 +3115,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "VizieR WDS TAP Live Deep",
+  "tier_label": "Tier 68 \u2014 Materials Project Live Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 120,
+    "median_error_pct": 0.026954,
+    "max_error_pct": 0.03145,
+    "mean_abs_delta": 0.7554402166666675,
+    "precision_tier_counts": {
+      "green": 120
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.731806+00:00"
 }

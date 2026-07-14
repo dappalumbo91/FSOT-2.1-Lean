@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-07-13",
+  "source": "Published genome assemblies for extreme long-livers (literature + NCBI reference)",
+  "notes": "Credential-free curated anchors when live NCBI fetch unavailable.",
+  "anchors": [
+    {"scientific_name": "Homo sapiens", "genome_bp": 3100000000, "reference": "GRCh38_literature"},
+    {"scientific_name": "Heterocephalus glaber", "genome_bp": 2618188253, "reference": "NCBI_naked_mole_rat_2020"},
+    {"scientific_name": "Balaena mysticetus", "genome_bp": 2366483430, "reference": "Keane_2015_bowhead_whale"},
+    {"scientific_name": "Myotis brandtii", "genome_bp": 2034112000, "reference": "Seim_2013_brandt_bat"},
+    {"scientific_name": "Myotis lucifugus", "genome_bp": 1974777923, "reference": "Huang_2019_little_brown_bat"},
+    {"scientific_name": "Elephas maximus", "genome_bp": 3200000000, "reference": "Sulak_2016_elephant"},
+    {"scientific_name": "Loxodonta africana", "genome_bp": 3150000000, "reference": "elephant_genome_comparative"},
+    {"scientific_name": "Delphinus delphis", "genome_bp": 2800000000, "reference": "cetacean_genome_comparative"},
+    {"scientific_name": "Chelonia mydas", "genome_bp": 2246211480, "reference": "green_sea_turtle_genome"},
+    {"scientific_name": "Chelonoidis niger", "genome_bp": 2300000000, "reference": "giant_tortoise_genome_2022"},
+    {"scientific_name": "Chelonoidis nigra", "genome_bp": 2300000000, "reference": "giant_tortoise_genome_2022"},
+    {"scientific_name": "Pan troglodytes", "genome_bp": 3040000000, "reference": "chimp_panTro6"},
+    {"scientific_name": "Canis familiaris", "genome_bp": 2410000000, "reference": "canFam3"},
+    {"scientific_name": "Equus caballus", "genome_bp": 2470000000, "reference": "equCab3"},
+    {"scientific_name": "Bos taurus", "genome_bp": 2710000000, "reference": "bosTau9"},
+    {"scientific_name": "Macropus rufus", "genome_bp": 2900000000, "reference": "red_kangaroo_genome"},
+    {"scientific_name": "Ginkgo biloba", "genome_bp": 10100000000, "reference": "ginkgo_10Gb_genome"},
+    {"scientific_name": "Pinus longaeva", "genome_bp": 27000000000, "reference": "bristlecone_pine_large_genome"},
+    {"scientific_name": "Arctica islandica", "genome_bp": 1600000000, "reference": "bivalve_comparative_genomics"},
+    {"scientific_name": "Strongylocentrotus franciscanus", "genome_bp": 907000000, "reference": "purple_sea_urchin"},
+    {"scientific_name": "Homarus americanus", "genome_bp": 3500000000, "reference": "american_lobster_genome"},
+    {"scientific_name": "Sphenodon punctatus", "genome_bp": 5000000000, "reference": "tuatara_genome_2020"},
+    {"scientific_name": "Orcinus orca", "genome_bp": 2400000000, "reference": "killer_whale_genome"},
+    {"scientific_name": "Physeter macrocephalus", "genome_bp": 2500000000, "reference": "sperm_whale_genome"}
+  ]
+}

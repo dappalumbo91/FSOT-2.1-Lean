@@ -146,32 +146,89 @@ def _fetch_taxonomy(species: str) -> dict[str, Any]:
         return {"species": species, "taxid": None, "error": str(exc)[:120]}
 
 
-def _fetch_assembly_bp(taxid: int) -> float | None:
+def _fetch_assembly_bp_datasets(taxid: int) -> float | None:
+    """NCBI Datasets v2 — primary genome size source (2024+ API)."""
     url = (
-        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?"
-        f"db=assembly&term=taxid:{taxid}[Organism]&retmode=json&retmax=1"
+        "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/taxon/"
+        f"{taxid}/dataset_report?limit=1"
     )
     try:
         payload = _fetch_json(url, timeout=45)
-        ids = (payload.get("esearchresult") or {}).get("idlist") or []
-        if not ids:
+        reports = payload.get("reports") or []
+        if not reports:
             return None
-        aid = ids[0]
-        sum_url = (
-            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?"
-            f"db=assembly&id={aid}&retmode=json"
-        )
-        summary = _fetch_json(sum_url, timeout=45)
-        row = (summary.get("result") or {}).get(str(aid)) or {}
-        stats = row.get("assemblystats") or row.get("stats") or {}
-        if isinstance(stats, dict):
-            for key in ("total_sequence_length", "total_sequence_len", "genomesize"):
-                if stats.get(key):
-                    return float(stats[key])
-        if row.get("genomesize"):
-            return float(row["genomesize"])
+        asm_stats = reports[0].get("assembly_stats") or {}
+        raw = asm_stats.get("total_sequence_length")
+        if raw is not None:
+            val = float(raw)
+            return val if val > 0 else None
     except Exception:
         return None
+    return None
+
+
+def _parse_assembly_stats_report(text: str) -> float | None:
+    for line in text.splitlines():
+        if line.startswith("#"):
+            continue
+        if "allallallalltotal-length" in line:
+            try:
+                return float(line.split("total-length", 1)[1])
+            except ValueError:
+                continue
+        if "Primary Assemblyallallalltotal-length" in line:
+            try:
+                return float(line.split("total-length", 1)[1])
+            except ValueError:
+                continue
+    return None
+
+
+def _fetch_assembly_bp(taxid: int) -> float | None:
+    """Resolve genome size (bp) via Datasets API, then legacy assembly eutils."""
+    datasets_bp = _fetch_assembly_bp_datasets(taxid)
+    if datasets_bp:
+        return datasets_bp
+
+    for term in (
+        f"txid{taxid}[Organism]+AND+latest[filter]+AND+refseq[filter]",
+        f"txid{taxid}[Organism]+AND+latest[filter]",
+        f"txid{taxid}[Organism]",
+    ):
+        url = (
+            "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?"
+            f"db=assembly&term={term}&retmode=json&retmax=1"
+        )
+        try:
+            payload = _fetch_json(url, timeout=45)
+            ids = (payload.get("esearchresult") or {}).get("idlist") or []
+            if not ids:
+                continue
+            aid = ids[0]
+            sum_url = (
+                "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?"
+                f"db=assembly&id={aid}&retmode=json"
+            )
+            summary = _fetch_json(sum_url, timeout=45)
+            row = (summary.get("result") or {}).get(str(aid)) or {}
+            stats = row.get("assemblystats") or row.get("stats") or {}
+            if isinstance(stats, dict):
+                for key in ("total_sequence_length", "total_sequence_len", "genomesize"):
+                    if stats.get(key):
+                        return float(stats[key])
+            if row.get("genomesize"):
+                return float(row["genomesize"])
+            stats_url = str(row.get("ftppath_stats_rpt") or "").replace("ftp://", "https://")
+            if stats_url:
+                from live_api_fetch_lib import fetch_bytes  # noqa: WPS433
+
+                report_bp = _parse_assembly_stats_report(
+                    fetch_bytes(stats_url, timeout=45).decode("utf-8", errors="replace")
+                )
+                if report_bp:
+                    return report_bp
+        except Exception:
+            continue
     return None
 
 

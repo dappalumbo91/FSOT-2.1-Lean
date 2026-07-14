@@ -41,7 +41,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Adversarial Fractal Break Tests depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -368,7 +394,7 @@
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
       "hole_type": "connective_failure",
       "hole_severity": 0.637256,
-      "domain_display_name": "code genome",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Lean namespace import open",
       "scientific_measurement": {
         "delta": 0.0,
@@ -395,7 +421,7 @@
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
       "hole_type": "connective_failure",
       "hole_severity": 0.517465,
-      "domain_display_name": "code genome",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Lean import open def",
       "scientific_measurement": {
         "delta": 0.0,
@@ -420,7 +446,7 @@
       "measured": 1.0,
       "error_pct": 47.7327,
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
-      "domain_display_name": "code genome",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Lean file stability",
       "scientific_measurement": {
         "delta": -0.477327,
@@ -447,7 +473,7 @@
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
       "hole_type": "connective_failure",
       "hole_severity": 0.491423,
-      "domain_display_name": "code genome",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Lean namespace theorem import",
       "scientific_measurement": {
         "delta": 0.0,
@@ -472,7 +498,7 @@
       "measured": 50.5289,
       "error_pct": 0.02223625038519357,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": 0.011236,
@@ -497,7 +523,7 @@
       "measured": -3.6084,
       "error_pct": 0.017789000308148954,
       "source": "gbif_animalia_api",
-      "domain_display_name": "zoology",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "Theria primaria",
       "scientific_measurement": {
         "delta": -0.000642,
@@ -527,7 +553,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "adversarial fractal break tests depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_tests_depth_lab",
@@ -542,7 +581,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "adversarial fractal break tests depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_tests_depth_lab",
@@ -557,7 +609,20 @@
       "formula": "C13H18O2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "adversarial fractal break tests depth",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "effective_error_pct": 0.002424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_tests_depth_lab",
@@ -572,7 +637,20 @@
       "formula": "C14H11Cl2NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "adversarial fractal break tests depth",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "effective_error_pct": 0.015873,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "adversarial_fractal_break_tests_depth_lab",
@@ -582,7 +660,7 @@
       "measured": 2.5,
       "error_pct": 0.03674654752639839,
       "source": "malware_threat_reference_observables",
-      "domain_display_name": "malware threat",
+      "domain_display_name": "adversarial fractal break tests depth",
       "display_name": "worm reproduction rate",
       "scientific_measurement": {
         "delta": 0.000919,
@@ -611,5 +689,20 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Adversarial Fractal Break Tests",
+  "tier_label": "Tier 46",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 500.0,
+    "mean_abs_delta": 0.5270054210526315,
+    "precision_tier_counts": {
+      "red": 4,
+      "green": 15
+    },
+    "green_gate_fraction": 0.7894736842105263,
+    "matches_domain_spine": false
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.124183+00:00"
 }

@@ -40,7 +40,20 @@
       "computed": 0.01382,
       "measured": 0.0,
       "error_pct": 0.01382,
-      "observable_count": 200
+      "observable_count": 200,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.01382,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.01382,
       "measured": 0.0,
       "error_pct": 0.01382,
-      "observable_count": 200
+      "observable_count": 200,
+      "domain_display_name": "tier gap fill",
+      "display_name": "crossref",
+      "scientific_measurement": {
+        "delta": 0.01382,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-17671-6 18-1",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-17671-6 18-1",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-23161-2 300726",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-23161-2 300726",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-08-102696-0.00020-8",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-08-102696-0.00020-8",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-28170-9 6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-28170-9 6",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-16-8679-5 306",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-16-8679-5 306",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-15-1636-8 42",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-15-1636-8 42",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-33832-8 41",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-33832-8 41",
+      "scientific_measurement": {
+        "delta": 0.278051,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-72371-1 11",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-72371-1 11",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-18938-3",
+      "scientific_measurement": {
+        "delta": 0.004096,
+        "delta_pct": 0.031508,
+        "effective_error_pct": 0.031508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-18938-3",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-19932-0 5",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-19932-0 5",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -303,7 +589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.34157/978-3-648-16750-2 3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -315,7 +614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.34157/978-3-648-16750-2 3",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -327,7 +639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-58292-0 20395",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -339,7 +664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-58292-0 20395",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -351,7 +689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-476-05869-0 72",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -363,7 +714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-476-05869-0 72",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -375,7 +739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-7310-4 15",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -387,7 +764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-7310-4 15",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -399,7 +789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-7091-0962-5 19",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -411,7 +814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-7091-0962-5 19",
+      "scientific_measurement": {
+        "delta": 0.277913,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -423,7 +839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-52090-2 300304",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -435,7 +864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-52090-2 300304",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -447,7 +889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-0-387-30160-0 1141",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -459,7 +914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-0-387-30160-0 1141",
+      "scientific_measurement": {
+        "delta": 0.27736,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -471,7 +939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-32152-8 30",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -483,7 +964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-32152-8 30",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -495,7 +989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-81-322-2752-6 56",
+      "scientific_measurement": {
+        "delta": 0.000945,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -507,7 +1014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-81-322-2752-6 56",
+      "scientific_measurement": {
+        "delta": 0.278604,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -519,7 +1039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-05784-8 6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -531,7 +1064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-05784-8 6",
+      "scientific_measurement": {
+        "delta": 0.279019,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -543,7 +1089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/9780230244870 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -555,7 +1114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/9780230244870 1",
+      "scientific_measurement": {
+        "delta": 0.277637,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -567,7 +1139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-30192-7 2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -579,7 +1164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-30192-7 2",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -591,7 +1189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-94-6463-394-8 4",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -603,7 +1214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-94-6463-394-8 4",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -615,7 +1239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-10-4137-2 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -627,7 +1264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-10-4137-2 1",
+      "scientific_measurement": {
+        "delta": 0.278742,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -639,7 +1289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9781139168588.019",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -651,7 +1314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9781139168588.019",
+      "scientific_measurement": {
+        "delta": 0.277222,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -663,7 +1339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-2-494069-89-3 232",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -675,7 +1364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-2-494069-89-3 232",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -687,7 +1389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-94-6463-284-2 71",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -699,7 +1414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.2991/978-94-6463-284-2 71",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -711,7 +1439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-19-5815-1 13",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -723,7 +1464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-19-5815-1 13",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -735,7 +1489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/9781137363473 6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -747,7 +1514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/9781137363473 6",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -759,7 +1539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-29061-0 16",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -771,7 +1564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-29061-0 16",
+      "scientific_measurement": {
+        "delta": 0.279019,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -783,7 +1589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-49932-7 13",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -795,7 +1614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-49932-7 13",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -807,7 +1639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4471-2819-9 4",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -819,7 +1664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4471-2819-9 4",
+      "scientific_measurement": {
+        "delta": 0.278051,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -831,7 +1689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-5091-7 5",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -843,7 +1714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-5091-7 5",
+      "scientific_measurement": {
+        "delta": 0.278189,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -855,7 +1739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/9781108261166.007",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -867,7 +1764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/9781108261166.007",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -879,7 +1789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-1812-2 5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -891,7 +1814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-1812-2 5",
+      "scientific_measurement": {
+        "delta": 0.277913,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -903,7 +1839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-54089-3 1372",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -915,7 +1864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-54089-3 1372",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -927,7 +1889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-9066-8 3",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -939,7 +1914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-9066-8 3",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -951,7 +1939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/9781108989831.016",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -963,7 +1964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/9781108989831.016",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -975,7 +1989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511518263.011",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -987,7 +2014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511518263.011",
+      "scientific_measurement": {
+        "delta": 0.275287,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -999,7 +2039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-62091-5 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1011,7 +2064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-62091-5 1",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1023,7 +2089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-72890-7 22",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1035,7 +2114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-72890-7 22",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1047,7 +2139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783111350172-004",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1059,7 +2164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783111350172-004",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1071,7 +2189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-90-481-3585-1 556",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1083,7 +2214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-90-481-3585-1 556",
+      "scientific_measurement": {
+        "delta": 0.277913,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1095,7 +2239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-15669-9 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1107,7 +2264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-15669-9 1",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1119,7 +2289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-323-48253-0.00151-3",
+      "scientific_measurement": {
+        "delta": 0.00126,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1131,7 +2314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-323-48253-0.00151-3",
+      "scientific_measurement": {
+        "delta": 0.279019,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1143,7 +2339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-011-1620-6 10",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1155,7 +2364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-011-1620-6 10",
+      "scientific_measurement": {
+        "delta": 0.275425,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1167,7 +2389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-01669-6 152-1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1179,7 +2414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-01669-6 152-1",
+      "scientific_measurement": {
+        "delta": 0.278328,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1191,7 +2439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-24279-3 10",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1203,7 +2464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-24279-3 10",
+      "scientific_measurement": {
+        "delta": 0.277913,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1215,7 +2489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-99415-0",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1227,7 +2514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-99415-0",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1239,7 +2539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783839460948-009",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1251,7 +2564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783839460948-009",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1263,7 +2589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-70411-6 37",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1275,7 +2614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-70411-6 37",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1287,7 +2639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-68856-4 5",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1299,7 +2664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-68856-4 5",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1311,7 +2689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-40220-4 23",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1323,7 +2714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-40220-4 23",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1335,7 +2739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-65247-9 6",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1347,7 +2764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-65247-9 6",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1359,7 +2789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-03251-1",
+      "scientific_measurement": {
+        "delta": 0.00126,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1371,7 +2814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-03251-1",
+      "scientific_measurement": {
+        "delta": 0.278328,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1383,7 +2839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-349-96042-2 12445",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1395,7 +2864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-349-96042-2 12445",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1407,7 +2889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-80546-3 23",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1419,7 +2914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-80546-3 23",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1431,7 +2939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-6083-8 15",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1443,7 +2964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4842-6083-8 15",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1455,7 +2989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-14169-5 310458",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1467,7 +3014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-14169-5 310458",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1479,7 +3039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-8320-5 1",
+      "scientific_measurement": {
+        "delta": 0.00189,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1491,7 +3064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4614-8320-5 1",
+      "scientific_measurement": {
+        "delta": 0.278189,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1503,7 +3089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511613555.001",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1515,7 +3114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511613555.001",
+      "scientific_measurement": {
+        "delta": 0.276669,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1527,7 +3139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-19521-6 9",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1539,7 +3164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-19521-6 9",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1551,7 +3189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-74272-9 19",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1563,7 +3214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-74272-9 19",
+      "scientific_measurement": {
+        "delta": 0.279848,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1575,7 +3239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.33846/aijma30103",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1587,7 +3264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.33846/aijma30103",
+      "scientific_measurement": {
+        "delta": 0.279848,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1599,7 +3289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-30111-7 83",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1611,7 +3314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-30111-7 83",
+      "scientific_measurement": {
+        "delta": 0.278051,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1623,7 +3339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-322-94726-0 94",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1635,7 +3364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-322-94726-0 94",
+      "scientific_measurement": {
+        "delta": 0.275564,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1647,7 +3389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-33742-1 33",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1659,7 +3414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-33742-1 33",
+      "scientific_measurement": {
+        "delta": 0.279019,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1671,7 +3439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-349-95121-5 2796-1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1683,7 +3464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-349-95121-5 2796-1",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1695,7 +3489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-13299-5 1",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1707,7 +3514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-13299-5 1",
+      "scientific_measurement": {
+        "delta": 0.277775,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1719,7 +3539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-137-44590-2 2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1731,7 +3564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1057/978-1-137-44590-2 2",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1743,7 +3589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-41422-0 61",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1755,7 +3614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-41422-0 61",
+      "scientific_measurement": {
+        "delta": 0.278189,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1767,7 +3639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-024-1036-5 115-1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1779,7 +3664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-024-1036-5 115-1",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1791,7 +3689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-60761-857-7 30",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1803,7 +3714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-60761-857-7 30",
+      "scientific_measurement": {
+        "delta": 0.277775,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1815,7 +3739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-42077-2 3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1827,7 +3764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-658-42077-2 3",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1839,7 +3789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-349-18921-2 3",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1851,7 +3814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-349-18921-2 3",
+      "scientific_measurement": {
+        "delta": 0.274596,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1863,7 +3839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511612497.012",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1875,7 +3864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1017/cbo9780511612497.012",
+      "scientific_measurement": {
+        "delta": 0.276255,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1887,7 +3889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-90503-7 13",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1899,7 +3914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-90503-7 13",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1911,7 +3939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-10-8527-7 2",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1923,7 +3964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-10-8527-7 2",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1935,7 +3989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-15-5951-8 2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1947,7 +4014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-15-5951-8 2",
+      "scientific_measurement": {
+        "delta": 0.279157,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1959,7 +4039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-68789-5 22",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1971,7 +4064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-662-68789-5 22",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1983,7 +4089,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-49401-7 50",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -1995,7 +4114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-49401-7 50",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2007,7 +4139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-540-29925-7 5257",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2019,7 +4164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-540-29925-7 5257",
+      "scientific_measurement": {
+        "delta": 0.276807,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2031,7 +4189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-14169-5 269",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2043,7 +4214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-319-14169-5 269",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2055,7 +4239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4939-7131-2 101008",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2067,7 +4264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4939-7131-2 101008",
+      "scientific_measurement": {
+        "delta": 0.27888,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2079,7 +4289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-69852-1 7",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2091,7 +4314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-69852-1 7",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2103,7 +4339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-007-7006-5 20",
+      "scientific_measurement": {
+        "delta": 0.00189,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2115,7 +4364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-94-007-7006-5 20",
+      "scientific_measurement": {
+        "delta": 0.278189,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2127,7 +4389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-27841-9 1426-2",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2139,7 +4414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-27841-9 1426-2",
+      "scientific_measurement": {
+        "delta": 0.278466,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2151,7 +4439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-68546-0 14",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2163,7 +4464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-68546-0 14",
+      "scientific_measurement": {
+        "delta": 0.27971,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2175,7 +4489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-16-4991-2 1",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2187,7 +4514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-16-4991-2 1",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2199,7 +4539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-19-1512-3 21",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2211,7 +4564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-981-19-1512-3 21",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2223,7 +4589,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-349-10899-2 7",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2235,7 +4614,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-349-10899-2 7",
+      "scientific_measurement": {
+        "delta": 0.275011,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2247,7 +4639,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-39008-1 7",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2259,7 +4664,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-031-39008-1 7",
+      "scientific_measurement": {
+        "delta": 0.279571,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2271,7 +4689,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-54817-9 38",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2283,7 +4714,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-54817-9 38",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2295,7 +4739,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-55214-4 7-1",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2307,7 +4764,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-642-55214-4 7-1",
+      "scientific_measurement": {
+        "delta": 0.278604,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2319,7 +4789,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4419-1428-6 605",
+      "scientific_measurement": {
+        "delta": 0.000945,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2331,7 +4814,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-1-4419-1428-6 605",
+      "scientific_measurement": {
+        "delta": 0.278051,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2343,7 +4839,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-323-99967-0.00306-9",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2355,7 +4864,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1016/b978-0-323-99967-0.00306-9",
+      "scientific_measurement": {
+        "delta": 0.279848,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2367,7 +4889,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-0-387-74759-0 163",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2379,7 +4914,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-0-387-74759-0 163",
+      "scientific_measurement": {
+        "delta": 0.277498,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2391,7 +4939,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-68952-0 5",
+      "scientific_measurement": {
+        "delta": 0.000315,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2403,7 +4964,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1007/978-3-030-68952-0 5",
+      "scientific_measurement": {
+        "delta": 0.279295,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2415,7 +4989,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1093/oso/9780197632314.003.0013",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2427,7 +5014,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1093/oso/9780197632314.003.0013",
+      "scientific_measurement": {
+        "delta": 0.279433,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2439,7 +5039,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783422981010-004",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "crossref_lab",
@@ -2451,7 +5064,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Nuclear_Physics",
       "fsot_scalar": 0.921309,
-      "ingest_source": "crossref_public"
+      "ingest_source": "crossref_public",
+      "domain_display_name": "crossref",
+      "display_name": "10.1515/9783422981010-004",
+      "scientific_measurement": {
+        "delta": 0.279019,
+        "delta_pct": 0.01382,
+        "effective_error_pct": 0.01382,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -2465,5 +5091,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Crossref Scholarly Panel",
+  "tier_label": "Tier 81",
+  "scientific_precision_summary": {
+    "scalar_count": 100,
+    "median_error_pct": 0.01382,
+    "max_error_pct": 0.01382,
+    "mean_abs_delta": 0.27870901000000026,
+    "precision_tier_counts": {
+      "green": 100
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.019122+00:00"
 }

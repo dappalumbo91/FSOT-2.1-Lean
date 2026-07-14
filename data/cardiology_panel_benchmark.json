@@ -40,7 +40,20 @@
       "computed": 0.015311,
       "measured": 0.0,
       "error_pct": 0.015311,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.015311,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.015311,
       "measured": 0.0,
       "error_pct": 0.015311,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "cardiology",
+      "scientific_measurement": {
+        "delta": 0.015311,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -63,7 +89,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "resting hr adult",
+      "scientific_measurement": {
+        "delta": 0.011024,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -75,7 +114,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "max hr 40yo",
+      "scientific_measurement": {
+        "delta": 0.02756,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -87,7 +139,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "normal ejection fraction",
+      "scientific_measurement": {
+        "delta": 0.009187,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -99,7 +164,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "heart failure ef threshold",
+      "scientific_measurement": {
+        "delta": 0.006124,
+        "delta_pct": 0.01531,
+        "effective_error_pct": 0.01531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -111,7 +189,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "systolic bp normal",
+      "scientific_measurement": {
+        "delta": 0.018373,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -123,7 +214,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "diastolic bp normal",
+      "scientific_measurement": {
+        "delta": 0.012249,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -135,7 +239,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "cardiac output rest",
+      "scientific_measurement": {
+        "delta": 0.000766,
+        "delta_pct": 0.01532,
+        "effective_error_pct": 0.01532,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -147,7 +264,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "stroke volume rest",
+      "scientific_measurement": {
+        "delta": 0.010718,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -159,7 +289,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "lv mass index normal",
+      "scientific_measurement": {
+        "delta": 0.014546,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -171,7 +314,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "qt interval normal",
+      "scientific_measurement": {
+        "delta": 0.061244,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -183,7 +339,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "pr interval normal",
+      "scientific_measurement": {
+        "delta": 0.024498,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -195,7 +364,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "troponin uln",
+      "scientific_measurement": {
+        "delta": 6e-06,
+        "delta_pct": 0.015,
+        "effective_error_pct": 0.015,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -207,7 +389,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "ldl target high risk",
+      "scientific_measurement": {
+        "delta": 0.010718,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -219,7 +414,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "hdl male reference",
+      "scientific_measurement": {
+        "delta": 0.007656,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -231,7 +439,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "triglycerides normal",
+      "scientific_measurement": {
+        "delta": 0.022967,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -243,7 +464,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "coronary flow reserve",
+      "scientific_measurement": {
+        "delta": 0.000459,
+        "delta_pct": 0.0153,
+        "effective_error_pct": 0.0153,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -255,7 +489,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "aortic valve area severe",
+      "scientific_measurement": {
+        "delta": 0.000153,
+        "delta_pct": 0.0153,
+        "effective_error_pct": 0.0153,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -267,7 +514,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "pacemaker lower rate",
+      "scientific_measurement": {
+        "delta": 0.009187,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -279,7 +539,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "vo2max cardiac rehab",
+      "scientific_measurement": {
+        "delta": 0.003828,
+        "delta_pct": 0.015312,
+        "effective_error_pct": 0.015312,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "cardiology_panel_lab",
@@ -291,7 +564,20 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Biochemistry",
       "fsot_scalar": 0.306221,
-      "ingest_source": "cardiology_reference_observables_bundled"
+      "ingest_source": "cardiology_reference_observables_bundled",
+      "domain_display_name": "cardiology panel",
+      "display_name": "bnp hf threshold",
+      "scientific_measurement": {
+        "delta": 0.015311,
+        "delta_pct": 0.015311,
+        "effective_error_pct": 0.015311,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -305,5 +591,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Cardiology Panel",
+  "tier_label": "Rust f64 obligation replay",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.015311,
+    "max_error_pct": 0.01532,
+    "mean_abs_delta": 0.013328700000000002,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.243725+00:00"
 }

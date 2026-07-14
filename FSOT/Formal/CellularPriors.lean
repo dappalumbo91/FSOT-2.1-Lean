@@ -11,7 +11,7 @@ noncomputable section
 
 def cellular_soul_records_processed : ℕ := 234447
 def cellular_evolution_operon_count : ℕ := 13
-def cellular_evolution_total_bp : ℕ := 11395
+def cellular_evolution_total_bp : ℕ := 11394
 
 theorem cellular_soul_records_pos : 0 < cellular_soul_records_processed := by
   unfold cellular_soul_records_processed; norm_num
@@ -23,7 +23,7 @@ theorem cellular_operon_count_pos : 0 < cellular_evolution_operon_count := by
 theorem cellular_priors_bundle :
     cellular_soul_records_processed = 234447 ∧
     cellular_evolution_operon_count = 13 ∧
-    cellular_evolution_total_bp = 11395 ∧
+    cellular_evolution_total_bp = 11394 ∧
     raw_S (get_domain_params "cellular") > 0 := by
   refine ⟨
     by unfold cellular_soul_records_processed; norm_num,

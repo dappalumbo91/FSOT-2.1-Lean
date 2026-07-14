@@ -43,7 +43,20 @@
       "computed": 0.02584,
       "measured": 0.0,
       "error_pct": 0.02584,
-      "observable_count": 44
+      "observable_count": 44,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.02584,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -52,7 +65,20 @@
       "computed": 0.02584,
       "measured": 0.0,
       "error_pct": 0.02584,
-      "observable_count": 44
+      "observable_count": 44,
+      "domain_display_name": "tier gap fill",
+      "display_name": "pure mathematics",
+      "scientific_measurement": {
+        "delta": 0.02584,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -67,7 +93,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": "km s^-1 Mpc^-1"
+      "unit": "km s^-1 Mpc^-1",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.064401,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km s^-1 Mpc^-1"
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -80,7 +120,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": "K"
+      "unit": "K",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.095551,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "K"
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -93,7 +147,22 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": "km s^-1 Mpc^-1"
+      "unit": "km s^-1 Mpc^-1",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.064401,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.4778,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2,
+        "unit": "km s^-1 Mpc^-1"
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -106,7 +175,21 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": "dimensionless"
+      "unit": "dimensionless",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "dlmf",
+      "scientific_measurement": {
+        "delta": 0.000775,
+        "delta_pct": 0.095561,
+        "effective_error_pct": 0.095561,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -119,7 +202,20 @@
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "18-100754-general-1946-7-vol-2",
+      "scientific_measurement": {
+        "delta": 0.000543,
+        "delta_pct": 0.008484,
+        "effective_error_pct": 0.008484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -132,7 +228,20 @@
       "fsot_domain": "Particle_Astrophysics",
       "fsot_scalar": -0.424412,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.000357,
+        "delta_pct": 0.0085,
+        "effective_error_pct": 0.0085,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -145,7 +254,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": 0.0372568,
+        "delta_pct": 0.09555,
+        "effective_error_pct": 0.09555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -158,7 +280,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "18-6369445-general-1948-vol-1",
+      "scientific_measurement": {
+        "delta": -0.078424,
+        "delta_pct": 0.095551,
+        "effective_error_pct": 0.095551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -171,7 +306,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Plasma Physics",
+      "scientific_measurement": {
+        "delta": 0.006259,
+        "delta_pct": 0.095557,
+        "effective_error_pct": 0.095557,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -184,7 +332,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Immunology",
+      "scientific_measurement": {
+        "delta": 0.005924,
+        "delta_pct": 0.095548,
+        "effective_error_pct": 0.095548,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -197,7 +358,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Climate Science",
+      "scientific_measurement": {
+        "delta": 0.005924,
+        "delta_pct": 0.095548,
+        "effective_error_pct": 0.095548,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -210,7 +384,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Cosmology Extended",
+      "scientific_measurement": {
+        "delta": 0.00688,
+        "delta_pct": 0.095556,
+        "effective_error_pct": 0.095556,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -223,7 +410,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "AI Galactic Orbital Bridge",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -236,7 +436,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Acoustic Resonance Materials",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -249,7 +462,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Adjacent Rung Coupling",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -262,7 +488,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Adversarial Fractal Break Tests",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -275,7 +514,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Astronomy Cosmology Extended astronomical",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -288,7 +540,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Astronomy Planetary Structure astronomical",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -301,7 +566,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Astronomy Orbital Mechanics astronomical",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -314,7 +592,20 @@
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
       "ingest_source": "NIST_DLMF",
-      "unit": null
+      "unit": null,
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Astronomy Small Body Orbits astronomical",
+      "scientific_measurement": {
+        "delta": 0.000956,
+        "delta_pct": 0.0956,
+        "effective_error_pct": 0.0956,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -327,7 +618,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Subgroup criterion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Subgroup criterion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -340,7 +645,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Homomorphism preservation rule",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Homomorphism preservation rule",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -353,7 +672,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Ideal criterion in a ring",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Ideal criterion in a ring",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -366,7 +699,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Field nonzero invertibility rule",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Field nonzero invertibility rule",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -379,7 +726,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "First isomorphism theorem seed",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "First isomorphism theorem seed",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -392,7 +753,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Normal subgroup criterion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Normal subgroup criterion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -405,7 +780,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Quotient group operation rule",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Quotient group operation rule",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -418,7 +807,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Cyclic subgroup generator rule",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Cyclic subgroup generator rule",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -431,7 +834,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Irreducibility seed over a field",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Irreducibility seed over a field",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -444,7 +861,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Principal ideal rule in a PID",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Principal ideal rule in a PID",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -457,7 +888,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Canonical form normalization expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Canonical form normalization expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -470,7 +915,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Substitution soundness expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Substitution soundness expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -483,7 +942,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Composition rule expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Composition rule expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -496,7 +969,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Inverse admissibility expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Inverse admissibility expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -509,7 +996,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Constraint propagation expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Constraint propagation expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -522,7 +1023,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Boundary condition integration expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Boundary condition integration expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -535,7 +1050,22 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Conservation tracking expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Conservation tracking expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1292,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -548,7 +1078,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Approximation error budget expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Approximation error budget expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -561,7 +1105,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Parameter sensitivity expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Parameter sensitivity expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -574,7 +1132,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Symmetry detection expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Symmetry detection expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -587,7 +1159,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Dimensionless reduction expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Dimensionless reduction expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -600,7 +1186,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Solver branch admissibility expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Solver branch admissibility expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -613,7 +1213,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Degenerate case handling expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Degenerate case handling expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "pure_mathematics_panel_lab",
@@ -626,7 +1240,21 @@
       "fsot_domain": "Economics",
       "fsot_scalar": 0.646005,
       "ingest_source": "math_generator_rules",
-      "corpus": "ABSTRACT_ALGEBRA"
+      "corpus": "ABSTRACT_ALGEBRA",
+      "rule_display_name": "Proof obligation expansion",
+      "domain_display_name": "pure mathematics panel",
+      "display_name": "Proof obligation expansion",
+      "scientific_measurement": {
+        "delta": 0.000258,
+        "delta_pct": 0.0258,
+        "effective_error_pct": 0.0258,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -640,5 +1268,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Pure Mathematics Panel",
+  "tier_label": "Tier 86",
+  "scientific_precision_summary": {
+    "scalar_count": 44,
+    "median_error_pct": 0.0258,
+    "max_error_pct": 0.0956,
+    "mean_abs_delta": 0.008648540909090898,
+    "precision_tier_counts": {
+      "green": 44
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.271369+00:00"
 }

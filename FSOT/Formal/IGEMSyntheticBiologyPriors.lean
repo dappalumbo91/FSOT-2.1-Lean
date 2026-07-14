@@ -15,8 +15,8 @@ open Real
 def igem_synthetic_biology_observable_count : ℕ := 54
 def igem_synthetic_biology_part_count : ℕ := 20
 def igem_synthetic_biology_D_eff : ℕ := 14
-def igem_synthetic_biology_pooled_median_error_pct : ℝ := (0.02223625038520417 : ℝ)
-def igem_synthetic_biology_headline_median_error_pct : ℝ := (0.02223625038520417 : ℝ)
+def igem_synthetic_biology_pooled_median_error_pct : ℝ := (0.022236250385203583 : ℝ)
+def igem_synthetic_biology_headline_median_error_pct : ℝ := (0.022236250385203583 : ℝ)
 def igem_synthetic_biology_beats_sota_headlines : ℕ := 6
 
 theorem igem_synthetic_biology_observable_count_pos : 0 < igem_synthetic_biology_observable_count := by

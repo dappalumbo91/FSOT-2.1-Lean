@@ -44,7 +44,20 @@
       "computed": 0.002092,
       "measured": 0.0,
       "error_pct": 0.0020923899350648867,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.002092,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,7 +66,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "ToE Claim Certificate Bundle depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -235,7 +261,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\ai_galactic_orbital_bridge_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "AI Galactic Orbital Bridge",
       "scientific_measurement": {
         "delta": 0.000297,
@@ -273,7 +299,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\acoustic_resonance_materials_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "Acoustic Resonance Materials",
       "scientific_measurement": {
         "delta": 0.000201,
@@ -311,7 +337,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adjacent_rung_coupling_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "Adjacent Rung Coupling",
       "scientific_measurement": {
         "delta": 0.000314,
@@ -348,7 +374,7 @@
       ],
       "priority": false,
       "benchmark_path": "data\\adversarial_fractal_break_benchmark.json",
-      "domain_display_name": "time domain crosswalk",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "Adversarial Fractal Break Tests",
       "scientific_measurement": {
         "delta": 0.000298,
@@ -374,7 +400,7 @@
       "error_pct": 0.192564276915754,
       "unit": "km s^-1 Mpc^-1",
       "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "engine native h0",
       "scientific_measurement": {
         "delta": -0.12978832,
@@ -402,7 +428,7 @@
       "unit": "K",
       "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "brightness temperature rms k",
       "scientific_measurement": {
         "delta": -0.00418478,
@@ -429,7 +455,7 @@
       "unit": "km s^-1 Mpc^-1",
       "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "hubble constant km s mpc",
       "scientific_measurement": {
         "delta": -0.01604169,
@@ -457,7 +483,7 @@
       "unit": "dimensionless",
       "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
       "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "matter fluctuation amplitude",
       "scientific_measurement": {
         "delta": 0.000124,
@@ -490,7 +516,8 @@
       },
       "lab": "toe_claim_certificate_bundle_depth_lab",
       "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
+      "depth_relay_from": "Math_Generator_Rules_Eval",
+      "domain_display_name": "toe claim certificate bundle depth"
     },
     {
       "lab": "toe_claim_certificate_bundle_depth_lab",
@@ -500,7 +527,7 @@
       "measured": 29.0,
       "error_pct": 0.0,
       "eval_kind": "ledger_anchor",
-      "domain_display_name": "proof ledger closure",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "proof ledger",
       "scientific_measurement": {
         "delta": 0.0,
@@ -524,7 +551,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "formal_gate",
-      "domain_display_name": "proof ledger closure",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "formal layer",
       "scientific_measurement": {
         "delta": 0.0,
@@ -548,7 +575,7 @@
       "measured": 65.0,
       "error_pct": 0.0,
       "eval_kind": "progress_anchor",
-      "domain_display_name": "proof ledger closure",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "verification progress",
       "scientific_measurement": {
         "delta": 0.0,
@@ -572,7 +599,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "ledger_gate",
-      "domain_display_name": "proof ledger closure",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "formal closure",
       "scientific_measurement": {
         "delta": 0.0,
@@ -597,7 +624,7 @@
       "error_pct": 0.0,
       "source": "Time_Emergence_Simulation",
       "status": "GREEN",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "time emergence simulation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -623,7 +650,7 @@
       "error_pct": 0.028056,
       "source": "Time_Domain_Crosswalk",
       "status": "GREEN",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "time domain crosswalk",
       "scientific_measurement": {
         "delta": 0.0,
@@ -649,7 +676,7 @@
       "error_pct": 0.031199,
       "source": "FPC_Temporal_Coupling",
       "status": "GREEN",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "fpc temporal coupling",
       "scientific_measurement": {
         "delta": 0.0,
@@ -674,7 +701,7 @@
       "measured": 6.0,
       "error_pct": 0.009504,
       "source": "fluid_phase_current_spine",
-      "domain_display_name": "fluid phase current spine",
+      "domain_display_name": "toe claim certificate bundle depth",
       "display_name": "temporal coupling",
       "scientific_measurement": {
         "delta": 0.00057,
@@ -703,5 +730,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "ToE Claim Certificate Bundle",
+  "tier_label": "Tier 70 \u2014 Proof Ledger Closure Spine + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 22,
+    "median_error_pct": 0.004185,
+    "max_error_pct": 0.192564,
+    "mean_abs_delta": 0.007229466190476191,
+    "precision_tier_counts": {
+      "green": 22
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.743325+00:00"
 }

@@ -41,7 +41,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 36
+      "observable_count": 36,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.009504,
       "measured": 0.0,
       "error_pct": 0.009504,
-      "observable_count": 36
+      "observable_count": 36,
+      "domain_display_name": "tier gap fill",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 0.009504,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -67,7 +93,20 @@
       "base": 3,
       "kind": "fsot_native",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 0.000713,
+        "delta_pct": 0.009507,
+        "effective_error_pct": 0.009507,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -82,7 +121,20 @@
       "base": 3,
       "kind": "fsot_native",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 6.8e-05,
+        "delta_pct": 0.009484,
+        "effective_error_pct": 0.009484,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -97,7 +149,20 @@
       "base": 3,
       "kind": "fsot_native",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 2.7e-05,
+        "delta_pct": 0.009542,
+        "effective_error_pct": 0.009542,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -112,7 +177,20 @@
       "base": 3,
       "kind": "fsot_native",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.009619,
+        "effective_error_pct": 0.009619,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -127,7 +205,20 @@
       "base": 3,
       "kind": "fsot_native",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "fsot native trinary",
+      "scientific_measurement": {
+        "delta": 0.005037,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -142,7 +233,20 @@
       "base": 9,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron square",
+      "scientific_measurement": {
+        "delta": 1.5e-05,
+        "delta_pct": 0.009452,
+        "effective_error_pct": 0.009452,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -157,7 +261,20 @@
       "base": 9,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron square",
+      "scientific_measurement": {
+        "delta": 8.6e-05,
+        "delta_pct": 0.009515,
+        "effective_error_pct": 0.009515,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -172,7 +289,20 @@
       "base": 9,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron square",
+      "scientific_measurement": {
+        "delta": 9e-06,
+        "delta_pct": 0.00936,
+        "effective_error_pct": 0.00936,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -187,7 +317,20 @@
       "base": 9,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron square",
+      "scientific_measurement": {
+        "delta": 1e-05,
+        "delta_pct": 0.009073,
+        "effective_error_pct": 0.009073,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -202,7 +345,20 @@
       "base": 9,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron square",
+      "scientific_measurement": {
+        "delta": 0.004942,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -217,7 +373,20 @@
       "base": 27,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron cube",
+      "scientific_measurement": {
+        "delta": 4e-06,
+        "delta_pct": 0.009647,
+        "effective_error_pct": 0.009647,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -232,7 +401,20 @@
       "base": 27,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron cube",
+      "scientific_measurement": {
+        "delta": 9.3e-05,
+        "delta_pct": 0.009482,
+        "effective_error_pct": 0.009482,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -247,7 +429,20 @@
       "base": 27,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron cube",
+      "scientific_measurement": {
+        "delta": 2e-06,
+        "delta_pct": 0.0104,
+        "effective_error_pct": 0.0104,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -262,7 +457,20 @@
       "base": 27,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron cube",
+      "scientific_measurement": {
+        "delta": 3e-06,
+        "delta_pct": 0.008317,
+        "effective_error_pct": 0.008317,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -277,7 +485,20 @@
       "base": 27,
       "kind": "power_of_3",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "metatron cube",
+      "scientific_measurement": {
+        "delta": 0.004942,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -292,7 +513,20 @@
       "base": 12,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "dozenal experimental",
+      "scientific_measurement": {
+        "delta": 1e-05,
+        "delta_pct": 0.009239,
+        "effective_error_pct": 0.009239,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -307,7 +541,20 @@
       "base": 12,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "dozenal experimental",
+      "scientific_measurement": {
+        "delta": 8.6e-05,
+        "delta_pct": 0.009515,
+        "effective_error_pct": 0.009515,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -322,7 +569,20 @@
       "base": 12,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "dozenal experimental",
+      "scientific_measurement": {
+        "delta": 9e-06,
+        "delta_pct": 0.00936,
+        "effective_error_pct": 0.00936,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -337,7 +597,20 @@
       "base": 12,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "dozenal experimental",
+      "scientific_measurement": {
+        "delta": 8e-06,
+        "delta_pct": 0.009737,
+        "effective_error_pct": 0.009737,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -352,7 +625,20 @@
       "base": 12,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "dozenal experimental",
+      "scientific_measurement": {
+        "delta": 0.004942,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -367,7 +653,20 @@
       "base": 8,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "octal experimental",
+      "scientific_measurement": {
+        "delta": 1.8e-05,
+        "delta_pct": 0.009594,
+        "effective_error_pct": 0.009594,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -382,7 +681,20 @@
       "base": 8,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "octal experimental",
+      "scientific_measurement": {
+        "delta": 8.2e-05,
+        "delta_pct": 0.009476,
+        "effective_error_pct": 0.009476,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -397,7 +709,20 @@
       "base": 8,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "octal experimental",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 0.009657,
+        "effective_error_pct": 0.009657,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -412,7 +737,20 @@
       "base": 8,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "octal experimental",
+      "scientific_measurement": {
+        "delta": 1.2e-05,
+        "delta_pct": 0.009658,
+        "effective_error_pct": 0.009658,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -427,7 +765,20 @@
       "base": 8,
       "kind": "historical",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "octal experimental",
+      "scientific_measurement": {
+        "delta": 0.004942,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -442,7 +793,20 @@
       "base": 10,
       "kind": "control",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "decimal control",
+      "scientific_measurement": {
+        "delta": 1.3e-05,
+        "delta_pct": 0.009461,
+        "effective_error_pct": 0.009461,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -457,7 +821,20 @@
       "base": 10,
       "kind": "control",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "decimal control",
+      "scientific_measurement": {
+        "delta": 9e-05,
+        "delta_pct": 0.009551,
+        "effective_error_pct": 0.009551,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -472,7 +849,20 @@
       "base": 10,
       "kind": "control",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "decimal control",
+      "scientific_measurement": {
+        "delta": 5e-06,
+        "delta_pct": 0.008667,
+        "effective_error_pct": 0.008667,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -487,7 +877,20 @@
       "base": 10,
       "kind": "control",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "decimal control",
+      "scientific_measurement": {
+        "delta": 1e-05,
+        "delta_pct": 0.00998,
+        "effective_error_pct": 0.00998,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -502,7 +905,20 @@
       "base": 10,
       "kind": "control",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "decimal control",
+      "scientific_measurement": {
+        "delta": 0.004942,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -517,7 +933,20 @@
       "base": 3,
       "kind": "balanced_ternary",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "balanced ternary",
+      "scientific_measurement": {
+        "delta": 0.000618,
+        "delta_pct": 0.009508,
+        "effective_error_pct": 0.009508,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -532,7 +961,20 @@
       "base": 3,
       "kind": "balanced_ternary",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "balanced ternary",
+      "scientific_measurement": {
+        "delta": 5.8e-05,
+        "delta_pct": 0.009531,
+        "effective_error_pct": 0.009531,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -547,7 +989,20 @@
       "base": 3,
       "kind": "balanced_ternary",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "balanced ternary",
+      "scientific_measurement": {
+        "delta": 2.7e-05,
+        "delta_pct": 0.009542,
+        "effective_error_pct": 0.009542,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -562,7 +1017,20 @@
       "base": 3,
       "kind": "balanced_ternary",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "balanced ternary",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.009619,
+        "effective_error_pct": 0.009619,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -577,7 +1045,20 @@
       "base": 3,
       "kind": "balanced_ternary",
       "experimental": true,
-      "does_not_modify_fsot_core": true
+      "does_not_modify_fsot_core": true,
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "balanced ternary",
+      "scientific_measurement": {
+        "delta": 0.005037,
+        "delta_pct": 0.009504,
+        "effective_error_pct": 0.009504,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "experimental_base_mathematics_lab",
@@ -597,7 +1078,21 @@
         "decimal_control",
         "dozenal_experimental",
         "metatron_cube"
-      ]
+      ],
+      "domain_display_name": "experimental base mathematics",
+      "display_name": "tier93 ranking",
+      "scientific_measurement": {
+        "delta": 0.000285,
+        "delta_pct": 0.0095,
+        "effective_error_pct": 0.0095,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.0475,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2
+      }
     }
   ],
   "margin_summary": {
@@ -611,5 +1106,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Experimental Base Mathematics Panel",
+  "tier_label": "Tier 93",
+  "scientific_precision_summary": {
+    "scalar_count": 36,
+    "median_error_pct": 0.009504,
+    "max_error_pct": 0.0104,
+    "mean_abs_delta": 0.0010339444444444445,
+    "precision_tier_counts": {
+      "green": 36
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.387976+00:00"
 }

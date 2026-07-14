@@ -1,0 +1,126 @@
+version: "1.0"
+updated: "2026-07-14"
+purpose: >
+  Maps founding FSUFT-U / fsot tech ideas to FSOT 2.1 Lean-verified equivalents.
+  Use for LLM training: retain philosophy, retire hallucinated-fitting math.
+
+founding_roots:
+  fsuft_aasb: "I:/fsuft aasb"
+  fsot_tech: "I:/fsot tech"
+  era: "2025-02 → 2025-07 (FSUFT-U 6.0–9.6)"
+  verified_successor: "FSOT 2.1 Lean (I:/FSOT-Physical-Archive/02_FSOT-2.1-Lean-Full)"
+
+concepts:
+  - id: as_above_so_below
+    founding: "As Above, So Below — cross-scale pattern repetition"
+    status: retained
+    fsot_21: "cross_scale_bridges, compactification_ladder, 329 extension domains"
+    lean: [FSOT.Formal.CrossScaleSelfSimilarityPriors, FSOT.Formal.CompactificationLadderPriors]
+    epistemic_tier: measured
+
+  - id: fluid_25d_ontology
+    founding: "Universe as 25D fluid condensate; 4D reduction for observation"
+    status: retained
+    fsot_21: "D_eff=25 default; perceived_adjust(D_eff); FSOT 3.0 Cosmic Skeleton Key"
+    lean: [FSOT.Scalar, FSOT.Formal.Scalar, FSOT.Formal.TimeEmergenceDeepPriors]
+    epistemic_tier: proved
+
+  - id: consciousness_fundamental
+    founding: "Ψ_con consciousness field in 25D action; not epiphenomenal"
+    status: retained
+    fsot_21: "consciousness_factor, quirk_mod(observed), E_con, Tier 90/93 panels"
+    lean: [FSOT.Formal.ConsciousnessExpansionSpinePriors, FSOT.Formal.ConsciousnessSoulBridgePriors]
+    epistemic_tier: measured
+    note: "Nature of consciousness still definition-open externally; fundamental inside FSOT"
+
+  - id: zero_free_parameters
+    founding: "Aspirational in FSUFT 8.x axioms; not enforced in 9.x code"
+    status: reconciled
+    fsot_21: "All constants from (π,e,φ,γ,G); vendor/fsot_compute.py hash-gated"
+    lean: [FSOT.Formal.Bounds]
+    epistemic_tier: proved
+    founding_caveat: "fsuft-aasb.py used per-domain multiplier/base — NOT zero-free"
+
+  - id: scalar_unification
+    founding: "Single S_D formula across domains"
+    status: evolved
+    founding_formula: "FSUFT-U 9.2 SCI action + 9.6 simplified S_D_chaotic"
+    fsot_21_formula: "raw_S = term1×quirk_mod + term2 + term3; scaled_S = K×raw_S"
+    lean: [FSOT.Scalar, FSOT.Formal.Theorems]
+    epistemic_tier: proved
+
+  - id: sci_severity_index
+    founding: "SCI 0.25–3.0 tuned per domain severity"
+    status: replaced
+    fsot_21: "proof_ledger domain params: D_eff, delta_psi, recent_hits, observed flag"
+    lean: [FSOT.Formal.Domains]
+    epistemic_tier: proved
+
+  - id: pflt_translator
+    founding: "Proto-Fluid Language Translator — fluid grammar bridge"
+    status: retained
+    fsot_21: "Linguistics formal panel + trinary tokenization"
+    lean: [FSOT.Formal.LinguisticsFormalPriors]
+    epistemic_tier: measured
+
+  - id: thirty_five_laws
+    founding: "35 novel physics laws (FSUFT-U 9.2 appendix)"
+    status: partial_map
+    fsot_21: "strict_empirical.jsonl + extension domain benchmarks; law-by-law audit ongoing"
+    lean: [FSOT.Formal.FormulaCorpusStrictEmpiricalPriors]
+    epistemic_tier: scaffold
+
+  - id: simulation_bowl
+    founding: "Monte Carlo + scipy.optimize fitting (physics_simulation_engine.py)"
+    status: retired_for_verification
+    fsot_21: "fsot_verification_runner.py + cross-proof; no post-hoc multiplier fit"
+    epistemic_tier: proved
+    founding_caveat: "Founding MC closeness % often LLM-inflated; do not train as fact"
+
+  - id: auto_tune_mlp
+    founding: "MLPRegressor auto_tune on eta_eff, psi_con in fsuft-aasb.py"
+    status: retired
+    fsot_21: "Domain params fixed in ledger; ML only for distill/agent loops with Lean gate"
+    epistemic_tier: proved
+
+  - id: soul_substrate_bridge
+    founding: "10D consciousness vibration, Tree of Life, metaphysical resonance docs"
+    status: retained_interpretive
+    fsot_21: "Consciousness_Soul_Bridge, Soul Simulator 234k records, SR-ITE axioms"
+    lean: [FSOT.Formal.ConsciousnessSoulBridgePriors, FSOT.Formal.SoulSiblingPriors]
+    epistemic_tier: scaffold
+
+  - id: tech_blueprints
+    founding: "I:/fsot tech — warp drive, fusion, Aetherion, QVEH, Oxoflash, etc."
+    status: applied_exploration
+    fsot_21: "tier39 propulsion, fusion labs, warp_bh_wh_portal, fuel_lab panels"
+    lean: [FSOT.Formal.SpacePropulsionSystemsPriors, FSOT.Formal.FuelLabCompoundPriors]
+    epistemic_tier: interpretive
+    note: "Engineering vision documents; verify numerics before citing as measured"
+
+hallucination_patterns_to_strip:
+  - "99.999999% accuracy"
+  - "4.578 billion data points"
+  - "11.828 billion"
+  - "zero percent difference on rounded observables without error bars"
+  - "9.7 TeV particle unless re-derived in strict_empirical"
+  - "2.3 quadrillion AI parameters unless benchmarked in extension panel"
+  - "per_domain_multiplier_base_fitting"
+
+founding_constants_vs_verified:
+  psi_con:
+    founding: 0.7
+    verified: "(e-1)/e ≈ 0.632120558828382"
+  eta_eff:
+    founding: 0.45
+    verified: "1/(π-1) ≈ 0.4669476026134259"
+  alpha:
+    founding: 0.48
+    verified: "ln(π)/(e·φ^13)"
+
+key_founding_text_sources:
+  - "I:/fsuft aasb/Fluid_Spacetime_Unification_Field_Theory As above So below.md"
+  - "I:/fsuft aasb/fsuft-u 9.2/FSUFT_U_9_2_unified_field_theory.md"
+  - "I:/fsuft aasb/fsuft-aasb.py"
+  - "I:/fsot tech/Palumbo_Perpetual_Flux_Generator_Blueprint.md"
+  - "I:/fsot tech/planetary_gear_board_blueprint.md"

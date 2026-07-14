@@ -40,7 +40,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -49,7 +62,20 @@
       "computed": 0.000555,
       "measured": 0.0,
       "error_pct": 0.000555,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Ecology depth",
+      "scientific_measurement": {
+        "delta": 0.000555,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -341,7 +367,20 @@
       "formula": "C9H8O4",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "ecology depth",
+      "display_name": "2244",
+      "scientific_measurement": {
+        "delta": -0.001,
+        "delta_pct": 0.000555,
+        "effective_error_pct": 0.000555,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ecology_depth_lab",
@@ -356,7 +395,20 @@
       "formula": "C8H9NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "ecology depth",
+      "display_name": "1983",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.003308,
+        "effective_error_pct": 0.003308,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ecology_depth_lab",
@@ -371,7 +423,20 @@
       "formula": "C13H18O2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "ecology depth",
+      "display_name": "3672",
+      "scientific_measurement": {
+        "delta": 0.005,
+        "delta_pct": 0.002424,
+        "effective_error_pct": 0.002424,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ecology_depth_lab",
@@ -386,7 +451,20 @@
       "formula": "C14H11Cl2NO2",
       "within_band": true,
       "source_panel": "PubChem_Live_Deep",
-      "depth_relay_from": "PubChem_Live_Deep"
+      "depth_relay_from": "PubChem_Live_Deep",
+      "domain_display_name": "ecology depth",
+      "display_name": "3033",
+      "scientific_measurement": {
+        "delta": 0.047,
+        "delta_pct": 0.015873,
+        "effective_error_pct": 0.015873,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "ecology_depth_lab",
@@ -396,7 +474,7 @@
       "measured": 36.762501,
       "error_pct": 0.017836062884406634,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "ecology depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.006557,
@@ -421,7 +499,7 @@
       "measured": -95.543335,
       "error_pct": 0.017836062884411003,
       "source": "pbdb_api",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "ecology depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": -0.017041,
@@ -446,7 +524,7 @@
       "measured": 312.8,
       "error_pct": 0.01337704716331671,
       "source": "pbdb_age",
-      "domain_display_name": "paleontology",
+      "domain_display_name": "ecology depth",
       "display_name": "Ammonoidea indet.",
       "scientific_measurement": {
         "delta": 0.041843,
@@ -471,7 +549,7 @@
       "measured": -32.0,
       "error_pct": 0.022236250385199163,
       "source": "obis_api",
-      "domain_display_name": "marine biology",
+      "domain_display_name": "ecology depth",
       "display_name": "Prymnesiales",
       "scientific_measurement": {
         "delta": -0.007116,
@@ -496,7 +574,7 @@
       "measured": 115.41667,
       "error_pct": 0.017789000308157117,
       "source": "obis_api",
-      "domain_display_name": "marine biology",
+      "domain_display_name": "ecology depth",
       "display_name": "Prymnesiales",
       "scientific_measurement": {
         "delta": 0.020531,
@@ -521,7 +599,7 @@
       "measured": 20.0,
       "error_pct": 0.04447250077037168,
       "source": "obis_depth",
-      "domain_display_name": "marine biology",
+      "domain_display_name": "ecology depth",
       "display_name": "Prymnesiales",
       "scientific_measurement": {
         "delta": 0.008895,
@@ -546,7 +624,7 @@
       "measured": -38.4151,
       "error_pct": 0.02223625038519403,
       "source": "obis_api",
-      "domain_display_name": "marine biology",
+      "domain_display_name": "ecology depth",
       "display_name": "Pelecanus conspicillatus",
       "scientific_measurement": {
         "delta": -0.008542,
@@ -575,7 +653,20 @@
       "fsot_scalar": -0.377159,
       "ingest_source": "usgs_nwis_limnology",
       "source_panel": "Limnology_Panel",
-      "depth_relay_from": "Limnology_Panel"
+      "depth_relay_from": "Limnology_Panel",
+      "domain_display_name": "ecology depth",
+      "display_name": "red river",
+      "scientific_measurement": {
+        "delta": 0.008388,
+        "delta_pct": 0.030173,
+        "effective_error_pct": 0.030173,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
@@ -589,5 +680,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Ecology",
+  "tier_label": "Tier 66 \u2014 Quantum Information + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.044475,
+    "mean_abs_delta": 0.006258578947368421,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.464309+00:00"
 }

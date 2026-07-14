@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-11T15:12:51.582120+00:00",
+  "generated_at": "2026-07-13T15:22:10.137103+00:00",
   "smiles_particle_count": 36,
   "thesis_particle_wave_count": 21,
   "wave4_count": 16,
@@ -10,7 +10,7 @@
   "max_error_pct": 0.492528,
   "within_two_pct_count": 52,
   "within_five_pct_count": 52,
-  "wave4_max_error_pct": 0.23468225112121452,
+  "wave4_max_error_pct": null,
   "smiles_particle_records": [
     {
       "source": "smiles_lab",
@@ -773,8 +773,5 @@
       "name": "Counterexample mining expansion",
       "category": "auto_expansion_validation"
     }
-  ],
-  "display_name": "Particle Physics",
-  "tier_label": "Tier 16",
-  "scientific_metadata_enriched_at": "2026-07-11T22:29:56.444127+00:00"
+  ]
 }

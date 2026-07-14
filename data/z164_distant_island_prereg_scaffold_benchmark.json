@@ -42,7 +42,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -51,7 +64,20 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 24
+      "observable_count": 24,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Z164 Distant Island Prereg Scaffold depth",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -222,11 +248,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Astronomy Cosmology Extended astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -247,11 +276,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Astronomy Planetary Structure astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -272,11 +304,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Astronomy Orbital Mechanics astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -297,11 +332,14 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "domain_display_name": "domain coupling",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Astronomy Small Body Orbits astronomical",
       "scientific_measurement": {
         "delta": 0.0,
         "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
         "sigma_equivalent": null,
         "precision_tier": "green",
         "within_green_gate": true,
@@ -319,7 +357,7 @@
       "measured": 938.272,
       "error_pct": 0.323111,
       "eval_kind": "particle_relay",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "proton",
       "scientific_measurement": {
         "delta": 3.03165665,
@@ -343,7 +381,7 @@
       "measured": 939.565,
       "error_pct": 0.185049,
       "eval_kind": "particle_relay",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "neutron",
       "scientific_measurement": {
         "delta": 1.73865665,
@@ -368,7 +406,7 @@
       "measured": 8100.0,
       "error_pct": 1e-06,
       "eval_kind": "half_life_anchor",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Rf",
       "scientific_measurement": {
         "delta": 7.698e-05,
@@ -393,7 +431,7 @@
       "measured": 7.154302,
       "error_pct": 9.5e-05,
       "eval_kind": "liquid_drop_proxy",
-      "domain_display_name": "superheavy stability",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Rf",
       "scientific_measurement": {
         "delta": 7e-06,
@@ -417,7 +455,7 @@
       "measured": 1e-06,
       "error_pct": 0.0,
       "eval_kind": "panel_bridge",
-      "domain_display_name": "element synthesis condition",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "superheavy element stability panel",
       "scientific_measurement": {
         "delta": 0.0,
@@ -442,7 +480,7 @@
       "measured": 246.928088,
       "error_pct": 0.000787,
       "eval_kind": "condition_proxy",
-      "domain_display_name": "element synthesis condition",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Og 2006",
       "scientific_measurement": {
         "delta": 0.001943,
@@ -466,7 +504,7 @@
       "measured": 35.0,
       "error_pct": 0.00095,
       "eval_kind": "facility_margin",
-      "domain_display_name": "element synthesis condition",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Og 2006",
       "scientific_measurement": {
         "delta": 0.000333,
@@ -490,7 +528,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "condition_gate",
-      "domain_display_name": "element synthesis condition",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Og 2006",
       "scientific_measurement": {
         "delta": 0.0,
@@ -516,7 +554,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Z119 N177 r process supernova",
       "scientific_measurement": {
         "delta": 0.0,
@@ -542,7 +580,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Z119 N177 s process agb",
       "scientific_measurement": {
         "delta": 0.0,
@@ -568,7 +606,7 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Z119 N177 cosmic ray spallation",
       "scientific_measurement": {
         "delta": 0.0,
@@ -594,7 +632,7 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "eval_kind": "emergence_sim",
-      "domain_display_name": "superheavy island emergence",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "Z119 N177 heavy ion fusion lab",
       "scientific_measurement": {
         "delta": 0.0,
@@ -618,7 +656,7 @@
       "measured": 9.5e-05,
       "error_pct": 0.0,
       "eval_kind": "fusion_bridge",
-      "domain_display_name": "natural formation element",
+      "domain_display_name": "z164 distant island prereg scaffold depth",
       "display_name": "fusion physics public panel",
       "scientific_measurement": {
         "delta": 0.0,
@@ -646,5 +684,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Z164 Distant Island Prereg Scaffold",
+  "tier_label": "Tier 75 \u2014 Distant Island Z128 Z132 Deep Panel + cluster",
+  "scientific_precision_summary": {
+    "scalar_count": 19,
+    "median_error_pct": 0.0,
+    "max_error_pct": 0.323111,
+    "mean_abs_delta": 0.2511948315789474,
+    "precision_tier_counts": {
+      "green": 19
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:46.782841+00:00"
 }

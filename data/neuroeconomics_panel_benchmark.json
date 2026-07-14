@@ -41,7 +41,20 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.031506,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -50,7 +63,20 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 20
+      "observable_count": 20,
+      "domain_display_name": "tier gap fill",
+      "display_name": "neuroeconomics",
+      "scientific_measurement": {
+        "delta": 0.031506,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -64,7 +90,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "loss aversion lambda",
+      "scientific_measurement": {
+        "delta": 0.000709,
+        "delta_pct": 0.031511,
+        "effective_error_pct": 0.031511,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -76,7 +116,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "discount rate annual",
+      "scientific_measurement": {
+        "delta": 3.2e-05,
+        "delta_pct": 0.032,
+        "effective_error_pct": 0.032,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -88,7 +142,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "risk aversion crra",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -100,7 +168,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "endowment effect pct",
+      "scientific_measurement": {
+        "delta": 0.00063,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -112,7 +194,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "prospect theory alpha",
+      "scientific_measurement": {
+        "delta": 0.000277,
+        "delta_pct": 0.031477,
+        "effective_error_pct": 0.031477,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -124,7 +220,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "prospect theory beta",
+      "scientific_measurement": {
+        "delta": 0.000277,
+        "delta_pct": 0.031477,
+        "effective_error_pct": 0.031477,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -136,7 +246,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "ultimatum accept threshold",
+      "scientific_measurement": {
+        "delta": 6.3e-05,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -148,7 +272,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "trust game return",
+      "scientific_measurement": {
+        "delta": 0.000945,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -160,7 +298,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "dictator give mean",
+      "scientific_measurement": {
+        "delta": 8.8e-05,
+        "delta_pct": 0.031429,
+        "effective_error_pct": 0.031429,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -172,7 +324,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "public goods contribution",
+      "scientific_measurement": {
+        "delta": 0.000142,
+        "delta_pct": 0.031556,
+        "effective_error_pct": 0.031556,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -184,7 +350,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "anchoring adjustment pct",
+      "scientific_measurement": {
+        "delta": 4.7e-05,
+        "delta_pct": 0.031333,
+        "effective_error_pct": 0.031333,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -196,7 +376,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "framing effect pct",
+      "scientific_measurement": {
+        "delta": 9.5e-05,
+        "delta_pct": 0.031667,
+        "effective_error_pct": 0.031667,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -208,7 +402,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "present bias beta",
+      "scientific_measurement": {
+        "delta": 0.000221,
+        "delta_pct": 0.031571,
+        "effective_error_pct": 0.031571,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -220,7 +428,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "altruism transfer pct",
+      "scientific_measurement": {
+        "delta": 7.9e-05,
+        "delta_pct": 0.0316,
+        "effective_error_pct": 0.0316,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -232,7 +454,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "probability discount",
+      "scientific_measurement": {
+        "delta": 4.7e-05,
+        "delta_pct": 0.031333,
+        "effective_error_pct": 0.031333,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -244,7 +480,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "ambiguity aversion",
+      "scientific_measurement": {
+        "delta": 3.8e-05,
+        "delta_pct": 0.031667,
+        "effective_error_pct": 0.031667,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -256,7 +506,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "mental accounting sunk",
+      "scientific_measurement": {
+        "delta": 0.00011,
+        "delta_pct": 0.031429,
+        "effective_error_pct": 0.031429,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -268,7 +532,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "social preference inequity",
+      "scientific_measurement": {
+        "delta": 0.000158,
+        "delta_pct": 0.0316,
+        "effective_error_pct": 0.0316,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -280,7 +558,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "neural reward prediction error",
+      "scientific_measurement": {
+        "delta": 0.000473,
+        "delta_pct": 0.031533,
+        "effective_error_pct": 0.031533,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     },
     {
       "lab": "neuroeconomics_panel_lab",
@@ -292,7 +584,21 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "neuroeconomics_behavioral_reference"
+      "ingest_source": "neuroeconomics_behavioral_reference",
+      "domain_display_name": "neuroeconomics panel",
+      "display_name": "striatal bold gain",
+      "scientific_measurement": {
+        "delta": 0.000882,
+        "delta_pct": 0.0315,
+        "effective_error_pct": 0.0315,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.21,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.15
+      }
     }
   ],
   "margin_summary": {
@@ -306,5 +612,19 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5
+  "fsot_precision_gate_pct": 0.5,
+  "display_name": "Neuroeconomics Panel",
+  "tier_label": "Tier 85",
+  "scientific_precision_summary": {
+    "scalar_count": 20,
+    "median_error_pct": 0.0315,
+    "max_error_pct": 0.032,
+    "mean_abs_delta": 0.00029715000000000004,
+    "precision_tier_counts": {
+      "green": 20
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-13T15:21:47.249972+00:00"
 }

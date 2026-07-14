@@ -20,19 +20,19 @@ def bubble_bleed_wh_closure_count : ℕ := 20
 def bubble_bleed_bh_spin_count : ℕ := 5
 def bubble_bleed_frb_p34_count : ℕ := 4
 def bubble_bleed_observable_count : ℕ := 113
-def bubble_bleed_nebula_match_count : ℕ := 18
+def bubble_bleed_nebula_match_count : ℕ := 20
 def bubble_bleed_framework_fit_count : ℕ := 20
 def bubble_bleed_wh_closure_match_count : ℕ := 20
 def bubble_bleed_bh_spin_match_count : ℕ := 5
-def bubble_bleed_frb_match_count : ℕ := 37
+def bubble_bleed_frb_match_count : ℕ := 38
 def bubble_bleed_fraction : ℝ := (0.015431 : ℝ)
 def bubble_bleed_observability_ratio : ℝ := (0.7142857142857143 : ℝ)
-def bubble_bleed_nebula_match_rate : ℝ := (0.9 : ℝ)
+def bubble_bleed_nebula_match_rate : ℝ := (1.0 : ℝ)
 def bubble_bleed_framework_fit_rate : ℝ := (1.0 : ℝ)
 def bubble_bleed_wh_closure_match_rate : ℝ := (1.0 : ℝ)
 def bubble_bleed_bh_spin_match_rate : ℝ := (1.0 : ℝ)
-def bubble_bleed_frb_match_rate : ℝ := (0.9736842105263158 : ℝ)
-def bubble_bleed_frb_fp_rate : ℝ := (0.034482758620689655 : ℝ)
+def bubble_bleed_frb_match_rate : ℝ := (1.0 : ℝ)
+def bubble_bleed_frb_fp_rate : ℝ := (0.0 : ℝ)
 
 theorem bubble_bleed_nebula_count_pos : 0 < bubble_bleed_nebula_count := by
   unfold bubble_bleed_nebula_count; norm_num
