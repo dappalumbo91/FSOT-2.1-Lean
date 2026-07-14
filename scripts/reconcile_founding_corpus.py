@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Harvest I:\\fsuft aasb + I:\\fsot tech founding docs; reconcile against FSOT 2.1 registry."""
+"""Harvest founding docs from 06_Founding-Archives; reconcile against FSOT 2.1 registry."""
 
 from __future__ import annotations
 
 import argparse
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,10 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data" / "founding_concepts_registry.yaml"
 DEFAULT_OUT = ROOT / "vendor" / "philosophy_corpus" / "fsot_founding_reconciled.jsonl"
 
-FOUNDING_ROOTS = [
-    Path(r"I:\fsuft aasb"),
-    Path(r"I:\fsot tech"),
-]
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import founding_archive_roots  # noqa: E402
 
 CHUNK_CHARS = 2600
 HALLUCINATION_PATTERNS = [
@@ -112,7 +111,7 @@ def _iter_founding_files() -> list[Path]:
     pdf_extracted = ROOT / "vendor" / "founding_corpus" / "pdf_extracted"
     if pdf_extracted.exists():
         files.extend(sorted(pdf_extracted.glob("*.txt")))
-    for root in FOUNDING_ROOTS:
+    for root in founding_archive_roots():
         if not root.exists():
             continue
         for path in root.rglob("*"):

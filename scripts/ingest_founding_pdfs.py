@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract text from founding PDFs on I:\\fsuft aasb and I:\\fsot tech."""
+"""Extract text from founding PDFs (06_Founding-Archives or legacy drive roots)."""
 
 from __future__ import annotations
 
@@ -21,12 +21,7 @@ OUT_DIR = ROOT / "vendor" / "founding_corpus" / "pdf_extracted"
 MANIFEST_PATH = ROOT / "vendor" / "founding_corpus" / "pdf_ingest_manifest.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from fsot_paths import rel_repo_path  # noqa: E402
-
-FOUNDING_ROOTS = [
-    Path(r"I:\fsuft aasb"),
-    Path(r"I:\fsot tech"),
-]
+from fsot_paths import founding_archive_roots, rel_repo_path  # noqa: E402
 
 MIN_CHARS_OK = 200
 HALLUCINATION_ACCURACY_PAT = re.compile(
@@ -127,7 +122,12 @@ def ingest_pdfs(
     out_dir: Path = OUT_DIR,
     manifest_path: Path = MANIFEST_PATH,
 ) -> dict:
-    roots = roots or FOUNDING_ROOTS
+    roots = roots or founding_archive_roots()
+    if not roots:
+        raise SystemExit(
+            "No founding archive roots found. Bundle 06_Founding-Archives on the drive "
+            "or set FSOT_FOUNDING_ROOT."
+        )
     out_dir.mkdir(parents=True, exist_ok=True)
 
     entries: list[dict] = []

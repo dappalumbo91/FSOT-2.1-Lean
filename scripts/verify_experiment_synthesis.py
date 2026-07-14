@@ -88,8 +88,8 @@ def verify_experiment_synthesis(
         issues.append("neuron_cohort_lab: not ingested")
     else:
         proxy = cohort.get("cohort_fi_proxy", {})
-        hero = cohort.get("hero_certified_fi", {})
-        bridge = cohort.get("neurolab_smiles_bridge", {})
+        hero = cohort.get("hero_certified_fi") or {}
+        bridge = cohort.get("neurolab_smiles_bridge") or {}
         if proxy.get("cell_count", 0) < ver.get("min_cell_count", 2000):
             issues.append(f"neuron_cohort: only {proxy.get('cell_count')} cells")
         if proxy.get("fi_median_rel_err", 1) > ver.get("fi_median_rel_err_max", 0.30):
@@ -98,7 +98,7 @@ def verify_experiment_synthesis(
             issues.append("neuron_cohort: FI pearson r too low")
         if hero.get("mean_rel_err", 1) > ver.get("hybrid_mean_rel_err_max", 0.15):
             issues.append("neuron_cohort: hero certified FI error too high")
-        canon_bridge = cohort.get("canonical_scalar_bridge", {})
+        canon_bridge = cohort.get("canonical_scalar_bridge") or {}
         if canon_bridge.get("hero_canonical_mean_rel_err", 1) > ver.get(
             "canonical_bridge_mean_rel_err_max", 0.12
         ):
@@ -138,9 +138,9 @@ def verify_experiment_synthesis(
         "magic_present": magic.get("present"),
         "llm_folder_count": llm.get("project_folder_count"),
         "cohort_cell_count": cohort.get("cohort_fi_proxy", {}).get("cell_count"),
-        "hero_certified_err": cohort.get("hero_certified_fi", {}).get("mean_rel_err"),
-        "held_out_cells": cohort.get("cohort_strata", {}).get("held_out_fi_proxy", {}).get("cell_count"),
-        "strata_count": len(cohort.get("cohort_strata", {}).get("strata") or {}),
+        "hero_certified_err": (cohort.get("hero_certified_fi") or {}).get("mean_rel_err"),
+        "held_out_cells": (cohort.get("cohort_strata") or {}).get("held_out_fi_proxy", {}).get("cell_count"),
+        "strata_count": len((cohort.get("cohort_strata") or {}).get("strata") or {}),
         "issues": len(issues),
     }
     return issues, summary

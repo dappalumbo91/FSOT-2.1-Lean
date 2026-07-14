@@ -60,6 +60,16 @@ bundled:
     role: PDG / CRC / NIST DLMF first-class benchmark source manifests
     build_script: scripts/build_reference_anchors_benchmarks.py
 
+  fsot_unified_db:
+    path: vendor/fsot_aggregate/FSOT_UNIFIED.db
+    role: SQLite strict-empirical / numeric eval queue (portable verification)
+    env_override: FSOT_UNIFIED_DB
+
+  neuron_cohort_cells:
+    path: vendor/neuron_cohort/cells.json
+    role: Allen cell-types catalog for experiment synthesis / cohort verification
+    env_override: FSOT_NEURON_COHORT_ROOT
+
   knowledge_base_portable:
     path: vendor/knowledge_base/kb_portable_summary.json
     role: Portable KB counts + strict-empirical bridge (full transfer on Desktop)

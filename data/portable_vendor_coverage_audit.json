@@ -1,16 +1,14 @@
 {
-  "generated_at": "2026-07-13T04:15:38.717365+00:00",
-  "extension_domain_count": 329,
-  "bundled_asset_count": 44,
+  "generated_at": "2026-07-14T15:59:23.904432+00:00",
+  "extension_domain_count": 347,
+  "bundled_asset_count": 46,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
-  "missing_bundled_assets": [
-    "reference_anchors"
-  ],
+  "missing_bundled_assets": [],
   "precision_tightening_candidates": [],
   "all_extension_benchmarks_present": true,
-  "all_bundled_assets_present": false,
+  "all_bundled_assets_present": true,
   "domains": [
     {
       "domain": "Plasma_Physics",
@@ -2643,6 +2641,150 @@
       "benchmark_present": true,
       "build_script": "scripts/build_tier93_dual_wave_benchmarks.py",
       "lean_module": "FSOT.Formal.Tier93DualWaveSpinePriors"
+    },
+    {
+      "domain": "Longevity_AnAge_Catalog_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityAnAgeCatalogPanelPriors"
+    },
+    {
+      "domain": "Longevity_Genetic_Mechanics_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityGeneticMechanicsPanelPriors"
+    },
+    {
+      "domain": "Longevity_Extreme_Species_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityExtremeSpeciesPanelPriors"
+    },
+    {
+      "domain": "Longevity_MegaDeep_NCBI_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityMegaDeepNcbiPanelPriors"
+    },
+    {
+      "domain": "Longevity_Telomere_Repair_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityTelomereRepairPanelPriors"
+    },
+    {
+      "domain": "Longevity_Consciousness_Coupling_Panel",
+      "tier": 94,
+      "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.LongevityConsciousnessCouplingPanelPriors"
+    },
+    {
+      "domain": "Tier_94_Longevity_Spine",
+      "tier": 94,
+      "benchmark_data": "data/tier_94_longevity_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier94_longevity_genetics_benchmarks.py",
+      "lean_module": "FSOT.Formal.Tier94LongevitySpinePriors"
+    },
+    {
+      "domain": "Zebrafish_Cell_Tracking_Panel",
+      "tier": 95,
+      "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier95_zebrahub_development_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZebrafishCellTrackingPanelPriors"
+    },
+    {
+      "domain": "Zebrafish_Developmental_Mechanics_Panel",
+      "tier": 95,
+      "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier95_zebrahub_development_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZebrafishDevelopmentalMechanicsPanelPriors"
+    },
+    {
+      "domain": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+      "tier": 95,
+      "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier95_zebrahub_development_benchmarks.py",
+      "lean_module": "FSOT.Formal.ZebrafishLongevityGeneticsCouplingPanelPriors"
+    },
+    {
+      "domain": "Tier_95_Zebrafish_Spine",
+      "tier": 95,
+      "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier95_zebrahub_development_benchmarks.py",
+      "lean_module": "FSOT.Formal.Tier95ZebrafishSpinePriors"
+    },
+    {
+      "domain": "Founding_Quantum_Vacuum_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors"
+    },
+    {
+      "domain": "Founding_Cosmic_Ray_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors"
+    },
+    {
+      "domain": "Founding_Galactic_Halo_Rotation_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors"
+    },
+    {
+      "domain": "Founding_Cosmic_Dust_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors"
+    },
+    {
+      "domain": "Founding_White_Dwarf_Cooling_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_white_dwarf_cooling_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors"
+    },
+    {
+      "domain": "Founding_Atmospheric_Ozone_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors"
+    },
+    {
+      "domain": "Founding_Pulsar_Glitch_Panel",
+      "tier": 96,
+      "benchmark_data": "data/founding_pulsar_glitch_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
+      "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors"
     }
   ],
   "bundled_assets": [
@@ -2699,7 +2841,17 @@
     {
       "asset": "reference_anchors",
       "path": "vendor/reference_anchors",
-      "present": false
+      "present": true
+    },
+    {
+      "asset": "fsot_unified_db",
+      "path": "vendor/fsot_aggregate/FSOT_UNIFIED.db",
+      "present": true
+    },
+    {
+      "asset": "neuron_cohort_cells",
+      "path": "vendor/neuron_cohort/cells.json",
+      "present": true
     },
     {
       "asset": "knowledge_base_portable",

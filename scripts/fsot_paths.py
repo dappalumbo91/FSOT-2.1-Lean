@@ -9,8 +9,65 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VENDOR_ROOT = REPO_ROOT / "vendor"
 DATA_ROOT = REPO_ROOT / "data"
+CANONICAL_HUB_MARKER = ".fsot-canonical-hub"
+CANONICAL_LEAN_HUB_NAME = "02_FSOT-2.1-Lean-Full"
+# Legacy default when this repo was always mounted as I: (fallback only).
 CANONICAL_ARCHIVE_ROOT = Path(r"I:\FSOT-Physical-Archive")
-CANONICAL_LEAN_HUB = CANONICAL_ARCHIVE_ROOT / "02_FSOT-2.1-Lean-Full"
+CANONICAL_LEAN_HUB = CANONICAL_ARCHIVE_ROOT / CANONICAL_LEAN_HUB_NAME
+
+
+def archive_root() -> Path | None:
+    """Physical archive root (parent of Lean hub), any drive letter."""
+    override = os.environ.get("FSOT_ARCHIVE_ROOT", "").strip()
+    if override:
+        path = Path(override).expanduser()
+        if path.is_dir():
+            return path.resolve()
+    if (REPO_ROOT / CANONICAL_HUB_MARKER).is_file():
+        return REPO_ROOT.parent.resolve()
+    legacy_hub = CANONICAL_ARCHIVE_ROOT / CANONICAL_LEAN_HUB_NAME
+    try:
+        REPO_ROOT.resolve().relative_to(legacy_hub.resolve())
+        return CANONICAL_ARCHIVE_ROOT.resolve()
+    except ValueError:
+        return None
+
+
+def founding_archive_roots() -> list[Path]:
+    """Founding PDF/markdown roots — prefer archive-bundled 06_Founding-Archives."""
+    override = os.environ.get("FSOT_FOUNDING_ROOT", "").strip()
+    if override:
+        path = Path(override).expanduser()
+        if path.is_dir():
+            return [path.resolve()]
+    candidates: list[Path] = []
+    ar = archive_root()
+    if ar is not None:
+        candidates.extend(
+            [
+                ar / "06_Founding-Archives" / "fsuft_aasb",
+                ar / "06_Founding-Archives" / "fsot_tech",
+            ]
+        )
+    drive = REPO_ROOT.drive or "I:"
+    candidates.extend(
+        [
+            Path(f"{drive}/fsuft aasb"),
+            Path(f"{drive}/fsot tech"),
+            Path(r"I:\fsuft aasb"),
+            Path(r"I:\fsot tech"),
+        ]
+    )
+    seen: set[str] = set()
+    out: list[Path] = []
+    for candidate in candidates:
+        key = str(candidate).lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        if candidate.is_dir():
+            out.append(candidate.resolve())
+    return out
 
 # Author-only desktop fallbacks (optional when developing on the original machine).
 _DESKTOP = Path.home() / "Desktop"
@@ -39,8 +96,13 @@ def portable_mode() -> bool:
 
 
 def canonical_archive_mode() -> bool:
-    """True on I:\\FSOT-Physical-Archive canonical hub (dedicated drive master)."""
+    """True when running from the physical archive Lean hub (any drive letter)."""
     if _truthy_env("FSOT_CANONICAL_ARCHIVE"):
+        return True
+    if (REPO_ROOT / CANONICAL_HUB_MARKER).is_file():
+        return True
+    ar = archive_root()
+    if ar is not None and (ar / CANONICAL_LEAN_HUB_NAME).resolve() == REPO_ROOT.resolve():
         return True
     try:
         REPO_ROOT.resolve().relative_to(CANONICAL_LEAN_HUB.resolve())
@@ -152,6 +214,7 @@ def evolution_operons_path(*, require: bool = True) -> Path:
 def neuron_cohort_root(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_NEURON_COHORT_ROOT",
+        VENDOR_ROOT / "neuron_cohort",
         DATA_ROOT / "vendor" / "neuron_cohort",
         _DESKTOP_NEURON_COHORT,
     )

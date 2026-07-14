@@ -1,0 +1,174 @@
+{
+  "audited_at": "2026-07-14T15:59:25.303243+00:00",
+  "archive_root": "I:\\FSOT-Physical-Archive",
+  "lean_hub": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
+  "drive_letter_independent": true,
+  "founding_roots": [
+    "I:\\FSOT-Physical-Archive\\06_Founding-Archives\\fsuft_aasb",
+    "I:\\FSOT-Physical-Archive\\06_Founding-Archives\\fsot_tech",
+    "I:\\fsuft aasb",
+    "I:\\fsot tech"
+  ],
+  "fsot_compute": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "locations": {
+    "i_drive_lean_hub": {
+      "path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
+      "git_head": "43d1fe4d55109967908529409b6b55b5ada12ff9",
+      "origin_main": null,
+      "github_remote": "https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
+    },
+    "c_desktop_mirror": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main",
+      "exists": true,
+      "git_head": "43d1fe4d55109967908529409b6b55b5ada12ff9",
+      "policy": "deprecated read-only mirror \u2014 never verify or push from here"
+    },
+    "github": {
+      "remote": "https://github.com/dappalumbo91/FSOT-2.1-Lean.git",
+      "origin_main": null,
+      "note": "Code + JSON on GitHub; .lake cache and large vendor blobs archive-only"
+    }
+  },
+  "archive_sections": [
+    {
+      "section": "01_SR-ITE-USB-Original",
+      "exists": true,
+      "file_count": 45547,
+      "size_bytes": 2012340254
+    },
+    {
+      "section": "02_FSOT-2.1-Lean-Full",
+      "exists": true,
+      "file_count": 61348,
+      "size_bytes": 7600589219
+    },
+    {
+      "section": "03_FSOT-PublicData",
+      "exists": true,
+      "file_count": 110,
+      "size_bytes": 8658066975
+    },
+    {
+      "section": "04_Genetics-Longevity",
+      "exists": true,
+      "file_count": 11,
+      "size_bytes": 1152785
+    },
+    {
+      "section": "05_Zebrahub-Development",
+      "exists": true,
+      "file_count": 12,
+      "size_bytes": 2305416483
+    },
+    {
+      "section": "06_Founding-Archives",
+      "exists": true,
+      "file_count": 259,
+      "size_bytes": 38860164
+    }
+  ],
+  "i_vs_c_mirror": [
+    {
+      "path": ".lake",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 49601,
+      "b_files": 49672,
+      "a_bytes": 4668004710,
+      "b_bytes": 4705783179,
+      "delta_files": -71
+    },
+    {
+      "path": "vendor",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 1161,
+      "b_files": 38869,
+      "a_bytes": 602977057,
+      "b_bytes": 2369637736,
+      "delta_files": -37708
+    },
+    {
+      "path": "data",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 2472,
+      "b_files": 2470,
+      "a_bytes": 296100427,
+      "b_bytes": 287159908,
+      "delta_files": 2
+    },
+    {
+      "path": "scripts",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 1342,
+      "b_files": 1353,
+      "a_bytes": 9842422,
+      "b_bytes": 10071488,
+      "delta_files": -11
+    },
+    {
+      "path": "FSOT",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 483,
+      "b_files": 483,
+      "a_bytes": 1054319,
+      "b_bytes": 1054283,
+      "delta_files": 0
+    }
+  ],
+  "host_toolchain": {
+    "python": "C:\\Users\\damia\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+    "lake": "C:\\Users\\damia\\.elan\\bin\\lake.EXE",
+    "elan": "C:\\Users\\damia\\.elan\\bin\\elan.EXE",
+    "rustc": "C:\\Users\\damia\\.cargo\\bin\\rustc.EXE",
+    "cargo": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
+    "coqc": null,
+    "isabelle": null
+  },
+  "python_packages": {
+    "numpy": true,
+    "mpmath": true,
+    "sympy": true,
+    "yaml": true,
+    "pypdf": true,
+    "pytest": true
+  },
+  "sub_audits": {
+    "portable_vendor_coverage": {
+      "ran": true,
+      "ok": true,
+      "missing_benchmark_domains": [],
+      "missing_bundled_assets": [],
+      "extension_domain_count": 347,
+      "all_extension_benchmarks_present": true,
+      "all_bundled_assets_present": true
+    },
+    "archive_independence": {
+      "ran": true,
+      "ok": true,
+      "critical_count": 0
+    }
+  },
+  "plug_and_play": {
+    "data_complete_on_drive": true,
+    "runnable_without_downloads": true,
+    "requires_one_time_host_install": [
+      "Python 3.10+",
+      "pip install -r requirements.txt (numpy, mpmath, sympy, PyYAML, pypdf, pytest)",
+      "Optional: elan + Lean 4.31 for lake build",
+      "Optional: Rust for obligation replay cross-proof tier",
+      "Optional: Coq, Isabelle, F* for full seven-way cross-proof"
+    ],
+    "offline_verification_mode": "PLAY.ps1 \u2192 portable runner with --skip-lean --portable --founding-corpus",
+    "live_api_rebuild": "Not required for scientific verification \u2014 uses cached benchmarks in data/ and 03_FSOT-PublicData"
+  },
+  "blockers": [],
+  "warnings": [
+    "Coq not on PATH \u2014 cross-proof Coq tier skipped on fresh laptop",
+    "Isabelle not on PATH \u2014 cross-proof Isabelle tier skipped on fresh laptop"
+  ],
+  "ok": true
+}

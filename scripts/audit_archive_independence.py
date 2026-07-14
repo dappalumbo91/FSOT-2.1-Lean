@@ -33,7 +33,7 @@ def _scan_file(path: Path) -> list[str]:
 
 
 def main() -> int:
-    from fsot_paths import canonical_archive_mode, fsot_compute_path  # noqa: WPS433
+    from fsot_paths import archive_root, canonical_archive_mode, fsot_compute_path  # noqa: WPS433
 
     issues: list[str] = []
     if not canonical_archive_mode():
@@ -58,7 +58,7 @@ def main() -> int:
 
     report = {
         "audited_at": datetime.now(timezone.utc).isoformat(),
-        "canonical_hub": str(Path(r"I:\FSOT-Physical-Archive\02_FSOT-2.1-Lean-Full")),
+        "canonical_hub": str(archive_root() / "02_FSOT-2.1-Lean-Full" if archive_root() else ROOT),
         "ok": not issues and not critical,
         "fsot_compute_path": str(compute),
         "canonical_archive_mode": canonical_archive_mode(),

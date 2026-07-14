@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-14T00:00:00Z",
+  "role": "PDG / CRC / NIST DLMF first-class reference anchor manifests",
+  "build_script": "scripts/build_reference_anchors_benchmarks.py",
+  "benchmarks": {
+    "PDG_Particle_Properties": "data/pdg_particle_properties_benchmark.json",
+    "CRC_Handbook_Properties": "data/crc_handbook_properties_benchmark.json",
+    "NIST_DLMF_Special_Functions": "data/nist_dlmf_special_functions_benchmark.json"
+  },
+  "portable_note": "Benchmark JSON lives under data/; this vendor folder is the portable anchor registry."
+}
