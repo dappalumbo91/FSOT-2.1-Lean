@@ -109,6 +109,9 @@ def _wrap_reconciliation(chunk: str, concepts: list[dict], flags: list[str], sou
 
 def _iter_founding_files() -> list[Path]:
     files: list[Path] = []
+    pdf_extracted = ROOT / "vendor" / "founding_corpus" / "pdf_extracted"
+    if pdf_extracted.exists():
+        files.extend(sorted(pdf_extracted.glob("*.txt")))
     for root in FOUNDING_ROOTS:
         if not root.exists():
             continue

@@ -6,7 +6,9 @@ This is the Lean 4 formalization of **Fluid Spacetime Omni-Theory (FSOT) 2.0**, 
 
 It was developed in close collaboration with the Python reference implementation.
 
-**Philosophy & consciousness (LLM training spine):** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md` — narrative ontology, consciousness stance, epistemic tiers. Harvest training rows: `python scripts/build_philosophy_training_corpus.py` → `vendor/philosophy_corpus/fsot_philosophy_training.jsonl`.
+**FSOT explained (layman's guide):** `docs/FSOT_EXPLAINED_LAYMAN.md` — plain-language overview for the public; math proves philosophy where verified.
+
+**Philosophy & founding reconciliation:** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`, `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`, `docs/FOUNDING_35_LAWS_AUDIT.md`. Founding archives: `I:\fsuft aasb`, `I:\fsot tech`. Pipeline (no LLM): `python scripts/build_founding_pipeline.py`.
 
 ## Structure
 

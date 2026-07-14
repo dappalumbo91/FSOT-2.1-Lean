@@ -1,0 +1,134 @@
+#!/usr/bin/env python3
+"""Extract text from founding PDFs on I:\\fsuft aasb and I:\\fsot tech."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+try:
+    from pypdf import PdfReader
+except ImportError:
+    PdfReader = None
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT_DIR = ROOT / "vendor" / "founding_corpus" / "pdf_extracted"
+MANIFEST_PATH = ROOT / "vendor" / "founding_corpus" / "pdf_ingest_manifest.json"
+
+FOUNDING_ROOTS = [
+    Path(r"I:\fsuft aasb"),
+    Path(r"I:\fsot tech"),
+]
+
+MIN_CHARS_OK = 200
+HALLUCINATION_ACCURACY_PAT = re.compile(
+    r"99\.999|100\.0{3,}\s*%|zero\s*percent|0%\s*difference|billion\s*data\s*points|"
+    r"4\.578\s*billion|11\.828\s*billion",
+    re.I,
+)
+
+
+def _safe_name(path: Path) -> str:
+    h = hashlib.sha256(str(path).encode("utf-8")).hexdigest()[:12]
+    stem = re.sub(r"[^\w\-]+", "_", path.stem)[:60]
+    return f"{stem}__{h}"
+
+
+def _extract_pdf(pdf_path: Path) -> tuple[str, int, str | None]:
+    if PdfReader is None:
+        raise SystemExit("Install pypdf: pip install pypdf")
+    try:
+        reader = PdfReader(str(pdf_path))
+        pages = []
+        for page in reader.pages:
+            try:
+                pages.append(page.extract_text() or "")
+            except Exception:
+                pages.append("")
+        text = "\n\n".join(pages).strip()
+        return text, len(reader.pages), None
+    except Exception as exc:
+        return "", 0, str(exc)
+
+
+def ingest_pdfs(
+    roots: list[Path] | None = None,
+    out_dir: Path = OUT_DIR,
+    manifest_path: Path = MANIFEST_PATH,
+) -> dict:
+    roots = roots or FOUNDING_ROOTS
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    entries: list[dict] = []
+    ok = 0
+    low_yield = 0
+    failed = 0
+
+    for root in roots:
+        if not root.exists():
+            continue
+        for pdf in sorted(root.rglob("*.pdf")):
+            text, page_count, err = _extract_pdf(pdf)
+            rel_root = "fsuft_aasb" if "fsuft aasb" in str(pdf).lower() else "fsot_tech"
+            out_name = _safe_name(pdf)
+            out_txt = out_dir / f"{out_name}.txt"
+            accuracy_flags = bool(HALLUCINATION_ACCURACY_PAT.search(text)) if text else False
+
+            status = "ok"
+            if err:
+                status = "error"
+                failed += 1
+            elif len(text) < MIN_CHARS_OK:
+                status = "low_yield"
+                low_yield += 1
+            else:
+                ok += 1
+                out_txt.write_text(text, encoding="utf-8")
+
+            entries.append({
+                "source_pdf": str(pdf),
+                "founding_root": rel_root,
+                "output_txt": str(out_txt) if status == "ok" else None,
+                "page_count": page_count,
+                "char_count": len(text),
+                "status": status,
+                "error": err,
+                "accuracy_claim_flags": accuracy_flags,
+                "note": (
+                    "Founding accuracy percentages are not trusted unless re-verified in FSOT 2.1"
+                    if accuracy_flags else None
+                ),
+            })
+
+    manifest = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "pdf_count": len(entries),
+        "extracted_ok": ok,
+        "low_yield": low_yield,
+        "failed": failed,
+        "accuracy_flagged_pdfs": sum(1 for e in entries if e.get("accuracy_claim_flags")),
+        "entries": entries,
+    }
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    print(f"PDFs: {len(entries)} | ok={ok} low_yield={low_yield} failed={failed}")
+    print(f"Manifest: {manifest_path}")
+    return manifest
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", type=Path, default=OUT_DIR)
+    ap.add_argument("--manifest", type=Path, default=MANIFEST_PATH)
+    args = ap.parse_args()
+    m = ingest_pdfs(out_dir=args.out, manifest_path=args.manifest)
+    return 0 if m["extracted_ok"] > 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
