@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_Atmospheric_Ozone_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_26"
+  ],
+  "maps_to_lean": [
+    "atmospheric",
+    "climate"
+  ],
+  "D_eff": 12,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.047643,
+  "pooled_median_error_pct": 0.047643,
+  "headline_median_error_pct": 0.047643,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Atmospheric Ozone Concentration Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_26_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.047643,
+      "measured": 0.0,
+      "error_pct": 0.047643,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_26",
+      "name": "Atmospheric Ozone Concentration Anomaly",
+      "computed": 0.047643,
+      "measured": 0.0,
+      "error_pct": 0.047643,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_column_du",
+      "name": "global_mean_total_column_du",
+      "computed": 300.1429295716,
+      "measured": 300.0,
+      "error_pct": 0.047643,
+      "unit": "DU",
+      "literature_reference": "NASA OMI/OMPS climatology",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_ozone_concentration",
+      "name": "stratospheric_peak_ppmv",
+      "computed": 10.0047643191,
+      "measured": 10.0,
+      "error_pct": 0.047643,
+      "unit": "ppmv",
+      "literature_reference": "US Standard Atmosphere 1976",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "ozone_anomaly_du",
+      "name": "antarctic_ozone_hole_min_du",
+      "computed": 100.0476431905,
+      "measured": 100.0,
+      "error_pct": 0.047643,
+      "unit": "DU",
+      "literature_reference": "WMO Antarctic ozone hole minima",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_ozone",
+      "name": "tropopause_ozone_ppbv",
+      "computed": 50.0238215953,
+      "measured": 50.0,
+      "error_pct": 0.047643,
+      "unit": "ppbv",
+      "literature_reference": "NOAA ozonesonde climatology",
+      "founding_law_id": "law_26",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_26_lab",
+      "property": "atmospheric_physics_scalar_bridge",
+      "name": "fsot_Atmospheric_Physics",
+      "computed": -0.47643191,
+      "measured": -0.47643191,
+      "error_pct": 0.0,
+      "founding_law_id": "law_26",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.047643,
+    "max_scalar_error_pct": 0.047643,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_26",
+  "founding_law_name": "Atmospheric Ozone Concentration Anomaly",
+  "panel_status": "GREEN"
+}

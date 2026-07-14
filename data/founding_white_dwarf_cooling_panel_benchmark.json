@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_White_Dwarf_Cooling_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_23"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "stellar"
+  ],
+  "D_eff": 15,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.089846,
+  "pooled_median_error_pct": 0.089846,
+  "headline_median_error_pct": 0.089846,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "White Dwarf Cooling Rate Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_23_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.089846,
+      "measured": 0.0,
+      "error_pct": 0.089846,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_23",
+      "name": "White Dwarf Cooling Rate Anomaly",
+      "computed": 0.089846,
+      "measured": 0.0,
+      "error_pct": 0.089846,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_cooling_time",
+      "name": "wd_0.6msun_age_10kK_gyr",
+      "computed": 3.0026953787,
+      "measured": 3.0,
+      "error_pct": 0.089846,
+      "unit": "Gyr",
+      "literature_reference": "Fontaine+ 2001 WD cooling tracks",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_luminosity",
+      "name": "wd_hot_luminosity_solar",
+      "computed": 0.0100089846,
+      "measured": 0.01,
+      "error_pct": 0.089846,
+      "unit": "L_sun",
+      "literature_reference": "Gaia WD sample hot branch",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_temperature",
+      "name": "wd_young_surface_temp_k",
+      "computed": 25022.4614892041,
+      "measured": 25000.0,
+      "error_pct": 0.089846,
+      "unit": "K",
+      "literature_reference": "Sloan WD hot sample median",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "white_dwarf_cooling_rate",
+      "name": "wd_cooling_rate_log_l",
+      "computed": -4.5040430681,
+      "measured": -4.5,
+      "error_pct": 0.089846,
+      "unit": "dex/yr",
+      "literature_reference": "Fontaine+ 2001 cooling track slope",
+      "founding_law_id": "law_23",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_23_lab",
+      "property": "astronomy_scalar_bridge",
+      "name": "fsot_Astronomy",
+      "computed": 0.89845957,
+      "measured": 0.89845957,
+      "error_pct": 0.0,
+      "founding_law_id": "law_23",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.089846,
+    "max_scalar_error_pct": 0.089846,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_23",
+  "founding_law_name": "White Dwarf Cooling Rate Anomaly",
+  "panel_status": "GREEN"
+}

@@ -1,0 +1,17 @@
+version: "1.0"
+tier: 96
+policy: >
+  Extension panels for the seven founding laws that lacked FSOT 2.1 mapping.
+  Public literature anchors only; founding-era accuracy percentages remain untrusted.
+domains:
+  - Founding_Quantum_Vacuum_Panel
+  - Founding_Cosmic_Ray_Panel
+  - Founding_Galactic_Halo_Rotation_Panel
+  - Founding_Cosmic_Dust_Panel
+  - Founding_White_Dwarf_Cooling_Panel
+  - Founding_Atmospheric_Ozone_Panel
+  - Founding_Pulsar_Glitch_Panel
+build: scripts/build_founding_unmapped_laws_benchmark.py
+reference: data/founding_unmapped_laws_reference.json
+bundled:
+  - data/founding_unmapped_laws_reference.json

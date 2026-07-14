@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_Quantum_Vacuum_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_11"
+  ],
+  "maps_to_lean": [
+    "quantum",
+    "particle"
+  ],
+  "D_eff": 8,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.095551,
+  "pooled_median_error_pct": 0.095551,
+  "headline_median_error_pct": 0.095551,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Quantum Vacuum Energy Oscillation": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_11_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.095551,
+      "measured": 0.0,
+      "error_pct": 0.095551,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_11",
+      "name": "Quantum Vacuum Energy Oscillation",
+      "computed": 0.095551,
+      "measured": 0.0,
+      "error_pct": 0.095551,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_pressure_pa",
+      "name": "casimir_pressure_1um",
+      "computed": 0.1301242158,
+      "measured": 0.13,
+      "error_pct": 0.095551,
+      "unit": "Pa",
+      "literature_reference": "Lamoreaux PRL 78, 5 (1997)",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "casimir_force_pN",
+      "name": "casimir_force_sphere_plate_1um",
+      "computed": 98.0936396174,
+      "measured": 98.0,
+      "error_pct": 0.095551,
+      "unit": "pN",
+      "literature_reference": "Decca et al. PRL 96, 240401 (2006)",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "vacuum_energy_density",
+      "name": "zero_point_energy_density_gev4",
+      "computed": 0.0,
+      "measured": 2.5e-47,
+      "error_pct": 0.0,
+      "unit": "GeV^4",
+      "literature_reference": "Cosmological constant observational bound",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "zero_point_energy",
+      "name": "casimir_energy_density_1um",
+      "computed": 0.0013012422,
+      "measured": 0.0013,
+      "error_pct": 0.095551,
+      "unit": "J/m^3",
+      "literature_reference": "Bordag+ Phys.Rep. 353 (2001)",
+      "founding_law_id": "law_11",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_11_lab",
+      "property": "quantum_mechanics_scalar_bridge",
+      "name": "fsot_Quantum_Mechanics",
+      "computed": 0.9555063,
+      "measured": 0.9555063,
+      "error_pct": 0.0,
+      "founding_law_id": "law_11",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.095551,
+    "max_scalar_error_pct": 0.095551,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_11",
+  "founding_law_name": "Quantum Vacuum Energy Oscillation",
+  "panel_status": "GREEN"
+}

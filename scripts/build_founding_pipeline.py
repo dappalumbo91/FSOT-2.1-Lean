@@ -12,6 +12,7 @@ PY = sys.executable
 
 STEPS = [
     ("ingest_founding_pdfs.py", "Extract founding PDFs"),
+    ("build_founding_unmapped_laws_benchmark.py", "Build Tier 96 founding-law panels"),
     ("audit_founding_35_laws.py", "Audit 35 founding laws"),
     ("reconcile_founding_corpus.py", "Reconcile founding text corpus"),
     ("verify_founding_corpus.py", "Verify founding corpus gate"),

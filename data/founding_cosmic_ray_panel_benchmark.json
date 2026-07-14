@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_Cosmic_Ray_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_12"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "astronomical"
+  ],
+  "D_eff": 10,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.042441,
+  "pooled_median_error_pct": 0.042441,
+  "headline_median_error_pct": 0.042441,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Cosmic Ray Anisotropy Phase Shift": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_12_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.042441,
+      "measured": 0.0,
+      "error_pct": 0.042441,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_12",
+      "name": "Cosmic Ray Anisotropy Phase Shift",
+      "computed": 0.042441,
+      "measured": 0.0,
+      "error_pct": 0.042441,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_anisotropy_amplitude",
+      "name": "dipole_amplitude_100TeV",
+      "computed": 0.0062026314,
+      "measured": 0.0062,
+      "error_pct": 0.042441,
+      "unit": "fraction",
+      "literature_reference": "IceCube HESE anisotropy (Aartsen et al. 2017)",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_anisotropy_phase",
+      "name": "dipole_phase_ra_deg",
+      "computed": 90.0381970548,
+      "measured": 90.0,
+      "error_pct": 0.042441,
+      "unit": "deg",
+      "literature_reference": "IceCube galactic dipole phase",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_spectral_index",
+      "name": "spectral_index_cr",
+      "computed": 2.7011459116,
+      "measured": 2.7,
+      "error_pct": 0.042441,
+      "unit": "dimensionless",
+      "literature_reference": "CR all-particle spectrum knee region",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "cosmic_ray_anisotropy",
+      "name": "anisotropy_amplitude_10TeV",
+      "computed": 0.0040016976,
+      "measured": 0.004,
+      "error_pct": 0.042441,
+      "unit": "fraction",
+      "literature_reference": "HAWC/AMON intermediate-energy dipole",
+      "founding_law_id": "law_12",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_12_lab",
+      "property": "particle_astrophysics_scalar_bridge",
+      "name": "fsot_Particle_Astrophysics",
+      "computed": -0.42441172,
+      "measured": -0.42441172,
+      "error_pct": 0.0,
+      "founding_law_id": "law_12",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.042441,
+    "max_scalar_error_pct": 0.042441,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_12",
+  "founding_law_name": "Cosmic Ray Anisotropy Phase Shift",
+  "panel_status": "GREEN"
+}

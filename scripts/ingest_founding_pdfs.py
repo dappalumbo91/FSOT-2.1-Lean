@@ -55,6 +55,69 @@ def _extract_pdf(pdf_path: Path) -> tuple[str, int, str | None]:
         return "", 0, str(exc)
 
 
+def _fallback_sources(pdf_path: Path) -> list[Path]:
+    """When .fsot_updated.pdf is corrupt, try sibling canonical copies."""
+    candidates: list[Path] = []
+    name = pdf_path.name
+    parent = pdf_path.parent
+    if name.endswith(".fsot_updated.pdf"):
+        stem = name[: -len(".fsot_updated.pdf")]
+        candidates.extend([
+            parent.parent / f"{stem}.pdf",
+            parent / f"{stem}.pdf",
+            parent.parent / f"{stem}.docx",
+            parent / f"{stem}.docx",
+        ])
+    candidates.extend([
+        pdf_path.with_suffix(".docx"),
+        pdf_path.parent.parent / pdf_path.name,
+    ])
+    seen: set[str] = set()
+    out: list[Path] = []
+    for cand in candidates:
+        key = str(cand).lower()
+        if key in seen or cand == pdf_path:
+            continue
+        seen.add(key)
+        if cand.exists() and cand.is_file():
+            out.append(cand)
+    return out
+
+
+def _extract_with_fallback(pdf_path: Path) -> tuple[str, int, str | None, str | None]:
+    text, page_count, err = _extract_pdf(pdf_path)
+    if not err and len(text) >= MIN_CHARS_OK:
+        return text, page_count, None, None
+    for alt in _fallback_sources(pdf_path):
+        if alt.suffix.lower() == ".docx":
+            alt_text, alt_pages, alt_err = _extract_docx(alt)
+        else:
+            alt_text, alt_pages, alt_err = _extract_pdf(alt)
+        if not alt_err and len(alt_text) >= MIN_CHARS_OK:
+            return alt_text, alt_pages, None, str(alt)
+    return text, page_count, err, None
+
+
+def _extract_docx(docx_path: Path) -> tuple[str, int, str | None]:
+    try:
+        import zipfile
+        import xml.etree.ElementTree as ET
+
+        with zipfile.ZipFile(docx_path) as zf:
+            xml = zf.read("word/document.xml")
+        root = ET.fromstring(xml)
+        ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+        paras = []
+        for para in root.iterfind(".//w:p", ns):
+            parts = [node.text for node in para.iterfind(".//w:t", ns) if node.text]
+            if parts:
+                paras.append("".join(parts))
+        text = "\n\n".join(paras).strip()
+        return text, max(len(paras), 1), None
+    except Exception as exc:
+        return "", 0, str(exc)
+
+
 def ingest_pdfs(
     roots: list[Path] | None = None,
     out_dir: Path = OUT_DIR,
@@ -72,13 +135,14 @@ def ingest_pdfs(
         if not root.exists():
             continue
         for pdf in sorted(root.rglob("*.pdf")):
-            text, page_count, err = _extract_pdf(pdf)
+            text, page_count, err, fallback_source = _extract_with_fallback(pdf)
             rel_root = "fsuft_aasb" if "fsuft aasb" in str(pdf).lower() else "fsot_tech"
             out_name = _safe_name(pdf)
             out_txt = out_dir / f"{out_name}.txt"
             accuracy_flags = bool(HALLUCINATION_ACCURACY_PAT.search(text)) if text else False
 
             status = "ok"
+            note = None
             if err:
                 status = "error"
                 failed += 1
@@ -88,9 +152,18 @@ def ingest_pdfs(
             else:
                 ok += 1
                 out_txt.write_text(text, encoding="utf-8")
+                if fallback_source:
+                    note = f"Extracted via fallback source: {fallback_source}"
+
+            if accuracy_flags:
+                note = (
+                    (note + " | " if note else "")
+                    + "Founding accuracy percentages are not trusted unless re-verified in FSOT 2.1"
+                )
 
             entries.append({
                 "source_pdf": str(pdf),
+                "fallback_source": fallback_source,
                 "founding_root": rel_root,
                 "output_txt": str(out_txt) if status == "ok" else None,
                 "page_count": page_count,
@@ -98,10 +171,7 @@ def ingest_pdfs(
                 "status": status,
                 "error": err,
                 "accuracy_claim_flags": accuracy_flags,
-                "note": (
-                    "Founding accuracy percentages are not trusted unless re-verified in FSOT 2.1"
-                    if accuracy_flags else None
-                ),
+                "note": note,
             })
 
     manifest = {

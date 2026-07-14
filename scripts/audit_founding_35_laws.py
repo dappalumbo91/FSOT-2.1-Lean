@@ -69,9 +69,25 @@ def _search_strict(keywords: list[str], rows: list[dict], limit: int = 8) -> lis
     return hits[:limit]
 
 
-def _search_panels(keywords: list[str], domains: list[dict], limit: int = 5) -> list[dict]:
+def _search_panels(
+    keywords: list[str],
+    domains: list[dict],
+    *,
+    law_id: str | None = None,
+    limit: int = 5,
+) -> list[dict]:
     hits = []
     for dom in domains:
+        founding_ids = dom.get("founding_law_ids") or []
+        if law_id and law_id in founding_ids:
+            hits.append({
+                "panel": dom.get("name"),
+                "lean_module": dom.get("lean_module"),
+                "benchmark_data": dom.get("benchmark_data"),
+                "score": 100,
+                "match": "founding_law_id",
+            })
+            continue
         name = str(dom.get("name", "")).lower()
         note = str(dom.get("note", "")).lower()
         bench = str(dom.get("benchmark_data", "")).lower()
@@ -83,8 +99,9 @@ def _search_panels(keywords: list[str], domains: list[dict], limit: int = 5) -> 
                 "lean_module": dom.get("lean_module"),
                 "benchmark_data": dom.get("benchmark_data"),
                 "score": score,
+                "match": "keyword",
             })
-    hits.sort(key=lambda h: -h["score"])
+    hits.sort(key=lambda h: (-h["score"], str(h.get("panel") or "")))
     return hits[:limit]
 
 
@@ -119,7 +136,7 @@ def audit_laws(
     for law in seed.get("laws") or []:
         keywords = law.get("keywords") or []
         strict_hits = _search_strict(keywords, strict_rows)
-        panel_hits = _search_panels(keywords, ext_domains)
+        panel_hits = _search_panels(keywords, ext_domains, law_id=law.get("id"))
         status = _classify(law, strict_hits, panel_hits)
         counts[status] = counts.get(status, 0) + 1
 

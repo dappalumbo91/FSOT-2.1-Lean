@@ -1,0 +1,266 @@
+{
+  "version": "1.0",
+  "updated": "2026-07-14",
+  "policy": "Published literature anchors only — founding-era accuracy claims are not trusted until FSOT 2.1 panel verification.",
+  "panels": {
+    "law_11": {
+      "founding_law_id": "law_11",
+      "name": "Quantum Vacuum Energy Oscillation",
+      "domain_scalar": "Quantum_Mechanics",
+      "d_eff": 8,
+      "maps_to_lean": ["quantum", "particle"],
+      "anchors": [
+        {
+          "name": "casimir_pressure_1um",
+          "property": "casimir_pressure_pa",
+          "measured": 0.13,
+          "unit": "Pa",
+          "reference": "Lamoreaux PRL 78, 5 (1997)"
+        },
+        {
+          "name": "casimir_force_sphere_plate_1um",
+          "property": "casimir_force_pN",
+          "measured": 98.0,
+          "unit": "pN",
+          "reference": "Decca et al. PRL 96, 240401 (2006)"
+        },
+        {
+          "name": "zero_point_energy_density_gev4",
+          "property": "vacuum_energy_density",
+          "measured": 2.5e-47,
+          "unit": "GeV^4",
+          "reference": "Cosmological constant observational bound"
+        },
+        {
+          "name": "casimir_energy_density_1um",
+          "property": "zero_point_energy",
+          "measured": 1.3e-3,
+          "unit": "J/m^3",
+          "reference": "Bordag+ Phys.Rep. 353 (2001)"
+        }
+      ]
+    },
+    "law_12": {
+      "founding_law_id": "law_12",
+      "name": "Cosmic Ray Anisotropy Phase Shift",
+      "domain_scalar": "Particle_Astrophysics",
+      "d_eff": 10,
+      "maps_to_lean": ["particle", "astronomical"],
+      "anchors": [
+        {
+          "name": "dipole_amplitude_100TeV",
+          "property": "cosmic_ray_anisotropy_amplitude",
+          "measured": 0.0062,
+          "unit": "fraction",
+          "reference": "IceCube HESE anisotropy (Aartsen et al. 2017)"
+        },
+        {
+          "name": "dipole_phase_ra_deg",
+          "property": "cosmic_ray_anisotropy_phase",
+          "measured": 90.0,
+          "unit": "deg",
+          "reference": "IceCube galactic dipole phase"
+        },
+        {
+          "name": "spectral_index_cr",
+          "property": "cosmic_ray_spectral_index",
+          "measured": 2.7,
+          "unit": "dimensionless",
+          "reference": "CR all-particle spectrum knee region"
+        },
+        {
+          "name": "anisotropy_amplitude_10TeV",
+          "property": "cosmic_ray_anisotropy",
+          "measured": 0.004,
+          "unit": "fraction",
+          "reference": "HAWC/AMON intermediate-energy dipole"
+        }
+      ]
+    },
+    "law_13": {
+      "founding_law_id": "law_13",
+      "name": "Galactic Halo Rotation Anomaly",
+      "domain_scalar": "Cosmology",
+      "d_eff": 14,
+      "maps_to_lean": ["cosmological", "galactic", "astronomical"],
+      "anchors": [
+        {
+          "name": "mw_v_sun_kms",
+          "property": "halo_rotation_velocity",
+          "measured": 220.0,
+          "unit": "km/s",
+          "reference": "IAU 1985 / Eilers+ 2019"
+        },
+        {
+          "name": "mw_flat_rotation_8kpc",
+          "property": "galaxy_rotation_curve",
+          "measured": 233.0,
+          "unit": "km/s",
+          "reference": "Eilers+ ApJ 2019 Milky Way"
+        },
+        {
+          "name": "ngc3198_v_flat",
+          "property": "halo_rotation_velocity",
+          "measured": 150.0,
+          "unit": "km/s",
+          "reference": "Begeman+ 1991 SPARC-class galaxy"
+        },
+        {
+          "name": "dd154_v_flat",
+          "property": "galaxy_rotation_curve",
+          "measured": 47.0,
+          "unit": "km/s",
+          "reference": "SPARC dwarf galaxy sample"
+        }
+      ]
+    },
+    "law_20": {
+      "founding_law_id": "law_20",
+      "name": "Cosmic Dust Grain Size Anomaly",
+      "domain_scalar": "Astrophysics",
+      "d_eff": 13,
+      "maps_to_lean": ["cosmological", "galactic"],
+      "anchors": [
+        {
+          "name": "ism_typical_radius",
+          "property": "dust_grain_radius_um",
+          "measured": 0.1,
+          "unit": "um",
+          "reference": "Draine & Li 2007 ISM grains"
+        },
+        {
+          "name": "silicate_grain_radius",
+          "property": "dust_grain_size",
+          "measured": 0.25,
+          "unit": "um",
+          "reference": "Mathis-Rumpl-Nordsieck distribution"
+        },
+        {
+          "name": "carbonaceous_grain_radius",
+          "property": "interstellar_dust_grain",
+          "measured": 0.05,
+          "unit": "um",
+          "reference": "Weingartner & Draine 2001"
+        },
+        {
+          "name": "mw_dust_to_gas_ratio",
+          "property": "dust_density_anomaly",
+          "measured": 0.01,
+          "unit": "dimensionless",
+          "reference": "Draine 2011 Milky Way dust-to-gas"
+        }
+      ]
+    },
+    "law_23": {
+      "founding_law_id": "law_23",
+      "name": "White Dwarf Cooling Rate Anomaly",
+      "domain_scalar": "Astronomy",
+      "d_eff": 15,
+      "maps_to_lean": ["astronomical", "stellar"],
+      "anchors": [
+        {
+          "name": "wd_0.6msun_age_10kK_gyr",
+          "property": "white_dwarf_cooling_time",
+          "measured": 3.0,
+          "unit": "Gyr",
+          "reference": "Fontaine+ 2001 WD cooling tracks"
+        },
+        {
+          "name": "wd_hot_luminosity_solar",
+          "property": "white_dwarf_luminosity",
+          "measured": 0.01,
+          "unit": "L_sun",
+          "reference": "Gaia WD sample hot branch"
+        },
+        {
+          "name": "wd_young_surface_temp_k",
+          "property": "white_dwarf_temperature",
+          "measured": 25000.0,
+          "unit": "K",
+          "reference": "Sloan WD hot sample median"
+        },
+        {
+          "name": "wd_cooling_rate_log_l",
+          "property": "white_dwarf_cooling_rate",
+          "measured": -4.5,
+          "unit": "dex/yr",
+          "reference": "Fontaine+ 2001 cooling track slope"
+        }
+      ]
+    },
+    "law_26": {
+      "founding_law_id": "law_26",
+      "name": "Atmospheric Ozone Concentration Anomaly",
+      "domain_scalar": "Atmospheric_Physics",
+      "d_eff": 12,
+      "maps_to_lean": ["atmospheric", "climate"],
+      "anchors": [
+        {
+          "name": "global_mean_total_column_du",
+          "property": "ozone_column_du",
+          "measured": 300.0,
+          "unit": "DU",
+          "reference": "NASA OMI/OMPS climatology"
+        },
+        {
+          "name": "stratospheric_peak_ppmv",
+          "property": "atmospheric_ozone_concentration",
+          "measured": 10.0,
+          "unit": "ppmv",
+          "reference": "US Standard Atmosphere 1976"
+        },
+        {
+          "name": "antarctic_ozone_hole_min_du",
+          "property": "ozone_anomaly_du",
+          "measured": 100.0,
+          "unit": "DU",
+          "reference": "WMO Antarctic ozone hole minima"
+        },
+        {
+          "name": "tropopause_ozone_ppbv",
+          "property": "atmospheric_ozone",
+          "measured": 50.0,
+          "unit": "ppbv",
+          "reference": "NOAA ozonesonde climatology"
+        }
+      ]
+    },
+    "law_34": {
+      "founding_law_id": "law_34",
+      "name": "Pulsar Glitch Frequency Anomaly",
+      "domain_scalar": "Astronomy",
+      "d_eff": 16,
+      "maps_to_lean": ["astronomical", "particle"],
+      "anchors": [
+        {
+          "name": "vela_glitch_interval_yr",
+          "property": "pulsar_glitch_frequency",
+          "measured": 3.0,
+          "unit": "yr",
+          "reference": "Espinoza+ 2011 Vela glitch catalog"
+        },
+        {
+          "name": "crab_glitch_interval_yr",
+          "property": "pulsar_glitch_interval",
+          "measured": 2.5,
+          "unit": "yr",
+          "reference": "Crab pulsar glitch history"
+        },
+        {
+          "name": "typical_spin_up_fraction",
+          "property": "pulsar_glitch_spin_up",
+          "measured": 1.0e-6,
+          "unit": "fraction",
+          "reference": "McCulloch glitch phenomenology"
+        },
+        {
+          "name": "psr_j0537_glitch_interval_yr",
+          "property": "pulsar_glitch_frequency",
+          "measured": 0.5,
+          "unit": "yr",
+          "reference": "PSR J0537-6910 glitch catalog"
+        }
+      ]
+    }
+  }
+}

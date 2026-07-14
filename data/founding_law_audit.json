@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-07-14T15:14:41.133012+00:00",
+  "generated_at": "2026-07-14T15:19:49.282314+00:00",
   "law_count": 35,
   "strict_empirical_corpus_size": 7941,
-  "extension_domain_count": 340,
+  "extension_domain_count": 347,
   "status_counts": {
-    "verified_extension_panel": 21,
-    "verified_strict_empirical": 7,
-    "founding_unmapped": 7
+    "verified_extension_panel": 28,
+    "verified_strict_empirical": 7
   },
   "policy": "Founding-era accuracy percentages are never trusted without individual FSOT 2.1 strict_empirical or extension panel verification.",
   "laws": [
@@ -28,7 +27,8 @@
           "panel": "Time_Emergence_Simulation",
           "lean_module": "FSOT.Formal.TimeEmergenceSimulationPriors",
           "benchmark_data": "data/time_emergence_simulation_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -48,34 +48,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Planetary_Structure",
-          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
-          "benchmark_data": "data/planetary_structure_benchmark.json",
-          "score": 1
+          "panel": "Founding_Galactic_Halo_Rotation_Panel",
+          "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors",
+          "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Geochemistry",
           "lean_module": "FSOT.Formal.GeochemistryPriors",
           "benchmark_data": "data/geochemistry_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "SH0ES_Refined",
-          "lean_module": "FSOT.Formal.SH0ESRefinedPriors",
-          "benchmark_data": "data/sh0es_refined_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Solar_System_Structure_Deep",
-          "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
-          "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
-          "score": 1
+          "panel": "Planetary_Structure",
+          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
+          "benchmark_data": "data/planetary_structure_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Published_Fuel_Property_Panel",
           "lean_module": "FSOT.Formal.PublishedFuelPropertyPanelPriors",
           "benchmark_data": "data/published_fuel_property_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Radio_Astronomy_Panel",
+          "lean_module": "FSOT.Formal.RadioAstronomyPriors",
+          "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -94,34 +99,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Dark_Energy_CPL",
+          "lean_module": "FSOT.Formal.DarkEnergyCPLPriors",
+          "benchmark_data": "data/dark_energy_cpl_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Element_Synthesis_Condition_Scaffold",
+          "lean_module": "FSOT.Formal.ElementSynthesisConditionScaffoldPriors",
+          "benchmark_data": "data/element_synthesis_condition_scaffold_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
           "panel": "Energy_AI_Orbital_Bridge",
           "lean_module": "FSOT.Formal.EnergyAIOrbitalBridgePriors",
           "benchmark_data": "data/energy_ai_orbital_bridge_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Energy_Neural_Orbital_Bridge",
           "lean_module": "FSOT.Formal.EnergyNeuralOrbitalBridgePriors",
           "benchmark_data": "data/energy_neural_orbital_bridge_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Dark_Energy_CPL",
-          "lean_module": "FSOT.Formal.DarkEnergyCPLPriors",
-          "benchmark_data": "data/dark_energy_cpl_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Materials_Project_Live_Panel",
-          "lean_module": "FSOT.Formal.MaterialsProjectLivePanelPriors",
-          "benchmark_data": "data/materials_project_live_panel_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Fusion_Lab_Certificate_Spine",
-          "lean_module": "FSOT.Formal.FusionLabCertificateSpinePriors",
-          "benchmark_data": "data/fusion_lab_certificate_spine_benchmark.json",
-          "score": 1
+          "panel": "Founding_Cosmic_Ray_Panel",
+          "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors",
+          "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -143,25 +153,29 @@
           "panel": "NASA_DONKI_Solar_Panel",
           "lean_module": "FSOT.Formal.NasaDonkiSolarPriors",
           "benchmark_data": "data/nasa_donki_solar_panel_benchmark.json",
-          "score": 2
+          "score": 2,
+          "match": "keyword"
         },
         {
           "panel": "Electrical_Power_Systems",
           "lean_module": "FSOT.Formal.ElectricalPowerSystemsPriors",
           "benchmark_data": "data/electrical_power_systems_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Solar_System_Structure_Deep",
-          "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
-          "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Radio_Astronomy_Panel",
           "lean_module": "FSOT.Formal.RadioAstronomyPriors",
           "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Solar_System_Structure_Deep",
+          "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
+          "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -237,34 +251,39 @@
       ],
       "extension_panel_hits": [
         {
-          "panel": "Tectonics",
-          "lean_module": "FSOT.Formal.TectonicsPriors",
-          "benchmark_data": "data/tectonics_benchmark.json",
-          "score": 1
+          "panel": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+          "lean_module": "FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors",
+          "benchmark_data": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Seismology_Deep",
-          "lean_module": "FSOT.Formal.SeismologyDeepPriors",
-          "benchmark_data": "data/seismology_deep_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Soul_Bridge",
+          "lean_module": "FSOT.Formal.ConsciousnessSoulBridgePriors",
+          "benchmark_data": "data/consciousness_soul_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Geochemistry",
-          "lean_module": "FSOT.Formal.GeochemistryPriors",
-          "benchmark_data": "data/geochemistry_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Quantum_Materials",
-          "lean_module": "FSOT.Formal.QuantumMaterialsPriors",
-          "benchmark_data": "data/quantum_materials_benchmark.json",
-          "score": 1
+          "panel": "Distant_Island_Emergence_Simulation",
+          "lean_module": "FSOT.Formal.DistantIslandEmergenceSimulationPriors",
+          "benchmark_data": "data/distant_island_emergence_simulation_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Domain_Coupling_Simulation",
           "lean_module": "FSOT.Formal.DomainCouplingSimulationPriors",
           "benchmark_data": "data/domain_coupling_simulation_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Domain_Coupling_Simulation_Refresh_Panel",
+          "lean_module": "FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors",
+          "benchmark_data": "data/domain_coupling_simulation_refresh_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Safe to cite as measured FSOT 2.1 result."
@@ -283,28 +302,32 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Planetary_Atmospheres",
-          "lean_module": "FSOT.Formal.PlanetaryAtmospheresPriors",
-          "benchmark_data": "data/planetary_atmospheres_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Cold_Fusion_Candidate_Prereg_Scaffold",
           "lean_module": "FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors",
           "benchmark_data": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Element_Synthesis_Condition_Scaffold",
           "lean_module": "FSOT.Formal.ElementSynthesisConditionScaffoldPriors",
           "benchmark_data": "data/element_synthesis_condition_scaffold_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "NASA_DONKI_Solar_Panel",
           "lean_module": "FSOT.Formal.NasaDonkiSolarPriors",
           "benchmark_data": "data/nasa_donki_solar_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Planetary_Atmospheres",
+          "lean_module": "FSOT.Formal.PlanetaryAtmospheresPriors",
+          "benchmark_data": "data/planetary_atmospheres_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -323,16 +346,18 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Dark_Energy_CPL",
-          "lean_module": "FSOT.Formal.DarkEnergyCPLPriors",
-          "benchmark_data": "data/dark_energy_cpl_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Arxiv_Gravitational_Waves_Panel",
           "lean_module": "FSOT.Formal.ArxivGravitationalWavesPanelPriors",
           "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Dark_Energy_CPL",
+          "lean_module": "FSOT.Formal.DarkEnergyCPLPriors",
+          "benchmark_data": "data/dark_energy_cpl_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -408,16 +433,18 @@
       ],
       "extension_panel_hits": [
         {
-          "panel": "Radio_Astronomy_Panel",
-          "lean_module": "FSOT.Formal.RadioAstronomyPriors",
-          "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Nothing_Perfection_Friction_Origin_Panel",
           "lean_module": "FSOT.Formal.NothingPerfectionFrictionOriginPanelPriors",
           "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Radio_Astronomy_Panel",
+          "lean_module": "FSOT.Formal.RadioAstronomyPriors",
+          "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Safe to cite as measured FSOT 2.1 result."
@@ -511,7 +538,8 @@
           "panel": "Magnetic_Confinement_Fusion_Panel",
           "lean_module": "FSOT.Formal.MagneticConfinementFusionPanelPriors",
           "benchmark_data": "data/magnetic_confinement_fusion_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -525,11 +553,19 @@
         "casimir",
         "zero_point"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Quantum_Vacuum_Panel",
+          "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors",
+          "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_12",
@@ -539,11 +575,19 @@
         "cosmic_ray",
         "anisotropy"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Cosmic_Ray_Panel",
+          "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors",
+          "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_13",
@@ -554,11 +598,19 @@
         "rotation",
         "galaxy"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Galactic_Halo_Rotation_Panel",
+          "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors",
+          "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_14",
@@ -574,34 +626,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Quantum_Materials",
-          "lean_module": "FSOT.Formal.QuantumMaterialsPriors",
-          "benchmark_data": "data/quantum_materials_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+          "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors",
+          "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Founding_Quantum_Vacuum_Panel",
+          "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors",
+          "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Materials_Genome_Crosswalk",
           "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
           "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Quantum_Information",
-          "lean_module": "FSOT.Formal.QuantumInformationPriors",
-          "benchmark_data": "data/quantum_information_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Warp_BH_WH_Portal_Panel",
-          "lean_module": "FSOT.Formal.WarpBhWhPortalPriors",
-          "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
-          "score": 1
+          "panel": "Microtubule_Quantum_Consciousness_Panel",
+          "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors",
+          "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -619,22 +676,25 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
+          "panel": "Magnetic_Confinement_Fusion_Panel",
+          "lean_module": "FSOT.Formal.MagneticConfinementFusionPanelPriors",
+          "benchmark_data": "data/magnetic_confinement_fusion_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
           "panel": "Magnetosphere",
           "lean_module": "FSOT.Formal.MagnetospherePriors",
           "benchmark_data": "data/magnetosphere_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Quantum_Materials",
           "lean_module": "FSOT.Formal.QuantumMaterialsPriors",
           "benchmark_data": "data/quantum_materials_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Magnetic_Confinement_Fusion_Panel",
-          "lean_module": "FSOT.Formal.MagneticConfinementFusionPanelPriors",
-          "benchmark_data": "data/magnetic_confinement_fusion_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -653,34 +713,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Observer_Channel_Derivation",
-          "lean_module": "FSOT.Formal.ObserverChannelDerivationPriors",
-          "benchmark_data": "data/observer_channel_derivation_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Econ",
+          "lean_module": "FSOT.Formal.ConsciousnessEconPriors",
+          "benchmark_data": "data/consciousness_econ_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Consciousness_Expansion_Spine",
+          "lean_module": "FSOT.Formal.ConsciousnessExpansionSpinePriors",
+          "benchmark_data": "data/consciousness_expansion_spine_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Consciousness_Galactic_Orbital_Bridge",
           "lean_module": "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
           "benchmark_data": "data/consciousness_galactic_orbital_bridge_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Consciousness_Econ",
-          "lean_module": "FSOT.Formal.ConsciousnessEconPriors",
-          "benchmark_data": "data/consciousness_econ_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Genetics_Coupling_Panel",
+          "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors",
+          "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Consciousness_Soul_Bridge",
-          "lean_module": "FSOT.Formal.ConsciousnessSoulBridgePriors",
-          "benchmark_data": "data/consciousness_soul_bridge_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "OpenNeuro_Full_Panel",
-          "lean_module": "FSOT.Formal.OpenNeuroFullPanelPriors",
-          "benchmark_data": "data/openneuro_full_panel_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Genetics_Species_Panel",
+          "lean_module": "FSOT.Formal.ConsciousnessGeneticsSpeciesPanelPriors",
+          "benchmark_data": "data/consciousness_genetics_species_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -699,34 +764,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Pharmacology",
-          "lean_module": "FSOT.Formal.PharmacologyPriors",
-          "benchmark_data": "data/pharmacology_benchmark.json",
-          "score": 1
+          "panel": "Boundary_Partition_Tightening",
+          "lean_module": "FSOT.Formal.BoundaryPartitionTighteningPriors",
+          "benchmark_data": "data/boundary_partition_tightening_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Chaos_Mediated_Phase_Transitions",
           "lean_module": "FSOT.Formal.ChaosMediatedPhaseTransitionsPriors",
           "benchmark_data": "data/chaos_mediated_phase_transitions_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Fluid_Phase_Current_Spine",
-          "lean_module": "FSOT.Formal.FluidPhaseCurrentSpinePriors",
-          "benchmark_data": "data/fluid_phase_current_spine_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Boundary_Partition_Tightening",
-          "lean_module": "FSOT.Formal.BoundaryPartitionTighteningPriors",
-          "benchmark_data": "data/boundary_partition_tightening_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "ClinicalTrials_Medical_Panel",
           "lean_module": "FSOT.Formal.ClinicaltrialsMedicalPriors",
           "benchmark_data": "data/clinicaltrials_medical_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Fluid_Phase_Current_Spine",
+          "lean_module": "FSOT.Formal.FluidPhaseCurrentSpinePriors",
+          "benchmark_data": "data/fluid_phase_current_spine_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Founding_Cosmic_Ray_Panel",
+          "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors",
+          "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -747,7 +817,8 @@
           "panel": "Neutrino_Physics_Panel",
           "lean_module": "FSOT.Formal.NeutrinoPhysicsPriors",
           "benchmark_data": "data/neutrino_physics_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -766,34 +837,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Planetary_Atmospheres",
-          "lean_module": "FSOT.Formal.PlanetaryAtmospheresPriors",
-          "benchmark_data": "data/planetary_atmospheres_benchmark.json",
-          "score": 1
+          "panel": "AI_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Cold_Fusion_Candidate_Prereg_Scaffold",
+          "lean_module": "FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors",
+          "benchmark_data": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Consciousness_Galactic_Orbital_Bridge",
           "lean_module": "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
           "benchmark_data": "data/consciousness_galactic_orbital_bridge_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Medical_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/medical_galactic_orbital_bridge_benchmark.json",
-          "score": 1
+          "panel": "Element_Synthesis_Condition_Scaffold",
+          "lean_module": "FSOT.Formal.ElementSynthesisConditionScaffoldPriors",
+          "benchmark_data": "data/element_synthesis_condition_scaffold_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "AI_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Neural_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
-          "score": 1
+          "panel": "Founding_Galactic_Halo_Rotation_Panel",
+          "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors",
+          "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -807,11 +883,19 @@
         "grain",
         "interstellar"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Cosmic_Dust_Panel",
+          "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors",
+          "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_21",
@@ -827,34 +911,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Quantum_Materials",
-          "lean_module": "FSOT.Formal.QuantumMaterialsPriors",
-          "benchmark_data": "data/quantum_materials_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Proof_Carrying_Code_Genome",
-          "lean_module": "FSOT.Formal.ProofCarryingCodeGenomePriors",
-          "benchmark_data": "data/proof_carrying_code_genome_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Time_Emergence_Simulation",
-          "lean_module": "FSOT.Formal.TimeEmergenceSimulationPriors",
-          "benchmark_data": "data/time_emergence_simulation_benchmark.json",
-          "score": 1
+          "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+          "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors",
+          "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Time_Domain_Crosswalk",
-          "lean_module": "FSOT.Formal.TimeDomainCrosswalkPriors",
-          "benchmark_data": "data/time_domain_crosswalk_benchmark.json",
-          "score": 1
+          "panel": "Domain_Coupling_Simulation_Refresh_Panel",
+          "lean_module": "FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors",
+          "benchmark_data": "data/domain_coupling_simulation_refresh_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "FPC_Temporal_Coupling",
+          "lean_module": "FSOT.Formal.FPCTemporalCouplingPriors",
+          "benchmark_data": "data/fpc_temporal_coupling_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Fluid_Spacetime_Observable_Spine",
+          "lean_module": "FSOT.Formal.FluidSpacetimeObservableSpinePriors",
+          "benchmark_data": "data/fluid_spacetime_observable_spine_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -873,34 +962,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Orbital_Mechanics",
-          "lean_module": "FSOT.Formal.OrbitalMechanicsPriors",
-          "benchmark_data": "data/orbital_mechanics_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "NASA_Exoplanet_Archive",
-          "lean_module": "FSOT.Formal.NasaExoplanetArchivePriors",
-          "benchmark_data": "data/nasa_exoplanet_archive_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Exogeology",
-          "lean_module": "FSOT.Formal.ExogeologyExtensionPriors",
-          "benchmark_data": "data/exogeology_extension_benchmark.json",
-          "score": 1
+          "panel": "AI_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Acoustic_Resonance_Materials",
           "lean_module": "FSOT.Formal.AcousticResonanceMaterialsPriors",
           "benchmark_data": "data/acoustic_resonance_materials_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Energy_AI_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.EnergyAIOrbitalBridgePriors",
-          "benchmark_data": "data/energy_ai_orbital_bridge_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/consciousness_galactic_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Consciousness_Soul_Bridge",
+          "lean_module": "FSOT.Formal.ConsciousnessSoulBridgePriors",
+          "benchmark_data": "data/consciousness_soul_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Domain_Orbital_Predictions",
+          "lean_module": "FSOT.Formal.DomainOrbitalPredictionsPriors",
+          "benchmark_data": "data/domain_orbital_predictions_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -913,11 +1007,19 @@
         "white_dwarf",
         "cooling"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_White_Dwarf_Cooling_Panel",
+          "lean_module": "FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors",
+          "benchmark_data": "data/founding_white_dwarf_cooling_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_24",
@@ -932,34 +1034,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Planetary_Structure",
-          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
-          "benchmark_data": "data/planetary_structure_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Geochemistry",
           "lean_module": "FSOT.Formal.GeochemistryPriors",
           "benchmark_data": "data/geochemistry_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "SH0ES_Refined",
-          "lean_module": "FSOT.Formal.SH0ESRefinedPriors",
-          "benchmark_data": "data/sh0es_refined_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Solar_System_Structure_Deep",
-          "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
-          "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
-          "score": 1
+          "panel": "Planetary_Structure",
+          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
+          "benchmark_data": "data/planetary_structure_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Published_Fuel_Property_Panel",
           "lean_module": "FSOT.Formal.PublishedFuelPropertyPanelPriors",
           "benchmark_data": "data/published_fuel_property_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Radio_Astronomy_Panel",
+          "lean_module": "FSOT.Formal.RadioAstronomyPriors",
+          "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "SH0ES_Refined",
+          "lean_module": "FSOT.Formal.SH0ESRefinedPriors",
+          "benchmark_data": "data/sh0es_refined_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -979,34 +1086,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Energy_Neural_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.EnergyNeuralOrbitalBridgePriors",
-          "benchmark_data": "data/energy_neural_orbital_bridge_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Particle_Neural_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.ParticleNeuralOrbitalBridgePriors",
-          "benchmark_data": "data/particle_neural_orbital_bridge_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Neural_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
-          "score": 1
+          "panel": "Consciousness_Genetics_Coupling_Panel",
+          "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors",
+          "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Consciousness_Species_Multi_Panel",
           "lean_module": "FSOT.Formal.ConsciousnessSpeciesMultiPanelPriors",
           "benchmark_data": "data/consciousness_species_multi_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Consciousness_Genetics_Coupling_Panel",
-          "lean_module": "FSOT.Formal.ConsciousnessGeneticsCouplingPanelPriors",
-          "benchmark_data": "data/consciousness_genetics_coupling_panel_benchmark.json",
-          "score": 1
+          "panel": "Energy_Neural_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.EnergyNeuralOrbitalBridgePriors",
+          "benchmark_data": "data/energy_neural_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Longevity_Consciousness_Coupling_Panel",
+          "lean_module": "FSOT.Formal.LongevityConsciousnessCouplingPanelPriors",
+          "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Neural_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -1019,11 +1131,19 @@
         "ozone",
         "atmospheric"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Atmospheric_Ozone_Panel",
+          "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors",
+          "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_27",
@@ -1040,34 +1160,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Seismology",
-          "lean_module": "FSOT.Formal.SeismologyPriors",
-          "benchmark_data": "data/seismology_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Tectonics",
-          "lean_module": "FSOT.Formal.TectonicsPriors",
-          "benchmark_data": "data/tectonics_benchmark.json",
-          "score": 1
+          "panel": "Arxiv_Gravitational_Waves_Panel",
+          "lean_module": "FSOT.Formal.ArxivGravitationalWavesPanelPriors",
+          "benchmark_data": "data/arxiv_gravitational_waves_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Live_Ingest_Spine",
           "lean_module": "FSOT.Formal.LiveIngestSpinePriors",
           "benchmark_data": "data/live_ingest_spine_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "NIST_DLMF_Special_Functions",
           "lean_module": "FSOT.Formal.NistDlmfSpecialFunctionsPriors",
           "benchmark_data": "data/nist_dlmf_special_functions_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "NOAA_NDBC_Buoy_Panel",
           "lean_module": "FSOT.Formal.NoaaNdbcBuoyPriors",
           "benchmark_data": "data/noaa_ndbc_buoy_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Optics_Interferometry_Depth_Panel",
+          "lean_module": "FSOT.Formal.OpticsInterferometryDepthPanelPriors",
+          "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -1201,34 +1326,39 @@
       ],
       "extension_panel_hits": [
         {
-          "panel": "Tectonics",
-          "lean_module": "FSOT.Formal.TectonicsPriors",
-          "benchmark_data": "data/tectonics_benchmark.json",
-          "score": 1
+          "panel": "Adversarial_Fractal_Break_Tests",
+          "lean_module": "FSOT.Formal.AdversarialFractalBreakPriors",
+          "benchmark_data": "data/adversarial_fractal_break_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Architecture_Building_Science",
           "lean_module": "FSOT.Formal.ArchitectureBuildingScienceGapFillPriors",
           "benchmark_data": "data/architecture_building_science_gap_fill_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Geology_Stratigraphy",
-          "lean_module": "FSOT.Formal.GeologyStratigraphyExtensionPriors",
-          "benchmark_data": "data/geology_stratigraphy_extension_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Cryptography_Technology",
           "lean_module": "FSOT.Formal.CryptographyTechnologyPriors",
           "benchmark_data": "data/cryptography_technology_cybersecurity_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Zero_Day_Risk_Evaluator",
-          "lean_module": "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
-          "benchmark_data": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json",
-          "score": 1
+          "panel": "Exoplanet_System_Architecture",
+          "lean_module": "FSOT.Formal.ExoplanetSystemArchitecturePriors",
+          "benchmark_data": "data/exoplanet_system_architecture_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Geology_Stratigraphy",
+          "lean_module": "FSOT.Formal.GeologyStratigraphyExtensionPriors",
+          "benchmark_data": "data/geology_stratigraphy_extension_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Safe to cite as measured FSOT 2.1 result."
@@ -1290,16 +1420,25 @@
       ],
       "extension_panel_hits": [
         {
+          "panel": "Founding_Atmospheric_Ozone_Panel",
+          "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors",
+          "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
           "panel": "NASA_DONKI_Solar_Panel",
           "lean_module": "FSOT.Formal.NasaDonkiSolarPriors",
           "benchmark_data": "data/nasa_donki_solar_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Radio_Astronomy_Panel",
           "lean_module": "FSOT.Formal.RadioAstronomyPriors",
           "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Safe to cite as measured FSOT 2.1 result."
@@ -1317,34 +1456,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Quantum_Materials",
-          "lean_module": "FSOT.Formal.QuantumMaterialsPriors",
-          "benchmark_data": "data/quantum_materials_benchmark.json",
-          "score": 1
-        },
-        {
           "panel": "Compactification_Ladder",
           "lean_module": "FSOT.Formal.CompactificationLadderPriors",
           "benchmark_data": "data/compactification_ladder_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
+          "lean_module": "FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors",
+          "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Founding_Quantum_Vacuum_Panel",
+          "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors",
+          "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Materials_Genome_Crosswalk",
           "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
           "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Quantum_Information",
-          "lean_module": "FSOT.Formal.QuantumInformationPriors",
-          "benchmark_data": "data/quantum_information_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Warp_BH_WH_Portal_Panel",
-          "lean_module": "FSOT.Formal.WarpBhWhPortalPriors",
-          "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
-          "score": 1
+          "panel": "Microtubule_Quantum_Consciousness_Panel",
+          "lean_module": "FSOT.Formal.MicrotubuleQuantumConsciousnessPanelPriors",
+          "benchmark_data": "data/microtubule_quantum_consciousness_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -1366,31 +1510,36 @@
           "panel": "Agriculture_Agroecology",
           "lean_module": "FSOT.Formal.AgricultureAgroecologyGapFillPriors",
           "benchmark_data": "data/agriculture_agroecology_gap_fill_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Botany",
           "lean_module": "FSOT.Formal.BotanyExtensionPriors",
           "benchmark_data": "data/botany_extension_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Zoology",
-          "lean_module": "FSOT.Formal.ZoologyExtensionPriors",
-          "benchmark_data": "data/zoology_extension_benchmark.json",
-          "score": 1
+          "panel": "Ecology",
+          "lean_module": "FSOT.Formal.EcologyPublicPanelPriors",
+          "benchmark_data": "data/ecology_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "GBIF_Species_Occurrence",
-          "lean_module": "FSOT.Formal.GbifSpeciesOccurrencePriors",
-          "benchmark_data": "data/gbif_species_occurrence_benchmark.json",
-          "score": 1
+          "panel": "Entomology",
+          "lean_module": "FSOT.Formal.EntomologyExtensionPriors",
+          "benchmark_data": "data/entomology_extension_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Mycology",
-          "lean_module": "FSOT.Formal.MycologyExtensionPriors",
-          "benchmark_data": "data/mycology_extension_benchmark.json",
-          "score": 1
+          "panel": "Entomology_Panel",
+          "lean_module": "FSOT.Formal.EntomologyPanelPriors",
+          "benchmark_data": "data/entomology_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -1409,34 +1558,39 @@
       "strict_empirical_hits": [],
       "extension_panel_hits": [
         {
-          "panel": "Planetary_Structure",
-          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
-          "benchmark_data": "data/planetary_structure_benchmark.json",
-          "score": 1
+          "panel": "Founding_Cosmic_Dust_Panel",
+          "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors",
+          "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Geochemistry",
           "lean_module": "FSOT.Formal.GeochemistryPriors",
           "benchmark_data": "data/geochemistry_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "SH0ES_Refined",
-          "lean_module": "FSOT.Formal.SH0ESRefinedPriors",
-          "benchmark_data": "data/sh0es_refined_benchmark.json",
-          "score": 1
-        },
-        {
-          "panel": "Solar_System_Structure_Deep",
-          "lean_module": "FSOT.Formal.SolarSystemStructureDeepPriors",
-          "benchmark_data": "data/solar_system_structure_deep_benchmark.json",
-          "score": 1
+          "panel": "Planetary_Structure",
+          "lean_module": "FSOT.Formal.PlanetaryStructurePriors",
+          "benchmark_data": "data/planetary_structure_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
           "panel": "Published_Fuel_Property_Panel",
           "lean_module": "FSOT.Formal.PublishedFuelPropertyPanelPriors",
           "benchmark_data": "data/published_fuel_property_panel_benchmark.json",
-          "score": 1
+          "score": 1,
+          "match": "keyword"
+        },
+        {
+          "panel": "Radio_Astronomy_Panel",
+          "lean_module": "FSOT.Formal.RadioAstronomyPriors",
+          "benchmark_data": "data/radio_astronomy_panel_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Cite extension benchmark; run panel build if stale."
@@ -1449,11 +1603,19 @@
         "pulsar",
         "glitch"
       ],
-      "audit_status": "founding_unmapped",
+      "audit_status": "verified_extension_panel",
       "founding_accuracy_trusted": false,
       "strict_empirical_hits": [],
-      "extension_panel_hits": [],
-      "recommendation": "Founding law only \u2014 needs new benchmark or retire from claims."
+      "extension_panel_hits": [
+        {
+          "panel": "Founding_Pulsar_Glitch_Panel",
+          "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors",
+          "benchmark_data": "data/founding_pulsar_glitch_panel_benchmark.json",
+          "score": 100,
+          "match": "founding_law_id"
+        }
+      ],
+      "recommendation": "Cite extension benchmark; run panel build if stale."
     },
     {
       "id": "law_35",
@@ -1514,34 +1676,39 @@
       ],
       "extension_panel_hits": [
         {
-          "panel": "Neural_Galactic_Orbital_Bridge",
-          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
-          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
-          "score": 2
-        },
-        {
           "panel": "Materials_Genome_Crosswalk",
           "lean_module": "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
           "benchmark_data": "data/materials_genome_crosswalk_benchmark.json",
-          "score": 2
+          "score": 2,
+          "match": "keyword"
+        },
+        {
+          "panel": "Neural_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/neural_galactic_orbital_bridge_benchmark.json",
+          "score": 2,
+          "match": "keyword"
         },
         {
           "panel": "Warp_BH_WH_Portal_Panel",
           "lean_module": "FSOT.Formal.WarpBhWhPortalPriors",
           "benchmark_data": "data/warp_bh_wh_portal_benchmark.json",
-          "score": 2
+          "score": 2,
+          "match": "keyword"
         },
         {
-          "panel": "Magnetosphere",
-          "lean_module": "FSOT.Formal.MagnetospherePriors",
-          "benchmark_data": "data/magnetosphere_benchmark.json",
-          "score": 1
+          "panel": "AI_Galactic_Orbital_Bridge",
+          "lean_module": "FSOT.Formal.AIGalacticOrbitalBridgePriors",
+          "benchmark_data": "data/ai_galactic_orbital_bridge_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         },
         {
-          "panel": "Neuroimmunology",
-          "lean_module": "FSOT.Formal.NeuroimmunologyPriors",
-          "benchmark_data": "data/neuroimmunology_benchmark.json",
-          "score": 1
+          "panel": "Astrophysical_Structure_Crosswalk",
+          "lean_module": "FSOT.Formal.AstrophysicalStructureCrosswalkPriors",
+          "benchmark_data": "data/astrophysical_structure_crosswalk_benchmark.json",
+          "score": 1,
+          "match": "keyword"
         }
       ],
       "recommendation": "Safe to cite as measured FSOT 2.1 result."

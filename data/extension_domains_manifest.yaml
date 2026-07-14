@@ -4574,6 +4574,104 @@ extension_domains:
     lean_module: FSOT.Formal.Tier95ZebrafishSpinePriors
     note: "Tier 95 Zebrahub spine — tracking + mechanics + longevity coupling + AlphaFold bridge"
 
+  Founding_Quantum_Vacuum_Panel:
+    tier: 96
+    D_eff: 8
+    delta_psi: 0.85
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_11]
+    maps_to_lean: [quantum, particle]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_quantum_vacuum_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingQuantumVacuumPanelPriors
+    note: "founding law_11 quantum vacuum casimir zero_point energy oscillation — public literature anchors"
+
+  Founding_Cosmic_Ray_Panel:
+    tier: 96
+    D_eff: 10
+    delta_psi: 0.88
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_12]
+    maps_to_lean: [particle, astronomical]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_cosmic_ray_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingCosmicRayPanelPriors
+    note: "founding law_12 cosmic_ray anisotropy phase shift — IceCube-class anchors"
+
+  Founding_Galactic_Halo_Rotation_Panel:
+    tier: 96
+    D_eff: 14
+    delta_psi: 0.9
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_13]
+    maps_to_lean: [cosmological, galactic, astronomical]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_galactic_halo_rotation_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingGalacticHaloRotationPanelPriors
+    note: "founding law_13 galactic halo rotation galaxy curve — MW/SPARC anchors"
+
+  Founding_Cosmic_Dust_Panel:
+    tier: 96
+    D_eff: 13
+    delta_psi: 0.87
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_20]
+    maps_to_lean: [cosmological, galactic]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_cosmic_dust_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingCosmicDustPanelPriors
+    note: "founding law_20 cosmic dust grain interstellar size — ISM literature anchors"
+
+  Founding_White_Dwarf_Cooling_Panel:
+    tier: 96
+    D_eff: 15
+    delta_psi: 0.89
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_23]
+    maps_to_lean: [astronomical, stellar]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_white_dwarf_cooling_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors
+    note: "founding law_23 white_dwarf cooling stellar rate — Gaia/Fontaine anchors"
+
+  Founding_Atmospheric_Ozone_Panel:
+    tier: 96
+    D_eff: 12
+    delta_psi: 0.86
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_26]
+    maps_to_lean: [atmospheric, climate]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_atmospheric_ozone_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingAtmosphericOzonePanelPriors
+    note: "founding law_26 atmospheric ozone concentration anomaly — OMI/OMPS anchors"
+
+  Founding_Pulsar_Glitch_Panel:
+    tier: 96
+    D_eff: 16
+    delta_psi: 0.91
+    recent_hits: 1
+    observed: true
+    founding_law_ids: [law_34]
+    maps_to_lean: [astronomical, particle]
+    build_script: scripts/build_founding_unmapped_laws_benchmark.py
+    manifest: data/tier96_founding_unmapped_laws_manifest.yaml
+    benchmark_data: data/founding_pulsar_glitch_panel_benchmark.json
+    lean_module: FSOT.Formal.FoundingPulsarGlitchPanelPriors
+    note: "founding law_34 pulsar glitch frequency anomaly — Vela/Crab anchors"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

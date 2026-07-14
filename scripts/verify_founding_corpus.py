@@ -18,8 +18,9 @@ def verify() -> dict:
     issues: list[str] = []
     pdf_ok = False
     law_ok = False
-    pdf_stats = {}
-    law_stats = {}
+    pdf_stats: dict = {}
+    law_stats: dict = {}
+    unmapped = None
 
     if PDF_MANIFEST.exists():
         pdf_stats = json.loads(PDF_MANIFEST.read_text(encoding="utf-8"))
@@ -36,6 +37,10 @@ def verify() -> dict:
             law_ok = True
         else:
             issues.append(f"law_audit: expected 35 laws, got {law_stats.get('law_count')}")
+        counts = law_stats.get("status_counts") or {}
+        unmapped = int(counts.get("founding_unmapped", 0))
+        if unmapped > 0:
+            issues.append(f"law_audit: {unmapped} founding laws still unmapped")
     else:
         issues.append(f"missing {LAW_AUDIT}")
 
@@ -47,9 +52,11 @@ def verify() -> dict:
         "pdf_stats": {
             "pdf_count": pdf_stats.get("pdf_count"),
             "extracted_ok": pdf_stats.get("extracted_ok"),
+            "failed": pdf_stats.get("failed"),
             "accuracy_flagged": pdf_stats.get("accuracy_flagged_pdfs"),
         },
         "law_stats": law_stats.get("status_counts"),
+        "founding_unmapped": unmapped,
         "issues": issues,
     }
     OUT.write_text(json.dumps(report, indent=2), encoding="utf-8")

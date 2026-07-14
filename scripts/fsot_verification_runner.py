@@ -275,6 +275,16 @@ def main() -> int:
         action="store_true",
         help="Verify using bundled vendor assets only (no desktop lab rebuild)",
     )
+    parser.add_argument(
+        "--founding-corpus",
+        action="store_true",
+        help="Run founding corpus verification gate (optional tier)",
+    )
+    parser.add_argument(
+        "--rebuild-founding",
+        action="store_true",
+        help="Rebuild founding corpus pipeline before verification (implies --founding-corpus)",
+    )
     args = parser.parse_args()
 
     if args.portable:
@@ -1042,6 +1052,52 @@ def main() -> int:
             print(proc_ev.stdout.strip())
             if proc_ev.returncode != 0:
                 issues.append("extension domains verification failed")
+
+        if args.rebuild_founding or args.founding_corpus:
+            print("\n=== Founding corpus (optional tier) ===")
+            if args.rebuild_founding:
+                founding_pipeline = ROOT / "scripts" / "build_founding_pipeline.py"
+                if founding_pipeline.exists():
+                    proc_fp = subprocess.run(
+                        [sys.executable, str(founding_pipeline)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_fp.stdout.strip() or proc_fp.stderr.strip())
+                    if proc_fp.returncode != 0:
+                        issues.append("founding corpus pipeline failed")
+                else:
+                    founding_build = ROOT / "scripts" / "build_founding_unmapped_laws_benchmark.py"
+                    for script in (
+                        ROOT / "scripts" / "ingest_founding_pdfs.py",
+                        ROOT / "scripts" / "audit_founding_35_laws.py",
+                        founding_build,
+                    ):
+                        if script.exists():
+                            proc_fb = subprocess.run(
+                                [sys.executable, str(script)],
+                                cwd=ROOT,
+                                capture_output=True,
+                                text=True,
+                                check=False,
+                            )
+                            print(proc_fb.stdout.strip() or proc_fb.stderr.strip())
+                            if proc_fb.returncode != 0:
+                                issues.append(f"{script.name} failed")
+            founding_verify = ROOT / "scripts" / "verify_founding_corpus.py"
+            if founding_verify.exists():
+                proc_fc = subprocess.run(
+                    [sys.executable, str(founding_verify)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_fc.stdout.strip() or proc_fc.stderr.strip())
+                if proc_fc.returncode != 0:
+                    issues.append("founding corpus verification failed")
 
         bio_eval = ROOT / "scripts" / "run_biology_numeric_eval.py"
         if bio_eval.exists():

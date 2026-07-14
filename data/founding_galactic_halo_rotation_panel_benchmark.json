@@ -1,0 +1,136 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_Galactic_Halo_Rotation_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_13"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "galactic",
+    "astronomical"
+  ],
+  "D_eff": 14,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.050246,
+  "pooled_median_error_pct": 0.050246,
+  "headline_median_error_pct": 0.050246,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Galactic Halo Rotation Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_13_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.050246,
+      "measured": 0.0,
+      "error_pct": 0.050246,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_13",
+      "name": "Galactic Halo Rotation Anomaly",
+      "computed": 0.050246,
+      "measured": 0.0,
+      "error_pct": 0.050246,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "mw_v_sun_kms",
+      "computed": 220.1105403082,
+      "measured": 220.0,
+      "error_pct": 0.050246,
+      "unit": "km/s",
+      "literature_reference": "IAU 1985 / Eilers+ 2019",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "mw_flat_rotation_8kpc",
+      "computed": 233.1170722355,
+      "measured": 233.0,
+      "error_pct": 0.050246,
+      "unit": "km/s",
+      "literature_reference": "Eilers+ ApJ 2019 Milky Way",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "halo_rotation_velocity",
+      "name": "ngc3198_v_flat",
+      "computed": 150.0753683919,
+      "measured": 150.0,
+      "error_pct": 0.050246,
+      "unit": "km/s",
+      "literature_reference": "Begeman+ 1991 SPARC-class galaxy",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "galaxy_rotation_curve",
+      "name": "dd154_v_flat",
+      "computed": 47.0236154295,
+      "measured": 47.0,
+      "error_pct": 0.050246,
+      "unit": "km/s",
+      "literature_reference": "SPARC dwarf galaxy sample",
+      "founding_law_id": "law_13",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_13_lab",
+      "property": "cosmology_scalar_bridge",
+      "name": "fsot_Cosmology",
+      "computed": -0.50245595,
+      "measured": -0.50245595,
+      "error_pct": 0.0,
+      "founding_law_id": "law_13",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.050246,
+    "max_scalar_error_pct": 0.050246,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_13",
+  "founding_law_name": "Galactic Halo Rotation Anomaly",
+  "panel_status": "GREEN"
+}

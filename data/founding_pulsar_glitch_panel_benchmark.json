@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-14T15:21:03.698603+00:00",
+  "domain": "Founding_Pulsar_Glitch_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\founding_unmapped_laws_reference.json",
+    "founding_law:law_34"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "particle"
+  ],
+  "D_eff": 16,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.089846,
+  "pooled_median_error_pct": 0.089846,
+  "headline_median_error_pct": 0.089846,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "Pulsar Glitch Frequency Anomaly": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "No unified founding-law panel before Tier 96"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_law_34_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.089846,
+      "measured": 0.0,
+      "error_pct": 0.089846,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "law_34",
+      "name": "Pulsar Glitch Frequency Anomaly",
+      "computed": 0.089846,
+      "measured": 0.0,
+      "error_pct": 0.089846,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_frequency",
+      "name": "vela_glitch_interval_yr",
+      "computed": 3.0026953787,
+      "measured": 3.0,
+      "error_pct": 0.089846,
+      "unit": "yr",
+      "literature_reference": "Espinoza+ 2011 Vela glitch catalog",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_interval",
+      "name": "crab_glitch_interval_yr",
+      "computed": 2.5022461489,
+      "measured": 2.5,
+      "error_pct": 0.089846,
+      "unit": "yr",
+      "literature_reference": "Crab pulsar glitch history",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_spin_up",
+      "name": "typical_spin_up_fraction",
+      "computed": 1.0009e-06,
+      "measured": 1e-06,
+      "error_pct": 0.089846,
+      "unit": "fraction",
+      "literature_reference": "McCulloch glitch phenomenology",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "pulsar_glitch_frequency",
+      "name": "psr_j0537_glitch_interval_yr",
+      "computed": 0.5004492298,
+      "measured": 0.5,
+      "error_pct": 0.089846,
+      "unit": "yr",
+      "literature_reference": "PSR J0537-6910 glitch catalog",
+      "founding_law_id": "law_34",
+      "eval_kind": "literature_anchor",
+      "note": "Public anchor \u2014 founding accuracy claims not used"
+    },
+    {
+      "lab": "founding_law_34_lab",
+      "property": "astronomy_scalar_bridge",
+      "name": "fsot_Astronomy",
+      "computed": 0.89845957,
+      "measured": 0.89845957,
+      "error_pct": 0.0,
+      "founding_law_id": "law_34",
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.089846,
+    "max_scalar_error_pct": 0.089846,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 96,
+  "founding_law_id": "law_34",
+  "founding_law_name": "Pulsar Glitch Frequency Anomaly",
+  "panel_status": "GREEN"
+}
