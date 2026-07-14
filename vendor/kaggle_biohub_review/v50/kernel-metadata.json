@@ -1,0 +1,21 @@
+{
+  "id": "damianpalumbo/fsot-biohub-v50",
+  "title": "fsot-biohub-v50",
+  "code_file": "fsot-biohub-v50.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "thibautgoldsborough/cellmot-baseline-artifacts",
+    "aashishnegi23/cellmot-ft-detector-biohub",
+    "damianpalumbo/fsot-v50-competitive-bundle",
+    "damianpalumbo/fsot-offline-dependencies"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ]
+}
