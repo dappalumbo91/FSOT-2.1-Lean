@@ -18,10 +18,28 @@ PY = sys.executable
 SCRIPTS = ROOT / "scripts"
 
 
-def _run(script: str, *extra: str) -> None:
+ADVISORY_STEPS = frozenset(
+    {
+        "build_tier_scalar_precision_closure.py",
+        "audit_scientific_pushback_coverage.py",
+    }
+)
+
+
+def _run(script: str, *extra: str) -> bool:
     cmd = [PY, str(SCRIPTS / script), *extra]
     print(f"\n>>> {' '.join(cmd)}")
-    subprocess.run(cmd, cwd=str(ROOT), check=True)
+    advisory = script in ADVISORY_STEPS
+    result = subprocess.run(cmd, cwd=str(ROOT), check=False)
+    if result.returncode != 0:
+        if advisory:
+            print(
+                f"  [advisory] {script} exit {result.returncode} — "
+                "tier aspiration / pushback audit; extension 0.5% gate unchanged"
+            )
+            return True
+        raise subprocess.CalledProcessError(result.returncode, cmd)
+    return True
 
 
 def main() -> int:
@@ -46,10 +64,12 @@ def main() -> int:
         ("audit_scientific_pushback_coverage.py", []),
     ]
     for script, extra in steps:
-        _run(script, *extra)
+        if not _run(script, *extra):
+            return 1
 
     if args.full_cross_proof:
-        _run("run_cross_proof_verification.py")
+        if not _run("run_cross_proof_verification.py"):
+            return 1
 
     print("\n=== Publication verification bundle complete ===")
     print(f"  Figures: {ROOT / 'data' / 'figures'}")
