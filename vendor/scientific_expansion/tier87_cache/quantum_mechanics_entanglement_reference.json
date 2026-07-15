@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "literature_anchors_entanglement_decoherence",
+  "credential_free": true,
+  "entanglement": [
+    {"name": "chsh_classical_bound", "value": 2.0, "unit": "dimensionless"},
+    {"name": "chsh_tsirelson_bound", "value": 2.828427, "unit": "dimensionless"},
+    {"name": "bell_inequality_margin", "value": 0.414214, "unit": "dimensionless"},
+    {"name": "epr_entangled_pair_spin_correlation", "value": 1.0, "unit": "dimensionless"}
+  ],
+  "decoherence": [
+    {"name": "superconducting_qubit_T1_us", "value": 120.0, "unit": "us"},
+    {"name": "superconducting_qubit_T2_us", "value": 95.0, "unit": "us"},
+    {"name": "trapped_ion_T1_s", "value": 10.0, "unit": "s"},
+    {"name": "nv_center_T2_ms", "value": 1.8, "unit": "ms"}
+  ],
+  "measurement": [
+    {"name": "planck_constant_eV_s", "value": 4.135667696e-15, "unit": "eV_s"},
+    {"name": "reduced_planck_eV_s", "value": 6.582119569e-16, "unit": "eV_s"},
+    {"name": "fine_structure_inverse", "value": 137.035999084, "unit": "dimensionless"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "source": "literature_anchors_developmental_structural_biology",
+  "credential_free": true,
+  "developmental": [
+    {"name": "human_gestation_days", "value": 280.0, "unit": "days"},
+    {"name": "mouse_gestation_days", "value": 19.5, "unit": "days"},
+    {"name": "zebrafish_development_hours", "value": 72.0, "unit": "hours"},
+    {"name": "drosophila_embryogenesis_hours", "value": 24.0, "unit": "hours"},
+    {"name": "neurulation_stage_hours", "value": 21.0, "unit": "hours"}
+  ],
+  "structural": [
+    {"name": "alpha_helix_pitch_A", "value": 5.4, "unit": "angstrom"},
+    {"name": "beta_sheet_strand_spacing_A", "value": 3.5, "unit": "angstrom"},
+    {"name": "collagen_triple_helix_pitch_nm", "value": 300.0, "unit": "nm"},
+    {"name": "ribosome_large_subunit_mass_kDa", "value": 2500.0, "unit": "kDa"},
+    {"name": "actin_filament_pitch_nm", "value": 36.0, "unit": "nm"}
+  ],
+  "genomics_relay": [
+    {"name": "human_protein_coding_genes", "value": 20000.0, "unit": "count"},
+    {"name": "median_intron_length_bp", "value": 1700.0, "unit": "bp"},
+    {"name": "exon_junction_complex_proteins", "value": 4.0, "unit": "count"}
+  ]
+}

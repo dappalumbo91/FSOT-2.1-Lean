@@ -1,0 +1,142 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.755472+00:00",
+  "domain": "Canonical_Oracle_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
+    "desktop_canonical_oracle"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "energy"
+  ],
+  "D_eff": 18,
+  "record_count": 6,
+  "observable_count": 6,
+  "scalar_record_count": 5,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.013294,
+  "pooled_median_error_pct": 0.013294,
+  "headline_median_error_pct": 0.013294,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "canonical_oracle_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "fsot_compute.py canonical oracle authority"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.013294,
+      "measured": 0.0,
+      "error_pct": 0.013294,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "fsot_compute_authority",
+      "computed": 0.013294,
+      "measured": 0.0,
+      "error_pct": 0.013294,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "catalog_formulas",
+      "name": "catalog_formulas",
+      "computed": 19215.554169,
+      "measured": 19213.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    },
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "resolved_formulas",
+      "name": "resolved_formulas",
+      "computed": 19215.554169,
+      "measured": 19213.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    },
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "observable_verified_formulas",
+      "name": "observable_verified_formulas",
+      "computed": 7942.055673,
+      "measured": 7941.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    },
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "within_target_2pct",
+      "name": "within_target_2pct",
+      "computed": 6921.920075,
+      "measured": 6921.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    },
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "within_tolerable_5pct",
+      "name": "within_tolerable_5pct",
+      "computed": 7942.055673,
+      "measured": 7941.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    },
+    {
+      "lab": "canonical_oracle_lab",
+      "property": "source_count",
+      "name": "source_count",
+      "computed": 39.005185,
+      "measured": 39.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_fsot_compute_authority"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.013294,
+    "max_scalar_error_pct": 0.013294,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

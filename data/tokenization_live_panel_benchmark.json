@@ -1,12 +1,11 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:27.051885+00:00",
+  "generated_at": "2026-07-15T05:17:19.676240+00:00",
   "domain": "Tokenization_Live_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/fsot_compute.py\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
-    "desktop_dictionary",
-    "c_thin_depth_pass"
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
+    "desktop_dictionary"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -14,24 +13,24 @@
     "neural"
   ],
   "D_eff": 13,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 16,
+  "record_count": 9,
+  "observable_count": 9,
+  "scalar_record_count": 3,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.015099000000000001,
-  "pooled_median_error_pct": 0.015099000000000001,
-  "headline_median_error_pct": 0.015431,
+  "median_error_pct": 0.031506,
+  "pooled_median_error_pct": 0.031506,
+  "headline_median_error_pct": 0.031506,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Tokenization_Live_Panel_depth": {
-        "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+      "tokenization": {
+        "sota_typical_error_pct": 3.0,
+        "sota_model": "FSOT numeric tokenization smoke"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_desktop_wiring_vs_baseline": true
     }
   },
   "records": [
@@ -39,45 +38,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.015099,
+      "computed": 0.031506,
       "measured": 0.0,
-      "error_pct": 0.015099000000000001,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.015099,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.031506,
+      "observable_count": 9
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Tokenization_Live_Panel_depth",
-      "computed": 0.015431,
+      "property": "desktop_wiring",
+      "name": "tokenization_smoke",
+      "computed": 0.031506,
       "measured": 0.0,
-      "error_pct": 0.015431,
-      "observable_count": 24,
-      "domain_display_name": "tier gap fill",
-      "display_name": "Tokenization Live Panel depth",
-      "scientific_measurement": {
-        "delta": 0.015431,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.031506,
+      "observable_count": 9
     }
   ],
   "material_records": [
@@ -91,20 +64,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "llm phrase and contraction",
-      "scientific_measurement": {
-        "delta": 0.013863,
-        "delta_pct": 0.031507,
-        "effective_error_pct": 0.031507,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -116,20 +76,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "llm phrase and contraction",
-      "scientific_measurement": {
-        "delta": 0.000738,
-        "delta_pct": 0.01476,
-        "effective_error_pct": 0.01476,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -141,20 +88,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "llm phrase and contraction",
-      "scientific_measurement": {
-        "delta": 0.00063,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -166,20 +100,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "basic morphology",
-      "scientific_measurement": {
-        "delta": 0.011657,
-        "delta_pct": 0.031505,
-        "effective_error_pct": 0.031505,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -191,20 +112,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "basic morphology",
-      "scientific_measurement": {
-        "delta": 0.000738,
-        "delta_pct": 0.01476,
-        "effective_error_pct": 0.01476,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -216,20 +124,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "basic morphology",
-      "scientific_measurement": {
-        "delta": 0.00126,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -241,20 +136,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "proper phrase spans",
-      "scientific_measurement": {
-        "delta": 0.010397,
-        "delta_pct": 0.031506,
-        "effective_error_pct": 0.031506,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -266,20 +148,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "proper phrase spans",
-      "scientific_measurement": {
-        "delta": 0.000738,
-        "delta_pct": 0.01476,
-        "effective_error_pct": 0.01476,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     },
     {
       "lab": "tokenization_live_lab",
@@ -291,431 +160,11 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Psychology",
       "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_dictionary_tokenization",
-      "domain_display_name": "tokenization live",
-      "display_name": "proper phrase spans",
-      "scientific_measurement": {
-        "delta": 0.000945,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "S_final",
-      "D_eff": 6,
-      "delta_psi": 0.2,
-      "recent_hits": 0,
-      "computed": 0.14806450291069925,
-      "measured": 0.14806450291069925,
-      "error_pct": 0.0,
-      "fertile": false,
-      "intelligence_score": 0.0,
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "S final",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Computational_Reasoning",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Computational_Reasoning"
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "pack_mean",
-      "name": "habitat_rust",
-      "computed": 0.535379,
-      "measured": 0.535282682851862,
-      "error_pct": 0.018003,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "source_panel": "Living_FSOT_Hardware_Panel",
-      "depth_relay_from": "Living_FSOT_Hardware_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "habitat rust",
-      "scientific_measurement": {
-        "delta": 9.632e-05,
-        "delta_pct": 0.017994,
-        "effective_error_pct": 0.017994,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "generation",
-      "name": "habitat_rust",
-      "computed": 90.013291,
-      "measured": 90.0,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "source_panel": "Living_FSOT_Hardware_Panel",
-      "depth_relay_from": "Living_FSOT_Hardware_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "habitat rust",
-      "scientific_measurement": {
-        "delta": 0.013291,
-        "delta_pct": 0.014768,
-        "effective_error_pct": 0.014768,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "organ_accuracy",
-      "name": "elite-g90-0_cognitive",
-      "computed": 0.968011,
-      "measured": 0.9677061561155675,
-      "error_pct": 0.031506,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Psychology",
-      "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "threshold": 0.62,
-      "weak": false,
-      "source_panel": "Living_FSOT_Hardware_Panel",
-      "depth_relay_from": "Living_FSOT_Hardware_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "elite-g90-0 cognitive",
-      "scientific_measurement": {
-        "delta": 0.00030484,
-        "delta_pct": 0.031502,
-        "effective_error_pct": 0.031502,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "organ_accuracy",
-      "name": "elite-g90-0_language",
-      "computed": 0.686127,
-      "measured": 0.685910801691846,
-      "error_pct": 0.031506,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Psychology",
-      "fsot_scalar": 1.050206,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "threshold": 0.62,
-      "weak": false,
-      "source_panel": "Living_FSOT_Hardware_Panel",
-      "depth_relay_from": "Living_FSOT_Hardware_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "elite-g90-0 language",
-      "scientific_measurement": {
-        "delta": 0.0002162,
-        "delta_pct": 0.03152,
-        "effective_error_pct": 0.03152,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "tier_mild_intensity",
-      "name": "tier_mild_intensity",
-      "computed": 1.050155,
-      "measured": 1.05,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design",
-      "source_panel": "Trinary_Hardware_Live_Panel",
-      "depth_relay_from": "Trinary_Hardware_Live_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "tier mild intensity",
-      "scientific_measurement": {
-        "delta": 0.000155,
-        "delta_pct": 0.014762,
-        "effective_error_pct": 0.014762,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "tier_moderate_intensity",
-      "name": "tier_moderate_intensity",
-      "computed": 1.15017,
-      "measured": 1.15,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design",
-      "source_panel": "Trinary_Hardware_Live_Panel",
-      "depth_relay_from": "Trinary_Hardware_Live_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "tier moderate intensity",
-      "scientific_measurement": {
-        "delta": 0.00017,
-        "delta_pct": 0.014783,
-        "effective_error_pct": 0.014783,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "tier_severe_intensity",
-      "name": "tier_severe_intensity",
-      "computed": 1.300192,
-      "measured": 1.3,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design",
-      "source_panel": "Trinary_Hardware_Live_Panel",
-      "depth_relay_from": "Trinary_Hardware_Live_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "tier severe intensity",
-      "scientific_measurement": {
-        "delta": 0.000192,
-        "delta_pct": 0.014769,
-        "effective_error_pct": 0.014769,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "interaction_pressure_weight",
-      "name": "interaction_pressure_weight",
-      "computed": 0.600089,
-      "measured": 0.6,
-      "error_pct": 0.014767,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Quantum_Computing",
-      "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_trinary_hardware_motif",
-      "desktop": "FSOT, Cube Block Trinary Design",
-      "source_panel": "Trinary_Hardware_Live_Panel",
-      "depth_relay_from": "Trinary_Hardware_Live_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "interaction pressure weight",
-      "scientific_measurement": {
-        "delta": 8.9e-05,
-        "delta_pct": 0.014833,
-        "effective_error_pct": 0.014833,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "unwired_with_content_before",
-      "name": "desktop_crosswalk",
-      "computed": 19.0,
-      "measured": 19.0,
-      "error_pct": 0.0,
-      "eval_kind": "tier88_meta",
-      "source_panel": "Desktop_Application_Wiring_Spine",
-      "depth_relay_from": "Desktop_Application_Wiring_Spine",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "desktop crosswalk",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "panel_pooled_median",
-      "name": "trinary_hardware_live_panel",
-      "computed": 0.014767,
-      "measured": 0.014767,
-      "error_pct": 0.0,
-      "record_count": 37,
-      "eval_kind": "tier88_bridge",
-      "source_panel": "Desktop_Application_Wiring_Spine",
-      "depth_relay_from": "Desktop_Application_Wiring_Spine",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "trinary hardware live panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "eeg_dataset_count",
-      "name": "openneuro_eeg_dataset_count",
-      "computed": 444.079932,
-      "measured": 444.0,
-      "error_pct": 0.018003,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "source_panel": "OpenNeuro_Full_Panel",
-      "depth_relay_from": "OpenNeuro_Full_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "openneuro eeg dataset count",
-      "scientific_measurement": {
-        "delta": 0.079932,
-        "delta_pct": 0.018003,
-        "effective_error_pct": 0.018003,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "mri_dataset_count",
-      "name": "openneuro_mri_dataset_count",
-      "computed": 56.010081,
-      "measured": 56.0,
-      "error_pct": 0.018003,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "source_panel": "OpenNeuro_Full_Panel",
-      "depth_relay_from": "OpenNeuro_Full_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "openneuro mri dataset count",
-      "scientific_measurement": {
-        "delta": 0.010081,
-        "delta_pct": 0.018002,
-        "effective_error_pct": 0.018002,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "eeg_dataset_id",
-      "name": "ds001785",
-      "computed": 1.000154,
-      "measured": 1.0,
-      "error_pct": 0.015431,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "dataset_name": "Perithreshold Tactile detection task with confidence",
-      "source_panel": "OpenNeuro_Full_Panel",
-      "depth_relay_from": "OpenNeuro_Full_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "ds001785",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
-    },
-    {
-      "lab": "tokenization_live_panel_depth_lab",
-      "property": "eeg_dataset_id",
-      "name": "ds001787",
-      "computed": 1.000154,
-      "measured": 1.0,
-      "error_pct": 0.015431,
-      "eval_kind": "fsot_prediction",
-      "fsot_domain": "Neuroscience",
-      "fsot_scalar": 0.514362,
-      "dataset_name": "EEG meditation study",
-      "source_panel": "OpenNeuro_Full_Panel",
-      "depth_relay_from": "OpenNeuro_Full_Panel",
-      "domain_display_name": "tokenization live panel depth",
-      "display_name": "ds001787",
-      "scientific_measurement": {
-        "delta": 0.000154,
-        "delta_pct": 0.0154,
-        "effective_error_pct": 0.0154,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_dictionary_tokenization"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.015099000000000001,
+    "scalar_pooled_median_error_pct": 0.031506,
     "max_scalar_error_pct": 0.031506,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -725,19 +174,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Tokenization Live Panel",
-  "tier_label": "Tier 88",
-  "scientific_precision_summary": {
-    "scalar_count": 16,
-    "median_error_pct": 0.0154,
-    "max_error_pct": 0.03152,
-    "mean_abs_delta": 0.0031712100000000003,
-    "precision_tier_counts": {
-      "green": 16
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.209816+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

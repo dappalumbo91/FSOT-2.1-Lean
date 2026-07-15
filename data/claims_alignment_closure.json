@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-13T17:27:18.343040+00:00",
+  "generated_at": "2026-07-15T01:00:50.458789+00:00",
   "version": "1.0",
-  "verdict": "PARTIAL_ALIGNMENT",
+  "verdict": "ALIGNED",
   "primary_public_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
   "active_headlines": [
     {
       "claim": "Cross-domain empirical accuracy",
       "statement": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
       "evidence": "data/empirical_accuracy_closure.json",
-      "verdict": "EMPIRICAL_ENVELOPE_DEGRADED"
+      "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT"
     },
     {
       "claim": "Falsifiable preregistered predictions",
@@ -63,7 +63,7 @@
   "alignment_checks": {
     "empirical_closure_present": true,
     "falsification_registry_present": true,
-    "empirical_criteria_all_met": false,
+    "empirical_criteria_all_met": true,
     "honest_manifest_authoritative": true
   },
   "honest_statement": "Lead with cross-domain empirical accuracy and falsification criteria \u2014 not TOE headline or zero-parameter slogan. Mechanical verification supports audit honesty; empirical envelope supports physical description."

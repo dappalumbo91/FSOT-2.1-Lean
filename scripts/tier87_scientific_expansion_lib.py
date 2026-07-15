@@ -208,11 +208,64 @@ def ingest_optics_interferometry() -> dict:
     return doc
 
 
+def _ingest_subfield_reference(cache_name: str, ref_name: str, source_label: str) -> dict:
+    ref = _bundled(ref_name)
+    doc = {
+        "source": source_label,
+        "credential_free": True,
+        **{k: ref.get(k) or [] for k in ref if k not in ("schema_version", "source", "credential_free", "note")},
+    }
+    _write_cache(cache_name, doc)
+    return doc
+
+
+def ingest_biology_developmental_structural() -> dict:
+    return _ingest_subfield_reference(
+        "biology_developmental_structural_cache.json",
+        "biology_developmental_structural_reference.json",
+        "developmental_structural_biology_literature_anchors",
+    )
+
+
+def ingest_quantum_mechanics_entanglement() -> dict:
+    return _ingest_subfield_reference(
+        "quantum_mechanics_entanglement_cache.json",
+        "quantum_mechanics_entanglement_reference.json",
+        "entanglement_decoherence_literature_anchors",
+    )
+
+
+def ingest_psychology_psychometrics() -> dict:
+    return _ingest_subfield_reference(
+        "psychology_psychometrics_cache.json",
+        "psychology_psychometrics_reference.json",
+        "psychometrics_rct_literature_anchors",
+    )
+
+
+def ingest_materials_creep_fracture() -> dict:
+    mp = _load_json(ROOT / "vendor" / "live_cache" / "tier68" / "materials_project_live_cache.json")
+    materials = (mp.get("materials") or [])[: (_deep_mode() and 20 or 12)]
+    doc = _ingest_subfield_reference(
+        "materials_creep_fracture_cache.json",
+        "materials_creep_fracture_reference.json",
+        "creep_fracture_materials_literature_anchors+materials_project",
+    )
+    doc["materials_project_samples"] = materials
+    doc["materials_project_count"] = len(materials)
+    _write_cache("materials_creep_fracture_cache.json", doc)
+    return doc
+
+
 INGESTORS = {
     "quantum_computing_math": ingest_quantum_computing_math,
     "neuroscience_connectomics": ingest_neuroscience_connectomics,
     "condensed_matter_superconductivity": ingest_condensed_matter_superconductivity,
     "optics_interferometry": ingest_optics_interferometry,
+    "biology_developmental_structural": ingest_biology_developmental_structural,
+    "quantum_mechanics_entanglement": ingest_quantum_mechanics_entanglement,
+    "psychology_psychometrics": ingest_psychology_psychometrics,
+    "materials_creep_fracture": ingest_materials_creep_fracture,
 }
 
 
@@ -542,6 +595,120 @@ def build_optics_interferometry_depth_panel() -> dict:
     )
 
 
+def _build_subfield_depth_panel(
+    *,
+    cache_file: str,
+    domain: str,
+    lab: str,
+    sections: tuple[tuple[str, str], ...],
+    maps_to_lean: list[str],
+    d_eff: int,
+    sota_model: str,
+) -> dict:
+    live = _load_json(cache_root() / cache_file)
+    _, authority = _load_fsot()
+    records: list[dict] = []
+    errs: list[float] = []
+    for section, section_domain in sections:
+        records_sec, errs_sec = _panel_records(
+            live.get(section) or [],
+            lab=lab,
+            name_key="name",
+            property_map=(("value", section_domain),),
+            live=live,
+        )
+        records.extend(records_sec)
+        errs.extend(errs_sec)
+    if live.get("materials_project_samples"):
+        records_mp, errs_mp = _panel_records(
+            live.get("materials_project_samples") or [],
+            lab=lab,
+            name_key="formula",
+            property_map=(
+                ("band_gap_eV", "Materials_Science"),
+                ("formation_energy_eV_per_atom", "Materials_Science"),
+                ("bulk_modulus_GPa", "Materials_Science"),
+            ),
+            live=live,
+        )
+        records.extend(records_mp)
+        errs.extend(errs_mp)
+    return _bench_v11(
+        domain=domain,
+        material_records=records,
+        maps_to_lean=maps_to_lean,
+        d_eff=d_eff,
+        authority_path=authority,
+        source=[str(cache_root() / cache_file), live.get("source", "bundled_reference")],
+        channel_stats=[("fsot_prediction", lab, errs or [0.0])],
+        sota_baselines={lab: {"sota_typical_error_pct": 6.0, "sota_model": sota_model}},
+    )
+
+
+def build_biology_developmental_structural_depth_panel() -> dict:
+    return _build_subfield_depth_panel(
+        cache_file="biology_developmental_structural_cache.json",
+        domain="Biology_Developmental_Structural_Depth_Panel",
+        lab="biology_developmental_structural_depth_lab",
+        sections=(
+            ("developmental", "Biology"),
+            ("structural", "Biochemistry"),
+            ("genomics_relay", "Biology"),
+        ),
+        maps_to_lean=["biological", "medical", "neural"],
+        d_eff=17,
+        sota_model="Developmental + structural biology literature anchors",
+    )
+
+
+def build_quantum_mechanics_entanglement_depth_panel() -> dict:
+    return _build_subfield_depth_panel(
+        cache_file="quantum_mechanics_entanglement_cache.json",
+        domain="Quantum_Mechanics_Entanglement_Depth_Panel",
+        lab="quantum_mechanics_entanglement_depth_lab",
+        sections=(
+            ("entanglement", "Quantum_Mechanics"),
+            ("decoherence", "Quantum_Mechanics"),
+            ("measurement", "Atomic_Physics"),
+        ),
+        maps_to_lean=["quantum", "particle", "ai"],
+        d_eff=16,
+        sota_model="Entanglement + decoherence + measurement anchors",
+    )
+
+
+def build_psychology_psychometrics_depth_panel() -> dict:
+    return _build_subfield_depth_panel(
+        cache_file="psychology_psychometrics_cache.json",
+        domain="Psychology_Psychometrics_Depth_Panel",
+        lab="psychology_psychometrics_depth_lab",
+        sections=(
+            ("psychometrics", "Psychology"),
+            ("rct", "Psychology"),
+            ("cognition", "Neuroscience"),
+        ),
+        maps_to_lean=["consciousness", "neural", "medical"],
+        d_eff=15,
+        sota_model="Psychometrics + RCT + cognition literature anchors",
+    )
+
+
+def build_materials_creep_fracture_depth_panel() -> dict:
+    return _build_subfield_depth_panel(
+        cache_file="materials_creep_fracture_cache.json",
+        domain="Materials_Creep_Fracture_Depth_Panel",
+        lab="materials_creep_fracture_depth_lab",
+        sections=(
+            ("creep", "Materials_Science"),
+            ("fracture", "Materials_Science"),
+            ("mechanical", "Materials_Science"),
+        ),
+        maps_to_lean=["material", "energy", "particle"],
+        d_eff=16,
+        sota_model="Creep + fracture mechanics + Materials Project relay",
+    )
+
+
 def build_scientific_expansion_depth_wave2_spine() -> dict:
     _, authority = _load_fsot()
     records: list[dict] = []
@@ -551,6 +718,10 @@ def build_scientific_expansion_depth_wave2_spine() -> dict:
         "neuroscience_connectomics_depth_panel",
         "condensed_matter_superconductivity_depth_panel",
         "optics_interferometry_depth_panel",
+        "biology_developmental_structural_depth_panel",
+        "quantum_mechanics_entanglement_depth_panel",
+        "psychology_psychometrics_depth_panel",
+        "materials_creep_fracture_depth_panel",
     ):
         bench = _load_json(DATA / f"{slug}_benchmark.json")
         if not bench:
@@ -605,6 +776,10 @@ BUILDERS = {
     "Neuroscience_Connectomics_Depth_Panel": build_neuroscience_connectomics_depth_panel,
     "Condensed_Matter_Superconductivity_Depth_Panel": build_condensed_matter_superconductivity_depth_panel,
     "Optics_Interferometry_Depth_Panel": build_optics_interferometry_depth_panel,
+    "Biology_Developmental_Structural_Depth_Panel": build_biology_developmental_structural_depth_panel,
+    "Quantum_Mechanics_Entanglement_Depth_Panel": build_quantum_mechanics_entanglement_depth_panel,
+    "Psychology_Psychometrics_Depth_Panel": build_psychology_psychometrics_depth_panel,
+    "Materials_Creep_Fracture_Depth_Panel": build_materials_creep_fracture_depth_panel,
     "Scientific_Expansion_Depth_Wave2_Spine": build_scientific_expansion_depth_wave2_spine,
 }
 
@@ -613,6 +788,10 @@ BUILD_ORDER = [
     "Neuroscience_Connectomics_Depth_Panel",
     "Condensed_Matter_Superconductivity_Depth_Panel",
     "Optics_Interferometry_Depth_Panel",
+    "Biology_Developmental_Structural_Depth_Panel",
+    "Quantum_Mechanics_Entanglement_Depth_Panel",
+    "Psychology_Psychometrics_Depth_Panel",
+    "Materials_Creep_Fracture_Depth_Panel",
     "Scientific_Expansion_Depth_Wave2_Spine",
 ]
 
@@ -641,6 +820,30 @@ LEAN_MAP = {
         "astronomical_raw_S_positive",
         "OpticsInterferometryDepthPanelPriors",
     ),
+    "Biology_Developmental_Structural_Depth_Panel": (
+        "biology_developmental_structural_depth",
+        "biological",
+        "biological_raw_S_positive",
+        "BiologyDevelopmentalStructuralDepthPanelPriors",
+    ),
+    "Quantum_Mechanics_Entanglement_Depth_Panel": (
+        "quantum_mechanics_entanglement_depth",
+        "quantum",
+        "quantum_raw_S_positive",
+        "QuantumMechanicsEntanglementDepthPanelPriors",
+    ),
+    "Psychology_Psychometrics_Depth_Panel": (
+        "psychology_psychometrics_depth",
+        "consciousness",
+        "consciousness_raw_S_positive",
+        "PsychologyPsychometricsDepthPanelPriors",
+    ),
+    "Materials_Creep_Fracture_Depth_Panel": (
+        "materials_creep_fracture_depth",
+        "material",
+        "material_raw_S_positive",
+        "MaterialsCreepFractureDepthPanelPriors",
+    ),
     "Scientific_Expansion_Depth_Wave2_Spine": (
         "scientific_expansion_depth_wave2",
         "ai",
@@ -656,6 +859,10 @@ def output_path(domain: str) -> Path:
         "Neuroscience_Connectomics_Depth_Panel": "neuroscience_connectomics_depth_panel",
         "Condensed_Matter_Superconductivity_Depth_Panel": "condensed_matter_superconductivity_depth_panel",
         "Optics_Interferometry_Depth_Panel": "optics_interferometry_depth_panel",
+        "Biology_Developmental_Structural_Depth_Panel": "biology_developmental_structural_depth_panel",
+        "Quantum_Mechanics_Entanglement_Depth_Panel": "quantum_mechanics_entanglement_depth_panel",
+        "Psychology_Psychometrics_Depth_Panel": "psychology_psychometrics_depth_panel",
+        "Materials_Creep_Fracture_Depth_Panel": "materials_creep_fracture_depth_panel",
         "Scientific_Expansion_Depth_Wave2_Spine": "scientific_expansion_depth_wave2_spine",
     }[domain]
     return DATA / f"{slug}_benchmark.json"

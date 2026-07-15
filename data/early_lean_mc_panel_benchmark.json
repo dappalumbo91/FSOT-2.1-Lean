@@ -1,0 +1,189 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.771555+00:00",
+  "domain": "Early_Lean_MC_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
+    "desktop_early_lean_mc"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 11,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 8,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.014767,
+  "pooled_median_error_pct": 0.014767,
+  "headline_median_error_pct": 0.014767,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "early_lean_mc_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Early Lean Monte Carlo stability report"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "fsotlean_mc",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "field_count",
+      "name": "field_count",
+      "computed": 9.001329,
+      "measured": 9.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "mc_trials",
+      "name": "mc_trials",
+      "computed": 10001.476731,
+      "measured": 10000.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "mc_checkpoint",
+      "name": "mc_checkpoint",
+      "computed": 5.000738,
+      "measured": 5.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "mc_prob_non_decrease",
+      "name": "mc_prob_non_decrease",
+      "computed": 1.000148,
+      "measured": 1.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "mc_mean_delta_stability",
+      "name": "mc_mean_delta_stability",
+      "computed": 0.025004,
+      "measured": 0.025,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "pattern_stability",
+      "name": "pattern_stability",
+      "computed": 0.766351,
+      "measured": 0.7662378870755164,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "vib_stability_mean",
+      "name": "vib_stability_mean",
+      "computed": 0.470069,
+      "measured": 0.47,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "vib_S_mean",
+      "name": "vib_S_mean",
+      "computed": 0.474561,
+      "measured": 0.4744906315011612,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "d_eff",
+      "name": "d_eff",
+      "computed": 11.001624,
+      "measured": 11.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    },
+    {
+      "lab": "early_lean_mc_lab",
+      "property": "trial_count",
+      "name": "trial_count",
+      "computed": 2.000295,
+      "measured": 2.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_early_lean_mc"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.014767,
+    "max_scalar_error_pct": 0.014767,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

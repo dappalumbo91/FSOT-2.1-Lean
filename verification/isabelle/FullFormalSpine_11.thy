@@ -1,7 +1,130 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 12/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 12/19 (generated). *)
 theory FullFormalSpine_11
 imports Complex_Main
 begin
+
+lemma quantum_mechanics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma quantum_mechanics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma quantum_optics_gap_fill_pooled_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_optics_gap_fill_headline_median_under_half_pct: "(0.00009523874 :: real) < (0.5 :: real)"
+  by eval
+
+lemma quantum_optics_gap_fill_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma quantum_optics_gap_fill_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma radio_astronomy_panel_observable_count_pos: "0 < (30 :: nat)"
+  by eval
+
+lemma radio_astronomy_panel_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma radio_astronomy_observable_count_pos: "0 < (30 :: nat)"
+  by eval
+
+lemma radio_astronomy_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
+  by eval
+
+lemma rcsb_pdb_structures_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma rcsb_pdb_structures_median_error_under_five_pct: "(0.022236 :: real) < (5.0 :: real)"
+  by eval
+
+lemma rd_interval_tightening_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma rd_interval_tightening_panel_median_error_under_half_pct: "(0.000502 :: real) < (0.5 :: real)"
+  by eval
+
+lemma reality_folding_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma reality_folding_spine_median_error_under_half_pct: "(0.023914275640537417 :: real) < (0.5 :: real)"
+  by eval
+
+lemma robotics_control_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma robotics_control_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma robotics_control_ext_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma robotics_control_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma robotics_control_systems_panel_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma robotics_control_systems_panel_median_error_under_half_pct: "(0.01341 :: real) < (0.5 :: real)"
+  by eval
+
+lemma robotics_control_systems_observable_count_pos: "0 < (45 :: nat)"
+  by eval
+
+lemma robotics_control_systems_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma rust_lean_bridge_observable_count_pos: "0 < (9 :: nat)"
+  by eval
+
+lemma rust_lean_bridge_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma scientific_expansion_depth_spine_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma scientific_expansion_depth_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma scientific_expansion_depth_wave2_spine_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma scientific_expansion_depth_wave2_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma scientific_expansion_spine_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma scientific_expansion_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma scientific_expansion_wave2_spine_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma scientific_expansion_wave2_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma scientific_expansion_wave3_spine_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma scientific_expansion_wave3_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma secure_software_engineering_observable_count_pos: "0 < (59 :: nat)"
+  by eval
+
+lemma secure_software_engineering_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma seismology_deep_observable_count_pos: "0 < (1000 :: nat)"
+  by eval
+
+lemma seismology_deep_match_le_total: "(1000 :: nat) <= (1000 :: nat)"
+  by eval
 
 lemma seismology_deep_holdout_match_le_total: "(189 :: nat) <= (189 :: nat)"
   by eval
@@ -178,129 +301,6 @@ lemma stsci_mast_telescope_panel_median_error_under_half_pct: "(0.022461 :: real
   by eval
 
 lemma stsci_mast_telescope_observable_count_pos: "0 < (377 :: nat)"
-  by eval
-
-lemma stsci_mast_telescope_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
-  by eval
-
-lemma stumped_observables_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma stumped_observables_panel_median_error_under_half_pct: "(0.029748999999999998 :: real) < (0.5 :: real)"
-  by eval
-
-lemma stumped_observables_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma stumped_observables_spine_median_error_under_half_pct: "(0.027761 :: real) < (0.5 :: real)"
-  by eval
-
-lemma superheavy_element_stability_panel_observable_count_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma superheavy_element_stability_panel_median_error_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
-  by eval
-
-lemma superheavy_island_completion_spine_observable_count_pos: "0 < (43 :: nat)"
-  by eval
-
-lemma superheavy_island_completion_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma superheavy_island_emergence_simulation_observable_count_pos: "0 < (44 :: nat)"
-  by eval
-
-lemma superheavy_island_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma supply_chain_ext_pooled_median_under_half_pct: "(0.01801902489293558 :: real) < (0.5 :: real)"
-  by eval
-
-lemma supply_chain_ext_headline_median_under_half_pct: "(0.01801902489293558 :: real) < (0.5 :: real)"
-  by eval
-
-lemma supply_chain_ext_observable_count_pos: "0 < (220 :: nat)"
-  by eval
-
-lemma supply_chain_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma supply_chain_logistics_panel_observable_count_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma supply_chain_logistics_panel_median_error_under_half_pct: "(0.02584 :: real) < (0.5 :: real)"
-  by eval
-
-lemma supply_chain_logistics_observable_count_pos: "0 < (40 :: nat)"
-  by eval
-
-lemma supply_chain_logistics_median_error_under_half_pct: "(0.03230022603427978 :: real) < (0.5 :: real)"
-  by eval
-
-lemma symbolic_archetype_panel_observable_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma tectonics_event_count_pos: "0 < (500 :: nat)"
-  by eval
-
-lemma tectonics_boundary_count_pos: "0 < (241 :: nat)"
-  by eval
-
-lemma tectonics_match_le_total: "(500 :: nat) <= (500 :: nat)"
-  by eval
-
-lemma term3_acoustic_bleed_depth_observable_count_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma term3_acoustic_bleed_depth_median_error_under_half_pct: "(0.008381497018408523 :: real) < (0.5 :: real)"
-  by eval
-
-lemma theory_completeness_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma theory_completeness_spine_median_error_under_half_pct: "(0.021927861384483893 :: real) < (0.5 :: real)"
-  by eval
-
-lemma thesis_intrinsic_best_rmse_positive: "0 < (6.763968608085996 :: real)"
-  by eval
-
-lemma thesis_wave_target_count_pos: "0 < (98 :: nat)"
-  by eval
-
-lemma thesis_intrinsic_screen_count_pos: "0 < (58 :: nat)"
-  by eval
-
-lemma thesis_simulation_observable_count_pos: "0 < (156 :: nat)"
-  by eval
-
-lemma thesis_simulation_components_le_total: "(156 :: nat) = (156 :: nat)"
-  by eval
-
-lemma the_well_outcomes_verification_panel_observable_count_pos: "0 < (381 :: nat)"
-  by eval
-
-lemma the_well_outcomes_verification_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
-  by eval
-
-lemma the_well_spot_check_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma the_well_spot_check_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
-  by eval
-
-lemma the_well_verification_spine_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma the_well_verification_spine_median_error_under_half_pct: "(0.028287 :: real) < (0.5 :: real)"
   by eval
 
 end

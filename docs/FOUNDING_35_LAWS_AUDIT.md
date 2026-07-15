@@ -1,6 +1,6 @@
 # Founding 35 Laws — FSOT 2.1 Audit
 
-*Generated: 2026-07-14T15:28:52.281021+00:00*
+*Generated: 2026-07-15T00:21:16.815204+00:00*
 
 Founding-era accuracy percentages are never trusted without individual FSOT 2.1 strict_empirical or extension panel verification.
 

@@ -61,15 +61,24 @@ def _coq_nested_split_proof(tacs: list[str], depth: int = 0) -> list[str]:
     ]
 
 
+def _coq_conjunct_tac(conj: dict) -> str:
+    kind = conj.get("kind")
+    if kind == "eq_nat":
+        return "reflexivity"
+    if kind == "pos":
+        return "lra"
+    return "trivial"
+
+
 def _coq_conjunct_proof(conj: dict) -> tuple[str, str]:
     kind = conj.get("kind")
     if kind == "eq_nat":
         v = int(conj["value"])
-        return f"({v} = {v})%nat", "reflexivity."
+        return f"({v} = {v})%nat", f"{_coq_conjunct_tac(conj)}."
     if kind == "pos":
         lit = coq_lit_real(float(conj.get("value", 1)))
-        return f"0 < {lit}", "lra."
-    return "True", "trivial."
+        return f"0 < {lit}", f"{_coq_conjunct_tac(conj)}."
+    return "True", f"{_coq_conjunct_tac(conj)}."
 
 
 def _isabelle_conjunct(conj: dict) -> str:
@@ -109,18 +118,16 @@ def gen_coq(bundles: list[dict]) -> str:
         bundle_stmt = " /\\ ".join(conj_lines)
         tacs: list[str] = []
         for conj in bundle.get("conjuncts") or []:
-            if conj.get("kind") == "eq_nat":
-                tacs.append("reflexivity")
-            else:
+            if conj.get("opaque"):
                 tacs.append("lra")
+            else:
+                tacs.append(_coq_conjunct_tac(conj))
         if len(tacs) == 1:
             proof_line = f"  {tacs[0]}."
         elif len(set(tacs)) == 1:
             proof_line = f"  repeat split; {tacs[0]}."
         else:
-            proof_lines = _coq_nested_split_proof(tacs)
-            lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", *proof_lines, "Qed.", ""]
-            continue
+            proof_line = f"  repeat split; [{' | '.join(tacs)}]."
         lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", proof_line, "Qed.", ""]
 
     for name, lo, hi in CONNECTIVE_ORDERING:

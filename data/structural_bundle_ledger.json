@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-13T17:27:01.390995+00:00",
+  "generated_at": "2026-07-15T01:00:41.260479+00:00",
   "version": "1.2",
   "summary": {
-    "bundle_conj_total": 480,
+    "bundle_conj_total": 487,
     "structural_bundle_excluded": 54,
-    "provable_bundle_conj": 426,
-    "total_conjuncts": 2197,
-    "conjuncts_with_atomic_coverage": 2195,
+    "provable_bundle_conj": 433,
+    "total_conjuncts": 2219,
+    "conjuncts_with_atomic_coverage": 2217,
     "conjunct_atomic_coverage_pct": 99.91,
-    "explicit_linked_conjuncts": 1682,
-    "explicit_linked_in_spine": 1680,
+    "explicit_linked_conjuncts": 1704,
+    "explicit_linked_in_spine": 1702,
     "explicit_link_hit_pct": 99.88,
     "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
@@ -200,6 +200,13 @@
     "formula_corpus_cnc_bundle",
     "formula_precision_spine_bundle",
     "foundational_ontology_spine_bundle",
+    "founding_atmospheric_ozone_panel_bundle",
+    "founding_cosmic_dust_panel_bundle",
+    "founding_cosmic_ray_panel_bundle",
+    "founding_galactic_halo_rotation_panel_bundle",
+    "founding_pulsar_glitch_panel_bundle",
+    "founding_quantum_vacuum_panel_bundle",
+    "founding_white_dwarf_cooling_panel_bundle",
     "fpc_fluidlink_timing_deep_panel_bundle",
     "fpc_temporal_coupling_bundle",
     "fractal_constant_recursion_bundle",
@@ -7235,7 +7242,7 @@
         {
           "kind": "eq_nat",
           "symbol": "domains_with_empirical_data_count",
-          "statement": "30 = 35",
+          "statement": "35 = 35",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -7459,7 +7466,7 @@
         {
           "kind": "r_lt_lit_pure",
           "symbol": null,
-          "statement": "0.0 < 1.0",
+          "statement": "0.0007354204043789445 < 1.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -9314,12 +9321,12 @@
       "lean_module": "ExperimentSynthesisPriors",
       "provable": false,
       "unprovable_reason": "structural_bundle_excluded",
-      "conjunct_count": 8,
+      "conjunct_count": 9,
       "conjuncts": [
         {
           "kind": "eq_nat",
           "symbol": "experiment_synthesis_approach_count",
-          "statement": "3 = 3",
+          "statement": "5 = 5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -9361,6 +9368,18 @@
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
             "hero_certified_fi_mean_rel_err_lt_fifteen_pct"
+          ],
+          "linked_obligation_id": null
+        },
+        {
+          "kind": "opaque_conj",
+          "symbol": null,
+          "statement": "(2100 ) < held_out_cell_count",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "held_out_cell_count_large"
           ],
           "linked_obligation_id": null
         },
@@ -10590,6 +10609,328 @@
       "conjunct_atomic_coverage_pct": 100.0
     },
     {
+      "id": "founding_atmospheric_ozone_panel_bundle",
+      "lean_module": "FoundingAtmosphericOzonePanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_atmospheric_ozone_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_atmospheric_ozone_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_atmospheric_ozone_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_atmospheric_ozone_panel_pooled_median_error_pct",
+          "statement": "0.047643 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_atmospheric_ozone_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_atmospheric_ozone_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_atmospheric_ozone_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_atmospheric_ozone_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_atmospheric_ozone_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_cosmic_dust_panel_bundle",
+      "lean_module": "FoundingCosmicDustPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_cosmic_dust_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_dust_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_cosmic_dust_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_cosmic_dust_panel_pooled_median_error_pct",
+          "statement": "0.088241 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_dust_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_cosmic_dust_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_cosmic_dust_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_dust_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_cosmic_dust_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_cosmic_ray_panel_bundle",
+      "lean_module": "FoundingCosmicRayPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_cosmic_ray_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_ray_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_cosmic_ray_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_cosmic_ray_panel_pooled_median_error_pct",
+          "statement": "0.042441 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_ray_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_cosmic_ray_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_cosmic_ray_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_cosmic_ray_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_cosmic_ray_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_galactic_halo_rotation_panel_bundle",
+      "lean_module": "FoundingGalacticHaloRotationPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_galactic_halo_rotation_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_galactic_halo_rotation_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_galactic_halo_rotation_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_galactic_halo_rotation_panel_pooled_median_error_pct",
+          "statement": "0.050246 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_galactic_halo_rotation_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_galactic_halo_rotation_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_galactic_halo_rotation_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_galactic_halo_rotation_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_galactic_halo_rotation_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_pulsar_glitch_panel_bundle",
+      "lean_module": "FoundingPulsarGlitchPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_pulsar_glitch_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_pulsar_glitch_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_pulsar_glitch_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_pulsar_glitch_panel_pooled_median_error_pct",
+          "statement": "0.089846 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_pulsar_glitch_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_pulsar_glitch_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_pulsar_glitch_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_pulsar_glitch_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_pulsar_glitch_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_quantum_vacuum_panel_bundle",
+      "lean_module": "FoundingQuantumVacuumPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_quantum_vacuum_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_quantum_vacuum_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_quantum_vacuum_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_quantum_vacuum_panel_pooled_median_error_pct",
+          "statement": "0.095551 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_quantum_vacuum_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_quantum_vacuum_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_quantum_vacuum_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_quantum_vacuum_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_quantum_vacuum_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
+      "id": "founding_white_dwarf_cooling_panel_bundle",
+      "lean_module": "FoundingWhiteDwarfCoolingPanelPriors",
+      "provable": true,
+      "unprovable_reason": null,
+      "conjunct_count": 3,
+      "conjuncts": [
+        {
+          "kind": "eq_nat",
+          "symbol": "founding_white_dwarf_cooling_panel_observable_count",
+          "statement": "5 = 5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_white_dwarf_cooling_panel_observable_count_pos"
+          ],
+          "linked_obligation_id": "founding_white_dwarf_cooling_panel_observable_count_pos"
+        },
+        {
+          "kind": "lt_half",
+          "symbol": "founding_white_dwarf_cooling_panel_pooled_median_error_pct",
+          "statement": "0.089846 < 0.5",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_white_dwarf_cooling_panel_pooled_median_under_half_pct"
+          ],
+          "linked_obligation_id": "founding_white_dwarf_cooling_panel_pooled_median_under_half_pct"
+        },
+        {
+          "kind": "nat_pos",
+          "symbol": "founding_white_dwarf_cooling_panel_beats_sota_headlines",
+          "statement": "0 < 2",
+          "atomic_coverage": true,
+          "coverage_via": "linked_obligation_id",
+          "lean_bundle_tautology": false,
+          "matching_atomic_ids": [
+            "founding_white_dwarf_cooling_panel_beats_sota_headlines_pos"
+          ],
+          "linked_obligation_id": "founding_white_dwarf_cooling_panel_beats_sota_headlines_pos"
+        }
+      ],
+      "conjunct_atomic_coverage_pct": 100.0
+    },
+    {
       "id": "fpc_fluidlink_timing_deep_panel_bundle",
       "lean_module": "FpcFluidlinkTimingDeepPanelPriors",
       "provable": true,
@@ -11795,7 +12136,7 @@
         {
           "kind": "eq_nat",
           "symbol": "geomagnetism_match_count",
-          "statement": "413 = 413",
+          "statement": "524 = 524",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
@@ -11819,7 +12160,7 @@
         {
           "kind": "nat_le_sym",
           "symbol": null,
-          "statement": "413 <= 524",
+          "statement": "524 <= 524",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -12155,16 +12496,16 @@
           "linked_obligation_id": "higgs_branching_median_error_under_half_pct"
         },
         {
-          "kind": "lt_half",
+          "kind": "lt_lit",
           "symbol": "higgs_branching_max_error_pct",
-          "statement": "4.232801452006084 < 0.5",
+          "statement": "4.232801452006084 < 5.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
           "matching_atomic_ids": [
-            "higgs_branching_max_error_under_half_pct"
+            "higgs_branching_max_error_under_five_pct"
           ],
-          "linked_obligation_id": "higgs_branching_max_error_under_half_pct"
+          "linked_obligation_id": "higgs_branching_max_error_under_five_pct"
         },
         {
           "kind": "opaque_conj",
@@ -18497,7 +18838,7 @@
         {
           "kind": "eq_nat",
           "symbol": "allen_cohort_cell_count",
-          "statement": "0 = 0",
+          "statement": "2166 = 2166",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18509,7 +18850,7 @@
         {
           "kind": "lt_lit",
           "symbol": "allen_cohort_fi_median_rel_err",
-          "statement": "1.0 < 0.3",
+          "statement": "0.24631729333045121 < 0.3",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18521,7 +18862,7 @@
         {
           "kind": "gt_lit",
           "symbol": "allen_cohort_fi_pearson_r",
-          "statement": "0.0 > 0.55",
+          "statement": "0.608876904981479 > 0.55",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18533,7 +18874,7 @@
         {
           "kind": "lt_lit",
           "symbol": "hero_certified_fi_mean_rel_err",
-          "statement": "1.0 < 0.15",
+          "statement": "0.07002728543379658 < 0.15",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18545,7 +18886,7 @@
         {
           "kind": "gt_lit",
           "symbol": "hero_certified_verifier_confidence",
-          "statement": "0.0 > 0.9",
+          "statement": "0.9598886696481669 > 0.9",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18557,7 +18898,7 @@
         {
           "kind": "lt_lit",
           "symbol": "hero_canonical_bridge_mean_rel_err",
-          "statement": "1.0 < 0.12",
+          "statement": "0.07354375821147667 < 0.12",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18569,7 +18910,7 @@
         {
           "kind": "lt_lit",
           "symbol": "hero_canonical_bridge_delta",
-          "statement": "1.0 < 0.05",
+          "statement": "0.0035164727776800936 < 0.05",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18581,7 +18922,7 @@
         {
           "kind": "gt_lit",
           "symbol": "canonical_bridge_scale",
-          "statement": "0.0 > 1.0",
+          "statement": "1.1099062765752818 > 1.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18593,7 +18934,7 @@
         {
           "kind": "gt_lit",
           "symbol": "cohort_canonical_scalar_min",
-          "statement": "0.0 > 0.0",
+          "statement": "0.25241247006708056 > 0.0",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18605,7 +18946,7 @@
         {
           "kind": "eq_nat",
           "symbol": "neurolab_smiles_mapped_records",
-          "statement": "0 = 0",
+          "statement": "1470 = 1470",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18629,7 +18970,7 @@
         {
           "kind": "eq_nat",
           "symbol": "neurolab_brain_component_count",
-          "statement": "0 = 0",
+          "statement": "10 = 10",
           "atomic_coverage": true,
           "coverage_via": "lean_bundle_norm_num",
           "lean_bundle_tautology": true,
@@ -18675,7 +19016,7 @@
         {
           "kind": "lt_lit",
           "symbol": "held_out_fi_median_rel_err",
-          "statement": "0.24520261127596557 < 0.3",
+          "statement": "0.24625990376478163 < 0.3",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18687,7 +19028,7 @@
         {
           "kind": "gt_lit",
           "symbol": "held_out_fi_pearson_r",
-          "statement": "0.6068416819088323 > 0.55",
+          "statement": "0.6086458495175734 > 0.55",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18711,7 +19052,7 @@
         {
           "kind": "lt_lit",
           "symbol": "stratum_sst_fi_median_rel_err",
-          "statement": "0.35479861060568474 < 0.4",
+          "statement": "0.6532385249479395 < 0.7",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18723,7 +19064,7 @@
         {
           "kind": "gt_lit",
           "symbol": "stratum_sst_fi_pearson_r",
-          "statement": "0.5196512945807779 > 0.5",
+          "statement": "0.52310926097775 > 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18747,7 +19088,7 @@
         {
           "kind": "lt_lit",
           "symbol": "stratum_pv_fi_median_rel_err",
-          "statement": "0.2959837154055862 < 0.35",
+          "statement": "0.26052599991828185 < 0.35",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18759,7 +19100,7 @@
         {
           "kind": "gt_lit",
           "symbol": "stratum_pv_fi_pearson_r",
-          "statement": "0.3915167429133035 > 0.35",
+          "statement": "0.3931199346029611 > 0.35",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18781,9 +19122,9 @@
           "linked_obligation_id": "stratum_vip_cell_count_pos"
         },
         {
-          "kind": "lt_lit",
+          "kind": "lt_half",
           "symbol": "stratum_vip_fi_median_rel_err",
-          "statement": "0.2972767467532461 < 0.35",
+          "statement": "0.4741701150886025 < 0.5",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18795,7 +19136,7 @@
         {
           "kind": "gt_lit",
           "symbol": "stratum_vip_fi_pearson_r",
-          "statement": "0.42970594991301575 > 0.4",
+          "statement": "0.4308059942466856 > 0.4",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18819,7 +19160,7 @@
         {
           "kind": "lt_lit",
           "symbol": "stratum_l23_pyramidal_fi_median_rel_err",
-          "statement": "0.22104086005830942 < 0.25",
+          "statement": "0.49782232037293184 < 0.55",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,
@@ -18831,7 +19172,7 @@
         {
           "kind": "gt_lit",
           "symbol": "stratum_l23_pyramidal_fi_pearson_r",
-          "statement": "0.22516239104042488 > 0.2",
+          "statement": "0.23129805826359506 > 0.2",
           "atomic_coverage": true,
           "coverage_via": "linked_obligation_id",
           "lean_bundle_tautology": false,

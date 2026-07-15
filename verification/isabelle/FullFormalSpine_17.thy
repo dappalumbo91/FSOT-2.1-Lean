@@ -1,7 +1,130 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 18/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 18/19 (generated). *)
 theory FullFormalSpine_17
 imports Complex_Main
 begin
+
+lemma cos_dp_pv_pos_of_le_06: "0 < (0.1125700895682655 :: real)"
+  by eval
+
+lemma growth_term_hits_zero_lt_one_point_one_five: "(1.0002883913967908 :: real) < (1.15 :: real)"
+  by eval
+
+lemma growth_term_coherence_product_lt_11523: "(0.9579783956964846 :: real) < (1.1523 :: real)"
+  by eval
+
+lemma D_eff_shift_abs_le: "(19.0 :: real) <= (19.0 :: real)"
+  by eval
+
+lemma chaos_perturbation_abs_le_two: "(1.2515783787839663 :: real) <= (2.0 :: real)"
+  by eval
+
+lemma cosmological_observed_false: "(0 :: nat) = (0 :: nat)"
+  by eval
+
+lemma dark_energy_observed_false: "(0 :: nat) = (0 :: nat)"
+  by eval
+
+lemma cmb_observed_false: "(0 :: nat) = (0 :: nat)"
+  by eval
+
+lemma ai_observed_false: "(0 :: nat) = (0 :: nat)"
+  by eval
+
+lemma neural_observed_true: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cosmological_D_eff_eq: "(25 :: nat) = (25 :: nat)"
+  by eval
+
+lemma dark_energy_D_eff_eq: "(25 :: nat) = (25 :: nat)"
+  by eval
+
+lemma cmb_D_eff_eq: "(24 :: nat) = (24 :: nat)"
+  by eval
+
+lemma ai_D_eff_eq: "(11 :: nat) = (11 :: nat)"
+  by eval
+
+lemma dark_energy_delta_bounds: "(0.5 :: real) < (1.1 :: real) \<and> (1.1 :: real) <= (1.3 :: real)"
+  by eval
+
+lemma cosmological_term1_negative: "(-2.1956926285882763 :: real) < (0 :: real)"
+  by eval
+
+lemma dark_energy_term1_negative: "(-2.1349793149885588 :: real) < (0 :: real)"
+  by eval
+
+lemma dark_energy_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
+  by eval
+
+lemma cosmological_term1_dominates_term3: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
+  by eval
+
+lemma cellular_params_eq_biological: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma dark_energy_params_eq: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma cosmological_domain_eq: "(1 :: nat) = (1 :: nat)"
+  by eval
+
+lemma domain_term2_eq_one: "(1.0 :: real) = (1.0 :: real)"
+  by eval
+
+lemma domain_term3_abs_lt_fifth: "(0.0000000000000000269421 :: real) < (0.2 :: real)"
+  by eval
+
+lemma neural_raw_S_positive: "0 < (1.2240253341904455 :: real)"
+  by eval
+
+lemma particle_raw_S_positive: "0 < (1.751037437187807 :: real)"
+  by eval
+
+lemma chemical_raw_S_positive: "0 < (0.7961830900509372 :: real)"
+  by eval
+
+lemma electron_raw_S_positive: "0 < (0.9706402573161165 :: real)"
+  by eval
+
+lemma astronomical_raw_S_positive: "0 < (2.138061039667111 :: real)"
+  by eval
+
+lemma higgs_raw_S_positive: "0 < (2.109039424268679 :: real)"
+  by eval
+
+lemma galactic_raw_S_positive: "0 < (1.8256534680881713 :: real)"
+  by eval
+
+lemma fusion_raw_S_positive: "0 < (2.0283662645128167 :: real)"
+  by eval
+
+lemma medical_raw_S_positive: "0 < (0.7287135707250552 :: real)"
+  by eval
+
+lemma blackhole_raw_S_positive: "0 < (2.427813814074099 :: real)"
+  by eval
+
+lemma consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
+  by eval
+
+lemma molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
+  by eval
+
+lemma material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
+  by eval
+
+lemma biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
+  by eval
+
+lemma nuclear_raw_S_positive: "0 < (2.192436781833356 :: real)"
+  by eval
+
+lemma energy_raw_S_positive: "0 < (1.872760423200424 :: real)"
+  by eval
 
 lemma cosmological_raw_S_negative: "(-1.1956926285882763 :: real) < (0 :: real)"
   by eval
@@ -178,72 +301,6 @@ lemma lab_molecular_raw_S_positive: "0 < (0.7201315148027019 :: real)"
   by eval
 
 lemma lab_material_raw_S_positive: "0 < (0.7978167460880297 :: real)"
-  by eval
-
-lemma lab_biological_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma lab_cellular_raw_S_positive: "0 < (1.0583105195018667 :: real)"
-  by eval
-
-lemma lab_consciousness_raw_S_positive: "0 < (2.4991706281862376 :: real)"
-  by eval
-
-lemma disulfide_bridge_force_pos: "0 < (17.944271909999163 :: real)"
-  by eval
-
-lemma dipole_damping_denominator_pos: "0 < (13.399140630763645 :: real)"
-  by eval
-
-lemma disulfide_bridge_force_lt_eighteen: "(17.944271909999163 :: real) < (18.0 :: real)"
-  by eval
-
-lemma disulfide_bridge_force_gt_seventeen: "(17.0 :: real) < (17.944271909999163 :: real)"
-  by eval
-
-lemma protein_formula_catalog_count_eq_fifteen: "(15 :: nat) = (15 :: nat)"
-  by eval
-
-lemma protein_proposed_formula_count_eq_three: "(3 :: nat) = (3 :: nat)"
-  by eval
-
-lemma electrostatic_scale_eq_e: "(2.718281828459045 :: real) = (2.718281828459045 :: real)"
-  by eval
-
-lemma lean_proofs_formal_constant_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma lean_proofs_domain_proven_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma lean_proofs_domain_proven_le_formal: "(28 :: nat) <= (28 :: nat)"
-  by eval
-
-lemma lambda_cdm_wave1_links_genomic_cosmology: "(5 :: nat) = (5 :: nat)"
-  by eval
-
-lemma lambda_cdm_wave_partition: "(30 :: nat) = (30 :: nat)"
-  by eval
-
-lemma photonic_voxel_count_pos: "0 < (180 :: nat)"
-  by eval
-
-lemma photonic_trinary_partition: "(180 :: nat) = (180 :: nat)"
-  by eval
-
-lemma wave4_observable_count_pos: "0 < (16 :: nat)"
-  by eval
-
-lemma cross_proof_obligation_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma cross_proof_lean_modules_pos: "0 < (3 :: nat)"
-  by eval
-
-lemma cross_proof_full_formal_obligation_count_pos: "0 < (1241 :: nat)"
-  by eval
-
-lemma cross_proof_full_formal_provable_count_pos: "0 < (1241 :: nat)"
   by eval
 
 end

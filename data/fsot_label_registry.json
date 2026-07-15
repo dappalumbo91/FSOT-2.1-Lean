@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T17:26:45.554384+00:00",
+  "generated_at": "2026-07-15T01:00:29.504836+00:00",
   "version": "1.0",
   "purpose": "Human-readable labels for opaque FSOT codes (tiers, FO/PRED/rules, obligations)",
   "tiers": {
@@ -2425,6 +2425,55 @@
       "tier_label": "Tier 95",
       "lean_module": "FSOT.Formal.Tier95ZebrafishSpinePriors",
       "D_eff": 23
+    },
+    "Founding_Quantum_Vacuum_Panel": {
+      "display_name": "Founding Quantum Vacuum Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingQuantumVacuumPanelPriors",
+      "D_eff": 8
+    },
+    "Founding_Cosmic_Ray_Panel": {
+      "display_name": "Founding Cosmic Ray Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingCosmicRayPanelPriors",
+      "D_eff": 10
+    },
+    "Founding_Galactic_Halo_Rotation_Panel": {
+      "display_name": "Founding Galactic Halo Rotation Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingGalacticHaloRotationPanelPriors",
+      "D_eff": 14
+    },
+    "Founding_Cosmic_Dust_Panel": {
+      "display_name": "Founding Cosmic Dust Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingCosmicDustPanelPriors",
+      "D_eff": 13
+    },
+    "Founding_White_Dwarf_Cooling_Panel": {
+      "display_name": "Founding White Dwarf Cooling Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingWhiteDwarfCoolingPanelPriors",
+      "D_eff": 15
+    },
+    "Founding_Atmospheric_Ozone_Panel": {
+      "display_name": "Founding Atmospheric Ozone Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingAtmosphericOzonePanelPriors",
+      "D_eff": 12
+    },
+    "Founding_Pulsar_Glitch_Panel": {
+      "display_name": "Founding Pulsar Glitch Panel",
+      "tier": 96,
+      "tier_label": "Tier 96",
+      "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors",
+      "D_eff": 16
     }
   },
   "math_generator_rules": {

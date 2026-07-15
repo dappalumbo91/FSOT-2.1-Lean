@@ -47115,10 +47115,129 @@
         "fsot_fluid_reasoner"
       ]
     },
-    "manifest_path": "vendor/fsot_compute.py\\data\\experiment_synthesis_manifest.yaml",
+    "manifest_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\experiment_synthesis_manifest.yaml",
     "neuron_cohort_lab": {
-      "present": false,
-      "error": "Traceback (most recent call last):\n  File \"vendor/fsot_compute.py\\scripts\\run_neuron_cohort_eval.py\", line 427, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"vendor/fsot_compute.py\\scripts\\run_neuron_cohort_eval.py\", line 370, in main\n    cells = json.loads(cells_path.read_text(encoding=\"utf-8\"))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\damia\\AppData\\Roaming\\uv\\python\\cpython-3.11-windows-x86_64-none\\Lib\\pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\damia\\\\Desktop\\\\FSOT-2.1-Lean\\\\FSOT-2.1-Lean-main\\\\FSOT-2.1-Lean-main\\\\vendor\\\\neuron_cohort\\\\cells.json'"
+      "present": true,
+      "report_path": "data\\neuron_cohort_report.json",
+      "generated_from": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\neuron_cohort\\cells.json",
+      "total_cells_in_catalog": 2333,
+      "cohort_fi_proxy": {
+        "cell_count": 2166,
+        "fi_median_rel_err": 0.24631729333045121,
+        "fi_mean_rel_err": 0.3854953550581464,
+        "fi_p90_rel_err": 0.8913826568367677,
+        "fi_pearson_r": 0.608876904981479,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "cohort_strata": {
+        "catalog_coverage": {
+          "hero_specimen_excluded": 324257146,
+          "classified_catalog_cells": 1786,
+          "unclassified_catalog_cells": 546,
+          "held_out_catalog_cells": 2332
+        },
+        "held_out_fi_proxy": {
+          "cell_count": 2165,
+          "fi_median_rel_err": 0.24625990376478163,
+          "fi_mean_rel_err": 0.3855272758848861,
+          "fi_p90_rel_err": 0.8913826568367677,
+          "fi_pearson_r": 0.6086458495175734,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "strata": {
+          "Sst_interneuron": {
+            "catalog_cells": 165,
+            "fi_proxy_offset_pa": 50.0,
+            "fi_proxy_scale": 1.2273510948456947,
+            "fi_proxy_intercept": 10.083461957942042,
+            "cell_count": 154,
+            "fi_median_rel_err": 0.6532385249479395,
+            "fi_mean_rel_err": 0.8058947816291627,
+            "fi_p90_rel_err": 1.5564280344228194,
+            "fi_pearson_r": 0.52310926097775,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "PV_interneuron": {
+            "catalog_cells": 242,
+            "fi_proxy_offset_pa": 50.0,
+            "fi_proxy_scale": 0.7919175482450963,
+            "fi_proxy_intercept": 44.051882217157974,
+            "cell_count": 222,
+            "fi_median_rel_err": 0.26052599991828185,
+            "fi_mean_rel_err": 0.8580723182991941,
+            "fi_p90_rel_err": 1.0239256292918335,
+            "fi_pearson_r": 0.3931199346029611,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "VIP_interneuron": {
+            "catalog_cells": 155,
+            "fi_proxy_offset_pa": 65.0,
+            "fi_proxy_scale": 0.5265432021055515,
+            "fi_proxy_intercept": 23.1127337923798,
+            "cell_count": 146,
+            "fi_median_rel_err": 0.4741701150886025,
+            "fi_mean_rel_err": 0.7490501556738893,
+            "fi_p90_rel_err": 1.693506398483212,
+            "fi_pearson_r": 0.4308059942466856,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "L2_3_pyramidal": {
+            "catalog_cells": 1224,
+            "fi_proxy_offset_pa": 85.0,
+            "fi_proxy_scale": 0.4542760642772998,
+            "fi_proxy_intercept": 11.23364282408293,
+            "cell_count": 1127,
+            "fi_median_rel_err": 0.49782232037293184,
+            "fi_mean_rel_err": 0.7450135413474986,
+            "fi_p90_rel_err": 1.4429099782004917,
+            "fi_pearson_r": 0.23129805826359506,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          }
+        }
+      },
+      "hero_certified_fi": {
+        "specimen_id": 324257146,
+        "cell_class": "Sst_interneuron",
+        "mean_rel_err": 0.07002728543379658,
+        "verifier_confidence": 0.9598886696481669,
+        "fi_point_count": 4,
+        "source": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\neuron_cohort\\inconsistency_rerun_report.json"
+      },
+      "hero_hybrid_native_scalar": null,
+      "hero_hybrid_canonical_scalar": null,
+      "canonical_scalar_bridge": {
+        "version": "v2_hybrid_structure",
+        "alpha_layer1": 0.0008082937414140405,
+        "psi_con": 0.6321205588285577,
+        "eta_eff": 0.46694220692425986,
+        "damp_factor": 0.7139045860316813,
+        "bridge_scale": 1.1099062765752818,
+        "canonical_neuroscience_domain_S": 0.5143619629083619,
+        "hero_canonical_mean_rel_err": 0.07354375821147667,
+        "hero_certified_mean_rel_err": 0.07002728543379658,
+        "canonical_vs_certified_delta": 0.0035164727776800936,
+        "within_few_points": true
+      },
+      "neurolab_smiles_bridge": {
+        "smiles_mapped_records": 1470,
+        "smiles_median_error_pct": 0.058,
+        "strict_empirical_records": 7941,
+        "brain_component_priors_count": 10,
+        "neurolab_translation_total": 38,
+        "neurolab_brain_pathway_count": 25
+      }
     }
   },
   "intelligence_compression": {
@@ -48806,5 +48925,412 @@
     "stability_match_rate": 0.996875,
     "median_error_pct": 0.0,
     "ingested_at": "2026-07-13T15:23:46.173141+00:00"
-  }
+  },
+  "cosmology_wave4": {
+    "present": true,
+    "compute_path": "vendor/fsot_compute.py",
+    "rows": [
+      {
+        "wave": "wave4",
+        "name": "sin2_theta12",
+        "formula": "2\u00b7Poof",
+        "computed": 0.3069644297889016,
+        "measured": 0.307,
+        "error_pct": 0.011586387979935279
+      },
+      {
+        "wave": "wave4",
+        "name": "sin2_theta23",
+        "formula": "|Chaos|\u00b7\u221ae",
+        "computed": 0.5457666109860249,
+        "measured": 0.546,
+        "error_pct": 0.04274524065479535
+      },
+      {
+        "wave": "wave4",
+        "name": "sin2_theta13",
+        "formula": "\u03b3\u2076\u00b7\u03c6/e",
+        "computed": 0.02201515822114412,
+        "measured": 0.022,
+        "error_pct": 0.06890100520055274
+      },
+      {
+        "wave": "wave4",
+        "name": "Dm2_21/Dm2_32",
+        "formula": "\u03b3\u00b3\u00b7Poof",
+        "computed": 0.02951701148028642,
+        "measured": 0.0295,
+        "error_pct": 0.05766603486922898
+      },
+      {
+        "wave": "wave4",
+        "name": "|V_ub|",
+        "formula": "C_cosm\u00b2",
+        "computed": 0.0038196601125010513,
+        "measured": 0.00382,
+        "error_pct": 0.008897578506510621
+      },
+      {
+        "wave": "wave4",
+        "name": "|V_td|",
+        "formula": "\u221a\u03c6/e\u2075",
+        "computed": 0.00857080098022107,
+        "measured": 0.00857,
+        "error_pct": 0.009346326966974296
+      },
+      {
+        "wave": "wave4",
+        "name": "|V_ts|",
+        "formula": "\u03b3\u2075\u00b7\u03c8_con",
+        "computed": 0.04050330471508225,
+        "measured": 0.0405,
+        "error_pct": 0.008159790326533337
+      },
+      {
+        "wave": "wave4",
+        "name": "Jarlskog_J",
+        "formula": "G/(\u03c0\u2079)",
+        "computed": 3.072771786665467e-05,
+        "measured": 3.08e-05,
+        "error_pct": 0.23468225112121452
+      },
+      {
+        "wave": "wave4",
+        "name": "Feigenbaum_delta",
+        "formula": "ln(\u03c0)\u00b7(e/G) + \u221a\u03c6",
+        "computed": 4.669197957279608,
+        "measured": 4.6692,
+        "error_pct": 4.3748830462353164e-05
+      },
+      {
+        "wave": "wave4",
+        "name": "Feigenbaum_alpha",
+        "formula": "|Chaos|\u00b7\u03c6\u00b7e + A_bleed",
+        "computed": 2.5029081532028084,
+        "measured": 2.50291,
+        "error_pct": 7.378600075983818e-05
+      },
+      {
+        "wave": "wave4",
+        "name": "r_p_fm",
+        "formula": "G\u2077 + P_new",
+        "computed": 0.8412485409697683,
+        "measured": 0.8414,
+        "error_pct": 0.018000835539782083
+      },
+      {
+        "wave": "wave4",
+        "name": "m_n-m_p_MeV",
+        "formula": "\u03b3\u2074/|Chaos| + P_var",
+        "computed": 1.2933328005542002,
+        "measured": 1.29333,
+        "error_pct": 0.00021653825397228277
+      },
+      {
+        "wave": "wave4",
+        "name": "mu_p_muN",
+        "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
+        "computed": 2.792852216264115,
+        "measured": 2.79285,
+        "error_pct": 7.935492829532375e-05
+      },
+      {
+        "wave": "wave4",
+        "name": "w0",
+        "formula": "\u2212P_new\u00b7\u03c0/G",
+        "computed": -1.0299812921372637,
+        "measured": -1.03,
+        "error_pct": 0.0018162973530366992
+      },
+      {
+        "wave": "wave4",
+        "name": "m_c/m_b",
+        "formula": "C_cosm/P_base",
+        "computed": 0.2910507567869785,
+        "measured": 0.291,
+        "error_pct": 0.017442194837980426
+      },
+      {
+        "wave": "wave4",
+        "name": "alpha_s_ratio",
+        "formula": "\u03c0\u2076\u00b7\u03b3\u2078",
+        "computed": 11.846883192361886,
+        "measured": 11.85,
+        "error_pct": 0.026302174161292595
+      }
+    ],
+    "observable_count": 16,
+    "wave4_count": 16,
+    "measured_count": 16,
+    "max_error_pct": 0.23468225112121452,
+    "mean_error_pct": 0.03162247159570792
+  },
+  "neuron_cohort_lab": {
+    "present": true,
+    "report_path": "data\\neuron_cohort_report.json",
+    "generated_from": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\neuron_cohort\\cells.json",
+    "total_cells_in_catalog": 2333,
+    "cohort_fi_proxy": {
+      "cell_count": 2166,
+      "fi_median_rel_err": 0.24631729333045121,
+      "fi_mean_rel_err": 0.3854953550581464,
+      "fi_p90_rel_err": 0.8913826568367677,
+      "fi_pearson_r": 0.608876904981479,
+      "canonical_scalar_min": 0.25241247006708056,
+      "canonical_scalar_mean": 0.25241247006708056,
+      "canonical_neuroscience_domain_S": 0.5143619629083619
+    },
+    "cohort_strata": {
+      "catalog_coverage": {
+        "hero_specimen_excluded": 324257146,
+        "classified_catalog_cells": 1786,
+        "unclassified_catalog_cells": 546,
+        "held_out_catalog_cells": 2332
+      },
+      "held_out_fi_proxy": {
+        "cell_count": 2165,
+        "fi_median_rel_err": 0.24625990376478163,
+        "fi_mean_rel_err": 0.3855272758848861,
+        "fi_p90_rel_err": 0.8913826568367677,
+        "fi_pearson_r": 0.6086458495175734,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "strata": {
+        "Sst_interneuron": {
+          "catalog_cells": 165,
+          "fi_proxy_offset_pa": 50.0,
+          "fi_proxy_scale": 1.2273510948456947,
+          "fi_proxy_intercept": 10.083461957942042,
+          "cell_count": 154,
+          "fi_median_rel_err": 0.6532385249479395,
+          "fi_mean_rel_err": 0.8058947816291627,
+          "fi_p90_rel_err": 1.5564280344228194,
+          "fi_pearson_r": 0.52310926097775,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "PV_interneuron": {
+          "catalog_cells": 242,
+          "fi_proxy_offset_pa": 50.0,
+          "fi_proxy_scale": 0.7919175482450963,
+          "fi_proxy_intercept": 44.051882217157974,
+          "cell_count": 222,
+          "fi_median_rel_err": 0.26052599991828185,
+          "fi_mean_rel_err": 0.8580723182991941,
+          "fi_p90_rel_err": 1.0239256292918335,
+          "fi_pearson_r": 0.3931199346029611,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "VIP_interneuron": {
+          "catalog_cells": 155,
+          "fi_proxy_offset_pa": 65.0,
+          "fi_proxy_scale": 0.5265432021055515,
+          "fi_proxy_intercept": 23.1127337923798,
+          "cell_count": 146,
+          "fi_median_rel_err": 0.4741701150886025,
+          "fi_mean_rel_err": 0.7490501556738893,
+          "fi_p90_rel_err": 1.693506398483212,
+          "fi_pearson_r": 0.4308059942466856,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "L2_3_pyramidal": {
+          "catalog_cells": 1224,
+          "fi_proxy_offset_pa": 85.0,
+          "fi_proxy_scale": 0.4542760642772998,
+          "fi_proxy_intercept": 11.23364282408293,
+          "cell_count": 1127,
+          "fi_median_rel_err": 0.49782232037293184,
+          "fi_mean_rel_err": 0.7450135413474986,
+          "fi_p90_rel_err": 1.4429099782004917,
+          "fi_pearson_r": 0.23129805826359506,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        }
+      }
+    },
+    "hero_certified_fi": {
+      "specimen_id": 324257146,
+      "cell_class": "Sst_interneuron",
+      "mean_rel_err": 0.07002728543379658,
+      "verifier_confidence": 0.9598886696481669,
+      "fi_point_count": 4,
+      "source": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\neuron_cohort\\inconsistency_rerun_report.json"
+    },
+    "hero_hybrid_native_scalar": null,
+    "hero_hybrid_canonical_scalar": null,
+    "canonical_scalar_bridge": {
+      "version": "v2_hybrid_structure",
+      "alpha_layer1": 0.0008082937414140405,
+      "psi_con": 0.6321205588285577,
+      "eta_eff": 0.46694220692425986,
+      "damp_factor": 0.7139045860316813,
+      "bridge_scale": 1.1099062765752818,
+      "canonical_neuroscience_domain_S": 0.5143619629083619,
+      "hero_canonical_mean_rel_err": 0.07354375821147667,
+      "hero_certified_mean_rel_err": 0.07002728543379658,
+      "canonical_vs_certified_delta": 0.0035164727776800936,
+      "within_few_points": true
+    },
+    "neurolab_smiles_bridge": {
+      "smiles_mapped_records": 1470,
+      "smiles_median_error_pct": 0.058,
+      "strict_empirical_records": 7941,
+      "brain_component_priors_count": 10,
+      "neurolab_translation_total": 38,
+      "neurolab_brain_pathway_count": 25
+    }
+  },
+  "trinary_hardware_live_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "trinary_hardware",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "trinary_hardware_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "omni_theory_humanities_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "omni_theory_humanities",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "omni_theory_humanities_cache.json",
+    "observable_count": 12,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "validators_intrinsic_llm_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "validators_intrinsic_llm",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "validators_intrinsic_llm_cache.json",
+    "observable_count": 4,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "bibliography_corpus_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "bibliography",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "bibliography_corpus_cache.json",
+    "observable_count": 7,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "tokenization_live_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "tokenization",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "tokenization_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "certified_agent_formal_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "certified_agent",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "certified_agent_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "vl_agent_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "vl_agent",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "vl_agent_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "binary_decoder_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "binary_decoder",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "binary_decoder_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "biological_cuda_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "biological_cuda",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "biological_cuda_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "arxiv_brain_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "arxiv_brain",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "arxiv_brain_cache.json",
+    "observable_count": 18,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "scalar_solver_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "scalar_solver",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "scalar_solver_cache.json",
+    "observable_count": 9,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "arxiv_primitives_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "arxiv_primitives",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "arxiv_primitives_cache.json",
+    "observable_count": 15,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "rust_lean_bridge_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "rust_lean_bridge",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "rust_lean_bridge_cache.json",
+    "observable_count": 7,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "living_fsot_hardware_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "living_fsot_hardware",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "living_fsot_hardware_cache.json",
+    "observable_count": 75,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "canonical_oracle_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "canonical_oracle",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "canonical_oracle_cache.json",
+    "observable_count": 1,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "early_lean_mc_lab": {
+    "present": true,
+    "wire_status": "tier88_live_panel",
+    "desktop_theme": "early_lean_mc",
+    "source_root": "vendor/application_wiring/tier88_cache",
+    "cache_file": "early_lean_mc_cache.json",
+    "observable_count": 9,
+    "ingested_at": "2026-07-15T05:17:19.470405+00:00"
+  },
+  "tier88_desktop_patch_at": "2026-07-15T05:17:19.486320+00:00"
 }

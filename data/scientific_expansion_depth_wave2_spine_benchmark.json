@@ -1,8 +1,8 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:16.260765+00:00",
+  "generated_at": "2026-07-15T05:17:23.140680+00:00",
   "domain": "Scientific_Expansion_Depth_Wave2_Spine",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "tier87_depth_wave2_panels"
   ],
@@ -13,13 +13,13 @@
     "astronomical"
   ],
   "D_eff": 18,
-  "record_count": 20,
-  "observable_count": 20,
-  "scalar_record_count": 4,
+  "record_count": 40,
+  "observable_count": 40,
+  "scalar_record_count": 8,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.033841,
+  "headline_median_error_pct": 0.031506,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -41,42 +41,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 20,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 40
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "ingest_relay",
       "name": "scientific_expansion_depth_wave2",
-      "computed": 0.033841,
+      "computed": 0.031506,
       "measured": 0.0,
-      "error_pct": 0.033841,
-      "observable_count": 16,
-      "domain_display_name": "tier gap fill",
-      "display_name": "scientific expansion depth wave2",
-      "scientific_measurement": {
-        "delta": 0.033841,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "error_pct": 0.031506,
+      "observable_count": 32
     }
   ],
   "material_records": [
@@ -87,21 +61,8 @@
       "computed": 0.014767,
       "measured": 0.014767,
       "error_pct": 0.0,
-      "record_count": 83,
-      "eval_kind": "tier87_bridge",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "quantum computing math depth panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 77,
+      "eval_kind": "tier87_bridge"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -111,21 +72,7 @@
       "measured": 1.0,
       "error_pct": 0.095551,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay",
-      "rule_display_name": "Qubit state normalization",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Qubit state normalization",
-      "scientific_measurement": {
-        "delta": 0.000956,
-        "delta_pct": 0.0956,
-        "effective_error_pct": 0.0956,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -135,21 +82,7 @@
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay",
-      "rule_display_name": "Hadamard gate action",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Hadamard gate action",
-      "scientific_measurement": {
-        "delta": 0.000295,
-        "delta_pct": 0.01475,
-        "effective_error_pct": 0.01475,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -159,21 +92,7 @@
       "measured": 2.0,
       "error_pct": 0.014767,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay",
-      "rule_display_name": "CNOT entangler",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "CNOT entangler",
-      "scientific_measurement": {
-        "delta": 0.000295,
-        "delta_pct": 0.01475,
-        "effective_error_pct": 0.01475,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -183,21 +102,7 @@
       "measured": 2.0,
       "error_pct": 0.095551,
       "source_panel": "quantum_computing_math_depth_panel",
-      "eval_kind": "ingest_relay",
-      "rule_display_name": "Born rule",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Born rule",
-      "scientific_measurement": {
-        "delta": 0.001911,
-        "delta_pct": 0.09555,
-        "effective_error_pct": 0.09555,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -207,20 +112,7 @@
       "measured": 0.0201195,
       "error_pct": 0.0,
       "record_count": 27,
-      "eval_kind": "tier87_bridge",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "neuroscience connectomics depth panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier87_bridge"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -230,20 +122,7 @@
       "measured": 154.0,
       "error_pct": 0.018003,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.027724,
-        "delta_pct": 0.018003,
-        "effective_error_pct": 0.018003,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -253,66 +132,27 @@
       "measured": 165.0,
       "error_pct": 0.022236,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.03669,
-        "delta_pct": 0.022236,
-        "effective_error_pct": 0.022236,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "fi_median_rel_err_pct",
       "name": "Sst_interneuron",
-      "computed": 35.485293,
-      "measured": 35.479861060568474,
+      "computed": 65.333854,
+      "measured": 65.32385249479395,
       "error_pct": 0.015311,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.00543194,
-        "delta_pct": 0.01531,
-        "effective_error_pct": 0.01531,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
       "property": "fi_pearson_r",
       "name": "Sst_interneuron",
-      "computed": 0.519815,
-      "measured": 0.5196512945807779,
+      "computed": 0.523274,
+      "measured": 0.52310926097775,
       "error_pct": 0.031506,
       "source_panel": "neuroscience_connectomics_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Sst interneuron",
-      "scientific_measurement": {
-        "delta": 0.00016371,
-        "delta_pct": 0.031503,
-        "effective_error_pct": 0.031503,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -322,20 +162,7 @@
       "measured": 0.033841,
       "error_pct": 0.0,
       "record_count": 15,
-      "eval_kind": "tier87_bridge",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "condensed matter superconductivity depth panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "tier87_bridge"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -345,20 +172,7 @@
       "measured": 9.25,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Nb",
-      "scientific_measurement": {
-        "delta": 0.00313,
-        "delta_pct": 0.033838,
-        "effective_error_pct": 0.033838,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -368,20 +182,7 @@
       "measured": 7.2,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Pb",
-      "scientific_measurement": {
-        "delta": 0.002437,
-        "delta_pct": 0.033847,
-        "effective_error_pct": 0.033847,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -391,20 +192,7 @@
       "measured": 4.15,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Hg",
-      "scientific_measurement": {
-        "delta": 0.001404,
-        "delta_pct": 0.033831,
-        "effective_error_pct": 0.033831,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -414,20 +202,7 @@
       "measured": 3.72,
       "error_pct": 0.033841,
       "source_panel": "condensed_matter_superconductivity_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "Sn",
-      "scientific_measurement": {
-        "delta": 0.001259,
-        "delta_pct": 0.033844,
-        "effective_error_pct": 0.033844,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -436,21 +211,8 @@
       "computed": 0.026954,
       "measured": 0.026954,
       "error_pct": 0.0,
-      "record_count": 127,
-      "eval_kind": "tier87_bridge",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "optics interferometry depth panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "record_count": 82,
+      "eval_kind": "tier87_bridge"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -460,20 +222,7 @@
       "measured": 1064.0,
       "error_pct": 0.040806,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "LIGO Hanford",
-      "scientific_measurement": {
-        "delta": 0.434178,
-        "delta_pct": 0.040806,
-        "effective_error_pct": 0.040806,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -483,21 +232,7 @@
       "measured": 4.0,
       "error_pct": 0.040806,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "LIGO Hanford",
-      "scientific_measurement": {
-        "delta": 0.001632,
-        "delta_pct": 0.0408,
-        "effective_error_pct": 0.0408,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.204,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.2
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -507,20 +242,7 @@
       "measured": 1e-21,
       "error_pct": 0.040817,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "LIGO Hanford",
-      "scientific_measurement": {
-        "delta": -0.0,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
     },
     {
       "lab": "scientific_expansion_depth_wave2_lab",
@@ -530,20 +252,207 @@
       "measured": 1064.0,
       "error_pct": 0.040806,
       "source_panel": "optics_interferometry_depth_panel",
-      "eval_kind": "ingest_relay",
-      "domain_display_name": "scientific expansion depth wave2",
-      "display_name": "LIGO Livingston",
-      "scientific_measurement": {
-        "delta": 0.434178,
-        "delta_pct": 0.040806,
-        "effective_error_pct": 0.040806,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "panel_pooled_median",
+      "name": "biology_developmental_structural_depth_panel",
+      "computed": 0.022236,
+      "measured": 0.022236,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "tier87_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "human_gestation_days",
+      "computed": 280.062262,
+      "measured": 280.0,
+      "error_pct": 0.022236,
+      "source_panel": "biology_developmental_structural_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "mouse_gestation_days",
+      "computed": 19.504336,
+      "measured": 19.5,
+      "error_pct": 0.022236,
+      "source_panel": "biology_developmental_structural_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "zebrafish_development_hours",
+      "computed": 72.01601,
+      "measured": 72.0,
+      "error_pct": 0.022236,
+      "source_panel": "biology_developmental_structural_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "drosophila_embryogenesis_hours",
+      "computed": 24.005337,
+      "measured": 24.0,
+      "error_pct": 0.022236,
+      "source_panel": "biology_developmental_structural_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_mechanics_entanglement_depth_panel",
+      "computed": 0.095551,
+      "measured": 0.095551,
+      "error_pct": 0.0,
+      "record_count": 11,
+      "eval_kind": "tier87_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "chsh_classical_bound",
+      "computed": 2.001911,
+      "measured": 2.0,
+      "error_pct": 0.095551,
+      "source_panel": "quantum_mechanics_entanglement_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "chsh_tsirelson_bound",
+      "computed": 2.83113,
+      "measured": 2.828427,
+      "error_pct": 0.095551,
+      "source_panel": "quantum_mechanics_entanglement_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "bell_inequality_margin",
+      "computed": 0.41461,
+      "measured": 0.414214,
+      "error_pct": 0.095551,
+      "source_panel": "quantum_mechanics_entanglement_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "epr_entangled_pair_spin_correlation",
+      "computed": 1.000956,
+      "measured": 1.0,
+      "error_pct": 0.095551,
+      "source_panel": "quantum_mechanics_entanglement_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "panel_pooled_median",
+      "name": "psychology_psychometrics_depth_panel",
+      "computed": 0.031506,
+      "measured": 0.031506,
+      "error_pct": 0.0,
+      "record_count": 12,
+      "eval_kind": "tier87_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "cronbach_alpha_typical",
+      "computed": 0.850268,
+      "measured": 0.85,
+      "error_pct": 0.031506,
+      "source_panel": "psychology_psychometrics_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "test_retest_r_typical",
+      "computed": 0.800252,
+      "measured": 0.8,
+      "error_pct": 0.031506,
+      "source_panel": "psychology_psychometrics_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "effect_size_cohens_d_small",
+      "computed": 0.200063,
+      "measured": 0.2,
+      "error_pct": 0.031506,
+      "source_panel": "psychology_psychometrics_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "effect_size_cohens_d_medium",
+      "computed": 0.500158,
+      "measured": 0.5,
+      "error_pct": 0.031506,
+      "source_panel": "psychology_psychometrics_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_creep_fracture_depth_panel",
+      "computed": 0.01341,
+      "measured": 0.01341,
+      "error_pct": 0.0,
+      "record_count": 47,
+      "eval_kind": "tier87_bridge"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "steel_creep_activation_kJ_mol",
+      "computed": 200.026821,
+      "measured": 200.0,
+      "error_pct": 0.01341,
+      "source_panel": "materials_creep_fracture_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "polymer_creep_strain_10yr_pct",
+      "computed": 2.000268,
+      "measured": 2.0,
+      "error_pct": 0.01341,
+      "source_panel": "materials_creep_fracture_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "superalloy_creep_life_hours_900C",
+      "computed": 10001.34104,
+      "measured": 10000.0,
+      "error_pct": 0.01341,
+      "source_panel": "materials_creep_fracture_depth_panel",
+      "eval_kind": "ingest_relay"
+    },
+    {
+      "lab": "scientific_expansion_depth_wave2_lab",
+      "property": "value",
+      "name": "creep_exponent_n_typical",
+      "computed": 5.000671,
+      "measured": 5.0,
+      "error_pct": 0.01341,
+      "source_panel": "materials_creep_fracture_depth_panel",
+      "eval_kind": "ingest_relay"
     }
   ],
   "margin_summary": {
@@ -557,19 +466,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Scientific Expansion Depth Wave2 Spine",
-  "tier_label": "Tier 87",
-  "scientific_precision_summary": {
-    "scalar_count": 4,
-    "median_error_pct": 0.0,
-    "max_error_pct": 0.0,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 4
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.195639+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

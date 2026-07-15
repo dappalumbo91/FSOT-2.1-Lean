@@ -1,0 +1,334 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.755472+00:00",
+  "domain": "Arxiv_Primitives_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\arxiv_primitives_cache.json",
+    "desktop_arxiv_primitives"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "ai"
+  ],
+  "D_eff": 15,
+  "record_count": 22,
+  "observable_count": 22,
+  "scalar_record_count": 21,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.031506,
+  "pooled_median_error_pct": 0.031506,
+  "headline_median_error_pct": 0.031506,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "arxiv_primitives_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "V14 arXiv cognitive primitives loop"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "v14_cognitive_primitives",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_count",
+      "name": "primitive_count",
+      "computed": 6.00189,
+      "measured": 6.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "exit_code",
+      "name": "exit_code",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "arxiv_topics_loaded",
+      "name": "arxiv_topics_loaded",
+      "computed": 2964096.5791,
+      "measured": 2963163.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "converged_step",
+      "name": "converged_step",
+      "computed": 35.011027,
+      "measured": 35.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_boost",
+      "name": "primitive_boost",
+      "computed": 0.896282,
+      "measured": 0.896,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "final_global_stability",
+      "name": "final_global_stability",
+      "computed": 1.00029,
+      "measured": 0.999975,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "final_trinary_sum_abs",
+      "name": "final_trinary_sum_abs",
+      "computed": 16.005041,
+      "measured": 16.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "memory_traces_stored",
+      "name": "memory_traces_stored",
+      "computed": 5.001575,
+      "measured": 5.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "memory_retrievals",
+      "name": "memory_retrievals",
+      "computed": 5.001575,
+      "measured": 5.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "topic_curriculum_events",
+      "name": "topic_curriculum_events",
+      "computed": 36.011342,
+      "measured": 36.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "wh_poof_events",
+      "name": "wh_poof_events",
+      "computed": 72.022684,
+      "measured": 72.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "understanding_score",
+      "name": "understanding_score",
+      "computed": 0.831262,
+      "measured": 0.831,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "articulation_score",
+      "name": "articulation_score",
+      "computed": 0.816257,
+      "measured": 0.816,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "retention_score",
+      "name": "retention_score",
+      "computed": 0.462146,
+      "measured": 0.462,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "retention_drift",
+      "name": "retention_drift",
+      "computed": 0.53817,
+      "measured": 0.538,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "avg_topic_complexity",
+      "name": "avg_topic_complexity",
+      "computed": 0.122038,
+      "measured": 0.122,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P1",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P2",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P3",
+      "computed": 0.600189,
+      "measured": 0.6,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P4",
+      "computed": 0.840265,
+      "measured": 0.84,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P5",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    },
+    {
+      "lab": "arxiv_primitives_lab",
+      "property": "primitive_signature",
+      "name": "P6",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_arxiv_cognitive_primitives"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.031506,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

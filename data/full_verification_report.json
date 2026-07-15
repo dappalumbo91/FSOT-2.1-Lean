@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-14T16:31:28.452145+00:00",
+  "generated_at": "2026-07-14T20:28:47.261822+00:00",
   "toolchain": {
     "all_seven_way_present": true,
     "tools": {
       "python": "C:\\Users\\damia\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
-      "lake": "C:\\Users\\damia\\.elan\\bin\\lake.EXE",
-      "elan": "C:\\Users\\damia\\.elan\\bin\\elan.EXE",
-      "coqc": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
+      "lake": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\elan\\bin\\lake.exe",
+      "elan": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\elan\\bin\\elan.exe",
+      "coqc": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\rocq\\bin\\coqc.exe",
       "isabelle": {
-        "home": "C:\\Users\\damia\\Desktop\\Isabelle2025-2",
+        "home": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle",
         "mode": "cygwin",
-        "bash": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\contrib\\cygwin\\bin\\bash.exe",
-        "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle"
+        "bash": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle\\contrib\\cygwin\\bin\\bash.exe",
+        "tool": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\isabelle\\bin\\isabelle"
       },
-      "fstar": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
-      "rustc": "C:\\Users\\damia\\.cargo\\bin\\rustc.EXE",
-      "cargo": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE"
+      "fstar": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\fstar\\bin\\fstar.exe",
+      "rustc": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\cargo\\bin\\rustc.exe",
+      "cargo": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\cargo\\bin\\cargo.exe"
     },
-    "bundled_toolchain_on_drive": null
+    "bundled_toolchain_on_drive": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain"
   },
   "archive": {
     "portability_ok": true,
@@ -25,14 +25,14 @@
     "plug_and_play": {
       "data_complete_on_drive": true,
       "runnable_without_downloads": true,
+      "seven_way_toolchain_on_drive": true,
+      "rustup_bundle_complete": false,
       "requires_one_time_host_install": [
         "Python 3.10+",
         "pip install -r requirements.txt (numpy, mpmath, sympy, PyYAML, pypdf, pytest)",
-        "Optional: elan + Lean 4.31 for lake build",
-        "Optional: Rust for obligation replay cross-proof tier",
-        "Optional: Coq, Isabelle, F* for full seven-way cross-proof"
+        "Rustup bundle still copying \u2014 bootstrap uses host ~/.rustup until .bundle-complete"
       ],
-      "offline_verification_mode": "PLAY.ps1 \u2192 portable runner with --skip-lean --portable --founding-corpus",
+      "offline_verification_mode": "PLAY.ps1 \u2192 bootstrap_toolchain.ps1 \u2192 full verification",
       "live_api_rebuild": "Not required for scientific verification \u2014 uses cached benchmarks in data/ and 03_FSOT-PublicData"
     }
   },
@@ -60,11 +60,11 @@
   },
   "cross_proof": {
     "present": true,
-    "overall_ok": false,
+    "overall_ok": true,
     "tier": "91_seven_way_bare_metal",
-    "seven_way_bare_metal": false,
+    "seven_way_bare_metal": true,
     "eight_way_hardware": false,
-    "full_triangulation": false,
+    "full_triangulation": true,
     "obligation_count": 2309,
     "provable_count": 2243,
     "atomic_provable_count": 1810,
@@ -78,13 +78,13 @@
       "isabelle": "passed",
       "isabelle_refinement": "passed",
       "transcendental_bounds_gap": null,
-      "rust_replay": "failed",
+      "rust_replay": "passed",
       "rust_refinement": "passed",
       "rust_lean_bridge_parity": "passed",
       "rust_lean_bridge_refinement": "passed",
       "fstar": "passed",
       "fstar_refinement": "passed",
-      "qemu_harness": "failed",
+      "qemu_harness": "passed",
       "esp32_harness": "skipped"
     }
   },
@@ -94,10 +94,10 @@
   },
   "domain_coverage_tiers": null,
   "verification_depth": {
-    "generated_at": "2026-07-14T16:25:16.424035+00:00",
+    "generated_at": "2026-07-14T20:27:40.974673+00:00",
     "version": "1.0",
     "verdict": {
-      "cross_proof_overall_ok": false,
+      "cross_proof_overall_ok": true,
       "extension_domains_all_green": false,
       "aspiration_scalar_debt_cleared": false,
       "core_benchmarks_all_green": false,
@@ -131,7 +131,7 @@
         "coverage": "numeric literal replay of exported obligations"
       },
       "rust_f64_replay": {
-        "status": "failed",
+        "status": "passed",
         "obligation_count": 1902,
         "note": "Includes connective + full_formal_spine + transcendental_bounds obligations"
       },
@@ -240,8 +240,8 @@
       "aspiration_scalar_debt_count": 1
     },
     "scientific_pushback_audit": {
-      "extension_domain_count": 340,
-      "green_gate_pass_count": 339,
+      "extension_domain_count": 347,
+      "green_gate_pass_count": 346,
       "green_gate_fail_count": 1,
       "aspiration_scalar_debt_count": 1,
       "stumped_observable_count": 13,

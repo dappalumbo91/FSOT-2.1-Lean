@@ -1,7 +1,94 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 7/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 7/19 (generated). *)
 theory FullFormalSpine_06
 imports Complex_Main
 begin
+
+lemma connective_seawater_acoustic_pos: "0 < (0.094115088176 :: real)"
+  by eval
+
+lemma connective_decay_chain_relay_pos: "0 < (0.029710640768 :: real)"
+  by eval
+
+lemma connective_dt_energy_pos: "0 < (17.6 :: real)"
+  by eval
+
+lemma fusion_lab_certificate_spine_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma fusion_lab_certificate_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma fusion_physics_public_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma fusion_physics_public_panel_median_error_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
+  by eval
+
+lemma gaia_astrometry_panel_deep_observable_count_pos: "0 < (62 :: nat)"
+  by eval
+
+lemma gaia_astrometry_panel_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma gaia_dr3_tap_deep_observable_count_pos: "0 < (1826 :: nat)"
+  by eval
+
+lemma gaia_dr3_tap_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
+  by eval
+
+lemma galactic_structure_sample_observable_count_pos: "0 < (101 :: nat)"
+  by eval
+
+lemma galactic_structure_sample_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma gbif_species_occurrence_observable_count_pos: "0 < (240 :: nat)"
+  by eval
+
+lemma gbif_species_occurrence_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
+  by eval
+
+lemma genomic_sciences_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma genomic_sciences_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma geochemistry_median_error_under_half_pct: "(0.006625234573930708 :: real) < (0.5 :: real)"
+  by eval
+
+lemma geochemistry_observable_count_pos: "0 < (153 :: nat)"
+  by eval
+
+lemma geology_stratigraphy_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma geology_stratigraphy_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma geology_stratigraphy_ext_observable_count_pos: "0 < (1960 :: nat)"
+  by eval
+
+lemma geology_stratigraphy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma geology_stratigraphy_observable_count_pos: "0 < (1960 :: nat)"
+  by eval
+
+lemma geology_stratigraphy_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma geomagnetism_observable_count_pos: "0 < (524 :: nat)"
+  by eval
+
+lemma geomagnetism_match_le_total: "(524 :: nat) <= (524 :: nat)"
+  by eval
+
+lemma government_open_data_spine_observable_count_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma government_open_data_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
 
 lemma grace_cryosphere_month_count_pos: "0 < (253 :: nat)"
   by eval
@@ -28,6 +115,9 @@ lemma higgs_compute_branching_count_pos: "0 < (9 :: nat)"
   by eval
 
 lemma higgs_branching_observable_count_pos: "0 < (14 :: nat)"
+  by eval
+
+lemma higgs_branching_max_error_under_five_pct: "(4.232801452006084 :: real) < (5.0 :: real)"
   by eval
 
 lemma higgs_branching_components_sum: "(14 :: nat) = (14 :: nat)"
@@ -211,96 +301,6 @@ lemma ionospheric_chemistry_coupling_median_error_under_half_pct: "(0 :: real) <
   by eval
 
 lemma island_of_stability_deep_panel_observable_count_pos: "0 < (23 :: nat)"
-  by eval
-
-lemma island_of_stability_deep_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma knowledge_base_portable_bundle_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma knowledge_base_portable_bundle_panel_median_error_under_half_pct: "(0.0020923899350648867 :: real) < (0.5 :: real)"
-  by eval
-
-lemma knowledge_base_source_count_pos: "0 < (39 :: nat)"
-  by eval
-
-lemma knowledge_base_catalog_formulas_pos: "0 < (19213 :: nat)"
-  by eval
-
-lemma knowledge_base_observable_matched_le_verified: "(7941 :: nat) <= (7941 :: nat)"
-  by eval
-
-lemma kronos_best_fractional_error_positive: "0 < (0.0000001644295 :: real)"
-  by eval
-
-lemma kronos_record_fractional_uncertainty_positive: "0 < (0.00000000000000000055 :: real)"
-  by eval
-
-lemma kronos_run_count_pos: "0 < (569 :: nat)"
-  by eval
-
-lemma lab_synthesis_metamaterial_spine_observable_count_pos: "0 < (43 :: nat)"
-  by eval
-
-lemma lab_synthesis_metamaterial_spine_median_error_under_half_pct: "(0.000034 :: real) < (0.5 :: real)"
-  by eval
-
-lemma law_policy_ext_pooled_median_under_half_pct: "(0.019504399572479934 :: real) < (0.5 :: real)"
-  by eval
-
-lemma law_policy_ext_headline_median_under_half_pct: "(0.019504399572479934 :: real) < (0.5 :: real)"
-  by eval
-
-lemma law_policy_ext_observable_count_pos: "0 < (180 :: nat)"
-  by eval
-
-lemma law_policy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma law_policy_panel_observable_count_pos: "0 < (20 :: nat)"
-  by eval
-
-lemma law_policy_panel_median_error_under_half_pct: "(0.013003 :: real) < (0.5 :: real)"
-  by eval
-
-lemma law_policy_observable_count_pos: "0 < (180 :: nat)"
-  by eval
-
-lemma law_policy_median_error_under_half_pct: "(0.019504399572479934 :: real) < (0.5 :: real)"
-  by eval
-
-lemma limnology_panel_observable_count_pos: "0 < (2010 :: nat)"
-  by eval
-
-lemma limnology_panel_median_error_under_half_pct: "(0.030173 :: real) < (0.5 :: real)"
-  by eval
-
-lemma limnology_observable_count_pos: "0 < (2010 :: nat)"
-  by eval
-
-lemma limnology_median_error_under_five_pct: "(0.030173 :: real) < (5.0 :: real)"
-  by eval
-
-lemma linguistics_formal_observable_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma linguistics_formal_median_error_under_five_pct: "(0.0013504254899468224 :: real) < (5.0 :: real)"
-  by eval
-
-lemma linguistics_max_error_within_five_pct: "(0.006302479903277616 :: real) < (0.5 :: real)"
-  by eval
-
-lemma linguistics_target_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma live_ingest_spine_observable_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma live_ingest_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma living_fsot_hardware_panel_observable_count_pos: "0 < (77 :: nat)"
   by eval
 
 end

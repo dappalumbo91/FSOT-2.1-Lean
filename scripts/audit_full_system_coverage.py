@@ -19,7 +19,7 @@ OUT = ROOT / "data" / "full_system_coverage_audit.json"
 # Approximate share of major subfields touched (honest editorial estimate for audit display)
 FIELD_BREADTH: dict[str, dict] = {
     "Particle_Physics": {"studied_subfields": 12, "touched": 4, "note": "PDG/Higgs/CERN; thin on neutrino oscillation, lattice QCD"},
-    "Quantum_Mechanics": {"studied_subfields": 10, "touched": 3, "note": "NIST constants; thin on entanglement benchmarks, decoherence"},
+    "Quantum_Mechanics": {"studied_subfields": 10, "touched": 7, "note": "NIST constants + entanglement/decoherence/measurement depth panel"},
     "Atomic_Physics": {"studied_subfields": 8, "touched": 3, "note": "CODATA + periodic table; thin on Rydberg molecules, laser cooling"},
     "Physical_Chemistry": {"studied_subfields": 10, "touched": 4, "note": "PubChem thermochem; thin on kinetics, surface chem"},
     "Chemistry": {"studied_subfields": 15, "touched": 6, "note": "PubChem/CRC; thin on organometallic, solid-state synth"},
@@ -29,7 +29,7 @@ FIELD_BREADTH: dict[str, dict] = {
     "Acoustics": {"studied_subfields": 7, "touched": 2, "note": "SMILES relay; thin on sonar, architectural acoustics"},
     "Quantum_Computing": {"studied_subfields": 8, "touched": 6, "note": "Math-first QC depth — gate fidelity, error correction, formal rules; physical QC verifies"},
     "Quantum_Optics": {"studied_subfields": 7, "touched": 2, "note": "Cross-domain; thin on squeezed light, cavity QED"},
-    "Biology": {"studied_subfields": 20, "touched": 6, "note": "UniProt/GBIF/NCBI; thin on developmental, structural bio"},
+    "Biology": {"studied_subfields": 20, "touched": 10, "note": "UniProt/GBIF/NCBI + developmental/structural/genomics depth panel"},
     "Thermodynamics": {"studied_subfields": 8, "touched": 4, "note": "Fuel/NIST; thin on non-equilibrium, phase diagrams"},
     "Biochemistry": {"studied_subfields": 12, "touched": 5, "note": "PDB/ChEMBL/ClinicalTrials; thin on metabolomics"},
     "Neuroscience": {"studied_subfields": 15, "touched": 7, "note": "Connectomics depth panel — neuron cohort strata + catalog coverage + OpenNeuro"},
@@ -38,8 +38,8 @@ FIELD_BREADTH: dict[str, dict] = {
     "Nuclear_Physics": {"studied_subfields": 10, "touched": 4, "note": "OSTI/HEP; thin on cross-section databases"},
     "Ecology": {"studied_subfields": 12, "touched": 5, "note": "GBIF/iNaturalist; thin on food-web, population dynamics"},
     "Meteorology": {"studied_subfields": 10, "touched": 5, "note": "Open-Meteo/NDBC; thin on NWP ensemble verification"},
-    "Materials_Science": {"studied_subfields": 14, "touched": 5, "note": "Materials Project bundled; thin on creep, fracture"},
-    "Psychology": {"studied_subfields": 12, "touched": 3, "note": "OpenAlex/citations; thin on psychometrics, RCT outcomes"},
+    "Materials_Science": {"studied_subfields": 14, "touched": 9, "note": "Materials Project + creep/fracture/mechanical depth panel"},
+    "Psychology": {"studied_subfields": 12, "touched": 7, "note": "OpenAlex/citations + psychometrics/RCT/cognition depth panel"},
     "Atmospheric_Physics": {"studied_subfields": 10, "touched": 4, "note": "Weather/climate; thin on aerosol microphysics"},
     "Oceanography": {"studied_subfields": 11, "touched": 5, "note": "NOAA tides/NDBC; thin on ARGO float profiles"},
     "Seismology": {"studied_subfields": 8, "touched": 5, "note": "USGS deep catalog; thin on full moment-tensor relay"},

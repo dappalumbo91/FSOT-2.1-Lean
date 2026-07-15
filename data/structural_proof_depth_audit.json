@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T17:26:49.424730+00:00",
+  "generated_at": "2026-07-15T01:00:33.798718+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
-  "overall_ok": true,
-  "provable_bundle_conj_count": 426,
+  "overall_ok": false,
+  "provable_bundle_conj_count": 433,
   "provable_bundles": [
     {
       "id": "acoustic_resonance_materials_bundle",
@@ -536,6 +536,34 @@
     {
       "id": "foundational_ontology_spine_bundle",
       "conjunct_count": 4
+    },
+    {
+      "id": "founding_atmospheric_ozone_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_cosmic_dust_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_cosmic_ray_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_galactic_halo_rotation_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_pulsar_glitch_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_quantum_vacuum_panel_bundle",
+      "conjunct_count": 3
+    },
+    {
+      "id": "founding_white_dwarf_cooling_panel_bundle",
+      "conjunct_count": 3
     },
     {
       "id": "fpc_fluidlink_timing_deep_panel_bundle",
@@ -1710,11 +1738,11 @@
       "conjunct_count": 7
     }
   ],
-  "structural_proof_count": 1803,
+  "structural_proof_count": 1831,
   "min_required": 10,
   "breakdown": {
-    "bundle_split_lemmas": 416,
-    "bundle_conjunct_lemmas": 1377,
+    "bundle_split_lemmas": 423,
+    "bundle_conjunct_lemmas": 1398,
     "connective_ordering_lemmas": 3,
     "native_transcendental_chain_lemmas": 7
   },
@@ -1725,12 +1753,14 @@
   },
   "coq_compile": {
     "structural": {
-      "status": "skipped",
-      "file": "StructuralProofSpine.v"
+      "status": "failed",
+      "file": "StructuralProofSpine.v",
+      "stderr": "File \".\\StructuralProofSpine.v\", line 24, characters 8-11:\nError: No applicable tactic.\n\n"
     },
     "native_transcendental": {
-      "status": "skipped",
-      "file": "TranscendentalBoundsNative.v"
+      "status": "failed",
+      "file": "TranscendentalBoundsNative.v",
+      "stderr": "File \".\\TranscendentalBoundsNative.v\", line 9, characters 7-10:\nError: No applicable tactic.\n\n"
     }
   },
   "proof_depth_note": "Structural spine proves bundle conjunct splits and connective ordering chains independently of Lean proof terms; TranscendentalBoundsNative supplies Taylor/interval depth for pi/e base intervals.",

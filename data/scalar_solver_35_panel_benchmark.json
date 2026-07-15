@@ -1,0 +1,189 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.743524+00:00",
+  "domain": "Scalar_Solver_35_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
+    "desktop_scalar_solver"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 14,
+  "record_count": 10,
+  "observable_count": 10,
+  "scalar_record_count": 9,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.014767,
+  "pooled_median_error_pct": 0.014767,
+  "headline_median_error_pct": 0.014767,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "scalar_solver_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "FSOT 3.5 dual scalar solver"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "fsot_35_solver",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "scalar_solver_lab",
+      "property": "field_count",
+      "name": "field_count",
+      "computed": 9.001329,
+      "measured": 9.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "catalog_formulas",
+      "name": "catalog_formulas",
+      "computed": 19215.837243,
+      "measured": 19213.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "resolved_formulas",
+      "name": "resolved_formulas",
+      "computed": 19215.837243,
+      "measured": 19213.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "observable_verified_formulas",
+      "name": "observable_verified_formulas",
+      "computed": 7942.172672,
+      "measured": 7941.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "within_target_2pct",
+      "name": "within_target_2pct",
+      "computed": 6922.022046,
+      "measured": 6921.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "within_tolerable_5pct",
+      "name": "within_tolerable_5pct",
+      "computed": 7942.172672,
+      "measured": 7941.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "per_formula_evaluated",
+      "name": "per_formula_evaluated",
+      "computed": 71.010485,
+      "measured": 71.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "per_formula_verified",
+      "name": "per_formula_verified",
+      "computed": 105.015506,
+      "measured": 105.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "K_FSOT",
+      "name": "K_FSOT",
+      "computed": 0.420284,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    },
+    {
+      "lab": "scalar_solver_lab",
+      "property": "transition_limit",
+      "name": "transition_limit",
+      "computed": 0.680033,
+      "measured": 0.6799329354210508,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_fsot_35_scalar_solver"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.014767,
+    "max_scalar_error_pct": 0.014767,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

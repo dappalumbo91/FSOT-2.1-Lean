@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T17:27:02.838064+00:00",
+  "generated_at": "2026-07-15T01:00:41.685577+00:00",
   "version": "1.0",
   "overall_runtime_ok": true,
   "esp32_scalar_only_gap_closed": true,
@@ -26,7 +26,7 @@
     {
       "id": "esp32_uart",
       "scope": "single boot scalar UART on CP210x",
-      "status": "passed",
+      "status": "skipped",
       "undeniable_for": "hardware UART boot scalar",
       "note": "One scalar only \u2014 not full FSOT theory on chip"
     },

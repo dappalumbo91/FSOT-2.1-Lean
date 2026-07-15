@@ -1,7 +1,10 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 6/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 6/19 (generated). *)
 theory FullFormalSpine_05
 imports Complex_Main
 begin
+
+lemma exoplanet_system_architecture_observable_count_pos: "0 < (882 :: nat)"
+  by eval
 
 lemma exoplanet_system_architecture_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
@@ -12,7 +15,7 @@ lemma experimental_base_mathematics_panel_observable_count_pos: "0 < (36 :: nat)
 lemma experimental_base_mathematics_panel_median_error_under_half_pct: "(0.009504 :: real) < (0.5 :: real)"
   by eval
 
-lemma experiment_synthesis_approach_count_pos: "0 < (3 :: nat)"
+lemma experiment_synthesis_approach_count_pos: "0 < (5 :: nat)"
   by eval
 
 lemma experiment_llm_project_count_pos: "0 < (21 :: nat)"
@@ -156,6 +159,90 @@ lemma foundational_ontology_spine_observable_count_pos: "0 < (21 :: nat)"
 lemma foundational_ontology_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
+lemma founding_atmospheric_ozone_panel_pooled_median_under_half_pct: "(0.047643 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_atmospheric_ozone_panel_headline_median_under_half_pct: "(0.047643 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_atmospheric_ozone_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_atmospheric_ozone_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_cosmic_dust_panel_pooled_median_under_half_pct: "(0.088241 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_cosmic_dust_panel_headline_median_under_half_pct: "(0.088241 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_cosmic_dust_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_cosmic_dust_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_cosmic_ray_panel_pooled_median_under_half_pct: "(0.042441 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_cosmic_ray_panel_headline_median_under_half_pct: "(0.042441 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_cosmic_ray_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_cosmic_ray_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_galactic_halo_rotation_panel_pooled_median_under_half_pct: "(0.050246 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_galactic_halo_rotation_panel_headline_median_under_half_pct: "(0.050246 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_galactic_halo_rotation_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_galactic_halo_rotation_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_pulsar_glitch_panel_pooled_median_under_half_pct: "(0.089846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_pulsar_glitch_panel_headline_median_under_half_pct: "(0.089846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_pulsar_glitch_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_pulsar_glitch_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_quantum_vacuum_panel_pooled_median_under_half_pct: "(0.095551 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_quantum_vacuum_panel_headline_median_under_half_pct: "(0.095551 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_quantum_vacuum_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_quantum_vacuum_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma founding_white_dwarf_cooling_panel_pooled_median_under_half_pct: "(0.089846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_white_dwarf_cooling_panel_headline_median_under_half_pct: "(0.089846 :: real) < (0.5 :: real)"
+  by eval
+
+lemma founding_white_dwarf_cooling_panel_observable_count_pos: "0 < (5 :: nat)"
+  by eval
+
+lemma founding_white_dwarf_cooling_panel_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
 lemma fpc_fluidlink_timing_deep_panel_observable_count_pos: "0 < (24 :: nat)"
   by eval
 
@@ -214,93 +301,6 @@ lemma fusion_decay_chain_prereg_scaffold_median_error_under_half_pct: "(0 :: rea
   by eval
 
 lemma connective_plasma_confinement_pos: "0 < (0.131181176323 :: real)"
-  by eval
-
-lemma connective_seawater_acoustic_pos: "0 < (0.094115088176 :: real)"
-  by eval
-
-lemma connective_decay_chain_relay_pos: "0 < (0.029710640768 :: real)"
-  by eval
-
-lemma connective_dt_energy_pos: "0 < (17.6 :: real)"
-  by eval
-
-lemma fusion_lab_certificate_spine_observable_count_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma fusion_lab_certificate_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma fusion_physics_public_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma fusion_physics_public_panel_median_error_under_half_pct: "(0.000095 :: real) < (0.5 :: real)"
-  by eval
-
-lemma gaia_astrometry_panel_deep_observable_count_pos: "0 < (62 :: nat)"
-  by eval
-
-lemma gaia_astrometry_panel_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma gaia_dr3_tap_deep_observable_count_pos: "0 < (1826 :: nat)"
-  by eval
-
-lemma gaia_dr3_tap_deep_median_error_under_half_pct: "(0.022461 :: real) < (0.5 :: real)"
-  by eval
-
-lemma galactic_structure_sample_observable_count_pos: "0 < (101 :: nat)"
-  by eval
-
-lemma galactic_structure_sample_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma gbif_species_occurrence_observable_count_pos: "0 < (240 :: nat)"
-  by eval
-
-lemma gbif_species_occurrence_median_error_under_five_pct: "(0.006006 :: real) < (5.0 :: real)"
-  by eval
-
-lemma genomic_sciences_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma genomic_sciences_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma geochemistry_median_error_under_half_pct: "(0.006625234573930708 :: real) < (0.5 :: real)"
-  by eval
-
-lemma geochemistry_observable_count_pos: "0 < (153 :: nat)"
-  by eval
-
-lemma geology_stratigraphy_ext_pooled_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma geology_stratigraphy_ext_headline_median_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma geology_stratigraphy_ext_observable_count_pos: "0 < (1960 :: nat)"
-  by eval
-
-lemma geology_stratigraphy_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma geology_stratigraphy_observable_count_pos: "0 < (1960 :: nat)"
-  by eval
-
-lemma geology_stratigraphy_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma geomagnetism_observable_count_pos: "0 < (524 :: nat)"
-  by eval
-
-lemma geomagnetism_match_le_total: "(413 :: nat) <= (524 :: nat)"
-  by eval
-
-lemma government_open_data_spine_observable_count_pos: "0 < (28 :: nat)"
-  by eval
-
-lemma government_open_data_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
 
 end

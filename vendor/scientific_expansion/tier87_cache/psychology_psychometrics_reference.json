@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "source": "literature_anchors_psychometrics_rct",
+  "credential_free": true,
+  "psychometrics": [
+    {"name": "cronbach_alpha_typical", "value": 0.85, "unit": "dimensionless"},
+    {"name": "test_retest_r_typical", "value": 0.80, "unit": "dimensionless"},
+    {"name": "effect_size_cohens_d_small", "value": 0.2, "unit": "dimensionless"},
+    {"name": "effect_size_cohens_d_medium", "value": 0.5, "unit": "dimensionless"},
+    {"name": "effect_size_cohens_d_large", "value": 0.8, "unit": "dimensionless"}
+  ],
+  "rct": [
+    {"name": "placebo_response_rate_pct", "value": 30.0, "unit": "percent"},
+    {"name": "min_clinical_sample_n", "value": 30.0, "unit": "count"},
+    {"name": "phase3_trial_median_n", "value": 300.0, "unit": "count"},
+    {"name": "alpha_significance_threshold", "value": 0.05, "unit": "dimensionless"}
+  ],
+  "cognition": [
+    {"name": "working_memory_span_items", "value": 7.0, "unit": "count"},
+    {"name": "reaction_time_ms_median", "value": 250.0, "unit": "ms"},
+    {"name": "stroop_interference_ms", "value": 100.0, "unit": "ms"}
+  ]
+}

@@ -1,9 +1,9 @@
-generated_at: '2026-07-11T19:46:46.821554+00:00'
+generated_at: '2026-07-15T05:17:52.075527+00:00'
 summary:
   desktop_folders_listed: 54
   projects_existing: 54
-  wired_to_lean: 28
-  unwired_with_content: 19
+  wired_to_lean: 44
+  unwired_with_content: 0
   neurolab_domain_slots: 35
   extension_domain_slots: 4
   math_generator_rule_corpora: 61
@@ -23,8 +23,8 @@ projects:
   path: C:\Users\damia\Desktop\FSOT, Cube Block Trinary Design
   theme: trinary_hardware
   theme_label: Trinary hardware / ESP32 cube
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: trinary_hardware_live_lab
+  wire_status: wired
   exists: true
   item_count: 33
   python_files: 14
@@ -47,8 +47,8 @@ projects:
   path: C:\Users\damia\Desktop\Fluid spacetime omni-theory, FSOT, and the Holy Bible
   theme: omni_theory_humanities
   theme_label: Omni-theory / religious decoder
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: omni_theory_humanities_lab
+  wire_status: wired
   exists: true
   item_count: 14
   python_files: 2317
@@ -59,8 +59,8 @@ projects:
   path: C:\Users\damia\Desktop\New folder (2)
   theme: validators_intrinsic_llm
   theme_label: Multi-language validators + intrinsic LLM
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: validators_intrinsic_llm_lab
+  wire_status: wired
   exists: true
   item_count: 78
   python_files: 5000
@@ -84,7 +84,7 @@ projects:
   theme: model_weights
   theme_label: LLM weight assets
   lean_lab: null
-  wire_status: unwired
+  wire_status: hub_or_skip
   exists: true
   item_count: 16
   python_files: 0
@@ -119,8 +119,8 @@ projects:
   path: C:\Users\damia\Desktop\FSOTLean
   theme: early_lean_mc
   theme_label: Early Lean + Monte Carlo
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: early_lean_mc_lab
+  wire_status: wired
   exists: true
   item_count: 9
   python_files: 1912
@@ -131,8 +131,8 @@ projects:
   path: C:\Users\damia\Desktop\New folder (6)
   theme: bibliography
   theme_label: Bibliography archive
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: bibliography_corpus_lab
+  wire_status: wired
   exists: true
   item_count: 2
   python_files: 0
@@ -167,8 +167,8 @@ projects:
   path: C:\Users\damia\Desktop\Dictionary
   theme: tokenization
   theme_label: FSOT numeric tokenization
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: tokenization_live_lab
+  wire_status: wired
   exists: true
   item_count: 37
   python_files: 17
@@ -179,8 +179,8 @@ projects:
   path: C:\Users\damia\Desktop\fsot QWEN 3VL_Formal_Env
   theme: certified_agent
   theme_label: Qwen formal certified agent
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: certified_agent_formal_lab
+  wire_status: wired
   exists: true
   item_count: 31
   python_files: 11
@@ -212,7 +212,7 @@ projects:
   lean_files: 0
   empty: false
 - folder: Genetics
-  path: I:/FSOT-Physical-Archive/04_Genetics-Longevity
+  path: C:\Users\damia\Desktop\Genetics
   theme: protein_codon
   theme_label: Protein / genetics
   lean_lab: protein_formulas
@@ -251,8 +251,8 @@ projects:
   path: C:\Users\damia\Desktop\fsot qwen 3vl
   theme: vl_agent
   theme_label: Vision-language agent
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: vl_agent_lab
+  wire_status: wired
   exists: true
   item_count: 15
   python_files: 1
@@ -264,7 +264,7 @@ projects:
   theme: model_weights
   theme_label: LLM weight assets
   lean_lab: null
-  wire_status: unwired
+  wire_status: hub_or_skip
   exists: true
   item_count: 1
   python_files: 559
@@ -287,8 +287,8 @@ projects:
   path: C:\Users\damia\Desktop\fsot_rendlesham_page_decoder ailen code
   theme: binary_decoder
   theme_label: Rendlesham binary decoder
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: binary_decoder_lab
+  wire_status: wired
   exists: true
   item_count: 29
   python_files: 21
@@ -323,8 +323,8 @@ projects:
   path: C:\Users\damia\Desktop\Physarum polycephalum,
   theme: biological_cuda
   theme_label: Physarum CUDA biology
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: biological_cuda_lab
+  wire_status: wired
   exists: true
   item_count: 8
   python_files: 800
@@ -371,8 +371,8 @@ projects:
   path: C:\Users\damia\Desktop\Brain
   theme: arxiv_brain
   theme_label: ArXiv integrated brain
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: arxiv_brain_lab
+  wire_status: wired
   exists: true
   item_count: 16
   python_files: 9
@@ -383,8 +383,8 @@ projects:
   path: C:\Users\damia\Desktop\FSOT_3_5
   theme: scalar_solver
   theme_label: FSOT 3.5 dual solver
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: scalar_solver_lab
+  wire_status: wired
   exists: true
   item_count: 7
   python_files: 1
@@ -395,8 +395,8 @@ projects:
   path: C:\Users\damia\Desktop\loop
   theme: arxiv_primitives
   theme_label: V14 arXiv cognitive primitives
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: arxiv_primitives_lab
+  wire_status: wired
   exists: true
   item_count: 12
   python_files: 495
@@ -408,7 +408,7 @@ projects:
   theme: documentation
   theme_label: Architecture docs
   lean_lab: null
-  wire_status: unwired
+  wire_status: hub_or_skip
   exists: true
   item_count: 4
   python_files: 2
@@ -495,7 +495,7 @@ projects:
   wire_status: hub_or_skip
   exists: true
   item_count: 5
-  python_files: 619
+  python_files: 5000
   json_files: 5000
   lean_files: 5000
   empty: false
@@ -503,8 +503,8 @@ projects:
   path: C:\Users\damia\Desktop\New folder (7)
   theme: rust_lean_bridge
   theme_label: "Rust\u2192Lean bridge"
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: rust_lean_bridge_lab
+  wire_status: wired
   exists: true
   item_count: 8
   python_files: 0
@@ -540,12 +540,12 @@ projects:
   theme: living_fsot_hardware
   theme_label: "Living FSOT \u2014 QEMU trinary body + Rust mind gym"
   lean_lab: living_fsot_hardware_lab
-  wire_status: unwired
+  wire_status: wired
   exists: true
-  item_count: 1
-  python_files: 24
-  json_files: 1005
-  lean_files: 0
+  item_count: 2
+  python_files: 1089
+  json_files: 1941
+  lean_files: 331
   empty: false
 - folder: FSOT Photonic V2 Experiments
   path: C:\Users\damia\Desktop\FSOT Photonic V2 Experiments
@@ -563,8 +563,8 @@ projects:
   path: C:\Users\damia\Desktop\FSOT document update
   theme: canonical_oracle
   theme_label: fsot_compute.py authority
-  lean_lab: null
-  wire_status: unwired
+  lean_lab: canonical_oracle_lab
+  wire_status: wired
   exists: true
   item_count: 48
   python_files: 4826

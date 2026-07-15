@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-13T17:27:18.715546+00:00",
+  "generated_at": "2026-07-15T01:00:50.522627+00:00",
   "version": "1.0",
-  "verdict": "QUAD_INCOMPLETE",
+  "verdict": "FIVE_PROVER_QUAD_UNDENIABLE",
   "headline": "Every exported atomic obligation is cross-checked across Lean 4 (authority), Coq/Rocq (coqc + coqchk), Isabelle/HOL, Rust f64 replay, and F* boot-kernel triangulation \u2014 among the strictest formal stacks used for mathematical software.",
   "atomic_spine": {
-    "total_obligations": 2274,
-    "atomic_triangulated": 1781,
-    "false_margin_violations": 13,
+    "total_obligations": 2309,
+    "atomic_triangulated": 1822,
+    "false_margin_violations": 0,
     "pct_atomic_triangulated": 100.0
   },
   "provers": {
     "lean_4": {
       "role": "primary_authority",
-      "theorem_count": 2274,
+      "theorem_count": 2309,
       "export_fraction_pct": 100.0,
-      "modules": 473,
+      "modules": 480,
       "proof_style": "norm_num / decide / linarith / interval certificates",
       "status": "passed"
     },
@@ -30,7 +30,7 @@
         "TranscendentalBoundsNative.v",
         "FullFormalSpine_*.v (chunked)"
       ],
-      "atomic_triangulated_ok": 1781,
+      "atomic_triangulated_ok": 1822,
       "status": "unknown"
     },
     "isabelle_hol": {
@@ -45,7 +45,7 @@
         "TranscendentalBoundsNative.thy",
         "FullFormalSpine_*.thy (chunked)"
       ],
-      "atomic_triangulated_ok": 1781,
+      "atomic_triangulated_ok": 1822,
       "status": "unknown"
     },
     "fstar": {
@@ -72,9 +72,9 @@
     },
     "rust_f64": {
       "role": "systems_language_numeric_replay",
-      "obligation_count": 1873,
+      "obligation_count": 1914,
       "connective_ok": 24,
-      "formal_ok": 1781,
+      "formal_ok": 1822,
       "transcendental_ok": 68,
       "artifact": "verification/rust/fsot_obligation_replay/",
       "status": "passed"
@@ -103,7 +103,7 @@
     {
       "id": "esp32_uart",
       "scope": "single boot scalar UART on CP210x",
-      "status": "passed",
+      "status": "skipped",
       "undeniable_for": "hardware UART boot scalar",
       "note": "One scalar only \u2014 not full FSOT theory on chip"
     },

@@ -471,7 +471,7 @@ lemma geology_stratigraphy_ext_bundle: "(1960 :: nat) = 1960 \<and> True \<and> 
 lemma geology_stratigraphy_bundle: "(1960 :: nat) = 1960 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma geomagnetism_bundle: "(524 :: nat) = 524 \<and> (413 :: nat) = 413 \<and> (13 :: nat) = 13 \<and> True \<and> (0 :: real) < 1"
+lemma geomagnetism_bundle: "(524 :: nat) = 524 \<and> (524 :: nat) = 524 \<and> (13 :: nat) = 13 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma government_open_data_spine_bundle: "(28 :: nat) = 28 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"

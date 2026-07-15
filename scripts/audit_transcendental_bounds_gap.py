@@ -97,10 +97,26 @@ def main() -> int:
     scalar_r = load_scalar_constants()
     exported_bounds = parse_formal_module(BOUNDS, global_r=scalar_r, source_tier="bounds")
 
+    lean_text = BOUNDS.read_text(encoding="utf-8")
+    lean_pi_e_proved = all(
+        marker in lean_text
+        for marker in (
+            "lemma e_lt_27182818286",
+            "lemma pi_gt_314159265358979323846",
+            "lemma pi_lt_314159265358979323847",
+            "pi_gt_d20",
+            "pi_lt_d20",
+            "exp_one_lt_d9",
+        )
+    )
+
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "tier": "83_transcendental_bounds_gap",
         "bounds_lean_file": str(BOUNDS.relative_to(ROOT)),
+        "lean_pi_e_interval_proved": lean_pi_e_proved,
+        "lean_proof_chain": "exp_one_lt_d9 + pi_gt_d20 + pi_lt_d20 (Mathlib)",
+        "coq_float_export_deferred_count": sum(1 for row in excluded_intervals if row.get("exported_as_float_obligation")),
         "exported_float_obligations_from_bounds": len(exported_bounds),
         "excluded_pi_e_interval_lemmas": excluded_intervals,
         "excluded_pi_e_interval_count": len(excluded_intervals),

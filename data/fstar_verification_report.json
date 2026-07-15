@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-13T17:26:15.780646+00:00",
+  "generated_at": "2026-07-15T01:00:19.579998+00:00",
   "tier": "86_fstar_verification",
   "fstar": {
     "status": "passed",
     "tool": "C:\\Users\\damia\\tools\\fstar-v2026.07.05\\bin\\fstar.exe",
-    "entry": "vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarBoot.fst",
+    "entry": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarBoot.fst",
     "modules": [
       "FSOTScalarKernel",
       "FSOTScalarBoot"
     ],
     "returncode": 0,
-    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    vendor/fsot_compute.py\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
+    "stderr_tail": "Verified module: FSOTScalarBoot\nAll verification conditions discharged successfully\n* Warning 241 at I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst(0,0-0,0):\n  - Unable to load\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    since checked file\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst.checked\n    does not exist; will recheck\n    I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\verification\\fstar\\FSOTScalarKernel.fst\n    (suppressing this warning for further modules)\n\n"
   },
   "overall_ok": true
 }

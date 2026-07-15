@@ -1,5 +1,5 @@
 {
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "domain_count": 35,
   "domains_with_numeric_precision": 35,
   "domains_target_band_2pct": 35,
@@ -187,12 +187,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 163,
-      "median_error_pct": 0.0,
-      "p90_error_pct": 0.11335025724100276,
+      "record_count": 305,
+      "median_error_pct": 0.0005610563516671626,
+      "p90_error_pct": 0.10536023728185157,
       "max_error_pct": 1.127,
-      "within_2pct": 163,
-      "within_5pct": 163,
+      "within_2pct": 305,
+      "within_5pct": 305,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -216,12 +216,12 @@
         },
         {
           "lab": "cosmology_higher_waves_lab",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 142,
+          "median_error_pct": 0.002993673573742783,
+          "p90_error_pct": 0.10307477678091498,
+          "max_error_pct": 0.35683948712437213,
+          "within_2pct": 142,
+          "within_5pct": 142
         },
         {
           "lab": "cosmology_bubble_bleed_lab",
@@ -747,12 +747,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": null,
       "sign_mismatch": false,
-      "record_count": 205,
-      "median_error_pct": 0.0,
-      "p90_error_pct": 0.21,
+      "record_count": 347,
+      "median_error_pct": 0.0007354204043789445,
+      "p90_error_pct": 0.13608755937951147,
       "max_error_pct": 1.127,
-      "within_2pct": 205,
-      "within_5pct": 205,
+      "within_2pct": 347,
+      "within_5pct": 347,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -776,12 +776,12 @@
         },
         {
           "lab": "cosmology_higher_waves_lab",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 142,
+          "median_error_pct": 0.002993673573742783,
+          "p90_error_pct": 0.10307477678091498,
+          "max_error_pct": 0.35683948712437213,
+          "within_2pct": 142,
+          "within_5pct": 142
         },
         {
           "lab": "cosmology_bubble_bleed_lab",
@@ -1201,12 +1201,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 9,
-      "median_error_pct": 0.08808351263334355,
-      "p90_error_pct": 4.232801452006084,
+      "record_count": 151,
+      "median_error_pct": 0.003557172593200954,
+      "p90_error_pct": 0.10536023728185157,
       "max_error_pct": 4.232801452006084,
-      "within_2pct": 8,
-      "within_5pct": 9,
+      "within_2pct": 150,
+      "within_5pct": 151,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -1221,24 +1221,44 @@
         },
         {
           "lab": "cosmology_higher_waves_lab",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 142,
+          "median_error_pct": 0.002993673573742783,
+          "p90_error_pct": 0.10307477678091498,
+          "max_error_pct": 0.35683948712437213,
+          "within_2pct": 142,
+          "within_5pct": 142
         }
       ],
       "top_properties": [
         {
+          "property": "wave10",
+          "records": 10,
+          "median_error_pct": 0.0006556117321513212
+        },
+        {
           "property": "wave5",
-          "records": 4,
-          "median_error_pct": 0.009880017051083028
+          "records": 26,
+          "median_error_pct": 0.004174769548765883
+        },
+        {
+          "property": "wave6",
+          "records": 22,
+          "median_error_pct": 0.0003441841587202251
+        },
+        {
+          "property": "wave7",
+          "records": 29,
+          "median_error_pct": 0.003988029700396626
         },
         {
           "property": "wave8",
-          "records": 5,
-          "median_error_pct": 0.2550286534539278
+          "records": 57,
+          "median_error_pct": 0.01642923871328772
+        },
+        {
+          "property": "wave9",
+          "records": 7,
+          "median_error_pct": 0.014278509753575246
         }
       ],
       "diagnostic": null
@@ -1730,12 +1750,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": false,
       "sign_mismatch": false,
-      "record_count": 50,
-      "median_error_pct": 0.021477424424138976,
-      "p90_error_pct": 0.6788269307563042,
+      "record_count": 192,
+      "median_error_pct": 0.004643710259500975,
+      "p90_error_pct": 0.19375824846825943,
       "max_error_pct": 1.127,
-      "within_2pct": 50,
-      "within_5pct": 50,
+      "within_2pct": 192,
+      "within_5pct": 192,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -1759,12 +1779,12 @@
         },
         {
           "lab": "cosmology_higher_waves_lab",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 142,
+          "median_error_pct": 0.002993673573742783,
+          "p90_error_pct": 0.10307477678091498,
+          "max_error_pct": 0.35683948712437213,
+          "within_2pct": 142,
+          "within_5pct": 142
         }
       ],
       "top_properties": [
@@ -1777,6 +1797,36 @@
           "property": "skeleton",
           "records": 20,
           "median_error_pct": 0.21
+        },
+        {
+          "property": "wave10",
+          "records": 10,
+          "median_error_pct": 0.0006556117321513212
+        },
+        {
+          "property": "wave5",
+          "records": 22,
+          "median_error_pct": 0.0020773615251059676
+        },
+        {
+          "property": "wave6",
+          "records": 22,
+          "median_error_pct": 0.0003441841587202251
+        },
+        {
+          "property": "wave7",
+          "records": 29,
+          "median_error_pct": 0.003988029700396626
+        },
+        {
+          "property": "wave8",
+          "records": 52,
+          "median_error_pct": 0.014145689288404753
+        },
+        {
+          "property": "wave9",
+          "records": 7,
+          "median_error_pct": 0.014278509753575246
         }
       ],
       "diagnostic": null

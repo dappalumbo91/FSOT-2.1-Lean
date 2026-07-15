@@ -1,7 +1,130 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 14/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 14/19 (generated). *)
 theory FullFormalSpine_13
 imports Complex_Main
 begin
+
+lemma uniprot_structure_annotations_deep_observable_count_pos: "0 < (121 :: nat)"
+  by eval
+
+lemma uniprot_structure_annotations_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vibra_pattern_stability_positive: "0 < (0.7662378870755164 :: real)"
+  by eval
+
+lemma vibra_avg_S_mean_positive: "0 < (0.4744906315011612 :: real)"
+  by eval
+
+lemma vibra_mc_prob_non_decrease_cp5_le_one: "(1.0 :: real) <= (1.0 :: real)"
+  by eval
+
+lemma virology_ext_pooled_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
+  by eval
+
+lemma virology_ext_headline_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
+  by eval
+
+lemma virology_ext_observable_count_pos: "0 < (163 :: nat)"
+  by eval
+
+lemma virology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma virology_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma virology_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
+  by eval
+
+lemma virology_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma virology_median_error_under_half_pct: "(0.04593318440797614 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
+  by eval
+
+lemma vizier_wds_tap_live_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
+  by eval
+
+lemma vl_distill_atlas_observable_count_pos: "0 < (10 :: nat)"
+  by eval
+
+lemma vl_distill_atlas_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
+  by eval
+
+lemma volcanology_panel_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma volcanology_panel_median_error_under_half_pct: "(0.023502 :: real) < (0.5 :: real)"
+  by eval
+
+lemma volcanology_observable_count_pos: "0 < (90 :: nat)"
+  by eval
+
+lemma volcanology_median_error_under_five_pct: "(0.023502 :: real) < (5.0 :: real)"
+  by eval
+
+lemma warp_psi_friction_pos: "0 < (0.082300635102 :: real)"
+  by eval
+
+lemma warp_psi_node_pos: "0 < (0.059407798774 :: real)"
+  by eval
+
+lemma warp_tunneling_bridge_pos: "0 < (0.053926299704 :: real)"
+  by eval
+
+lemma warp_psi_stabilization_pos: "0 < (2.386649570184 :: real)"
+  by eval
+
+lemma warp_psi_run_pos: "0 < (0.14178559741 :: real)"
+  by eval
+
+lemma warp_delta_phi_stable_pos: "0 < (0.004581413686 :: real)"
+  by eval
+
+lemma warp_y_exotic_byproduct_pos: "0 < (0.011637689406 :: real)"
+  by eval
+
+lemma warp_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
+  by eval
+
+lemma warp_bridge_lt_node: "(0.053926299704 :: real) < (0.059407798774 :: real)"
+  by eval
+
+lemma warp_exotic_lt_friction: "(0.011637689406 :: real) < (0.082300635102 :: real)"
+  by eval
+
+lemma warp_delta_phi_stable_le_raw: "(0.004581413686 :: real) <= (0.004581413686 :: real)"
+  by eval
+
+lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma warp_bh_wh_portal_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma warp_psi_bh_inlet_pos: "0 < (0.009663204175 :: real)"
+  by eval
+
+lemma warp_psi_wh_outlet_pos: "0 < (0.501689416811 :: real)"
+  by eval
+
+lemma warp_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
+  by eval
+
+lemma warp_info_preservation_pos: "0 < (0.981227203621 :: real)"
+  by eval
+
+lemma warp_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
+  by eval
+
+lemma warp_psi_traverse_pos: "0 < (0.0004641395 :: real)"
+  by eval
+
+lemma warp_portal_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
+  by eval
 
 lemma warp_bh_wh_portal_pooled_under_half_pct: "(0 :: real) < (0.5 :: real)"
   by eval
@@ -178,129 +301,6 @@ lemma cmb_term1_base_abs_gt_one_three_five: "(1.35 :: real) < (2.034916981949169
   by eval
 
 lemma domain_term1_lt_neg_08_ai: "(-1.3514171596284352 :: real) < (-0.8 :: real)"
-  by eval
-
-lemma domain_term1_lt_neg_08_cmb: "(-2.0099710610507393 :: real) < (-0.8 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_chemical: "(-0.8 :: real) < (-0.20381690994906282 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_electron: "(-0.8 :: real) < (-0.029359742683883503 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_medical: "(-0.8 :: real) < (-0.2712864292749448 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_molecular: "(-0.8 :: real) < (-0.2798684851972981 :: real)"
-  by eval
-
-lemma domain_term1_gt_neg_08_material: "(-0.8 :: real) < (-0.20218325391197037 :: real)"
-  by eval
-
-lemma domain_term1_positive_biological: "0 < (0.0583105195018667 :: real)"
-  by eval
-
-lemma domain_ai_term1_overcomes_term3: "(-1.3514171596284352 :: real) < (-1.0 :: real)"
-  by eval
-
-lemma domain_cmb_term1_overcomes_term3: "(-2.0099710610507393 :: real) < (-1.0 :: real)"
-  by eval
-
-lemma term1_base_negative_for_high_D_eff: "(-2.1956926285882763 :: real) < (0 :: real)"
-  by eval
-
-lemma term1_base_negative_of_typical_delta: "(-1.7936205462413415 :: real) < (0 :: real)"
-  by eval
-
-lemma term1_dominates_term3_when_base_large: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma term3_dominates_in_tight_window: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma term3_dominates_for_very_high_D: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma term3_dominates_with_recent_hits: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma term3_dominates_for_high_D_no_observer_numeric: "(0.000000000000000007824928 :: real) < (2.1956926285882763 :: real)"
-  by eval
-
-lemma observer_modulates_term1: "(1 :: nat) = (1 :: nat)"
-  by eval
-
-lemma raw_S_positive_of_term1_gt_neg_08: "0 < (1.2240253341904455 :: real)"
-  by eval
-
-lemma raw_S_negative_of_term1_overcomes_term3: "(-0.3514171596284352 :: real) < (0 :: real)"
-  by eval
-
-lemma raw_S_negative_when_term1_overcomes_defaults: "(-1.1349793149885588 :: real) < (0 :: real)"
-  by eval
-
-lemma exp_term_in_term1_base_bounded: "(1.0 :: real) < (3269017.3724721107 :: real)"
-  by eval
-
-lemma perceived_adjust_positive_and_bounded: "(0.91 :: real) < (1.0 :: real) \<and> (1.0 :: real) <= (1.1 :: real)"
-  by eval
-
-lemma term1_positive_of_observer_negative_quirk: "0 < (0.22402533419044554 :: real)"
-  by eval
-
-lemma quirkMod_neg_of_delta_psi_ge_07: "(-0.11470328400949172 :: real) < (0 :: real)"
-  by eval
-
-lemma quirkMod_pos_of_delta_psi_le_06: "0 < (0.14827865209236663 :: real)"
-  by eval
-
-lemma quirkMod_lt_exp_cos_bound: "(-0.11470328400949172 :: real) < (1.9929509804200407 :: real)"
-  by eval
-
-lemma term1_gt_neg_08_of_observer_pos_quirk: "(-0.8 :: real) < (0.22402533419044554 :: real)"
-  by eval
-
-lemma domain_term1_positive_of_params: "0 < (0.22402533419044554 :: real)"
-  by eval
-
-lemma gamma_euler_pos: "0 < (0.5772156649015329 :: real)"
-  by eval
-
-lemma eta_pos: "0 < (0.46694220658433505 :: real)"
-  by eval
-
-lemma new_perceived_param_pos: "0 < (0.30030117056875677 :: real)"
-  by eval
-
-lemma psi_con_pos: "0 < (0.6321205588287557 :: real)"
-  by eval
-
-lemma acoustic_bleed_pos: "0 < (1.046973630587551 :: real)"
-  by eval
-
-lemma acoustic_inflow_pos: "0 < (1.6668538450045731 :: real)"
-  by eval
-
-lemma phi_gt_one: "1 < (1.618033988749895 :: real)"
-  by eval
-
-lemma pi_gt_one: "1 < (3.141592653589793 :: real)"
-  by eval
-
-lemma acoustic_bleed_lt_phi: "(1.046973630587551 :: real) < (1.618033988749895 :: real)"
-  by eval
-
-lemma phi_lt_two: "(1.618033988749895 :: real) < (2.0 :: real)"
-  by eval
-
-lemma phi_lt_16181: "(1.618033988749895 :: real) < (1.6181 :: real)"
-  by eval
-
-lemma psi_con_lt_633: "(0.6321205588287557 :: real) < (0.633 :: real)"
-  by eval
-
-lemma eta_eff_lt_467: "(0.46694220658433505 :: real) < (0.467 :: real)"
   by eval
 
 end

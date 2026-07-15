@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "source": "literature_anchors_creep_fracture_materials",
+  "credential_free": true,
+  "creep": [
+    {"name": "steel_creep_activation_kJ_mol", "value": 200.0, "unit": "kJ_mol"},
+    {"name": "polymer_creep_strain_10yr_pct", "value": 2.0, "unit": "percent"},
+    {"name": "superalloy_creep_life_hours_900C", "value": 10000.0, "unit": "hours"},
+    {"name": "creep_exponent_n_typical", "value": 5.0, "unit": "dimensionless"}
+  ],
+  "fracture": [
+    {"name": "steel_fracture_toughness_MPa_sqrt_m", "value": 50.0, "unit": "MPa_sqrt_m"},
+    {"name": "aluminum_KIc_MPa_sqrt_m", "value": 29.0, "unit": "MPa_sqrt_m"},
+    {"name": "ceramic_fracture_toughness_MPa_sqrt_m", "value": 4.0, "unit": "MPa_sqrt_m"},
+    {"name": "paris_exponent_m_typical", "value": 3.0, "unit": "dimensionless"}
+  ],
+  "mechanical": [
+    {"name": "young_modulus_steel_GPa", "value": 200.0, "unit": "GPa"},
+    {"name": "yield_strength_aluminum_MPa", "value": 275.0, "unit": "MPa"},
+    {"name": "fatigue_endurance_limit_fraction", "value": 0.5, "unit": "dimensionless"}
+  ]
+}

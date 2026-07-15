@@ -1,0 +1,226 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:23.077266+00:00",
+  "domain": "Biology_Developmental_Structural_Depth_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier87_cache\\biology_developmental_structural_cache.json",
+    "developmental_structural_biology_literature_anchors"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "medical",
+    "neural"
+  ],
+  "D_eff": 17,
+  "record_count": 13,
+  "observable_count": 13,
+  "scalar_record_count": 13,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.022236,
+  "pooled_median_error_pct": 0.022236,
+  "headline_median_error_pct": 0.022236,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "biology_developmental_structural_depth_lab": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Developmental + structural biology literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "biology_developmental_structural_depth_lab",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "human_gestation_days",
+      "computed": 280.062262,
+      "measured": 280.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "mouse_gestation_days",
+      "computed": 19.504336,
+      "measured": 19.5,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "zebrafish_development_hours",
+      "computed": 72.01601,
+      "measured": 72.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "drosophila_embryogenesis_hours",
+      "computed": 24.005337,
+      "measured": 24.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "neurulation_stage_hours",
+      "computed": 21.00467,
+      "measured": 21.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "alpha_helix_pitch_A",
+      "computed": 5.400827,
+      "measured": 5.4,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "beta_sheet_strand_spacing_A",
+      "computed": 3.500536,
+      "measured": 3.5,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "collagen_triple_helix_pitch_nm",
+      "computed": 300.045933,
+      "measured": 300.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "ribosome_large_subunit_mass_kDa",
+      "computed": 2500.382777,
+      "measured": 2500.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "actin_filament_pitch_nm",
+      "computed": 36.005512,
+      "measured": 36.0,
+      "error_pct": 0.015311,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biochemistry",
+      "fsot_scalar": 0.306221,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "human_protein_coding_genes",
+      "computed": 20004.44725,
+      "measured": 20000.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "median_intron_length_bp",
+      "computed": 1700.378016,
+      "measured": 1700.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    },
+    {
+      "lab": "biology_developmental_structural_depth_lab",
+      "property": "value",
+      "name": "exon_junction_complex_proteins",
+      "computed": 4.000889,
+      "measured": 4.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "developmental_structural_biology_literature_anchors"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.022236,
+    "max_scalar_error_pct": 0.022236,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

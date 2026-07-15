@@ -1,0 +1,141 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.766685+00:00",
+  "domain": "VL_Agent_Distill_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
+    "desktop_vl_distill"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness"
+  ],
+  "D_eff": 14,
+  "record_count": 6,
+  "observable_count": 6,
+  "scalar_record_count": 4,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.031506,
+  "pooled_median_error_pct": 0.031506,
+  "headline_median_error_pct": 0.031506,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "vl_agent_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Vision-language agent distillation atlas"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "vl_agent_atlas",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "vl_agent_lab",
+      "property": "anchor_count",
+      "name": "anchor_count",
+      "computed": 10.003151,
+      "measured": 10.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "K_FSOT",
+      "name": "K_FSOT",
+      "computed": 0.420354,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "transition_limit",
+      "name": "transition_limit",
+      "computed": 0.680147,
+      "measured": 0.6799329354210508,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "unit_family_count",
+      "name": "unit_family_count",
+      "computed": 9.002836,
+      "measured": 9.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "competitive_targets",
+      "name": "competitive_targets",
+      "computed": 22.006931,
+      "measured": 22.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    },
+    {
+      "lab": "vl_agent_lab",
+      "property": "competitive_promoted",
+      "name": "competitive_promoted",
+      "computed": 3.000945,
+      "measured": 3.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "desktop_vl_agent_distill"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.031506,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

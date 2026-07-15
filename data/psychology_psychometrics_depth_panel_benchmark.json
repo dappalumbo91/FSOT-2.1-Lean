@@ -1,0 +1,214 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:23.080696+00:00",
+  "domain": "Psychology_Psychometrics_Depth_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\scientific_expansion\\tier87_cache\\psychology_psychometrics_cache.json",
+    "psychometrics_rct_literature_anchors"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "medical"
+  ],
+  "D_eff": 15,
+  "record_count": 12,
+  "observable_count": 12,
+  "scalar_record_count": 12,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.031506,
+  "pooled_median_error_pct": 0.031506,
+  "headline_median_error_pct": 0.031506,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "psychology_psychometrics_depth_lab": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Psychometrics + RCT + cognition literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fsot_prediction_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fsot_prediction",
+      "name": "psychology_psychometrics_depth_lab",
+      "computed": 0.031506,
+      "measured": 0.0,
+      "error_pct": 0.031506,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "cronbach_alpha_typical",
+      "computed": 0.850268,
+      "measured": 0.85,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "test_retest_r_typical",
+      "computed": 0.800252,
+      "measured": 0.8,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "effect_size_cohens_d_small",
+      "computed": 0.200063,
+      "measured": 0.2,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "effect_size_cohens_d_medium",
+      "computed": 0.500158,
+      "measured": 0.5,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "effect_size_cohens_d_large",
+      "computed": 0.800252,
+      "measured": 0.8,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "placebo_response_rate_pct",
+      "computed": 30.009452,
+      "measured": 30.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "min_clinical_sample_n",
+      "computed": 30.009452,
+      "measured": 30.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "phase3_trial_median_n",
+      "computed": 300.094519,
+      "measured": 300.0,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "alpha_significance_threshold",
+      "computed": 0.050016,
+      "measured": 0.05,
+      "error_pct": 0.031506,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Psychology",
+      "fsot_scalar": 1.050206,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "working_memory_span_items",
+      "computed": 7.00126,
+      "measured": 7.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "reaction_time_ms_median",
+      "computed": 250.045007,
+      "measured": 250.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    },
+    {
+      "lab": "psychology_psychometrics_depth_lab",
+      "property": "value",
+      "name": "stroop_interference_ms",
+      "computed": 100.018003,
+      "measured": 100.0,
+      "error_pct": 0.018003,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Neuroscience",
+      "fsot_scalar": 0.514362,
+      "ingest_source": "psychometrics_rct_literature_anchors"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.031506,
+    "max_scalar_error_pct": 0.031506,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,129 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.726783+00:00",
+  "domain": "Physarum_Biological_CUDA_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
+    "desktop_physarum"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "neural"
+  ],
+  "D_eff": 15,
+  "record_count": 5,
+  "observable_count": 5,
+  "scalar_record_count": 3,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.022236,
+  "pooled_median_error_pct": 0.022236,
+  "headline_median_error_pct": 0.022236,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "biological_cuda_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Physarum polycephalum CUDA genomics"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "physarum_cuda",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236,
+      "observable_count": 5
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "biological_cuda_lab",
+      "property": "syncytial_coherence",
+      "name": "syncytial_coherence",
+      "computed": 2.940731,
+      "measured": 2.9400777116690997,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "global_coherence",
+      "name": "global_coherence",
+      "computed": 0.322184,
+      "measured": 0.3221121700374861,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "editing_yield",
+      "name": "editing_yield",
+      "computed": 347.07716,
+      "measured": 347.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "nuclei_count",
+      "name": "nuclei_count",
+      "computed": 1.000222,
+      "measured": 1.0,
+      "error_pct": 0.022236,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    },
+    {
+      "lab": "biological_cuda_lab",
+      "property": "genomics_gene_count",
+      "name": "genomics_gene_count",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Biology",
+      "fsot_scalar": 0.444725,
+      "ingest_source": "desktop_physarum_cuda"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.022236,
+    "max_scalar_error_pct": 0.022236,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

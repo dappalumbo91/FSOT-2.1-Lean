@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-07-13T17:26:05.896104+00:00",
+  "generated_at": "2026-07-15T01:00:11.084692+00:00",
   "tier": "82_cross_refinement_lean_isabelle",
-  "obligation_count_total": 2274,
-  "obligation_count_provable": 2207,
-  "obligation_count_atomic_provable": 1781,
-  "obligation_count_bundle_conj": 426,
-  "obligation_count_margin_violations": 67,
-  "isabelle_chunks_found": 19,
-  "isabelle_lemmas_indexed": 1781,
+  "obligation_count_total": 2309,
+  "obligation_count_provable": 2255,
+  "obligation_count_atomic_provable": 1822,
+  "obligation_count_bundle_conj": 433,
+  "obligation_count_margin_violations": 54,
+  "isabelle_chunks_found": 20,
+  "isabelle_lemmas_indexed": 1822,
   "triangulation": {
-    "atomic_triangulated_ok": 1781,
+    "atomic_triangulated_ok": 1822,
     "atomic_triangulated_fail": 0,
-    "bundle_conj_triangulated_ok": 426,
+    "bundle_conj_triangulated_ok": 433,
     "bundle_conj_triangulated_fail": 0,
     "pct_atomic_triangulated": 100.0
   },
   "margin_summary_by_kind": {
     "nat_pos": {
-      "count": 546,
+      "count": 562,
       "min_margin": "2",
-      "median_margin": "36",
+      "median_margin": "35",
       "max_margin": "271813"
     },
     "r_lt_lit_pure": {
@@ -29,21 +29,21 @@
       "max_margin": "19.102"
     },
     "lt_lit": {
-      "count": 205,
+      "count": 209,
       "min_margin": "0E-15",
-      "median_margin": "0.0991917062585859598",
+      "median_margin": "0.08947400008171815",
       "max_margin": "3269016.3724721107"
     },
     "lt_half": {
-      "count": 139,
+      "count": 154,
       "min_margin": "0.007472",
-      "median_margin": "0.482163937115593848",
+      "median_margin": "0.480495600427523394",
       "max_margin": "0.5"
     },
     "gt_lit": {
-      "count": 133,
+      "count": 135,
       "min_margin": "0E-15",
-      "median_margin": "0.042994235377287",
+      "median_margin": "0.0482032061315143",
       "max_margin": "1446257063881.475"
     },
     "nat_le_sym": {
@@ -59,13 +59,13 @@
       "max_margin": "1.0"
     },
     "pos": {
-      "count": 93,
+      "count": 94,
       "min_margin": "5.5E-19",
       "median_margin": "0.7961830900509372",
       "max_margin": "58.493466"
     },
     "nat_gt_lit": {
-      "count": 12,
+      "count": 13,
       "min_margin": "1",
       "median_margin": "5",
       "max_margin": "70"
@@ -77,8 +77,8 @@
       "max_margin": "5"
     },
     "gt_one": {
-      "count": 5,
-      "min_margin": "0.618033988749895",
+      "count": 6,
+      "min_margin": "0.1099062765752818",
       "median_margin": "0.722776467449",
       "max_margin": "2.141592653589793"
     },
@@ -125,7 +125,7 @@
       "max_margin": "5.37899567E-8"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.482163937115593848",
+  "lt_half_pooled_median_margin_to_bound": "0.480495600427523394",
   "margin_violations_excluded": [
     {
       "id": "aether_prime_priors_bundle",
@@ -198,15 +198,6 @@
       "violation": null
     },
     {
-      "id": "domains_with_empirical_data_full",
-      "module": "DomainCoveragePriors",
-      "violation": {
-        "violation_kind": "equality_false",
-        "left": "30",
-        "right": "35"
-      }
-    },
-    {
       "id": "domain_coverage_priors_bundle",
       "module": "DomainCoveragePriors",
       "violation": null
@@ -240,17 +231,6 @@
       "id": "fuel_lab_compound_bundle",
       "module": "FuelPriors",
       "violation": null
-    },
-    {
-      "id": "higgs_branching_max_error_under_half_pct",
-      "module": "HiggsBranchingPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "4.232801452006084",
-        "overrun": "3.732801452006084",
-        "margin_to_bound": "-3.732801452006084"
-      }
     },
     {
       "id": "higgs_branching_bundle",
@@ -291,109 +271,6 @@
       "id": "math_generator_priors_bundle",
       "module": "MathGeneratorPriors",
       "violation": null
-    },
-    {
-      "id": "cohort_canonical_scalar_min_positive",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "non_positive",
-        "actual": "0.0"
-      }
-    },
-    {
-      "id": "canonical_bridge_scale_gt_one",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "not_gt_one",
-        "actual": "0.0",
-        "shortfall": "1.0"
-      }
-    },
-    {
-      "id": "allen_cohort_cell_count_pos",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "non_positive_nat",
-        "actual": "0"
-      }
-    },
-    {
-      "id": "neurolab_smiles_mapped_records_pos",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "non_positive_nat",
-        "actual": "0"
-      }
-    },
-    {
-      "id": "allen_cohort_fi_median_rel_err_lt_thirty_pct",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.3",
-        "actual": "1.0",
-        "overrun": "0.7",
-        "margin_to_bound": "-0.7"
-      }
-    },
-    {
-      "id": "hero_certified_fi_mean_rel_err_lt_fifteen_pct",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.15",
-        "actual": "1.0",
-        "overrun": "0.85",
-        "margin_to_bound": "-0.85"
-      }
-    },
-    {
-      "id": "hero_canonical_bridge_mean_rel_err_lt_twelve_pct",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.12",
-        "actual": "1.0",
-        "overrun": "0.88",
-        "margin_to_bound": "-0.88"
-      }
-    },
-    {
-      "id": "hero_canonical_bridge_delta_lt_five_pct",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.05",
-        "actual": "1.0",
-        "overrun": "0.95",
-        "margin_to_bound": "-0.95"
-      }
-    },
-    {
-      "id": "allen_cohort_fi_pearson_r_gt_fifty_five",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "below_literal_bound",
-        "bound": "0.55",
-        "actual": "0.0"
-      }
-    },
-    {
-      "id": "hero_certified_verifier_confidence_gt_ninety_pct",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "below_literal_bound",
-        "bound": "0.9",
-        "actual": "0.0"
-      }
-    },
-    {
-      "id": "neurolab_strict_empirical_records_large",
-      "module": "NeuronCohortPriors",
-      "violation": {
-        "violation_kind": "non_positive_nat",
-        "actual": "0"
-      }
     },
     {
       "id": "neuron_cohort_priors_bundle",

@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-07-12T12:39:48.889713+00:00",
-  "mega_deep": true,
+  "checked_at": "2026-07-15T01:25:08.707224+00:00",
+  "mega_deep": false,
   "channels": [
     {
       "channel": "gbif",
       "status": "ok",
-      "detail": "count=3736048101"
+      "detail": "count=3737215114"
     },
     {
       "channel": "gwosc",
@@ -26,7 +26,7 @@
       "channel": "vizier_wds",
       "status": "fail",
       "error_type": "RuntimeError",
-      "error": "vizier_tap_get: HTTP Error 503: Service Unavailable; vizier_tap_post: HTTP Error 503: Service Unavailable"
+      "error": "vizier_tap_get: HTTP Error 404: Not Found; vizier_tap_post: HTTP Error 404: Not Found"
     },
     {
       "channel": "materials_project",
@@ -42,8 +42,125 @@
       "channel": "pubchem_pug",
       "status": "ok",
       "detail": "cid=2244 ok"
+    },
+    {
+      "channel": "jpl_ssd_cad",
+      "status": "ok",
+      "detail": "count=5"
+    },
+    {
+      "channel": "noaa_goes_xray",
+      "status": "ok",
+      "detail": "rows=716"
+    },
+    {
+      "channel": "clinicaltrials_v2",
+      "status": "ok",
+      "detail": "studies=3"
+    },
+    {
+      "channel": "osti_doe_records",
+      "status": "ok",
+      "detail": "records=3"
+    },
+    {
+      "channel": "uap_war_gov_hf",
+      "status": "ok",
+      "detail": "documents_jsonl_lines=158"
+    },
+    {
+      "channel": "ncbi_gene_eutils",
+      "status": "ok",
+      "detail": "gene=BRCA1"
+    },
+    {
+      "channel": "crossref_works",
+      "status": "ok",
+      "detail": "items=3"
+    },
+    {
+      "channel": "inaturalist_obs",
+      "status": "ok",
+      "detail": "results=3"
+    },
+    {
+      "channel": "noaa_ndbc_buoy",
+      "status": "ok",
+      "detail": "bytes=608838"
+    },
+    {
+      "channel": "open_meteo_forecast",
+      "status": "ok",
+      "detail": "hours=24"
+    },
+    {
+      "channel": "tier82_usgs_nwis",
+      "status": "ok",
+      "detail": "series=1"
+    },
+    {
+      "channel": "tier82_soilgrids",
+      "status": "fail",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 503: Service Temporarily Unavailable"
+    },
+    {
+      "channel": "tier82_natural_earth",
+      "status": "ok",
+      "detail": "features=177"
+    },
+    {
+      "channel": "tier84_world_bank",
+      "status": "ok",
+      "detail": "rows=3"
+    },
+    {
+      "channel": "tier84_arxiv_grqc",
+      "status": "ok",
+      "detail": "bytes=4580"
+    },
+    {
+      "channel": "tier84_pbdb",
+      "status": "ok",
+      "detail": "records=3"
+    },
+    {
+      "channel": "tier84_obis",
+      "status": "ok",
+      "detail": "results=10"
+    },
+    {
+      "channel": "tier85_exoplanet_tap",
+      "status": "ok",
+      "detail": "bytes=24"
+    },
+    {
+      "channel": "tier85_open_meteo_archive",
+      "status": "fail",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: Bad Request"
+    },
+    {
+      "channel": "tier85_crossref_history",
+      "status": "ok",
+      "detail": "items=2"
+    },
+    {
+      "channel": "tier86_nist_codata",
+      "status": "ok",
+      "detail": "bytes=40801"
+    },
+    {
+      "channel": "tier87_arxiv_quantph",
+      "status": "ok",
+      "detail": "bytes=4495"
+    },
+    {
+      "channel": "tier89_the_well_stats",
+      "status": "ok",
+      "detail": "bytes=1354"
     }
   ],
-  "fail_count": 1,
-  "ok_count": 7
+  "fail_count": 3,
+  "ok_count": 28
 }

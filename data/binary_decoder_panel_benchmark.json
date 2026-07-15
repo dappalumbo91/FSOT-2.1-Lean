@@ -1,0 +1,165 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.726783+00:00",
+  "domain": "Binary_Decoder_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
+    "desktop_binary_decoder"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai"
+  ],
+  "D_eff": 13,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 7,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.008488,
+  "pooled_median_error_pct": 0.008488,
+  "headline_median_error_pct": 0.008488,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "binary_decoder_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Rendlesham page-14 binary trace decoder"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.008488,
+      "measured": 0.0,
+      "error_pct": 0.008488,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "rendlesham_decoder",
+      "computed": 0.008488,
+      "measured": 0.0,
+      "error_pct": 0.008488,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "binary_decoder_lab",
+      "property": "branching_event_count",
+      "name": "branching_event_count",
+      "computed": 17.001443,
+      "measured": 17.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "total_steps",
+      "name": "rendlesham_trace",
+      "computed": 52.004414,
+      "measured": 52.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "time_in_core",
+      "name": "rendlesham_trace",
+      "computed": 14.001188,
+      "measured": 14.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "time_in_burst",
+      "name": "rendlesham_trace",
+      "computed": 3.000255,
+      "measured": 3.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "time_in_fragmented",
+      "name": "rendlesham_trace",
+      "computed": 35.002971,
+      "measured": 35.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "branching_events",
+      "name": "rendlesham_trace",
+      "computed": 17.001443,
+      "measured": 17.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "detected_loops",
+      "name": "rendlesham_trace",
+      "computed": 65.005517,
+      "measured": 65.0,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    },
+    {
+      "lab": "binary_decoder_lab",
+      "property": "avg_scalar",
+      "name": "rendlesham_trace",
+      "computed": 12.619596,
+      "measured": 12.618524970840754,
+      "error_pct": 0.008488,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Particle_Astrophysics",
+      "fsot_scalar": -0.424412,
+      "ingest_source": "desktop_rendlesham_binary_decoder"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.008488,
+    "max_scalar_error_pct": 0.008488,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

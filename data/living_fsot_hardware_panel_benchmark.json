@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-12T16:20:16.656341+00:00",
+  "generated_at": "2026-07-15T05:17:19.691989+00:00",
   "domain": "Living_FSOT_Hardware_Panel",
-  "authority_path": "vendor/fsot_compute.py",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
-    "vendor/fsot_compute.py\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\living_fsot_hardware_cache.json",
     "desktop_living_fsot"
   ],
   "maps_to_lean": [
@@ -41,20 +41,7 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 77,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.031506,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 77
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,20 +50,7 @@
       "computed": 0.031506,
       "measured": 0.0,
       "error_pct": 0.031506,
-      "observable_count": 77,
-      "domain_display_name": "tier gap fill",
-      "display_name": "living fsot organs",
-      "scientific_measurement": {
-        "delta": 0.031506,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 77
     }
   ],
   "material_records": [
@@ -90,20 +64,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Neuroscience",
       "fsot_scalar": 0.514362,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "domain_display_name": "living fsot hardware",
-      "display_name": "habitat rust",
-      "scientific_measurement": {
-        "delta": 9.632e-05,
-        "delta_pct": 0.017994,
-        "effective_error_pct": 0.017994,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_living_fsot_habitat_rust"
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -115,20 +76,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Computing",
       "fsot_scalar": -0.147673,
-      "ingest_source": "desktop_living_fsot_habitat_rust",
-      "domain_display_name": "living fsot hardware",
-      "display_name": "habitat rust",
-      "scientific_measurement": {
-        "delta": 0.013291,
-        "delta_pct": 0.014768,
-        "effective_error_pct": 0.014768,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "ingest_source": "desktop_living_fsot_habitat_rust"
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -142,20 +90,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 cognitive",
-      "scientific_measurement": {
-        "delta": 0.00030484,
-        "delta_pct": 0.031502,
-        "effective_error_pct": 0.031502,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -169,20 +104,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 language",
-      "scientific_measurement": {
-        "delta": 0.0002162,
-        "delta_pct": 0.03152,
-        "effective_error_pct": 0.03152,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -196,20 +118,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 code",
-      "scientific_measurement": {
-        "delta": 0.000315,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -223,20 +132,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 vision",
-      "scientific_measurement": {
-        "delta": 0.00031437,
-        "delta_pct": 0.031486,
-        "effective_error_pct": 0.031486,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -250,20 +146,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 knowledge",
-      "scientific_measurement": {
-        "delta": 0.00031466,
-        "delta_pct": 0.031488,
-        "effective_error_pct": 0.031488,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -277,20 +160,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 collective",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -304,20 +174,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 audio",
-      "scientific_measurement": {
-        "delta": 0.000257,
-        "delta_pct": 0.031455,
-        "effective_error_pct": 0.031455,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -331,20 +188,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 video",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -358,20 +202,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 js",
-      "scientific_measurement": {
-        "delta": 0.00028114,
-        "delta_pct": 0.031514,
-        "effective_error_pct": 0.031514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -385,20 +216,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 composition",
-      "scientific_measurement": {
-        "delta": 3.2e-05,
-        "delta_pct": 0.032,
-        "effective_error_pct": 0.032,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -412,20 +230,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.25,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 code l2",
-      "scientific_measurement": {
-        "delta": 0.000148,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -439,20 +244,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 gen acc",
-      "scientific_measurement": {
-        "delta": 0.00023801,
-        "delta_pct": 0.031449,
-        "effective_error_pct": 0.031449,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -466,20 +258,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 self model",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -493,20 +272,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.8,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 bench",
-      "scientific_measurement": {
-        "delta": 0.000194,
-        "delta_pct": 0.031432,
-        "effective_error_pct": 0.031432,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -520,20 +286,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "elite-g90-0 bench zs",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -547,20 +300,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 cognitive",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.03156,
-        "effective_error_pct": 0.03156,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -574,20 +314,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 language",
-      "scientific_measurement": {
-        "delta": 0.000152,
-        "delta_pct": 0.031561,
-        "effective_error_pct": 0.031561,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -601,20 +328,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 code",
-      "scientific_measurement": {
-        "delta": 6e-05,
-        "delta_pct": 0.031579,
-        "effective_error_pct": 0.031579,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -628,20 +342,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 vision",
-      "scientific_measurement": {
-        "delta": 3.581e-05,
-        "delta_pct": 0.031219,
-        "effective_error_pct": 0.031219,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -655,20 +356,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 knowledge",
-      "scientific_measurement": {
-        "delta": 0.0002804,
-        "delta_pct": 0.031546,
-        "effective_error_pct": 0.031546,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -682,20 +370,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 collective",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -709,20 +384,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 audio",
-      "scientific_measurement": {
-        "delta": 0.000257,
-        "delta_pct": 0.031455,
-        "effective_error_pct": 0.031455,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -736,20 +398,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 video",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -763,20 +412,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 js",
-      "scientific_measurement": {
-        "delta": 0.00028114,
-        "delta_pct": 0.031514,
-        "effective_error_pct": 0.031514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -790,20 +426,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 composition",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -817,20 +440,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.25,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 code l2",
-      "scientific_measurement": {
-        "delta": 3.7e-05,
-        "delta_pct": 0.031787,
-        "effective_error_pct": 0.031787,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -844,20 +454,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 gen acc",
-      "scientific_measurement": {
-        "delta": 0.0002472,
-        "delta_pct": 0.031558,
-        "effective_error_pct": 0.031558,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -871,20 +468,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 self model",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -898,20 +482,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.8,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 bench",
-      "scientific_measurement": {
-        "delta": 0.000194,
-        "delta_pct": 0.031432,
-        "effective_error_pct": 0.031432,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -925,20 +496,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-1 bench zs",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -952,20 +510,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 cognitive",
-      "scientific_measurement": {
-        "delta": 0.00029714,
-        "delta_pct": 0.031516,
-        "effective_error_pct": 0.031516,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -979,20 +524,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 language",
-      "scientific_measurement": {
-        "delta": 0.000152,
-        "delta_pct": 0.031561,
-        "effective_error_pct": 0.031561,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1006,20 +538,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 code",
-      "scientific_measurement": {
-        "delta": 6e-05,
-        "delta_pct": 0.031579,
-        "effective_error_pct": 0.031579,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1033,20 +552,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 vision",
-      "scientific_measurement": {
-        "delta": 3.581e-05,
-        "delta_pct": 0.031219,
-        "effective_error_pct": 0.031219,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1060,20 +566,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 knowledge",
-      "scientific_measurement": {
-        "delta": 0.0002804,
-        "delta_pct": 0.031546,
-        "effective_error_pct": 0.031546,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1087,20 +580,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 collective",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1114,20 +594,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 audio",
-      "scientific_measurement": {
-        "delta": 0.000257,
-        "delta_pct": 0.031455,
-        "effective_error_pct": 0.031455,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1141,20 +608,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 video",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1168,20 +622,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 js",
-      "scientific_measurement": {
-        "delta": 0.00028114,
-        "delta_pct": 0.031514,
-        "effective_error_pct": 0.031514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1195,20 +636,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 composition",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1222,20 +650,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.25,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 code l2",
-      "scientific_measurement": {
-        "delta": 3.7e-05,
-        "delta_pct": 0.031787,
-        "effective_error_pct": 0.031787,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1249,20 +664,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 gen acc",
-      "scientific_measurement": {
-        "delta": 0.0002472,
-        "delta_pct": 0.031558,
-        "effective_error_pct": 0.031558,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1276,20 +678,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 self model",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1303,20 +692,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.8,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 bench",
-      "scientific_measurement": {
-        "delta": 0.000194,
-        "delta_pct": 0.031432,
-        "effective_error_pct": 0.031432,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1330,20 +706,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-2 bench zs",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1357,20 +720,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 cognitive",
-      "scientific_measurement": {
-        "delta": 0.00029541,
-        "delta_pct": 0.031464,
-        "effective_error_pct": 0.031464,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1384,20 +734,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 language",
-      "scientific_measurement": {
-        "delta": 0.000152,
-        "delta_pct": 0.031561,
-        "effective_error_pct": 0.031561,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1411,20 +748,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 code",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1438,20 +762,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 vision",
-      "scientific_measurement": {
-        "delta": 3.581e-05,
-        "delta_pct": 0.031219,
-        "effective_error_pct": 0.031219,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1465,20 +776,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 knowledge",
-      "scientific_measurement": {
-        "delta": 0.000272,
-        "delta_pct": 0.031464,
-        "effective_error_pct": 0.031464,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1492,20 +790,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 collective",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1519,20 +804,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 audio",
-      "scientific_measurement": {
-        "delta": 0.000257,
-        "delta_pct": 0.031455,
-        "effective_error_pct": 0.031455,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1546,20 +818,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 video",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1573,20 +832,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 js",
-      "scientific_measurement": {
-        "delta": 0.00028114,
-        "delta_pct": 0.031514,
-        "effective_error_pct": 0.031514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1600,20 +846,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 composition",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1627,20 +860,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.25,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 code l2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1654,20 +874,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 gen acc",
-      "scientific_measurement": {
-        "delta": 0.0002472,
-        "delta_pct": 0.031558,
-        "effective_error_pct": 0.031558,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1681,20 +888,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 self model",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1708,20 +902,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.8,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 bench",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1735,20 +916,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-3 bench zs",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1762,20 +930,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 cognitive",
-      "scientific_measurement": {
-        "delta": 0.00030489,
-        "delta_pct": 0.03152,
-        "effective_error_pct": 0.03152,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1789,20 +944,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 language",
-      "scientific_measurement": {
-        "delta": 0.000152,
-        "delta_pct": 0.031561,
-        "effective_error_pct": 0.031561,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1816,20 +958,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 code",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1843,20 +972,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.62,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 vision",
-      "scientific_measurement": {
-        "delta": 3.581e-05,
-        "delta_pct": 0.031219,
-        "effective_error_pct": 0.031219,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1870,20 +986,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 knowledge",
-      "scientific_measurement": {
-        "delta": 0.000272,
-        "delta_pct": 0.031464,
-        "effective_error_pct": 0.031464,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1897,20 +1000,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 collective",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1924,20 +1014,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 audio",
-      "scientific_measurement": {
-        "delta": 0.000257,
-        "delta_pct": 0.031455,
-        "effective_error_pct": 0.031455,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1951,20 +1028,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.72,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 video",
-      "scientific_measurement": {
-        "delta": 0.000256,
-        "delta_pct": 0.0315,
-        "effective_error_pct": 0.0315,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -1978,20 +1042,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.85,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 js",
-      "scientific_measurement": {
-        "delta": 0.00028114,
-        "delta_pct": 0.031514,
-        "effective_error_pct": 0.031514,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2005,20 +1056,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.55,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 composition",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2032,20 +1070,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.25,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 code l2",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2059,20 +1084,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": false,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 gen acc",
-      "scientific_measurement": {
-        "delta": 0.0002472,
-        "delta_pct": 0.031558,
-        "effective_error_pct": 0.031558,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": false
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2086,20 +1098,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 self model",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2113,20 +1112,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.8,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 bench",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     },
     {
       "lab": "living_fsot_hardware_lab",
@@ -2140,20 +1126,7 @@
       "fsot_scalar": 1.050206,
       "ingest_source": "desktop_living_fsot_habitat_rust",
       "threshold": 0.7,
-      "weak": true,
-      "domain_display_name": "living fsot hardware",
-      "display_name": "org-g0-4 bench zs",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "weak": true
     }
   ],
   "margin_summary": {
@@ -2167,19 +1140,5 @@
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },
-  "fsot_precision_gate_pct": 0.5,
-  "display_name": "Living FSOT Hardware Panel",
-  "tier_label": "Tier 88",
-  "scientific_precision_summary": {
-    "scalar_count": 77,
-    "median_error_pct": 0.031455,
-    "max_error_pct": 0.032,
-    "mean_abs_delta": 0.00031188805194805184,
-    "precision_tier_counts": {
-      "green": 77
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-15T00:53:49.209816+00:00"
+  "fsot_precision_gate_pct": 0.5
 }

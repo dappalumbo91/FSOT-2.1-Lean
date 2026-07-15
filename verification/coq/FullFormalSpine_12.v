@@ -1,10 +1,133 @@
-(* FSOT Tier 80 — FullFormalSpine chunk 13/18 (generated). *)
+(* FSOT Tier 80 — FullFormalSpine chunk 13/19 (generated). *)
 (* Independent of Lean proof terms — same decimal obligations. *)
 From Stdlib Require Import Reals.
 From Stdlib Require Import Psatz.
 From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
+
+Lemma stsci_mast_telescope_median_error_under_five_pct : (0.022461%R) < (5.0%R).
+Proof. lra. Qed.
+
+Lemma stumped_observables_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stumped_observables_panel_median_error_under_half_pct : (0.029748999999999998%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma stumped_observables_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma stumped_observables_spine_median_error_under_half_pct : (0.027761%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma superheavy_element_stability_panel_observable_count_pos : (0 < 50)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma superheavy_element_stability_panel_median_error_under_half_pct : (0.000001%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma superheavy_island_completion_spine_observable_count_pos : (0 < 43)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma superheavy_island_completion_spine_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma superheavy_island_emergence_simulation_observable_count_pos : (0 < 44)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma superheavy_island_emergence_simulation_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma supply_chain_ext_pooled_median_under_half_pct : (0.01801902489293558%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma supply_chain_ext_headline_median_under_half_pct : (0.01801902489293558%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma supply_chain_ext_observable_count_pos : (0 < 220)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma supply_chain_ext_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma supply_chain_logistics_panel_observable_count_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma supply_chain_logistics_panel_median_error_under_half_pct : (0.02584%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma supply_chain_logistics_observable_count_pos : (0 < 40)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma supply_chain_logistics_median_error_under_half_pct : (0.03230022603427978%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma symbolic_archetype_panel_observable_count_pos : (0 < 28)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma symbolic_archetype_panel_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma synthetic_biology_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma synthetic_biology_observable_count_pos : (0 < 20)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_event_count_pos : (0 < 500)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_boundary_count_pos : (0 < 241)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma tectonics_match_le_total : (500 <= 500)%nat.
+Proof. apply Nat.leb_le; reflexivity. Qed.
+
+Lemma term3_acoustic_bleed_depth_observable_count_pos : (0 < 23)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma term3_acoustic_bleed_depth_median_error_under_half_pct : (0.008381497018408523%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma theory_completeness_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma theory_completeness_spine_median_error_under_half_pct : (0.021927861384483893%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma thesis_intrinsic_best_rmse_positive : 0 < (6.763968608085996%R).
+Proof. lra. Qed.
+
+Lemma thesis_wave_target_count_pos : (0 < 98)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma thesis_intrinsic_screen_count_pos : (0 < 58)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma thesis_simulation_observable_count_pos : (0 < 156)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma thesis_simulation_components_le_total : (156 = 156)%nat.
+Proof. reflexivity. Qed.
+
+Lemma the_well_outcomes_verification_panel_observable_count_pos : (0 < 381)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma the_well_outcomes_verification_panel_median_error_under_half_pct : (0.031159%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma the_well_spot_check_panel_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma the_well_spot_check_panel_median_error_under_half_pct : (0.031159%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma the_well_verification_spine_observable_count_pos : (0 < 24)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma the_well_verification_spine_median_error_under_half_pct : (0.028287%R) < (0.5%R).
+Proof. lra. Qed.
 
 Lemma tier_93_dual_wave_spine_observable_count_pos : (0 < 24)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
@@ -181,128 +304,5 @@ Lemma uniprot_protein_annotations_observable_count_pos : (0 < 22)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma uniprot_protein_annotations_median_error_under_five_pct : (0.026684%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma uniprot_structure_annotations_deep_observable_count_pos : (0 < 121)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma uniprot_structure_annotations_deep_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vibra_pattern_stability_positive : 0 < (0.7662378870755164%R).
-Proof. lra. Qed.
-
-Lemma vibra_avg_S_mean_positive : 0 < (0.4744906315011612%R).
-Proof. lra. Qed.
-
-Lemma vibra_mc_prob_non_decrease_cp5_le_one : (1.0%R) <= (1.0%R).
-Proof. lra. Qed.
-
-Lemma virology_ext_pooled_median_under_half_pct : (0.04593318440798183%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma virology_ext_headline_median_under_half_pct : (0.04593318440798183%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma virology_ext_observable_count_pos : (0 < 163)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma virology_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma virology_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma virology_panel_median_error_under_half_pct : (0.022236%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma virology_observable_count_pos : (0 < 50)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma virology_median_error_under_half_pct : (0.04593318440797614%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 121)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vizier_wds_tap_live_deep_median_error_under_half_pct : (0.026954%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma vl_distill_atlas_observable_count_pos : (0 < 10)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma vl_distill_atlas_median_error_under_five_pct : 0%R < (5.0%R).
-Proof. lra. Qed.
-
-Lemma volcanology_panel_observable_count_pos : (0 < 90)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma volcanology_panel_median_error_under_half_pct : (0.023502%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma volcanology_observable_count_pos : (0 < 90)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma volcanology_median_error_under_five_pct : (0.023502%R) < (5.0%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_friction_pos : 0 < (0.082300635102%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_node_pos : 0 < (0.059407798774%R).
-Proof. lra. Qed.
-
-Lemma warp_tunneling_bridge_pos : 0 < (0.053926299704%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_stabilization_pos : 0 < (2.386649570184%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_run_pos : 0 < (0.14178559741%R).
-Proof. lra. Qed.
-
-Lemma warp_delta_phi_stable_pos : 0 < (0.004581413686%R).
-Proof. lra. Qed.
-
-Lemma warp_y_exotic_byproduct_pos : 0 < (0.011637689406%R).
-Proof. lra. Qed.
-
-Lemma warp_stabilization_margin_gt_one : 1 < (1.722776467449%R).
-Proof. lra. Qed.
-
-Lemma warp_bridge_lt_node : (0.053926299704%R) < (0.059407798774%R).
-Proof. lra. Qed.
-
-Lemma warp_exotic_lt_friction : (0.011637689406%R) < (0.082300635102%R).
-Proof. lra. Qed.
-
-Lemma warp_delta_phi_stable_le_raw : (0.004581413686%R) <= (0.004581413686%R).
-Proof. lra. Qed.
-
-Lemma warp_bh_wh_portal_panel_observable_count_pos : (0 < 24)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma warp_bh_wh_portal_panel_median_error_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_bh_inlet_pos : 0 < (0.009663204175%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_wh_outlet_pos : 0 < (0.501689416811%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_portal_doorway_pos : 0 < (0.009663204175%R).
-Proof. lra. Qed.
-
-Lemma warp_info_preservation_pos : 0 < (0.981227203621%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_entangle_gate_pos : 0 < (0.04803163401%R).
-Proof. lra. Qed.
-
-Lemma warp_psi_traverse_pos : 0 < (0.000464139486%R).
-Proof. lra. Qed.
-
-Lemma warp_portal_stabilization_margin_gt_one : 1 < (1.722776467449%R).
 Proof. lra. Qed.
 

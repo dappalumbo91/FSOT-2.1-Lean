@@ -1,0 +1,165 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.726783+00:00",
+  "domain": "Bibliography_Corpus_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
+    "desktop_bibliography"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle"
+  ],
+  "D_eff": 12,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 1,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.013294,
+  "pooled_median_error_pct": 0.013294,
+  "headline_median_error_pct": 0.013294,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "bibliography_corpus_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "FSOT axiomatic bibliography corpus"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.013294,
+      "measured": 0.0,
+      "error_pct": 0.013294,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "bibliography_corpus",
+      "computed": 0.013294,
+      "measured": 0.0,
+      "error_pct": 0.013294,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "field_count",
+      "name": "field_count",
+      "computed": 7.000931,
+      "measured": 7.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "constant_count",
+      "name": "constant_count",
+      "computed": 9.001196,
+      "measured": 9.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "theorem_count",
+      "name": "theorem_count",
+      "computed": 1.000133,
+      "measured": 1.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "lemma_count",
+      "name": "lemma_count",
+      "computed": 1.000133,
+      "measured": 1.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "def_count",
+      "name": "def_count",
+      "computed": 2.000266,
+      "measured": 2.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "structure_count",
+      "name": "structure_count",
+      "computed": 1.000133,
+      "measured": 1.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "section_count",
+      "name": "section_count",
+      "computed": 3.000399,
+      "measured": 3.0,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    },
+    {
+      "lab": "bibliography_corpus_lab",
+      "property": "precision_mandate_pct",
+      "name": "precision_mandate_pct",
+      "computed": 0.500066,
+      "measured": 0.5,
+      "error_pct": 0.013294,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "High_Energy_Physics",
+      "fsot_scalar": 0.886264,
+      "ingest_source": "desktop_bibliography_corpus"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.013294,
+    "max_scalar_error_pct": 0.013294,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

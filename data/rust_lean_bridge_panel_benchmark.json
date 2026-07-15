@@ -1,0 +1,165 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-15T05:17:19.755472+00:00",
+  "domain": "Rust_Lean_Bridge_Panel",
+  "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
+  "source": [
+    "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
+    "desktop_rust_lean_bridge"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 13,
+  "record_count": 8,
+  "observable_count": 8,
+  "scalar_record_count": 6,
+  "scalar_gate_applicable": true,
+  "median_error_pct": 0.014767,
+  "pooled_median_error_pct": 0.014767,
+  "headline_median_error_pct": 0.014767,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "rust_lean_bridge_lab": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Rust bare-metal observer kernel \u2192 Lean bridge"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_desktop_wiring_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "desktop_wiring",
+      "name": "rust_observer_kernel",
+      "computed": 0.014767,
+      "measured": 0.0,
+      "error_pct": 0.014767,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "field_count",
+      "name": "field_count",
+      "computed": 7.001034,
+      "measured": 7.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "boot_d_eff",
+      "name": "boot_d_eff",
+      "computed": 8.001181,
+      "measured": 8.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "boot_delta_psi",
+      "name": "boot_delta_psi",
+      "computed": 0.700103,
+      "measured": 0.7,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "boot_recent_hits",
+      "name": "boot_recent_hits",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "boot_scalar",
+      "name": "boot_scalar",
+      "computed": 0.099304,
+      "measured": 0.09928895626861721,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "K",
+      "name": "K",
+      "computed": 0.420284,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "atlas_K_FSOT",
+      "name": "atlas_K_FSOT",
+      "computed": 0.420284,
+      "measured": 0.4202216641606967,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    },
+    {
+      "lab": "rust_lean_bridge_lab",
+      "property": "constant_count",
+      "name": "constant_count",
+      "computed": 16.002363,
+      "measured": 16.0,
+      "error_pct": 0.014767,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Computing",
+      "fsot_scalar": -0.147673,
+      "ingest_source": "desktop_rust_lean_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.014767,
+    "max_scalar_error_pct": 0.014767,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

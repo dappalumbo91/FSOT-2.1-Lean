@@ -5,33 +5,33 @@
       "stratum_id": "Sst_interneuron",
       "cell_count": 154.0,
       "catalog_cells": 165.0,
-      "fi_median_rel_err_pct": 35.479861060568474,
-      "fi_pearson_r": 0.5196512945807779,
-      "fi_p90_rel_err_pct": 94.27734852734923
+      "fi_median_rel_err_pct": 65.32385249479395,
+      "fi_pearson_r": 0.52310926097775,
+      "fi_p90_rel_err_pct": 155.64280344228195
     },
     {
       "stratum_id": "PV_interneuron",
       "cell_count": 222.0,
       "catalog_cells": 242.0,
-      "fi_median_rel_err_pct": 29.59837154055862,
-      "fi_pearson_r": 0.3915167429133035,
-      "fi_p90_rel_err_pct": 81.56916584836725
+      "fi_median_rel_err_pct": 26.052599991828185,
+      "fi_pearson_r": 0.3931199346029611,
+      "fi_p90_rel_err_pct": 102.39256292918336
     },
     {
       "stratum_id": "VIP_interneuron",
       "cell_count": 146.0,
       "catalog_cells": 155.0,
-      "fi_median_rel_err_pct": 29.72767467532461,
-      "fi_pearson_r": 0.42970594991301575,
-      "fi_p90_rel_err_pct": 96.6682
+      "fi_median_rel_err_pct": 47.41701150886025,
+      "fi_pearson_r": 0.4308059942466856,
+      "fi_p90_rel_err_pct": 169.35063984832118
     },
     {
       "stratum_id": "L2_3_pyramidal",
       "cell_count": 1127.0,
       "catalog_cells": 1224.0,
-      "fi_median_rel_err_pct": 22.104086005830943,
-      "fi_pearson_r": 0.22516239104042488,
-      "fi_p90_rel_err_pct": 80.92848352409213
+      "fi_median_rel_err_pct": 49.782232037293184,
+      "fi_pearson_r": 0.23129805826359506,
+      "fi_p90_rel_err_pct": 144.29099782004917
     }
   ],
   "stratum_count": 4,
@@ -45,16 +45,16 @@
   },
   "held_out_fi_proxy": {
     "cell_count": 2165,
-    "fi_median_rel_err": 0.24520261127596557,
-    "fi_mean_rel_err": 0.3893964094689512,
-    "fi_p90_rel_err": 0.9018905590486146,
-    "fi_pearson_r": 0.6068416819088323,
+    "fi_median_rel_err": 0.24625990376478163,
+    "fi_mean_rel_err": 0.3855272758848861,
+    "fi_p90_rel_err": 0.8913826568367677,
+    "fi_pearson_r": 0.6086458495175734,
     "canonical_scalar_min": 0.25241247006708056,
     "canonical_scalar_mean": 0.25241247006708056,
     "canonical_neuroscience_domain_S": 0.5143619629083619
   },
   "openneuro_panel_records": 0,
   "cohort_cell_count": 2166,
-  "fetched_at": "2026-07-12T16:20:13.588178+00:00",
+  "fetched_at": "2026-07-15T05:17:22.315946+00:00",
   "credential_free": true
 }

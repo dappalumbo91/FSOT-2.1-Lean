@@ -1,7 +1,130 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 13/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 13/19 (generated). *)
 theory FullFormalSpine_12
 imports Complex_Main
 begin
+
+lemma stsci_mast_telescope_median_error_under_five_pct: "(0.022461 :: real) < (5.0 :: real)"
+  by eval
+
+lemma stumped_observables_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma stumped_observables_panel_median_error_under_half_pct: "(0.029748999999999998 :: real) < (0.5 :: real)"
+  by eval
+
+lemma stumped_observables_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma stumped_observables_spine_median_error_under_half_pct: "(0.027761 :: real) < (0.5 :: real)"
+  by eval
+
+lemma superheavy_element_stability_panel_observable_count_pos: "0 < (50 :: nat)"
+  by eval
+
+lemma superheavy_element_stability_panel_median_error_under_half_pct: "(0.000001 :: real) < (0.5 :: real)"
+  by eval
+
+lemma superheavy_island_completion_spine_observable_count_pos: "0 < (43 :: nat)"
+  by eval
+
+lemma superheavy_island_completion_spine_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma superheavy_island_emergence_simulation_observable_count_pos: "0 < (44 :: nat)"
+  by eval
+
+lemma superheavy_island_emergence_simulation_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma supply_chain_ext_pooled_median_under_half_pct: "(0.01801902489293558 :: real) < (0.5 :: real)"
+  by eval
+
+lemma supply_chain_ext_headline_median_under_half_pct: "(0.01801902489293558 :: real) < (0.5 :: real)"
+  by eval
+
+lemma supply_chain_ext_observable_count_pos: "0 < (220 :: nat)"
+  by eval
+
+lemma supply_chain_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
+  by eval
+
+lemma supply_chain_logistics_panel_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma supply_chain_logistics_panel_median_error_under_half_pct: "(0.02584 :: real) < (0.5 :: real)"
+  by eval
+
+lemma supply_chain_logistics_observable_count_pos: "0 < (40 :: nat)"
+  by eval
+
+lemma supply_chain_logistics_median_error_under_half_pct: "(0.03230022603427978 :: real) < (0.5 :: real)"
+  by eval
+
+lemma symbolic_archetype_panel_observable_count_pos: "0 < (28 :: nat)"
+  by eval
+
+lemma symbolic_archetype_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma synthetic_biology_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
+  by eval
+
+lemma synthetic_biology_observable_count_pos: "0 < (20 :: nat)"
+  by eval
+
+lemma tectonics_event_count_pos: "0 < (500 :: nat)"
+  by eval
+
+lemma tectonics_boundary_count_pos: "0 < (241 :: nat)"
+  by eval
+
+lemma tectonics_match_le_total: "(500 :: nat) <= (500 :: nat)"
+  by eval
+
+lemma term3_acoustic_bleed_depth_observable_count_pos: "0 < (23 :: nat)"
+  by eval
+
+lemma term3_acoustic_bleed_depth_median_error_under_half_pct: "(0.008381497018408523 :: real) < (0.5 :: real)"
+  by eval
+
+lemma theory_completeness_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma theory_completeness_spine_median_error_under_half_pct: "(0.021927861384483893 :: real) < (0.5 :: real)"
+  by eval
+
+lemma thesis_intrinsic_best_rmse_positive: "0 < (6.763968608085996 :: real)"
+  by eval
+
+lemma thesis_wave_target_count_pos: "0 < (98 :: nat)"
+  by eval
+
+lemma thesis_intrinsic_screen_count_pos: "0 < (58 :: nat)"
+  by eval
+
+lemma thesis_simulation_observable_count_pos: "0 < (156 :: nat)"
+  by eval
+
+lemma thesis_simulation_components_le_total: "(156 :: nat) = (156 :: nat)"
+  by eval
+
+lemma the_well_outcomes_verification_panel_observable_count_pos: "0 < (381 :: nat)"
+  by eval
+
+lemma the_well_outcomes_verification_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma the_well_spot_check_panel_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma the_well_spot_check_panel_median_error_under_half_pct: "(0.031159 :: real) < (0.5 :: real)"
+  by eval
+
+lemma the_well_verification_spine_observable_count_pos: "0 < (24 :: nat)"
+  by eval
+
+lemma the_well_verification_spine_median_error_under_half_pct: "(0.028287 :: real) < (0.5 :: real)"
+  by eval
 
 lemma tier_93_dual_wave_spine_observable_count_pos: "0 < (24 :: nat)"
   by eval
@@ -178,129 +301,6 @@ lemma uniprot_protein_annotations_observable_count_pos: "0 < (22 :: nat)"
   by eval
 
 lemma uniprot_protein_annotations_median_error_under_five_pct: "(0.026684 :: real) < (5.0 :: real)"
-  by eval
-
-lemma uniprot_structure_annotations_deep_observable_count_pos: "0 < (121 :: nat)"
-  by eval
-
-lemma uniprot_structure_annotations_deep_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma vibra_pattern_stability_positive: "0 < (0.7662378870755164 :: real)"
-  by eval
-
-lemma vibra_avg_S_mean_positive: "0 < (0.4744906315011612 :: real)"
-  by eval
-
-lemma vibra_mc_prob_non_decrease_cp5_le_one: "(1.0 :: real) <= (1.0 :: real)"
-  by eval
-
-lemma virology_ext_pooled_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
-  by eval
-
-lemma virology_ext_headline_median_under_half_pct: "(0.04593318440798183 :: real) < (0.5 :: real)"
-  by eval
-
-lemma virology_ext_observable_count_pos: "0 < (163 :: nat)"
-  by eval
-
-lemma virology_ext_beats_sota_headlines_pos: "0 < (2 :: nat)"
-  by eval
-
-lemma virology_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma virology_panel_median_error_under_half_pct: "(0.022236 :: real) < (0.5 :: real)"
-  by eval
-
-lemma virology_observable_count_pos: "0 < (50 :: nat)"
-  by eval
-
-lemma virology_median_error_under_half_pct: "(0.04593318440797614 :: real) < (0.5 :: real)"
-  by eval
-
-lemma vizier_wds_tap_live_deep_observable_count_pos: "0 < (121 :: nat)"
-  by eval
-
-lemma vizier_wds_tap_live_deep_median_error_under_half_pct: "(0.026954 :: real) < (0.5 :: real)"
-  by eval
-
-lemma vl_distill_atlas_observable_count_pos: "0 < (10 :: nat)"
-  by eval
-
-lemma vl_distill_atlas_median_error_under_five_pct: "(0 :: real) < (5.0 :: real)"
-  by eval
-
-lemma volcanology_panel_observable_count_pos: "0 < (90 :: nat)"
-  by eval
-
-lemma volcanology_panel_median_error_under_half_pct: "(0.023502 :: real) < (0.5 :: real)"
-  by eval
-
-lemma volcanology_observable_count_pos: "0 < (90 :: nat)"
-  by eval
-
-lemma volcanology_median_error_under_five_pct: "(0.023502 :: real) < (5.0 :: real)"
-  by eval
-
-lemma warp_psi_friction_pos: "0 < (0.082300635102 :: real)"
-  by eval
-
-lemma warp_psi_node_pos: "0 < (0.059407798774 :: real)"
-  by eval
-
-lemma warp_tunneling_bridge_pos: "0 < (0.053926299704 :: real)"
-  by eval
-
-lemma warp_psi_stabilization_pos: "0 < (2.386649570184 :: real)"
-  by eval
-
-lemma warp_psi_run_pos: "0 < (0.14178559741 :: real)"
-  by eval
-
-lemma warp_delta_phi_stable_pos: "0 < (0.004581413686 :: real)"
-  by eval
-
-lemma warp_y_exotic_byproduct_pos: "0 < (0.011637689406 :: real)"
-  by eval
-
-lemma warp_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
-  by eval
-
-lemma warp_bridge_lt_node: "(0.053926299704 :: real) < (0.059407798774 :: real)"
-  by eval
-
-lemma warp_exotic_lt_friction: "(0.011637689406 :: real) < (0.082300635102 :: real)"
-  by eval
-
-lemma warp_delta_phi_stable_le_raw: "(0.004581413686 :: real) <= (0.004581413686 :: real)"
-  by eval
-
-lemma warp_bh_wh_portal_panel_observable_count_pos: "0 < (24 :: nat)"
-  by eval
-
-lemma warp_bh_wh_portal_panel_median_error_under_half_pct: "(0 :: real) < (0.5 :: real)"
-  by eval
-
-lemma warp_psi_bh_inlet_pos: "0 < (0.009663204175 :: real)"
-  by eval
-
-lemma warp_psi_wh_outlet_pos: "0 < (0.501689416811 :: real)"
-  by eval
-
-lemma warp_psi_portal_doorway_pos: "0 < (0.009663204175 :: real)"
-  by eval
-
-lemma warp_info_preservation_pos: "0 < (0.981227203621 :: real)"
-  by eval
-
-lemma warp_psi_entangle_gate_pos: "0 < (0.04803163401 :: real)"
-  by eval
-
-lemma warp_psi_traverse_pos: "0 < (0.0004641395 :: real)"
-  by eval
-
-lemma warp_portal_stabilization_margin_gt_one: "1 < (1.722776467449 :: real)"
   by eval
 
 end

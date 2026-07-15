@@ -1,5 +1,5 @@
 version: "1.0"
-updated: "2026-07-12"
+updated: "2026-07-15"
 tier: 88
 policy: credential_free_only
 domains:
@@ -7,16 +7,43 @@ domains:
   - Tokenization_Live_Panel
   - Living_FSOT_Hardware_Panel
   - Certified_Agent_Formal_Panel
+  - Omni_Theory_Humanities_Panel
+  - Intrinsic_LLM_Validators_Panel
+  - Bibliography_Corpus_Panel
+  - Binary_Decoder_Panel
+  - Physarum_Biological_CUDA_Panel
+  - Arxiv_Brain_Knowledge_Panel
+  - Scalar_Solver_35_Panel
+  - Arxiv_Primitives_Panel
+  - Rust_Lean_Bridge_Panel
+  - Canonical_Oracle_Panel
+  - VL_Agent_Distill_Panel
+  - Early_Lean_MC_Panel
   - Desktop_Application_Wiring_Spine
 ingest: scripts/ingest_tier88_application_wiring.py
 build: scripts/build_tier88_application_wiring_benchmarks.py
 lean: scripts/gen_tier88_application_wiring_lean.py
+lab_registry_patch: scripts/patch_tier88_desktop_lab_registry.py
 desktop_themes_wired:
   - trinary_hardware
   - tokenization
   - living_fsot_hardware
   - certified_agent
+  - omni_theory_humanities
+  - validators_intrinsic_llm
+  - bibliography
+  - binary_decoder
+  - biological_cuda
+  - arxiv_brain
+  - scalar_solver
+  - arxiv_primitives
+  - rust_lean_bridge
+  - canonical_oracle
+  - vl_agent
+  - early_lean_mc
+desktop_themes_skipped:
+  - model_weights
+  - documentation
 note: >
   Tier 88 wires unwired desktop projects into live extension panels with bundled
-  metrics from motif profiles, tokenization smoke, living FSOT habitat, and
-  Qwen formal certified agent workspace.
+  vendor metrics. Model weight folders and documentation-only folders are hub_or_skip.

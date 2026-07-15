@@ -1,4 +1,4 @@
-(* FSOT Tier 81 — FullFormalSpine chunk 3/18 (generated). *)
+(* FSOT Tier 81 — FullFormalSpine chunk 3/19 (generated). *)
 theory FullFormalSpine_02
 imports Complex_Main
 begin

@@ -1,0 +1,153 @@
+{
+  "source": "creep_fracture_materials_literature_anchors+materials_project",
+  "credential_free": true,
+  "creep": [
+    {
+      "name": "steel_creep_activation_kJ_mol",
+      "value": 200.0,
+      "unit": "kJ_mol"
+    },
+    {
+      "name": "polymer_creep_strain_10yr_pct",
+      "value": 2.0,
+      "unit": "percent"
+    },
+    {
+      "name": "superalloy_creep_life_hours_900C",
+      "value": 10000.0,
+      "unit": "hours"
+    },
+    {
+      "name": "creep_exponent_n_typical",
+      "value": 5.0,
+      "unit": "dimensionless"
+    }
+  ],
+  "fracture": [
+    {
+      "name": "steel_fracture_toughness_MPa_sqrt_m",
+      "value": 50.0,
+      "unit": "MPa_sqrt_m"
+    },
+    {
+      "name": "aluminum_KIc_MPa_sqrt_m",
+      "value": 29.0,
+      "unit": "MPa_sqrt_m"
+    },
+    {
+      "name": "ceramic_fracture_toughness_MPa_sqrt_m",
+      "value": 4.0,
+      "unit": "MPa_sqrt_m"
+    },
+    {
+      "name": "paris_exponent_m_typical",
+      "value": 3.0,
+      "unit": "dimensionless"
+    }
+  ],
+  "mechanical": [
+    {
+      "name": "young_modulus_steel_GPa",
+      "value": 200.0,
+      "unit": "GPa"
+    },
+    {
+      "name": "yield_strength_aluminum_MPa",
+      "value": 275.0,
+      "unit": "MPa"
+    },
+    {
+      "name": "fatigue_endurance_limit_fraction",
+      "value": 0.5,
+      "unit": "dimensionless"
+    }
+  ],
+  "fetched_at": "2026-07-15T05:17:22.315946+00:00",
+  "materials_project_samples": [
+    {
+      "mp_id": "mp-149",
+      "formula": "Si",
+      "band_gap_eV": 1.11,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 97.0
+    },
+    {
+      "mp_id": "mp-2534",
+      "formula": "GaAs",
+      "band_gap_eV": 1.52,
+      "formation_energy_eV_per_atom": -0.33,
+      "bulk_modulus_GPa": 75.5
+    },
+    {
+      "mp_id": "mp-804",
+      "formula": "GaN",
+      "band_gap_eV": 3.44,
+      "formation_energy_eV_per_atom": -0.91,
+      "bulk_modulus_GPa": 187.0
+    },
+    {
+      "mp_id": "mp-30",
+      "formula": "Cu",
+      "band_gap_eV": 0.0,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 137.0
+    },
+    {
+      "mp_id": "mp-13",
+      "formula": "Fe",
+      "band_gap_eV": 0.0,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 168.0
+    },
+    {
+      "mp_id": "mp-66",
+      "formula": "Al",
+      "band_gap_eV": 0.0,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 76.0
+    },
+    {
+      "mp_id": "mp-134",
+      "formula": "Al2O3",
+      "band_gap_eV": 8.8,
+      "formation_energy_eV_per_atom": -3.17,
+      "bulk_modulus_GPa": 254.0
+    },
+    {
+      "mp_id": "mp-22862",
+      "formula": "TiO2",
+      "band_gap_eV": 3.05,
+      "formation_energy_eV_per_atom": -1.91,
+      "bulk_modulus_GPa": 204.0
+    },
+    {
+      "mp_id": "mp-1265",
+      "formula": "ZnO",
+      "band_gap_eV": 3.44,
+      "formation_energy_eV_per_atom": -0.73,
+      "bulk_modulus_GPa": 142.0
+    },
+    {
+      "mp_id": "mp-19717",
+      "formula": "SiO2",
+      "band_gap_eV": 8.95,
+      "formation_energy_eV_per_atom": -2.13,
+      "bulk_modulus_GPa": 37.0
+    },
+    {
+      "mp_id": "mp-124",
+      "formula": "Ge",
+      "band_gap_eV": 0.67,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 75.0
+    },
+    {
+      "mp_id": "mp-81",
+      "formula": "Au",
+      "band_gap_eV": 0.0,
+      "formation_energy_eV_per_atom": 0.0,
+      "bulk_modulus_GPa": 220.0
+    }
+  ],
+  "materials_project_count": 12
+}
