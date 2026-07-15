@@ -68,8 +68,9 @@ def section_cross_verification() -> str:
             [
                 "### Verified desktop cross-proof closure",
                 "",
-                f"- overall_ok: **{closure.get('overall_ok')}**",
+                f"- verdict: **{closure.get('verdict')}**",
                 f"- panels_closed: {len(closure.get('panels') or [])}",
+                f"- generated_at: {closure.get('generated_at')}",
                 "",
             ]
         )

@@ -1,6 +1,6 @@
 ## Cross-Verification Metrics (auto-generated)
 
-*Generated: 2026-07-15T17:17:30.992102+00:00*
+*Generated: 2026-07-15T17:43:38.477007+00:00*
 
 ### Five-prover formal spine
 
@@ -18,5 +18,6 @@ Authoritative report: `data/cross_proof_verification_report.json`
 
 ### Verified desktop cross-proof closure
 
-- overall_ok: **None**
+- verdict: **VERIFIED_DESKTOP_CROSS_PROOF_READY**
 - panels_closed: 4
+- generated_at: 2026-07-15T17:36:44.027329+00:00
