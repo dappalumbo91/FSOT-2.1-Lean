@@ -344,6 +344,25 @@ def ingest_star_trek_transporter() -> dict:
                 }
             )
     warp_crosswalk = _warp_portal_crosswalk_rows(warp_bench)
+    beam_forming: list[dict] = []
+    t3_valve: list[dict] = []
+    sim_path = desktop_dir / "pattern_buffer_scan_results.json"
+    if _deep_mode() and sim_path.is_file():
+        sim_doc = _load_json(sim_path)
+        beam_forming = list(sim_doc.get("observables") or [])
+        for layer in sim_doc.get("beam_layers") or []:
+            step = layer.get("step", 0)
+            for key in ("t3_phase_lock", "beam_layer_coherence", "pattern_slice_fidelity"):
+                val = layer.get(key)
+                if val is not None:
+                    t3_valve.append(
+                        {
+                            "name": f"scan_step_{step}_{key}",
+                            "property": key,
+                            "value": float(val),
+                            "unit": "dimensionless",
+                        }
+                    )
     doc = {
         "source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
         "desktop_folder": "FSOT, Star Trek Transporter",
@@ -356,6 +375,9 @@ def ingest_star_trek_transporter() -> dict:
         "transporter_stack": transporter_stack,
         "warp_actuation": warp_actuation,
         "warp_portal_crosswalk": warp_crosswalk,
+        "beam_forming": beam_forming,
+        "t3_valve_scan": t3_valve,
+        "pattern_buffer_sim": str(sim_path) if sim_path.is_file() else None,
         "warp_bh_wh_portal_relay_median_pct": warp_pool,
         "warp_formula_path": str(_warp_formula_path() or ""),
         "fsot_constants": constants,
@@ -578,9 +600,11 @@ def build_star_trek_transporter_live_panel() -> dict:
         ("fsot_portal", "Quantum_Gravity", "portal_proxies"),
         ("transporter_stack", "Quantum_Gravity", "transporter_engineering"),
         ("warp_actuation", "Quantum_Gravity", "warp_actuation"),
+        ("beam_forming", "Quantum_Gravity", "beam_forming"),
+        ("t3_valve_scan", "Acoustics", "t3_valve_acoustic"),
     ):
         rows = live.get(section) or []
-        if section == "warp_actuation":
+        if section in ("warp_actuation", "t3_valve_scan"):
             sec_records: list[dict] = []
             sec_errs: list[float] = []
             for row in rows:
@@ -595,6 +619,14 @@ def build_star_trek_transporter_live_panel() -> dict:
                 )
                 sec_records.append(rec)
                 sec_errs.append(float(rec["error_pct"]))
+        elif section == "beam_forming":
+            sec_records, sec_errs = _rows_to_records(
+                rows,
+                lab="star_trek_transporter_lab",
+                domain=dom,
+                source=source_tag,
+                name_keys=("name",),
+            )
         else:
             sec_records, sec_errs = _rows_to_records(
                 rows,
@@ -648,6 +680,7 @@ def build_star_trek_transporter_live_panel() -> dict:
             str(cache_root() / "star_trek_transporter_cache.json"),
             "fsot_transporter_technology_stack",
             live.get("warp_formula_path") or "warp_actuation_formula_fsot21.json",
+            live.get("pattern_buffer_sim") or "pattern_buffer_beam_simulator",
             "Warp_BH_WH_Portal_Panel",
         ],
         channel_stats=channel_stats or [("transporter", "information_transfer", errs or [0.0])],

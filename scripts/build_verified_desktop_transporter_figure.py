@@ -21,6 +21,8 @@ LAYER_ORDER = (
     ("transporter_engineering", "Transporter engineering", "#d97706"),
     ("warp_actuation", "Warp actuation", "#dc2626"),
     ("warp_portal_crosswalk", "Portal crosswalk", "#0891b2"),
+    ("beam_forming", "Beam-forming grid", "#84cc16"),
+    ("t3_valve_acoustic", "T3 acoustic valve", "#ea580c"),
 )
 
 
@@ -62,6 +64,14 @@ def _layer_medians(bench: dict) -> dict[str, float]:
         "quantum_entanglement_gate": "warp_portal_crosswalk",
         "entangled_gate_pair": "warp_portal_crosswalk",
         "doorway_traverse": "warp_portal_crosswalk",
+        "voxel": "beam_forming",
+        "pattern_buffer": "beam_forming",
+        "beam_forming": "beam_forming",
+        "matter_stream": "beam_forming",
+        "bio_integrity": "beam_forming",
+        "t3_phase": "t3_valve_acoustic",
+        "beam_layer": "t3_valve_acoustic",
+        "pattern_slice": "t3_valve_acoustic",
     }
     for rec in bench.get("material_records") or []:
         name = str(rec.get("name") or "").lower()

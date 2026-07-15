@@ -264,7 +264,13 @@ python scripts/build_verified_desktop_transporter_figure.py
 python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live_Panel --format bibtex
 ```
 
-Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk. Figure: `data/figures/verified_desktop_transporter.png`.
+Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk → beam-forming grid → T3 acoustic valve. Figure: `data/figures/verified_desktop_transporter.png`.
+
+Desktop simulator (run before `--deep` ingest):
+
+```powershell
+python "C:\Users\damia\Desktop\FSOT, Star Trek Transporter\pattern_buffer_beam_simulator.py" --deep
+```
 
 ## Claim scope (read before citing)
 
