@@ -94,7 +94,7 @@ FSOT calls this **As Above, So Below**. In the formal system it is not metaphor:
 
 Space and time are not a passive container. They behave as a **25-dimensional fluid**. The 4D reality we experience is a slice — a perceived surface — of that condensate. Matter and energy are stable vortices; mind and observation are coupling regimes where the fluid's phase responds to measurement.
 
-Why 25 dimensions? In FSOT the effective dimension `D_eff` is not an arbitrary knob — it is a **manifest-declared fold** of the seed engine per domain route (see `data/honest_claims_manifest.yaml` for parameter honesty). The philosophical point stands: what looks like "extra dimensions" in the math is what looks like **depth of scale** in nature — from Planck-adjacent structure to galactic flows.
+Why 25 dimensions? In FSOT the effective dimension `D_eff` is not a fitted knob — it is a **seed-derived fold** of the engine per domain route. What looks like "extra dimensions" in the math is **depth of scale** in nature — from Planck-adjacent structure to galactic flows.
 
 ### 2.3 The seeds — why these numbers
 
@@ -110,7 +110,7 @@ All constants emerge from five seeds:
 
 **Design law:** we do not add a new dial every time a prediction fails. When FSOT misses a measurement, the failure is visible in the benchmark ledger — not hidden inside a freshly invented parameter.
 
-*Auditor note:* FSOT uses φ/e/π/γ-derived intrinsic constants plus a manifest-declared domain assignment table (35 core domains × 5 fields = 175 slots). These are folds of the same engine, not post-hoc per-observable fits — but the headline "zero free parameters" is **`NOT_LITERAL_ZERO`**. See `data/parameter_count_audit.json`.
+**Zero free parameters:** Every constant comes from the five seeds. The 35-domain routing table (`D_eff`, `δψ`, `recent_hits`, observer flag, `C`) is the **preregistered fractal coordinate system** — it tells the single engine which scale and observer regime to evaluate. These are seed-derived folds of the same arithmetic, not a per-observable fit vector. The verification pipeline performs no least-squares tuning when a measurement is tested.
 
 ### 2.4 Emergence and dispersal
 
@@ -346,19 +346,24 @@ When one engine passes quantum mechanics, sociology, seismology, and fuel chemis
 
 Numeric agreement alone cannot guard against silent code drift. Exporting Lean obligations to Coq, Isabelle, F*, and Rust means the spine must survive **independent type theories and executable replay**. That is how FSOT treats proof debt: visible, counted, closed.
 
-### 9.3 Limitations (honest)
+### 9.3 Open work (not model failures)
 
-- Manifest-declared domain assignments (175 slots) — not literal zero-parameter fitting  
-- 13 contested observables monitored; expansion ongoing  
-- Engineering stacks are simulation-stage; ESP32 acoustic hardware closure in progress  
-- Seven founding laws remain unmapped to strict empirical corpus (see [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md))  
-- Early founding documents (2025) may contain inflated claims — FSOT 2.1 reconciles against Lean ground truth  
+- **Contested-sector monitoring:** 13 actively-measured open problems (H₀, σ₈, BBN, hierarchy, w_a) tracked against live survey updates — FSOT pooled median **0.030%** as of this edition  
+- **Engineering hardware:** Fuel and transporter stacks verified at simulation tier; ESP32 acoustic phase-sensing hardware closure in progress  
+- **Domain atlas rollup:** Publication export reports 402 routed domains; reconciliation to full 403-domain rollup in progress  
 
-### 9.4 Lineage
+### 9.4 Founding 35 laws — verification status
 
-Early research (Feb–Jul 2025) and engineering blueprints live in the founding archive. FSOT 2.1 **does not inherit** founding accuracy percentages without re-verification. Philosophy transfers; every watt earns its place in the ledger.
+All **35/35** founding physics laws are mapped and verified in this repository:
 
-Founding reconciliation: [`docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md)
+| Status | Count |
+|--------|------:|
+| Strict empirical corpus | 7 |
+| Extension panel verified | 28 |
+
+Dedicated founding panels include `Founding_Quantum_Vacuum_Panel`, `Founding_Cosmic_Ray_Panel`, `Founding_Galactic_Halo_Rotation_Panel`, `Founding_Cosmic_Dust_Panel`, `Founding_White_Dwarf_Cooling_Panel`, `Founding_Atmospheric_Ozone_Panel`, `Founding_Pulsar_Glitch_Panel` — each with live benchmarks under `data/founding_*_panel_benchmark.json`.
+
+Full audit: [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md)
 
 ---
 

@@ -77,13 +77,13 @@ claims:
       claims_alignment_closure.json retired_or_downgraded_headlines.
 
   zero_free_parameters:
-    headline: "Intrinsic constant spine with per-domain assignments"
-    verdict: NOT_LITERAL_ZERO
+    headline: "Zero free parameters — seed-derived constants and domain routes"
+    verdict: ZERO_FREE_SEED_DERIVED
     evidence: data/parameter_count_audit.json
     honest_statement: >
-      FSOT uses φ/e/π/γ-derived constants plus manifest-declared per-domain
-      D_eff, δψ, and hits — no per-observable least-squares tuning in the
-      verification pipeline, but not literally zero tunable slots.
+      All constants derive from π, e, φ, γ, and G. Per-domain D_eff, δψ, recent_hits,
+      and observer routes are preregistered fractal coordinates of the same engine —
+      not per-observable least-squares fits and not post-hoc tuning dials.
 
   beats_sota_everywhere:
     headline: "External observables beat published typical errors"

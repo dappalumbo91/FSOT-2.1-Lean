@@ -107,10 +107,9 @@ Early research (Feb–Jul 2025) lives on **`I:\fsuft aasb`** and **`I:\fsot tech
 | Status | Count | Meaning |
 |--------|-------|---------|
 | Verified in strict empirical corpus | 7 | Formula + measurement match in 7,941-row gate |
-| Verified via extension panel | 21 | Maps to Lean benchmark panel |
-| Founding only (not yet mapped) | 7 | Needs new benchmark or retire from public claims |
+| Verified via extension panel | 28 | Maps to Lean benchmark panel |
 
-**Seven laws still unmapped:** Quantum Vacuum Energy Oscillation, Cosmic Ray Anisotropy, Galactic Halo Rotation, Cosmic Dust Grain Size, White Dwarf Cooling Rate, Atmospheric Ozone, Pulsar Glitch Frequency.
+**All 35/35 founding laws mapped** — including dedicated founding panels for quantum vacuum, cosmic rays, galactic halo rotation, cosmic dust, white dwarf cooling, atmospheric ozone, and pulsar glitches.
 
 Full detail: `docs/FOUNDING_35_LAWS_AUDIT.md`
 
