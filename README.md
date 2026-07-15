@@ -8,6 +8,8 @@ It was developed in close collaboration with the Python reference implementation
 
 **FSOT explained (layman's guide):** `docs/FSOT_EXPLAINED_LAYMAN.md` — plain-language overview for the public; math proves philosophy where verified.
 
+**Domain navigator (browse by problem):** open `docs/fsot_domain_navigator.html` in a browser, or rebuild with `python scripts/build_fsot_domain_navigator_db.py`.
+
 **Philosophy & founding reconciliation:** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`, `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`, `docs/FOUNDING_35_LAWS_AUDIT.md`. Founding archives: `I:\fsuft aasb`, `I:\fsot tech`. Pipeline (no LLM): `python scripts/build_founding_pipeline.py`.
 
 ## Structure

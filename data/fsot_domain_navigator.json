@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T05:30:22.425379+00:00",
+  "generated_at": "2026-07-15T10:53:19.850465+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
@@ -11631,5 +11631,7 @@
     }
   ],
   "reproduce": "python scripts/build_fsot_domain_navigator_db.py",
-  "query_example": "python scripts/build_fsot_domain_navigator_db.py --query \"entanglement\""
+  "browser_ui": "docs/fsot_domain_navigator.html",
+  "query_example": "python scripts/build_fsot_domain_navigator_db.py --query \"entanglement\"",
+  "browser_example": "docs/fsot_domain_navigator.html?q=entanglement"
 }

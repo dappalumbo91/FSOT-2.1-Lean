@@ -2,8 +2,9 @@
 """Build FSOT domain navigator — queryable index for discovery by domain and problem intent.
 
 Produces:
-  data/fsot_domain_navigator.db   — SQLite + FTS5 (local browse/query)
-  data/fsot_domain_navigator.json — portable index for GitHub consumers without SQLite
+  data/fsot_domain_navigator.db      — SQLite + FTS5 (local browse/query)
+  data/fsot_domain_navigator.json    — portable index for GitHub consumers without SQLite
+  docs/fsot_domain_navigator.html    — self-contained browser UI (no server required)
 
 This is a verification/discovery layer on top of extension_domains_manifest.yaml and
 scientific_domain_expansion_map.json. It does not replace FSOT_UNIFIED.db (formula corpus).
@@ -15,6 +16,7 @@ import argparse
 import json
 import re
 import sqlite3
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -23,9 +25,13 @@ try:
 except ImportError:
     yaml = None
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fsot_domain_navigator_html import render_html  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "fsot_domain_navigator.db"
 JSON_PATH = ROOT / "data" / "fsot_domain_navigator.json"
+HTML_PATH = ROOT / "docs" / "fsot_domain_navigator.html"
 
 # Curated problem-intent routes (keyword → core domain + exemplar panels)
 PROBLEM_ROUTES: list[dict] = [
@@ -328,7 +334,9 @@ def build_navigator() -> dict:
         "problem_routes": problem_routes,
         "desktop_projects": desktop_projects,
         "reproduce": "python scripts/build_fsot_domain_navigator_db.py",
+        "browser_ui": "docs/fsot_domain_navigator.html",
         "query_example": 'python scripts/build_fsot_domain_navigator_db.py --query "entanglement"',
+        "browser_example": "docs/fsot_domain_navigator.html?q=entanglement",
     }
 
 
@@ -521,15 +529,19 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build FSOT domain navigator index")
     parser.add_argument("--db", type=Path, default=DB_PATH)
     parser.add_argument("--json", type=Path, default=JSON_PATH)
+    parser.add_argument("--html", type=Path, default=HTML_PATH)
     parser.add_argument("--query", type=str, default="", help="FTS query against built DB")
     args = parser.parse_args()
 
     doc = build_navigator()
     args.json.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     _write_sqlite(doc, args.db)
+    args.html.parent.mkdir(parents=True, exist_ok=True)
+    args.html.write_text(render_html(doc), encoding="utf-8")
 
     print(f"Wrote {args.json}")
     print(f"Wrote {args.db}")
+    print(f"Wrote {args.html}")
     print(f"  core_domains: {doc['summary']['core_domains']}")
     print(f"  extension_panels: {doc['summary']['extension_panels']}")
     print(f"  problem_routes: {doc['summary']['problem_routes']}")

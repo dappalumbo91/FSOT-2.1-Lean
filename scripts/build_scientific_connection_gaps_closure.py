@@ -77,7 +77,7 @@ def main() -> int:
                 "extension_panels_indexed": (navigator.get("summary") or {}).get("extension_panels"),
                 "problem_routes": (navigator.get("summary") or {}).get("problem_routes"),
             },
-            "remedy": "scripts/build_fsot_domain_navigator_db.py → data/fsot_domain_navigator.db + .json",
+            "remedy": "scripts/build_fsot_domain_navigator_db.py → .db + .json + docs/fsot_domain_navigator.html",
             "evidence": "data/fsot_domain_navigator.json",
         },
         {
