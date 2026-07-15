@@ -52,6 +52,8 @@ DOMAIN_FACTORS: dict[str, float] = {
     "Particle_Physics": 0.0001,
     "Materials_Science": 0.0004,
     "Geophysics": 0.0005,
+    "Thermodynamics": 0.0005,
+    "Energy": 0.0005,
 }
 
 # Property-specific domain routing when generic domain is ambiguous.

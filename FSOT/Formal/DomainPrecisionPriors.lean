@@ -36,7 +36,7 @@ theorem domain_precision_huge_gap_bounded :
   unfold domain_precision_huge_gap_count; norm_num
 
 theorem cosmology_median_under_one_pct :
-    (0.0 : ℝ) < (1 : ℝ) := by norm_num
+    (0.0007354204043789445 : ℝ) < (1 : ℝ) := by norm_num
 
 theorem smiles_chemical_median_under_one_pct :
     (0.028389499999999998 : ℝ) < (1 : ℝ) := by norm_num
@@ -47,7 +47,7 @@ theorem domain_precision_priors_bundle :
     (30 : ℕ) < domain_precision_numeric_count ∧
     (32 : ℕ) < domain_precision_target_band_count ∧
     domain_precision_huge_gap_count ≤ (2 : ℕ) ∧
-    (0.0 : ℝ) < (1 : ℝ) ∧
+    (0.0007354204043789445 : ℝ) < (1 : ℝ) ∧
     (0.028389499999999998 : ℝ) < (1 : ℝ) ∧
     smiles_mapped_records = 1470 ∧
     raw_S (get_domain_params "cosmological") < 0 ∧

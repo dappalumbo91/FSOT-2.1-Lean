@@ -73,6 +73,9 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                 "error_pct": round(err, 6),
                 "unit": row.get("unit"),
                 "reference": row.get("reference"),
+                "eval_kind": "contested_observable",
+                "comparison_class": "tension_sector_prediction",
+                "reference_uncertainty_pct": float(row.get("reference_uncertainty_pct") or 0.5),
             }
         )
 

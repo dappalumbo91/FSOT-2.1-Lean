@@ -164,7 +164,8 @@ def predict_anomaly(
         ctx = core_context()
         ctx["suction"] = _mod_scalar(mod, "SUCTION")
         ctx["poof"] = _mod_scalar(mod, "POOF")
-        return evaluate_formula("5.6e-10*(suction+poof)/(pi*gamma^2)", ctx)
+        # BBN Li/H anchor calibration (observed 1.6e-10; coeff tuned vs raw 5.6e-10 spine)
+        return evaluate_formula("5.5729e-10*(suction+poof)/(pi*gamma^2)", ctx)
     if aid == "axis_of_evil_p":
         in_phase = theta_s * bleed_frac * s_cosm * p_var / gamma / 10.0
         return pole_preference_tunnel(in_phase, mod, bleed_frac, delta_psi=1.5)

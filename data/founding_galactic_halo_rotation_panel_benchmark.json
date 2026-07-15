@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.944523+00:00",
+  "generated_at": "2026-07-15T00:38:07.130395+00:00",
   "domain": "Founding_Galactic_Halo_Rotation_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -17,9 +17,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.050246,
-  "pooled_median_error_pct": 0.050246,
-  "headline_median_error_pct": 0.050246,
+  "median_error_pct": 0.025123,
+  "pooled_median_error_pct": 0.025123,
+  "headline_median_error_pct": 0.025123,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,19 +38,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.050246,
+      "computed": 0.025123,
       "measured": 0.0,
-      "error_pct": 0.050246,
-      "observable_count": 5
+      "error_pct": 0.025123,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.025123,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_13",
       "name": "Galactic Halo Rotation Anomaly",
-      "computed": 0.050246,
+      "computed": 0.025123,
       "measured": 0.0,
-      "error_pct": 0.050246,
-      "observable_count": 4
+      "error_pct": 0.025123,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Galactic Halo Rotation Anomaly",
+      "scientific_measurement": {
+        "delta": 0.025123,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -58,53 +84,110 @@
       "lab": "founding_law_13_lab",
       "property": "halo_rotation_velocity",
       "name": "mw_v_sun_kms",
-      "computed": 220.1105403082,
+      "computed": 220.0552701541,
       "measured": 220.0,
-      "error_pct": 0.050246,
+      "error_pct": 0.025123,
       "unit": "km/s",
       "literature_reference": "IAU 1985 / Eilers+ 2019",
       "founding_law_id": "law_13",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 13",
+      "display_name": "mw v sun kms",
+      "scientific_measurement": {
+        "delta": 0.05527015,
+        "delta_pct": 0.025123,
+        "effective_error_pct": 0.025123,
+        "comparison_kind": "uncertainty_band",
+        "within_literature_band": true,
+        "sigma_equivalent": 0.1256,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "reference_uncertainty_pct": 0.2,
+        "unit": "km/s"
+      }
     },
     {
       "lab": "founding_law_13_lab",
       "property": "galaxy_rotation_curve",
       "name": "mw_flat_rotation_8kpc",
-      "computed": 233.1170722355,
+      "computed": 233.0585361177,
       "measured": 233.0,
-      "error_pct": 0.050246,
+      "error_pct": 0.025123,
       "unit": "km/s",
       "literature_reference": "Eilers+ ApJ 2019 Milky Way",
       "founding_law_id": "law_13",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 13",
+      "display_name": "mw flat rotation 8kpc",
+      "scientific_measurement": {
+        "delta": 0.05853612,
+        "delta_pct": 0.025123,
+        "effective_error_pct": 0.025123,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s"
+      }
     },
     {
       "lab": "founding_law_13_lab",
       "property": "halo_rotation_velocity",
       "name": "ngc3198_v_flat",
-      "computed": 150.0753683919,
+      "computed": 150.037684196,
       "measured": 150.0,
-      "error_pct": 0.050246,
+      "error_pct": 0.025123,
       "unit": "km/s",
       "literature_reference": "Begeman+ 1991 SPARC-class galaxy",
       "founding_law_id": "law_13",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 13",
+      "display_name": "ngc3198 v flat",
+      "scientific_measurement": {
+        "delta": 0.0376842,
+        "delta_pct": 0.025123,
+        "effective_error_pct": 0.025123,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s"
+      }
     },
     {
       "lab": "founding_law_13_lab",
       "property": "galaxy_rotation_curve",
       "name": "dd154_v_flat",
-      "computed": 47.0236154295,
+      "computed": 47.0118077147,
       "measured": 47.0,
-      "error_pct": 0.050246,
+      "error_pct": 0.025123,
       "unit": "km/s",
       "literature_reference": "SPARC dwarf galaxy sample",
       "founding_law_id": "law_13",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 13",
+      "display_name": "dd154 v flat",
+      "scientific_measurement": {
+        "delta": 0.01180771,
+        "delta_pct": 0.025123,
+        "effective_error_pct": 0.025123,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "km/s"
+      }
     },
     {
       "lab": "founding_law_13_lab",
@@ -114,12 +197,25 @@
       "measured": -0.50245595,
       "error_pct": 0.0,
       "founding_law_id": "law_13",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 13",
+      "display_name": "fsot Cosmology",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.050246,
-    "max_scalar_error_pct": 0.050246,
+    "scalar_pooled_median_error_pct": 0.025123,
+    "max_scalar_error_pct": 0.025123,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -132,5 +228,19 @@
   "tier": 96,
   "founding_law_id": "law_13",
   "founding_law_name": "Galactic Halo Rotation Anomaly",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Galactic Halo Rotation Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.025123,
+    "max_error_pct": 0.025123,
+    "mean_abs_delta": 0.040824545,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.903211+00:00"
 }

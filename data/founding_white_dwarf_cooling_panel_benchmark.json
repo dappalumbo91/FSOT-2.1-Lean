@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.959692+00:00",
+  "generated_at": "2026-07-15T00:38:07.137773+00:00",
   "domain": "Founding_White_Dwarf_Cooling_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.089846,
-  "pooled_median_error_pct": 0.089846,
-  "headline_median_error_pct": 0.089846,
+  "median_error_pct": 0.044923,
+  "pooled_median_error_pct": 0.044923,
+  "headline_median_error_pct": 0.044923,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.089846,
+      "computed": 0.044923,
       "measured": 0.0,
-      "error_pct": 0.089846,
-      "observable_count": 5
+      "error_pct": 0.044923,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.044923,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_23",
       "name": "White Dwarf Cooling Rate Anomaly",
-      "computed": 0.089846,
+      "computed": 0.044923,
       "measured": 0.0,
-      "error_pct": 0.089846,
-      "observable_count": 4
+      "error_pct": 0.044923,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "White Dwarf Cooling Rate Anomaly",
+      "scientific_measurement": {
+        "delta": 0.044923,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,53 +83,109 @@
       "lab": "founding_law_23_lab",
       "property": "white_dwarf_cooling_time",
       "name": "wd_0.6msun_age_10kK_gyr",
-      "computed": 3.0026953787,
+      "computed": 3.0013476894,
       "measured": 3.0,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "Gyr",
       "literature_reference": "Fontaine+ 2001 WD cooling tracks",
       "founding_law_id": "law_23",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 23",
+      "display_name": "wd 0.6msun age 10kK gyr",
+      "scientific_measurement": {
+        "delta": 0.00134769,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "Gyr"
+      }
     },
     {
       "lab": "founding_law_23_lab",
       "property": "white_dwarf_luminosity",
       "name": "wd_hot_luminosity_solar",
-      "computed": 0.0100089846,
+      "computed": 0.0100044923,
       "measured": 0.01,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "L_sun",
       "literature_reference": "Gaia WD sample hot branch",
       "founding_law_id": "law_23",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 23",
+      "display_name": "wd hot luminosity solar",
+      "scientific_measurement": {
+        "delta": 4.49e-06,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "L_sun"
+      }
     },
     {
       "lab": "founding_law_23_lab",
       "property": "white_dwarf_temperature",
       "name": "wd_young_surface_temp_k",
-      "computed": 25022.4614892041,
+      "computed": 25011.2307446021,
       "measured": 25000.0,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "K",
       "literature_reference": "Sloan WD hot sample median",
       "founding_law_id": "law_23",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 23",
+      "display_name": "wd young surface temp k",
+      "scientific_measurement": {
+        "delta": 11.2307446,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "K"
+      }
     },
     {
       "lab": "founding_law_23_lab",
       "property": "white_dwarf_cooling_rate",
       "name": "wd_cooling_rate_log_l",
-      "computed": -4.5040430681,
+      "computed": -4.502021534,
       "measured": -4.5,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "dex/yr",
       "literature_reference": "Fontaine+ 2001 cooling track slope",
       "founding_law_id": "law_23",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 23",
+      "display_name": "wd cooling rate log l",
+      "scientific_measurement": {
+        "delta": -0.00202153,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dex/yr"
+      }
     },
     {
       "lab": "founding_law_23_lab",
@@ -113,12 +195,25 @@
       "measured": 0.89845957,
       "error_pct": 0.0,
       "founding_law_id": "law_23",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 23",
+      "display_name": "fsot Astronomy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.089846,
-    "max_scalar_error_pct": 0.089846,
+    "scalar_pooled_median_error_pct": 0.044923,
+    "max_scalar_error_pct": 0.044923,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,19 @@
   "tier": 96,
   "founding_law_id": "law_23",
   "founding_law_name": "White Dwarf Cooling Rate Anomaly",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding White Dwarf Cooling Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.044923,
+    "max_error_pct": 0.044923,
+    "mean_abs_delta": 2.8085295775,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.942890+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.944523+00:00",
+  "generated_at": "2026-07-15T00:38:07.125259+00:00",
   "domain": "Founding_Quantum_Vacuum_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.095551,
-  "pooled_median_error_pct": 0.095551,
-  "headline_median_error_pct": 0.095551,
+  "median_error_pct": 0.047775,
+  "pooled_median_error_pct": 0.047775,
+  "headline_median_error_pct": 0.047775,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.095551,
+      "computed": 0.047775,
       "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 5
+      "error_pct": 0.047775,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.047775,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_11",
       "name": "Quantum Vacuum Energy Oscillation",
-      "computed": 0.095551,
+      "computed": 0.047775,
       "measured": 0.0,
-      "error_pct": 0.095551,
-      "observable_count": 4
+      "error_pct": 0.047775,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Quantum Vacuum Energy Oscillation",
+      "scientific_measurement": {
+        "delta": 0.047775,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,27 +83,55 @@
       "lab": "founding_law_11_lab",
       "property": "casimir_pressure_pa",
       "name": "casimir_pressure_1um",
-      "computed": 0.1301242158,
+      "computed": 0.1300621079,
       "measured": 0.13,
-      "error_pct": 0.095551,
+      "error_pct": 0.047775,
       "unit": "Pa",
       "literature_reference": "Lamoreaux PRL 78, 5 (1997)",
       "founding_law_id": "law_11",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 11",
+      "display_name": "casimir pressure 1um",
+      "scientific_measurement": {
+        "delta": 6.211e-05,
+        "delta_pct": 0.047775,
+        "effective_error_pct": 0.047775,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "Pa"
+      }
     },
     {
       "lab": "founding_law_11_lab",
       "property": "casimir_force_pN",
       "name": "casimir_force_sphere_plate_1um",
-      "computed": 98.0936396174,
+      "computed": 98.0468198087,
       "measured": 98.0,
-      "error_pct": 0.095551,
+      "error_pct": 0.047775,
       "unit": "pN",
       "literature_reference": "Decca et al. PRL 96, 240401 (2006)",
       "founding_law_id": "law_11",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 11",
+      "display_name": "casimir force sphere plate 1um",
+      "scientific_measurement": {
+        "delta": 0.04681981,
+        "delta_pct": 0.047775,
+        "effective_error_pct": 0.047775,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "pN"
+      }
     },
     {
       "lab": "founding_law_11_lab",
@@ -90,20 +144,48 @@
       "literature_reference": "Cosmological constant observational bound",
       "founding_law_id": "law_11",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 11",
+      "display_name": "zero point energy density gev4",
+      "scientific_measurement": {
+        "delta": -0.0,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "red",
+        "within_green_gate": false,
+        "within_aspiration_gate": false,
+        "unit": "GeV^4"
+      }
     },
     {
       "lab": "founding_law_11_lab",
       "property": "zero_point_energy",
       "name": "casimir_energy_density_1um",
-      "computed": 0.0013012422,
+      "computed": 0.0013006211,
       "measured": 0.0013,
-      "error_pct": 0.095551,
+      "error_pct": 0.047775,
       "unit": "J/m^3",
       "literature_reference": "Bordag+ Phys.Rep. 353 (2001)",
       "founding_law_id": "law_11",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 11",
+      "display_name": "casimir energy density 1um",
+      "scientific_measurement": {
+        "delta": 6.2e-07,
+        "delta_pct": 0.047777,
+        "effective_error_pct": 0.047777,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "J/m^3"
+      }
     },
     {
       "lab": "founding_law_11_lab",
@@ -113,12 +195,25 @@
       "measured": 0.9555063,
       "error_pct": 0.0,
       "founding_law_id": "law_11",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 11",
+      "display_name": "fsot Quantum Mechanics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.095551,
-    "max_scalar_error_pct": 0.095551,
+    "scalar_pooled_median_error_pct": 0.047775,
+    "max_scalar_error_pct": 0.047775,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,20 @@
   "tier": 96,
   "founding_law_id": "law_11",
   "founding_law_name": "Quantum Vacuum Energy Oscillation",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Quantum Vacuum Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.047777,
+    "max_error_pct": 100.0,
+    "mean_abs_delta": 0.011720635,
+    "precision_tier_counts": {
+      "green": 3,
+      "red": 1
+    },
+    "green_gate_fraction": 0.75,
+    "matches_domain_spine": false
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.899536+00:00"
 }

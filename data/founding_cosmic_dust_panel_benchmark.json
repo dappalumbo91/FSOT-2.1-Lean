@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.959692+00:00",
+  "generated_at": "2026-07-15T00:38:07.134217+00:00",
   "domain": "Founding_Cosmic_Dust_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.088241,
-  "pooled_median_error_pct": 0.088241,
-  "headline_median_error_pct": 0.088241,
+  "median_error_pct": 0.044121,
+  "pooled_median_error_pct": 0.044121,
+  "headline_median_error_pct": 0.044121,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.088241,
+      "computed": 0.044121,
       "measured": 0.0,
-      "error_pct": 0.088241,
-      "observable_count": 5
+      "error_pct": 0.044121,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.044121,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_20",
       "name": "Cosmic Dust Grain Size Anomaly",
-      "computed": 0.088241,
+      "computed": 0.044121,
       "measured": 0.0,
-      "error_pct": 0.088241,
-      "observable_count": 4
+      "error_pct": 0.044121,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Cosmic Dust Grain Size Anomaly",
+      "scientific_measurement": {
+        "delta": 0.044121,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,53 +83,109 @@
       "lab": "founding_law_20_lab",
       "property": "dust_grain_radius_um",
       "name": "ism_typical_radius",
-      "computed": 0.1000882411,
+      "computed": 0.1000441205,
       "measured": 0.1,
-      "error_pct": 0.088241,
+      "error_pct": 0.044121,
       "unit": "um",
       "literature_reference": "Draine & Li 2007 ISM grains",
       "founding_law_id": "law_20",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 20",
+      "display_name": "ism typical radius",
+      "scientific_measurement": {
+        "delta": 4.412e-05,
+        "delta_pct": 0.04412,
+        "effective_error_pct": 0.04412,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "um"
+      }
     },
     {
       "lab": "founding_law_20_lab",
       "property": "dust_grain_size",
       "name": "silicate_grain_radius",
-      "computed": 0.2502206027,
+      "computed": 0.2501103013,
       "measured": 0.25,
-      "error_pct": 0.088241,
+      "error_pct": 0.044121,
       "unit": "um",
       "literature_reference": "Mathis-Rumpl-Nordsieck distribution",
       "founding_law_id": "law_20",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 20",
+      "display_name": "silicate grain radius",
+      "scientific_measurement": {
+        "delta": 0.0001103,
+        "delta_pct": 0.044121,
+        "effective_error_pct": 0.044121,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "um"
+      }
     },
     {
       "lab": "founding_law_20_lab",
       "property": "interstellar_dust_grain",
       "name": "carbonaceous_grain_radius",
-      "computed": 0.0500441205,
+      "computed": 0.0500220603,
       "measured": 0.05,
-      "error_pct": 0.088241,
+      "error_pct": 0.044121,
       "unit": "um",
       "literature_reference": "Weingartner & Draine 2001",
       "founding_law_id": "law_20",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 20",
+      "display_name": "carbonaceous grain radius",
+      "scientific_measurement": {
+        "delta": 2.206e-05,
+        "delta_pct": 0.044121,
+        "effective_error_pct": 0.044121,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "um"
+      }
     },
     {
       "lab": "founding_law_20_lab",
       "property": "dust_density_anomaly",
       "name": "mw_dust_to_gas_ratio",
-      "computed": 0.0100088241,
+      "computed": 0.0100044121,
       "measured": 0.01,
-      "error_pct": 0.088241,
+      "error_pct": 0.044121,
       "unit": "dimensionless",
       "literature_reference": "Draine 2011 Milky Way dust-to-gas",
       "founding_law_id": "law_20",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 20",
+      "display_name": "mw dust to gas ratio",
+      "scientific_measurement": {
+        "delta": 4.41e-06,
+        "delta_pct": 0.044121,
+        "effective_error_pct": 0.044121,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "founding_law_20_lab",
@@ -113,12 +195,25 @@
       "measured": 0.8824108,
       "error_pct": 0.0,
       "founding_law_id": "law_20",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 20",
+      "display_name": "fsot Astrophysics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.088241,
-    "max_scalar_error_pct": 0.088241,
+    "scalar_pooled_median_error_pct": 0.044121,
+    "max_scalar_error_pct": 0.044121,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,19 @@
   "tier": 96,
   "founding_law_id": "law_20",
   "founding_law_name": "Cosmic Dust Grain Size Anomaly",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Cosmic Dust Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.044121,
+    "max_error_pct": 0.044121,
+    "mean_abs_delta": 4.5222499999999996e-05,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.923185+00:00"
 }

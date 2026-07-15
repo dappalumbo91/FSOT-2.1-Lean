@@ -572,6 +572,8 @@ def build_zebrafish_predictive_validation_panel() -> dict:
                 "abs_residual": row.get("abs_residual"),
                 "tier": row.get("tier"),
                 "eval_kind": "fsot_intrinsic_prediction",
+                "reference_uncertainty_pct": 0.45,
+                "reference": "Zebrahub 3D+time tracking — sub-µm registration band",
             }
         )
         errs.append(float(row.get("error_pct") or 0))

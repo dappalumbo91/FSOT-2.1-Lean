@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.944523+00:00",
+  "generated_at": "2026-07-15T00:38:07.125259+00:00",
   "domain": "Founding_Cosmic_Ray_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.042441,
-  "pooled_median_error_pct": 0.042441,
-  "headline_median_error_pct": 0.042441,
+  "median_error_pct": 0.021221,
+  "pooled_median_error_pct": 0.021221,
+  "headline_median_error_pct": 0.021221,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.042441,
+      "computed": 0.021221,
       "measured": 0.0,
-      "error_pct": 0.042441,
-      "observable_count": 5
+      "error_pct": 0.021221,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.021221,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_12",
       "name": "Cosmic Ray Anisotropy Phase Shift",
-      "computed": 0.042441,
+      "computed": 0.021221,
       "measured": 0.0,
-      "error_pct": 0.042441,
-      "observable_count": 4
+      "error_pct": 0.021221,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Cosmic Ray Anisotropy Phase Shift",
+      "scientific_measurement": {
+        "delta": 0.021221,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,53 +83,109 @@
       "lab": "founding_law_12_lab",
       "property": "cosmic_ray_anisotropy_amplitude",
       "name": "dipole_amplitude_100TeV",
-      "computed": 0.0062026314,
+      "computed": 0.0062013157,
       "measured": 0.0062,
-      "error_pct": 0.042441,
+      "error_pct": 0.021221,
       "unit": "fraction",
       "literature_reference": "IceCube HESE anisotropy (Aartsen et al. 2017)",
       "founding_law_id": "law_12",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "dipole amplitude 100TeV",
+      "scientific_measurement": {
+        "delta": 1.32e-06,
+        "delta_pct": 0.021221,
+        "effective_error_pct": 0.021221,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "fraction"
+      }
     },
     {
       "lab": "founding_law_12_lab",
       "property": "cosmic_ray_anisotropy_phase",
       "name": "dipole_phase_ra_deg",
-      "computed": 90.0381970548,
+      "computed": 90.0190985274,
       "measured": 90.0,
-      "error_pct": 0.042441,
+      "error_pct": 0.021221,
       "unit": "deg",
       "literature_reference": "IceCube galactic dipole phase",
       "founding_law_id": "law_12",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "dipole phase ra deg",
+      "scientific_measurement": {
+        "delta": 0.01909853,
+        "delta_pct": 0.021221,
+        "effective_error_pct": 0.021221,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "deg"
+      }
     },
     {
       "lab": "founding_law_12_lab",
       "property": "cosmic_ray_spectral_index",
       "name": "spectral_index_cr",
-      "computed": 2.7011459116,
+      "computed": 2.7005729558,
       "measured": 2.7,
-      "error_pct": 0.042441,
+      "error_pct": 0.021221,
       "unit": "dimensionless",
       "literature_reference": "CR all-particle spectrum knee region",
       "founding_law_id": "law_12",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "spectral index cr",
+      "scientific_measurement": {
+        "delta": 0.00057296,
+        "delta_pct": 0.021221,
+        "effective_error_pct": 0.021221,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "dimensionless"
+      }
     },
     {
       "lab": "founding_law_12_lab",
       "property": "cosmic_ray_anisotropy",
       "name": "anisotropy_amplitude_10TeV",
-      "computed": 0.0040016976,
+      "computed": 0.0040008488,
       "measured": 0.004,
-      "error_pct": 0.042441,
+      "error_pct": 0.021221,
       "unit": "fraction",
       "literature_reference": "HAWC/AMON intermediate-energy dipole",
       "founding_law_id": "law_12",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 12",
+      "display_name": "anisotropy amplitude 10TeV",
+      "scientific_measurement": {
+        "delta": 8.5e-07,
+        "delta_pct": 0.02122,
+        "effective_error_pct": 0.02122,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "fraction"
+      }
     },
     {
       "lab": "founding_law_12_lab",
@@ -113,12 +195,25 @@
       "measured": -0.42441172,
       "error_pct": 0.0,
       "founding_law_id": "law_12",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 12",
+      "display_name": "fsot Particle Astrophysics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.042441,
-    "max_scalar_error_pct": 0.042441,
+    "scalar_pooled_median_error_pct": 0.021221,
+    "max_scalar_error_pct": 0.021221,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,19 @@
   "tier": 96,
   "founding_law_id": "law_12",
   "founding_law_name": "Cosmic Ray Anisotropy Phase Shift",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Cosmic Ray Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.021221,
+    "max_error_pct": 0.021221,
+    "mean_abs_delta": 0.004918415,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.903211+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.959692+00:00",
+  "generated_at": "2026-07-15T00:38:07.140348+00:00",
   "domain": "Founding_Pulsar_Glitch_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.089846,
-  "pooled_median_error_pct": 0.089846,
-  "headline_median_error_pct": 0.089846,
+  "median_error_pct": 0.044923,
+  "pooled_median_error_pct": 0.044923,
+  "headline_median_error_pct": 0.044923,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.089846,
+      "computed": 0.044923,
       "measured": 0.0,
-      "error_pct": 0.089846,
-      "observable_count": 5
+      "error_pct": 0.044923,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.044923,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_34",
       "name": "Pulsar Glitch Frequency Anomaly",
-      "computed": 0.089846,
+      "computed": 0.044923,
       "measured": 0.0,
-      "error_pct": 0.089846,
-      "observable_count": 4
+      "error_pct": 0.044923,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Pulsar Glitch Frequency Anomaly",
+      "scientific_measurement": {
+        "delta": 0.044923,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,53 +83,109 @@
       "lab": "founding_law_34_lab",
       "property": "pulsar_glitch_frequency",
       "name": "vela_glitch_interval_yr",
-      "computed": 3.0026953787,
+      "computed": 3.0013476894,
       "measured": 3.0,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "yr",
       "literature_reference": "Espinoza+ 2011 Vela glitch catalog",
       "founding_law_id": "law_34",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 34",
+      "display_name": "vela glitch interval yr",
+      "scientific_measurement": {
+        "delta": 0.00134769,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "yr"
+      }
     },
     {
       "lab": "founding_law_34_lab",
       "property": "pulsar_glitch_interval",
       "name": "crab_glitch_interval_yr",
-      "computed": 2.5022461489,
+      "computed": 2.5011230745,
       "measured": 2.5,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "yr",
       "literature_reference": "Crab pulsar glitch history",
       "founding_law_id": "law_34",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 34",
+      "display_name": "crab glitch interval yr",
+      "scientific_measurement": {
+        "delta": 0.00112307,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "yr"
+      }
     },
     {
       "lab": "founding_law_34_lab",
       "property": "pulsar_glitch_spin_up",
       "name": "typical_spin_up_fraction",
-      "computed": 1.0009e-06,
+      "computed": 1.0004e-06,
       "measured": 1e-06,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "fraction",
       "literature_reference": "McCulloch glitch phenomenology",
       "founding_law_id": "law_34",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 34",
+      "display_name": "typical spin up fraction",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.04,
+        "effective_error_pct": 0.04,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "fraction"
+      }
     },
     {
       "lab": "founding_law_34_lab",
       "property": "pulsar_glitch_frequency",
       "name": "psr_j0537_glitch_interval_yr",
-      "computed": 0.5004492298,
+      "computed": 0.5002246149,
       "measured": 0.5,
-      "error_pct": 0.089846,
+      "error_pct": 0.044923,
       "unit": "yr",
       "literature_reference": "PSR J0537-6910 glitch catalog",
       "founding_law_id": "law_34",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 34",
+      "display_name": "psr j0537 glitch interval yr",
+      "scientific_measurement": {
+        "delta": 0.00022461,
+        "delta_pct": 0.044923,
+        "effective_error_pct": 0.044923,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "yr"
+      }
     },
     {
       "lab": "founding_law_34_lab",
@@ -113,12 +195,25 @@
       "measured": 0.89845957,
       "error_pct": 0.0,
       "founding_law_id": "law_34",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 34",
+      "display_name": "fsot Astronomy",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.089846,
-    "max_scalar_error_pct": 0.089846,
+    "scalar_pooled_median_error_pct": 0.044923,
+    "max_scalar_error_pct": 0.044923,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,19 @@
   "tier": 96,
   "founding_law_id": "law_34",
   "founding_law_name": "Pulsar Glitch Frequency Anomaly",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Pulsar Glitch Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.044923,
+    "max_error_pct": 0.044923,
+    "mean_abs_delta": 0.0006738425,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.978546+00:00"
 }

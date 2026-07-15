@@ -21,6 +21,14 @@ REBUILD_SCRIPTS = {
     "orbital_mechanics_benchmark.json": "build_orbital_mechanics_benchmark.py",
     "neuroscience_fi_precision_benchmark.json": "build_neuroscience_fi_precision_benchmark.py",
     "cosmology_anomalies_benchmark.json": "build_cosmology_anomalies_benchmark.py",
+    "geomagnetism_benchmark.json": "build_geomagnetism_benchmark.py",
+    "mechanical_engineering_panel_benchmark.json": "build_tier85_scientific_expansion_benchmarks.py",
+    "zebrafish_predictive_validation_panel_benchmark.json": "build_tier95_zebrahub_development_benchmarks.py",
+    "founding_quantum_vacuum_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
+    "founding_pulsar_glitch_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
+    "founding_white_dwarf_cooling_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
+    "founding_cosmic_dust_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
+    "founding_galactic_halo_rotation_panel_benchmark.json": "build_founding_unmapped_laws_benchmark.py",
 }
 
 CONTESTED_FILES = frozenset(

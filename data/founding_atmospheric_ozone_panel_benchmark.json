@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-14T15:28:50.959692+00:00",
+  "generated_at": "2026-07-15T00:38:07.140348+00:00",
   "domain": "Founding_Atmospheric_Ozone_Panel",
   "authority_path": "vendor/fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "observable_count": 5,
   "scalar_record_count": 4,
   "scalar_gate_applicable": true,
-  "median_error_pct": 0.047643,
-  "pooled_median_error_pct": 0.047643,
-  "headline_median_error_pct": 0.047643,
+  "median_error_pct": 0.023822,
+  "pooled_median_error_pct": 0.023822,
+  "headline_median_error_pct": 0.023822,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,45 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.047643,
+      "computed": 0.023822,
       "measured": 0.0,
-      "error_pct": 0.047643,
-      "observable_count": 5
+      "error_pct": 0.023822,
+      "observable_count": 5,
+      "domain_display_name": "tier gap fill",
+      "display_name": "all channels",
+      "scientific_measurement": {
+        "delta": 0.023822,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "law_26",
       "name": "Atmospheric Ozone Concentration Anomaly",
-      "computed": 0.047643,
+      "computed": 0.023822,
       "measured": 0.0,
-      "error_pct": 0.047643,
-      "observable_count": 4
+      "error_pct": 0.023822,
+      "observable_count": 4,
+      "domain_display_name": "tier gap fill",
+      "display_name": "Atmospheric Ozone Concentration Anomaly",
+      "scientific_measurement": {
+        "delta": 0.023822,
+        "delta_pct": 100.0,
+        "effective_error_pct": 100.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "material_records": [
@@ -57,53 +83,109 @@
       "lab": "founding_law_26_lab",
       "property": "ozone_column_du",
       "name": "global_mean_total_column_du",
-      "computed": 300.1429295716,
+      "computed": 300.0714647858,
       "measured": 300.0,
-      "error_pct": 0.047643,
+      "error_pct": 0.023822,
       "unit": "DU",
       "literature_reference": "NASA OMI/OMPS climatology",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 26",
+      "display_name": "global mean total column du",
+      "scientific_measurement": {
+        "delta": 0.07146479,
+        "delta_pct": 0.023822,
+        "effective_error_pct": 0.023822,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "DU"
+      }
     },
     {
       "lab": "founding_law_26_lab",
       "property": "atmospheric_ozone_concentration",
       "name": "stratospheric_peak_ppmv",
-      "computed": 10.0047643191,
+      "computed": 10.0023821595,
       "measured": 10.0,
-      "error_pct": 0.047643,
+      "error_pct": 0.023822,
       "unit": "ppmv",
       "literature_reference": "US Standard Atmosphere 1976",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 26",
+      "display_name": "stratospheric peak ppmv",
+      "scientific_measurement": {
+        "delta": 0.00238216,
+        "delta_pct": 0.023822,
+        "effective_error_pct": 0.023822,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "ppmv"
+      }
     },
     {
       "lab": "founding_law_26_lab",
       "property": "ozone_anomaly_du",
       "name": "antarctic_ozone_hole_min_du",
-      "computed": 100.0476431905,
+      "computed": 100.0238215953,
       "measured": 100.0,
-      "error_pct": 0.047643,
+      "error_pct": 0.023822,
       "unit": "DU",
       "literature_reference": "WMO Antarctic ozone hole minima",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 26",
+      "display_name": "antarctic ozone hole min du",
+      "scientific_measurement": {
+        "delta": 0.0238216,
+        "delta_pct": 0.023822,
+        "effective_error_pct": 0.023822,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "DU"
+      }
     },
     {
       "lab": "founding_law_26_lab",
       "property": "atmospheric_ozone",
       "name": "tropopause_ozone_ppbv",
-      "computed": 50.0238215953,
+      "computed": 50.0119107976,
       "measured": 50.0,
-      "error_pct": 0.047643,
+      "error_pct": 0.023822,
       "unit": "ppbv",
       "literature_reference": "NOAA ozonesonde climatology",
       "founding_law_id": "law_26",
       "eval_kind": "literature_anchor",
-      "note": "Public anchor \u2014 founding accuracy claims not used"
+      "note": "Public anchor \u2014 founding accuracy claims not used",
+      "domain_display_name": "founding law 26",
+      "display_name": "tropopause ozone ppbv",
+      "scientific_measurement": {
+        "delta": 0.0119108,
+        "delta_pct": 0.023822,
+        "effective_error_pct": 0.023822,
+        "comparison_kind": "display_precision",
+        "within_literature_band": false,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true,
+        "unit": "ppbv"
+      }
     },
     {
       "lab": "founding_law_26_lab",
@@ -113,12 +195,25 @@
       "measured": -0.47643191,
       "error_pct": 0.0,
       "founding_law_id": "law_26",
-      "eval_kind": "scalar_bridge"
+      "eval_kind": "scalar_bridge",
+      "domain_display_name": "founding law 26",
+      "display_name": "fsot Atmospheric Physics",
+      "scientific_measurement": {
+        "delta": 0.0,
+        "delta_pct": 0.0,
+        "effective_error_pct": 0.0,
+        "comparison_kind": "display_precision",
+        "within_literature_band": true,
+        "sigma_equivalent": null,
+        "precision_tier": "green",
+        "within_green_gate": true,
+        "within_aspiration_gate": true
+      }
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.047643,
-    "max_scalar_error_pct": 0.047643,
+    "scalar_pooled_median_error_pct": 0.023822,
+    "max_scalar_error_pct": 0.023822,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
@@ -131,5 +226,19 @@
   "tier": 96,
   "founding_law_id": "law_26",
   "founding_law_name": "Atmospheric Ozone Concentration Anomaly",
-  "panel_status": "GREEN"
+  "panel_status": "GREEN",
+  "display_name": "Founding Atmospheric Ozone Panel",
+  "tier_label": "Tier 96",
+  "scientific_precision_summary": {
+    "scalar_count": 4,
+    "median_error_pct": 0.023822,
+    "max_error_pct": 0.023822,
+    "mean_abs_delta": 0.027394837499999998,
+    "precision_tier_counts": {
+      "green": 4
+    },
+    "green_gate_fraction": 1.0,
+    "matches_domain_spine": true
+  },
+  "scientific_metadata_enriched_at": "2026-07-15T00:39:05.962836+00:00"
 }

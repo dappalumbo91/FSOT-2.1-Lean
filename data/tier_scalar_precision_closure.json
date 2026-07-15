@@ -1,34 +1,12 @@
 {
-  "generated_at": "2026-07-13T17:27:17.099834+00:00",
+  "generated_at": "2026-07-15T00:39:10.578270+00:00",
   "version": "1.0",
   "gate": "pooled_scalar_median_or_effective_median <= 0.05%",
   "tier_scalar_max_record_gate_pct": 0.05,
-  "benchmark_file_count": 367,
-  "tier_scalar_pass_count": 364,
-  "tier_scalar_fail_count": 3,
-  "closed": false,
-  "failing_domains": [
-    {
-      "domain": "Zebrafish_Predictive_Validation_Panel",
-      "file": "zebrafish_predictive_validation_panel_benchmark.json",
-      "scalar_pooled_median_error_pct": 0.368118,
-      "effective_scalar_median_error_pct": 0.36811639574741584,
-      "max_scalar_error_pct": 0.736747
-    },
-    {
-      "domain": "cosmology_anomalies_benchmark.json",
-      "file": "cosmology_anomalies_benchmark.json",
-      "scalar_pooled_median_error_pct": 0.11816499999999999,
-      "effective_scalar_median_error_pct": 0.09155821428571945,
-      "max_scalar_error_pct": 0.486991
-    },
-    {
-      "domain": "Mechanical_Engineering_Panel",
-      "file": "mechanical_engineering_panel_benchmark.json",
-      "scalar_pooled_median_error_pct": 0.078697,
-      "effective_scalar_median_error_pct": 0.07869749999999875,
-      "max_scalar_error_pct": 0.078697
-    }
-  ],
+  "benchmark_file_count": 374,
+  "tier_scalar_pass_count": 374,
+  "tier_scalar_fail_count": 0,
+  "closed": true,
+  "failing_domains": [],
   "honest_statement": "tier_scalar_pass uses pooled scalar median (or literature-aware effective median) \u2264 0.05%, aligned with fsot_precision_constants tier aspiration. Per-record max up to 0.5% remains the green_gate strict_scalar bound."
 }

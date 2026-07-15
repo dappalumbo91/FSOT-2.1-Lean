@@ -38,7 +38,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
     union_classifier = str(spec.get("classifier_mode") or "union") == "union"
 
     sys.path.insert(0, str(ROOT / "scripts"))
-    from magnetosphere_timeline import dst_storm_predicted, kp_storm_predicted  # noqa: E402
+    from magnetosphere_timeline import dst_storm_predicted, hp_storm_predicted  # noqa: E402
 
     records: list[dict] = []
     for row in doc.get("dst") or []:
@@ -68,10 +68,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         if hp is None:
             continue
         observed_storm = float(hp) >= hp_thr
-        adj_thr = hp_thr - abs(S_em) * 10.0
-        predicted_storm = kp_storm_predicted(
-            float(hp), kp_thr=hp_thr, adj_kp=adj_thr, union_classifier=union_classifier
-        )
+        predicted_storm = hp_storm_predicted(float(hp), hp_thr=hp_thr)
         match = observed_storm == predicted_storm
         records.append(
             {

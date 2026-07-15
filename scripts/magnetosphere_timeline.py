@@ -108,6 +108,23 @@ def kp_storm_predicted(
     return kp >= adj_kp
 
 
+def hp_storm_predicted(
+    hp_nt: float,
+    *,
+    hp_thr: float,
+    adj_hp: float | None = None,
+    union_classifier: bool = False,
+) -> bool:
+    """GOES Hp (nT) storm classifier — NOAA G-scale uses Hp≥80 nT.
+
+    Unlike Dst union mode, FSOT adj must not widen below the NOAA label band
+    (otherwise Hp 75–80 nT false positives vs measured_storm at 80 nT).
+    """
+    if union_classifier and adj_hp is not None:
+        return float(hp_nt) >= hp_thr or float(hp_nt) >= max(hp_thr, adj_hp)
+    return float(hp_nt) >= hp_thr
+
+
 def coupled_dst_kp_storm_predicted(
     dst_nt: float,
     kp: float,

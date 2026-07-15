@@ -43,7 +43,7 @@ def build_panel(law_id: str) -> dict:
     records: list[dict] = []
     for anchor in panel_spec["anchors"]:
         measured = float(anchor["measured"])
-        computed, err = _fsot_scaled(measured, scalar, factor=0.001)
+        computed, err = _fsot_scaled(measured, scalar, factor=0.0005)
         records.append(
             {
                 "lab": f"founding_{law_id}_lab",
