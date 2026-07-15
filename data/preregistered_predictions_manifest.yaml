@@ -321,9 +321,10 @@ predictions:
     sota_label: "Desktop engine simulator typical fuel-property error"
     discriminant: "within_10pct_of_observed_gap"
     note: >
-      Five FSOT-designed alternative fuels (hemp grounded/advanced, algae biodiesel,
-      mushroom ester, green hydrogen) — thermochemistry + Prius engine simulator outputs
-      vs seed-scalar predictions; novel molecular states not pre-existing in literature.
+      Seven FSOT-designed alternative fuels (hemp grounded/advanced, algae biodiesel,
+      mushroom ester, green hydrogen, optimax, bio_spark) — thermochemistry + Prius
+      engine simulator outputs vs seed-scalar predictions; novel molecular states not
+      pre-existing in literature; gasoline baseline for comparison only.
     registered_at: "2026-07-15"
 
   - id: PRED-035

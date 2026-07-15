@@ -54,11 +54,16 @@ def _verified_desktop_evidence() -> dict:
             "fsot_algae_oil_biodiesel",
             "fsot_mushroom_spore_fuel",
             "fsot_green_hydrogen",
+            "fsot_optimax",
+            "fsot_bio_spark",
         ],
+        "gasoline_baseline": "gasoline",
         "fuel_lab_note": (
-            "Five novel FSOT-designed fuel molecular states verified against seed-scalar predictions "
-            "and cross-referenced with grounded thermochemistry + Prius engine simulator outputs."
+            "Seven novel FSOT-designed fuel molecular states verified against seed-scalar predictions "
+            "and cross-referenced with grounded thermochemistry + Prius engine simulator outputs; "
+            "gasoline included as fossil baseline for comparison."
         ),
+        "fuel_evidence_figure": "data/figures/verified_desktop_fuels.png",
         "transporter_note": (
             "Constraint verification only: quantum-information anchors plus FSOT portal proxies — "
             "not a claim of macroscopic matter transport."

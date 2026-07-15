@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T11:21:25.338755+00:00",
+  "generated_at": "2026-07-15T11:31:29.845093+00:00",
   "version": "1.0",
   "audience": "peer_review_publication",
   "theory_frame": {
@@ -142,9 +142,13 @@
       "fsot_hemp_waste_advanced",
       "fsot_algae_oil_biodiesel",
       "fsot_mushroom_spore_fuel",
-      "fsot_green_hydrogen"
+      "fsot_green_hydrogen",
+      "fsot_optimax",
+      "fsot_bio_spark"
     ],
-    "fuel_lab_note": "Five novel FSOT-designed fuel molecular states verified against seed-scalar predictions and cross-referenced with grounded thermochemistry + Prius engine simulator outputs.",
+    "gasoline_baseline": "gasoline",
+    "fuel_lab_note": "Seven novel FSOT-designed fuel molecular states verified against seed-scalar predictions and cross-referenced with grounded thermochemistry + Prius engine simulator outputs; gasoline included as fossil baseline for comparison.",
+    "fuel_evidence_figure": "data/figures/verified_desktop_fuels.png",
     "transporter_note": "Constraint verification only: quantum-information anchors plus FSOT portal proxies \u2014 not a claim of macroscopic matter transport.",
     "panels": [
       {
@@ -155,7 +159,7 @@
       },
       {
         "panel": "Fuel_Lab_Live_Panel",
-        "record_count": 313,
+        "record_count": 366,
         "pooled_median_error_pct": 0.039349,
         "benchmark": "data/fuel_lab_live_panel_benchmark.json"
       },

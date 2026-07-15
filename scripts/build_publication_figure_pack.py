@@ -211,6 +211,12 @@ def main() -> int:
     figure_h0_landscape(args.output_dir / "h0_landscape.png", contested)
     figure_empirical_headline(args.output_dir / "empirical_headline_summary.png", empirical)
 
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_verified_desktop_fuel_figure.py")],
+        check=True,
+        cwd=str(ROOT),
+    )
+
     manifest_path = args.output_dir / "publication_figure_manifest.json"
     manifest = {
         "generated_from": str(ROOT),
@@ -219,6 +225,7 @@ def main() -> int:
             "contested_fsot_vs_lcdm.png",
             "h0_landscape.png",
             "empirical_headline_summary.png",
+            "verified_desktop_fuels.png",
         ],
         "data_sources": [
             str(WALKTHROUGH),

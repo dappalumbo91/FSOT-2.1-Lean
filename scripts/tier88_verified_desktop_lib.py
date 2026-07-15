@@ -122,7 +122,11 @@ FSOT_DESIGNED_FUEL_IDS = (
     "fsot_algae_oil_biodiesel",
     "fsot_mushroom_spore_fuel",
     "fsot_green_hydrogen",
+    "fsot_optimax",
+    "fsot_bio_spark",
 )
+
+GASOLINE_BASELINE_ID = "gasoline"
 
 
 def _merge_fuel_profiles(*docs: dict) -> list[dict]:
@@ -148,10 +152,13 @@ def ingest_fuel_lab() -> dict:
         _load_json(results / "grounded_fuel_profiles_full.json"),
         _load_json(results / "test_grounded.json"),
         _load_json(results / "grounded_profiles.json"),
+        _load_json(fuel_root / "fuel_profiles.json"),
     )
     compare_full = _load_json(results / "compare_full_20260526.json")
+    compare_optimax = _load_json(results / "compare_optimax_wave_20260715.json")
     compare_mat = _load_json(results / "material_compatibility_comparison.json")
     sim_records = list(compare_full.get("records") or [])
+    sim_records.extend(compare_optimax.get("records") or [])
     mat_limit = 12 if _deep_mode() else 6
     sim_records.extend((compare_mat.get("records") or [])[:mat_limit])
     hemp_records: list[dict] = []
@@ -167,8 +174,10 @@ def ingest_fuel_lab() -> dict:
         "profile_count": len(profiles),
         "simulation_records": sim_records,
         "simulation_record_count": len(sim_records),
+        "gasoline_baseline_id": GASOLINE_BASELINE_ID,
         "simulation_sources": [
             "compare_full_20260526.json",
+            "compare_optimax_wave_20260715.json",
             "material_compatibility_comparison.json",
         ],
         "hemp_simulation_records": hemp_records,
