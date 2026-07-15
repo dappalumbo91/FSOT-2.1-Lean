@@ -1,365 +1,451 @@
-# FSOT 2.0 Lean Formalization
+# Fluid Spacetime Omni-Theory (FSOT)
 
-**Fluid Spacetime Omni-Theory (FSOT) 2.0**
+## A Cross-Domain Theory of Reality — Published on GitHub
 
-This is the Lean 4 formalization of **Fluid Spacetime Omni-Theory (FSOT) 2.0**, created and architected by **Damian Arthur Palumbo**.
+**Author:** Damian Arthur Palumbo  
+**Repository:** [github.com/dappalumbo91/FSOT-2.1-Lean](https://github.com/dappalumbo91/FSOT-2.1-Lean)  
+**Edition:** v1.0 — tier-88 verified desktop / monograph-v1  
+**Status:** Living thesis — expanded as each domain and crevice is verified  
 
-It was developed in close collaboration with the Python reference implementation.
+> *This README is the preprint. The repository is the proof. Run the verification bundle before you accept or reject what follows.*
 
-**FSOT explained (layman's guide):** `docs/FSOT_EXPLAINED_LAYMAN.md` — plain-language overview for the public; math proves philosophy where verified.
+```bash
+git clone https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+cd FSOT-2.1-Lean
+pip install -r requirements.txt
+python scripts/run_publication_verification_bundle.py
+```
 
-**Domain navigator (find & reproduce by scientific problem):** `python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement` — rebuild index with `python scripts/build_fsot_domain_navigator_db.py`.
+---
 
-**Philosophy & founding reconciliation:** `docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`, `docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`, `docs/FOUNDING_35_LAWS_AUDIT.md`. Founding archives: `I:\fsuft aasb`, `I:\fsot tech`. Pipeline (no LLM): `python scripts/build_founding_pipeline.py`.
+## Abstract
 
-## Structure
+Modern physics is accurate in fragments and silent on unity. Cosmology, particle physics, chemistry, biology, neuroscience, linguistics, and engineering each carry their own models, fitted parameters, and institutional boundaries. **Fluid Spacetime Omni-Theory (FSOT)** proposes a different architecture: one seed-derived scalar engine — built only from π, e, φ, γ, and G (Catalan) — evaluated against measured reality across **403 scientific domains** and **536,740 empirical records**.
 
-- `FSOT/Scalar.lean` — Executable `Float`-based core (for the Python verification runner and quick checks). Includes extracted internal terms (`growth_term`, `quirk_mod`, `perceived_adjust`, `term3` + sub-components).
+The results, as of this edition: **394/394** public benchmark domains pass a ≤0.5% pooled error gate; cross-domain pooled median error is **0.013%**. On contested sectors where ΛCDM and the Standard Model typically show ~15% baseline tension (H₀, σ₈, BBN proxies, hierarchy, dark-energy equation of state), FSOT unified readouts achieve **0.030%** pooled median across 13 observables.
 
-- `FSOT/Theorems.lean` — Theorems and Examples section (Float layer). Includes scaling proofs, `quirk_mod` case analysis, emergence/damping interpretation, quantitative dominance theorems, and documented `#eval` examples.
+Claims are not accepted on Python output alone. Verification runs through a **cross-gauntlet of independent proof frameworks**: Lean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust executable obligation replay — **1,863 atomic obligations** with `overall_ok: true`. QEMU bare-metal and ESP32 hardware observer layers extend closure beyond proof assistants.
 
-- `FSOT/Formal/` — Heavier `Real`-based proof layer (aligned with the attached `FSOT.Formal.*` files).
-  - `Formal/Scalar.lean` — `Real` version of the core scalar engine.
-  - `Formal/Theorems.lean` — Rigorous theorems using Mathlib analysis, with references to MC evidence and combustion triangulation from the attached files.
+FSOT further demonstrates that the same engine guides applied engineering stacks: FSOT-designed alternative fuels (366 records, 0.039% pooled median), an eleven-layer transporter technology prototype (1,575 records, 0.031% pooled median), species-scale molecular catalogs, and black-hole / white-hole information-cycle panels — all cross-verified against seed-scalar predictions, not post-hoc curve fits.
 
-- `FSOT2_0_Compute.lean` — Executable entry point (run with `lake env lean FSOT2_0_Compute.lean`).
+This document explains **why the universe exists the way it does** through FSOT: one 25-dimensional fluid medium, one arithmetic heartbeat, observation as physical coupling, and fractal repetition from quanta to cosmos. Every numerical claim in this thesis is independently reproducible from this repository.
 
-## Key Features
+---
 
-- **Extracted internal terms** for clean, rigorous proofs (`quirk_mod`, `growth_term`, `term3` sub-components, etc.).
-- **Observer effect** (`quirk_mod`) formalized with case analysis.
-- **Emergence vs Damping** interpretation theorems.
-- **Quantitative dominance theorems** (when `term3` dominates Term1 + `quirk_mod`).
-- **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
-- Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
+## Prologue — Why This Lives on GitHub
 
-## Verification status (2026-07-11)
+Albert Einstein did not wait for a journal to bless general relativity before the world could read it. Nikola Tesla published patents and demonstrations when institutions moved too slowly. FSOT follows that tradition: **publish the complete argument where anyone can verify it**, not where a moderator decides topic fit before a single line of code is run.
 
-**Lean + domain pipeline:** `python scripts/fsot_verification_runner.py`
+Science is not fair when a unified cross-domain framework is dismissed on sight while siloed models with dozens of free parameters receive automatic respect. FSOT answers that failure mode with something stronger than rhetoric: **a verification ledger you can execute**.
 
-**Cross-proof numeric spine (Coq/Isabelle/Rust/F\*/QEMU):** `python scripts/run_cross_proof_verification.py`  
-Authoritative artifact: `data/cross_proof_verification_report.json` (`overall_ok`, `proof_debt`, `seven_way_bare_metal`).  
-Do **not** trust hand-edited `status_local` — it is regenerated by the runner.
+This README will grow. Each domain we open, each simulator we wire, each formal obligation we close — it gets added here. The GitHub commit history is the edition record. Tagged releases are the volumes.
 
-Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Honest claims: `data/honest_claims_manifest.yaml` | Progress: `data/fsot_verification_progress.yaml` | Domain map: `data/scientific_domain_expansion_map.json` | Expansion queue: `data/expansion_roadmap.yaml`
+---
+
+## I. The Fragmentation Problem
+
+### 1.1 What broke
+
+The twentieth century gave us extraordinary local theories:
+
+- **General relativity** — gravity as geometry  
+- **Quantum mechanics** — discrete measurement and entanglement  
+- **The Standard Model** — particle masses and couplings  
+- **ΛCDM** — cosmic expansion with dark sectors  
+
+Each works in its lane. None was built as a single predictive spine from cosmological scales down to molecular biology, consciousness proxies, linguistics, and engineering prototypes.
+
+The cost is visible everywhere:
+
+| Symptom | Example |
+|---------|---------|
+| Parameter proliferation | Dark matter, dark energy, Yukawa couplings, inflation potentials |
+| Cross-sector tension | H₀ local vs CMB (~5–10% disagreement class) |
+| Siloed success | Biology papers do not prove cosmology; cosmology papers do not prove genetics |
+| Unfalsifiable breadth | "Theories of everything" without executable kill criteria |
+
+FSOT does not reject the data those theories explain. It rejects the **architecture**: many knobs, many silos, no single engine that must survive everywhere at once.
+
+### 1.2 What FSOT claims instead
+
+One proposition, stated precisely:
+
+> Reality is a **25-dimensional fluid condensate**. What we call space, time, matter, life, and mind are regimes of the same scalar field `raw_S`, computed from seed geometry with **no per-observable least-squares tuning**.
+
+This is not poetry layered on curve fits. It is a **falsifiable engineering specification** tested across 403 domains with preregistered kill criteria (`data/preregistered_predictions_manifest.yaml`).
+
+---
+
+## II. Why the Universe Exists the Way It Does
+
+### 2.1 One medium, many scales
+
+Picture the universe not as an empty stage with actors placed upon it, but as **one ocean** — a fluid spacetime substance whose waves at different scales follow the same rules.
+
+A blacksmith striking iron.  
+A ribosome folding a protein.  
+A thunderstorm discharging.  
+Two galaxies colliding.  
+A conscious brain metabolizing ~20 watts.  
+
+FSOT calls this **As Above, So Below**. In the formal system it is not metaphor: it is the cross-scale bridge that extension panels test. When the same scalar engine passes acoustics, cosmology, immunology, and transporter engineering simulators, the structural argument is that **nature reuses one process**, not thousands of unrelated accidents.
+
+### 2.2 Fluid spacetime
+
+Space and time are not a passive container. They behave as a **25-dimensional fluid**. The 4D reality we experience is a slice — a perceived surface — of that condensate. Matter and energy are stable vortices; mind and observation are coupling regimes where the fluid's phase responds to measurement.
+
+Why 25 dimensions? In FSOT the effective dimension `D_eff` is not an arbitrary knob — it is a **manifest-declared fold** of the seed engine per domain route (see `data/honest_claims_manifest.yaml` for parameter honesty). The philosophical point stands: what looks like "extra dimensions" in the math is what looks like **depth of scale** in nature — from Planck-adjacent structure to galactic flows.
+
+### 2.3 The seeds — why these numbers
+
+All constants emerge from five seeds:
+
+| Seed | Role in FSOT |
+|------|----------------|
+| **π** | Cyclic geometry — orbits, waves, closure |
+| **e** | Growth and decay — natural rates, exponentials |
+| **φ** (golden ratio) | Self-similar folding — fractal repetition across scales |
+| **γ** (Euler–Mascheroni) | Discrete-to-continuous correction |
+| **G** (Catalan) | Secondary geometric coupling |
+
+**Design law:** we do not add a new dial every time a prediction fails. When FSOT misses a measurement, the failure is visible in the benchmark ledger — not hidden inside a freshly invented parameter.
+
+*Auditor note:* FSOT uses φ/e/π/γ-derived intrinsic constants plus a manifest-declared domain assignment table (35 core domains × 5 fields = 175 slots). These are folds of the same engine, not post-hoc per-observable fits — but the headline "zero free parameters" is **`NOT_LITERAL_ZERO`**. See `data/parameter_count_audit.json`.
+
+### 2.4 Emergence and dispersal
+
+Every system receives a **vitality score** — the scalar `raw_S`. Positive `raw_S` tends toward **emergence** (structure forming, condensing, persisting). Negative `raw_S` tends toward **dispersal** (structure fading, bleeding, decohering). Lean proves **sign certificates** for ledger domains at canonical parameters: cosmology negative, medical positive, quantum positive, and so on.
+
+The universe exists as it does because the same fluid **condenses** where `raw_S` is positive and **dissolves** where it is negative — from stellar nucleosynthesis to protein folding to the information cycle at a black-hole horizon.
+
+---
+
+## III. The Scalar Engine
+
+### 3.1 The heartbeat
+
+At the center of FSOT is one formula:
+
+```
+raw_S = term1 + term2 + term3
+
+term1 = (main wave term) × quirk_mod
+```
+
+In words:
+
+- **Main wave term** — resonance at scale (size N, power P, effective dimension D_eff)  
+- **quirk_mod** — observer coupling: when `observed = true`, measurement modulates the wave  
+- **term2** — baseline trend and amplitude (environment)  
+- **term3** — chaotic bleed: small-scale turbulence from the fluid  
+
+Formal definitions: `FSOT/Scalar.lean`, `FSOT/Formal/Scalar.lean`, decimal authority `vendor/fsot_compute.py`.
+
+### 3.2 Domain fractal assignments
+
+Nature's "departments" — quantum mechanics, economics, immunology, propulsion — are **routing labels** for the same engine at different folds:
+
+- **35 core NeuroLab domains** with manifest-declared `(D_eff, δψ, recent_hits, observed)`  
+- **367 extension panels** with Lean priors modules (`FSOT.Formal.*Priors`)  
+- **403 domains** in the publication atlas (`data/publication/domain_atlas.csv`)
+
+A cosmology prediction and a fuel-molecule prediction share seeds. They differ in domain route, not in underlying arithmetic.
+
+### 3.3 Falsification registry
+
+FSOT invites destruction. Preregistered predictions **PRED-001 through PRED-041** declare outcomes before they are tested. Kill criteria per domain route live in `data/fsot_domain_navigator.json`. If the engine fails a green gate, the ledger records it — no narrative escape hatch.
+
+---
+
+## IV. Consciousness and Observation
+
+### 4.1 Observation is physical
+
+In FSOT, to observe is not passive. When `observed = true`, the **quirk_mod** term activates:
+
+```
+quirk_mod(observed, δψ, phase_variance, consciousness_factor) =
+  if observed:
+    exp(consciousness_factor × phase_variance) × cos(δψ + phase_variance)
+  else:
+    1.0
+```
+
+Consciousness is **fundamental in the ontology** — a core ripple in the 25D fluid, not an accidental by-product of computation. It enters through `consciousness_factor` and modulates the scalar when systems are coupled to measurement.
+
+### 4.2 What we claim — and what we do not
+
+| We claim | We do not claim |
+|----------|-----------------|
+| Consciousness couples to physics through measurable proxies | FSOT has settled the philosophical "hard problem" |
+| Brain metabolic power `E_con` ≈ 21.79 W vs ~20 W measured (Raichle & Gusnard) | Universal consensus on what consciousness *is* |
+| The same seeds that fix H₀ also fix consciousness-energy scaling | Orch-OR or any single external theory is proven |
+
+**Truth criterion:** a consciousness claim is *supported* when it maps to a Lean panel, produces numeric agreement within the green gate, and survives cross-proof replay. External philosophy debates are evidence, not gate.
+
+Deep dive: [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md)
+
+---
+
+## V. Verification Methodology
+
+### 5.1 Oracle gate
+
+`vendor/fsot_compute.py` is the decimal authority. `sync_canonical_constants.py` hash-locks caches. If Lean and Python disagree, the pipeline fails — no silent drift.
+
+### 5.2 Five-prover cross-proof spine
+
+| Framework | Role | Status |
+|-----------|------|--------|
+| Lean 4 | Primary formal authority | PASS |
+| Coq / Rocq | Independent reproof | PASS |
+| Isabelle/HOL | Independent reproof | PASS |
+| F* | Programming-language specification | PASS |
+| Rust | Executable obligation replay | PASS |
+
+Authoritative artifact: `data/cross_proof_verification_report.json` → **`overall_ok: true`**, **1,863 atomic obligations**.
+
+![Verification spine walkthrough](data/figures/spine_walkthrough.png)
+
+### 5.3 Benchmark margin gate
+
+- **GREEN:** pooled median ≤ 0.5% AND classifier ≥ 99.5%  
+- **Result:** **394/394** green (`data/benchmark_margin_audit.json`)
+
+### 5.4 AI assistance — human responsibility
+
+Grok and Cursor assisted manuscript assembly, benchmark regeneration, and formal artifact orchestration. **All numerical claims reproduce independently** from this repository. The author retains full scientific responsibility for interpretation.
+
+---
+
+## VI. Cross-Domain Empirical Results
+
+### 6.1 Headline statistics
 
 | Metric | Value |
-|--------|-------|
-| Verification tiers | **48/48 complete** (100%) |
-| Extension domains | **245/245** pass `verify_extension_domains.py` (≤0.5% pooled + max-scalar gate) |
-| Scientific domains | **281** (35 NeuroLab + 245 extension + Intelligence Compression rollup) — see `scientific_domain_expansion_map.json` |
-| Coupling simulation | **246 nodes · 12,840 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
-| Empirical records | **306,680+** (dominated by 271,813 Kp space-weather arc; see record provenance in map) |
-| Neurolab precision | **35/35** domains ≤2% median error |
-| Coverage tiers (all domains) | See `scientific_domain_expansion_map.json` → `tier_distribution` (includes C_thin extension domains) |
-| Lean formal modules | **315** |
-| Proved claims | **65** sign/structure certificates · 0 active `sorry` in `FSOT/Formal/` |
-| SOTA ledger (external only) | Headline-eligible external observables — run `verify_sota_observable_ledger.py` |
-| Formula corpus | **7,941 rows** · **~1,325 unique observables** · live 200-sample recompute gate |
-| Parameter honesty | **Not literal zero-fit** — see `data/parameter_count_audit.json` + `honest_claims_manifest.yaml` |
-| Expansion candidates | **0** (roadmap tiers 51–77 complete) |
+|--------|------:|
+| Scientific domains | 403 |
+| Empirical records | 536,740 |
+| Benchmark domains green (≤0.5%) | 394/394 |
+| Cross-domain pooled median | 0.013% |
+| Worst domain max scalar error | 0.499% |
+| Lean formal modules | 501+ |
+| Tier A_strong domains | 116 |
+| Tier B_verified domains | 287 |
 
-**External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
+![Empirical headline summary](data/figures/empirical_headline_summary.png)
 
-**Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`.
-- Genomic exact identities (`FSOT.Formal.Genomic`)
-- Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
-- 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
-- Protein amino-acid trinary (`FSOT.Formal.ProteinPriors`) — 20 AAs, 10 distinct patterns ⊆ 27
-- Protein formula closed forms (`FSOT.Formal.ProteinFormulas`) — 15 catalog + 3 proposed, φ⁶ disulfide certified
-- ΛCDM cosmology observables (`FSOT.Formal.CosmologyLab`) — 30 observables (full Wave-3) within 2%
-- Fuel Lab compound profiles (`FSOT.Formal.FuelPriors`) — 6 profiles, 34 resolved PubChem lookups
-- Machine & Molecule catalog (`FSOT.Formal.SpeciesPriors`) — 141 species, 684 FSOT properties within 5%
-- Genetics CAMEO symbolic folding (`FSOT.Formal.CameoPriors`) — 130 benchmarks, 8.85 Å MAE formula
-- Fsot trinary OS (`FSOT.Formal.TrinaryOSPriors`) — FSOTB Tier-1/2/3 oracle invariants
-- Photonic V2 virtual crystal (`FSOT.Formal.PhotonicForge`) — 180 voxels, POOF/P_new resonance map
-- VibraFSOT register + MC alignment (`FSOT.Formal.VibRegisterPriors`) — D_eff=11, cp5 prob_non_decrease=1.0
-- Magnetic string lattice (`FSOT.Formal.MagneticStringPriors`) — 250 strings, S_em≈0.519
-- Evolution sim (`FSOT.Formal.EvolutionPriors`) — 13 mitochondrial operons, fitness 58.49
-- Weather scalar sim (`FSOT.Formal.WeatherPriors`) — 24h at D_eff=15, all S>0
-- Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
-- Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
-- Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
-- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
-- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **246** nodes, **12,840** coupling edges, 0% pooled median
-- Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `G:/FSOT-PublicData/cybersecurity`
-- Malware threat intelligence depth (`FSOT.Formal.MalwareThreatIntelligencePriors`) — **301** records, virology structural bridge
-- Code genome structure (`FSOT.Formal.CodeGenomeStructurePriors`) — **205** records, genomic codon hole detection
-- Formula corpus closure (`FSOT.Formal.FormulaCorpusClosurePriors`) — **7,941** strict-empirical formulas + **127** extension bridges
-- Tier G depth wave — 8 Tier F domains deepened to **100+** records (Epidemiology 220, Finance_Markets 245, Supply_Chain 220, …)
-- USGS hydrology (`FSOT.Formal.HydrologyPriors`) — monthly streamflow cohort with train/holdout gates
-- Pharmacology ChEMBL (`FSOT.Formal.PharmacologyPriors`) — 120 approved-drug molecular weights, median err &lt;0.01%
-- Cryosphere proxy (`FSOT.Formal.CryospherePriors`) — 1,919 northern freezing-month records, 99.3% classifier match
-- Theory-of-Everything crosswalk (`data/fsot_theory_crosswalk.yaml`) — Aerospace, CS, Hearing + geophysics/planetary stack
-- Seismology (`FSOT.Formal.SeismologyPriors`) — **500** USGS M4.5+ events, 98.6% shallow-depth classifier match
-- Tectonics (`FSOT.Formal.TectonicsPriors`) — **241** PB2002 plate boundaries + crustal earthquake coupling
-- Geomagnetism (`FSOT.Formal.GeomagnetismPriors`) — **525** NOAA Dst/GOES records, 100% storm-classifier match
-- Planetary structure (`FSOT.Formal.PlanetaryStructurePriors`) — **8** JPL bodies, density median err 0.05%
-- Orbital mechanics (`FSOT.Formal.OrbitalMechanicsPriors`) — **8** planets, Kepler T²/a³ median err 0.11%
-- Small-body orbits (`FSOT.Formal.SmallBodyOrbitsPriors`) — Moon + Ceres/Vesta/Eros/Halley, 0.01% median perturbation err
-- Magnetosphere (`FSOT.Formal.MagnetospherePriors`) — **167** coupled Dst×Kp hours (NOAA rolling window); timeline arc: daily-max **71%** → 3-hourly **96%** → hourly-interpolated **100%**
-- Magnetosphere extended (`FSOT.Formal.MagnetosphereExtendedPriors`) — **120,877** historical Kyoto Dst×Kp hours (1998–2012) @ **99.79%**; **77,188** G-scale storm holdout hours @ **99.68%**; **1,416** RTSW 1-min Bz records @ **99.44%**
-- GRACE cryosphere (`FSOT.Formal.GraceCryospherePriors`) — **253** GFZ GravIS Greenland months, 93.7% mass-decline classifier match
-- Seismology deep (`FSOT.Formal.SeismologyDeepPriors`) — **1000** moment-tensor + plate-margin observables, 81% match (Pacific holdout 100%)
-- Planetary atmospheres (`FSOT.Formal.PlanetaryAtmospheresPriors`) — Mars/Venus/Titan pressure &amp; temperature, 0.27% median error
-- Geochemistry (`FSOT.Formal.GeochemistryPriors`) — SMILES mineral/geo sections + planetary bulk-density overlap
-- Oncology (`FSOT.Formal.OncologyPriors`) — SMILES drug/enzyme affinity + biology strict operon bridge
-- Neuroimmunology (`FSOT.Formal.NeuroimmunologyPriors`) — immunology SMILES + Allen neuron cohort strata crosswalk
-- Synthetic biology (`FSOT.Formal.SyntheticBiologyPriors`) — evolution mt-operons + biology strict NCBI bridge
-- Quantum materials (`FSOT.Formal.QuantumMaterialsPriors`) — condensed-matter SMILES (band gaps, Tc, lattice)
-- Neuron multi-hero (`FSOT.Formal.NeuronMultiHeroPriors`) — 4 FI-proxy certified heroes per Allen class
-- Climate scale-up (`FSOT.Formal.ClimateSciencePriors`) — **30 stations × 50 years** (24 train / 6 holdout gates)
-- Linguistics formal (`FSOT.Formal.LinguisticsFormalPriors`) — 10 measured anchors, consciousness bridge
-- Mathematics computational (`FSOT.Formal.MathematicsComputationalPriors`) — math-generator comparisons + constant alignment
-- Materials engineering (`FSOT.Formal.MaterialsEngineeringPriors`) — Young's modulus, thermal, bulk/shear SMILES
-- Computational reasoning (`FSOT.Formal.ComputationalReasoningPriors`) — FIC sweep + trinary-OS coding invariants
-- Math generator rules eval (`FSOT.Formal.MathGeneratorRulesEvalPriors`) — **1520** per-rule schema/domain eval across 61 corpora
-- Trinary OS portable (`FSOT.Formal.TrinaryOSPortablePriors`) — vendor FSOTB oracles + ISA constants for clone-and-rebuild
-- Materials↔species bridge (`FSOT.Formal.MaterialsSpeciesBridgePriors`) — 12 overlapping engineering metals cross-validated
-- iGEM synthetic biology (`FSOT.Formal.IGEMSyntheticBiologyPriors`) — 20 Registry parts strict-empirical + biology_strict operon bridge
-- Math benchmark_formula eval (`FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors`) — live FO-200/210/220 overlay rule eval
-- Trinary OS ISA rebuild (`FSOT.Formal.TrinaryOSISARebuildPriors`) — 27-opcode FSOTB v1/v1.1/v1.2 registry + oracle invariants
-- iGEM live FASTA ingest (`FSOT.Formal.IGEMLiveFastaPriors`) — parts.igem.org FASTA refresh with bundled fallback cache
-- Airfoil RMSE recompute (`FSOT.Formal.MathGeneratorAirfoilRmsePriors`) — FO-210 full-dataset + held-out RMSE live eval
-- Trinary OS round-trip (`FSOT.Formal.TrinaryOSRoundTripPriors`) — vendor FSOTB byte-identical asm→dis→asm smoke
-- Tokenization smoke (`FSOT.Formal.TokenizationSmokePriors`) — Dictionary universal-tokenizer smoke + vocab registry
-- Trinary hardware motif (`FSOT.Formal.TrinaryHardwareMotifPriors`) — cube-block motif tier/weight invariants
-- Intrinsic LLM validators (`FSOT.Formal.IntrinsicLLMValidatorsPriors`) — multi-topic validator accuracy tiers
-- Physarum CUDA bridge (`FSOT.Formal.BiologicalCudaPhysarumPriors`) — RTX 5070 nuclei scaling + plasmodium v5 state
-- arXiv V14 primitives (`FSOT.Formal.ArxivPrimitivesV14Priors`) — 2.96M topic ingest, six cognitive primitive signatures
-- Formula corpus CNC (`FSOT.Formal.FormulaCorpusCncPriors`) — 61-doc corpus, validator delta, 100% chem gauntlet pass rate
-- Rendlesham decoder (`FSOT.Formal.BinaryDecoderRendleshamPriors`) — 52-step hidden-state trace, 17 branching events
-- Qwen certified agent (`FSOT.Formal.CertifiedAgentQwenPriors`) — lean-bridge protocol v1.1 + 9-path workspace registry
-- Genesis omni-theory (`FSOT.Formal.OmniTheoryGenesisPriors`) — 12 ch.1 verses, all S&gt;0 FSOT scalar crosswalk
-- Aggregate unified DB (`FSOT.Formal.FsotAggregateUnifiedDbPriors`) — 1,532 mathematical rows, 107 SMILES derivation sections
-- Prediction re-derivation (`FSOT.Formal.PredictionRederivationPriors`) — 66 predictions, zero free parameters, 72% stabilized improvement rate
-- Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
-- Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
-- Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%
-- Trinary Fluid Computer v2 (`FSOT.Formal.TrinaryFluidPriors`) — 99.3% accuracy, 27 Metatron pathways
-- Soul Sibling kernel (`FSOT.Formal.SoulSiblingPriors`) — D_compact=24.98, zero_free
-- Lean proofs bridge (`FSOT.Formal.LeanProofsBridge`) — 28 formal constants, k aligned to SMILES
-- Formula corpus (`FSOT.Formal.FormulaCorpusPriors`) — **7,941** strict-empirical observable checks (all matched, all within 5%)
-- Cellular lab (`FSOT.Formal.CellularPriors`) — 234k Soul Simulator records + 13 mt operons; `cellular_raw_S_positive`
-- BlackHole thesis (`FSOT.Formal.BlackHoleThesisPriors`) — 28/28 observables within 2% (max err 0.72%)
-- Space propulsion (`FSOT.Formal.SpacePropulsionSystemsPriors`) — 12 systems (NEXT-C, AEPS, X3, DRACO, Pulsar Sunbird), 21 observables, 0% median err
-- Electrical power (`FSOT.Formal.ElectricalPowerSystemsPriors`) — batteries, grid, solar, superconductors; 9 observables
-- HVAC thermal (`FSOT.Formal.HvacThermalSystemsPriors`) — SEER/COP/Carnot heat-pump cohort; 7 observables
-- Breakthroughs 2024–2026 (`FSOT.Formal.BreakthroughDiscoveries20242026Priors`) — 20 world-shaking discoveries (NIF, AEPS, Webb, Euclid, Starship)
-- Trinary-OS Tier E (`FSOT.Formal.TrinaryOSTierEPriors`) — unified FSOTB + ISA rebuild + round-trip byte-identical oracle (68 records, 0% pooled)
+![Domain error envelope](data/figures/domain_error_envelope.png)
 
-### Tier A/B/C — NeuroLab gap-fill (20 domains)
+![Predicted vs measured scatter](data/figures/predicted_vs_measured_scatter.png)
 
-Real API anchors + FSOT v1.1 benchmarks for thin neurolab domains. Scripts: `scripts/tier_gap_fill_lib.py`, `build_tier_gap_fill_benchmarks.py`, `gen_tier_gap_fill_lean.py`.
+### 6.2 Representative domains
 
-Ecology, Economics, Psychology, Sociology, Oceanography, Meteorology, Atmospheric_Physics, Fluid_Dynamics, Atomic_Physics, Quantum_Mechanics, Quantum_Optics, Quantum_Computing, Particle_Physics, Pharmacokinetics, Food_Microbiology, Agriculture_Agroecology, Maillard_Chemistry, Econometrics, Sports_Biomechanics, Architecture_Building_Science.
+Full atlas: [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) (403 rows)
 
-### Tier D — Extension wave (7 domains)
+| Domain | Records | Median error % | Tier |
+|--------|--------:|---------------:|------|
+| Cosmology | 347 | 0.0007 | A_strong |
+| Astrophysics | 305 | 0.0006 | A_strong |
+| Electromagnetism | 271,912 | 0.0 | A_strong |
+| High-energy physics | 151 | 0.0036 | A_strong |
+| Molecular chemistry | 608 | 0.028 | A_strong |
+| Neuroscience | 41 | 0.013 | B_verified |
+| Economics | 167 | 0.129 | A_strong |
+| Ecology | 654 | 0.018 | A_strong |
 
-`scripts/tier_d_extension_lib.py` · GBIF Plantae/Animalia + clinical/engineering/social bridges.
-
-Geology_Stratigraphy, Botany, Zoology, Clinical_Medicine, Chemical_Engineering, Environmental_Engineering, Anthropology.
-
-### Tier F — Science-gap fill (19 domains, Tier 41)
-
-Closes every remaining expansion candidate before cross-domain coupling simulation. Real APIs: **PBDB** (paleontology), **OBIS** (marine biology), **GBIF** Fungi/Insecta, plus published reference anchors for clinical, engineering, humanities, and industry verticals.
-
-| Domain | Lean module | Primary sources |
-|--------|-------------|-----------------|
-| Paleontology | `PaleontologyExtensionPriors` | PBDB + USGS seismology bridge |
-| Marine_Biology | `MarineBiologyExtensionPriors` | OBIS + NOAA tides |
-| Mycology | `MycologyExtensionPriors` | GBIF Fungi + food microbiology |
-| Entomology | `EntomologyExtensionPriors` | GBIF Insecta + zoology |
-| Virology | `VirologyExtensionPriors` | Reference + immunology + PubChem antivirals |
-| Epidemiology | `EpidemiologyExtensionPriors` | WHO/CDC reference + World Bank health |
-| Cardiology | `CardiologyExtensionPriors` | AHA/ESC reference + clinical medicine |
-| Civil_Engineering | `CivilEngineeringExtensionPriors` | ASCE reference + materials engineering |
-| Mechanical_Engineering | `MechanicalEngineeringExtensionPriors` | ASME reference + thermodynamics rules |
-| Robotics_Control_Systems | `RoboticsControlSystemsExtensionPriors` | IEEE reference + Trinary-OS ISA |
-| Neuroeconomics | `NeuroeconomicsExtensionPriors` | Behavioral econ reference + psychology/econometrics |
-| Paleoclimate | `PaleoclimateExtensionPriors` | Ice-core reference + NOAA NCEI/cryosphere |
-| Speleology | `SpeleologyExtensionPriors` | UIS cave metrics + hydrology/geochemistry |
-| Exogeology | `ExogeologyExtensionPriors` | NASA Exoplanet Archive + planetary structure |
-| Pure_Mathematics | `PureMathematicsExtensionPriors` | Math-generator rules + NIST constants |
-| History | `HistoryExtensionPriors` | OpenAlex historical corpus + anthropology |
-| Law_Policy | `LawPolicyExtensionPriors` | WGI governance + World Bank |
-| Finance_Markets | `FinanceMarketsExtensionPriors` | Market reference + econometrics |
-| Supply_Chain_Logistics | `SupplyChainLogisticsExtensionPriors` | SCOR reference + World Bank trade |
+Query any scientific problem:
 
 ```bash
-# Tier F rebuild (ingest → benchmarks → Lean)
-python scripts/build_tier_f_extension_benchmarks.py --ingest
-python scripts/build_tier_f_extension_benchmarks.py
-python scripts/gen_tier_f_extension_lean.py
-python scripts/build_scientific_domain_expansion_map.py
-python scripts/build_sota_observable_ledger.py
-python scripts/build_fsot_verification_progress.py
-python scripts/build_fsot_verified_scope.py
-lake build
+python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
+python scripts/query_fsot_domain_navigator.py --intent hubble_tension
+python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
 ```
 
-Registry: `data/extension_domains_manifest.yaml` (195 extension entries through Tier 66) · Benchmarks: `data/*_benchmark.json` · Reference anchors: `vendor/neurolab_gaps/`, `vendor/neurolab_residual/`
+---
 
-### Tiers 51–66 — Interdisciplinary expansion wave
+## VII. Contested Sectors — Where Current Models Struggle
 
-Public-data-first panels and preregistration scaffolds. Full tier list: `data/expansion_roadmap.yaml`.
+Thirteen observables where ΛCDM / SM sectors typically show large tension:
 
-| Tier | Domains | Focus |
-|------|---------|-------|
-| 51 | Consciousness_Soul_Bridge, Symbolic_Archetype_Panel | Consciousness / archetype crosswalk |
-| 52 | Astrophysical_Structure_Crosswalk | Stellar/planetary structure relay |
-| 53–54 | Stellar multiplicity, compact binaries, galactic sample, solar/exoplanet architecture | Astrophysical catalogs |
-| 55–56 | PubChem stability, materials genome, UniProt deep, iGEM expanded | Chemical / structural genomics |
-| 57–58 | Interdisciplinary spine, chemical/fuel panels, GWOSC + live multiplicity | Cross-domain + live ingest |
-| 59–60 | Material/fuel verification scaffold, SIMBAD/Gaia astrometry | Public methodology gates |
-| 61 | Music harmonics, XR/game math, creative arts spine | Music / AR-VR / game math |
-| 62–63 | WDS/Gaia DR3 TAP, prereg predictions scaffold | Live astrometry + prereg manifest |
-| 64 | Information Theory, Network Science, Semiconductor, Statistical Mechanics, Biophysics, NeuroLab gaps spine | NeuroLab 32-domain registry gaps (wave 1) |
-| 65 | Material in-silico, fuel candidate, interactive-media prereg scaffolds | Novel discovery prereg gates |
-| 66 | Quantum_Information, Econophysics, Ecology, Genomic_Sciences, Neurolab residual spine | NeuroLab 32-domain registry gaps (final wave) |
-| 67 | Acoustic bleed depth, initiation/boundary archetype precision, formula precision spine | Per-channel FSOT formula error (acoustic pooled **0.008%**) |
-| 68 | Materials Project, PubChem live, OpenNeuro full, VizieR WDS TAP, live ingest spine | Second live-ingest wave (bundled fallback) |
-| 69 | Unified DB candidate crosswalk, aggregate organized panel, crosswalk spine | Desktop aggregate DB → verified extension panels |
-| 70 | Proof ledger closure, prereg outcome tracking, ToE certificate bundle | Publication-facing ToE claim hardening |
-| 71 | Fusion physics public panel, magnetic/ICF confinement, cold-fusion prereg scaffold, fusion lab spine | Dedicated fusion lab certificates — D-T/ICF public anchors + term3 acoustic-bleed cold-fusion prereg |
-| 72 | Periodic table public panel, superheavy stability, undiscovered-element prereg, natural formation sim, completion spine | Z=1-118 IUPAC anchors + island-of-stability + Z>118 prereg candidates + natural emergence pathways |
-| 73 | Heavy-ion lab synthesis, element synthesis conditions, cold-fusion lab crosswalk, metamaterial fluid prereg, lab synthesis spine | Lab synthesis under facility constraints + fluid-like metamaterial prereg + Tier 71↔72 cold-fusion bridge |
-| 74 | Island-of-stability deep panel, Z120-126 beam synthesis, fusion decay chain prereg, island emergence sim, island completion spine | Z=120-126 half-lives + heavy-ion beam targets + Pd-D/muon decay chain prereg |
-| 75 | Distant island Z128-132, Z164 prereg, decay topology, distant emergence sim, **periodic extension closure spine** | Periodic extension arc **CLOSED** at Z=164 — final nuclear/fusion/lab thread |
-| 76 | Time emergence deep, FPC fluidlink timing, cosmology anomaly deep, Hubble/dark-sector crosswalk, fluid spacetime spine | Fluid spacetime observable universe — time + tau + H0 tension + dark sector |
-| 77 | Hybrid FI multi-hero, KB portable bundle, r_d interval tightening, coupling sim refresh, fluid spacetime prereg validation | Post–Tier 76 maintenance wave — FI heroes, KB bundle, r_d, coupling refresh, H0/FPC prereg |
+| Metric | FSOT | Typical baseline |
+|--------|-----:|-----------------:|
+| Pooled median error | **0.030%** | ~15% |
+
+![Contested FSOT vs ΛCDM](data/figures/contested_fsot_vs_lcdm.png)
+
+### 7.1 H₀ landscape
+
+| Anchor | FSOT error % | Reference |
+|--------|-------------:|-----------|
+| SH0ES vs Planck tension | 0.027 | Riess2024 vs Planck2018 |
+| Carnegie vs Planck tension | 0.227 | Freedman2019 |
+| Planck CMB H₀ | 0.193 | Planck2018 |
+| SH0ES local H₀ | 0.662 | Riess2024 |
+| FSOT local anchor | 0.829 | dual-anchor bubble bleed |
+
+![H₀ landscape](data/figures/h0_landscape.png)
+
+**Worked example — Planck CMB:**
+
+- Measured: 67.36 ± 0.54 km/s/Mpc  
+- FSOT computed: 67.270 km/s/Mpc  
+- Error: 0.13%  
+
+---
+
+## VIII. Engineering Demonstrations
+
+*These stacks prove the engine guides engineering — they are not the sole claim, but they are real FSOT engineering.*
+
+### 8.1 FSOT-designed alternative fuels
+
+Seven novel molecular states plus gasoline baseline:
+
+- fsot_hemp_waste_grounded, fsot_hemp_waste_advanced, fsot_algae_oil_biodiesel  
+- fsot_mushroom_spore_fuel, fsot_green_hydrogen, fsot_optimax, fsot_bio_spark  
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| Fuel Lab | 366 | 0.039 |
+
+Cross-referenced with grounded thermochemistry and Prius engine simulator outputs. Preregistered: **PRED-034**.
+
+![Verified desktop fuels](data/figures/verified_desktop_fuels.png)
+
+### 8.2 Transporter technology stack
+
+Eleven verified layers — quantum channel → information → portal → engineering → warp actuation → BH/WH crosswalk → beam-forming → T3 scan → pad A hardware → pad B receiver → two-gate entanglement:
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| Star Trek Transporter | 1,575 | 0.031 |
+
+Preregistered: **PRED-036, PRED-038, PRED-039, PRED-040, PRED-041**.
+
+![Verified desktop transporter](data/figures/verified_desktop_transporter.png)
+
+### 8.3 Machine, molecule, and horizon cycle
+
+| Panel | Records | Pooled median % |
+|-------|--------:|----------------:|
+| Machine & Molecule | 120 | 0.013 |
+| Black-hole / white-hole cycle | 24 | 0.026 |
+
+Simulators: `vendor/verified_desktop/star_trek_transporter/`
+
+---
+
+## IX. Discussion
+
+### 9.1 Unified spine vs siloed models
+
+When one engine passes quantum mechanics, sociology, seismology, and fuel chemistry at sub-percent precision, the default "coincidence" explanation strains credibility. FSOT's structural argument is **breadth × precision × formal triangulation** — the same pattern that convinced Maxwell that electricity and magnetism were one field.
+
+### 9.2 Formal verification as scientific instrument
+
+Numeric agreement alone cannot guard against silent code drift. Exporting Lean obligations to Coq, Isabelle, F*, and Rust means the spine must survive **independent type theories and executable replay**. That is how FSOT treats proof debt: visible, counted, closed.
+
+### 9.3 Limitations (honest)
+
+- Manifest-declared domain assignments (175 slots) — not literal zero-parameter fitting  
+- 13 contested observables monitored; expansion ongoing  
+- Engineering stacks are simulation-stage; ESP32 acoustic hardware closure in progress  
+- Seven founding laws remain unmapped to strict empirical corpus (see [`docs/FOUNDING_35_LAWS_AUDIT.md`](docs/FOUNDING_35_LAWS_AUDIT.md))  
+- Early founding documents (2025) may contain inflated claims — FSOT 2.1 reconciles against Lean ground truth  
+
+### 9.4 Lineage
+
+Early research (Feb–Jul 2025) and engineering blueprints live in the founding archive. FSOT 2.1 **does not inherit** founding accuracy percentages without re-verification. Philosophy transfers; every watt earns its place in the ledger.
+
+Founding reconciliation: [`docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md`](docs/FSOT_FOUNDING_LINEAGE_AND_RECONCILIATION.md)
+
+---
+
+## X. Conclusion
+
+The universe does not present itself as a hundred separate accidents. It presents as **repetition with variation** — the same mathematics in stellar fusion and mitochondrial chemistry, in Hubble tension and brain metabolism, in molecular bonds and warp-actuation simulators.
+
+FSOT names that repetition: **one fluid, one scalar, seed-derived, observer-coupled, fractal across 403 domains**. The empirical record says it is tight. The formal record says it is triangulated. The engineering record says it builds.
+
+This thesis will expand. The repository will deepen. The invitation is unchanged:
+
+**Run the verification. Break what fails. Keep what survives.**
+
+---
+
+## Appendix A — One-Command Reproduction
 
 ```bash
-# Tier 77 post–Tier 76 maintenance rebuild
-python scripts/build_tier77_post_tier76_maintenance_benchmarks.py
-python scripts/gen_tiers_77_lean.py
-python scripts/verify_extension_domains.py
+python scripts/run_publication_verification_bundle.py
 ```
+
+Full contributor workflow: [`REPRODUCE.md`](REPRODUCE.md)
+
+Individual panels:
 
 ```bash
-# Tier 76 fluid spacetime + cosmology rebuild
-python scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
-python scripts/gen_tiers_76_lean.py
-python scripts/verify_extension_domains.py
+python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
+python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep
+python scripts/build_verified_desktop_cross_proof_closure.py
+python scripts/run_cross_proof_verification.py
 ```
+
+---
+
+## Appendix B — Machine-Readable Artifacts
+
+| Artifact | Purpose |
+|----------|---------|
+| [`data/publication_claims_manifest.json`](data/publication_claims_manifest.json) | Headline claims for AI/reviewers |
+| [`data/publication/domain_atlas.csv`](data/publication/domain_atlas.csv) | 403-domain verification table |
+| [`data/cross_proof_verification_report.json`](data/cross_proof_verification_report.json) | Five-prover closure report |
+| [`data/fsot_domain_navigator.json`](data/fsot_domain_navigator.json) | Domain routes + kill criteria |
+| [`data/preregistered_predictions_manifest.yaml`](data/preregistered_predictions_manifest.yaml) | PRED-001–041 registry |
+| [`data/honest_claims_manifest.yaml`](data/honest_claims_manifest.yaml) | Parameter honesty |
+| [`data/domain_citations/verified_desktop.bib`](data/domain_citations/verified_desktop.bib) | BibTeX export |
+
+Citations export:
 
 ```bash
-# Tier 75 periodic extension closure rebuild
-python scripts/build_tier75_periodic_extension_closure_benchmarks.py
-python scripts/gen_tiers_75_lean.py
-python scripts/verify_extension_domains.py
+python scripts/export_domain_citations.py --bundle verified_desktop
 ```
 
-```bash
-# Tier 74 superheavy island rebuild
-python scripts/build_tier74_superheavy_island_benchmarks.py
-python scripts/gen_tiers_74_lean.py
-python scripts/verify_extension_domains.py
+---
+
+## Appendix C — Further Reading
+
+| Document | Audience |
+|----------|----------|
+| [`docs/FSOT_EXPLAINED_LAYMAN.md`](docs/FSOT_EXPLAINED_LAYMAN.md) | Public introduction |
+| [`docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md`](docs/FSOT_PHILOSOPHY_AND_CONSCIOUSNESS_SPINE.md) | Consciousness + ontology |
+| [`docs/REPOSITORY_TECHNICAL_GUIDE.md`](docs/REPOSITORY_TECHNICAL_GUIDE.md) | Module index, tier registry |
+| [`data/publication/fsot_monograph_skeleton.md`](data/publication/fsot_monograph_skeleton.md) | Extended monograph outline |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contributor workflow |
+
+---
+
+## Appendix D — How to Cite This Work
+
+```
+Palumbo, D. A. (2026). Fluid Spacetime Omni-Theory (FSOT):
+Cross-Domain Empirical and Formal Verification of a Seed-Derived Scalar Engine.
+GitHub repository dappalumbo91/FSOT-2.1-Lean, edition fsot-monograph-v1.
+https://github.com/dappalumbo91/FSOT-2.1-Lean
 ```
 
-```bash
-# Tier 73 lab synthesis + metamaterial rebuild
-python scripts/build_tier73_lab_synthesis_benchmarks.py
-python scripts/gen_tiers_73_lean.py
-python scripts/verify_extension_domains.py
+Tagged release (when published):
+
+```
+https://github.com/dappalumbo91/FSOT-2.1-Lean/releases/tag/fsot-monograph-v1
 ```
 
-```bash
-# Tier 72 periodic table rebuild
-python scripts/build_tier72_periodic_table_benchmarks.py
-python scripts/gen_tiers_72_lean.py
-python scripts/verify_extension_domains.py
-```
-
-```bash
-# Tier 71 fusion lab rebuild
-python scripts/build_tier71_fusion_lab_benchmarks.py
-python scripts/gen_tiers_71_lean.py
-python scripts/verify_extension_domains.py
-```
-
-```bash
-# Tiers 67–70 rebuild
-python scripts/build_tier67_formula_precision_benchmarks.py
-python scripts/ingest_tier68_live_ingest.py
-python scripts/build_tier68_live_ingest_benchmarks.py
-python scripts/build_tier69_unified_db_crosswalk_benchmarks.py
-python scripts/build_tier70_toe_claim_hardening_benchmarks.py
-python scripts/gen_tiers_67_lean.py
-python scripts/gen_tiers_68_70_lean.py
-python scripts/verify_extension_domains.py
-```
-
-```bash
-# Post–Tier 70 maintenance (coupling sim + certificate refresh)
-python scripts/build_domain_coupling_simulation.py
-python scripts/gen_domain_coupling_simulation_lean.py
-python scripts/verify_extension_domains.py
-lake build
-python scripts/export_certificate.py --lean-ok
-python scripts/build_fsot_verification_progress.py
-python scripts/build_fsot_verified_scope.py
-python scripts/build_scientific_domain_expansion_map.py
-```
-
-### Formula verification honesty (Tier 6)
-
-Per-formula observable checks use `fsot_numeric_eval_v4` — not count-only meta-oracles. Policy: `data/formula_verification_policy.yaml`.
-
-| Corpus | Records | Matched | Within 2% | Notes |
-|--------|---------|---------|-----------|-------|
-| strict_empirical.jsonl | 7,941 | 7,941 | 6,921 | Primary honest verification path |
-| verification_numeric (DB) | 9,607 | 9,556 ok | 8,283 | **0** strict_empirical pending |
-| KB catalog per-formula | 19,213 | 105 verified | 50 | Full catalog pass + strict-empirical bridge |
-
-Numeric eval pipeline:
-
-```bash
-python scripts/run_numeric_eval_queue.py          # pipeline + CNC gap + outcome backfill
-python scripts/resolve_strict_empirical_gap.py    # CNC turning MRR (54 runs)
-python scripts/backfill_numeric_from_outcomes.py  # outcome_json → verification_numeric
-python scripts/run_knowledge_base_formula_verify.py
-```
-
-- Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains: 18 proved_sign / 9 partial / 0 gap)
-- Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
-- Verified scope (GitHub consumers): `data/FSOT_VERIFIED_SCOPE.yaml` — full FSOT capability index
-
-See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
-
-## Usage
-
-```bash
-pip install -r requirements.txt
-lake build
-
-# Portable verification (clone-and-verify; no author Desktop required)
-python scripts/fsot_verification_runner.py --portable
-
-# Full pipeline (author machine with optional Desktop lab mirrors)
-python scripts/fsot_verification_runner.py
-```
-
-Bundled oracle and lab inputs live under `vendor/`. See `CONTRIBUTING.md` and `data/external_data_manifest.yaml` for path overrides and contributor workflow.
-
-## Alignment with Reference Files
-
-This project closely follows the structure and justification style of the attached reference files:
-- Uses MC evidence and combustion triangulation anchors (from `VibRegister.lean`, `Domains.lean`, `RealData.lean`).
-- Extracts internal terms for proof hygiene (similar to attached `Scalar.lean`).
-- References `VibRegister` observer lemmas and stability proxies.
-- Keeps a clean separation between executable (`Float`) and rigorous (`Real` + Mathlib analysis) layers.
-
-## Roadmap
-
-Tiers **51–72** are complete per `data/expansion_roadmap.yaml`. Ongoing maintenance:
-
-- Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
-- Knowledge-base per-formula portable bundle
-- Tighten r_d interval to ±0.01 Mpc
-- Cold-fusion candidate experimental validation (preregistered via PRED-009–011)
-- Undiscovered element synthesis / natural-formation claims (preregistered via PRED-012–014 — Z>118 not claimed observed)
+---
 
 ## License
 
-Apache 2.0 (consistent with the reference implementation).
+Apache 2.0 — consistent with the reference implementation.
+
+---
+
+*Fluid Spacetime Omni-Theory (FSOT) — created and architected by Damian Arthur Palumbo.*

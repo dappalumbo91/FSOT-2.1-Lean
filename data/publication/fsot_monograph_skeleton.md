@@ -1,6 +1,9 @@
 # Fluid Spacetime Omni-Theory (FSOT): Cross-Domain Empirical and Formal Verification of a Seed-Derived Scalar Engine
 
-**Author:** [Your name]  
+> **Canonical thesis:** The living preprint is [`README.md`](../../README.md) at the repository root.  
+> This file is the extended monograph outline — expanded as domains are verified.
+
+**Author:** Damian Arthur Palumbo
 **Affiliation:** Independent Researcher  
 **Repository:** https://github.com/dappalumbo91/FSOT-2.1-Lean  
 **Zenodo DOI:** [assigned on publish]  
