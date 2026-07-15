@@ -1,41 +1,38 @@
 {
-  "generated_at": "2026-07-15T05:26:16.759905+00:00",
+  "generated_at": "2026-07-15T05:30:11.533174+00:00",
   "version": "1.0",
   "verdict": "GAPS_TRACKED_CROSS_DOMAIN",
   "summary": {
-    "gap_pillars": 7,
-    "closed": 5,
-    "documented_or_monitored": 6,
-    "in_progress": 1,
+    "gap_pillars": 8,
+    "closed": 7,
+    "documented_or_monitored": 8,
+    "in_progress": 0,
     "open": 0,
-    "c_thin_remaining": 14,
-    "last_c_thin_upgrade": "2026-07-12T17:46:24.592083+00:00"
+    "c_thin_remaining": 0,
+    "last_c_thin_upgrade": "2026-07-15T05:29:42.573812+00:00"
   },
   "gaps": [
     {
-      "id": "subfield_depth_c_thin",
-      "severity": "medium",
-      "status": "in_progress",
+      "id": "domain_navigator_index",
+      "severity": "info",
+      "status": "closed",
       "metric": {
-        "c_thin_panels": 14,
+        "core_domains_indexed": 35,
+        "extension_panels_indexed": 363,
+        "problem_routes": 15
+      },
+      "remedy": "scripts/build_fsot_domain_navigator_db.py \u2192 data/fsot_domain_navigator.db + .json",
+      "evidence": "data/fsot_domain_navigator.json"
+    },
+    {
+      "id": "subfield_depth_c_thin",
+      "severity": "low",
+      "status": "closed",
+      "metric": {
+        "c_thin_panels": 0,
         "target": 0
       },
-      "panels_remaining": [
-        "Condensed_Matter_Superconductivity_Depth_Panel",
-        "Tokenization_Live_Panel",
-        "Certified_Agent_Formal_Panel",
-        "Biology_Developmental_Structural_Depth_Panel",
-        "Quantum_Mechanics_Entanglement_Depth_Panel",
-        "Psychology_Psychometrics_Depth_Panel",
-        "Bibliography_Corpus_Panel",
-        "Binary_Decoder_Panel",
-        "Physarum_Biological_CUDA_Panel",
-        "Scalar_Solver_35_Panel",
-        "Rust_Lean_Bridge_Panel",
-        "Canonical_Oracle_Panel",
-        "VL_Agent_Distill_Panel",
-        "Early_Lean_MC_Panel"
-      ],
+      "panels_remaining": [],
       "remedy": "scripts/upgrade_c_thin_panels.py + domain-specific ingests",
       "evidence": "data/c_thin_upgrade_report.json"
     },

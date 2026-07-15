@@ -65,7 +65,21 @@ def main() -> int:
         if p.get("wire_status") == "unwired" and p.get("exists") and not p.get("empty")
     )
 
+    navigator = _load(ROOT / "data" / "fsot_domain_navigator.json")
+
     gaps = [
+        {
+            "id": "domain_navigator_index",
+            "severity": "info",
+            "status": "closed" if (navigator.get("summary") or {}).get("extension_panels") else "open",
+            "metric": {
+                "core_domains_indexed": (navigator.get("summary") or {}).get("core_domains"),
+                "extension_panels_indexed": (navigator.get("summary") or {}).get("extension_panels"),
+                "problem_routes": (navigator.get("summary") or {}).get("problem_routes"),
+            },
+            "remedy": "scripts/build_fsot_domain_navigator_db.py → data/fsot_domain_navigator.db + .json",
+            "evidence": "data/fsot_domain_navigator.json",
+        },
         {
             "id": "subfield_depth_c_thin",
             "severity": "medium" if c_thin_n > 10 else "low",

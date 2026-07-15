@@ -6,17 +6,29 @@
     {"name": "chsh_classical_bound", "value": 2.0, "unit": "dimensionless"},
     {"name": "chsh_tsirelson_bound", "value": 2.828427, "unit": "dimensionless"},
     {"name": "bell_inequality_margin", "value": 0.414214, "unit": "dimensionless"},
-    {"name": "epr_entangled_pair_spin_correlation", "value": 1.0, "unit": "dimensionless"}
+    {"name": "epr_entangled_pair_spin_correlation", "value": 1.0, "unit": "dimensionless"},
+    {"name": "ghz_state_qubit_count", "value": 3.0, "unit": "count"},
+    {"name": "entanglement_entropy_max_qubit", "value": 1.0, "unit": "dimensionless"},
+    {"name": "concurrence_max_two_qubit", "value": 1.0, "unit": "dimensionless"},
+    {"name": "singlet_state_fidelity", "value": 0.99, "unit": "dimensionless"}
   ],
   "decoherence": [
     {"name": "superconducting_qubit_T1_us", "value": 120.0, "unit": "us"},
     {"name": "superconducting_qubit_T2_us", "value": 95.0, "unit": "us"},
     {"name": "trapped_ion_T1_s", "value": 10.0, "unit": "s"},
-    {"name": "nv_center_T2_ms", "value": 1.8, "unit": "ms"}
+    {"name": "nv_center_T2_ms", "value": 1.8, "unit": "ms"},
+    {"name": "rydberg_atom_lifetime_us", "value": 100.0, "unit": "us"},
+    {"name": "photonic_cluster_fidelity", "value": 0.92, "unit": "dimensionless"},
+    {"name": "spin_echo_T2_extension_factor", "value": 10.0, "unit": "dimensionless"},
+    {"name": "dephasing_rate_MHz", "value": 0.5, "unit": "MHz"}
   ],
   "measurement": [
     {"name": "planck_constant_eV_s", "value": 4.135667696e-15, "unit": "eV_s"},
     {"name": "reduced_planck_eV_s", "value": 6.582119569e-16, "unit": "eV_s"},
-    {"name": "fine_structure_inverse", "value": 137.035999084, "unit": "dimensionless"}
+    {"name": "fine_structure_inverse", "value": 137.035999084, "unit": "dimensionless"},
+    {"name": "born_rule_probability_sum", "value": 1.0, "unit": "dimensionless"},
+    {"name": "weak_measurement_backaction", "value": 0.01, "unit": "dimensionless"},
+    {"name": "quantum_zeno_observations_per_T2", "value": 100.0, "unit": "count"},
+    {"name": "projection_postulate_eigenvalue_spacing_eV", "value": 1.0, "unit": "eV"}
   ]
 }

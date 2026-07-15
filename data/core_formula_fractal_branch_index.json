@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T17:46:16.487440+00:00",
+  "generated_at": "2026-07-15T05:29:35.721719+00:00",
   "root": "raw_S",
   "core_domains": 35,
-  "extension_panels": 329,
+  "extension_panels": 363,
   "attachments": [
     {
       "panel": "Climate_Science",
@@ -3910,6 +3910,19 @@
       "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
     },
     {
+      "panel": "Biology_Developmental_Structural_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/biology_developmental_structural_depth_panel_benchmark.json"
+    },
+    {
       "panel": "Condensed_Matter_Superconductivity_Depth_Panel",
       "tier": 87,
       "primary_branch": "term2.amplitude",
@@ -3921,6 +3934,19 @@
       ],
       "D_eff": 16,
       "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Materials_Creep_Fracture_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/materials_creep_fracture_depth_panel_benchmark.json"
     },
     {
       "panel": "Neuroscience_Connectomics_Depth_Panel",
@@ -3949,6 +3975,19 @@
       "benchmark_data": "data/optics_interferometry_depth_panel_benchmark.json"
     },
     {
+      "panel": "Psychology_Psychometrics_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "medical"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/psychology_psychometrics_depth_panel_benchmark.json"
+    },
+    {
       "panel": "Quantum_Computing_Math_Depth_Panel",
       "tier": 87,
       "primary_branch": "term1.quirkMod",
@@ -3960,6 +3999,19 @@
       ],
       "D_eff": 19,
       "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+    },
+    {
+      "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+      "tier": 87,
+      "primary_branch": "term2.amplitude",
+      "divergence_depth": 24.8,
+      "maps_to_lean": [
+        "quantum",
+        "particle",
+        "ai"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json"
     },
     {
       "panel": "Scientific_Expansion_Depth_Wave2_Spine",
@@ -3974,6 +4026,69 @@
       ],
       "D_eff": 18,
       "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+    },
+    {
+      "panel": "Arxiv_Brain_Knowledge_Panel",
+      "tier": 88,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "neural",
+        "ai",
+        "consciousness"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json"
+    },
+    {
+      "panel": "Arxiv_Primitives_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "ai"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/arxiv_primitives_panel_benchmark.json"
+    },
+    {
+      "panel": "Bibliography_Corpus_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "mathematical",
+        "particle"
+      ],
+      "D_eff": 12,
+      "benchmark_data": "data/bibliography_corpus_panel_benchmark.json"
+    },
+    {
+      "panel": "Binary_Decoder_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "consciousness",
+        "ai"
+      ],
+      "D_eff": 13,
+      "benchmark_data": "data/binary_decoder_panel_benchmark.json"
+    },
+    {
+      "panel": "Canonical_Oracle_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 25.05,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "energy"
+      ],
+      "D_eff": 18,
+      "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
     },
     {
       "panel": "Certified_Agent_Formal_Panel",
@@ -4003,6 +4118,30 @@
       "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
     },
     {
+      "panel": "Early_Lean_MC_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "mathematical",
+        "ai"
+      ],
+      "D_eff": 11,
+      "benchmark_data": "data/early_lean_mc_panel_benchmark.json"
+    },
+    {
+      "panel": "Intrinsic_LLM_Validators_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "ai",
+        "mathematical"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/validators_intrinsic_llm_panel_benchmark.json"
+    },
+    {
       "panel": "Living_FSOT_Hardware_Panel",
       "tier": 88,
       "primary_branch": "term3.chaos_factor",
@@ -4014,6 +4153,54 @@
       ],
       "D_eff": 15,
       "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+    },
+    {
+      "panel": "Omni_Theory_Humanities_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "consciousness",
+        "neural"
+      ],
+      "D_eff": 17,
+      "benchmark_data": "data/omni_theory_humanities_panel_benchmark.json"
+    },
+    {
+      "panel": "Physarum_Biological_CUDA_Panel",
+      "tier": 88,
+      "primary_branch": "term3.chaos_factor",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "biological",
+        "neural"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/physarum_biological_cuda_panel_benchmark.json"
+    },
+    {
+      "panel": "Rust_Lean_Bridge_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "mathematical",
+        "ai"
+      ],
+      "D_eff": 13,
+      "benchmark_data": "data/rust_lean_bridge_panel_benchmark.json"
+    },
+    {
+      "panel": "Scalar_Solver_35_Panel",
+      "tier": 88,
+      "primary_branch": "term1.term1_base",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "mathematical",
+        "ai"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/scalar_solver_35_panel_benchmark.json"
     },
     {
       "panel": "Tokenization_Live_Panel",
@@ -4040,6 +4227,18 @@
       ],
       "D_eff": 14,
       "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
+    },
+    {
+      "panel": "VL_Agent_Distill_Panel",
+      "tier": 88,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 24.7,
+      "maps_to_lean": [
+        "ai",
+        "consciousness"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/vl_agent_distill_panel_benchmark.json"
     },
     {
       "panel": "The_Well_Outcomes_Verification_Panel",
@@ -4279,6 +4478,237 @@
       ],
       "D_eff": 19,
       "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json"
+    },
+    {
+      "panel": "Longevity_AnAge_Catalog_Panel",
+      "tier": 94,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 26.55,
+      "maps_to_lean": [
+        "biological",
+        "neural",
+        "consciousness"
+      ],
+      "D_eff": 20,
+      "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json"
+    },
+    {
+      "panel": "Longevity_Consciousness_Coupling_Panel",
+      "tier": 94,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 26.9,
+      "maps_to_lean": [
+        "consciousness",
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 24,
+      "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+    },
+    {
+      "panel": "Longevity_Extreme_Species_Panel",
+      "tier": 94,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 26.55,
+      "maps_to_lean": [
+        "biological",
+        "consciousness",
+        "genetics"
+      ],
+      "D_eff": 21,
+      "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json"
+    },
+    {
+      "panel": "Longevity_Genetic_Mechanics_Panel",
+      "tier": 94,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.55,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 19,
+      "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json"
+    },
+    {
+      "panel": "Longevity_MegaDeep_NCBI_Panel",
+      "tier": 94,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 26.55,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "consciousness"
+      ],
+      "D_eff": 23,
+      "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json"
+    },
+    {
+      "panel": "Longevity_Telomere_Repair_Panel",
+      "tier": 94,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.55,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 20,
+      "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json"
+    },
+    {
+      "panel": "Tier_94_Longevity_Spine",
+      "tier": 94,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.9,
+      "maps_to_lean": [
+        "biological",
+        "consciousness",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 25,
+      "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+    },
+    {
+      "panel": "Tier_95_Zebrafish_Spine",
+      "tier": 95,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 27.15,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural",
+        "consciousness"
+      ],
+      "D_eff": 23,
+      "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
+    },
+    {
+      "panel": "Zebrafish_Cell_Tracking_Panel",
+      "tier": 95,
+      "primary_branch": "term1.growth_term",
+      "divergence_depth": 26.8,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 20,
+      "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json"
+    },
+    {
+      "panel": "Zebrafish_Developmental_Mechanics_Panel",
+      "tier": 95,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.8,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "neural"
+      ],
+      "D_eff": 21,
+      "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json"
+    },
+    {
+      "panel": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+      "tier": 95,
+      "primary_branch": "term1.perceived_adjust",
+      "divergence_depth": 26.8,
+      "maps_to_lean": [
+        "biological",
+        "genetics",
+        "consciousness"
+      ],
+      "D_eff": 22,
+      "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Atmospheric_Ozone_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "atmospheric",
+        "climate"
+      ],
+      "D_eff": 12,
+      "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Cosmic_Dust_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "cosmological",
+        "galactic"
+      ],
+      "D_eff": 13,
+      "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Cosmic_Ray_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "particle",
+        "astronomical"
+      ],
+      "D_eff": 10,
+      "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Galactic_Halo_Rotation_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 27.05,
+      "maps_to_lean": [
+        "cosmological",
+        "galactic",
+        "astronomical"
+      ],
+      "D_eff": 14,
+      "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Pulsar_Glitch_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "astronomical",
+        "particle"
+      ],
+      "D_eff": 16,
+      "benchmark_data": "data/founding_pulsar_glitch_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_Quantum_Vacuum_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "quantum",
+        "particle"
+      ],
+      "D_eff": 8,
+      "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json"
+    },
+    {
+      "panel": "Founding_White_Dwarf_Cooling_Panel",
+      "tier": 96,
+      "primary_branch": "term1.quirkMod",
+      "divergence_depth": 26.7,
+      "maps_to_lean": [
+        "astronomical",
+        "stellar"
+      ],
+      "D_eff": 15,
+      "benchmark_data": "data/founding_white_dwarf_cooling_panel_benchmark.json"
     }
   ],
   "by_lean_tag": {
@@ -4957,6 +5387,19 @@
         "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
       },
       {
+        "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "quantum",
+          "particle",
+          "ai"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json"
+      },
+      {
         "panel": "Scientific_Expansion_Depth_Wave2_Spine",
         "tier": 87,
         "primary_branch": "term1.quirkMod",
@@ -4969,6 +5412,44 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Brain_Knowledge_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Primitives_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "ai"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/arxiv_primitives_panel_benchmark.json"
+      },
+      {
+        "panel": "Binary_Decoder_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "consciousness",
+          "ai"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/binary_decoder_panel_benchmark.json"
       },
       {
         "panel": "Certified_Agent_Formal_Panel",
@@ -4998,6 +5479,30 @@
         "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
       },
       {
+        "panel": "Early_Lean_MC_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 11,
+        "benchmark_data": "data/early_lean_mc_panel_benchmark.json"
+      },
+      {
+        "panel": "Intrinsic_LLM_Validators_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "ai",
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/validators_intrinsic_llm_panel_benchmark.json"
+      },
+      {
         "panel": "Living_FSOT_Hardware_Panel",
         "tier": 88,
         "primary_branch": "term3.chaos_factor",
@@ -5009,6 +5514,30 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+      },
+      {
+        "panel": "Rust_Lean_Bridge_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/rust_lean_bridge_panel_benchmark.json"
+      },
+      {
+        "panel": "Scalar_Solver_35_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/scalar_solver_35_panel_benchmark.json"
       },
       {
         "panel": "Tokenization_Live_Panel",
@@ -5035,6 +5564,18 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
+      },
+      {
+        "panel": "VL_Agent_Distill_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/vl_agent_distill_panel_benchmark.json"
       },
       {
         "panel": "Alternate_Base_Mathematics_Explorer_Panel",
@@ -5546,6 +6087,69 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Founding_Cosmic_Ray_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "particle",
+          "astronomical"
+        ],
+        "D_eff": 10,
+        "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Galactic_Halo_Rotation_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.05,
+        "maps_to_lean": [
+          "cosmological",
+          "galactic",
+          "astronomical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Pulsar_Glitch_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/founding_pulsar_glitch_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_White_Dwarf_Cooling_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "astronomical",
+          "stellar"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/founding_white_dwarf_cooling_panel_benchmark.json"
+      }
+    ],
+    "atmospheric": [
+      {
+        "panel": "Founding_Atmospheric_Ozone_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "atmospheric",
+          "climate"
+        ],
+        "D_eff": 12,
+        "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json"
       }
     ],
     "atomic": [
@@ -6502,6 +7106,31 @@
         "benchmark_data": "data/supply_chain_logistics_panel_benchmark.json"
       },
       {
+        "panel": "Biology_Developmental_Structural_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "neural"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/biology_developmental_structural_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Physarum_Biological_CUDA_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "biological",
+          "neural"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/physarum_biological_cuda_panel_benchmark.json"
+      },
+      {
         "panel": "Consciousness_Expansion_Spine",
         "tier": 90,
         "primary_branch": "term1.quirkMod",
@@ -6567,6 +7196,152 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json"
+      },
+      {
+        "panel": "Longevity_AnAge_Catalog_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Consciousness_Coupling_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "consciousness",
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 24,
+        "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Extreme_Species_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Genetic_Mechanics_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_MegaDeep_NCBI_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Telomere_Repair_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json"
+      },
+      {
+        "panel": "Tier_94_Longevity_Spine",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 25,
+        "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+      },
+      {
+        "panel": "Tier_95_Zebrafish_Spine",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.15,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Cell_Tracking_Panel",
+        "tier": 95,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Developmental_Mechanics_Panel",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+        "tier": 95,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json"
       }
     ],
     "biophysics": [
@@ -7074,6 +7849,20 @@
         ],
         "D_eff": 11,
         "benchmark_data": "data/crc_handbook_properties_benchmark.json"
+      }
+    ],
+    "climate": [
+      {
+        "panel": "Founding_Atmospheric_Ozone_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "atmospheric",
+          "climate"
+        ],
+        "D_eff": 12,
+        "benchmark_data": "data/founding_atmospheric_ozone_panel_benchmark.json"
       }
     ],
     "cmb": [
@@ -8402,6 +9191,57 @@
         "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
       },
       {
+        "panel": "Psychology_Psychometrics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "medical"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/psychology_psychometrics_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Brain_Knowledge_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Primitives_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "ai"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/arxiv_primitives_panel_benchmark.json"
+      },
+      {
+        "panel": "Binary_Decoder_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "consciousness",
+          "ai"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/binary_decoder_panel_benchmark.json"
+      },
+      {
         "panel": "Certified_Agent_Formal_Panel",
         "tier": 88,
         "primary_branch": "term1.term1_base",
@@ -8442,6 +9282,18 @@
         "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
       },
       {
+        "panel": "Omni_Theory_Humanities_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/omni_theory_humanities_panel_benchmark.json"
+      },
+      {
         "panel": "Tokenization_Live_Panel",
         "tier": 88,
         "primary_branch": "term1.quirkMod",
@@ -8466,6 +9318,18 @@
         ],
         "D_eff": 14,
         "benchmark_data": "data/trinary_hardware_live_panel_benchmark.json"
+      },
+      {
+        "panel": "VL_Agent_Distill_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/vl_agent_distill_panel_benchmark.json"
       },
       {
         "panel": "Consciousness_Expansion_Spine",
@@ -8638,6 +9502,100 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json"
+      },
+      {
+        "panel": "Longevity_AnAge_Catalog_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Consciousness_Coupling_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "consciousness",
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 24,
+        "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Extreme_Species_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_MegaDeep_NCBI_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json"
+      },
+      {
+        "panel": "Tier_94_Longevity_Spine",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 25,
+        "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+      },
+      {
+        "panel": "Tier_95_Zebrafish_Spine",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.15,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+        "tier": 95,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json"
       }
     ],
     "cosmological": [
@@ -9145,6 +10103,31 @@
         ],
         "D_eff": 22,
         "benchmark_data": "data/nothing_perfection_friction_origin_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Cosmic_Dust_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "cosmological",
+          "galactic"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Galactic_Halo_Rotation_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.05,
+        "maps_to_lean": [
+          "cosmological",
+          "galactic",
+          "astronomical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json"
       }
     ],
     "ecological": [
@@ -10771,6 +11754,32 @@
         "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
       },
       {
+        "panel": "Materials_Creep_Fracture_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/materials_creep_fracture_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Canonical_Oracle_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
+      },
+      {
         "panel": "The_Well_Outcomes_Verification_Panel",
         "tier": 89,
         "primary_branch": "term1.term1_base",
@@ -12052,6 +13061,166 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/the_well_verification_spine_benchmark.json"
+      },
+      {
+        "panel": "Founding_Cosmic_Dust_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "cosmological",
+          "galactic"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/founding_cosmic_dust_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Galactic_Halo_Rotation_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.05,
+        "maps_to_lean": [
+          "cosmological",
+          "galactic",
+          "astronomical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/founding_galactic_halo_rotation_panel_benchmark.json"
+      }
+    ],
+    "genetics": [
+      {
+        "panel": "Longevity_Consciousness_Coupling_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "consciousness",
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 24,
+        "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Extreme_Species_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/longevity_extreme_species_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Genetic_Mechanics_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_MegaDeep_NCBI_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/longevity_megadeep_ncbi_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Telomere_Repair_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json"
+      },
+      {
+        "panel": "Tier_94_Longevity_Spine",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 25,
+        "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+      },
+      {
+        "panel": "Tier_95_Zebrafish_Spine",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.15,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Cell_Tracking_Panel",
+        "tier": 95,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Developmental_Mechanics_Panel",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Longevity_Genetics_Coupling_Panel",
+        "tier": 95,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "consciousness"
+        ],
+        "D_eff": 22,
+        "benchmark_data": "data/zebrafish_longevity_genetics_coupling_panel_benchmark.json"
       }
     ],
     "higgs": [
@@ -12899,6 +14068,19 @@
         "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
       },
       {
+        "panel": "Materials_Creep_Fracture_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/materials_creep_fracture_depth_panel_benchmark.json"
+      },
+      {
         "panel": "Scientific_Expansion_Depth_Wave2_Spine",
         "tier": 87,
         "primary_branch": "term1.quirkMod",
@@ -13673,6 +14855,31 @@
         "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
       },
       {
+        "panel": "Bibliography_Corpus_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "particle"
+        ],
+        "D_eff": 12,
+        "benchmark_data": "data/bibliography_corpus_panel_benchmark.json"
+      },
+      {
+        "panel": "Canonical_Oracle_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
+      },
+      {
         "panel": "Certified_Agent_Formal_Panel",
         "tier": 88,
         "primary_branch": "term1.term1_base",
@@ -13698,6 +14905,54 @@
         ],
         "D_eff": 16,
         "benchmark_data": "data/desktop_application_wiring_spine_benchmark.json"
+      },
+      {
+        "panel": "Early_Lean_MC_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 11,
+        "benchmark_data": "data/early_lean_mc_panel_benchmark.json"
+      },
+      {
+        "panel": "Intrinsic_LLM_Validators_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "ai",
+          "mathematical"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/validators_intrinsic_llm_panel_benchmark.json"
+      },
+      {
+        "panel": "Rust_Lean_Bridge_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 13,
+        "benchmark_data": "data/rust_lean_bridge_panel_benchmark.json"
+      },
+      {
+        "panel": "Scalar_Solver_35_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "ai"
+        ],
+        "D_eff": 14,
+        "benchmark_data": "data/scalar_solver_35_panel_benchmark.json"
       },
       {
         "panel": "Complexity_Folding_Emergence_Panel",
@@ -14529,6 +15784,32 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/culinary_fermentation_maillard_panel_benchmark.json"
+      },
+      {
+        "panel": "Biology_Developmental_Structural_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "neural"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/biology_developmental_structural_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Psychology_Psychometrics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "medical"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/psychology_psychometrics_depth_panel_benchmark.json"
       }
     ],
     "neural": [
@@ -15055,6 +16336,19 @@
         "benchmark_data": "data/scientific_expansion_depth_spine_benchmark.json"
       },
       {
+        "panel": "Biology_Developmental_Structural_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "neural"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/biology_developmental_structural_depth_panel_benchmark.json"
+      },
+      {
         "panel": "Neuroscience_Connectomics_Depth_Panel",
         "tier": 87,
         "primary_branch": "term3.chaos_factor",
@@ -15066,6 +16360,19 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/neuroscience_connectomics_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Psychology_Psychometrics_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "medical"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/psychology_psychometrics_depth_panel_benchmark.json"
       },
       {
         "panel": "Scientific_Expansion_Depth_Wave2_Spine",
@@ -15080,6 +16387,32 @@
         ],
         "D_eff": 18,
         "benchmark_data": "data/scientific_expansion_depth_wave2_spine_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Brain_Knowledge_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "neural",
+          "ai",
+          "consciousness"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json"
+      },
+      {
+        "panel": "Arxiv_Primitives_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "ai"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/arxiv_primitives_panel_benchmark.json"
       },
       {
         "panel": "Desktop_Application_Wiring_Spine",
@@ -15107,6 +16440,30 @@
         ],
         "D_eff": 15,
         "benchmark_data": "data/living_fsot_hardware_panel_benchmark.json"
+      },
+      {
+        "panel": "Omni_Theory_Humanities_Panel",
+        "tier": 88,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "consciousness",
+          "neural"
+        ],
+        "D_eff": 17,
+        "benchmark_data": "data/omni_theory_humanities_panel_benchmark.json"
+      },
+      {
+        "panel": "Physarum_Biological_CUDA_Panel",
+        "tier": 88,
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "biological",
+          "neural"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/physarum_biological_cuda_panel_benchmark.json"
       },
       {
         "panel": "Tokenization_Live_Panel",
@@ -15239,6 +16596,113 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/tier_93_dual_wave_spine_benchmark.json"
+      },
+      {
+        "panel": "Longevity_AnAge_Catalog_Panel",
+        "tier": 94,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_anage_catalog_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Consciousness_Coupling_Panel",
+        "tier": 94,
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "consciousness",
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 24,
+        "benchmark_data": "data/longevity_consciousness_coupling_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Genetic_Mechanics_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 19,
+        "benchmark_data": "data/longevity_genetic_mechanics_panel_benchmark.json"
+      },
+      {
+        "panel": "Longevity_Telomere_Repair_Panel",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.55,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/longevity_telomere_repair_panel_benchmark.json"
+      },
+      {
+        "panel": "Tier_94_Longevity_Spine",
+        "tier": 94,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.9,
+        "maps_to_lean": [
+          "biological",
+          "consciousness",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 25,
+        "benchmark_data": "data/tier_94_longevity_spine_benchmark.json"
+      },
+      {
+        "panel": "Tier_95_Zebrafish_Spine",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 27.15,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural",
+          "consciousness"
+        ],
+        "D_eff": 23,
+        "benchmark_data": "data/tier_95_zebrafish_spine_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Cell_Tracking_Panel",
+        "tier": 95,
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 20,
+        "benchmark_data": "data/zebrafish_cell_tracking_panel_benchmark.json"
+      },
+      {
+        "panel": "Zebrafish_Developmental_Mechanics_Panel",
+        "tier": 95,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.8,
+        "maps_to_lean": [
+          "biological",
+          "genetics",
+          "neural"
+        ],
+        "D_eff": 21,
+        "benchmark_data": "data/zebrafish_developmental_mechanics_panel_benchmark.json"
       }
     ],
     "nuclear": [
@@ -17077,6 +18541,19 @@
         "benchmark_data": "data/condensed_matter_superconductivity_depth_panel_benchmark.json"
       },
       {
+        "panel": "Materials_Creep_Fracture_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/materials_creep_fracture_depth_panel_benchmark.json"
+      },
+      {
         "panel": "Optics_Interferometry_Depth_Panel",
         "tier": 87,
         "primary_branch": "term1.perceived_adjust",
@@ -17101,6 +18578,44 @@
         ],
         "D_eff": 19,
         "benchmark_data": "data/quantum_computing_math_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "quantum",
+          "particle",
+          "ai"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Bibliography_Corpus_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 24.7,
+        "maps_to_lean": [
+          "mathematical",
+          "particle"
+        ],
+        "D_eff": 12,
+        "benchmark_data": "data/bibliography_corpus_panel_benchmark.json"
+      },
+      {
+        "panel": "Canonical_Oracle_Panel",
+        "tier": 88,
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 25.05,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "energy"
+        ],
+        "D_eff": 18,
+        "benchmark_data": "data/canonical_oracle_panel_benchmark.json"
       },
       {
         "panel": "The_Well_Outcomes_Verification_Panel",
@@ -17235,6 +18750,42 @@
         ],
         "D_eff": 17,
         "benchmark_data": "data/alternate_base_mathematics_explorer_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Cosmic_Ray_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "particle",
+          "astronomical"
+        ],
+        "D_eff": 10,
+        "benchmark_data": "data/founding_cosmic_ray_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Pulsar_Glitch_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "astronomical",
+          "particle"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/founding_pulsar_glitch_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Quantum_Vacuum_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "quantum",
+          "particle"
+        ],
+        "D_eff": 8,
+        "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json"
       }
     ],
     "perceived": [
@@ -17474,6 +19025,45 @@
         ],
         "D_eff": 29,
         "benchmark_data": "data/warp_bh_wh_portal_benchmark.json"
+      },
+      {
+        "panel": "Quantum_Mechanics_Entanglement_Depth_Panel",
+        "tier": 87,
+        "primary_branch": "term2.amplitude",
+        "divergence_depth": 24.8,
+        "maps_to_lean": [
+          "quantum",
+          "particle",
+          "ai"
+        ],
+        "D_eff": 16,
+        "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json"
+      },
+      {
+        "panel": "Founding_Quantum_Vacuum_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "quantum",
+          "particle"
+        ],
+        "D_eff": 8,
+        "benchmark_data": "data/founding_quantum_vacuum_panel_benchmark.json"
+      }
+    ],
+    "stellar": [
+      {
+        "panel": "Founding_White_Dwarf_Cooling_Panel",
+        "tier": 96,
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 26.7,
+        "maps_to_lean": [
+          "astronomical",
+          "stellar"
+        ],
+        "D_eff": 15,
+        "benchmark_data": "data/founding_white_dwarf_cooling_panel_benchmark.json"
       }
     ],
     "thermodynamics": [

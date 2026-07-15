@@ -1,4 +1,4 @@
-generated_at: '2026-07-15T05:26:03.839945+00:00'
+generated_at: '2026-07-15T05:29:36.910761+00:00'
 summary:
   neurolab_domains: 35
   extension_domains: 363
@@ -13,9 +13,9 @@ summary:
     D_needs_work: 0
     unverified: 0
   tier_distribution:
-    A_strong: 112
-    B_verified: 273
-    C_thin: 14
+    A_strong: 113
+    B_verified: 286
+    C_thin: 0
     D_needs_work: 0
     unverified: 0
   lean_formal_modules: 497
@@ -2231,15 +2231,15 @@ extension_domains:
   lean_module: FSOT.Formal.NeuroscienceConnectomicsDepthPanelPriors
 - domain: Condensed_Matter_Superconductivity_Depth_Panel
   tier: 87
-  record_count: 15
+  record_count: 21
   median_error_pct: 0.033841
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.CondensedMatterSuperconductivityDepthPanelPriors
 - domain: Optics_Interferometry_Depth_Panel
   tier: 87
-  record_count: 82
+  record_count: 127
   median_error_pct: 0.026954
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.OpticsInterferometryDepthPanelPriors
 - domain: Scientific_Expansion_Depth_Wave2_Spine
   tier: 87
@@ -2249,15 +2249,15 @@ extension_domains:
   lean_module: FSOT.Formal.ScientificExpansionDepthWave2SpinePriors
 - domain: Trinary_Hardware_Live_Panel
   tier: 88
-  record_count: 28
+  record_count: 37
   median_error_pct: 0.014767
   coverage_tier: B_verified
   lean_module: FSOT.Formal.TrinaryHardwareLivePanelPriors
 - domain: Tokenization_Live_Panel
   tier: 88
-  record_count: 9
-  median_error_pct: 0.031506
-  coverage_tier: C_thin
+  record_count: 24
+  median_error_pct: 0.022236
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.TokenizationLivePanelPriors
 - domain: Living_FSOT_Hardware_Panel
   tier: 88
@@ -2267,9 +2267,9 @@ extension_domains:
   lean_module: FSOT.Formal.LivingFsotHardwarePanelPriors
 - domain: Certified_Agent_Formal_Panel
   tier: 88
-  record_count: 13
+  record_count: 24
   median_error_pct: 0.014767
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.CertifiedAgentFormalPanelPriors
 - domain: Desktop_Application_Wiring_Spine
   tier: 88
@@ -2495,26 +2495,26 @@ extension_domains:
   lean_module: FSOT.Formal.FoundingPulsarGlitchPanelPriors
 - domain: Biology_Developmental_Structural_Depth_Panel
   tier: 87
-  record_count: 13
+  record_count: 26
   median_error_pct: 0.022236
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors
 - domain: Quantum_Mechanics_Entanglement_Depth_Panel
   tier: 87
-  record_count: 11
+  record_count: 23
   median_error_pct: 0.095551
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors
 - domain: Psychology_Psychometrics_Depth_Panel
   tier: 87
-  record_count: 12
+  record_count: 23
   median_error_pct: 0.031506
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PsychologyPsychometricsDepthPanelPriors
 - domain: Materials_Creep_Fracture_Depth_Panel
   tier: 87
-  record_count: 47
-  median_error_pct: 0.01341
+  record_count: 71
+  median_error_pct: 0.011734
   coverage_tier: B_verified
   lean_module: FSOT.Formal.MaterialsCreepFractureDepthPanelPriors
 - domain: Omni_Theory_Humanities_Panel
@@ -2531,21 +2531,21 @@ extension_domains:
   lean_module: FSOT.Formal.IntrinsicLlmValidatorsPanelPriors
 - domain: Bibliography_Corpus_Panel
   tier: 88
-  record_count: 8
-  median_error_pct: 0.013294
-  coverage_tier: C_thin
+  record_count: 24
+  median_error_pct: 0.026766861384483892
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.BibliographyCorpusPanelPriors
 - domain: Binary_Decoder_Panel
   tier: 88
-  record_count: 8
-  median_error_pct: 0.008488
-  coverage_tier: C_thin
+  record_count: 24
+  median_error_pct: 0.013342
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.BinaryDecoderPanelPriors
 - domain: Physarum_Biological_CUDA_Panel
   tier: 88
-  record_count: 5
+  record_count: 24
   median_error_pct: 0.022236
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PhysarumBiologicalCudaPanelPriors
 - domain: Arxiv_Brain_Knowledge_Panel
   tier: 88
@@ -2555,9 +2555,9 @@ extension_domains:
   lean_module: FSOT.Formal.ArxivBrainKnowledgePanelPriors
 - domain: Scalar_Solver_35_Panel
   tier: 88
-  record_count: 10
+  record_count: 24
   median_error_pct: 0.014767
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.ScalarSolver35PanelPriors
 - domain: Arxiv_Primitives_Panel
   tier: 88
@@ -2567,27 +2567,27 @@ extension_domains:
   lean_module: FSOT.Formal.ArxivPrimitivesPanelPriors
 - domain: Rust_Lean_Bridge_Panel
   tier: 88
-  record_count: 8
-  median_error_pct: 0.014767
-  coverage_tier: C_thin
+  record_count: 24
+  median_error_pct: 0.0020923899350648867
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.RustLeanBridgePanelPriors
 - domain: Canonical_Oracle_Panel
   tier: 88
-  record_count: 6
+  record_count: 24
   median_error_pct: 0.013294
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.CanonicalOraclePanelPriors
 - domain: VL_Agent_Distill_Panel
   tier: 88
-  record_count: 6
-  median_error_pct: 0.031506
-  coverage_tier: C_thin
+  record_count: 24
+  median_error_pct: 0.022236
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.VlAgentDistillPanelPriors
 - domain: Early_Lean_MC_Panel
   tier: 88
-  record_count: 10
+  record_count: 24
   median_error_pct: 0.014767
-  coverage_tier: C_thin
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.EarlyLeanMcPanelPriors
 intelligence_compression:
   domain: Intelligence_Compression

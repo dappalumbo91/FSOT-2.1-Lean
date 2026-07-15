@@ -7,17 +7,28 @@
     {"name": "test_retest_r_typical", "value": 0.80, "unit": "dimensionless"},
     {"name": "effect_size_cohens_d_small", "value": 0.2, "unit": "dimensionless"},
     {"name": "effect_size_cohens_d_medium", "value": 0.5, "unit": "dimensionless"},
-    {"name": "effect_size_cohens_d_large", "value": 0.8, "unit": "dimensionless"}
+    {"name": "effect_size_cohens_d_large", "value": 0.8, "unit": "dimensionless"},
+    {"name": "split_half_reliability_typical", "value": 0.82, "unit": "dimensionless"},
+    {"name": "item_discrimination_index", "value": 0.35, "unit": "dimensionless"},
+    {"name": "factor_loading_threshold", "value": 0.40, "unit": "dimensionless"}
   ],
   "rct": [
     {"name": "placebo_response_rate_pct", "value": 30.0, "unit": "percent"},
     {"name": "min_clinical_sample_n", "value": 30.0, "unit": "count"},
     {"name": "phase3_trial_median_n", "value": 300.0, "unit": "count"},
-    {"name": "alpha_significance_threshold", "value": 0.05, "unit": "dimensionless"}
+    {"name": "alpha_significance_threshold", "value": 0.05, "unit": "dimensionless"},
+    {"name": "power_analysis_beta", "value": 0.20, "unit": "dimensionless"},
+    {"name": "intention_to_treat_dropout_pct", "value": 15.0, "unit": "percent"},
+    {"name": "hazard_ratio_clinical_median", "value": 0.75, "unit": "dimensionless"}
   ],
   "cognition": [
     {"name": "working_memory_span_items", "value": 7.0, "unit": "count"},
     {"name": "reaction_time_ms_median", "value": 250.0, "unit": "ms"},
-    {"name": "stroop_interference_ms", "value": 100.0, "unit": "ms"}
+    {"name": "stroop_interference_ms", "value": 100.0, "unit": "ms"},
+    {"name": "n_back_load_accuracy_drop", "value": 0.15, "unit": "dimensionless"},
+    {"name": "digit_span_forward_items", "value": 7.0, "unit": "count"},
+    {"name": "flanker_effect_ms", "value": 40.0, "unit": "ms"},
+    {"name": "go_nogo_error_rate_pct", "value": 5.0, "unit": "percent"},
+    {"name": "verbal_fluency_words_per_min", "value": 12.0, "unit": "count"}
   ]
 }
