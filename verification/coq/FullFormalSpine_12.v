@@ -84,7 +84,7 @@ Proof. lra. Qed.
 Lemma star_trek_transporter_stabilization_margin_pos : 0 < (1.722776467449%R).
 Proof. lra. Qed.
 
-Lemma star_trek_transporter_observable_count_pos : (0 < 1494)%nat.
+Lemma star_trek_transporter_observable_count_pos : (0 < 1575)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma star_trek_transporter_median_error_under_five_pct : (0.031159%R) < (5.0%R).

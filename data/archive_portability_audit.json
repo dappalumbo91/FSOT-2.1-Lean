@@ -1,5 +1,5 @@
 {
-  "audited_at": "2026-07-14T20:28:53.871574+00:00",
+  "audited_at": "2026-07-15T17:16:49.016583+00:00",
   "archive_root": "I:\\FSOT-Physical-Archive",
   "lean_hub": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
   "drive_letter_independent": true,
@@ -13,8 +13,8 @@
   "locations": {
     "i_drive_lean_hub": {
       "path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
-      "git_head": "e46b4cc13b370c4efda013cd1e9c97c6f9430f31",
-      "origin_main": null,
+      "git_head": "f811b28adceecfa9a42a62010dbaced217eb2c5a",
+      "origin_main": "f811b28adceecfa9a42a62010dbaced217eb2c5a",
       "github_remote": "https://github.com/dappalumbo91/FSOT-2.1-Lean.git"
     },
     "c_desktop_mirror": {
@@ -25,7 +25,7 @@
     },
     "github": {
       "remote": "https://github.com/dappalumbo91/FSOT-2.1-Lean.git",
-      "origin_main": null,
+      "origin_main": "f811b28adceecfa9a42a62010dbaced217eb2c5a",
       "note": "Code + JSON on GitHub; .lake cache and large vendor blobs archive-only"
     }
   },
@@ -33,47 +33,92 @@
     {
       "section": "01_SR-ITE-USB-Original",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 45547,
+      "size_bytes": 2012340254
     },
     {
       "section": "02_FSOT-2.1-Lean-Full",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 62019,
+      "size_bytes": 7598916462
     },
     {
       "section": "03_FSOT-PublicData",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 134,
+      "size_bytes": 8658136915
     },
     {
       "section": "04_Genetics-Longevity",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 11,
+      "size_bytes": 1152785
     },
     {
       "section": "05_Zebrahub-Development",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 12,
+      "size_bytes": 2305416483
     },
     {
       "section": "06_Founding-Archives",
       "exists": true,
-      "file_count": null,
-      "size_bytes": null,
-      "quick": true
+      "file_count": 259,
+      "size_bytes": 38860164
     }
   ],
-  "i_vs_c_mirror": [],
+  "i_vs_c_mirror": [
+    {
+      "path": ".lake",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 49601,
+      "b_files": 49672,
+      "a_bytes": 4666893023,
+      "b_bytes": 4705783179,
+      "delta_files": -71
+    },
+    {
+      "path": "vendor",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 1242,
+      "b_files": 38869,
+      "a_bytes": 644285252,
+      "b_bytes": 2369637736,
+      "delta_files": -37627
+    },
+    {
+      "path": "data",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 2558,
+      "b_files": 2470,
+      "a_bytes": 303144828,
+      "b_bytes": 287159908,
+      "delta_files": 88
+    },
+    {
+      "path": "scripts",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 1382,
+      "b_files": 1353,
+      "a_bytes": 10382480,
+      "b_bytes": 10071488,
+      "delta_files": 29
+    },
+    {
+      "path": "FSOT",
+      "a_exists": true,
+      "b_exists": true,
+      "a_files": 503,
+      "b_files": 483,
+      "a_bytes": 1076054,
+      "b_bytes": 1054283,
+      "delta_files": 20
+    }
+  ],
   "host_toolchain": {
     "python": "C:\\Users\\damia\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
     "lake": "I:\\FSOT-Physical-Archive\\07_Portable-Toolchain\\elan\\bin\\lake.exe",
@@ -103,7 +148,7 @@
       "ok": true,
       "missing_benchmark_domains": [],
       "missing_bundled_assets": [],
-      "extension_domain_count": 347,
+      "extension_domain_count": 367,
       "all_extension_benchmarks_present": true,
       "all_bundled_assets_present": true
     },

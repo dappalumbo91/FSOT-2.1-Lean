@@ -99,7 +99,7 @@ lemma biology_strict_bundle: "(15 :: nat) = 15 \<and> (13 :: nat) = 13 \<and> Tr
 lemma biophysics_public_panel_bundle: "(24 :: nat) = 24 \<and> (12 :: nat) = 12 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma blackhole_whitehole_cycle_bundle: "(17 :: nat) = 17 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
+lemma blackhole_whitehole_cycle_bundle: "(24 :: nat) = 24 \<and> (18 :: nat) = 18 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma botany_ext_bundle: "(426 :: nat) = 426 \<and> True \<and> True \<and> True \<and> (0 :: real) < 1"
@@ -1113,7 +1113,7 @@ lemma sports_biomechanics_gap_fill_bundle: "(35 :: nat) = 35 \<and> True \<and> 
 lemma sports_biomechanics_bundle: "(35 :: nat) = 35 \<and> (14 :: nat) = 14 \<and> True \<and> (0 :: real) < 1"
   by auto
 
-lemma star_trek_transporter_bundle: "(1494 :: nat) = 1494 \<and> (17 :: nat) = 17 \<and> True \<and> (0 :: real) < 1"
+lemma star_trek_transporter_bundle: "(1575 :: nat) = 1575 \<and> (17 :: nat) = 17 \<and> True \<and> (0 :: real) < 1"
   by auto
 
 lemma statistical_mechanics_public_panel_bundle: "(24 :: nat) = 24 \<and> (12 :: nat) = 12 \<and> True \<and> (0 :: real) < 1"

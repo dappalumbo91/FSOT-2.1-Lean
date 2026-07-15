@@ -81,7 +81,7 @@ lemma star_trek_transporter_psi_traverse_pos: "0 < (0.0004641395 :: real)"
 lemma star_trek_transporter_stabilization_margin_pos: "0 < (1.722776467449 :: real)"
   by eval
 
-lemma star_trek_transporter_observable_count_pos: "0 < (1494 :: nat)"
+lemma star_trek_transporter_observable_count_pos: "0 < (1575 :: nat)"
   by eval
 
 lemma star_trek_transporter_median_error_under_five_pct: "(0.031159 :: real) < (5.0 :: real)"

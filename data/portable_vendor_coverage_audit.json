@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T20:28:50.833959+00:00",
-  "extension_domain_count": 347,
+  "generated_at": "2026-07-15T17:16:48.094710+00:00",
+  "extension_domain_count": 367,
   "bundled_asset_count": 46,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
@@ -2785,6 +2785,166 @@
       "benchmark_present": true,
       "build_script": "scripts/build_founding_unmapped_laws_benchmark.py",
       "lean_module": "FSOT.Formal.FoundingPulsarGlitchPanelPriors"
+    },
+    {
+      "domain": "Biology_Developmental_Structural_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/biology_developmental_structural_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.BiologyDevelopmentalStructuralDepthPanelPriors"
+    },
+    {
+      "domain": "Quantum_Mechanics_Entanglement_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/quantum_mechanics_entanglement_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.QuantumMechanicsEntanglementDepthPanelPriors"
+    },
+    {
+      "domain": "Psychology_Psychometrics_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/psychology_psychometrics_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.PsychologyPsychometricsDepthPanelPriors"
+    },
+    {
+      "domain": "Materials_Creep_Fracture_Depth_Panel",
+      "tier": 87,
+      "benchmark_data": "data/materials_creep_fracture_depth_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier87_scientific_expansion_benchmarks.py",
+      "lean_module": "FSOT.Formal.MaterialsCreepFractureDepthPanelPriors"
+    },
+    {
+      "domain": "Omni_Theory_Humanities_Panel",
+      "tier": 88,
+      "benchmark_data": "data/omni_theory_humanities_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.OmniTheoryHumanitiesPanelPriors"
+    },
+    {
+      "domain": "Intrinsic_LLM_Validators_Panel",
+      "tier": 88,
+      "benchmark_data": "data/validators_intrinsic_llm_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.IntrinsicLlmValidatorsPanelPriors"
+    },
+    {
+      "domain": "Bibliography_Corpus_Panel",
+      "tier": 88,
+      "benchmark_data": "data/bibliography_corpus_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.BibliographyCorpusPanelPriors"
+    },
+    {
+      "domain": "Binary_Decoder_Panel",
+      "tier": 88,
+      "benchmark_data": "data/binary_decoder_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.BinaryDecoderPanelPriors"
+    },
+    {
+      "domain": "Physarum_Biological_CUDA_Panel",
+      "tier": 88,
+      "benchmark_data": "data/physarum_biological_cuda_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.PhysarumBiologicalCudaPanelPriors"
+    },
+    {
+      "domain": "Arxiv_Brain_Knowledge_Panel",
+      "tier": 88,
+      "benchmark_data": "data/arxiv_brain_knowledge_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.ArxivBrainKnowledgePanelPriors"
+    },
+    {
+      "domain": "Scalar_Solver_35_Panel",
+      "tier": 88,
+      "benchmark_data": "data/scalar_solver_35_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.ScalarSolver35PanelPriors"
+    },
+    {
+      "domain": "Arxiv_Primitives_Panel",
+      "tier": 88,
+      "benchmark_data": "data/arxiv_primitives_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.ArxivPrimitivesPanelPriors"
+    },
+    {
+      "domain": "Rust_Lean_Bridge_Panel",
+      "tier": 88,
+      "benchmark_data": "data/rust_lean_bridge_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.RustLeanBridgePanelPriors"
+    },
+    {
+      "domain": "Canonical_Oracle_Panel",
+      "tier": 88,
+      "benchmark_data": "data/canonical_oracle_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.CanonicalOraclePanelPriors"
+    },
+    {
+      "domain": "VL_Agent_Distill_Panel",
+      "tier": 88,
+      "benchmark_data": "data/vl_agent_distill_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.VlAgentDistillPanelPriors"
+    },
+    {
+      "domain": "Early_Lean_MC_Panel",
+      "tier": 88,
+      "benchmark_data": "data/early_lean_mc_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.EarlyLeanMcPanelPriors"
+    },
+    {
+      "domain": "Machine_And_Molecule_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/machine_and_molecule_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors"
+    },
+    {
+      "domain": "Fuel_Lab_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/fuel_lab_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.FuelLabLivePanelPriors"
+    },
+    {
+      "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/blackhole_whitehole_cycle_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors"
+    },
+    {
+      "domain": "Star_Trek_Transporter_Live_Panel",
+      "tier": 88,
+      "benchmark_data": "data/star_trek_transporter_live_panel_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors"
     }
   ],
   "bundled_assets": [

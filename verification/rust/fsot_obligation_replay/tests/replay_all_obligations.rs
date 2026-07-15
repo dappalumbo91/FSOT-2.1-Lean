@@ -111,7 +111,7 @@ fn replay_all_obligations() {
     assert!(28 > 0, "blackhole_thesis_observable_count_pos");
     assert!(28 <= 28, "blackhole_thesis_within_le_total");
     assert!(0.026472_f64 < 0.5, "blackhole_whitehole_cycle_median_error_under_half_pct");
-    assert!(17 > 0, "blackhole_whitehole_cycle_observable_count_pos");
+    assert!(24 > 0, "blackhole_whitehole_cycle_observable_count_pos");
     assert!(0.026472_f64 < 5.0_f64, "blackhole_whitehole_cycle_median_error_under_five_pct");
     assert!(0.022236250385193387_f64 < 0.5, "botany_ext_pooled_median_under_half_pct");
     assert!(0.022236250385193387_f64 < 0.5, "botany_ext_headline_median_under_half_pct");
@@ -1562,7 +1562,7 @@ fn replay_all_obligations() {
     assert!(0.009663204175_f64 > 0.0, "star_trek_transporter_psi_portal_doorway_pos");
     assert!(0.000464139486_f64 > 0.0, "star_trek_transporter_psi_traverse_pos");
     assert!(1.722776467449_f64 > 0.0, "star_trek_transporter_stabilization_margin_pos");
-    assert!(1494 > 0, "star_trek_transporter_observable_count_pos");
+    assert!(1575 > 0, "star_trek_transporter_observable_count_pos");
     assert!(0.031159_f64 < 5.0_f64, "star_trek_transporter_median_error_under_five_pct");
     assert!(24 > 0, "statistical_mechanics_public_panel_observable_count_pos");
     assert!(0.0_f64 < 0.5_f64, "statistical_mechanics_public_panel_median_error_under_half_pct");

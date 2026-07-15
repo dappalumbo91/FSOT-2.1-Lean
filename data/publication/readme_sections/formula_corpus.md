@@ -1,0 +1,20 @@
+## Formula Corpus and Observables (auto-generated)
+
+Strict empirical path: `vendor/formula_corpus/strict_empirical.jsonl` (7,941 formulas)
+
+
+### Formula honesty report
+
+- version: 1.0
+- verdict: ROW_COUNT_WITH_DEDUPED_UNIQUE
+- headline_row_count: 7941
+- unique_observable_count: 1325
+- project_triplication_factor: 5.993
+- live_recompute: {'enabled': True, 'sample_size': 1325, 'pool_size': 1325, 'checked': 1325, 'skipped_unsupported': 0, 'unevaluable_unique_gap': 0, 'ok': 1325, 'ok_ratio': 1.0, 'drift_debt_count': 0}
+- honest_statement: strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993× project triplication. Live recompute on deduped uniques: 1325/1325 OK; 0 skipped (unsupported eval).
+- verification_issues: []
+- verification_passed: True
+- full_summary: {'records_total': 7941, 'unique_observables': 1325, 'project_triplication_factor': 5.993, 'matched_count': 7941, 'unique_matched_count': 1325, 'unmatched_count': 0, 'within_target_2pct': 6921, 'unique_within_target_2pct': 1155, 'within_tolerable_5pct': 7941, 'unique_within_tolerable_5pct': 1325, 'max_error_pct': 4.841504, 'top_project_count': 3, 'top_projects': [{'project': 'FSOT NEURON Gene LLM', 'records': 2647}, {'project': 'FSOT SMILES Lab', 'records': 2647}, {'project': 'Fsot3.0 code', 'records': 2647}], 'corpus_path': 'vendor/formula_corpus/by_domain/strict_empirical.jsonl', 'live_recompute_pool_size': 1325, 'live_recompute_deduped': True, 'live_recompute_sample_size': 1325, 'live_recompute_checked': 1325, 'live_recompute_skipped_unsupported': 0, 'live_recompute_ok': 1325, 'live_recompute_ok_ratio': 1.0, 'live_recompute_drift_debt_count': 0, 'live_recompute_max_drift_pct': 0.0, 'live_recompute_debt_report': 'data\\formula_live_recompute_debt.json', 'issues': 0}
+
+Per-formula verification policy: `data/formula_verification_policy.yaml`
+Reproduce: `python scripts/run_numeric_eval_queue.py`

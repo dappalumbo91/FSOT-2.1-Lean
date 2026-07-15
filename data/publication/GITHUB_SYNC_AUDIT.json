@@ -1,0 +1,145 @@
+{
+  "audited_at": "2026-07-15T17:17:34.166616+00:00",
+  "canonical_hub": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full",
+  "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
+  "sync": {
+    "local_ahead": 0,
+    "local_behind": 0,
+    "local_head": "f811b28",
+    "origin_head": "f811b28"
+  },
+  "archive_independence_ok": true,
+  "cross_proof": {
+    "overall_ok": true,
+    "github_ready": true,
+    "atomic_provable_count": 1863,
+    "generated_at": "2026-07-15T16:22:36.605000+00:00"
+  },
+  "claims_staleness": [],
+  "missing_key_artifacts": [],
+  "untracked_publication_files": [
+    "data/publication/PUBLISH_WITHOUT_NEW_ACCOUNT.md",
+    "data/publication/github_release_v1/FSOT-Monograph-Verification-Bundle-v1.zip",
+    "data/publication/github_release_v1/RELEASE_NOTES.md",
+    "data/publication/readme_expansion_manifest.yaml",
+    "data/publication/readme_sections/api_resources.md",
+    "data/publication/readme_sections/contested_observables.md",
+    "data/publication/readme_sections/cross_verification.md",
+    "data/publication/readme_sections/domain_atlas.md",
+    "data/publication/readme_sections/formula_corpus.md",
+    "data/publication/readme_sections/literature.md",
+    "data/publication/readme_sections/verified_desktop.md",
+    "scripts/publish_github_release.py"
+  ],
+  "modified_file_count": 64,
+  "modified_files_sample": [
+    "M data/adversarial_round3_audit.json",
+    " M data/archive_independence_audit.json",
+    " M data/archive_portability_audit.json",
+    " M data/benchmark_margin_audit.json",
+    " M data/claims_alignment_closure.json",
+    " M data/contested_observables_closure.json",
+    " M data/cross_proof_coverage_audit.json",
+    " M data/cross_proof_verification_benchmark.json",
+    " M data/cross_proof_verification_manifest.yaml",
+    " M data/cross_proof_verification_report.json",
+    " M data/cross_refinement_fstar_report.json",
+    " M data/cross_refinement_lean_coq_report.json",
+    " M data/cross_refinement_lean_isabelle_report.json",
+    " M data/cross_refinement_rust_lean_bridge_report.json",
+    " M data/cross_refinement_rust_report.json",
+    " M data/deep_verification_audit.json",
+    " M data/domain_citations/verified_desktop.bib",
+    " M data/empirical_accuracy_closure.json",
+    " M data/falsification_registry_closure.json",
+    " M data/figures/domain_error_envelope.png",
+    " M data/figures/figure_manifest.json",
+    " M data/figures/tier_precision_heatmap.png",
+    " M data/five_prover_quad_closure.json",
+    " M data/formula_corpus_honesty_report.json",
+    " M data/fsot_domain_navigator.json",
+    " M data/fsot_label_registry.json",
+    " M data/fstar_verification_report.json",
+    " M data/living_fsot_hardware_benchmark.json",
+    " M data/living_fsot_hardware_verification_report.json",
+    " M data/oracle_debt_ledger.json",
+    " M data/parameter_honesty_closure.json",
+    " M data/portable_vendor_coverage_audit.json",
+    " M data/publication/domain_atlas.json",
+    " M data/publication_claims_manifest.json",
+    " M data/publication_spine_walkthrough.json",
+    " M data/runtime_verification_scope_audit.json",
+    " M data/rust_lean_bridge_benchmark.json",
+    " M data/rust_lean_bridge_qemu_harness_report.json",
+    " M data/rust_lean_bridge_runtime_parity_report.json",
+    " M data/scientific_pushback_audit.json"
+  ],
+  "readme_expansion": {
+    "exists": true,
+    "written_count": 0,
+    "pending_count": 7,
+    "pending_ids": [
+      "cross_verification",
+      "api_resources",
+      "literature",
+      "domain_atlas",
+      "formula_corpus",
+      "contested_observables",
+      "verified_desktop"
+    ],
+    "sections_on_disk": 7
+  },
+  "recommended_pipeline": [
+    "python scripts/sync_verified_desktop_projects.py",
+    "python scripts/run_publication_verification_bundle.py",
+    "python scripts/export_publication_domain_atlas.py",
+    "python scripts/build_readme_thesis_expansion.py",
+    "python scripts/audit_github_readme_sync.py",
+    "git add data/ verification/ README.md docs/ scripts/ && git commit && git push origin main"
+  ],
+  "actions": [
+    {
+      "priority": "high",
+      "action": "git add + commit + push pending verification artifacts",
+      "detail": "64 working-tree changes; ahead of origin by 0"
+    },
+    {
+      "priority": "medium",
+      "action": "python scripts/build_readme_thesis_expansion.py",
+      "detail": {
+        "exists": true,
+        "written_count": 0,
+        "pending_count": 7,
+        "pending_ids": [
+          "cross_verification",
+          "api_resources",
+          "literature",
+          "domain_atlas",
+          "formula_corpus",
+          "contested_observables",
+          "verified_desktop"
+        ],
+        "sections_on_disk": 7
+      }
+    },
+    {
+      "priority": "medium",
+      "action": "Track and push publication support files",
+      "detail": [
+        "data/publication/PUBLISH_WITHOUT_NEW_ACCOUNT.md",
+        "data/publication/github_release_v1/FSOT-Monograph-Verification-Bundle-v1.zip",
+        "data/publication/github_release_v1/RELEASE_NOTES.md",
+        "data/publication/readme_expansion_manifest.yaml",
+        "data/publication/readme_sections/api_resources.md",
+        "data/publication/readme_sections/contested_observables.md",
+        "data/publication/readme_sections/cross_verification.md",
+        "data/publication/readme_sections/domain_atlas.md",
+        "data/publication/readme_sections/formula_corpus.md",
+        "data/publication/readme_sections/literature.md",
+        "data/publication/readme_sections/verified_desktop.md",
+        "scripts/publish_github_release.py"
+      ]
+    }
+  ],
+  "ok_for_expansive_run": true
+}

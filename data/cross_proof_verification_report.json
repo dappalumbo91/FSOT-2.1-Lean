@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T12:06:40.079237+00:00",
+  "generated_at": "2026-07-15T16:22:36.605000+00:00",
   "tier": "91_seven_way_bare_metal",
   "connective_spine": {
     "obligation_count": 24,
@@ -819,8 +819,8 @@
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:37 elapsed time)\n0:00:43 elapsed time\n",
-        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:37 elapsed time)\n0:00:43 elapsed time\n"
+        "stdout_tail": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:44 elapsed time)\n0:00:50 elapsed time\n",
+        "stderr": "Running FSOT_CrossProof ...\nFinished FSOT_CrossProof (0:00:44 elapsed time)\n0:00:50 elapsed time\n"
       }
     },
     "isabelle_refinement": {
@@ -844,7 +844,7 @@
       "transcendental_count": 68,
       "test_file": "replay_all_obligations.rs",
       "returncode": 0,
-      "attempt": 2,
+      "attempt": 1,
       "stderr_tail": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
     },
     "rust_refinement": {

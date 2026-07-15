@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T12:06:53.529767+00:00",
+  "generated_at": "2026-07-15T16:22:54.152643+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -132,7 +132,7 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "formula_corpus_honesty": {
-    "generated_at": "2026-07-15T11:59:25.467302+00:00",
+    "generated_at": "2026-07-15T12:06:54.039061+00:00",
     "version": "1.0",
     "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
     "headline_row_count": 7941,
@@ -194,15 +194,15 @@
     }
   },
   "runtime_verification_scope": {
-    "generated_at": "2026-07-15T11:59:25.533966+00:00",
+    "generated_at": "2026-07-15T12:06:54.116236+00:00",
     "version": "1.0",
-    "overall_runtime_ok": false,
+    "overall_runtime_ok": true,
     "esp32_scalar_only_gap_closed": true,
     "layers": [
       {
         "id": "lean_coq_isabelle_rust",
         "scope": "2146 exported obligations; 1820 atomic triangulated",
-        "status": "failed",
+        "status": "passed",
         "undeniable_for": "numeric atomic spine"
       },
       {
@@ -236,7 +236,7 @@
     "honest_statement": "Undeniable runtime verification covers boot scalar (F*/QEMU/ESP32) plus Living FSOT QEMU body for closed-loop hardware. ESP32 remains a single-scalar UART witness \u2014 supplementary to Living FSOT, not a full-theory chip proof."
   },
   "parameter_honesty_closure": {
-    "generated_at": "2026-07-15T11:59:25.610029+00:00",
+    "generated_at": "2026-07-15T12:06:54.189775+00:00",
     "version": "1.0",
     "verdict": "NOT_ZERO \u2014 intrinsic constants + per-domain assignment table",
     "headline_claim": "zero free parameters",
@@ -362,7 +362,7 @@
     "triangulation_summary": null
   },
   "structural_proof_depth": {
-    "generated_at": "2026-07-15T12:06:47.057739+00:00",
+    "generated_at": "2026-07-15T16:22:43.955371+00:00",
     "version": "1.0",
     "tier": "92_structural_proof_depth",
     "overall_ok": true,
@@ -2261,7 +2261,7 @@
     {
       "id": "tier_scalar_aspiration",
       "severity": "info",
-      "description": "2 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
+      "description": "1 domains fail tier_scalar_pass (\u22640.05% max record) while green_gate uses pooled median \u22640.5%",
       "remedy": "See benchmark_margin_audit.json tier_scalar_fail_count; aspirational tier not a github_ready blocker",
       "closed": false,
       "monitored": true

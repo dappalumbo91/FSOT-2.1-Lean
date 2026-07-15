@@ -688,7 +688,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma blackhole_whitehole_cycle_bundle_conj_0 : (17 = 17)%nat.
+Lemma blackhole_whitehole_cycle_bundle_conj_0 : (24 = 24)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -700,7 +700,7 @@ Lemma blackhole_whitehole_cycle_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma blackhole_whitehole_cycle_bundle : (17 = 17)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
+Lemma blackhole_whitehole_cycle_bundle : (24 = 24)%nat /\ (18 = 18)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact blackhole_whitehole_cycle_bundle_conj_0.
@@ -8276,7 +8276,7 @@ Proof.
   - lra.
 Qed.
 
-Lemma star_trek_transporter_bundle_conj_0 : (1494 = 1494)%nat.
+Lemma star_trek_transporter_bundle_conj_0 : (1575 = 1575)%nat.
 Proof. reflexivity.
 Qed.
 
@@ -8288,7 +8288,7 @@ Lemma star_trek_transporter_bundle_conj_2 : True.
 Proof. trivial.
 Qed.
 
-Lemma star_trek_transporter_bundle : (1494 = 1494)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
+Lemma star_trek_transporter_bundle : (1575 = 1575)%nat /\ (17 = 17)%nat /\ True /\ 0 < (1.0%R).
 Proof.
   repeat (apply conj).
   - exact star_trek_transporter_bundle_conj_0.

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15T12:07:02.469779+00:00",
+  "generated_at": "2026-07-15T16:23:03.808492+00:00",
   "version": "1.0",
   "verdict": "FALSIFICATION_CRITERIA_REGISTERED",
   "manifest_source": "data/preregistered_predictions_manifest.yaml",
   "summary": {
-    "preregistered_prediction_count": 34,
+    "preregistered_prediction_count": 35,
     "stumped_observable_count": 13,
     "confirmed_discriminant_count": 2,
-    "pending_measurement_count": 32,
+    "pending_measurement_count": 33,
     "wa_prereg_status": "confirmed_within_2sigma",
     "global_kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
     "global_review_horizon": "2026-12-31 full benchmark + survey refresh"
@@ -419,6 +419,19 @@
     {
       "id": "PRED-040",
       "name": "transporter_t3_acoustic_valve_hardware",
+      "domain": "Star_Trek_Transporter_Live_Panel",
+      "fsot_predicted": 0.031159,
+      "unit": "pooled_median_error_pct",
+      "sota_baseline": 8.0,
+      "discriminant": "within_10pct_of_observed_gap",
+      "kill_criterion": "FSOT prediction >10% from measured anchor",
+      "registered_at": "2026-07-15",
+      "status": "pending_independent_measurement",
+      "review_horizon": "independent_measurement_or_survey_release"
+    },
+    {
+      "id": "PRED-041",
+      "name": "transporter_pad_b_receiver_hardware",
       "domain": "Star_Trek_Transporter_Live_Panel",
       "fsot_predicted": 0.031159,
       "unit": "pooled_median_error_pct",

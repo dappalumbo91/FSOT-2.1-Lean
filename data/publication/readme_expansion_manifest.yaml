@@ -1,0 +1,42 @@
+generated_at: '2026-07-15T17:17:31.197891+00:00'
+purpose: Incremental README thesis expansion — merge sections into README.md Appendix
+  XI
+sections:
+- id: cross_verification
+  title: XI-A Cross-Verification Metrics
+  file: data/publication/readme_sections/cross_verification.md
+  status: generated
+  bytes: 549
+- id: api_resources
+  title: XI-B Data Sources and APIs
+  file: data/publication/readme_sections/api_resources.md
+  status: generated
+  bytes: 9208
+- id: literature
+  title: XI-C Literature and Citations
+  file: data/publication/readme_sections/literature.md
+  status: generated
+  bytes: 1894
+- id: domain_atlas
+  title: XI-D Domain Atlas
+  file: data/publication/readme_sections/domain_atlas.md
+  status: generated
+  bytes: 4959
+- id: formula_corpus
+  title: XI-E Formula Corpus
+  file: data/publication/readme_sections/formula_corpus.md
+  status: generated
+  bytes: 1958
+- id: contested_observables
+  title: XI-F Contested Observables
+  file: data/publication/readme_sections/contested_observables.md
+  status: generated
+  bytes: 1068
+- id: verified_desktop
+  title: XI-G Verified Desktop Panels
+  file: data/publication/readme_sections/verified_desktop.md
+  status: generated
+  bytes: 1569
+merge_instructions: Append each file under data/publication/readme_sections/ to README.md
+  between Appendix D and License as sections XI-A through XI-G. Re-run this script
+  after each verification bundle refresh.

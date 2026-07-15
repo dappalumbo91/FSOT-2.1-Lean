@@ -425,6 +425,37 @@ python scripts/export_domain_citations.py --bundle verified_desktop
 
 ---
 
+## Appendix E — Thesis Expansion Run (in progress)
+
+This README is a **living thesis**. Each verification pass adds sections with full cross-verification metrics, API/data provenance, literature citations, and per-domain results — arXiv-grade thoroughness, GitHub-native publication.
+
+**Expansive run pipeline:**
+
+```bash
+python scripts/sync_verified_desktop_projects.py
+python scripts/run_publication_verification_bundle.py --full-cross-proof
+python scripts/export_publication_domain_atlas.py
+python scripts/build_readme_thesis_expansion.py
+python scripts/audit_github_readme_sync.py
+```
+
+**Auto-generated section drafts** (merge into this README as we verify each crevice):
+
+| Section | File |
+|---------|------|
+| Cross-verification metrics | [`data/publication/readme_sections/cross_verification.md`](data/publication/readme_sections/cross_verification.md) |
+| API & data resources | [`data/publication/readme_sections/api_resources.md`](data/publication/readme_sections/api_resources.md) |
+| Literature & citations | [`data/publication/readme_sections/literature.md`](data/publication/readme_sections/literature.md) |
+| Domain atlas (403 domains) | [`data/publication/readme_sections/domain_atlas.md`](data/publication/readme_sections/domain_atlas.md) |
+| Formula corpus (7,941 observables) | [`data/publication/readme_sections/formula_corpus.md`](data/publication/readme_sections/formula_corpus.md) |
+| Contested observables | [`data/publication/readme_sections/contested_observables.md`](data/publication/readme_sections/contested_observables.md) |
+| Verified desktop engineering | [`data/publication/readme_sections/verified_desktop.md`](data/publication/readme_sections/verified_desktop.md) |
+
+Progress tracker: [`data/publication/readme_expansion_manifest.yaml`](data/publication/readme_expansion_manifest.yaml)  
+GitHub sync audit: [`data/publication/GITHUB_SYNC_AUDIT.md`](data/publication/GITHUB_SYNC_AUDIT.md)
+
+---
+
 ## Appendix D — How to Cite This Work
 
 ```
