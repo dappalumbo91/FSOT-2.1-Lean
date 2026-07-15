@@ -114,6 +114,16 @@ def main() -> int:
             }
         )
 
+    # Push vendor transporter sim outputs to archive (pad B etc. may exist only in vendor)
+    vd_transporter = VENDOR_VD / "star_trek_transporter"
+    if archive_root_path is not None and vd_transporter.is_dir():
+        archive_tp = archive_root_path / "star_trek_transporter"
+        archive_tp.mkdir(parents=True, exist_ok=True)
+        for item in vd_transporter.glob("*.json"):
+            shutil.copy2(item, archive_tp / item.name)
+        for item in vd_transporter.glob("*.py"):
+            shutil.copy2(item, archive_tp / item.name)
+
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "archive_root": str(archive_root_path) if archive_root_path else None,

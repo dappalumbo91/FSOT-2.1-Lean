@@ -278,6 +278,7 @@ Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-
 python vendor/verified_desktop/star_trek_transporter/pattern_buffer_beam_simulator.py --deep
 python vendor/verified_desktop/star_trek_transporter/two_gate_entanglement_simulator.py
 python vendor/verified_desktop/star_trek_transporter/t3_acoustic_valve_hardware_simulator.py
+python vendor/verified_desktop/star_trek_transporter/pad_b_receiver_hardware_simulator.py
 python scripts/sync_verified_desktop_projects.py
 ```
 

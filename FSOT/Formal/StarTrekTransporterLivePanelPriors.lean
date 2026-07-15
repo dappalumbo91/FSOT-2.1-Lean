@@ -12,7 +12,7 @@ noncomputable section
 
 open Real
 
-def star_trek_transporter_observable_count : ℕ := 1494
+def star_trek_transporter_observable_count : ℕ := 1575
 def star_trek_transporter_median_error_pct : ℝ := (0.031159 : ℝ)
 def star_trek_transporter_D_eff : ℕ := 17
 
@@ -65,7 +65,7 @@ theorem star_trek_transporter_median_error_under_half_pct :
   unfold star_trek_transporter_median_error_pct; norm_num
 
 theorem star_trek_transporter_bundle :
-    star_trek_transporter_observable_count = 1494 ∧
+    star_trek_transporter_observable_count = 1575 ∧
     star_trek_transporter_D_eff = 17 ∧
     star_trek_transporter_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "quantum") > 0 := by

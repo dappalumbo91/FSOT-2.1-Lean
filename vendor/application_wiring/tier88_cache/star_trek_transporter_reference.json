@@ -61,5 +61,15 @@
     {"name": "mean_beam_coupling_efficiency", "value": 0.121, "unit": "dimensionless"},
     {"name": "phi_lock_hardware", "value": 0.95, "unit": "dimensionless"},
     {"name": "t3_valve_acoustic_phase", "value": 1.0, "unit": "dimensionless"}
+  ],
+  "pad_b_receiver_hardware": [
+    {"name": "resonance_hz", "value": 40000.0, "unit": "Hz"},
+    {"name": "capture_coil_v_pp_nominal", "value": 18.0, "unit": "V"},
+    {"name": "receiver_cavity_m", "value": 0.044, "unit": "m"},
+    {"name": "mean_reassembly_phase_lock_error", "value": 0.005, "unit": "dimensionless"},
+    {"name": "mean_pattern_capture_efficiency", "value": 0.006, "unit": "dimensionless"},
+    {"name": "mean_matter_stream_lock_fidelity", "value": 0.006, "unit": "dimensionless"},
+    {"name": "psi_gate_pair_coupling", "value": 0.043599802456, "unit": "dimensionless"},
+    {"name": "reassembly_phase_target", "value": 1.0, "unit": "dimensionless"}
   ]
 }

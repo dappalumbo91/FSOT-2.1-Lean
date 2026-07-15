@@ -382,6 +382,20 @@ predictions:
       cavity phase lock on pad A emitter, impedance match + beam coupling vs FSOT seed-scalar.
     registered_at: "2026-07-15"
 
+  - id: PRED-041
+    name: transporter_pad_b_receiver_hardware
+    domain: Star_Trek_Transporter_Live_Panel
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.031159
+    unit: pooled_median_error_pct
+    sota_baseline: 8.0
+    sota_label: "Reassembly receiver phase-capture typical modeling gap"
+    discriminant: "within_10pct_of_observed_gap"
+    note: >
+      Pad B receiver hardware simulator — capture-coil phase conjugate lock coupled to
+      psi_gate_pair two-gate entanglement channel; matter-stream reassembly fidelity.
+    registered_at: "2026-07-15"
+
   - id: PRED-038
     name: transporter_portal_traverse_scalar
     domain: Star_Trek_Transporter_Live_Panel

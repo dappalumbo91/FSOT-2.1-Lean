@@ -8715,8 +8715,490 @@
       "unit": "dimensionless"
     }
   ],
+  "pad_b_receiver_hardware": [
+    {
+      "name": "resonance_hz",
+      "value": 40000.0,
+      "unit": "Hz"
+    },
+    {
+      "name": "capture_coil_v_pp_nominal",
+      "value": 18.0,
+      "unit": "V"
+    },
+    {
+      "name": "receiver_cavity_m",
+      "value": 0.044,
+      "unit": "m"
+    },
+    {
+      "name": "mean_reassembly_phase_lock_error",
+      "value": 0.0065607650426943815,
+      "unit": "V"
+    },
+    {
+      "name": "mean_pattern_capture_efficiency",
+      "value": 0.006334772937988883,
+      "unit": "V"
+    },
+    {
+      "name": "mean_matter_stream_lock_fidelity",
+      "value": 0.0062021958951615835,
+      "unit": "V"
+    },
+    {
+      "name": "phi_lock_receiver",
+      "value": 0.95,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "psi_gate_pair_coupling",
+      "value": 0.043599802456,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "reassembly_phase_target",
+      "value": 1.0,
+      "unit": "V"
+    }
+  ],
+  "pad_b_receiver_hardware_steps": [
+    {
+      "name": "pad_b_step_0_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11442968167341647,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_0_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.141592653589793,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_0_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 1.0,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_0_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.0,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_0_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006357204537412026,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_0_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006237862031091536,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11433992317506293,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1391283922644013,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9999725460440295,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.0007843987420126375,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006353215788994362,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_1_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006231454583370669,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11423941628475148,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1363690408127494,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9999418045344015,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.0016627275885290338,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006349206375441746,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_2_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.0062250300057737394,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.1141198418562506,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1330862024735873,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.999905230937968,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.0027076874866275302,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006345160187372889,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_3_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.00621857253463858,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11397719020057978,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.12916979383796,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9998615988324211,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.003954319073683266,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006341069513618595,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_4_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006212074658963446,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.1138126673164353,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1246529248174655,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9998112770901874,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.005392083137503945,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006336936772911631,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_5_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006205538799708749,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11363242232223855,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.119704415468021,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9997561465095143,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.006967242585305011,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.0063327739553766214,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_6_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006198976743207546,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.113446157692932,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.114590640942954,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9996991747349678,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.008595007572348656,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006328599902727573,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_7_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006192406961110419,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.113264936402119,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.109615328003457,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9996437455396253,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.010178698867848612,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006324436044116346,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_8_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006185850426227188,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.113098681577691,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1050509096863856,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9995928940580002,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.01163159834285088,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006320301552669318,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_9_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.006179325872020337,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11295393377416041,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.1010769526715194,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9995486208148217,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.01289654814795227,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.0063162090174422696,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_10_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.00617284556722394,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_capture_coil_v_pp",
+      "property": "capture_coil_v_pp",
+      "value": 0.11283237274092497,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_receiver_phase_rad",
+      "property": "receiver_phase_rad",
+      "value": 3.097739573388536,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_impedance_match_ratio",
+      "property": "impedance_match_ratio",
+      "value": 0.9995114395861315,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_reassembly_phase_lock_error",
+      "property": "reassembly_phase_lock_error",
+      "value": 0.013958868967670734,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_pattern_capture_efficiency",
+      "property": "pattern_capture_efficiency",
+      "value": 0.006312161607783229,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "pad_b_step_11_matter_stream_lock_fidelity",
+      "property": "matter_stream_lock_fidelity",
+      "value": 0.0061664125586028545,
+      "unit": "dimensionless"
+    }
+  ],
   "pattern_buffer_sim": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pattern_buffer_scan_results.json",
   "t3_hardware_sim": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\t3_acoustic_valve_hardware_results.json",
+  "pad_b_hardware_sim": "I:\\FSOT-Physical-Archive\\08_Verified-Desktop-Projects\\star_trek_transporter\\pad_b_receiver_hardware_results.json",
   "two_gate_entanglement": [
     {
       "name": "mean_gate_pair_coupling",
@@ -8954,6 +9436,6 @@
     "theta_s": 0.29089654054517305,
     "eta_eff": 0.46694220692425986
   },
-  "fetched_at": "2026-07-15T12:18:36.774922+00:00",
+  "fetched_at": "2026-07-15T16:12:35.983378+00:00",
   "credential_free": true
 }

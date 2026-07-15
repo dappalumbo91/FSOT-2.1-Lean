@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-07-15T16:12:26.937188+00:00",
+  "simulator": "pad_b_receiver_hardware_simulator",
+  "hardware_frame": {
+    "actuator": "capture_coil_PZT-5A_class",
+    "valve_mechanism": "phase_conjugate_reassembly_lock",
+    "pad_role": "transporter_pad_b_receiver",
+    "coupling_channel": "two_gate_entanglement_pair"
+  },
+  "receiver_steps": [
+    {
+      "step": 0,
+      "capture_coil_v_pp": 0.11442968167341647,
+      "receiver_phase_rad": 3.141592653589793,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 1.0,
+      "reassembly_phase_lock_error": 0.0,
+      "pattern_capture_efficiency": 0.006357204537412026,
+      "matter_stream_lock_fidelity": 0.006237862031091536
+    },
+    {
+      "step": 1,
+      "capture_coil_v_pp": 0.11433992317506293,
+      "receiver_phase_rad": 3.1391283922644013,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9999725460440295,
+      "reassembly_phase_lock_error": 0.0007843987420126375,
+      "pattern_capture_efficiency": 0.006353215788994362,
+      "matter_stream_lock_fidelity": 0.006231454583370669
+    },
+    {
+      "step": 2,
+      "capture_coil_v_pp": 0.11423941628475148,
+      "receiver_phase_rad": 3.1363690408127494,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9999418045344015,
+      "reassembly_phase_lock_error": 0.0016627275885290338,
+      "pattern_capture_efficiency": 0.006349206375441746,
+      "matter_stream_lock_fidelity": 0.0062250300057737394
+    },
+    {
+      "step": 3,
+      "capture_coil_v_pp": 0.1141198418562506,
+      "receiver_phase_rad": 3.1330862024735873,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.999905230937968,
+      "reassembly_phase_lock_error": 0.0027076874866275302,
+      "pattern_capture_efficiency": 0.006345160187372889,
+      "matter_stream_lock_fidelity": 0.00621857253463858
+    },
+    {
+      "step": 4,
+      "capture_coil_v_pp": 0.11397719020057978,
+      "receiver_phase_rad": 3.12916979383796,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9998615988324211,
+      "reassembly_phase_lock_error": 0.003954319073683266,
+      "pattern_capture_efficiency": 0.006341069513618595,
+      "matter_stream_lock_fidelity": 0.006212074658963446
+    },
+    {
+      "step": 5,
+      "capture_coil_v_pp": 0.1138126673164353,
+      "receiver_phase_rad": 3.1246529248174655,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9998112770901874,
+      "reassembly_phase_lock_error": 0.005392083137503945,
+      "pattern_capture_efficiency": 0.006336936772911631,
+      "matter_stream_lock_fidelity": 0.006205538799708749
+    },
+    {
+      "step": 6,
+      "capture_coil_v_pp": 0.11363242232223855,
+      "receiver_phase_rad": 3.119704415468021,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9997561465095143,
+      "reassembly_phase_lock_error": 0.006967242585305011,
+      "pattern_capture_efficiency": 0.0063327739553766214,
+      "matter_stream_lock_fidelity": 0.006198976743207546
+    },
+    {
+      "step": 7,
+      "capture_coil_v_pp": 0.113446157692932,
+      "receiver_phase_rad": 3.114590640942954,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9996991747349678,
+      "reassembly_phase_lock_error": 0.008595007572348656,
+      "pattern_capture_efficiency": 0.006328599902727573,
+      "matter_stream_lock_fidelity": 0.006192406961110419
+    },
+    {
+      "step": 8,
+      "capture_coil_v_pp": 0.113264936402119,
+      "receiver_phase_rad": 3.109615328003457,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9996437455396253,
+      "reassembly_phase_lock_error": 0.010178698867848612,
+      "pattern_capture_efficiency": 0.006324436044116346,
+      "matter_stream_lock_fidelity": 0.006185850426227188
+    },
+    {
+      "step": 9,
+      "capture_coil_v_pp": 0.113098681577691,
+      "receiver_phase_rad": 3.1050509096863856,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9995928940580002,
+      "reassembly_phase_lock_error": 0.01163159834285088,
+      "pattern_capture_efficiency": 0.006320301552669318,
+      "matter_stream_lock_fidelity": 0.006179325872020337
+    },
+    {
+      "step": 10,
+      "capture_coil_v_pp": 0.11295393377416041,
+      "receiver_phase_rad": 3.1010769526715194,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9995486208148217,
+      "reassembly_phase_lock_error": 0.01289654814795227,
+      "pattern_capture_efficiency": 0.0063162090174422696,
+      "matter_stream_lock_fidelity": 0.00617284556722394
+    },
+    {
+      "step": 11,
+      "capture_coil_v_pp": 0.11283237274092497,
+      "receiver_phase_rad": 3.097739573388536,
+      "resonance_hz": 40000.0,
+      "impedance_match_ratio": 0.9995114395861315,
+      "reassembly_phase_lock_error": 0.013958868967670734,
+      "pattern_capture_efficiency": 0.006312161607783229,
+      "matter_stream_lock_fidelity": 0.0061664125586028545
+    }
+  ],
+  "summary": {
+    "resonance_hz": 40000.0,
+    "capture_coil_v_pp_nominal": 18.0,
+    "receiver_cavity_m": 0.044,
+    "mean_reassembly_phase_lock_error": 0.0065607650426943815,
+    "mean_pattern_capture_efficiency": 0.006334772937988883,
+    "mean_matter_stream_lock_fidelity": 0.0062021958951615835,
+    "phi_lock_receiver": 0.95,
+    "psi_gate_pair_coupling": 0.043599802456,
+    "reassembly_phase_target": 1.0
+  },
+  "observables": [
+    {
+      "name": "resonance_hz",
+      "value": 40000.0,
+      "unit": "Hz"
+    },
+    {
+      "name": "capture_coil_v_pp_nominal",
+      "value": 18.0,
+      "unit": "V"
+    },
+    {
+      "name": "receiver_cavity_m",
+      "value": 0.044,
+      "unit": "m"
+    },
+    {
+      "name": "mean_reassembly_phase_lock_error",
+      "value": 0.0065607650426943815,
+      "unit": "V"
+    },
+    {
+      "name": "mean_pattern_capture_efficiency",
+      "value": 0.006334772937988883,
+      "unit": "V"
+    },
+    {
+      "name": "mean_matter_stream_lock_fidelity",
+      "value": 0.0062021958951615835,
+      "unit": "V"
+    },
+    {
+      "name": "phi_lock_receiver",
+      "value": 0.95,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "psi_gate_pair_coupling",
+      "value": 0.043599802456,
+      "unit": "dimensionless"
+    },
+    {
+      "name": "reassembly_phase_target",
+      "value": 1.0,
+      "unit": "V"
+    }
+  ]
+}

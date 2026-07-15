@@ -369,8 +369,11 @@ def ingest_star_trek_transporter() -> dict:
     t3_valve: list[dict] = []
     t3_hardware: list[dict] = []
     t3_hardware_steps: list[dict] = []
+    pad_b_hardware: list[dict] = []
+    pad_b_hardware_steps: list[dict] = []
     sim_path = desktop_dir / "pattern_buffer_scan_results.json"
     t3_hw_path = desktop_dir / "t3_acoustic_valve_hardware_results.json"
+    pad_b_hw_path = desktop_dir / "pad_b_receiver_hardware_results.json"
     two_gate: list[dict] = []
     two_gate_steps: list[dict] = []
     two_gate_path = desktop_dir / "two_gate_entanglement_results.json"
@@ -429,6 +432,29 @@ def ingest_star_trek_transporter() -> dict:
                             "unit": "dimensionless",
                         }
                     )
+    if _deep_mode() and pad_b_hw_path.is_file():
+        pb_doc = _load_json(pad_b_hw_path)
+        pad_b_hardware = list(pb_doc.get("observables") or [])
+        for row in pb_doc.get("receiver_steps") or []:
+            step = row.get("step", 0)
+            for key in (
+                "capture_coil_v_pp",
+                "receiver_phase_rad",
+                "impedance_match_ratio",
+                "reassembly_phase_lock_error",
+                "pattern_capture_efficiency",
+                "matter_stream_lock_fidelity",
+            ):
+                val = row.get(key)
+                if val is not None:
+                    pad_b_hardware_steps.append(
+                        {
+                            "name": f"pad_b_step_{step}_{key}",
+                            "property": key,
+                            "value": float(val),
+                            "unit": "dimensionless",
+                        }
+                    )
     doc = {
         "source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
         "desktop_folder": "FSOT, Star Trek Transporter",
@@ -445,8 +471,11 @@ def ingest_star_trek_transporter() -> dict:
         "t3_valve_scan": t3_valve,
         "t3_valve_hardware": t3_hardware,
         "t3_valve_hardware_steps": t3_hardware_steps,
+        "pad_b_receiver_hardware": pad_b_hardware,
+        "pad_b_receiver_hardware_steps": pad_b_hardware_steps,
         "pattern_buffer_sim": str(sim_path) if sim_path.is_file() else None,
         "t3_hardware_sim": str(t3_hw_path) if t3_hw_path.is_file() else None,
+        "pad_b_hardware_sim": str(pad_b_hw_path) if pad_b_hw_path.is_file() else None,
         "two_gate_entanglement": two_gate,
         "two_gate_pair_steps": two_gate_steps,
         "two_gate_sim": str(two_gate_path) if two_gate_path.is_file() else None,
@@ -676,11 +705,19 @@ def build_star_trek_transporter_live_panel() -> dict:
         ("t3_valve_scan", "Acoustics", "t3_valve_acoustic"),
         ("t3_valve_hardware", "Acoustics", "t3_valve_hardware"),
         ("t3_valve_hardware_steps", "Acoustics", "t3_valve_hardware_steps"),
+        ("pad_b_receiver_hardware", "Acoustics", "pad_b_receiver_hardware"),
+        ("pad_b_receiver_hardware_steps", "Acoustics", "pad_b_receiver_hardware_steps"),
         ("two_gate_entanglement", "Quantum_Mechanics", "two_gate_entanglement"),
         ("two_gate_pair_steps", "Quantum_Mechanics", "two_gate_pair_steps"),
     ):
         rows = live.get(section) or []
-        if section in ("warp_actuation", "t3_valve_scan", "t3_valve_hardware_steps", "two_gate_pair_steps"):
+        if section in (
+            "warp_actuation",
+            "t3_valve_scan",
+            "t3_valve_hardware_steps",
+            "pad_b_receiver_hardware_steps",
+            "two_gate_pair_steps",
+        ):
             sec_records: list[dict] = []
             sec_errs: list[float] = []
             for row in rows:
