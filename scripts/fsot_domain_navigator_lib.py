@@ -15,6 +15,67 @@ JSON_PATH = ROOT / "data" / "fsot_domain_navigator.json"
 DB_PATH = ROOT / "data" / "fsot_domain_navigator.db"
 MANIFEST_PATH = ROOT / "data" / "extension_domains_manifest.yaml"
 
+VERIFIED_DESKTOP_INTENTS = (
+    "machine_molecule_catalog",
+    "fuel_lab_engine",
+    "blackhole_whitehole_cycle",
+    "quantum_transporter",
+)
+
+VERIFIED_DESKTOP_PANELS = (
+    "Machine_And_Molecule_Live_Panel",
+    "Fuel_Lab_Live_Panel",
+    "BlackHole_WhiteHole_Cycle_Live_Panel",
+    "Star_Trek_Transporter_Live_Panel",
+)
+
+VERIFIED_PANEL_FALSIFICATION: dict[str, list[dict[str, Any]]] = {
+    "Machine_And_Molecule_Live_Panel": [
+        {
+            "id": "VD-MAM-001",
+            "name": "species_catalog_precision",
+            "kill_criterion": (
+                "Machine_And_Molecule_Live_Panel pooled median exceeds 0.5% "
+                "or >25% of catalog properties exceed 1% scalar error on refresh."
+            ),
+            "status": "registered",
+        }
+    ],
+    "Fuel_Lab_Live_Panel": [
+        {
+            "id": "VD-FUEL-001",
+            "name": "engine_simulator_precision",
+            "kill_criterion": (
+                "Fuel_Lab_Live_Panel pooled median exceeds 0.5% "
+                "or thermal_efficiency channel median exceeds 1% on grounded/hemp profiles."
+            ),
+            "status": "registered",
+        }
+    ],
+    "BlackHole_WhiteHole_Cycle_Live_Panel": [
+        {
+            "id": "VD-BHWH-001",
+            "name": "cycle_constant_drift",
+            "kill_criterion": (
+                "BH/WH cycle constants (poof, suction, c_eff) drift >0.5% from fsot-core.js "
+                "canonical seed derivation on desktop blueprint refresh."
+            ),
+            "status": "registered",
+        }
+    ],
+    "Star_Trek_Transporter_Live_Panel": [
+        {
+            "id": "VD-TRANS-001",
+            "name": "teleportation_anchor_precision",
+            "kill_criterion": (
+                "Star_Trek_Transporter_Live_Panel pooled median exceeds 0.5% "
+                "or quantum teleportation anchor channel median exceeds 1%."
+            ),
+            "status": "registered",
+        }
+    ],
+}
+
 
 def _load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -71,12 +132,52 @@ def scientific_summary_from_benchmark(bench_path: Path) -> dict[str, Any]:
     }
 
 
+def falsification_for_panel(panel: str, doc: dict | None = None) -> list[dict[str, Any]]:
+    if panel in VERIFIED_PANEL_FALSIFICATION:
+        return list(VERIFIED_PANEL_FALSIFICATION[panel])
+    doc = doc or load_navigator()
+    hits: list[dict[str, Any]] = []
+    for route in doc.get("problem_routes") or []:
+        if panel in (route.get("panels") or []):
+            for row in route.get("falsification") or []:
+                if row not in hits:
+                    hits.append(row)
+    return hits[:5]
+
+
+def bibtex_panel_entry(panel: str, detail: dict[str, Any] | None = None) -> str:
+    detail = detail or enrich_panel(panel)
+    sci = detail.get("scientific") or {}
+    slug = panel.replace("_", "")
+    year = "2026"
+    if sci.get("generated_at"):
+        year = str(sci["generated_at"])[:4]
+    fals = falsification_for_panel(panel)
+    note_parts = [
+        f"Records: {sci.get('record_count')}",
+        f"pooled median error: {sci.get('pooled_median_error_pct')}%",
+    ]
+    if fals:
+        note_parts.append(f"kill criterion: {fals[0].get('kill_criterion')}")
+    note = "; ".join(note_parts)
+    return (
+        f"@misc{{fsot_{slug.lower()},\n"
+        f"  title = {{FSOT verification panel: {panel}}},\n"
+        f"  author = {{Palumbo, Damian Arthur}},\n"
+        f"  year = {{{year}}},\n"
+        f"  howpublished = {{\\url{{https://github.com/dappalumbo91/FSOT-2.1-Lean}}}},\n"
+        f"  note = {{{note}}}\n"
+        f"}}"
+    )
+
+
 def enrich_panel(panel: str, cfg: dict | None = None) -> dict[str, Any]:
     ext = load_manifest()
     cfg = cfg or ext.get(panel) or {}
     bench_rel = cfg.get("benchmark_data") or ""
     bench_path = ROOT / bench_rel if bench_rel else Path()
     sci = scientific_summary_from_benchmark(bench_path)
+    falsification = falsification_for_panel(panel)
     return {
         "panel": panel,
         "tier": cfg.get("tier"),
@@ -87,6 +188,7 @@ def enrich_panel(panel: str, cfg: dict | None = None) -> dict[str, Any]:
         "build_script": cfg.get("build_script") or cfg.get("benchmark_script"),
         "manifest": cfg.get("manifest"),
         "scientific": sci,
+        "falsification": falsification,
         "reproduce": {
             "ingest": f"python {cfg['ingest_script']} --deep" if cfg.get("ingest_script") else None,
             "build": f"python {cfg['build_script']} --skip-ingest" if cfg.get("build_script") else None,
@@ -241,5 +343,14 @@ def build_repro_bundle(
             "repository": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
             "navigator_index": "data/fsot_domain_navigator.json",
             "verification_standard": "Per-record numeric precision + Lean certificate; 0 sorry",
+            "export_command": "python scripts/export_domain_citations.py --bundle verified_desktop",
         },
+        "falsification": sorted(
+            {
+                row.get("id"): row
+                for p in panels_detail
+                for row in (p.get("falsification") or [])
+            }.values(),
+            key=lambda r: str(r.get("id")),
+        )[:8],
     }

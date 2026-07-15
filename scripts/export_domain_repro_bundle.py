@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from fsot_domain_navigator_lib import build_repro_bundle  # noqa: E402
+from fsot_domain_navigator_lib import bibtex_panel_entry, build_repro_bundle  # noqa: E402
 
 DEFAULT_OUT = ROOT / "data" / "domain_repro_bundles"
 
@@ -27,6 +27,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT, help="Output root directory")
     parser.add_argument("--stage", action="store_true", help="Copy benchmark/source files into bundle dir")
     parser.add_argument("--run-verify", action="store_true", help="Run verify_extension_domains after export")
+    parser.add_argument("--format", choices=("manifest", "bibtex"), default="manifest")
     args = parser.parse_args()
 
     if not any([args.core, args.intent, args.panel, args.query]):
@@ -39,6 +40,11 @@ def main() -> int:
         query=args.query,
     )
     bundle["exported_at"] = datetime.now(timezone.utc).isoformat()
+
+    if args.format == "bibtex":
+        entries = [bibtex_panel_entry(p["panel"], p) for p in bundle.get("panels") or []]
+        print("\n\n".join(entries))
+        return 0
 
     out_dir = args.output / bundle["bundle_id"]
     out_dir.mkdir(parents=True, exist_ok=True)

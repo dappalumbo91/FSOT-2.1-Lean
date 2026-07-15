@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T10:59:45.136551+00:00",
+  "generated_at": "2026-07-15T11:04:18.093473+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
@@ -1145,7 +1145,7 @@
         "domain": "Arxiv_Brain_Knowledge_Panel",
         "record_count": 20,
         "pooled_median_error_pct": 0.018003,
-        "generated_at": "2026-07-15T10:59:15.626953+00:00",
+        "generated_at": "2026-07-15T11:01:58.949820+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -1258,7 +1258,7 @@
         "domain": "Arxiv_Primitives_Panel",
         "record_count": 22,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T10:59:15.638728+00:00",
+        "generated_at": "2026-07-15T11:01:58.962252+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural",
@@ -1423,9 +1423,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/bibliography_corpus_panel_benchmark.json",
         "domain": "Bibliography_Corpus_Panel",
-        "record_count": 8,
-        "pooled_median_error_pct": 0.013294,
-        "generated_at": "2026-07-15T10:59:15.609113+00:00",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.026766861384483892,
+        "generated_at": "2026-07-15T11:02:00.837782+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle"
@@ -1433,14 +1433,15 @@
         "D_eff": 12,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\bibliography_corpus_cache.json",
-          "desktop_bibliography"
+          "desktop_bibliography",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "FSOT axiomatic bibliography corpus"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -1533,9 +1534,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/binary_decoder_panel_benchmark.json",
         "domain": "Binary_Decoder_Panel",
-        "record_count": 8,
-        "pooled_median_error_pct": 0.008488,
-        "generated_at": "2026-07-15T10:59:15.615158+00:00",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.013342,
+        "generated_at": "2026-07-15T11:02:01.685094+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai"
@@ -1543,14 +1544,15 @@
         "D_eff": 13,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\binary_decoder_cache.json",
-          "desktop_binary_decoder"
+          "desktop_binary_decoder",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Rendlesham page-14 binary trace decoder"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -1793,7 +1795,7 @@
       "routes_to_core": "Astrophysics",
       "record_count": 24,
       "median_error_pct": 0.026472,
-      "coverage_tier": "unverified",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors",
       "maps_to_lean": [
         "blackhole",
@@ -1820,7 +1822,7 @@
         "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.026472,
-        "generated_at": "2026-07-15T10:59:34.653546+00:00",
+        "generated_at": "2026-07-15T11:02:02.522514+00:00",
         "maps_to_lean": [
           "blackhole",
           "astronomical",
@@ -2197,9 +2199,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/canonical_oracle_panel_benchmark.json",
         "domain": "Canonical_Oracle_Panel",
-        "record_count": 6,
+        "record_count": 24,
         "pooled_median_error_pct": 0.013294,
-        "generated_at": "2026-07-15T10:59:15.647683+00:00",
+        "generated_at": "2026-07-15T11:02:03.477731+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle",
@@ -2208,14 +2210,15 @@
         "D_eff": 18,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\canonical_oracle_cache.json",
-          "desktop_canonical_oracle"
+          "desktop_canonical_oracle",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "fsot_compute.py canonical oracle authority"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -2417,9 +2420,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/certified_agent_formal_panel_benchmark.json",
         "domain": "Certified_Agent_Formal_Panel",
-        "record_count": 13,
+        "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.585010+00:00",
+        "generated_at": "2026-07-15T11:02:04.337025+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -2428,14 +2431,15 @@
         "D_eff": 14,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\certified_agent_cache.json",
-          "desktop_certified_agent"
+          "desktop_certified_agent",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Qwen formal certified agent protocol"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -4503,7 +4507,7 @@
       "panel": "Desktop_Application_Wiring_Spine",
       "tier": 88,
       "routes_to_core": "Computer_Science",
-      "record_count": 65,
+      "record_count": 81,
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.DesktopApplicationWiringSpinePriors",
@@ -4532,7 +4536,7 @@
         "domain": "Desktop_Application_Wiring_Spine",
         "record_count": 81,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-15T10:59:15.716792+00:00",
+        "generated_at": "2026-07-15T11:01:59.112379+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -4903,9 +4907,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/early_lean_mc_panel_benchmark.json",
         "domain": "Early_Lean_MC_Panel",
-        "record_count": 10,
+        "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.657214+00:00",
+        "generated_at": "2026-07-15T11:02:05.188892+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -4913,14 +4917,15 @@
         "D_eff": 11,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\early_lean_mc_cache.json",
-          "desktop_early_lean_mc"
+          "desktop_early_lean_mc",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Early Lean Monte Carlo stability report"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -7550,9 +7555,9 @@
       "panel": "Fuel_Lab_Live_Panel",
       "tier": 88,
       "routes_to_core": "Thermodynamics",
-      "record_count": 25,
+      "record_count": 385,
       "median_error_pct": 0.039349,
-      "coverage_tier": "unverified",
+      "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.FuelLabLivePanelPriors",
       "maps_to_lean": [
         "energy",
@@ -7576,9 +7581,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/fuel_lab_live_panel_benchmark.json",
         "domain": "Fuel_Lab_Live_Panel",
-        "record_count": 25,
+        "record_count": 385,
         "pooled_median_error_pct": 0.039349,
-        "generated_at": "2026-07-15T10:59:15.694845+00:00",
+        "generated_at": "2026-07-15T11:01:59.095568+00:00",
         "maps_to_lean": [
           "energy",
           "chemical",
@@ -9728,7 +9733,7 @@
         "domain": "Intrinsic_LLM_Validators_Panel",
         "record_count": 21,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.605195+00:00",
+        "generated_at": "2026-07-15T11:01:58.922421+00:00",
         "maps_to_lean": [
           "ai",
           "mathematical"
@@ -10307,7 +10312,7 @@
         "domain": "Living_FSOT_Hardware_Panel",
         "record_count": 77,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T10:59:15.579974+00:00",
+        "generated_at": "2026-07-15T11:01:58.902509+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -10688,7 +10693,7 @@
       "routes_to_core": "Materials_Science",
       "record_count": 120,
       "median_error_pct": 0.01341,
-      "coverage_tier": "unverified",
+      "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors",
       "maps_to_lean": [
         "material",
@@ -10715,7 +10720,7 @@
         "domain": "Machine_And_Molecule_Live_Panel",
         "record_count": 120,
         "pooled_median_error_pct": 0.01341,
-        "generated_at": "2026-07-15T10:59:15.685252+00:00",
+        "generated_at": "2026-07-15T11:01:59.009407+00:00",
         "maps_to_lean": [
           "material",
           "energy",
@@ -13947,7 +13952,7 @@
         "domain": "Omni_Theory_Humanities_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.0222545,
-        "generated_at": "2026-07-15T10:59:15.595129+00:00",
+        "generated_at": "2026-07-15T11:01:58.918302+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural"
@@ -15287,9 +15292,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/physarum_biological_cuda_panel_benchmark.json",
         "domain": "Physarum_Biological_CUDA_Panel",
-        "record_count": 5,
+        "record_count": 24,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T10:59:15.619178+00:00",
+        "generated_at": "2026-07-15T11:02:06.052886+00:00",
         "maps_to_lean": [
           "biological",
           "neural"
@@ -15297,14 +15302,15 @@
         "D_eff": 15,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\biological_cuda_cache.json",
-          "desktop_physarum"
+          "desktop_physarum",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Physarum polycephalum CUDA genomics"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -17054,9 +17060,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/rust_lean_bridge_panel_benchmark.json",
         "domain": "Rust_Lean_Bridge_Panel",
-        "record_count": 8,
-        "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.644326+00:00",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.0020923899350648867,
+        "generated_at": "2026-07-15T11:02:06.906606+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -17064,14 +17070,15 @@
         "D_eff": 13,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\rust_lean_bridge_cache.json",
-          "desktop_rust_lean_bridge"
+          "desktop_rust_lean_bridge",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Rust bare-metal observer kernel \u2192 Lean bridge"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -17282,9 +17289,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/scalar_solver_35_panel_benchmark.json",
         "domain": "Scalar_Solver_35_Panel",
-        "record_count": 10,
+        "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.630961+00:00",
+        "generated_at": "2026-07-15T11:02:07.762760+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -17292,14 +17299,15 @@
         "D_eff": 14,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\scalar_solver_cache.json",
-          "desktop_scalar_solver"
+          "desktop_scalar_solver",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "FSOT 3.5 dual scalar solver"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -18266,7 +18274,7 @@
       "routes_to_core": "Quantum_Mechanics",
       "record_count": 24,
       "median_error_pct": 0.05256,
-      "coverage_tier": "unverified",
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors",
       "maps_to_lean": [
         "mathematical"
@@ -18291,7 +18299,7 @@
         "domain": "Star_Trek_Transporter_Live_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.05256,
-        "generated_at": "2026-07-15T10:59:35.531798+00:00",
+        "generated_at": "2026-07-15T11:02:08.608548+00:00",
         "maps_to_lean": [
           "mathematical"
         ],
@@ -19951,9 +19959,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/tokenization_live_panel_benchmark.json",
         "domain": "Tokenization_Live_Panel",
-        "record_count": 9,
-        "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T10:59:15.558481+00:00",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.022236,
+        "generated_at": "2026-07-15T11:02:09.453116+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai",
@@ -19962,14 +19970,15 @@
         "D_eff": 13,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\tokenization_cache.json",
-          "desktop_dictionary"
+          "desktop_dictionary",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "FSOT numeric tokenization smoke"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -20122,7 +20131,7 @@
         "domain": "Trinary_Hardware_Live_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T10:59:15.554915+00:00",
+        "generated_at": "2026-07-15T11:01:58.877241+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -20803,9 +20812,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/vl_agent_distill_panel_benchmark.json",
         "domain": "VL_Agent_Distill_Panel",
-        "record_count": 6,
-        "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T10:59:15.652694+00:00",
+        "record_count": 24,
+        "pooled_median_error_pct": 0.022236,
+        "generated_at": "2026-07-15T11:02:10.322911+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness"
@@ -20813,14 +20822,15 @@
         "D_eff": 14,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\vl_agent_cache.json",
-          "desktop_vl_distill"
+          "desktop_vl_distill",
+          "c_thin_depth_pass"
         ],
         "sota_models": [
-          "Vision-language agent distillation atlas"
+          "C_thin depth relay"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
-          "channel_desktop_wiring_vs_baseline": true
+          "channel_depth_relay_vs_baseline": true
         },
         "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py"
       },
@@ -23250,9 +23260,9 @@
       ],
       "falsification": [
         {
-          "id": "global",
-          "name": "extension_domain_precision_gate",
-          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "id": "VD-MAM-001",
+          "name": "species_catalog_precision",
+          "kill_criterion": "Machine_And_Molecule_Live_Panel pooled median exceeds 0.5% or >25% of catalog properties exceed 1% scalar error on refresh.",
           "status": "registered"
         }
       ]
@@ -23301,9 +23311,9 @@
       ],
       "falsification": [
         {
-          "id": "global",
-          "name": "extension_domain_precision_gate",
-          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "id": "VD-FUEL-001",
+          "name": "engine_simulator_precision",
+          "kill_criterion": "Fuel_Lab_Live_Panel pooled median exceeds 0.5% or thermal_efficiency channel median exceeds 1% on grounded/hemp profiles.",
           "status": "registered"
         }
       ]
@@ -23342,9 +23352,9 @@
       ],
       "falsification": [
         {
-          "id": "global",
-          "name": "extension_domain_precision_gate",
-          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "id": "VD-BHWH-001",
+          "name": "cycle_constant_drift",
+          "kill_criterion": "BH/WH cycle constants (poof, suction, c_eff) drift >0.5% from fsot-core.js canonical seed derivation on desktop blueprint refresh.",
           "status": "registered"
         }
       ]
@@ -23391,9 +23401,9 @@
       ],
       "falsification": [
         {
-          "id": "global",
-          "name": "extension_domain_precision_gate",
-          "kill_criterion": "If >25% of extension domains fail pooled \u22640.5% gate on next full benchmark refresh, downgrade empirical_accuracy_closure verdict.",
+          "id": "VD-TRANS-001",
+          "name": "teleportation_anchor_precision",
+          "kill_criterion": "Star_Trek_Transporter_Live_Panel pooled median exceeds 0.5% or quantum teleportation anchor channel median exceeds 1%.",
           "status": "registered"
         }
       ]

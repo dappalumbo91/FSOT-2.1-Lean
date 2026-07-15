@@ -23,6 +23,37 @@ def _load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def _verified_desktop_evidence() -> dict:
+    slug_map = {
+        "Machine_And_Molecule_Live_Panel": "machine_and_molecule_live_panel_benchmark.json",
+        "Fuel_Lab_Live_Panel": "fuel_lab_live_panel_benchmark.json",
+        "BlackHole_WhiteHole_Cycle_Live_Panel": "blackhole_whitehole_cycle_live_panel_benchmark.json",
+        "Star_Trek_Transporter_Live_Panel": "star_trek_transporter_live_panel_benchmark.json",
+    }
+    rows = []
+    for panel, bench_file in slug_map.items():
+        bench = _load(ROOT / "data" / bench_file)
+        rows.append(
+            {
+                "panel": panel,
+                "record_count": bench.get("record_count"),
+                "pooled_median_error_pct": bench.get("pooled_median_error_pct"),
+                "benchmark": f"data/{bench_file}",
+            }
+        )
+    return {
+        "desktop_folders": [
+            "FSOT_Machine_And_Molecule",
+            "Fuel Lab",
+            "FSOT_BlackHole_WhiteHole",
+            "FSOT, Star Trek Transporter",
+        ],
+        "panels": rows,
+        "citation_export": "python scripts/export_domain_citations.py --bundle verified_desktop",
+        "reproduce": "python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep",
+    }
+
+
 def build() -> dict:
     empirical = _load(SOURCES["empirical"])
     contested = _load(SOURCES["contested"])
@@ -94,6 +125,12 @@ def build() -> dict:
             "data/figures/predicted_vs_measured_scatter.png",
         ],
         "reproduce_one_command": "python scripts/run_publication_verification_bundle.py",
+        "verified_desktop_evidence": _verified_desktop_evidence(),
+        "domain_navigator": {
+            "index": "data/fsot_domain_navigator.json",
+            "query": "python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine",
+            "citations": "python scripts/export_domain_citations.py --bundle verified_desktop",
+        },
         "walkthrough_artifact": str(SOURCES["walkthrough"]),
         "worked_example": walk.get("worked_example_h0_planck"),
     }

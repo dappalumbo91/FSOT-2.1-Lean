@@ -35,6 +35,7 @@ def main() -> int:
 
     steps = [
         ("build_fsot_domain_navigator_db.py", []),
+        ("export_domain_citations.py", ["--bundle", "verified_desktop"]),
         ("build_contested_observables_closure.py", []),
         ("build_publication_spine_walkthrough.py", []),
         ("build_scientific_figures.py", []),
@@ -55,6 +56,7 @@ def main() -> int:
     print(f"  Walkthrough: {ROOT / 'data' / 'publication_spine_walkthrough.json'}")
     print(f"  Claims: {ROOT / 'data' / 'publication_claims_manifest.json'}")
     print(f"  Domain navigator: {ROOT / 'data' / 'fsot_domain_navigator.json'}")
+    print(f"  Verified desktop citations: {ROOT / 'data' / 'domain_citations' / 'verified_desktop.bib'}")
     return 0
 
 

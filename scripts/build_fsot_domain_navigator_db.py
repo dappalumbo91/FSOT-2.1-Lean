@@ -32,7 +32,10 @@ except ImportError:
     yaml = None
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from fsot_domain_navigator_lib import scientific_summary_from_benchmark  # noqa: E402
+from fsot_domain_navigator_lib import (  # noqa: E402
+    VERIFIED_PANEL_FALSIFICATION,
+    scientific_summary_from_benchmark,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "fsot_domain_navigator.db"
@@ -347,6 +350,8 @@ def build_navigator() -> dict:
                         "status": pred.get("status"),
                     }
                 )
+        for p in panels:
+            kill_criteria.extend(VERIFIED_PANEL_FALSIFICATION.get(p) or [])
         if not kill_criteria:
             kill_criteria.append(
                 {
@@ -356,6 +361,15 @@ def build_navigator() -> dict:
                     "status": "registered",
                 }
             )
+        seen_ids: set[str] = set()
+        deduped: list[dict] = []
+        for row in kill_criteria:
+            rid = str(row.get("id") or "")
+            if rid in seen_ids:
+                continue
+            seen_ids.add(rid)
+            deduped.append(row)
+        kill_criteria = deduped
         problem_routes.append(
             {
                 "intent": route["intent"],

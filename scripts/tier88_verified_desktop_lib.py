@@ -109,12 +109,23 @@ def ingest_machine_and_molecule() -> dict:
     return doc
 
 
+def _sample_records(records: list, *, limit: int) -> list:
+    if not records or len(records) <= limit:
+        return list(records or [])
+    step = max(1, len(records) // limit)
+    return [records[i] for i in range(0, len(records), step)][:limit]
+
+
 def ingest_fuel_lab() -> dict:
     fuel_root = DESKTOP / "Fuel Lab" / "engine_simulator"
     profiles_doc = _load_json(fuel_root / "results" / "test_grounded.json")
     compare_doc = _load_json(fuel_root / "results" / "material_compatibility_comparison.json")
     profiles = profiles_doc.get("fuel_profiles") or []
     sim_records = (compare_doc.get("records") or [])[: (_deep_mode() and 12 or 6)]
+    hemp_records: list[dict] = []
+    if _deep_mode():
+        hemp_doc = _load_json(fuel_root / "results" / "refined_grounded_hemp.json")
+        hemp_records = _sample_records(hemp_doc.get("records") or [], limit=72)
     doc = {
         "source": "desktop_fuel_lab_engine_simulator",
         "desktop_folder": "Fuel Lab",
@@ -123,6 +134,9 @@ def ingest_fuel_lab() -> dict:
         "profile_count": len(profiles),
         "simulation_records": sim_records,
         "simulation_record_count": len(sim_records),
+        "hemp_simulation_records": hemp_records,
+        "hemp_simulation_record_count": len(hemp_records),
+        "hemp_source": "refined_grounded_hemp.json" if hemp_records else None,
     }
     _write_cache("fuel_lab_live_cache.json", doc)
     return doc
@@ -286,29 +300,38 @@ def build_fuel_lab_live_panel() -> dict:
             )
             records.append(rec)
             errs.append(float(rec["error_pct"]))
-    for row in live.get("simulation_records") or []:
-        pid = str(row.get("fuel_profile_id") or "sim")
-        for prop, dom in (
-            ("fsot_score", "Thermodynamics"),
-            ("thermal_efficiency", "Thermodynamics"),
-            ("renewable_rank", "Ecology"),
-            ("material_compatibility_index", "Materials_Science"),
-            ("bsfc_g_kwh", "Thermodynamics"),
-            ("conversion_efficiency", "Physical_Chemistry"),
-        ):
-            val = row.get(prop)
-            if val is None:
-                continue
-            rec = make_fsot_record(
-                lab="fuel_lab_live_lab",
-                property_name=prop,
-                name=pid,
-                measured=float(val),
-                domain=dom,
-                extra={"ingest_source": live.get("source"), "engine": row.get("engine_id")},
-            )
-            records.append(rec)
-            errs.append(float(rec["error_pct"]))
+    sim_channels = (
+        ("simulation_records", "compare"),
+        ("hemp_simulation_records", "hemp_refined"),
+    )
+    for channel_key, channel_tag in sim_channels:
+        for row in live.get(channel_key) or []:
+            pid = str(row.get("fuel_profile_id") or "sim")
+            for prop, dom in (
+                ("fsot_score", "Thermodynamics"),
+                ("thermal_efficiency", "Thermodynamics"),
+                ("renewable_rank", "Ecology"),
+                ("material_compatibility_index", "Materials_Science"),
+                ("bsfc_g_kwh", "Thermodynamics"),
+                ("conversion_efficiency", "Physical_Chemistry"),
+            ):
+                val = row.get(prop)
+                if val is None:
+                    continue
+                rec = make_fsot_record(
+                    lab="fuel_lab_live_lab",
+                    property_name=prop,
+                    name=f"{channel_tag}_{pid}",
+                    measured=float(val),
+                    domain=dom,
+                    extra={
+                        "ingest_source": live.get("source"),
+                        "engine": row.get("engine_id"),
+                        "channel": channel_tag,
+                    },
+                )
+                records.append(rec)
+                errs.append(float(rec["error_pct"]))
     return _bench_v11(
         domain="Fuel_Lab_Live_Panel",
         material_records=records,

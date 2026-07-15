@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from fsot_domain_navigator_lib import (  # noqa: E402
+    bibtex_panel_entry,
     build_repro_bundle,
     enrich_panel,
     load_manifest,
@@ -34,6 +35,9 @@ def _print_text(payload: dict) -> None:
         print(f"  Benchmark: {sci.get('benchmark_path')}")
         if sci.get("sources"):
             print(f"  Sources: {', '.join(sci['sources'][:4])}")
+        fals = payload.get("falsification") or []
+        if fals:
+            print(f"  Falsification: {fals[0].get('name')} — {fals[0].get('kill_criterion')}")
         rep = payload.get("reproduce") or {}
         for label in ("ingest", "build", "verify_panel"):
             if rep.get(label):
@@ -55,23 +59,6 @@ def _print_text(payload: dict) -> None:
         print(f"  Panels: {payload['panel_count']}  Records: {payload['total_empirical_records']}")
         for cmd in payload.get("reproduce_commands") or []:
             print(f"  $ {cmd}")
-
-
-def _bibtex_panel(payload: dict) -> str:
-    panel = payload.get("panel", "unknown").replace("_", "")
-    sci = payload.get("scientific") or {}
-    year = "2026"
-    if sci.get("generated_at"):
-        year = str(sci["generated_at"])[:4]
-    return (
-        f"@misc{{fsot_{panel.lower()},\n"
-        f"  title = {{FSOT verification panel: {payload.get('panel')}}},\n"
-        f"  author = {{Palumbo, Damian Arthur}},\n"
-        f"  year = {{{year}}},\n"
-        f"  howpublished = {{\\url{{https://github.com/dappalumbo91/FSOT-2.1-Lean}}}},\n"
-        f"  note = {{Records: {sci.get('record_count')}, pooled median error: {sci.get('pooled_median_error_pct')}%}}\n"
-        f"}}"
-    )
 
 
 def main() -> int:
@@ -103,7 +90,7 @@ def main() -> int:
         elif args.format == "bibtex":
             entries = []
             for p in bundle.get("panels") or []:
-                entries.append(_bibtex_panel({"kind": "panel", **p}))
+                entries.append(bibtex_panel_entry(p["panel"], p))
             print("\n\n".join(entries))
         else:
             _print_text({"kind": "bundle", **bundle})
@@ -138,7 +125,7 @@ def main() -> int:
     if args.format == "json":
         print(json.dumps(payload, indent=2))
     elif args.format == "bibtex" and payload.get("kind") == "panel":
-        print(_bibtex_panel(payload))
+        print(bibtex_panel_entry(payload["panel"], payload))
     else:
         _print_text(payload)
     return 0

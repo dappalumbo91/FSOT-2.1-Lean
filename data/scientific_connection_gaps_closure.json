@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T10:56:25.890028+00:00",
+  "generated_at": "2026-07-15T11:01:44.821565+00:00",
   "version": "1.0",
   "verdict": "GAPS_TRACKED_CROSS_DOMAIN",
   "summary": {
@@ -18,8 +18,8 @@
       "status": "closed",
       "metric": {
         "core_domains_indexed": 35,
-        "extension_panels_indexed": 363,
-        "problem_routes": 15
+        "extension_panels_indexed": 367,
+        "problem_routes": 19
       },
       "remedy": "query_fsot_domain_navigator.py + export_domain_repro_bundle.py + reproduce_domain_panel.py",
       "evidence": "data/fsot_domain_navigator.json"
@@ -93,7 +93,7 @@
       "status": "closed",
       "metric": {
         "unwired_with_content": 0,
-        "wired": 44
+        "wired": 45
       },
       "remedy": "vendor bundles for portable verify; wire high-value labs via lab_registry",
       "evidence": "data/desktop_project_crosswalk.json"

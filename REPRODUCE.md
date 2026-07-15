@@ -246,6 +246,16 @@ python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
 
 Maps: `FSOT_Machine_And_Molecule` → `Machine_And_Molecule_Live_Panel`, `Fuel Lab` → `Fuel_Lab_Live_Panel`, `FSOT_BlackHole_WhiteHole` → `BlackHole_WhiteHole_Cycle_Live_Panel`, `FSOT, Star Trek Transporter` → `Star_Trek_Transporter_Live_Panel`.
 
+**Citations + falsification (verified desktop bundle):**
+
+```powershell
+python scripts/export_domain_citations.py --bundle verified_desktop
+python scripts/query_fsot_domain_navigator.py --panel Fuel_Lab_Live_Panel --format bibtex
+python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine --bundle --format bibtex
+```
+
+Panel-specific kill criteria are attached to each route in `data/fsot_domain_navigator.json` under `problem_routes[].falsification`.
+
 ## Claim scope (read before citing)
 
 **Proved in Lean:** sign statements and interval bounds at **canonical** domain parameters; Wave-1 formulas at cached `S_cosm`, `S_quant`.

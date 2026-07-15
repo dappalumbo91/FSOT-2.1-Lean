@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T05:29:42.573812+00:00",
-  "c_thin_before": 10,
+  "generated_at": "2026-07-15T11:02:19.739161+00:00",
+  "c_thin_before": 12,
   "c_thin_after": 0,
-  "promoted_to_B": 10,
+  "promoted_to_B": 12,
   "promoted_to_A": 0,
   "c_thin_panels": [
     {
@@ -103,6 +103,26 @@
       "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
       "records_after": 24,
       "median_after": 0.014767,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "records": 17,
+      "median_error_pct": 0.026472,
+      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "records_after": 24,
+      "median_after": 0.026472,
+      "tier_after": "B_verified"
+    },
+    {
+      "panel": "Star_Trek_Transporter_Live_Panel",
+      "records": 18,
+      "median_error_pct": 0.095551,
+      "ingest_script": "scripts/ingest_tier88_application_wiring.py",
+      "build_script": "scripts/build_tier88_application_wiring_benchmarks.py",
+      "records_after": 24,
+      "median_after": 0.05256,
       "tier_after": "B_verified"
     }
   ],
@@ -2324,6 +2344,22 @@
       ]
     },
     {
+      "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "skipped": false,
+      "records_before": 17,
+      "records_after": 24,
+      "median_after": 0.026472,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "UAP_War_Gov_Release_Panel",
+        "Time_Domain_Crosswalk",
+        "Optics_Interferometry_Depth_Panel",
+        "SIMBAD_Stellar_Identity_Deep",
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval"
+      ]
+    },
+    {
       "panel": "Canonical_Oracle_Panel",
       "skipped": false,
       "records_before": 6,
@@ -2359,7 +2395,7 @@
       "panel": "Desktop_Application_Wiring_Spine",
       "skipped": true,
       "reason": "not_c_thin",
-      "records": 65,
+      "records": 81,
       "tier": "B_verified"
     },
     {
@@ -2374,9 +2410,16 @@
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Quantum_Computing_Math_Depth_Panel",
-        "Desktop_Application_Wiring_Spine"
+        "Desktop_Application_Wiring_Spine",
+        "Quantum_Computing_Math_Depth_Panel"
       ]
+    },
+    {
+      "panel": "Fuel_Lab_Live_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 385,
+      "tier": "A_strong"
     },
     {
       "panel": "Intrinsic_LLM_Validators_Panel",
@@ -2391,6 +2434,13 @@
       "reason": "not_c_thin",
       "records": 77,
       "tier": "B_verified"
+    },
+    {
+      "panel": "Machine_And_Molecule_Live_Panel",
+      "skipped": true,
+      "reason": "not_c_thin",
+      "records": 120,
+      "tier": "A_strong"
     },
     {
       "panel": "Omni_Theory_Humanities_Panel",
@@ -2427,8 +2477,8 @@
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Quantum_Computing_Math_Depth_Panel",
-        "Desktop_Application_Wiring_Spine"
+        "Desktop_Application_Wiring_Spine",
+        "Quantum_Computing_Math_Depth_Panel"
       ]
     },
     {
@@ -2443,8 +2493,24 @@
         "Pure_Mathematics",
         "Math_Generator_Rules_Eval",
         "Computational_Reasoning",
-        "Quantum_Computing_Math_Depth_Panel",
-        "Desktop_Application_Wiring_Spine"
+        "Desktop_Application_Wiring_Spine",
+        "Quantum_Computing_Math_Depth_Panel"
+      ]
+    },
+    {
+      "panel": "Star_Trek_Transporter_Live_Panel",
+      "skipped": false,
+      "records_before": 18,
+      "records_after": 24,
+      "median_after": 0.05256,
+      "tier_after": "B_verified",
+      "bridges_used": [
+        "Pure_Mathematics",
+        "Math_Generator_Rules_Eval",
+        "Portable_Clone_Verify",
+        "Phi_Morphogenetic_Scaling",
+        "Formula_Branching_Fractal",
+        "Time_Domain_Crosswalk"
       ]
     },
     {
@@ -2458,8 +2524,8 @@
         "Computational_Reasoning",
         "Longevity_Consciousness_Coupling_Panel",
         "Longevity_AnAge_Catalog_Panel",
-        "Living_FSOT_Hardware_Panel",
         "Desktop_Application_Wiring_Spine",
+        "Living_FSOT_Hardware_Panel",
         "Trinary_Hardware_Live_Panel"
       ]
     },
@@ -2749,7 +2815,7 @@
       "exit_code": 0
     },
     {
-      "depth_pass_panels": 363
+      "depth_pass_panels": 367
     }
   ],
   "still_thin": []
