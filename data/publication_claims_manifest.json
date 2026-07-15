@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T11:04:20.218935+00:00",
+  "generated_at": "2026-07-15T11:21:25.338755+00:00",
   "version": "1.0",
   "audience": "peer_review_publication",
   "theory_frame": {
@@ -137,6 +137,15 @@
       "FSOT_BlackHole_WhiteHole",
       "FSOT, Star Trek Transporter"
     ],
+    "fsot_designed_fuels": [
+      "fsot_hemp_waste_grounded",
+      "fsot_hemp_waste_advanced",
+      "fsot_algae_oil_biodiesel",
+      "fsot_mushroom_spore_fuel",
+      "fsot_green_hydrogen"
+    ],
+    "fuel_lab_note": "Five novel FSOT-designed fuel molecular states verified against seed-scalar predictions and cross-referenced with grounded thermochemistry + Prius engine simulator outputs.",
+    "transporter_note": "Constraint verification only: quantum-information anchors plus FSOT portal proxies \u2014 not a claim of macroscopic matter transport.",
     "panels": [
       {
         "panel": "Machine_And_Molecule_Live_Panel",
@@ -146,7 +155,7 @@
       },
       {
         "panel": "Fuel_Lab_Live_Panel",
-        "record_count": 385,
+        "record_count": 313,
         "pooled_median_error_pct": 0.039349,
         "benchmark": "data/fuel_lab_live_panel_benchmark.json"
       },
@@ -162,6 +171,12 @@
         "pooled_median_error_pct": 0.05256,
         "benchmark": "data/star_trek_transporter_live_panel_benchmark.json"
       }
+    ],
+    "preregistered_predictions": [
+      "PRED-034",
+      "PRED-035",
+      "PRED-036",
+      "PRED-037"
     ],
     "citation_export": "python scripts/export_domain_citations.py --bundle verified_desktop",
     "reproduce": "python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep"

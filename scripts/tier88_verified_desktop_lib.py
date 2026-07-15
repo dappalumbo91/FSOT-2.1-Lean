@@ -116,27 +116,66 @@ def _sample_records(records: list, *, limit: int) -> list:
     return [records[i] for i in range(0, len(records), step)][:limit]
 
 
+FSOT_DESIGNED_FUEL_IDS = (
+    "fsot_hemp_waste_grounded",
+    "fsot_hemp_waste_advanced",
+    "fsot_algae_oil_biodiesel",
+    "fsot_mushroom_spore_fuel",
+    "fsot_green_hydrogen",
+)
+
+
+def _merge_fuel_profiles(*docs: dict) -> list[dict]:
+    merged: dict[str, dict] = {}
+    for doc in docs:
+        for prof in doc.get("fuel_profiles") or []:
+            if not isinstance(prof, dict):
+                continue
+            pid = str(prof.get("id") or prof.get("name") or "")
+            if pid:
+                merged[pid] = prof
+    ordered = [merged[pid] for pid in FSOT_DESIGNED_FUEL_IDS if pid in merged]
+    for pid, prof in merged.items():
+        if pid not in FSOT_DESIGNED_FUEL_IDS:
+            ordered.append(prof)
+    return ordered
+
+
 def ingest_fuel_lab() -> dict:
     fuel_root = DESKTOP / "Fuel Lab" / "engine_simulator"
-    profiles_doc = _load_json(fuel_root / "results" / "test_grounded.json")
-    compare_doc = _load_json(fuel_root / "results" / "material_compatibility_comparison.json")
-    profiles = profiles_doc.get("fuel_profiles") or []
-    sim_records = (compare_doc.get("records") or [])[: (_deep_mode() and 12 or 6)]
+    results = fuel_root / "results"
+    profiles = _merge_fuel_profiles(
+        _load_json(results / "grounded_fuel_profiles_full.json"),
+        _load_json(results / "test_grounded.json"),
+        _load_json(results / "grounded_profiles.json"),
+    )
+    compare_full = _load_json(results / "compare_full_20260526.json")
+    compare_mat = _load_json(results / "material_compatibility_comparison.json")
+    sim_records = list(compare_full.get("records") or [])
+    mat_limit = 12 if _deep_mode() else 6
+    sim_records.extend((compare_mat.get("records") or [])[:mat_limit])
     hemp_records: list[dict] = []
     if _deep_mode():
-        hemp_doc = _load_json(fuel_root / "results" / "refined_grounded_hemp.json")
-        hemp_records = _sample_records(hemp_doc.get("records") or [], limit=72)
+        hemp_doc = _load_json(results / "refined_grounded_hemp.json")
+        hemp_records = _sample_records(hemp_doc.get("records") or [], limit=48)
     doc = {
         "source": "desktop_fuel_lab_engine_simulator",
         "desktop_folder": "Fuel Lab",
         "wire_status": "tier88_live_panel",
+        "fsot_designed_fuels": list(FSOT_DESIGNED_FUEL_IDS),
         "fuel_profiles": profiles,
         "profile_count": len(profiles),
         "simulation_records": sim_records,
         "simulation_record_count": len(sim_records),
+        "simulation_sources": [
+            "compare_full_20260526.json",
+            "material_compatibility_comparison.json",
+        ],
         "hemp_simulation_records": hemp_records,
         "hemp_simulation_record_count": len(hemp_records),
         "hemp_source": "refined_grounded_hemp.json" if hemp_records else None,
+        "engine_specs": str(fuel_root / "engine_specs.json"),
+        "real_data_provenance": str(fuel_root / "REAL_DATA_PROVENANCE.md"),
     }
     _write_cache("fuel_lab_live_cache.json", doc)
     return doc
@@ -338,12 +377,21 @@ def build_fuel_lab_live_panel() -> dict:
         maps_to_lean=["energy", "chemical", "material"],
         d_eff=16,
         authority_path=authority,
-        source=[str(cache_root() / "fuel_lab_live_cache.json"), live.get("source", "")],
+        source=[
+            str(cache_root() / "fuel_lab_live_cache.json"),
+            live.get("source", ""),
+            *(live.get("simulation_sources") or []),
+            live.get("hemp_source") or "",
+            live.get("real_data_provenance") or "",
+        ],
         channel_stats=[("engine_simulator", "fuel_lab", errs or [0.0])],
         sota_baselines={
             "fuel_lab": {
                 "sota_typical_error_pct": 8.0,
-                "sota_model": "Desktop Fuel Lab engine simulator grounded profiles",
+                "sota_model": (
+                    "Five FSOT-designed alternative fuels — grounded thermochemistry + "
+                    "Prius engine simulator (novel molecular states)"
+                ),
             }
         },
     )

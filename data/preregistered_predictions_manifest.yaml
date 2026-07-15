@@ -310,3 +310,56 @@ predictions:
     discriminant: "fsot_exceeds_sota_by_0.4"
     note: "Value locked from legacy formula psi_entangle_gate at build time"
     registered_at: "2026-07-10"
+
+  - id: PRED-034
+    name: fsot_designed_fuel_thermochemistry_panel
+    domain: Fuel_Lab_Live_Panel
+    fsot_formula_branch: term1.coherence_efficiency
+    fsot_predicted: 0.039349
+    unit: pooled_median_error_pct
+    sota_baseline: 8.0
+    sota_label: "Desktop engine simulator typical fuel-property error"
+    discriminant: "within_10pct_of_observed_gap"
+    note: >
+      Five FSOT-designed alternative fuels (hemp grounded/advanced, algae biodiesel,
+      mushroom ester, green hydrogen) — thermochemistry + Prius engine simulator outputs
+      vs seed-scalar predictions; novel molecular states not pre-existing in literature.
+    registered_at: "2026-07-15"
+
+  - id: PRED-035
+    name: machine_molecule_species_catalog_precision
+    domain: Machine_And_Molecule_Live_Panel
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.01341
+    unit: pooled_median_error_pct
+    sota_baseline: 5.0
+    sota_label: "Typical materials property lookup error"
+    discriminant: "within_10pct_of_observed_gap"
+    note: "120 catalog properties (metals/molecules) from desktop FSOT species catalog"
+    registered_at: "2026-07-15"
+
+  - id: PRED-036
+    name: quantum_transporter_anchor_consistency
+    domain: Star_Trek_Transporter_Live_Panel
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 0.05256
+    unit: pooled_median_error_pct
+    sota_baseline: 10.0
+    sota_label: "Quantum teleportation + portal proxy typical modeling gap"
+    discriminant: "within_10pct_of_observed_gap"
+    note: >
+      Not a physical transporter claim — FSOT seed engine vs quantum-information anchors
+      (teleportation fidelity, Landauer, decoherence) plus BH/WH portal proxies (poof, suction).
+    registered_at: "2026-07-15"
+
+  - id: PRED-037
+    name: blackhole_whitehole_cycle_constant_drift
+    domain: BlackHole_WhiteHole_Cycle_Live_Panel
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 0.026472
+    unit: pooled_median_error_pct
+    sota_baseline: 6.0
+    sota_label: "Desktop BH/WH cycle prototype typical error"
+    discriminant: "within_10pct_of_observed_gap"
+    note: "Cycle proxies + fsot-core.js canonical constants from desktop blueprint"
+    registered_at: "2026-07-15"

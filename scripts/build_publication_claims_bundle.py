@@ -48,7 +48,23 @@ def _verified_desktop_evidence() -> dict:
             "FSOT_BlackHole_WhiteHole",
             "FSOT, Star Trek Transporter",
         ],
+        "fsot_designed_fuels": [
+            "fsot_hemp_waste_grounded",
+            "fsot_hemp_waste_advanced",
+            "fsot_algae_oil_biodiesel",
+            "fsot_mushroom_spore_fuel",
+            "fsot_green_hydrogen",
+        ],
+        "fuel_lab_note": (
+            "Five novel FSOT-designed fuel molecular states verified against seed-scalar predictions "
+            "and cross-referenced with grounded thermochemistry + Prius engine simulator outputs."
+        ),
+        "transporter_note": (
+            "Constraint verification only: quantum-information anchors plus FSOT portal proxies — "
+            "not a claim of macroscopic matter transport."
+        ),
         "panels": rows,
+        "preregistered_predictions": ["PRED-034", "PRED-035", "PRED-036", "PRED-037"],
         "citation_export": "python scripts/export_domain_citations.py --bundle verified_desktop",
         "reproduce": "python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep",
     }

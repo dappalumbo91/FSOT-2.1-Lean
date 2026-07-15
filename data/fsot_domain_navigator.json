@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T11:04:18.093473+00:00",
+  "generated_at": "2026-07-15T11:21:24.500189+00:00",
   "version": "1.0",
   "summary": {
     "core_domains": 35,
@@ -1145,7 +1145,7 @@
         "domain": "Arxiv_Brain_Knowledge_Panel",
         "record_count": 20,
         "pooled_median_error_pct": 0.018003,
-        "generated_at": "2026-07-15T11:01:58.949820+00:00",
+        "generated_at": "2026-07-15T11:18:51.597800+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -1258,7 +1258,7 @@
         "domain": "Arxiv_Primitives_Panel",
         "record_count": 22,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T11:01:58.962252+00:00",
+        "generated_at": "2026-07-15T11:18:51.613433+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural",
@@ -1425,7 +1425,7 @@
         "domain": "Bibliography_Corpus_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.026766861384483892,
-        "generated_at": "2026-07-15T11:02:00.837782+00:00",
+        "generated_at": "2026-07-15T11:18:53.478709+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle"
@@ -1536,7 +1536,7 @@
         "domain": "Binary_Decoder_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.013342,
-        "generated_at": "2026-07-15T11:02:01.685094+00:00",
+        "generated_at": "2026-07-15T11:18:54.337710+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai"
@@ -1822,7 +1822,7 @@
         "domain": "BlackHole_WhiteHole_Cycle_Live_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.026472,
-        "generated_at": "2026-07-15T11:02:02.522514+00:00",
+        "generated_at": "2026-07-15T11:18:55.179459+00:00",
         "maps_to_lean": [
           "blackhole",
           "astronomical",
@@ -2201,7 +2201,7 @@
         "domain": "Canonical_Oracle_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.013294,
-        "generated_at": "2026-07-15T11:02:03.477731+00:00",
+        "generated_at": "2026-07-15T11:18:56.141270+00:00",
         "maps_to_lean": [
           "mathematical",
           "particle",
@@ -2422,7 +2422,7 @@
         "domain": "Certified_Agent_Formal_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T11:02:04.337025+00:00",
+        "generated_at": "2026-07-15T11:18:56.997879+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -4536,7 +4536,7 @@
         "domain": "Desktop_Application_Wiring_Spine",
         "record_count": 81,
         "pooled_median_error_pct": 0.0,
-        "generated_at": "2026-07-15T11:01:59.112379+00:00",
+        "generated_at": "2026-07-15T11:18:51.747760+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -4909,7 +4909,7 @@
         "domain": "Early_Lean_MC_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T11:02:05.188892+00:00",
+        "generated_at": "2026-07-15T11:18:57.847759+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -7555,7 +7555,7 @@
       "panel": "Fuel_Lab_Live_Panel",
       "tier": 88,
       "routes_to_core": "Thermodynamics",
-      "record_count": 385,
+      "record_count": 313,
       "median_error_pct": 0.039349,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.FuelLabLivePanelPriors",
@@ -7581,9 +7581,9 @@
         "benchmark_exists": true,
         "benchmark_path": "data/fuel_lab_live_panel_benchmark.json",
         "domain": "Fuel_Lab_Live_Panel",
-        "record_count": 385,
+        "record_count": 313,
         "pooled_median_error_pct": 0.039349,
-        "generated_at": "2026-07-15T11:01:59.095568+00:00",
+        "generated_at": "2026-07-15T11:18:51.729132+00:00",
         "maps_to_lean": [
           "energy",
           "chemical",
@@ -7592,10 +7592,14 @@
         "D_eff": 16,
         "sources": [
           "vendor\\application_wiring\\tier88_cache\\fuel_lab_live_cache.json",
-          "desktop_fuel_lab_engine_simulator"
+          "desktop_fuel_lab_engine_simulator",
+          "compare_full_20260526.json",
+          "material_compatibility_comparison.json",
+          "refined_grounded_hemp.json",
+          "C:\\Users\\damia\\Desktop\\Fuel Lab\\engine_simulator\\REAL_DATA_PROVENANCE.md"
         ],
         "sota_models": [
-          "Desktop Fuel Lab engine simulator grounded profiles"
+          "Five FSOT-designed alternative fuels \u2014 grounded thermochemistry + Prius engine simulator (novel molecular states)"
         ],
         "beats_sota": {
           "pooled_vs_domain_baseline": true,
@@ -9733,7 +9737,7 @@
         "domain": "Intrinsic_LLM_Validators_Panel",
         "record_count": 21,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T11:01:58.922421+00:00",
+        "generated_at": "2026-07-15T11:18:51.577639+00:00",
         "maps_to_lean": [
           "ai",
           "mathematical"
@@ -10312,7 +10316,7 @@
         "domain": "Living_FSOT_Hardware_Panel",
         "record_count": 77,
         "pooled_median_error_pct": 0.031506,
-        "generated_at": "2026-07-15T11:01:58.902509+00:00",
+        "generated_at": "2026-07-15T11:18:51.551656+00:00",
         "maps_to_lean": [
           "neural",
           "ai",
@@ -10720,7 +10724,7 @@
         "domain": "Machine_And_Molecule_Live_Panel",
         "record_count": 120,
         "pooled_median_error_pct": 0.01341,
-        "generated_at": "2026-07-15T11:01:59.009407+00:00",
+        "generated_at": "2026-07-15T11:18:51.659437+00:00",
         "maps_to_lean": [
           "material",
           "energy",
@@ -13952,7 +13956,7 @@
         "domain": "Omni_Theory_Humanities_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.0222545,
-        "generated_at": "2026-07-15T11:01:58.918302+00:00",
+        "generated_at": "2026-07-15T11:18:51.567330+00:00",
         "maps_to_lean": [
           "consciousness",
           "neural"
@@ -15294,7 +15298,7 @@
         "domain": "Physarum_Biological_CUDA_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T11:02:06.052886+00:00",
+        "generated_at": "2026-07-15T11:18:58.723874+00:00",
         "maps_to_lean": [
           "biological",
           "neural"
@@ -17062,7 +17066,7 @@
         "domain": "Rust_Lean_Bridge_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.0020923899350648867,
-        "generated_at": "2026-07-15T11:02:06.906606+00:00",
+        "generated_at": "2026-07-15T11:18:59.579801+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -17291,7 +17295,7 @@
         "domain": "Scalar_Solver_35_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T11:02:07.762760+00:00",
+        "generated_at": "2026-07-15T11:19:00.434756+00:00",
         "maps_to_lean": [
           "mathematical",
           "ai"
@@ -18299,7 +18303,7 @@
         "domain": "Star_Trek_Transporter_Live_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.05256,
-        "generated_at": "2026-07-15T11:02:08.608548+00:00",
+        "generated_at": "2026-07-15T11:19:01.284013+00:00",
         "maps_to_lean": [
           "mathematical"
         ],
@@ -19961,7 +19965,7 @@
         "domain": "Tokenization_Live_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T11:02:09.453116+00:00",
+        "generated_at": "2026-07-15T11:19:02.138341+00:00",
         "maps_to_lean": [
           "consciousness",
           "ai",
@@ -20131,7 +20135,7 @@
         "domain": "Trinary_Hardware_Live_Panel",
         "record_count": 37,
         "pooled_median_error_pct": 0.014767,
-        "generated_at": "2026-07-15T11:01:58.877241+00:00",
+        "generated_at": "2026-07-15T11:18:51.529471+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness",
@@ -20814,7 +20818,7 @@
         "domain": "VL_Agent_Distill_Panel",
         "record_count": 24,
         "pooled_median_error_pct": 0.022236,
-        "generated_at": "2026-07-15T11:02:10.322911+00:00",
+        "generated_at": "2026-07-15T11:19:03.002275+00:00",
         "maps_to_lean": [
           "ai",
           "consciousness"
