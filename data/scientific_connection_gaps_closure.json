@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T10:53:20.645646+00:00",
+  "generated_at": "2026-07-15T10:56:25.890028+00:00",
   "version": "1.0",
   "verdict": "GAPS_TRACKED_CROSS_DOMAIN",
   "summary": {
@@ -21,7 +21,7 @@
         "extension_panels_indexed": 363,
         "problem_routes": 15
       },
-      "remedy": "scripts/build_fsot_domain_navigator_db.py \u2192 .db + .json + docs/fsot_domain_navigator.html",
+      "remedy": "query_fsot_domain_navigator.py + export_domain_repro_bundle.py + reproduce_domain_panel.py",
       "evidence": "data/fsot_domain_navigator.json"
     },
     {

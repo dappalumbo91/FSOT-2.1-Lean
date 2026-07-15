@@ -2,9 +2,15 @@
 """Build FSOT domain navigator — queryable index for discovery by domain and problem intent.
 
 Produces:
-  data/fsot_domain_navigator.db      — SQLite + FTS5 (local browse/query)
-  data/fsot_domain_navigator.json    — portable index for GitHub consumers without SQLite
-  docs/fsot_domain_navigator.html    — self-contained browser UI (no server required)
+  data/fsot_domain_navigator.db      — SQLite + FTS5 (CLI / programmatic query)
+  data/fsot_domain_navigator.json    — portable index with scientific metadata per panel
+
+Scientific CLI (primary):
+  python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
+  python scripts/export_domain_repro_bundle.py --core Biology --stage
+  python scripts/reproduce_domain_panel.py --panel Biology_Developmental_Structural_Depth_Panel
+
+Optional: --html writes docs/fsot_domain_navigator.html (browse-only, not required for science)
 
 This is a verification/discovery layer on top of extension_domains_manifest.yaml and
 scientific_domain_expansion_map.json. It does not replace FSOT_UNIFIED.db (formula corpus).
@@ -26,7 +32,7 @@ except ImportError:
     yaml = None
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from fsot_domain_navigator_html import render_html  # noqa: E402
+from fsot_domain_navigator_lib import scientific_summary_from_benchmark  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data" / "fsot_domain_navigator.db"
@@ -249,17 +255,26 @@ def build_navigator() -> dict:
         exp = exp_ext.get(panel) or {}
         core = _infer_core_domain(panel, cfg, exp_core)
         tier_band = exp.get("coverage_tier") or "unverified"
+        bench_rel = cfg.get("benchmark_data") or ""
+        bench_path = ROOT / bench_rel if bench_rel else Path()
+        sci = scientific_summary_from_benchmark(bench_path) if bench_rel else {}
         entry = {
             "panel": panel,
             "tier": cfg.get("tier"),
             "routes_to_core": core,
-            "record_count": exp.get("record_count"),
-            "median_error_pct": exp.get("median_error_pct"),
+            "record_count": exp.get("record_count") or sci.get("record_count"),
+            "median_error_pct": exp.get("median_error_pct") or sci.get("pooled_median_error_pct"),
             "coverage_tier": tier_band,
             "lean_module": cfg.get("lean_module") or exp.get("lean_module"),
             "maps_to_lean": cfg.get("maps_to_lean") or [],
             "tags": _slug_tokens(panel),
             "download_bundle": _download_bundle(cfg),
+            "scientific": sci,
+            "reproduce": {
+                "ingest": f"python {cfg['ingest_script']} --deep" if cfg.get("ingest_script") else None,
+                "build": f"python {cfg['build_script']} --skip-ingest" if cfg.get("build_script") else None,
+                "verify_panel": f"python scripts/reproduce_domain_panel.py --panel {panel}",
+            },
         }
         extension_panels.append(entry)
         by_core.setdefault(core, []).append(panel)
@@ -325,7 +340,7 @@ def build_navigator() -> dict:
             "problem_routes": len(problem_routes),
             "desktop_projects": len(desktop_projects),
             "total_empirical_records": sci.get("summary", {}).get("total_empirical_records"),
-            "c_thin_panels": sci.get("summary", {}).get("tier_distribution", {}).get("C_thin"),
+            "c_thin_panels": (sci.get("summary", {}).get("tier_distribution") or {}).get("C_thin", 0),
         },
         "core_domains": core_domains,
         "extension_panels": extension_panels,
@@ -334,9 +349,13 @@ def build_navigator() -> dict:
         "problem_routes": problem_routes,
         "desktop_projects": desktop_projects,
         "reproduce": "python scripts/build_fsot_domain_navigator_db.py",
-        "browser_ui": "docs/fsot_domain_navigator.html",
-        "query_example": 'python scripts/build_fsot_domain_navigator_db.py --query "entanglement"',
-        "browser_example": "docs/fsot_domain_navigator.html?q=entanglement",
+        "scientific_cli": {
+            "query": "python scripts/query_fsot_domain_navigator.py",
+            "export_bundle": "python scripts/export_domain_repro_bundle.py",
+            "reproduce_panel": "python scripts/reproduce_domain_panel.py",
+        },
+        "query_example": 'python scripts/query_fsot_domain_navigator.py --query "entanglement"',
+        "export_example": "python scripts/export_domain_repro_bundle.py --intent quantum_entanglement --stage",
     }
 
 
@@ -529,19 +548,23 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build FSOT domain navigator index")
     parser.add_argument("--db", type=Path, default=DB_PATH)
     parser.add_argument("--json", type=Path, default=JSON_PATH)
-    parser.add_argument("--html", type=Path, default=HTML_PATH)
+    parser.add_argument("--html", type=Path, default=None, help="Optional browse-only HTML UI")
+    parser.add_argument("--no-html", action="store_true", help="Skip HTML (default)")
     parser.add_argument("--query", type=str, default="", help="FTS query against built DB")
     args = parser.parse_args()
 
     doc = build_navigator()
     args.json.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     _write_sqlite(doc, args.db)
-    args.html.parent.mkdir(parents=True, exist_ok=True)
-    args.html.write_text(render_html(doc), encoding="utf-8")
 
     print(f"Wrote {args.json}")
     print(f"Wrote {args.db}")
-    print(f"Wrote {args.html}")
+    if args.html:
+        from fsot_domain_navigator_html import render_html  # noqa: WPS433
+
+        args.html.parent.mkdir(parents=True, exist_ok=True)
+        args.html.write_text(render_html(doc), encoding="utf-8")
+        print(f"Wrote {args.html}")
     print(f"  core_domains: {doc['summary']['core_domains']}")
     print(f"  extension_panels: {doc['summary']['extension_panels']}")
     print(f"  problem_routes: {doc['summary']['problem_routes']}")

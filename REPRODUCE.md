@@ -208,6 +208,32 @@ The full runner (`fsot_verification_runner.py`) ingests and verifies labs automa
 | `FSOT/Formal/BlackHoleThesisPriors.lean` | 28 BH thermo thesis observable certificates |
 | `docs/genomic_brain_priors_verification.md` | Findings, JSON artifact map, latest results |
 
+## Domain-scoped reproduction (navigator)
+
+Find panels, benchmarks, and reproduce commands by **scientific domain** or **problem intent** (363 extension panels indexed):
+
+```powershell
+# Rebuild index (JSON + SQLite; scientific metadata per panel)
+python scripts/build_fsot_domain_navigator_db.py
+
+# Query by problem
+python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
+python scripts/query_fsot_domain_navigator.py --core Biology --format json
+
+# One panel — records, median error, sources, reproduce commands
+python scripts/query_fsot_domain_navigator.py --panel Biology_Developmental_Structural_Depth_Panel
+
+# Export reproducible bundle (manifest + optional staged benchmark files)
+python scripts/export_domain_repro_bundle.py --intent superconductivity_tc --stage
+
+# Re-ingest, rebuild, and verify a single panel
+python scripts/reproduce_domain_panel.py --panel Quantum_Mechanics_Entanglement_Depth_Panel --deep
+```
+
+**Artifacts:** `data/fsot_domain_navigator.json`, `data/fsot_domain_navigator.db`, `data/domain_repro_bundles/<id>/repro_manifest.json`
+
+**Formula corpus (separate layer):** `FSOT_UNIFIED.db` — use for observable/lineage lookup, not domain discovery.
+
 ## Claim scope (read before citing)
 
 **Proved in Lean:** sign statements and interval bounds at **canonical** domain parameters; Wave-1 formulas at cached `S_cosm`, `S_quant`.
