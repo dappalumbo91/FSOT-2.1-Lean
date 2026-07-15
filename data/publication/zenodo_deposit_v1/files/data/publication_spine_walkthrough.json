@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-07-15T12:07:11.906174+00:00",
+  "version": "1.0",
+  "title": "FSOT single-spine fractal walkthrough",
+  "chain": [
+    {
+      "step": 1,
+      "label": "Geometric seeds",
+      "detail": "\u03c0, e, \u03c6 (golden ratio), \u03b3 (Euler\u2013Mascheroni), G (Catalan)",
+      "artifact": "FSOT/Scalar.lean lines 17\u201323"
+    },
+    {
+      "step": 2,
+      "label": "Intrinsic constants (no per-observable tuning)",
+      "detail": {
+        "alpha": 0.000808293741,
+        "psi_con": 0.632120558829,
+        "eta_eff": 0.466942206924,
+        "consciousness_factor": 0.287600151819,
+        "k": 0.420221664161
+      },
+      "artifact": "FSOT/Scalar.lean + domain_scalar_oracle.py"
+    },
+    {
+      "step": 3,
+      "label": "Core scalar engine",
+      "formula": "raw_S = term1_final + term2 + term3",
+      "term1": "(N\u00b7P/\u221aD_eff)\u00b7cos((\u03c8_con+\u03b4\u03c8)/\u03b7_eff)\u00b7growth\u00b7coherence\u00b7perceived_adjust \u00d7 quirk_mod(observed)",
+      "term2": "scale\u00b7amplitude + trend_bias",
+      "term3": "chaotic bleed (\u03b2, \u03b4\u03c8, \u03b4\u03b8, D_eff coupling)",
+      "artifact": "FSOT/Scalar.lean compute_raw_S_D_chaotic"
+    },
+    {
+      "step": 4,
+      "label": "Fractal domain fold",
+      "detail": "D_eff, \u03b4\u03c8, recent_hits, observed \u2014 manifest-declared fold of the same engine per scale",
+      "examples": {
+        "cosmological": {
+          "D_eff": 25,
+          "raw_S_oracle": -1.189448
+        },
+        "quantum_observed": {
+          "D_eff": 18,
+          "raw_S_oracle": 1.780761
+        }
+      },
+      "artifact": "data/extension_domains_manifest.yaml + proof_ledger.yaml"
+    },
+    {
+      "step": 5,
+      "label": "Formula corpus \u2192 observable",
+      "detail": "1,325 unique observables live-recompute from spine (no least-squares per row)",
+      "stats": {
+        "unique_observable_count": 1325,
+        "live_recompute_ok_ratio": 1.0,
+        "live_recompute_checked": 1325,
+        "skipped_unsupported": 0,
+        "unique_within_2pct": 1155,
+        "unique_within_5pct": 1325,
+        "max_error_pct": 4.841504
+      },
+      "artifact": "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    },
+    {
+      "step": 6,
+      "label": "Public measurement cross-check",
+      "detail": "374 benchmark files vs Planck, Riess, DESI, Zebrahub, NOAA, The Well, \u2026",
+      "stats": {
+        "benchmark_file_count": 394,
+        "domain_count": 394,
+        "green_gate_pass_count": 394,
+        "green_gate_fail_count": 0,
+        "green_gate_threshold_pct": 0.5,
+        "total_scalar_records": 56731,
+        "pooled_median_of_domains_pct": 0.013003,
+        "mean_pooled_median_pct": 0.014654310905799947,
+        "p95_pooled_median_pct": 0.03801653760497961,
+        "worst_domain_max_scalar_error_pct": 0.4989,
+        "worst_scalar_domain": "Phi_Morphogenetic_Scaling",
+        "domains_under_0_1pct_median": 345,
+        "domains_under_0_5pct_median": 347
+      },
+      "artifact": "data/benchmark_margin_audit.json"
+    }
+  ],
+  "worked_example_h0_planck": {
+    "observable": "H0_planck_km_s_Mpc",
+    "measured": 67.36,
+    "measured_uncertainty": 0.54,
+    "fsot_computed": 67.2702116773588,
+    "error_pct": 0.13329620344595866,
+    "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+    "reference": "Planck2018"
+  },
+  "contested_sector_summary": {
+    "observable_count": 13,
+    "pooled_median_error_pct": 0.029748999999999998,
+    "max_error_pct": 0.341025,
+    "current_model_baseline_pct": 15.0,
+    "beats_baseline_count": 16,
+    "panel_status": null,
+    "precision_tier_green_fraction": 1.0
+  },
+  "h0_readouts": [
+    {
+      "name": "H0_FSOT_local_anchor",
+      "property": "hubble_constant",
+      "computed": 71.501983,
+      "measured": 72.1,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.829427,
+      "sigma_equivalent": 0.9967,
+      "status": "dual_anchor_local",
+      "science_context": "dual_anchor_local",
+      "reference": "FSOT_bubble_bleed_dual_anchor",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_Planck_CMB",
+      "property": "hubble_constant",
+      "computed": 67.270212,
+      "measured": 67.4,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.192564,
+      "sigma_equivalent": 0.2403,
+      "status": "cmb_sector_resolved",
+      "science_context": "cmb_sector_resolved",
+      "reference": "Planck2018",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_SH0ES_local",
+      "property": "hubble_constant",
+      "computed": 73.523742,
+      "measured": 73.04,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.662297,
+      "sigma_equivalent": 0.4651,
+      "status": "local_sector_resolved",
+      "science_context": "local_sector_resolved",
+      "reference": "Riess2024",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    }
+  ],
+  "cross_proof": {
+    "github_ready": true,
+    "seven_way_bare_metal": true
+  }
+}

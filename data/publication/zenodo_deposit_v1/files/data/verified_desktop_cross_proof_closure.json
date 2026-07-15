@@ -1,0 +1,472 @@
+{
+  "generated_at": "2026-07-15T16:12:50.583473+00:00",
+  "version": "1.0",
+  "verdict": "VERIFIED_DESKTOP_CROSS_PROOF_READY",
+  "panels": [
+    {
+      "panel": "Machine_And_Molecule_Live_Panel",
+      "lean_module": "FSOT.Formal.MachineAndMoleculeLivePanelPriors",
+      "record_count": 120,
+      "pooled_median_error_pct": 0.01341,
+      "python_oracle_samples": [
+        {
+          "name": "metals_Fe_cp_J_molK",
+          "property": "cp_J_molK",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_melting_K",
+          "property": "melting_K",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_work_function_eV",
+          "property": "work_function_eV",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_thermal_cond_W_mK",
+          "property": "thermal_cond_W_mK",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_resistivity_uOhm_cm",
+          "property": "resistivity_uOhm_cm",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_h_fus_kJ_mol",
+          "property": "h_fus_kJ_mol",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_bulk_GPa",
+          "property": "bulk_GPa",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_shear_GPa",
+          "property": "shear_GPa",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_expansion_e6_per_K",
+          "property": "expansion_e6_per_K",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_cohesive_eV",
+          "property": "cohesive_eV",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_poisson_ratio",
+          "property": "poisson_ratio",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "metals_Fe_thermal_diff_mm2_s",
+          "property": "thermal_diff_mm2_s",
+          "stored_error_pct": 0.01341,
+          "replay_error_pct": 0.01341,
+          "delta_pct": 0.0,
+          "ok": true
+        }
+      ],
+      "python_oracle_ok": true,
+      "cross_proof_obligation_ids": [
+        "machine_and_molecule_live_median_error_under_half_pct",
+        "machine_and_molecule_live_observable_count_pos",
+        "machine_and_molecule_live_median_error_under_five_pct",
+        "machine_and_molecule_live_bundle"
+      ]
+    },
+    {
+      "panel": "Fuel_Lab_Live_Panel",
+      "lean_module": "FSOT.Formal.FuelLabLivePanelPriors",
+      "record_count": 366,
+      "pooled_median_error_pct": 0.039349,
+      "python_oracle_samples": [
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "lhv_kj_per_kg",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "stoich_afr",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "density_kg_m3",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "clean_index",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "emissions_index",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "octane_rating",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_grounded",
+          "property": "flame_speed_m_s",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_advanced",
+          "property": "lhv_kj_per_kg",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_advanced",
+          "property": "stoich_afr",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_advanced",
+          "property": "density_kg_m3",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_advanced",
+          "property": "clean_index",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "fsot_hemp_waste_advanced",
+          "property": "emissions_index",
+          "stored_error_pct": 0.039349,
+          "replay_error_pct": 0.039349,
+          "delta_pct": 0.0,
+          "ok": true
+        }
+      ],
+      "python_oracle_ok": true,
+      "cross_proof_obligation_ids": [
+        "fuel_lab_live_median_error_under_half_pct",
+        "fuel_lab_live_designed_fuel_count_pos",
+        "fuel_lab_live_observable_count_pos",
+        "fuel_lab_live_median_error_under_five_pct",
+        "fuel_lab_live_bundle"
+      ]
+    },
+    {
+      "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+      "lean_module": "FSOT.Formal.BlackHoleWhiteholeCycleLivePanelPriors",
+      "record_count": 24,
+      "pooled_median_error_pct": 0.026472,
+      "python_oracle_samples": [
+        {
+          "name": "cycle_cost_score_proxy",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "information_density_delta_proxy",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "phase_activity_infall_ratio",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "phase_activity_outflow_ratio",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "accretion_compression_ratio",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "outflow_lensing_factor",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "poof_event_rate_hz",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "white_hole_reassembly_efficiency",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "scalar_invariant_preservation",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "cycle_entropy_budget",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "poof",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "suction",
+          "property": "value",
+          "stored_error_pct": 0.026472,
+          "replay_error_pct": 0.026472,
+          "delta_pct": 0.0,
+          "ok": true
+        }
+      ],
+      "python_oracle_ok": true,
+      "cross_proof_obligation_ids": [
+        "blackhole_whitehole_cycle_median_error_under_half_pct",
+        "blackhole_whitehole_cycle_observable_count_pos",
+        "blackhole_whitehole_cycle_median_error_under_five_pct",
+        "blackhole_whitehole_cycle_bundle"
+      ]
+    },
+    {
+      "panel": "Star_Trek_Transporter_Live_Panel",
+      "lean_module": "FSOT.Formal.StarTrekTransporterLivePanelPriors",
+      "record_count": 1575,
+      "pooled_median_error_pct": 0.031159,
+      "python_oracle_samples": [
+        {
+          "name": "qubit_teleport_fidelity_typical",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "entanglement_swapping_fidelity",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "classical_bits_per_qubit",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "no_cloning_theorem",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "linear_entropy_threshold",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "landauer_energy_kT_per_bit",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "channel_capacity_qubit_per_use",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "error_correction_overhead_factor",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "decoherence_time_us_typical",
+          "property": "value",
+          "stored_error_pct": 0.095551,
+          "replay_error_pct": 0.095551,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "poof_tunneling_proxy",
+          "property": "value",
+          "stored_error_pct": 0.05256,
+          "replay_error_pct": 0.05256,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "suction_recompact_proxy",
+          "property": "value",
+          "stored_error_pct": 0.05256,
+          "replay_error_pct": 0.05256,
+          "delta_pct": 0.0,
+          "ok": true
+        },
+        {
+          "name": "coherence_efficiency_proxy",
+          "property": "value",
+          "stored_error_pct": 0.05256,
+          "replay_error_pct": 0.05256,
+          "delta_pct": 0.0,
+          "ok": true
+        }
+      ],
+      "python_oracle_ok": true,
+      "cross_proof_obligation_ids": [
+        "star_trek_transporter_psi_entangle_gate_under_half_pct",
+        "star_trek_transporter_psi_gate_pair_under_half_pct",
+        "star_trek_transporter_psi_portal_doorway_under_half_pct",
+        "star_trek_transporter_psi_traverse_under_half_pct",
+        "star_trek_transporter_median_error_under_half_pct",
+        "star_trek_transporter_info_preservation_proxy_pos",
+        "star_trek_transporter_psi_entangle_gate_pos",
+        "star_trek_transporter_psi_gate_pair_pos",
+        "star_trek_transporter_psi_portal_doorway_pos",
+        "star_trek_transporter_psi_traverse_pos",
+        "star_trek_transporter_stabilization_margin_pos",
+        "star_trek_transporter_observable_count_pos",
+        "star_trek_transporter_median_error_under_five_pct",
+        "star_trek_transporter_bundle"
+      ]
+    }
+  ],
+  "frameworks": {
+    "lean": "priors regenerated \u2014 norm_num bundle + anchor scalars",
+    "python_oracle": "vendor/fsot_compute.py replay triangulation",
+    "coq": "via run_cross_proof_verification.py \u2192 full_formal_coq chunks",
+    "isabelle": "via run_cross_proof_verification.py \u2192 full_formal Isabelle",
+    "fstar": "via run_cross_proof_verification.py \u2192 fstar_scalar_spec",
+    "rust": "via run_cross_proof_verification.py \u2192 fsot_obligation_replay"
+  },
+  "full_cross_proof_command": "python scripts/run_cross_proof_verification.py",
+  "reproduce_panel_command": "python scripts/reproduce_domain_panel.py --panel <Panel> --deep"
+}

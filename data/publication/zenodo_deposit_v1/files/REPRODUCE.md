@@ -1,0 +1,304 @@
+# FSOT Formal Verification — Reproduction Guide
+
+This repository machine-checks FSOT domain scalar **signs** and Wave-1 ΛCDM **numeric certificates** at canonical parameters. The formal source is ~0.3 MB; the first Lean build downloads Mathlib (~3 GB under `.lake/`).
+
+## Prerequisites
+
+- **Lean 4** via [elan](https://github.com/leanprover/elan): toolchain `leanprover/lean4:v4.31.0` (see `lean-toolchain`)
+- **Python 3.11+** with `pip install -r requirements.txt`
+- **fsot_compute.py** authority (or use cached `data/canonical_constants.json`)
+- **External corpora** (optional for full Tier 6): FSOT unified DB, Knowledge base transfer, CNC `Exp1.csv`, BlackHole thesis MD (paths in manifests)
+
+## Quick verify (recommended)
+
+```powershell
+cd <repo-root>
+pip install -r requirements.txt
+python scripts/fsot_verification_runner.py
+```
+
+On success this:
+
+1. Fills 8 SMILES catalog gaps (`scripts/fill_smiles_catalog_gaps.py`)
+2. Aligns NeuroLab 35-domain table to Lean ledger (`scripts/align_neurolab_domains.py`)
+3. Checks SHA-256 hash gate on `fsot_compute.py`
+4. Ingests SMILES + NeuroLab data; verifies `data/lab_registry.json`
+5. Ingests Tier 2–6 labs (cosmology, fuel, species, CAMEO, trinary OS, photonic forge, vibra, magnetic strings, evolution, weather, linguistics, unified DB, wave4, kronos, knowledge base, math generator, trinary fluid, soul sibling, lean proofs bridge, formula corpus, cellular, blackhole thesis)
+6. Resolves strict-empirical numeric gap (`scripts/resolve_strict_empirical_gap.py`) and backfills `verification_numeric` (`scripts/backfill_numeric_from_outcomes.py`)
+7. Runs KB per-formula verification (`scripts/run_knowledge_base_formula_verify.py`)
+8. Compares Wave-1 and domain scalars to `data/canonical_constants.json`
+9. Validates genomic identities and syncs φ brackets (`gen_genomic_bounds.py --write-lean`)
+10. Runs `lake build` on all `FSOT.Formal.*` targets in `certificate.json`
+11. Writes `data/certificate.json` and appends a line to `data/verification_runs.jsonl`
+
+**Expected:** 65 proved claims, 0 `sorry`, `lean_build_ok: true`, 210/210 extension domains pass `verify_extension_domains.py`.
+
+## Cross-proof verification (Tiers 79–91)
+
+Independent numeric triangulation (Lean → Python → Coq → Isabelle → Rust f64 → F\* → QEMU):
+
+```powershell
+python scripts/run_cross_proof_verification.py
+```
+
+**Expected when toolchains installed:** `overall_ok: true`, `seven_way_bare_metal: true`, `github_ready: true`.
+
+**Honesty gates:** Report includes `proof_debt` (F\* assumes, π/e certified axioms). `status_local` in `data/cross_proof_verification_manifest.yaml` is **auto-generated** — do not hand-edit.
+
+ESP32 hardware harness is **optional** (skipped without COM port). Use `--require-esp32` only when flashing hardware.
+
+## Publication bundle (figures + spine walkthrough for peer review)
+
+One command — regenerates contested-sector closure, spine walkthrough JSON, all figures, and publication claims manifest (uses on-disk benchmarks; no live API ingest):
+
+```powershell
+python scripts/run_publication_verification_bundle.py
+```
+
+Add `--full-cross-proof` to also run the ~8 min seven-way formal verification.
+
+**Outputs:**
+
+- `data/publication_spine_walkthrough.json` — seeds → raw_S → domain fold → observable chain
+- `data/publication_claims_manifest.json` — evidence-aligned claims for reviewers
+- `data/figures/spine_walkthrough.png`, `contested_fsot_vs_lcdm.png`, `h0_landscape.png`, `empirical_headline_summary.png` (+ standard scientific figure pack)
+
+## Step-by-step
+
+### 1. Sync canonical constants (optional)
+
+If you have the authority compute engine locally:
+
+```powershell
+python scripts/sync_canonical_constants.py
+```
+
+### 2. Domain scalar oracle (numeric reference)
+
+```powershell
+python scripts/domain_scalar_oracle.py
+```
+
+Mirrors `FSOT.Formal.Scalar` term1/term2/term3/raw_S per ledger domain.
+
+### 3. Lean build
+
+```powershell
+lake exe cache get
+lake build FSOT.Formal.Bounds FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Lab FSOT
+```
+
+### 4. Export certificate only
+
+```powershell
+python scripts/export_certificate.py --lean-ok
+```
+
+### 5. Source-only release zip
+
+```powershell
+python scripts/make_source_release.py
+```
+
+Output: `dist/fsot-lean-source-YYYYMMDD.zip` (no `.lake/`).
+
+## Tier 6 — Formula & numeric verification
+
+Honest per-formula checks (not inventory-only counts). Policy: `data/formula_verification_policy.yaml`.
+
+### Strict-empirical corpus (7,941 formulas)
+
+```powershell
+python scripts/ingest_formula_corpus.py
+python scripts/gen_formula_corpus_lean.py
+python scripts/verify_formula_corpus.py
+```
+
+Source: `strict_empirical.jsonl` — each row has `formula_canonical`, `target_value`, `computed_value`, `error_pct`, `matched`.
+
+### Unified DB numeric eval queue
+
+```powershell
+# Full: observable pipeline + CNC gap + outcome_json backfill
+python scripts/run_numeric_eval_queue.py
+
+# Backfill only (no network / no full pipeline scan)
+python scripts/run_numeric_eval_queue.py --skip-pipeline
+
+# CNC turning MRR gap (54 Kaggle runs)
+python scripts/resolve_strict_empirical_gap.py
+
+# Backfill verification_numeric from records.outcome_json
+python scripts/backfill_numeric_from_outcomes.py
+```
+
+Report: `data/numeric_eval_queue_report.json` — target state: `strict_empirical_pending_numeric: 0`.
+
+### Knowledge base (19,213 catalog formulas)
+
+```powershell
+python scripts/run_knowledge_base_formula_verify.py
+python scripts/ingest_knowledge_base.py
+python scripts/gen_knowledge_base_lean.py
+python scripts/verify_knowledge_base.py
+```
+
+Outputs: `data/knowledge_base_formula_verification.jsonl`, `data/knowledge_base_formula_verification_summary.json`.
+
+### Cellular + BlackHole thesis labs
+
+```powershell
+python scripts/ingest_cellular_lab.py
+python scripts/gen_cellular_priors_lean.py
+python scripts/verify_cellular_lab.py
+
+python scripts/ingest_blackhole_thesis.py
+python scripts/gen_blackhole_thesis_lean.py
+python scripts/verify_blackhole_thesis.py
+```
+
+## Staged automation
+
+```powershell
+python scripts/automate_verification.py --list-stages
+python scripts/automate_verification.py --stage parse_bio --stage verify_bio
+python scripts/automate_verification.py   # full pipeline
+```
+
+NeuroLab biological-only:
+
+```powershell
+python scripts/parse_neurolab_translations.py
+python scripts/verify_neurolab_bio.py
+```
+
+## Lab integration (SMILES + NeuroLab)
+
+```powershell
+python scripts/ingest_lab_data.py      # build data/lab_registry.json
+python scripts/verify_lab_registry.py    # cross-check labs vs canonical + Lean signs
+```
+
+Sources (see `data/lab_domain_crosswalk.yaml`):
+
+- **FSOT SMILES Lab** — 1470 chemical/biological constants (`FSOT_SMILES_Lab_Dataset.json`)
+- **FSOT NeuroLab** — thalamic gate (7 nuclei), brain fit dashboard (15 domains), articulation targets
+
+The full runner (`fsot_verification_runner.py`) ingests and verifies labs automatically.
+
+## Key artifacts
+
+| File | Role |
+|------|------|
+| `data/lab_registry.json` | Unified lab ingest (generated) |
+| `data/lab_domain_crosswalk.yaml` | Lab section → Lean domain mapping |
+| `data/proof_ledger.yaml` | Claim ↔ Lean theorem ↔ oracle ↔ physics notes |
+| `data/canonical_constants.json` | Pinned numeric cache from authority engine |
+| `data/certificate.json` | Portable verification manifest (generated) |
+| `data/verification_runs.jsonl` | Append-only run history (one JSON object per runner pass) |
+| `data/formula_verification_policy.yaml` | lean_structural / numeric_formula / inventory tiers |
+| `data/numeric_eval_queue_report.json` | Unified DB `verification_numeric` before/after stats |
+| `data/knowledge_base_formula_verification.jsonl` | Per-formula KB catalog pass (19,213 rows) |
+| `data/domain_coverage_map.yaml` | 26-domain ledger vs lab coverage index |
+| `data/neurolab_translations_bio.json` | Parsed NeuroLab Julia translations (38 rows) |
+| `FSOT/Formal/Domains.lean` | Per-domain sign theorems incl. `cellular_raw_S_positive` |
+| `FSOT/Formal/FormulaCorpusPriors.lean` | 7941 strict-empirical observable certificates |
+| `FSOT/Formal/KnowledgeBasePriors.lean` | KB catalog + per-formula + strict-empirical bridge |
+| `FSOT/Formal/CellularPriors.lean` | Soul Simulator + evolution operon certificates |
+| `FSOT/Formal/BlackHoleThesisPriors.lean` | 28 BH thermo thesis observable certificates |
+| `docs/genomic_brain_priors_verification.md` | Findings, JSON artifact map, latest results |
+
+## Domain-scoped reproduction (navigator)
+
+Find panels, benchmarks, and reproduce commands by **scientific domain** or **problem intent** (363 extension panels indexed):
+
+```powershell
+# Rebuild index (JSON + SQLite; scientific metadata per panel)
+python scripts/build_fsot_domain_navigator_db.py
+
+# Query by problem
+python scripts/query_fsot_domain_navigator.py --intent quantum_entanglement
+python scripts/query_fsot_domain_navigator.py --core Biology --format json
+
+# One panel — records, median error, sources, reproduce commands
+python scripts/query_fsot_domain_navigator.py --panel Biology_Developmental_Structural_Depth_Panel
+
+# Export reproducible bundle (manifest + optional staged benchmark files)
+python scripts/export_domain_repro_bundle.py --intent superconductivity_tc --stage
+
+# Re-ingest, rebuild, and verify a single panel
+python scripts/reproduce_domain_panel.py --panel Quantum_Mechanics_Entanglement_Depth_Panel --deep
+```
+
+**Artifacts:** `data/fsot_domain_navigator.json`, `data/fsot_domain_navigator.db`, `data/domain_repro_bundles/<id>/repro_manifest.json`
+
+**Formula corpus (separate layer):** `FSOT_UNIFIED.db` — use for observable/lineage lookup, not domain discovery.
+
+**Verified desktop projects (Tier 88 live panels):**
+
+```powershell
+python scripts/query_fsot_domain_navigator.py --intent machine_molecule_catalog
+python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine
+python scripts/query_fsot_domain_navigator.py --intent blackhole_whitehole_cycle
+python scripts/query_fsot_domain_navigator.py --intent quantum_transporter
+python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep
+```
+
+Maps: `FSOT_Machine_And_Molecule` → `Machine_And_Molecule_Live_Panel`, `Fuel Lab` → `Fuel_Lab_Live_Panel`, `FSOT_BlackHole_WhiteHole` → `BlackHole_WhiteHole_Cycle_Live_Panel`, `FSOT, Star Trek Transporter` → `Star_Trek_Transporter_Live_Panel`.
+
+**Citations + falsification (verified desktop bundle):**
+
+```powershell
+python scripts/export_domain_citations.py --bundle verified_desktop
+python scripts/query_fsot_domain_navigator.py --panel Fuel_Lab_Live_Panel --format bibtex
+python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine --bundle --format bibtex
+```
+
+Panel-specific kill criteria are attached to each route in `data/fsot_domain_navigator.json` under `problem_routes[].falsification`.
+
+**Transporter technology stack:**
+
+```powershell
+python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep
+python scripts/build_verified_desktop_transporter_figure.py
+python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live_Panel --format bibtex
+```
+
+Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk → beam-forming grid → T3 acoustic valve. Figure: `data/figures/verified_desktop_transporter.png`.
+
+**Archive-first verified desktop** (no C: Desktop required):
+
+```powershell
+python scripts/sync_verified_desktop_projects.py
+```
+
+Simulators live under `vendor/verified_desktop/` (GitHub) and `I:/FSOT-Physical-Archive/08_Verified-Desktop-Projects/` (archive master). Re-run sims before `--deep` ingest:
+
+```powershell
+python vendor/verified_desktop/star_trek_transporter/pattern_buffer_beam_simulator.py --deep
+python vendor/verified_desktop/star_trek_transporter/two_gate_entanglement_simulator.py
+python vendor/verified_desktop/star_trek_transporter/t3_acoustic_valve_hardware_simulator.py
+python vendor/verified_desktop/star_trek_transporter/pad_b_receiver_hardware_simulator.py
+python scripts/sync_verified_desktop_projects.py
+```
+
+**Five-prover cross-proof (Lean → Coq → Isabelle → F* → Rust):**
+
+```powershell
+python scripts/build_verified_desktop_cross_proof_closure.py
+python scripts/run_cross_proof_verification.py
+```
+
+Verified desktop panels (Fuel Lab, Machine & Molecule, BH/WH, Transporter) export obligations into `verification/obligations/full_formal_spine.json` via `gen_verified_desktop_lean.py`. Closure artifact: `data/verified_desktop_cross_proof_closure.json`.
+
+## Claim scope (read before citing)
+
+**Proved in Lean:** sign statements and interval bounds at **canonical** domain parameters; Wave-1 formulas at cached `S_cosm`, `S_quant`.
+
+**Numerically verified:** oracle agreement with `fsot_compute.py` via hash gate; per-formula strict-empirical checks; lab ingest tolerances.
+
+**Inventory only:** `UnifiedDBPriors` record/project counts — does **not** prove individual formulas. Use `FormulaCorpusPriors` for observable-checked formulas.
+
+**Not proved:** full FSOT physical interpretation, parameter-space exhaustiveness, or tight r_d ±0.01 Mpc (current certificate: ±0.05 Mpc).
+
+See `docs/arxiv_outline.md` for the full proved / verified / conjectured taxonomy.

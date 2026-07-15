@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-07-15T16:48:59.467791+00:00",
+  "zenodo_url": "https://zenodo.org/deposit/new",
+  "github_repo": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
+  "github_commit": "2d3a49aae13167e8ee87688dc001847e24d99098",
+  "staged_files": [
+    {
+      "path": "data/publication/domain_atlas.csv",
+      "bytes": 43826
+    },
+    {
+      "path": "data/publication/domain_atlas.json",
+      "bytes": 142711
+    },
+    {
+      "path": "data/publication/fsot_monograph_skeleton.md",
+      "bytes": 8815
+    },
+    {
+      "path": "data/publication_claims_manifest.json",
+      "bytes": 8267
+    },
+    {
+      "path": "data/cross_proof_verification_report.json",
+      "bytes": 40181
+    },
+    {
+      "path": "data/verified_desktop_cross_proof_closure.json",
+      "bytes": 15099
+    },
+    {
+      "path": "data/publication_spine_walkthrough.json",
+      "bytes": 5450
+    },
+    {
+      "path": "data/scientific_domain_expansion_map.yaml",
+      "bytes": 81842
+    },
+    {
+      "path": "data/fsot_domain_navigator.json",
+      "bytes": 825754
+    },
+    {
+      "path": "data/preregistered_predictions_manifest.yaml",
+      "bytes": 14603
+    },
+    {
+      "path": "data/domain_citations/verified_desktop.bib",
+      "bytes": 1903
+    },
+    {
+      "path": "data/figures/spine_walkthrough.png",
+      "bytes": 143721
+    },
+    {
+      "path": "data/figures/contested_fsot_vs_lcdm.png",
+      "bytes": 88841
+    },
+    {
+      "path": "data/figures/h0_landscape.png",
+      "bytes": 94612
+    },
+    {
+      "path": "data/figures/empirical_headline_summary.png",
+      "bytes": 76484
+    },
+    {
+      "path": "data/figures/domain_error_envelope.png",
+      "bytes": 49976
+    },
+    {
+      "path": "data/figures/predicted_vs_measured_scatter.png",
+      "bytes": 41200
+    },
+    {
+      "path": "data/figures/verified_desktop_fuels.png",
+      "bytes": 137413
+    },
+    {
+      "path": "data/figures/verified_desktop_transporter.png",
+      "bytes": 150744
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 13284
+    },
+    {
+      "path": "README.md",
+      "bytes": 27675
+    }
+  ],
+  "staged_count": 21,
+  "missing_paths": [],
+  "output_dir": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication\\zenodo_deposit_v1",
+  "author_note": "Author note \u2014 scope and verification\n\nThis deposit documents the Fluid Spacetime Omni-Theory (FSOT) cross-domain verification\ncorpus. Numerical claims are not curve-fit per observable: a single seed-derived scalar\nengine (constants from \u03c0, e, \u03c6, \u03b3, and G) is evaluated against measured values drawn from\nlegitimate domain data across 403 scientific domains and 536,740 empirical records.\n\nFormal verification runs through a cross-gauntlet of independent proof frameworks:\nLean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust\nexecutable obligation replay \u2014 1,863 atomic obligations triangulated with overall_ok: true.\nQEMU bare-metal and ESP32 hardware layers provide executable closure beyond proof assistants.\n\nAI tools (Grok/Cursor) assisted manuscript assembly, script orchestration, and formal\nartifact regeneration. All results are independently reproducible from the archived\nrepository, one-command publication bundle, and obligation replay tests. The author\nretains full scientific responsibility for claims and interpretation.\n",
+  "upload_steps": [
+    "1. Create free account at https://zenodo.org (link ORCID if you have one).",
+    "2. Click Upload \u2192 New upload.",
+    "3. Drag folder: data/publication/zenodo_deposit_v1/files/",
+    "4. Resource type: Publication \u2192 Preprint.",
+    "5. Copy title/description/keywords from zenodo_metadata.json.",
+    "6. License: Creative Commons Attribution 4.0 (CC-BY-4.0).",
+    "7. Add related identifier: GitHub repo URL (relation: is supplement to).",
+    "8. Publish \u2014 Zenodo assigns a DOI immediately."
+  ]
+}

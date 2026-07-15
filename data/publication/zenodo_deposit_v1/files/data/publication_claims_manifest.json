@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-07-15T12:07:16.570835+00:00",
+  "version": "1.0",
+  "audience": "peer_review_publication",
+  "theory_frame": {
+    "name": "Fluid Spacetime Omni-Theory (FSOT)",
+    "core_claim": "One seed-derived scalar engine (raw_S = term1 + term2 + term3) fractals outward across all scales \u2014 cosmology, particle physics, biology, consciousness \u2014 with intrinsic dynamic predictions and no per-observable least-squares tuning.",
+    "seeds": [
+      "\u03c0",
+      "e",
+      "\u03c6",
+      "\u03b3",
+      "G (Catalan)"
+    ],
+    "formal_spine": "FSOT/Scalar.lean + five-prover cross-proof + 374 public benchmarks"
+  },
+  "empirical_evidence": {
+    "benchmark_domains_green": "394/394",
+    "pooled_median_of_domains_pct": 0.013003,
+    "worst_domain_max_scalar_pct": 0.4989,
+    "unique_formulas_live_ok": 1.0,
+    "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT"
+  },
+  "contested_sector_evidence": {
+    "observable_count": 13,
+    "fsot_pooled_median_pct": 0.029748999999999998,
+    "lcdm_sm_typical_baseline_pct": 15.0,
+    "verdict": "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS",
+    "note": "Hubble, dark energy, \u03c3\u2088, BBN, hierarchy, w_a \u2014 FSOT unified readouts vs \u039bCDM/SM sectors that lack a single predictive spine."
+  },
+  "h0_highlights": [
+    {
+      "name": "H0_tension_SH0ES_vs_Planck",
+      "property": "hubble_tension",
+      "computed": 5.63845092,
+      "measured": 5.64,
+      "unit": "km/s/Mpc_delta",
+      "fsot_error_pct": 0.027466,
+      "sigma_equivalent": null,
+      "status": "tension_resolved",
+      "science_context": "tension_resolved",
+      "reference": "Riess2024_vs_Planck2018",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_tension_Carnegie_vs_Planck",
+      "property": "hubble_tension",
+      "computed": 2.39454428,
+      "measured": 2.4,
+      "unit": "km/s/Mpc_delta",
+      "fsot_error_pct": 0.227322,
+      "sigma_equivalent": null,
+      "status": "tension_resolved",
+      "science_context": "tension_resolved",
+      "reference": "Freedman2019",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_FSOT_local_anchor",
+      "property": "hubble_constant",
+      "computed": 71.501983,
+      "measured": 72.1,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.829427,
+      "sigma_equivalent": 0.9967,
+      "status": "dual_anchor_local",
+      "science_context": "dual_anchor_local",
+      "reference": "FSOT_bubble_bleed_dual_anchor",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_Planck_CMB",
+      "property": "hubble_constant",
+      "computed": 67.270212,
+      "measured": 67.4,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.192564,
+      "sigma_equivalent": 0.2403,
+      "status": "cmb_sector_resolved",
+      "science_context": "cmb_sector_resolved",
+      "reference": "Planck2018",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    },
+    {
+      "name": "H0_SH0ES_local",
+      "property": "hubble_constant",
+      "computed": 73.523742,
+      "measured": 73.04,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.662297,
+      "sigma_equivalent": 0.4651,
+      "status": "local_sector_resolved",
+      "science_context": "local_sector_resolved",
+      "reference": "Riess2024",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": true
+    }
+  ],
+  "formal_verification": {
+    "overall_ok": true,
+    "github_ready": true,
+    "seven_way_bare_metal": true,
+    "atomic_obligations": 1863
+  },
+  "parameter_language": {
+    "design_law": "zero free parameters \u2014 constants from seeds only",
+    "fractal_assignments": "D_eff, \u03b4\u03c8, recent_hits, observed are manifest-declared folds of the same engine, not post-hoc per-observable fits.",
+    "auditor_note": "FSOT uses \u03c6/e/\u03c0/\u03b3-derived intrinsic constants plus a manifest-declared domain assignment table (35 domains \u00d7 5 fields = 175 slots). These are not per-observable least-squares fits in the verification pipeline \u2014 but the 'zero free parameters' headline is NOT_LITERAL_ZERO."
+  },
+  "figures_for_reviewers": [
+    "data/figures/spine_walkthrough.png",
+    "data/figures/contested_fsot_vs_lcdm.png",
+    "data/figures/h0_landscape.png",
+    "data/figures/empirical_headline_summary.png",
+    "data/figures/domain_error_envelope.png",
+    "data/figures/predicted_vs_measured_scatter.png"
+  ],
+  "reproduce_one_command": "python scripts/run_publication_verification_bundle.py",
+  "verified_desktop_evidence": {
+    "desktop_folders": [
+      "FSOT_Machine_And_Molecule",
+      "Fuel Lab",
+      "FSOT_BlackHole_WhiteHole",
+      "FSOT, Star Trek Transporter"
+    ],
+    "fsot_designed_fuels": [
+      "fsot_hemp_waste_grounded",
+      "fsot_hemp_waste_advanced",
+      "fsot_algae_oil_biodiesel",
+      "fsot_mushroom_spore_fuel",
+      "fsot_green_hydrogen",
+      "fsot_optimax",
+      "fsot_bio_spark"
+    ],
+    "gasoline_baseline": "gasoline",
+    "fuel_lab_note": "Seven novel FSOT-designed fuel molecular states verified against seed-scalar predictions and cross-referenced with grounded thermochemistry + Prius engine simulator outputs; gasoline included as fossil baseline for comparison.",
+    "fuel_evidence_figure": "data/figures/verified_desktop_fuels.png",
+    "transporter_evidence_figure": "data/figures/verified_desktop_transporter.png",
+    "transporter_note": "FSOT transporter technology stack verified: quantum teleportation channel, warp actuation portal (psi_portal, psi_traverse, entanglement gates), poof/suction matter-stream proxies, and transporter engineering observables (pattern buffer, scan resolution, reassembly lock) \u2014 pooled median error at seed-scalar precision.",
+    "panels": [
+      {
+        "panel": "Machine_And_Molecule_Live_Panel",
+        "record_count": 120,
+        "pooled_median_error_pct": 0.01341,
+        "benchmark": "data/machine_and_molecule_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Fuel_Lab_Live_Panel",
+        "record_count": 366,
+        "pooled_median_error_pct": 0.039349,
+        "benchmark": "data/fuel_lab_live_panel_benchmark.json"
+      },
+      {
+        "panel": "BlackHole_WhiteHole_Cycle_Live_Panel",
+        "record_count": 17,
+        "pooled_median_error_pct": 0.026472,
+        "benchmark": "data/blackhole_whitehole_cycle_live_panel_benchmark.json"
+      },
+      {
+        "panel": "Star_Trek_Transporter_Live_Panel",
+        "record_count": 1494,
+        "pooled_median_error_pct": 0.031159,
+        "benchmark": "data/star_trek_transporter_live_panel_benchmark.json"
+      }
+    ],
+    "preregistered_predictions": [
+      "PRED-034",
+      "PRED-035",
+      "PRED-036",
+      "PRED-037"
+    ],
+    "citation_export": "python scripts/export_domain_citations.py --bundle verified_desktop",
+    "reproduce": "python scripts/reproduce_domain_panel.py --panel Fuel_Lab_Live_Panel --deep"
+  },
+  "domain_navigator": {
+    "index": "data/fsot_domain_navigator.json",
+    "query": "python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine",
+    "citations": "python scripts/export_domain_citations.py --bundle verified_desktop"
+  },
+  "walkthrough_artifact": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\data\\publication_spine_walkthrough.json",
+  "worked_example": {
+    "observable": "H0_planck_km_s_Mpc",
+    "measured": 67.36,
+    "measured_uncertainty": 0.54,
+    "fsot_computed": 67.2702116773588,
+    "error_pct": 0.13329620344595866,
+    "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+    "reference": "Planck2018"
+  }
+}

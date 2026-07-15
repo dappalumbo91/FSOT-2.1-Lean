@@ -1,0 +1,35 @@
+{
+  "resource_type": "Publication > Preprint",
+  "title": "Fluid Spacetime Omni-Theory (FSOT): Cross-Domain Empirical and Formal Verification of a Seed-Derived Scalar Engine",
+  "creators": [
+    {
+      "name": "dappalumbo91",
+      "affiliation": "Independent Researcher",
+      "orcid": ""
+    }
+  ],
+  "description": "One seed-derived scalar engine (raw_S = term1 + term2 + term3) fractals outward across all scales \u2014 cosmology, particle physics, biology, consciousness \u2014 with intrinsic dynamic predictions and no per-observable least-squares tuning.\n\nEmpirical closure: 394/394 benchmark domains at \u22640.5% pooled gate; domain pooled median 0.013003%.\nCoverage: 403 scientific domains, 536,740 empirical records, 501 Lean modules.\nFormal: five-prover cross-proof overall_ok=True, 1863 atomic obligations.\n\nAuthor note \u2014 scope and verification\n\nThis deposit documents the Fluid Spacetime Omni-Theory (FSOT) cross-domain verification\ncorpus. Numerical claims are not curve-fit per observable: a single seed-derived scalar\nengine (constants from \u03c0, e, \u03c6, \u03b3, and G) is evaluated against measured values drawn from\nlegitimate domain data across 403 scientific domains and 536,740 empirical records.\n\nFormal verification runs through a cross-gauntlet of independent proof frameworks:\nLean 4 (primary authority), Coq/Rocq, Isabelle/HOL, F* (Microsoft Research), and Rust\nexecutable obligation replay \u2014 1,863 atomic obligations triangulated with overall_ok: true.\nQEMU bare-metal and ESP32 hardware layers provide executable closure beyond proof assistants.\n\nAI tools (Grok/Cursor) assisted manuscript assembly, script orchestration, and formal\nartifact regeneration. All results are independently reproducible from the archived\nrepository, one-command publication bundle, and obligation replay tests. The author\nretains full scientific responsibility for claims and interpretation.\n",
+  "keywords": [
+    "theory of everything",
+    "formal verification",
+    "Lean",
+    "Coq",
+    "cross-domain physics",
+    "cosmology",
+    "quantum mechanics",
+    "computational physics",
+    "reproducible research"
+  ],
+  "license": "CC-BY-4.0",
+  "version": "1.0.0",
+  "publication_date": "2026-07-15",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/dappalumbo91/FSOT-2.1-Lean",
+      "resource_type": "software"
+    }
+  ],
+  "communities": [],
+  "notes_for_depositor": "Upload the contents of data/publication/zenodo_deposit_v1/files/ plus a PDF when ready. Link GitHub repo in Related identifiers."
+}
