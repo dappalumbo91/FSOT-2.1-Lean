@@ -216,6 +216,11 @@ def main() -> int:
         check=True,
         cwd=str(ROOT),
     )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_verified_desktop_transporter_figure.py")],
+        check=True,
+        cwd=str(ROOT),
+    )
 
     manifest_path = args.output_dir / "publication_figure_manifest.json"
     manifest = {
@@ -226,6 +231,7 @@ def main() -> int:
             "h0_landscape.png",
             "empirical_headline_summary.png",
             "verified_desktop_fuels.png",
+            "verified_desktop_transporter.png",
         ],
         "data_sources": [
             str(WALKTHROUGH),

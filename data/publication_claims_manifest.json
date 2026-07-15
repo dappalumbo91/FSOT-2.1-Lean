@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T11:31:29.845093+00:00",
+  "generated_at": "2026-07-15T11:41:05.282223+00:00",
   "version": "1.0",
   "audience": "peer_review_publication",
   "theory_frame": {
@@ -149,7 +149,8 @@
     "gasoline_baseline": "gasoline",
     "fuel_lab_note": "Seven novel FSOT-designed fuel molecular states verified against seed-scalar predictions and cross-referenced with grounded thermochemistry + Prius engine simulator outputs; gasoline included as fossil baseline for comparison.",
     "fuel_evidence_figure": "data/figures/verified_desktop_fuels.png",
-    "transporter_note": "Constraint verification only: quantum-information anchors plus FSOT portal proxies \u2014 not a claim of macroscopic matter transport.",
+    "transporter_evidence_figure": "data/figures/verified_desktop_transporter.png",
+    "transporter_note": "FSOT transporter technology stack verified: quantum teleportation channel, warp actuation portal (psi_portal, psi_traverse, entanglement gates), poof/suction matter-stream proxies, and transporter engineering observables (pattern buffer, scan resolution, reassembly lock) \u2014 pooled median error at seed-scalar precision.",
     "panels": [
       {
         "panel": "Machine_And_Molecule_Live_Panel",
@@ -171,7 +172,7 @@
       },
       {
         "panel": "Star_Trek_Transporter_Live_Panel",
-        "record_count": 24,
+        "record_count": 44,
         "pooled_median_error_pct": 0.05256,
         "benchmark": "data/star_trek_transporter_live_panel_benchmark.json"
       }

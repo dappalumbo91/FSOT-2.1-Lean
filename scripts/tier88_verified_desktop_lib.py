@@ -224,20 +224,141 @@ def ingest_blackhole_whitehole() -> dict:
     return doc
 
 
+WARP_FORMULA_PATHS = (
+    DESKTOP / "FSOT-Legacy-Physics-Connections" / "concept_refinement" / "warp_actuation_formula_fsot21.json",
+    VENDOR / "application_wiring" / "tier88_cache" / "warp_actuation_formula_fsot21.json",
+)
+
+WARP_PORTAL_CROSSWALK_PROPS = frozenset(
+    {
+        "psi_portal_doorway",
+        "psi_entangle_gate",
+        "psi_gate_pair",
+        "psi_traverse",
+        "psi_tunneling_bridge",
+        "info_preservation_proxy",
+        "stabilization_margin",
+        "psi_bh_inlet",
+        "psi_wh_outlet",
+    }
+)
+
+
+def _warp_formula_path() -> Path | None:
+    for path in WARP_FORMULA_PATHS:
+        if path.is_file():
+            return path
+    return None
+
+
+def _warp_portal_crosswalk_rows(warp_bench: dict) -> list[dict]:
+    rows: list[dict] = []
+    for rec in warp_bench.get("material_records") or []:
+        prop = str(rec.get("property") or "")
+        if prop not in WARP_PORTAL_CROSSWALK_PROPS:
+            continue
+        measured = rec.get("measured")
+        if measured is None:
+            continue
+        rows.append(
+            {
+                "name": str(rec.get("name") or prop),
+                "property": prop,
+                "value": float(measured),
+                "unit": "dimensionless",
+            }
+        )
+    return rows
+
+
+def _enrich_transporter_stack(ref: dict, constants: dict[str, float]) -> list[dict]:
+    portal = {r["name"]: float(r["value"]) for r in (ref.get("fsot_portal") or []) if r.get("name") is not None}
+    coherence = portal.get("coherence_efficiency_proxy", 0.9577)
+    preserve = portal.get("information_preservation_target", 0.99)
+    k_coupling = portal.get("k_coupling_proxy", constants.get("k_coupling", 0.42))
+    stab = 1.722776467449
+    stack = list(ref.get("transporter_stack") or [])
+    enriched = {
+        "pattern_buffer_fidelity": coherence * preserve,
+        "matter_scan_resolution_m": portal.get("beam_resolution_m", 0.001),
+        "dematerialization_scan_ms": portal.get("scan_time_ms", 50.0),
+        "heisenberg_compensator_margin": min(1.0, k_coupling * stab),
+        "reassembly_lock_precision_m": portal.get("beam_resolution_m", 0.001),
+        "transport_cycle_latency_ms": portal.get("scan_time_ms", 50.0),
+        "bio_pattern_integrity_target": preserve,
+    }
+    out: list[dict] = []
+    seen = set()
+    for row in stack:
+        name = str(row.get("name") or "")
+        val = enriched.get(name, row.get("value"))
+        if val is None:
+            continue
+        out.append({**row, "name": name, "value": float(val)})
+        seen.add(name)
+    for name, val in enriched.items():
+        if name not in seen:
+            out.append({"name": name, "value": float(val), "unit": "dimensionless"})
+    return out
+
+
 def ingest_star_trek_transporter() -> dict:
-    ref = _load_json(VENDOR / "tier88_cache" / "star_trek_transporter_reference.json")
-    warp = _load_json(DATA / "warp_bh_wh_portal_benchmark.json")
-    warp_pool = float(warp.get("pooled_median_error_pct") or 0.0)
-    desktop_exists = (DESKTOP / "FSOT, Star Trek Transporter").exists()
+    ref_path = VENDOR / "tier88_cache" / "star_trek_transporter_reference.json"
+    ref = _load_json(ref_path)
+    warp_bench = _load_json(DATA / "warp_bh_wh_portal_benchmark.json")
+    warp_formula = _load_json(_warp_formula_path()) if _warp_formula_path() else {}
+    constants = _fsot_bh_constants()
+    warp_pool = float(warp_bench.get("pooled_median_error_pct") or 0.0)
+    desktop_dir = DESKTOP / "FSOT, Star Trek Transporter"
+    desktop_exists = desktop_dir.exists()
+    transporter_stack = _enrich_transporter_stack(ref, constants)
+    warp_actuation = list(ref.get("warp_actuation") or [])
+    if warp_formula.get("formula_steps"):
+        steps = warp_formula["formula_steps"]
+        warp_actuation = [
+            {
+                "name": row.get("name") or prop,
+                "property": row.get("property") or prop,
+                "value": float(steps.get(row.get("property") or row.get("name") or "", row.get("value"))),
+                "unit": row.get("unit") or "dimensionless",
+            }
+            for row in (ref.get("warp_actuation") or warp_actuation)
+            for prop in [row.get("property") or row.get("name")]
+            if steps.get(prop) is not None or row.get("value") is not None
+        ]
+        # rebuild cleanly from formula_steps keys in reference order
+        warp_actuation = []
+        for row in ref.get("warp_actuation") or []:
+            prop = str(row.get("property") or row.get("name") or "")
+            val = steps.get(prop)
+            if val is None:
+                val = row.get("value")
+            if val is None:
+                continue
+            warp_actuation.append(
+                {
+                    "name": row.get("name") or prop,
+                    "property": prop,
+                    "value": float(val),
+                    "unit": row.get("unit") or "dimensionless",
+                }
+            )
+    warp_crosswalk = _warp_portal_crosswalk_rows(warp_bench)
     doc = {
-        "source": "star_trek_transporter_reference+warp_bh_wh_portal_relay",
+        "source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
         "desktop_folder": "FSOT, Star Trek Transporter",
         "wire_status": "tier88_live_panel",
-        "desktop_stub": not desktop_exists or not any((DESKTOP / "FSOT, Star Trek Transporter").iterdir()),
+        "technology_frame": ref.get("technology_frame") or {},
+        "desktop_stub": not desktop_exists or not any(desktop_dir.iterdir()) if desktop_exists else True,
         "teleportation": ref.get("teleportation") or [],
         "information": ref.get("information") or [],
         "fsot_portal": ref.get("fsot_portal") or [],
+        "transporter_stack": transporter_stack,
+        "warp_actuation": warp_actuation,
+        "warp_portal_crosswalk": warp_crosswalk,
         "warp_bh_wh_portal_relay_median_pct": warp_pool,
+        "warp_formula_path": str(_warp_formula_path() or ""),
+        "fsot_constants": constants,
     }
     _write_cache("star_trek_transporter_cache.json", doc)
     return doc
@@ -449,19 +570,62 @@ def build_star_trek_transporter_live_panel() -> dict:
     _, authority = _load_fsot()
     records: list[dict] = []
     errs: list[float] = []
-    for section, dom in (
-        ("teleportation", "Quantum_Mechanics"),
-        ("information", "Quantum_Mechanics"),
-        ("fsot_portal", "Quantum_Gravity"),
+    channel_stats: list[tuple[str, str, list[float]]] = []
+    source_tag = str(live.get("source"))
+    for section, dom, channel in (
+        ("teleportation", "Quantum_Mechanics", "quantum_channel"),
+        ("information", "Quantum_Mechanics", "information_theory"),
+        ("fsot_portal", "Quantum_Gravity", "portal_proxies"),
+        ("transporter_stack", "Quantum_Gravity", "transporter_engineering"),
+        ("warp_actuation", "Quantum_Gravity", "warp_actuation"),
     ):
-        sec_records, sec_errs = _rows_to_records(
-            live.get(section) or [],
-            lab="star_trek_transporter_lab",
-            domain=dom,
-            source=str(live.get("source")),
-        )
+        rows = live.get(section) or []
+        if section == "warp_actuation":
+            sec_records: list[dict] = []
+            sec_errs: list[float] = []
+            for row in rows:
+                prop = str(row.get("property") or row.get("name") or "warp_scalar")
+                rec = make_fsot_record(
+                    lab="star_trek_transporter_lab",
+                    property_name=prop,
+                    name=str(row.get("name") or prop),
+                    measured=float(row.get("value") or 0),
+                    domain=dom,
+                    extra={"ingest_source": source_tag, "channel": channel},
+                )
+                sec_records.append(rec)
+                sec_errs.append(float(rec["error_pct"]))
+        else:
+            sec_records, sec_errs = _rows_to_records(
+                rows,
+                lab="star_trek_transporter_lab",
+                domain=dom,
+                source=source_tag,
+            )
         records.extend(sec_records)
         errs.extend(sec_errs)
+        if sec_errs:
+            channel_stats.append((channel, section, sec_errs))
+    for row in live.get("warp_portal_crosswalk") or []:
+        prop = str(row.get("property") or row.get("name") or "warp_scalar")
+        rec = make_fsot_record(
+            lab="star_trek_transporter_lab",
+            property_name=prop,
+            name=str(row.get("name") or prop),
+            measured=float(row.get("value") or 0),
+            domain="Quantum_Gravity",
+            extra={"ingest_source": source_tag, "channel": "warp_portal_crosswalk"},
+        )
+        records.append(rec)
+        errs.append(float(rec["error_pct"]))
+    if live.get("warp_portal_crosswalk"):
+        channel_stats.append(
+            (
+                "warp_portal_crosswalk",
+                "Warp_BH_WH_Portal_Panel",
+                [float(r["error_pct"]) for r in records if r.get("extra", {}).get("channel") == "warp_portal_crosswalk"],
+            )
+        )
     warp_med = float(live.get("warp_bh_wh_portal_relay_median_pct") or 0.0)
     records.append(
         {
@@ -477,15 +641,23 @@ def build_star_trek_transporter_live_panel() -> dict:
     return _bench_v11(
         domain="Star_Trek_Transporter_Live_Panel",
         material_records=records,
-        maps_to_lean=["quantum", "particle", "ai"],
+        maps_to_lean=["quantum", "blackhole", "particle"],
         d_eff=17,
         authority_path=authority,
-        source=[str(cache_root() / "star_trek_transporter_cache.json"), "quantum_teleportation_anchors"],
-        channel_stats=[("transporter", "information_transfer", errs or [0.0])],
+        source=[
+            str(cache_root() / "star_trek_transporter_cache.json"),
+            "fsot_transporter_technology_stack",
+            live.get("warp_formula_path") or "warp_actuation_formula_fsot21.json",
+            "Warp_BH_WH_Portal_Panel",
+        ],
+        channel_stats=channel_stats or [("transporter", "information_transfer", errs or [0.0])],
         sota_baselines={
             "transporter": {
                 "sota_typical_error_pct": 10.0,
-                "sota_model": "Quantum teleportation anchors + Warp BH/WH portal relay",
+                "sota_model": (
+                    "FSOT transporter stack — warp actuation portal, entanglement gates, "
+                    "matter-stream poof/suction, quantum teleportation channel"
+                ),
             }
         },
     )

@@ -1,20 +1,23 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-15T11:19:01.284013+00:00",
+  "generated_at": "2026-07-15T11:40:43.335119+00:00",
   "domain": "Star_Trek_Transporter_Live_Panel",
   "authority_path": "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\fsot_compute.py",
   "source": [
     "I:\\FSOT-Physical-Archive\\02_FSOT-2.1-Lean-Full\\vendor\\application_wiring\\tier88_cache\\star_trek_transporter_cache.json",
-    "quantum_teleportation_anchors",
-    "c_thin_depth_pass"
+    "fsot_transporter_technology_stack",
+    "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
+    "Warp_BH_WH_Portal_Panel"
   ],
   "maps_to_lean": [
-    "mathematical"
+    "quantum",
+    "blackhole",
+    "particle"
   ],
-  "D_eff": 14,
-  "record_count": 24,
-  "observable_count": 24,
-  "scalar_record_count": 23,
+  "D_eff": 17,
+  "record_count": 44,
+  "observable_count": 44,
+  "scalar_record_count": 37,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.05256,
   "pooled_median_error_pct": 0.05256,
@@ -22,14 +25,19 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "Star_Trek_Transporter_Live_Panel_depth": {
+      "transporter": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "C_thin depth relay"
+        "sota_model": "FSOT transporter stack \u2014 warp actuation portal, entanglement gates, matter-stream poof/suction, quantum teleportation channel"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_depth_relay_vs_baseline": true
+      "channel_quantum_channel_vs_baseline": true,
+      "channel_information_theory_vs_baseline": true,
+      "channel_portal_proxies_vs_baseline": true,
+      "channel_transporter_engineering_vs_baseline": true,
+      "channel_warp_actuation_vs_baseline": true,
+      "channel_warp_portal_crosswalk_vs_baseline": true
     }
   },
   "records": [
@@ -40,16 +48,61 @@
       "computed": 0.05256,
       "measured": 0.0,
       "error_pct": 0.05256,
-      "observable_count": 24
+      "observable_count": 44
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "depth_relay",
-      "name": "Star_Trek_Transporter_Live_Panel_depth",
+      "property": "quantum_channel",
+      "name": "teleportation",
+      "computed": 0.095551,
+      "measured": 0.0,
+      "error_pct": 0.095551,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "information_theory",
+      "name": "information",
+      "computed": 0.095551,
+      "measured": 0.0,
+      "error_pct": 0.095551,
+      "observable_count": 4
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "portal_proxies",
+      "name": "fsot_portal",
       "computed": 0.05256,
       "measured": 0.0,
       "error_pct": 0.05256,
-      "observable_count": 24
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "transporter_engineering",
+      "name": "transporter_stack",
+      "computed": 0.05256,
+      "measured": 0.0,
+      "error_pct": 0.05256,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "warp_actuation",
+      "name": "warp_actuation",
+      "computed": 0.05256,
+      "measured": 0.0,
+      "error_pct": 0.05256,
+      "observable_count": 9
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "warp_portal_crosswalk",
+      "name": "Warp_BH_WH_Portal_Panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 0
     }
   ],
   "material_records": [
@@ -63,7 +116,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -75,7 +128,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -87,7 +140,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -99,7 +152,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -111,7 +164,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -123,7 +176,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -135,7 +188,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -147,7 +200,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -159,7 +212,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Mechanics",
       "fsot_scalar": 0.955506,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -171,7 +224,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -183,7 +236,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -195,7 +248,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -207,7 +260,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -219,7 +272,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -231,7 +284,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -243,7 +296,7 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -255,7 +308,337 @@
       "eval_kind": "fsot_prediction",
       "fsot_domain": "Quantum_Gravity",
       "fsot_scalar": -0.525598,
-      "ingest_source": "star_trek_transporter_reference+warp_bh_wh_portal_relay"
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "pattern_buffer_fidelity",
+      "computed": 0.948621,
+      "measured": 0.9481229999999999,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "matter_scan_resolution_m",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "dematerialization_scan_ms",
+      "computed": 50.02628,
+      "measured": 50.0,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "heisenberg_compensator_margin",
+      "computed": 0.724291,
+      "measured": 0.7239106716220699,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "matter_stream_bandwidth_tbps",
+      "computed": 2.401261,
+      "measured": 2.4,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "reassembly_lock_precision_m",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "transport_cycle_latency_ms",
+      "computed": 50.02628,
+      "measured": 50.0,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "value",
+      "name": "bio_pattern_integrity_target",
+      "computed": 0.99052,
+      "measured": 0.99,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_portal_doorway",
+      "name": "portal_doorway_scalar",
+      "computed": 0.009668,
+      "measured": 0.009663204175,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_entangle_gate",
+      "name": "entanglement_gate_scalar",
+      "computed": 0.048057,
+      "measured": 0.04803163401,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_gate_pair",
+      "name": "entangled_gate_pair_coupling",
+      "computed": 0.043623,
+      "measured": 0.043599802456,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_traverse",
+      "name": "doorway_traverse_scalar",
+      "computed": 0.000464,
+      "measured": 0.000464139486,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_tunneling_bridge",
+      "name": "tunneling_bridge_scalar",
+      "computed": 0.053955,
+      "measured": 0.053926299704,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "stabilization_margin",
+      "name": "stabilization_margin",
+      "computed": 1.723682,
+      "measured": 1.722776467449,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "info_preservation_proxy",
+      "name": "info_preservation_no_deconstruction",
+      "computed": 0.981743,
+      "measured": 0.981227203621,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_bh_inlet",
+      "name": "bh_inlet_compactification",
+      "computed": 0.009668,
+      "measured": 0.009663204175,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_wh_outlet",
+      "name": "wh_outgassing_scalar",
+      "computed": 0.501953,
+      "measured": 0.501689416811,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_actuation"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "stabilization_margin",
+      "name": "garattini_desitter_stable_band",
+      "computed": 1.000526,
+      "measured": 1.0,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_bh_inlet",
+      "name": "bh_inlet_compactification_proxy",
+      "computed": 0.009668,
+      "measured": 0.009663204175,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_wh_outlet",
+      "name": "wh_outgassing_proxy",
+      "computed": 0.501953,
+      "measured": 0.501689416811,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_portal_doorway",
+      "name": "micro_portal_doorway",
+      "computed": 0.009668,
+      "measured": 0.009663204175,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "info_preservation_proxy",
+      "name": "info_preservation_no_deconstruction",
+      "computed": 0.981743,
+      "measured": 0.981227203621,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_entangle_gate",
+      "name": "quantum_entanglement_gate",
+      "computed": 0.048057,
+      "measured": 0.04803163401,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_gate_pair",
+      "name": "entangled_gate_pair_coupling",
+      "computed": 0.043623,
+      "measured": 0.043599802456,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_traverse",
+      "name": "doorway_traverse_scalar",
+      "computed": 0.000464,
+      "measured": 0.000464139486,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
+    },
+    {
+      "lab": "star_trek_transporter_lab",
+      "property": "psi_tunneling_bridge",
+      "name": "paired_node_bridge_relay",
+      "computed": 0.053955,
+      "measured": 0.053926299704,
+      "error_pct": 0.05256,
+      "eval_kind": "fsot_prediction",
+      "fsot_domain": "Quantum_Gravity",
+      "fsot_scalar": -0.525598,
+      "ingest_source": "fsot_transporter_technology_stack+warp_actuation+warp_bh_wh_portal",
+      "channel": "warp_portal_crosswalk"
     },
     {
       "lab": "star_trek_transporter_lab",
@@ -265,163 +648,11 @@
       "measured": 0.0,
       "error_pct": 0.0,
       "eval_kind": "cross_panel_relay"
-    },
-    {
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "case_id": "engine_native_h0",
-      "property": "engine_native_h0",
-      "computed": 67.27021167735879,
-      "measured": 67.4,
-      "error_pct": 0.192564276915754,
-      "unit": "km s^-1 Mpc^-1",
-      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
-      "domain_display_name": "math generator",
-      "display_name": "engine native h0",
-      "scientific_measurement": {
-        "delta": -0.12978832,
-        "delta_pct": 0.192564,
-        "effective_error_pct": 0.192564,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "km s^-1 Mpc^-1"
-      },
-      "source_panel": "Pure_Mathematics",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Pure_Mathematics"
-    },
-    {
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "case_id": "external_alma_chromosphere",
-      "property": "brightness_temperature_rms_k",
-      "computed": 99.99581522012987,
-      "measured": 100.0,
-      "error_pct": 0.004184779870129773,
-      "unit": "K",
-      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent * (1 - |S_plan| * POOF / PHI / 13)",
-      "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
-      "display_name": "brightness temperature rms k",
-      "scientific_measurement": {
-        "delta": -0.00418478,
-        "delta_pct": 0.004185,
-        "effective_error_pct": 0.004185,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "K"
-      },
-      "source_panel": "Pure_Mathematics",
-      "depth_relay_from": "Pure_Mathematics"
-    },
-    {
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "case_id": "external_planck_h0",
-      "property": "hubble_constant_km_s_mpc",
-      "computed": 67.38395831285372,
-      "measured": 67.4,
-      "error_pct": 0.023800722768967785,
-      "unit": "km s^-1 Mpc^-1",
-      "formula": "h0_global_fsot * (1 + planck_sector_density * bubble_bleed_fraction)",
-      "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
-      "display_name": "hubble constant km s mpc",
-      "scientific_measurement": {
-        "delta": -0.01604169,
-        "delta_pct": 0.023801,
-        "effective_error_pct": 0.023801,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.1587,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.15,
-        "unit": "km s^-1 Mpc^-1"
-      },
-      "source_panel": "Pure_Mathematics",
-      "depth_relay_from": "Pure_Mathematics"
-    },
-    {
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "case_id": "external_planck_sigma8",
-      "property": "matter_fluctuation_amplitude",
-      "computed": 0.8111240047382514,
-      "measured": 0.811,
-      "error_pct": 0.01529034996934153,
-      "unit": "dimensionless",
-      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
-      "eval_kind": "live_formula",
-      "domain_display_name": "math generator",
-      "display_name": "matter fluctuation amplitude",
-      "scientific_measurement": {
-        "delta": 0.000124,
-        "delta_pct": 0.01529,
-        "effective_error_pct": 0.01529,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "dimensionless"
-      },
-      "source_panel": "Pure_Mathematics",
-      "depth_relay_from": "Pure_Mathematics"
-    },
-    {
-      "rule_id": "AA-001",
-      "corpus": "ABSTRACT_ALGEBRA",
-      "eval_kind": "symbolic_schema",
-      "lean_domain": "mathematical",
-      "error_pct": 0.0,
-      "schema_valid": true,
-      "display_name": "",
-      "scientific_measurement": {
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "source_panel": "Math_Generator_Rules_Eval",
-      "depth_relay_from": "Math_Generator_Rules_Eval"
-    },
-    {
-      "lab": "star_trek_transporter_live_panel_depth_lab",
-      "property": "bundled_asset_present",
-      "name": "fsot_compute",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "vendor/fsot_compute.py",
-      "domain_display_name": "portable clone verify",
-      "display_name": "fsot compute",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      },
-      "source_panel": "Portable_Clone_Verify",
-      "eval_kind": "c_thin_depth_relay",
-      "depth_relay_from": "Portable_Clone_Verify"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.05256,
-    "max_scalar_error_pct": 0.192564276915754,
+    "max_scalar_error_pct": 0.095551,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

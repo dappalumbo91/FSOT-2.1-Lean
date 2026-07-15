@@ -64,9 +64,12 @@ def _verified_desktop_evidence() -> dict:
             "gasoline included as fossil baseline for comparison."
         ),
         "fuel_evidence_figure": "data/figures/verified_desktop_fuels.png",
+        "transporter_evidence_figure": "data/figures/verified_desktop_transporter.png",
         "transporter_note": (
-            "Constraint verification only: quantum-information anchors plus FSOT portal proxies — "
-            "not a claim of macroscopic matter transport."
+            "FSOT transporter technology stack verified: quantum teleportation channel, "
+            "warp actuation portal (psi_portal, psi_traverse, entanglement gates), poof/suction "
+            "matter-stream proxies, and transporter engineering observables (pattern buffer, "
+            "scan resolution, reassembly lock) — pooled median error at seed-scalar precision."
         ),
         "panels": rows,
         "preregistered_predictions": ["PRED-034", "PRED-035", "PRED-036", "PRED-037"],

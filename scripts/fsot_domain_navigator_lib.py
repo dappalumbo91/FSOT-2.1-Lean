@@ -66,13 +66,22 @@ VERIFIED_PANEL_FALSIFICATION: dict[str, list[dict[str, Any]]] = {
     "Star_Trek_Transporter_Live_Panel": [
         {
             "id": "VD-TRANS-001",
-            "name": "teleportation_anchor_precision",
+            "name": "transporter_stack_precision",
             "kill_criterion": (
                 "Star_Trek_Transporter_Live_Panel pooled median exceeds 0.5% "
-                "or quantum teleportation anchor channel median exceeds 1%."
+                "or warp actuation / portal channel median exceeds 0.1% on refresh."
             ),
             "status": "registered",
-        }
+        },
+        {
+            "id": "VD-TRANS-002",
+            "name": "portal_traverse_drift",
+            "kill_criterion": (
+                "psi_traverse or psi_portal_doorway scalars drift >0.5% from warp_actuation_formula "
+                "on transporter stack rebuild."
+            ),
+            "status": "registered",
+        },
     ],
 }
 

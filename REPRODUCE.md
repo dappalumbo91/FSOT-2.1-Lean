@@ -256,6 +256,16 @@ python scripts/query_fsot_domain_navigator.py --intent fuel_lab_engine --bundle 
 
 Panel-specific kill criteria are attached to each route in `data/fsot_domain_navigator.json` under `problem_routes[].falsification`.
 
+**Transporter technology stack:**
+
+```powershell
+python scripts/reproduce_domain_panel.py --panel Star_Trek_Transporter_Live_Panel --deep
+python scripts/build_verified_desktop_transporter_figure.py
+python scripts/query_fsot_domain_navigator.py --panel Star_Trek_Transporter_Live_Panel --format bibtex
+```
+
+Layers: quantum teleportation → information theory → poof/suction portal → transporter engineering → warp actuation → BH/WH portal crosswalk. Figure: `data/figures/verified_desktop_transporter.png`.
+
 ## Claim scope (read before citing)
 
 **Proved in Lean:** sign statements and interval bounds at **canonical** domain parameters; Wave-1 formulas at cached `S_cosm`, `S_quant`.

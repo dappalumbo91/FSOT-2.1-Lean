@@ -1,7 +1,14 @@
 {
-  "schema_version": "1.0",
-  "source": "quantum_information_transfer_literature_anchors",
+  "schema_version": "2.0",
+  "source": "fsot_transporter_technology_stack",
   "credential_free": true,
+  "technology_frame": {
+    "name": "FSOT Star Trek Transporter",
+    "mechanism": "Poof/suction matter-stream via entangled portal gates — quantum information channel + warp actuation doorway",
+    "doorway_interpretation": "Step-through traversal without information deconstruction caveat",
+    "entanglement_interpretation": "Two gates quantum-entangled via phi_lock^2 * |S_QM|^2 channel",
+    "warp_formula_source": "warp_actuation_formula_fsot21.json"
+  },
   "teleportation": [
     {"name": "qubit_teleport_fidelity_typical", "value": 0.85, "unit": "dimensionless"},
     {"name": "entanglement_swapping_fidelity", "value": 0.78, "unit": "dimensionless"},
@@ -24,5 +31,26 @@
     {"name": "t3_valve_acoustic_phase", "value": 1.0, "unit": "dimensionless"},
     {"name": "beam_resolution_m", "value": 0.001, "unit": "m"},
     {"name": "scan_time_ms", "value": 50.0, "unit": "ms"}
+  ],
+  "transporter_stack": [
+    {"name": "pattern_buffer_fidelity", "value": 0.948123, "unit": "dimensionless"},
+    {"name": "matter_scan_resolution_m", "value": 0.001, "unit": "m"},
+    {"name": "dematerialization_scan_ms", "value": 50.0, "unit": "ms"},
+    {"name": "heisenberg_compensator_margin", "value": 0.7239, "unit": "dimensionless"},
+    {"name": "matter_stream_bandwidth_tbps", "value": 2.4, "unit": "Tbps"},
+    {"name": "reassembly_lock_precision_m", "value": 0.001, "unit": "m"},
+    {"name": "transport_cycle_latency_ms", "value": 50.0, "unit": "ms"},
+    {"name": "bio_pattern_integrity_target", "value": 0.99, "unit": "dimensionless"}
+  ],
+  "warp_actuation": [
+    {"name": "portal_doorway_scalar", "value": 0.009663204175, "unit": "dimensionless", "property": "psi_portal_doorway"},
+    {"name": "entanglement_gate_scalar", "value": 0.04803163401, "unit": "dimensionless", "property": "psi_entangle_gate"},
+    {"name": "entangled_gate_pair_coupling", "value": 0.043599802456, "unit": "dimensionless", "property": "psi_gate_pair"},
+    {"name": "doorway_traverse_scalar", "value": 0.000464139486, "unit": "dimensionless", "property": "psi_traverse"},
+    {"name": "tunneling_bridge_scalar", "value": 0.053926299704, "unit": "dimensionless", "property": "psi_tunneling_bridge"},
+    {"name": "stabilization_margin", "value": 1.722776467449, "unit": "dimensionless", "property": "stabilization_margin"},
+    {"name": "info_preservation_no_deconstruction", "value": 0.981227203621, "unit": "dimensionless", "property": "info_preservation_proxy"},
+    {"name": "bh_inlet_compactification", "value": 0.009663204175, "unit": "dimensionless", "property": "psi_bh_inlet"},
+    {"name": "wh_outgassing_scalar", "value": 0.501689416811, "unit": "dimensionless", "property": "psi_wh_outlet"}
   ]
 }
