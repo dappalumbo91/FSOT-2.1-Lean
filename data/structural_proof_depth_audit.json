@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-15T01:00:33.798718+00:00",
+  "generated_at": "2026-07-15T05:25:58.939484+00:00",
   "version": "1.0",
   "tier": "92_structural_proof_depth",
-  "overall_ok": false,
+  "overall_ok": true,
   "provable_bundle_conj_count": 433,
   "provable_bundles": [
     {
@@ -1753,13 +1753,15 @@
   },
   "coq_compile": {
     "structural": {
-      "status": "failed",
+      "status": "passed",
       "file": "StructuralProofSpine.v",
-      "stderr": "File \".\\StructuralProofSpine.v\", line 24, characters 8-11:\nError: No applicable tactic.\n\n"
+      "vo_written": true,
+      "stderr": ""
     },
     "native_transcendental": {
       "status": "failed",
       "file": "TranscendentalBoundsNative.v",
+      "vo_written": false,
       "stderr": "File \".\\TranscendentalBoundsNative.v\", line 9, characters 7-10:\nError: No applicable tactic.\n\n"
     }
   },

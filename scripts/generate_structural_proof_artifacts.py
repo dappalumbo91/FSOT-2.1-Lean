@@ -49,16 +49,20 @@ def _provable_bundles(obligations: list[dict]) -> list[dict]:
     return out
 
 
-def _coq_nested_split_proof(tacs: list[str], depth: int = 0) -> list[str]:
-    """Nested split proofs — avoids repeat-split goal-count bugs on large nat equalities."""
-    pad = "  " * (depth + 1)
-    if len(tacs) == 1:
-        return [f"{pad}{tacs[0]}."]
-    return [
-        f"{pad}split.",
-        *_coq_nested_split_proof(tacs[1:], depth + 1),
-        f"{pad}- {tacs[0]}.",
-    ]
+def _coq_bundle_proof_lines(bid: str, conjuncts: list[dict]) -> list[str]:
+    """Prove bundle by reusing per-conjunct lemmas (depth beyond literal replay)."""
+    steps: list[str] = []
+    for i, conj in enumerate(conjuncts):
+        if conj.get("opaque"):
+            steps.append("lra")
+        else:
+            steps.append(f"exact {bid}_conj_{i}")
+
+    if len(steps) == 1:
+        return [f"  {steps[0]}."]
+    if len(set(steps)) == 1:
+        return [f"  repeat split; {steps[0]}."]
+    return ["  repeat (apply conj).", *[f"  - {step}." for step in steps]]
 
 
 def _coq_conjunct_tac(conj: dict) -> str:
@@ -116,19 +120,8 @@ def gen_coq(bundles: list[dict]) -> str:
                 stmt, _ = _coq_conjunct_proof(conj)
                 conj_lines.append(stmt)
         bundle_stmt = " /\\ ".join(conj_lines)
-        tacs: list[str] = []
-        for conj in bundle.get("conjuncts") or []:
-            if conj.get("opaque"):
-                tacs.append("lra")
-            else:
-                tacs.append(_coq_conjunct_tac(conj))
-        if len(tacs) == 1:
-            proof_line = f"  {tacs[0]}."
-        elif len(set(tacs)) == 1:
-            proof_line = f"  repeat split; {tacs[0]}."
-        else:
-            proof_line = f"  repeat split; [{' | '.join(tacs)}]."
-        lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", proof_line, "Qed.", ""]
+        proof_lines = _coq_bundle_proof_lines(bid, bundle.get("conjuncts") or [])
+        lines += [f"Lemma {bid} : {bundle_stmt}.", "Proof.", *proof_lines, "Qed.", ""]
 
     for name, lo, hi in CONNECTIVE_ORDERING:
         lines += [

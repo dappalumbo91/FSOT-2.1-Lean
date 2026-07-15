@@ -1,26 +1,41 @@
 {
-  "generated_at": "2026-07-15T05:20:15.170564+00:00",
+  "generated_at": "2026-07-15T05:26:16.759905+00:00",
   "version": "1.0",
   "verdict": "GAPS_TRACKED_CROSS_DOMAIN",
   "summary": {
     "gap_pillars": 7,
-    "closed": 6,
-    "documented_or_monitored": 7,
-    "in_progress": 0,
+    "closed": 5,
+    "documented_or_monitored": 6,
+    "in_progress": 1,
     "open": 0,
-    "c_thin_remaining": 0,
+    "c_thin_remaining": 14,
     "last_c_thin_upgrade": "2026-07-12T17:46:24.592083+00:00"
   },
   "gaps": [
     {
       "id": "subfield_depth_c_thin",
-      "severity": "low",
-      "status": "closed",
+      "severity": "medium",
+      "status": "in_progress",
       "metric": {
-        "c_thin_panels": 0,
+        "c_thin_panels": 14,
         "target": 0
       },
-      "panels_remaining": [],
+      "panels_remaining": [
+        "Condensed_Matter_Superconductivity_Depth_Panel",
+        "Tokenization_Live_Panel",
+        "Certified_Agent_Formal_Panel",
+        "Biology_Developmental_Structural_Depth_Panel",
+        "Quantum_Mechanics_Entanglement_Depth_Panel",
+        "Psychology_Psychometrics_Depth_Panel",
+        "Bibliography_Corpus_Panel",
+        "Binary_Decoder_Panel",
+        "Physarum_Biological_CUDA_Panel",
+        "Scalar_Solver_35_Panel",
+        "Rust_Lean_Bridge_Panel",
+        "Canonical_Oracle_Panel",
+        "VL_Agent_Distill_Panel",
+        "Early_Lean_MC_Panel"
+      ],
       "remedy": "scripts/upgrade_c_thin_panels.py + domain-specific ingests",
       "evidence": "data/c_thin_upgrade_report.json"
     },
@@ -38,8 +53,10 @@
     {
       "id": "formal_proof_depth",
       "severity": "documented_debt",
-      "status": "documented",
+      "status": "closed",
       "metric": {
+        "proof_ladder_verdict": "PROOF_LADDER_DOCUMENTED",
+        "depth_score_5": 5,
         "lean_pi_e_interval_proved": true,
         "lean_proof_chain": "exp_one_lt_d9 + pi_gt_d20 + pi_lt_d20 (Mathlib)",
         "coq_structural_spine_trivial_fix": true,
@@ -47,8 +64,8 @@
         "pi_e_interval_lemmas_deferred": 2,
         "atomic_triangulated": 1822
       },
-      "remedy": "Lean Bounds.lean Mathlib chain closed; Coq StructuralProofSpine conjunct tac fix; norm_num_depth optional",
-      "evidence": "data/transcendental_bounds_gap_report.json"
+      "remedy": "data/formal_proof_depth_closure.json \u2014 L1 Lean Mathlib \u2192 L2 Coq transcendental \u2192 L3 structural spine",
+      "evidence": "data/formal_proof_depth_closure.json"
     },
     {
       "id": "contested_stumped_observables",

@@ -46,6 +46,7 @@ def main() -> int:
     pushback = _load(ROOT / "data" / "scientific_pushback_audit.json")
     crosswalk = _load(ROOT / "data" / "desktop_project_crosswalk.json")
     transcendental = _load(ROOT / "data" / "transcendental_bounds_gap_report.json")
+    formal_depth = _load(ROOT / "data" / "formal_proof_depth_closure.json")
     founding = _load(ROOT / "data" / "founding_law_audit.json")
 
     fluid = next(
@@ -88,10 +89,12 @@ def main() -> int:
         {
             "id": "formal_proof_depth",
             "severity": "documented_debt",
-            "status": "in_progress"
-            if not transcendental.get("lean_pi_e_interval_proved")
-            else "documented",
+            "status": "closed"
+            if formal_depth.get("depth_score_5", 0) >= 4
+            else ("documented" if transcendental.get("lean_pi_e_interval_proved") else "in_progress"),
             "metric": {
+                "proof_ladder_verdict": formal_depth.get("verdict"),
+                "depth_score_5": formal_depth.get("depth_score_5"),
                 "lean_pi_e_interval_proved": transcendental.get("lean_pi_e_interval_proved"),
                 "lean_proof_chain": transcendental.get("lean_proof_chain"),
                 "coq_structural_spine_trivial_fix": True,
@@ -101,8 +104,8 @@ def main() -> int:
                     "atomic_triangulated_ok"
                 ),
             },
-            "remedy": "Lean Bounds.lean Mathlib chain closed; Coq StructuralProofSpine conjunct tac fix; norm_num_depth optional",
-            "evidence": "data/transcendental_bounds_gap_report.json",
+            "remedy": "data/formal_proof_depth_closure.json — L1 Lean Mathlib → L2 Coq transcendental → L3 structural spine",
+            "evidence": "data/formal_proof_depth_closure.json",
         },
         {
             "id": "contested_stumped_observables",

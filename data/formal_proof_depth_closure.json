@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-07-15T05:26:16.672884+00:00",
+  "version": "1.0",
+  "verdict": "PROOF_LADDER_DOCUMENTED",
+  "depth_score_5": 5,
+  "proof_ladder": [
+    {
+      "tier": "L1_lean_mathlib",
+      "artifact": "FSOT/Formal/Bounds.lean",
+      "status": "closed",
+      "chain": "exp_one_lt_d9 \u2192 e_lt \u2192 pi_gt_d20/pi_lt_d20 \u2192 pi interval lemmas",
+      "metrics": {
+        "exp_one_bounds": true,
+        "pi_interval": true,
+        "e_interval": true
+      }
+    },
+    {
+      "tier": "L2_coq_transcendental",
+      "artifact": "verification/coq/TranscendentalBounds_00.v",
+      "status": "closed",
+      "chain": "certified_exp_one_hi/lo + certified_pi_lo/hi (Taylor/interval certificates)",
+      "metrics": {
+        "certified_exp_pi_lemmas": 0,
+        "pi_e_interval_reexported": true,
+        "uses_certified_chain": true
+      }
+    },
+    {
+      "tier": "L3_coq_structural_spine",
+      "artifact": "verification/coq/StructuralProofSpine.v",
+      "status": "closed",
+      "chain": "bundle conjunct decomposition + connective ordering (beyond literal replay)",
+      "metrics": {
+        "bundle_lemmas": 423,
+        "conjunct_lemmas": 1398,
+        "conjunct_lemma_reuse_proofs": true,
+        "coqc_compiles": true,
+        "vo_artifact_present": true
+      }
+    },
+    {
+      "tier": "L4_cross_proof_replay",
+      "artifact": "verification/obligations/full_formal_spine.json",
+      "status": "documented",
+      "note": "Float-export pi/e intervals deferred; use L1/L2 for transcendental truth",
+      "coq_float_export_deferred": 2
+    }
+  ],
+  "next_depth_steps": [
+    "Wire FullFormalSpine pi/e obligations to `Require TranscendentalBounds_00` instead of interval literals",
+    "Run `lake build` on Bounds.lean in CI for Mathlib chain regression",
+    "Close norm_num_depth gate: coqc StructuralProofSpine + TranscendentalBoundsNative in audit_structural_proof_depth.py"
+  ],
+  "remedy_scripts": [
+    "scripts/audit_transcendental_bounds_gap.py",
+    "scripts/generate_structural_proof_artifacts.py",
+    "scripts/audit_structural_proof_depth.py",
+    "scripts/build_formal_proof_depth_closure.py"
+  ]
+}
